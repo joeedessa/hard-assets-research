@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "description": "Universe matrix — 11 verticals × 10 chain stages. Each cell has entries (label + style class) and optional highlighted detail.",
+    "style_classes": {
+      "v0": "Oil — grey", "v1": "NG/LNG — amber", "v2": "Nuclear — indigo",
+      "v3": "Copper — orange-red", "v4": "Lithium — green", "v5": "REE — pink",
+      "v6": "TechMet — blue", "v7": "PGM/Ag — silver", "v8": "Water — dark green",
+      "v9": "Ind.Inputs — brown", "va": "Fertilizers — olive"
+    }
+  },
+  "verticals": [
+    {"id":"oil","sn":"Oil","c":"#5F5E5A","tc":"v0"},
+    {"id":"ng","sn":"NG/LNG","c":"#EF9F27","tc":"v1"},
+    {"id":"nu","sn":"Nuclear","c":"#534AB7","tc":"v2"},
+    {"id":"cu","sn":"Copper","c":"#D85A30","tc":"v3"},
+    {"id":"li","sn":"Li/Batt","c":"#1D9E75","tc":"v4"},
+    {"id":"re","sn":"REE","c":"#993556","tc":"v5"},
+    {"id":"tm","sn":"TechMet","c":"#185FA5","tc":"v6"},
+    {"id":"pg","sn":"PGM/Ag","c":"#888780","tc":"v7"},
+    {"id":"wl","sn":"Water","c":"#3B6D11","tc":"v8"},
+    {"id":"ii","sn":"Ind.Inputs","c":"#854F0B","tc":"v9"},
+    {"id":"fert","sn":"Fertilizers","c":"#639922","tc":"va"}
+  ],
+  "chain_stages": [
+    {"id":"rr","n":"Rights & royalties"},
+    {"id":"ex","n":"Exploration"},
+    {"id":"dv","n":"Development (pre-FID)"},
+    {"id":"pr","n":"Extraction & production"},
+    {"id":"p1","n":"Primary processing"},
+    {"id":"rf","n":"Refining & transformation"},
+    {"id":"tr","n":"Transport & logistics"},
+    {"id":"st","n":"Storage & terminals"},
+    {"id":"di","n":"Distribution & end-use"},
+    {"id":"rc","n":"Recycling & secondary"}
+  ],
+  "cells": {
+    "rr": {
+      "oil":  [["Royalty trusts VNOM,BSM","v0"]],
+      "ng":   [["Mineral rights trusts","v1"],["Non-op royalties","v1"]],
+      "nu":   [["Physical U trusts SPUT,YCA","v2"]],
+      "cu":   [["FNV,WPM streams","v3"]],
+      "li":   [["Li royalties emerging","v4"]],
+      "re":   [["REE royalties thin","v5"]],
+      "tm":   [["Thin market","v6"]],
+      "pg":   [["WPM Pd stream","v7"],["Gold streamers FNV,RGLD","v7"]],
+      "wl":   [["Water rights VWTR","v8"]],
+      "ii":   [["He/Ti mineral rights","v9"]],
+      "fert": [["Potash rights","va"],["Phosphate rock OCP","va"]]
+    },
+    "ex": {
+      "oil":  [["E&P exploration","v0"],["Seismic TGS,PGS","v0"]],
+      "ng":   [["Gas E&P EQT,AR,SWN","v1"]],
+      "nu":   [["U explorers NXE,DNN,FCU","v2"],["UEC US ISR network","v2"]],
+      "cu":   [["Junior Cu Solaris,Filo","v3"]],
+      "li":   [["Li juniors PMET,Argosy","v4"]],
+      "re":   [["MP Materials,Lynas,UUUU","v5"]],
+      "tm":   [["Alphamin Sn DRC","v6"],["Almonty W Korea","v6"]],
+      "pg":   [["SBSW,AMS.J,IMP.J","v7"],["Fresnillo,First Majestic","v7"]],
+      "wl":   [["Aquifer devs,VWTR","v8"]],
+      "ii":   [["He field delineation","v9"],["Mineral sands ILU,TROX","v9"]],
+      "fert": [["K basin delineation","va"],["BHP Jansen dev.","va"]]
+    },
+    "dv": {
+      "oil":  [["Appraisal drilling","v0"],["FPSO dev SBM Offshore","v0"]],
+      "ng":   [["LNG FID Cheniere,VGAS","v1"],["Pipeline permitting","v1"]],
+      "nu":   [["U dev DNN,UEC,NXE","v2"],["SMR devs BWXT,GEH","v2"]],
+      "cu":   [["Feasibility studies","v3"],["Permitting 15-20yr","v3"]],
+      "li":   [["Brine pond pilots","v4"],["DLE pilots SLI","v4"]],
+      "re":   [["MP,Lynas facility dev","v5"],["DoD-funded sep. facilities","v5"]],
+      "tm":   [["Perpetua PPTA Sb+Au","v6"],["Centrus HALEU program","v6"]],
+      "pg":   [["Stillwater expansion SBSW","v7"],["PTM Waterberg project","v7"]],
+      "wl":   [["Desal project dev","v8"],["ARIS,WTTR water infra","v8"]],
+      "ii":   [["ASU on-site plant dev","v9"],["Ti sponge plant dev","v9"]],
+      "fert": [["Mine feasibility","va"],["Ammonia plant construction","va"]]
+    },
+    "pr": {
+      "oil":  [["Offshore RIG,VAL,NE,DO","v0"],["Shale DVN,FANG,COP,MRO","v0"],["OFS SLB,HAL,BKR; OSV TDW","v0"]],
+      "ng":   [["Gas producers EQT,AR,SWN","v1"],["Contract drillers HP,PTEN","v1"]],
+      "nu":   [["Cameco CCO ~15% global","v2"],["Kazatomprom KAP ~40%","v2"],["UEC,Boss,Paladin","v2"]],
+      "cu":   [["SCCO lowest-cost major","v3"],["FCX,Antofagasta,Lundin,HBM","v3"]],
+      "li":   [["ALB,SQM brine Atacama","v4"],["Pilbara PLS spodumene","v4"]],
+      "re":   [["MP Materials LREE","v5"],["Lynas LYC.AX Mt.Weld","v5"]],
+      "tm":   [["Alphamin AFMJF Sn DRC","v6"],["Yunnan Tin,PT Timah","v6"]],
+      "pg":   [["SBSW,Anglo Plat AMS.J","v7"],["Impala IMP.J,Northam","v7"]],
+      "wl":   [["AWK,WTRG,SJW utilities","v8"]],
+      "ii":   [["Linde LIN air separation","v9"],["Air Products APD","v9"]],
+      "fert": [["Nutrien NTR K+N+P unique","va"],["Mosaic MOS,ICL Group","va"]]
+    },
+    "p1": {
+      "oil":  [["Gathering WES,HESM,AROC","v0"]],
+      "ng":   [["NGL processors WMB,TRGP","v1"],["ONEOK OKE","v1"]],
+      "nu":   [["U3O8 milling Key Lake","v2"],["UF6 conversion ConverDyn","v2"]],
+      "cu":   [["Flotation/conc. at mine","v3"],["SX-EW hydromet cathode","v3"]],
+      "li":   [["Spodumene → SC6%","v4"],["Brine solar evap. ponds","v4"]],
+      "re":   [["Ore cracking acid digestion","v5"],["Mixed RE carbonate","v5"]],
+      "tm":   [["Sn smelting MSC,Minsur","v6"]],
+      "pg":   [["PGM matte smelting SA","v7"]],
+      "wl":   [["Raw water delivery","v8"]],
+      "ii":   [["Gas purification UHP grades","v9"],["Ti sponge Kroll process","v9"]],
+      "fert": [["Potash MOP flotation","va"],["Phosphate → phos. acid","va"]]
+    },
+    "rf": {
+      "oil":  [["Refiners VLO,MPC,PSX,PBF","v0"],["Petrochems LYB,DOW,WLK","v0"]],
+      "ng":   [["LNG liquefaction Cheniere","v1"],["Venture Global VGAS","v1"]],
+      "nu":   [["Enrichment Centrus LEU,Urenco","v2"],["Fuel fab Westinghouse","v2"]],
+      "cu":   [["Cu smelting Aurubis,Glencore","v3"],["Electrolytic → LME cathode","v3"]],
+      "li":   [["LiOH/Li2CO3 ALB,SQM","v4"],["Battery precursors pCAM Umicore","v4"]],
+      "re":   [["REE separation — CHOKEPOINT","v5"],["NdFeB magnet mfg MP,Hitachi","v5"]],
+      "tm":   [["Ga/Ge refining — China monopoly","v6"],["SAC solder alloys MacDermid","v6"]],
+      "pg":   [["PGM refining JM,Umicore","v7"],["Ag refining Asahi,PAMP","v7"]],
+      "wl":   [["Water treatment XYL,Veolia","v8"],["Desalination ERII RO PX","v8"]],
+      "ii":   [["UHP specialty gas grades","v9"],["Ti ingot/alloy ATI","v9"]],
+      "fert": [["Ammonia synthesis CF,Yara","va"],["NPK/urea/DAP blending","va"]]
+    },
+    "tr": {
+      "oil":  [["Crude pipelines PAA","v0"],["Tankers FRO,DHT,STNG","v0"]],
+      "ng":   [["Pipelines KMI,ET,EPD,WMB","v1"],["LNG shipping FLNG,GLNG","v1"]],
+      "nu":   [["Specialised fuel transport","v2"]],
+      "cu":   [["Bulk shipping SBLK,GOGL","v3"]],
+      "li":   [["Specialty chem logistics","v4"]],
+      "re":   [["Contained specialised logistics","v5"]],
+      "tm":   [["LME warehouse logistics","v6"],["Export-controlled Ga,Ge,Sb","v6"]],
+      "pg":   [["Armoured vault logistics","v7"],["LBMA vault system London","v7"]],
+      "wl":   [["Water pipeline operators","v8"],["Produced water ARIS,WTTR","v8"]],
+      "ii":   [["Cryogenic bulk tanker logistics","v9"]],
+      "fert": [["Capesize bulk vessel logistics","va"],["Rail + barge distribution","va"]]
+    },
+    "st": {
+      "oil":  [["Crude storage Vopak,PAA","v0"],["LNG terminals NFE,EE","v0"]],
+      "ng":   [["Gas storage caverns","v1"],["LNG terminals LNG,VGAS","v1"]],
+      "nu":   [["Fuel pool storage","v2"],["Spent fuel Holtec pvt","v2"]],
+      "cu":   [["LME warehouses HKEx-owned","v3"]],
+      "li":   [["BESS grid storage FLNC","v4"]],
+      "re":   [["DoD strategic reserves","v5"]],
+      "tm":   [["Gov. strategic reserves","v6"],["LME tin inventory","v6"]],
+      "pg":   [["LBMA vaults London","v7"],["ETFs SLV,PPLT,PALL","v7"]],
+      "wl":   [["Reservoir/dam operators","v8"]],
+      "ii":   [["Cryogenic storage tanks","v9"]],
+      "fert": [["Port fertilizer terminals","va"],["Agricultural storage silos","va"]]
+    },
+    "di": {
+      "oil":  [["Gas utilities ATO,SWX,OGS","v0"],["Gas power VST,NRG,Calpine","v0"]],
+      "ng":   [["LNG regas EE,Höegh LNG","v1"],["LDCs ATO,SWX,NFG","v1"]],
+      "nu":   [["Nuclear ops CEG,Duke","v2"],["SMR pipeline GEH,X-energy","v2"]],
+      "cu":   [["HV cable mfg PRY,NEX","v3"],["Grid components ABB,ETN,GEV","v3"]],
+      "li":   [["EV OEMs TSLA,BYD,GM,Ford","v4"],["Grid BESS AES,FLNC,NEE","v4"]],
+      "re":   [["EV/wind OEMs","v5"],["Defense RTX,LMT,NOC","v5"]],
+      "tm":   [["Semicon fabs TSMC,INTC","v6"],["PCB/EMS Foxconn,Amkor","v6"]],
+      "pg":   [["Auto catalysts JM,Umicore","v7"],["Fuel cells BLDP,BE","v7"]],
+      "wl":   [["Mine/plant/DC water supply","v8"],["Power plant cooling","v8"]],
+      "ii":   [["Pharma O2/N2/He LIN,APD","v9"],["Semicon fab ASU plants","v9"]],
+      "fert": [["Farmers — crop application","va"],["Precision ag DE,TRMB","va"]]
+    },
+    "rc": {
+      "oil":  [["Lube re-refining CLH,HCCI","v0"],["Plastic recycling LYB,EMN","v0"]],
+      "ng":   [["RNG capture CLNE,MNTK","v1"]],
+      "nu":   [["Spent fuel reprocessing Orano","v2"],["MOX fuel manufacture","v2"]],
+      "cu":   [["Cu scrap Aurubis,Metallo","v3"]],
+      "li":   [["Li-Cycle LICY","v4"],["Redwood Materials pvt","v4"]],
+      "re":   [["REE magnets Cyclic Materials","v5"]],
+      "tm":   [["Sn from solder dross","v6"],["Ge from fiber optic reclaim","v6"]],
+      "pg":   [["Autocatalyst recycle JM,Umicore","v7"],["SBSW PGM recycling","v7"]],
+      "wl":   [["Produced water recycle ARIS","v8"]],
+      "ii":   [["Noble gas recovery","v9"]],
+      "fert": [["Struvite P recovery","va"],["Organic fertilizer recycling","va"]]
+    }
+  },
+  "highlighted_cells": {
+    "rf_nu":  {"t":"Nuclear — Enrichment (most acute strategic gap in the universe)","f":["fch","fgp","fgeo"],"b":"Centrus Energy (LEU) is the ONLY US company with active domestic uranium enrichment capacity. TENEX/Rosatom supplied ~28% of US SWU before the Prohibiting Russian Uranium Imports Act (2024). HALEU for SMRs/advanced reactors = essentially zero non-Russian supply — Centrus building from scratch with DoD/DOE support. Year 1-2 of a 10-year rebuild."},
+    "rf_re":  {"t":"REE — Separation (single most acute geopolitical chokepoint)","f":["fch","fgp","fgeo"],"b":"China controls ~85-90% of global REE separation. Outside China: MP Materials (NdPr at Mountain Pass + Fort Worth TX magnet facility); Lynas Malaysia + Seadrift TX (DoD-funded, under construction). HREE (Dy, Tb) separation: essentially NO Western capacity at all. Most strategically urgent single processing gap in critical minerals globally."},
+    "di_nu":  {"t":"Nuclear Power Operations — AI data center PPA template","f":["fgeo"],"b":"Constellation Energy (CEG — ~10% of US electricity). Microsoft Three Mile Island restart (2024) = 20yr PPA at ~$110/MWh for 24/7 carbon-free power. Template being replicated across CEG fleet. SMRs: GE-Hitachi BWRX-300 (Ontario Power 4-unit order — first Western commercial SMR contract); X-energy Xe-100 (Dow Chemical site); BWXT as components supplier."},
+    "di_cu":  {"t":"Copper — Grid infrastructure & transformer bottleneck","f":["fgp"],"b":"Grid components: Hitachi Energy (world's largest LPT maker, multi-year backlog), ABB (ABBN), Eaton (ETN), GE Vernova (GEV). HV cables: Prysmian (PRY.MI), Nexans (NEX.PA) — 3-4yr backlog. Grid EPC: Quanta (PWR, ~40% US market). Transformer lead times: 2-4 years. Unprecedented simultaneous demand from AI DCs + EVs + grid hardening."},
+    "rf_li":  {"t":"Lithium — Processing & cell manufacturing (Chinese chokehold)","f":["fch","fgeo"],"b":"~70% of global LiOH conversion is Chinese. Battery precursor (pCAM): Umicore, BASF, CNGR/Huayou (China dominant). Cells: CATL (~37%), BYD, Panasonic, Samsung SDI, LGES, SK On. IRA domestic content requirements forcing reshoring — 5-10yr lag. Arcadium (Rio Tinto) + Piedmont building non-Chinese conversion."},
+    "pr_nu":  {"t":"Uranium Mining — extreme supply concentration","f":["fch","fgp","fgeo"],"b":"Cameco (CCO — world's highest-grade; ~15% global supply); Kazatomprom (KAP — ~40% global ISR; geopolitically ambiguous); Paladin (Langer Heinrich, Namibia); UEC (US ISR); Boss Energy (Australia). Top 3 = ~65% of global supply. Supply has not met demand since Fukushima (2011) — 12+ years of inventory drawdown."},
+    "rr_cu":  {"t":"Copper — Royalty & streaming (best risk-adjusted exposure in the vertical)","f":[],"b":"FNV and WPM hold silver/gold streams at major copper mines — best risk-adjusted structure in the hard assets universe. WPM key streams: Antamina Ag (Peru), Salobo Au (Brazil), Constancia Ag (Peru). Streaming = Cu upside without capex, processing risk, or jurisdictional concentration. Sits above the Chinese smelting chokepoint entirely."},
+    "pr_fert":{"t":"Fertilizers — Potash mining (allied-nation food security play)","f":["fgeo"],"b":"Nutrien (NTR — world's largest K producer + significant N+P; ONLY complete NPK company globally; Canpotex JV with Mosaic controls Canadian export logistics worldwide). Mosaic (MOS — Esterhazy K + Florida P mining). ICL Group (Israel — Dead Sea Works K + Rotem P). OCP Morocco (state-owned private, ~70% global phosphate reserves — the long-term chokepoint to monitor)."},
+    "rc_li":  {"t":"Battery recycling — geopolitically domesticated supply","f":["fgeo"],"b":"Li-Cycle (LICY — hub+spoke hydromet; strategic asset); Redwood Materials (private — JB Straubel; DOE loan; major OEM partnerships). DoD + IRA funding flowing. Domesticated supply bypasses Chinese processing control. 2026-2030 is the inflection point as first generation of mass-market EVs reaches end-of-life."},
+    "rf_nu2": {"t":"Nuclear Fuel Fabrication — sticky oligopoly at the final processing step","f":["fch"],"b":"Westinghouse (Brookfield-owned; Columbia SC + Springfields UK); Framatome (EDF subsidiary, France); GNF (GE-Hitachi + Toshiba JV, Wilmington NC). 5-7yr reactor qualification cycles = extremely sticky customer relationships. Once a utility qualifies a fuel supplier for a specific reactor design, they rarely switch."}
+  },
+  "b_band": [
+    {"n":"Exploration svcs.","items":["SLB,HAL,BKR (OFS)","TGS,PGS (seismic)","SGS,BV (assay)","H&P,PTEN,RIG,VAL (rigs)","Orica (explosives)","Perenti (contract mining)","SGS,Intertek (assay)","Planet Labs PL","Worley WOR.AX (EPC)","Chart GTLS (cryo)","—"]},
+    {"n":"Infra. EPC","items":["Fluor,McDermott (oil)","Primoris,MRC Global","TechnipFMC FTI (LNG)","Worley WOR.AX (mine)","BWXT,Framatome (nuc)","Tetra Tech TTEK (water)","Quanta PWR (grid)","MYR,Emcor,MasTec","—","Chart GTLS (cryo)","CAT,Deere DE"]},
+    {"n":"Equipment & capex","items":["SLB,HAL (completions)","Chart GTLS (cryo)","CAT,Komatsu (trucks)","Sandvik,Epiroc (drill)","Metso,FLSmidth (proc)","Weir Group (slurry)","ABB,ETN,GEV (grid)","EMR,HON (automation)","XYL,ERII (water tech)","Chart GTLS (ASU)","CAT,Deere DE"]},
+    {"n":"Royalties/trading","items":["FNV,WPM,RGLD","FNV,WPM,RGLD","SPUT,YCA (phys U)","FNV,WPM,RGLD","WPM,RGLD (streams)","FNV (streams)","CME,ICE (exchanges)","FNV,WPM (streams)","—","—","CME,ICE (ag futures)"]},
+    {"n":"Recycling","items":["CLH,HCCI (lube)","CLNE,MNTK (RNG)","Orano,Holtec (nuc)","Aurubis,Metallo (Cu)","Li-Cycle,Redwood (Li)","Cyclic,Urban Mining","Tin dross processors","JM,Umicore,SBSW","XYL,Veolia (water)","—","Struvite P recovery"]}
+  ],
+  "c_band": [
+    {"t":"Electricity & power grid","c":"#534AB7","rows":[
+      {"n":"Generation","s":"VST,NRG,CEG (nuclear),Duke,NextEra NEE,GE Vernova GEV"},
+      {"n":"Transmission (HV)","s":"Hitachi Energy, ABB, Siemens Energy ENR.DE, GE Vernova GEV"},
+      {"n":"Distribution (MV/LV)","s":"AEP,Exelon,DTE; Eaton ETN,ABB,nVent NVT; Itron ITRI (meters)"},
+      {"n":"Grid storage (BESS)","s":"Fluence FLNC, Tesla Megapack, AES Corp, NextEra, Eos EOSE"},
+      {"n":"Grid EPC","s":"Quanta PWR (~40% US market), MYR MYRG, Emcor EME, MasTec MTZ"},
+      {"n":"Grid components","s":"Hitachi Energy, ABB, Eaton ETN, GEV; Prysmian PRY + Nexans NEX"}
+    ]},
+    {"t":"Energy infrastructure","c":"#EF9F27","rows":[
+      {"n":"Gas pipelines","s":"KMI, Energy Transfer ET, Enterprise EPD, Williams WMB"},
+      {"n":"LNG terminals","s":"Cheniere LNG, Venture Global VGAS, NFE, Sempra"},
+      {"n":"Crude export terminals","s":"Moda Midstream (VLCC-capable), Enterprise EPD, Plains PAA"},
+      {"n":"Crude & product storage","s":"Vopak Netherlands, Oiltanking, PAA tank assets"},
+      {"n":"Refineries","s":"Valero VLO, Marathon MPC, Phillips 66 PSX, PBF, HF Sinclair DINO"},
+      {"n":"LNG regasification","s":"Excelerate EE, Höegh LNG, NFE import side"}
+    ]},
+    {"t":"Digital & industrial infra","c":"#185FA5","rows":[
+      {"n":"Data centers","s":"AMZN, MSFT, GOOG — largest new industrial power users globally"},
+      {"n":"DC power systems","s":"Vertiv VRT, Eaton ETN, Schneider Electric SU.PA"},
+      {"n":"DC cooling","s":"Vertiv (liquid cooling fastest-growing), Modine MOD, Evapco"},
+      {"n":"Nuclear for AI","s":"CEG–Microsoft TMI restart; data center PPA pipeline growing rapidly"},
+      {"n":"Gas for AI power","s":"VST, NRG, Calpine — CCGT default 24/7 dispatchable DC load"},
+      {"n":"Water for AI","s":"ERII desalination; AZ/VA water constraints on DC siting emerging"}
+    ]}
+  ],
+  "vertical_order": [
+    {"g":"Energy","ids":["oil","ng","nu"]},
+    {"g":"Metals","ids":["cu","li","re","tm","pg"]},
+    {"g":"Inputs","ids":["wl","ii","fert"]}
+  ],
+  "cross_links": {
+    "oil":"ng","ng":"nu","nu":"oil",
+    "cu":"re","li":"cu","re":"li",
+    "tm":"pg","pg":"tm",
+    "wl":"cu","ii":"wl","fert":"ng"
+  },
+  "integrated_companies": "Glencore GLEN.L (Cu+Co+coal+oil+trading) · BHP (Cu+Fe+Ni+K) · Rio Tinto (Cu+Li+Al+REE) · XOM/Shell/Total (oil+gas+LNG) · Nutrien NTR (K+N+P — only complete NPK) · Siemens Energy ENR.DE (turbines+grid+wind) · Umicore UMI.BR (Co+pCAM+PGM recycle) · Johnson Matthey JMAT.L (PGM chemistry+autocatalyst+recycle)"
+}

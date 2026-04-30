@@ -1,0 +1,183 @@
+{
+  "_meta": {
+    "description": "Chain explainer cards for all 12 verticals (11 commodity + 1 derived electricity). Each card has a hook line, chain arrow, body text, and value-capture bars."
+  },
+  "explainers": [
+    {
+      "id": "oil",
+      "n": "Oil",
+      "c": "#5F5E5A",
+      "hk": "From geological rights to petrol station — and now to AI data center power and aerospace composites.",
+      "ar": "Rights/Royalties → Exploration → Extraction → Gathering → Refinery → Pipeline/Tanker → End-use",
+      "bd": "<b>Two distinct economic businesses inside \"oil\":</b><br>(1) Upstream production: leveraged to crude price (~$45 WTI Permian breakeven, strong cash at $70-80).<br>(2) Refining: crack spreads — entirely independent of crude price. A refiner can have its best year when crude is cheap and spreads are wide. Post-2020 global refinery closures structurally elevated crack spreads.<br><br><b>Offshore layer:</b> UDW drillships operate on day-rate contracts — a separate investment cycle from upstream equity. Utilization ~90%+ with almost no new drillships since 2015. Tidewater (TDW) runs offshore supply vessels — the essential support infrastructure for every deepwater operation, often overlooked by analysts focused on drillers and E&P.<br><br><b>AI demand driver:</b> Gas-fired CCGT is the default 24/7 dispatchable power for AI data centers. Every 100MW campus adds ~0.7 Bcf/yr gas demand. Connects the oil/gas chain directly to the AI buildout.",
+      "vals": [
+        { "l": "Royalty/rights (VNOM)", "v": 90, "n": "Zero capex income" },
+        { "l": "Low-cost prod. (DVN)", "v": 78, "n": "Price cycle leverage" },
+        { "l": "Refining complex (VLO)", "v": 72, "n": "Crack spread driven" },
+        { "l": "UDW drillers (TDW)", "v": 65, "n": "Day-rate mid-cycle" },
+        { "l": "Product tankers (STNG)", "v": 60, "n": "Tonne-mile upside" }
+      ]
+    },
+    {
+      "id": "ng",
+      "n": "Natural Gas & LNG",
+      "c": "#EF9F27",
+      "hk": "From Appalachian shale to European power grid — the chain that became a NATO strategic asset in February 2022.",
+      "ar": "E&P → Gathering → Gas Processing (NGL) → Pipeline Transmission → LNG Liquefaction → LNG Tanker → Regas → Power/Industry",
+      "bd": "<b>Key economic split:</b><br>Domestic pipeline gas (fee-based, regulated) vs. LNG export (~$2.50-3.50/MMBTU tolling fee regardless of destination LNG price — earnings stability regardless of commodity prices). Cheniere earns its fee whether LNG is $5 or $25/MMBTU.<br><br><b>2022 strategic reset:</b> Russia cut gas to Europe. European utilities signed 20yr US LNG SPAs in 2022-2024. These contracts cannot be unwound — they lock in US/Qatar supply for two decades. US LNG is now a direct instrument of NATO energy security policy. This structural shift cannot be reversed by a ceasefire or diplomatic normalization.<br><br><b>Three structural demand drivers:</b> (1) European energy security — locked in. (2) Asian LNG growth — India, SE Asia adding import capacity. (3) AI data center power — gas-fired CCGT is the only immediately scalable 24/7 dispatchable power solution for hyperscale data center loads.",
+      "vals": [
+        { "l": "LNG terminals (LNG,VGAS)", "v": 92, "n": "20yr tolling + strategic" },
+        { "l": "Royalty/rights (BSM)", "v": 88, "n": "Pure income, no capex" },
+        { "l": "Pipelines (KMI,ET,WMB)", "v": 80, "n": "Fee-based regulated" },
+        { "l": "Gas processing (TRGP)", "v": 70, "n": "Fee + NGL upside" },
+        { "l": "Gas producers (EQT,AR)", "v": 65, "n": "Henry Hub leveraged" }
+      ]
+    },
+    {
+      "id": "nu",
+      "n": "Nuclear & Uranium",
+      "c": "#534AB7",
+      "hk": "From geological uranium to AI data center baseload — 5 processing steps, each an oligopoly, the most acute Western strategic vulnerability in energy.",
+      "ar": "Mining (U3O8) → Milling (yellowcake) → Conversion (UF6) → Enrichment (SWU) → Fuel Fab → Reactor → Electricity",
+      "bd": "<b>Why each step matters:</b> Only ~4 commercial conversion facilities globally. Enrichment: 2-3 Western operators. Fuel fabrication: 3-4 company oligopoly with 5-7yr qualification lock-in. At every step, the number of Western suppliers is smaller than is comfortable for energy security — and Russia controlled critical positions in each.<br><br><b>Enrichment crisis:</b> TENEX/Rosatom controlled ~28% of US SWU. Centrus Energy (LEU) is the ONLY US company with active domestic enrichment capacity. The US is rebuilding from near-zero. This is year 1-2 of a decade-long program. HALEU (for SMRs and advanced reactors) has essentially zero non-Russian supply.<br><br><b>AI PPA thesis:</b> 24/7 carbon-free power + 15-20yr price certainty = exactly what hyperscalers want. CEG-Microsoft TMI deal ($110/MWh, 20yr) is the commercial template now being replicated across the CEG fleet and at other nuclear utilities.",
+      "vals": [
+        { "l": "Enrichment (Centrus LEU)", "v": 95, "n": "Near-monopoly rebuild" },
+        { "l": "Physical U trusts (SPUT)", "v": 88, "n": "Price leverage, no ops" },
+        { "l": "Nuclear operators (CEG)", "v": 85, "n": "AI PPA premium" },
+        { "l": "Uranium mining (CCO,NXE)", "v": 75, "n": "Supply gap leverage" },
+        { "l": "Fuel fabrication (Westinghouse)", "v": 62, "n": "Sticky oligopoly" }
+      ]
+    },
+    {
+      "id": "cu",
+      "n": "Copper",
+      "c": "#D85A30",
+      "hk": "From Chilean open-pit mine to AI data center bus bar — the metal the energy transition literally cannot happen without.",
+      "ar": "Royalties → Mining → Flotation Concentration → Smelting → LME Cathode → Wire Rod → HV Cable → Grid/EV/DC",
+      "bd": "<b>Supply math:</b> 16-17yr average mine development timeline. No major greenfield copper mine in >10yr. TC/RC near-zero or negative in early 2024 = historically earliest possible market signal of a structural squeeze. When smelters pay miners to take concentrate (negative TC/RC), concentrate is genuinely scarce at the margin.<br><br><b>Demand math — all locked-in:</b> 5,000T Cu per GW solar · 8,000T per GW offshore wind · 26kg per EV · ~500T per 100MW DC campus. These are compounding additions every year from locked-in programs.<br><br><b>The streaming structure:</b> FNV and WPM's silver/gold streams at copper mines provide Cu upside without capex, processing risk, or jurisdictional concentration — the geopolitically optimal investment structure since it sits above the Chinese smelting chokepoint entirely.",
+      "vals": [
+        { "l": "Streaming (FNV,WPM)", "v": 92, "n": "Best risk-adjusted" },
+        { "l": "Low-cost miners (SCCO)", "v": 82, "n": "Margin through cycle" },
+        { "l": "HV cable (PRY.MI,NEX)", "v": 76, "n": "Multi-year backlog" },
+        { "l": "Grid EPC (PWR,EME)", "v": 72, "n": "Infrastructure leveraged" },
+        { "l": "Cu scrap (Aurubis)", "v": 60, "n": "Domesticated supply" }
+      ]
+    },
+    {
+      "id": "li",
+      "n": "Lithium & Battery Metals",
+      "c": "#1D9E75",
+      "hk": "From Atacama salar to EV battery pack — cyclical trough within a 20-year structural bull market.",
+      "ar": "Brine/Spodumene Mining → LiOH/Li2CO3 Conversion → pCAM Precursors → Battery Cells → Pack Assembly → EV or Grid BESS",
+      "bd": "<b>Processing trap:</b> SC6% spodumene ships from Australia to China for conversion — handing the strategic value-add step to an adversarial processor. ~70% of global LiOH conversion is Chinese. IRA domestic content is the forcing function for reshoring — but the non-Chinese processing capacity to meet that mandate barely exists yet. This is a 5-10yr build-out problem.<br><br><b>Cycle vs. structure:</b> Li carbonate fell ~80% from its 2022 peak driven by Australian spodumene supply meeting lower-than-expected near-term EV demand. The 2026-2030 demand wave (EV >30% penetration globally + grid BESS scaling independently) will create a new supply deficit. This is a buy-the-dip opportunity within a structural bull market.<br><br><b>Sub-divide critically:</b> Cobalt (~65% DRC, Glencore dominant), Nickel (Indonesian Class 2 oversupply), Manganese each have distinct supply chains and should be tracked separately — not bundled as \"battery metals.\"",
+      "vals": [
+        { "l": "Non-Chinese conversion (ALB)", "v": 85, "n": "Reshoring premium" },
+        { "l": "Battery recycling (Li-Cycle)", "v": 80, "n": "Domesticated supply" },
+        { "l": "DLE technology (SLI)", "v": 72, "n": "Disruption optionality" },
+        { "l": "Grid BESS (FLNC,AES)", "v": 70, "n": "Independent demand driver" },
+        { "l": "Low-cost brine (SQM)", "v": 65, "n": "Post-correction entry" }
+      ]
+    },
+    {
+      "id": "re",
+      "n": "REE & Specialty Minerals",
+      "c": "#993556",
+      "hk": "From Chinese rare earth mines to EV motor magnets — the supply chain where China has the most leverage and has already begun using it.",
+      "ar": "REE Mining → Ore Cracking → Separation → Metal Production → NdFeB Alloy → Sintered Magnets → EV/Wind/Robot",
+      "bd": "<b>Why separation is the chokepoint:</b> REEs co-occur geologically but must be separated individually via solvent extraction — a chemically intensive, expertise-intensive process China built over 30 years. ~85-90% of global REE separation is Chinese. Building Western capacity takes 5-7 years from commitment to first production. HREE (Dy, Tb): essentially NO Western separation capacity today — this is the most critical unresolved gap in Western critical minerals security.<br><br><b>LREE vs. HREE:</b> Light REEs (Nd, Pr) = the magnet volume — MP Materials and Lynas are building Western production. Heavy REEs (Dy, Tb) = high-temperature performance enhancers needed for EV and defense magnets — zero Western separation capacity at scale.<br><br><b>Robotics demand multiplier (not in any consensus forecast):</b> Each industrial robot uses 6-12 REE permanent magnet motors (~2-3kg NdFeB total). The global robotics buildout driven by AI-enabled automation and manufacturing reshoring could double the REE demand trajectory vs. EV-only models.",
+      "vals": [
+        { "l": "Western REE separation (MP,Lynas)", "v": 95, "n": "Scarcity + policy premium" },
+        { "l": "NdFeB magnets (MP Fort Worth)", "v": 90, "n": "Policy-backed build-out" },
+        { "l": "HREE development (Lynas TX)", "v": 88, "n": "Critical gap — first mover" },
+        { "l": "REE mining (MP,Lynas,UUUU)", "v": 72, "n": "Growing non-China base" }
+      ]
+    },
+    {
+      "id": "tm",
+      "n": "Technology & Electronics Metals",
+      "c": "#185FA5",
+      "hk": "From Chinese gallium mines to AI chip solder joints — the smallest metals with the largest strategic importance, now being actively weaponized.",
+      "ar": "Byproduct Mining (Al/Zn/Cu smelters) → Metal Refining → Specialty Alloys/Solder → Electronics Assembly → AI Chips/Solar/5G/Defense",
+      "bd": "<b>Weaponization already active:</b> China imposed export controls on gallium and germanium (August 2023) and antimony (September 2024). These are not threats — they have already happened. Gallium is essential for GaN semiconductors (5G base stations, EV inverters, satellite power electronics). Germanium for fiber optics and defense IR thermal imaging. Western policy response remains minimal relative to urgency.<br><br><b>Tin and AI:</b> Advanced chip packaging for AI (TSMC CoWoS, HBM 3D stacking) INCREASES tin intensity per unit of AI compute — HBM memory uses micro-bump solder at <50 micron pitch. Unlike most materials where compute efficiency reduces consumption, more AI chips = more tin per package. This is the structural tin thesis unique to this vertical.<br><br><b>Investable universe is thin but strategic:</b> Alphamin (AFMJF — tin, DRC, world's highest-grade), Perpetua Resources (PPTA — antimony + gold, DoD MOU), AXT Inc (AXTI — GaAs/GaN substrates), Malaysia Smelting Corp (MSC — listed tin smelter).",
+      "vals": [
+        { "l": "Perpetua PPTA (Sb+Au)", "v": 82, "n": "DoD off-take, unique" },
+        { "l": "Alphamin AFMJF (Sn)", "v": 78, "n": "AI packaging leverage" },
+        { "l": "AXT Inc AXTI (GaN sub.)", "v": 70, "n": "5G/EV/defense" },
+        { "l": "WPM Ag streams (solar)", "v": 65, "n": "Solar structural driver" }
+      ]
+    },
+    {
+      "id": "pg",
+      "n": "PGMs, Gold & Silver",
+      "c": "#888780",
+      "hk": "From South African deep mines to hydrogen fuel cells and central bank vaults — a vertical in structural transition.",
+      "ar": "Mining (SA Bushveld / Stillwater) → PGM Smelting → Complex Refining → Autocatalyst/H2/Jewelry → Recycling (~30-40% of supply)",
+      "bd": "<b>The palladium transition:</b> Palladium is in structural ICE-to-EV demand decline — autocatalyst demand peaked or is peaking. Platinum is the beneficiary via (1) Pd-for-Pt substitution in petrol catalysts, and (2) PEM hydrogen electrolyzers (long-dated demand wave 2028-2035).<br><br><b>South Africa structural risk:</b> Eskom power reliability, labor cost inflation, and aging mine infrastructure are real and persistent — not adversarially weaponized but systemically fragile. SBSW dividend sustainability is a recurring question. SA PGM mining is structurally cost-challenged in ways that may not fully reverse.<br><br><b>Gold as monetary hedge:</b> Gold is not a supply/demand story — it is driven by real interest rates, USD strength, and central bank reserve diversification. Central bank net purchases at record levels 2022-2024 (China, India, Turkey, Poland, Singapore) as de-dollarization accelerates. Gold streamers (FNV, WPM, RGLD) are the cleanest expression — no SA operational risk.",
+      "vals": [
+        { "l": "PGM streaming (WPM)", "v": 75, "n": "Best structure available" },
+        { "l": "Gold streamers (FNV,RGLD)", "v": 72, "n": "Monetary hedge + no ops" },
+        { "l": "Platinum (H2 electrode)", "v": 68, "n": "Long-dated structural" },
+        { "l": "Primary Ag miners (AG)", "v": 55, "n": "Highest Ag price leverage" }
+      ]
+    },
+    {
+      "id": "wl",
+      "n": "Industrial Water & Land",
+      "c": "#3B6D11",
+      "hk": "The silent constraint on every other vertical — water limits mine output, nuclear siting, and AI data center permits.",
+      "ar": "Water Rights → Raw Supply → Industrial Treatment → Process Use (Mine/Power/DC) → Produced Water Mgmt → Recycling/Reuse",
+      "bd": "<b>Why this is a hard asset:</b> BHP Escondida and Codelco pump seawater UP 3,200 meters in the Atacama because there is literally no natural freshwater at altitude in one of the world's driest regions. The water constraint directly caps how much copper and lithium can be produced from the world's most important mining region. Water availability limits supply in the same way that ore grade limits supply.<br><br><b>AI data center intersection:</b> A 100MW hyperscale DC using evaporative cooling consumes 1-2 million gallons per day. Arizona State Land Department has begun denying new DC water permits in the Phoenix metro area — the same state where Intel Fab 52/62 and TSMC Fab 21 are being built. Water availability is now a semiconductor and AI compute site selection constraint.<br><br><b>ERII near-monopoly:</b> Energy Recovery (ERII) holds ~50% global market share in high-efficiency pressure exchanger devices for reverse osmosis desalination — a near-monopoly niche at the intersection of water scarcity, copper/lithium mine expansion, and AI infrastructure constraints. One of the clearest structural investment cases in the universe.",
+      "vals": [
+        { "l": "Water rights (VWTR)", "v": 85, "n": "Scarcity compound interest" },
+        { "l": "Desalination (ERII)", "v": 80, "n": "Near-monopoly niche" },
+        { "l": "Infrastructure land (BIP)", "v": 75, "n": "Early institutional assembly" },
+        { "l": "Produced water (ARIS)", "v": 65, "n": "Permian leverage" },
+        { "l": "Water treatment (XYL)", "v": 60, "n": "Industrial water growth" }
+      ]
+    },
+    {
+      "id": "ii",
+      "n": "Specialty Industrial Inputs",
+      "c": "#854F0B",
+      "hk": "From atmospheric air to semiconductor fab chamber — the invisible industrial gas infrastructure with near-infinite customer switching costs.",
+      "ar": "Air Separation (O₂/N₂/Ar) / Mineral Extraction → Processing → UHP Grades → Cryogenic Distribution → Pharma/Semicon/Aerospace/Defense",
+      "bd": "<b>The Linde/APD on-site plant moat:</b> For large industrial customers (chip fabs, hospitals, steel plants), Linde and Air Products build dedicated air separation plants physically embedded in the customer's facility under 15-20yr sole-source contracts. The plant is wired into the customer's production process — switching requires a facility rebuild that would shut down operations for months or years. Switching cost = effectively infinite. ~40% combined global industrial gas market share. Revenue grows every time a new chip fab, hospital, or major industrial plant is built globally.<br><br><b>Titanium supply chain reset:</b> VSMPO-AVISMA (Russia) supplied ~35% of Boeing's and Airbus's titanium before 2022. ATI Inc (ATI) is the primary US beneficiary of the diversification that is now in progress. Multi-year tailwind as long-term aerospace sourcing agreements shift permanently away from Russia.<br><br><b>Materion (MTRN) — the hidden defense-critical play:</b> Materion operates the ONLY Western beryllium mine at Spor Mountain, Utah and the ONLY US beryllium processing capability. Beryllium is in nuclear warheads, aerospace structural components, and defense electronics with no substitutes in many applications. <$1.5B market cap. Systematically underowned.",
+      "vals": [
+        { "l": "LIN/APD on-site plants", "v": 90, "n": "Utility moat + tech premium" },
+        { "l": "Materion MTRN (Be)", "v": 82, "n": "Near-monopoly, defense critical" },
+        { "l": "ATI Inc (Ti/specialty alloys)", "v": 78, "n": "Defense + aerospace" },
+        { "l": "Chart Industries GTLS", "v": 65, "n": "LNG/gas/H2 crossover" }
+      ]
+    },
+    {
+      "id": "fert",
+      "n": "Fertilizers & Crop Inputs",
+      "c": "#639922",
+      "hk": "From Saskatchewan potash mines to global food production — Russia weaponized food security and Canada became strategically irreplaceable.",
+      "ar": "K Mining / P Mining / Natural Gas → Primary Processing (MOP / H3PO4 / NH3) → NPK Mfg → Bulk Shipping → Agricultural Application",
+      "bd": "<b>How the chain works:</b> Plants need three primary nutrients — N (synthesized from natural gas via Haber-Bosch), P (mined from phosphate rock, acid-processed to DAP/MAP), and K (mined from underground evaporite deposits as MOP potash). The three nutrients have completely different geographies, economics, and supply chains — which is precisely why Nutrien (NTR) is unique as the only company globally with significant scale in all three under one roof.<br><br><b>2022 geopolitical reset:</b> Russia/Belarus jointly controlled ~40% of global potash before 2022 sanctions. Russia also used fertilizer export restrictions and grain blockades as coercive foreign policy tools. Nutrien + Mosaic became strategically critical as the primary allied-nation alternatives. Canpotex JV controls Canadian export logistics globally.<br><br><b>Morocco phosphate chokepoint:</b> OCP Group controls ~70% of global phosphate reserves. Not adversarially weaponized today but represents an extreme single-country concentration. Phosphate is essentially non-renewable — a long-duration scarcity thesis that will become increasingly acute over decades.",
+      "vals": [
+        { "l": "Nutrien NTR (full NPK)", "v": 78, "n": "Unique full NPK scale" },
+        { "l": "Mosaic MOS (K+P)", "v": 72, "n": "Dual nutrient exposure" },
+        { "l": "ICL Group (K+P)", "v": 68, "n": "Allied multi-jurisdiction" },
+        { "l": "CF Industries CF (N)", "v": 65, "n": "Henry Hub leveraged" },
+        { "l": "ERII (mine water/desal)", "v": 70, "n": "Food + water nexus" }
+      ]
+    },
+    {
+      "id": "elec",
+      "n": "Electricity & Power Grid",
+      "c": "#534AB7",
+      "hk": "From power station to AI data center — the derived sector that electrifies everything else. Most active capital deployment area in the universe right now.",
+      "ar": "Generation (gas/nuclear/wind/solar) → Transmission (HV transformers) → Distribution (MV/LV) → Storage (BESS) → End-use",
+      "bd": "<b>Why electricity is a derived sector:</b> Unlike commodity verticals, electricity is the OUTPUT of multiple fuel inputs (gas, uranium, wind, solar, hydro) and the primary INPUT to virtually every other economic activity. The grid components layer (transformers, switchgear, cables) is the critical infrastructure chokepoint that touches all fuel inputs simultaneously.<br><br><b>The transformer crisis:</b> Large power transformer lead times went from 6-9 months (2018) to 2-4 years (2024-2025). Three simultaneous demand drivers: AI data centers (100-500MW+ per campus), EV charging infrastructure (each Level 3 station needs a substation upgrade), and grid hardening against extreme weather. Hitachi Energy, ABB, and Eaton have unprecedented multi-year backlogs. New manufacturing capacity takes 3-5 years to build.<br><br><b>The AI PPA revolution:</b> Hyperscalers are signing 20yr direct PPAs with nuclear operators and gas generators. CEG-Microsoft TMI ($110/MWh, 20yr) is the template. This is restructuring how power is contracted in the US — the biggest structural change in power market contracting in decades. Full detail in Widget 2 — Electricity & Grid tab.",
+      "vals": [
+        { "l": "Grid components (ETN,ABB,GEV)", "v": 92, "n": "Transformer bottleneck 2-4yr" },
+        { "l": "Grid EPC (PWR,EME,MYRG)", "v": 88, "n": "Multi-year backlog moat" },
+        { "l": "Nuclear ops + AI PPA (CEG)", "v": 85, "n": "24/7 clean + price certainty" },
+        { "l": "HV cables (PRY.MI,NEX.PA)", "v": 78, "n": "North Sea backlog building" },
+        { "l": "Grid BESS (FLNC,AES)", "v": 72, "n": "Renewable enabler" }
+      ]
+    }
+  ]
+}

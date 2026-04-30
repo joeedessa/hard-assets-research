@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hard Assets Research — Widget 2: Investment Framework</title>
+<style>
+/* ── Standalone CSS variable definitions ── */
+:root{
+  --font-sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --color-text-primary:#111827;
+  --color-text-secondary:#374151;
+  --color-text-tertiary:#6B7280;
+  --color-text-info:#1D4ED8;
+  --color-background-primary:#FFFFFF;
+  --color-background-secondary:#F9FAFB;
+  --color-background-info:#EFF6FF;
+  --color-border-tertiary:#E5E7EB;
+  --color-border-secondary:#D1D5DB;
+  --color-border-info:#BFDBFE;
+}
+body{margin:0;padding:12px;background:#fff;font-family:var(--font-sans)}
+#loading{font-size:13px;color:#6B7280;padding:20px;text-align:center}
+/* ── Original widget CSS ── */
+*{box-sizing:border-box}
+.w{padding:.4rem 0;font-family:var(--font-sans)}
+.tabs{display:flex;border-bottom:.5px solid var(--color-border-tertiary);margin-bottom:6px;overflow-x:auto}
+.tab{padding:4px 11px;font-size:10px;cursor:pointer;color:var(--color-text-secondary);border-bottom:2px solid transparent;margin-bottom:-.5px;white-space:nowrap}
+.tab.on{color:var(--color-text-primary);border-bottom-color:var(--color-text-primary);font-weight:500}
+.view{display:none}.view.on{display:block}
+.note{font-size:9px;color:var(--color-text-tertiary);background:var(--color-background-secondary);border-radius:3px;padding:3px 6px;margin-bottom:5px;line-height:1.5}
+.note b{color:var(--color-text-secondary);font-weight:500}
+.pills{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px}
+.pill{padding:2px 8px;border-radius:20px;font-size:9px;font-weight:500;cursor:pointer;border:.5px solid var(--color-border-secondary);color:var(--color-text-secondary);background:transparent;transition:all .12s}
+.pill.on{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+/* Picks & Shovels */
+.sec{margin-bottom:12px}
+.sec-head{display:flex;align-items:center;gap:7px;margin-bottom:5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)}
+.sec-num{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:500;color:#fff;flex-shrink:0}
+.sec-title{font-size:11px;font-weight:500;color:var(--color-text-primary)}
+.sec-sub{font-size:8.5px;color:var(--color-text-tertiary);margin-left:auto}
+.why{border-radius:0 5px 5px 0;border-left:3px solid;padding:5px 8px;margin-bottom:6px;font-size:8.5px;color:var(--color-text-secondary);line-height:1.5}
+.ps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:4px}
+.psc{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:6px 8px;background:var(--color-background-primary)}
+.psc.hi{border-left:3px solid #E24B4A;border-radius:0 5px 5px 0;background:#FCEBEB06}
+.psn{font-size:10px;font-weight:500;color:var(--color-text-primary);margin-bottom:1px;display:flex;align-items:center;gap:4px}
+.psr{font-size:8.5px;color:var(--color-text-secondary);line-height:1.4;margin-bottom:3px}
+.pst{font-size:8px;color:var(--color-text-tertiary);line-height:1.4}
+.srv{font-size:7.5px;font-weight:500;padding:1px 4px;border-radius:2px;background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary);cursor:default;display:inline-block;margin:1px}
+.badge{font-size:7.5px;font-weight:500;padding:1px 5px;border-radius:3px}
+.b-hot{background:#FCEBEB;color:#791F1F}
+.b-str{background:#E1F5EE;color:#085041}
+.b-mod{background:#FAEEDA;color:#633806}
+/* Electricity */
+.bottleneck{border:.5px solid #E24B4A;border-left:3px solid #E24B4A;border-radius:0 5px 5px 0;padding:6px 9px;background:#FCEBEB0A;margin-bottom:6px}
+.bt{font-size:11px;font-weight:500;color:#A32D2D;margin-bottom:2px}
+.bb2{font-size:9px;color:var(--color-text-secondary);line-height:1.5}
+.el-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:4px}
+.elc{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:6px 8px;background:var(--color-background-primary);cursor:pointer}
+.elc.hi{border-top:3px solid #E24B4A;border-radius:5px}
+.elc:hover,.elc.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.elh{display:flex;align-items:center;gap:4px;margin-bottom:2px}
+.eld{width:7px;height:7px;border-radius:50%;pointer-events:none}
+.eln{font-size:10px;font-weight:500;color:var(--color-text-primary);pointer-events:none}
+.elch{font-size:7px;color:var(--color-text-tertiary);margin-left:auto;transition:transform .12s;pointer-events:none}
+.elc.ex .elch{transform:rotate(180deg)}
+.elb{font-size:8.5px;color:var(--color-text-secondary);line-height:1.4;pointer-events:none}
+.elt{font-size:8px;color:var(--color-text-tertiary);margin-top:2px;pointer-events:none}
+.eld2{font-size:8.5px;color:var(--color-text-secondary);line-height:1.5;margin-top:4px;padding-top:4px;border-top:.5px solid var(--color-border-tertiary);display:none;pointer-events:none}
+.elc.ex .eld2{display:block}
+.sdiv{font-size:8.5px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-tertiary);margin:8px 0 5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)}
+/* Themes */
+.th-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:7px}
+.tn{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:6px 8px;cursor:pointer;transition:all .12s;background:var(--color-background-primary)}
+.tn.on{color:#fff;border-color:transparent}
+.tn-name{font-size:10px;font-weight:500;line-height:1.3}
+.tn-sub{font-size:8px;opacity:.85;line-height:1.3;margin-top:1px}
+.th-detail{display:none}.th-detail.on{display:block}
+.th-2col{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.th-chain{display:flex;flex-direction:column;gap:3px}
+.tc-item{display:flex;align-items:flex-start;gap:5px;padding:4px 6px;border-radius:4px;background:var(--color-background-secondary)}
+.tc-num{width:14px;height:14px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:6.5px;font-weight:500;color:#fff;flex-shrink:0;margin-top:1px}
+.tc-lbl{font-size:9px;font-weight:500;color:var(--color-text-primary)}
+.tc-txt{font-size:8.5px;color:var(--color-text-tertiary);line-height:1.4;margin-top:1px}
+.th-right{display:flex;flex-direction:column;gap:6px}
+.th-box{background:var(--color-background-secondary);border-radius:5px;padding:6px 9px}
+.th-box-title{font-size:8px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px}
+.th-box-body{font-size:9px;color:var(--color-text-secondary);line-height:1.5}
+.risk-box{border-radius:5px;padding:5px 8px;border-left:3px solid #EF9F27;background:#EF9F2708}
+.risk-title{font-size:8px;font-weight:500;color:#633806;margin-bottom:2px}
+.risk-body{font-size:8.5px;color:var(--color-text-secondary);line-height:1.4}
+.pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.pos-card{border:.5px solid var(--color-border-tertiary);border-radius:4px;padding:4px 6px;background:var(--color-background-primary)}
+.pos-tier{font-size:7.5px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary);margin-bottom:1px}
+.pos-items{font-size:8.5px;color:var(--color-text-secondary);line-height:1.5}
+.vbar{display:flex;align-items:center;gap:4px;margin-bottom:3px;font-size:8.5px}
+.vbar-lbl{color:var(--color-text-tertiary);min-width:90px}
+.vbar-b{flex:1;height:4px;border-radius:2px;background:var(--color-background-primary)}
+.vbar-f{height:100%;border-radius:2px}
+/* Portfolio summary */
+.banner{border-radius:6px;padding:9px 11px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary);margin-bottom:7px}
+.banner-title{font-size:11.5px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
+.banner-body{font-size:9.5px;color:var(--color-text-secondary);line-height:1.6}
+.cluster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-bottom:8px}
+.cluster{border-radius:6px;padding:7px 9px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.cluster.early{border-top:3px solid #E24B4A}
+.cluster.mid{border-top:3px solid #EF9F27}
+.cluster.late{border-top:3px solid #888780}
+.cluster-title{font-size:9.5px;font-weight:500;margin-bottom:3px}
+.cluster-items{font-size:8.5px;color:var(--color-text-secondary);line-height:1.7}
+.q4-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;margin-bottom:8px}
+.q4-card{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:7px 9px;background:var(--color-background-primary)}
+.q4-q{font-size:10px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.q4-a{font-size:9px;color:var(--color-text-secondary);line-height:1.5}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:4px}
+.cat-card{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:7px 9px;background:var(--color-background-primary)}
+.cat-head{display:flex;align-items:center;gap:5px;margin-bottom:3px}
+.cat-dot{width:7px;height:7px;border-radius:50%}
+.cat-name{font-size:10px;font-weight:500;color:var(--color-text-primary)}
+.ct-pill{font-size:7.5px;font-weight:500;padding:1px 4px;border-radius:2px;flex-shrink:0}
+.ct-now{background:#E1F5EE;color:#085041;border:.5px solid #5DCAA5}
+.ct-12m{background:#FAEEDA;color:#633806;border:.5px solid #EF9F27}
+.ct-3y{background:#E6F1FB;color:#0C447C;border:.5px solid #378ADD}
+.ct-on{background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary)}
+</style>
+</head>
+<body>
+<div id="loading">Loading hard assets research data…</div>
+<div class="w" id="app" style="display:none">
+<div class="tabs">
+  <div class="tab on" onclick="ST('ps',this)">Picks &amp; Shovels</div>
+  <div class="tab" onclick="ST('el',this)">Electricity &amp; Grid</div>
+  <div class="tab" onclick="ST('th',this)">Demand Themes</div>
+  <div class="tab" onclick="ST('cy',this)">Portfolio Summary</div>
+</div>
+
+<!-- TAB 1: PICKS & SHOVELS -->
+<div class="view on" id="view-ps">
+<div class="note"><b>Picks &amp; shovels</b> — cross-cutting companies that serve ALL commodity verticals. <span style="display:inline-block;border-left:3px solid #E24B4A;padding-left:4px;color:#E24B4A;font-weight:500">red border</span> = highest conviction within category. Cycle badges: <span class="badge b-hot">hot</span> most active capex now &nbsp;<span class="badge b-str">structural</span> long-duration &nbsp;<span class="badge b-mod">moderate</span> mid-cycle</div>
+<div class="pills" id="ps-pills">
+  <button class="pill on" onclick="setPsFilter('all',this)">All categories</button>
+</div>
+<div id="ps-cont"></div>
+</div>
+
+<!-- TAB 2: ELECTRICITY & GRID -->
+<div class="view" id="view-el">
+<div class="bottleneck" id="el-bottleneck">
+  <div class="bt" id="el-bt-title"></div>
+  <div class="bb2" id="el-bt-body"></div>
+</div>
+<div class="pills" id="el-pills">
+  <button class="pill on" onclick="setElView('chain',this)">Full value chain</button>
+  <button class="pill" onclick="setElView('intx',this)">Commodity intersections</button>
+  <button class="pill" onclick="setElView('ai',this)">AI data center demand</button>
+  <button class="pill" onclick="setElView('cycle',this)">Cycle &amp; structure</button>
+</div>
+<div id="el-chain"><div class="el-grid" id="el-chain-grid"></div></div>
+<div id="el-intx" style="display:none"><div class="el-grid" id="el-intx-grid"></div></div>
+<div id="el-ai" style="display:none"><div id="el-ai-cont"></div></div>
+<div id="el-cycle" style="display:none"><div id="el-cycle-cont"></div></div>
+</div>
+
+<!-- TAB 3: DEMAND THEMES -->
+<div class="view" id="view-th">
+<div class="note"><b>Demand themes</b> — 6 cross-vertical investment lenses. Each theme cuts across multiple commodity supply chains. Click a theme to explore its full supply chain position map, thesis, and portfolio positioning.</div>
+<div class="th-nav" id="th-nav"></div>
+<div id="th-detail"></div>
+</div>
+
+<!-- TAB 4: PORTFOLIO SUMMARY -->
+<div class="view" id="view-cy">
+<div id="cy-cont"></div>
+</div>
+</div><!-- end #app -->
+
+<script>
+const BASE='https://raw.githubusercontent.com/joeedessa/hard-assets-research/main/data/';
+let PS,EL_CHAIN,EL_INTX,EL_AI,EL_CYCLE,THEMES,CY_CATS,PORTFOLIO;
+let built={ps:false,el:false,th:false,cy:false};
+
+function mk(t,c){const e=document.createElement(t);if(c)e.className=c;return e;}
+
+function ST(id,el){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
+  el.classList.add('on');
+  document.getElementById('view-'+id).classList.add('on');
+  if(!built[id]){
+    if(id==='ps')buildPS();
+    else if(id==='el')buildEl();
+    else if(id==='th')buildThemes();
+    else if(id==='cy')buildPortfolio();
+    built[id]=true;
+  }
+}
+
+/* ── Picks & Shovels ── */
+function buildPS(){
+  const cont=document.getElementById('ps-cont');
+  // Build filter pills
+  const pills=document.getElementById('ps-pills');
+  PS.forEach(sec=>{
+    const btn=mk('button','pill');
+    btn.textContent=sec.title.split('—')[0].trim();
+    btn.onclick=()=>setPsFilter(sec.id,btn);
+    pills.appendChild(btn);
+  });
+  PS.forEach(sec=>{
+    const s=mk('div','sec');s.dataset.sec=sec.id;
+    const hd=mk('div','sec-head');
+    hd.innerHTML=`<div class="sec-num" style="background:${sec.c}">${sec.id}</div><div class="sec-title">${sec.title}</div><div class="sec-sub">${sec.sub}</div>`;
+    s.appendChild(hd);
+    const why=mk('div','why');
+    why.style.cssText=`border-color:${sec.c};background:${sec.c}08`;
+    why.innerHTML=`<span style="font-size:8px;font-weight:500;color:var(--color-text-primary)">Why this category matters: </span>${sec.why}`;
+    s.appendChild(why);
+    const g=mk('div','ps-grid');
+    sec.cards.forEach(card=>{
+      const c=mk('div',`psc${card.hi?' hi':''}`);
+      const bcls=card.badge==='hot'?'b-hot':card.badge==='structural'?'b-str':'b-mod';
+      const bLbl=card.badge==='hot'?'hot':card.badge==='structural'?'structural':'moderate';
+      const srvHtml=(card.srv||[]).map(s=>`<span class="srv">${s}</span>`).join('');
+      c.innerHTML=`<div class="psn">${card.n}<span class="badge ${bcls}">${bLbl}</span></div><div class="psr">${card.r}</div><div class="pst">${card.t}</div><div style="margin-top:3px">${srvHtml}</div>`;
+      g.appendChild(c);
+    });
+    s.appendChild(g);
+    cont.appendChild(s);
+  });
+}
+
+function setPsFilter(id,btn){
+  document.querySelectorAll('#ps-pills .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.sec').forEach(s=>{
+    s.style.display=(id==='all'||s.dataset.sec===id)?'':'none';
+  });
+}
+
+/* ── Electricity ── */
+function buildEl(){
+  const cg=document.getElementById('el-chain-grid');
+  EL_CHAIN.forEach(card=>{
+    const c=mk('div',`elc${card.hi?' hi':''}`);
+    c.addEventListener('click',()=>c.classList.toggle('ex'));
+    c.innerHTML=`<div class="elh"><div class="eld" style="background:${card.c}"></div><div class="eln">${card.n}</div><div class="elch">▼</div></div><div class="elb">${card.role}</div><div class="elt">${card.tick}</div><div class="eld2">${card.det}</div>`;
+    cg.appendChild(c);
+  });
+  const ig=document.getElementById('el-intx-grid');
+  EL_INTX.forEach(ix=>{
+    const c=mk('div','elc');
+    c.innerHTML=`<div class="elh"><div class="eld" style="background:${ix.c}"></div><div class="eln">${ix.n}</div></div><div class="elb">${ix.body}</div><div class="elt">${ix.tick}</div><div style="margin-top:4px;font-size:8px;background:var(--color-background-secondary);padding:3px 5px;border-radius:3px;color:var(--color-text-secondary)"><b style="color:var(--color-text-primary)">Demand:</b> ${ix.demand}</div>`;
+    ig.appendChild(c);
+  });
+  const ac=document.getElementById('el-ai-cont');
+  const ag=mk('div','el-grid');
+  EL_AI.forEach(d=>{
+    const c=mk('div','elc');
+    c.innerHTML=`<div class="eln" style="margin-bottom:3px">${d.n}</div><div class="elb">${d.body}</div><div class="elt">${d.tick}</div>`;
+    ag.appendChild(c);
+  });
+  ac.appendChild(ag);
+  const cc=document.getElementById('el-cycle-cont');
+  const cg2=mk('div','el-grid');
+  EL_CYCLE.forEach(cy=>{
+    const c=mk('div','elc');
+    const dots=Array(9).fill(0).map((_,j)=>`<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${j<cy.inn?(j===cy.inn-1?cy.c:cy.c+'55'):'var(--color-background-secondary)'};border:.5px solid ${cy.c}44;margin-right:1px"></span>`).join('');
+    c.innerHTML=`<div class="elh"><div class="eld" style="background:${cy.c}"></div><div class="eln">${cy.n}</div><span class="badge" style="background:${cy.vc}22;color:${cy.vc};border:.5px solid ${cy.vc}44;margin-left:auto;font-size:7.5px;padding:1px 5px;border-radius:3px">${cy.verdict}</span></div>
+    <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:2px;font-size:8px"><span style="color:var(--color-text-tertiary)">Structural</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.struct}%;height:100%;background:${cy.c};border-radius:2px"></div></div><span style="font-size:8px;font-weight:500;color:${cy.c}">${cy.struct}</span></div>
+    <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:2px;font-size:8px"><span style="color:var(--color-text-tertiary)">Capex gap</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.capex}%;height:100%;background:#E24B4A;border-radius:2px"></div></div><span style="font-size:8px;font-weight:500;color:#E24B4A">${cy.capex}</span></div>
+    <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:3px;font-size:8px"><span style="color:var(--color-text-tertiary)">Cycle risk</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.bc}%;height:100%;background:#EF9F27;border-radius:2px"></div></div><span style="font-size:8px;font-weight:500;color:#EF9F27">${cy.bc}</span></div>
+    <div style="font-size:8px;color:var(--color-text-tertiary);margin-bottom:2px">Innings: ${dots}<span style="font-weight:500;color:${cy.c}">${cy.inn}/9</span></div>
+    <div class="elb" style="font-size:8px">${cy.body}</div>`;
+    cg2.appendChild(c);
+  });
+  cc.appendChild(cg2);
+}
+
+function setElView(id,btn){
+  document.querySelectorAll('#el-pills .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  ['chain','intx','ai','cycle'].forEach(v=>{
+    document.getElementById('el-'+v).style.display=v===id?'':'none';
+  });
+}
+
+/* ── Demand Themes ── */
+function buildThemes(){
+  const nav=document.getElementById('th-nav');
+  THEMES.forEach(t=>{
+    const btn=mk('div','tn');btn.dataset.id=t.id;
+    btn.innerHTML=`<div class="tn-name" style="color:${t.c}">${t.n}</div><div class="tn-sub">${t.sub}</div>`;
+    btn.addEventListener('click',()=>loadTheme(t.id));
+    nav.appendChild(btn);
+  });
+  loadTheme(THEMES[0].id);
+}
+
+function loadTheme(id){
+  document.querySelectorAll('.tn').forEach(b=>{b.classList.remove('on');b.style.background='';b.style.borderColor='';});
+  const btn=document.querySelector(`.tn[data-id="${id}"]`);
+  const t=THEMES.find(x=>x.id===id);
+  if(btn){btn.classList.add('on');btn.style.background=t.c;btn.style.borderColor=t.c;}
+  const cont=document.getElementById('th-detail');
+  let det=document.getElementById('thd-'+id);
+  if(!det){
+    det=mk('div','th-detail');det.id='thd-'+id;
+    const chain=t.items.map((item,i)=>`
+      <div class="tc-item">
+        <div class="tc-num" style="background:${t.c}">${i+1}</div>
+        <div>
+          <div class="tc-lbl">${item.lbl}</div>
+          <div class="tc-txt">${item.ticks}</div>
+          <div class="tc-txt" style="color:var(--color-text-secondary);margin-top:1px">${item.why}</div>
+        </div>
+      </div>`).join('');
+    const posCards=(t.positions||[]).map(p=>{
+      const [tier,...rest]=p.split(':');
+      return `<div class="pos-card"><div class="pos-tier">${tier}</div><div class="pos-items">${rest.join(':').trim()}</div></div>`;
+    }).join('');
+    const bars=[
+      {l:'Structural demand strength',v:t.struct,c:t.c},
+      {l:'Near-term momentum',v:t.near,c:t.c+'99'},
+      {l:'Business cycle risk',v:t.bc,c:'#EF9F27'},
+    ].map(b=>`<div class="vbar"><div class="vbar-lbl">${b.l}</div><div class="vbar-b"><div class="vbar-f" style="width:${b.v}%;background:${b.c}"></div></div><span style="font-size:8.5px;font-weight:500;color:${b.c};min-width:24px;text-align:right">${b.v}</span></div>`).join('');
+    det.innerHTML=`<div class="th-2col">
+      <div>
+        <div style="font-size:8px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px">Supply chain position map</div>
+        <div class="th-chain">${chain}</div>
+      </div>
+      <div class="th-right">
+        <div class="th-box">
+          <div class="th-box-title">Investment thesis</div>
+          <div class="th-box-body">${t.thesis}</div>
+        </div>
+        <div class="th-box">
+          <div class="th-box-title">Portfolio positioning</div>
+          <div class="pos-grid">${posCards}</div>
+        </div>
+        <div class="th-box">
+          <div class="th-box-title">Structure vs. cycle</div>
+          ${bars}
+        </div>
+        <div class="risk-box">
+          <div class="risk-title">Watch / risk</div>
+          <div class="risk-body">${t.risk}</div>
+        </div>
+      </div>
+    </div>`;
+    cont.appendChild(det);
+  }
+  document.querySelectorAll('.th-detail').forEach(d=>d.classList.remove('on'));
+  det.classList.add('on');
+}
+
+/* ── Portfolio Summary ── */
+function buildPortfolio(){
+  const cont=document.getElementById('cy-cont');
+  // Banner
+  const banner=mk('div','banner');
+  banner.innerHTML=`<div class="banner-title">${PORTFOLIO.defining_insight.title}</div><div class="banner-body">${PORTFOLIO.defining_insight.body}</div>`;
+  cont.appendChild(banner);
+  // Clusters
+  const cg=mk('div','cluster-grid');
+  PORTFOLIO.clusters.forEach(cl=>{
+    const c=mk('div',`cluster ${cl.cls}`);
+    c.innerHTML=`<div class="cluster-title" style="color:${cl.color}">${cl.title}</div><div class="cluster-items">${cl.items.map(i=>`• ${i}`).join('<br>')}</div>`;
+    cg.appendChild(c);
+  });
+  cont.appendChild(cg);
+  // 4 questions
+  const qLabel=mk('div','');
+  qLabel.style.cssText='font-size:8.5px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)';
+  qLabel.textContent='The four-question framework for every position';
+  cont.appendChild(qLabel);
+  const qg=mk('div','q4-grid');
+  PORTFOLIO.four_questions.forEach(item=>{
+    const c=mk('div','q4-card');
+    c.innerHTML=`<div class="q4-q">${item.q}</div><div class="q4-a">${item.a}</div>`;
+    qg.appendChild(c);
+  });
+  cont.appendChild(qg);
+  // Catalyst table
+  const catLabel=mk('div','');
+  catLabel.style.cssText='font-size:8.5px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)';
+  catLabel.textContent='Key catalysts by vertical — now / 12m / 3yr';
+  cont.appendChild(catLabel);
+  const cat_note=mk('div','note');
+  cat_note.innerHTML='<span class="ct-pill ct-now">now</span> already in motion &nbsp;<span class="ct-pill ct-12m">12m</span> next 12 months &nbsp;<span class="ct-pill ct-3y">3yr</span> 2-3 year horizon';
+  cont.appendChild(cat_note);
+  const catg=mk('div','cat-grid');
+  CY_CATS.forEach(cy=>{
+    const c=mk('div','cat-card');
+    const cats=cy.cats.map(cat=>{
+      const tag=cat.includes('(now)')?'ct-now':cat.includes('(12m)')?'ct-12m':cat.includes('(3yr)')?'ct-3y':'ct-on';
+      const label=cat.includes('(now)')?'now':cat.includes('(12m)')?'12m':cat.includes('(3yr)')?'3yr':'ongoing';
+      const text=cat.replace(/\((now|12m|3yr|ongoing)\)/g,'').trim();
+      return `<div style="display:flex;align-items:flex-start;gap:4px;padding:2px 0;border-bottom:.5px solid var(--color-border-tertiary)"><span class="ct-pill ${tag}" style="flex-shrink:0;margin-top:1px">${label}</span><span style="font-size:8px;color:var(--color-text-secondary);line-height:1.4">${text}</span></div>`;
+    }).join('');
+    c.innerHTML=`<div class="cat-head"><div class="cat-dot" style="background:${cy.c}"></div><div class="cat-name">${cy.n}</div></div>${cats}`;
+    catg.appendChild(c);
+  });
+  cont.appendChild(catg);
+}
+
+/* ── Data loading ── */
+async function loadData(){
+  const [ps,elec,themes,portfolio]=await Promise.all([
+    fetch(BASE+'picks-shovels.json').then(r=>r.json()),
+    fetch(BASE+'electricity.json').then(r=>r.json()),
+    fetch(BASE+'themes.json').then(r=>r.json()),
+    fetch(BASE+'portfolio.json').then(r=>r.json()),
+  ]);
+
+  PS       = ps.categories;
+  EL_CHAIN = elec.chain;
+  EL_INTX  = elec.intersections;
+  EL_AI    = elec.ai_themes;
+  EL_CYCLE = elec.cycle;
+  THEMES   = themes.themes;
+  PORTFOLIO= portfolio;
+  CY_CATS  = portfolio.catalyst_table;
+
+  // Populate electricity bottleneck banner
+  document.getElementById('el-bt-title').textContent = elec.bottleneck.title;
+  document.getElementById('el-bt-body').textContent  = elec.bottleneck.body;
+
+  // Show widget
+  document.getElementById('loading').style.display='none';
+  document.getElementById('app').style.display='';
+
+  // Build default tab
+  buildPS();
+  built.ps=true;
+}
+
+loadData().catch(err=>{
+  document.getElementById('loading').textContent='Error loading data: '+err.message+'. Check that the GitHub repo is public and JSON files are committed.';
+});
+</script>
+</body>
+</html>

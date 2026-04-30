@@ -1,0 +1,391 @@
+{
+  "_meta": {
+    "description": "Picks & shovels — 6 cross-cutting service categories that serve ALL commodity verticals. Not inside any single vertical column.",
+    "badge_values": ["hot", "structural", "moderate"],
+    "note": "Cat 6 (Shipping & Marine) added per master brief — not in original Widget 2 build."
+  },
+  "categories": [
+    {
+      "id": "1",
+      "c": "#534AB7",
+      "title": "Exploration & development services",
+      "sub": "Serve all commodity verticals — revenue tied to E&P and mining activity",
+      "why": "Seismic companies are capital-light IP businesses with recurring data licensing revenue at ~80% gross margins. Drilling contractors own physical rigs earning day-rate revenue — the cycle matters. Mining services companies provide drilling, blasting, and contract mining across every mineral. Assay labs are tollroads on every sample that passes through the chain. TGS and the offshore supply vessel play (Tidewater TDW) are the two most underappreciated names in this category.",
+      "cards": [
+        {
+          "n": "Seismic data & survey",
+          "r": "2D/3D seismic acquisition, data libraries, basin analysis.",
+          "t": "TGS (Oslo — data library model, ~80% gross margins, recurring licensing; 'Spotify of seismic data'); PGS (Oslo — vessels, more cyclical); CGG (France); Shearwater GeoServices",
+          "srv": ["Oil", "NG"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "Offshore supply vessels (OSVs)",
+          "r": "Support vessels for ALL offshore drilling — the overlooked picks-and-shovels for deepwater. Best-in-class: Tidewater (TDW).",
+          "t": "Tidewater (TDW — largest listed OSV fleet; modern diversified vessels; multi-year high-rate charter backlog; often overlooked vs. drillers)",
+          "srv": ["Oil", "NG"],
+          "badge": "hot",
+          "hi": true
+        },
+        {
+          "n": "Contract drilling — offshore UDW",
+          "r": "Ultra-deepwater drillships + semi-subs on day-rate. UDW utilization now ~90%+. Limited new supply since 2015.",
+          "t": "Transocean (RIG); Valaris (VAL); Noble Corp (NE); Diamond Offshore (DO)",
+          "srv": ["Oil", "NG"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Contract drilling — onshore",
+          "r": "Onshore rigs on day-rate. Smart rig technology is the key differentiator.",
+          "t": "H&P (HP — AutoSlide smart rig technology, ~20% US market share, highest margin onshore driller); Patterson-UTI (PTEN); Nabors (NBR)",
+          "srv": ["Oil", "NG"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Oilfield services — integrated",
+          "r": "MWD/LWD, directional drilling, completion fluids, fracking. Serve all E&P basins.",
+          "t": "SLB (largest by revenue, international-heavy, digital focus); HAL (US fracking, ~40% market share); BKR (rotating equipment, LNG technology crossover)",
+          "srv": ["Oil", "NG"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Contract mining services",
+          "r": "Contract mining, drilling, blasting across Cu, Au, Li, U, coal mines globally.",
+          "t": "Perenti Group (ASX — Ausdrill+Barminco; gold + base metals); Orica (ORI.AX — world's largest commercial explosives manufacturer, essential for every mine blast)",
+          "srv": ["Cu", "Li", "REE", "Nuclear"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "Assay, testing & certification",
+          "r": "Lab testing of ore, concentrate, refined metals at every chain handoff. Cannot be avoided contractually.",
+          "t": "SGS (SIX:SGSN — world's largest TIC company, highly diversified); Bureau Veritas (BVI.PA — mining + oil division); Intertek (ITRK.L)",
+          "srv": ["All verticals"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "Geo-data & resource modelling",
+          "r": "Geological modelling software, resource estimation, remote sensing.",
+          "t": "Seequent/Leapfrog (Bentley Systems — standard 3D geological modelling software for every major mine); Trimble (TRMB — precision positioning + land surveying); Planet Labs (PL — daily satellite imagery of mine sites)",
+          "srv": ["All mining"],
+          "badge": "structural",
+          "hi": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "c": "#D85A30",
+      "title": "Infrastructure construction & EPC",
+      "sub": "Build the physical infrastructure across all commodity verticals — grid and nuclear are highest activity now",
+      "why": "EPC companies are structurally differentiated by end-market: a grid EPC contractor (Quanta PWR) has a fundamentally different growth profile from an oil EPC contractor (Fluor). The grid and nuclear segments are the highest-conviction subsets — multi-year backlogs, skilled labor scarcity, and record investment activity. Quanta Services is the single most direct investment expression of the AI/grid buildout thesis. The skilled union labor force and equipment fleet it has built over decades cannot be quickly replicated by new entrants.",
+      "cards": [
+        {
+          "n": "Grid & power EPC",
+          "r": "Building transmission lines, substations, solar/wind farms, and data center power infrastructure. THE AI/grid picks-and-shovels.",
+          "t": "Quanta Services (PWR — ~40% US power grid construction market share; multi-year order backlog; backlog growing faster than revenue; most direct single-stock AI/grid thesis); MYR Group (MYRG); Emcor (EME); MasTec (MTZ)",
+          "srv": ["Electricity", "NG", "Nuclear"],
+          "badge": "hot",
+          "hi": true
+        },
+        {
+          "n": "General energy EPC",
+          "r": "Large-scale pipeline, LNG facility, and offshore platform construction.",
+          "t": "TechnipFMC (FTI — subsea systems + LNG technology; FLNG exposure); Saipem (SPM.MI — deepwater + LNG focus); Fluor (FLR — large-scale global EPC); Primoris (PRIM)",
+          "srv": ["NG", "Oil"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Mine development EPC",
+          "r": "Processing plant design and construction — flotation circuits, hydromet, leach pads.",
+          "t": "Worley Group (WOR.AX — global mining + energy EPC leader, Australia-listed); AECOM (ACM — environmental + infrastructure); Ausenco (private — Australian mining EPC)",
+          "srv": ["Cu", "Li", "REE", "Nuclear"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "Nuclear EPC, maintenance & services",
+          "r": "Reactor construction, planned outages, refueling services, waste management.",
+          "t": "Westinghouse (private — Brookfield; AP1000 + fuel + services + SMR supply chain); Framatome (EDF subsidiary — French reactors + global services); BWX Technologies (BWXT — naval reactors + BWRX-300 SMR components + medical isotopes)",
+          "srv": ["Nuclear"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "Water & environmental EPC",
+          "r": "Water treatment plants, desalination plants, produced water, tailings management.",
+          "t": "Tetra Tech (TTEK — water infrastructure + environmental consulting + government services); Jacobs Solutions (J — global engineering, water + transportation + government); Xylem (XYL)",
+          "srv": ["Water", "Mining", "NG"],
+          "badge": "structural",
+          "hi": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "c": "#993556",
+      "title": "Equipment & capital goods",
+      "sub": "Physical hardware tollroads — each sub-category has its own cycle timing",
+      "why": "Capital goods companies are tollroads on commodity investment. The critical differentiation: grid components (transformers, switchgear, cables) are experiencing the sharpest supply/demand imbalance in their history — 2-4yr lead times on large power transformers. This is the most acute single equipment bottleneck in the infrastructure investment universe right now. Mining equipment follows the mining capex cycle (early recovery in copper and critical minerals). Chart Industries (GTLS) is uniquely positioned spanning gas, LNG, and hydrogen equipment simultaneously.",
+      "cards": [
+        {
+          "n": "Grid components — transformer bottleneck",
+          "r": "Power transformers (2-4yr lead times), switchgear, power cables, inverters. THE acute equipment bottleneck.",
+          "t": "Hitachi Energy (private/Hitachi — world's largest LPT maker, unprecedented backlog); ABB Power Products (ABBN — transformer + switchgear); Eaton Corp (ETN — power distribution + DC power management); nVent Electric (NVT — enclosures + connectivity)",
+          "srv": ["Electricity", "DC"],
+          "badge": "hot",
+          "hi": true
+        },
+        {
+          "n": "Grid components — cables & HV systems",
+          "r": "High-voltage and EHV power cables + subsea cables for offshore wind. 3-4yr order backlog.",
+          "t": "GE Vernova (GEV — gas turbines + grid solutions + wind turbines; unique 3-way intersection; backlog >$100B); Prysmian (PRY.MI — world's largest cable company; major HV/EHV + subsea wind backlogs); Nexans (NEX.PA — HV cables + North Sea subsea); Hubbell (HUBB)",
+          "srv": ["Electricity", "Cu"],
+          "badge": "hot",
+          "hi": true
+        },
+        {
+          "n": "Heavy mining equipment",
+          "r": "Mining trucks (Cat 797), hydraulic shovels, underground drill rigs. Serve every mine globally.",
+          "t": "Caterpillar (CAT — world's largest mining equipment maker; also construction + turbines; highest quality business in the sector); Komatsu (KMTUY — second-largest; autonomous haul truck leader); Sandvik (SAND.ST — underground + rock tools + metal cutting)",
+          "srv": ["Cu", "Li", "REE", "Fert"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Minerals process equipment",
+          "r": "Ball mills, crushers, flotation cells, filtration presses, thickeners.",
+          "t": "Metso (METSO.HE — world's largest mining process equipment company; strong filtration press for dry tailings — the post-Brumadinho imperative); FLSmidth (FLS.CO — minerals + cement); Weir Group (WEIR.L — slurry pumps + hydrocyclones)",
+          "srv": ["All mining"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Gas, LNG & cryogenic equipment",
+          "r": "Compressors, heat exchangers, cryogenic units, LNG cold boxes, hydrogen equipment.",
+          "t": "Chart Industries (GTLS — broadest cryogenic portfolio globally: gas + LNG + H2; Howden compressor division; unique multi-thematic position); Archrock (AROC — largest US contract compression; Permian-heavy; benefits from declining reservoir pressure)",
+          "srv": ["NG", "Oil", "Ind.Inputs"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "Instrumentation & industrial automation",
+          "r": "Process controls, flow measurement, safety systems. Serve every industrial operation.",
+          "t": "Emerson Electric (EMR — process automation + HVAC); Honeywell (HON — process solutions + safety + building mgmt); Rockwell Automation (ROK — industrial automation + MES + smart manufacturing)",
+          "srv": ["All verticals"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "Water treatment technology",
+          "r": "Membrane filtration, RO systems, UV disinfection, smart water metering.",
+          "t": "Xylem (XYL — dominant US water tech platform post-Evoqua; Sensus smart metering + process water); Energy Recovery (ERII — RO desalination PX devices, ~50% global market share, near-monopoly); Pentair (PNR)",
+          "srv": ["Water"],
+          "badge": "structural",
+          "hi": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "c": "#EF9F27",
+      "title": "Royalties, trading & financial overlay",
+      "sub": "Cross-cutting financial structures that sit above the physical chains",
+      "why": "The royalty and streaming structure is the single best risk-adjusted investment structure in the hard assets universe. Streaming companies provide upfront capital to miners in exchange for a percentage of future production at a fixed/low cost. They earn commodity upside with no capex risk, no processing risk, no jurisdictional concentration, and with natural diversification across mines and geographies. FNV and WPM are two of the highest-quality businesses in the entire resource sector. SPUT creates a structural demand floor for uranium. CME/ICE are toll-roads on volatility — revenue rises regardless of price direction.",
+      "cards": [
+        {
+          "n": "Metal royalty & streaming — gold/silver/PGM",
+          "r": "Provide upfront capital; receive % of production at fixed cost. No capex, no processing risk, diversified globally. BEST risk-adjusted structure in the universe.",
+          "t": "Franco-Nevada (FNV — $30B+, most diversified; 100+ streams; the gold standard of quality in resource investing); Wheaton PM (WPM — silver + gold + Pd; major streams at Antamina, Salobo, Constancia, Stillwater); Royal Gold (RGLD — gold-focused royalties + streams)",
+          "srv": ["Cu", "PGM", "Oil"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "Physical uranium trusts",
+          "r": "Physical U3O8 trusts creating structural demand floors. SPUT buys when spot < NAV.",
+          "t": "Sprott Physical Uranium Trust (U.UN/SPUT — ~50M lbs U3O8; ~1.5yr of US annual demand; structural demand floor via discretionary buying since 2021); Yellow Cake plc (YCA — London-listed, similar structure)",
+          "srv": ["Nuclear"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "Metal royalty & streaming — diversified",
+          "r": "Broader portfolio streaming companies with earlier-stage assets.",
+          "t": "Sandstorm Gold (SAND — growing portfolio; more early-stage = higher risk/return); Triple Flag Precious Metals (TFPM — Toronto-listed; growing streams)",
+          "srv": ["Cu", "Li", "PGM"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "Commodity futures exchanges",
+          "r": "Toll-road on commodity volatility — revenue rises in both bull AND bear markets.",
+          "t": "CME Group (CME — world's largest derivatives exchange; natural gas, crude, gold, silver, copper, agricultural futures; revenue grows with volume + volatility); ICE (ICE — natural gas, power, carbon, agricultural derivatives)",
+          "srv": ["All verticals"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "Physical trading houses — listed",
+          "r": "Own physical commodity flows, warehouses, shipping. Know about tightness before the market.",
+          "t": "Glencore (GLEN.L — London-listed; Cu+Co+Zn+coal+oil+trading; world's most important physical commodity intelligence source; best single-stock read on physical tightness)",
+          "srv": ["Cu", "Oil", "NG"],
+          "badge": "moderate",
+          "hi": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "c": "#3B6D11",
+      "title": "Recycling & secondary supply",
+      "sub": "Creates domesticated Western supply independent of adversarial processing control",
+      "why": "Recycling is the most underappreciated layer from a geopolitical perspective. Battery recycling creates domesticated lithium, cobalt, and nickel supply not subject to Chinese processing control. REE magnet recycling creates rare earth supply outside Chinese separation. PGM autocatalyst recycling provides ~30-40% of platinum and palladium supply entirely within Western supply chains. Copper scrap is ~35% of global copper supply — almost entirely Western. The DoD funds battery and REE recycling explicitly for supply chain security reasons — not because of the near-term economics, but because domesticated supply is a strategic national security asset.",
+      "cards": [
+        {
+          "n": "Lithium-ion battery recycling",
+          "r": "Recovering Li, Co, Ni, Mn from end-of-life EV + grid batteries. Domesticated supply bypassing Chinese processing. DoD + IRA funding flowing.",
+          "t": "Li-Cycle Holdings (LICY — hub+spoke hydromet; US+Canada; strategic asset; watching for recapitalization); Redwood Materials (private — JB Straubel; DOE loan guarantee; major OEM partnerships with Ford, VW, Panasonic)",
+          "srv": ["Li", "Co"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "PGM autocatalyst recycling",
+          "r": "~30-40% of Pt/Pd supply from recycled autocatalysts. Large, established, growing industry.",
+          "t": "Johnson Matthey (JMAT.L — world leader in both primary PGM chemistry AND autocatalyst recycling globally; dual exposure); Umicore (UMI.BR — Hoboken Belgium, world's most advanced precious metals recycling + pCAM battery materials)",
+          "srv": ["PGMs"],
+          "badge": "structural",
+          "hi": false
+        },
+        {
+          "n": "REE magnet recycling",
+          "r": "Recovering NdFeB from EV motors, wind turbines, hard drives. Pre-commercial but strategically critical — creates domesticated HREE supply.",
+          "t": "Cyclic Materials (Canada, private — $53M Series A; DoD engagement; mine-to-magnet recycling); Urban Mining Co (US, private — bonded magnet focus); REEtec (Norway — proprietary low-acid process)",
+          "srv": ["REE"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "Copper scrap processing",
+          "r": "~35% of global Cu supply from scrap. Almost entirely within Western supply chains — geopolitically favorable.",
+          "t": "Aurubis AG (NDA.DE — largest European copper smelter; Hamburg + Bulgaria; substantial secondary Cu scrap processing alongside primary concentrate smelting); Metallo (Belgium, private — e-waste Cu + precious metals)",
+          "srv": ["Cu"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Oil & gas recycling — lube re-refining",
+          "r": "Re-refining used motor oil + industrial lubricants into base oil. Circular supply chain for petroleum-derived materials.",
+          "t": "Clean Harbors (CLH — Safety-Kleen brand; largest NA used oil re-refiner + environmental services); Heritage Crystal Clean (HCCI — smaller, pure-play used oil re-refining + industrial parts cleaning)",
+          "srv": ["Oil"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Renewable natural gas (RNG)",
+          "r": "Capturing methane from landfills, agriculture, wastewater to produce pipeline-quality RNG.",
+          "t": "Clean Energy Fuels (CLNE — largest RNG distributor for transport fleet fueling; long-term supply agreements with Amazon, UPS); Montauk Renewables (MNTK — landfill gas to RNG, listed)",
+          "srv": ["NG"],
+          "badge": "moderate",
+          "hi": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "c": "#0C447C",
+      "title": "Shipping & marine infrastructure",
+      "sub": "Physical commodity flows across oceans — tonne-miles, charter rates, strategic chokepoints",
+      "why": "Shipping is the picks-and-shovels layer that connects every commodity vertical to its end market. Every LNG molecule, copper concentrate, potash tonne, and uranium drum crosses an ocean. The shipping market is driven by tonne-mile demand (volume × distance) — Russian rerouting post-2022 added structural tonne-miles across crude, product, and LNG markets. Fleet age (>18yr average for crude tankers), limited new supply due to orderbook constraints, and scrubber/regulatory capex requirements create a structural floor. Subsegments: crude tankers (VLCC/Suezmax), product tankers, LNG carriers, OSVs, UDW drillers, jackups, dry bulk, chemical tankers, FPSOs, FSRUs.",
+      "cards": [
+        {
+          "n": "Crude tankers — VLCC & Suezmax",
+          "r": "Moving crude oil from production to refinery. Russian rerouting added structural tonne-miles (+30-40% on affected routes).",
+          "t": "Frontline (FRO — largest listed VLCC operator; modern fleet); DHT Holdings (DHT — pure-play VLCC; high dividend); International Seaways (INSW — VLCC + Suezmax + product; US-listed)",
+          "srv": ["Oil"],
+          "badge": "moderate",
+          "hi": true
+        },
+        {
+          "n": "Product tankers — MR & LR",
+          "r": "Moving refined products (gasoline, diesel, jet fuel, naphtha). Russian refinery product rerouting = structural tonne-mile increase.",
+          "t": "Scorpio Tankers (STNG — largest listed product tanker company; modern scrubber-fitted fleet; most direct Russian product rerouting play)",
+          "srv": ["Oil"],
+          "badge": "hot",
+          "hi": true
+        },
+        {
+          "n": "LNG carriers",
+          "r": "Transporting LNG at -162°C. US LNG export buildout requires ~100+ new carriers through 2030.",
+          "t": "Flex LNG (FLNG — high-spec vessels, charter coverage locked at energy crisis highs; Norwegian-listed); Golar LNG (GLNG — LNG carriers + FLNG production assets); MISC Berhad (Petronas-affiliated)",
+          "srv": ["NG"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "Offshore supply vessels (OSVs)",
+          "r": "Support fleet for ALL offshore drilling — crew boats, PSVs, AHTSVs. Often overlooked vs. drillers.",
+          "t": "Tidewater (TDW — largest listed OSV fleet globally; modern diversified fleet; multi-year high-rate charter backlog; THE overlooked deepwater picks-and-shovels play)",
+          "srv": ["Oil", "NG"],
+          "badge": "hot",
+          "hi": true
+        },
+        {
+          "n": "UDW contract drillers",
+          "r": "Ultra-deepwater drillships on day-rate contracts. UDW utilization ~90%+, no new drillships since 2015.",
+          "t": "Transocean (RIG); Valaris (VAL); Noble Corp (NE); Diamond Offshore (DO) — all earning rising day-rates on multi-year contract backlogs",
+          "srv": ["Oil", "NG"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Jackup drillers",
+          "r": "Shallow-water jackup rigs for continental shelf drilling. Tighter market than UDW.",
+          "t": "Borr Drilling (BORR — pure-play premium jackup operator; young modern fleet; Middle East + SE Asia heavy)",
+          "srv": ["Oil", "NG"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Dry bulk carriers",
+          "r": "Moving iron ore, coal, grain, fertilizers, copper concentrate, bauxite. Baltic Dry Index is the key signal.",
+          "t": "Star Bulk Carriers (SBLK — largest listed dry bulk operator, diversified fleet); Golden Ocean (GOGL — Capesize and Panamax focus, Fredriksen-controlled)",
+          "srv": ["Cu", "Fert", "Oil"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "Chemical tankers",
+          "r": "Moving acids, chemicals, specialty liquids — including lithium brine, sulfuric acid for mining, ammonia.",
+          "t": "Stolt-Nielsen (SNLNI.OL — world's largest chemical tanker operator, private/listed Oslo); Odfjell (ODF.OL — chemical tankers + tank terminals, Oslo-listed)",
+          "srv": ["Li", "Fert", "Ind.Inputs"],
+          "badge": "moderate",
+          "hi": false
+        },
+        {
+          "n": "FPSOs — floating production",
+          "r": "Floating production, storage & offloading units for deepwater oilfields. Multi-decade contracts.",
+          "t": "SBM Offshore (SBMO.AS — world's largest FPSO owner/operator; Guyana Stabroek + Brazil pre-salt fleet; multi-decade lease contracts with majors)",
+          "srv": ["Oil"],
+          "badge": "structural",
+          "hi": true
+        },
+        {
+          "n": "FSRUs — floating LNG regas",
+          "r": "Floating storage & regasification units — rapidly deployed LNG import infrastructure. Europe post-2022 emergency buildout.",
+          "t": "Excelerate Energy (EE — largest listed FSRU operator; long-term charters Europe + Asia + LatAm); Höegh LNG (private, Oslo — major FSRU operator)",
+          "srv": ["NG"],
+          "badge": "structural",
+          "hi": false
+        }
+      ]
+    }
+  ]
+}

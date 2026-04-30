@@ -1,0 +1,161 @@
+{
+  "_meta": {
+    "description": "Cycle & innings scoring for all 11 commodity verticals. Innings 1=very early, 9=very late. Scores 0-100.",
+    "fields": {
+      "id": "vertical identifier matching verticals.json",
+      "inn": "innings position 1-9",
+      "struct": "structural demand strength 0-100",
+      "capex": "capex under-investment gap 0-100",
+      "bc": "business cycle sensitivity 0-100 (higher = more cyclical)",
+      "verdict": "short summary label",
+      "vc": "verdict color hex",
+      "sum": "full narrative summary"
+    }
+  },
+  "cycles": [
+    {
+      "id": "re",
+      "n": "REE & Specialty",
+      "c": "#993556",
+      "struct": 92,
+      "capex": 92,
+      "bc": 28,
+      "inn": 1,
+      "verdict": "Most underinvested",
+      "vc": "#E24B4A",
+      "sum": "Year 0-2 of Western supply chain build. Almost no Western REE separation capacity. HREE (Dy, Tb) separation = zero Western capacity. MP Fort Worth (2023) = first US mine-to-magnet in nearly a decade. Lynas Seadrift TX DoD-funded facility under construction. Robotics (6-12 REE motors per industrial robot) is the demand multiplier not in consensus. Low bc risk — defense is policy-driven."
+    },
+    {
+      "id": "nu",
+      "n": "Nuclear & Uranium",
+      "c": "#534AB7",
+      "struct": 95,
+      "capex": 90,
+      "bc": 20,
+      "inn": 2,
+      "verdict": "Most structurally bullish",
+      "vc": "#E24B4A",
+      "sum": "Year 1-2 of decade-long structural rebuild. Supply has not met demand since Fukushima (2011) — 12+ years of inventory drawdown. Russian import ban (2024) forces Western supply chain rebuild from scratch. Centrus LEU is the sole US enrichment company with active capacity. Nuclear AI PPAs (CEG-Microsoft TMI template) add above-market demand. Nuclear operates at 90%+ capacity factor in all economic conditions."
+    },
+    {
+      "id": "elec",
+      "n": "Electricity & Grid",
+      "c": "#534AB7",
+      "struct": 94,
+      "capex": 88,
+      "bc": 22,
+      "inn": 2,
+      "verdict": "Active bottleneck supercycle",
+      "vc": "#E24B4A",
+      "sum": "Year 2-3 of a 10-year grid buildout supercycle. Transformer lead times 2-4yr. Three simultaneous demand drivers: AI data centers (100-500MW+ per campus), EV charging, grid hardening. Quanta (PWR) backlog growing faster than revenue. New manufacturing capacity for transformers will take 3-5yr to come online. Nuclear AI PPAs restructuring power contracting fundamentals. Full detail in Widget 2 — Electricity & Grid tab."
+    },
+    {
+      "id": "cu",
+      "n": "Copper",
+      "c": "#D85A30",
+      "struct": 88,
+      "capex": 85,
+      "bc": 62,
+      "inn": 2,
+      "verdict": "Structurally bullish",
+      "vc": "#1D9E75",
+      "sum": "Year 2-3 of emerging structural deficit recognition. No major greenfield copper mine developed in >10yr. TC/RC near-zero or negative in 2024 = historically earliest market signal of a structural supply squeeze. S&P Global projects 8Mt/yr deficit by 2030. Business cycle risk is real (China construction is a large demand driver) but structural deficit overwhelms cycle over a 5+ year investment horizon."
+    },
+    {
+      "id": "wl",
+      "n": "Industrial Water & Land",
+      "c": "#3B6D11",
+      "struct": 72,
+      "capex": 60,
+      "bc": 32,
+      "inn": 2,
+      "verdict": "Long-duration structural",
+      "vc": "#1D9E75",
+      "sum": "Year 2 of scarcity recognition. Water constrains Atacama copper/lithium production, nuclear SMR siting, and AI data center permitting in Arizona. Energy Recovery (ERII) desal near-monopoly is the cleanest listed expression at the water scarcity intersection. ARIS Water (Permian produced water) is most direct O&G water play. Low bc risk — mines need water regardless of economic conditions."
+    },
+    {
+      "id": "ng",
+      "n": "Natural Gas & LNG",
+      "c": "#EF9F27",
+      "struct": 85,
+      "capex": 72,
+      "bc": 52,
+      "inn": 3,
+      "verdict": "Structurally bullish",
+      "vc": "#1D9E75",
+      "sum": "Year 3 of multi-decade structural re-rating. European 20yr LNG SPAs locked in — cannot be unwound. Asian LNG demand growth (India, SE Asia adding import capacity) is the second wave. AI data center power demand (gas-fired CCGT as default) is the third wave. LNG export buildout (Cheniere Stage 3, Venture Global CP2) runs 2025-2030."
+    },
+    {
+      "id": "ii",
+      "n": "Specialty Industrial Inputs",
+      "c": "#854F0B",
+      "struct": 72,
+      "capex": 55,
+      "bc": 38,
+      "inn": 3,
+      "verdict": "Hold / strategic",
+      "vc": "#1D9E75",
+      "sum": "Linde and APD are Western-controlled strategic assets with geopolitical tailwind and no geopolitical risk. On-site plant model has near-infinite switching cost and 15-20yr contracted revenue. ATI is mid-cycle on Ti supply chain diversification from Russia. Materion (MTRN) is underowned at <$1.5B market cap with essentially no listed competition for US beryllium — defense-critical."
+    },
+    {
+      "id": "tm",
+      "n": "Technology & Electronics Metals",
+      "c": "#185FA5",
+      "struct": 78,
+      "capex": 28,
+      "bc": 58,
+      "inn": 2,
+      "verdict": "Policy-driven urgency",
+      "vc": "#E24B4A",
+      "sum": "China activated export controls on Ga/Ge (August 2023) and Sb (September 2024) — weaponization has begun, not a future risk. Western policy response is minimal relative to urgency. Alphamin (tin) benefits from AI advanced chip packaging increasing tin intensity per unit of compute. Perpetua Resources (PPTA) has DoD off-take MOU for antimony + gold."
+    },
+    {
+      "id": "li",
+      "n": "Lithium & Battery Metals",
+      "c": "#1D9E75",
+      "struct": 80,
+      "capex": 42,
+      "bc": 68,
+      "inn": 4,
+      "verdict": "Post-boom correction",
+      "vc": "#EF9F27",
+      "sum": "Cyclical correction after 2021-22 spike. Li carbonate -80% from peak. Structural bull intact — 2026-2030 EV >30% globally + grid BESS scaling independently creates new supply deficit. Patience and low entry point required. IRA domestic content requirements force reshoring — 5-10yr lag. EV sales show consumer credit sensitivity."
+    },
+    {
+      "id": "fert",
+      "n": "Fertilizers & Crop Inputs",
+      "c": "#639922",
+      "struct": 68,
+      "capex": 48,
+      "bc": 52,
+      "inn": 4,
+      "verdict": "Selective — NTR + ERII",
+      "vc": "#EF9F27",
+      "sum": "Post-2022 spike normalization. Potash prices retreated from highs. Phosphate is the long-duration structural thesis — non-renewable, Morocco concentration, rising demand. Nitrogen highly correlated to natural gas prices. Nutrien (NTR) trades at a discount to intrinsic strategic value as the only complete NPK company globally."
+    },
+    {
+      "id": "oil",
+      "n": "Oil",
+      "c": "#5F5E5A",
+      "struct": 62,
+      "capex": 55,
+      "bc": 72,
+      "inn": 5,
+      "verdict": "Neutral — selective",
+      "vc": "#888780",
+      "sum": "Offshore drilling mid-cycle recovery (UDW utilization ~90%+, dayrates rising from 2020 trough). Shale returns-focused with capital discipline maintained. Refining structurally tighter post-2020 closures. Tankers have Russian rerouting structural tailwind. Long-term oil demand plateauing in developed markets. Best expressed via offshore (TDW, RIG/VAL UDW), complex refiners (VLO), product tankers (STNG)."
+    },
+    {
+      "id": "pg",
+      "n": "PGMs, Gold & Silver",
+      "c": "#888780",
+      "struct": 64,
+      "capex": 48,
+      "bc": 52,
+      "inn": 4,
+      "verdict": "Selective — Pt/H₂ + Gold",
+      "vc": "#EF9F27",
+      "sum": "Palladium in structural ICE-to-EV decline. Platinum early innings of hydrogen economy demand (PEM electrolyzers) — commercial scale is 2028-2035. SA structural cost pressures (Eskom, labor) persistent. Gold central bank buying at record levels since 2022 — de-dollarization is structural. Best expressed: gold streamers (FNV, WPM, RGLD)."
+    }
+  ]
+}

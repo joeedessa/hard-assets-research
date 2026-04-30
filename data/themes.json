@@ -1,0 +1,168 @@
+{
+  "_meta": {
+    "description": "6 cross-vertical demand themes for Widget 2. Each theme has supply chain items, thesis, risk, portfolio positioning, and structural scores.",
+    "score_fields": {
+      "struct": "Structural demand strength 0-100",
+      "near": "Near-term momentum 0-100",
+      "bc": "Business cycle risk 0-100 (higher = more cyclical)"
+    }
+  },
+  "themes": [
+    {
+      "id": "ai",
+      "n": "AI & Data Center Power",
+      "c": "#534AB7",
+      "sub": "Most immediate structural demand driver across energy, metals, inputs",
+      "struct": 92,
+      "near": 88,
+      "bc": 20,
+      "items": [
+        {"lbl": "Gas-fired CCGT power", "ticks": "VST, NRG, Calpine; GEV turbines; Siemens Energy ENR.DE", "why": "Default 24/7 dispatchable DC power. Every 100MW DC = ~0.7 Bcf/yr gas demand."},
+        {"lbl": "Nuclear AI PPAs", "ticks": "Constellation Energy (CEG — TMI restart template); Duke; Dominion; BWXT (SMR components)", "why": "24/7 carbon-free + 15-20yr price certainty = what hyperscalers need. CEG-Microsoft TMI at $110/MWh for 20yr is the commercial template."},
+        {"lbl": "Grid EPC & transformers", "ticks": "Quanta PWR (~40% US market); Hitachi Energy, ABB, Eaton ETN (transformers)", "why": "Every new DC campus needs substation connection. Transformer lead times 2-4yr. PWR backlog growing faster than revenue."},
+        {"lbl": "DC power systems & liquid cooling", "ticks": "Vertiv VRT (liquid cooling fastest-growing); Eaton ETN (UPS+PDU); Schneider SU.PA", "why": "AI GPU clusters require direct liquid cooling at 100kW+ per rack. VRT repeated upward guidance revisions as GPU deployments accelerate."},
+        {"lbl": "Copper for DC wiring", "ticks": "FCX, SCCO (miners); PRY.MI, NEX.PA (cables)", "why": "~500T Cu per 100MW DC. All transformer windings, bus bars, power distribution cabling."},
+        {"lbl": "Industrial gases for chip fabs", "ticks": "Linde LIN, Air Products APD (15-20yr sole-source fab contracts)", "why": "Every new chip fab making AI chips requires UHP industrial gases. LIN/APD build on-site plants with infinite switching cost."},
+        {"lbl": "Tin for advanced chip packaging", "ticks": "Alphamin Resources AFMJF (Bisie mine DRC — world's highest-grade tin)", "why": "3D chiplet stacking + HBM packaging INCREASES solder joints per AI chip. More AI compute = more tin per chip."},
+        {"lbl": "Water for DC cooling", "ticks": "Energy Recovery ERII (desalination); Vertiv VRT (liquid cooling); Xylem XYL", "why": "100MW evaporative-cooled DC uses 1-2M gallons/day. AZ already denying DC water permits. Water is now a binding DC site selection constraint."}
+      ],
+      "thesis": "The AI buildout is creating simultaneous, permanent new demand across energy (gas + nuclear), grid infrastructure (transformers, cables, EPC), materials (copper, tin), industrial gases (fab supply), and water (cooling). This is not a single-sector play — it is a demand multiplier across the entire hard assets universe. The key insight: gas-fired CCGT and nuclear are not competing with renewables for AI power — they are the only solutions to 24/7 dispatchable power at scale.",
+      "risk": "Compute efficiency gains (more AI performance per watt) could moderate absolute power demand growth. Near-term overbuilding of DC capacity in some markets (Northern Virginia, Phoenix) with 2-3yr supply glut possible.",
+      "positions": [
+        "Highest conviction: CEG (nuclear AI PPA), PWR (grid EPC), ETN (transformer + DC), VRT (liquid cooling)",
+        "Strong structural: GEV (turbines+grid+wind), LIN/APD (fab gases), PRY.MI/NEX.PA (HV cables)",
+        "Second-order: EQT/SWN (gas supply), SCCO/FCX (copper), ERII (DC water)"
+      ]
+    },
+    {
+      "id": "energy",
+      "n": "Energy Security & Deglobalization",
+      "c": "#EF9F27",
+      "sub": "Post-Russia-2022 LNG as foreign policy; allied-nation supply premium",
+      "struct": 88,
+      "near": 75,
+      "bc": 35,
+      "items": [
+        {"lbl": "LNG export — US strategic asset", "ticks": "Cheniere LNG, Venture Global VGAS, NFE, Sempra LNG", "why": "European utilities locked into 20yr US LNG SPAs. Cannot be unwound. US LNG is now a direct instrument of NATO energy security policy."},
+        {"lbl": "Uranium enrichment — domestic rebuild", "ticks": "Centrus Energy LEU (ONLY US enrichment company with active capacity)", "why": "Russian import ban forces Western supply chain rebuild from scratch. Centrus = year 1-2 of 10-year rebuild. Near-monopoly at the most critical strategic node."},
+        {"lbl": "REE separation onshoring", "ticks": "MP Materials (Fort Worth TX mine-to-magnet); Lynas LYC.AX (Seadrift TX DoD-funded)", "why": "China has activated processing technology export restrictions. MP + Lynas are the entire Western response. Policy-backed, DoD-funded, strategically essential."},
+        {"lbl": "Pipeline infrastructure security", "ticks": "Energy Transfer ET, Kinder Morgan KMI, Enterprise EPD, Williams WMB", "why": "US gas pipeline network entirely domestically controlled. Fee-based income, regulated returns, inflation linkage. Post-2022, implicit strategic value beyond financial returns."},
+        {"lbl": "Grid hardening", "ticks": "Quanta PWR, Eaton ETN, nVent NVT, GE Vernova GEV", "why": "Grid resilience is now a national security issue. IIJA/IRA allocated $65B for grid security and transmission upgrades."},
+        {"lbl": "Domestic uranium supply", "ticks": "UEC (US ISR network), Cameco CCO (allied Canada), NexGen NXE (Athabasca)", "why": "Prohibiting Russian Uranium Imports Act (2024) forces Western supply chain rebuild. UEC is the largest US-based uranium production platform."},
+        {"lbl": "Allied-nation potash", "ticks": "Nutrien NTR, Mosaic MOS, ICL Group (Israel — dual K+P)", "why": "Russia/Belarus ~40% of global potash before 2022 sanctions. NTR + MOS are strategically critical allied-nation alternatives. Canpotex JV controls Canadian export logistics."},
+        {"lbl": "Titanium supply diversification", "ticks": "ATI Inc (ATI — largest US Ti/specialty metals; direct beneficiary of VSMPO-AVISMA diversification)", "why": "VSMPO-AVISMA (Russia) was ~35% of Boeing/Airbus Ti supply. ATI is the primary US beneficiary of aerospace supply chain diversification post-2022."}
+      ],
+      "thesis": "The 2022 Russia-Ukraine war compressed a decade of energy supply chain diversification into 18 months. US LNG is locked in as Europe's primary gas source for 20+ years. Western uranium enrichment is being rebuilt from scratch. REE processing is being onshored with DoD funding. Allied-nation supply for everything from potash to titanium commands a structural premium that will persist for decades.",
+      "risk": "Trade normalization or geopolitical détente would compress security premiums. Policy reversal on IRA domestic content would reduce reshoring incentives. However, the 20-year SPAs already signed for LNG cannot be undone — the structural shift in that vertical is locked in regardless.",
+      "positions": [
+        "Highest conviction: LEU (enrichment near-monopoly), LNG/VGAS (LNG strategic asset), MP/LYC.AX (REE onshoring)",
+        "Strong structural: ATI (Ti diversification), UEC/CCO (allied U supply), NTR/MOS (allied K)",
+        "Second-order: ET/KMI/EPD (pipeline security), PWR (grid hardening), ICL Group"
+      ]
+    },
+    {
+      "id": "crit",
+      "n": "Critical Minerals for Electrification",
+      "c": "#D85A30",
+      "sub": "EVs, offshore wind, and grid buildout creating structural demand across 5 verticals",
+      "struct": 88,
+      "near": 72,
+      "bc": 60,
+      "items": [
+        {"lbl": "Copper — the backbone metal", "ticks": "SCCO, FCX, Antofagasta ANTO.L; FNV/WPM (streaming)", "why": "5,000T/GW solar, 8,000T/GW offshore wind, 26kg/EV. TC/RC near-zero in 2024 = earliest signal of structural supply squeeze. 16-17yr mine development lag."},
+        {"lbl": "REE — EV motors + wind turbines", "ticks": "MP Materials (MP), Lynas LYC.AX, Energy Fuels UUUU", "why": "Each EV motor ~2kg NdFeB. Each MW offshore direct-drive ~600-1,000kg. Demand mathematically locked in by EV production targets and wind buildout plans."},
+        {"lbl": "Lithium — EV batteries + grid BESS", "ticks": "ALB, SQM (brine); Pilbara PLS.AX (spodumene); Fluence FLNC, AES", "why": "Post-2022-boom cyclical correction creates entry point. 2026-2030 EV penetration >30% + grid BESS scaling will create new supply deficit."},
+        {"lbl": "HV cables — grid wiring", "ticks": "Prysmian PRY.MI (largest cable company, HV + subsea backlog); Nexans NEX.PA", "why": "Every offshore wind farm requires subsea cables. Every solar farm requires HV grid connection. Prysmian/Nexans have 3-4yr backlog on HV grid + subsea wind cable orders."},
+        {"lbl": "Grid EPC — installing the transition", "ticks": "Quanta Services PWR, MYR Group MYRG, Emcor EME", "why": "Someone has to build the transmission lines and substations. Quanta has ~40% US grid construction market share. Multi-year backlog."},
+        {"lbl": "Silver — solar cell paste", "ticks": "Wheaton PM WPM (silver streams at Cu mines); First Majestic AG; Pan American PAAS", "why": "~100T Ag per GW solar. Solar volumes growing 20%+/yr — volume growth outpaces per-cell metallization efficiency gains."},
+        {"lbl": "Silicon carbide — EV power electronics", "ticks": "Wolfspeed WOLF (world SiC wafer leader; US fab with DOE support); Coherent COHR; STM", "why": "SiC power semiconductors enable more efficient EV inverters. Every EV uses SiC chips. Wolfspeed is building the US SiC fab with DOE loan guarantee support."},
+        {"lbl": "Cobalt + Nickel — NMC battery cathodes", "ticks": "Glencore GLEN.L (Co dominant globally); Umicore UMI.BR (Co refining + pCAM)", "why": "NMC battery chemistry requires Co (~65% DRC, Glencore dominant) and Ni. LFP chemistry reduces both but NMC remains standard for higher energy density applications."}
+      ],
+      "thesis": "The electrification wave is a materials procurement program. The supply deficit is not in the plan — it is in the physics. No amount of policy support creates a new copper mine in 5 years when the development timeline is 16-17 years. The structural demand is locked in by the infrastructure being built; the supply response is structurally constrained by geology, permitting, and processing timelines.",
+      "risk": "EV adoption has shown consumer credit sensitivity — high rates slow EV sales growth. Chinese real estate slowdown reduces copper construction demand. LFP chemistry (no Co/Ni) reduces demand for those sub-verticals.",
+      "positions": [
+        "Highest conviction: SCCO/FCX, FNV/WPM (Cu streams), MP/LYC.AX (REE), PRY.MI/NEX.PA (HV cable)",
+        "Strong structural: ALB/SQM (Li post-correction entry), WOLF (SiC), PWR (grid EPC)",
+        "Second-order: AG/PAAS (primary Ag), GLEN.L (Co via Glencore)"
+      ]
+    },
+    {
+      "id": "defense",
+      "n": "Defense & Advanced Technology Inputs",
+      "c": "#993556",
+      "sub": "NATO spending rising; space race accelerating; China restricting precision manufacturing inputs",
+      "struct": 82,
+      "near": 68,
+      "bc": 22,
+      "items": [
+        {"lbl": "REE for guidance, radar & sonar", "ticks": "MP Materials (Fort Worth magnets, DoD relationship); Lynas LYC.AX (DoD-funded TX facility)", "why": "Precision guidance systems, radar arrays, sonar transducers, and electric motors in ships/planes/submarines all require NdFeB magnets. DoD has listed REE as the single highest-priority critical mineral gap."},
+        {"lbl": "Tungsten — armor-piercing & cutting tools", "ticks": "Almonty Industries AII.TO (Sangdong mine South Korea; DoD off-take agreement signed 2022)", "why": "Kinetic energy penetrators (tank rounds, armor-piercing) use tungsten. CNC cutting tools and precision machining of defense components require tungsten carbide. China export-restricted tungsten in 2023."},
+        {"lbl": "Titanium — airframes & jet engines", "ticks": "ATI Inc ATI (largest US specialty metals; Ti+Ni+Co+Cr alloys); Howmet Aerospace HWM (precision cast turbine blades for GE Aerospace + RTX)", "why": "F-35, F-22, next-generation fighters all have high titanium content. Jet engine turbine blades. VSMPO-AVISMA (Russia) was 35% of Boeing/Airbus Ti — diversification to US sources is a defense industrial base priority."},
+        {"lbl": "Beryllium — nuclear & defense electronics", "ticks": "Materion Corp MTRN (ONLY Western Be mine + processing; <$1.5B market cap; near-monopoly)", "why": "Beryllium is in nuclear warheads, defense electronics, radar systems, and aerospace structures. No substitute in many applications. Systematically underowned at <$1.5B market cap."},
+        {"lbl": "Uranium — naval nuclear propulsion", "ticks": "Cameco CCO, Centrus Energy LEU (HALEU for advanced naval + SMR reactors)", "why": "US Navy's nuclear-powered fleet requires enriched uranium fuel. HALEU is needed for advanced naval and SMR reactor designs. Centrus is rebuilding US HALEU production capability."},
+        {"lbl": "Antimony — ammunition & grid batteries", "ticks": "Perpetua Resources PPTA (Stibnite Idaho; gold + antimony; DoD MOU + gold byproduct)", "why": "Antimony trioxide used in flame retardants for military vehicles and aircraft. Also emerging as key material for long-duration antimony-iron flow batteries. China export-controlled Sb in September 2024."},
+        {"lbl": "Gallium/GaAs — radar & electronic warfare", "ticks": "AXT Inc AXTI (GaAs/GaN substrate grower, US-listed; key for power electronics + RF + defense)", "why": "GaAs and GaN semiconductors power radar systems, electronic warfare, and satellite transponders. China imposed export controls on gallium in 2023."},
+        {"lbl": "Carbon fiber — airframes & missile bodies", "ticks": "Hexcel HXL (aerospace-grade CF + composite structures; primary US aerospace supplier)", "why": "F-35, B-21 Raider, and all next-generation aircraft use carbon fiber composite airframes. Missile bodies, drone frames, and launch vehicle structures all require carbon fiber. HXL is the primary US aerospace-grade CF manufacturer."}
+      ],
+      "thesis": "Defense spending is structurally rising — NATO 2% GDP targets are now mandatory after 2022. New weapons systems (hypersonic missiles, directed energy, autonomous platforms, space weapons) are more materials-intensive than previous generations. The intersection of defense and deglobalization creates a structural premium for US/allied-nation supply of defense-critical materials — and China has explicitly begun restricting several of them.",
+      "risk": "Defense procurement cycles are measured in years — requires patience. Budget sequestration or political shifts could slow spending. Some names (MTRN, AII.TO) have limited liquidity — position sizing constrained.",
+      "positions": [
+        "Highest conviction: MTRN (Be — monopoly, underowned), MP/LYC.AX (REE defense), ATI (Ti diversification)",
+        "Strong structural: PPTA (Sb + DoD MOU + gold optionality), HXL (CF), CCO/LEU (nuclear propulsion)",
+        "Second-order: AXTI (GaAs substrates), AII.TO (tungsten, thin liquidity)"
+      ]
+    },
+    {
+      "id": "food",
+      "n": "Food & Water Security",
+      "c": "#639922",
+      "sub": "Fertilizer weaponization; phosphate non-renewability; water as industrial constraint",
+      "struct": 72,
+      "near": 55,
+      "bc": 42,
+      "items": [
+        {"lbl": "Potash — allied-nation supply", "ticks": "Nutrien NTR (world's only complete NPK company), Mosaic MOS (K+P), ICL Group", "why": "Russia/Belarus ~40% of global potash before 2022 sanctions. NTR + MOS became strategically critical allied-nation alternatives. Canpotex controls Canadian export logistics globally."},
+        {"lbl": "Nitrogen — gas-price leveraged", "ticks": "CF Industries CF (largest US N, enormous Henry Hub leverage); Yara International YAR.OL (world's largest N producer)", "why": "Haber-Bosch from natural gas. CF Industries has enormous leverage to Henry Hub gas prices — both ways. Yara has global distribution network and is more defensively positioned."},
+        {"lbl": "Phosphate — Morocco chokepoint", "ticks": "Mosaic MOS (Florida phosphate — best non-Moroccan listed producer)", "why": "OCP Morocco controls ~70% of global phosphate reserves. Non-investable directly but the chokepoint to monitor. Phosphate is non-renewable — long-duration scarcity thesis."},
+        {"lbl": "Water rights — scarce basin assets", "ticks": "Vidler Water Resources VWTR (Nevada/AZ/NM rights; rare listed pure-play)", "why": "Atacama water rights directly constrain copper + lithium output. US West water rights are finite legal entitlements that appreciate as industrial water demand grows."},
+        {"lbl": "Desalination technology", "ticks": "Energy Recovery ERII (~50% global RO PX device market share; near-monopoly niche)", "why": "BHP Escondida + Codelco pump seawater up 3,200m in the Atacama because there is no other water option. ERII is at the intersection of water scarcity, copper/lithium mine expansion, and AI infrastructure."},
+        {"lbl": "Produced water management", "ticks": "ARIS Water Solutions ARIS (Permian Basin focus; largest dedicated Permian water midstream)", "why": "Permian produces 3-10 barrels water per barrel of oil. ARIS is the largest dedicated Permian water midstream company. Water recycling for fracking reduces seismicity risk and lowers freshwater costs."},
+        {"lbl": "Smart water technology", "ticks": "Xylem XYL (dominant US water tech platform; Sensus smart metering + Evoqua process water); Itron ITRI", "why": "Water infrastructure is aging globally. Smart metering, treatment upgrades, and industrial water optimization are multi-decade capex programs."},
+        {"lbl": "Agricultural technology", "ticks": "John Deere DE (precision ag + equipment + Operations Center platform); Trimble TRMB; Corteva CTVA", "why": "Precision agriculture reduces fertilizer input intensity while maintaining yield. Deere's Operations Center is the de facto precision ag data standard for North American large-scale farming."}
+      ],
+      "thesis": "Global food security is under stress from supply chain weaponization (Russia fertilizer/grain restrictions), resource concentration (Morocco phosphate, Belarus/Russia potash), and climate-driven yield volatility. Water is simultaneously a constraint on food production (irrigation), mining (Atacama copper/lithium), power generation (nuclear + gas cooling), and AI infrastructure (DC cooling). The investment case spans fertilizer (K+N+P), water technology, and water rights.",
+      "risk": "Fertilizer prices are highly cyclical. CF Industries has massive leverage to Henry Hub — both positive and negative. VWTR is illiquid (<$200M market cap). Precision ag improves fertilizer efficiency, reducing per-hectare volume demand over time.",
+      "positions": [
+        "Highest conviction: ERII (desal near-monopoly), NTR (complete NPK unique), ARIS (Permian water)",
+        "Strong structural: MOS (K+P dual), XYL (water platform), VWTR (water rights, illiquid)",
+        "Second-order: CF (N, gas-leveraged), DE (precision ag), ICL Group (K+P allied)"
+      ]
+    },
+    {
+      "id": "robotics",
+      "n": "Robotics, Space & Advanced Manufacturing",
+      "c": "#185FA5",
+      "sub": "AI automation driving robotics; satellite constellations; manufacturing reshoring",
+      "struct": 80,
+      "near": 58,
+      "bc": 38,
+      "items": [
+        {"lbl": "REE motors for industrial robots", "ticks": "MP Materials (Fort Worth magnets); Lynas LYC.AX; Neo Performance Materials NMP", "why": "Each industrial robot uses 6-12 REE permanent magnet motors (2-3kg NdFeB total). AI-enabled robotics automation + reshoring manufacturing = the REE demand multiplier NOT in consensus forecasts."},
+        {"lbl": "Silicon carbide power electronics", "ticks": "Wolfspeed WOLF (world SiC leader; US fabs with DOE support); Coherent COHR; STM", "why": "SiC used in EV inverters, industrial motor drives, robot power supplies, AND satellite power management. Connects EV + robotics + space themes."},
+        {"lbl": "Xenon — satellite ion propulsion", "ticks": "Linde LIN, Air Products APD (Xe as ASU byproduct; structurally tight as Starlink + Kuiper scale)", "why": "Every satellite in Starlink, OneWeb, Amazon Kuiper uses xenon electric ion propulsion. Xe supply is tight as constellation deployments accelerate. ASU byproduct — cannot quickly ramp."},
+        {"lbl": "Carbon fiber for launch vehicles", "ticks": "Hexcel HXL (aerospace-grade CF for SpaceX, ULA, Rocket Lab airframes)", "why": "SpaceX Falcon 9, Starship, ULA Vulcan, Rocket Lab Electron — every new launch vehicle is CF-intensive. Launch volumes scaling with satellite constellation buildout."},
+        {"lbl": "Iridium — rocket coatings & green H₂", "ticks": "Sibanye-Stillwater SBSW, Anglo American Platinum AMS.J (PGM byproducts)", "why": "Iridium used in rocket engine combustion chamber coatings for extreme temperature. Also the best OER catalyst for green hydrogen PEM electrolysis. Extremely scarce PGM byproduct."},
+        {"lbl": "Titanium — aerospace & space structures", "ticks": "ATI Inc ATI (Ti + specialty alloys + space supply chain); Howmet Aerospace HWM", "why": "Space launch vehicles, satellite structures, aerospace alloys. ATI is diversifying Boeing/Airbus supply from Russian VSMPO-AVISMA and simultaneously serving the space launch supply chain."},
+        {"lbl": "Copper & specialty alloys for robots", "ticks": "SCCO, FCX (Cu wiring); ATI (Ni/Co/Cr specialty alloys for robot actuators)", "why": "Industrial robots require copper wiring, motor windings, and power electronics. Semiconductor fabs being reshored (Intel, TSMC in US) require copper plumbing and specialty alloys for process equipment."},
+        {"lbl": "Industrial automation software", "ticks": "Rockwell Automation ROK (discrete manufacturing market leader); Emerson EMR; Honeywell HON", "why": "AI-enabled industrial automation requires sophisticated control systems. ROK is the market leader in industrial automation software for discrete manufacturing. Reshoring creates multi-year capex programs."}
+      ],
+      "thesis": "Robotics is the most underappreciated demand driver in the universe. AI-enabled automation + labor cost pressures + manufacturing reshoring create structural new demand for REE motors (6-12 per robot), SiC power electronics, copper wiring, and specialty alloys that is NOT incorporated in any consensus commodity demand forecast. The space race (commercial satellite constellations + launch infrastructure) adds xenon, iridium, carbon fiber, and SiC demand that is also not in consensus models.",
+      "risk": "Robotics adoption timelines are uncertain. Space launch market can be lumpy. Wolfspeed (WOLF) has experienced significant financial challenges in 2024-25 — execution risk on US SiC fab buildout is real.",
+      "positions": [
+        "Highest conviction: MP/LYC.AX (REE — robotics multiplier not priced), LIN/APD (xenon scarcity), ATI (Ti + space)",
+        "Strong structural: WOLF (SiC — EV + robot + space crossover), HXL (aerospace CF), ROK (automation)",
+        "Second-order: SBSW/AMS.J (iridium via PGM), SCCO/FCX (Cu for robots/fabs)"
+      ]
+    }
+  ]
+}

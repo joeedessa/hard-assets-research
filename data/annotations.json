@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "description": "Annotations — podcast summaries, earnings call notes, analyst interview highlights, and research memos. Keyed to vertical and/or ticker. Add entries chronologically.",
+    "entry_types": ["podcast", "earnings_call", "analyst_note", "research_memo", "interview", "news_event"],
+    "instructions": "Each entry has: id (slug), type, date (YYYY-MM-DD), vertical (optional), ticker (optional), title, body, tags[]."
+  },
+  "annotations": [
+    {
+      "id": "init-framework-2026-04",
+      "type": "research_memo",
+      "date": "2026-04-30",
+      "vertical": null,
+      "ticker": null,
+      "title": "System initialization — hard assets research framework",
+      "body": "Initial build of the hard assets research system. 13 verticals mapped across 10 value chain stages. Three structural clusters defined: Early Innings (REE inning 1, Nuclear/Uranium inning 2, Electricity/Grid inning 2, Copper inning 2, Tech Metals inning 2, Water/Land inning 2, NG/LNG inning 3), Mid Innings (Li/Battery inning 4, Fertilizers inning 4, Ind. Inputs inning 3, PGMs/Gold/Ag inning 4), and Cycle-Sensitive (Oil inning 5). Defining insight: Nuclear, REE, and Electricity simultaneously at inning 1-2 with highest capex gaps (90, 92, 88) and lowest business cycle risk (<30) — most defensible structural positions in a recessionary environment.",
+      "tags": ["framework", "initialization", "structural-thesis"]
+    }
+  ]
+}

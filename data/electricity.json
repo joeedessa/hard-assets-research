@@ -1,0 +1,247 @@
+{
+  "_meta": {
+    "description": "Electricity & Grid — derived sector detail for Widget 2. Four sub-views: chain, intersections, AI themes, cycle.",
+    "note": "Electricity is a derived sector — output of fuel verticals, input to all economic activity."
+  },
+  "bottleneck": {
+    "title": "Critical bottleneck: power transformers & grid components — 2-4 year lead times",
+    "body": "Three demand drivers hit simultaneously: AI data centers (100-500MW+ per campus), EV charging infrastructure (each Level 3 station needs a substation upgrade), and grid hardening against extreme weather. Hitachi Energy, ABB, and Eaton have multi-year backlogs. Will persist 7-10 years regardless of new factory announcements. Quanta Services (PWR) builds the physical grid — ~40% US market share, backlog growing faster than revenue."
+  },
+  "chain": [
+    {
+      "n": "Generation — gas-fired CCGT",
+      "c": "#EF9F27",
+      "hi": false,
+      "role": "Dispatchable baseload + flexible peaking. Default solution for AI data center power demand.",
+      "tick": "VST (ERCOT dominant), NRG, Calpine (private), GE Vernova (GEV — turbines), Siemens Energy (ENR.DE)",
+      "det": "Gas CCGTs achieve ~60% thermal efficiency. Startup time 10-30 mins — ideal for grid balancing alongside intermittent renewables. For AI data centers, gas CCGT is the default always-on dispatchable power source. VST is the largest US merchant power company — leveraged to ERCOT power prices which have risen structurally with AI demand. Each 100MW data center campus adds ~0.7 Bcf/yr of gas demand at the plant gate."
+    },
+    {
+      "n": "Generation — nuclear baseload",
+      "c": "#534AB7",
+      "hi": true,
+      "role": "24/7 carbon-free baseload. 90%+ capacity factor. Preferred for AI data center PPAs — price certainty over 15-20 years at above-market rates.",
+      "tick": "Constellation Energy (CEG — largest US nuclear fleet, ~10% of US electricity; Microsoft TMI restart PPA template); Duke, Dominion; SMRs: BWXT, GEH BWRX-300",
+      "det": "The CEG-Microsoft Three Mile Island restart deal (2024) established the commercial template: a 20-year PPA at ~$110/MWh for 24/7 carbon-free power. Hyperscalers are now competing for nuclear PPAs. CEG has a pipeline of similar deals. Nuclear provides 24/7 baseload + carbon-free credentials + long-term price certainty — exactly the combination data centers need and will pay above-market rates for. SMRs (GE-Hitachi BWRX-300, Ontario Power 4-unit order) will enable purpose-built nuclear for data centers by the early 2030s."
+    },
+    {
+      "n": "Generation — offshore wind",
+      "c": "#3B6D11",
+      "hi": false,
+      "role": "Large-scale carbon-free generation. Direct-drive turbines use 600-1,000kg NdFeB REE magnets per MW — key cross-vertical demand driver.",
+      "tick": "Siemens Gamesa (SGRE/ENR.DE — SG 14-222 direct-drive turbine, ~1,000kg NdFeB per unit); Vestas (VWS.CO); GE Vernova (GEV — Haliade-X); Ørsted (ORSTED.CO)",
+      "det": "Offshore wind is the largest single demand driver for rare earth NdFeB permanent magnets after EV motors. Each SG 14-222 direct-drive turbine uses approximately 1,000kg of rare earth magnets. Global offshore wind buildout targets of 380GW+ by 2030 represent a structural multi-year REE demand program that is locked in regardless of policy changes. The bottleneck is REE separation and magnet manufacturing capacity — not turbine manufacturing."
+    },
+    {
+      "n": "Transmission — HV transformers & lines",
+      "c": "#D85A30",
+      "hi": true,
+      "role": "High-voltage interstate lines, HVDC corridors, large power transformers, substations. THE bottleneck layer — 2-4yr transformer lead times.",
+      "tick": "Hitachi Energy (private/Hitachi — world's largest LPT manufacturer, unprecedented backlog); ABB (ABBN — second-largest LPT + HVDC); Siemens Energy (ENR.DE); GE Vernova (GEV — grid solutions)",
+      "det": "Large power transformers (LPTs, >100 MVA) are the single most acute capital equipment bottleneck in the energy transition. Lead times for very large units (500MVA+) now exceed 4 years. There are fewer than 20 factories globally that manufacture the highest-specification units. US domestic manufacturing capacity is critically limited — 85%+ of US LPT procurement is imported. The bottleneck is not only manufacturing capacity but also the specialized grain-oriented electrical steel (GOES) used in transformer cores, and the skilled labor for installation."
+    },
+    {
+      "n": "Transmission — HVDC & interconnection",
+      "c": "#534AB7",
+      "hi": false,
+      "role": "Long-distance bulk power transfer + connecting offshore wind farms to onshore grids via subsea cables.",
+      "tick": "ABB (ABBN — HVDC technology pioneer); Siemens Energy (ENR.DE — HVDC Plus converter technology); Prysmian (PRY.MI — HVDC cable manufacturer for subsea); Nexans (NEX.PA — HVDC cable)",
+      "det": "HVDC is essential for two critical use cases: (1) Connecting offshore wind farms to onshore grids via subsea cables (North Sea, Baltic, US East Coast); (2) Long-distance bulk power transfer across regions. North Sea countries are building a meshed HVDC supergrid. Each major HVDC cable project uses thousands of tonnes of copper in cable and hundreds of millions in specialized converter stations. Prysmian and Nexans have 3-4yr backlogs on HVDC cable orders from European transmission system operators."
+    },
+    {
+      "n": "Distribution — MV/LV & smart grid",
+      "c": "#1D9E75",
+      "hi": false,
+      "role": "Medium and low voltage delivery to end users. Smart metering and distribution automation are the grid modernization capex story.",
+      "tick": "AEP, Exelon, DTE (regulated utilities — distribution owners); Eaton (ETN — power distribution components); nVent (NVT — electrical enclosures); Itron (ITRI — smart electric + water meters)",
+      "det": "Distribution utilities earn regulated returns on rate base — highly predictable earnings but rate-sensitive to interest rate changes. Growth story is grid modernization: smart meters (two-way communication for demand management), distribution automation (fault isolation reduces outage duration), and EV charging infrastructure upgrades (every Level 3 charger corridor requires distribution substation upgrades). IIJA (Infrastructure Investment and Jobs Act) allocated $65B for grid and clean energy transmission."
+    },
+    {
+      "n": "Grid storage — BESS",
+      "c": "#993556",
+      "hi": false,
+      "role": "Battery energy storage: frequency regulation, peak shifting, renewable firming. Growing rapidly — standalone economics independent of EV.",
+      "tick": "Fluence Energy (FLNC — AES+Siemens JV; world's leading independent BESS integrator); Tesla Megapack (TSLA); AES Corp (AES — owns + operates large BESS fleet directly); NextEra (NEE)",
+      "det": "Grid BESS is growing completely independently of EV demand. Three revenue streams drive standalone BESS economics: (1) Frequency regulation (fastest response, highest $/MWh); (2) Capacity markets (reserve payments for having dispatchable power available); (3) Energy arbitrage (buy cheap, sell dear — works with increasing renewable intermittency). Duration is currently 2-4 hours for most systems — 8-hour and longer systems are emerging (vanadium flow batteries, iron-air). Fluence FLNC is the most attractive independent BESS integrator."
+    },
+    {
+      "n": "Grid EPC & installation",
+      "c": "#185FA5",
+      "hi": true,
+      "role": "Building transmission lines, substations, solar/wind farms, and data center power infrastructure. Most direct single-stock AI/grid buildout expression.",
+      "tick": "Quanta Services (PWR — ~40% US power grid construction market share; largest listed grid EPC company; multi-year backlog; backlog growing faster than revenue); MYR Group (MYRG — T&D + commercial electrical); Emcor Group (EME — industrial + mechanical + DC power); MasTec (MTZ)",
+      "det": "Quanta Services is the most direct single-stock expression of the AI/grid buildout thesis. Every new data center campus, every offshore wind interconnection, every grid hardening project requires physical construction. The Quanta moat: a union labor force and equipment fleet (cranes, trailers, specialized line trucks) built over decades that cannot be quickly replicated. New entrants cannot show up and win this market — the skilled linemen, the equipment, the project management expertise are barriers to entry that protect margin."
+    },
+    {
+      "n": "Grid components — cables, switchgear & connectors",
+      "c": "#888780",
+      "hi": true,
+      "role": "HV power cables, medium-voltage switchgear, circuit breakers, connectors, electrical enclosures. Every new MW of grid capacity requires these.",
+      "tick": "GE Vernova (GEV — grid solutions + turbines + wind; backlog >$100B; 3+ years of revenue visibility); Prysmian (PRY.MI — world's largest cable company; 3-4yr backlog on HV/EHV + subsea wind cables); Nexans (NEX.PA — HV + North Sea subsea); Hubbell (HUBB — utility electrical products)",
+      "det": "GEV is uniquely positioned at the intersection of three simultaneous tailwinds: gas turbine generation (AI data center demand), grid solutions (transformer + switchgear, supply bottleneck), and offshore wind (Haliade-X turbines). The $100B+ order backlog represents approximately 3+ years of revenue visibility. Prysmian and Nexans are experiencing HV cable demand that exceeds their manufacturing capacity — they are building new cable manufacturing facilities in the US and Europe specifically for the grid and offshore wind buildout."
+    },
+    {
+      "n": "DC power systems & cooling",
+      "c": "#185FA5",
+      "hi": true,
+      "role": "Power distribution and management within data centers — UPS, PDUs, liquid cooling for AI GPU clusters.",
+      "tick": "Vertiv Holdings (VRT — data center power + cooling; liquid direct-to-chip cooling fastest-growing segment; significant AI exposure via Nvidia + hyperscaler relationships); Eaton Corp (ETN — largest UPS + power distribution + DC power management); Schneider Electric (SU.PA)",
+      "det": "Vertiv is experiencing a structural rerating driven by AI data center liquid cooling demand. AI GPU clusters (Nvidia H100, GB200) generate 10-25x more heat per rack than traditional servers — evaporative air cooling is insufficient. Direct liquid cooling (DLC), where coolant flows directly over chip heat spreaders, is the solution. Vertiv makes the heat exchangers, cooling distribution units (CDUs), and rear-door heat exchangers for this application. Revenue guidance revised upward multiple times as hyperscaler GPU cluster deployments accelerate."
+    }
+  ],
+  "intersections": [
+    {
+      "n": "Natural gas → CCGT generation",
+      "c": "#EF9F27",
+      "body": "Gas-fired CCGT is the default power source for new AI data center demand. Gas has a 10-30 min ramp time — perfect for following data center load patterns. LNG export buildout (Cheniere, VGAS) and domestic pipeline infrastructure (KMI, ET, EPD) are the upstream expressions.",
+      "tick": "EQT, SWN (producers) → KMI, ET, EPD (pipelines) → VST, NRG (gas generation) → AI data centers",
+      "demand": "Every 100MW AI data center = ~0.7 Bcf/yr gas demand at the plant gate. Multi-decade locked-in structural demand."
+    },
+    {
+      "n": "Uranium → nuclear baseload",
+      "c": "#534AB7",
+      "body": "Nuclear provides 24/7 carbon-free power with price certainty — the most attractive AI data center PPA structure. The full uranium supply chain (mining → enrichment → fuel fabrication → reactor) must scale to meet this demand. CEG is the most direct operator expression.",
+      "tick": "CCO (uranium) → Centrus LEU (enrichment) → Westinghouse (fuel fab) → CEG (generation) → Microsoft, Amazon PPAs",
+      "demand": "CEG-Microsoft TMI at $110/MWh for 20 years is the commercial template. CEG has a pipeline of similar deals. Nuclear capacity factor 90%+ = always-on, unlike renewables."
+    },
+    {
+      "n": "Copper → grid infrastructure",
+      "c": "#D85A30",
+      "body": "Every transformer winding, HV cable, EV charging connection, and data center bus bar requires copper. The grid buildout IS the structural copper demand driver — copper consumption from grid expansion alone could absorb the equivalent of several new major copper mines. TC/RC near-zero in 2024 is the earliest signal.",
+      "tick": "SCCO, FCX (mining) → Aurubis (smelting) → Prysmian, Nexans (cable) → PWR, EME (installation) → grid",
+      "demand": "5,000T Cu per GW solar. 8,000T per GW offshore wind. Transformer winding + HV cable + EV charging all add incremental compounding demand."
+    },
+    {
+      "n": "Lithium → grid BESS",
+      "c": "#1D9E75",
+      "body": "Grid-scale BESS enables renewable integration, frequency regulation, and capacity markets. BESS demand is completely independent of EV trajectory — it is driven by grid economics and renewable penetration targets. Growing rapidly with completely standalone economics.",
+      "tick": "ALB, SQM (Li production) → CATL, LG Energy (cells) → Tesla Megapack, Fluence FLNC (BESS systems) → AES, NEE (grid operators)",
+      "demand": "Each GW of BESS capacity requires ~1,500-2,000T Li₂CO₃ equivalent. Grid BESS deployments measured in tens of GWh annually — growing rapidly and independently of EV."
+    },
+    {
+      "n": "REE → direct-drive wind turbines",
+      "c": "#993556",
+      "body": "Direct-drive offshore wind turbines use 600-1,000kg NdFeB magnets per MW. Global offshore wind buildout (380GW+ by 2030) is one of the largest structural REE demand drivers alongside EV motors — and it is largely locked in by national targets.",
+      "tick": "MP Materials, Lynas (REE separation) → MP Fort Worth, Hitachi Metals (NdFeB magnets) → Siemens Gamesa, GEV (turbines) → offshore wind farms",
+      "demand": "380GW offshore wind by 2030 = up to 190,000 tonnes NdFeB magnets. Entire Western REE separation capacity today is insufficient to supply this without Chinese supply chain involvement."
+    },
+    {
+      "n": "Water → power plant cooling",
+      "c": "#3B6D11",
+      "body": "Thermal power plants (gas, nuclear) and AI data centers all require large volumes of cooling water. Nuclear plants require the most per MW. Data centers using evaporative cooling add significant new industrial water demand. Water availability is increasingly a site selection constraint for new DC and nuclear capacity.",
+      "tick": "ERII (desalination) → XYL, Veolia (treatment) → power plants + data centers → consumed or returned",
+      "demand": "100MW data center (evaporative cooling) = 1-2M gallons/day. Arizona is now denying new DC water permits. Nuclear SMR siting requires guaranteed cooling water access as a planning condition."
+    }
+  ],
+  "ai_themes": [
+    {
+      "n": "The scale shift: 20MW → 500MW+",
+      "body": "A standard enterprise data center in 2015 consumed 20-30MW. A hyperscale AI data center in 2025 requires 300-500MW on a single campus. Some planned AI computing clusters (Oracle, xAI, others) are targeting 1GW+ on a single site. This is a 20-50x increase in single-site power demand in a decade. Each new AI campus represents a new medium-sized city appearing on the power grid overnight.",
+      "tick": "Oracle (ORCL), xAI (private), Amazon AWS, Microsoft Azure, Google Cloud, Meta — all announcing GW-scale AI campus builds in 2024-2025"
+    },
+    {
+      "n": "Generation: gas + nuclear are the answer",
+      "body": "Renewables are insufficient for always-on AI compute — intermittency is fatal for data centers requiring 99.9999% uptime. Hyperscalers are signing 20-year direct PPAs with gas generators and nuclear operators. The Microsoft-Constellation Three Mile Island deal (2024) is the archetype: 20yr PPA at ~$110/MWh for 24/7 nuclear power. Google, Amazon, and Microsoft have all signed similar deals.",
+      "tick": "CEG (nuclear PPAs); VST, NRG (gas generation PPAs); Duke, Dominion (utility-scale PPAs); Entergy (Louisiana data center power growth)"
+    },
+    {
+      "n": "Transmission: the 2-4yr transformer crisis",
+      "body": "Building a new 500MW data center campus requires multiple large power transformers. Those transformers have 2-4yr lead times. The transmission line to carry power from the nearest large substation may require a year of permitting and a year of construction after that. Data center operators are now ordering transformers years before they have building permits — transformer lead time has become the critical path.",
+      "tick": "Hitachi Energy, ABB ABBN, Eaton ETN, GEV — all report backlogs measured in years. Lead times for 500MVA+ units now 36-48 months in some cases."
+    },
+    {
+      "n": "EPC: Quanta is the linchpin",
+      "body": "Someone has to build the transmission lines and substations connecting data centers to the grid. That someone is overwhelmingly Quanta Services (PWR). Quanta's combination of transmission EPC, substation construction, and distribution work means every major data center corridor buildout flows through their order book. PWR backlog has been growing faster than revenue — indicating demand pull that exceeds current capacity.",
+      "tick": "Quanta Services (PWR — ~40% US power grid construction); Emcor (EME — data center power + HVAC); MYR Group (MYRG)"
+    },
+    {
+      "n": "Cooling: liquid cooling is the new standard",
+      "body": "Air cooling cannot efficiently handle AI GPU cluster power densities exceeding 100kW per rack. Direct liquid cooling (DLC) — where coolant circulates directly over chip heat spreaders — is now the standard for AI infrastructure. Vertiv (VRT) makes the cooling distribution units, heat exchangers, and rear-door heat exchangers for this application. Nvidia specifies DLC as the required cooling method for its GB200 NVL rack systems.",
+      "tick": "Vertiv (VRT — DC liquid cooling + thermal management + UPS; revenue guidance revised upward repeatedly as GPU deployments accelerate); Modine Manufacturing (MOD); Eaton (ETN — UPS + power distribution)"
+    },
+    {
+      "n": "Water: AI creating new scarcity constraint",
+      "body": "A 100MW hyperscale data center using evaporative cooling consumes 1-2 million gallons of water per day. The Arizona State Land Department has begun denying water permits for new data centers in the Phoenix metro area — the same state where Intel Fab 52/62 and TSMC Fab 21 are being built. Liquid cooling (VRT) reduces water consumption vs. evaporative cooling but requires more sophisticated infrastructure.",
+      "tick": "ERII (desalination for industrial water supply); Vertiv (VRT — liquid cooling reduces water consumption vs. air); Xylem XYL (industrial water treatment + smart metering)"
+    }
+  ],
+  "cycle": [
+    {
+      "n": "Grid components & equipment",
+      "c": "#D85A30",
+      "struct": 95,
+      "capex": 90,
+      "bc": 20,
+      "inn": 2,
+      "verdict": "Most active bottleneck",
+      "vc": "#E24B4A",
+      "body": "Year 2-3 of a 10-year supercycle. Transformer lead times 2-4 years. Three demand drivers simultaneous and compounding. New manufacturing capacity will take 3-5 years to come online. The bottleneck will not self-correct quickly. Key names: ETN, ABBN, GEV, PRY.MI, NEX.PA, HUBB."
+    },
+    {
+      "n": "Grid EPC & construction services",
+      "c": "#185FA5",
+      "struct": 92,
+      "capex": 85,
+      "bc": 25,
+      "inn": 2,
+      "verdict": "Multi-year backlog",
+      "vc": "#E24B4A",
+      "body": "Quanta (PWR) has multiple years of backlog and is hiring at scale. Demand exceeds capacity — they are turning down work. Skilled lineman shortage amplifies the equipment bottleneck. Every new transmission line, substation, and data center power connection must be physically constructed. Most defensible moat: skilled union labor force built over decades cannot be quickly replicated."
+    },
+    {
+      "n": "Nuclear power generation",
+      "c": "#534AB7",
+      "struct": 90,
+      "capex": 88,
+      "bc": 15,
+      "inn": 2,
+      "verdict": "AI PPA rerating in progress",
+      "vc": "#E24B4A",
+      "body": "CEG has rerated from a utility to a hybrid utility/technology company on the strength of nuclear AI PPAs. The Microsoft TMI template is being replicated. 24/7 carbon-free power with 15-20yr price certainty is exactly what hyperscalers want. Low business cycle sensitivity — nuclear operates at 90%+ capacity factor in all economic conditions."
+    },
+    {
+      "n": "Gas-fired generation",
+      "c": "#EF9F27",
+      "struct": 75,
+      "capex": 65,
+      "bc": 55,
+      "inn": 3,
+      "verdict": "Structural AI demand driver",
+      "vc": "#1D9E75",
+      "body": "Gas-fired CCGT is the default solution for new AI data center power. VST and NRG are the primary beneficiaries in merchant power markets. ERCOT (Texas) is the most dynamic market — VST dominates here and Texas has more data center buildout than any other state. Business cycle sensitivity is moderate — data center power demand is increasingly sticky and contract-backed."
+    },
+    {
+      "n": "Grid BESS (battery storage)",
+      "c": "#993556",
+      "struct": 85,
+      "capex": 70,
+      "bc": 35,
+      "inn": 3,
+      "verdict": "Structural growth",
+      "vc": "#1D9E75",
+      "body": "Growing independently of EV — grid services economics (frequency regulation, capacity markets) are self-sustaining. Fluence Energy (FLNC) is the leading independent BESS integrator. AES Corp (AES) is the largest BESS operator. Declining lithium-ion cell costs are improving project economics. Duration extension from 2hr to 4hr to 8hr+ is expanding the addressable market."
+    },
+    {
+      "n": "Offshore & subsea wind",
+      "c": "#3B6D11",
+      "struct": 80,
+      "capex": 72,
+      "bc": 40,
+      "inn": 3,
+      "verdict": "REE demand driver",
+      "vc": "#1D9E75",
+      "body": "Direct-drive offshore wind is the largest structural demand driver for REE magnets after EV motors. Siemens Gamesa (SGRE/ENR.DE) and GE Vernova (GEV) are the primary turbine OEMs. HV cable supply chain (Prysmian, Nexans) and subsea cable installation are constrained. North Sea buildout is a decade-long program with committed national targets."
+    },
+    {
+      "n": "Regulated distribution utilities",
+      "c": "#888780",
+      "struct": 62,
+      "capex": 55,
+      "bc": 65,
+      "inn": 5,
+      "verdict": "Rate-sensitive — neutral",
+      "vc": "#888780",
+      "body": "Traditional regulated utilities (AEP, Exelon, DTE) earn regulated returns on their distribution rate base. Investment case is rate base growth (capex increases earnings) offset by interest rate sensitivity (utilities carry significant debt). Grid modernization (smart meters, distribution automation) is the growth driver. Not a primary thesis position — used as benchmark and defensive component."
+    }
+  ]
+}

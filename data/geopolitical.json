@@ -1,0 +1,196 @@
+{
+  "_meta": {
+    "description": "Geopolitical layer — heat map scores + actor control map for all 11 verticals.",
+    "heatmap_cols": ["Supply concentration", "Weaponization risk / reality", "Western policy response", "Tech race relevance"],
+    "actor_map_cols": ["Mining / Extraction", "Processing / Refining", "Transport / Infra", "End-use / Demand"],
+    "actor_classes": {
+      "a-us": "US / allies — green",
+      "a-cn": "China — red (adversarial)",
+      "a-ru": "Russia — amber (largely excluded post-sanctions)",
+      "a-na": "Multi-actor / mixed — blue",
+      "a-sa": "South Africa — pink",
+      "a-mx": "Mixed / emerging — purple"
+    },
+    "score_labels": ["Very low", "Low", "Moderate", "High", "Very high"]
+  },
+  "heatmap": [
+    {
+      "n": "Oil",
+      "id": "oil",
+      "scores": [3, 4, 3, 2],
+      "det": "OPEC+ is the original weaponized cartel but US shale has structurally weakened its leverage over Western economies. Russian crude disrupted post-2022 but absorbed via India/China routing — markets found alternatives relatively quickly. Refining is geopolitically low-risk (primarily Western-controlled). Tech race relevance is indirect — gas more important than crude for AI power. Oil is best positioned as a geopolitical HEDGE asset, not a primary geopolitical OPPORTUNITY thesis."
+    },
+    {
+      "n": "NG & LNG",
+      "id": "ng",
+      "scores": [3, 5, 4, 4],
+      "det": "Russia weaponized European gas supply in 2022 — the defining resource geopolitical event of the decade. European utilities locked into 20yr US LNG SPAs that cannot be unwound. US LNG is now a direct instrument of NATO energy security policy. AI data center power demand makes NG a direct tech race input. Western policy response (LNG terminal buildout, Cheniere Stage 3, Venture Global CP2) is strong and committed."
+    },
+    {
+      "n": "Nuclear/Uranium",
+      "id": "nu",
+      "scores": [5, 4, 3, 5],
+      "det": "Russian enrichment (TENEX) supplied ~28% of US SWU. Kazatomprom controls ~40% of global uranium mining (geopolitically ambiguous — between Russian and Chinese influence spheres). Prohibiting Russian Uranium Imports Act (2024) forces Western supply chain rebuild. Centrus (LEU) is the sole US enrichment company with active capacity. Nuclear AI PPA demand adds tech race urgency beyond traditional energy security framing."
+    },
+    {
+      "n": "Copper",
+      "id": "cu",
+      "scores": [2, 2, 2, 5],
+      "det": "Mining is relatively distributed across friendly nations (Chile, Peru, US, Australia, DRC) — no single adversarial actor controls geology. China dominates smelting (~40%) but this is a processing advantage, not a geological lock. The dominant structural constraint is the permitting asymmetry: democratic countries take 15-20yr for mine development vs. 3-5yr in authoritarian states. Tech race relevance is very high — copper is in every piece of grid infrastructure, EV, and data center."
+    },
+    {
+      "n": "Lithium",
+      "id": "li",
+      "scores": [4, 3, 3, 5],
+      "det": "Chile nationalization risk is real (2023 decree requiring 20-30% state participation in new projects). Chinese processing dominance: ~70% LiOH conversion, ~85% pCAM. IRA domestic content = US policy response — but with 5-10yr lag before meaningful reshoring. Cobalt (~65% DRC, Glencore dominant) and Nickel (Indonesian Class 2 oversupply) have distinct concentration profiles within this vertical."
+    },
+    {
+      "n": "REE",
+      "id": "re",
+      "scores": [5, 5, 2, 5],
+      "det": "China has already begun weaponizing: REE processing technology export restrictions (2023). ~85-90% of global REE separation is Chinese. MP Materials and Lynas are the ENTIRE Western world's response to Chinese REE dominance — two companies vs. a 30-year entrenched Chinese industrial complex. HREE (Dy, Tb) separation: essentially NO Western capacity at all. Pentagon has listed REE as the single highest-priority critical mineral gap. Robotics demand multiplier (6-12 motors per robot) not in consensus forecasts."
+    },
+    {
+      "n": "Tech Metals",
+      "id": "tm",
+      "scores": [5, 5, 1, 5],
+      "det": "China has ALREADY activated export controls on gallium and germanium (August 2023) and antimony (September 2024). This is not a future risk — weaponization has begun. Gallium is essential for GaN semiconductors (5G, EV inverters, satellite power). Germanium for fiber optics and defense IR imaging. Western policy response is essentially zero. The gap between strategic urgency and capital deployed is the largest in the entire universe."
+    },
+    {
+      "n": "PGMs & Silver",
+      "id": "pg",
+      "scores": [3, 3, 2, 3],
+      "det": "South Africa (75% Pt, ~40% Rh) has structural political/labor/Eskom fragility — not adversarially weaponized but systemically fragile. Russia (40% Pd via Norilsk) largely unavailable to Western investors post-2022 sanctions. Silver has no adversarial concentration. Platinum hydrogen economy demand is long-dated (2028-2035). Gold is the monetary/geopolitical hedge by design — central bank buying at record levels since 2022 as de-dollarization accelerates."
+    },
+    {
+      "n": "Water & Land",
+      "id": "wl",
+      "scores": [2, 2, 2, 3],
+      "det": "Water becoming geopolitical at basin level but listed investable universe does not yet directly capture weaponization. Most acute investable manifestation: Atacama water access directly constrains copper + lithium output from the world's most important mining region. DC water permits being denied in Arizona creates a new intersection between water scarcity and AI infrastructure siting."
+    },
+    {
+      "n": "Ind. Inputs",
+      "id": "ii",
+      "scores": [3, 2, 4, 5],
+      "det": "Linde and APD are Western-controlled geopolitical ASSETS — not vulnerabilities. They are at the intersection of semiconductor fab supply chains and industrial processes with no adversarial concentration risk. Titanium supply chain actively diversifying from Russia (VSMPO-AVISMA) — ATI is the primary beneficiary. Helium supply tightening from Amur GPP stranded by sanctions benefits LIN/APD pricing power."
+    },
+    {
+      "n": "Fertilizers",
+      "id": "fert",
+      "scores": [4, 4, 2, 2],
+      "det": "Russia + Belarus jointly controlled ~40% of global potash before 2022 sanctions — fertilizer was used as deliberate foreign policy. Russia imposed fertilizer export restrictions in 2022-23 as coercive economic statecraft. Morocco OCP controls ~70% of global phosphate reserves — extreme concentration. Nutrien + Mosaic are strategically critical allied-nation alternatives. Tech race relevance low — foundational food security rather than advanced technology inputs."
+    }
+  ],
+  "actor_map": [
+    {
+      "n": "Oil",
+      "id": "oil",
+      "l": [
+        {"c": "a-na", "t": "US/OPEC/Russia mixed — US shale + Saudi + Russian production"},
+        {"c": "a-na", "t": "US refiners dominant; Russian refining sanctioned"},
+        {"c": "a-us", "t": "US pipelines + tankers dominant; Russian crude rerouted via India"},
+        {"c": "a-us", "t": "Global demand; US/Europe primary importers"}
+      ]
+    },
+    {
+      "n": "NG & LNG",
+      "id": "ng",
+      "l": [
+        {"c": "a-us", "t": "US shale dominant (EQT,AR,SWN,DVN) — geopolitically secure"},
+        {"c": "a-us", "t": "US midstream (WMB,ET,KMI,EPD) — fee-based regulated"},
+        {"c": "a-us", "t": "US pipelines + US LNG exports (Cheniere,VGAS) — NATO strategic asset"},
+        {"c": "a-na", "t": "Europe + Asia importing US/Qatar LNG — dependent but diversified"}
+      ]
+    },
+    {
+      "n": "Nuclear/Uranium",
+      "id": "nu",
+      "l": [
+        {"c": "a-na", "t": "Kazakhstan ~40% (geopolitically ambiguous); Canada CCO ~15%"},
+        {"c": "a-ru", "t": "Russia TENEX ~28% SWU enrichment — MOST ACUTE DEPENDENCY"},
+        {"c": "a-na", "t": "Specialized fuel transport; thin non-Russian conversion capacity"},
+        {"c": "a-us", "t": "US/Europe/Japan reactor fleets — demand side Western-controlled"}
+      ]
+    },
+    {
+      "n": "Copper",
+      "id": "cu",
+      "l": [
+        {"c": "a-na", "t": "Chile/Peru/US/Australia — non-adversarial, friendly nations"},
+        {"c": "a-cn", "t": "China smelting ~40% global capacity — processing concentration risk"},
+        {"c": "a-na", "t": "Bulk shipping mixed; LME price discovery (HKEx-owned — note HK)"},
+        {"c": "a-us", "t": "Global grid/EV/construction demand — no adversarial supply control"}
+      ]
+    },
+    {
+      "n": "Lithium",
+      "id": "li",
+      "l": [
+        {"c": "a-na", "t": "Chile/Australia/Argentina — mixed friendly/nationalization risk"},
+        {"c": "a-cn", "t": "China ~70% LiOH conversion, ~85% pCAM — ACUTE CHOKEHOLD"},
+        {"c": "a-cn", "t": "Battery logistics largely China-controlled supply chain"},
+        {"c": "a-cn", "t": "China/Korea cell mfg dominant (CATL ~37%, BYD) — OEM demand side"}
+      ]
+    },
+    {
+      "n": "REE",
+      "id": "re",
+      "l": [
+        {"c": "a-cn", "t": "China ~60% mining; MP + Lynas = ALL non-Chinese production"},
+        {"c": "a-cn", "t": "China ~85% separation — MOST EXTREME SINGLE CHOKEPOINT"},
+        {"c": "a-cn", "t": "China-controlled NdFeB magnet supply chain (~90% sintered NdFeB)"},
+        {"c": "a-na", "t": "EV/wind/robot/defense OEMs globally — demand side has no control"}
+      ]
+    },
+    {
+      "n": "Tech Metals",
+      "id": "tm",
+      "l": [
+        {"c": "a-cn", "t": "China ~80% Ga, ~65% Ge, ~50% Sb, ~30% Sn production"},
+        {"c": "a-cn", "t": "China monopoly Ga/Ge; dominant Sb — EXPORT CONTROLS ACTIVATED 2023-24"},
+        {"c": "a-cn", "t": "Chinese export licensing controls Ga/Ge/Sb now weaponized"},
+        {"c": "a-us", "t": "US/Taiwan/Korea semiconductor fabs need these inputs — demand vulnerable"}
+      ]
+    },
+    {
+      "n": "PGMs & Silver",
+      "id": "pg",
+      "l": [
+        {"c": "a-sa", "t": "S.Africa 75% Pt, ~40% Rh; Russia 40% Pd (Norilsk — sanctioned)"},
+        {"c": "a-sa", "t": "SA smelting dominant; Norilsk Pd refinery isolated from West"},
+        {"c": "a-na", "t": "Ship/logistics mixed; LBMA London price discovery — Western-controlled"},
+        {"c": "a-us", "t": "Auto catalysts, fuel cells, jewelry, solar — global demand side"}
+      ]
+    },
+    {
+      "n": "Water & Land",
+      "id": "wl",
+      "l": [
+        {"c": "a-na", "t": "Distributed globally; Atacama Chile is the most contested basin"},
+        {"c": "a-us", "t": "Water treatment: Xylem, Veolia — Western technology leadership"},
+        {"c": "a-na", "t": "Pipeline/truck — local infrastructure; produced water (US operators)"},
+        {"c": "a-na", "t": "Mining, power, data centers — local/global mixed demand"}
+      ]
+    },
+    {
+      "n": "Ind. Inputs",
+      "id": "ii",
+      "l": [
+        {"c": "a-us", "t": "Air (universal); He = Qatar/US; Ti actively diversifying from Russia"},
+        {"c": "a-us", "t": "Linde + APD — Western duopoly; 15-20yr sole-source contracts"},
+        {"c": "a-us", "t": "Western cryogenic logistics dominant (Chart GTLS fleet globally)"},
+        {"c": "a-us", "t": "Global pharma + semicon fabs + aerospace/defense — Western users"}
+      ]
+    },
+    {
+      "n": "Fertilizers",
+      "id": "fert",
+      "l": [
+        {"c": "a-na", "t": "Russia/Belarus ~40% K (sanctioned); Morocco ~70% P reserves; Canada K"},
+        {"c": "a-na", "t": "Canada (NTR,MOS) dominant allied K supply; Morocco P chokepoint"},
+        {"c": "a-na", "t": "Canpotex (NTR+MOS JV) controls ALL Canadian K export logistics"},
+        {"c": "a-na", "t": "Global agriculture — emerging market demand growth (India, Brazil)"}
+      ]
+    }
+  ]
+}

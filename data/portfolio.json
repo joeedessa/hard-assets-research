@@ -1,0 +1,200 @@
+{
+  "_meta": {
+    "description": "Portfolio summary framework — defining insight, 3-cluster structure, 4-question screening, and catalyst table for all 13 verticals."
+  },
+  "defining_insight": {
+    "title": "The defining structural insight: three verticals simultaneously at inning 1-2 with the highest capex gaps in the universe",
+    "body": "Nuclear/Uranium (inning 2, capex gap 90), REE (inning 1, capex gap 92), and Electricity/Grid (inning 2, capex gap 88) all share the same structural profile: demand is mathematically locked in (AI power + enrichment rebuild + grid buildout), supply chains are under-invested after a decade+ of neglect, and lead times are so long that even committed investment today cannot solve the deficit quickly. Business cycle risk scores for all three are below 30 — meaning they are the most defensible positions in a recessionary environment. This combination of locked demand + scarce supply + long lead times + recession-resistance is the definition of an exceptional structural investment thesis."
+  },
+  "clusters": [
+    {
+      "cls": "early",
+      "color": "#E24B4A",
+      "title": "Early innings (1-3) — highest conviction structural longs",
+      "items": [
+        "<b>REE (inning 1):</b> MP Materials (MP), Lynas (LYC.AX) — entire Western supply chain barely exists",
+        "<b>Nuclear/Uranium (inning 2):</b> Centrus LEU, Cameco CCO, SPUT — enrichment rebuild year 1-2",
+        "<b>Electricity/Grid (inning 2):</b> Quanta PWR, Eaton ETN, GE Vernova GEV — transformer bottleneck 2-4yr",
+        "<b>Copper (inning 2):</b> SCCO, FCX, FNV/WPM streams — 16-17yr mine development lag",
+        "<b>Tech Metals (inning 2):</b> Perpetua PPTA, Alphamin AFMJF — export controls already active",
+        "<b>Water/Land (inning 2):</b> ERII, VWTR — scarcity recognition just beginning",
+        "<b>NG/LNG (inning 3):</b> LNG, VGAS, KMI, ET — European SPAs locked 20yr"
+      ]
+    },
+    {
+      "cls": "mid",
+      "color": "#EF9F27",
+      "title": "Mid innings (4-6) — structural but needs patience or entry timing",
+      "items": [
+        "<b>Li/Battery (inning 4):</b> ALB, SQM, FLNC — cyclical trough, 2026-2030 demand wave",
+        "<b>Fertilizers (inning 4):</b> NTR, MOS, ERII — post-2022 spike normalization",
+        "<b>Ind. Inputs (inning 3):</b> LIN, APD, ATI — strategic but mid-cycle in most sub-chains",
+        "<b>PGMs/Gold/Ag (inning 4):</b> FNV, WPM, gold streamers — Pt hydrogen wave long-dated",
+        "<b>Oil (inning 5):</b> VLO, TDW, STNG — mid-cycle selective, not primary structural thesis"
+      ]
+    },
+    {
+      "cls": "late",
+      "color": "#888780",
+      "title": "Business cycle sensitivity — how to differentiate within early innings",
+      "items": [
+        "<b>Most recession-resistant:</b> Nuclear (bc:20), REE (bc:28), Grid/Electricity (bc:22), Water (bc:32) — policy-driven, not economically discretionary",
+        "<b>Moderate cycle sensitivity:</b> NG/LNG (bc:52), Ind.Inputs (bc:38), Fertilizers (bc:52) — some industrial demand cyclicality",
+        "<b>Most cycle-sensitive:</b> Oil (bc:72), Li/Battery (bc:68), Copper (bc:62) — China construction, EV consumer credit, commodity price beta",
+        "<b>Key implication:</b> In a recession scenario, overweight Nuclear + REE + Grid + Water and underweight Copper and Lithium until the structural deficit signal reasserts."
+      ]
+    }
+  ],
+  "four_questions": [
+    {
+      "q": "1. What innings are we in?",
+      "a": "The most important question. Inning 1-2 = maximum future return potential but requires patience. Inning 7-9 = most of the structural thesis is priced in. In this universe, the average position is inning 2.9 — early across the board."
+    },
+    {
+      "q": "2. What is the capex gap score?",
+      "a": "A high capex gap (>80) means the sector has been starved of investment for a decade+. Under-investment creates future price support because supply cannot quickly respond to demand signals. Nuclear (90) and REE (92) are the extreme cases."
+    },
+    {
+      "q": "3. How sensitive is it to the business cycle?",
+      "a": "A position with inning 1 + bc risk >65 (like Copper or Lithium) requires more timing care than one with inning 1 + bc risk <30 (like Nuclear or REE). In a recessionary environment, the low-bc-risk early-innings positions are most defensible."
+    },
+    {
+      "q": "4. What is the investment structure?",
+      "a": "Even in the most structurally compelling vertical, the structure of the position matters enormously. Streaming (FNV, WPM) is better than mining in many verticals. Physical trusts (SPUT) are better than equity for uranium in early innings. Royalties sit above the processing chokepoint — geopolitically optimal."
+    }
+  ],
+  "catalyst_table": [
+    {
+      "id": "re",
+      "n": "REE & Specialty",
+      "c": "#993556",
+      "cats": [
+        "China REE processing tech export restrictions (now)",
+        "MP Materials Fort Worth magnet ramp (now)",
+        "Lynas Seadrift TX DoD facility opening (12m)",
+        "Robotics buildout demand entering forecasts (3yr)"
+      ]
+    },
+    {
+      "id": "nu",
+      "n": "Nuclear & Uranium",
+      "c": "#534AB7",
+      "cats": [
+        "Russian U import ban forcing Western supply rebuild (now)",
+        "CEG-Microsoft TMI PPA template replication (now)",
+        "Centrus HALEU production ramp at Piketon OH (12m)",
+        "Ontario Power BWRX-300 SMR construction start (3yr)"
+      ]
+    },
+    {
+      "id": "elec",
+      "n": "Electricity & Grid",
+      "c": "#534AB7",
+      "cats": [
+        "Transformer lead times 2-4yr — active bottleneck (now)",
+        "Quanta backlog growing faster than revenue (now)",
+        "IRA/IIJA grid funding flowing to upgrades (now)",
+        "Nuclear AI PPA pipeline beyond TMI (12m)"
+      ]
+    },
+    {
+      "id": "cu",
+      "n": "Copper",
+      "c": "#D85A30",
+      "cats": [
+        "TC/RC near-zero in 2024 — earliest squeeze signal (now)",
+        "Chile water permits constraining Atacama expansion (now)",
+        "LME copper inventory drawdown — watch weekly (12m)",
+        "New mine FIDs required for 2030 supply (3yr)"
+      ]
+    },
+    {
+      "id": "ng",
+      "n": "Natural Gas & LNG",
+      "c": "#EF9F27",
+      "cats": [
+        "Venture Global CP2 FID (12m)",
+        "Cheniere Stage 3 expansion ramp-up (12m)",
+        "AI data center power procurement expanding (ongoing)",
+        "India LNG import capacity additions (3yr)"
+      ]
+    },
+    {
+      "id": "tm",
+      "n": "Technology & Electronics Metals",
+      "c": "#185FA5",
+      "cats": [
+        "China Sb export controls activated Sept 2024 (now)",
+        "Perpetua PPTA Stibnite mine permitting decision (12m)",
+        "Advanced chip packaging (CoWoS, HBM3e) volume ramp (now)",
+        "DoD DPA Title III awards for critical minerals (ongoing)"
+      ]
+    },
+    {
+      "id": "wl",
+      "n": "Industrial Water & Land",
+      "c": "#3B6D11",
+      "cats": [
+        "Arizona DC water permit denials accelerating (now)",
+        "Atacama water rights disputes limiting mine expansions (now)",
+        "ERII industrial + defense desal contract expansion (12m)",
+        "SMR site selection — water as binding constraint (3yr)"
+      ]
+    },
+    {
+      "id": "li",
+      "n": "Lithium & Battery Metals",
+      "c": "#1D9E75",
+      "cats": [
+        "Li carbonate price floor — watch inventory normalization (12m)",
+        "ALB Kings Mountain conversion facility (12m)",
+        "IRA battery supply chain domestic content compliance (ongoing)",
+        "EV penetration crossing 25%+ in key markets (3yr)"
+      ]
+    },
+    {
+      "id": "fert",
+      "n": "Fertilizers & Crop Inputs",
+      "c": "#639922",
+      "cats": [
+        "BHP Jansen Stage 1 potash production start (2026-2027)",
+        "OCP Morocco phosphate expansion impacts (3yr)",
+        "India state fertilizer procurement decisions (ongoing)",
+        "Natural gas price movement — CF Industries leverage (ongoing)"
+      ]
+    },
+    {
+      "id": "ii",
+      "n": "Specialty Industrial Inputs",
+      "c": "#854F0B",
+      "cats": [
+        "ATI Ti diversification orders from Boeing/Airbus (ongoing)",
+        "Materion MTRN defense contract renewals (12m)",
+        "LIN/APD new TSMC fab on-site plant contracts (ongoing)",
+        "Helium supply tightening from Amur GPP (ongoing)"
+      ]
+    },
+    {
+      "id": "oil",
+      "n": "Oil",
+      "c": "#5F5E5A",
+      "cats": [
+        "UDW dayrate renewals at higher rates (12m)",
+        "New FPSO orders Guyana + Namibia deepwater (12m)",
+        "European product tanker tonne-miles (ongoing)",
+        "IEA oil demand peak timing — watch 2025-2026 (3yr)"
+      ]
+    },
+    {
+      "id": "pg",
+      "n": "PGMs, Gold & Silver",
+      "c": "#888780",
+      "cats": [
+        "Central bank gold buying — monthly reserve data (ongoing)",
+        "PEM electrolyzer Pt demand from green H2 projects (3yr)",
+        "SA Eskom power reliability — load shedding hours (ongoing)",
+        "WPM/FNV new streaming deal announcements (ongoing)"
+      ]
+    }
+  ]
+}
