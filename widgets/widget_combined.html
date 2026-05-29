@@ -259,11 +259,55 @@ body{margin:0;padding:12px;background:#fff;font-family:var(--font-sans)}
 .ct-12m{background:#FAEEDA;color:#633806;border:.5px solid #EF9F27}
 .ct-3y{background:#E6F1FB;color:#0C447C;border:.5px solid #378ADD}
 .ct-on{background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary)}
+
+/* ── Companies tab ── */
+.co-list{display:flex;flex-direction:column;gap:10px}
+.co-grp-hdr{font-size:11px;font-weight:500;letter-spacing:.03em;text-transform:uppercase;padding:4px 0;border-bottom:.5px solid var(--color-border-tertiary);margin-bottom:4px;display:flex;align-items:center;gap:5px;color:var(--color-text-secondary)}
+.co-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:4px}
+.co-card{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:7px 9px;background:var(--color-background-primary)}
+.co-ticker{font-size:13px;font-weight:600;color:var(--color-text-primary)}
+.co-name{font-size:10px;color:var(--color-text-tertiary);margin-top:1px;margin-bottom:2px}
+.co-layer{font-size:10px;color:var(--color-text-tertiary);margin-top:1px}
+.co-thesis{font-size:10px;color:var(--color-text-secondary);line-height:1.5;margin-top:3px}
+.co-badge{font-size:10px;font-weight:500;padding:1px 5px;border-radius:3px;display:inline-block}
+.conv-1{background:#F9FAFB;color:#6B7280;border:.5px solid #E5E7EB}
+.conv-2{background:#FAEEDA;color:#633806;border:.5px solid #EF9F2744}
+.conv-3{background:#E1F5EE;color:#085041;border:.5px solid #1D9E7544}
+.str-equity{background:#EEEDFE;color:#3C3489}
+.str-streaming{background:#E1F5EE;color:#085041}
+.str-royalty{background:#EFF6FF;color:#1D4ED8}
+.str-midstream{background:#FAEEDA;color:#633806}
+.str-utility{background:#FCEBEB;color:#791F1F}
+.str-epc{background:#F9FAFB;color:#374151;border:.5px solid #E5E7EB}
+.str-physical_trust{background:#FEF3C7;color:#92400E}
+
+/* ── Notes tab ── */
+.note-feed{display:flex;flex-direction:column;gap:5px}
+.note-card{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:8px 10px;background:var(--color-background-primary);cursor:pointer}
+.note-card:hover,.note-card.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.note-hdr{display:flex;align-items:center;gap:5px;margin-bottom:3px;flex-wrap:wrap}
+.note-date{font-size:10px;color:var(--color-text-tertiary);font-variant-numeric:tabular-nums;flex-shrink:0}
+.note-type{font-size:10px;font-weight:500;padding:1px 5px;border-radius:3px;flex-shrink:0}
+.nt-research_memo{background:#EEEDFE;color:#3C3489}
+.nt-earnings_call{background:#E1F5EE;color:#085041}
+.nt-podcast{background:#FAEEDA;color:#633806}
+.nt-news_event{background:#FCEBEB;color:#791F1F}
+.nt-analyst_note{background:#EFF6FF;color:#1D4ED8}
+.nt-interview{background:#F9FAFB;color:#374151;border:.5px solid #E5E7EB}
+.note-title{font-size:12px;font-weight:500;color:var(--color-text-primary)}
+.note-body{font-size:10px;color:var(--color-text-secondary);line-height:1.6;display:none;margin-top:5px;padding-top:5px;border-top:.5px solid var(--color-border-tertiary)}
+.note-card.ex .note-body{display:block}
+.note-tags{flex-wrap:wrap;gap:3px;margin-top:4px;display:none}
+.note-card.ex .note-tags{display:flex}
+.note-tag{font-size:10px;padding:1px 5px;border-radius:3px;background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary)}
+.note-ch{font-size:10px;color:var(--color-text-tertiary);transition:transform .12s;pointer-events:none}
+.note-card.ex .note-ch{transform:rotate(180deg)}
 </style>
 </head>
 <body>
 <div id="loading">Loading hard assets research data…</div>
 <div class="w" id="app" style="display:none">
+<div style="font-size:10px;color:var(--color-text-tertiary);text-align:right;margin-bottom:3px;padding-bottom:4px;border-bottom:.5px solid var(--color-border-tertiary)"><b style="color:var(--color-text-secondary)">Hard Assets Research</b> · Refreshed May 2026 · <a href="https://github.com/joeedessa/hard-assets-research" target="_blank" style="color:var(--color-text-info);text-decoration:none">joeedessa/hard-assets-research</a></div>
 
 <div class="tabs">
   <!-- Widget 1 tabs -->
@@ -279,6 +323,10 @@ body{margin:0;padding:12px;background:#fff;font-family:var(--font-sans)}
   <div class="tab" onclick="ST('el',this)">Electricity &amp; Grid</div>
   <div class="tab" onclick="ST('th',this)">Demand Themes</div>
   <div class="tab" onclick="ST('pf',this)">Portfolio Summary</div>
+  <!-- Separator -->
+  <div class="tab-group-sep"></div>
+  <div class="tab" onclick="ST('co',this)">Companies</div>
+  <div class="tab" onclick="ST('nt',this)">Research notes</div>
 </div>
 
 <!-- ── Widget 1 views ── -->
@@ -379,6 +427,16 @@ body{margin:0;padding:12px;background:#fff;font-family:var(--font-sans)}
   <div id="pf-cont"></div>
 </div>
 
+<div class="view" id="view-co">
+  <div class="note"><b>Company universe</b> — 39 companies across 12 verticals. Filter by conviction: <span class="co-badge conv-3">●●● high</span> = highest conviction &nbsp;<span class="co-badge conv-2">●● interested</span> &nbsp;<span class="co-badge conv-1">● monitor</span>. Structure badges show investment type.</div>
+  <div id="co-cont"></div>
+</div>
+
+<div class="view" id="view-nt">
+  <div class="note"><b>Research notes</b> — earnings call highlights, news events, and research memos. Newest first. Click any card to expand the full text.</div>
+  <div id="nt-cont"></div>
+</div>
+
 </div><!-- end #app -->
 
 <script>
@@ -387,10 +445,10 @@ const BASE='https://raw.githubusercontent.com/joeedessa/hard-assets-research/mai
 /* ── Global data ── */
 let VC_COLS,ROWS,MXC,DET,VORDER,CROSS_V,GEO,ACTORS,CYD,VC,EXPLS;
 let PS,EL_CHAIN,EL_INTX,EL_AI,EL_CYCLE,THEMES,CY_CATS,PORTFOLIO;
-let B_BAND,C_BAND;
+let B_BAND,C_BAND,COMPANIES,ANNOTATIONS;
 
 /* ── Build state (all lazy except matrix) ── */
-let built={mx:false,vx:false,ex:false,geo:false,cy:false,ps:false,el:false,th:false,pf:false};
+let built={mx:false,vx:false,ex:false,geo:false,cy:false,ps:false,el:false,th:false,pf:false,co:false,nt:false};
 
 /* ── Utilities ── */
 function mk(t,c){const e=document.createElement(t);if(c)e.className=c;return e;}
@@ -412,6 +470,8 @@ function ST(id,el){
     else if(id==='el')buildEl();
     else if(id==='th')buildThemes();
     else if(id==='pf')buildPortfolio();
+    else if(id==='co')buildCompanies();
+    else if(id==='nt')buildNotes();
     built[id]=true;
   }
 }
@@ -793,7 +853,7 @@ function buildPortfolio(){
    DATA LOADING (all 9 files)
 ════════════════════════════ */
 async function loadData(){
-  const [matrix,explorer,explainers,geo,cycle,ps,elec,themes,portfolio]=await Promise.all([
+  const [matrix,explorer,explainers,geo,cycle,ps,elec,themes,portfolio,companies,annotations]=await Promise.all([
     fetch(BASE+'matrix.json').then(r=>r.json()),
     fetch(BASE+'explorer.json').then(r=>r.json()),
     fetch(BASE+'explainers.json').then(r=>r.json()),
@@ -803,6 +863,8 @@ async function loadData(){
     fetch(BASE+'electricity.json').then(r=>r.json()),
     fetch(BASE+'themes.json').then(r=>r.json()),
     fetch(BASE+'portfolio.json').then(r=>r.json()),
+    fetch(BASE+'companies.json').then(r=>r.json()),
+    fetch(BASE+'annotations.json').then(r=>r.json()),
   ]);
 
   /* Widget 1 data */
@@ -827,8 +889,10 @@ async function loadData(){
   EL_AI    = elec.ai_themes;
   EL_CYCLE = elec.cycle;
   THEMES   = themes.themes;
-  PORTFOLIO= portfolio;
-  CY_CATS  = portfolio.catalyst_table;
+  PORTFOLIO   = portfolio;
+  CY_CATS     = portfolio.catalyst_table;
+  COMPANIES   = companies.companies;
+  ANNOTATIONS = annotations.annotations;
 
   /* Populate dynamic content */
   document.getElementById('integ').innerHTML=`<b style="color:var(--color-text-primary)">Integrated companies:</b> ${matrix.integrated_companies}`;
@@ -842,6 +906,92 @@ async function loadData(){
   /* Build default tab */
   buildMatrix();
   built.mx=true;
+}
+
+/* ════════════════════════════
+   COMPANIES TAB
+════════════════════════════ */
+const CO_ORDER=['re','nu','elec','cu','li','tm','ng','pg','wl','ii','fert','oil'];
+const CO_COLORS={re:'#993556',nu:'#534AB7',elec:'#534AB7',cu:'#D85A30',li:'#1D9E75',tm:'#185FA5',ng:'#EF9F27',pg:'#888780',wl:'#3B6D11',ii:'#854F0B',fert:'#639922',oil:'#5F5E5A'};
+const CO_NAMES={re:'REE & Specialty',nu:'Nuclear & Uranium',elec:'Electricity & Grid',cu:'Copper',li:'Lithium & Battery',tm:'Tech & Electronics Metals',ng:'Natural Gas & LNG',pg:'PGMs, Gold & Silver',wl:'Industrial Water & Land',ii:'Specialty Industrial Inputs',fert:'Fertilizers',oil:'Oil'};
+
+function buildCompanies(){
+  const cont=document.getElementById('co-cont');
+  const pills=mk('div','pills');
+  [['all','All verticals'],['3','●●● High conviction'],['2','●● Interested'],['1','● Monitor']].forEach(([v,lbl],i)=>{
+    const btn=mk('button',`pill${i===0?' on':''}`);
+    btn.textContent=lbl;btn.onclick=()=>filterCo(v,btn);pills.appendChild(btn);
+  });
+  cont.appendChild(pills);
+  const list=mk('div','co-list');list.id='co-grid';cont.appendChild(list);
+  renderCo('all');
+}
+
+function renderCo(filter){
+  const g=document.getElementById('co-grid');g.innerHTML='';
+  CO_ORDER.forEach(vid=>{
+    const cos=(COMPANIES||[]).filter(c=>c.vertical===vid&&(filter==='all'||c.conviction===parseInt(filter)));
+    if(!cos.length)return;
+    const grp=mk('div','');
+    const hdr=mk('div','co-grp-hdr');
+    hdr.innerHTML=`<span style="width:8px;height:8px;border-radius:50%;background:${CO_COLORS[vid]};display:inline-block;flex-shrink:0"></span>${CO_NAMES[vid]||vid} <span style="font-size:10px;color:var(--color-text-tertiary);font-weight:400;text-transform:none;letter-spacing:0">${cos.length} companies</span>`;
+    grp.appendChild(hdr);
+    const cgrid=mk('div','co-grid');
+    cos.sort((a,b)=>b.conviction-a.conviction).forEach(c=>{
+      const card=mk('div','co-card');
+      const dots='●'.repeat(c.conviction)+'○'.repeat(3-c.conviction);
+      card.innerHTML=`<div style="display:flex;align-items:center;gap:5px;margin-bottom:2px"><span class="co-ticker">${c.ticker}</span><span class="co-badge conv-${c.conviction}">${dots}</span><span class="co-badge str-${c.structure}" style="margin-left:auto">${c.structure.replace('_',' ')}</span></div><div class="co-name">${c.name} · ${c.geo}</div><div class="co-layer">Chain: ${c.chain_layer}</div><div class="co-thesis">${c.thesis_note}</div>`;
+      cgrid.appendChild(card);
+    });
+    grp.appendChild(cgrid);
+    g.appendChild(grp);
+  });
+}
+
+function filterCo(v,btn){
+  document.querySelectorAll('#co-cont .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');renderCo(v);
+}
+
+/* ════════════════════════════
+   NOTES TAB
+════════════════════════════ */
+function buildNotes(){
+  const cont=document.getElementById('nt-cont');
+  const sorted=[...ANNOTATIONS].sort((a,b)=>b.date.localeCompare(a.date));
+  const types=[...new Set(sorted.map(a=>a.type))];
+  const pills=mk('div','pills');
+  const allBtn=mk('button','pill on');allBtn.textContent='All';
+  allBtn.onclick=()=>filterNotes('all',allBtn,sorted);pills.appendChild(allBtn);
+  types.forEach(t=>{
+    const btn=mk('button','pill');btn.textContent=t.replace(/_/g,' ');
+    btn.onclick=()=>filterNotes(t,btn,sorted);pills.appendChild(btn);
+  });
+  cont.appendChild(pills);
+  const feed=mk('div','note-feed');feed.id='nt-feed';cont.appendChild(feed);
+  renderNotes('all',sorted);
+}
+
+function renderNotes(filter,sorted){
+  const feed=document.getElementById('nt-feed');if(!feed)return;
+  feed.innerHTML='';
+  const filtered=filter==='all'?sorted:sorted.filter(a=>a.type===filter);
+  filtered.forEach(a=>{
+    const card=mk('div','note-card');
+    card.addEventListener('click',()=>card.classList.toggle('ex'));
+    const chips=[
+      a.vertical?`<span style="font-size:10px;background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);padding:1px 5px;border-radius:3px;color:var(--color-text-secondary)">${a.vertical}</span>`:'',
+      a.ticker?`<span style="font-size:10px;background:#EEEDFE;border:.5px solid #534AB744;padding:1px 5px;border-radius:3px;color:#3C3489;font-weight:500">${a.ticker}</span>`:''
+    ].filter(Boolean).join('');
+    const tags=(a.tags||[]).map(t=>`<span class="note-tag">${t}</span>`).join('');
+    card.innerHTML=`<div class="note-hdr"><span class="note-date">${a.date}</span><span class="note-type nt-${a.type}">${a.type.replace(/_/g,' ')}</span>${chips}<span class="note-ch" style="margin-left:auto">▼</span></div><div class="note-title">${a.title}</div><div class="note-body">${a.body}</div><div class="note-tags">${tags}</div>`;
+    feed.appendChild(card);
+  });
+}
+
+function filterNotes(type,btn,sorted){
+  document.querySelectorAll('#nt-cont .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');renderNotes(type,sorted);
 }
 
 loadData().catch(err=>{

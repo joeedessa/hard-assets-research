@@ -1,10 +1,100 @@
 {
   "_meta": {
-    "description": "Annotations — podcast summaries, earnings call notes, analyst interview highlights, and research memos. Keyed to vertical and/or ticker. Add entries chronologically.",
+    "description": "Annotations — podcast summaries, earnings call highlights, analyst notes, and research memos. Keyed to vertical and/or ticker. Add entries chronologically.",
     "entry_types": ["podcast", "earnings_call", "analyst_note", "research_memo", "interview", "news_event"],
     "instructions": "Each entry has: id (slug), type, date (YYYY-MM-DD), vertical (optional), ticker (optional), title, body, tags[]."
   },
   "annotations": [
+    {
+      "id": "china-ree-escalation-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-29",
+      "vertical": "re",
+      "ticker": null,
+      "title": "China REE weaponization escalates to full export licensing — April 2025 controls still active",
+      "body": "April 2025 was the inflection point. China placed seven heavy/medium rare earth elements under export licensing: samarium, gadolinium, terbium, dysprosium, lutetium, scandium, and yttrium — plus their metals, oxides, alloys, and magnet materials. The 'pause' narrative in late 2025 was a misread: only the second tranche (five additional elements) was deferred to November 2026. The April controls were never suspended. Critically, an extraterritorial '50% rule' applies: products made outside China using Chinese-origin REEs also require export licenses — unprecedented jurisdictional reach. Export volumes fell sharply April-May 2025, forcing carmakers and defense suppliers to cut utilization or seek alternatives. MP Materials responded by signing a government price protection agreement (DoD floor at $110/kg NdPr) and ending all China sales. Lynas recorded H1 2026 net income A$80.21M (+1,259% YoY), delivered first heavy REE (Dy/Tb) sales, and now targets A$1.1B revenue in 2026. The geopolitical regime has permanently shifted: REE is no longer a risk to monitor — it is an active supply disruption requiring defensive positioning.",
+      "tags": ["REE", "China", "export-controls", "MP", "Lynas", "HREE", "weaponization"]
+    },
+    {
+      "id": "nuclear-ppa-acceleration-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-29",
+      "vertical": "nu",
+      "ticker": "CEG",
+      "title": "Nuclear AI PPA buildout accelerates far beyond CEG-Microsoft template",
+      "body": "The CEG-Microsoft Three Mile Island PPA was the template, not the ceiling. As of May 2026, the hyperscaler nuclear PPA pipeline has expanded dramatically: Amazon/AWS signed a 17-year PPA with Talen Energy for 1.92 GW from the Susquehanna nuclear plant (June 2025); Google signed with Kairos Power for a fleet of SMRs targeting 500 MW by 2030 (first corporate SMR PPA ever); Meta announced a 6.6 GW nuclear procurement strategy for its 'Prometheus' AI data center project. Nuclear is winning the 24/7 carbon-free baseload competition for AI infrastructure because it uniquely combines price certainty (15-20yr contracts at $110-130/MWh), zero-carbon credentials, and 90%+ capacity factor. Uranium market: spot ~$86/lb, LT contract price $93/lb (highest since 2008). Cameco McArthur River experienced a flooding event May 10, 2026, with production restored by May 27 — a 17-day disruption with no lasting impact on 2026 guidance (19.5-21.5M lbs maintained). Centrus Energy: DOE exercised Phase III HALEU production option at Piketon (~$110M through June 2026) with 8-year extension options. $2.3B contingent backlog. Scale challenge: Centrus targets 12 metric tons/year HALEU capacity 'sometime after 2030' — advanced reactor developers need this fuel but commercial-scale supply is years away.",
+      "tags": ["nuclear", "HALEU", "AI-PPA", "CEG", "CCO", "LEU", "SPUT", "hyperscalers"]
+    },
+    {
+      "id": "gold-ath-streaming-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-29",
+      "vertical": "pg",
+      "ticker": null,
+      "title": "Gold ATH $5,589/oz — streaming companies generating exceptional FCF; RGLD transforms via Sandstorm",
+      "body": "Gold hit $5,589/oz on January 28, 2026 — highest ever recorded. As of late May 2026, gold is ~$4,523/oz but central bank buying remains structurally above pre-2022 averages: Q1 2026 net central bank purchases 244 tonnes; Goldman projects ~60 tonnes/month through year-end; J.P. Morgan projects $5,000/oz by Q4 2026. The de-dollarization thesis is playing out in the data. At these prices, the streaming companies are generating exceptional FCF. Franco-Nevada (FNV): 2025 record revenue $1,822.8M (+YoY); net income $1.11B (2x YoY); operating cash flow $1,494M; dividend raised 16%. Crucially, FNV built this record entirely WITHOUT any Cobre Panama contribution — any restart is pure free optionality. Wheaton Precious Metals (WPM): Has overtaken FNV as world's largest precious metals streamer by market cap. 2026 GEO guidance 860K-940K (record); expanded Antamina silver stream adds directly. Royal Gold (RGLD): Acquired Sandstorm Gold ($3.5B deal, closed October 2025) plus $1.0B Kansanshi stream — $5.4B of M&A in 2025 transforms RGLD from mid-tier royalty to large-cap streaming house. 25th consecutive annual dividend increase. The streaming structure is most compelling at peak gold prices: fixed-cost streams + full commodity upside = maximum FCF leverage with no SA operational risk.",
+      "tags": ["gold", "ATH", "streaming", "FNV", "WPM", "RGLD", "central-bank-buying", "de-dollarization"]
+    },
+    {
+      "id": "lithium-cycle-turn-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-29",
+      "vertical": "li",
+      "ticker": null,
+      "title": "Lithium cycle turn confirmed — trough behind us; ALB +148% EBITDA; SQM Atacama rights to 2060",
+      "body": "The lithium winter is over. Li carbonate (LCE) troughed at approximately $8,000/tonne mid-2025 (down ~83% from the 2022 peak) and has recovered to approximately $21,000/tonne by May 2026 — a 162% rebound from trough. Two earnings prints confirm the turn. Albemarle (ALB) Q1 2026: net sales +33% to $1.43B; adjusted EBITDA +148% YoY to $664M; adjusted EPS $2.95 vs. $1.19 consensus — a massive beat. Energy Storage segment revenue +70% to $891M. Realized price $17/kg LCE in Q1, guiding higher through the year. ALB also cut $1.3B of debt — balance sheet repair ahead of schedule. SQM Q1 2026: ~69,000 MT LCE shipped at full capacity; volume guidance upgraded from +10% to +15% growth for 2026; SQM forecasts 25% global lithium demand growth for 2026. Most importantly: the Codelco joint venture has resolved SQM's single largest overhang — Atacama operating rights now secured to 2060 (removing the nationalization/concession-expiry risk that had weighed on the stock for 3 years). Structural demand thesis unchanged: 2026-2030 EV penetration >30% globally + grid-scale BESS scaling independently (BESS economics now self-sustaining without IRA credits). The trough is behind us but this vertical is still inning 4 — cycle-sensitive and requires continued timing discipline.",
+      "tags": ["lithium", "ALB", "SQM", "cycle-turn", "BESS", "Atacama", "Codelco"]
+    },
+    {
+      "id": "iran-qatar-lng-disruption-2026-05",
+      "type": "news_event",
+      "date": "2026-05-29",
+      "vertical": "ng",
+      "ticker": "LNG",
+      "title": "Iran strikes Qatar Ras Laffan — US LNG becomes geopolitically irreplaceable for Europe",
+      "body": "March 18, 2026: Iran struck Qatar's Ras Laffan LNG complex — the world's largest LNG facility. Approximately 17% of Qatar's LNG production capacity damaged. Repair timeline estimated at 3-5 years. European gas benchmark futures jumped 35% on the day. Asian LNG spot prices spiked 140%+. This event structurally reinforces the US LNG thesis in a way that was not in any base case. EU gas storage: 46 BCM entering 2026 (vs. 60 BCM in 2025, 77 BCM in 2024); as of late May 2026, EU storage at approximately 35% vs. 48% five-year average — critically low heading into the 2026-27 winter. US LNG response: record exports of 11.7M tonnes in March 2026 with approximately 64% directed to Europe. Cheniere (LNG): upgraded across Wall Street post-conflict. 2025 record results: $19.976B revenue (+27% YoY), net income $5.33B (+64%), >46M tonnes delivered. Corpus Christi Stage 3 Train 5 achieved first LNG in February 2026; Trains 6-7 on track for 2026 completion; >95% of capacity contracted through 2030. New 1.2 mtpa deal with CPC Corporation (Taiwan) through 2050. The Qatar disruption makes the 20-year European LNG SPAs not just commercially important but existentially necessary — US LNG is now geopolitically irreplaceable for European energy security.",
+      "tags": ["LNG", "Iran", "Qatar", "Ras-Laffan", "Cheniere", "Europe", "energy-security", "geopolitics"]
+    },
+    {
+      "id": "critical-minerals-policy-acceleration-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-29",
+      "vertical": null,
+      "ticker": null,
+      "title": "US critical minerals policy acceleration — Project Vault, One Big Beautiful Bill, EXIM loans",
+      "body": "The US policy response to Chinese critical mineral weaponization has substantially upgraded in 2025-2026. Key actions: (1) One Big Beautiful Bill Act (signed July 4, 2025): $2B to expand National Defense Stockpile, $5B to Industrial Base Fund for critical mineral supply chains, $500M to DOD Credit Program, $1B DPA financing through September 2027. (2) Project Vault (February 2026): $12B public-private critical minerals reserve — largest EXIM Bank loan in its 92-year history, plus direct equity stakes in mining companies and $7.5B congressional appropriations. (3) January 15, 2026 Executive Order: ties US critical minerals security to global partnerships; preferential trading zone framework open to 50+ allied nations with enforceable fair market prices. Key beneficiaries in portfolio: MP Materials (government floor price $110/kg NdPr), Perpetua Resources ($2.7B EXIM loan for Stibnite), Centrus Energy (HALEU contract Phase III), Materion (defense-prime $65M beryllium capacity investment). Context: US is fully import-dependent on 12 critical minerals and relies on imports for >50% of consumption of 29 additional minerals. China leads production of 30 of 60 minerals on the 2025 critical minerals list. The policy is real — the capital is starting to flow — but the structural dependency is decades in the making.",
+      "tags": ["critical-minerals", "policy", "DPA", "EXIM", "Project-Vault", "MP", "PPTA", "LEU", "MTRN"]
+    },
+    {
+      "id": "infrastructure-supercycle-numbers-2026-05",
+      "type": "earnings_call",
+      "date": "2026-05-29",
+      "vertical": "elec",
+      "ticker": null,
+      "title": "Q1 2026 earnings confirm infrastructure supercycle: ETN 228 GW DC backlog, GEV +71% orders, PWR $48.5B",
+      "body": "The Q1 2026 earnings season put hard numbers on the infrastructure supercycle. Eaton (ETN): revenue $7.5B (+17% YoY), organic growth 10%; total data center backlog now 228 GW — equivalent to 12 years of orders at current build rates; Electrical Americas orders +42% YoY; data center orders +240% YoY. Closed $11B of acquisitions in Q1 2026 including Boyd Thermal (DC cooling) and Ultra PCS Limited (aerospace power). GE Vernova (GEV): Q1 2026 orders $18.3B (+71% organically). Signed 21 GW of new gas equipment contracts in Q1 alone. Gas turbine backlog + slot reservations target raised to 110 GW. Overall backlog growing from $116B at spinoff to $163B; $200B target pulled forward from 2028 to 2027. Electrification (Grid) segment orders +86% organically. 2026 guidance: $44-45B revenue, $5.0-5.5B free cash flow. Quanta Services (PWR): Q1 2026 revenue $7.87B (+26% YoY). Backlog record $48.5B — up from approximately $28B two years ago (+73% in two years). 2026 full-year guidance raised above consensus. Key observation: these are not forecast numbers — they are executed contracts with creditworthy counterparties. 228 GW, $48.5B, $18.3B orders — the supercycle is in the earnings data, not just the narrative.",
+      "tags": ["ETN", "GEV", "PWR", "grid", "data-center", "supercycle", "backlog", "transformers"]
+    },
+    {
+      "id": "ppta-construction-start-2026-05",
+      "type": "news_event",
+      "date": "2026-05-29",
+      "vertical": "tm",
+      "ticker": "PPTA",
+      "title": "Perpetua Resources: Stibnite construction commenced, $2.7B EXIM loan, DoD funding — no longer a junior miner",
+      "body": "October 21, 2025: early works construction commenced at the Stibnite Gold Project following Forest Service Final Record of Decision. This is the binary catalyst that was the basis for the conviction position — it has now fired. Financing: US EXIM Board approved $2.7B senior secured loan (includes ~$2.2B direct loan). Over $850M equity raised. $714M cash on hand at year-end 2025. DoD awards: >$80M combined for antimony research, construction readiness, permitting, and engineering. Revised capex estimate: $2.576B. Economics: base-case NPV5%: $3.5B at $3,250/oz gold; $6.1B at $4,500/oz gold. With gold currently ~$4,500/oz, the NPV sensitivity case is effectively the base case. Final investment decision expected spring 2026. Antimony context: China's September 2024 export licensing sent antimony from ~$12,000/tonne to a peak of ~$57,778/tonne by April 2025 (380% spike), now holding ~$51,800/tonne — permanently repriced. Stibnite will be the only significant US domestic antimony source. The narrative has completely shifted: Perpetua is no longer a permitting-stage junior miner — it is a construction-stage, DoD-backed, EXIM-financed strategic national asset with economics that improve with every dollar of gold price.",
+      "tags": ["PPTA", "antimony", "Stibnite", "DoD", "EXIM", "construction", "gold", "critical-minerals"]
+    },
+    {
+      "id": "valero-refining-reversal-2026-05",
+      "type": "earnings_call",
+      "date": "2026-05-29",
+      "vertical": "oil",
+      "ticker": "VLO",
+      "title": "Valero Q1 2026: complete earnings reversal — $1.3B profit vs. $595M loss in Q1 2025",
+      "body": "Valero Q1 2026 net income: $1.3B ($4.22/share) vs. a net loss of $595M in Q1 2025 — an extraordinary swing. Refining operating income: $1.81B; refining margin: $14.90/bbl; US Gulf Coast distillate margin: $27.60/bbl. Renewable diesel segment: operating income $139M in Q1 2026 vs. operating loss of $141M in Q1 2025 — a $280M swing driven by tight distillate inventories and the Port Arthur sustainable aviation fuel (SAF) project successfully commissioning. The renewable diesel drag that weighed on VLO through 2024-25 has reversed to profitability. St. Charles FCC optimization on track for Q3 2026. The refining margin expansion magnitude is striking. Key variable to watch: crack spread cycles — Gulf Coast 321 crack spread is the primary earnings driver. The structural case for VLO has always been post-2020 refinery closure-driven structural tightening, which appears to be reasserting.",
+      "tags": ["VLO", "refining", "crack-spread", "renewable-diesel", "SAF", "oil"]
+    },
     {
       "id": "init-framework-2026-04",
       "type": "research_memo",
@@ -12,7 +102,7 @@
       "vertical": null,
       "ticker": null,
       "title": "System initialization — hard assets research framework",
-      "body": "Initial build of the hard assets research system. 13 verticals mapped across 10 value chain stages. Three structural clusters defined: Early Innings (REE inning 1, Nuclear/Uranium inning 2, Electricity/Grid inning 2, Copper inning 2, Tech Metals inning 2, Water/Land inning 2, NG/LNG inning 3), Mid Innings (Li/Battery inning 4, Fertilizers inning 4, Ind. Inputs inning 3, PGMs/Gold/Ag inning 4), and Cycle-Sensitive (Oil inning 5). Defining insight: Nuclear, REE, and Electricity simultaneously at inning 1-2 with highest capex gaps (90, 92, 88) and lowest business cycle risk (<30) — most defensible structural positions in a recessionary environment.",
+      "body": "Initial build of the hard assets research system. 12 verticals mapped across 10 value chain stages. Three structural clusters defined: Early Innings (REE inning 1, Nuclear/Uranium inning 2, Electricity/Grid inning 2, Copper inning 2, Tech Metals inning 2, Water/Land inning 2, NG/LNG inning 3), Mid Innings (Li/Battery inning 4, Fertilizers inning 4, Ind. Inputs inning 3, PGMs/Gold/Ag inning 4), and Cycle-Sensitive (Oil inning 5). Defining insight: Nuclear, REE, and Electricity simultaneously at inning 1-2 with highest capex gaps (90, 92, 88) and lowest business cycle risk (<30) — most defensible structural positions in a recessionary environment.",
       "tags": ["framework", "initialization", "structural-thesis"]
     }
   ]
