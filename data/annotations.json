@@ -96,6 +96,46 @@
       "tags": ["VLO", "refining", "crack-spread", "renewable-diesel", "SAF", "oil"]
     },
     {
+      "id": "robotics-ree-magnet-demand-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-30",
+      "vertical": "re",
+      "ticker": "MP",
+      "title": "Robotics REE demand multiplier — ~28 magnet kits per humanoid, JL Mag pure-play thesis",
+      "body": "The robotics demand layer is the most underpriced REE catalyst in the market. BOM teardown of Tesla Optimus: approximately 28 rare-earth magnet assemblies per robot (frameless torque motors in every joint). At ~$20 of magnet content per humanoid, the per-unit dollar is modest — but the volume leverage is compounding on top of the EV and wind turbine demand that already exists. Citrini's framing: 'Every joint motor needs rare-earth magnets' — robotics scaling is not a substitution for EV demand, it is additive. Pure-play names on the magnet bottleneck: MP Materials (MP — in portfolio, commercial magnet ramp H2 2026); JL Mag (6880.HK — China's dominant sintered NdFeB maker, captures the volume regardless of Western supply ambitions); Lynas (LYC.AU — upstream separation feeding magnet supply chains). Contrarian signal of note: Allient (in AI hardware map) is actively redesigning motors to reduce or eliminate rare-earth content — this motor-redesign behavior historically precedes scarcity rent because OEMs only do it when procurement teams are alarmed about supply. The demand multiplier from robotics is not yet in most sell-side REE demand models.",
+      "tags": ["REE", "robotics", "magnets", "NdFeB", "MP", "JL-Mag", "Lynas", "Optimus", "demand-multiplier"]
+    },
+    {
+      "id": "sic-supply-chain-inheritance-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-30",
+      "vertical": "tm",
+      "ticker": "WOLF",
+      "title": "SiC supply chain inheritance — EV-built capacity now being claimed by AI 800V infrastructure",
+      "body": "The largest hard-assets-relevant macro theme from the AI hardware supply chain: SiC demand was built from a $300M industrial niche (2018) to $3.5B (2024) entirely on the back of EV drivetrain demand. Now, as European EV adoption softens, AI infrastructure is inheriting that capacity — and will accelerate past it. 800V DC rack architecture (Rubin generation, first meaningful AI deployment 2026, steep 2028-2030 ramp) requires SiC MOSFETs for power conversion; AI is projected to represent approximately half of total SiC demand by 2030. Wolfspeed (WOLF): world's only commercial 200mm SiC wafer fab; demonstrated the first 300mm SiC crystal in January 2026 — only Coherent has shown this at the research stage. Post-Chapter 11 filing (2025), WOLF is mispriced against the old EV investor cohort that has abandoned SiC exposure while AI demand is accelerating. ROHM (6963.JP): Toyota BZ5 production win with 4th-gen SiC MOSFETs — Japan's leading SiC device maker with both EV and AI server power supply exposure. Speculative next layer: SiC has ~3× copper's thermal conductivity → next architecture move is SiC-based cold plates and fluid-cooled SiC interposers directly under the AI die (Eotron/NASA private work) — this would pull SiC from the rack periphery into the package itself, a material-pricing-power flip. Key principle: 'The closer a material sits to the chip, the more pricing leverage its vendor has over the customer.'",
+      "tags": ["SiC", "WOLF", "Wolfspeed", "ROHM", "800V", "AI-power", "supply-chain-inheritance", "EV-to-AI"]
+    },
+    {
+      "id": "ai-materials-pcb-basket-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-30",
+      "vertical": "tm",
+      "ticker": null,
+      "title": "AI materials PCB/substrate basket — HVLP copper foil, T-glass, CCL, ABF near-monopoly",
+      "body": "The AI PCB/substrate material layer is a hard-assets bottleneck hiding inside the semiconductor supply chain. Four acute chokepoints (Citrini Tier-1): (1) HVLP copper foil (high-voltage, low-profile) for AI server PCBs: 'few players capable of production'; capacity relief pushed from this year to 2027+. Pure-plays: Mitsui Kinzoku (5706.JP) and Co-Tech (8358.TW). (2) T-glass (high-frequency glass cloth reinforcement for AI PCBs): capacity relief similarly pushed to 2027+. Mostly Japanese specialty glass producers. (3) CCL (copper-clad laminate): Korean CCL prices +74.5% YoY as of mid-2026; lead times stretched. Pure-plays: Elite Material (2383.TW) and ITEQ (6213.TW). (4) ABF film (Ajinomoto Build-up Film): near-monopoly held by Ajinomoto (2802.T) — already in the AI hardware map at conviction-3. The single-name with broadest multi-bottleneck exposure: Resonac (4004.JP, ex-Showa Denko) — specialty materials across SiC, abrasives, HAST test films, and AI substrate materials. Key investment principle applies across this basket: these materials sit between the PCB fabricator and the chip package — as AI PCB specs tighten with each GPU generation, fewer suppliers can meet qualification, and those who can gain lasting pricing power.",
+      "tags": ["PCB", "CCL", "HVLP", "copper-foil", "T-glass", "ABF", "Mitsui-Kinzoku", "Elite-Material", "Resonac", "AI-materials"]
+    },
+    {
+      "id": "sst-transformer-race-2026-05",
+      "type": "research_memo",
+      "date": "2026-05-30",
+      "vertical": "elec",
+      "ticker": null,
+      "title": "Solid-state transformer race — SiC-based SSTs vs. iron-core transformers; 2027 deployment window",
+      "body": "Iron-core transformer lead times of 18-30 months have become the binding constraint on hyperscaler data center buildout — projects are now bottlenecked on transformer delivery rather than land, power access, or chip supply. This has opened a deployment window for solid-state transformers (SSTs): SiC-based switching architecture, lead times of months not years, no iron core, no insulating oil, and software-controllable power conversion. The race to production-ready SST: Heron Power — closed $140M Series B February 2026 (a16z American Dynamism + Breakthrough Energy Ventures; Drew Baglino, ex-Tesla SVP Powertrain, as CEO). Claims 50 GW of letters of intent; plans 40 GW/yr manufacturing facility. DG Matrix — $60M Series A, same window, with ABB and Mitsubishi Heavy participating as strategic investors. Eaton acquired Resilient Power (up to $150M) — the clearest signal from an incumbent transformer maker that SSTs are a credible replacement path. Scale application: NY MTA needs 190× 4MW power-traction substations for subway electrification — this is the municipal infrastructure use case alongside hyperscaler data centers. If SSTs reach production scale by 2027, they relieve the transformer bottleneck but simultaneously create a new SiC substrate demand pulse — reinforcing the Wolfspeed/ROHM/COHR thesis. Listed incumbents (ETN, GEV, ABB, Siemens Hitachi Energy) are all watching SST closely; the question is whether the private SST pure-plays IPO before the window closes.",
+      "tags": ["SST", "transformer", "Heron-Power", "DG-Matrix", "SiC", "ETN", "GEV", "grid", "data-center", "800V"]
+    },
+    {
       "id": "init-framework-2026-04",
       "type": "research_memo",
       "date": "2026-04-30",
