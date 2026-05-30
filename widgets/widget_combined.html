@@ -281,6 +281,47 @@ body{margin:0;padding:12px;background:#fff;font-family:var(--font-sans)}
 .str-epc{background:#F9FAFB;color:#374151;border:.5px solid #E5E7EB}
 .str-physical_trust{background:#FEF3C7;color:#92400E}
 
+/* ── Framework / Start Here tab ── */
+.fw-macro{border-radius:7px;padding:10px 13px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);margin-bottom:8px}
+.fw-macro-title{font-size:15px;font-weight:600;color:var(--color-text-primary);margin-bottom:5px}
+.fw-macro-body{font-size:11.5px;color:var(--color-text-secondary);line-height:1.7}
+.fw-drivers{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:5px;margin-bottom:8px}
+.fw-driver{border-radius:6px;padding:9px 11px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.fw-driver-icon{font-size:20px;margin-bottom:5px}
+.fw-driver-title{font-size:12.5px;font-weight:600;margin-bottom:3px}
+.fw-driver-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.55}
+.fw-insight{border-radius:7px;padding:12px 14px;border:.5px solid #534AB755;background:#534AB708;margin-bottom:8px;border-left:4px solid #534AB7}
+.fw-insight-label{font-size:9.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#534AB7;margin-bottom:5px}
+.fw-insight-title{font-size:14px;font-weight:600;color:var(--color-text-primary);margin-bottom:6px;line-height:1.35}
+.fw-insight-body{font-size:11px;color:var(--color-text-secondary);line-height:1.6}
+.fw-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}
+.fw-trio-item{border-radius:5px;padding:8px 10px;text-align:center}
+.fw-trio-name{font-size:11.5px;font-weight:600;margin-bottom:3px}
+.fw-trio-stats{font-size:10px;color:var(--color-text-secondary);line-height:1.6}
+.fw-section-hdr{font-size:9.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-tertiary);margin:10px 0 5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)}
+.fw-models{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:5px;margin-bottom:8px}
+.fw-model{border-radius:6px;padding:9px 11px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary);cursor:pointer}
+.fw-model:hover,.fw-model.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.fw-model-top{display:flex;align-items:flex-start;gap:6px;pointer-events:none}
+.fw-model-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.fw-model-name{font-size:13px;font-weight:600;color:var(--color-text-primary)}
+.fw-model-tagline{font-size:10px;color:var(--color-text-tertiary);margin-top:1px}
+.fw-model-ch{font-size:9px;color:var(--color-text-tertiary);transition:transform .12s;margin-left:auto;flex-shrink:0;margin-top:4px}
+.fw-model.ex .fw-model-ch{transform:rotate(180deg)}
+.fw-model-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.6;margin-top:6px;padding-top:6px;border-top:.5px solid var(--color-border-tertiary);display:none}
+.fw-model.ex .fw-model-body{display:block}
+.fw-signals{width:100%;border-collapse:collapse;font-size:10.5px;margin-bottom:8px}
+.fw-signals th{font-size:10px;font-weight:500;color:var(--color-text-tertiary);text-align:left;padding:4px 7px;border-bottom:.5px solid var(--color-border-secondary);white-space:nowrap;background:var(--color-background-secondary)}
+.fw-signals td{padding:5px 7px;border-bottom:.5px solid var(--color-border-tertiary);vertical-align:top;line-height:1.45}
+.fw-signals tr:last-child td{border-bottom:none}
+.fw-signals tr:hover td{background:var(--color-background-secondary)}
+.fw-path{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:5px;margin-bottom:8px}
+.fw-step{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:9px 11px;background:var(--color-background-primary);cursor:pointer;transition:all .12s}
+.fw-step:hover{border-color:var(--color-border-info);background:var(--color-background-info)}
+.fw-step-num{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff;margin-bottom:5px;flex-shrink:0}
+.fw-step-name{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.fw-step-desc{font-size:10px;color:var(--color-text-tertiary);line-height:1.45}
+
 /* ── Notes tab ── */
 .note-feed{display:flex;flex-direction:column;gap:5px}
 .note-card{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:8px 10px;background:var(--color-background-primary);cursor:pointer}
@@ -310,6 +351,9 @@ body{margin:0;padding:12px;background:#fff;font-family:var(--font-sans)}
 <div style="font-size:10px;color:var(--color-text-tertiary);text-align:right;margin-bottom:3px;padding-bottom:4px;border-bottom:.5px solid var(--color-border-tertiary)"><b style="color:var(--color-text-secondary)">Hard Assets Research</b> · Refreshed May 2026 · <a href="https://github.com/joeedessa/hard-assets-research" target="_blank" style="color:var(--color-text-info);text-decoration:none">joeedessa/hard-assets-research</a></div>
 
 <div class="tabs">
+  <!-- Framework / Start Here -->
+  <div class="tab" onclick="ST('fr',this)">★ Start here</div>
+  <div class="tab-group-sep"></div>
   <!-- Widget 1 tabs -->
   <div class="tab on" onclick="ST('mx',this)">Universe matrix</div>
   <div class="tab" onclick="ST('vx',this)">Vertical explorer</div>
@@ -327,6 +371,11 @@ body{margin:0;padding:12px;background:#fff;font-family:var(--font-sans)}
   <div class="tab-group-sep"></div>
   <div class="tab" onclick="ST('co',this)">Companies</div>
   <div class="tab" onclick="ST('nt',this)">Research notes</div>
+</div>
+
+<!-- ── Framework view ── -->
+<div class="view" id="view-fr">
+  <div id="fw-cont"></div>
 </div>
 
 <!-- ── Widget 1 views ── -->
@@ -448,7 +497,7 @@ let PS,EL_CHAIN,EL_INTX,EL_AI,EL_CYCLE,THEMES,CY_CATS,PORTFOLIO;
 let B_BAND,C_BAND,COMPANIES,ANNOTATIONS;
 
 /* ── Build state (all lazy except matrix) ── */
-let built={mx:false,vx:false,ex:false,geo:false,cy:false,ps:false,el:false,th:false,pf:false,co:false,nt:false};
+let built={fr:false,mx:false,vx:false,ex:false,geo:false,cy:false,ps:false,el:false,th:false,pf:false,co:false,nt:false};
 
 /* ── Utilities ── */
 function mk(t,c){const e=document.createElement(t);if(c)e.className=c;return e;}
@@ -462,7 +511,8 @@ function ST(id,el){
   el.classList.add('on');
   document.getElementById('view-'+id).classList.add('on');
   if(!built[id]){
-    if(id==='vx')buildVList();
+    if(id==='fr')buildFramework();
+    else if(id==='vx')buildVList();
     else if(id==='ex')buildExpls();
     else if(id==='geo')buildGeo();
     else if(id==='cy')buildCycle();
@@ -906,6 +956,105 @@ async function loadData(){
   /* Build default tab */
   buildMatrix();
   built.mx=true;
+}
+
+/* ════════════════════════════
+   FRAMEWORK / START HERE TAB
+════════════════════════════ */
+function buildFramework(){
+  const cont=document.getElementById('fw-cont');
+
+  /* ── Macro thesis banner ── */
+  const macro=mk('div','fw-macro');
+  macro.innerHTML=`<div class="fw-macro-title">Why hard assets, why now</div><div class="fw-macro-body">Four structural forces are converging simultaneously — and each reinforces the others. <b>Deglobalization</b> is forcing supply chain regionalization: governments are paying strategic premiums to secure domestic production of materials they cannot afford to import from adversaries. <b>AI infrastructure</b> requires massive physical inputs — power, copper, transformers, rare earth magnets — that have no software substitute and take a decade to build. <b>Energy transition</b> demands 6–10× more copper, lithium, cobalt, and rare earths per unit of capacity than the fossil fuel system it replaces. <b>Monetary debasement</b> has driven central banks to record gold purchases as de-dollarization accelerates post-2022 Russia sanctions. These are not cyclical trends — they are structural regime changes that will play out over decades, and the supply chains required were not built during the previous era of cheap capital and globalization.</div>`;
+  cont.appendChild(macro);
+
+  /* ── 4 structural drivers ── */
+  const driverData=[
+    {icon:'🌐',title:'Deglobalization',color:'#993556',body:'China controls processing of >80% of rare earths, >70% of lithium hydroxide, >65% of germanium, and ~50% of antimony. The April 2025 export licensing of seven HREE elements — including the dysprosium and terbium that go in every EV and wind turbine motor — showed exactly how this leverage gets weaponized. Western governments are now paying strategic premiums to build alternative supply from scratch.'},
+    {icon:'⚡',title:'AI power demand',color:'#534AB7',body:'AI training and inference requires 24/7 power at scale. Hyperscalers have turned to nuclear as the only source combining price certainty (15–20yr PPAs at $110–130/MWh), zero-carbon credentials, and 90%+ capacity factor. Amazon signed for 1.92 GW, Google signed the first-ever corporate SMR fleet PPA, Meta announced a 6.6 GW strategy. ETN\'s 228 GW data center backlog is 12 years of orders at current build rates.'},
+    {icon:'🔋',title:'Energy transition',color:'#1D9E75',body:'Every GW of offshore wind requires ~3× more copper per MW than a gas plant. Every EV drivetrain needs 6–8 rare earth magnets. Every grid battery requires lithium, manganese, nickel, or iron phosphate. Decarbonization is fundamentally a materials-intensive exercise — the S&P Global 8 Mt/yr copper deficit projected for 2030 flows directly from this math. The supply chains required simply were not built during the 2010s.'},
+    {icon:'🏅',title:'Monetary debasement',color:'#888780',body:'Central bank net gold purchases: Q1 2026 = 244 tonnes; full-year 2024 ≈ 1,037 tonnes — highest in recorded history. The 2022 Russian reserve freeze demonstrated that USD assets held in Western custodians can be seized, prompting a structural shift toward physical gold in sovereign reserves. Gold hit $5,589/oz on January 28, 2026. J.P. Morgan projects $5,000/oz by Q4 2026. The de-dollarization thesis is showing in the data.'}
+  ];
+  const driversDiv=mk('div','fw-drivers');
+  driverData.forEach(d=>{
+    const c=mk('div','fw-driver');
+    c.innerHTML=`<div class="fw-driver-icon">${d.icon}</div><div class="fw-driver-title" style="color:${d.color}">${d.title}</div><div class="fw-driver-body">${d.body}</div>`;
+    driversDiv.appendChild(c);
+  });
+  cont.appendChild(driversDiv);
+
+  /* ── Defining structural insight ── */
+  const insight=mk('div','fw-insight');
+  insight.innerHTML=`<div class="fw-insight-label">The defining structural insight</div><div class="fw-insight-title">Three verticals simultaneously at inning 1–2, with the highest capex gaps in the universe and business cycle risk below 30</div><div class="fw-insight-body">Nuclear/Uranium (inning 2), REE (inning 1), and Electricity/Grid (inning 2) all share the same structural profile: demand is mathematically locked in by AI power + enrichment rebuild + grid buildout; supply chains are starved of investment after a decade+ of neglect; and lead times are so long that even committed investment today cannot solve the deficit quickly. Business cycle risk below 30 means they are the <b>most defensible positions in a recessionary environment</b> — government procurement and grid buildout happen regardless of GDP. This combination — locked demand + scarce supply + long lead times + recession-resistance — is the definition of an exceptional structural thesis. It is rare for even one vertical to exhibit all four. All three exhibit all four simultaneously.</div><div class="fw-trio"><div class="fw-trio-item" style="background:#534AB712;border:.5px solid #534AB744"><div class="fw-trio-name" style="color:#534AB7">Nuclear / Uranium</div><div class="fw-trio-stats">Inning 2 · Capex gap 90<br>BC risk 20 · Structural 95</div></div><div class="fw-trio-item" style="background:#99355612;border:.5px solid #99355544"><div class="fw-trio-name" style="color:#993556">REE &amp; Specialty</div><div class="fw-trio-stats">Inning 1 · Capex gap 92<br>BC risk 28 · Structural 92</div></div><div class="fw-trio-item" style="background:#534AB712;border:.5px solid #534AB744"><div class="fw-trio-name" style="color:#534AB7">Electricity / Grid</div><div class="fw-trio-stats">Inning 2 · Capex gap 88<br>BC risk 22 · Structural 94</div></div></div>`;
+  cont.appendChild(insight);
+
+  /* ── Mental models ── */
+  const mmHdr=mk('div','fw-section-hdr');mmHdr.textContent='Mental models — the 5 lenses every position needs to pass';cont.appendChild(mmHdr);
+  const mmData=[
+    {icon:'⚾',name:'Innings (1–9)',tagline:'Where are we in the cycle?',body:'Think of each commodity vertical as a baseball game. <b>Innings 1–3</b> = structural early stage: most of the future return is still ahead, but patience is required — the thesis may take 3–7 years to fully price in. <b>Innings 4–6</b> = mid-cycle: thesis partially priced in, entry timing matters more. <b>Innings 7–9</b> = late stage: most of the structural thesis is already in the price — avoid unless you have a specific contrarian view.<br><br><b>How to read it:</b> A vertical at inning 1 with high structural demand and a large capex gap is the optimal setup. REE is effectively inning 1 — the Western supply chain barely exists. Nuclear is inning 2 — the rebuild just started. Compare to Oil at inning 5 — still investable, but as a cyclical trade, not a structural one.<br><br><b>Why it matters:</b> Buying a structurally compelling vertical at inning 8 is a timing error, not a thesis error. The framework works best when innings + capex gap + bc risk are all evaluated together.'},
+    {icon:'📉',name:'Capex Gap (0–100)',tagline:'How under-invested is the supply chain?',body:'A capex gap score above 80 means the sector has been starved of investment for a decade or more. Under-investment creates future price support because supply cannot respond quickly to demand signals — even if prices rise 2–3×, it takes 10–20 years to permit, build, and ramp a mine, refinery, or enrichment plant.<br><br><b>Extreme cases:</b> REE = 92 (Western separation and magnet infrastructure built essentially from zero after 2010, following China\'s consolidation of the industry). Nuclear = 90 (no new enrichment or reactor capacity built in the West for 20+ years; HALEU production barely exists).<br><br><b>Contrast:</b> Lithium = 42 (over-invested during the 2021–2023 EV boom, now in post-boom correction at inning 4). High capex gap + early innings = supply cannot follow price signals quickly = durable structural opportunity.'},
+    {icon:'📊',name:'Business Cycle Risk (0–100)',tagline:'How cyclical is this position?',body:'A high BC risk score means earnings and prices are tightly linked to GDP growth, credit cycles, and consumer spending. A low score means demand is policy-driven or physically non-discretionary — it happens regardless of economic conditions.<br><br><b>Low risk (≤30):</b> Nuclear (20), Grid/Electricity (22), REE (28), Water (32). Governments buy uranium enrichment, grid transformers, and fund REE supply chain security regardless of recession. Defense procurement doesn\'t pause for GDP.<br><br><b>High risk (≥60):</b> Oil (72), Lithium (68), Copper (62). China construction activity, EV consumer credit, and commodity price beta dominate. These require more timing care.<br><br><b>Portfolio rule:</b> In recession conditions, overweight low-BC early-innings positions (Nuclear + REE + Grid + Water) and reduce high-BC positions until the structural deficit signal reasserts clearly.'},
+    {icon:'🏗️',name:'Investment Structure',tagline:'How to own a vertical',body:'Even in the most structurally compelling vertical, the structure of the position matters enormously. From most to least preferred:<br><br><b>Streaming / Royalty</b> (FNV, WPM, RGLD) — fixed-cost exposure plus full commodity upside plus zero mine operational risk. Best risk-adjusted exposure at peak commodity prices. FNV built its 2025 record revenue entirely without Cobre Panama — any restart is pure free optionality.<br><br><b>Physical Trust</b> (SPUT for uranium) — no equity dilution, no management risk, direct spot price exposure. Optimal for uranium specifically in early innings before utilities have secured all their enrichment contracts.<br><br><b>Midstream / EPC</b> (KMI, ET, PWR, ETN, GEV) — fee-based contracted revenue, limited direct commodity price exposure but full capex supercycle capture. GEV\'s $163B backlog is already booked.<br><br><b>Equity</b> — most direct but also most operationally risky. Preferred when the company has a structural moat (only US enricher, only non-Chinese RE separator) rather than commodity leverage alone.'},
+    {icon:'🗺️',name:'Geopolitical Score (1–5)',tagline:'Supply concentration and weaponization risk',body:'Scores 1–5 across four dimensions: Supply concentration, Weaponization risk/reality, Western policy response, Tech race relevance.<br><br><b>Score 5 (Very high):</b> China controls processing and has already demonstrated willingness to use export controls as economic weapons. REE weaponization risk = 5 (April 2025 HREE licensing + extraterritorial 50% rule). Tech metals weaponization = 5 (Ga/Ge Aug 2023, Sb Sept 2024 — both already repriced markets permanently).<br><br><b>Score 1 (Very low):</b> Distributed supply, no adversarial concentration. Industrial gases (Linde/APD) score 2–4 across all dimensions — they are geopolitical <i>assets</i>, not vulnerabilities.<br><br><b>The alpha zone:</b> High weaponization risk + nascent (but real) Western policy response = the strategic premium is beginning to flow but prices haven\'t fully reflected it yet. REE and Tech Metals in 2025–2026 are the textbook case.'}
+  ];
+  const mmGrid=mk('div','fw-models');
+  mmData.forEach(m=>{
+    const card=mk('div','fw-model');
+    card.innerHTML=`<div class="fw-model-top"><span class="fw-model-icon">${m.icon}</span><div style="flex:1"><div class="fw-model-name">${m.name}</div><div class="fw-model-tagline">${m.tagline}</div></div><span class="fw-model-ch">▼</span></div><div class="fw-model-body">${m.body}</div>`;
+    card.addEventListener('click',()=>card.classList.toggle('ex'));
+    mmGrid.appendChild(card);
+  });
+  cont.appendChild(mmGrid);
+
+  /* ── Signals to watch ── */
+  const sigHdr=mk('div','fw-section-hdr');sigHdr.textContent='Signals to watch — per-vertical leading indicators';cont.appendChild(sigHdr);
+  const sigData=[
+    {v:'REE',color:'#993556',ind:'HREE oxide prices (Dy/Tb spot) + China HREE export volume data + Lynas/MP quarterly production reports',bull:'Dy oxide &gt;$300/kg and rising; Western quota utilization &lt;50%; MP OEM magnet qualifications accelerating; Lynas Seadrift TX commissioned',bear:'China exports resume freely; HREE export licensing lifted; Lynas Seadrift TX delayed past 2027'},
+    {v:'Nuclear/Uranium',color:'#534AB7',ind:'SPUT premium/discount to NAV + uncovered utility requirements (UxC quarterly report) + spot vs. LT contract price spread',bull:'SPUT premium &gt;5%; LT contracts &gt;$95/lb; utility uncovered position &gt;30% of 5yr forward need; new hyperscaler PPAs signed',bear:'SPUT deep discount (&gt;10%); utilities defer procurement; Congress grants new Russian import exemptions'},
+    {v:'Electricity/Grid',color:'#534AB7',ind:'Transformer lead times (industry surveys) + hyperscaler annual capex guidance + ETN/GEV/PWR quarterly order growth',bull:'Transformer lead times still 2–4yr; hyperscaler capex raised YoY; ETN backlog growth &gt;15%; GEV gas turbine slot reservations rising',bear:'Transformer lead times drop below 12m; hyperscaler AI capex plateaus; utility capex deferrals increase'},
+    {v:'Copper',color:'#D85A30',ind:'TC/RC rate (smelter treatment charges) + LME warehouse stock direction + new mine FID announcements',bull:'TC/RC negative or near zero; LME inventories &lt;200K tonnes declining; no major greenfield FID in 24 months',bear:'TC/RC returns &gt;$80/tonne; LME inventories spike above 500K; China construction recovery accelerates new smelter capacity'},
+    {v:'Natural Gas/LNG',color:'#EF9F27',ind:'EU gas storage % vs. 5yr average (GIE AGSI+ weekly) + Asian LNG spot price + Qatar Ras Laffan repair progress',bull:'EU storage &lt;40% vs. 5yr avg; Asian spot &gt;$15/MMBtu; Qatar repair extends; US LNG new long-term SPAs signed',bear:'EU storage &gt;65%; mild European winter; Qatar capacity restored faster than expected; US LNG FIDs delayed'},
+    {v:'Tech Metals',color:'#185FA5',ind:'Antimony spot price (LME/Fastmarkets) + gallium/germanium Rotterdam spot + PPTA quarterly construction updates',bull:'Sb &gt;$50K/tonne stable; no Western Ga/Ge primary production alternative; PPTA construction on schedule toward 2028',bear:'China unilaterally lifts Sb/Ga/Ge export controls; PPTA permitting re-opened or cost overruns reported'},
+    {v:'Lithium/Battery',color:'#1D9E75',ind:'Chinese Li carbonate spot (SMM weekly) + monthly China/EU EV sales penetration + utility BESS contract announcements',bull:'LCE &gt;$20K/tonne and rising; global EV penetration &gt;30%; utility BESS &gt;100 GWh ordered annually; ALB/SQM guidance raised',bear:'LCE falls back below $12K; EV demand misses on China credit tightening; IRA domestic content rules weakened'},
+    {v:'Gold/Streaming',color:'#888780',ind:'10yr TIPS real yield + monthly central bank reserve data (IMF COFER / WGC) + gold price vs. EUR/JPY',bull:'Real yields falling or negative; CB buying &gt;50T/month; gold outperforming EUR and JPY simultaneously; FNV/WPM FCF yield compression',bear:'Real yields rising sharply above 2%; CB selling; dollar reserve share stabilizing or recovering post-geopolitical normalization'}
+  ];
+  const sigWrap=mk('div','');sigWrap.style.overflowX='auto';
+  const tbl=mk('table','fw-signals');
+  tbl.innerHTML=`<thead><tr><th>Vertical</th><th>What to watch</th><th style="color:#085041">Bullish signal</th><th style="color:#791F1F">Bearish signal</th></tr></thead>`;
+  const tbody=document.createElement('tbody');
+  sigData.forEach(s=>{
+    const tr=mk('tr','');
+    tr.innerHTML=`<td style="white-space:nowrap"><span style="font-size:10px;font-weight:600;padding:2px 7px;border-radius:3px;background:${s.color}18;color:${s.color}">${s.v}</span></td><td style="min-width:210px;color:var(--color-text-secondary)">${s.ind}</td><td style="min-width:195px;color:#085041">${s.bull}</td><td style="min-width:195px;color:#791F1F">${s.bear}</td>`;
+    tbody.appendChild(tr);
+  });
+  tbl.appendChild(tbody);sigWrap.appendChild(tbl);cont.appendChild(sigWrap);
+
+  /* ── Learning path ── */
+  const lpHdr=mk('div','fw-section-hdr');lpHdr.textContent='Learning path — recommended sequence through this dashboard';cont.appendChild(lpHdr);
+  const lpData=[
+    {num:1,name:'Cycle & Innings',tab:'cy',color:'#E24B4A',desc:'Start here. The ranked table shows which verticals are earliest-stage and most structurally compelling. Expand any card for the full narrative summary and current intelligence.'},
+    {num:2,name:'Geopolitical',tab:'geo',color:'#A32D2D',desc:'Read the heatmap to understand adversarial supply concentration. Then switch to the Actor Control Map — red cells show exactly which chain stages China controls.'},
+    {num:3,name:'Chain Explainers',tab:'ex',color:'#534AB7',desc:'For any vertical you\'re researching, expand its card here to understand how the chain works, where value is captured, and what the structural demand thesis is. Read before buying any company.'},
+    {num:4,name:'Universe Matrix',tab:'mx',color:'#374151',desc:'The full 11×10 grid of every vertical × every value chain stage. Click blue cells for analytical depth. Cross-chain pattern recognition lives here.'},
+    {num:5,name:'Portfolio Summary',tab:'pf',color:'#EF9F27',desc:'Read the defining insight and three-cluster structure. Then work through the four screening questions — apply them mechanically to every position.'},
+    {num:6,name:'Companies',tab:'co',color:'#185FA5',desc:'Filter by conviction level. Structure badges tell you the risk-adjusted access type (streaming vs. equity vs. physical trust). Thesis notes explain the structural moat.'},
+    {num:7,name:'Research Notes',tab:'nt',color:'#993556',desc:'Chronological event log. Read to understand what changed and when — the gap between the original thesis and current reality. Events like the Iran/Qatar strike show up here first.'}
+  ];
+  const lpGrid=mk('div','fw-path');
+  lpData.forEach(p=>{
+    const step=mk('div','fw-step');
+    step.innerHTML=`<div class="fw-step-num" style="background:${p.color}">${p.num}</div><div class="fw-step-name">${p.name}</div><div class="fw-step-desc">${p.desc}</div>`;
+    step.onclick=()=>{
+      const tabs=document.querySelectorAll('.tab');
+      /* tab index map after Framework tab is inserted as tab 0 */
+      const tabMap={fr:0,mx:1,vx:2,ex:3,geo:4,cy:5,ps:6,el:7,th:8,pf:9,co:10,nt:11};
+      const idx=tabMap[p.tab];
+      if(idx!==undefined&&tabs[idx])ST(p.tab,tabs[idx]);
+    };
+    lpGrid.appendChild(step);
+  });
+  cont.appendChild(lpGrid);
 }
 
 /* ════════════════════════════
