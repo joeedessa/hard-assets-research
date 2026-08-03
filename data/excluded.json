@@ -1,0 +1,92 @@
+{
+  "_meta": {
+    "description": "Names considered and rejected from the Hard Assets Research universe. Each entry documents the reason for exclusion.",
+    "updated": "2026-08-03"
+  },
+  "excluded": [
+    {
+      "ticker": "VST",
+      "name": "Vistra Energy",
+      "considered_for": "nu",
+      "reason": "AI datacenter power play — already in AI Hardware Research map (datacenter vertical). Boundary rule: reference-only in HA, not double-counted. Primary investment thesis belongs in AI Hardware Research.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "considered_for": "nu",
+      "reason": "Retained in companies list as a nuclear operations reference, but flagged: AI Hardware Research has CEG in its datacenter vertical. Hard Assets version tracks the nuclear fleet angle; do not size it as a HA pure-play.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "considered_for": "elec",
+      "reason": "Retained in companies list but: AI Hardware Research has GEV in its datacenter vertical (gas turbines + grid for AI data centers). Hard Assets version tracks the grid supercycle angle. Do not double-count.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "GOLD",
+      "name": "Barrick Gold",
+      "considered_for": "pg",
+      "reason": "Large-cap gold miner; operational complexity, Zambia political risk, and streaming companies (FNV, WPM) provide cleaner gold exposure with zero capex risk. Streaming structure preferred over mining equity at gold ATH.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "considered_for": "pg",
+      "reason": "World's largest gold miner; integration complexity after Newcrest acquisition, cost overruns, and operational issues. Streaming companies preferred for gold exposure. Mine-level operational risk not justified when FNV/WPM available.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "RIO",
+      "name": "Rio Tinto",
+      "considered_for": "cu",
+      "reason": "Diversified miner (iron ore ~50% of revenue); iron ore exposure adds China steel cycle risk not in the HA thesis. Oyu Tolgoi copper is world-class but diluted by the iron ore weight. FCX and SCCO are cleaner copper exposure.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "BHP",
+      "name": "BHP Group",
+      "considered_for": "cu",
+      "reason": "Similar to RIO: diversified miner with large iron ore and coal exposure. Copper is growing but not the primary revenue driver. Prefer pure-play or high-torque copper exposure (FCX, SCCO) over blended mega-miners.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "considered_for": "oil",
+      "reason": "Large-cap integrated major; limited torque to specific HA themes. Valero (refining crack spreads), Tidewater (offshore vessels), and Scorpio (tanker tonne-miles) provide higher torque to specific oil theses without mega-cap dilution.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "LAC",
+      "name": "Lithium Americas",
+      "considered_for": "li",
+      "reason": "Thacker Pass development is important but DoD funding uncertainty and regulatory timeline risk make entry timing difficult. Pre-production; construction capex risk. ALB and SQM preferred for near-term trough positioning with production optionality.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "LTHM",
+      "name": "Livent (now Arcadium)",
+      "considered_for": "li",
+      "reason": "Merged into Arcadium; Rio Tinto acquisition announced 2024. Effectively removed as a standalone vehicle. Rio Tinto integration means exposure comes via diversified miner — excluded for same reasons as RIO.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "AMO.AX",
+      "name": "Arafura Rare Earths",
+      "considered_for": "re",
+      "reason": "Australian HREE developer (Nolans project — primarily neodymium, praseodymium). Pre-production; no clear near-term offtake certainty. LYC.AX preferred as operating company with proven separation; Arafura adds development-stage risk.",
+      "date": "2026-08-03"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger (SLB)",
+      "considered_for": "oil",
+      "reason": "Oil services; revenue tied to E&P capex cycle. HA thesis favors asset holders (refining, tankers, vessels) over services. SLB's exposure is E&P spending decisions — more cyclical, less thesis-specific than TDW/STNG/VLO.",
+      "date": "2026-08-03"
+    }
+  ]
+}
