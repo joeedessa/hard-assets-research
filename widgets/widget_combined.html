@@ -41,6 +41,38 @@
     --shadow-3:0 12px 40px rgba(0,0,0,.7),0 2px 8px rgba(0,0,0,.5);
   }
 }
+/* Semantic tag/signal colors — light defaults */
+:root{
+  --v0-t:#444441;--v1-t:#633806;--v2-t:#3C3489;--v3-t:#712B13;--v4-t:#085041;--v5-t:#72243E;
+  --v6-t:#0C447C;--v7-t:#444441;--v8-t:#27500A;--v9-t:#633806;--va-t:#27500A;
+  --tag-a:22;
+  --sig-bull:#085041;--sig-bear:#791F1F;
+  --hot-bg:#FCEBEB;--hot-t:#791F1F;--str-bg:#E1F5EE;--str-t:#085041;--mod-bg:#FAEEDA;--mod-t:#633806;
+  --risk-t:#633806;
+  --inline-bright:1;
+}
+:root[data-theme="dark"]{
+  --v0-t:#B5B4AE;--v1-t:#F0BC6E;--v2-t:#A9A2F5;--v3-t:#F09878;--v4-t:#5FD6AC;--v5-t:#E88BA6;
+  --v6-t:#7FB4E8;--v7-t:#B5B4AE;--v8-t:#9AD46A;--v9-t:#E0AC63;--va-t:#A9DB6A;
+  --tag-a:2E;
+  --sig-bull:#5FD6AC;--sig-bear:#F09090;
+  --hot-bg:#3A1D1D;--hot-t:#F0A0A0;--str-bg:#12352C;--str-t:#6FD9B2;--mod-bg:#3A2E17;--mod-t:#E8BE7A;
+  --risk-t:#E0AC63;
+  --inline-bright:1.55;
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --v0-t:#B5B4AE;--v1-t:#F0BC6E;--v2-t:#A9A2F5;--v3-t:#F09878;--v4-t:#5FD6AC;--v5-t:#E88BA6;
+    --v6-t:#7FB4E8;--v7-t:#B5B4AE;--v8-t:#9AD46A;--v9-t:#E0AC63;--va-t:#A9DB6A;
+    --tag-a:2E;
+    --sig-bull:#5FD6AC;--sig-bear:#F09090;
+    --hot-bg:#3A1D1D;--hot-t:#F0A0A0;--str-bg:#12352C;--str-t:#6FD9B2;--mod-bg:#3A2E17;--mod-t:#E8BE7A;
+    --risk-t:#E0AC63;
+    --inline-bright:1.55;
+  }
+}
+/* Brighten inline-styled colors (from JSON) in dark mode */
+.mch,.tn-name,.ctit,.mx-vdot{filter:brightness(var(--inline-bright))}
 *{box-sizing:border-box}
 body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-primary);
   font-family:var(--font-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -158,6 +190,9 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .fw-signals td{padding:5px 7px;border-bottom:.5px solid var(--color-border-tertiary);vertical-align:top;line-height:1.45}
 .fw-signals tr:last-child td{border-bottom:none}
 .fw-signals tr:hover td{background:var(--color-background-secondary)}
+.sig-bull{color:var(--sig-bull)}
+.sig-bear{color:var(--sig-bear)}
+.sig-chip{font-size:10px;font-weight:600;padding:2px 7px;border-radius:3px;filter:brightness(var(--inline-bright))}
 .fw-path{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:5px;margin-bottom:8px}
 .fw-step{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:9px 11px;background:var(--color-background-primary);cursor:pointer;transition:all .12s}
 .fw-step:hover{border-color:var(--color-border-info);background:var(--color-background-info)}
@@ -198,17 +233,22 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .mc.hi:hover{background:#534AB715}
 .mc *{pointer-events:none}
 .ct{display:inline-block;font-size:9.5px;font-weight:500;padding:1px 2px;border-radius:2px;margin:1px 0;line-height:1.3;white-space:nowrap}
-.v0{background:#5F5E5A22;color:#444441}.v1{background:#EF9F2722;color:#633806}
-.v2{background:#534AB722;color:#3C3489}.v3{background:#D85A3022;color:#712B13}
-.v4{background:#1D9E7522;color:#085041}.v5{background:#99355622;color:#72243E}
-.v6{background:#185FA522;color:#0C447C}.v7{background:#88878022;color:#444441}
-.v8{background:#3B6D1122;color:#27500A}.v9{background:#854F0B22;color:#633806}
-.va{background:#63992222;color:#27500A}
+.v0{background:#5F5E5A22;background:rgb(95 94 90/.16);color:var(--v0-t)}
+.v1{background:rgb(239 159 39/.16);color:var(--v1-t)}
+.v2{background:rgb(83 74 183/.18);color:var(--v2-t)}
+.v3{background:rgb(216 90 48/.16);color:var(--v3-t)}
+.v4{background:rgb(29 158 117/.16);color:var(--v4-t)}
+.v5{background:rgb(153 53 86/.18);color:var(--v5-t)}
+.v6{background:rgb(24 95 165/.18);color:var(--v6-t)}
+.v7{background:rgb(136 135 128/.16);color:var(--v7-t)}
+.v8{background:rgb(59 109 17/.18);color:var(--v8-t)}
+.v9{background:rgb(133 79 11/.18);color:var(--v9-t)}
+.va{background:rgb(99 153 34/.18);color:var(--va-t)}
 .mx-det{margin-top:5px;border-radius:5px;padding:7px 9px;border:.5px solid var(--color-border-secondary);background:var(--color-background-primary);font-size:11.5px;line-height:1.5;color:var(--color-text-secondary);display:none}
 .mx-det.on{display:block}
 .mx-det-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
 .sf{font-size:9.5px;font-weight:500;padding:1px 3px;border-radius:2px;display:inline-block;margin-right:2px}
-.fch{background:#FCEBEB;color:#791F1F}.fgp{background:#FAEEDA;color:#633806}
+.fch{background:var(--hot-bg);color:var(--hot-t)}.fgp{background:var(--mod-bg);color:var(--mod-t)}
 .fgeo{background:#E24B4A18;color:#A32D2D;border:.5px solid #E24B4A44}
 /* Dim B band */
 .bband{border-radius:4px;margin:6px 0 0;border:.5px solid var(--color-border-info);background:var(--color-background-info);overflow-x:auto}
@@ -258,9 +298,9 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .pst{font-size:10px;color:var(--color-text-tertiary);line-height:1.4}
 .srv{font-size:9.5px;font-weight:500;padding:1px 4px;border-radius:2px;background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary);cursor:default;display:inline-block;margin:1px}
 .badge{font-size:9.5px;font-weight:500;padding:1px 5px;border-radius:3px}
-.b-hot{background:#FCEBEB;color:#791F1F}
-.b-str{background:#E1F5EE;color:#085041}
-.b-mod{background:#FAEEDA;color:#633806}
+.b-hot{background:var(--hot-bg);color:var(--hot-t)}
+.b-str{background:var(--str-bg);color:var(--str-t)}
+.b-mod{background:var(--mod-bg);color:var(--mod-t)}
 /* Electricity & Grid */
 .el-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:4px}
 .elc{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:6px 8px;background:var(--color-background-primary);cursor:pointer}
@@ -279,6 +319,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .th-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:7px}
 .tn{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:6px 8px;cursor:pointer;transition:all .12s;background:var(--color-background-primary)}
 .tn.on{color:#fff;border-color:transparent}
+.tn.on .tn-name{color:#fff!important;filter:none}
+.tn.on .tn-sub{color:#fff;opacity:.9}
 .tn-name{font-size:12px;font-weight:500;line-height:1.3}
 .tn-sub{font-size:10px;opacity:.85;line-height:1.3;margin-top:1px}
 .th-detail{display:none}.th-detail.on{display:block}
@@ -293,7 +335,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .th-box-title{font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px}
 .th-box-body{font-size:11px;color:var(--color-text-secondary);line-height:1.5}
 .risk-box{border-radius:5px;padding:5px 8px;border-left:3px solid #EF9F27;background:#EF9F2708}
-.risk-title{font-size:10px;font-weight:500;color:#633806;margin-bottom:2px}
+.risk-title{font-size:10px;font-weight:500;color:var(--risk-t);margin-bottom:2px}
 .risk-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4}
 .pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
 .pos-card{border:.5px solid var(--color-border-tertiary);border-radius:4px;padding:4px 6px;background:var(--color-background-primary)}
@@ -909,7 +951,7 @@ function buildStartHere(){
     {v:'Lithium',c:'#1D9E75',ind:'Chinese Li carbonate spot (SMM weekly) + monthly China/EU EV penetration + utility BESS announcements',bull:'LCE &gt;$20K/tonne and rising; global EV penetration &gt;30%; utility BESS &gt;100 GWh/yr; ALB/SQM guidance raised',bear:'LCE falls back below $12K; EV demand misses on China credit tightening; IRA domestic content weakened'},
     {v:'Gold/Stream',c:'#888780',ind:'10yr TIPS real yield + monthly CB reserve data (IMF COFER/WGC) + gold vs. EUR/JPY',bull:'Real yields falling or negative; CB buying &gt;50T/month; gold outperforming EUR and JPY; FNV/WPM FCF yield compressing',bear:'Real yields rising sharply above 2%; CB selling; dollar reserve share stabilizing post-geopolitical normalization'}
   ];
-  const sigsHtml=`<div style="overflow-x:auto"><table class="fw-signals"><thead><tr><th>Vertical</th><th>What to watch</th><th style="color:#085041">Bullish signal</th><th style="color:#791F1F">Bearish signal</th></tr></thead><tbody>${sigs.map(s=>`<tr><td style="white-space:nowrap"><span style="font-size:10px;font-weight:600;padding:2px 7px;border-radius:3px;background:${s.c}18;color:${s.c}">${s.v}</span></td><td style="min-width:200px;color:var(--color-text-secondary)">${s.ind}</td><td style="min-width:180px;color:#085041">${s.bull}</td><td style="min-width:180px;color:#791F1F">${s.bear}</td></tr>`).join('')}</tbody></table></div>`;
+  const sigsHtml=`<div style="overflow-x:auto"><table class="fw-signals"><thead><tr><th>Vertical</th><th>What to watch</th><th class="sig-bull">Bullish signal</th><th class="sig-bear">Bearish signal</th></tr></thead><tbody>${sigs.map(s=>`<tr><td style="white-space:nowrap"><span class="sig-chip" style="background:${s.c}22;color:${s.c}">${s.v}</span></td><td style="min-width:200px;color:var(--color-text-secondary)">${s.ind}</td><td class="sig-bull" style="min-width:180px">${s.bull}</td><td class="sig-bear" style="min-width:180px">${s.bear}</td></tr>`).join('')}</tbody></table></div>`;
 
   // 7 learning path steps
   const steps=[
