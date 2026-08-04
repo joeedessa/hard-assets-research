@@ -865,6 +865,8 @@ let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
 let TICKER_MAP={};
 let EXCL_MAP={};
 let REF_MAP={},REF_BLOCK=new Set();
+// Symbols that double as industry vocabulary — require the (TICKER) form.
+const AMBIGUOUS_TK=new Set(['LNG','CF']);
 let TICKER_RE=null;
 
 // ── Utils ──────────────────────────────────────────────────────────────────
@@ -956,7 +958,15 @@ function buildTickerRE(){
 
 function linkifyTickers(s){
   if(!s||!TICKER_RE)return s||'';
-  return String(s).replace(TICKER_RE,m=>{
+  // Split on tags so we never rewrite inside an attribute (href, style, onclick).
+  return String(s).split(/(<[^>]*>)/).map(part=>part.charAt(0)==='<'?part:_linkifyText(part)).join('');
+}
+function _linkifyText(s){
+  return String(s).replace(TICKER_RE,(m,_g,off,full)=>{
+    // Tickers that are also common industry terms (LNG the commodity vs
+    // Cheniere's symbol; CF = carbon fibre vs CF Industries). Only treat these
+    // as a company when written in the "Name (TICKER)" convention.
+    if(AMBIGUOUS_TK.has(m)&&full.charAt(off-1)!=='(')return m;
     if(REF_BLOCK.has(m)&&!TICKER_MAP[m])return m;   // context/private/state — no link, by design
     const esc_m=m.replace(/'/g,"\\'");
     if(TICKER_MAP[m])
@@ -1206,11 +1216,11 @@ function buildMatrix(){
       const dest=card.tab?`openCBandCard('${esc(card.tab)}'${card.theme?`,'${esc(card.theme)}'`:''})`:'';
       const cls=card.tab?'cc cc-link':'cc';
       const attrs=card.tab?` onclick="${dest}" title="${esc(cbDestLabel(card))}"`:'';
-      return `<div class="${cls}" style="border-color:${card.c}44"${attrs}><div class="ctit" style="color:${card.c}">${esc(card.t)}${card.tab?' <span class="cc-arrow">↗</span>':''}</div>${(card.rows||[]).map(r=>`<div class="crow"><b style="font-size:9.5px;font-weight:500;color:var(--color-text-primary)">${esc(r.n)}</b><div class="csub">${esc(r.s)}</div></div>`).join('')}</div>`;
+      return `<div class="${cls}" style="border-color:${card.c}44"${attrs}><div class="ctit" style="color:${card.c}">${esc(card.t)}${card.tab?' <span class="cc-arrow">↗</span>':''}</div>${(card.rows||[]).map(r=>`<div class="crow"><b style="font-size:9.5px;font-weight:500;color:var(--color-text-primary)">${esc(r.n)}</b><div class="csub">${linkifyTickers(esc(r.s))}</div></div>`).join('')}</div>`;
     }).join('')}</div>`:'';
 
   el.innerHTML=`
-    <div class="note-box" style="margin-bottom:5px">Dimension A — ${ROWS.length} value chain stages × ${nC} commodity verticals. <span style="background:color-mix(in srgb,var(--accent) 8%,transparent);border:.5px solid var(--accent);padding:1px 5px;border-radius:2px;color:var(--accent);font-weight:500;font-size:9.5px">blue cells</span> = analytical detail, click to open. Other cells navigate to Vertical Explorer.</div>
+    <div class="note-box" style="margin-bottom:5px">Dimension A — ${ROWS.length} value chain stages × ${nC} commodity verticals. <span style="background:color-mix(in srgb,var(--accent) 8%,transparent);border:.5px solid var(--accent);padding:1px 5px;border-radius:2px;color:var(--accent);font-weight:500;font-size:9.5px">blue cells</span> = analytical detail, opens a panel below with a link onward. Every other cell jumps straight to that vertical in the Vertical Explorer.</div>
     <div class="mx-grid" data-hscroll><div class="mx-g" style="${colStyle}">${hdr}${rowsHtml}${leg}</div></div>
     <div class="mx-det" id="mx-det"></div>
     ${bbHtml}${cbHtml}`;
@@ -1249,7 +1259,13 @@ function showMxDet(key){
     if(f==='fgeo')return '<span class="sf fgeo">⚑ geopolitical</span>';
     return '';
   }).join('');
-  d.innerHTML=`<div class="mx-det-title">${esc(info.t)}</div><div style="margin-bottom:6px">${flags}</div>${info.b}`;
+  // A blue cell shows analytical depth AND offers the same jump a normal cell
+  // makes, so the two kinds of cell no longer feel like different behaviours.
+  const us=key.lastIndexOf('_');
+  const rowId=key.slice(0,us), vId=key.slice(us+1);
+  const vd=V_MAP[vId], rowN=(ROWS.find(r=>r.id===rowId)||{}).n||'';
+  const jump=vd?`<div class="dw-act" style="margin-top:8px"><span class="dw-btn" onclick="showMxDet('${key}');gotoVertical('${esc(vId)}','${esc(rowId)}')">Open ${esc(vd.n)}${rowN?' · '+esc(rowN):''} in Vertical Explorer →</span></div>`:'';
+  d.innerHTML=`<div class="mx-det-title">${esc(info.t)}</div><div style="margin-bottom:6px">${flags}</div>${linkifyTickers(info.b)}${jump}`;
   d.classList.add('on');
   d.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
@@ -1456,7 +1472,7 @@ function buildExpls(){
     const c=mk('div','exc');
     c.addEventListener('click',()=>c.classList.toggle('on'));
     const vr=(e.vals||[]).map(v=>`<div class="vr"><div class="vrl">${esc(v.l)}</div><div class="vrb"><div class="vrf" style="width:${v.v}%;background:${e.c}aa"></div></div><div class="vrn">${esc(v.n)}</div></div>`).join('');
-    c.innerHTML=`<div class="exh"><div class="exd" style="background:${e.c}"></div><div class="exn">${esc(e.n)}</div><div class="exch">▼</div></div><div class="exhk">${e.hk||''}</div><div class="exar">Chain: ${esc(e.ar||'')}</div><div class="exbd">${e.bd||''}<div style="margin-top:6px;font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px;pointer-events:none">Value capture by layer</div>${vr}</div>`;
+    c.innerHTML=`<div class="exh"><div class="exd" style="background:${e.c}"></div><div class="exn">${esc(e.n)}</div><div class="exch">▼</div></div><div class="exhk">${linkifyTickers(e.hk||'')}</div><div class="exar">Chain: ${esc(e.ar||'')}</div><div class="exbd">${linkifyTickers(e.bd||'')}<div style="margin-top:6px;font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px;pointer-events:none">Value capture by layer</div>${vr}</div>`;
     g.appendChild(c);
   });
 }
@@ -1468,7 +1484,7 @@ function buildEl(){
     EL_CHAIN.forEach(card=>{
       const c=mk('div',`elc${card.hi?' hi':''}`);
       c.addEventListener('click',()=>c.classList.toggle('ex'));
-      c.innerHTML=`<div class="elh"><div class="eld" style="background:${card.c}"></div><div class="eln">${esc(card.n)}</div><div class="elch">▼</div></div><div class="elb">${card.role||''}</div><div class="elt">${esc(card.tick||'')}</div><div class="eld2">${card.det||''}</div>`;
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${card.c}"></div><div class="eln">${esc(card.n)}</div><div class="elch">▼</div></div><div class="elb">${linkifyTickers(card.role||'')}</div><div class="elt">${linkifyTickers(esc(card.tick||''))}</div><div class="eld2">${linkifyTickers(card.det||'')}</div>`;
       cg.appendChild(c);
     });
   }
@@ -1476,7 +1492,7 @@ function buildEl(){
   if(ig&&EL_INTX.length){
     EL_INTX.forEach(ix=>{
       const c=mk('div','elc');
-      c.innerHTML=`<div class="elh"><div class="eld" style="background:${ix.c}"></div><div class="eln">${esc(ix.n)}</div></div><div class="elb">${ix.body||''}</div><div class="elt">${esc(ix.tick||'')}</div>${ix.demand?`<div style="margin-top:4px;font-size:10px;background:var(--color-background-secondary);padding:3px 5px;border-radius:3px;color:var(--color-text-secondary)"><b style="color:var(--color-text-primary)">Demand:</b> ${esc(ix.demand)}</div>`:''}`;
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${ix.c}"></div><div class="eln">${esc(ix.n)}</div></div><div class="elb">${linkifyTickers(ix.body||'')}</div><div class="elt">${linkifyTickers(esc(ix.tick||''))}</div>${ix.demand?`<div style="margin-top:4px;font-size:10px;background:var(--color-background-secondary);padding:3px 5px;border-radius:3px;color:var(--color-text-secondary)"><b style="color:var(--color-text-primary)">Demand:</b> ${esc(ix.demand)}</div>`:''}`;
       ig.appendChild(c);
     });
   }
@@ -1485,7 +1501,7 @@ function buildEl(){
     const ag=mk('div','el-grid');
     EL_AI.forEach(d=>{
       const c=mk('div','elc');
-      c.innerHTML=`<div class="eln" style="margin-bottom:3px">${esc(d.n)}</div><div class="elb">${d.body||''}</div><div class="elt">${esc(d.tick||'')}</div>`;
+      c.innerHTML=`<div class="eln" style="margin-bottom:3px">${esc(d.n)}</div><div class="elb">${linkifyTickers(d.body||'')}</div><div class="elt">${linkifyTickers(esc(d.tick||''))}</div>`;
       ag.appendChild(c);
     });
     ac.appendChild(ag);
@@ -1501,7 +1517,7 @@ function buildEl(){
         <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:2px;font-size:10px"><span style="color:var(--color-text-tertiary)">Capex gap</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.capex}%;height:100%;background:#E24B4A;border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:#E24B4A">${cy.capex}</span></div>
         <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:3px;font-size:10px"><span style="color:var(--color-text-tertiary)">Cycle risk</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.bc}%;height:100%;background:#EF9F27;border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:#EF9F27">${cy.bc}</span></div>
         <div style="font-size:10px;color:var(--color-text-tertiary);margin-bottom:2px">Innings: ${dots}<span style="font-weight:500;color:${cy.c}">${cy.inn}/9</span></div>
-        <div class="elb" style="font-size:10px">${cy.body||''}</div>`;
+        <div class="elb" style="font-size:10px">${linkifyTickers(cy.body||'')}</div>`;
       cg2.appendChild(c);
     });
     cc.appendChild(cg2);
@@ -1534,8 +1550,8 @@ function loadTheme(id){
   let det=document.getElementById('thd-'+id);
   if(!det){
     det=mk('div','th-detail');det.id='thd-'+id;
-    const chain=(t.items||[]).map((item,i)=>`<div class="tc-item"><div class="tc-num" style="background:${t.c}">${i+1}</div><div><div class="tc-lbl">${esc(item.lbl)}</div><div class="tc-txt">${esc(item.ticks||'')}</div><div class="tc-txt" style="color:var(--color-text-secondary);margin-top:1px">${esc(item.why||'')}</div></div></div>`).join('');
-    const posCards=(t.positions||[]).map(p=>{const[tier,...rest]=p.split(':');return `<div class="pos-card"><div class="pos-tier">${esc(tier)}</div><div class="pos-items">${esc(rest.join(':').trim())}</div></div>`;}).join('');
+    const chain=(t.items||[]).map((item,i)=>`<div class="tc-item"><div class="tc-num" style="background:${t.c}">${i+1}</div><div><div class="tc-lbl">${esc(item.lbl)}</div><div class="tc-txt">${linkifyTickers(esc(item.ticks||''))}</div><div class="tc-txt" style="color:var(--color-text-secondary);margin-top:1px">${esc(item.why||'')}</div></div></div>`).join('');
+    const posCards=(t.positions||[]).map(p=>{const[tier,...rest]=p.split(':');return `<div class="pos-card"><div class="pos-tier">${esc(tier)}</div><div class="pos-items">${linkifyTickers(esc(rest.join(':').trim()))}</div></div>`;}).join('');
     const bars=[{l:'Structural demand strength',v:t.struct,c:t.c},{l:'Near-term momentum',v:t.near,c:t.c+'99'},{l:'Business cycle risk',v:t.bc,c:'#EF9F27'}].map(b=>`<div class="vbar"><div class="vbar-lbl">${b.l}</div><div class="vbar-b"><div class="vbar-f" style="width:${b.v}%;background:${b.c}"></div></div><span style="font-size:10.5px;font-weight:500;color:${b.c};min-width:24px;text-align:right">${b.v}</span></div>`).join('');
     // Holdings for this theme — bridges themes.json company_tags to companies.json
     const tags=t.company_tags||[];
@@ -1551,7 +1567,7 @@ function loadTheme(id){
           <span class="th-held-px">${q&&q.d1!=null?`<span style="color:${chgColor(q.d1)}">${fmtPct(q.d1)}</span>`:''}</span>
         </div>`;}).join('')}</div></div>`:'';
 
-    det.innerHTML=`<div class="th-2col"><div><div style="font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px">Supply chain position map</div><div class="th-chain">${chain}</div>${heldHtml}</div><div class="th-right"><div class="th-box"><div class="th-box-title">Investment thesis</div><div class="th-box-body">${t.thesis||''}</div></div><div class="th-box"><div class="th-box-title">Portfolio positioning</div><div class="pos-grid">${posCards}</div></div><div class="th-box"><div class="th-box-title">Structure vs. cycle</div>${bars}</div><div class="risk-box"><div class="risk-title">Watch / risk</div><div class="risk-body">${t.risk||''}</div></div></div></div>`;
+    det.innerHTML=`<div class="th-2col"><div><div style="font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px">Supply chain position map</div><div class="th-chain">${chain}</div>${heldHtml}</div><div class="th-right"><div class="th-box"><div class="th-box-title">Investment thesis</div><div class="th-box-body">${linkifyTickers(t.thesis||'')}</div></div><div class="th-box"><div class="th-box-title">Portfolio positioning</div><div class="pos-grid">${posCards}</div></div><div class="th-box"><div class="th-box-title">Structure vs. cycle</div>${bars}</div><div class="risk-box"><div class="risk-title">Watch / risk</div><div class="risk-body">${linkifyTickers(t.risk||'')}</div></div></div></div>`;
     cont.appendChild(det);
   }
   document.querySelectorAll('.th-detail').forEach(d=>d.classList.remove('on'));
@@ -1570,14 +1586,14 @@ function buildPS(){
     hd.innerHTML=`<div class="sec-num" style="background:${sec.c}">${sec.id}</div><div class="sec-title">${esc(sec.title||'')}</div><div class="sec-sub">${esc(sec.sub||'')}</div>`;
     s.appendChild(hd);
     const why=mk('div','why');why.style.cssText=`border-color:${sec.c};background:${sec.c}08`;
-    why.innerHTML=`<span style="font-size:10px;font-weight:500;color:var(--color-text-primary)">Why this category matters: </span>${sec.why||''}`;
+    why.innerHTML=`<span style="font-size:10px;font-weight:500;color:var(--color-text-primary)">Why this category matters: </span>${linkifyTickers(sec.why||'')}`;
     s.appendChild(why);
     const g=mk('div','ps-grid');
     (sec.cards||[]).forEach(card=>{
       const c=mk('div',`psc${card.hi?' hi':''}`);
       const bcls=card.badge==='hot'?'b-hot':card.badge==='structural'?'b-str':'b-mod';
       const srvHtml=(card.srv||[]).map(sv=>`<span class="srv">${esc(sv)}</span>`).join('');
-      c.innerHTML=`<div class="psn">${esc(card.n||'')}<span class="badge ${bcls}">${esc(card.badge||'')}</span></div><div class="psr">${card.r||''}</div><div class="pst">${card.t||''}</div><div style="margin-top:3px">${srvHtml}</div>`;
+      c.innerHTML=`<div class="psn">${esc(card.n||'')}<span class="badge ${bcls}">${esc(card.badge||'')}</span></div><div class="psr">${linkifyTickers(card.r||'')}</div><div class="pst">${linkifyTickers(card.t||'')}</div><div style="margin-top:3px">${srvHtml}</div>`;
       g.appendChild(c);
     });
     s.appendChild(g);

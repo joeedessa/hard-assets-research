@@ -93,7 +93,7 @@
     {
       "n": "Natural gas → CCGT generation",
       "c": "#EF9F27",
-      "body": "Gas-fired CCGT is the default power source for new AI data center demand. Gas has a 10-30 min ramp time — perfect for following data center load patterns. LNG export buildout (Cheniere, VGAS) and domestic pipeline infrastructure (KMI, ET, EPD) are the upstream expressions.",
+      "body": "Gas-fired CCGT is the default power source for new AI data center demand. Gas has a 10-30 min ramp time — perfect for following data center load patterns. LNG export buildout (Cheniere (LNG), VGAS) and domestic pipeline infrastructure (KMI, ET, EPD) are the upstream expressions.",
       "tick": "EQT, SWN (producers) → KMI, ET, EPD (pipelines) → VST, NRG (gas generation) → AI data centers",
       "demand": "Every 100MW AI data center = ~0.7 Bcf/yr gas demand at the plant gate. Multi-decade locked-in structural demand."
     },

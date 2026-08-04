@@ -9,7 +9,7 @@
       "state": "State-owned, a JV, or otherwise not investable as listed equity. NOT clickable."
     },
     "note": "Names in companies.json are the investable universe (full drawer). Names in excluded.json were assessed and rejected (why-not note). This file covers everything else that gets mentioned.",
-    "as_of": "2026-08-04"
+    "as_of": "2026-08-05"
   },
   "entities": [
     {
@@ -221,6 +221,449 @@
       "name": "CNNC",
       "type": "state",
       "note": "China National Nuclear Corporation — state-owned."
+    },
+    {
+      "name": "Seequent/Leapfrog",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Framatome",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Urban Mining Co",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Shearwater GeoServices",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Cyclic Materials",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Westinghouse",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "ticker": "RIG",
+      "name": "Transocean",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Contract drilling — offshore UDW — picks-and-shovels supplier. [Picks & Shovels: Contract drilling — offshore UDW]"
+    },
+    {
+      "ticker": "VAL",
+      "name": "Valaris",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Contract drilling — offshore UDW — picks-and-shovels supplier. [Picks & Shovels: Contract drilling — offshore UDW]"
+    },
+    {
+      "ticker": "NE",
+      "name": "Noble Corp",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Contract drilling — offshore UDW — picks-and-shovels supplier. [Picks & Shovels: Contract drilling — offshore UDW]"
+    },
+    {
+      "ticker": "DO",
+      "name": "Diamond Offshore",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Contract drilling — offshore UDW — picks-and-shovels supplier. [Picks & Shovels: Contract drilling — offshore UDW]"
+    },
+    {
+      "ticker": "HP",
+      "name": "H&P",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "AutoSlide smart rig technology, ~20% US market share, highest margin onshore driller [Picks & Shovels: Contract drilling — onshore]"
+    },
+    {
+      "ticker": "PTEN",
+      "name": "Patterson-UTI",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Contract drilling — onshore — picks-and-shovels supplier. [Picks & Shovels: Contract drilling — onshore]"
+    },
+    {
+      "ticker": "NBR",
+      "name": "Nabors",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Contract drilling — onshore — picks-and-shovels supplier. [Picks & Shovels: Contract drilling — onshore]"
+    },
+    {
+      "ticker": "PRN.AX",
+      "name": "Perenti Group",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Ausdrill+Barminco [Picks & Shovels: Contract mining services]"
+    },
+    {
+      "ticker": "ORI.AX",
+      "name": "Orica",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "world's largest commercial explosives manufacturer, essential for every mine blast [Picks & Shovels: Contract mining services]"
+    },
+    {
+      "ticker": "BVI.PA",
+      "name": "Bureau Veritas",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "mining + oil division [Picks & Shovels: Assay, testing & certification]"
+    },
+    {
+      "ticker": "ITRK.L",
+      "name": "Intertek",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Assay, testing & certification — picks-and-shovels supplier. [Picks & Shovels: Assay, testing & certification]"
+    },
+    {
+      "ticker": "TRMB",
+      "name": "Trimble",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "precision positioning + land surveying [Picks & Shovels: Geo-data & resource modelling]"
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "daily satellite imagery of mine sites [Picks & Shovels: Geo-data & resource modelling]"
+    },
+    {
+      "ticker": "FTI",
+      "name": "TechnipFMC",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "subsea systems + LNG technology [Picks & Shovels: General energy EPC]"
+    },
+    {
+      "ticker": "SPM.MI",
+      "name": "Saipem",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "deepwater + LNG focus [Picks & Shovels: General energy EPC]"
+    },
+    {
+      "ticker": "FLR",
+      "name": "Fluor",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "large-scale global EPC [Picks & Shovels: General energy EPC]"
+    },
+    {
+      "ticker": "PRIM",
+      "name": "Primoris",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "General energy EPC — picks-and-shovels supplier. [Picks & Shovels: General energy EPC]"
+    },
+    {
+      "ticker": "WOR.AX",
+      "name": "Worley Group",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "global mining + energy EPC leader, Australia-listed [Picks & Shovels: Mine development EPC]"
+    },
+    {
+      "ticker": "ACM",
+      "name": "AECOM",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "environmental + infrastructure [Picks & Shovels: Mine development EPC]"
+    },
+    {
+      "ticker": "TTEK",
+      "name": "Tetra Tech",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "water infrastructure + environmental consulting + government services [Picks & Shovels: Water & environmental EPC]"
+    },
+    {
+      "ticker": "ABBN.SW",
+      "name": "ABB Power Products",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "transformer + switchgear [Picks & Shovels: Grid components — transformer bottleneck]"
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "Grid components — cables & HV systems — picks-and-shovels supplier. [Picks & Shovels: Grid components — cables & HV systems]"
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "world's largest mining equipment maker [Picks & Shovels: Heavy mining equipment]"
+    },
+    {
+      "ticker": "KMTUY",
+      "name": "Komatsu",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "second-largest [Picks & Shovels: Heavy mining equipment]"
+    },
+    {
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "underground + rock tools + metal cutting [Picks & Shovels: Heavy mining equipment]"
+    },
+    {
+      "ticker": "METSO.HE",
+      "name": "Metso",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "world's largest mining process equipment company [Picks & Shovels: Minerals process equipment]"
+    },
+    {
+      "ticker": "FLS.CO",
+      "name": "FLSmidth",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "minerals + cement [Picks & Shovels: Minerals process equipment]"
+    },
+    {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "slurry pumps + hydrocyclones [Picks & Shovels: Minerals process equipment]"
+    },
+    {
+      "ticker": "AROC",
+      "name": "Archrock",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "largest US contract compression [Picks & Shovels: Gas, LNG & cryogenic equipment]"
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "process automation + HVAC [Picks & Shovels: Instrumentation & industrial automation]"
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "process solutions + safety + building mgmt [Picks & Shovels: Instrumentation & industrial automation]"
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "industrial automation + MES + smart manufacturing [Picks & Shovels: Instrumentation & industrial automation]"
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "Water treatment technology — picks-and-shovels supplier. [Picks & Shovels: Water treatment technology]"
+    },
+    {
+      "ticker": "YCA",
+      "name": "Yellow Cake plc",
+      "type": "candidate",
+      "vertical": "pg",
+      "note": "London-listed, similar structure [Picks & Shovels: Physical uranium trusts]"
+    },
+    {
+      "ticker": "SAND",
+      "name": "Sandstorm Gold",
+      "type": "candidate",
+      "vertical": "pg",
+      "note": "growing portfolio [Picks & Shovels: Metal royalty & streaming — diversified]"
+    },
+    {
+      "ticker": "TFPM",
+      "name": "Triple Flag Precious Metals",
+      "type": "candidate",
+      "vertical": "pg",
+      "note": "Toronto-listed [Picks & Shovels: Metal royalty & streaming — diversified]"
+    },
+    {
+      "ticker": "CME",
+      "name": "CME Group",
+      "type": "candidate",
+      "vertical": "pg",
+      "note": "world's largest derivatives exchange [Picks & Shovels: Commodity futures exchanges]"
+    },
+    {
+      "ticker": "ICE",
+      "name": "ICE",
+      "type": "candidate",
+      "vertical": "pg",
+      "note": "natural gas, power, carbon, agricultural derivatives [Picks & Shovels: Commodity futures exchanges]"
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "type": "candidate",
+      "vertical": "pg",
+      "note": "London-listed [Picks & Shovels: Physical trading houses — listed]"
+    },
+    {
+      "ticker": "LICY",
+      "name": "Li-Cycle Holdings",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "hub+spoke hydromet [Picks & Shovels: Lithium-ion battery recycling]"
+    },
+    {
+      "ticker": "JMAT.L",
+      "name": "Johnson Matthey",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "world leader in both primary PGM chemistry AND autocatalyst recycling globally [Picks & Shovels: PGM autocatalyst recycling]"
+    },
+    {
+      "ticker": "UMI.BR",
+      "name": "Umicore",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "Hoboken Belgium, world's most advanced precious metals recycling + pCAM battery materials [Picks & Shovels: PGM autocatalyst recycling]"
+    },
+    {
+      "ticker": "NDA.DE",
+      "name": "Aurubis AG",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "largest European copper smelter [Picks & Shovels: Copper scrap processing]"
+    },
+    {
+      "ticker": "CLH",
+      "name": "Clean Harbors",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "Safety-Kleen brand [Picks & Shovels: Oil & gas recycling — lube re-refining]"
+    },
+    {
+      "ticker": "HCCI",
+      "name": "Heritage Crystal Clean",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "smaller, pure-play used oil re-refining + industrial parts cleaning [Picks & Shovels: Oil & gas recycling — lube re-refining]"
+    },
+    {
+      "ticker": "CLNE",
+      "name": "Clean Energy Fuels",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "largest RNG distributor for transport fleet fueling [Picks & Shovels: Renewable natural gas (RNG)]"
+    },
+    {
+      "ticker": "MNTK",
+      "name": "Montauk Renewables",
+      "type": "candidate",
+      "vertical": "ii",
+      "note": "landfill gas to RNG, listed [Picks & Shovels: Renewable natural gas (RNG)]"
+    },
+    {
+      "ticker": "FRO",
+      "name": "Frontline",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "largest listed VLCC operator [Picks & Shovels: Crude tankers — VLCC & Suezmax]"
+    },
+    {
+      "ticker": "DHT",
+      "name": "DHT Holdings",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "pure-play VLCC [Picks & Shovels: Crude tankers — VLCC & Suezmax]"
+    },
+    {
+      "ticker": "INSW",
+      "name": "International Seaways",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "VLCC + Suezmax + product [Picks & Shovels: Crude tankers — VLCC & Suezmax]"
+    },
+    {
+      "ticker": "FLNG",
+      "name": "Flex LNG",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "high-spec vessels, charter coverage locked at energy crisis highs [Picks & Shovels: LNG carriers]"
+    },
+    {
+      "ticker": "GLNG",
+      "name": "Golar LNG",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "LNG carriers + FLNG production assets [Picks & Shovels: LNG carriers]"
+    },
+    {
+      "ticker": "BORR",
+      "name": "Borr Drilling",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "pure-play premium jackup operator [Picks & Shovels: Jackup drillers]"
+    },
+    {
+      "ticker": "SBLK",
+      "name": "Star Bulk Carriers",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "largest listed dry bulk operator, diversified fleet [Picks & Shovels: Dry bulk carriers]"
+    },
+    {
+      "ticker": "GOGL",
+      "name": "Golden Ocean",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Capesize and Panamax focus, Fredriksen-controlled [Picks & Shovels: Dry bulk carriers]"
+    },
+    {
+      "ticker": "SNLNI.OL",
+      "name": "Stolt-Nielsen",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "world's largest chemical tanker operator, private/listed Oslo [Picks & Shovels: Chemical tankers]"
+    },
+    {
+      "ticker": "ODF.OL",
+      "name": "Odfjell",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "chemical tankers + tank terminals, Oslo-listed [Picks & Shovels: Chemical tankers]"
+    },
+    {
+      "ticker": "SBMO.AS",
+      "name": "SBM Offshore",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "world's largest FPSO owner/operator [Picks & Shovels: FPSOs — floating production]"
+    },
+    {
+      "ticker": "EE",
+      "name": "Excelerate Energy",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "largest listed FSRU operator [Picks & Shovels: FSRUs — floating LNG regas]"
     }
   ]
 }
