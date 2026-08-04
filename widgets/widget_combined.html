@@ -147,6 +147,44 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   padding:2px 4px;border-radius:3px;margin:1px;line-height:1.3;cursor:pointer;color:#fff}
 .mx-badge:hover{opacity:.8}
 .mx-empty{color:var(--color-text-tertiary);font-size:9px;text-align:center;padding:8px 0}
+/* Matrix — grid mode (from matrix.json) */
+.mx-grid{overflow-x:auto}
+.mx-g{display:grid;gap:2px;min-width:900px}
+.mch{border-radius:3px 3px 0 0;padding:3px 2px;text-align:center;font-size:10px;font-weight:500;line-height:1.2;pointer-events:none}
+.mrl{font-size:10px;font-weight:500;color:var(--color-text-tertiary);display:flex;align-items:center;padding-right:3px;line-height:1.2}
+.mc{border-radius:2px;padding:3px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);cursor:pointer;min-height:28px;transition:all .1s;position:relative}
+.mc:hover{background:var(--color-background-primary);border-color:var(--color-border-secondary)}
+.mc.hi{border-color:#534AB7;background:#534AB70A;cursor:pointer}
+.mc.hi:hover{background:#534AB715}
+.mc *{pointer-events:none}
+.ct{display:inline-block;font-size:9.5px;font-weight:500;padding:1px 2px;border-radius:2px;margin:1px 0;line-height:1.3;white-space:nowrap}
+.v0{background:#5F5E5A22;color:#444441}.v1{background:#EF9F2722;color:#633806}
+.v2{background:#534AB722;color:#3C3489}.v3{background:#D85A3022;color:#712B13}
+.v4{background:#1D9E7522;color:#085041}.v5{background:#99355622;color:#72243E}
+.v6{background:#185FA522;color:#0C447C}.v7{background:#88878022;color:#444441}
+.v8{background:#3B6D1122;color:#27500A}.v9{background:#854F0B22;color:#633806}
+.va{background:#63992222;color:#27500A}
+.mx-det{margin-top:5px;border-radius:5px;padding:7px 9px;border:.5px solid var(--color-border-secondary);background:var(--color-background-primary);font-size:11.5px;line-height:1.5;color:var(--color-text-secondary);display:none}
+.mx-det.on{display:block}
+.mx-det-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.sf{font-size:9.5px;font-weight:500;padding:1px 3px;border-radius:2px;display:inline-block;margin-right:2px}
+.fch{background:#FCEBEB;color:#791F1F}.fgp{background:#FAEEDA;color:#633806}
+.fgeo{background:#E24B4A18;color:#A32D2D;border:.5px solid #E24B4A44}
+/* Dim B band */
+.bband{border-radius:4px;margin:6px 0 0;border:.5px solid var(--color-border-info);background:var(--color-background-info);overflow-x:auto}
+.binner{padding:4px 6px;min-width:900px}
+.blbl{font-size:9.5px;font-weight:500;color:var(--color-text-info);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px}
+.brow{display:grid;gap:2px;margin-bottom:2px}
+.brhdr{font-size:9.5px;font-weight:500;color:var(--color-text-info);display:flex;align-items:center;padding-right:4px;min-width:70px}
+.bcell{border-radius:2px;padding:2px 3px;font-size:9.5px;color:var(--color-text-info);line-height:1.3;background:#E6F1FB33;border:.5px solid var(--color-border-info)}
+/* Dim C band */
+.cband{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:4px}
+.cc{border-radius:5px;padding:6px 8px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.ctit{font-size:11px;font-weight:500;margin-bottom:3px}
+.crow{font-size:9.5px;color:var(--color-text-secondary);padding:2px 0;border-bottom:.5px solid var(--color-border-tertiary);line-height:1.4}
+.crow:last-child{border-bottom:none}
+.csub{font-size:9px;color:var(--color-text-tertiary);line-height:1.3}
+.integ{border-radius:4px;padding:5px 7px;border:.5px solid #EF9F2744;background:#EF9F2708;margin-top:4px;font-size:10px;color:var(--color-text-secondary);line-height:1.5}
 /* Vertical Explorer */
 .vx-layout{display:grid;grid-template-columns:100px 1fr;gap:10px}
 .vx-list{display:flex;flex-direction:column;gap:2px}
@@ -548,6 +586,7 @@ const AI_DEMAND_THEMES=['ai-demand-pull','datacenter-power','ai-chip-packaging',
 
 // ── Loaded data ────────────────────────────────────────────────────────────
 let COMPANIES=[],CYCLE=[],GEO={},PORTFOLIO={},ANNOTATIONS=[],POLICY={},EXCLUDED=[];
+let VC_COLS=[],ROWS=[],MXC={},DET={},B_BAND=[],C_BAND=[];
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
 let TICKER_MAP={};
@@ -711,37 +750,63 @@ function buildStartHere(){
 // ── MATRIX ─────────────────────────────────────────────────────────────────
 function buildMatrix(){
   const el=document.getElementById('v-mx');if(!el)return;
-  const stageIds=CHAIN_STAGES.map(s=>s.id);
+  const nC=VC_COLS.length;
+  if(!nC){el.innerHTML='<div class="note-box">Matrix data loading…</div>';return;}
 
-  // Build lookup: vertical → stage → companies[]
-  const lookup={};
-  COMPANIES.forEach(c=>{
-    const v=c.vertical,s=classifyStage(c.chain_layer);
-    if(!lookup[v])lookup[v]={};
-    if(!lookup[v][s])lookup[v][s]=[];
-    lookup[v][s].push(c);
-  });
+  const colStyle=`grid-template-columns:70px repeat(${nC},1fr)`;
 
-  const cols=`<th class="mx-ch" style="width:10px"></th>`
-    +CHAIN_STAGES.map(s=>`<th class="mx-ch">${esc(s.n)}<span class="mx-ch-plain">${esc(s.plain)}</span><div class="mx-bubble">${esc(s.plain)}</div></th>`).join('');
+  // Header row
+  const hdr='<div></div>'+VC_COLS.map(v=>`<div class="mch" style="background:${v.c}18;border:.5px solid ${v.c}44;color:${v.c}">${esc(v.sn)}</div>`).join('');
 
-  const rows=VERTICALS.map(v=>{
-    const vd=lookup[v.id]||{};
-    const cells=stageIds.map(sid=>{
-      const cos=vd[sid]||[];
-      const content=cos.length
-        ?cos.map(c=>`<span class="mx-badge" style="background:${v.c}" onclick="openCompanyDrawer('${esc(c.ticker)}')" title="${esc(c.name)}">${esc(c.ticker)}</span>`).join('')
-        :`<div class="mx-empty">—</div>`;
-      const hi=cos.some(c=>c.conviction===3)?'hi':'';
-      return `<td class="mx-cell ${hi}" onclick="if(!event.target.classList.contains('mx-badge'))ST('vx')">${content}</td>`;
+  // Data rows
+  const rowsHtml=ROWS.map(row=>{
+    const cells=VC_COLS.map(v=>{
+      const tags=(MXC[row.id]||{})[v.id]||[];
+      const key=`${row.id}_${v.id}`;
+      const hasDetail=!!DET[key];
+      const inner=tags.length?tags.map(([t,c])=>`<span class="ct ${c}">${esc(t)}</span>`).join(' '):'';
+      if(hasDetail)return `<div class="mc hi" onclick="showMxDet('${key}')">${inner}</div>`;
+      return `<div class="mc" onclick="ST('vx')">${inner}</div>`;
     }).join('');
-    return `<tr><td class="mx-rl" onclick="ST('vx')"><span class="mx-vdot" style="background:${v.c}"></span>${esc(v.n)}</td>${cells}</tr>`;
+    return `<div class="mrl">${esc(row.n)}</div>${cells}`;
   }).join('');
 
+  // Legend
+  const leg=`<div style="grid-column:1/-1;display:flex;gap:5px;flex-wrap:wrap;padding-top:4px;border-top:.5px solid var(--color-border-tertiary);font-size:10px;color:var(--color-text-tertiary)"><span style="background:#534AB70A;border:.5px solid #534AB7;padding:1px 5px;border-radius:2px;color:#534AB7;font-weight:500">blue cells</span> open analytical detail · other cells navigate to that vertical | ${VC_COLS.map(v=>`<span class="ct ${v.tc}">${esc(v.sn)}</span>`).join('')}</div>`;
+
+  // Dim B
+  const bbHtml=B_BAND.length?`<div class="bband"><div class="binner">
+    <div class="blbl">Dimension B — Cross-cutting picks &amp; shovels, royalties, trading, recycling (full detail in Picks &amp; Shovels tab)</div>
+    ${B_BAND.map(br=>`<div class="brow" style="${colStyle}"><div class="brhdr">${esc(br.n)}</div>${br.items.map(it=>`<div class="bcell">${esc(it||'—')}</div>`).join('')}</div>`).join('')}
+  </div></div>`:'';
+
+  // Dim C
+  const cbHtml=C_BAND.length?`<div style="font-size:10px;color:var(--color-text-tertiary);margin-top:6px">Dimension C — Derived infrastructure sectors (full detail in Electricity &amp; Grid tab)</div>
+    <div class="cband">${C_BAND.map(card=>`<div class="cc" style="border-color:${card.c}44"><div class="ctit" style="color:${card.c}">${esc(card.t)}</div>${(card.rows||[]).map(r=>`<div class="crow"><b style="font-size:9.5px;font-weight:500;color:var(--color-text-primary)">${esc(r.n)}</b><div class="csub">${esc(r.s)}</div></div>`).join('')}</div>`).join('')}</div>`:'';
+
   el.innerHTML=`
-    <div class="note-box">Columns = supply chain stage (hover for plain-English explanation). Rows = commodity vertical. Click any ticker → company drawer. Highlighted cells have high-conviction names.</div>
-    <div class="mx-wrap"><table class="mx-table"><thead><tr>${cols}</tr></thead><tbody>${rows}</tbody></table></div>
-  `;
+    <div class="note-box" style="margin-bottom:5px">Dimension A — ${ROWS.length} value chain stages × ${nC} commodity verticals. <span style="background:#534AB70A;border:.5px solid #534AB7;padding:1px 5px;border-radius:2px;color:#534AB7;font-weight:500;font-size:9.5px">blue cells</span> = analytical detail, click to open. Other cells navigate to Vertical Explorer.</div>
+    <div class="mx-grid"><div class="mx-g" style="${colStyle}">${hdr}${rowsHtml}${leg}</div></div>
+    <div class="mx-det" id="mx-det"></div>
+    ${bbHtml}${cbHtml}`;
+}
+
+function showMxDet(key){
+  const d=document.getElementById('mx-det');if(!d)return;
+  const info=DET[key];
+  if(!info){d.classList.remove('on');return;}
+  // Toggle off if clicking same cell again
+  if(d.dataset.key===key&&d.classList.contains('on')){d.classList.remove('on');d.dataset.key='';return;}
+  d.dataset.key=key;
+  const flags=(info.f||[]).map(f=>{
+    if(f==='fch')return '<span class="sf fch">⚠ chokepoint</span>';
+    if(f==='fgp')return '<span class="sf fgp">↑ supply gap</span>';
+    if(f==='fgeo')return '<span class="sf fgeo">⚑ geopolitical</span>';
+    return '';
+  }).join('');
+  d.innerHTML=`<div class="mx-det-title">${esc(info.t)}</div><div style="margin-bottom:6px">${flags}</div>${info.b}`;
+  d.classList.add('on');
+  d.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 
 // ── VERTICALS ──────────────────────────────────────────────────────────────
@@ -1215,10 +1280,11 @@ async function loadData(){
   const Q='?t='+Date.now();
   const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
   try{
-    const [cos,cyc,geo,port,ann,pol,excl]=await Promise.all([
+    const [cos,cyc,geo,port,ann,pol,excl,mat]=await Promise.all([
       fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
       fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
       fetchJ('excluded.json').catch(()=>null),
+      fetchJ('matrix.json').catch(()=>null),
     ]);
     COMPANIES=cos.companies||[];
     CYCLE=cyc.cycles||[];
@@ -1227,6 +1293,7 @@ async function loadData(){
     ANNOTATIONS=ann.annotations||[];
     POLICY=pol||{};
     EXCLUDED=excl?.excluded||[];
+    if(mat){VC_COLS=mat.verticals||[];ROWS=mat.chain_stages||[];MXC=mat.cells||{};DET=mat.highlighted_cells||{};B_BAND=mat.b_band||[];C_BAND=mat.c_band||[];}
   }catch(e){console.warn('Static data load error:',e);}
 
   // Build ticker utilities
