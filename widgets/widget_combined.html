@@ -225,6 +225,84 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .crow:last-child{border-bottom:none}
 .csub{font-size:9px;color:var(--color-text-tertiary);line-height:1.3}
 .integ{border-radius:4px;padding:5px 7px;border:.5px solid #EF9F2744;background:#EF9F2708;margin-top:4px;font-size:10px;color:var(--color-text-secondary);line-height:1.5}
+/* Chain Explainers */
+.exg{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:5px}
+.exc{border:.5px solid var(--color-border-tertiary);border-radius:7px;padding:8px 10px;background:var(--color-background-primary);cursor:pointer}
+.exc:hover,.exc.on{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.exh{display:flex;align-items:center;gap:5px;margin-bottom:2px;pointer-events:none}
+.exd{width:7px;height:7px;border-radius:50%}
+.exn{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.exch{font-size:9px;color:var(--color-text-tertiary);margin-left:auto;transition:transform .12s}
+.exc.on .exch{transform:rotate(180deg)}
+.exhk{font-size:11px;color:var(--color-text-secondary);line-height:1.4;font-style:italic;margin-bottom:3px;pointer-events:none}
+.exar{font-size:10.5px;color:var(--color-text-tertiary);margin-bottom:3px;line-height:1.4;pointer-events:none}
+.exbd{font-size:11px;color:var(--color-text-secondary);line-height:1.6;display:none;pointer-events:none}
+.exc.on .exbd{display:block}
+.vr{display:flex;align-items:center;gap:4px;margin-top:2px;font-size:10.5px}
+.vrl{color:var(--color-text-tertiary);min-width:90px}
+.vrb{flex:1;height:4px;border-radius:2px;background:var(--color-background-secondary)}
+.vrf{height:100%;border-radius:2px}
+.vrn{color:var(--color-text-tertiary);min-width:75px;text-align:right;font-size:10px}
+/* Picks & Shovels */
+.sec{margin-bottom:12px}
+.sec-head{display:flex;align-items:center;gap:7px;margin-bottom:5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)}
+.sec-num{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#fff;flex-shrink:0}
+.sec-title{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.sec-sub{font-size:10.5px;color:var(--color-text-tertiary);margin-left:auto}
+.why{border-radius:0 5px 5px 0;border-left:3px solid;padding:5px 8px;margin-bottom:6px;font-size:10.5px;color:var(--color-text-secondary);line-height:1.5}
+.ps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:4px}
+.psc{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:6px 8px;background:var(--color-background-primary)}
+.psc.hi{border-left:3px solid #E24B4A;border-radius:0 5px 5px 0;background:#FCEBEB06}
+.psn{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:1px;display:flex;align-items:center;gap:4px}
+.psr{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4;margin-bottom:3px}
+.pst{font-size:10px;color:var(--color-text-tertiary);line-height:1.4}
+.srv{font-size:9.5px;font-weight:500;padding:1px 4px;border-radius:2px;background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary);cursor:default;display:inline-block;margin:1px}
+.badge{font-size:9.5px;font-weight:500;padding:1px 5px;border-radius:3px}
+.b-hot{background:#FCEBEB;color:#791F1F}
+.b-str{background:#E1F5EE;color:#085041}
+.b-mod{background:#FAEEDA;color:#633806}
+/* Electricity & Grid */
+.el-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:4px}
+.elc{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:6px 8px;background:var(--color-background-primary);cursor:pointer}
+.elc.hi{border-top:3px solid #E24B4A}
+.elc:hover,.elc.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.elh{display:flex;align-items:center;gap:4px;margin-bottom:2px}
+.eld{width:7px;height:7px;border-radius:50%;pointer-events:none}
+.eln{font-size:12px;font-weight:500;color:var(--color-text-primary);pointer-events:none}
+.elch{font-size:9px;color:var(--color-text-tertiary);margin-left:auto;transition:transform .12s;pointer-events:none}
+.elc.ex .elch{transform:rotate(180deg)}
+.elb{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4;pointer-events:none}
+.elt{font-size:10px;color:var(--color-text-tertiary);margin-top:2px;pointer-events:none}
+.eld2{font-size:10.5px;color:var(--color-text-secondary);line-height:1.5;margin-top:4px;padding-top:4px;border-top:.5px solid var(--color-border-tertiary);display:none;pointer-events:none}
+.elc.ex .eld2{display:block}
+/* Demand Themes */
+.th-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:7px}
+.tn{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:6px 8px;cursor:pointer;transition:all .12s;background:var(--color-background-primary)}
+.tn.on{color:#fff;border-color:transparent}
+.tn-name{font-size:12px;font-weight:500;line-height:1.3}
+.tn-sub{font-size:10px;opacity:.85;line-height:1.3;margin-top:1px}
+.th-detail{display:none}.th-detail.on{display:block}
+.th-2col{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.th-chain{display:flex;flex-direction:column;gap:3px}
+.tc-item{display:flex;align-items:flex-start;gap:5px;padding:4px 6px;border-radius:4px;background:var(--color-background-secondary)}
+.tc-num{width:14px;height:14px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8.5px;font-weight:500;color:#fff;flex-shrink:0;margin-top:1px}
+.tc-lbl{font-size:11px;font-weight:500;color:var(--color-text-primary)}
+.tc-txt{font-size:10.5px;color:var(--color-text-tertiary);line-height:1.4;margin-top:1px}
+.th-right{display:flex;flex-direction:column;gap:6px}
+.th-box{background:var(--color-background-secondary);border-radius:5px;padding:6px 9px}
+.th-box-title{font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px}
+.th-box-body{font-size:11px;color:var(--color-text-secondary);line-height:1.5}
+.risk-box{border-radius:5px;padding:5px 8px;border-left:3px solid #EF9F27;background:#EF9F2708}
+.risk-title{font-size:10px;font-weight:500;color:#633806;margin-bottom:2px}
+.risk-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4}
+.pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.pos-card{border:.5px solid var(--color-border-tertiary);border-radius:4px;padding:4px 6px;background:var(--color-background-primary)}
+.pos-tier{font-size:9.5px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary);margin-bottom:1px}
+.pos-items{font-size:10.5px;color:var(--color-text-secondary);line-height:1.5}
+.vbar{display:flex;align-items:center;gap:4px;margin-bottom:3px}
+.vbar-lbl{font-size:10.5px;color:var(--color-text-tertiary);min-width:90px}
+.vbar-b{flex:1;height:4px;border-radius:2px;background:var(--color-background-primary)}
+.vbar-f{height:100%;border-radius:2px}
 /* Vertical Explorer */
 .vx-layout{display:grid;grid-template-columns:100px 1fr;gap:10px}
 .vx-list{display:flex;flex-direction:column;gap:2px}
@@ -537,15 +615,20 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 </div>
 <div class="al-strip" id="al-strip" style="display:none"></div>
 <div class="tabs">
-  <span class="tab on" onclick="ST('sh')">Start Here</span>
-  <span class="tab" onclick="ST('mx')">Matrix</span>
-  <span class="tab" onclick="ST('vx')">Verticals</span>
-  <span class="tab" onclick="ST('fm')">Froth Monitor</span>
+  <span class="tab on" onclick="ST('sh')">★ Start Here</span>
+  <span class="tab" onclick="ST('mx')">Universe Matrix</span>
+  <span class="tab" onclick="ST('vx')">Vertical Explorer</span>
+  <span class="tab" onclick="ST('ex')">Chain Explainers</span>
+  <span class="tab-sep"></span>
+  <span class="tab" onclick="ST('geo')">Geopolitical</span>
+  <span class="tab" onclick="ST('cy')">Cycle &amp; Innings</span>
+  <span class="tab" onclick="ST('el')">Electricity &amp; Grid</span>
+  <span class="tab" onclick="ST('th')">Demand Themes</span>
+  <span class="tab" onclick="ST('pk')">Picks &amp; Shovels</span>
   <span class="tab-sep"></span>
   <span class="tab" onclick="ST('ps')">Portfolio</span>
+  <span class="tab" onclick="ST('fm')">Froth Monitor</span>
   <span class="tab" onclick="ST('pol')">Policy</span>
-  <span class="tab" onclick="ST('geo')">Geopolitical</span>
-  <span class="tab" onclick="ST('cy')">Cycle</span>
   <span class="tab-sep"></span>
   <span class="tab" onclick="ST('nw')">News</span>
   <span class="tab" onclick="ST('co')">Companies</span>
@@ -556,10 +639,39 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <div id="v-mx" class="view"></div>
   <div id="v-vx" class="view"></div>
   <div id="v-fm" class="view"></div>
+  <div id="v-ex" class="view">
+    <div class="note-box"><b>Chain explainers</b> — how each supply chain works, where value is captured, and the structural demand thesis. Click any card to expand.</div>
+    <div class="exg" id="exg"></div>
+  </div>
+  <div id="v-el" class="view">
+    <div class="note-box" id="el-bt-title" style="font-weight:600;font-size:12.5px"></div>
+    <div class="note-box" id="el-bt-body" style="margin-top:-6px"></div>
+    <div class="pills" id="el-pills">
+      <button class="pill on" onclick="setElView('chain',this)">Full value chain</button>
+      <button class="pill" onclick="setElView('intx',this)">Commodity intersections</button>
+      <button class="pill" onclick="setElView('ai',this)">AI data center demand</button>
+      <button class="pill" onclick="setElView('cycle',this)">Cycle &amp; structure</button>
+    </div>
+    <div id="el-chain"><div class="el-grid" id="el-chain-grid"></div></div>
+    <div id="el-intx" style="display:none"><div class="el-grid" id="el-intx-grid"></div></div>
+    <div id="el-ai" style="display:none"><div id="el-ai-cont"></div></div>
+    <div id="el-cycle" style="display:none"><div id="el-cycle-cont"></div></div>
+  </div>
+  <div id="v-th" class="view">
+    <div class="note-box"><b>Demand themes</b> — cross-vertical investment lenses. Click a theme to explore its supply chain position map, thesis, and portfolio positioning.</div>
+    <div class="th-nav" id="th-nav"></div>
+    <div id="th-detail"></div>
+  </div>
+  <div id="v-pk" class="view">
+    <div class="note-box"><b>Picks &amp; shovels</b> — cross-cutting companies that serve ALL commodity verticals. <span style="display:inline-block;border-left:3px solid #E24B4A;padding-left:4px;color:#E24B4A;font-weight:500">red border</span> = highest conviction &nbsp;<span class="badge b-hot">hot</span> active now &nbsp;<span class="badge b-str">structural</span> long-duration &nbsp;<span class="badge b-mod">moderate</span> mid-cycle</div>
+    <div class="pills" id="ps-pills"><button class="pill on" onclick="setPsFilter('all',this)">All categories</button></div>
+    <div id="ps-cont"></div>
+  </div>
   <div id="v-ps" class="view"></div>
   <div id="v-pol" class="view"></div>
   <div id="v-geo" class="view"></div>
   <div id="v-cy" class="view"></div>
+  <div id="v-fm" class="view"></div>
   <div id="v-nw" class="view"></div>
   <div id="v-co" class="view"></div>
   <div id="v-nt" class="view"></div>
@@ -627,12 +739,16 @@ const AI_DEMAND_THEMES=['ai-demand-pull','datacenter-power','ai-chip-packaging',
 // ── Loaded data ────────────────────────────────────────────────────────────
 let COMPANIES=[],CYCLE=[],GEO={},PORTFOLIO={},ANNOTATIONS=[],POLICY={},EXCLUDED=[];
 let VC_COLS=[],ROWS=[],MXC={},DET={},B_BAND=[],C_BAND=[];
+let EXPLS=[],PS=[],EL_CHAIN=[],EL_INTX=[],EL_AI=[],EL_CYCLE=[],THEMES=[],ACTORS=[];
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
 let TICKER_MAP={};
 let TICKER_RE=null;
 
 // ── Utils ──────────────────────────────────────────────────────────────────
+function mk(tag,cls){const el=document.createElement(tag);if(cls)el.className=cls;return el;}
+const scolor=s=>['#E24B4A','#D85A30','#EF9F27','#639922','#1D9E75'][s-1]||'#888780';
+const slabel=s=>['Very low','Low','Moderate','High','Very high'][s-1]||'';
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function fmt(v,digits=1){return v==null?'—':(+v).toFixed(digits);}
 function fmtPct(v){if(v==null)return '—';const s=(+v).toFixed(1);return v>=0?'+'+s+'%':s+'%';}
@@ -672,7 +788,7 @@ function jumpToCompanies(tk){
 }
 
 // ── Tab switching ──────────────────────────────────────────────────────────
-const TAB_IDS=['sh','mx','vx','fm','ps','pol','geo','cy','nw','co','nt'];
+const TAB_IDS=['sh','mx','vx','ex','geo','cy','el','th','pk','ps','fm','pol','nw','co','nt'];
 const built={};
 function ST(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
@@ -685,11 +801,15 @@ function buildTab(id){
   if(id==='sh')buildStartHere();
   else if(id==='mx')buildMatrix();
   else if(id==='vx')buildVerticals();
-  else if(id==='fm')buildFrothMonitor();
-  else if(id==='ps')buildPortfolio();
-  else if(id==='pol')buildPolicy();
+  else if(id==='ex')buildExpls();
   else if(id==='geo')buildGeo();
   else if(id==='cy')buildCycle();
+  else if(id==='el')buildEl();
+  else if(id==='th')buildThemes();
+  else if(id==='pk')buildPS();
+  else if(id==='ps')buildPortfolio();
+  else if(id==='fm')buildFrothMonitor();
+  else if(id==='pol')buildPolicy();
   else if(id==='nw')buildNews();
   else if(id==='co')buildCompanies();
   else if(id==='nt')buildNotes();
@@ -966,6 +1086,134 @@ function buildFrothMonitor(){
     <div class="fm-intro"><b>HA froth signals differ from momentum-based equity froth.</b> We use: commodity spot vs equity price divergence · cost curve position · incentive price vs spot · inventory levels (contango / backwardation) · term structure. Green = insulated (early innings, spot not in price). Amber = some premium in equity. Red = equity has run ahead of fundamentals — wait for repricing.</div>
     <div class="fm-sigs">${col(1)}${col(2)}${col(3)}</div>
   `;
+}
+
+// ── CHAIN EXPLAINERS ───────────────────────────────────────────────────────
+function buildExpls(){
+  const g=document.getElementById('exg');if(!g)return;
+  if(!EXPLS.length){g.innerHTML='<div class="note-box">Explainer data loading…</div>';return;}
+  EXPLS.forEach(e=>{
+    const c=mk('div','exc');
+    c.addEventListener('click',()=>c.classList.toggle('on'));
+    const vr=(e.vals||[]).map(v=>`<div class="vr"><div class="vrl">${esc(v.l)}</div><div class="vrb"><div class="vrf" style="width:${v.v}%;background:${e.c}aa"></div></div><div class="vrn">${esc(v.n)}</div></div>`).join('');
+    c.innerHTML=`<div class="exh"><div class="exd" style="background:${e.c}"></div><div class="exn">${esc(e.n)}</div><div class="exch">▼</div></div><div class="exhk">${e.hk||''}</div><div class="exar">Chain: ${esc(e.ar||'')}</div><div class="exbd">${e.bd||''}<div style="margin-top:6px;font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px;pointer-events:none">Value capture by layer</div>${vr}</div>`;
+    g.appendChild(c);
+  });
+}
+
+// ── ELECTRICITY & GRID ─────────────────────────────────────────────────────
+function buildEl(){
+  const cg=document.getElementById('el-chain-grid');
+  if(cg&&EL_CHAIN.length){
+    EL_CHAIN.forEach(card=>{
+      const c=mk('div',`elc${card.hi?' hi':''}`);
+      c.addEventListener('click',()=>c.classList.toggle('ex'));
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${card.c}"></div><div class="eln">${esc(card.n)}</div><div class="elch">▼</div></div><div class="elb">${card.role||''}</div><div class="elt">${esc(card.tick||'')}</div><div class="eld2">${card.det||''}</div>`;
+      cg.appendChild(c);
+    });
+  }
+  const ig=document.getElementById('el-intx-grid');
+  if(ig&&EL_INTX.length){
+    EL_INTX.forEach(ix=>{
+      const c=mk('div','elc');
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${ix.c}"></div><div class="eln">${esc(ix.n)}</div></div><div class="elb">${ix.body||''}</div><div class="elt">${esc(ix.tick||'')}</div>${ix.demand?`<div style="margin-top:4px;font-size:10px;background:var(--color-background-secondary);padding:3px 5px;border-radius:3px;color:var(--color-text-secondary)"><b style="color:var(--color-text-primary)">Demand:</b> ${esc(ix.demand)}</div>`:''}`;
+      ig.appendChild(c);
+    });
+  }
+  const ac=document.getElementById('el-ai-cont');
+  if(ac&&EL_AI.length){
+    const ag=mk('div','el-grid');
+    EL_AI.forEach(d=>{
+      const c=mk('div','elc');
+      c.innerHTML=`<div class="eln" style="margin-bottom:3px">${esc(d.n)}</div><div class="elb">${d.body||''}</div><div class="elt">${esc(d.tick||'')}</div>`;
+      ag.appendChild(c);
+    });
+    ac.appendChild(ag);
+  }
+  const cc=document.getElementById('el-cycle-cont');
+  if(cc&&EL_CYCLE.length){
+    const cg2=mk('div','el-grid');
+    EL_CYCLE.forEach(cy=>{
+      const c=mk('div','elc');
+      const dots=Array(9).fill(0).map((_,j)=>`<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${j<cy.inn?(j===cy.inn-1?cy.c:cy.c+'55'):'var(--color-background-secondary)'};border:.5px solid ${cy.c}44;margin-right:1px"></span>`).join('');
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${cy.c}"></div><div class="eln">${esc(cy.n)}</div><span class="badge" style="background:${cy.vc}22;color:${cy.vc};border:.5px solid ${cy.vc}44;margin-left:auto;font-size:9.5px;padding:1px 5px;border-radius:3px">${esc(cy.verdict||'')}</span></div>
+        <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:2px;font-size:10px"><span style="color:var(--color-text-tertiary)">Structural</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.struct}%;height:100%;background:${cy.c};border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:${cy.c}">${cy.struct}</span></div>
+        <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:2px;font-size:10px"><span style="color:var(--color-text-tertiary)">Capex gap</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.capex}%;height:100%;background:#E24B4A;border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:#E24B4A">${cy.capex}</span></div>
+        <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:3px;font-size:10px"><span style="color:var(--color-text-tertiary)">Cycle risk</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.bc}%;height:100%;background:#EF9F27;border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:#EF9F27">${cy.bc}</span></div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);margin-bottom:2px">Innings: ${dots}<span style="font-weight:500;color:${cy.c}">${cy.inn}/9</span></div>
+        <div class="elb" style="font-size:10px">${cy.body||''}</div>`;
+      cg2.appendChild(c);
+    });
+    cc.appendChild(cg2);
+  }
+}
+function setElView(id,btn){
+  document.querySelectorAll('#el-pills .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  ['chain','intx','ai','cycle'].forEach(v=>{const el=document.getElementById('el-'+v);if(el)el.style.display=v===id?'':'none';});
+}
+
+// ── DEMAND THEMES ──────────────────────────────────────────────────────────
+function buildThemes(){
+  const nav=document.getElementById('th-nav');if(!nav)return;
+  if(!THEMES.length){nav.innerHTML='<div class="note-box">Theme data loading…</div>';return;}
+  THEMES.forEach(t=>{
+    const btn=mk('div','tn');btn.dataset.id=t.id;
+    btn.innerHTML=`<div class="tn-name" style="color:${t.c}">${esc(t.n)}</div><div class="tn-sub">${esc(t.sub||'')}</div>`;
+    btn.addEventListener('click',()=>loadTheme(t.id));
+    nav.appendChild(btn);
+  });
+  loadTheme(THEMES[0].id);
+}
+function loadTheme(id){
+  document.querySelectorAll('.tn').forEach(b=>{b.classList.remove('on');b.style.background='';b.style.borderColor='';});
+  const btn=document.querySelector(`.tn[data-id="${id}"]`);
+  const t=THEMES.find(x=>x.id===id);if(!t)return;
+  if(btn){btn.classList.add('on');btn.style.background=t.c;btn.style.borderColor=t.c;}
+  const cont=document.getElementById('th-detail');if(!cont)return;
+  let det=document.getElementById('thd-'+id);
+  if(!det){
+    det=mk('div','th-detail');det.id='thd-'+id;
+    const chain=(t.items||[]).map((item,i)=>`<div class="tc-item"><div class="tc-num" style="background:${t.c}">${i+1}</div><div><div class="tc-lbl">${esc(item.lbl)}</div><div class="tc-txt">${esc(item.ticks||'')}</div><div class="tc-txt" style="color:var(--color-text-secondary);margin-top:1px">${esc(item.why||'')}</div></div></div>`).join('');
+    const posCards=(t.positions||[]).map(p=>{const[tier,...rest]=p.split(':');return `<div class="pos-card"><div class="pos-tier">${esc(tier)}</div><div class="pos-items">${esc(rest.join(':').trim())}</div></div>`;}).join('');
+    const bars=[{l:'Structural demand strength',v:t.struct,c:t.c},{l:'Near-term momentum',v:t.near,c:t.c+'99'},{l:'Business cycle risk',v:t.bc,c:'#EF9F27'}].map(b=>`<div class="vbar"><div class="vbar-lbl">${b.l}</div><div class="vbar-b"><div class="vbar-f" style="width:${b.v}%;background:${b.c}"></div></div><span style="font-size:10.5px;font-weight:500;color:${b.c};min-width:24px;text-align:right">${b.v}</span></div>`).join('');
+    det.innerHTML=`<div class="th-2col"><div><div style="font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px">Supply chain position map</div><div class="th-chain">${chain}</div></div><div class="th-right"><div class="th-box"><div class="th-box-title">Investment thesis</div><div class="th-box-body">${t.thesis||''}</div></div><div class="th-box"><div class="th-box-title">Portfolio positioning</div><div class="pos-grid">${posCards}</div></div><div class="th-box"><div class="th-box-title">Structure vs. cycle</div>${bars}</div><div class="risk-box"><div class="risk-title">Watch / risk</div><div class="risk-body">${t.risk||''}</div></div></div></div>`;
+    cont.appendChild(det);
+  }
+  document.querySelectorAll('.th-detail').forEach(d=>d.classList.remove('on'));
+  det.classList.add('on');
+}
+
+// ── PICKS & SHOVELS ────────────────────────────────────────────────────────
+function buildPS(){
+  const cont=document.getElementById('ps-cont');if(!cont)return;
+  const pills=document.getElementById('ps-pills');
+  if(!PS.length){cont.innerHTML='<div class="note-box">Picks &amp; shovels data loading…</div>';return;}
+  PS.forEach(sec=>{
+    if(pills){const btn=mk('button','pill');btn.textContent=(sec.title||'').split('—')[0].trim();btn.onclick=()=>setPsFilter(sec.id,btn);pills.appendChild(btn);}
+    const s=mk('div','sec');s.dataset.sec=sec.id;
+    const hd=mk('div','sec-head');
+    hd.innerHTML=`<div class="sec-num" style="background:${sec.c}">${sec.id}</div><div class="sec-title">${esc(sec.title||'')}</div><div class="sec-sub">${esc(sec.sub||'')}</div>`;
+    s.appendChild(hd);
+    const why=mk('div','why');why.style.cssText=`border-color:${sec.c};background:${sec.c}08`;
+    why.innerHTML=`<span style="font-size:10px;font-weight:500;color:var(--color-text-primary)">Why this category matters: </span>${sec.why||''}`;
+    s.appendChild(why);
+    const g=mk('div','ps-grid');
+    (sec.cards||[]).forEach(card=>{
+      const c=mk('div',`psc${card.hi?' hi':''}`);
+      const bcls=card.badge==='hot'?'b-hot':card.badge==='structural'?'b-str':'b-mod';
+      const srvHtml=(card.srv||[]).map(sv=>`<span class="srv">${esc(sv)}</span>`).join('');
+      c.innerHTML=`<div class="psn">${esc(card.n||'')}<span class="badge ${bcls}">${esc(card.badge||'')}</span></div><div class="psr">${card.r||''}</div><div class="pst">${card.t||''}</div><div style="margin-top:3px">${srvHtml}</div>`;
+      g.appendChild(c);
+    });
+    s.appendChild(g);
+    cont.appendChild(s);
+  });
+}
+function setPsFilter(id,btn){
+  document.querySelectorAll('#ps-pills .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('#ps-cont .sec').forEach(s=>{s.style.display=(id==='all'||s.dataset.sec===id)?'':'none';});
 }
 
 // ── PORTFOLIO ──────────────────────────────────────────────────────────────
@@ -1351,11 +1599,15 @@ async function loadData(){
   const Q='?t='+Date.now();
   const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
   try{
-    const [cos,cyc,geo,port,ann,pol,excl,mat]=await Promise.all([
+    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th]=await Promise.all([
       fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
       fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
       fetchJ('excluded.json').catch(()=>null),
       fetchJ('matrix.json').catch(()=>null),
+      fetchJ('explainers.json').catch(()=>null),
+      fetchJ('picks-shovels.json').catch(()=>null),
+      fetchJ('electricity.json').catch(()=>null),
+      fetchJ('themes.json').catch(()=>null),
     ]);
     COMPANIES=cos.companies||[];
     CYCLE=cyc.cycles||[];
@@ -1365,6 +1617,14 @@ async function loadData(){
     POLICY=pol||{};
     EXCLUDED=excl?.excluded||[];
     if(mat){VC_COLS=mat.verticals||[];ROWS=mat.chain_stages||[];MXC=mat.cells||{};DET=mat.highlighted_cells||{};B_BAND=mat.b_band||[];C_BAND=mat.c_band||[];}
+    if(expls){EXPLS=expls.explainers||expls||[];}
+    if(ps){PS=ps.categories||ps||[];}
+    if(el){EL_CHAIN=el.chain||[];EL_INTX=el.intersections||[];EL_AI=el.ai_themes||[];EL_CYCLE=el.cycle||[];
+      const bt=el.bottleneck||{};
+      const btt=document.getElementById('el-bt-title');const btb=document.getElementById('el-bt-body');
+      if(btt&&bt.title)btt.textContent=bt.title;
+      if(btb&&bt.body)btb.innerHTML=bt.body;}
+    if(th){THEMES=th.themes||th||[];}
   }catch(e){console.warn('Static data load error:',e);}
 
   // Build ticker utilities
