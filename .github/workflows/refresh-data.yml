@@ -42,7 +42,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes — nothing to commit"
           else
-            git pull --rebase origin main
+            # Commit BEFORE pulling. `git pull --rebase` refuses to run with a
+            # dirty index, so doing it after `git add` failed every night with
+            # "cannot pull with rebase: Your index contains uncommitted changes".
             git commit -m "chore: nightly data refresh $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
             git push
           fi

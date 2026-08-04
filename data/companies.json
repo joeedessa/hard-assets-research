@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "description": "Company universe \u2014 one record per investable name across all verticals. Fields: ticker, name, vertical_id, chain_layer, geo, structure, thesis_note, conviction, froth, froth_note, themes[], sources[], last_touched.",
+    "description": "Company universe — one record per investable name across all verticals. Fields: ticker, name, vertical_id, chain_layer, geo, structure, thesis_note, conviction, froth, froth_note, themes[], sources[], last_touched.",
     "conviction_scale": "1=monitor, 2=interested, 3=high conviction",
     "froth_scale": "1=insulated (low froth), 2=exposed (moderate), 3=high froth (equity ahead of fundamentals)",
     "structure_types": [
@@ -19,7 +19,8 @@
       "inventory levels",
       "contango vs backwardation",
       "term structure (uranium)"
-    ]
+    ],
+    "universe_note": "Names added 2026-08-05 carry provisional conviction (1-2) pending review; froth reflects current market posture. Conviction is an owner judgment and has not been assigned above 2 automatically."
   },
   "companies": [
     {
@@ -51,7 +52,7 @@
       "thesis_note": "Only non-Chinese scaled REE separation. Seadrift TX DoD facility adds HREE pathway. H1 2026 net income A$80.21M (+1,259% YoY); first HREE (Dy/Tb) sales; 2026 revenue target A$1.1B.",
       "conviction": 3,
       "froth": 1,
-      "froth_note": "HREE separation optionality largely unpriced \u2014 most Western investors still underestimate Seadrift's strategic significance. Early innings: cost curve advantage + monopoly position + government backing = insulated.",
+      "froth_note": "HREE separation optionality largely unpriced — most Western investors still underestimate Seadrift's strategic significance. Early innings: cost curve advantage + monopoly position + government backing = insulated.",
       "themes": [
         "china-export-controls",
         "reshoring",
@@ -85,7 +86,7 @@
       "chain_layer": "NdFeB magnet mfg",
       "geo": "CN",
       "structure": "equity",
-      "thesis_note": "China's dominant sintered NdFeB magnet maker. ~28 REE magnet assemblies per humanoid robot (Optimus BOM teardown) \u2014 robotics scaling = compounding demand atop EVs. Pure-play on the magnet bottleneck China controls.",
+      "thesis_note": "China's dominant sintered NdFeB magnet maker. ~28 REE magnet assemblies per humanoid robot (Optimus BOM teardown) — robotics scaling = compounding demand atop EVs. Pure-play on the magnet bottleneck China controls.",
       "conviction": 2,
       "froth": 2,
       "froth_note": "Chinese market; hard to assess froth directly. Robotics demand wave not yet in consensus models, but EV demand somewhat in price. Export control regime means margins may expand if China restricts supply.",
@@ -122,10 +123,10 @@
       "chain_layer": "Mining + Milling",
       "geo": "CA",
       "structure": "equity",
-      "thesis_note": "Tier-1 Athabasca Basin producer. McArthur River/Cigar Lake restart. Westinghouse stake. Flooding event May 2026 resolved within 17 days \u2014 demonstrated operational resilience. 2026 guidance maintained.",
+      "thesis_note": "Tier-1 Athabasca Basin producer. McArthur River/Cigar Lake restart. Westinghouse stake. Flooding event May 2026 resolved within 17 days — demonstrated operational resilience. 2026 guidance maintained.",
       "conviction": 3,
       "froth": 2,
-      "froth_note": "Uranium supercycle thesis well-covered; CCO is the large-cap vehicle. Multiple has expanded. Still structurally sound but not a hidden gem \u2014 institutional ownership is high. Some premium for the Westinghouse stake.",
+      "froth_note": "Uranium supercycle thesis well-covered; CCO is the large-cap vehicle. Multiple has expanded. Still structurally sound but not a hidden gem — institutional ownership is high. Some premium for the Westinghouse stake.",
       "themes": [
         "uranium-rebuild",
         "nuclear-ai-ppa",
@@ -143,7 +144,7 @@
       "thesis_note": "Cleanest price leverage to spot U3O8. No operational or dilution risk. Building structural physical inventory position. At-the-market offering mechanism creates NAV-tracking buying when spot rises.",
       "conviction": 3,
       "froth": 1,
-      "froth_note": "Physical trust: price is spot U3O8. Can't really have 'froth' in the equity sense \u2014 it tracks the commodity. Discount to NAV occasionally widens (entry opportunity). Cleanest insulated structure in uranium.",
+      "froth_note": "Physical trust: price is spot U3O8. Can't really have 'froth' in the equity sense — it tracks the commodity. Discount to NAV occasionally widens (entry opportunity). Cleanest insulated structure in uranium.",
       "themes": [
         "uranium-rebuild",
         "physical-commodity"
@@ -157,7 +158,7 @@
       "chain_layer": "Nuclear operations",
       "geo": "US",
       "structure": "utility",
-      "thesis_note": "Largest US nuclear fleet. AI PPA template (TMI-Microsoft). Fleet-wide PPA pipeline. Also in AI Hardware Research map (datacenter vertical) \u2014 reference-only here; not double-counted.",
+      "thesis_note": "Largest US nuclear fleet. AI PPA template (TMI-Microsoft). Fleet-wide PPA pipeline. Also in AI Hardware Research map (datacenter vertical) — reference-only here; not double-counted.",
       "conviction": 3,
       "froth": 3,
       "froth_note": "AI PPA premium is fully priced; multiple has expanded far beyond utility peers. Excellent business but high froth: consensus owns it, it's had a massive run, and any PPA disappointment is a correction risk. Equity is well ahead of the underlying fleet value.",
@@ -174,7 +175,7 @@
       "chain_layer": "Mining",
       "geo": "CA",
       "structure": "equity",
-      "thesis_note": "Arrow deposit \u2014 largest undeveloped high-grade uranium deposit in Athabasca Basin. Long development timeline but asset quality is exceptional. Production 2030+ if permitted on schedule.",
+      "thesis_note": "Arrow deposit — largest undeveloped high-grade uranium deposit in Athabasca Basin. Long development timeline but asset quality is exceptional. Production 2030+ if permitted on schedule.",
       "conviction": 2,
       "froth": 1,
       "froth_note": "Pre-production. Arrow asset quality is known but market discounts the long permitting/development timeline. Spot uranium going higher would close the valuation gap. Insulated from short-term froth cycles.",
@@ -191,10 +192,10 @@
       "chain_layer": "Grid EPC",
       "geo": "US",
       "structure": "epc",
-      "thesis_note": "~40% US transmission/distribution EPC market share. Q1 2026 backlog $48.5B (record; +$20B in two years). Backlog growing faster than revenue \u2014 duration of work locked in.",
+      "thesis_note": "~40% US transmission/distribution EPC market share. Q1 2026 backlog $48.5B (record; +$20B in two years). Backlog growing faster than revenue — duration of work locked in.",
       "conviction": 3,
       "froth": 2,
-      "froth_note": "Record backlog visible and in the model; multiple expanded but backlog duration gives earnings visibility. Not expensive relative to growth \u2014 but not cheap. Some energy/infrastructure premium already in price.",
+      "froth_note": "Record backlog visible and in the model; multiple expanded but backlog duration gives earnings visibility. Not expensive relative to growth — but not cheap. Some energy/infrastructure premium already in price.",
       "themes": [
         "grid-buildout",
         "ai-demand-pull",
@@ -212,7 +213,7 @@
       "thesis_note": "Transformer + switchgear + data center power. 228 GW DC backlog = 12 years of orders at current rates. Electrical Americas orders +42% YoY Q1 2026. DC equipment orders +240% YoY.",
       "conviction": 3,
       "froth": 3,
-      "froth_note": "High froth: data center theme is fully priced, the stock is widely owned by growth and infrastructure funds, and the multiple is stretched vs. historical. Excellent business \u2014 but entry timing matters. A cooling in DC orders (even noise) is a correction risk.",
+      "froth_note": "High froth: data center theme is fully priced, the stock is widely owned by growth and infrastructure funds, and the multiple is stretched vs. historical. Excellent business — but entry timing matters. A cooling in DC orders (even noise) is a correction risk.",
       "themes": [
         "grid-buildout",
         "ai-demand-pull",
@@ -228,7 +229,7 @@
       "chain_layer": "Generation + Grid",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Wind turbines + gas turbines + grid solutions. Q1 2026 orders $18.3B (+71% organically). Gas turbine slots 110 GW target. Total backlog heading to $200B by 2027 (pulled forward one year). Also in AI Hardware Research \u2014 reference only.",
+      "thesis_note": "Wind turbines + gas turbines + grid solutions. Q1 2026 orders $18.3B (+71% organically). Gas turbine slots 110 GW target. Total backlog heading to $200B by 2027 (pulled forward one year). Also in AI Hardware Research — reference only.",
       "conviction": 3,
       "froth": 3,
       "froth_note": "IPO momentum + backlog narrative = high investor attention. Already well-covered. Excellent underlying backlog but equity has priced in years of growth. Risk: execution risk on a massive backlog, wind margin recovery slower than expected.",
@@ -249,7 +250,7 @@
       "thesis_note": "Electrical/mechanical contractor. Data center + grid + industrial buildout leverage. Less covered than PWR, similar backlog dynamics with broader customer mix.",
       "conviction": 2,
       "froth": 1,
-      "froth_note": "Less institutionally owned than PWR. EPC contractor with broader exposure \u2014 not a pure-play but benefits from grid buildout with less valuation premium. Under-followed relative to the opportunity.",
+      "froth_note": "Less institutionally owned than PWR. EPC contractor with broader exposure — not a pure-play but benefits from grid buildout with less valuation premium. Under-followed relative to the opportunity.",
       "themes": [
         "grid-buildout",
         "datacenter-power"
@@ -263,7 +264,7 @@
       "chain_layer": "Grid EPC",
       "geo": "US",
       "structure": "epc",
-      "thesis_note": "Pure-play T&D contractor. Smaller than PWR, higher torque to grid spending. Higher operating leverage \u2014 small cap, pure T&D, not diversified like EME.",
+      "thesis_note": "Pure-play T&D contractor. Smaller than PWR, higher torque to grid spending. Higher operating leverage — small cap, pure T&D, not diversified like EME.",
       "conviction": 2,
       "froth": 1,
       "froth_note": "Small cap pure-play; less covered than PWR/EME. Higher beta to grid spend. Insulated in froth terms: not a momentum name, not widely owned, undiscovered by most thematic allocators.",
@@ -282,7 +283,7 @@
       "thesis_note": "Lowest-cost copper miner globally. 40+ year reserve life. Grupo Mexico controlled. Cost curve position: 1st quartile globally. Structural advantage through any copper price cycle.",
       "conviction": 3,
       "froth": 2,
-      "froth_note": "Copper supercycle thesis is consensus-owned; SCCO is the quality vehicle. Multiple is fair but not cheap. Lowest-cost position provides margin buffer. At current copper prices, FCF generation is exceptional \u2014 but the story is out.",
+      "froth_note": "Copper supercycle thesis is consensus-owned; SCCO is the quality vehicle. Multiple is fair but not cheap. Lowest-cost position provides margin buffer. At current copper prices, FCF generation is exceptional — but the story is out.",
       "themes": [
         "copper-supercycle",
         "ai-demand-pull",
@@ -301,7 +302,7 @@
       "thesis_note": "Largest US copper producer. Grasberg (Indonesia) world-class deposit. High capex leverage to copper price. Indonesia concentration risk. Cathode leaching volumes ramping.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "High-beta copper play; well-covered. Copper price leverage is real but so is Grasberg's operational complexity. Some premium in price for the scale/resource quality. Not high froth \u2014 just fairly priced for a cyclical mining company.",
+      "froth_note": "High-beta copper play; well-covered. Copper price leverage is real but so is Grasberg's operational complexity. Some premium in price for the scale/resource quality. Not high froth — just fairly priced for a cyclical mining company.",
       "themes": [
         "copper-supercycle",
         "ai-demand-pull"
@@ -315,10 +316,10 @@
       "chain_layer": "Streaming/Royalty",
       "geo": "CA",
       "structure": "streaming",
-      "thesis_note": "Gold/silver streams at Cu mines. Zero capex, geopolitically optimal above smelter layer. 2025 record revenue $1,822.8M (+YoY); net income $1.11B; built WITHOUT Cobre Panama \u2014 restart is pure optionality. Dividend raised 16%.",
+      "thesis_note": "Gold/silver streams at Cu mines. Zero capex, geopolitically optimal above smelter layer. 2025 record revenue $1,822.8M (+YoY); net income $1.11B; built WITHOUT Cobre Panama — restart is pure optionality. Dividend raised 16%.",
       "conviction": 3,
       "froth": 2,
-      "froth_note": "Gold ATH has helped FNV significantly. Premium streaming multiple is structurally justified \u2014 zero capex, full upside. Cobre Panama restart optionality is genuinely not in price. Exposed to gold price correction.",
+      "froth_note": "Gold ATH has helped FNV significantly. Premium streaming multiple is structurally justified — zero capex, full upside. Cobre Panama restart optionality is genuinely not in price. Exposed to gold price correction.",
       "themes": [
         "streaming-structure",
         "precious-metals",
@@ -353,7 +354,7 @@
       "thesis_note": "Largest US LNG exporter. ~$2.50-3.50/MMBTU tolling fee irrespective of commodity price. European SPAs locked 20yr. NATO energy security instrument. Stage 3 expansion underway.",
       "conviction": 3,
       "froth": 2,
-      "froth_note": "Tolling structure insulates from gas price volatility \u2014 income is largely fee-based. Thesis well-understood. Not high froth; tolling fee certainty anchors valuation. Some premium for the geopolitical tailwind.",
+      "froth_note": "Tolling structure insulates from gas price volatility — income is largely fee-based. Thesis well-understood. Not high froth; tolling fee certainty anchors valuation. Some premium for the geopolitical tailwind.",
       "themes": [
         "lng-supercycle",
         "european-energy-security",
@@ -371,7 +372,7 @@
       "thesis_note": "CP2 FID pending. Next large-scale US LNG capacity tranche. European SPA-backed. Recent IPO; legal disputes with customers over initial contracts cloud near-term sentiment.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "Contract dispute overhang creates sentiment risk. CP2 FID timing is the catalyst. Recent IPO with some sell-side initiation. Not high froth given the legal noise \u2014 fairly priced for the uncertainty.",
+      "froth_note": "Contract dispute overhang creates sentiment risk. CP2 FID timing is the catalyst. Recent IPO with some sell-side initiation. Not high froth given the legal noise — fairly priced for the uncertainty.",
       "themes": [
         "lng-supercycle",
         "european-energy-security"
@@ -388,7 +389,7 @@
       "thesis_note": "Largest natural gas pipeline network in US. Fee-based, regulated cash flows. Undervalued relative to infrastructure replacement cost. AI data center demand adds incremental volumes.",
       "conviction": 2,
       "froth": 1,
-      "froth_note": "Often overlooked in gas infrastructure \u2014 less exciting than LNG but regulated fee-based revenues are low risk. Insulated from commodity price swings. Not a momentum name; yield-oriented investors dominate the register.",
+      "froth_note": "Often overlooked in gas infrastructure — less exciting than LNG but regulated fee-based revenues are low risk. Insulated from commodity price swings. Not a momentum name; yield-oriented investors dominate the register.",
       "themes": [
         "gas-infrastructure",
         "ai-demand-pull"
@@ -405,7 +406,7 @@
       "thesis_note": "Extensive pipeline + NGL network. Higher yield, more commodity exposure than KMI. More complex corporate structure (LP) trades at persistent discount.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "Structural discount for LP complexity is persistent \u2014 value trap or mispricing? Higher yield compensates. More commodity-exposed than KMI. Not high froth; multiple has been range-bound for years.",
+      "froth_note": "Structural discount for LP complexity is persistent — value trap or mispricing? Higher yield compensates. More commodity-exposed than KMI. Not high froth; multiple has been range-bound for years.",
       "themes": [
         "gas-infrastructure"
       ],
@@ -418,10 +419,10 @@
       "chain_layer": "Mining + Conversion",
       "geo": "US/CL/AU",
       "structure": "equity",
-      "thesis_note": "Largest US lithium company. Kings Mountain conversion facility. Reshoring IRA play. Currently at cyclical trough \u2014 lithium price collapsed from 2022 ATH. Demand wave 2026-2030 is structural.",
+      "thesis_note": "Largest US lithium company. Kings Mountain conversion facility. Reshoring IRA play. Currently at cyclical trough — lithium price collapsed from 2022 ATH. Demand wave 2026-2030 is structural.",
       "conviction": 2,
       "froth": 1,
-      "froth_note": "Deep into cyclical trough \u2014 lithium carbonate prices well below incentive (~$10K/t vs $15-20K/t incentive for new hard rock mines). Equity is pricing in extended downside. The froth is negative \u2014 the thesis is early-cycle entry, not momentum. Maximum insulation from 'hot money'.",
+      "froth_note": "Deep into cyclical trough — lithium carbonate prices well below incentive (~$10K/t vs $15-20K/t incentive for new hard rock mines). Equity is pricing in extended downside. The froth is negative — the thesis is early-cycle entry, not momentum. Maximum insulation from 'hot money'.",
       "themes": [
         "lithium-cycle-turn",
         "ev-demand",
@@ -436,7 +437,7 @@
       "chain_layer": "Brine Mining",
       "geo": "CL",
       "structure": "equity",
-      "thesis_note": "Atacama lowest-cost Li brine. Post-correction entry. Chile policy risk monitoring \u2014 government renegotiated concession through 2060. Lowest-cost lithium producer globally.",
+      "thesis_note": "Atacama lowest-cost Li brine. Post-correction entry. Chile policy risk monitoring — government renegotiated concession through 2060. Lowest-cost lithium producer globally.",
       "conviction": 2,
       "froth": 1,
       "froth_note": "Similar to ALB: trough pricing, Chile overhang (resolved 2023 concession renewal), and the consensus bearish on lithium. The structural demand case is intact; current prices are below almost every cost curve model for new supply.",
@@ -453,10 +454,10 @@
       "chain_layer": "Grid BESS",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Grid-scale battery storage. Independent demand driver from EV cycle. AI-era grid BESS \u2014 data center backup + renewable integration. Recurring services revenue growing.",
+      "thesis_note": "Grid-scale battery storage. Independent demand driver from EV cycle. AI-era grid BESS — data center backup + renewable integration. Recurring services revenue growing.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "BESS demand is real and growing independently of EV lithium sentiment. Some premium for the AI/grid angle. Not high froth but also not cheap \u2014 execution risk on a high-growth, lower-margin business.",
+      "froth_note": "BESS demand is real and growing independently of EV lithium sentiment. Some premium for the AI/grid angle. Not high froth but also not cheap — execution risk on a high-growth, lower-margin business.",
       "themes": [
         "grid-buildout",
         "ai-demand-pull",
@@ -471,10 +472,10 @@
       "chain_layer": "Mining (Sb+Au)",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Stibnite mine \u2014 only significant Western antimony source. DoD MOU. Export controls active (China banned antimony exports Oct 2024). EIS process ongoing; permitting is the key risk.",
+      "thesis_note": "Stibnite mine — only significant Western antimony source. DoD MOU. Export controls active (China banned antimony exports Oct 2024). EIS process ongoing; permitting is the key risk.",
       "conviction": 3,
       "froth": 2,
-      "froth_note": "Export control catalyst is real and the DoD attention is genuine. Market is pricing some of this in \u2014 not fully, but not blind to it either. Permitting timeline is the uncertainty that keeps froth moderate. Pre-production.",
+      "froth_note": "Export control catalyst is real and the DoD attention is genuine. Market is pricing some of this in — not fully, but not blind to it either. Permitting timeline is the uncertainty that keeps froth moderate. Pre-production.",
       "themes": [
         "china-export-controls",
         "reshoring",
@@ -489,7 +490,7 @@
       "chain_layer": "Mining (Sn)",
       "geo": "CD",
       "structure": "equity",
-      "thesis_note": "World's highest-grade tin mine (Bisie, DRC). Direct AI chip packaging leverage. OTC-traded in US; listed on TSX-V. DRC geopolitical risk is real \u2014 monitor M23 conflict proximity.",
+      "thesis_note": "World's highest-grade tin mine (Bisie, DRC). Direct AI chip packaging leverage. OTC-traded in US; listed on TSX-V. DRC geopolitical risk is real — monitor M23 conflict proximity.",
       "conviction": 3,
       "froth": 1,
       "froth_note": "OTC-traded; minimal institutional penetration in the US. DRC risk creates a persistent discount. World-class asset (Bisie AISC ~$11K/t vs spot ~$30K+) at a valuation that doesn't reflect it. Maximum insulation from hot money.",
@@ -526,7 +527,7 @@
       "thesis_note": "World's only commercial 200mm SiC fab. Post-Chapter 11 turnaround. EV-built SiC capacity now 'inherited' by AI 800V infrastructure demand. Demonstrated first 300mm SiC crystal Jan 2026.",
       "conviction": 2,
       "froth": 1,
-      "froth_note": "Post-bankruptcy \u2014 deep distressed value, not a momentum name. 300mm SiC is the long-term value driver but timeline is 2028+. The market is skeptical of the turnaround. Very low froth; contrarian positioning.",
+      "froth_note": "Post-bankruptcy — deep distressed value, not a momentum name. 300mm SiC is the long-term value driver but timeline is 2028+. The market is skeptical of the turnaround. Very low froth; contrarian positioning.",
       "themes": [
         "sic-power",
         "ev-demand",
@@ -541,10 +542,10 @@
       "chain_layer": "SiC + InP substrates",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Tripled InP capacity; SiC substrate division growing. Only US company with meaningful InP and SiC substrate capacity at scale \u2014 both needed for AI photonics and 800V power.",
+      "thesis_note": "Tripled InP capacity; SiC substrate division growing. Only US company with meaningful InP and SiC substrate capacity at scale — both needed for AI photonics and 800V power.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "AI photonics theme has driven some multiple expansion. InP capacity tripling is real but sell-side coverage is following. Moderate froth \u2014 thesis is getting known but not yet consensus.",
+      "froth_note": "AI photonics theme has driven some multiple expansion. InP capacity tripling is real but sell-side coverage is following. Moderate froth — thesis is getting known but not yet consensus.",
       "themes": [
         "inp-photonics",
         "sic-power",
@@ -563,7 +564,7 @@
       "thesis_note": "Toyota BZ5 production win with 4th-gen SiC MOSFETs. 800V architecture expansion drives SiC MOSFET content per vehicle and per AI rack. Japan's leading SiC device maker.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "Japanese listed; EV SiC thesis is known but 800V AI rack application is not yet in sell-side models. Some premium for Toyota relationship. Moderate \u2014 not high froth given FX and sector complexity.",
+      "froth_note": "Japanese listed; EV SiC thesis is known but 800V AI rack application is not yet in sell-side models. Some premium for Toyota relationship. Moderate — not high froth given FX and sector complexity.",
       "themes": [
         "sic-power",
         "ev-demand",
@@ -578,10 +579,10 @@
       "chain_layer": "InP substrates",
       "geo": "JP",
       "structure": "equity",
-      "thesis_note": "Mass-produces 2/3/4/6-inch InP substrates for AI optical transceivers. Capacity 2.4x by 2028 (internal + external). 6-inch InP ready for mass production \u2014 critical for coherent/EML transceiver scaling.",
+      "thesis_note": "Mass-produces 2/3/4/6-inch InP substrates for AI optical transceivers. Capacity 2.4x by 2028 (internal + external). 6-inch InP ready for mass production — critical for coherent/EML transceiver scaling.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "Japanese conglomerate; InP is a small part of revenue \u2014 limited direct pricing of the thesis. Moderate froth for the subsidiary exposure.",
+      "froth_note": "Japanese conglomerate; InP is a small part of revenue — limited direct pricing of the thesis. Moderate froth for the subsidiary exposure.",
       "themes": [
         "inp-photonics",
         "ai-chip-packaging",
@@ -599,7 +600,7 @@
       "thesis_note": "Only vertically-integrated InP photonic fab in the West (Sunnyvale + CHIPS Act-backed San Jose). Acquired Infinera 2024. InP foundry services to Lumentum and others.",
       "conviction": 2,
       "froth": 1,
-      "froth_note": "Nokia's wireless business dominates investor framing \u2014 the InP fab story is not widely known. Discounted for wireless headwinds. Insulated: photonics upside is genuinely unpriced at the overall company level.",
+      "froth_note": "Nokia's wireless business dominates investor framing — the InP fab story is not widely known. Discounted for wireless headwinds. Insulated: photonics upside is genuinely unpriced at the overall company level.",
       "themes": [
         "inp-photonics",
         "ai-chip-packaging",
@@ -614,10 +615,10 @@
       "chain_layer": "HVLP copper foil",
       "geo": "JP",
       "structure": "equity",
-      "thesis_note": "One of very few producers capable of HVLP (high-voltage low-profile) copper foil for AI PCBs. Capacity relief pushed to 2027+. Severe bottleneck \u2014 'few players capable of production' (Citrini).",
+      "thesis_note": "One of very few producers capable of HVLP (high-voltage low-profile) copper foil for AI PCBs. Capacity relief pushed to 2027+. Severe bottleneck — 'few players capable of production' (Citrini).",
       "conviction": 2,
       "froth": 1,
-      "froth_note": "Japanese conglomerate; HVLP foil is a small fraction of revenues. Thesis is largely unpriced. Capacity constraint is real but timeline to revenue impact is 2027+. Maximum insulation \u2014 story not out yet.",
+      "froth_note": "Japanese conglomerate; HVLP foil is a small fraction of revenues. Thesis is largely unpriced. Capacity constraint is real but timeline to revenue impact is 2027+. Maximum insulation — story not out yet.",
       "themes": [
         "ai-chip-packaging",
         "copper-supercycle"
@@ -679,7 +680,7 @@
       "chain_layer": "Refining",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Largest US refiner. Crack spread driven \u2014 independent of crude price. Post-2020 structural: capacity rationalization has permanently tightened refining margins vs. pre-pandemic.",
+      "thesis_note": "Largest US refiner. Crack spread driven — independent of crude price. Post-2020 structural: capacity rationalization has permanently tightened refining margins vs. pre-pandemic.",
       "conviction": 2,
       "froth": 1,
       "froth_note": "Refining thesis: less consensus than upstream oil. Crack spread uncertainty keeps froth low. Post-capacity-rationalization structural is underappreciated. Insulated from AI/tech froth narrative.",
@@ -733,7 +734,7 @@
       "thesis_note": "Only company with significant scale across all three primary nutrients (N, P, K). Post-2022 spike normalization; structural food security angle. Allied-nation supply vs Russia/Belarus.",
       "conviction": 2,
       "froth": 1,
-      "froth_note": "Fertilizer thesis is post-spike, contrarian \u2014 prices have normalized. NTR is in the trough. Allied-nation supply security is a structural factor not yet priced by most investors. Insulated from momentum.",
+      "froth_note": "Fertilizer thesis is post-spike, contrarian — prices have normalized. NTR is in the trough. Allied-nation supply security is a structural factor not yet priced by most investors. Insulated from momentum.",
       "themes": [
         "food-security",
         "resource-nationalism"
@@ -764,10 +765,10 @@
       "chain_layer": "Water treatment",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "~50% global market share in pressure exchangers for RO desalination. Near-monopoly niche. AI/semiconductor fabs + data centers are water-intensive \u2014 ERII is an indirect AI infrastructure play.",
+      "thesis_note": "~50% global market share in pressure exchangers for RO desalination. Near-monopoly niche. AI/semiconductor fabs + data centers are water-intensive — ERII is an indirect AI infrastructure play.",
       "conviction": 3,
       "froth": 2,
-      "froth_note": "Near-monopoly is recognized but ERII is small and not widely covered. AI/water angle is gaining attention. Some premium for the moat but not high froth \u2014 valuation is still reasonable for the recurring revenue quality.",
+      "froth_note": "Near-monopoly is recognized but ERII is small and not widely covered. AI/water angle is gaining attention. Some premium for the moat but not high froth — valuation is still reasonable for the recurring revenue quality.",
       "themes": [
         "water-scarcity",
         "ai-demand-pull",
@@ -782,7 +783,7 @@
       "chain_layer": "Water supply/treatment",
       "geo": "US/BZ/CY",
       "structure": "equity",
-      "thesis_note": "Small-cap water company operating in water-stressed markets (Caribbean, US Gulf). Desalination and water treatment focus. AI/semiconductor water constraint play \u2014 new fabs and DCs choose sites partly on water availability. Clean balance sheet, consistent dividend, largely ignored.",
+      "thesis_note": "Small-cap water company operating in water-stressed markets (Caribbean, US Gulf). Desalination and water treatment focus. AI/semiconductor water constraint play — new fabs and DCs choose sites partly on water availability. Clean balance sheet, consistent dividend, largely ignored.",
       "conviction": 2,
       "froth": 1,
       "froth_note": "Very small, very illiquid, very overlooked. Water as an infrastructure bottleneck is not on most investors screens. Insulated from conventional market froth cycles.",
@@ -801,7 +802,7 @@
       "thesis_note": "On-site ASU plants at chip fabs/hospitals under 15-20yr sole-source contracts. Infinite moat. Revenue is effectively fixed-cost, inflation-indexed utility revenue.",
       "conviction": 3,
       "froth": 3,
-      "froth_note": "Industrial gas moat is fully priced and then some. LIN trades at a significant premium to historical multiples. The business is as safe as any in the market \u2014 but the valuation leaves little margin of safety. Entry timing matters.",
+      "froth_note": "Industrial gas moat is fully priced and then some. LIN trades at a significant premium to historical multiples. The business is as safe as any in the market — but the valuation leaves little margin of safety. Entry timing matters.",
       "themes": [
         "industrial-moat",
         "reshoring",
@@ -819,7 +820,7 @@
       "thesis_note": "On-site industrial gas + hydrogen infrastructure. ~40% global share with LIN. Hydrogen strategy overhang has compressed multiple vs LIN. CEO transition in 2024 refocusing on core.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "Hydrogen strategy overreach created multiple discount vs LIN \u2014 now reversing under new strategy. Some residual skepticism from hydrogen write-downs. Fair value, not frothy.",
+      "froth_note": "Hydrogen strategy overreach created multiple discount vs LIN — now reversing under new strategy. Some residual skepticism from hydrogen write-downs. Fair value, not frothy.",
       "themes": [
         "industrial-moat",
         "hydrogen"
@@ -836,7 +837,7 @@
       "thesis_note": "Primary US beneficiary of Boeing/Airbus titanium diversification away from Russia. Aerospace structural recovery + defense demand. Russia sanctions removed ~40% of global titanium sponge supply.",
       "conviction": 2,
       "froth": 2,
-      "froth_note": "Aerospace recovery thesis is consensus; Russia diversification is an additional tailwind. Moderate premium for the reshoring/defense angle. Not high froth \u2014 aerospace cycle still has runway.",
+      "froth_note": "Aerospace recovery thesis is consensus; Russia diversification is an additional tailwind. Moderate premium for the reshoring/defense angle. Not high froth — aerospace cycle still has runway.",
       "themes": [
         "reshoring",
         "resource-nationalism",
@@ -851,7 +852,7 @@
       "chain_layer": "Beryllium + specialty",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Only Western Be mine + only US Be processing. Defense-critical, <$1.5B mkt cap. Underowned. Beryllium is a Schedule II controlled material \u2014 zero substitutes for most defense applications.",
+      "thesis_note": "Only Western Be mine + only US Be processing. Defense-critical, <$1.5B mkt cap. Underowned. Beryllium is a Schedule II controlled material — zero substitutes for most defense applications.",
       "conviction": 3,
       "froth": 1,
       "froth_note": "Beryllium is not on investors' radars. Sub-$1.5B, defense-critical, no non-US alternative. This is the definition of insulated: a quiet monopoly that most allocators have never heard of.",
@@ -887,7 +888,7 @@
       "chain_layer": "Royalties/Streaming",
       "geo": "US",
       "structure": "royalty",
-      "thesis_note": "Gold royalties + streaming. Acquired Sandstorm Gold ($3.5B) + $1.0B Kansanshi stream \u2014 $5.4B of M&A transforms RGLD to large-cap streaming. 25th consecutive annual dividend increase.",
+      "thesis_note": "Gold royalties + streaming. Acquired Sandstorm Gold ($3.5B) + $1.0B Kansanshi stream — $5.4B of M&A transforms RGLD to large-cap streaming. 25th consecutive annual dividend increase.",
       "conviction": 2,
       "froth": 2,
       "froth_note": "Gold ATH has helped; Sandstorm integration is adding scale. Premium royalty multiple is warranted but stretched at current gold prices. Exposed to gold price correction.",
@@ -896,6 +897,260 @@
         "precious-metals"
       ],
       "last_touched": "2026-08-03"
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources",
+      "vertical": "cu",
+      "chain_layer": "Mining",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Copper-focused after the coal separation. QB2 (Chile) ramping toward nameplate is the single largest new copper supply addition in the portfolio universe. Tier-1 jurisdiction, long reserve life.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Post-restructuring re-rating already partly done; copper leverage is understood by the market. Not a hidden name, but QB2 execution is still the swing factor.",
+      "themes": [
+        "copper-supercycle",
+        "tier1-assets",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "HBM",
+      "name": "Hudbay Minerals",
+      "vertical": "cu",
+      "chain_layer": "Mining",
+      "geo": "CA/PE",
+      "structure": "equity",
+      "thesis_note": "Mid-cap copper with Constancia (Peru) producing and Copper World (Arizona) as permitted US-domestic optionality — rare given 16-17yr democratic permitting timelines.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Mid-cap leverage to spot copper cuts both ways. Copper World is the asymmetric piece and is not fully in consensus numbers.",
+      "themes": [
+        "copper-supercycle",
+        "reshoring",
+        "critical-minerals"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "IVN.TO",
+      "name": "Ivanhoe Mines",
+      "vertical": "cu",
+      "chain_layer": "Mining",
+      "geo": "CA/DRC",
+      "structure": "equity",
+      "thesis_note": "Kamoa-Kakula is the highest-grade major new copper mine in the world and among the few genuinely large new supply sources this decade. Grade is the moat.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Exceptional orebody, but DRC jurisdiction and Chinese co-ownership are real discounts the market applies deliberately — not mispricing.",
+      "themes": [
+        "copper-supercycle",
+        "tier1-assets",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "XYL",
+      "name": "Xylem",
+      "vertical": "wl",
+      "chain_layer": "Water technology",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Broadest listed water platform — treatment, transport, metering and analytics. The default way to own water scarcity as infrastructure rather than as a commodity.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Quality compounder valuation; water scarcity is an accepted theme so little is unpriced. Owned for durability rather than asymmetry.",
+      "themes": [
+        "water-scarcity",
+        "ai-demand-pull",
+        "desalination"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "ARIS",
+      "name": "Aris Water Solutions",
+      "vertical": "wl",
+      "chain_layer": "Produced water",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Produced-water handling and recycling for Permian operators. Contracted, volume-linked infrastructure — a water toll on oil production rather than a bet on the oil price.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Small cap, niche, thinly followed. Water-handling contracts are genuinely under-modelled as infrastructure cash flows.",
+      "themes": [
+        "water-scarcity",
+        "oil-geopolitics"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "vertical": "fert",
+      "chain_layer": "Nitrogen production",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US nitrogen producer with structural Henry Hub gas-cost advantage over European producers priced off TTF. Food security plus a low-carbon ammonia optionality.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Earnings are highly gas-price levered in both directions — the cost advantage is real but the equity is cyclical, not insulated.",
+      "themes": [
+        "food-security",
+        "gas-infrastructure",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "ICL",
+      "name": "ICL Group",
+      "vertical": "fert",
+      "chain_layer": "Potash + specialty",
+      "geo": "IL",
+      "structure": "equity",
+      "thesis_note": "Dead Sea concession gives a low-cost potash and bromine position. Specialty phosphates for LFP battery cathodes add a non-agricultural demand leg.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Israeli listing and regional geopolitical risk keep a persistent discount. The battery-materials leg is not in most fertiliser models.",
+      "themes": [
+        "food-security",
+        "critical-minerals",
+        "ev-demand"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings",
+      "vertical": "elec",
+      "chain_layer": "DC power + cooling",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Data center power distribution and liquid cooling. At 100kW+ per rack, air cooling fails and direct liquid becomes mandatory — VRT is the scaled incumbent through that transition.",
+      "conviction": 2,
+      "froth": 3,
+      "froth_note": "One of the most crowded AI-infrastructure trades in the market. Business quality is real; the multiple already embeds years of DC growth. Entry timing matters more than thesis here.",
+      "themes": [
+        "ai-demand-pull",
+        "datacenter-power",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "PRY.MI",
+      "name": "Prysmian",
+      "vertical": "elec",
+      "chain_layer": "HV/HVDC cable",
+      "geo": "IT",
+      "structure": "equity",
+      "thesis_note": "Largest HV and subsea cable maker. HVDC interconnectors and offshore wind export cables are a hard physical bottleneck with a multi-year order backlog and effectively two credible suppliers.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Backlog gives visibility and the market knows it. Duopoly pricing power with Nexans is the under-appreciated part; European listing limits US flows.",
+      "themes": [
+        "grid-buildout",
+        "ai-demand-pull",
+        "transformer-bottleneck"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "NEX.PA",
+      "name": "Nexans",
+      "vertical": "elec",
+      "chain_layer": "HV/HVDC cable",
+      "geo": "FR",
+      "structure": "equity",
+      "thesis_note": "The other half of the HV cable duopoly with Prysmian. Portfolio pruned toward electrification; subsea and grid backlog extends past the decade.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Follows Prysmian's re-rating with a lag and trades at a discount. Less covered by US investors than the thesis warrants.",
+      "themes": [
+        "grid-buildout",
+        "european-energy-security",
+        "transformer-bottleneck"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "UEC",
+      "name": "Uranium Energy Corp",
+      "vertical": "nu",
+      "chain_layer": "ISR mining",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US-focused ISR uranium platform with fully permitted Wyoming and Texas capacity that can restart on price rather than on a decade of construction. Optionality on domestic supply mandates.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Restart optionality is the whole story and it is partly priced. Unhedged spot leverage means it moves violently with U3O8 in both directions.",
+      "themes": [
+        "uranium-rebuild",
+        "reshoring",
+        "nuclear-ai-ppa"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies",
+      "vertical": "nu",
+      "chain_layer": "Components + SMR",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Sole-source supplier of US naval nuclear reactors — defense procurement revenue that does not track the commodity cycle — plus SMR manufacturing and TRISO fuel capability.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Defense backlog gives genuine recession resistance, and the market pays for that certainty. SMR optionality is free-ish but slow to arrive.",
+      "themes": [
+        "uranium-rebuild",
+        "defense-procurement",
+        "nuclear-ai-ppa",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corporation",
+      "vertical": "ng",
+      "chain_layer": "Production",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US natural gas producer, Appalachian scale, now vertically integrated into midstream. Direct beneficiary of LNG export growth and gas-fired data center load.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Gas price beta is the dominant driver and is not insulated. The AI-power demand leg is the newer, less-modelled part of the case.",
+      "themes": [
+        "gas-infrastructure",
+        "ai-demand-pull",
+        "lng-supercycle",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "SBSW",
+      "name": "Sibanye-Stillwater",
+      "vertical": "pg",
+      "chain_layer": "PGM mining",
+      "geo": "ZA/US",
+      "structure": "equity",
+      "thesis_note": "Largest primary PGM producer with the only meaningful US platinum/palladium asset (Stillwater, Montana) — a designated critical mineral with no domestic alternative.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "South African operational and power risk keeps a deep discount. Stillwater's strategic value to US critical-minerals policy is not reflected in the price.",
+      "themes": [
+        "precious-metals",
+        "critical-minerals",
+        "reshoring",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05"
     }
   ]
 }

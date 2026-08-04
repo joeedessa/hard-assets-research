@@ -12,55 +12,215 @@
     "as_of": "2026-08-04"
   },
   "entities": [
-    { "ticker": "CF",     "name": "CF Industries",          "type": "candidate", "vertical": "fert", "note": "Nitrogen fertilizer; large Henry Hub gas-cost leverage. On-thesis for food security — not yet assessed." },
-    { "ticker": "AES",    "name": "AES Corporation",        "type": "candidate", "vertical": "elec", "note": "Utility with a large grid-scale storage (BESS) build pipeline." },
-    { "ticker": "XYL",    "name": "Xylem",                  "type": "candidate", "vertical": "wl",   "note": "Broadest listed water technology platform — treatment, transport, metering." },
-    { "ticker": "SBSW",   "name": "Sibanye-Stillwater",     "type": "candidate", "vertical": "pg",   "note": "PGM miner with US (Stillwater) and SA assets; also a lithium/nickel optionality story." },
-    { "ticker": "PRY.MI", "name": "Prysmian",               "type": "candidate", "vertical": "elec", "note": "Largest listed HV/HVDC cable maker — a hard grid-buildout bottleneck." },
-    { "ticker": "NEX.PA", "name": "Nexans",                 "type": "candidate", "vertical": "elec", "note": "HV subsea and land cable; the other half of the HVDC duopoly with Prysmian." },
-    { "ticker": "VRT",    "name": "Vertiv",                 "type": "candidate", "vertical": "elec", "note": "Data center power and liquid cooling — the fastest-growing DC thermal name." },
-    { "ticker": "ARIS",   "name": "Aris Water Solutions",   "type": "candidate", "vertical": "wl",   "note": "Produced-water handling and recycling for Permian operators." },
-    { "ticker": "GTLS",   "name": "Chart Industries",       "type": "candidate", "vertical": "ng",   "note": "Cryogenic equipment for LNG, industrial gas and hydrogen — cross-vertical picks-and-shovels." },
-    { "ticker": "NRG",    "name": "NRG Energy",             "type": "candidate", "vertical": "elec", "note": "Gas generation fleet positioned for 24/7 dispatchable data center load." },
-    { "ticker": "EPD",    "name": "Enterprise Products",    "type": "candidate", "vertical": "oil",  "note": "Large-cap midstream; NGL and export terminal infrastructure." },
-    { "ticker": "WMB",    "name": "Williams Companies",     "type": "candidate", "vertical": "ng",   "note": "Gas pipeline network with direct data-center supply projects." },
-    { "ticker": "EQT",    "name": "EQT Corporation",        "type": "candidate", "vertical": "ng",   "note": "Largest US natural gas producer; Appalachian scale." },
-    { "ticker": "UEC",    "name": "Uranium Energy Corp",    "type": "candidate", "vertical": "nu",   "note": "US ISR uranium with near-term production optionality." },
-    { "ticker": "BWXT",   "name": "BWX Technologies",       "type": "candidate", "vertical": "nu",   "note": "Naval nuclear components and SMR manufacturing; defense-procurement backed." },
-    { "ticker": "ICL",    "name": "ICL Group",              "type": "candidate", "vertical": "fert", "note": "Specialty fertilizers, bromine and phosphate; Dead Sea concession." },
-    { "ticker": "ENR.DE", "name": "Siemens Energy",         "type": "candidate", "vertical": "elec", "note": "Grid transmission equipment and gas turbines; European listing." },
-    { "ticker": "ITRI",   "name": "Itron",                  "type": "candidate", "vertical": "elec", "note": "Smart meters and grid edge intelligence." },
-    { "ticker": "NVT",    "name": "nVent Electrical",       "type": "candidate", "vertical": "elec", "note": "Electrical connection and protection; data center enclosures and liquid cooling." },
-    { "ticker": "MOD",    "name": "Modine Manufacturing",   "type": "candidate", "vertical": "elec", "note": "Thermal management; data center cooling coils and CDUs." },
-    { "ticker": "MTZ",    "name": "MasTec",                 "type": "candidate", "vertical": "elec", "note": "Infrastructure EPC — the fourth major US grid contractor alongside PWR, MYRG and EME." },
-
-    { "ticker": "AMZN",   "name": "Amazon",                 "type": "context", "note": "Hyperscaler — a demand driver for power, copper and water, not a hard-asset investment." },
-    { "ticker": "MSFT",   "name": "Microsoft",              "type": "context", "note": "Hyperscaler; counterparty on the CEG Three Mile Island PPA. Demand side only." },
-    { "ticker": "GOOG",   "name": "Alphabet",               "type": "context", "note": "Hyperscaler; first corporate SMR fleet PPA (Kairos). Demand side only." },
-    { "ticker": "META",   "name": "Meta Platforms",         "type": "context", "note": "Hyperscaler; announced multi-GW nuclear procurement. Demand side only." },
-    { "ticker": "TSLA",   "name": "Tesla",                  "type": "context", "note": "Magnet, lithium and Megapack demand reference — an end customer, not a hard-asset play." },
-    { "ticker": "TSM",    "name": "TSMC",                   "type": "context", "note": "Fab customer for industrial gases and specialty materials. Semiconductor thesis, not hard assets." },
-    { "ticker": "GM",     "name": "General Motors",         "type": "context", "note": "OEM offtake counterparty (MP magnet agreement). Demand side." },
-    { "ticker": "F",      "name": "Ford",                   "type": "context", "note": "OEM offtake reference. Demand side." },
-    { "ticker": "BYD",    "name": "BYD",                    "type": "context", "note": "Chinese EV/battery OEM cited for demand scale." },
-    { "ticker": "INTC",   "name": "Intel",                  "type": "context", "note": "Fab customer for industrial gases and substrates." },
-
-    { "name": "Heron Power",        "type": "private", "note": "Solid-state transformers; $140M Series B (a16z American Dynamism, Breakthrough Energy). Ex-Tesla powertrain leadership." },
-    { "name": "DG Matrix",          "type": "private", "note": "Solid-state transformers; $60M Series A with ABB and Mitsubishi Heavy as strategic investors." },
-    { "name": "Kairos Power",       "type": "private", "note": "Fluoride-salt-cooled SMR developer; Google fleet PPA counterparty." },
-    { "name": "X-energy",           "type": "private", "note": "TRISO-fuelled HTGR SMR developer; Amazon-backed." },
-    { "name": "Holtec International","type": "private","note": "Spent-fuel storage casks and SMR-300 development." },
-    { "name": "Redwood Materials",  "type": "private", "note": "Battery recycling and cathode materials; the leading US private recycler." },
-    { "name": "Moda Midstream",     "type": "private", "note": "VLCC-capable crude export terminal operator." },
-    { "name": "Hitachi Energy",     "type": "private", "note": "Grid transmission equipment; a Hitachi subsidiary with no separate listing." },
-    { "name": "Urenco",             "type": "private", "note": "Enrichment consortium owned by the UK, Dutch and German states plus utilities." },
-    { "name": "Eotron",             "type": "private", "note": "SiC cold plate and fluid-cooled interposer research." },
-
-    { "name": "TENEX / Rosatom",    "type": "state", "note": "Russian state enrichment supplier — was ~28% of US SWU before the 2024 import ban. Not investable." },
-    { "name": "OCP Group",          "type": "state", "note": "Moroccan state phosphate producer; controls the majority of global reserves. Not listed." },
-    { "name": "Canpotex",           "type": "state", "note": "Potash export JV of Nutrien and Mosaic — a marketing entity, not separately investable." },
-    { "name": "Orano",              "type": "state", "note": "French state-owned fuel cycle and reprocessing company." },
-    { "name": "ConverDyn",          "type": "state", "note": "US uranium conversion JV (Honeywell/General Atomics)." },
-    { "name": "CNNC",               "type": "state", "note": "China National Nuclear Corporation — state-owned." }
+    {
+      "ticker": "AES",
+      "name": "AES Corporation",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "Utility with a large grid-scale storage (BESS) build pipeline."
+    },
+    {
+      "ticker": "GTLS",
+      "name": "Chart Industries",
+      "type": "context",
+      "vertical": "ng",
+      "note": "Cryogenic equipment for LNG, industrial gas and hydrogen. Yahoo returns no price data as of 2026-08-05 — likely acquired or delisted; treat as historical reference until confirmed."
+    },
+    {
+      "ticker": "NRG",
+      "name": "NRG Energy",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "Gas generation fleet positioned for 24/7 dispatchable data center load."
+    },
+    {
+      "ticker": "EPD",
+      "name": "Enterprise Products",
+      "type": "candidate",
+      "vertical": "oil",
+      "note": "Large-cap midstream; NGL and export terminal infrastructure."
+    },
+    {
+      "ticker": "WMB",
+      "name": "Williams Companies",
+      "type": "candidate",
+      "vertical": "ng",
+      "note": "Gas pipeline network with direct data-center supply projects."
+    },
+    {
+      "ticker": "ENR.DE",
+      "name": "Siemens Energy",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "Grid transmission equipment and gas turbines; European listing."
+    },
+    {
+      "ticker": "ITRI",
+      "name": "Itron",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "Smart meters and grid edge intelligence."
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electrical",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "Electrical connection and protection; data center enclosures and liquid cooling."
+    },
+    {
+      "ticker": "MOD",
+      "name": "Modine Manufacturing",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "Thermal management; data center cooling coils and CDUs."
+    },
+    {
+      "ticker": "MTZ",
+      "name": "MasTec",
+      "type": "candidate",
+      "vertical": "elec",
+      "note": "Infrastructure EPC — the fourth major US grid contractor alongside PWR, MYRG and EME."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "type": "context",
+      "note": "Hyperscaler — a demand driver for power, copper and water, not a hard-asset investment."
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "type": "context",
+      "note": "Hyperscaler; counterparty on the CEG Three Mile Island PPA. Demand side only."
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet",
+      "type": "context",
+      "note": "Hyperscaler; first corporate SMR fleet PPA (Kairos). Demand side only."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "type": "context",
+      "note": "Hyperscaler; announced multi-GW nuclear procurement. Demand side only."
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "type": "context",
+      "note": "Magnet, lithium and Megapack demand reference — an end customer, not a hard-asset play."
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC",
+      "type": "context",
+      "note": "Fab customer for industrial gases and specialty materials. Semiconductor thesis, not hard assets."
+    },
+    {
+      "ticker": "GM",
+      "name": "General Motors",
+      "type": "context",
+      "note": "OEM offtake counterparty (MP magnet agreement). Demand side."
+    },
+    {
+      "ticker": "F",
+      "name": "Ford",
+      "type": "context",
+      "note": "OEM offtake reference. Demand side."
+    },
+    {
+      "ticker": "BYD",
+      "name": "BYD",
+      "type": "context",
+      "note": "Chinese EV/battery OEM cited for demand scale."
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "type": "context",
+      "note": "Fab customer for industrial gases and substrates."
+    },
+    {
+      "name": "Heron Power",
+      "type": "private",
+      "note": "Solid-state transformers; $140M Series B (a16z American Dynamism, Breakthrough Energy). Ex-Tesla powertrain leadership."
+    },
+    {
+      "name": "DG Matrix",
+      "type": "private",
+      "note": "Solid-state transformers; $60M Series A with ABB and Mitsubishi Heavy as strategic investors."
+    },
+    {
+      "name": "Kairos Power",
+      "type": "private",
+      "note": "Fluoride-salt-cooled SMR developer; Google fleet PPA counterparty."
+    },
+    {
+      "name": "X-energy",
+      "type": "private",
+      "note": "TRISO-fuelled HTGR SMR developer; Amazon-backed."
+    },
+    {
+      "name": "Holtec International",
+      "type": "private",
+      "note": "Spent-fuel storage casks and SMR-300 development."
+    },
+    {
+      "name": "Redwood Materials",
+      "type": "private",
+      "note": "Battery recycling and cathode materials; the leading US private recycler."
+    },
+    {
+      "name": "Moda Midstream",
+      "type": "private",
+      "note": "VLCC-capable crude export terminal operator."
+    },
+    {
+      "name": "Hitachi Energy",
+      "type": "private",
+      "note": "Grid transmission equipment; a Hitachi subsidiary with no separate listing."
+    },
+    {
+      "name": "Urenco",
+      "type": "private",
+      "note": "Enrichment consortium owned by the UK, Dutch and German states plus utilities."
+    },
+    {
+      "name": "Eotron",
+      "type": "private",
+      "note": "SiC cold plate and fluid-cooled interposer research."
+    },
+    {
+      "name": "TENEX / Rosatom",
+      "type": "state",
+      "note": "Russian state enrichment supplier — was ~28% of US SWU before the 2024 import ban. Not investable."
+    },
+    {
+      "name": "OCP Group",
+      "type": "state",
+      "note": "Moroccan state phosphate producer; controls the majority of global reserves. Not listed."
+    },
+    {
+      "name": "Canpotex",
+      "type": "state",
+      "note": "Potash export JV of Nutrien and Mosaic — a marketing entity, not separately investable."
+    },
+    {
+      "name": "Orano",
+      "type": "state",
+      "note": "French state-owned fuel cycle and reprocessing company."
+    },
+    {
+      "name": "ConverDyn",
+      "type": "state",
+      "note": "US uranium conversion JV (Honeywell/General Atomics)."
+    },
+    {
+      "name": "CNNC",
+      "type": "state",
+      "note": "China National Nuclear Corporation — state-owned."
+    }
   ]
 }

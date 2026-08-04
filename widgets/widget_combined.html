@@ -176,7 +176,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .fw-insight-label{font-size:9.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
 .fw-insight-title{font-size:14px;font-weight:600;color:var(--color-text-primary);margin-bottom:6px;line-height:1.35}
 .fw-insight-body{font-size:11px;color:var(--color-text-secondary);line-height:1.6}
-.fw-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}
+.fw-trio{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:8px}
 .fw-trio-item{border-radius:5px;padding:8px 10px;text-align:center}
 .fw-trio-name{font-size:11.5px;font-weight:600;margin-bottom:3px}
 .fw-trio-stats{font-size:10px;color:var(--color-text-secondary);line-height:1.6}
@@ -373,6 +373,12 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .th-box{background:var(--color-background-secondary);border-radius:5px;padding:6px 9px}
 .th-box-title{font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px}
 .th-box-body{font-size:11px;color:var(--color-text-secondary);line-height:1.5}
+.th-held{display:flex;flex-direction:column;gap:1px;margin-top:2px}
+.th-held-row{display:flex;align-items:center;gap:6px;padding:3px 4px;border-radius:4px;cursor:pointer;font-size:10.5px}
+.th-held-row:hover{background:var(--color-background-primary)}
+.th-held-tk{font-family:var(--font-mono);font-weight:700;min-width:52px;color:var(--color-text-primary)}
+.th-held-nm{color:var(--color-text-secondary);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.th-held-px{font-family:var(--font-mono);font-size:10px;min-width:46px;text-align:right}
 .risk-box{border-radius:5px;padding:5px 8px;border-left:3px solid #EF9F27;background:#EF9F2708}
 .risk-title{font-size:10px;font-weight:500;color:var(--risk-t);margin-bottom:2px}
 .risk-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4}
@@ -391,6 +397,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   border:.5px solid var(--color-border-tertiary);color:var(--color-text-secondary);
   background:transparent;text-align:left;width:100%;line-height:1.3;transition:all .12s}
 .vx-btn.on{color:#fff;border-color:transparent;font-weight:500}
+.vx-btn-derived{border-style:dashed;color:var(--color-text-tertiary);font-size:10.5px}
+.vx-btn-derived:hover{color:var(--accent);border-color:var(--accent)}
 .vx-btn:not(.on):hover{background:var(--color-background-secondary)}
 .vx-detail{max-height:820px;overflow-y:auto}
 .vx-head{margin-bottom:8px;padding-bottom:8px;border-bottom:.5px solid var(--color-border-tertiary)}
@@ -638,6 +646,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .dw-tile{background:var(--color-background-secondary);border-radius:4px;padding:5px 7px}
 .dw-tile-l{font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary);margin-bottom:1px}
 .dw-tile-v{font-family:var(--font-mono);font-size:13px;font-weight:600}
+.dw-fxnote{font-size:10px;color:var(--warn);background:color-mix(in srgb,var(--warn) 8%,transparent);
+  border:.5px solid color-mix(in srgb,var(--warn) 22%,transparent);border-radius:4px;padding:4px 7px;margin-top:5px;line-height:1.45}
 .dw-ddnote{font-size:10px;color:var(--good);background:color-mix(in srgb,var(--good) 8%,transparent);border:.5px solid color-mix(in srgb,var(--good) 22%,transparent);
   border-radius:3px;padding:4px 7px;margin-top:3px;line-height:1.4}
 .dw-peer{display:flex;align-items:center;gap:6px;padding:4px 0;
@@ -1135,7 +1145,7 @@ function buildStartHere(){
   el.innerHTML=`
     <div class="fw-macro"><div class="fw-macro-title">Why hard assets, why now</div><div class="fw-macro-body">Four structural forces are converging simultaneously — and each reinforces the others. <b>Deglobalization</b> is forcing supply chain regionalization: governments are paying strategic premiums to secure domestic production of materials they cannot afford to import from adversaries. <b>AI infrastructure</b> requires massive physical inputs — power, copper, transformers, rare earth magnets — that have no software substitute and take a decade to build. <b>Energy transition</b> demands 6–10× more copper, lithium, cobalt, and rare earths per unit of capacity than the fossil fuel system it replaces. <b>Monetary debasement</b> has driven central banks to record gold purchases as de-dollarization accelerates post-2022 Russia sanctions. These are not cyclical trends — they are structural regime changes that will play out over decades, and the supply chains required were not built during the previous era of cheap capital and globalization.</div></div>
     <div class="fw-drivers">${driversHtml}</div>
-    <div class="fw-insight"><div class="fw-insight-label">The defining structural insight</div><div class="fw-insight-title">Three verticals simultaneously at inning 1–2, with the highest capex gaps in the universe and business cycle risk below 30</div><div class="fw-insight-body">Nuclear/Uranium (inning 2), REE (inning 1), and Electricity/Grid (inning 2) all share the same structural profile: demand is mathematically locked in by AI power + enrichment rebuild + grid buildout; supply chains are starved of investment after a decade+ of neglect; and lead times are so long that even committed investment today cannot solve the deficit quickly. Business cycle risk below 30 means they are the <b>most defensible positions in a recessionary environment</b> — government procurement and grid buildout happen regardless of GDP. This combination — locked demand + scarce supply + long lead times + recession-resistance — is the definition of an exceptional structural thesis.</div><div class="fw-trio"><div class="fw-trio-item" style="background:#534AB712;border:.5px solid #534AB744"><div class="fw-trio-name" style="color:#534AB7">Nuclear / Uranium</div><div class="fw-trio-stats">Inning 2 · Capex gap 90<br>BC risk 20 · Structural 95</div></div><div class="fw-trio-item" style="background:#99355612;border:.5px solid #99355544"><div class="fw-trio-name" style="color:#993556">REE &amp; Specialty</div><div class="fw-trio-stats">Inning 1 · Capex gap 92<br>BC risk 28 · Structural 92</div></div><div class="fw-trio-item" style="background:#534AB712;border:.5px solid #534AB744"><div class="fw-trio-name" style="color:#534AB7">Electricity / Grid</div><div class="fw-trio-stats">Inning 2 · Capex gap 88<br>BC risk 22 · Structural 94</div></div></div></div>
+    <div class="fw-insight"><div class="fw-insight-label">The defining structural insight</div><div class="fw-insight-title">Four verticals at inning 1–2, with the highest capex gaps in the universe</div><div class="fw-insight-body">Nuclear/Uranium (inning 2), REE (inning 1), Electricity/Grid (inning 2) and Copper (inning 2) all share the same structural profile: demand is mathematically locked in by AI power, the enrichment rebuild, grid buildout and electrification; supply chains are starved of investment after a decade+ of neglect; and lead times are so long that even committed investment today cannot solve the deficit quickly. Three of the four carry business cycle risk below 30 — the <b>most defensible positions in a recessionary environment</b>, since government procurement and grid buildout happen regardless of GDP. <b>Copper is the deliberate exception:</b> at BC risk 62 it is materially more cyclical and demands more entry-timing discipline — but its supply case is the hardest of the four to argue against, with no substitute and 16–17 year permitting in democracies.</div><div class="fw-trio"><div class="fw-trio-item" style="background:#534AB712;border:.5px solid #534AB744"><div class="fw-trio-name" style="color:#534AB7">Nuclear / Uranium</div><div class="fw-trio-stats">Inning 2 · Capex gap 90<br>BC risk 20 · Structural 95</div></div><div class="fw-trio-item" style="background:#99355612;border:.5px solid #99355544"><div class="fw-trio-name" style="color:#993556">REE &amp; Specialty</div><div class="fw-trio-stats">Inning 1 · Capex gap 92<br>BC risk 28 · Structural 92</div></div><div class="fw-trio-item" style="background:#185FA512;border:.5px solid #185FA544"><div class="fw-trio-name" style="color:#185FA5">Electricity / Grid</div><div class="fw-trio-stats">Inning 2 · Capex gap 88<br>BC risk 22 · Structural 94</div></div><div class="fw-trio-item" style="background:#D85A3012;border:.5px solid #D85A3044"><div class="fw-trio-name" style="color:#D85A30">Copper</div><div class="fw-trio-stats">Inning 2 · Capex gap 85<br>BC risk 62 · Structural 88</div></div></div></div>
     <div class="sh-stats">${statsHtml}</div>
     <div class="fw-section-hdr">Mental models — the 5 lenses every position needs to pass</div>
     <div class="fw-models">${modelsHtml}</div>
@@ -1262,9 +1272,12 @@ function renderVxList(){
     if(!grp){grp={g,items:[]};groups.push(grp);}
     grp.items.push(v);
   });
-  el.innerHTML=(groups.length>1)
+  const derived=VERTICALS.filter(v=>v.derived);
+  const derivedHtml=derived.length?`<div class="vgrp">Derived infra</div>`
+    +derived.map(v=>`<button class="vx-btn vx-btn-derived" onclick="gotoVertical('${v.id}')" title="Not a commodity chain — opens its own tab">${esc(v.n)} ↗</button>`).join(''):'';
+  el.innerHTML=((groups.length>1)
     ? groups.map(grp=>`<div class="vgrp">${esc(grp.g)}</div>${grp.items.map(btn).join('')}`).join('')
-    : CHAIN_VERTICALS.map(btn).join('');
+    : CHAIN_VERTICALS.map(btn).join(''))+derivedHtml;
 }
 function loadV(id){
   VX_ACTIVE=id;
@@ -1524,7 +1537,21 @@ function loadTheme(id){
     const chain=(t.items||[]).map((item,i)=>`<div class="tc-item"><div class="tc-num" style="background:${t.c}">${i+1}</div><div><div class="tc-lbl">${esc(item.lbl)}</div><div class="tc-txt">${esc(item.ticks||'')}</div><div class="tc-txt" style="color:var(--color-text-secondary);margin-top:1px">${esc(item.why||'')}</div></div></div>`).join('');
     const posCards=(t.positions||[]).map(p=>{const[tier,...rest]=p.split(':');return `<div class="pos-card"><div class="pos-tier">${esc(tier)}</div><div class="pos-items">${esc(rest.join(':').trim())}</div></div>`;}).join('');
     const bars=[{l:'Structural demand strength',v:t.struct,c:t.c},{l:'Near-term momentum',v:t.near,c:t.c+'99'},{l:'Business cycle risk',v:t.bc,c:'#EF9F27'}].map(b=>`<div class="vbar"><div class="vbar-lbl">${b.l}</div><div class="vbar-b"><div class="vbar-f" style="width:${b.v}%;background:${b.c}"></div></div><span style="font-size:10.5px;font-weight:500;color:${b.c};min-width:24px;text-align:right">${b.v}</span></div>`).join('');
-    det.innerHTML=`<div class="th-2col"><div><div style="font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px">Supply chain position map</div><div class="th-chain">${chain}</div></div><div class="th-right"><div class="th-box"><div class="th-box-title">Investment thesis</div><div class="th-box-body">${t.thesis||''}</div></div><div class="th-box"><div class="th-box-title">Portfolio positioning</div><div class="pos-grid">${posCards}</div></div><div class="th-box"><div class="th-box-title">Structure vs. cycle</div>${bars}</div><div class="risk-box"><div class="risk-title">Watch / risk</div><div class="risk-body">${t.risk||''}</div></div></div></div>`;
+    // Holdings for this theme — bridges themes.json company_tags to companies.json
+    const tags=t.company_tags||[];
+    const held=COMPANIES.filter(c=>(c.themes||[]).some(x=>tags.includes(x)))
+      .sort((a,b)=>b.conviction-a.conviction||(a.ticker||'').localeCompare(b.ticker||''));
+    const heldHtml=held.length?`<div class="th-box"><div class="th-box-title">In the universe — ${held.length} name${held.length===1?'':'s'} tagged</div>
+      <div class="th-held">${held.map(c=>{const q=QUOTES[c.ticker];const fm=FROTH_META[c.froth||2];
+        return `<div class="th-held-row" onclick="openCompanyDrawer('${esc(c.ticker)}')">
+          <span class="dw-dot" style="width:6px;height:6px;background:${convColor(c.conviction)}"></span>
+          <span class="th-held-tk">${esc(c.ticker)}</span>
+          <span class="th-held-nm">${esc(c.name)}</span>
+          <span class="badge-sm badge-${fm.cls}">${fm.l}</span>
+          <span class="th-held-px">${q&&q.d1!=null?`<span style="color:${chgColor(q.d1)}">${fmtPct(q.d1)}</span>`:''}</span>
+        </div>`;}).join('')}</div></div>`:'';
+
+    det.innerHTML=`<div class="th-2col"><div><div style="font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px">Supply chain position map</div><div class="th-chain">${chain}</div>${heldHtml}</div><div class="th-right"><div class="th-box"><div class="th-box-title">Investment thesis</div><div class="th-box-body">${t.thesis||''}</div></div><div class="th-box"><div class="th-box-title">Portfolio positioning</div><div class="pos-grid">${posCards}</div></div><div class="th-box"><div class="th-box-title">Structure vs. cycle</div>${bars}</div><div class="risk-box"><div class="risk-title">Watch / risk</div><div class="risk-body">${t.risk||''}</div></div></div></div>`;
     cont.appendChild(det);
   }
   document.querySelectorAll('.th-detail').forEach(d=>d.classList.remove('on'));
@@ -1625,7 +1652,7 @@ function buildSbHtml(){
     <thead><tr><th>Name</th>${periods.map(p=>`<th>${p}</th>`).join('')}</tr></thead>
     <tbody>${rows.map(([name,d,cls])=>`<tr class="${cls}"><td>${esc(name)}</td>${periods.map(p=>`<td>${fmt(d[p])}</td>`).join('')}</tr>`).join('')}</tbody>
   </table></div>
-  <div class="note-box" style="margin-top:8px">Price-only, equal-weight, no rebalancing and no dividends — a rough structural read, not an audited track record.</div>
+  <div class="note-box" style="margin-top:8px">Price-only, equal-weight, no rebalancing and no dividends — a rough structural read, not an audited track record. Non-USD listings are counted in their <b>local currency and not FX-converted</b>, so the basket mixes currencies and overstates or understates by the FX move.</div>
   ${skew}`;
 }
 
@@ -1917,6 +1944,19 @@ function openThemeDrawer(id,push=true){
      <div class="dw-act"><span class="dw-btn" onclick="closeDrawer();CO_STATE.q='${esc(id)}';ST('co');if(!built['co']){built['co']=true;buildCompanies();}else renderCo()">Filter Companies tab</span></div>`);
 }
 
+// 9 of the universe price in non-USD and quotes are NOT FX-converted.
+// Say so wherever a price is shown in detail, rather than burying it in _meta.
+const FX_SUFFIX={'.AX':'AUD','.HK':'HKD','.T':'JPY','.JP':'JPY','.TW':'TWD','.TWO':'TWD',
+                 '.L':'GBp','.TO':'CAD','.MI':'EUR','.PA':'EUR','.DE':'EUR','.AS':'EUR'};
+function fxCcy(tk){
+  const k=Object.keys(FX_SUFFIX).sort((a,b)=>b.length-a.length).find(s=>tk.endsWith(s));
+  return k?FX_SUFFIX[k]:null;
+}
+function fxNote(tk){
+  const c=fxCcy(tk);
+  return c?`<div class="dw-fxnote">Quoted in ${c}, not converted to USD. Returns are local-currency and exclude FX.</div>`:'';
+}
+
 function drawerMarket(tk){
   const q=QUOTES[tk];if(!q||q.p==null)return'';
   const tile=(l,v,clr)=>v==null?'':`<div class="dw-tile"><div class="dw-tile-l">${l}</div><div class="dw-tile-v"${clr?` style="color:${clr}"`:''}>${v}</div></div>`;
@@ -1929,9 +1969,10 @@ function drawerMarket(tk){
     ${tile('1 month',fmtPct(q.m1),pc(q.m1))}
     ${tile('52w drawdown',q.dd!=null?q.dd.toFixed(1)+'%'+(q.dd<=-15?' ◈':''):null,q.dd<=-15?'var(--up)':null)}
     ${tile('vs 200DMA',v200!=null?(v200>=0?'+':'')+v200+'%':null,pc(v200))}
+    ${tile('12 month',fmtPct(q.r1y),pc(q.r1y))}
     ${tile('Fwd P/E',q.fpe||null)}
     ${tile('Mkt cap',fmtMC(q.mc))}
-  </div>${q.dd<=-15?`<div class="dw-ddnote">◈ >15% off 52-week high — entry window threshold for insulated names.</div>`:''}`;
+  </div>${fxNote(tk)}${q.dd<=-15?`<div class="dw-ddnote">◈ >15% off 52-week high.${q.r1y!=null&&q.r1y>60?` But still ${fmtPct(q.r1y)} over 12 months — this is profit-taking, not a value entry.`:' Entry-window threshold for insulated names.'}</div>`:''}`;
 }
 
 function drawerNews(tk){
