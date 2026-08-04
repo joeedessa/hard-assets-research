@@ -140,6 +140,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   border-radius:5px;padding:8px 11px;line-height:1.55;margin-bottom:10px}
 .ticklink{color:var(--accent);cursor:pointer;font-family:var(--font-mono);font-size:.9em}
 .ticklink:hover{text-decoration:underline}
+.ticklink-ex{color:var(--color-text-tertiary);border-bottom:1px dashed var(--color-border-secondary)}
+.ticklink-ex:hover{color:var(--color-text-secondary);text-decoration:none}
 /* Start Here */
 .sh-hero{background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);
   border-radius:8px;padding:16px 20px;margin-bottom:12px}
@@ -849,6 +851,7 @@ let VC={},VORDER=[],CROSS_V={};
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
 let TICKER_MAP={};
+let EXCL_MAP={};
 let TICKER_RE=null;
 
 // ── Utils ──────────────────────────────────────────────────────────────────
@@ -921,14 +924,41 @@ function classifyStage(layer){
 function vinfo(id){return V_MAP[id]||{id,n:id,c:'#888'};}
 
 function buildTickerRE(){
-  const tks=[...new Set(COMPANIES.map(c=>c.ticker).filter(Boolean))];
-  if(!tks.length){TICKER_RE=null;return;}
-  TICKER_RE=new RegExp('\\b('+tks.map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\b','g');
+  // Universe names link to the full company drawer. Names in excluded.json were
+  // considered and rejected, so they link to a short "why not" note instead of
+  // being silently plain text — otherwise a reader cannot tell the difference
+  // between a name we assessed and a name we simply never covered.
+  EXCL_MAP=Object.fromEntries((EXCLUDED||[]).map(e=>[e.ticker,e]));
+  const uni=[...new Set(COMPANIES.map(c=>c.ticker).filter(Boolean))];
+  const ex=[...new Set(Object.keys(EXCL_MAP).filter(t=>!uni.includes(t)))];
+  const all=[...uni,...ex];
+  if(!all.length){TICKER_RE=null;return;}
+  // Longest-first so e.g. LYC.AX wins over a bare LYC
+  all.sort((a,b)=>b.length-a.length);
+  TICKER_RE=new RegExp('\\b('+all.map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\b','g');
 }
 
 function linkifyTickers(s){
   if(!s||!TICKER_RE)return s||'';
-  return String(s).replace(TICKER_RE,m=>`<span class="ticklink" data-tk="${m}" onclick="openCompanyDrawer('${m.replace(/'/g,"\\'")}')">${m}</span>`);
+  return String(s).replace(TICKER_RE,m=>{
+    const esc_m=m.replace(/'/g,"\\'");
+    if(EXCL_MAP[m]&&!TICKER_MAP[m])
+      return `<span class="ticklink ticklink-ex" data-tk="${m}" title="Considered, not in the universe" onclick="openExcludedNote('${esc_m}')">${m}</span>`;
+    return `<span class="ticklink" data-tk="${m}" onclick="openCompanyDrawer('${esc_m}')">${m}</span>`;
+  });
+}
+
+// Short note for a name we assessed and chose not to include.
+function openExcludedNote(tk,push=true){
+  const e=EXCL_MAP[tk];if(!e)return;
+  const v=vinfo(e.considered_for);
+  if(push)DW_STACK.push({t:'ex',k:tk});
+  const head=`<span class="dw-tk">${esc(tk)}</span><span class="dw-nm">${esc(e.name||'')}</span>`
+    +`<span class="badge-sm" style="background:var(--color-background-secondary);color:var(--color-text-tertiary)">not in universe</span>`;
+  const body=`<div class="note-box">Considered for <b>${esc(v.n||e.considered_for||'—')}</b> and deliberately not included.</div>
+    <div class="dw-sect">Why</div><div class="dw-thesis">${linkifyTickers(esc(e.reason||''))}</div>
+    <div class="dw-p" style="color:var(--color-text-tertiary);font-size:10.5px;margin-top:10px">Assessed ${esc(e.date||'')} · recorded in data/excluded.json</div>`;
+  renderDrawer(v.c||'var(--color-text-tertiary)',head,body);
 }
 
 function jumpToCompanies(tk){
@@ -1893,6 +1923,7 @@ function drawerBack(){
   DW_STACK.pop();
   const p=DW_STACK[DW_STACK.length-1];
   if(p.t==='co')openCompanyDrawer(p.k,false);
+  else if(p.t==='ex')openExcludedNote(p.k,false);
   else openThemeDrawer(p.k,false);
 }
 
