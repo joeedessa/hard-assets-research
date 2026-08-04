@@ -75,7 +75,7 @@
   }
 }
 /* Brighten inline-styled colors (from JSON) in dark mode */
-.mch,.tn-name,.ctit,.mx-vdot,.fw-driver-title,.fw-trio-name{filter:brightness(var(--inline-bright))}
+.mch,.tn-name,.ctit,.fw-driver-title,.fw-trio-name{filter:brightness(var(--inline-bright))}
 *{box-sizing:border-box}
 body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-primary);
   font-family:var(--font-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -202,29 +202,6 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .fw-step-num{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff;margin-bottom:5px;flex-shrink:0}
 .fw-step-name{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
 .fw-step-desc{font-size:10px;color:var(--color-text-tertiary);line-height:1.45}
-/* Matrix */
-.mx-wrap{overflow-x:auto}
-.mx-table{border-collapse:collapse;min-width:660px}
-.mx-ch{padding:6px 8px;font-size:9.5px;font-weight:700;color:var(--color-text-secondary);
-  letter-spacing:.04em;border-bottom:1.5px solid var(--color-border-secondary);text-align:center;
-  cursor:help;position:relative;white-space:nowrap}
-.mx-ch-plain{font-size:8.5px;font-weight:400;color:var(--color-text-tertiary);display:block;margin-top:2px;letter-spacing:0;white-space:normal;text-align:center;line-height:1.2}
-.mx-bubble{display:none;position:absolute;z-index:50;background:var(--color-background-primary);
-  border:.5px solid var(--color-border-secondary);border-radius:6px;padding:8px 10px;
-  max-width:200px;box-shadow:var(--shadow-2);font-size:10.5px;color:var(--color-text-secondary);
-  pointer-events:none;white-space:normal;line-height:1.5;top:100%;left:0}
-.mx-ch:hover .mx-bubble{display:block}
-.mx-rl{padding:5px 8px 5px 0;font-size:10px;font-weight:600;color:var(--color-text-secondary);
-  white-space:nowrap;cursor:pointer;border-right:1.5px solid var(--color-border-secondary)}
-.mx-rl:hover{color:var(--color-text-primary)}
-.mx-vdot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px}
-.mx-cell{padding:4px;border:.5px solid var(--color-border-tertiary);vertical-align:top;min-width:74px;cursor:pointer}
-.mx-cell:hover{background:var(--color-background-secondary)}
-.mx-cell.hi{background:var(--color-background-info);border-color:var(--color-border-info)}
-.mx-badge{display:inline-block;font-size:9px;font-weight:700;font-family:var(--font-mono);
-  padding:2px 4px;border-radius:3px;margin:1px;line-height:1.3;cursor:pointer;color:#fff}
-.mx-badge:hover{opacity:.8}
-.mx-empty{color:var(--color-text-tertiary);font-size:9px;text-align:center;padding:8px 0}
 /* Matrix — grid mode (from matrix.json) */
 .mx-grid{overflow-x:auto}
 .mx-g{display:grid;gap:2px;min-width:900px}
@@ -270,6 +247,28 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .crow:last-child{border-bottom:none}
 .csub{font-size:9px;color:var(--color-text-tertiary);line-height:1.3}
 .integ{border-radius:4px;padding:5px 7px;border:.5px solid #EF9F2744;background:#EF9F2708;margin-top:4px;font-size:10px;color:var(--color-text-secondary);line-height:1.5}
+/* Horizontal scroller — arrows + visible track for wide content */
+[data-hscroll]{overflow-x:auto}   /* works even if the JS enhancement never runs */
+.hs-wrap{position:relative}
+.hs-scroll{overflow-x:auto;scrollbar-width:thin;
+  scrollbar-color:var(--color-border-secondary) transparent}
+.hs-scroll::-webkit-scrollbar{height:10px}
+.hs-scroll::-webkit-scrollbar-track{background:var(--color-background-secondary);border-radius:6px}
+.hs-scroll::-webkit-scrollbar-thumb{background:var(--color-border-secondary);border-radius:6px;
+  border:2px solid var(--color-background-secondary)}
+.hs-scroll::-webkit-scrollbar-thumb:hover{background:var(--color-text-tertiary)}
+.hs-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:25;
+  width:30px;height:30px;border-radius:50%;padding:0;
+  border:.5px solid var(--color-border-secondary);
+  background:var(--color-background-primary);color:var(--color-text-primary);
+  box-shadow:var(--shadow-2);cursor:pointer;font-size:17px;line-height:1;
+  display:flex;align-items:center;justify-content:center;
+  opacity:.94;transition:opacity .12s,background .12s,transform .12s}
+.hs-btn:hover{opacity:1;background:var(--color-background-secondary)}
+.hs-btn:active{transform:translateY(-50%) scale(.92)}
+.hs-l{left:3px}.hs-r{right:3px}
+.hs-btn.hs-hide{display:none}
+.hs-wrap:not(.hs-on) .hs-btn{display:none}
 /* Vertical Explorer — chain step timeline (from explorer.json) */
 .vgrp{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-tertiary);padding:6px 0 3px;border-top:.5px solid var(--color-border-tertiary)}
 .vgrp:first-child{border-top:none;padding-top:0}
@@ -662,8 +661,26 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   .fm-sigs,.pol-grid,.pol-prog-grid,.pol-levers,.ew-grid,.cy-grid,.nw-grid,.nw-voice-grid,.sh-paths,.sh-stats{grid-template-columns:1fr!important}
   .vx-layout{grid-template-columns:1fr}
   .vx-detail{max-height:none}
-  .mx-table{font-size:10px}
   #drawer{width:100vw;border-left:none}
+  /* Fixed multi-column grids that never collapsed on their own */
+  .th-2col{grid-template-columns:1fr}
+  .th-nav{grid-template-columns:1fr 1fr}
+  .pos-grid{grid-template-columns:1fr}
+  .cband{grid-template-columns:1fr}
+  .fw-trio{grid-template-columns:1fr}
+  /* Wide grids: keep the structure, scroll it (arrows come from .hs-wrap) */
+  .mx-g{min-width:760px}
+  .binner{min-width:760px}
+  .mx-grid,.bband{ -webkit-overflow-scrolling:touch}
+  .ct{font-size:9px}
+  .mch{font-size:9px}
+  /* Give the scroll arrows room to sit clear of content */
+  .hs-btn{width:26px;height:26px;font-size:15px}
+  /* Stop long unbroken strings forcing the page itself to scroll */
+  .co-mid,.dw-body,.nt-body,.scd,.exbd{min-width:0;overflow-wrap:anywhere}
+  .co-bar{flex-wrap:wrap;gap:6px}
+  .sh-hero{padding:12px 14px}
+  .sh-hero-h{font-size:18px}
 }
 </style>
 </head>
@@ -819,6 +836,50 @@ let TICKER_RE=null;
 
 // ── Utils ──────────────────────────────────────────────────────────────────
 function mk(tag,cls){const el=document.createElement(tag);if(cls)el.className=cls;return el;}
+
+// ── Horizontal scroller ────────────────────────────────────────────────────
+// Wraps any [data-hscroll] element with prev/next arrows + edge fades so wide
+// content (the 11-column matrix, Dim B band, scoreboard, geo table) is
+// obviously scrollable instead of relying on a hidden scrollbar.
+function attachHScroll(el){
+  if(!el||el.dataset.hsInit)return;
+  el.dataset.hsInit='1';
+  el.classList.add('hs-scroll');
+  const wrap=mk('div','hs-wrap');
+  el.parentNode.insertBefore(wrap,el);
+  wrap.appendChild(el);
+
+  const mkBtn=dir=>{
+    const b=mk('button','hs-btn hs-'+dir);
+    b.type='button';
+    b.setAttribute('aria-label',dir==='l'?'Scroll left':'Scroll right');
+    b.textContent=dir==='l'?'‹':'›';
+    b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const step=Math.max(220,el.clientWidth*0.75);
+      el.scrollBy({left:(dir==='l'?-step:step),behavior:'smooth'});
+    });
+    wrap.appendChild(b);
+    return b;
+  };
+  const L=mkBtn('l'),R=mkBtn('r');
+
+  const upd=()=>{
+    const max=el.scrollWidth-el.clientWidth;
+    const overflows=max>4;
+    wrap.classList.toggle('hs-on',overflows);
+    const atStart=el.scrollLeft<=2, atEnd=el.scrollLeft>=max-2;
+    L.classList.toggle('hs-hide',!overflows||atStart);
+    R.classList.toggle('hs-hide',!overflows||atEnd);
+  };
+  el.addEventListener('scroll',upd,{passive:true});
+  window.addEventListener('resize',upd);
+  if(window.ResizeObserver){try{new ResizeObserver(upd).observe(el);}catch(e){}}
+  upd();
+}
+function initHScrollers(root){
+  (root||document).querySelectorAll('[data-hscroll]').forEach(attachHScroll);
+}
 const scolor=s=>['#E24B4A','#D85A30','#EF9F27','#639922','#1D9E75'][s-1]||'#888780';
 const slabel=s=>['Very low','Low','Moderate','High','Very high'][s-1]||'';
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
@@ -885,6 +946,7 @@ function buildTab(id){
   else if(id==='nw')buildNews();
   else if(id==='co')buildCompanies();
   else if(id==='nt')buildNotes();
+  initHScrollers();   // attach arrows to any wide content this tab rendered
 }
 
 // ── Masthead & Alert ───────────────────────────────────────────────────────
@@ -981,7 +1043,7 @@ function buildStartHere(){
     {v:'Lithium',c:'#1D9E75',ind:'Chinese Li carbonate spot (SMM weekly) + monthly China/EU EV penetration + utility BESS announcements',bull:'LCE &gt;$20K/tonne and rising; global EV penetration &gt;30%; utility BESS &gt;100 GWh/yr; ALB/SQM guidance raised',bear:'LCE falls back below $12K; EV demand misses on China credit tightening; IRA domestic content weakened'},
     {v:'Gold/Stream',c:'#888780',ind:'10yr TIPS real yield + monthly CB reserve data (IMF COFER/WGC) + gold vs. EUR/JPY',bull:'Real yields falling or negative; CB buying &gt;50T/month; gold outperforming EUR and JPY; FNV/WPM FCF yield compressing',bear:'Real yields rising sharply above 2%; CB selling; dollar reserve share stabilizing post-geopolitical normalization'}
   ];
-  const sigsHtml=`<div style="overflow-x:auto"><table class="fw-signals"><thead><tr><th>Vertical</th><th>What to watch</th><th class="sig-bull">Bullish signal</th><th class="sig-bear">Bearish signal</th></tr></thead><tbody>${sigs.map(s=>`<tr><td style="white-space:nowrap"><span class="sig-chip" style="background:${s.c}22;color:${s.c}">${s.v}</span></td><td style="min-width:200px;color:var(--color-text-secondary)">${s.ind}</td><td class="sig-bull" style="min-width:180px">${s.bull}</td><td class="sig-bear" style="min-width:180px">${s.bear}</td></tr>`).join('')}</tbody></table></div>`;
+  const sigsHtml=`<div data-hscroll><table class="fw-signals"><thead><tr><th>Vertical</th><th>What to watch</th><th class="sig-bull">Bullish signal</th><th class="sig-bear">Bearish signal</th></tr></thead><tbody>${sigs.map(s=>`<tr><td style="white-space:nowrap"><span class="sig-chip" style="background:${s.c}22;color:${s.c}">${s.v}</span></td><td style="min-width:200px;color:var(--color-text-secondary)">${s.ind}</td><td class="sig-bull" style="min-width:180px">${s.bull}</td><td class="sig-bear" style="min-width:180px">${s.bear}</td></tr>`).join('')}</tbody></table></div>`;
 
   // 7 learning path steps
   const steps=[
@@ -1038,7 +1100,7 @@ function buildMatrix(){
   const leg=`<div style="grid-column:1/-1;display:flex;gap:5px;flex-wrap:wrap;padding-top:4px;border-top:.5px solid var(--color-border-tertiary);font-size:10px;color:var(--color-text-tertiary)"><span style="background:#534AB70A;border:.5px solid #534AB7;padding:1px 5px;border-radius:2px;color:#534AB7;font-weight:500">blue cells</span> open analytical detail · other cells navigate to that vertical | ${VC_COLS.map(v=>`<span class="ct ${v.tc}">${esc(v.sn)}</span>`).join('')}</div>`;
 
   // Dim B
-  const bbHtml=B_BAND.length?`<div class="bband"><div class="binner">
+  const bbHtml=B_BAND.length?`<div class="bband" data-hscroll><div class="binner">
     <div class="blbl">Dimension B — Cross-cutting picks &amp; shovels, royalties, trading, recycling (full detail in Picks &amp; Shovels tab)</div>
     ${B_BAND.map(br=>`<div class="brow" style="${colStyle}"><div class="brhdr">${esc(br.n)}</div>${br.items.map(it=>`<div class="bcell">${esc(it||'—')}</div>`).join('')}</div>`).join('')}
   </div></div>`:'';
@@ -1049,7 +1111,7 @@ function buildMatrix(){
 
   el.innerHTML=`
     <div class="note-box" style="margin-bottom:5px">Dimension A — ${ROWS.length} value chain stages × ${nC} commodity verticals. <span style="background:color-mix(in srgb,var(--accent) 8%,transparent);border:.5px solid var(--accent);padding:1px 5px;border-radius:2px;color:var(--accent);font-weight:500;font-size:9.5px">blue cells</span> = analytical detail, click to open. Other cells navigate to Vertical Explorer.</div>
-    <div class="mx-grid"><div class="mx-g" style="${colStyle}">${hdr}${rowsHtml}${leg}</div></div>
+    <div class="mx-grid" data-hscroll><div class="mx-g" style="${colStyle}">${hdr}${rowsHtml}${leg}</div></div>
     <div class="mx-det" id="mx-det"></div>
     ${bbHtml}${cbHtml}`;
 }
@@ -1397,7 +1459,7 @@ function buildSbHtml(){
   const skew=tc&&tc.contribution_pp!=null&&b['1y']!=null&&Math.abs(tc.contribution_pp)>Math.abs(b['1y'])*0.25
     ? `<div class="note-box" style="margin-top:8px">⚠ <b>Mean is skewed by one name.</b> ${esc(tc.ticker)} returned ${fmtPct(tc.ret)} over 1y, contributing ~${fmtPct(tc.contribution_pp)} of the basket's ${fmtPct(b['1y'])} mean on its own. The <b>median</b> row is the better read on a typical constituent.</div>`
     : '';
-  return `<div class="sb-wrap"><table class="sb-table">
+  return `<div class="sb-wrap" data-hscroll><table class="sb-table">
     <thead><tr><th>Name</th>${periods.map(p=>`<th>${p}</th>`).join('')}</tr></thead>
     <tbody>${rows.map(([name,d,cls])=>`<tr class="${cls}"><td>${esc(name)}</td>${periods.map(p=>`<td>${fmt(d[p])}</td>`).join('')}</tr>`).join('')}</tbody>
   </table></div>
@@ -1476,7 +1538,7 @@ function buildGeo(){
   el.innerHTML=`
     <div class="sect-h">Geopolitical heat map — click a row to expand</div>
     ${scoreKey}
-    <div class="geo-wrap"><table class="geo-table">
+    <div class="geo-wrap" data-hscroll><table class="geo-table">
       <thead><tr><th class="geo-th" style="text-align:left">Vertical</th>${cols.map(c=>`<th class="geo-th">${esc(c)}</th>`).join('')}</tr></thead>
       <tbody>${heatRows}</tbody>
     </table></div>
@@ -1490,6 +1552,7 @@ function buildGeo(){
       <b>LNG routes:</b> Red Sea/Suez disruption has extended tonne-miles for product tankers. European SPAs locked; US LNG is NATO energy policy.
     </div>
   `;
+  initHScrollers(el);   // buildGeo re-runs on row expand, so re-attach here
 }
 
 // ── CYCLE ──────────────────────────────────────────────────────────────────
