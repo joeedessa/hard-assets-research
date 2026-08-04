@@ -243,6 +243,9 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .cband{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:4px}
 .cc{border-radius:5px;padding:6px 8px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
 .ctit{font-size:11px;font-weight:500;margin-bottom:3px}
+.cc-link{cursor:pointer;transition:border-color .12s,box-shadow .12s}
+.cc-link:hover{border-color:var(--accent)!important;box-shadow:var(--shadow-2)}
+.cc-arrow{font-size:9px;opacity:.65}
 .crow{font-size:9.5px;color:var(--color-text-secondary);padding:2px 0;border-bottom:.5px solid var(--color-border-tertiary);line-height:1.4}
 .crow:last-child{border-bottom:none}
 .csub{font-size:9px;color:var(--color-text-tertiary);line-height:1.3}
@@ -799,7 +802,11 @@ const VERTICALS=[
   {id:'oil', g:'Energy', n:'Oil & Midstream',      c:'#5F5E5A', plain:'Geopolitical hedge + refinery crack spreads + tanker tonne-miles extended by Russia sanctions rerouting. Supply-side rationalization is structural.'},
   {id:'ng',  g:'Energy', n:'Natural Gas & LNG',    c:'#EF9F27', plain:'AI data centers run on gas power. US LNG is now a NATO energy security instrument — European utilities locked into 20-year offtake agreements.'},
   {id:'nu',  g:'Energy', n:'Nuclear & Uranium',    c:'#534AB7', plain:'Uranium fuel + nuclear reactors — AI hyperscalers are signing 20-year PPAs for the only 24/7 carbon-free baseload. Russian enrichment banned in US.'},
-  {id:'elec',g:'Energy', n:'Electricity & Grid',   c:'#185FA5', plain:'Power grid buildout — transformer lead times are 2-4 years with no relief; data center power demand doubles every 3-4 years. Clear evidence-based supercycle.'},
+  // `derived` = downstream infrastructure the commodities feed, not a commodity
+  // vertical. Excluded from the Universe Matrix (Dim A) and the chain-based
+  // Vertical Explorer; lives in Dim C and its own Electricity & Grid tab.
+  // Still listed here so company badges, filters and the Cycle tab can label it.
+  {id:'elec',g:'Energy', n:'Electricity & Grid',   c:'#185FA5', derived:true, tab:'el', plain:'Power grid buildout — transformer lead times are 2-4 years with no relief; data center power demand doubles every 3-4 years. Clear evidence-based supercycle.'},
   {id:'cu',  g:'Metals', n:'Copper',               c:'#D85A30', plain:'The universal conductor — essential for every EV, grid cable, and data center. No substitutes. Democratic nations take 16-17 years to permit a new mine.'},
   {id:'li',  g:'Metals', n:'Lithium & Battery',    c:'#1D9E75', plain:'EV and grid-scale battery storage — currently at a cyclical trough (prices below incentive level). Structural demand wave building for 2026-2030.'},
   {id:'re',  g:'Metals', n:'REE & Specialty',      c:'#993556', plain:'Rare earth magnets: every EV motor, wind turbine, missile guidance, and robot joint — nearly all processed in China. China cut off exports in 2025.'},
@@ -810,6 +817,8 @@ const VERTICALS=[
   {id:'fert',g:'Inputs', n:'Fertilizers',          c:'#639922', plain:'Food security — potash, phosphate, nitrogen. 70%+ of global potash comes from Russia, Belarus, or Canada; allies are rebuilding supply chain security.'},
 ];
 const V_MAP=Object.fromEntries(VERTICALS.map(v=>[v.id,v]));
+// Commodity verticals only — these are the ones with a value chain to trace.
+const CHAIN_VERTICALS=VERTICALS.filter(v=>!v.derived);
 
 const CHAIN_STAGES=[
   {id:'mine',n:'Mining / Extraction',   plain:'Getting it out of the ground — ore bodies, boreholes, brine ponds, uranium mines'},
@@ -1112,8 +1121,11 @@ function buildMatrix(){
   </div></div>`:'';
 
   // Dim C
-  const cbHtml=C_BAND.length?`<div style="font-size:10px;color:var(--color-text-tertiary);margin-top:6px">Dimension C — Derived infrastructure sectors (full detail in Electricity &amp; Grid tab)</div>
-    <div class="cband">${C_BAND.map(card=>`<div class="cc" style="border-color:${card.c}44"><div class="ctit" style="color:${card.c}">${esc(card.t)}</div>${(card.rows||[]).map(r=>`<div class="crow"><b style="font-size:9.5px;font-weight:500;color:var(--color-text-primary)">${esc(r.n)}</b><div class="csub">${esc(r.s)}</div></div>`).join('')}</div>`).join('')}</div>`:'';
+  const cbHtml=C_BAND.length?`<div style="font-size:10px;color:var(--color-text-tertiary);margin-top:6px">Dimension C — <b>derived infrastructure</b>: what the commodities above feed into. These are not commodity verticals, so they have no Dimension A column — Electricity &amp; Grid has its own tab.</div>
+    <div class="cband">${C_BAND.map(card=>{
+      const clickable=card.tab?` cc-link" onclick="ST('${esc(card.tab)}')" title="Open the ${esc(card.t)} tab`:'';
+      return `<div class="cc${clickable}" style="border-color:${card.c}44"><div class="ctit" style="color:${card.c}">${esc(card.t)}${card.tab?' <span class="cc-arrow">↗</span>':''}</div>${(card.rows||[]).map(r=>`<div class="crow"><b style="font-size:9.5px;font-weight:500;color:var(--color-text-primary)">${esc(r.n)}</b><div class="csub">${esc(r.s)}</div></div>`).join('')}</div>`;
+    }).join('')}</div>`:'';
 
   el.innerHTML=`
     <div class="note-box" style="margin-bottom:5px">Dimension A — ${ROWS.length} value chain stages × ${nC} commodity verticals. <span style="background:color-mix(in srgb,var(--accent) 8%,transparent);border:.5px solid var(--accent);padding:1px 5px;border-radius:2px;color:var(--accent);font-weight:500;font-size:9.5px">blue cells</span> = analytical detail, click to open. Other cells navigate to Vertical Explorer.</div>
@@ -1141,7 +1153,7 @@ function showMxDet(key){
 }
 
 // ── VERTICALS ──────────────────────────────────────────────────────────────
-let VX_ACTIVE=VERTICALS[0]?.id||'re';
+let VX_ACTIVE=CHAIN_VERTICALS[0]?.id||'oil';
 function buildVerticals(){
   const el=document.getElementById('v-vx');if(!el)return;
   el.innerHTML=`<div class="vx-layout"><div class="vx-list" id="vx-list"></div><div class="vx-detail" id="vx-detail"></div></div>`;
@@ -1152,7 +1164,7 @@ function renderVxList(){
   const btn=v=>`<button class="vx-btn${v.id===VX_ACTIVE?' on':''}" style="${v.id===VX_ACTIVE?'background:'+v.c+';':''}" onclick="loadV('${v.id}')">${esc(v.n)}</button>`;
   // Group by the vertical's own `g`, falling back to explorer.json
   const groups=[];
-  VERTICALS.forEach(v=>{
+  CHAIN_VERTICALS.forEach(v=>{
     const g=v.g||VC[v.id]?.g||'Other';
     let grp=groups.find(x=>x.g===g);
     if(!grp){grp={g,items:[]};groups.push(grp);}
@@ -1160,7 +1172,7 @@ function renderVxList(){
   });
   el.innerHTML=(groups.length>1)
     ? groups.map(grp=>`<div class="vgrp">${esc(grp.g)}</div>${grp.items.map(btn).join('')}`).join('')
-    : VERTICALS.map(btn).join('');
+    : CHAIN_VERTICALS.map(btn).join('');
 }
 function loadV(id){
   VX_ACTIVE=id;
@@ -1205,7 +1217,9 @@ function findChainStep(vid,rowId){
 // Jump from another tab (e.g. the Matrix) straight into a specific vertical,
 // optionally opening the chain step that matches the matrix row clicked.
 function gotoVertical(id,rowId){
-  if(!V_MAP[id])return;
+  const vd=V_MAP[id];
+  if(!vd)return;
+  if(vd.derived){ST(vd.tab||'el');return;}   // no chain to show — use its own tab
   const wasBuilt=built['vx'];
   VX_ACTIVE=id;
   ST('vx');                       // builds using VX_ACTIVE on first visit
