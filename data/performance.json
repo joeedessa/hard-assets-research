@@ -3,38 +3,67 @@
     "1m": -5.3,
     "3m": -11.1,
     "6m": 16.0,
-    "1y": 23.5
+    "1y": 130.2
   },
+  "basket_median": {
+    "1m": -2.1,
+    "3m": -8.7,
+    "6m": 9.6,
+    "1y": 43.2
+  },
+  "top_contributor": {
+    "1m": {
+      "ticker": "VLO",
+      "ret": 17.3,
+      "contribution_pp": 0.4
+    },
+    "3m": {
+      "ticker": "VLO",
+      "ret": 27.8,
+      "contribution_pp": 0.6
+    },
+    "6m": {
+      "ticker": "AXTI",
+      "ret": 225.9,
+      "contribution_pp": 4.8
+    },
+    "1y": {
+      "ticker": "AXTI",
+      "ret": 2805.3,
+      "contribution_pp": 61.0
+    }
+  },
+  "n_constituents": 47,
   "benchmarks": {
     "GSG": {
       "1m": 12.9,
       "3m": -5.5,
       "6m": 25.7,
-      "1y": null
+      "1y": 40.5
     },
     "XLE": {
       "1m": 11.9,
       "3m": 1.9,
       "6m": 18.3,
-      "1y": null
+      "1y": 40.8
     },
     "COPX": {
       "1m": 2.9,
       "3m": 0.1,
       "6m": -6.7,
-      "1y": null
+      "1y": 88.1
     },
     "URA": {
       "1m": -9.6,
       "3m": -30.0,
       "6m": -29.0,
-      "1y": null
+      "1y": 4.0
     },
     "SPY": {
       "1m": 0.3,
       "3m": 3.9,
       "6m": 8.5,
-      "1y": null
+      "1y": 19.5
     }
   },
   "as_of": "2026-08-04"

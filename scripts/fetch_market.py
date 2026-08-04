@@ -406,7 +406,9 @@ def compute_performance(companies):
 
     all_tickers = list(set(basket_tickers + bench_tickers))
     try:
-        hist = yf.download(all_tickers, period="1y", auto_adjust=True,
+        # 2y window: a calendar year yields only ~250 trading rows, so a "1y"
+        # download can never satisfy the 252-day lookback below.
+        hist = yf.download(all_tickers, period="2y", auto_adjust=True,
                            progress=False, group_by="ticker", threads=True)
     except Exception as e:
         print(f"  Performance download failed: {e}", file=sys.stderr)
@@ -426,11 +428,30 @@ def compute_performance(companies):
         except Exception:
             return None
 
+    def median(xs):
+        s = sorted(xs)
+        n = len(s)
+        if not n:
+            return None
+        return s[n // 2] if n % 2 else (s[n // 2 - 1] + s[n // 2]) / 2
+
     basket_returns = {}
+    basket_median = {}
+    top_contrib = {}
     for period, n_days in periods.items():
-        rets = [period_return(tk, n_days) for tk in basket_tickers]
-        rets = [r for r in rets if r is not None]
+        pairs = [(tk, period_return(tk, n_days)) for tk in basket_tickers]
+        pairs = [(tk, r) for tk, r in pairs if r is not None]
+        rets = [r for _, r in pairs]
+        # Mean = the return of an actually-held equal-weight basket.
+        # Median = the typical constituent, unaffected by a single extreme name.
         basket_returns[period] = round(sum(rets) / len(rets), 1) if rets else None
+        basket_median[period] = round(median(rets), 1) if rets else None
+        if pairs:
+            tk, r = max(pairs, key=lambda x: x[1])
+            # How much of the mean comes from this one name
+            share = (r / len(rets)) if rets else 0
+            top_contrib[period] = {"ticker": tk, "ret": round(r, 1),
+                                   "contribution_pp": round(share, 1)}
 
     bench_returns = {}
     for name, tk in BENCHMARK_TICKERS.items():
@@ -438,7 +459,12 @@ def compute_performance(companies):
         for period, n_days in periods.items():
             bench_returns[name][period] = period_return(tk, n_days)
 
-    return {"basket": basket_returns, "benchmarks": bench_returns,
+    return {"basket": basket_returns,
+            "basket_median": basket_median,
+            "top_contributor": top_contrib,
+            "n_constituents": len([t for t in basket_tickers
+                                   if period_return(t, 21) is not None]),
+            "benchmarks": bench_returns,
             "as_of": date.today().isoformat()}
 
 
