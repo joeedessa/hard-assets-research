@@ -142,6 +142,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .ticklink:hover{text-decoration:underline}
 .ticklink-ex{color:var(--color-text-tertiary);border-bottom:1px dashed var(--color-border-secondary)}
 .ticklink-ex:hover{color:var(--color-text-secondary);text-decoration:none}
+.ticklink-cand{color:var(--color-text-secondary);border-bottom:1px dotted var(--color-border-secondary)}
+.ticklink-cand:hover{color:var(--accent);text-decoration:none}
 /* Start Here */
 .sh-hero{background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);
   border-radius:8px;padding:16px 20px;margin-bottom:12px}
@@ -852,6 +854,7 @@ let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
 let TICKER_MAP={};
 let EXCL_MAP={};
+let REF_MAP={},REF_BLOCK=new Set();
 let TICKER_RE=null;
 
 // ── Utils ──────────────────────────────────────────────────────────────────
@@ -924,14 +927,17 @@ function classifyStage(layer){
 function vinfo(id){return V_MAP[id]||{id,n:id,c:'#888'};}
 
 function buildTickerRE(){
-  // Universe names link to the full company drawer. Names in excluded.json were
-  // considered and rejected, so they link to a short "why not" note instead of
-  // being silently plain text — otherwise a reader cannot tell the difference
-  // between a name we assessed and a name we simply never covered.
+  // Linking convention: a hyperlinked ticker means "this has an investing
+  // angle". Universe names open the full drawer, assessed-and-rejected names
+  // open a why-not note, and referenced candidates open a not-yet-assessed
+  // note. Context / private / state entities are deliberately left as plain
+  // text so the absence of a link is itself information.
   EXCL_MAP=Object.fromEntries((EXCLUDED||[]).map(e=>[e.ticker,e]));
   const uni=[...new Set(COMPANIES.map(c=>c.ticker).filter(Boolean))];
   const ex=[...new Set(Object.keys(EXCL_MAP).filter(t=>!uni.includes(t)))];
-  const all=[...uni,...ex];
+  const cand=Object.values(REF_MAP).filter(e=>e.type==='candidate'&&e.ticker)
+    .map(e=>e.ticker).filter(t=>!uni.includes(t)&&!ex.includes(t));
+  const all=[...uni,...ex,...cand];
   if(!all.length){TICKER_RE=null;return;}
   // Longest-first so e.g. LYC.AX wins over a bare LYC
   all.sort((a,b)=>b.length-a.length);
@@ -941,14 +947,33 @@ function buildTickerRE(){
 function linkifyTickers(s){
   if(!s||!TICKER_RE)return s||'';
   return String(s).replace(TICKER_RE,m=>{
+    if(REF_BLOCK.has(m)&&!TICKER_MAP[m])return m;   // context/private/state — no link, by design
     const esc_m=m.replace(/'/g,"\\'");
-    if(EXCL_MAP[m]&&!TICKER_MAP[m])
-      return `<span class="ticklink ticklink-ex" data-tk="${m}" title="Considered, not in the universe" onclick="openExcludedNote('${esc_m}')">${m}</span>`;
-    return `<span class="ticklink" data-tk="${m}" onclick="openCompanyDrawer('${esc_m}')">${m}</span>`;
+    if(TICKER_MAP[m])
+      return `<span class="ticklink" data-tk="${m}" onclick="openCompanyDrawer('${esc_m}')">${m}</span>`;
+    if(EXCL_MAP[m])
+      return `<span class="ticklink ticklink-ex" data-tk="${m}" title="Assessed, not in the universe" onclick="openExcludedNote('${esc_m}')">${m}</span>`;
+    if(REF_MAP[m])
+      return `<span class="ticklink ticklink-cand" data-tk="${m}" title="Referenced — not yet assessed" onclick="openRefNote('${esc_m}')">${m}</span>`;
+    return m;
   });
 }
 
 // Short note for a name we assessed and chose not to include.
+// A listed, on-thesis name that is referenced but not yet assessed.
+function openRefNote(tk,push=true){
+  const e=REF_MAP[tk];if(!e)return;
+  const v=vinfo(e.vertical);
+  if(push)DW_STACK.push({t:'ref',k:tk});
+  const yq='https://finance.yahoo.com/quote/'+encodeURIComponent(tk);
+  const head=`<span class="dw-tk">${esc(tk)}</span><span class="dw-nm">${esc(e.name||'')}</span>`
+    +`<span class="badge-sm" style="background:var(--color-background-secondary);color:var(--color-text-tertiary)">not yet assessed</span>`;
+  const body=`<div class="note-box">Referenced in the research but not yet in the investable universe${e.vertical?` — would sit in <b>${esc(v.n)}</b>`:''}. No conviction or froth score has been assigned.</div>
+    <div class="dw-sect">Why it comes up</div><div class="dw-thesis">${esc(e.note||'')}</div>
+    <div class="dw-act"><a class="dw-btn" href="${yq}" target="_blank" rel="noopener">Yahoo Finance ↗</a></div>`;
+  renderDrawer(v.c||'var(--color-text-tertiary)',head,body);
+}
+
 function openExcludedNote(tk,push=true){
   const e=EXCL_MAP[tk];if(!e)return;
   const v=vinfo(e.considered_for);
@@ -1118,6 +1143,15 @@ function buildStartHere(){
     ${sigsHtml}
     <div class="fw-section-hdr">Learning path — recommended sequence through this dashboard</div>
     <div class="fw-path">${stepsHtml}</div>
+    <div class="fw-section-hdr">How to read company names</div>
+    <div class="note-box" style="line-height:1.9">
+      <b>A hyperlinked ticker means the name has an investing angle.</b> Plain text is deliberate — it marks context, not an oversight.<br>
+      <span class="ticklink">TICKER</span> — in the investable universe. Opens the full profile.<br>
+      <span class="ticklink ticklink-ex">TICKER</span> — assessed and deliberately excluded. Opens the reason why.<br>
+      <span class="ticklink ticklink-cand">TICKER</span> — referenced and investable, not yet assessed.<br>
+      <span style="font-family:var(--font-mono);font-size:.9em">TICKER</span> — context only (a customer or downstream buyer with no hard-asset angle). Not clickable.<br>
+      <span style="font-family:var(--font-mono);font-size:.9em">Name (private)</span> — privately held, no listed equity. Not clickable.
+    </div>
     <div class="note-box">⚡ AI crosslink → <a href="https://joeedessa.github.io/ai-hardware-research" target="_blank" rel="noopener" style="color:var(--accent)">AI Hardware Research ↗</a> — CEG / VST / GEV are in the AI Hardware map's datacenter vertical (reference-only here, not double-counted).</div>
   `;
 }
@@ -1924,6 +1958,7 @@ function drawerBack(){
   const p=DW_STACK[DW_STACK.length-1];
   if(p.t==='co')openCompanyDrawer(p.k,false);
   else if(p.t==='ex')openExcludedNote(p.k,false);
+  else if(p.t==='ref')openRefNote(p.k,false);
   else openThemeDrawer(p.k,false);
 }
 
@@ -1939,7 +1974,7 @@ async function loadData(){
   const Q='?t='+Date.now();
   const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
   try{
-    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl]=await Promise.all([
+    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref]=await Promise.all([
       fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
       fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
       fetchJ('excluded.json').catch(()=>null),
@@ -1949,6 +1984,7 @@ async function loadData(){
       fetchJ('electricity.json').catch(()=>null),
       fetchJ('themes.json').catch(()=>null),
       fetchJ('explorer.json').catch(()=>null),
+      fetchJ('reference.json').catch(()=>null),
     ]);
     COMPANIES=cos.companies||[];
     CYCLE=cyc.cycles||[];
@@ -1967,6 +2003,15 @@ async function loadData(){
       if(btb&&bt.body)btb.innerHTML=bt.body;}
     if(th){THEMES=th.themes||th||[];}
     if(expl){VC=expl.verticals||{};}
+    if(ref){
+      REF_MAP={};REF_BLOCK=new Set();
+      (ref.entities||[]).forEach(e=>{
+        if(e.ticker)REF_MAP[e.ticker]=e;
+        // context / private / state names carry no investing angle, so their
+        // tickers must NOT be hyperlinked — a plain ticker is the signal.
+        if(e.ticker&&e.type!=='candidate')REF_BLOCK.add(e.ticker);
+      });
+    }
     if(mat){VORDER=mat.vertical_order||[];CROSS_V=mat.cross_links||{};}
   }catch(e){console.warn('Static data load error:',e);}
 
