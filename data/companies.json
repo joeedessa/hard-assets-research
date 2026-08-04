@@ -1151,6 +1151,129 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "PLS.AX",
+      "name": "Pilbara Minerals",
+      "vertical": "li",
+      "chain_layer": "Spodumene mining",
+      "geo": "AU",
+      "structure": "equity",
+      "thesis_note": "Largest listed pure-play spodumene producer. Pilgangoora is a tier-1 hard-rock asset with expansion optionality and direct leverage to the spodumene price rather than to converted chemical.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Priced off spodumene spot, which troughed well below incentive levels. Pure-play leverage cuts both ways but the cycle-turn evidence is not yet in the multiple.",
+      "themes": [
+        "lithium-cycle-turn",
+        "ev-demand",
+        "tier1-assets"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "MIN.AX",
+      "name": "Mineral Resources",
+      "vertical": "li",
+      "chain_layer": "Mining + services",
+      "geo": "AU",
+      "structure": "equity",
+      "thesis_note": "Lithium plus iron ore plus a mining-services arm that earns through the cycle. The services business is the picks-and-shovels hedge against lithium price weakness.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Balance sheet leverage and capex commitments make this the highest-beta way to own the lithium turn. Services cash flow softens, but does not remove, the risk.",
+      "themes": [
+        "lithium-cycle-turn",
+        "ev-demand"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "PAAS",
+      "name": "Pan American Silver",
+      "vertical": "pg",
+      "chain_layer": "Silver + gold mining",
+      "geo": "CA/LatAm",
+      "structure": "equity",
+      "thesis_note": "Largest listed primary silver producer. Silver is the only precious metal with a large and growing industrial demand leg — solar cells and electrification — on top of the monetary bid.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Silver has run with gold and the equity has re-rated. The industrial demand leg is genuine but LatAm jurisdiction risk is a permanent discount.",
+      "themes": [
+        "precious-metals",
+        "ev-demand",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "TFPM",
+      "name": "Triple Flag Precious Metals",
+      "vertical": "pg",
+      "chain_layer": "Royalties/Streaming",
+      "geo": "CA",
+      "structure": "streaming",
+      "thesis_note": "Mid-cap streamer with a higher growth rate than the majors and the same structural advantages — fixed cost, no capex, full commodity upside.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Trades at a discount to FNV and WPM for size rather than quality. The preferred structure at a smaller-cap multiple.",
+      "themes": [
+        "precious-metals",
+        "streaming-structure"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "DNN",
+      "name": "Denison Mines",
+      "vertical": "nu",
+      "chain_layer": "ISR development",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Wheeler River / Phoenix is the lowest-cost undeveloped ISR uranium project in the Athabasca Basin. Permitting advanced; leverage is to the development decision as much as to spot.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Pre-production developer — no cash flow, so it trades on spot sentiment and permitting milestones. Deeply discounted relative to the asset's cost position.",
+      "themes": [
+        "uranium-rebuild",
+        "tier1-assets"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "AR",
+      "name": "Antero Resources",
+      "vertical": "ng",
+      "chain_layer": "Production + NGL",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Appalachian gas with the highest liquids content among peers, giving NGL exposure alongside dry gas. Direct beneficiary of LNG export growth and gas-fired data center demand.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Gas price beta dominates. The NGL mix differentiates it from pure dry-gas peers but does not insulate it.",
+      "themes": [
+        "gas-infrastructure",
+        "lng-supercycle",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "TROX",
+      "name": "Tronox Holdings",
+      "vertical": "ii",
+      "chain_layer": "TiO2 + Ti feedstock",
+      "geo": "US/ZA/AU",
+      "structure": "equity",
+      "thesis_note": "Vertically integrated titanium dioxide producer with its own mineral sands feedstock. Titanium is a designated critical mineral for aerospace and defence, and vertical integration is rare.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Deeply cyclical TiO2 pricing and a levered balance sheet keep this cheap. The critical-minerals angle on the feedstock side is not what the market prices it on.",
+      "themes": [
+        "critical-minerals",
+        "defense-procurement",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05"
     }
   ]
 }

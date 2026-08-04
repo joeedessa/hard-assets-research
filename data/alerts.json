@@ -10,15 +10,15 @@
     {
       "type": "commodity-move",
       "tk": null,
-      "label": "Brent down 5.9% today",
-      "d1": -5.9,
+      "label": "Brent down 5.8% today",
+      "d1": -5.8,
       "date": "2026-08-05"
     },
     {
       "type": "commodity-move",
       "tk": null,
-      "label": "Platinum up 8.0% today",
-      "d1": 8.0,
+      "label": "Platinum up 7.8% today",
+      "d1": 7.8,
       "date": "2026-08-05"
     },
     {
@@ -168,6 +168,22 @@
       "label": "SBSW -53.4% below 52w high — entry window (insulated)",
       "dd": -53.4,
       "r1y": 9.8,
+      "date": "2026-08-05"
+    },
+    {
+      "type": "entry-window",
+      "tk": "TFPM",
+      "label": "TFPM -27.5% below 52w high — entry window (insulated)",
+      "dd": -27.5,
+      "r1y": 22.6,
+      "date": "2026-08-05"
+    },
+    {
+      "type": "entry-window",
+      "tk": "DNN",
+      "label": "DNN -31.8% below 52w high — entry window (insulated)",
+      "dd": -31.8,
+      "r1y": 33.0,
       "date": "2026-08-05"
     },
     {
