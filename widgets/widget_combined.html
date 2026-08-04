@@ -1549,28 +1549,43 @@ function buildNews(){
 }
 
 // ── COMPANIES ──────────────────────────────────────────────────────────────
+// Pill markup is regenerated on every state change so the active highlight
+// actually follows the selection (it used to be baked in once at build time).
+function coVertPills(){
+  return `<span class="pill${!CO_STATE.v?' on':''}" onclick="CO_STATE.v=null;renderCo()">All</span>`
+    +VERTICALS.map(v=>`<span class="pill${CO_STATE.v===v.id?' on':''}" style="${CO_STATE.v===v.id?'background:'+v.c+'22;color:'+v.c+';border-color:'+v.c+'55':''}" onclick="CO_STATE.v='${v.id}';renderCo()">${esc(v.n)}</span>`).join('');
+}
+function coFrothPills(){
+  return `<span class="pill${!CO_STATE.froth?' on':''}" onclick="CO_STATE.froth=null;renderCo()">Any froth</span>`
+    +[1,2,3].map(f=>`<span class="pill${CO_STATE.froth===f?' on':''}" onclick="CO_STATE.froth=${f};renderCo()">${FROTH_META[f].l}</span>`).join('');
+}
+function coSorts(){
+  return `Sort: `+['conv','tk','froth'].map(s=>`<span class="co-sort${CO_STATE.sort===s?' on':''}" onclick="CO_STATE.sort='${s}';renderCo()">${{conv:'Conviction',tk:'Ticker',froth:'Froth'}[s]}</span>`).join(' ');
+}
+function renderCoControls(){
+  const vp=document.getElementById('co-vpills');if(vp)vp.innerHTML=coVertPills();
+  const fp=document.getElementById('co-fpills');if(fp)fp.innerHTML=coFrothPills();
+  const sp=document.getElementById('co-sorts');if(sp)sp.innerHTML=coSorts();
+}
+
 function buildCompanies(){
   const el=document.getElementById('v-co');if(!el)return;
-  const vertPills=`<span class="pill${!CO_STATE.v?' on':''}" onclick="CO_STATE.v=null;renderCo()">All</span>`
-    +VERTICALS.map(v=>`<span class="pill${CO_STATE.v===v.id?' on':''}" style="${CO_STATE.v===v.id?'background:'+v.c+'22;color:'+v.c+';border-color:'+v.c+'55':''}" onclick="CO_STATE.v='${v.id}';renderCo()">${v.n}</span>`).join('');
-  const frothPills=`<span class="pill${!CO_STATE.froth?' on':''}" onclick="CO_STATE.froth=null;renderCo()">Any froth</span>`
-    +[1,2,3].map(f=>`<span class="pill${CO_STATE.froth===f?' on':''}" onclick="CO_STATE.froth=${f};renderCo()">${FROTH_META[f].l}</span>`).join('');
-  const sorts=`Sort: `+['conv','tk','froth'].map(s=>`<span class="co-sort${CO_STATE.sort===s?' on':''}" onclick="CO_STATE.sort='${s}';renderCo()">${{conv:'Conviction',tk:'Ticker',froth:'Froth'}[s]}</span>`).join(' ');
-
   el.innerHTML=`
     <div class="co-bar">
       <input class="co-search" id="co-search" placeholder="Search ticker / name…" value="${esc(CO_STATE.q)}" oninput="CO_STATE.q=this.value;renderCo()">
-      <span style="font-size:11px;color:var(--color-text-tertiary)">${sorts}</span>
+      <span style="font-size:11px;color:var(--color-text-tertiary)" id="co-sorts"></span>
     </div>
-    <div class="pills" id="co-vpills">${vertPills}</div>
-    <div class="pills" id="co-fpills">${frothPills}</div>
+    <div class="pills" id="co-vpills"></div>
+    <div class="pills" id="co-fpills"></div>
     <div id="co-list" class="co-list"></div>
   `;
+  renderCoControls();
   renderCo();
 }
 
 function renderCo(){
   const el=document.getElementById('co-list');if(!el)return;
+  renderCoControls();   // keep pill/sort highlights in sync with CO_STATE
   const q=(CO_STATE.q||'').toLowerCase();
   let cos=[...COMPANIES];
   if(CO_STATE.v)cos=cos.filter(c=>c.vertical===CO_STATE.v);
