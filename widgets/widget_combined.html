@@ -709,30 +709,33 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 </div>
 <div class="al-strip" id="al-strip" style="display:none"></div>
 <div class="tabs">
+  <!-- Order is the canonical reading journey. The Start Here learning path
+       follows this same sequence — keep the two in step, and keep this markup
+       order identical to TAB_IDS (ST() matches them by index). -->
   <span class="tab on" onclick="ST('sh')">★ Start Here</span>
   <span class="tab" onclick="ST('mx')">Universe Matrix</span>
+  <span class="tab-sep"></span>
+  <span class="tab" onclick="ST('cy')">Cycle &amp; Innings</span>
+  <span class="tab" onclick="ST('geo')">Geopolitical</span>
   <span class="tab" onclick="ST('vx')">Vertical Explorer</span>
   <span class="tab" onclick="ST('ex')">Chain Explainers</span>
   <span class="tab-sep"></span>
-  <span class="tab" onclick="ST('geo')">Geopolitical</span>
-  <span class="tab" onclick="ST('cy')">Cycle &amp; Innings</span>
-  <span class="tab" onclick="ST('el')">Electricity &amp; Grid</span>
   <span class="tab" onclick="ST('th')">Demand Themes</span>
+  <span class="tab" onclick="ST('el')">Electricity &amp; Grid</span>
   <span class="tab" onclick="ST('pk')">Picks &amp; Shovels</span>
   <span class="tab-sep"></span>
   <span class="tab" onclick="ST('ps')">Portfolio</span>
   <span class="tab" onclick="ST('fm')">Froth Monitor</span>
   <span class="tab" onclick="ST('pol')">Policy</span>
   <span class="tab-sep"></span>
-  <span class="tab" onclick="ST('nw')">News</span>
   <span class="tab" onclick="ST('co')">Companies</span>
+  <span class="tab" onclick="ST('nw')">News</span>
   <span class="tab" onclick="ST('nt')">Notes</span>
 </div>
 <div class="content">
   <div id="v-sh" class="view on"></div>
   <div id="v-mx" class="view"></div>
   <div id="v-vx" class="view"></div>
-  <div id="v-fm" class="view"></div>
   <div id="v-ex" class="view">
     <div class="note-box"><b>Chain explainers</b> — how each supply chain works, where value is captured, and the structural demand thesis. Click any card to expand.</div>
     <div class="exg" id="exg"></div>
@@ -935,7 +938,9 @@ function jumpToCompanies(tk){
 }
 
 // ── Tab switching ──────────────────────────────────────────────────────────
-const TAB_IDS=['sh','mx','vx','ex','geo','cy','el','th','pk','ps','fm','pol','nw','co','nt'];
+// MUST stay in the same order as the .tab spans in the markup — ST() pairs
+// them by index. Also the order the Start Here learning path walks.
+const TAB_IDS=['sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','nw','nt'];
 const built={};
 function ST(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
@@ -1059,15 +1064,16 @@ function buildStartHere(){
   ];
   const sigsHtml=`<div data-hscroll><table class="fw-signals"><thead><tr><th>Vertical</th><th>What to watch</th><th class="sig-bull">Bullish signal</th><th class="sig-bear">Bearish signal</th></tr></thead><tbody>${sigs.map(s=>`<tr><td style="white-space:nowrap"><span class="sig-chip" style="background:${s.c}22;color:${s.c}">${s.v}</span></td><td style="min-width:200px;color:var(--color-text-secondary)">${s.ind}</td><td class="sig-bull" style="min-width:180px">${s.bull}</td><td class="sig-bear" style="min-width:180px">${s.bear}</td></tr>`).join('')}</tbody></table></div>`;
 
-  // 7 learning path steps
+  // Learning path — walks the tabs in the SAME order they appear in the tab
+  // bar, so the two never contradict each other.
   const steps=[
-    {n:1,name:'Cycle & Innings',tab:'cy',c:'#E24B4A',desc:'Start here. The ranked table shows which verticals are earliest-stage. Expand any card for the full narrative and current intelligence.'},
-    {n:2,name:'Geopolitical',tab:'geo',c:'#A32D2D',desc:'Read the heatmap to understand adversarial supply concentration. The Actor Control Map shows exactly which chain stages China controls.'},
-    {n:3,name:'Vertical Explorer',tab:'vx',c:'#534AB7',desc:'For any vertical you\'re researching, trace the chain from mine to end-use, understand where value is captured, and see the structural demand thesis.'},
-    {n:4,name:'Universe Matrix',tab:'mx',c:'#374151',desc:'The full grid of every vertical × every value chain stage. Click blue cells for analytical depth. Cross-chain pattern recognition lives here.'},
-    {n:5,name:'Portfolio Summary',tab:'ps',c:'#EF9F27',desc:'Read the defining insight and three-cluster structure. Work through the four screening questions — apply them mechanically to every position.'},
-    {n:6,name:'Companies',tab:'co',c:'#185FA5',desc:'Filter by conviction level. Structure badges tell you the risk-adjusted access type (streaming vs. equity vs. physical trust).'},
-    {n:7,name:'Research Notes',tab:'nt',c:'#993556',desc:'Chronological event log. Read to understand what changed and when — the gap between original thesis and current reality.'}
+    {n:1,name:'Universe Matrix',tab:'mx',c:'#374151',desc:'The map. Every commodity vertical \u00d7 every value chain stage. Click a blue cell for analytical depth, any other cell to open that stage in the Vertical Explorer.'},
+    {n:2,name:'Cycle & Innings',tab:'cy',c:'#E24B4A',desc:'Where each vertical sits in its structural cycle. The ranked table shows which are earliest-stage; expand any card for the full narrative.'},
+    {n:3,name:'Geopolitical',tab:'geo',c:'#A32D2D',desc:'Adversarial supply concentration. The heat map scores each vertical; the detail explains which chain stages China actually controls.'},
+    {n:4,name:'Vertical Explorer',tab:'vx',c:'#534AB7',desc:'Drill into one chain end to end \u2014 mine to end-use, where value is captured, and which steps are chokepoints.'},
+    {n:5,name:'Portfolio',tab:'ps',c:'#EF9F27',desc:'The defining insight and three-cluster structure. Work through the four screening questions \u2014 apply them mechanically to every position.'},
+    {n:6,name:'Companies',tab:'co',c:'#185FA5',desc:'The names. Filter by vertical, conviction or froth. Structure badges show the access type (streaming vs. equity vs. physical trust).'},
+    {n:7,name:'Research Notes',tab:'nt',c:'#993556',desc:'Chronological event log. What changed and when \u2014 the gap between the original thesis and current reality.'}
   ];
   const stepsHtml=steps.map(p=>`<div class="fw-step" onclick="ST('${p.tab}')"><div class="fw-step-num" style="background:${p.c}">${p.n}</div><div class="fw-step-name">${p.name}</div><div class="fw-step-desc">${p.desc}</div></div>`).join('');
 
@@ -1121,7 +1127,7 @@ function buildMatrix(){
   </div></div>`:'';
 
   // Dim C
-  const cbHtml=C_BAND.length?`<div style="font-size:10px;color:var(--color-text-tertiary);margin-top:6px">Dimension C — <b>derived infrastructure</b>: what the commodities above feed into. These are not commodity verticals, so they have no Dimension A column. Click any card ↗ to open where it is analysed in depth.</div>
+  const cbHtml=C_BAND.length?`<div style="font-size:10px;color:var(--color-text-tertiary);margin-top:6px">Dimension C — <b>derived infrastructure</b>: physical asset sectors the commodities above feed into. Not commodity verticals, so they have no Dimension A column. Distinct from <b>Demand Themes</b>, which are demand narratives rather than asset sectors — the two are different axes and do not map one-to-one. Click a card ↗ for the related view.</div>
     <div class="cband">${C_BAND.map(card=>{
       const dest=card.tab?`openCBandCard('${esc(card.tab)}'${card.theme?`,'${esc(card.theme)}'`:''})`:'';
       const cls=card.tab?'cc cc-link':'cc';
@@ -1143,7 +1149,9 @@ function cbDestLabel(card){
   const t=TAB_LABELS[card.tab]||card.tab;
   if(card.theme){
     const th=(THEMES||[]).find(x=>x.id===card.theme);
-    return `Open ${t} → ${th?th.n:card.theme}`;
+    // Cross-reference, not an equivalence — a Dim C sector is physical
+    // infrastructure; a theme is a demand narrative. They are different axes.
+    return `Related demand theme → ${th?th.n:card.theme}`;
   }
   return `Open ${t}`;
 }
