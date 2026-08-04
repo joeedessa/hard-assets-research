@@ -229,6 +229,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .mx-grid{overflow-x:auto}
 .mx-g{display:grid;gap:2px;min-width:900px}
 .mch{border-radius:3px 3px 0 0;padding:3px 2px;text-align:center;font-size:10px;font-weight:500;line-height:1.2;pointer-events:none}
+.mch-click{pointer-events:auto;cursor:pointer;transition:filter .12s}
+.mch-click:hover{filter:brightness(var(--inline-bright)) saturate(1.4)}
 .mrl{font-size:10px;font-weight:500;color:var(--color-text-tertiary);display:flex;align-items:center;padding-right:3px;line-height:1.2}
 .mc{border-radius:2px;padding:3px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);cursor:pointer;min-height:28px;transition:all .1s;position:relative}
 .mc:hover{background:var(--color-background-primary);border-color:var(--color-border-secondary)}
@@ -769,19 +771,21 @@ const BASE=(location.hostname==='localhost'||location.hostname==='127.0.0.1')
   :'https://raw.githubusercontent.com/joeedessa/hard-assets-research/main/data/';
 
 // ── Static data ────────────────────────────────────────────────────────────
+// Order, colors and groups are canonical — they match matrix.json / explorer.json
+// so the Matrix columns and the Vertical Explorer sidebar stay in sync.
 const VERTICALS=[
-  {id:'re',  n:'REE & Specialty',      c:'#993556', plain:'Rare earth magnets: every EV motor, wind turbine, missile guidance, and robot joint — nearly all processed in China. China cut off exports in 2025.'},
-  {id:'nu',  n:'Nuclear & Uranium',    c:'#534AB7', plain:'Uranium fuel + nuclear reactors — AI hyperscalers are signing 20-year PPAs for the only 24/7 carbon-free baseload. Russian enrichment banned in US.'},
-  {id:'elec',n:'Electricity & Grid',   c:'#185FA5', plain:'Power grid buildout — transformer lead times are 2-4 years with no relief; data center power demand doubles every 3-4 years. Clear evidence-based supercycle.'},
-  {id:'cu',  n:'Copper',               c:'#C26A2A', plain:'The universal conductor — essential for every EV, grid cable, and data center. No substitutes. Democratic nations take 16-17 years to permit a new mine.'},
-  {id:'ng',  n:'Natural Gas & LNG',    c:'#4B7B8C', plain:'AI data centers run on gas power. US LNG is now a NATO energy security instrument — European utilities locked into 20-year offtake agreements.'},
-  {id:'li',  n:'Lithium & Battery',    c:'#3B6D11', plain:'EV and grid-scale battery storage — currently at a cyclical trough (prices below incentive level). Structural demand wave building for 2026-2030.'},
-  {id:'tm',  n:'Technology Metals',    c:'#854F0B', plain:'SiC power chips for 800V systems, InP substrates for AI photonics, tin for chip packaging solder, antimony now under Chinese export ban.'},
-  {id:'oil', n:'Oil & Midstream',      c:'#7C6F2E', plain:'Geopolitical hedge + refinery crack spreads + tanker tonne-miles extended by Russia sanctions rerouting. Supply-side rationalization is structural.'},
-  {id:'fert',n:'Fertilizers',          c:'#1D9E75', plain:'Food security — potash, phosphate, nitrogen. 70%+ of global potash comes from Russia, Belarus, or Canada; allies are rebuilding supply chain security.'},
-  {id:'wl',  n:'Water & Land',         c:'#2563EB', plain:'Water scarcity — RO desalination, Western water rights. AI fabs and data centers are water-intensive; new sites chosen partly by water availability.'},
-  {id:'ii',  n:'Industrial & Specialty',c:'#475569',plain:'On-site gas monopolies (15-20yr sole-source contracts), specialty aerospace alloys, and beryllium — the defense-critical material with zero Western substitutes.'},
-  {id:'pg',  n:'Precious Metals',      c:'#B45309', plain:'Gold and silver — monetary hedge via streaming structures. Central banks buying at record pace; gold ATH $5,589 Jan 2026. Zero capex, full upside.'},
+  {id:'oil', g:'Energy', n:'Oil & Midstream',      c:'#5F5E5A', plain:'Geopolitical hedge + refinery crack spreads + tanker tonne-miles extended by Russia sanctions rerouting. Supply-side rationalization is structural.'},
+  {id:'ng',  g:'Energy', n:'Natural Gas & LNG',    c:'#EF9F27', plain:'AI data centers run on gas power. US LNG is now a NATO energy security instrument — European utilities locked into 20-year offtake agreements.'},
+  {id:'nu',  g:'Energy', n:'Nuclear & Uranium',    c:'#534AB7', plain:'Uranium fuel + nuclear reactors — AI hyperscalers are signing 20-year PPAs for the only 24/7 carbon-free baseload. Russian enrichment banned in US.'},
+  {id:'elec',g:'Energy', n:'Electricity & Grid',   c:'#185FA5', plain:'Power grid buildout — transformer lead times are 2-4 years with no relief; data center power demand doubles every 3-4 years. Clear evidence-based supercycle.'},
+  {id:'cu',  g:'Metals', n:'Copper',               c:'#D85A30', plain:'The universal conductor — essential for every EV, grid cable, and data center. No substitutes. Democratic nations take 16-17 years to permit a new mine.'},
+  {id:'li',  g:'Metals', n:'Lithium & Battery',    c:'#1D9E75', plain:'EV and grid-scale battery storage — currently at a cyclical trough (prices below incentive level). Structural demand wave building for 2026-2030.'},
+  {id:'re',  g:'Metals', n:'REE & Specialty',      c:'#993556', plain:'Rare earth magnets: every EV motor, wind turbine, missile guidance, and robot joint — nearly all processed in China. China cut off exports in 2025.'},
+  {id:'tm',  g:'Metals', n:'Technology Metals',    c:'#185FA5', plain:'SiC power chips for 800V systems, InP substrates for AI photonics, tin for chip packaging solder, antimony now under Chinese export ban.'},
+  {id:'pg',  g:'Metals', n:'Precious Metals',      c:'#888780', plain:'Gold and silver — monetary hedge via streaming structures. Central banks buying at record pace; gold ATH $5,589 Jan 2026. Zero capex, full upside.'},
+  {id:'wl',  g:'Inputs', n:'Water & Land',         c:'#3B6D11', plain:'Water scarcity — RO desalination, Western water rights. AI fabs and data centers are water-intensive; new sites chosen partly by water availability.'},
+  {id:'ii',  g:'Inputs', n:'Industrial & Specialty',c:'#854F0B',plain:'On-site gas monopolies (15-20yr sole-source contracts), specialty aerospace alloys, and beryllium — the defense-critical material with zero Western substitutes.'},
+  {id:'fert',g:'Inputs', n:'Fertilizers',          c:'#639922', plain:'Food security — potash, phosphate, nitrogen. 70%+ of global potash comes from Russia, Belarus, or Canada; allies are rebuilding supply chain security.'},
 ];
 const V_MAP=Object.fromEntries(VERTICALS.map(v=>[v.id,v]));
 
@@ -1015,7 +1019,7 @@ function buildMatrix(){
   const colStyle=`grid-template-columns:70px repeat(${nC},1fr)`;
 
   // Header row
-  const hdr='<div></div>'+VC_COLS.map(v=>`<div class="mch" style="background:${v.c}18;border:.5px solid ${v.c}44;color:${v.c}">${esc(v.sn)}</div>`).join('');
+  const hdr='<div></div>'+VC_COLS.map(v=>`<div class="mch mch-click" onclick="gotoVertical('${esc(v.id)}')" title="Open ${esc(v.sn)} in Vertical Explorer" style="background:${v.c}18;border:.5px solid ${v.c}44;color:${v.c}">${esc(v.sn)}</div>`).join('');
 
   // Data rows
   const rowsHtml=ROWS.map(row=>{
@@ -1025,7 +1029,7 @@ function buildMatrix(){
       const hasDetail=!!DET[key];
       const inner=tags.length?tags.map(([t,c])=>`<span class="ct ${c}">${esc(t)}</span>`).join(' '):'';
       if(hasDetail)return `<div class="mc hi" onclick="showMxDet('${key}')">${inner}</div>`;
-      return `<div class="mc" onclick="ST('vx')">${inner}</div>`;
+      return `<div class="mc" onclick="gotoVertical('${esc(v.id)}')" title="${esc(v.n||v.sn)} → Vertical Explorer">${inner}</div>`;
     }).join('');
     return `<div class="mrl">${esc(row.n)}</div>${cells}`;
   }).join('');
@@ -1078,10 +1082,10 @@ function buildVerticals(){
 function renderVxList(){
   const el=document.getElementById('vx-list');if(!el)return;
   const btn=v=>`<button class="vx-btn${v.id===VX_ACTIVE?' on':''}" style="${v.id===VX_ACTIVE?'background:'+v.c+';':''}" onclick="loadV('${v.id}')">${esc(v.n)}</button>`;
-  // Group by explorer.json's `g` field when available; flat list otherwise
+  // Group by the vertical's own `g`, falling back to explorer.json
   const groups=[];
   VERTICALS.forEach(v=>{
-    const g=VC[v.id]?.g||'Other';
+    const g=v.g||VC[v.id]?.g||'Other';
     let grp=groups.find(x=>x.g===g);
     if(!grp){grp={g,items:[]};groups.push(grp);}
     grp.items.push(v);
@@ -1095,6 +1099,14 @@ function loadV(id){
   if(!built['vx']){built['vx']=true;buildVerticals();return;}
   renderVxList();renderVxDetail(id);
   const d=document.getElementById('vx-detail');if(d)d.scrollTop=0;
+}
+// Jump from another tab (e.g. the Matrix) straight into a specific vertical
+function gotoVertical(id){
+  if(!V_MAP[id])return;
+  const wasBuilt=built['vx'];
+  VX_ACTIVE=id;
+  ST('vx');                       // builds using VX_ACTIVE on first visit
+  if(wasBuilt)loadV(id);          // already built → re-render for the new id
 }
 function renderVxDetail(vid){
   const el=document.getElementById('vx-detail');if(!el)return;
