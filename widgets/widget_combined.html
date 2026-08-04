@@ -204,7 +204,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .fw-step-desc{font-size:10px;color:var(--color-text-tertiary);line-height:1.45}
 /* Matrix — grid mode (from matrix.json) */
 .mx-grid{overflow-x:auto}
-.mx-g{display:grid;gap:2px;min-width:900px}
+.mx-g{display:grid;gap:2px}
 .mch{border-radius:3px 3px 0 0;padding:3px 2px;text-align:center;font-size:10px;font-weight:500;line-height:1.2;pointer-events:none}
 .mch-click{pointer-events:auto;cursor:pointer;transition:filter .12s}
 .mch-click:hover{filter:brightness(var(--inline-bright)) saturate(1.4)}
@@ -234,7 +234,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .fgeo{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad);border:.5px solid color-mix(in srgb,var(--bad) 40%,transparent)}
 /* Dim B band */
 .bband{border-radius:4px;margin:6px 0 0;border:.5px solid var(--color-border-info);background:var(--color-background-info);overflow-x:auto}
-.binner{padding:4px 6px;min-width:900px}
+.binner{padding:4px 6px}
 .blbl{font-size:9.5px;font-weight:500;color:var(--color-text-info);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px}
 .brow{display:grid;gap:2px;margin-bottom:2px}
 .brhdr{font-size:9.5px;font-weight:500;color:var(--color-text-info);display:flex;align-items:center;padding-right:4px;min-width:70px}
@@ -278,6 +278,12 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .sln{width:2px;min-height:10px;flex:1;opacity:.22;margin:1px auto}
 .sc{margin-bottom:4px;border-radius:5px;padding:6px 8px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary);cursor:pointer;transition:all .12s}
 .sc:hover,.sc.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+/* Brief highlight when arriving from a matrix cell */
+.sc-flash{border-color:var(--accent)!important;
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 30%,transparent);
+  animation:scflash 2s ease-out}
+@keyframes scflash{0%{box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 55%,transparent)}
+  100%{box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 0%,transparent)}}
 .sct{font-size:12px;font-weight:600;color:var(--color-text-primary);display:flex;justify-content:space-between;align-items:center;gap:6px}
 .scr{font-size:10.5px;color:var(--color-text-secondary);margin:2px 0;line-height:1.4}
 .scd{font-size:10.5px;color:var(--color-text-secondary);line-height:1.6;padding-top:5px;border-top:.5px solid var(--color-border-tertiary);display:none;margin-top:4px}
@@ -669,8 +675,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   .cband{grid-template-columns:1fr}
   .fw-trio{grid-template-columns:1fr}
   /* Wide grids: keep the structure, scroll it (arrows come from .hs-wrap) */
-  .mx-g{min-width:760px}
-  .binner{min-width:760px}
+  :root{--mxcol:96px}
   .mx-grid,.bband{ -webkit-overflow-scrolling:touch}
   .ct{font-size:9px}
   .mch{font-size:9px}
@@ -1078,7 +1083,7 @@ function buildMatrix(){
   const nC=VC_COLS.length;
   if(!nC){el.innerHTML='<div class="note-box">Matrix data loading…</div>';return;}
 
-  const colStyle=`grid-template-columns:70px repeat(${nC},1fr)`;
+  const colStyle=`grid-template-columns:70px repeat(${nC},minmax(var(--mxcol,124px),1fr))`;
 
   // Header row
   const hdr='<div></div>'+VC_COLS.map(v=>`<div class="mch mch-click" onclick="gotoVertical('${esc(v.id)}')" title="Open ${esc(v.sn)} in Vertical Explorer" style="background:${v.c}18;border:.5px solid ${v.c}44;color:${v.c}">${esc(v.sn)}</div>`).join('');
@@ -1091,7 +1096,8 @@ function buildMatrix(){
       const hasDetail=!!DET[key];
       const inner=tags.length?tags.map(([t,c])=>`<span class="ct ${c}">${esc(t)}</span>`).join(' '):'';
       if(hasDetail)return `<div class="mc hi" onclick="showMxDet('${key}')">${inner}</div>`;
-      return `<div class="mc" onclick="gotoVertical('${esc(v.id)}')" title="${esc(v.n||v.sn)} → Vertical Explorer">${inner}</div>`;
+      const vName=(V_MAP[v.id]||{}).n||v.sn;
+      return `<div class="mc" onclick="gotoVertical('${esc(v.id)}','${esc(row.id)}')" title="${esc(vName)} · ${esc(row.n)} → open in Vertical Explorer">${inner}</div>`;
     }).join('');
     return `<div class="mrl">${esc(row.n)}</div>${cells}`;
   }).join('');
@@ -1162,13 +1168,63 @@ function loadV(id){
   renderVxList();renderVxDetail(id);
   const d=document.getElementById('vx-detail');if(d)d.scrollTop=0;
 }
-// Jump from another tab (e.g. the Matrix) straight into a specific vertical
-function gotoVertical(id){
+// Matrix row ids -> keywords found in explorer.json chain-step labels.
+// The two datasets use similar but not identical wording ("Exploration" vs
+// "Exploration & seismic"), and chain lengths differ per vertical, so we score
+// by keyword rather than matching exactly or trusting position.
+const ROW_KEYWORDS={
+  rr:['right','royalt','stream'],
+  ex:['explor','seismic','discover','junior'],
+  dv:['develop','pre-fid','pre fid','permit','feasibil','construct'],
+  pr:['extract','production','producer','mining','mine','drill','brine','offshore'],
+  p1:['primary','gathering','milling','concentrat','separation','beneficiat','crack','smelt'],
+  rf:['refin','enrich','transform','conversion','petrochem','fabricat','magnet','processing'],
+  tr:['transport','pipeline','tanker','logistic','shipping','freight'],
+  st:['storage','terminal','stockpile','inventory','vault','reserve','warehouse'],
+  di:['distribut','end-use','end use','demand','utilit','oem','grid'],
+  rc:['recycl','secondary','scrap','reprocess'],
+};
+function findChainStep(vid,rowId){
+  const chain=(VC[vid]||{}).chain||[];
+  if(!chain.length)return -1;
+  const kws=ROW_KEYWORDS[rowId]||[];
+  let best=-1,bestScore=0;
+  chain.forEach((s,i)=>{
+    const label=(s.l||'').toLowerCase();
+    let score=0;
+    kws.forEach((k,ki)=>{ if(label.includes(k))score+=kws.length-ki; });
+    if(score>bestScore){bestScore=score;best=i;}
+  });
+  // Only deep-link on a genuine wording match. The two taxonomies differ in
+  // granularity — not every matrix row exists in every vertical's chain — and
+  // guessing by position lands on unrelated steps, which is worse than just
+  // opening the vertical and letting the reader scan it.
+  return best;
+}
+
+// Jump from another tab (e.g. the Matrix) straight into a specific vertical,
+// optionally opening the chain step that matches the matrix row clicked.
+function gotoVertical(id,rowId){
   if(!V_MAP[id])return;
   const wasBuilt=built['vx'];
   VX_ACTIVE=id;
   ST('vx');                       // builds using VX_ACTIVE on first visit
   if(wasBuilt)loadV(id);          // already built → re-render for the new id
+  if(rowId)highlightChainStep(id,rowId);
+}
+function highlightChainStep(vid,rowId){
+  const idx=findChainStep(vid,rowId);
+  if(idx<0)return;
+  // Let the detail panel finish rendering before locating the step
+  setTimeout(()=>{
+    const steps=document.querySelectorAll('#vx-detail .sc');
+    const target=steps[idx];
+    if(!target)return;
+    steps.forEach(s=>s.classList.remove('sc-flash'));
+    target.classList.add('ex','sc-flash');
+    target.scrollIntoView({behavior:'smooth',block:'center'});
+    setTimeout(()=>target.classList.remove('sc-flash'),2000);
+  },60);
 }
 function renderVxDetail(vid){
   const el=document.getElementById('vx-detail');if(!el)return;
