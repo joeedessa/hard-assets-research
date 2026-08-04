@@ -41,7 +41,7 @@
       "ar": "Mining (U3O8) → Milling (yellowcake) → Conversion (UF6) → Enrichment (SWU) → Fuel Fab → Reactor → Electricity",
       "bd": "<b>Why each step matters:</b> Only ~4 commercial conversion facilities globally. Enrichment: 2-3 Western operators. Fuel fabrication: 3-4 company oligopoly with 5-7yr qualification lock-in. At every step, the number of Western suppliers is smaller than is comfortable for energy security — and Russia controlled critical positions in each.<br><br><b>Enrichment crisis:</b> TENEX/Rosatom controlled ~28% of US SWU. Centrus Energy (LEU) is the ONLY US company with active domestic enrichment capacity. The US is rebuilding from near-zero. This is year 1-2 of a decade-long program. HALEU (for SMRs and advanced reactors) has essentially zero non-Russian supply.<br><br><b>AI PPA thesis:</b> 24/7 carbon-free power + 15-20yr price certainty = exactly what hyperscalers want. CEG-Microsoft TMI deal ($110/MWh, 20yr) is the commercial template now being replicated across the CEG fleet and at other nuclear utilities.",
       "vals": [
-        { "l": "Enrichment (Centrus LEU)", "v": 95, "n": "Near-monopoly rebuild" },
+        { "l": "Enrichment (Centrus (LEU))", "v": 95, "n": "Near-monopoly rebuild" },
         { "l": "Physical U trusts (SPUT)", "v": 88, "n": "Price leverage, no ops" },
         { "l": "Nuclear operators (CEG)", "v": 85, "n": "AI PPA premium" },
         { "l": "Uranium mining (CCO,NXE)", "v": 75, "n": "Supply gap leverage" },
@@ -100,9 +100,9 @@
       "ar": "Byproduct Mining (Al/Zn/Cu smelters) → Metal Refining → Specialty Alloys/Solder → Electronics Assembly → AI Chips/Solar/5G/Defense",
       "bd": "<b>Weaponization already active:</b> China imposed export controls on gallium and germanium (August 2023) and antimony (September 2024). These are not threats — they have already happened. Gallium is essential for GaN semiconductors (5G base stations, EV inverters, satellite power electronics). Germanium for fiber optics and defense IR thermal imaging. Western policy response remains minimal relative to urgency.<br><br><b>Tin and AI:</b> Advanced chip packaging for AI (TSMC CoWoS, HBM 3D stacking) INCREASES tin intensity per unit of AI compute — HBM memory uses micro-bump solder at <50 micron pitch. Unlike most materials where compute efficiency reduces consumption, more AI chips = more tin per package. This is the structural tin thesis unique to this vertical.<br><br><b>Investable universe is thin but strategic:</b> Alphamin (AFMJF — tin, DRC, world's highest-grade), Perpetua Resources (PPTA — antimony + gold, DoD MOU), AXT Inc (AXTI — GaAs/GaN substrates), Malaysia Smelting Corp (MSC — listed tin smelter).",
       "vals": [
-        { "l": "Perpetua PPTA (Sb+Au)", "v": 82, "n": "DoD off-take, unique" },
-        { "l": "Alphamin AFMJF (Sn)", "v": 78, "n": "AI packaging leverage" },
-        { "l": "AXT Inc AXTI (GaN sub.)", "v": 70, "n": "5G/EV/defense" },
+        { "l": "Perpetua (PPTA, Sb+Au)", "v": 82, "n": "DoD off-take, unique" },
+        { "l": "Alphamin (AFMJF, Sn)", "v": 78, "n": "AI packaging leverage" },
+        { "l": "AXT Inc (AXTI, GaN sub.)", "v": 70, "n": "5G/EV/defense" },
         { "l": "WPM Ag streams (solar)", "v": 65, "n": "Solar structural driver" }
       ]
     },
@@ -144,9 +144,9 @@
       "bd": "<b>The Linde/APD on-site plant moat:</b> For large industrial customers (chip fabs, hospitals, steel plants), Linde and Air Products build dedicated air separation plants physically embedded in the customer's facility under 15-20yr sole-source contracts. The plant is wired into the customer's production process — switching requires a facility rebuild that would shut down operations for months or years. Switching cost = effectively infinite. ~40% combined global industrial gas market share. Revenue grows every time a new chip fab, hospital, or major industrial plant is built globally.<br><br><b>Titanium supply chain reset:</b> VSMPO-AVISMA (Russia) supplied ~35% of Boeing's and Airbus's titanium before 2022. ATI Inc (ATI) is the primary US beneficiary of the diversification that is now in progress. Multi-year tailwind as long-term aerospace sourcing agreements shift permanently away from Russia.<br><br><b>Materion (MTRN) — the hidden defense-critical play:</b> Materion operates the ONLY Western beryllium mine at Spor Mountain, Utah and the ONLY US beryllium processing capability. Beryllium is in nuclear warheads, aerospace structural components, and defense electronics with no substitutes in many applications. <$1.5B market cap. Systematically underowned.",
       "vals": [
         { "l": "LIN/APD on-site plants", "v": 90, "n": "Utility moat + tech premium" },
-        { "l": "Materion MTRN (Be)", "v": 82, "n": "Near-monopoly, defense critical" },
+        { "l": "Materion (MTRN, Be)", "v": 82, "n": "Near-monopoly, defense critical" },
         { "l": "ATI Inc (Ti/specialty alloys)", "v": 78, "n": "Defense + aerospace" },
-        { "l": "Chart Industries GTLS", "v": 65, "n": "LNG/gas/H2 crossover" }
+        { "l": "Chart Industries (GTLS)", "v": 65, "n": "LNG/gas/H2 crossover" }
       ]
     },
     {
@@ -157,10 +157,10 @@
       "ar": "K Mining / P Mining / Natural Gas → Primary Processing (MOP / H3PO4 / NH3) → NPK Mfg → Bulk Shipping → Agricultural Application",
       "bd": "<b>How the chain works:</b> Plants need three primary nutrients — N (synthesized from natural gas via Haber-Bosch), P (mined from phosphate rock, acid-processed to DAP/MAP), and K (mined from underground evaporite deposits as MOP potash). The three nutrients have completely different geographies, economics, and supply chains — which is precisely why Nutrien (NTR) is unique as the only company globally with significant scale in all three under one roof.<br><br><b>2022 geopolitical reset:</b> Russia/Belarus jointly controlled ~40% of global potash before 2022 sanctions. Russia also used fertilizer export restrictions and grain blockades as coercive foreign policy tools. Nutrien + Mosaic became strategically critical as the primary allied-nation alternatives. Canpotex JV controls Canadian export logistics globally.<br><br><b>Morocco phosphate chokepoint:</b> OCP Group controls ~70% of global phosphate reserves. Not adversarially weaponized today but represents an extreme single-country concentration. Phosphate is essentially non-renewable — a long-duration scarcity thesis that will become increasingly acute over decades.",
       "vals": [
-        { "l": "Nutrien NTR (full NPK)", "v": 78, "n": "Unique full NPK scale" },
-        { "l": "Mosaic MOS (K+P)", "v": 72, "n": "Dual nutrient exposure" },
+        { "l": "Nutrien (NTR, full NPK)", "v": 78, "n": "Unique full NPK scale" },
+        { "l": "Mosaic (MOS, K+P)", "v": 72, "n": "Dual nutrient exposure" },
         { "l": "ICL Group (K+P)", "v": 68, "n": "Allied multi-jurisdiction" },
-        { "l": "CF Industries CF (N)", "v": 65, "n": "Henry Hub leveraged" },
+        { "l": "CF Industries (CF, N)", "v": 65, "n": "Henry Hub leveraged" },
         { "l": "ERII (mine water/desal)", "v": 70, "n": "Food + water nexus" }
       ]
     },

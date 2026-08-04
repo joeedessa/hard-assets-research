@@ -62,7 +62,7 @@
       "hi": false,
       "role": "Battery energy storage: frequency regulation, peak shifting, renewable firming. Growing rapidly — standalone economics independent of EV.",
       "tick": "Fluence Energy (FLNC — AES+Siemens JV; world's leading independent BESS integrator); Tesla Megapack (TSLA); AES Corp (AES — owns + operates large BESS fleet directly); NextEra (NEE)",
-      "det": "Grid BESS is growing completely independently of EV demand. Three revenue streams drive standalone BESS economics: (1) Frequency regulation (fastest response, highest $/MWh); (2) Capacity markets (reserve payments for having dispatchable power available); (3) Energy arbitrage (buy cheap, sell dear — works with increasing renewable intermittency). Duration is currently 2-4 hours for most systems — 8-hour and longer systems are emerging (vanadium flow batteries, iron-air). Fluence FLNC is the most attractive independent BESS integrator."
+      "det": "Grid BESS is growing completely independently of EV demand. Three revenue streams drive standalone BESS economics: (1) Frequency regulation (fastest response, highest $/MWh); (2) Capacity markets (reserve payments for having dispatchable power available); (3) Energy arbitrage (buy cheap, sell dear — works with increasing renewable intermittency). Duration is currently 2-4 hours for most systems — 8-hour and longer systems are emerging (vanadium flow batteries, iron-air). Fluence (FLNC) is the most attractive independent BESS integrator."
     },
     {
       "n": "Grid EPC & installation",
@@ -101,7 +101,7 @@
       "n": "Uranium → nuclear baseload",
       "c": "#534AB7",
       "body": "Nuclear provides 24/7 carbon-free power with price certainty — the most attractive AI data center PPA structure. The full uranium supply chain (mining → enrichment → fuel fabrication → reactor) must scale to meet this demand. CEG is the most direct operator expression.",
-      "tick": "CCO (uranium) → Centrus LEU (enrichment) → Westinghouse (fuel fab) → CEG (generation) → Microsoft, Amazon PPAs",
+      "tick": "CCO (uranium) → Centrus (LEU, enrichment) → Westinghouse (fuel fab) → CEG (generation) → Microsoft, Amazon PPAs",
       "demand": "CEG-Microsoft TMI at $110/MWh for 20 years is the commercial template. CEG has a pipeline of similar deals. Nuclear capacity factor 90%+ = always-on, unlike renewables."
     },
     {
@@ -115,7 +115,7 @@
       "n": "Lithium → grid BESS",
       "c": "#1D9E75",
       "body": "Grid-scale BESS enables renewable integration, frequency regulation, and capacity markets. BESS demand is completely independent of EV trajectory — it is driven by grid economics and renewable penetration targets. Growing rapidly with completely standalone economics.",
-      "tick": "ALB, SQM (Li production) → CATL, LG Energy (cells) → Tesla Megapack, Fluence FLNC (BESS systems) → AES, NEE (grid operators)",
+      "tick": "ALB, SQM (Li production) → CATL, LG Energy (cells) → Tesla Megapack, Fluence (FLNC, BESS systems) → AES, NEE (grid operators)",
       "demand": "Each GW of BESS capacity requires ~1,500-2,000T Li₂CO₃ equivalent. Grid BESS deployments measured in tens of GWh annually — growing rapidly and independently of EV."
     },
     {
@@ -147,7 +147,7 @@
     {
       "n": "Transmission: the 2-4yr transformer crisis",
       "body": "Building a new 500MW data center campus requires multiple large power transformers. Those transformers have 2-4yr lead times. The transmission line to carry power from the nearest large substation may require a year of permitting and a year of construction after that. Data center operators are now ordering transformers years before they have building permits — transformer lead time has become the critical path.",
-      "tick": "Hitachi Energy, ABB ABBN, Eaton ETN, GEV — all report backlogs measured in years. Lead times for 500MVA+ units now 36-48 months in some cases."
+      "tick": "Hitachi Energy, ABB ABBN, Eaton (ETN), GEV — all report backlogs measured in years. Lead times for 500MVA+ units now 36-48 months in some cases."
     },
     {
       "n": "EPC: Quanta is the linchpin",
@@ -162,7 +162,7 @@
     {
       "n": "Water: AI creating new scarcity constraint",
       "body": "A 100MW hyperscale data center using evaporative cooling consumes 1-2 million gallons of water per day. The Arizona State Land Department has begun denying water permits for new data centers in the Phoenix metro area — the same state where Intel Fab 52/62 and TSMC Fab 21 are being built. Liquid cooling (VRT) reduces water consumption vs. evaporative cooling but requires more sophisticated infrastructure.",
-      "tick": "ERII (desalination for industrial water supply); Vertiv (VRT — liquid cooling reduces water consumption vs. air); Xylem XYL (industrial water treatment + smart metering)"
+      "tick": "ERII (desalination for industrial water supply); Vertiv (VRT — liquid cooling reduces water consumption vs. air); Xylem (XYL, industrial water treatment + smart metering)"
     }
   ],
   "cycle": [
