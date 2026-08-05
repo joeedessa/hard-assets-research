@@ -651,75 +651,130 @@ def compute_breaking(quotes, indices, news, companies):
 
 
 def compute_performance(companies):
-    """Compute equal-weight basket returns vs benchmarks over 1m/3m/6m/1y."""
-    print("Computing performance...")
-    periods = {"1m": 21, "3m": 63, "6m": 126, "1y": 252}
-    basket_tickers = [normalize_ticker(c["ticker"]) for c in companies
-                      if c.get("conviction", 0) >= 2]  # conviction 2+ in basket
-    bench_tickers  = list(BENCHMARK_TICKERS.values())
+    """Inception-dated tracks. A judgment can only be scored from the date it was MADE.
 
-    all_tickers = list(set(basket_tickers + bench_tickers))
+    Trailing returns of a basket chosen today describe COMPOSITION, not skill —
+    the tags did not exist for most of that window. The trailing table is kept
+    but demoted and labelled retrospective; only the since-inception tracks
+    actually test the framework.
+    """
+    print("Computing performance...")
+
+    # Real dates the judgment layers were written, taken from git history.
+    TRACKS = [
+        {"name": "Conviction ranking", "inception": "2026-04-30",
+         "note": ("Conviction scores have existed since the initial build on 2026-04-30 and were "
+                  "revised on 2026-08-04/05. Names added in the 2026-08-05 expansion are excluded "
+                  "below — they have no forward record yet."),
+         "select": lambda c: c.get("conviction") == 3 and c.get("last_touched", "") < "2026-08-05",
+         "label": "Conviction-3 holdings"},
+        {"name": "Froth lens", "inception": "2026-08-04",
+         "note": ("Froth tags were written on 2026-08-04. This window is far too short to judge them; "
+                  "it is published so the record accumulates in the open rather than being claimed later."),
+         "select": lambda c: c.get("froth") == 1 and c.get("last_touched", "") < "2026-08-05",
+         "label": "Insulated (froth 1)"},
+        {"name": "Froth lens", "inception": "2026-08-04", "same_group": True,
+         "select": lambda c: c.get("froth") == 3 and c.get("last_touched", "") < "2026-08-05",
+         "label": "High froth (froth 3)"},
+    ]
+
+    basket_tickers = [yahoo_symbol(c["ticker"]) for c in companies]
+    bench_tickers = list(BENCHMARK_TICKERS.values())
+    all_tickers = sorted(set(basket_tickers + bench_tickers))
     try:
-        # 2y window: a calendar year yields only ~250 trading rows, so a "1y"
-        # download can never satisfy the 252-day lookback below.
         hist = yf.download(all_tickers, period="2y", auto_adjust=True,
                            progress=False, group_by="ticker", threads=True)
     except Exception as e:
         print(f"  Performance download failed: {e}", file=sys.stderr)
-        return {"basket": {}, "benchmarks": {}, "as_of": date.today().isoformat()}
+        return {"tracks": [], "retrospective": {}, "as_of": date.today().isoformat()}
 
-    def period_return(tk, n_days):
+    def closes_for(sym):
         try:
             if len(all_tickers) == 1:
-                closes = hist["Close"].dropna()
-            else:
-                if tk not in hist.columns.get_level_values(0):
-                    return None
-                closes = hist[tk]["Close"].dropna()
-            if len(closes) < n_days:
+                return hist["Close"].dropna()
+            if sym not in hist.columns.get_level_values(0):
                 return None
-            return pct(closes.iloc[-1], closes.iloc[-n_days])
+            return hist[sym]["Close"].dropna()
         except Exception:
             return None
 
-    def median(xs):
-        s = sorted(xs)
-        n = len(s)
-        if not n:
+    def since(sym, start):
+        c = closes_for(sym)
+        if c is None or c.empty:
             return None
-        return s[n // 2] if n % 2 else (s[n // 2 - 1] + s[n // 2]) / 2
+        try:
+            w = c[c.index.date >= date.fromisoformat(start)]
+        except Exception:
+            return None
+        if len(w) < 2:
+            return None
+        return pct(w.iloc[-1], w.iloc[0])
 
-    basket_returns = {}
-    basket_median = {}
-    top_contrib = {}
-    for period, n_days in periods.items():
-        pairs = [(tk, period_return(tk, n_days)) for tk in basket_tickers]
-        pairs = [(tk, r) for tk, r in pairs if r is not None]
+    # ── Since-inception tracks (the honest record) ──
+    groups = {}
+    for spec in TRACKS:
+        members = [yahoo_symbol(c["ticker"]) for c in companies if spec["select"](c)]
+        rets = [r for r in (since(m, spec["inception"]) for m in members) if r is not None]
+        row = {"label": spec["label"], "n": len(rets),
+               "si": round(sum(rets) / len(rets), 1) if rets else None}
+        g = groups.setdefault(spec["name"], {"name": spec["name"], "inception": spec["inception"],
+                                             "note": spec.get("note", ""), "rows": []})
+        if spec.get("note") and not g["note"]:
+            g["note"] = spec["note"]
+        g["rows"].append(row)
+
+    for g in groups.values():
+        for bname, bsym in BENCHMARK_TICKERS.items():
+            r = since(bsym, g["inception"])
+            if r is not None:
+                g["rows"].append({"label": f"{bname} — benchmark", "n": 1, "si": r, "bench": True})
+
+    # ── Retrospective trailing table (composition, not skill) ──
+    periods = {"1m": 21, "3m": 63, "6m": 126, "1y": 252}
+
+    def trailing(sym, n_days):
+        c = closes_for(sym)
+        if c is None or len(c) < n_days:
+            return None
+        return pct(c.iloc[-1], c.iloc[-n_days])
+
+    def median(xs):
+        s2 = sorted(xs); n = len(s2)
+        return None if not n else (s2[n // 2] if n % 2 else (s2[n // 2 - 1] + s2[n // 2]) / 2)
+
+    retro_mean, retro_med, top = {}, {}, {}
+    for period, nd in periods.items():
+        pairs = [(t, trailing(t, nd)) for t in basket_tickers]
+        pairs = [(t, r) for t, r in pairs if r is not None]
         rets = [r for _, r in pairs]
-        # Mean = the return of an actually-held equal-weight basket.
-        # Median = the typical constituent, unaffected by a single extreme name.
-        basket_returns[period] = round(sum(rets) / len(rets), 1) if rets else None
-        basket_median[period] = round(median(rets), 1) if rets else None
+        retro_mean[period] = round(sum(rets) / len(rets), 1) if rets else None
+        retro_med[period] = round(median(rets), 1) if rets else None
         if pairs:
-            tk, r = max(pairs, key=lambda x: x[1])
-            # How much of the mean comes from this one name
-            share = (r / len(rets)) if rets else 0
-            top_contrib[period] = {"ticker": tk, "ret": round(r, 1),
-                                   "contribution_pp": round(share, 1)}
+            t, r = max(pairs, key=lambda x: x[1])
+            top[period] = {"ticker": t, "ret": round(r, 1),
+                           "contribution_pp": round(r / len(rets), 1)}
 
-    bench_returns = {}
-    for name, tk in BENCHMARK_TICKERS.items():
-        bench_returns[name] = {}
-        for period, n_days in periods.items():
-            bench_returns[name][period] = period_return(tk, n_days)
+    retro_bench = {name: {p: trailing(sym, nd) for p, nd in periods.items()}
+                   for name, sym in BENCHMARK_TICKERS.items()}
 
-    return {"basket": basket_returns,
-            "basket_median": basket_median,
-            "top_contributor": top_contrib,
-            "n_constituents": len([t for t in basket_tickers
-                                   if period_return(t, 21) is not None]),
-            "benchmarks": bench_returns,
-            "as_of": date.today().isoformat()}
+    return {
+        "_meta": {
+            "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "note": "Equal-weight, price-only, local currency. No rebalancing, dividends or FX conversion.",
+            "retrospective_warning": (
+                "The trailing table measures how TODAY'S universe performed in the past. It describes "
+                "COMPOSITION, not forecasting skill, because the conviction and froth tags did not exist "
+                "for most of that window and 21 of the 71 names were added on 2026-08-05. Only the "
+                "since-inception tracks test the framework."),
+        },
+        "tracks": list(groups.values()),
+        "retrospective": {
+            "label": "Retrospective composition — NOT a track record",
+            "mean": retro_mean, "median": retro_med,
+            "top_contributor": top, "benchmarks": retro_bench,
+        },
+        "as_of": date.today().isoformat(),
+    }
 
 
 def safe_write(path, data):

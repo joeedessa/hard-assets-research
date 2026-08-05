@@ -527,6 +527,21 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .sb-table td:first-child{text-align:left;font-family:var(--font-sans);font-weight:600;font-size:12px}
 .sb-table tr.basket-row td{background:var(--color-background-info);font-weight:700}
 .sb-table tr:last-child td{border-bottom:none}
+.sb-lead{border-radius:7px;padding:9px 12px;margin-bottom:10px;font-size:11.5px;line-height:1.65;
+  border-left:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,transparent);
+  color:var(--color-text-secondary)}
+.sb-track{border:.5px solid var(--color-border-tertiary);border-radius:7px;padding:9px 12px;
+  margin-bottom:8px;background:var(--color-background-primary)}
+.sb-track-h{font-size:12.5px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px;
+  display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.sb-incep{font-size:10px;font-weight:500;color:var(--color-text-tertiary);font-family:var(--font-mono)}
+.sb-note{font-size:10.5px;color:var(--color-text-tertiary);line-height:1.55;margin-bottom:6px}
+.sb-thin{font-size:10.5px;color:var(--warn);line-height:1.55;
+  background:color-mix(in srgb,var(--warn) 8%,transparent);border-radius:4px;padding:5px 8px;margin-bottom:6px}
+.sb-bench td{color:var(--color-text-tertiary)}
+.sb-retro{border:.5px dashed var(--color-border-secondary);border-radius:7px;padding:8px 12px;
+  background:var(--color-background-secondary);margin-top:8px}
+.sb-retro summary{cursor:pointer;font-size:11.5px;font-weight:600;color:var(--color-text-tertiary)}
 .sb-pos{color:var(--good)}.sb-neg{color:var(--bad)}.sb-neu{color:var(--color-text-tertiary)}
 /* Policy */
 .pol-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px;margin-bottom:12px}
@@ -1798,30 +1813,51 @@ function buildPortfolio(){
 }
 
 function buildSbHtml(){
-  const b=PERF.basket||{};const bm=PERF.benchmarks||{};
-  const hasData=Object.keys(b).length>0;
-  if(!hasData)return `<div class="note-box">Scoreboard populates after first nightly CI run. Run scripts/fetch_market.py locally to seed.</div>`;
-  const periods=['1m','3m','6m','1y'];
-  const fmt=v=>v==null?'—':`<span class="${v>=0?'sb-pos':'sb-neg'}">${fmtPct(v)}</span>`;
-  const med=PERF.basket_median||{};
-  const n=PERF.n_constituents;
-  const rows=[
-    [`HA Basket — mean${n?` (${n} names, equal-wt)`:''}`,b,'basket-row'],
-    ...(Object.keys(med).length?[['HA Basket — median name',med,'basket-row']]:[]),
-    ...Object.entries(bm).map(([name,d])=>[name,d,'']),
-  ];
-  // Disclose when one name dominates the mean
-  const tc=(PERF.top_contributor||{})['1y'];
-  const skew=tc&&tc.contribution_pp!=null&&b['1y']!=null&&Math.abs(tc.contribution_pp)>Math.abs(b['1y'])*0.25
-    ? `<div class="note-box" style="margin-top:8px">⚠ <b>Mean is skewed by one name.</b> ${esc(tc.ticker)} returned ${fmtPct(tc.ret)} over 1y, contributing ~${fmtPct(tc.contribution_pp)} of the basket's ${fmtPct(b['1y'])} mean on its own. The <b>median</b> row is the better read on a typical constituent.</div>`
-    : '';
-  return `<div class="sb-wrap" data-hscroll><table class="sb-table">
-    <thead><tr><th>Name</th>${periods.map(p=>`<th>${p}</th>`).join('')}</tr></thead>
-    <tbody>${rows.map(([name,d,cls])=>`<tr class="${cls}"><td>${esc(name)}</td>${periods.map(p=>`<td>${fmt(d[p])}</td>`).join('')}</tr>`).join('')}</tbody>
-  </table></div>
-  <div class="note-box" style="margin-top:8px">Price-only, equal-weight, no rebalancing and no dividends — a rough structural read, not an audited track record. Non-USD listings are counted in their <b>local currency and not FX-converted</b>, so the basket mixes currencies and overstates or understates by the FX move.</div>
-  ${skew}`;
+  const tracks=PERF.tracks||[];
+  const retro=PERF.retrospective||null;
+  const warn=(PERF._meta||{}).retrospective_warning||'';
+  if(!tracks.length&&!retro)
+    return `<div class="note-box">Scoreboard populates after the nightly run. Run scripts/fetch_market.py locally to seed.</div>`;
+
+  const fmtSi=v=>v==null?'<span style="color:var(--color-text-tertiary)">—</span>'
+    :`<span class="${v>=0?'sb-pos':'sb-neg'}">${fmtPct(v)}</span>`;
+
+  // Since-inception tracks — the only part that tests the framework
+  const trackHtml=tracks.map(t=>{
+    const own=t.rows.filter(r=>!r.bench), bench=t.rows.filter(r=>r.bench);
+    const thin=own.every(r=>r.n===0||r.si==null);
+    return `<div class="sb-track">
+      <div class="sb-track-h">${esc(t.name)}<span class="sb-incep">since ${esc(t.inception)}</span></div>
+      ${t.note?`<div class="sb-note">${esc(t.note)}</div>`:''}
+      ${thin?`<div class="sb-thin">Not enough trading days since inception to measure yet. Published now so the record accumulates in the open rather than being claimed later.</div>`:''}
+      <table class="sb-table"><thead><tr><th>Basket</th><th>Names</th><th>Since inception</th></tr></thead>
+      <tbody>${t.rows.map(r=>`<tr class="${r.bench?'sb-bench':'basket-row'}">
+        <td>${esc(r.label)}</td><td style="color:var(--color-text-tertiary)">${r.n||'—'}</td><td>${fmtSi(r.si)}</td></tr>`).join('')}</tbody>
+      </table></div>`;
+  }).join('');
+
+  // Retrospective — demoted, labelled, collapsed
+  let retroHtml='';
+  if(retro){
+    const P=['1m','3m','6m','1y'];
+    const rows=[['Universe mean',retro.mean,'basket-row'],['Universe median',retro.median,'basket-row'],
+      ...Object.entries(retro.benchmarks||{}).map(([n,d])=>[n,d,'sb-bench'])];
+    const tc=(retro.top_contributor||{})['1y'];
+    retroHtml=`<details class="sb-retro"><summary>${esc(retro.label||'Retrospective composition')} — click to expand</summary>
+      <div class="sb-note" style="margin-top:6px">${esc(warn)}</div>
+      <div data-hscroll><table class="sb-table" style="margin-top:6px">
+      <thead><tr><th>Name</th>${P.map(p=>`<th>${p}</th>`).join('')}</tr></thead>
+      <tbody>${rows.map(([n,d,cls])=>`<tr class="${cls}"><td>${esc(n)}</td>${P.map(p=>`<td>${fmtSi((d||{})[p])}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table></div>
+      ${tc?`<div class="sb-thin" style="margin-top:6px">One name dominates: ${esc(tc.ticker)} returned ${fmtPct(tc.ret)} over 12 months, contributing roughly ${fmtPct(tc.contribution_pp)} of the mean by itself. Read the median row instead.</div>`:''}
+    </details>`;
+  }
+
+  return `<div class="sb-lead"><b>A judgment can only be scored from the date it was made.</b> The tracks below start when each layer was actually written. Trailing returns of a universe chosen today describe composition, not skill — they are kept below, demoted and labelled.</div>
+    ${trackHtml}${retroHtml}
+    <div class="note-box" style="margin-top:8px">Equal-weight, price-only, local currency — no rebalancing, dividends or FX conversion. Non-USD listings are counted in their own currency, so the basket mixes currencies.</div>`;
 }
+
 
 // ── POLICY ─────────────────────────────────────────────────────────────────
 function buildPolicy(){
