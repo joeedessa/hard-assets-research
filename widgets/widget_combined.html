@@ -176,6 +176,37 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .act-route-t{font-size:12.5px;font-weight:600;color:var(--color-text-primary);margin-bottom:2px}
 .act-route-d{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
 .act-route-go{margin-left:auto;font-size:18px;color:var(--accent);flex-shrink:0}
+.cm-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:10px}
+.cm-stat{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:9px 12px;background:var(--color-background-primary)}
+.cm-stat-v{font-family:var(--font-mono);font-size:20px;font-weight:700;line-height:1.1}
+.cm-stat-l{font-size:10px;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+.cm-list{display:flex;flex-direction:column;gap:4px}
+.cm-row{display:grid;grid-template-columns:190px 1fr 120px;gap:10px;align-items:start;
+  border:.5px solid var(--color-border-tertiary);border-left:3px solid var(--color-border-secondary);
+  border-radius:6px;padding:8px 11px;background:var(--color-background-primary)}
+.cm-row.cm-gap-none{border-left-color:var(--bad)}
+.cm-row.cm-gap-partial,.cm-row.cm-gap-enduse-only{border-left-color:var(--warn)}
+.cm-row.cm-gap-covered{border-left-color:var(--good)}
+.cm-name{font-size:12.5px;font-weight:600;color:var(--color-text-primary)}
+.cm-lists{display:flex;gap:3px;flex-wrap:wrap;margin-top:4px}
+.cm-tag{font-size:8.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 5px;border-radius:3px}
+.cm-tag.us{background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent)}
+.cm-tag.eus{background:color-mix(in srgb,var(--good) 16%,transparent);color:var(--good)}
+.cm-tag.eu{background:var(--color-background-secondary);color:var(--color-text-tertiary)}
+.cm-tag.cn{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
+.cm-why{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
+.cm-cn{font-size:10px;color:var(--bad);margin-top:3px}
+.cm-exp{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+.cm-holding{font-family:var(--font-mono);font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;
+  cursor:pointer;background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);
+  color:var(--color-text-primary);display:inline-flex;align-items:center;gap:3px}
+.cm-holding:hover{border-color:var(--accent);color:var(--accent)}
+.cm-holding i{font-style:normal;font-size:8px;opacity:.65;text-transform:uppercase}
+.cm-holding.cm-primary{border-color:color-mix(in srgb,var(--good) 45%,transparent)}
+.cm-holding.cm-enduse{opacity:.6}
+.cm-nohold{font-size:10.5px;color:var(--bad);font-style:italic}
+.cm-state{font-size:9.5px;font-weight:700;padding:3px 8px;border-radius:4px;border:.5px solid;white-space:nowrap}
+.cm-r{text-align:right}
 /* Act Now */
 .tab-badge{display:none;margin-left:5px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;
   font-size:9.5px;font-weight:700;line-height:16px;text-align:center;vertical-align:middle;color:#fff}
@@ -790,6 +821,11 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   .co-bar{flex-wrap:wrap;gap:6px}
   .sh-hero{padding:12px 14px}
   .sh-hero-h{font-size:18px}
+  /* Minerals rows are a 3-column grid on desktop; at narrow widths the middle
+     column collapses to an unreadable sliver, so stack them instead. */
+  .cm-row{grid-template-columns:1fr;gap:6px}
+  .cm-r{text-align:left}
+  .cm-stats{grid-template-columns:1fr 1fr}
 }
 #ha-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(12px);
   z-index:200;max-width:min(520px,92vw);padding:10px 16px;border-radius:8px;font-size:12px;line-height:1.5;
@@ -841,6 +877,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <span class="tab" onclick="ST('co')">Companies</span>
   <span class="tab" onclick="ST('nw')">News</span>
   <span class="tab" onclick="ST('nt')">Notes</span>
+  <span class="tab" onclick="ST('cm')">Critical Minerals</span>
   <span class="tab" onclick="ST('gl')">Glossary</span>
 </div>
 <div class="content">
@@ -884,6 +921,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <div id="v-nw" class="view"></div>
   <div id="v-co" class="view"></div>
   <div id="v-nt" class="view"></div>
+  <div id="v-cm" class="view"></div>
   <div id="v-gl" class="view"></div>
 </div>
 <footer class="ha-foot">
@@ -968,6 +1006,7 @@ let EXPLS=[],PS=[],EL_CHAIN=[],EL_INTX=[],EL_AI=[],EL_CYCLE=[],THEMES=[],ACTORS=
 let VC={},VORDER=[],CROSS_V={};
 let BREAKING={state:'clear',signals:[],_meta:{}};
 let GLOSSARY=[];
+let MINERALS={minerals:[],_meta:{}};
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
 let TICKER_MAP={};
@@ -1145,7 +1184,7 @@ function jumpToCompanies(tk){
 // ── Tab switching ──────────────────────────────────────────────────────────
 // MUST stay in the same order as the .tab spans in the markup — ST() pairs
 // them by index. Also the order the Start Here learning path walks.
-const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','nw','nt','gl'];
+const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','nw','nt','cm','gl'];
 const built={};
 function ST(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
@@ -1171,6 +1210,7 @@ function buildTab(id){
   else if(id==='nw')buildNews();
   else if(id==='co')buildCompanies();
   else if(id==='nt')buildNotes();
+  else if(id==='cm')buildMinerals();
   else if(id==='gl')buildGlossary();
   initHScrollers();   // attach arrows to any wide content this tab rendered
 }
@@ -2112,6 +2152,81 @@ function renderCo(){
 }
 
 // ── NOTES ──────────────────────────────────────────────────────────────────
+
+// ── CRITICAL MINERALS COVERAGE ─────────────────────────────────────────────
+// The point of this tab is to expose what we do NOT cover. Sorted by gap
+// priority — most-designated, least-held first — never alphabetically.
+const CM_GAP={
+ none:{l:'No exposure',c:'var(--bad)'},
+ 'enduse-only':{l:'End-use only',c:'var(--warn)'},
+ partial:{l:'Partial',c:'var(--warn)'},
+ covered:{l:'Covered',c:'var(--good)'}};
+const CM_KIND={
+ primary:'Produces or separates it',
+ processing:'Refines or converts it, does not mine it',
+ byproduct:'Secondary output only — supply cannot answer this price alone',
+ enduse:'Consumes it. Not supply exposure.'};
+let CM_FILTER='all';
+function setCmFilter(f){CM_FILTER=f;buildMinerals(true);}
+
+function buildMinerals(force){
+  const el=document.getElementById('v-cm');if(!el)return;
+  const ms=(MINERALS.minerals)||[];
+  if(!ms.length){el.innerHTML='<div class="note-box">Critical-minerals data loading…</div>';return;}
+  const meta=MINERALS._meta||{};
+  const counts={none:0,'enduse-only':0,partial:0,covered:0};
+  ms.forEach(m=>counts[m.gap]++);
+  const shown=ms.filter(m=>CM_FILTER==='all'?true:CM_FILTER==='gaps'?(m.gap==='none'||m.gap==='enduse-only')
+    :CM_FILTER==='china'?!!m.china:m.gap===CM_FILTER);
+
+  const pill=(id,label)=>`<span class="pill${CM_FILTER===id?' on':''}" onclick="setCmFilter('${id}')">${label}</span>`;
+
+  const badge=(t,cls)=>`<span class="cm-tag ${cls}">${esc(t)}</span>`;
+  const row=m=>{
+    const g=CM_GAP[m.gap];
+    const lists=[
+      m.lists.includes('us')?badge('US','us'):'',
+      m.lists.includes('eu-strategic')?badge('EU strategic','eus'):(m.lists.includes('eu')?badge('EU','eu'):''),
+      m.china?badge('China-restricted','cn'):''
+    ].join('');
+    const exp=m.exposure.length
+      ? m.exposure.map(x=>`<span class="cm-holding cm-${x.kind}" onclick="openCompanyDrawer('${esc(x.tk)}')" title="${esc(x.name)} — ${esc(CM_KIND[x.kind])}">${esc(x.tk)}<i>${x.kind[0]}</i></span>`).join('')
+      : `<span class="cm-nohold">no holding gives exposure</span>`;
+    return `<div class="cm-row cm-gap-${m.gap}">
+      <div class="cm-l">
+        <div class="cm-name">${esc(m.name)}</div>
+        <div class="cm-lists">${lists}</div>
+      </div>
+      <div class="cm-m">
+        <div class="cm-why">${esc(m.why)}</div>
+        ${m.china?`<div class="cm-cn">China: ${esc(m.china)}</div>`:''}
+        <div class="cm-exp">${exp}</div>
+      </div>
+      <div class="cm-r"><span class="cm-state" style="color:${g.c};border-color:${g.c}55;background:color-mix(in srgb,${g.c} 12%,transparent)">${g.l}</span></div>
+    </div>`;
+  };
+
+  const src=Object.values(meta.sources||{}).map(s=>
+    `<li><b>${esc(s.name)}</b> — ${esc(s.note)}</li>`).join('');
+
+  el.innerHTML=`
+    <div class="note-box"><b>What this tab is for:</b> showing the officially designated minerals this universe does <b>not</b> cover. Sorted by gap priority — most designated and least held first — not alphabetically. A mineral with no holding is the finding, not a blank.</div>
+    <div class="cm-stats">
+      <div class="cm-stat"><div class="cm-stat-v" style="color:var(--bad)">${counts.none}</div><div class="cm-stat-l">no exposure</div></div>
+      <div class="cm-stat"><div class="cm-stat-v" style="color:var(--warn)">${counts.partial+counts['enduse-only']}</div><div class="cm-stat-l">partial / end-use only</div></div>
+      <div class="cm-stat"><div class="cm-stat-v" style="color:var(--good)">${counts.covered}</div><div class="cm-stat-l">covered by a producer</div></div>
+      <div class="cm-stat"><div class="cm-stat-v">${ms.length}</div><div class="cm-stat-l">minerals tracked</div></div>
+    </div>
+    <div class="pills">${pill('all','All')}${pill('gaps','Gaps only')}${pill('china','China-restricted')}${pill('covered','Covered')}</div>
+    <div class="cm-list">${shown.map(row).join('')||'<div class="note-box">Nothing matches that filter.</div>'}</div>
+    <div class="sect-h">How exposure is graded</div>
+    <div class="note-box">${Object.entries(CM_KIND).map(([k,v])=>`<b>${k}</b> — ${v}`).join('<br>')}
+      <br><br>Exposure is mapped by hand, not by keyword. A copper miner is not counted as germanium exposure just because germanium is a smelter byproduct, unless that stream is material and named.</div>
+    <div class="sect-h">Sources and versions</div>
+    <div class="note-box"><ul style="margin:0;padding-left:16px;line-height:1.8">${src}</ul>
+      <div style="margin-top:6px">${esc(meta.caveat||'')}</div></div>`;
+}
+
 function buildGlossary(){
   const el=document.getElementById('v-gl');if(!el)return;
   if(!GLOSSARY.length){el.innerHTML='<div class="note-box">Glossary loading…</div>';return;}
@@ -2471,7 +2586,7 @@ async function loadData(){
   const Q='?t='+Date.now();
   const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
   try{
-    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls]=await Promise.all([
+    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls,cmin]=await Promise.all([
       fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
       fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
       fetchJ('excluded.json').catch(()=>null),
@@ -2483,6 +2598,7 @@ async function loadData(){
       fetchJ('explorer.json').catch(()=>null),
       fetchJ('reference.json').catch(()=>null),
       fetchJ('glossary.json').catch(()=>null),
+      fetchJ('critical-minerals.json').catch(()=>null),
     ]);
     COMPANIES=cos.companies||[];
     CYCLE=cyc.cycles||[];
@@ -2502,6 +2618,7 @@ async function loadData(){
     if(th){THEMES=th.themes||th||[];}
     if(expl){VC=expl.verticals||{};}
     if(gls)GLOSSARY=gls.terms||[];
+    if(cmin)MINERALS=cmin;
     if(ref){
       REF_MAP={};REF_BLOCK=new Set();
       (ref.entities||[]).forEach(e=>{
