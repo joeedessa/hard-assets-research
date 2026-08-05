@@ -622,6 +622,13 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .dw-head{display:flex;align-items:center;gap:7px;padding:10px 14px;border-bottom:.5px solid var(--color-border-tertiary);flex-shrink:0}
 .dw-back{background:none;border:none;cursor:pointer;font-size:19px;color:var(--color-text-tertiary);padding:0 4px;line-height:1}
 .dw-back:hover{color:var(--color-text-primary)}
+.dw-actions{display:flex;align-items:center;gap:2px;margin-left:auto;flex-shrink:0}
+.dw-ico{width:26px;height:26px;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;
+  border:.5px solid var(--color-border-tertiary);background:transparent;color:var(--color-text-secondary);
+  cursor:pointer;transition:all .12s;padding:0}
+.dw-ico:hover{color:var(--accent);border-color:var(--accent);background:var(--color-background-secondary)}
+.dw-ico svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
 .dw-close{background:none;border:none;cursor:pointer;font-size:14px;color:var(--color-text-tertiary);
   padding:4px 6px;border-radius:4px;margin-left:auto;flex-shrink:0}
 .dw-close:hover{background:var(--color-background-secondary);color:var(--color-text-primary)}
@@ -793,6 +800,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <div class="dw-head">
     <button class="dw-back" id="dw-back" onclick="drawerBack()" style="display:none" title="Back">‹</button>
     <div id="dw-title" style="display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;min-width:0"></div>
+    <div id="dw-actions" class="dw-actions"></div>
     <button class="dw-close" onclick="closeDrawer()" title="Close (Esc)">✕</button>
   </div>
   <div class="dw-body"><div id="dw-content"></div></div>
@@ -870,6 +878,28 @@ const AMBIGUOUS_TK=new Set(['LNG','CF']);
 let TICKER_RE=null;
 
 // ── Utils ──────────────────────────────────────────────────────────────────
+// ── Yahoo symbol mapping ───────────────────────────────────────────────────
+// MIRRORS scripts/fetch_market.py:yahoo_symbol() exactly. Keep the two in step —
+// links built from the raw ticker are dead for most non-US listings.
+const YH_SUFFIX={'.JP':'.T','.SH':'.SS','.TWO':'.TWO','.TW':'.TW','.T':'.T','.AX':'.AX',
+ '.TO':'.TO','.V':'.V','.L':'.L','.JO':'.JO','.SW':'.SW','.MI':'.MI','.PA':'.PA','.DE':'.DE',
+ '.AS':'.AS','.BR':'.BR','.OL':'.OL','.ST':'.ST','.HE':'.HE','.CO':'.CO','.HK':'.HK'};
+function yahooSymbol(tk){
+  if(!tk)return '';
+  const keys=Object.keys(YH_SUFFIX).sort((a,b)=>b.length-a.length);
+  for(const s of keys){
+    if(tk.endsWith(s)){
+      let base=tk.slice(0,-s.length);const dst=YH_SUFFIX[s];
+      if(dst==='.HK'&&/^\d+$/.test(base))base=base.padStart(4,'0');
+      return base+dst;
+    }
+  }
+  return tk;
+}
+const yhQuote=tk=>'https://finance.yahoo.com/quote/'+encodeURIComponent(yahooSymbol(tk));
+const yhChart=tk=>'https://finance.yahoo.com/chart/'+encodeURIComponent(yahooSymbol(tk));
+const yhFin  =tk=>'https://finance.yahoo.com/quote/'+encodeURIComponent(yahooSymbol(tk))+'/financials';
+
 function mk(tag,cls){const el=document.createElement(tag);if(cls)el.className=cls;return el;}
 
 // ── Horizontal scroller ────────────────────────────────────────────────────
@@ -985,7 +1015,7 @@ function openRefNote(tk,push=true){
   const e=REF_MAP[tk];if(!e)return;
   const v=vinfo(e.vertical);
   if(push)DW_STACK.push({t:'ref',k:tk});
-  const yq='https://finance.yahoo.com/quote/'+encodeURIComponent(tk);
+  const yq=yhQuote(tk);
   const head=`<span class="dw-tk">${esc(tk)}</span><span class="dw-nm">${esc(e.name||'')}</span>`
     +`<span class="badge-sm" style="background:var(--color-background-secondary);color:var(--color-text-tertiary)">not yet assessed</span>`;
   const body=`<div class="note-box">Referenced in the research but not yet in the investable universe${e.vertical?` — would sit in <b>${esc(v.n)}</b>`:''}. No conviction or froth score has been assigned.</div>
@@ -1912,7 +1942,7 @@ function openCompanyDrawer(tk,push=true){
   const v=vinfo(c.vertical);
   const fm=FROTH_META[c.froth||2];
   const themes=(c.themes||[]).map(tid=>`<span class="dw-chip" onclick="openThemeDrawer('${esc(tid)}')">${esc(tid.replace(/-/g,' '))}</span>`).join('');
-  const yq='https://finance.yahoo.com/quote/'+encodeURIComponent(c.ticker);
+  const yq=yhQuote(c.ticker);
   const peers=COMPANIES.filter(x=>x.vertical===c.vertical&&x.ticker!==c.ticker)
     .sort((a,b)=>b.conviction-a.conviction).slice(0,8)
     .map(p=>`<div class="dw-peer" onclick="openCompanyDrawer('${esc(p.ticker)}')"><span class="dw-dot" style="width:6px;height:6px;background:${convColor(p.conviction)}"></span><span class="tk">${esc(p.ticker)}</span><span class="nm">${esc(p.name)}</span><span class="ly">${esc(p.chain_layer||'')}</span></div>`).join('');
@@ -1934,10 +1964,7 @@ function openCompanyDrawer(tk,push=true){
      ${drawerNews(c.ticker)}
      ${themes?`<div class="dw-sect">Themes</div><div>${themes}</div>`:''}
      ${peers?`<div class="dw-sect">Same vertical — ${esc(v.n)}</div>${peers}`:''}
-     <div class="dw-act">
-       <a class="dw-btn" href="${yq}" target="_blank" rel="noopener">Yahoo Finance ↗</a>
-       <span class="dw-btn" onclick="closeDrawer();jumpToCompanies('${esc(c.ticker)}')">Companies tab</span>
-     </div>`);
+`);
 }
 
 function openThemeDrawer(id,push=true){
@@ -1999,6 +2026,19 @@ function drawerNews(tk){
     `<div class="dw-newsrow"><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a><span>${n.s?esc(n.s)+' · ':''}${esc(n.d||'')}</span></div>`).join('');
 }
 
+// Header action icons. Inline SVG inherits theme colour; the mapped Yahoo
+// symbol is named in the tooltip so a wrong mapping is visible, not silent.
+function drawerActions(tk){
+  const el=document.getElementById('dw-actions');if(!el)return;
+  if(!tk){el.innerHTML='';return;}
+  const y=yahooSymbol(tk);
+  const ico=(href,title,path)=>`<a class="dw-ico" href="${href}" target="_blank" rel="noopener" title="${esc(title)}"><svg viewBox="0 0 24 24">${path}</svg></a>`;
+  el.innerHTML=
+    ico(yhChart(tk),`Chart — ${y}`,'<polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/>')
+   +ico(yhFin(tk),`Quote & financials — ${y}`,'<rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="9" x2="17" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="17" x2="13" y2="17"/>')
+   +`<button class="dw-ico" title="Open ${esc(tk)} in the Companies tab" onclick="closeDrawer();jumpToCompanies('${esc(tk)}')"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg></button>`;
+}
+
 function renderDrawer(accent,head,body){
   document.getElementById('dw-accent').style.background=accent;
   document.getElementById('dw-title').innerHTML=head;
@@ -2007,6 +2047,7 @@ function renderDrawer(accent,head,body){
   document.getElementById('drawer').classList.add('on');
   document.getElementById('drawer-bk').classList.add('on');
   document.getElementById('dw-content').parentElement.scrollTop=0;
+  drawerActions(DW_STACK.length?(DW_STACK[DW_STACK.length-1].t==='th'?null:DW_STACK[DW_STACK.length-1].k):null);
 }
 
 function drawerBack(){

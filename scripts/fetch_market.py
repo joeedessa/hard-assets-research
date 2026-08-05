@@ -40,25 +40,53 @@ def load_companies():
         d = json.load(f)
     return d.get("companies", [])
 
-# Map non-standard Yahoo suffixes
+# ── Yahoo symbol mapping ───────────────────────────────────────────────────────
+# Our ticker convention is not Yahoo's. This mapping is the single source of
+# truth and is MIRRORED EXACTLY in the app JS (yahooSymbol) — links built from
+# the raw ticker are dead for most non-US listings.
+SPECIAL = {}
+
 SUFFIX_MAP = {
-    ".AX": ".AX",   # Australian Stock Exchange — fine as-is
-    ".HK": ".HK",   # Hong Kong — pad to 4 digits below
-    ".JP": ".T",    # Tokyo (some tickers in our DB use .JP; map to .T)
-    ".TW": ".TW",   # Taiwan
-    ".T":  ".T",    # Already correct
+    ".JP": ".T",     # Tokyo — we write .JP, Yahoo uses .T
+    ".SH": ".SS",    # Shanghai incl. STAR
+    ".TWO": ".TWO",  # Taipei OTC
+    ".TW": ".TW",    # Taiwan
+    ".T":  ".T",
+    ".AX": ".AX",    # ASX
+    ".TO": ".TO",    # Toronto
+    ".V":  ".V",     # TSX Venture
+    ".L":  ".L",     # LSE
+    ".JO": ".JO",    # Johannesburg
+    ".SW": ".SW",    # SIX Swiss
+    ".MI": ".MI",    # Borsa Italiana
+    ".PA": ".PA",    # Euronext Paris
+    ".DE": ".DE",    # Xetra
+    ".AS": ".AS",    # Euronext Amsterdam
+    ".BR": ".BR",    # Euronext Brussels
+    ".OL": ".OL",    # Oslo
+    ".ST": ".ST",    # Stockholm
+    ".HE": ".HE",    # Helsinki
+    ".CO": ".CO",    # Copenhagen
+    ".HK": ".HK",    # Hong Kong — numeric part padded to 4 digits below
 }
 
-def normalize_ticker(tk):
-    """Ensure Yahoo Finance can understand the ticker."""
-    for src, dst in SUFFIX_MAP.items():
+
+def yahoo_symbol(tk):
+    """Map our ticker convention to Yahoo's. Mirrored in the app as yahooSymbol()."""
+    if tk in SPECIAL:
+        return SPECIAL[tk]
+    for src in sorted(SUFFIX_MAP, key=len, reverse=True):
         if tk.endswith(src):
-            base = tk[:-len(src)]
-            # HK tickers must be 4 digits
-            if dst == ".HK" and base.isdigit() and len(base) < 4:
-                base = base.zfill(4)
+            base, dst = tk[:-len(src)], SUFFIX_MAP[src]
+            if dst == ".HK" and base.isdigit():
+                base = base.zfill(4)        # Hong Kong needs 4 digits
             return base + dst
     return tk
+
+
+# Back-compat alias — the pipeline previously called this normalize_ticker
+normalize_ticker = yahoo_symbol
+
 
 # ── Commodity & macro indices ──────────────────────────────────────────────────
 COMMODITY_INDICES = {
