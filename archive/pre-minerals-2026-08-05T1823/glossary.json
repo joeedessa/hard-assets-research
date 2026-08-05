@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "description": "Defines the vocabulary this dashboard invents, alongside the industry terms it borrows. Our own scales are subjective judgments, not analyst ratings — they are defined here so they can be argued with.",
+    "as_of": "2026-08-05"
+  },
+  "terms": [
+    {
+      "t": "Conviction (1-3)",
+      "own": true,
+      "d": "How strongly we hold the name. 1 = monitor, 2 = interested, 3 = high conviction. A subjective judgment by the author, not a rating. New names enter at 1-2; a 3 has to be argued for."
+    },
+    {
+      "t": "Froth (1-3)",
+      "own": true,
+      "d": "How far the equity has run ahead of the fundamental case. 1 = insulated (thesis not in the price), 2 = exposed, 3 = high froth (price embeds years of good news). Froth is about ENTRY PRICE, not business quality — a froth-3 name can be an excellent company."
+    },
+    {
+      "t": "Entry window",
+      "own": true,
+      "d": "An insulated (froth-1) name trading 15%+ below its 52-week high AND not up more than 60% over 12 months. The second condition matters: a 50% drawdown after a 10x run is profit-taking, not value."
+    },
+    {
+      "t": "Inning (1-9)",
+      "own": true,
+      "d": "How far through its structural cycle a vertical is. Innings 1-3 mean most of the return is still ahead but patience is required; 7-9 mean the thesis is largely priced."
+    },
+    {
+      "t": "Capex gap (0-100)",
+      "own": true,
+      "d": "How starved of investment the supply chain has been. Above 80 means a decade or more of under-investment, so supply cannot answer a price signal quickly."
+    },
+    {
+      "t": "Business cycle risk (0-100)",
+      "own": true,
+      "d": "How tightly earnings track GDP. Below 30 means demand is policy-driven or physically non-discretionary and survives a recession."
+    },
+    {
+      "t": "Stance",
+      "own": true,
+      "d": "The mechanical instruction the Act Now page derives from our own conviction and froth tags: STAGE, STOP ADDING, BUY THE DISLOCATION, THESIS AT RISK, REVIEW or MONITOR."
+    },
+    {
+      "t": "Measured vs unverified",
+      "own": true,
+      "d": "Measured signals are computed from prices and are facts. Unverified signals are parsed from headlines — plausible, but not independently confirmed. The distinction is shown on every Act Now card."
+    },
+    {
+      "t": "Derived infrastructure",
+      "own": true,
+      "d": "A sector that consumes commodities rather than producing them (electricity and grid, energy infrastructure, digital infrastructure). It has no Dimension A column because it is not a commodity chain."
+    },
+    {
+      "t": "Chokepoint",
+      "own": false,
+      "d": "A step in a supply chain where a small number of suppliers can constrain everything downstream. REE separation and uranium enrichment are the clearest examples in this universe."
+    },
+    {
+      "t": "Cost curve",
+      "own": false,
+      "d": "Producers ranked by cost per unit. Low-cost producers survive price troughs that close high-cost supply; position on the curve determines who is a forced seller."
+    },
+    {
+      "t": "Incentive price",
+      "own": false,
+      "d": "The price required to justify building new supply. Spot below the incentive price means the deficit persists regardless of demand."
+    },
+    {
+      "t": "Contango / backwardation",
+      "own": false,
+      "d": "Contango = forward prices above spot (comfortable supply). Backwardation = spot above forward, which signals physical scarcity now."
+    },
+    {
+      "t": "Streaming / royalty",
+      "own": false,
+      "d": "A financing structure that buys future production at a fixed cost. Zero operating cost inflation and no capex, with full exposure to the commodity price."
+    },
+    {
+      "t": "Drawdown",
+      "own": false,
+      "d": "Percentage below the 52-week high. Used here as an entry-timing input, never on its own — see entry window."
+    },
+    {
+      "t": "HALEU",
+      "own": false,
+      "d": "High-assay low-enriched uranium (5-20% U-235), required by most advanced reactor designs. Western commercial supply is close to zero."
+    },
+    {
+      "t": "HREE",
+      "own": false,
+      "d": "Heavy rare earth elements (dysprosium, terbium and others). Scarcer than light REEs and almost entirely separated in China."
+    },
+    {
+      "t": "ISR",
+      "own": false,
+      "d": "In-situ recovery: dissolving uranium underground and pumping it out. Cheaper and faster to restart than conventional mining."
+    },
+    {
+      "t": "TC/RC",
+      "own": false,
+      "d": "Treatment and refining charges paid to smelters. Falling charges signal concentrate scarcity — a leading copper indicator."
+    }
+  ]
+}

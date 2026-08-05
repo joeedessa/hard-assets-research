@@ -1,0 +1,2549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hard Assets Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+  --font-mono:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace;
+  --color-text-primary:#16181D;--color-text-secondary:#3D424D;--color-text-tertiary:#70757F;
+  --color-text-info:#3730C9;--color-background-primary:#FFFFFF;--color-background-secondary:#F5F5F2;
+  --color-background-info:#EEEEFB;--color-border-tertiary:#E7E6E1;--color-border-secondary:#D3D2CC;
+  --color-border-info:#C7C5F4;--accent:#4F46E5;--paper:#FBFAF7;
+  --shadow-1:0 1px 2px rgba(22,24,29,.05);
+  --shadow-2:0 4px 16px rgba(22,24,29,.08),0 1px 3px rgba(22,24,29,.05);
+  --shadow-3:0 12px 40px rgba(22,24,29,.16),0 2px 8px rgba(22,24,29,.08);
+  --up:#16A34A;--dn:#E24B4A;
+  --good:#16A34A;--warn:#C77A0E;--bad:#E24B4A;
+}
+:root[data-theme="dark"]{
+  --color-text-primary:#EDEDE8;--color-text-secondary:#C2C4C9;--color-text-tertiary:#8B8E96;
+  --color-text-info:#A5B4FC;--color-background-primary:#1E2025;--color-background-secondary:#26282E;
+  --color-background-info:#26284A;--color-border-tertiary:#33363D;--color-border-secondary:#454850;
+  --color-border-info:#4A4D8A;--accent:#8B85F0;--paper:#17181C;
+  --shadow-1:0 1px 2px rgba(0,0,0,.4);
+  --shadow-2:0 4px 16px rgba(0,0,0,.5),0 1px 3px rgba(0,0,0,.4);
+  --shadow-3:0 12px 40px rgba(0,0,0,.7),0 2px 8px rgba(0,0,0,.5);
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --color-text-primary:#EDEDE8;--color-text-secondary:#C2C4C9;--color-text-tertiary:#8B8E96;
+    --color-text-info:#A5B4FC;--color-background-primary:#1E2025;--color-background-secondary:#26282E;
+    --color-background-info:#26284A;--color-border-tertiary:#33363D;--color-border-secondary:#454850;
+    --color-border-info:#4A4D8A;--accent:#8B85F0;--paper:#17181C;
+    --shadow-1:0 1px 2px rgba(0,0,0,.4);
+    --shadow-2:0 4px 16px rgba(0,0,0,.5),0 1px 3px rgba(0,0,0,.4);
+    --shadow-3:0 12px 40px rgba(0,0,0,.7),0 2px 8px rgba(0,0,0,.5);
+  }
+}
+/* Semantic tag/signal colors — light defaults */
+:root{
+  --v0-t:#444441;--v1-t:#633806;--v2-t:#3C3489;--v3-t:#712B13;--v4-t:#085041;--v5-t:#72243E;
+  --v6-t:#0C447C;--v7-t:#444441;--v8-t:#27500A;--v9-t:#633806;--va-t:#27500A;
+  --tag-a:22;
+  --sig-bull:#085041;--sig-bear:#791F1F;
+  --hot-bg:#FCEBEB;--hot-t:#791F1F;--str-bg:#E1F5EE;--str-t:#085041;--mod-bg:#FAEEDA;--mod-t:#633806;
+  --risk-t:#633806;
+  --inline-bright:1;
+}
+:root[data-theme="dark"]{
+  --v0-t:#B5B4AE;--v1-t:#F0BC6E;--v2-t:#A9A2F5;--v3-t:#F09878;--v4-t:#5FD6AC;--v5-t:#E88BA6;
+  --v6-t:#7FB4E8;--v7-t:#B5B4AE;--v8-t:#9AD46A;--v9-t:#E0AC63;--va-t:#A9DB6A;
+  --tag-a:2E;
+  --sig-bull:#5FD6AC;--sig-bear:#F09090;
+  --hot-bg:#3A1D1D;--hot-t:#F0A0A0;--str-bg:#12352C;--str-t:#6FD9B2;--mod-bg:#3A2E17;--mod-t:#E8BE7A;
+  --risk-t:#E0AC63;
+  --inline-bright:1.55;
+  --up:#3DDC84;--dn:#FF7D7B;--good:#3DDC84;--warn:#F0B23C;--bad:#FF7D7B;
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --v0-t:#B5B4AE;--v1-t:#F0BC6E;--v2-t:#A9A2F5;--v3-t:#F09878;--v4-t:#5FD6AC;--v5-t:#E88BA6;
+    --v6-t:#7FB4E8;--v7-t:#B5B4AE;--v8-t:#9AD46A;--v9-t:#E0AC63;--va-t:#A9DB6A;
+    --tag-a:2E;
+    --sig-bull:#5FD6AC;--sig-bear:#F09090;
+    --hot-bg:#3A1D1D;--hot-t:#F0A0A0;--str-bg:#12352C;--str-t:#6FD9B2;--mod-bg:#3A2E17;--mod-t:#E8BE7A;
+    --risk-t:#E0AC63;
+    --inline-bright:1.55;
+  --up:#3DDC84;--dn:#FF7D7B;--good:#3DDC84;--warn:#F0B23C;--bad:#FF7D7B;
+  }
+}
+/* Brighten inline-styled colors (from JSON) in dark mode */
+.mch,.tn-name,.ctit,.fw-driver-title,.fw-trio-name{filter:brightness(var(--inline-bright))}
+*{box-sizing:border-box}
+body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-primary);
+  font-family:var(--font-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+/* Masthead */
+.mast{padding:10px 16px 6px;border-bottom:.5px solid var(--color-border-tertiary)}
+.mast-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.mast-word{font-family:var(--font-display);font-size:20px;font-weight:400;letter-spacing:-.01em;white-space:nowrap}
+.mast-word em{color:var(--accent);font-style:italic}
+.mast-sub{font-size:10px;color:var(--color-text-tertiary);letter-spacing:.06em;text-transform:uppercase;margin-top:1px}
+.mast-right{display:flex;align-items:center;gap:8px}
+.mast-date{font-size:11px;color:var(--color-text-tertiary)}
+.mast-toggle{background:none;border:.5px solid var(--color-border-secondary);border-radius:20px;
+  padding:3px 10px;font-size:11px;color:var(--color-text-secondary);cursor:pointer;font-family:var(--font-sans)}
+.mast-toggle:hover{background:var(--color-background-secondary)}
+/* Commodity bar */
+.mkt-bar{display:flex;overflow-x:auto;padding:5px 0 3px;scrollbar-width:none;margin-top:5px;gap:0}
+.mkt-bar::-webkit-scrollbar{display:none}
+.mkt-chip{display:inline-flex;align-items:center;gap:4px;padding:2px 10px;
+  border-right:.5px solid var(--color-border-tertiary);white-space:nowrap;flex-shrink:0}
+.mkt-chip:first-child{padding-left:0}.mkt-chip:last-child{border-right:none}
+.mkt-l{font-size:10px;color:var(--color-text-tertiary);letter-spacing:.03em}
+.mkt-v{font-size:11.5px;font-weight:600;font-family:var(--font-mono);color:var(--color-text-primary)}
+.mkt-c{font-size:10px;font-weight:500;font-family:var(--font-mono)}
+.mkt-sep{width:1px;height:12px;background:var(--color-border-secondary);margin:0 6px;flex-shrink:0}
+/* Alert strip */
+.al-strip{padding:5px 16px;background:var(--color-background-info);border-bottom:.5px solid var(--color-border-info);
+  display:flex;gap:6px;overflow-x:auto;align-items:center;scrollbar-width:none;min-height:31px}
+.al-strip::-webkit-scrollbar{display:none}
+.al-lbl{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--color-text-info);flex-shrink:0;white-space:nowrap}
+.al-chip{font-size:10.5px;padding:2px 7px;border-radius:20px;cursor:pointer;
+  background:var(--color-background-primary);border:.5px solid var(--color-border-info);
+  color:var(--color-text-info);white-space:nowrap;flex-shrink:0}
+.al-chip:hover{background:var(--color-background-info)}
+.al-chip.al-entry{border-color:color-mix(in srgb,var(--good) 50%,transparent);color:var(--good);background:color-mix(in srgb,var(--good) 8%,transparent)}
+.al-chip.al-move{border-color:color-mix(in srgb,var(--warn) 50%,transparent);color:var(--warn);background:color-mix(in srgb,var(--warn) 8%,transparent)}
+.al-chip.al-froth{border-color:color-mix(in srgb,var(--bad) 50%,transparent);color:var(--bad);background:color-mix(in srgb,var(--bad) 8%,transparent)}
+/* Tabs */
+.tabs{display:flex;padding:0 16px;position:sticky;top:0;z-index:60;
+  background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:.5px solid var(--color-border-tertiary);overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:7px 11px;font-size:12px;cursor:pointer;color:var(--color-text-secondary);
+  border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .12s,border-color .12s;flex-shrink:0}
+.tab:hover{color:var(--color-text-primary)}
+.tab.on{color:var(--color-text-primary);border-bottom-color:var(--accent);font-weight:600}
+.tab-sep{width:1px;background:var(--color-border-tertiary);margin:6px 2px;flex-shrink:0}
+/* Content */
+.content{padding:10px 16px 20px}
+.view{display:none}.view.on{display:block}
+/* Shared */
+.sect-h{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--color-text-tertiary);margin:14px 0 6px;padding-bottom:4px;border-bottom:.5px solid var(--color-border-tertiary)}
+.sect-h:first-child{margin-top:0}
+.pills{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.pill{padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500;cursor:pointer;
+  border:.5px solid var(--color-border-secondary);color:var(--color-text-secondary);background:transparent;transition:all .12s}
+.pill.on{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+.pill:hover:not(.on){background:var(--color-background-secondary)}
+.note-box{font-size:11.5px;color:var(--color-text-secondary);background:var(--color-background-secondary);
+  border-radius:5px;padding:8px 11px;line-height:1.55;margin-bottom:10px}
+.ticklink{color:var(--accent);cursor:pointer;font-family:var(--font-mono);font-size:.9em}
+.ticklink:hover{text-decoration:underline}
+.ticklink-ex{color:var(--color-text-tertiary);border-bottom:1px dashed var(--color-border-secondary)}
+.ticklink-ex:hover{color:var(--color-text-secondary);text-decoration:none}
+.ticklink-cand{color:var(--color-text-secondary);border-bottom:1px dotted var(--color-border-secondary)}
+.ticklink-cand:hover{color:var(--accent);text-decoration:none}
+/* Start Here */
+.sh-hero{background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);
+  border-radius:8px;padding:16px 20px;margin-bottom:12px}
+.sh-hero-h{font-family:var(--font-display);font-size:21px;font-weight:400;margin:0 0 6px;line-height:1.3}
+.sh-hero-h em{color:var(--accent);font-style:italic}
+.sh-hero-b{font-size:12.5px;color:var(--color-text-secondary);line-height:1.6;max-width:860px}
+.sh-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-bottom:12px}
+.sh-stat{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);
+  border-radius:6px;padding:10px 12px;box-shadow:var(--shadow-1)}
+.sh-stat-l{font-size:9.5px;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}
+.sh-stat-v{font-family:var(--font-mono);font-size:15px;font-weight:600}
+.sh-stat-c{font-family:var(--font-mono);font-size:10.5px;font-weight:500}
+.sh-paths{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;margin-bottom:14px}
+.sh-path{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);
+  border-radius:6px;padding:10px 13px;cursor:pointer;transition:all .12s;box-shadow:var(--shadow-1)}
+.sh-path:hover{border-color:var(--accent);box-shadow:var(--shadow-2)}
+.sh-path-icon{font-size:18px;margin-bottom:4px}
+.sh-path-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px}
+.sh-path-d{font-size:11px;color:var(--color-text-secondary);line-height:1.4}
+.gl-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:6px;margin-bottom:12px}
+.gl-item{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:8px 11px;
+  background:var(--color-background-primary)}
+.gl-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px}
+.gl-d{font-size:11px;color:var(--color-text-secondary);line-height:1.6}
+.act-route{display:flex;align-items:center;gap:12px;cursor:pointer;margin:14px 0 4px;
+  border:.5px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:8px;padding:11px 14px;
+  background:color-mix(in srgb,var(--accent) 7%,transparent);transition:all .12s}
+.act-route:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.act-route-ico{font-size:20px;flex-shrink:0}
+.act-route-t{font-size:12.5px;font-weight:600;color:var(--color-text-primary);margin-bottom:2px}
+.act-route-d{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
+.act-route-go{margin-left:auto;font-size:18px;color:var(--accent);flex-shrink:0}
+/* Act Now */
+.tab-badge{display:none;margin-left:5px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;
+  font-size:9.5px;font-weight:700;line-height:16px;text-align:center;vertical-align:middle;color:#fff}
+.tab-badge.on{display:inline-block;background:var(--warn)}
+.tab-badge.crit{background:var(--bad)}
+.act-state{border-radius:7px;padding:9px 12px;margin-bottom:10px;font-size:12px;line-height:1.6;
+  border:.5px solid var(--color-border-secondary);background:var(--color-background-secondary)}
+.act-state.act-critical{border-color:color-mix(in srgb,var(--bad) 55%,transparent);
+  background:color-mix(in srgb,var(--bad) 8%,transparent)}
+.act-state.act-elevated{border-color:color-mix(in srgb,var(--warn) 50%,transparent);
+  background:color-mix(in srgb,var(--warn) 7%,transparent)}
+.act-list{display:flex;flex-direction:column;gap:7px}
+.act-card{border:.5px solid var(--color-border-tertiary);border-left:3px solid var(--color-border-secondary);
+  border-radius:6px;padding:9px 12px;background:var(--color-background-primary)}
+.act-card.sev-critical{border-left-color:var(--bad)}
+.act-card.sev-high{border-left-color:var(--warn)}
+.act-card.sev-medium{border-left-color:var(--color-border-secondary)}
+.act-head{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:5px}
+.act-sev{font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 6px;border-radius:3px}
+.act-sev.sev-critical{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.act-sev.sev-high{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}
+.act-sev.sev-medium{background:var(--color-background-secondary);color:var(--color-text-tertiary)}
+.act-cat{font-size:10px;color:var(--color-text-tertiary);text-transform:capitalize}
+.act-prov{font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;
+  border-radius:3px;cursor:help}
+.act-prov.meas{background:color-mix(in srgb,var(--good) 14%,transparent);color:var(--good)}
+.act-prov.unver{background:var(--color-background-secondary);color:var(--color-text-tertiary);
+  border:.5px dashed var(--color-border-secondary)}
+.act-stance{margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.04em;padding:2px 8px;
+  border-radius:4px;border:.5px solid}
+.act-title{font-size:13px;font-weight:600;color:var(--color-text-primary);line-height:1.4;margin-bottom:4px}
+.act-action{font-size:11.5px;color:var(--color-text-secondary);line-height:1.6;margin-bottom:4px}
+.act-ev{font-size:10px;color:var(--color-text-tertiary);line-height:1.5}
+.act-src{color:var(--accent);margin-left:4px}
+.act-tks{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+.act-tk{font-family:var(--font-mono);font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;
+  background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);
+  color:var(--color-text-primary);cursor:pointer}
+.act-tk:hover{border-color:var(--accent);color:var(--accent)}
+.act-clear{text-align:center;padding:34px 20px;border:.5px dashed var(--color-border-secondary);
+  border-radius:8px;background:var(--color-background-secondary)}
+.act-clear-icon{width:42px;height:42px;margin:0 auto 10px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:20px;color:var(--good);
+  background:color-mix(in srgb,var(--good) 14%,transparent)}
+.act-clear-h{font-family:var(--font-display);font-size:18px;margin-bottom:6px;color:var(--color-text-primary)}
+.act-clear-b{font-size:12px;color:var(--color-text-secondary);line-height:1.65;max-width:560px;margin:0 auto}
+.act-checks{margin-top:10px;border:.5px solid var(--color-border-tertiary);border-radius:6px;
+  padding:8px 11px;background:var(--color-background-primary)}
+.act-checks-h{font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--color-text-tertiary);margin-bottom:5px}
+.act-check{font-size:10.5px;color:var(--color-text-secondary);line-height:1.75;display:flex;gap:6px}
+.act-tick{color:var(--good);flex-shrink:0}
+/* Start Here — framework content */
+.fw-macro{border-radius:7px;padding:10px 13px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);margin-bottom:8px}
+.fw-macro-title{font-size:15px;font-weight:600;color:var(--color-text-primary);margin-bottom:5px}
+.fw-macro-body{font-size:11.5px;color:var(--color-text-secondary);line-height:1.7}
+.fw-drivers{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:5px;margin-bottom:8px}
+.fw-driver{border-radius:6px;padding:9px 11px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.fw-driver-icon{font-size:20px;margin-bottom:5px}
+.fw-driver-title{font-size:12.5px;font-weight:600;margin-bottom:3px}
+.fw-driver-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.55}
+.fw-insight{border-radius:7px;padding:12px 14px;border:.5px solid #534AB755;background:#534AB708;margin-bottom:8px;border-left:4px solid var(--accent)}
+.fw-insight-label{font-size:9.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
+.fw-insight-title{font-size:14px;font-weight:600;color:var(--color-text-primary);margin-bottom:6px;line-height:1.35}
+.fw-insight-body{font-size:11px;color:var(--color-text-secondary);line-height:1.6}
+.fw-trio{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:8px}
+.fw-trio-item{border-radius:5px;padding:8px 10px;text-align:center}
+.fw-trio-name{font-size:11.5px;font-weight:600;margin-bottom:3px}
+.fw-trio-stats{font-size:10px;color:var(--color-text-secondary);line-height:1.6}
+.fw-section-hdr{font-size:9.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-tertiary);margin:10px 0 5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)}
+.fw-models{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:5px;margin-bottom:8px}
+.fw-model{border-radius:6px;padding:9px 11px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary);cursor:pointer}
+.fw-model:hover,.fw-model.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.fw-model-top{display:flex;align-items:flex-start;gap:6px;pointer-events:none}
+.fw-model-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.fw-model-name{font-size:13px;font-weight:600;color:var(--color-text-primary)}
+.fw-model-tagline{font-size:10px;color:var(--color-text-tertiary);margin-top:1px}
+.fw-model-ch{font-size:9px;color:var(--color-text-tertiary);transition:transform .12s;margin-left:auto;flex-shrink:0;margin-top:4px}
+.fw-model.ex .fw-model-ch{transform:rotate(180deg)}
+.fw-model-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.6;margin-top:6px;padding-top:6px;border-top:.5px solid var(--color-border-tertiary);display:none}
+.fw-model.ex .fw-model-body{display:block}
+.fw-signals{width:100%;border-collapse:collapse;font-size:10.5px;margin-bottom:8px}
+.fw-signals th{font-size:10px;font-weight:500;color:var(--color-text-tertiary);text-align:left;padding:4px 7px;border-bottom:.5px solid var(--color-border-secondary);white-space:nowrap;background:var(--color-background-secondary)}
+.fw-signals td{padding:5px 7px;border-bottom:.5px solid var(--color-border-tertiary);vertical-align:top;line-height:1.45}
+.fw-signals tr:last-child td{border-bottom:none}
+.fw-signals tr:hover td{background:var(--color-background-secondary)}
+.sig-bull{color:var(--sig-bull)}
+.sig-bear{color:var(--sig-bear)}
+.sig-chip{font-size:10px;font-weight:600;padding:2px 7px;border-radius:3px;filter:brightness(var(--inline-bright))}
+.fw-path{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:5px;margin-bottom:8px}
+.fw-step{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:9px 11px;background:var(--color-background-primary);cursor:pointer;transition:all .12s}
+.fw-step:hover{border-color:var(--color-border-info);background:var(--color-background-info)}
+.fw-step-num{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff;margin-bottom:5px;flex-shrink:0}
+.fw-step-name{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.fw-step-desc{font-size:10px;color:var(--color-text-tertiary);line-height:1.45}
+/* Matrix — grid mode (from matrix.json) */
+.mx-grid{overflow-x:auto}
+.mx-g{display:grid;gap:2px}
+.mch{border-radius:3px 3px 0 0;padding:3px 2px;text-align:center;font-size:10px;font-weight:500;line-height:1.2;pointer-events:none}
+.mch-click{pointer-events:auto;cursor:pointer;transition:filter .12s}
+.mch-click:hover{filter:brightness(var(--inline-bright)) saturate(1.4)}
+.mrl{font-size:10px;font-weight:500;color:var(--color-text-tertiary);display:flex;align-items:center;padding-right:3px;line-height:1.2}
+.mc{border-radius:2px;padding:3px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);cursor:pointer;min-height:28px;transition:all .1s;position:relative}
+.mc:hover{background:var(--color-background-primary);border-color:var(--color-border-secondary)}
+.mc.hi{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,transparent);cursor:pointer}
+.mc.hi:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
+.mc *{pointer-events:none}
+.ct{display:inline-block;font-size:9.5px;font-weight:500;padding:1px 2px;border-radius:2px;margin:1px 0;line-height:1.3;white-space:nowrap}
+.v0{background:#5F5E5A22;background:rgb(95 94 90/.16);color:var(--v0-t)}
+.v1{background:rgb(239 159 39/.16);color:var(--v1-t)}
+.v2{background:rgb(83 74 183/.18);color:var(--v2-t)}
+.v3{background:rgb(216 90 48/.16);color:var(--v3-t)}
+.v4{background:rgb(29 158 117/.16);color:var(--v4-t)}
+.v5{background:rgb(153 53 86/.18);color:var(--v5-t)}
+.v6{background:rgb(24 95 165/.18);color:var(--v6-t)}
+.v7{background:rgb(136 135 128/.16);color:var(--v7-t)}
+.v8{background:rgb(59 109 17/.18);color:var(--v8-t)}
+.v9{background:rgb(133 79 11/.18);color:var(--v9-t)}
+.va{background:rgb(99 153 34/.18);color:var(--va-t)}
+.mx-det{margin-top:5px;border-radius:5px;padding:7px 9px;border:.5px solid var(--color-border-secondary);background:var(--color-background-primary);font-size:11.5px;line-height:1.5;color:var(--color-text-secondary);display:none}
+.mx-det.on{display:block}
+.mx-det-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.sf{font-size:9.5px;font-weight:500;padding:1px 3px;border-radius:2px;display:inline-block;margin-right:2px}
+.fch{background:var(--hot-bg);color:var(--hot-t)}.fgp{background:var(--mod-bg);color:var(--mod-t)}
+.fgeo{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad);border:.5px solid color-mix(in srgb,var(--bad) 40%,transparent)}
+/* Dim B band */
+.bband{border-radius:4px;margin:6px 0 0;border:.5px solid var(--color-border-info);background:var(--color-background-info);overflow-x:auto}
+.binner{padding:4px 6px}
+.blbl{font-size:9.5px;font-weight:500;color:var(--color-text-info);letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px}
+.brow{display:grid;gap:2px;margin-bottom:2px}
+.brhdr{font-size:9.5px;font-weight:500;color:var(--color-text-info);display:flex;align-items:center;padding-right:4px;min-width:70px}
+.bcell{border-radius:2px;padding:2px 3px;font-size:9.5px;color:var(--color-text-info);line-height:1.3;background:#E6F1FB33;border:.5px solid var(--color-border-info)}
+/* Dim C band */
+.cband{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:4px}
+.cc{border-radius:5px;padding:6px 8px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.ctit{font-size:11px;font-weight:500;margin-bottom:3px}
+.cc-link{cursor:pointer;transition:border-color .12s,box-shadow .12s}
+.cc-link:hover{border-color:var(--accent)!important;box-shadow:var(--shadow-2)}
+.cc-arrow{font-size:9px;opacity:.65}
+.crow{font-size:9.5px;color:var(--color-text-secondary);padding:2px 0;border-bottom:.5px solid var(--color-border-tertiary);line-height:1.4}
+.crow:last-child{border-bottom:none}
+.csub{font-size:9px;color:var(--color-text-tertiary);line-height:1.3}
+.integ{border-radius:4px;padding:5px 7px;border:.5px solid #EF9F2744;background:#EF9F2708;margin-top:4px;font-size:10px;color:var(--color-text-secondary);line-height:1.5}
+/* Horizontal scroller — arrows + visible track for wide content */
+[data-hscroll]{overflow-x:auto}   /* works even if the JS enhancement never runs */
+.hs-wrap{position:relative}
+.hs-scroll{overflow-x:auto;scrollbar-width:thin;
+  scrollbar-color:var(--color-border-secondary) transparent}
+.hs-scroll::-webkit-scrollbar{height:10px}
+.hs-scroll::-webkit-scrollbar-track{background:var(--color-background-secondary);border-radius:6px}
+.hs-scroll::-webkit-scrollbar-thumb{background:var(--color-border-secondary);border-radius:6px;
+  border:2px solid var(--color-background-secondary)}
+.hs-scroll::-webkit-scrollbar-thumb:hover{background:var(--color-text-tertiary)}
+.hs-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:25;
+  width:30px;height:30px;border-radius:50%;padding:0;
+  border:.5px solid var(--color-border-secondary);
+  background:var(--color-background-primary);color:var(--color-text-primary);
+  box-shadow:var(--shadow-2);cursor:pointer;font-size:17px;line-height:1;
+  display:flex;align-items:center;justify-content:center;
+  opacity:.94;transition:opacity .12s,background .12s,transform .12s}
+.hs-btn:hover{opacity:1;background:var(--color-background-secondary)}
+.hs-btn:active{transform:translateY(-50%) scale(.92)}
+.hs-l{left:3px}.hs-r{right:3px}
+.hs-btn.hs-hide{display:none}
+.hs-wrap:not(.hs-on) .hs-btn{display:none}
+/* Vertical Explorer — chain step timeline (from explorer.json) */
+.vgrp{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-tertiary);padding:6px 0 3px;border-top:.5px solid var(--color-border-tertiary)}
+.vgrp:first-child{border-top:none;padding-top:0}
+.vnote{font-size:11px;color:var(--color-text-secondary);background:var(--color-background-secondary);border-radius:5px;padding:7px 9px;margin-bottom:7px;line-height:1.55}
+.srow{display:grid;grid-template-columns:18px 1fr;gap:4px;align-items:start}
+.snd{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;color:#fff;flex-shrink:0}
+.sln{width:2px;min-height:10px;flex:1;opacity:.22;margin:1px auto}
+.sc{margin-bottom:4px;border-radius:5px;padding:6px 8px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary);cursor:pointer;transition:all .12s}
+.sc:hover,.sc.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+/* Brief highlight when arriving from a matrix cell */
+.sc-flash{border-color:var(--accent)!important;
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 30%,transparent);
+  animation:scflash 2s ease-out}
+@keyframes scflash{0%{box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 55%,transparent)}
+  100%{box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 0%,transparent)}}
+.sct{font-size:12px;font-weight:600;color:var(--color-text-primary);display:flex;justify-content:space-between;align-items:center;gap:6px}
+.scr{font-size:10.5px;color:var(--color-text-secondary);margin:2px 0;line-height:1.4}
+.scd{font-size:10.5px;color:var(--color-text-secondary);line-height:1.6;padding-top:5px;border-top:.5px solid var(--color-border-tertiary);display:none;margin-top:4px}
+.sc.ex .scd{display:block}
+.sch{font-size:9px;color:var(--color-text-tertiary);transition:transform .12s;pointer-events:none;flex-shrink:0}
+.sc.ex .sch{transform:rotate(180deg)}
+.sfl{font-size:9.5px;font-weight:500;padding:1px 4px;border-radius:3px;display:inline-block;margin-right:3px;margin-top:2px}
+.fc{background:var(--hot-bg);color:var(--hot-t)}
+.fg{background:var(--mod-bg);color:var(--mod-t)}
+.fge{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad);border:.5px solid color-mix(in srgb,var(--bad) 40%,transparent)}
+.fx{background:var(--str-bg);color:var(--str-t);cursor:pointer!important;pointer-events:all!important}
+.fx:hover{background:var(--good);color:#fff}
+.fn{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+/* Chain Explainers */
+.exg{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:5px}
+.exc{border:.5px solid var(--color-border-tertiary);border-radius:7px;padding:8px 10px;background:var(--color-background-primary);cursor:pointer}
+.exc:hover,.exc.on{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.exh{display:flex;align-items:center;gap:5px;margin-bottom:2px;pointer-events:none}
+.exd{width:7px;height:7px;border-radius:50%}
+.exn{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.exch{font-size:9px;color:var(--color-text-tertiary);margin-left:auto;transition:transform .12s}
+.exc.on .exch{transform:rotate(180deg)}
+.exhk{font-size:11px;color:var(--color-text-secondary);line-height:1.4;font-style:italic;margin-bottom:3px;pointer-events:none}
+.exar{font-size:10.5px;color:var(--color-text-tertiary);margin-bottom:3px;line-height:1.4;pointer-events:none}
+.exbd{font-size:11px;color:var(--color-text-secondary);line-height:1.6;display:none;pointer-events:none}
+.exc.on .exbd{display:block}
+.vr{display:flex;align-items:center;gap:4px;margin-top:2px;font-size:10.5px}
+.vrl{color:var(--color-text-tertiary);min-width:90px}
+.vrb{flex:1;height:4px;border-radius:2px;background:var(--color-background-secondary)}
+.vrf{height:100%;border-radius:2px}
+.vrn{color:var(--color-text-tertiary);min-width:75px;text-align:right;font-size:10px}
+/* Picks & Shovels */
+.sec{margin-bottom:12px}
+.sec-head{display:flex;align-items:center;gap:7px;margin-bottom:5px;padding-bottom:3px;border-bottom:.5px solid var(--color-border-tertiary)}
+.sec-num{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:#fff;flex-shrink:0}
+.sec-title{font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.sec-sub{font-size:10.5px;color:var(--color-text-tertiary);margin-left:auto}
+.why{border-radius:0 5px 5px 0;border-left:3px solid;padding:5px 8px;margin-bottom:6px;font-size:10.5px;color:var(--color-text-secondary);line-height:1.5}
+.ps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:4px}
+.psc{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:6px 8px;background:var(--color-background-primary)}
+.psc.hi{border-left:3px solid #E24B4A;border-radius:0 5px 5px 0;background:#FCEBEB06}
+.psn{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:1px;display:flex;align-items:center;gap:4px}
+.psr{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4;margin-bottom:3px}
+.pst{font-size:10px;color:var(--color-text-tertiary);line-height:1.4}
+.srv{font-size:9.5px;font-weight:500;padding:1px 4px;border-radius:2px;background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary);cursor:default;display:inline-block;margin:1px}
+.badge{font-size:9.5px;font-weight:500;padding:1px 5px;border-radius:3px}
+.b-hot{background:var(--hot-bg);color:var(--hot-t)}
+.b-str{background:var(--str-bg);color:var(--str-t)}
+.b-mod{background:var(--mod-bg);color:var(--mod-t)}
+/* Electricity & Grid */
+.el-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:4px}
+.elc{border:.5px solid var(--color-border-tertiary);border-radius:5px;padding:6px 8px;background:var(--color-background-primary);cursor:pointer}
+.elc.hi{border-top:3px solid #E24B4A}
+.elc:hover,.elc.ex{border-color:var(--color-border-secondary);background:var(--color-background-secondary)}
+.elh{display:flex;align-items:center;gap:4px;margin-bottom:2px}
+.eld{width:7px;height:7px;border-radius:50%;pointer-events:none}
+.eln{font-size:12px;font-weight:500;color:var(--color-text-primary);pointer-events:none}
+.elch{font-size:9px;color:var(--color-text-tertiary);margin-left:auto;transition:transform .12s;pointer-events:none}
+.elc.ex .elch{transform:rotate(180deg)}
+.elb{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4;pointer-events:none}
+.elt{font-size:10px;color:var(--color-text-tertiary);margin-top:2px;pointer-events:none}
+.eld2{font-size:10.5px;color:var(--color-text-secondary);line-height:1.5;margin-top:4px;padding-top:4px;border-top:.5px solid var(--color-border-tertiary);display:none;pointer-events:none}
+.elc.ex .eld2{display:block}
+/* Demand Themes */
+.th-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:7px}
+.tn{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:6px 8px;cursor:pointer;transition:all .12s;background:var(--color-background-primary)}
+.tn.on{color:#fff;border-color:transparent}
+.tn.on .tn-name{color:#fff!important;filter:none}
+.tn.on .tn-sub{color:#fff;opacity:.9}
+.tn-name{font-size:12px;font-weight:500;line-height:1.3}
+.tn-sub{font-size:10px;opacity:.85;line-height:1.3;margin-top:1px}
+.th-detail{display:none}.th-detail.on{display:block}
+.th-2col{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.th-chain{display:flex;flex-direction:column;gap:3px}
+.tc-item{display:flex;align-items:flex-start;gap:5px;padding:4px 6px;border-radius:4px;background:var(--color-background-secondary)}
+.tc-num{width:14px;height:14px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8.5px;font-weight:500;color:#fff;flex-shrink:0;margin-top:1px}
+.tc-lbl{font-size:11px;font-weight:500;color:var(--color-text-primary)}
+.tc-txt{font-size:10.5px;color:var(--color-text-tertiary);line-height:1.4;margin-top:1px}
+.th-right{display:flex;flex-direction:column;gap:6px}
+.th-box{background:var(--color-background-secondary);border-radius:5px;padding:6px 9px}
+.th-box-title{font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px}
+.th-box-body{font-size:11px;color:var(--color-text-secondary);line-height:1.5}
+.th-held{display:flex;flex-direction:column;gap:1px;margin-top:2px}
+.th-held-row{display:flex;align-items:center;gap:6px;padding:3px 4px;border-radius:4px;cursor:pointer;font-size:10.5px}
+.th-held-row:hover{background:var(--color-background-primary)}
+.th-held-tk{font-family:var(--font-mono);font-weight:700;min-width:52px;color:var(--color-text-primary)}
+.th-held-nm{color:var(--color-text-secondary);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.th-held-px{font-family:var(--font-mono);font-size:10px;min-width:46px;text-align:right}
+.risk-box{border-radius:5px;padding:5px 8px;border-left:3px solid #EF9F27;background:#EF9F2708}
+.risk-title{font-size:10px;font-weight:500;color:var(--risk-t);margin-bottom:2px}
+.risk-body{font-size:10.5px;color:var(--color-text-secondary);line-height:1.4}
+.pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.pos-card{border:.5px solid var(--color-border-tertiary);border-radius:4px;padding:4px 6px;background:var(--color-background-primary)}
+.pos-tier{font-size:9.5px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary);margin-bottom:1px}
+.pos-items{font-size:10.5px;color:var(--color-text-secondary);line-height:1.5}
+.vbar{display:flex;align-items:center;gap:4px;margin-bottom:3px}
+.vbar-lbl{font-size:10.5px;color:var(--color-text-tertiary);min-width:90px}
+.vbar-b{flex:1;height:4px;border-radius:2px;background:var(--color-background-primary)}
+.vbar-f{height:100%;border-radius:2px}
+/* Vertical Explorer */
+.vx-layout{display:grid;grid-template-columns:100px 1fr;gap:10px}
+.vx-list{display:flex;flex-direction:column;gap:2px}
+.vx-btn{padding:5px 7px;border-radius:5px;font-size:11px;cursor:pointer;
+  border:.5px solid var(--color-border-tertiary);color:var(--color-text-secondary);
+  background:transparent;text-align:left;width:100%;line-height:1.3;transition:all .12s}
+.vx-btn.on{color:#fff;border-color:transparent;font-weight:500}
+.vx-btn-derived{border-style:dashed;color:var(--color-text-tertiary);font-size:10.5px}
+.vx-btn-derived:hover{color:var(--accent);border-color:var(--accent)}
+.vx-btn:not(.on):hover{background:var(--color-background-secondary)}
+.vx-detail{max-height:820px;overflow-y:auto}
+.vx-head{margin-bottom:8px;padding-bottom:8px;border-bottom:.5px solid var(--color-border-tertiary)}
+.vx-title{font-family:var(--font-display);font-size:18px;font-weight:400;color:var(--color-text-primary);margin:0 0 4px}
+.vx-plain{font-size:12px;color:var(--color-text-secondary);line-height:1.55}
+.vx-flow{display:flex;gap:0;overflow-x:auto;padding-bottom:8px;margin-bottom:8px;scrollbar-width:none}
+.vx-flow::-webkit-scrollbar{display:none}
+.vx-stage{flex:0 0 auto;width:128px;border-right:.5px solid var(--color-border-tertiary);padding-right:8px;margin-right:8px}
+.vx-stage:last-child{border-right:none;margin-right:0}
+.vx-stage-n{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-tertiary);margin-bottom:4px}
+.vx-co{padding:4px 6px;border-radius:4px;border:.5px solid var(--color-border-tertiary);
+  background:var(--color-background-primary);margin-bottom:3px;cursor:pointer;transition:all .1s}
+.vx-co:hover{border-color:var(--accent);background:var(--color-background-info)}
+.vx-co-tk{font-size:10px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}
+.vx-co-nm{font-size:9.5px;color:var(--color-text-secondary);line-height:1.2}
+/* Froth Monitor */
+.fm-intro{font-size:12px;color:var(--color-text-secondary);line-height:1.55;
+  background:var(--color-background-secondary);padding:8px 11px;border-radius:5px;margin-bottom:10px}
+.fm-sigs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.fm-col-head{display:flex;align-items:center;gap:6px;padding:7px 9px;border-radius:5px 5px 0 0;margin-bottom:0}
+.fm-col-title{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.fm-cards{display:flex;flex-direction:column;gap:5px;padding:6px;
+  border-radius:0 0 5px 5px;background:var(--color-background-secondary);min-height:50px}
+.fm-card{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);
+  border-radius:5px;padding:7px 9px;cursor:pointer;transition:all .1s;box-shadow:var(--shadow-1)}
+.fm-card:hover{box-shadow:var(--shadow-2)}
+.fm-card-top{display:flex;align-items:center;gap:5px;margin-bottom:3px}
+.fm-pulse{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.fm-pulse.ins{background:var(--good);animation:fmpg 2.2s infinite}
+.fm-pulse.exp{background:var(--warn);animation:fmpy 2.2s infinite}
+.fm-pulse.hf{background:var(--bad);animation:fmp 2.2s infinite}
+@keyframes fmp{0%{box-shadow:0 0 0 0 rgba(226,75,74,.45)}70%{box-shadow:0 0 0 7px rgba(226,75,74,0)}100%{box-shadow:0 0 0 0 rgba(226,75,74,0)}}
+@keyframes fmpg{0%{box-shadow:0 0 0 0 rgba(22,163,74,.45)}70%{box-shadow:0 0 0 7px rgba(22,163,74,0)}100%{box-shadow:0 0 0 0 rgba(22,163,74,0)}}
+@keyframes fmpy{0%{box-shadow:0 0 0 0 rgba(239,159,39,.45)}70%{box-shadow:0 0 0 7px rgba(239,159,39,0)}100%{box-shadow:0 0 0 0 rgba(239,159,39,0)}}
+.fm-tk{font-size:11px;font-weight:700;font-family:var(--font-mono);color:var(--color-text-primary)}
+.fm-nm{font-size:9.5px;color:var(--color-text-tertiary);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fm-dd{font-size:9px;font-family:var(--font-mono);padding:1px 5px;border-radius:3px;font-weight:600;flex-shrink:0}
+.fm-note{font-size:10px;color:var(--color-text-secondary);line-height:1.4;
+  border-top:.5px solid var(--color-border-tertiary);padding-top:3px;margin-top:2px}
+/* Entry Windows */
+.ew-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:8px;margin-bottom:14px}
+.ew-card{background:var(--color-background-primary);border:.5px solid #16A34A44;border-radius:6px;
+  padding:10px 12px;cursor:pointer;transition:all .1s;box-shadow:var(--shadow-1)}
+.ew-card:hover{box-shadow:var(--shadow-2);border-color:var(--good)}
+.ew-top{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.ew-tk{font-size:13px;font-weight:700;font-family:var(--font-mono)}
+.ew-nm{font-size:10.5px;color:var(--color-text-tertiary);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ew-dd{font-size:10px;font-family:var(--font-mono);font-weight:600;padding:2px 6px;border-radius:3px;
+  background:color-mix(in srgb,var(--good) 12%,transparent);color:var(--good);flex-shrink:0}
+.ew-row{font-size:10.5px;color:var(--color-text-secondary);padding:2px 0;
+  border-bottom:.5px solid var(--color-border-tertiary);line-height:1.4}
+.ew-row:last-child{border-bottom:none}
+.ew-row b{color:var(--color-text-primary);font-weight:600}
+.ew-empty{padding:20px;text-align:center;color:var(--color-text-tertiary);font-size:12px;
+  background:var(--color-background-secondary);border-radius:6px}
+/* Portfolio clusters */
+.ps-insight{background:var(--color-background-info);border:.5px solid var(--color-border-info);
+  border-radius:6px;padding:11px 14px;margin-bottom:12px}
+.ps-insight-t{font-size:12px;font-weight:700;color:var(--color-text-info);margin-bottom:4px}
+.ps-insight-b{font-size:12px;color:var(--color-text-secondary);line-height:1.5}
+.ps-clusters{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.ps-cluster{border-radius:6px;border:.5px solid var(--color-border-tertiary);overflow:hidden}
+.ps-cluster-h{display:flex;align-items:center;gap:8px;padding:8px 12px;font-size:11.5px;font-weight:700}
+.ps-cluster-b{padding:8px 12px;background:var(--color-background-secondary);font-size:11.5px;
+  color:var(--color-text-secondary);line-height:1.65}
+.ps-cluster-b li{margin-bottom:2px}
+/* Scoreboard */
+.sb-wrap{overflow-x:auto;margin-bottom:14px}
+.sb-table{border-collapse:collapse;width:100%;font-size:12px;min-width:400px}
+.sb-table th{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--color-text-tertiary);padding:5px 10px;border-bottom:1.5px solid var(--color-border-secondary);text-align:right}
+.sb-table th:first-child{text-align:left}
+.sb-table td{padding:6px 10px;border-bottom:.5px solid var(--color-border-tertiary);text-align:right;font-family:var(--font-mono);font-size:11.5px}
+.sb-table td:first-child{text-align:left;font-family:var(--font-sans);font-weight:600;font-size:12px}
+.sb-table tr.basket-row td{background:var(--color-background-info);font-weight:700}
+.sb-table tr:last-child td{border-bottom:none}
+.sb-lead{border-radius:7px;padding:9px 12px;margin-bottom:10px;font-size:11.5px;line-height:1.65;
+  border-left:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,transparent);
+  color:var(--color-text-secondary)}
+.sb-track{border:.5px solid var(--color-border-tertiary);border-radius:7px;padding:9px 12px;
+  margin-bottom:8px;background:var(--color-background-primary)}
+.sb-track-h{font-size:12.5px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px;
+  display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.sb-incep{font-size:10px;font-weight:500;color:var(--color-text-tertiary);font-family:var(--font-mono)}
+.sb-note{font-size:10.5px;color:var(--color-text-tertiary);line-height:1.55;margin-bottom:6px}
+.sb-thin{font-size:10.5px;color:var(--warn);line-height:1.55;
+  background:color-mix(in srgb,var(--warn) 8%,transparent);border-radius:4px;padding:5px 8px;margin-bottom:6px}
+.sb-bench td{color:var(--color-text-tertiary)}
+.sb-retro{border:.5px dashed var(--color-border-secondary);border-radius:7px;padding:8px 12px;
+  background:var(--color-background-secondary);margin-top:8px}
+.sb-retro summary{cursor:pointer;font-size:11.5px;font-weight:600;color:var(--color-text-tertiary)}
+.sb-pos{color:var(--good)}.sb-neg{color:var(--bad)}.sb-neu{color:var(--color-text-tertiary)}
+/* Policy */
+.pol-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px;margin-bottom:12px}
+.pol-card{border-radius:6px;border:.5px solid var(--color-border-secondary);
+  background:var(--color-background-primary);padding:12px 14px;box-shadow:var(--shadow-1)}
+.pol-card-h{display:flex;align-items:flex-start;gap:7px;margin-bottom:5px}
+.pol-icon{font-size:15px;flex-shrink:0;margin-top:1px}
+.pol-title{font-size:12.5px;font-weight:700;color:var(--color-text-primary);line-height:1.3}
+.pol-date{font-size:10px;color:var(--color-text-tertiary);margin-top:1px}
+.pol-status{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  padding:1px 6px;border-radius:3px;display:inline-block;margin-bottom:5px}
+.pol-status.active{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad)}
+.pol-status.investigating{background:color-mix(in srgb,var(--warn) 14%,transparent);color:var(--warn)}
+.pol-body{font-size:11px;color:var(--color-text-secondary);line-height:1.5;margin-bottom:5px}
+.pol-watch{font-size:10px;color:var(--color-text-tertiary);border-top:.5px solid var(--color-border-tertiary);
+  padding-top:5px;line-height:1.4}
+.pol-watch b{color:var(--color-text-secondary)}
+.pol-tks{display:flex;gap:4px;flex-wrap:wrap;margin-top:5px}
+.pol-tk{font-size:9.5px;font-weight:700;font-family:var(--font-mono);padding:1px 5px;
+  border-radius:3px;background:var(--color-background-info);color:var(--color-text-info);
+  border:.5px solid var(--color-border-info);cursor:pointer}
+.pol-tk:hover{background:var(--accent);color:#fff;border-color:transparent}
+.pol-cliff{font-size:9.5px;background:color-mix(in srgb,var(--bad) 10%,transparent);color:var(--bad);border:.5px solid color-mix(in srgb,var(--bad) 30%,transparent);
+  border-radius:3px;padding:1px 5px;display:inline-block;margin-left:4px}
+.pol-levers{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:8px;margin-bottom:12px}
+.lev-card{border-radius:5px;border:.5px solid var(--color-border-tertiary);
+  background:var(--color-background-secondary);padding:10px 12px}
+.lev-title{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:2px}
+.lev-date{font-size:10px;color:var(--color-text-tertiary);font-family:var(--font-mono);margin-bottom:4px}
+.lev-body{font-size:11px;color:var(--color-text-secondary);line-height:1.45;margin-bottom:5px}
+.lev-bb{font-size:10.5px;line-height:1.4;padding:4px 7px;border-radius:3px;
+  background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary)}
+.pol-prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:8px;margin-bottom:12px}
+.prog-card{border-radius:5px;border:.5px solid var(--color-border-tertiary);
+  background:var(--color-background-primary);padding:10px 12px}
+.prog-h{font-size:12px;font-weight:700;color:var(--color-text-primary);margin-bottom:1px}
+.prog-agency{font-size:10px;color:var(--color-text-tertiary);font-style:italic;margin-bottom:3px}
+.prog-budget{font-size:11px;font-weight:600;color:var(--accent);margin-bottom:3px}
+.prog-body{font-size:11px;color:var(--color-text-secondary);line-height:1.45}
+/* Geopolitical */
+.geo-wrap{overflow-x:auto;margin-bottom:12px}
+.geo-table{border-collapse:collapse;font-size:11px;min-width:520px}
+.geo-th{padding:5px 8px;font-size:9px;font-weight:700;color:var(--color-text-tertiary);
+  text-transform:uppercase;letter-spacing:.05em;border-bottom:1.5px solid var(--color-border-secondary);text-align:center}
+.geo-th:first-child{text-align:left}
+.geo-td{padding:5px 8px;border-bottom:.5px solid var(--color-border-tertiary);text-align:center;cursor:pointer}
+.geo-td:first-child{text-align:left;font-weight:600;font-size:11.5px;color:var(--color-text-primary);white-space:nowrap}
+.geo-td:hover{background:var(--color-background-secondary)}
+.geo-sq{display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;border-radius:3px;font-size:10px;font-weight:700;color:#fff}
+.geo-det{font-size:11px;color:var(--color-text-secondary);border-radius:5px;
+  background:var(--color-background-secondary);padding:8px 10px;margin-top:6px;line-height:1.5;display:none}
+.geo-det.on{display:block}
+/* Cycle */
+.cy-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.cy-card{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);
+  border-radius:6px;padding:12px 14px;box-shadow:var(--shadow-1)}
+.cy-title{font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;margin-bottom:2px}
+.cy-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.cy-inn{font-size:10px;color:var(--color-text-tertiary);margin-bottom:7px}
+.cy-bar-row{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.cy-bar-label{font-size:9.5px;color:var(--color-text-tertiary);width:50px;flex-shrink:0;text-align:right}
+.cy-bar-track{flex:1;height:5px;background:var(--color-background-secondary);border-radius:3px;overflow:hidden}
+.cy-bar-fill{height:100%;border-radius:3px}
+.cy-bar-val{font-size:9.5px;font-family:var(--font-mono);color:var(--color-text-secondary);width:24px;text-align:right;flex-shrink:0}
+.cy-verdict{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  padding:2px 6px;border-radius:3px;display:inline-block;margin-bottom:5px}
+.cy-sum{font-size:10.5px;color:var(--color-text-secondary);line-height:1.45;
+  border-top:.5px solid var(--color-border-tertiary);padding-top:5px;margin-top:4px;
+  max-height:72px;overflow:hidden;cursor:pointer;position:relative}
+.cy-sum.open{max-height:none}
+.cy-sum::after{content:'';position:absolute;bottom:0;left:0;right:0;height:22px;
+  background:linear-gradient(transparent,var(--color-background-primary));pointer-events:none}
+.cy-sum.open::after{display:none}
+/* News */
+.nw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:8px;margin-bottom:14px}
+.nw-card{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);
+  border-radius:5px;padding:9px 11px;box-shadow:var(--shadow-1)}
+.nw-title{font-size:12px;font-weight:500;color:var(--color-text-primary);line-height:1.4;margin-bottom:3px}
+.nw-title a{color:inherit;text-decoration:none}
+.nw-title a:hover{color:var(--accent);text-decoration:underline}
+.nw-meta{font-size:10px;color:var(--color-text-tertiary);display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.nw-src{font-weight:600;color:var(--color-text-secondary)}
+.nw-tks{display:flex;gap:3px;flex-wrap:wrap;margin-top:4px}
+.nw-tk{font-size:9px;font-family:var(--font-mono);font-weight:700;padding:1px 4px;border-radius:2px;
+  background:var(--color-background-info);color:var(--color-text-info);cursor:pointer;
+  border:.5px solid var(--color-border-info)}
+.nw-voice-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.nw-voice{background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);
+  border-radius:5px;padding:9px 11px}
+.nw-voice-src{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-bottom:3px}
+.nw-voice-t{font-size:11.5px;color:var(--color-text-primary);line-height:1.35;margin-bottom:2px}
+.nw-voice-t a{color:inherit;text-decoration:none}
+.nw-voice-t a:hover{text-decoration:underline}
+.nw-voice-d{font-size:10px;color:var(--color-text-tertiary)}
+/* Companies */
+.co-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
+.co-search{flex:1;min-width:140px;max-width:230px;padding:5px 10px;
+  border:.5px solid var(--color-border-secondary);border-radius:5px;font-size:12px;
+  font-family:var(--font-sans);background:var(--color-background-primary);color:var(--color-text-primary);outline:none}
+.co-search:focus{border-color:var(--accent)}
+.co-sort{font-size:11px;color:var(--color-text-tertiary);cursor:pointer;padding:4px 7px;
+  border-radius:3px;border:.5px solid var(--color-border-tertiary)}
+.co-sort.on{color:var(--color-text-info);border-color:var(--color-border-info);background:var(--color-background-info)}
+.co-list{display:flex;flex-direction:column;gap:4px}
+.co-row{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);
+  border-radius:5px;padding:8px 11px;cursor:pointer;transition:all .1s;
+  display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:start;box-shadow:var(--shadow-1)}
+.co-row:hover{border-color:var(--accent);box-shadow:var(--shadow-2)}
+.co-tk{font-size:12px;font-weight:700;font-family:var(--font-mono);color:var(--color-text-primary);white-space:nowrap}
+.co-mid{min-width:0}
+.co-nm{font-size:12px;color:var(--color-text-secondary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.co-layer{font-size:9.5px;color:var(--color-text-tertiary);margin-top:1px}
+.co-right{display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0}
+.co-price{font-size:11.5px;font-family:var(--font-mono);font-weight:600}
+.co-d1{font-size:10px;font-family:var(--font-mono)}
+.co-badges{display:flex;gap:3px;flex-wrap:wrap;align-items:center}
+.badge-sm{font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;white-space:nowrap}
+.badge-ins{background:color-mix(in srgb,var(--good) 13%,transparent);color:var(--good)}
+.badge-exp{background:color-mix(in srgb,var(--warn) 14%,transparent);color:var(--warn)}
+.badge-hf{background:color-mix(in srgb,var(--bad) 13%,transparent);color:var(--bad)}
+/* Notes */
+.nt-list{display:flex;flex-direction:column;gap:8px}
+.nt-card{background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);
+  border-radius:6px;padding:10px 13px;box-shadow:var(--shadow-1)}
+.nt-head{display:flex;align-items:flex-start;gap:7px;margin-bottom:4px;flex-wrap:wrap}
+.nt-type{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  padding:1px 6px;border-radius:3px;flex-shrink:0;background:var(--color-background-info);color:var(--color-text-info)}
+.nt-date{font-size:10px;color:var(--color-text-tertiary);flex-shrink:0}
+.nt-title{font-size:12.5px;font-weight:600;color:var(--color-text-primary);line-height:1.3;flex:1}
+.nt-body{font-size:11.5px;color:var(--color-text-secondary);line-height:1.6}
+.nt-tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:5px}
+.nt-tag{font-size:9.5px;padding:1px 6px;border-radius:3px;
+  background:var(--color-background-secondary);color:var(--color-text-tertiary);border:.5px solid var(--color-border-tertiary)}
+/* Drawer */
+#drawer-bk{position:fixed;inset:0;background:rgba(22,24,29,.28);backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);z-index:90;opacity:0;pointer-events:none;transition:opacity .22s}
+#drawer-bk.on{opacity:1;pointer-events:auto}
+#drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,92vw);
+  background:var(--color-background-primary);z-index:95;box-shadow:var(--shadow-3);
+  transform:translateX(calc(100% + 20px));transition:transform .26s cubic-bezier(.32,.72,.28,1);
+  display:flex;flex-direction:column;border-left:.5px solid var(--color-border-tertiary)}
+#drawer.on{transform:translateX(0)}
+.dw-accent{height:3px;flex-shrink:0}
+.dw-head{display:flex;align-items:center;gap:7px;padding:10px 14px;border-bottom:.5px solid var(--color-border-tertiary);flex-shrink:0}
+.dw-back{background:none;border:none;cursor:pointer;font-size:19px;color:var(--color-text-tertiary);padding:0 4px;line-height:1}
+.dw-back:hover{color:var(--color-text-primary)}
+.dw-actions{display:flex;align-items:center;gap:2px;margin-left:auto;flex-shrink:0}
+.dw-ico{width:26px;height:26px;border-radius:5px;display:inline-flex;align-items:center;justify-content:center;
+  border:.5px solid var(--color-border-tertiary);background:transparent;color:var(--color-text-secondary);
+  cursor:pointer;transition:all .12s;padding:0}
+.dw-ico:hover{color:var(--accent);border-color:var(--accent);background:var(--color-background-secondary)}
+.dw-ico svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
+.dw-close{background:none;border:none;cursor:pointer;font-size:14px;color:var(--color-text-tertiary);
+  padding:4px 6px;border-radius:4px;margin-left:auto;flex-shrink:0}
+.dw-close:hover{background:var(--color-background-secondary);color:var(--color-text-primary)}
+.dw-body{flex:1;overflow-y:auto;padding:14px}
+.dw-hint{font-size:9.5px;color:var(--color-text-tertiary);padding:6px 14px 10px;text-align:center;
+  flex-shrink:0;border-top:.5px solid var(--color-border-tertiary)}
+.dw-tick{font-family:var(--font-mono);font-size:15px;font-weight:700;color:var(--color-text-primary)}
+.dw-name{font-size:13px;color:var(--color-text-secondary);line-height:1.3}
+.dw-badges{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:11px}
+.dw-badge{font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:20px;display:inline-flex;align-items:center;gap:4px}
+.dw-dot{display:inline-block;border-radius:50%;flex-shrink:0}
+.dw-sect{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--color-text-tertiary);margin:11px 0 4px}
+.dw-sect:first-child{margin-top:0}
+.dw-layer{font-size:12px;color:var(--color-text-secondary);background:var(--color-background-secondary);
+  padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:4px}
+.dw-thesis{font-size:12px;color:var(--color-text-secondary);line-height:1.6;
+  border-left:3px solid var(--color-border-secondary);padding-left:9px}
+.dw-chip{font-size:10.5px;padding:3px 8px;border-radius:20px;background:var(--color-background-secondary);
+  border:.5px solid var(--color-border-tertiary);cursor:pointer;display:inline-block;margin:2px}
+.dw-chip:hover{background:var(--color-background-info);border-color:var(--color-border-info);color:var(--color-text-info)}
+.dw-mkt{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:5px;margin-bottom:4px}
+.dw-tile{background:var(--color-background-secondary);border-radius:4px;padding:5px 7px}
+.dw-tile-l{font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary);margin-bottom:1px}
+.dw-tile-v{font-family:var(--font-mono);font-size:13px;font-weight:600}
+.dw-fxnote{font-size:10px;color:var(--warn);background:color-mix(in srgb,var(--warn) 8%,transparent);
+  border:.5px solid color-mix(in srgb,var(--warn) 22%,transparent);border-radius:4px;padding:4px 7px;margin-top:5px;line-height:1.45}
+.dw-ddnote{font-size:10px;color:var(--good);background:color-mix(in srgb,var(--good) 8%,transparent);border:.5px solid color-mix(in srgb,var(--good) 22%,transparent);
+  border-radius:3px;padding:4px 7px;margin-top:3px;line-height:1.4}
+.dw-peer{display:flex;align-items:center;gap:6px;padding:4px 0;
+  border-bottom:.5px solid var(--color-border-tertiary);cursor:pointer;font-size:11px}
+.dw-peer:last-child{border-bottom:none}
+.dw-peer:hover{color:var(--accent)}
+.dw-peer .tk{font-family:var(--font-mono);font-weight:700;min-width:48px;color:var(--color-text-primary)}
+.dw-peer .nm{flex:1;color:var(--color-text-secondary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dw-peer .ly{font-size:9.5px;color:var(--color-text-tertiary);white-space:nowrap}
+.dw-act{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:.5px solid var(--color-border-tertiary)}
+.dw-btn{font-size:11px;padding:5px 11px;border-radius:5px;border:.5px solid var(--color-border-secondary);
+  color:var(--color-text-secondary);background:var(--color-background-secondary);cursor:pointer;
+  text-decoration:none;display:inline-block;transition:all .12s;font-family:var(--font-sans)}
+.dw-btn:hover{border-color:var(--accent);color:var(--accent)}
+.dw-newsrow{padding:4px 0;border-bottom:.5px solid var(--color-border-tertiary)}
+.dw-newsrow:last-child{border-bottom:none}
+.dw-newsrow a{font-size:11px;color:var(--color-text-primary);text-decoration:none;line-height:1.4;display:block}
+.dw-newsrow a:hover{color:var(--accent)}
+.dw-newsrow span{font-size:9.5px;color:var(--color-text-tertiary);display:block;margin-top:1px}
+.dw-src{font-size:10.5px;color:var(--color-text-secondary);margin-bottom:4px;line-height:1.4}
+.dt{color:var(--color-text-tertiary)}
+.dw-vgroup{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--color-text-tertiary);margin:6px 0 2px;display:flex;align-items:center;gap:5px}
+/* AI demand pull crosslink */
+.ai-xlink{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;padding:2px 7px;
+  border-radius:3px;background:var(--color-background-info);color:var(--color-text-info);
+  border:.5px solid var(--color-border-info);text-decoration:none;cursor:pointer;margin-top:3px}
+/* Mobile */
+@media(max-width:640px){
+  .mast{padding:8px 10px 5px}
+  .content{padding:8px 10px 14px}
+  .tabs{padding:0 10px}
+  .al-strip{padding:4px 10px}
+  .fm-sigs,.pol-grid,.pol-prog-grid,.pol-levers,.ew-grid,.cy-grid,.nw-grid,.nw-voice-grid,.sh-paths,.sh-stats{grid-template-columns:1fr!important}
+  .vx-layout{grid-template-columns:1fr}
+  .vx-detail{max-height:none}
+  #drawer{width:100vw;border-left:none}
+  /* Fixed multi-column grids that never collapsed on their own */
+  .th-2col{grid-template-columns:1fr}
+  .th-nav{grid-template-columns:1fr 1fr}
+  .pos-grid{grid-template-columns:1fr}
+  .cband{grid-template-columns:1fr}
+  .fw-trio{grid-template-columns:1fr}
+  /* Wide grids: keep the structure, scroll it (arrows come from .hs-wrap) */
+  :root{--mxcol:96px}
+  .mx-grid,.bband{ -webkit-overflow-scrolling:touch}
+  .ct{font-size:9px}
+  .mch{font-size:9px}
+  /* Give the scroll arrows room to sit clear of content */
+  .hs-btn{width:26px;height:26px;font-size:15px}
+  /* Stop long unbroken strings forcing the page itself to scroll */
+  .co-mid,.dw-body,.nt-body,.scd,.exbd{min-width:0;overflow-wrap:anywhere}
+  .co-bar{flex-wrap:wrap;gap:6px}
+  .sh-hero{padding:12px 14px}
+  .sh-hero-h{font-size:18px}
+}
+#ha-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(12px);
+  z-index:200;max-width:min(520px,92vw);padding:10px 16px;border-radius:8px;font-size:12px;line-height:1.5;
+  background:var(--color-text-primary);color:var(--paper);box-shadow:var(--shadow-3);
+  opacity:0;pointer-events:none;transition:opacity .18s,transform .18s}
+#ha-toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.dw-ico-ask:hover{color:var(--accent)}
+.ha-foot{margin-top:28px;padding:14px 16px;border-top:.5px solid var(--color-border-tertiary);
+  font-size:10.5px;color:var(--color-text-tertiary);line-height:1.7;display:flex;flex-direction:column;gap:4px}
+</style>
+</head>
+<body>
+<script>(function(){const t=localStorage.getItem('ha-theme');if(t)document.documentElement.dataset.theme=t;})()</script>
+<div class="mast">
+  <div class="mast-top">
+    <div>
+      <div class="mast-word">Hard <em>Assets</em> Research</div>
+      <div class="mast-sub">Commodities · Critical Materials · Infrastructure</div>
+    </div>
+    <div class="mast-right">
+      <span class="mast-date" id="mast-date"></span>
+      <button class="mast-toggle" onclick="toggleTheme()">◑ Theme</button>
+    </div>
+  </div>
+  <div class="mkt-bar" id="mkt-bar"><span style="font-size:11px;color:var(--color-text-tertiary)">Loading market data…</span></div>
+</div>
+<div class="al-strip" id="al-strip" style="display:none"></div>
+<div class="tabs">
+  <!-- Order is the canonical reading journey. The Start Here learning path
+       follows this same sequence — keep the two in step, and keep this markup
+       order identical to TAB_IDS (ST() matches them by index). -->
+  <span class="tab on" onclick="ST('act')">⚡ Act Now<span class="tab-badge" id="act-badge"></span></span>
+  <span class="tab" onclick="ST('sh')">Orientation</span>
+  <span class="tab" onclick="ST('mx')">Universe Matrix</span>
+  <span class="tab-sep"></span>
+  <span class="tab" onclick="ST('cy')">Cycle &amp; Innings</span>
+  <span class="tab" onclick="ST('geo')">Geopolitical</span>
+  <span class="tab" onclick="ST('vx')">Vertical Explorer</span>
+  <span class="tab" onclick="ST('ex')">Chain Explainers</span>
+  <span class="tab-sep"></span>
+  <span class="tab" onclick="ST('th')">Demand Themes</span>
+  <span class="tab" onclick="ST('el')">Electricity &amp; Grid</span>
+  <span class="tab" onclick="ST('pk')">Picks &amp; Shovels</span>
+  <span class="tab-sep"></span>
+  <span class="tab" onclick="ST('ps')">Portfolio</span>
+  <span class="tab" onclick="ST('fm')">Froth Monitor</span>
+  <span class="tab" onclick="ST('pol')">Policy</span>
+  <span class="tab-sep"></span>
+  <span class="tab" onclick="ST('co')">Companies</span>
+  <span class="tab" onclick="ST('nw')">News</span>
+  <span class="tab" onclick="ST('nt')">Notes</span>
+  <span class="tab" onclick="ST('gl')">Glossary</span>
+</div>
+<div class="content">
+  <div id="v-act" class="view on"></div>
+  <div id="v-sh" class="view"></div>
+  <div id="v-mx" class="view"></div>
+  <div id="v-vx" class="view"></div>
+  <div id="v-ex" class="view">
+    <div class="note-box"><b>Chain explainers</b> — how each supply chain works, where value is captured, and the structural demand thesis. Click any card to expand.</div>
+    <div class="exg" id="exg"></div>
+  </div>
+  <div id="v-el" class="view">
+    <div class="note-box" id="el-bt-title" style="font-weight:600;font-size:12.5px"></div>
+    <div class="note-box" id="el-bt-body" style="margin-top:-6px"></div>
+    <div class="pills" id="el-pills">
+      <button class="pill on" onclick="setElView('chain',this)">Full value chain</button>
+      <button class="pill" onclick="setElView('intx',this)">Commodity intersections</button>
+      <button class="pill" onclick="setElView('ai',this)">AI data center demand</button>
+      <button class="pill" onclick="setElView('cycle',this)">Cycle &amp; structure</button>
+    </div>
+    <div id="el-chain"><div class="el-grid" id="el-chain-grid"></div></div>
+    <div id="el-intx" style="display:none"><div class="el-grid" id="el-intx-grid"></div></div>
+    <div id="el-ai" style="display:none"><div id="el-ai-cont"></div></div>
+    <div id="el-cycle" style="display:none"><div id="el-cycle-cont"></div></div>
+  </div>
+  <div id="v-th" class="view">
+    <div class="note-box"><b>Demand themes</b> — cross-vertical investment lenses. Click a theme to explore its supply chain position map, thesis, and portfolio positioning.</div>
+    <div class="th-nav" id="th-nav"></div>
+    <div id="th-detail"></div>
+  </div>
+  <div id="v-pk" class="view">
+    <div class="note-box"><b>Picks &amp; shovels</b> — cross-cutting companies that serve ALL commodity verticals. <span style="display:inline-block;border-left:3px solid var(--bad);padding-left:4px;color:var(--bad);font-weight:500">red border</span> = highest conviction &nbsp;<span class="badge b-hot">hot</span> active now &nbsp;<span class="badge b-str">structural</span> long-duration &nbsp;<span class="badge b-mod">moderate</span> mid-cycle</div>
+    <div class="pills" id="ps-pills"><button class="pill on" onclick="setPsFilter('all',this)">All categories</button></div>
+    <div id="ps-cont"></div>
+  </div>
+  <div id="v-ps" class="view"></div>
+  <div id="v-pol" class="view"></div>
+  <div id="v-geo" class="view"></div>
+  <div id="v-cy" class="view"></div>
+  <div id="v-fm" class="view"></div>
+  <div id="v-nw" class="view"></div>
+  <div id="v-co" class="view"></div>
+  <div id="v-nt" class="view"></div>
+  <div id="v-gl" class="view"></div>
+</div>
+<footer class="ha-foot">
+  <div>© 2026 Hard Assets Research. Research notes for personal use.</div>
+  <div><b>Not investment advice.</b> Nothing here is a recommendation to buy or sell any security.
+  Conviction and froth scores are the author's own subjective judgments, not analyst ratings.
+  Prices are delayed, unaudited, and in local currency without FX conversion. Do your own work.</div>
+</footer>
+<div id="drawer-bk" onclick="closeDrawer()"></div>
+<aside id="drawer" role="dialog" aria-label="Company detail">
+  <div class="dw-accent" id="dw-accent"></div>
+  <div class="dw-head">
+    <button class="dw-back" id="dw-back" onclick="drawerBack()" style="display:none" title="Back">‹</button>
+    <div id="dw-title" style="display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;min-width:0"></div>
+    <div id="dw-actions" class="dw-actions"></div>
+    <button class="dw-close" onclick="closeDrawer()" title="Close (Esc)">✕</button>
+  </div>
+  <div class="dw-body"><div id="dw-content"></div></div>
+  <div class="dw-hint">esc to close · click any ticker to open this panel</div>
+</aside>
+<script>
+// ── Theme ──────────────────────────────────────────────────────────────────
+function toggleTheme(){
+  const cur=document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  const next=cur==='dark'?'light':'dark';
+  document.documentElement.dataset.theme=next;
+  localStorage.setItem('ha-theme',next);
+}
+
+// ── Base URL ───────────────────────────────────────────────────────────────
+const BASE=(location.hostname==='localhost'||location.hostname==='127.0.0.1')
+  ?'data/'
+  :'https://raw.githubusercontent.com/joeedessa/hard-assets-research/main/data/';
+
+// ── Static data ────────────────────────────────────────────────────────────
+// Order, colors and groups are canonical — they match matrix.json / explorer.json
+// so the Matrix columns and the Vertical Explorer sidebar stay in sync.
+const VERTICALS=[
+  {id:'oil', g:'Energy', n:'Oil & Midstream',      c:'#5F5E5A', plain:'Geopolitical hedge + refinery crack spreads + tanker tonne-miles extended by Russia sanctions rerouting. Supply-side rationalization is structural.'},
+  {id:'ng',  g:'Energy', n:'Natural Gas & LNG',    c:'#EF9F27', plain:'AI data centers run on gas power. US LNG is now a NATO energy security instrument — European utilities locked into 20-year offtake agreements.'},
+  {id:'nu',  g:'Energy', n:'Nuclear & Uranium',    c:'#534AB7', plain:'Uranium fuel + nuclear reactors — AI hyperscalers are signing 20-year PPAs for the only 24/7 carbon-free baseload. Russian enrichment banned in US.'},
+  // `derived` = downstream infrastructure the commodities feed, not a commodity
+  // vertical. Excluded from the Universe Matrix (Dim A) and the chain-based
+  // Vertical Explorer; lives in Dim C and its own Electricity & Grid tab.
+  // Still listed here so company badges, filters and the Cycle tab can label it.
+  {id:'elec',g:'Energy', n:'Electricity & Grid',   c:'#185FA5', derived:true, tab:'el', plain:'Power grid buildout — transformer lead times are 2-4 years with no relief; data center power demand doubles every 3-4 years. Clear evidence-based supercycle.'},
+  {id:'cu',  g:'Metals', n:'Copper',               c:'#D85A30', plain:'The universal conductor — essential for every EV, grid cable, and data center. No substitutes. Democratic nations take 16-17 years to permit a new mine.'},
+  {id:'li',  g:'Metals', n:'Lithium & Battery',    c:'#1D9E75', plain:'EV and grid-scale battery storage — currently at a cyclical trough (prices below incentive level). Structural demand wave building for 2026-2030.'},
+  {id:'re',  g:'Metals', n:'REE & Specialty',      c:'#993556', plain:'Rare earth magnets: every EV motor, wind turbine, missile guidance, and robot joint — nearly all processed in China. China cut off exports in 2025.'},
+  {id:'tm',  g:'Metals', n:'Technology Metals',    c:'#185FA5', plain:'SiC power chips for 800V systems, InP substrates for AI photonics, tin for chip packaging solder, antimony now under Chinese export ban.'},
+  {id:'pg',  g:'Metals', n:'Precious Metals',      c:'#888780', plain:'Gold and silver — monetary hedge via streaming structures. Central banks buying at record pace; gold ATH $5,589 Jan 2026. Zero capex, full upside.'},
+  {id:'wl',  g:'Inputs', n:'Water & Land',         c:'#3B6D11', plain:'Water scarcity — RO desalination, Western water rights. AI fabs and data centers are water-intensive; new sites chosen partly by water availability.'},
+  {id:'ii',  g:'Inputs', n:'Industrial & Specialty',c:'#854F0B',plain:'On-site gas monopolies (15-20yr sole-source contracts), specialty aerospace alloys, and beryllium — the defense-critical material with zero Western substitutes.'},
+  {id:'fert',g:'Inputs', n:'Fertilizers',          c:'#639922', plain:'Food security — potash, phosphate, nitrogen. 70%+ of global potash comes from Russia, Belarus, or Canada; allies are rebuilding supply chain security.'},
+];
+const V_MAP=Object.fromEntries(VERTICALS.map(v=>[v.id,v]));
+// Commodity verticals only — these are the ones with a value chain to trace.
+const CHAIN_VERTICALS=VERTICALS.filter(v=>!v.derived);
+
+const CHAIN_STAGES=[
+  {id:'mine',n:'Mining / Extraction',   plain:'Getting it out of the ground — ore bodies, boreholes, brine ponds, uranium mines'},
+  {id:'proc',n:'Processing / Enrichment',plain:'Converting raw ore to usable material — smelting, separation, uranium enrichment, lithium conversion'},
+  {id:'mid', n:'Midstream / Infra',     plain:'Moving and storing commodities at scale — LNG terminals, pipelines, grid EPC, transmission lines'},
+  {id:'mat', n:'Materials / Substrates',plain:'Engineered materials ready for manufacturing — wafers, foils, laminates, magnets, specialty gases'},
+  {id:'comp',n:'Components / Devices',  plain:'Products made from materials — power semiconductors, battery packs, water treatment systems'},
+  {id:'sys', n:'Systems / End-Use',     plain:'Integrated operations — nuclear plants, refineries, vessel fleets, industrial gas on-site contracts'},
+  {id:'str', n:'Streaming / Royalty',   plain:'Financial structures above the mine — zero capex exposure, inflation-indexed, full commodity upside'},
+];
+
+const FROTH_META={
+  1:{l:'Insulated',   c:'#16A34A',cls:'ins'},
+  2:{l:'Exposed',     c:'#EF9F27',cls:'exp'},
+  3:{l:'High Froth',  c:'#E24B4A',cls:'hf'},
+};
+
+const AI_DEMAND_THEMES=['ai-demand-pull','datacenter-power','ai-chip-packaging','sic-power','inp-photonics','nuclear-ai-ppa'];
+
+// ── Loaded data ────────────────────────────────────────────────────────────
+let COMPANIES=[],CYCLE=[],GEO={},PORTFOLIO={},ANNOTATIONS=[],POLICY={},EXCLUDED=[];
+let VC_COLS=[],ROWS=[],MXC={},DET={},B_BAND=[],C_BAND=[];
+let EXPLS=[],PS=[],EL_CHAIN=[],EL_INTX=[],EL_AI=[],EL_CYCLE=[],THEMES=[],ACTORS=[];
+let VC={},VORDER=[],CROSS_V={};
+let BREAKING={state:'clear',signals:[],_meta:{}};
+let GLOSSARY=[];
+let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
+let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
+let TICKER_MAP={};
+let EXCL_MAP={};
+let REF_MAP={},REF_BLOCK=new Set();
+// Symbols that double as industry vocabulary — require the (TICKER) form.
+const AMBIGUOUS_TK=new Set(['LNG','CF']);
+let TICKER_RE=null;
+
+// ── Utils ──────────────────────────────────────────────────────────────────
+// ── Yahoo symbol mapping ───────────────────────────────────────────────────
+// MIRRORS scripts/fetch_market.py:yahoo_symbol() exactly. Keep the two in step —
+// links built from the raw ticker are dead for most non-US listings.
+const YH_SUFFIX={'.JP':'.T','.SH':'.SS','.TWO':'.TWO','.TW':'.TW','.T':'.T','.AX':'.AX',
+ '.TO':'.TO','.V':'.V','.L':'.L','.JO':'.JO','.SW':'.SW','.MI':'.MI','.PA':'.PA','.DE':'.DE',
+ '.AS':'.AS','.BR':'.BR','.OL':'.OL','.ST':'.ST','.HE':'.HE','.CO':'.CO','.HK':'.HK'};
+function yahooSymbol(tk){
+  if(!tk)return '';
+  const keys=Object.keys(YH_SUFFIX).sort((a,b)=>b.length-a.length);
+  for(const s of keys){
+    if(tk.endsWith(s)){
+      let base=tk.slice(0,-s.length);const dst=YH_SUFFIX[s];
+      if(dst==='.HK'&&/^\d+$/.test(base))base=base.padStart(4,'0');
+      return base+dst;
+    }
+  }
+  return tk;
+}
+const yhQuote=tk=>'https://finance.yahoo.com/quote/'+encodeURIComponent(yahooSymbol(tk));
+const yhChart=tk=>'https://finance.yahoo.com/chart/'+encodeURIComponent(yahooSymbol(tk));
+const yhFin  =tk=>'https://finance.yahoo.com/quote/'+encodeURIComponent(yahooSymbol(tk))+'/financials';
+
+function mk(tag,cls){const el=document.createElement(tag);if(cls)el.className=cls;return el;}
+
+// ── Horizontal scroller ────────────────────────────────────────────────────
+// Wraps any [data-hscroll] element with prev/next arrows + edge fades so wide
+// content (the 11-column matrix, Dim B band, scoreboard, geo table) is
+// obviously scrollable instead of relying on a hidden scrollbar.
+function attachHScroll(el){
+  if(!el||el.dataset.hsInit)return;
+  el.dataset.hsInit='1';
+  el.classList.add('hs-scroll');
+  const wrap=mk('div','hs-wrap');
+  el.parentNode.insertBefore(wrap,el);
+  wrap.appendChild(el);
+
+  const mkBtn=dir=>{
+    const b=mk('button','hs-btn hs-'+dir);
+    b.type='button';
+    b.setAttribute('aria-label',dir==='l'?'Scroll left':'Scroll right');
+    b.textContent=dir==='l'?'‹':'›';
+    b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const step=Math.max(220,el.clientWidth*0.75);
+      el.scrollBy({left:(dir==='l'?-step:step),behavior:'smooth'});
+    });
+    wrap.appendChild(b);
+    return b;
+  };
+  const L=mkBtn('l'),R=mkBtn('r');
+
+  const upd=()=>{
+    const max=el.scrollWidth-el.clientWidth;
+    const overflows=max>4;
+    wrap.classList.toggle('hs-on',overflows);
+    const atStart=el.scrollLeft<=2, atEnd=el.scrollLeft>=max-2;
+    L.classList.toggle('hs-hide',!overflows||atStart);
+    R.classList.toggle('hs-hide',!overflows||atEnd);
+  };
+  el.addEventListener('scroll',upd,{passive:true});
+  window.addEventListener('resize',upd);
+  if(window.ResizeObserver){try{new ResizeObserver(upd).observe(el);}catch(e){}}
+  upd();
+}
+function initHScrollers(root){
+  (root||document).querySelectorAll('[data-hscroll]').forEach(attachHScroll);
+}
+const scolor=s=>['#E24B4A','#D85A30','#EF9F27','#639922','#1D9E75'][s-1]||'#888780';
+const slabel=s=>['Very low','Low','Moderate','High','Very high'][s-1]||'';
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function fmt(v,digits=1){return v==null?'—':(+v).toFixed(digits);}
+function fmtPct(v){if(v==null)return '—';const s=(+v).toFixed(1);return v>=0?'+'+s+'%':s+'%';}
+function fmtMC(mc){if(!mc)return null;return mc>=1e12?(mc/1e12).toFixed(1)+'T':mc>=1e9?(mc/1e9).toFixed(0)+'B':(mc/1e6).toFixed(0)+'M';}
+function chgColor(v){return v==null?'var(--color-text-tertiary)':v>=0?'var(--up)':'var(--dn)';}
+function convColor(c){return {1:'#9CA3AF',2:'#3B82F6',3:'#16A34A'}[c]||'#9CA3AF';}
+function convLabel(c){return {1:'Monitor',2:'Interested',3:'High Conviction'}[c]||'';}
+
+function classifyStage(layer){
+  const l=(layer||'').toLowerCase();
+  if(/stream|royalt|trust|physical uran/.test(l))return 'str';
+  if(/operat|refin|vessel|tanker|k\+p\+n|k\+p min|rights|gases|alloy|berryl|specialty ai|generation/.test(l))return 'sys';
+  if(/bess|treatment|power device|wafer fab/.test(l))return 'comp';
+  if(/substrate|foil|ccl|magnet mfg|photon|inP|SiC \+|NdFeB/.test(l))return 'mat';
+  if(/pipeline|infra|liquefact|grid epc/.test(l))return 'mid';
+  if(/enrichment|conversion|smelting|separation\b|milling/.test(l))return 'proc';
+  return 'mine';
+}
+
+function vinfo(id){return V_MAP[id]||{id,n:id,c:'#888'};}
+
+function buildTickerRE(){
+  // Linking convention: a hyperlinked ticker means "this has an investing
+  // angle". Universe names open the full drawer, assessed-and-rejected names
+  // open a why-not note, and referenced candidates open a not-yet-assessed
+  // note. Context / private / state entities are deliberately left as plain
+  // text so the absence of a link is itself information.
+  EXCL_MAP=Object.fromEntries((EXCLUDED||[]).map(e=>[e.ticker,e]));
+  const uni=[...new Set(COMPANIES.map(c=>c.ticker).filter(Boolean))];
+  const ex=[...new Set(Object.keys(EXCL_MAP).filter(t=>!uni.includes(t)))];
+  const cand=Object.values(REF_MAP).filter(e=>e.type==='candidate'&&e.ticker)
+    .map(e=>e.ticker).filter(t=>!uni.includes(t)&&!ex.includes(t));
+  const all=[...uni,...ex,...cand];
+  if(!all.length){TICKER_RE=null;return;}
+  // Longest-first so e.g. LYC.AX wins over a bare LYC
+  all.sort((a,b)=>b.length-a.length);
+  TICKER_RE=new RegExp('\\b('+all.map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')\\b','g');
+}
+
+function linkifyTickers(s){
+  if(!s||!TICKER_RE)return s||'';
+  // Split on tags so we never rewrite inside an attribute (href, style, onclick).
+  return String(s).split(/(<[^>]*>)/).map(part=>part.charAt(0)==='<'?part:_linkifyText(part)).join('');
+}
+function _linkifyText(s){
+  return String(s).replace(TICKER_RE,(m,_g,off,full)=>{
+    // Tickers that are also common industry terms (LNG the commodity vs
+    // Cheniere's symbol; CF = carbon fibre vs CF Industries). Only treat these
+    // as a company when written in the "Name (TICKER)" convention.
+    if(AMBIGUOUS_TK.has(m)&&full.charAt(off-1)!=='(')return m;
+    if(REF_BLOCK.has(m)&&!TICKER_MAP[m])return m;   // context/private/state — no link, by design
+    const esc_m=m.replace(/'/g,"\\'");
+    if(TICKER_MAP[m])
+      return `<span class="ticklink" data-tk="${m}" onclick="openCompanyDrawer('${esc_m}')">${m}</span>`;
+    if(EXCL_MAP[m])
+      return `<span class="ticklink ticklink-ex" data-tk="${m}" title="Assessed, not in the universe" onclick="openExcludedNote('${esc_m}')">${m}</span>`;
+    if(REF_MAP[m])
+      return `<span class="ticklink ticklink-cand" data-tk="${m}" title="Referenced — not yet assessed" onclick="openRefNote('${esc_m}')">${m}</span>`;
+    return m;
+  });
+}
+
+// Short note for a name we assessed and chose not to include.
+// A listed, on-thesis name that is referenced but not yet assessed.
+function openRefNote(tk,push=true){
+  const e=REF_MAP[tk];if(!e)return;
+  const v=vinfo(e.vertical);
+  if(push)DW_STACK.push({t:'ref',k:tk});
+  const yq=yhQuote(tk);
+  const head=`<span class="dw-tk">${esc(tk)}</span><span class="dw-nm">${esc(e.name||'')}</span>`
+    +`<span class="badge-sm" style="background:var(--color-background-secondary);color:var(--color-text-tertiary)">not yet assessed</span>`;
+  const body=`<div class="note-box">Referenced in the research but not yet in the investable universe${e.vertical?` — would sit in <b>${esc(v.n)}</b>`:''}. No conviction or froth score has been assigned.</div>
+    <div class="dw-sect">Why it comes up</div><div class="dw-thesis">${esc(e.note||'')}</div>
+    <div class="dw-act"><a class="dw-btn" href="${yq}" target="_blank" rel="noopener">Yahoo Finance ↗</a></div>`;
+  renderDrawer(v.c||'var(--color-text-tertiary)',head,body);
+}
+
+function openExcludedNote(tk,push=true){
+  const e=EXCL_MAP[tk];if(!e)return;
+  const v=vinfo(e.considered_for);
+  if(push)DW_STACK.push({t:'ex',k:tk});
+  const head=`<span class="dw-tk">${esc(tk)}</span><span class="dw-nm">${esc(e.name||'')}</span>`
+    +`<span class="badge-sm" style="background:var(--color-background-secondary);color:var(--color-text-tertiary)">not in universe</span>`;
+  const body=`<div class="note-box">Considered for <b>${esc(v.n||e.considered_for||'—')}</b> and deliberately not included.</div>
+    <div class="dw-sect">Why</div><div class="dw-thesis">${linkifyTickers(esc(e.reason||''))}</div>
+    <div class="dw-p" style="color:var(--color-text-tertiary);font-size:10.5px;margin-top:10px">Assessed ${esc(e.date||'')} · recorded in data/excluded.json</div>`;
+  renderDrawer(v.c||'var(--color-text-tertiary)',head,body);
+}
+
+function jumpToCompanies(tk){
+  ST('co');
+  if(tk){CO_STATE.q=tk;const el=document.getElementById('co-search');if(el)el.value=tk;}
+  renderCo();
+}
+
+// ── Tab switching ──────────────────────────────────────────────────────────
+// MUST stay in the same order as the .tab spans in the markup — ST() pairs
+// them by index. Also the order the Start Here learning path walks.
+const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','nw','nt','gl'];
+const built={};
+function ST(id){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach((t,i)=>{if(TAB_IDS[i]===id)t.classList.add('on');else t.classList.remove('on');});
+  const el=document.getElementById('v-'+id);
+  if(el)el.classList.add('on');
+  if(!built[id]){built[id]=true;buildTab(id);}
+}
+function buildTab(id){
+  if(id==='act')buildActNow();
+  else if(id==='sh')buildStartHere();
+  else if(id==='mx')buildMatrix();
+  else if(id==='vx')buildVerticals();
+  else if(id==='ex')buildExpls();
+  else if(id==='geo')buildGeo();
+  else if(id==='cy')buildCycle();
+  else if(id==='el')buildEl();
+  else if(id==='th')buildThemes();
+  else if(id==='pk')buildPS();
+  else if(id==='ps')buildPortfolio();
+  else if(id==='fm')buildFrothMonitor();
+  else if(id==='pol')buildPolicy();
+  else if(id==='nw')buildNews();
+  else if(id==='co')buildCompanies();
+  else if(id==='nt')buildNotes();
+  else if(id==='gl')buildGlossary();
+  initHScrollers();   // attach arrows to any wide content this tab rendered
+}
+
+// ── Masthead & Alert ───────────────────────────────────────────────────────
+function renderMktBar(){
+  const el=document.getElementById('mkt-bar');
+  if(!el)return;
+  const C=IDX.commodities||{};const M=IDX.macro||{};
+  const chip=(l,obj)=>{
+    if(!obj||obj.p==null)return '';
+    const cc=chgColor(obj.d1);
+    return `<span class="mkt-chip"><span class="mkt-l">${esc(l)}</span>`
+      +`<span class="mkt-v">${obj.p<10?obj.p.toFixed(2):obj.p.toFixed(0)}</span>`
+      +(obj.d1!=null?`<span class="mkt-c" style="color:${cc}">${fmtPct(obj.d1)}</span>`:'')
+      +`</span>`;
+  };
+  const sep=`<span class="mkt-sep"></span>`;
+  let html='';
+  html+=chip('WTI',C['WTI']);html+=chip('Gold',C['Gold']);html+=chip('Copper',C['Copper']);
+  html+=chip('NatGas',C['NatGas']);html+=chip('Silver',C['Silver']);
+  if(C['WTI']||C['Gold'])html+=sep;
+  html+=chip('DXY',M['DXY']);html+=chip('10Y',M['10Y']);
+  html+=chip('Uranium',C['Uranium']);html+=chip('Lithium',C['Lithium']);
+  if(!html.trim())html='<span style="font-size:11px;color:var(--color-text-tertiary)">Market data loads nightly via CI · run scripts/fetch_market.py locally</span>';
+  el.innerHTML=html;
+}
+
+function renderAlertStrip(){
+  const el=document.getElementById('al-strip');if(!el)return;
+  const alerts=(ALERTS.alerts||[]);
+  if(!alerts.length){el.style.display='none';return;}
+  el.style.display='flex';
+  const d=ALERTS.as_of||'';
+  el.innerHTML=`<span class="al-lbl">⚡ ${alerts.length} signal${alerts.length===1?'':'s'}${d?' · '+d:''}</span>`
+    +alerts.map(a=>{
+      const cls=a.type==='entry-window'?'al-entry':a.type==='froth-high'?'al-froth':a.type==='commodity-move'?'al-commodity':'al-move';
+      const onclick=a.tk?`onclick="openCompanyDrawer('${esc(a.tk)}')"` :'';
+      return `<span class="al-chip ${cls}" ${onclick}>${esc(a.label)}</span>`;
+    }).join('');
+}
+
+// ── Date display ───────────────────────────────────────────────────────────
+function setMastDate(){
+  const el=document.getElementById('mast-date');
+  if(!el)return;
+  const d=new Date();
+  el.textContent=d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+}
+
+// ── START HERE ─────────────────────────────────────────────────────────────
+// ── ACT NOW ────────────────────────────────────────────────────────────────
+// The bar is the product. Silent most days; when silent it must show the checks
+// that ran, so absence of signal reads as evidence rather than as absence of work.
+const STANCE_META={
+ 'STAGE':{c:'var(--bad)',d:'Do not catch the knife. Work the staged-entry list instead.'},
+ 'STOP ADDING':{c:'var(--warn)',d:'Windows are closing — anything bought here is bought on momentum.'},
+ 'BUY THE DISLOCATION':{c:'var(--good)',d:'Weakness in insulated names is opportunity, not information.'},
+ 'THESIS AT RISK':{c:'var(--bad)',d:'A top-conviction holding is implicated. Confirm before changing anything.'},
+ 'REVIEW':{c:'var(--warn)',d:'Large enough to demand an explanation before the next decision.'},
+ 'MONITOR':{c:'var(--color-text-tertiary)',d:'Noted, not actionable on its own.'},
+};
+function renderActBadge(){
+  const b=document.getElementById('act-badge');if(!b)return;
+  const n=(BREAKING.signals||[]).length;
+  const crit=(BREAKING.signals||[]).some(s=>s.sev==='critical');
+  b.textContent=n?String(n):'';
+  b.className='tab-badge'+(n?(crit?' on crit':' on'):'');
+}
+function buildActNow(){
+  const el=document.getElementById('v-act');if(!el)return;
+  const sigs=BREAKING.signals||[];
+  const checks=(BREAKING._meta||{}).checks||[];
+  const asOf=(BREAKING._meta||{}).as_of||'';
+  const bar=(BREAKING._meta||{}).bar||'';
+
+  const checklist=checks.length?`<div class="act-checks"><div class="act-checks-h">Checks that ran${asOf?` · ${esc(asOf.slice(0,16).replace('T',' '))} UTC`:''}</div>
+    ${checks.map(c=>`<div class="act-check"><span class="act-tick">✓</span>${esc(c)}</div>`).join('')}</div>`:'';
+
+  if(!sigs.length){
+    el.innerHTML=`<div class="act-clear">
+      <div class="act-clear-icon">✓</div>
+      <div class="act-clear-h">Nothing clears the bar today</div>
+      <div class="act-clear-b">No event today is likely to change an allocation decision. That is the normal state of this page — it is built to stay quiet, so that when it speaks it means something.</div>
+    </div>${checklist}
+    <div class="note-box" style="margin-top:10px">${esc(bar)}</div>`;
+    return;
+  }
+
+  const card=s=>{
+    const sm=STANCE_META[s.stance]||STANCE_META.MONITOR;
+    const tks=(s.tk||[]).map(t=>`<span class="act-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join('');
+    const src=s.src&&s.src.u?`<a class="act-src" href="${esc(s.src.u)}" target="_blank" rel="noopener">${esc(s.src.s||'source')} ↗</a>`:'';
+    return `<div class="act-card sev-${esc(s.sev)}">
+      <div class="act-head">
+        <span class="act-sev sev-${esc(s.sev)}">${esc(s.sev)}</span>
+        <span class="act-cat">${esc((s.cat||'').replace(/-/g,' '))}</span>
+        <span class="act-prov ${s.measured?'meas':'unver'}" title="${s.measured?'Computed from prices — a fact':'Parsed from a headline — not independently verified'}">${s.measured?'measured':'unverified'}</span>
+        <span class="act-stance" style="color:${sm.c};border-color:${sm.c}55;background:color-mix(in srgb,${sm.c} 12%,transparent)">${esc(s.stance)}</span>
+      </div>
+      <div class="act-title">${linkifyTickers(esc(s.t||''))}</div>
+      <div class="act-action">${linkifyTickers(esc(s.action||''))}</div>
+      <div class="act-ev">${linkifyTickers(esc(s.ev||''))} ${src}</div>
+      ${tks?`<div class="act-tks">${tks}</div>`:''}
+    </div>`;
+  };
+  el.innerHTML=`
+    <div class="act-state act-${esc(BREAKING.state||'clear')}">
+      <b>${sigs.length} signal${sigs.length===1?'':'s'} cleared the bar</b> — ${esc(BREAKING.state==='critical'?'at least one is critical.':'none critical.')}
+      <span style="color:var(--color-text-tertiary)">Everything else that was checked is listed below.</span>
+    </div>
+    <div class="act-list">${sigs.map(card).join('')}</div>
+    ${checklist}
+    <div class="note-box" style="margin-top:10px">${esc(bar)}</div>`;
+}
+
+function buildStartHere(){
+  const el=document.getElementById('v-sh');if(!el)return;
+  const C=IDX.commodities||{},M=IDX.macro||{};
+  const conv3=COMPANIES.filter(c=>c.conviction===3).length;
+  const insulated=COMPANIES.filter(c=>c.froth===1).length;
+  const earlyInnings=CYCLE.filter(c=>c.inn<=3).length;
+
+  // Live stat tiles
+  const statTiles=[];
+  if(C.WTI?.p)statTiles.push({l:'WTI',v:'$'+C.WTI.p.toFixed(0),c:fmtPct(C.WTI.d1),cc:chgColor(C.WTI.d1)});
+  if(C.Gold?.p)statTiles.push({l:'Gold',v:'$'+C.Gold.p.toFixed(0),c:fmtPct(C.Gold.d1),cc:chgColor(C.Gold.d1)});
+  if(C.Copper?.p)statTiles.push({l:'Copper',v:'$'+C.Copper.p.toFixed(2),c:fmtPct(C.Copper.d1),cc:chgColor(C.Copper.d1)});
+  if(M.DXY?.p)statTiles.push({l:'DXY',v:M.DXY.p.toFixed(1),c:fmtPct(M.DXY.d1),cc:chgColor(M.DXY.d1)});
+  if(M['10Y']?.p)statTiles.push({l:'10Y',v:M['10Y'].p.toFixed(2)+'%',c:fmtPct(M['10Y'].d1),cc:chgColor(M['10Y'].d1)});
+  statTiles.push({l:'Universe',v:COMPANIES.length+' names'},{l:'High conviction',v:conv3+' names'},{l:'Insulated',v:insulated+' names'},{l:'Early innings',v:earlyInnings+' verticals'});
+  const statsHtml=statTiles.map(t=>`<div class="sh-stat"><div class="sh-stat-l">${t.l}</div><div class="sh-stat-v">${t.v}</div>${t.c?`<div class="sh-stat-c" style="color:${t.cc}">${t.c}</div>`:''}</div>`).join('');
+
+  // 4 drivers
+  const drivers=[
+    {icon:'🌐',title:'Deglobalization',color:'#993556',body:'China controls processing of &gt;80% of rare earths, &gt;70% of lithium hydroxide, &gt;65% of germanium, and ~50% of antimony. The April 2025 export licensing of seven HREE elements — including the dysprosium and terbium in every EV and wind turbine motor — showed exactly how this leverage gets weaponized. Western governments are now paying strategic premiums to build alternative supply from scratch.'},
+    {icon:'⚡',title:'AI power demand',color:'#534AB7',body:'AI training and inference requires 24/7 power at scale. Hyperscalers have turned to nuclear as the only source combining price certainty (15–20yr PPAs at $110–130/MWh), zero-carbon credentials, and 90%+ capacity factor. Amazon signed for 1.92 GW, Google signed the first-ever corporate SMR fleet PPA, Meta announced a 6.6 GW strategy. ETN\'s 228 GW data center backlog is 12 years of orders at current build rates.'},
+    {icon:'🔋',title:'Energy transition',color:'#1D9E75',body:'Every GW of offshore wind requires ~3× more copper per MW than a gas plant. Every EV drivetrain needs 6–8 rare earth magnets. Every grid battery requires lithium, manganese, nickel, or iron phosphate. Decarbonization is fundamentally a materials-intensive exercise — the S&amp;P Global 8 Mt/yr copper deficit projected for 2030 flows directly from this math. The supply chains required simply were not built during the 2010s.'},
+    {icon:'🏅',title:'Monetary debasement',color:'#888780',body:'Central bank net gold purchases: Q1 2026 = 244 tonnes; full-year 2024 ≈ 1,037 tonnes — highest in recorded history. The 2022 Russian reserve freeze demonstrated that USD assets held in Western custodians can be seized, prompting a structural shift toward physical gold in sovereign reserves. Gold hit $5,589/oz on January 28, 2026. J.P. Morgan projects $5,000/oz by Q4 2026.'}
+  ];
+  const driversHtml=drivers.map(d=>`<div class="fw-driver"><div class="fw-driver-icon">${d.icon}</div><div class="fw-driver-title" style="color:${d.color}">${d.title}</div><div class="fw-driver-body">${d.body}</div></div>`).join('');
+
+  // 5 mental models (accordion)
+  const models=[
+    {icon:'⚾',name:'Innings (1–9)',tagline:'Where are we in the cycle?',body:'Think of each commodity vertical as a baseball game. <b>Innings 1–3</b> = structural early stage: most of the future return is still ahead, but patience is required — the thesis may take 3–7 years to fully price in. <b>Innings 4–6</b> = mid-cycle: thesis partially priced in, entry timing matters more. <b>Innings 7–9</b> = late stage: most of the structural thesis is already in the price.<br><br><b>How to read it:</b> A vertical at inning 1 with high structural demand and a large capex gap is the optimal setup. REE is effectively inning 1 — the Western supply chain barely exists. Nuclear is inning 2 — the rebuild just started. Compare to Oil at inning 5 — still investable, but as a cyclical trade, not a structural one.'},
+    {icon:'📉',name:'Capex Gap (0–100)',tagline:'How under-invested is the supply chain?',body:'A capex gap score above 80 means the sector has been starved of investment for a decade or more. Under-investment creates future price support because supply cannot respond quickly to demand signals — even if prices rise 2–3×, it takes 10–20 years to permit, build, and ramp a mine, refinery, or enrichment plant.<br><br><b>Extreme cases:</b> REE = 92 (Western separation and magnet infrastructure built essentially from zero). Nuclear = 90 (no new enrichment or reactor capacity built in the West for 20+ years). <b>Contrast:</b> Lithium = 42 (over-invested during the 2021–2023 EV boom, now in post-boom correction at inning 4).'},
+    {icon:'📊',name:'Business Cycle Risk (0–100)',tagline:'How cyclical is this position?',body:'A high BC risk score means earnings and prices are tightly linked to GDP growth, credit cycles, and consumer spending. A low score means demand is policy-driven or physically non-discretionary.<br><br><b>Low risk (≤30):</b> Nuclear (20), Grid/Electricity (22), REE (28), Water (32). Governments buy uranium enrichment, grid transformers, and fund REE supply chain security regardless of recession.<br><br><b>Portfolio rule:</b> In recession conditions, overweight low-BC early-innings positions (Nuclear + REE + Grid + Water) and reduce high-BC positions until the structural deficit signal reasserts clearly.'},
+    {icon:'🏗️',name:'Investment Structure',tagline:'How to own a vertical',body:'Even in the most structurally compelling vertical, the structure of the position matters enormously. From most to least preferred:<br><br><b>Streaming / Royalty</b> (FNV, WPM, RGLD) — fixed-cost exposure plus full commodity upside plus zero mine operational risk.<br><br><b>Physical Trust</b> (SPUT for uranium) — no equity dilution, no management risk, direct spot price exposure.<br><br><b>Midstream / EPC</b> (KMI, ET, PWR, ETN, GEV) — fee-based contracted revenue, limited direct commodity price exposure but full capex supercycle capture.<br><br><b>Equity</b> — most direct but also most operationally risky. Preferred when the company has a structural moat (only US enricher, only non-Chinese RE separator).'},
+    {icon:'🗺️',name:'Geopolitical Score (1–5)',tagline:'Supply concentration and weaponization risk',body:'Scores 1–5 across four dimensions: Supply concentration, Weaponization risk/reality, Western policy response, Tech race relevance.<br><br><b>Score 5 (Very high):</b> China controls processing and has already demonstrated willingness to use export controls. REE weaponization risk = 5 (April 2025 HREE licensing + extraterritorial 50% rule). Tech metals = 5 (Ga/Ge Aug 2023, Sb Sept 2024 — both already repriced markets permanently).<br><br><b>The alpha zone:</b> High weaponization risk + nascent Western policy response = strategic premium beginning to flow but prices haven\'t fully reflected it yet.'}
+  ];
+  const modelsHtml=models.map((m,i)=>`<div class="fw-model" onclick="this.classList.toggle('ex')"><div class="fw-model-top"><span class="fw-model-icon">${m.icon}</span><div style="flex:1"><div class="fw-model-name">${m.name}</div><div class="fw-model-tagline">${m.tagline}</div></div><span class="fw-model-ch">▼</span></div><div class="fw-model-body">${m.body}</div></div>`).join('');
+
+  // 8 signal rows
+  const sigs=[
+    {v:'REE',c:'#993556',ind:'HREE oxide prices (Dy/Tb spot) + China export volume + Lynas/MP quarterly reports',bull:'Dy oxide &gt;$300/kg rising; MP OEM magnet qualifications accelerating; Lynas Seadrift TX commissioned',bear:'China exports resume freely; HREE export licensing lifted; Lynas Seadrift delayed past 2027'},
+    {v:'Nuclear/U',c:'#534AB7',ind:'SPUT premium/discount to NAV + uncovered utility requirements (UxC) + spot vs. LT spread',bull:'SPUT premium &gt;5%; LT contracts &gt;$95/lb; utility uncovered &gt;30% of 5yr forward need; new hyperscaler PPAs',bear:'SPUT deep discount; utilities defer procurement; Congress grants new Russian import exemptions'},
+    {v:'Grid',c:'#185FA5',ind:'Transformer lead times + hyperscaler annual capex guidance + ETN/GEV/PWR quarterly order growth',bull:'Lead times still 2–4yr; hyperscaler capex raised YoY; ETN backlog growth &gt;15%; GEV slot reservations rising',bear:'Lead times drop below 12m; hyperscaler AI capex plateaus; utility capex deferrals increase'},
+    {v:'Copper',c:'#D85A30',ind:'TC/RC rate (smelter treatment charges) + LME warehouse stock direction + new mine FID announcements',bull:'TC/RC negative or near zero; LME inventories &lt;200K tonnes declining; no major greenfield FID in 24m',bear:'TC/RC returns &gt;$80/tonne; LME inventories spike above 500K; China construction recovers new smelter capacity'},
+    {v:'NatGas/LNG',c:'#EF9F27',ind:'EU gas storage % vs. 5yr avg (GIE AGSI+) + Asian LNG spot + Qatar Ras Laffan repair progress',bull:'EU storage &lt;40% vs. 5yr avg; Asian spot &gt;$15/MMBtu; Qatar repair extends; new US LNG long-term SPAs',bear:'EU storage &gt;65%; mild European winter; Qatar restored faster than expected; US LNG FIDs delayed'},
+    {v:'TechMet',c:'#185FA5',ind:'Antimony spot (LME/Fastmarkets) + gallium/germanium Rotterdam spot + PPTA quarterly construction',bull:'Sb &gt;$50K/tonne stable; no Western Ga/Ge primary production alternative; PPTA construction on schedule',bear:'China unilaterally lifts Sb/Ga/Ge controls; PPTA permitting re-opened or cost overruns reported'},
+    {v:'Lithium',c:'#1D9E75',ind:'Chinese Li carbonate spot (SMM weekly) + monthly China/EU EV penetration + utility BESS announcements',bull:'LCE &gt;$20K/tonne and rising; global EV penetration &gt;30%; utility BESS &gt;100 GWh/yr; ALB/SQM guidance raised',bear:'LCE falls back below $12K; EV demand misses on China credit tightening; IRA domestic content weakened'},
+    {v:'Gold/Stream',c:'#888780',ind:'10yr TIPS real yield + monthly CB reserve data (IMF COFER/WGC) + gold vs. EUR/JPY',bull:'Real yields falling or negative; CB buying &gt;50T/month; gold outperforming EUR and JPY; FNV/WPM FCF yield compressing',bear:'Real yields rising sharply above 2%; CB selling; dollar reserve share stabilizing post-geopolitical normalization'}
+  ];
+  const sigsHtml=`<div data-hscroll><table class="fw-signals"><thead><tr><th>Vertical</th><th>What to watch</th><th class="sig-bull">Bullish signal</th><th class="sig-bear">Bearish signal</th></tr></thead><tbody>${sigs.map(s=>`<tr><td style="white-space:nowrap"><span class="sig-chip" style="background:${s.c}22;color:${s.c}">${s.v}</span></td><td style="min-width:200px;color:var(--color-text-secondary)">${s.ind}</td><td class="sig-bull" style="min-width:180px">${s.bull}</td><td class="sig-bear" style="min-width:180px">${s.bear}</td></tr>`).join('')}</tbody></table></div>`;
+
+  // Learning path — walks the tabs in the SAME order they appear in the tab
+  // bar, so the two never contradict each other.
+  const steps=[
+    {n:1,name:'Universe Matrix',tab:'mx',c:'#374151',desc:'The map. Every commodity vertical \u00d7 every value chain stage. Click a blue cell for analytical depth, any other cell to open that stage in the Vertical Explorer.'},
+    {n:2,name:'Cycle & Innings',tab:'cy',c:'#E24B4A',desc:'Where each vertical sits in its structural cycle. The ranked table shows which are earliest-stage; expand any card for the full narrative.'},
+    {n:3,name:'Geopolitical',tab:'geo',c:'#A32D2D',desc:'Adversarial supply concentration. The heat map scores each vertical; the detail explains which chain stages China actually controls.'},
+    {n:4,name:'Vertical Explorer',tab:'vx',c:'#534AB7',desc:'Drill into one chain end to end \u2014 mine to end-use, where value is captured, and which steps are chokepoints.'},
+    {n:5,name:'Portfolio',tab:'ps',c:'#EF9F27',desc:'The defining insight and three-cluster structure. Work through the four screening questions \u2014 apply them mechanically to every position.'},
+    {n:6,name:'Companies',tab:'co',c:'#185FA5',desc:'The names. Filter by vertical, conviction or froth. Structure badges show the access type (streaming vs. equity vs. physical trust).'},
+    {n:7,name:'Research Notes',tab:'nt',c:'#993556',desc:'Chronological event log. What changed and when \u2014 the gap between the original thesis and current reality.'}
+  ];
+  const stepsHtml=steps.map(p=>`<div class="fw-step" onclick="ST('${p.tab}')"><div class="fw-step-num" style="background:${p.c}">${p.n}</div><div class="fw-step-name">${p.name}</div><div class="fw-step-desc">${p.desc}</div></div>`).join('');
+
+  el.innerHTML=`
+    <div class="fw-macro"><div class="fw-macro-title">Why hard assets, why now</div><div class="fw-macro-body">Four structural forces are converging simultaneously — and each reinforces the others. <b>Deglobalization</b> is forcing supply chain regionalization: governments are paying strategic premiums to secure domestic production of materials they cannot afford to import from adversaries. <b>AI infrastructure</b> requires massive physical inputs — power, copper, transformers, rare earth magnets — that have no software substitute and take a decade to build. <b>Energy transition</b> demands 6–10× more copper, lithium, cobalt, and rare earths per unit of capacity than the fossil fuel system it replaces. <b>Monetary debasement</b> has driven central banks to record gold purchases as de-dollarization accelerates post-2022 Russia sanctions. These are not cyclical trends — they are structural regime changes that will play out over decades, and the supply chains required were not built during the previous era of cheap capital and globalization.</div></div>
+    <div class="fw-drivers">${driversHtml}</div>
+    <div class="fw-insight"><div class="fw-insight-label">The defining structural insight</div><div class="fw-insight-title">Four verticals at inning 1–2, with the highest capex gaps in the universe</div><div class="fw-insight-body">Nuclear/Uranium (inning 2), REE (inning 1), Electricity/Grid (inning 2) and Copper (inning 2) all share the same structural profile: demand is mathematically locked in by AI power, the enrichment rebuild, grid buildout and electrification; supply chains are starved of investment after a decade+ of neglect; and lead times are so long that even committed investment today cannot solve the deficit quickly. Three of the four carry business cycle risk below 30 — the <b>most defensible positions in a recessionary environment</b>, since government procurement and grid buildout happen regardless of GDP. <b>Copper is the deliberate exception:</b> at BC risk 62 it is materially more cyclical and demands more entry-timing discipline — but its supply case is the hardest of the four to argue against, with no substitute and 16–17 year permitting in democracies.</div><div class="fw-trio"><div class="fw-trio-item" style="background:#534AB712;border:.5px solid #534AB744"><div class="fw-trio-name" style="color:#534AB7">Nuclear / Uranium</div><div class="fw-trio-stats">Inning 2 · Capex gap 90<br>BC risk 20 · Structural 95</div></div><div class="fw-trio-item" style="background:#99355612;border:.5px solid #99355544"><div class="fw-trio-name" style="color:#993556">REE &amp; Specialty</div><div class="fw-trio-stats">Inning 1 · Capex gap 92<br>BC risk 28 · Structural 92</div></div><div class="fw-trio-item" style="background:#185FA512;border:.5px solid #185FA544"><div class="fw-trio-name" style="color:#185FA5">Electricity / Grid</div><div class="fw-trio-stats">Inning 2 · Capex gap 88<br>BC risk 22 · Structural 94</div></div><div class="fw-trio-item" style="background:#D85A3012;border:.5px solid #D85A3044"><div class="fw-trio-name" style="color:#D85A30">Copper</div><div class="fw-trio-stats">Inning 2 · Capex gap 85<br>BC risk 62 · Structural 88</div></div></div></div>
+    <div class="sh-stats">${statsHtml}</div>
+    <div class="fw-section-hdr">Mental models — the 5 lenses every position needs to pass</div>
+    <div class="fw-models">${modelsHtml}</div>
+    <div class="fw-section-hdr">Signals to watch — per-vertical leading indicators</div>
+    ${sigsHtml}
+    <div class="fw-section-hdr">Learning path — recommended sequence through this dashboard</div>
+    <div class="fw-path">${stepsHtml}</div>
+    <div class="act-route" onclick="ST('act')">
+      <div class="act-route-ico">⚡</div>
+      <div>
+        <div class="act-route-t">Act Now is the front door — this page is reference</div>
+        <div class="act-route-d">Anything that would change an allocation decision today lands there, and it stays silent when nothing does. Come here for the framework, the mental models and the vocabulary.</div>
+      </div>
+      <div class="act-route-go">→</div>
+    </div>
+    <div class="fw-section-hdr">How to read company names</div>
+    <div class="note-box" style="line-height:1.9">
+      <b>A hyperlinked ticker means the name has an investing angle.</b> Plain text is deliberate — it marks context, not an oversight.<br>
+      <span class="ticklink">TICKER</span> — in the investable universe. Opens the full profile.<br>
+      <span class="ticklink ticklink-ex">TICKER</span> — assessed and deliberately excluded. Opens the reason why.<br>
+      <span class="ticklink ticklink-cand">TICKER</span> — referenced and investable, not yet assessed.<br>
+      <span style="font-family:var(--font-mono);font-size:.9em">TICKER</span> — context only (a customer or downstream buyer with no hard-asset angle). Not clickable.<br>
+      <span style="font-family:var(--font-mono);font-size:.9em">Name (private)</span> — privately held, no listed equity. Not clickable.
+    </div>
+    <div class="note-box">⚡ AI crosslink → <a href="https://joeedessa.github.io/ai-hardware-research" target="_blank" rel="noopener" style="color:var(--accent)">AI Hardware Research ↗</a> — CEG / VST / GEV are in the AI Hardware map's datacenter vertical (reference-only here, not double-counted).</div>
+  `;
+}
+
+// ── MATRIX ─────────────────────────────────────────────────────────────────
+function buildMatrix(){
+  const el=document.getElementById('v-mx');if(!el)return;
+  const nC=VC_COLS.length;
+  if(!nC){el.innerHTML='<div class="note-box">Matrix data loading…</div>';return;}
+
+  const colStyle=`grid-template-columns:70px repeat(${nC},minmax(var(--mxcol,124px),1fr))`;
+
+  // Header row
+  const hdr='<div></div>'+VC_COLS.map(v=>`<div class="mch mch-click" onclick="gotoVertical('${esc(v.id)}')" title="Open ${esc(v.sn)} in Vertical Explorer" style="background:${v.c}18;border:.5px solid ${v.c}44;color:${v.c}">${esc(v.sn)}</div>`).join('');
+
+  // Data rows
+  const rowsHtml=ROWS.map(row=>{
+    const cells=VC_COLS.map(v=>{
+      const tags=(MXC[row.id]||{})[v.id]||[];
+      const key=`${row.id}_${v.id}`;
+      const hasDetail=!!DET[key];
+      const inner=tags.length?tags.map(([t,c])=>`<span class="ct ${c}">${esc(t)}</span>`).join(' '):'';
+      if(hasDetail)return `<div class="mc hi" onclick="showMxDet('${key}')">${inner}</div>`;
+      const vName=(V_MAP[v.id]||{}).n||v.sn;
+      return `<div class="mc" onclick="gotoVertical('${esc(v.id)}','${esc(row.id)}')" title="${esc(vName)} · ${esc(row.n)} → open in Vertical Explorer">${inner}</div>`;
+    }).join('');
+    return `<div class="mrl">${esc(row.n)}</div>${cells}`;
+  }).join('');
+
+  // Legend
+  const leg=`<div style="grid-column:1/-1;display:flex;gap:5px;flex-wrap:wrap;padding-top:4px;border-top:.5px solid var(--color-border-tertiary);font-size:10px;color:var(--color-text-tertiary)"><span style="background:#534AB70A;border:.5px solid #534AB7;padding:1px 5px;border-radius:2px;color:#534AB7;font-weight:500">blue cells</span> open analytical detail · other cells navigate to that vertical | ${VC_COLS.map(v=>`<span class="ct ${v.tc}">${esc(v.sn)}</span>`).join('')}</div>`;
+
+  // Dim B
+  const bbHtml=B_BAND.length?`<div class="bband" data-hscroll><div class="binner">
+    <div class="blbl">Dimension B — Cross-cutting picks &amp; shovels, royalties, trading, recycling (full detail in Picks &amp; Shovels tab)</div>
+    ${B_BAND.map(br=>`<div class="brow" style="${colStyle}"><div class="brhdr">${esc(br.n)}</div>${br.items.map(it=>`<div class="bcell">${esc(it||'—')}</div>`).join('')}</div>`).join('')}
+  </div></div>`:'';
+
+  // Dim C
+  const cbHtml=C_BAND.length?`<div style="font-size:10px;color:var(--color-text-tertiary);margin-top:6px">Dimension C — <b>derived infrastructure</b>: physical asset sectors the commodities above feed into. Not commodity verticals, so they have no Dimension A column. Distinct from <b>Demand Themes</b>, which are demand narratives rather than asset sectors — the two are different axes and do not map one-to-one. Click a card ↗ for the related view.</div>
+    <div class="cband">${C_BAND.map(card=>{
+      const dest=card.tab?`openCBandCard('${esc(card.tab)}'${card.theme?`,'${esc(card.theme)}'`:''})`:'';
+      const cls=card.tab?'cc cc-link':'cc';
+      const attrs=card.tab?` onclick="${dest}" title="${esc(cbDestLabel(card))}"`:'';
+      return `<div class="${cls}" style="border-color:${card.c}44"${attrs}><div class="ctit" style="color:${card.c}">${esc(card.t)}${card.tab?' <span class="cc-arrow">↗</span>':''}</div>${(card.rows||[]).map(r=>`<div class="crow"><b style="font-size:9.5px;font-weight:500;color:var(--color-text-primary)">${esc(r.n)}</b><div class="csub">${linkifyTickers(esc(r.s))}</div></div>`).join('')}</div>`;
+    }).join('')}</div>`:'';
+
+  el.innerHTML=`
+    <div class="note-box" style="margin-bottom:5px">Dimension A — ${ROWS.length} value chain stages × ${nC} commodity verticals. <span style="background:color-mix(in srgb,var(--accent) 8%,transparent);border:.5px solid var(--accent);padding:1px 5px;border-radius:2px;color:var(--accent);font-weight:500;font-size:9.5px">blue cells</span> = analytical detail, opens a panel below with a link onward. Every other cell jumps straight to that vertical in the Vertical Explorer.</div>
+    <div class="mx-grid" data-hscroll><div class="mx-g" style="${colStyle}">${hdr}${rowsHtml}${leg}</div></div>
+    <div class="mx-det" id="mx-det"></div>
+    ${bbHtml}${cbHtml}`;
+}
+
+// Dimension C cards each point at the view that analyses them in depth:
+// Electricity -> its own tab; the other two -> the matching Demand Theme.
+const TAB_LABELS={el:'Electricity & Grid',th:'Demand Themes',vx:'Vertical Explorer'};
+function cbDestLabel(card){
+  const t=TAB_LABELS[card.tab]||card.tab;
+  if(card.theme){
+    const th=(THEMES||[]).find(x=>x.id===card.theme);
+    // Cross-reference, not an equivalence — a Dim C sector is physical
+    // infrastructure; a theme is a demand narrative. They are different axes.
+    return `Related demand theme → ${th?th.n:card.theme}`;
+  }
+  return `Open ${t}`;
+}
+function openCBandCard(tab,theme){
+  ST(tab);
+  // ST() builds the tab on first visit (Themes defaults to its first theme),
+  // so select the intended theme afterwards either way.
+  if(theme&&tab==='th')loadTheme(theme);
+}
+
+function showMxDet(key){
+  const d=document.getElementById('mx-det');if(!d)return;
+  const info=DET[key];
+  if(!info){d.classList.remove('on');return;}
+  // Toggle off if clicking same cell again
+  if(d.dataset.key===key&&d.classList.contains('on')){d.classList.remove('on');d.dataset.key='';return;}
+  d.dataset.key=key;
+  const flags=(info.f||[]).map(f=>{
+    if(f==='fch')return '<span class="sf fch">⚠ chokepoint</span>';
+    if(f==='fgp')return '<span class="sf fgp">↑ supply gap</span>';
+    if(f==='fgeo')return '<span class="sf fgeo">⚑ geopolitical</span>';
+    return '';
+  }).join('');
+  // A blue cell shows analytical depth AND offers the same jump a normal cell
+  // makes, so the two kinds of cell no longer feel like different behaviours.
+  const us=key.lastIndexOf('_');
+  const rowId=key.slice(0,us), vId=key.slice(us+1);
+  const vd=V_MAP[vId], rowN=(ROWS.find(r=>r.id===rowId)||{}).n||'';
+  const jump=vd?`<div class="dw-act" style="margin-top:8px"><span class="dw-btn" onclick="showMxDet('${key}');gotoVertical('${esc(vId)}','${esc(rowId)}')">Open ${esc(vd.n)}${rowN?' · '+esc(rowN):''} in Vertical Explorer →</span></div>`:'';
+  d.innerHTML=`<div class="mx-det-title">${esc(info.t)}</div><div style="margin-bottom:6px">${flags}</div>${linkifyTickers(info.b)}${jump}`;
+  d.classList.add('on');
+  d.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+// ── VERTICALS ──────────────────────────────────────────────────────────────
+let VX_ACTIVE=CHAIN_VERTICALS[0]?.id||'oil';
+function buildVerticals(){
+  const el=document.getElementById('v-vx');if(!el)return;
+  el.innerHTML=`<div class="vx-layout"><div class="vx-list" id="vx-list"></div><div class="vx-detail" id="vx-detail"></div></div>`;
+  renderVxList();renderVxDetail(VX_ACTIVE);
+}
+function renderVxList(){
+  const el=document.getElementById('vx-list');if(!el)return;
+  const btn=v=>`<button class="vx-btn${v.id===VX_ACTIVE?' on':''}" style="${v.id===VX_ACTIVE?'background:'+v.c+';':''}" onclick="loadV('${v.id}')">${esc(v.n)}</button>`;
+  // Group by the vertical's own `g`, falling back to explorer.json
+  const groups=[];
+  CHAIN_VERTICALS.forEach(v=>{
+    const g=v.g||VC[v.id]?.g||'Other';
+    let grp=groups.find(x=>x.g===g);
+    if(!grp){grp={g,items:[]};groups.push(grp);}
+    grp.items.push(v);
+  });
+  const derived=VERTICALS.filter(v=>v.derived);
+  const derivedHtml=derived.length?`<div class="vgrp">Derived infra</div>`
+    +derived.map(v=>`<button class="vx-btn vx-btn-derived" onclick="gotoVertical('${v.id}')" title="Not a commodity chain — opens its own tab">${esc(v.n)} ↗</button>`).join(''):'';
+  el.innerHTML=((groups.length>1)
+    ? groups.map(grp=>`<div class="vgrp">${esc(grp.g)}</div>${grp.items.map(btn).join('')}`).join('')
+    : CHAIN_VERTICALS.map(btn).join(''))+derivedHtml;
+}
+function loadV(id){
+  VX_ACTIVE=id;
+  if(!built['vx']){built['vx']=true;buildVerticals();return;}
+  renderVxList();renderVxDetail(id);
+  const d=document.getElementById('vx-detail');if(d)d.scrollTop=0;
+}
+// Matrix row ids -> keywords found in explorer.json chain-step labels.
+// The two datasets use similar but not identical wording ("Exploration" vs
+// "Exploration & seismic"), and chain lengths differ per vertical, so we score
+// by keyword rather than matching exactly or trusting position.
+const ROW_KEYWORDS={
+  rr:['right','royalt','stream'],
+  ex:['explor','seismic','discover','junior'],
+  dv:['develop','pre-fid','pre fid','permit','feasibil','construct'],
+  pr:['extract','production','producer','mining','mine','drill','brine','offshore'],
+  p1:['primary','gathering','milling','concentrat','separation','beneficiat','crack','smelt'],
+  rf:['refin','enrich','transform','conversion','petrochem','fabricat','magnet','processing'],
+  tr:['transport','pipeline','tanker','logistic','shipping','freight'],
+  st:['storage','terminal','stockpile','inventory','vault','reserve','warehouse'],
+  di:['distribut','end-use','end use','demand','utilit','oem','grid'],
+  rc:['recycl','secondary','scrap','reprocess'],
+};
+function findChainStep(vid,rowId){
+  const chain=(VC[vid]||{}).chain||[];
+  if(!chain.length)return -1;
+  const kws=ROW_KEYWORDS[rowId]||[];
+  let best=-1,bestScore=0;
+  chain.forEach((s,i)=>{
+    const label=(s.l||'').toLowerCase();
+    let score=0;
+    kws.forEach((k,ki)=>{ if(label.includes(k))score+=kws.length-ki; });
+    if(score>bestScore){bestScore=score;best=i;}
+  });
+  // Only deep-link on a genuine wording match. The two taxonomies differ in
+  // granularity — not every matrix row exists in every vertical's chain — and
+  // guessing by position lands on unrelated steps, which is worse than just
+  // opening the vertical and letting the reader scan it.
+  return best;
+}
+
+// Jump from another tab (e.g. the Matrix) straight into a specific vertical,
+// optionally opening the chain step that matches the matrix row clicked.
+function gotoVertical(id,rowId){
+  const vd=V_MAP[id];
+  if(!vd)return;
+  if(vd.derived){ST(vd.tab||'el');return;}   // no chain to show — use its own tab
+  const wasBuilt=built['vx'];
+  VX_ACTIVE=id;
+  ST('vx');                       // builds using VX_ACTIVE on first visit
+  if(wasBuilt)loadV(id);          // already built → re-render for the new id
+  if(rowId)highlightChainStep(id,rowId);
+}
+function highlightChainStep(vid,rowId){
+  const idx=findChainStep(vid,rowId);
+  if(idx<0)return;
+  // Let the detail panel finish rendering before locating the step
+  setTimeout(()=>{
+    const steps=document.querySelectorAll('#vx-detail .sc');
+    const target=steps[idx];
+    if(!target)return;
+    steps.forEach(s=>s.classList.remove('sc-flash'));
+    target.classList.add('ex','sc-flash');
+    target.scrollIntoView({behavior:'smooth',block:'center'});
+    setTimeout(()=>target.classList.remove('sc-flash'),2000);
+  },60);
+}
+function renderVxDetail(vid){
+  const el=document.getElementById('vx-detail');if(!el)return;
+  const v=vinfo(vid);
+  const cyc=CYCLE.find(c=>c.id===vid)||{};
+  const cos=COMPANIES.filter(c=>c.vertical===vid);
+
+  // Group by stage
+  const byStage={};
+  cos.forEach(c=>{const s=classifyStage(c.chain_layer);(byStage[s]=byStage[s]||[]).push(c);});
+
+  const stageFlow=CHAIN_STAGES.map(s=>{
+    const scos=byStage[s.id]||[];
+    if(!scos.length)return '';
+    return `<div class="vx-stage">
+      <div class="vx-stage-n">${esc(s.n)}</div>
+      ${scos.map(c=>`<div class="vx-co" onclick="openCompanyDrawer('${esc(c.ticker)}')"><div class="vx-co-tk">${esc(c.ticker)}</div><div class="vx-co-nm">${esc(c.name)}</div></div>`).join('')}
+    </div>`;
+  }).filter(Boolean).join('');
+
+  const aiPull=cos.some(c=>(c.themes||[]).some(t=>AI_DEMAND_THEMES.includes(t)));
+
+  // Chain steps from explorer.json — the detailed per-layer write-ups
+  const ex=VC[vid]||{};
+  const chain=ex.chain||[];
+  const chainSteps=chain.map((s,i)=>{
+    const flags=(s.f||[]).map(f=>{
+      if(f==='choke')return '<span class="sfl fc">⚠ chokepoint</span>';
+      if(f==='gap')return '<span class="sfl fg">↑ supply gap</span>';
+      if(f==='geo')return '<span class="sfl fge">⚑ geopolitical</span>';
+      if(f==='new')return '<span class="sfl fn">★ new layer</span>';
+      if(f==='cross'){const cid=CROSS_V[vid];
+        return cid&&VC[cid]?`<span class="sfl fx" onclick="event.stopPropagation();loadV('${esc(cid)}')">⇄ cross-chain → ${esc(VC[cid].n)}</span>`:'<span class="sfl fx">⇄ cross-chain</span>';}
+      return '';
+    }).join('');
+    const line=i<chain.length-1?`<div class="sln" style="background:${v.c}"></div>`:'';
+    return `<div class="srow">
+      <div style="display:flex;flex-direction:column;align-items:center;padding-top:2px;height:100%"><div class="snd" style="background:${v.c}">${i+1}</div>${line}</div>
+      <div class="sc" onclick="this.classList.toggle('ex')">
+        <div class="sct"><span style="pointer-events:none">${esc(s.l)}</span><span class="sch">▼</span></div>
+        <div class="scr" style="pointer-events:none">${esc(s.r||'')}</div>
+        ${flags?`<div style="margin-top:2px">${flags}</div>`:''}
+        <div class="scd">${linkifyTickers(esc(s.d||''))}</div>
+      </div></div>`;
+  }).join('');
+
+  el.innerHTML=`
+    <div class="vx-head">
+      <div class="vx-title" style="color:${v.c}">${esc(v.n)}</div>
+      <div class="vx-plain">${esc(v.plain)}</div>
+      ${cyc.verdict?`<div style="margin-top:6px"><span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 6px;border-radius:3px;background:${cyc.vc||v.c}18;color:${cyc.vc||v.c}">${esc(cyc.verdict)}</span> <span style="font-size:10.5px;color:var(--color-text-tertiary)">Inning ${cyc.inn||'?'}/9</span></div>`:''}
+      ${aiPull?`<a class="ai-xlink" href="https://joeedessa.github.io/ai-hardware-research" target="_blank" rel="noopener">AI demand pull — see AI Hardware Research ↗</a>`:''}
+    </div>
+    ${ex.note?`<div class="vnote">${linkifyTickers(esc(ex.note))}</div>`:''}
+    ${chainSteps?`<div class="sect-h">Value chain — click any step to expand</div>${chainSteps}`:''}
+    ${stageFlow?`<div class="sect-h">Companies by stage</div><div class="vx-flow">${stageFlow}</div>`:''}
+    ${cyc.sum?`<div class="sect-h">Cycle thesis</div><div class="note-box">${linkifyTickers(esc(cyc.sum))}</div>`:''}
+  `;
+}
+
+// ── FROTH MONITOR ──────────────────────────────────────────────────────────
+function buildFrothMonitor(){
+  const el=document.getElementById('v-fm');if(!el)return;
+  const groups={1:[],2:[],3:[]};
+  COMPANIES.forEach(c=>{
+    const f=c.froth||2;
+    groups[f].push(c);
+  });
+
+  const card=(c)=>{
+    const fm=FROTH_META[c.froth||2];
+    const q=QUOTES[c.ticker];
+    const dd=q?.dd;
+    const ddHtml=dd!=null?`<span class="fm-dd" style="background:${dd<=-15?'color-mix(in srgb,var(--good) 13%,transparent)':'var(--color-background-secondary)'};color:${dd<=-15?'var(--good)':'var(--color-text-tertiary)'}">${dd.toFixed(1)}%</span>`:'';
+    return `<div class="fm-card" onclick="openCompanyDrawer('${esc(c.ticker)}')">
+      <div class="fm-card-top">
+        <span class="fm-pulse ${fm.cls}"></span>
+        <span class="fm-tk">${esc(c.ticker)}</span>
+        <span class="fm-nm">${esc(c.name)}</span>
+        ${ddHtml}
+      </div>
+      ${c.froth_note?`<div class="fm-note">${esc(c.froth_note.slice(0,120))}${c.froth_note.length>120?'…':''}</div>`:''}
+    </div>`;
+  };
+
+  const col=(froth)=>{
+    const fm=FROTH_META[froth];
+    const cos=groups[froth];
+    return `<div>
+      <div class="fm-col-head" style="background:${fm.c}18;border:.5px solid ${fm.c}33">
+        <span class="fm-pulse ${fm.cls}"></span>
+        <span class="fm-col-title" style="color:${fm.c}">${fm.l}</span>
+        <span style="margin-left:auto;font-size:10px;color:${fm.c};font-weight:600">${cos.length}</span>
+      </div>
+      <div class="fm-cards">${cos.length?cos.map(card).join(''):'<div style="font-size:11px;color:var(--color-text-tertiary);padding:8px;text-align:center">None currently</div>'}</div>
+    </div>`;
+  };
+
+  el.innerHTML=`
+    <div class="fm-intro"><b>HA froth signals differ from momentum-based equity froth.</b> We use: commodity spot vs equity price divergence · cost curve position · incentive price vs spot · inventory levels (contango / backwardation) · term structure. Green = insulated (early innings, spot not in price). Amber = some premium in equity. Red = equity has run ahead of fundamentals — wait for repricing.</div>
+    <div class="fm-sigs">${col(1)}${col(2)}${col(3)}</div>
+  `;
+}
+
+// ── CHAIN EXPLAINERS ───────────────────────────────────────────────────────
+function buildExpls(){
+  const g=document.getElementById('exg');if(!g)return;
+  if(!EXPLS.length){g.innerHTML='<div class="note-box">Explainer data loading…</div>';return;}
+  EXPLS.forEach(e=>{
+    const c=mk('div','exc');
+    c.addEventListener('click',()=>c.classList.toggle('on'));
+    const vr=(e.vals||[]).map(v=>`<div class="vr"><div class="vrl">${esc(v.l)}</div><div class="vrb"><div class="vrf" style="width:${v.v}%;background:${e.c}aa"></div></div><div class="vrn">${esc(v.n)}</div></div>`).join('');
+    c.innerHTML=`<div class="exh"><div class="exd" style="background:${e.c}"></div><div class="exn">${esc(e.n)}</div><div class="exch">▼</div></div><div class="exhk">${linkifyTickers(e.hk||'')}</div><div class="exar">Chain: ${esc(e.ar||'')}</div><div class="exbd">${linkifyTickers(e.bd||'')}<div style="margin-top:6px;font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:3px;pointer-events:none">Value capture by layer</div>${vr}</div>`;
+    g.appendChild(c);
+  });
+}
+
+// ── ELECTRICITY & GRID ─────────────────────────────────────────────────────
+function buildEl(){
+  const cg=document.getElementById('el-chain-grid');
+  if(cg&&EL_CHAIN.length){
+    EL_CHAIN.forEach(card=>{
+      const c=mk('div',`elc${card.hi?' hi':''}`);
+      c.addEventListener('click',()=>c.classList.toggle('ex'));
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${card.c}"></div><div class="eln">${esc(card.n)}</div><div class="elch">▼</div></div><div class="elb">${linkifyTickers(card.role||'')}</div><div class="elt">${linkifyTickers(esc(card.tick||''))}</div><div class="eld2">${linkifyTickers(card.det||'')}</div>`;
+      cg.appendChild(c);
+    });
+  }
+  const ig=document.getElementById('el-intx-grid');
+  if(ig&&EL_INTX.length){
+    EL_INTX.forEach(ix=>{
+      const c=mk('div','elc');
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${ix.c}"></div><div class="eln">${esc(ix.n)}</div></div><div class="elb">${linkifyTickers(ix.body||'')}</div><div class="elt">${linkifyTickers(esc(ix.tick||''))}</div>${ix.demand?`<div style="margin-top:4px;font-size:10px;background:var(--color-background-secondary);padding:3px 5px;border-radius:3px;color:var(--color-text-secondary)"><b style="color:var(--color-text-primary)">Demand:</b> ${esc(ix.demand)}</div>`:''}`;
+      ig.appendChild(c);
+    });
+  }
+  const ac=document.getElementById('el-ai-cont');
+  if(ac&&EL_AI.length){
+    const ag=mk('div','el-grid');
+    EL_AI.forEach(d=>{
+      const c=mk('div','elc');
+      c.innerHTML=`<div class="eln" style="margin-bottom:3px">${esc(d.n)}</div><div class="elb">${linkifyTickers(d.body||'')}</div><div class="elt">${linkifyTickers(esc(d.tick||''))}</div>`;
+      ag.appendChild(c);
+    });
+    ac.appendChild(ag);
+  }
+  const cc=document.getElementById('el-cycle-cont');
+  if(cc&&EL_CYCLE.length){
+    const cg2=mk('div','el-grid');
+    EL_CYCLE.forEach(cy=>{
+      const c=mk('div','elc');
+      const dots=Array(9).fill(0).map((_,j)=>`<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${j<cy.inn?(j===cy.inn-1?cy.c:cy.c+'55'):'var(--color-background-secondary)'};border:.5px solid ${cy.c}44;margin-right:1px"></span>`).join('');
+      c.innerHTML=`<div class="elh"><div class="eld" style="background:${cy.c}"></div><div class="eln">${esc(cy.n)}</div><span class="badge" style="background:${cy.vc}22;color:${cy.vc};border:.5px solid ${cy.vc}44;margin-left:auto;font-size:9.5px;padding:1px 5px;border-radius:3px">${esc(cy.verdict||'')}</span></div>
+        <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:2px;font-size:10px"><span style="color:var(--color-text-tertiary)">Structural</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.struct}%;height:100%;background:${cy.c};border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:${cy.c}">${cy.struct}</span></div>
+        <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:2px;font-size:10px"><span style="color:var(--color-text-tertiary)">Capex gap</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.capex}%;height:100%;background:#E24B4A;border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:#E24B4A">${cy.capex}</span></div>
+        <div style="display:grid;grid-template-columns:80px 1fr 32px;gap:2px;align-items:center;margin-bottom:3px;font-size:10px"><span style="color:var(--color-text-tertiary)">Cycle risk</span><div style="height:3px;border-radius:2px;background:var(--color-background-secondary)"><div style="width:${cy.bc}%;height:100%;background:#EF9F27;border-radius:2px"></div></div><span style="font-size:10px;font-weight:500;color:#EF9F27">${cy.bc}</span></div>
+        <div style="font-size:10px;color:var(--color-text-tertiary);margin-bottom:2px">Innings: ${dots}<span style="font-weight:500;color:${cy.c}">${cy.inn}/9</span></div>
+        <div class="elb" style="font-size:10px">${linkifyTickers(cy.body||'')}</div>`;
+      cg2.appendChild(c);
+    });
+    cc.appendChild(cg2);
+  }
+}
+function setElView(id,btn){
+  document.querySelectorAll('#el-pills .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  ['chain','intx','ai','cycle'].forEach(v=>{const el=document.getElementById('el-'+v);if(el)el.style.display=v===id?'':'none';});
+}
+
+// ── DEMAND THEMES ──────────────────────────────────────────────────────────
+function buildThemes(){
+  const nav=document.getElementById('th-nav');if(!nav)return;
+  if(!THEMES.length){nav.innerHTML='<div class="note-box">Theme data loading…</div>';return;}
+  THEMES.forEach(t=>{
+    const btn=mk('div','tn');btn.dataset.id=t.id;
+    btn.innerHTML=`<div class="tn-name" style="color:${t.c}">${esc(t.n)}</div><div class="tn-sub">${esc(t.sub||'')}</div>`;
+    btn.addEventListener('click',()=>loadTheme(t.id));
+    nav.appendChild(btn);
+  });
+  loadTheme(THEMES[0].id);
+}
+function loadTheme(id){
+  document.querySelectorAll('.tn').forEach(b=>{b.classList.remove('on');b.style.background='';b.style.borderColor='';});
+  const btn=document.querySelector(`.tn[data-id="${id}"]`);
+  const t=THEMES.find(x=>x.id===id);if(!t)return;
+  if(btn){btn.classList.add('on');btn.style.background=t.c;btn.style.borderColor=t.c;}
+  const cont=document.getElementById('th-detail');if(!cont)return;
+  let det=document.getElementById('thd-'+id);
+  if(!det){
+    det=mk('div','th-detail');det.id='thd-'+id;
+    const chain=(t.items||[]).map((item,i)=>`<div class="tc-item"><div class="tc-num" style="background:${t.c}">${i+1}</div><div><div class="tc-lbl">${esc(item.lbl)}</div><div class="tc-txt">${linkifyTickers(esc(item.ticks||''))}</div><div class="tc-txt" style="color:var(--color-text-secondary);margin-top:1px">${esc(item.why||'')}</div></div></div>`).join('');
+    const posCards=(t.positions||[]).map(p=>{const[tier,...rest]=p.split(':');return `<div class="pos-card"><div class="pos-tier">${esc(tier)}</div><div class="pos-items">${linkifyTickers(esc(rest.join(':').trim()))}</div></div>`;}).join('');
+    const bars=[{l:'Structural demand strength',v:t.struct,c:t.c},{l:'Near-term momentum',v:t.near,c:t.c+'99'},{l:'Business cycle risk',v:t.bc,c:'#EF9F27'}].map(b=>`<div class="vbar"><div class="vbar-lbl">${b.l}</div><div class="vbar-b"><div class="vbar-f" style="width:${b.v}%;background:${b.c}"></div></div><span style="font-size:10.5px;font-weight:500;color:${b.c};min-width:24px;text-align:right">${b.v}</span></div>`).join('');
+    // Holdings for this theme — bridges themes.json company_tags to companies.json
+    const tags=t.company_tags||[];
+    const held=COMPANIES.filter(c=>(c.themes||[]).some(x=>tags.includes(x)))
+      .sort((a,b)=>b.conviction-a.conviction||(a.ticker||'').localeCompare(b.ticker||''));
+    const heldHtml=held.length?`<div class="th-box"><div class="th-box-title">In the universe — ${held.length} name${held.length===1?'':'s'} tagged</div>
+      <div class="th-held">${held.map(c=>{const q=QUOTES[c.ticker];const fm=FROTH_META[c.froth||2];
+        return `<div class="th-held-row" onclick="openCompanyDrawer('${esc(c.ticker)}')">
+          <span class="dw-dot" style="width:6px;height:6px;background:${convColor(c.conviction)}"></span>
+          <span class="th-held-tk">${esc(c.ticker)}</span>
+          <span class="th-held-nm">${esc(c.name)}</span>
+          <span class="badge-sm badge-${fm.cls}">${fm.l}</span>
+          <span class="th-held-px">${q&&q.d1!=null?`<span style="color:${chgColor(q.d1)}">${fmtPct(q.d1)}</span>`:''}</span>
+        </div>`;}).join('')}</div></div>`:'';
+
+    det.innerHTML=`<div class="th-2col"><div><div style="font-size:10px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px">Supply chain position map</div><div class="th-chain">${chain}</div>${heldHtml}</div><div class="th-right"><div class="th-box"><div class="th-box-title">Investment thesis</div><div class="th-box-body">${linkifyTickers(t.thesis||'')}</div></div><div class="th-box"><div class="th-box-title">Portfolio positioning</div><div class="pos-grid">${posCards}</div></div><div class="th-box"><div class="th-box-title">Structure vs. cycle</div>${bars}</div><div class="risk-box"><div class="risk-title">Watch / risk</div><div class="risk-body">${linkifyTickers(t.risk||'')}</div></div></div></div>`;
+    cont.appendChild(det);
+  }
+  document.querySelectorAll('.th-detail').forEach(d=>d.classList.remove('on'));
+  det.classList.add('on');
+}
+
+// ── PICKS & SHOVELS ────────────────────────────────────────────────────────
+function buildPS(){
+  const cont=document.getElementById('ps-cont');if(!cont)return;
+  const pills=document.getElementById('ps-pills');
+  if(!PS.length){cont.innerHTML='<div class="note-box">Picks &amp; shovels data loading…</div>';return;}
+  PS.forEach(sec=>{
+    if(pills){const btn=mk('button','pill');btn.textContent=(sec.title||'').split('—')[0].trim();btn.onclick=()=>setPsFilter(sec.id,btn);pills.appendChild(btn);}
+    const s=mk('div','sec');s.dataset.sec=sec.id;
+    const hd=mk('div','sec-head');
+    hd.innerHTML=`<div class="sec-num" style="background:${sec.c}">${sec.id}</div><div class="sec-title">${esc(sec.title||'')}</div><div class="sec-sub">${esc(sec.sub||'')}</div>`;
+    s.appendChild(hd);
+    const why=mk('div','why');why.style.cssText=`border-color:${sec.c};background:${sec.c}08`;
+    why.innerHTML=`<span style="font-size:10px;font-weight:500;color:var(--color-text-primary)">Why this category matters: </span>${linkifyTickers(sec.why||'')}`;
+    s.appendChild(why);
+    const g=mk('div','ps-grid');
+    (sec.cards||[]).forEach(card=>{
+      const c=mk('div',`psc${card.hi?' hi':''}`);
+      const bcls=card.badge==='hot'?'b-hot':card.badge==='structural'?'b-str':'b-mod';
+      const srvHtml=(card.srv||[]).map(sv=>`<span class="srv">${esc(sv)}</span>`).join('');
+      c.innerHTML=`<div class="psn">${esc(card.n||'')}<span class="badge ${bcls}">${esc(card.badge||'')}</span></div><div class="psr">${linkifyTickers(card.r||'')}</div><div class="pst">${linkifyTickers(card.t||'')}</div><div style="margin-top:3px">${srvHtml}</div>`;
+      g.appendChild(c);
+    });
+    s.appendChild(g);
+    cont.appendChild(s);
+  });
+}
+function setPsFilter(id,btn){
+  document.querySelectorAll('#ps-pills .pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('#ps-cont .sec').forEach(s=>{s.style.display=(id==='all'||s.dataset.sec===id)?'':'none';});
+}
+
+// ── PORTFOLIO ──────────────────────────────────────────────────────────────
+function buildPortfolio(){
+  const el=document.getElementById('v-ps');if(!el)return;
+  const pi=PORTFOLIO.defining_insight||{};
+  const clusters=(PORTFOLIO.clusters||[]);
+
+  // Entry windows: insulated (froth=1) names with quotes data showing dd <= -15%
+  const entryWindows=COMPANIES
+    .filter(c=>c.froth===1&&QUOTES[c.ticker]?.dd!=null&&QUOTES[c.ticker].dd<=-15)
+    .sort((a,b)=>QUOTES[a.ticker].dd-QUOTES[b.ticker].dd);
+
+  const ewHtml=entryWindows.length
+    ?entryWindows.map(c=>{
+      const q=QUOTES[c.ticker];
+      return `<div class="ew-card" onclick="openCompanyDrawer('${esc(c.ticker)}')">
+        <div class="ew-top">
+          <span class="ew-tk">${esc(c.ticker)}</span>
+          <span class="ew-nm">${esc(c.name)}</span>
+          <span class="ew-dd">${q.dd.toFixed(1)}% off high</span>
+        </div>
+        <div class="ew-row"><b>Setup:</b> ${esc(c.chain_layer)} · ${esc(c.geo)}</div>
+        <div class="ew-row"><b>Thesis:</b> ${esc((c.thesis_note||'').slice(0,100))}${(c.thesis_note||'').length>100?'…':''}</div>
+        <div class="ew-row"><b>Froth note:</b> ${esc((c.froth_note||'').slice(0,90))}${(c.froth_note||'').length>90?'…':''}</div>
+      </div>`;
+    }).join('')
+    :`<div class="ew-empty">No live entry windows right now — market data loads nightly via CI. Run scripts/fetch_market.py locally to seed data.</div>`;
+
+  // Scoreboard
+  const sbHtml=buildSbHtml();
+
+  el.innerHTML=`
+    ${pi.body?`<div class="ps-insight"><div class="ps-insight-t">${esc(pi.title||'Defining insight')}</div><div class="ps-insight-b">${esc(pi.body)}</div></div>`:''}
+    ${clusters.length?`<div class="ps-clusters">${clusters.map(cl=>`<div class="ps-cluster"><div class="ps-cluster-h" style="background:${esc(cl.color)}18;color:${esc(cl.color)}">${esc(cl.title)}</div><div class="ps-cluster-b"><ul>${(cl.items||[]).map(item=>`<li>${item}</li>`).join('')}</ul></div></div>`).join('')}</div>`:''}
+    <div class="sect-h">Entry windows — insulated names ≥15% off 52-week high</div>
+    <div class="ew-grid">${ewHtml}</div>
+    <div class="sect-h">Scoreboard — equal-weight basket vs benchmarks</div>
+    ${sbHtml}
+  `;
+}
+
+function buildSbHtml(){
+  const tracks=PERF.tracks||[];
+  const retro=PERF.retrospective||null;
+  const warn=(PERF._meta||{}).retrospective_warning||'';
+  if(!tracks.length&&!retro)
+    return `<div class="note-box">Scoreboard populates after the nightly run. Run scripts/fetch_market.py locally to seed.</div>`;
+
+  const fmtSi=v=>v==null?'<span style="color:var(--color-text-tertiary)">—</span>'
+    :`<span class="${v>=0?'sb-pos':'sb-neg'}">${fmtPct(v)}</span>`;
+
+  // Since-inception tracks — the only part that tests the framework
+  const trackHtml=tracks.map(t=>{
+    const own=t.rows.filter(r=>!r.bench), bench=t.rows.filter(r=>r.bench);
+    const thin=own.every(r=>r.n===0||r.si==null);
+    return `<div class="sb-track">
+      <div class="sb-track-h">${esc(t.name)}<span class="sb-incep">since ${esc(t.inception)}</span></div>
+      ${t.note?`<div class="sb-note">${esc(t.note)}</div>`:''}
+      ${thin?`<div class="sb-thin">Not enough trading days since inception to measure yet. Published now so the record accumulates in the open rather than being claimed later.</div>`:''}
+      <table class="sb-table"><thead><tr><th>Basket</th><th>Names</th><th>Since inception</th></tr></thead>
+      <tbody>${t.rows.map(r=>`<tr class="${r.bench?'sb-bench':'basket-row'}">
+        <td>${esc(r.label)}</td><td style="color:var(--color-text-tertiary)">${r.n||'—'}</td><td>${fmtSi(r.si)}</td></tr>`).join('')}</tbody>
+      </table></div>`;
+  }).join('');
+
+  // Retrospective — demoted, labelled, collapsed
+  let retroHtml='';
+  if(retro){
+    const P=['1m','3m','6m','1y'];
+    const rows=[['Universe mean',retro.mean,'basket-row'],['Universe median',retro.median,'basket-row'],
+      ...Object.entries(retro.benchmarks||{}).map(([n,d])=>[n,d,'sb-bench'])];
+    const tc=(retro.top_contributor||{})['1y'];
+    retroHtml=`<details class="sb-retro"><summary>${esc(retro.label||'Retrospective composition')} — click to expand</summary>
+      <div class="sb-note" style="margin-top:6px">${esc(warn)}</div>
+      <div data-hscroll><table class="sb-table" style="margin-top:6px">
+      <thead><tr><th>Name</th>${P.map(p=>`<th>${p}</th>`).join('')}</tr></thead>
+      <tbody>${rows.map(([n,d,cls])=>`<tr class="${cls}"><td>${esc(n)}</td>${P.map(p=>`<td>${fmtSi((d||{})[p])}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table></div>
+      ${tc?`<div class="sb-thin" style="margin-top:6px">One name dominates: ${esc(tc.ticker)} returned ${fmtPct(tc.ret)} over 12 months, contributing roughly ${fmtPct(tc.contribution_pp)} of the mean by itself. Read the median row instead.</div>`:''}
+    </details>`;
+  }
+
+  return `<div class="sb-lead"><b>A judgment can only be scored from the date it was made.</b> The tracks below start when each layer was actually written. Trailing returns of a universe chosen today describe composition, not skill — they are kept below, demoted and labelled.</div>
+    ${trackHtml}${retroHtml}
+    <div class="note-box" style="margin-top:8px">Equal-weight, price-only, local currency — no rebalancing, dividends or FX conversion. Non-USD listings are counted in their own currency, so the basket mixes currencies.</div>`;
+}
+
+
+// ── POLICY ─────────────────────────────────────────────────────────────────
+function buildPolicy(){
+  const el=document.getElementById('v-pol');if(!el)return;
+  const regimes=POLICY.regimes||[];
+  const programs=POLICY.programs||[];
+  const levers=POLICY.levers||[];
+
+  const regimeCards=regimes.map(r=>`
+    <div class="pol-card">
+      <div class="pol-card-h"><span class="pol-icon">${esc(r.icon||'📋')}</span><div><div class="pol-title">${esc(r.title)}${r.cliff?`<span class="pol-cliff">cliff ${esc(r.cliff)}</span>`:''}</div><div class="pol-date">Since ${esc(r.date)}</div></div></div>
+      <div class="pol-status ${r.status||'active'}">${esc(r.status||'active')}</div>
+      <div class="pol-body">${esc(r.summary)}</div>
+      ${r.watch?`<div class="pol-watch"><b>Watch:</b> ${esc(r.watch)}</div>`:''}
+      <div class="pol-tks">${(r.tickers||[]).map(t=>`<span class="pol-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join('')}</div>
+    </div>`).join('');
+
+  const programCards=programs.map(p=>`
+    <div class="prog-card">
+      <div class="prog-h">${esc(p.title)}</div>
+      <div class="prog-agency">${esc(p.agency)}</div>
+      ${p.budget_approx?`<div class="prog-budget">${esc(p.budget_approx)}</div>`:''}
+      <div class="prog-body">${linkifyTickers(esc(p.description))}</div>
+    </div>`).join('');
+
+  const leverCards=levers.map(l=>`
+    <div class="lev-card">
+      <div class="lev-title">${esc(l.title)}</div>
+      <div class="lev-date">${esc(l.date)}</div>
+      <div class="lev-body">${esc(l.description)}</div>
+      <div class="lev-bb">${esc(l.bull_bear)}</div>
+      <div style="margin-top:5px">${(l.tickers||[]).map(t=>`<span class="pol-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join(' ')}</div>
+    </div>`).join('');
+
+  el.innerHTML=`
+    <div class="note-box">Policy is more central to Hard Assets than to most equity strategies. China export controls, DoD procurement mandates, and US energy security statutes create non-market demand floors. All regime entries are dated — a judgment is only as good as the date it was written.</div>
+    <div class="sect-h">Active policy regimes</div>
+    <div class="pol-grid">${regimeCards||'<div style="color:var(--color-text-tertiary);font-size:12px">Loading…</div>'}</div>
+    <div class="sect-h">Fiscal programs mapped to tickers</div>
+    <div class="pol-prog-grid">${programCards||''}</div>
+    <div class="sect-h">Levers to watch</div>
+    <div class="pol-levers">${leverCards||''}</div>
+  `;
+}
+
+// ── GEOPOLITICAL ────────────────────────────────────────────────────────────
+let GEO_ACTIVE=null;
+function buildGeo(){
+  const el=document.getElementById('v-geo');if(!el)return;
+  const hm=GEO.heatmap||[];
+  const cols=GEO._meta?.heatmap_cols||['Supply concentration','Weaponization risk','Western policy response','Tech race relevance'];
+  const scoreColor=s=>{if(s<=1)return'#16A34A';if(s<=2)return'#3B82F6';if(s<=3)return'#EF9F27';if(s<=4)return'#E27227';return'#E24B4A';};
+
+  const heatRows=hm.map((row,i)=>`
+    <tr>
+      <td class="geo-td" style="cursor:pointer" onclick="GEO_ACTIVE=GEO_ACTIVE==='${row.id}'?null:'${row.id}';buildGeo()">
+        <span style="font-size:12px;font-weight:700;margin-right:4px">${GEO_ACTIVE===row.id?'▼':'▶'}</span>${esc(row.n)}
+      </td>
+      ${(row.scores||[]).map(s=>`<td class="geo-td"><span class="geo-sq" style="background:${scoreColor(s)}">${s}</span></td>`).join('')}
+    </tr>
+    ${GEO_ACTIVE===row.id&&row.det?`<tr><td colspan="${1+cols.length}"><div class="geo-det on">${linkifyTickers(esc(row.det))}</div></td></tr>`:''}
+  `).join('');
+
+  const scoreKey='<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;margin-bottom:12px">'
+    +['1=Very low','2=Low','3=Moderate','4=High','5=Very high'].map((l,i)=>{
+      const c=[,'#16A34A','#3B82F6','#EF9F27','#E27227','#E24B4A'][i+1];
+      return `<span style="font-size:10px;display:inline-flex;align-items:center;gap:4px"><span style="width:14px;height:14px;background:${c};border-radius:3px;display:inline-block"></span>${l}</span>`;
+    }).join('')+'</div>';
+
+  el.innerHTML=`
+    <div class="sect-h">Geopolitical heat map — click a row to expand</div>
+    ${scoreKey}
+    <div class="geo-wrap" data-hscroll><table class="geo-table">
+      <thead><tr><th class="geo-th" style="text-align:left">Vertical</th>${cols.map(c=>`<th class="geo-th">${esc(c)}</th>`).join('')}</tr></thead>
+      <tbody>${heatRows}</tbody>
+    </table></div>
+    <div class="sect-h">Key chokepoints — 2026-08-03</div>
+    <div class="note-box">
+      <b>REE magnets:</b> China controls ~80% of global processing + the largest magnet manufacturers. Export controls since Apr 2025.<br>
+      <b>Uranium enrichment:</b> Russia (TENEX) was 28% of US SWU — now banned. Kazatomprom (Kazakhstan) = 40% of mining: ambiguous sphere.<br>
+      <b>Copper:</b> Democratic mine-permitting asymmetry (15-20yr vs 3-5yr in authoritarian states) is the constraint, not geology.<br>
+      <b>Antimony:</b> China banned exports Oct 2024. China = ~50% of global supply. PPTA Stibnite is the only meaningful Western alternative.<br>
+      <b>Lithium:</b> Chile, Argentina, Australia mine it; China processes 60%+ of global lithium. IRA FEOC rules creating reshoring urgency.<br>
+      <b>LNG routes:</b> Red Sea/Suez disruption has extended tonne-miles for product tankers. European SPAs locked; US LNG is NATO energy policy.
+    </div>
+  `;
+  initHScrollers(el);   // buildGeo re-runs on row expand, so re-attach here
+}
+
+// ── CYCLE ──────────────────────────────────────────────────────────────────
+function buildCycle(){
+  const el=document.getElementById('v-cy');if(!el)return;
+  if(!CYCLE.length){el.innerHTML='<div class="note-box">Cycle data loading…</div>';return;}
+  const sorted=[...CYCLE].sort((a,b)=>a.inn-b.inn);
+
+  const card=c=>{
+    const v=vinfo(c.id);
+    return `<div class="cy-card">
+      <div class="cy-title"><span class="cy-dot" style="background:${v.c}"></span>${esc(v.n)}</div>
+      <div class="cy-inn">Inning ${c.inn}/9 · <span style="font-size:9.5px;color:var(--color-text-tertiary)">bc risk: ${c.bc}</span></div>
+      <span class="cy-verdict" style="background:${c.vc||v.c}18;color:${c.vc||v.c}">${esc(c.verdict||'')}</span>
+      <div class="cy-bar-row"><div class="cy-bar-label">Demand</div><div class="cy-bar-track"><div class="cy-bar-fill" style="width:${c.struct||0}%;background:${v.c}"></div></div><div class="cy-bar-val">${c.struct||0}</div></div>
+      <div class="cy-bar-row"><div class="cy-bar-label">Capex gap</div><div class="cy-bar-track"><div class="cy-bar-fill" style="width:${c.capex||0}%;background:${v.c}aa"></div></div><div class="cy-bar-val">${c.capex||0}</div></div>
+      ${c.sum?`<div class="cy-sum" onclick="this.classList.toggle('open')">${esc(c.sum)}</div>`:''}
+    </div>`;
+  };
+
+  el.innerHTML=`
+    <div class="note-box">Inning 1 = very early / Year 1-2 of a multi-year setup. Inning 9 = very late. Demand score = structural demand strength 0-100. Capex gap = degree of under-investment vs. structural need. Business cycle (bc) risk = cyclicality 0-100 (lower is more defensive).</div>
+    <div class="cy-grid">${sorted.map(card).join('')}</div>
+  `;
+}
+
+// ── NEWS ────────────────────────────────────────────────────────────────────
+function buildNews(){
+  const el=document.getElementById('v-nw');if(!el)return;
+  const tagged=NEWS.filter(n=>(n.tk||[]).length>0);
+  const voices=NEWS.filter(n=>!(n.tk||[]).length);
+
+  const newsCards=tagged.length
+    ?tagged.map(n=>`
+      <div class="nw-card">
+        <div class="nw-title"><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a></div>
+        <div class="nw-meta"><span class="nw-src">${esc(n.s||'')}</span>${n.d?`<span>· ${esc(n.d)}</span>`:''}</div>
+        ${(n.tk||[]).length?`<div class="nw-tks">${(n.tk||[]).map(t=>`<span class="nw-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join('')}</div>`:''}
+      </div>`).join('')
+    :`<div class="note-box">News loads nightly via GitHub Actions RSS fetch. Run scripts/fetch_market.py locally to seed.</div>`;
+
+  const voiceCards=voices.length
+    ?voices.map(n=>`
+      <div class="nw-voice">
+        <div class="nw-voice-src">${esc(n.s||'Voice')}</div>
+        <div class="nw-voice-t"><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a></div>
+        ${n.d?`<div class="nw-voice-d">${esc(n.d)}</div>`:''}
+      </div>`).join('')
+    :`<div class="note-box" style="margin:0">Doomberg and curated commodity voices appear here after the first nightly fetch.</div>`;
+
+  el.innerHTML=`
+    <div class="sect-h">Market-tagged headlines</div>
+    <div class="nw-grid">${newsCards}</div>
+    <div class="sect-h">Leading voices — Doomberg + commodity/mining/energy long-form</div>
+    <div class="nw-voice-grid">${voiceCards}</div>
+  `;
+}
+
+// ── COMPANIES ──────────────────────────────────────────────────────────────
+// Pill markup is regenerated on every state change so the active highlight
+// actually follows the selection (it used to be baked in once at build time).
+function coVertPills(){
+  return `<span class="pill${!CO_STATE.v?' on':''}" onclick="CO_STATE.v=null;renderCo()">All</span>`
+    +VERTICALS.map(v=>`<span class="pill${CO_STATE.v===v.id?' on':''}" style="${CO_STATE.v===v.id?'background:'+v.c+'22;color:'+v.c+';border-color:'+v.c+'55':''}" onclick="CO_STATE.v='${v.id}';renderCo()">${esc(v.n)}</span>`).join('');
+}
+function coFrothPills(){
+  return `<span class="pill${!CO_STATE.froth?' on':''}" onclick="CO_STATE.froth=null;renderCo()">Any froth</span>`
+    +[1,2,3].map(f=>`<span class="pill${CO_STATE.froth===f?' on':''}" onclick="CO_STATE.froth=${f};renderCo()">${FROTH_META[f].l}</span>`).join('');
+}
+function coSorts(){
+  return `Sort: `+['conv','tk','froth'].map(s=>`<span class="co-sort${CO_STATE.sort===s?' on':''}" onclick="CO_STATE.sort='${s}';renderCo()">${{conv:'Conviction',tk:'Ticker',froth:'Froth'}[s]}</span>`).join(' ');
+}
+function renderCoControls(){
+  const vp=document.getElementById('co-vpills');if(vp)vp.innerHTML=coVertPills();
+  const fp=document.getElementById('co-fpills');if(fp)fp.innerHTML=coFrothPills();
+  const sp=document.getElementById('co-sorts');if(sp)sp.innerHTML=coSorts();
+}
+
+function buildCompanies(){
+  const el=document.getElementById('v-co');if(!el)return;
+  el.innerHTML=`
+    <div class="co-bar">
+      <input class="co-search" id="co-search" placeholder="Search ticker / name…" value="${esc(CO_STATE.q)}" oninput="CO_STATE.q=this.value;renderCo()">
+      <span style="font-size:11px;color:var(--color-text-tertiary)" id="co-sorts"></span>
+    </div>
+    <div class="pills" id="co-vpills"></div>
+    <div class="pills" id="co-fpills"></div>
+    <div id="co-list" class="co-list"></div>
+  `;
+  renderCoControls();
+  renderCo();
+}
+
+function renderCo(){
+  const el=document.getElementById('co-list');if(!el)return;
+  renderCoControls();   // keep pill/sort highlights in sync with CO_STATE
+  const q=(CO_STATE.q||'').toLowerCase();
+  let cos=[...COMPANIES];
+  if(CO_STATE.v)cos=cos.filter(c=>c.vertical===CO_STATE.v);
+  if(CO_STATE.froth)cos=cos.filter(c=>c.froth===CO_STATE.froth);
+  if(q)cos=cos.filter(c=>(c.ticker||'').toLowerCase().includes(q)||(c.name||'').toLowerCase().includes(q)||(c.themes||[]).some(t=>t.includes(q)));
+  if(CO_STATE.sort==='conv')cos.sort((a,b)=>b.conviction-a.conviction||(a.name||'').localeCompare(b.name||''));
+  else if(CO_STATE.sort==='tk')cos.sort((a,b)=>(a.ticker||'').localeCompare(b.ticker||''));
+  else if(CO_STATE.sort==='froth')cos.sort((a,b)=>(a.froth||2)-(b.froth||2)||(a.name||'').localeCompare(b.name||''));
+
+  if(!cos.length){el.innerHTML='<div class="note-box">No matches.</div>';return;}
+
+  el.innerHTML=cos.map(c=>{
+    const v=vinfo(c.vertical);
+    const q=QUOTES[c.ticker];
+    const fm=FROTH_META[c.froth||2];
+    const convDot=`<span style="width:7px;height:7px;border-radius:50%;background:${convColor(c.conviction)};display:inline-block;flex-shrink:0"></span>`;
+    const frothBadge=`<span class="badge-sm badge-${fm.cls}">${fm.l}</span>`;
+    const vBadge=`<span class="badge-sm" style="background:${v.c}18;color:${v.c}">${esc(v.n)}</span>`;
+    const priceHtml=q?.p?`<div class="co-price">${q.p<10?q.p.toFixed(2):q.p.toFixed(0)}</div><div class="co-d1" style="color:${chgColor(q.d1)}">${fmtPct(q.d1)}</div>`:'';
+    return `<div class="co-row" onclick="openCompanyDrawer('${esc(c.ticker)}')">
+      <div>${convDot}</div>
+      <div class="co-mid">
+        <div style="display:flex;align-items:center;gap:6px"><span class="co-tk">${esc(c.ticker)}</span><div class="co-badges">${frothBadge}${vBadge}</div></div>
+        <div class="co-nm">${esc(c.name)}</div>
+        <div class="co-layer">${esc(c.chain_layer)}</div>
+      </div>
+      <div class="co-right">${priceHtml}</div>
+    </div>`;
+  }).join('');
+}
+
+// ── NOTES ──────────────────────────────────────────────────────────────────
+function buildGlossary(){
+  const el=document.getElementById('v-gl');if(!el)return;
+  if(!GLOSSARY.length){el.innerHTML='<div class="note-box">Glossary loading…</div>';return;}
+  const sec=(own,title,blurb)=>{
+    const rows=GLOSSARY.filter(t=>!!t.own===own);
+    if(!rows.length)return '';
+    return `<div class="sect-h">${title}</div><div class="note-box" style="margin-bottom:8px">${blurb}</div>
+      <div class="gl-list">${rows.map(t=>`<div class="gl-item"><div class="gl-t">${esc(t.t)}</div><div class="gl-d">${linkifyTickers(esc(t.d))}</div></div>`).join('')}</div>`;
+  };
+  el.innerHTML=sec(true,'Our own vocabulary',
+      'These scales are invented here. They are subjective judgments by the author, not analyst ratings — defined precisely so they can be argued with rather than taken on trust.')
+    +sec(false,'Industry terms','Standard vocabulary, defined as this dashboard uses it.');
+}
+
+function buildNotes(){
+  const el=document.getElementById('v-nt');if(!el)return;
+  if(!ANNOTATIONS.length){el.innerHTML='<div class="note-box">No annotations yet.</div>';return;}
+  const sorted=[...ANNOTATIONS].sort((a,b)=>b.date.localeCompare(a.date));
+  el.innerHTML=`<div class="nt-list">${sorted.map(n=>`
+    <div class="nt-card">
+      <div class="nt-head">
+        <span class="nt-type">${esc(n.type||'note')}</span>
+        <span class="nt-date">${esc(n.date)}</span>
+        <div class="nt-title">${esc(n.title)}</div>
+      </div>
+      <div class="nt-body">${linkifyTickers(esc(n.body))}</div>
+      ${(n.tags||[]).length?`<div class="nt-tags">${n.tags.map(t=>`<span class="nt-tag">${esc(t)}</span>`).join('')}</div>`:''}
+    </div>`).join('')}</div>`;
+}
+
+// ── DRAWER ─────────────────────────────────────────────────────────────────
+let DW_STACK=[];
+
+function openCompanyDrawer(tk,push=true){
+  const c=COMPANIES.find(x=>x.ticker===tk);
+  if(!c){return;}
+  if(push)DW_STACK.push({t:'co',k:tk});
+  const v=vinfo(c.vertical);
+  const fm=FROTH_META[c.froth||2];
+  const themes=(c.themes||[]).map(tid=>`<span class="dw-chip" onclick="openThemeDrawer('${esc(tid)}')">${esc(tid.replace(/-/g,' '))}</span>`).join('');
+  const yq=yhQuote(c.ticker);
+  const peers=COMPANIES.filter(x=>x.vertical===c.vertical&&x.ticker!==c.ticker)
+    .sort((a,b)=>b.conviction-a.conviction).slice(0,8)
+    .map(p=>`<div class="dw-peer" onclick="openCompanyDrawer('${esc(p.ticker)}')"><span class="dw-dot" style="width:6px;height:6px;background:${convColor(p.conviction)}"></span><span class="tk">${esc(p.ticker)}</span><span class="nm">${esc(p.name)}</span><span class="ly">${esc(p.chain_layer||'')}</span></div>`).join('');
+
+  renderDrawer(v.c,
+    `<span class="dw-tick">${esc(c.ticker)}</span><span class="dw-name">${esc(c.name)}</span>`,
+    `<div class="dw-badges">
+       <span class="dw-badge" style="background:${v.c}1A;color:${v.c}">${esc(v.n)}</span>
+       <span class="dw-badge" style="background:${convColor(c.conviction)}1A;color:${convColor(c.conviction)}"><span class="dw-dot" style="width:6px;height:6px;background:${convColor(c.conviction)}"></span>${convLabel(c.conviction)}</span>
+       <span class="dw-badge" style="background:${fm.c}14;color:${fm.c}">${esc(fm.l)}</span>
+       <span class="dw-badge" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">${esc(c.geo||'')}</span>
+       <span class="dw-badge" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">${esc(c.structure||'')}</span>
+       ${c.last_touched?`<span class="dw-badge" style="background:var(--color-background-secondary);color:var(--color-text-tertiary)">↻ ${esc(c.last_touched)}</span>`:''}
+     </div>
+     <div class="dw-sect">Chain layer</div><div class="dw-layer">${esc(c.chain_layer||'—')}</div>
+     <div class="dw-sect">Thesis</div><div class="dw-thesis">${linkifyTickers(esc(c.thesis_note||''))}</div>
+     ${c.froth_note?`<div class="dw-sect">Froth lens</div><div class="dw-thesis" style="border-left-color:${fm.c}">${esc(c.froth_note)}</div>`:''}
+     ${drawerMarket(c.ticker)}
+     ${drawerNews(c.ticker)}
+     ${themes?`<div class="dw-sect">Themes</div><div>${themes}</div>`:''}
+     ${peers?`<div class="dw-sect">Same vertical — ${esc(v.n)}</div>${peers}`:''}
+`);
+}
+
+function openThemeDrawer(id,push=true){
+  if(push)DW_STACK.push({t:'th',k:id});
+  const label=id.replace(/-/g,' ');
+  const members=COMPANIES.filter(c=>(c.themes||[]).includes(id));
+  const byV={};
+  members.forEach(c=>{(byV[c.vertical]=byV[c.vertical]||[]).push(c);});
+  const groups=Object.keys(byV).map(vid=>{
+    const v=vinfo(vid);
+    const rows=byV[vid].sort((a,b)=>b.conviction-a.conviction).map(p=>
+      `<div class="dw-peer" onclick="openCompanyDrawer('${esc(p.ticker)}')"><span class="dw-dot" style="width:6px;height:6px;background:${convColor(p.conviction)}"></span><span class="tk">${esc(p.ticker)}</span><span class="nm">${esc(p.name)}</span><span class="ly">${esc(p.chain_layer||'')}</span></div>`).join('');
+    return `<div class="dw-vgroup"><span style="width:8px;height:8px;border-radius:50%;background:${v.c};display:inline-block"></span>${esc(v.n)}</div>${rows}`;
+  }).join('');
+  renderDrawer(
+    'var(--accent)',
+    `<span class="dw-name">${esc(label)}</span>`,
+    `<div style="font-size:10px;color:var(--color-text-tertiary);margin-bottom:8px">${members.length} name${members.length===1?'':'s'} tagged</div>
+     ${groups||'<div style="font-size:11px;color:var(--color-text-tertiary)">No tagged records yet.</div>'}
+     <div class="dw-act"><span class="dw-btn" onclick="closeDrawer();CO_STATE.q='${esc(id)}';ST('co');if(!built['co']){built['co']=true;buildCompanies();}else renderCo()">Filter Companies tab</span></div>`);
+}
+
+// 9 of the universe price in non-USD and quotes are NOT FX-converted.
+// Say so wherever a price is shown in detail, rather than burying it in _meta.
+const FX_SUFFIX={'.AX':'AUD','.HK':'HKD','.T':'JPY','.JP':'JPY','.TW':'TWD','.TWO':'TWD',
+                 '.L':'GBp','.TO':'CAD','.MI':'EUR','.PA':'EUR','.DE':'EUR','.AS':'EUR'};
+function fxCcy(tk){
+  const k=Object.keys(FX_SUFFIX).sort((a,b)=>b.length-a.length).find(s=>tk.endsWith(s));
+  return k?FX_SUFFIX[k]:null;
+}
+function fxNote(tk){
+  const c=fxCcy(tk);
+  return c?`<div class="dw-fxnote">Quoted in ${c}, not converted to USD. Returns are local-currency and exclude FX.</div>`:'';
+}
+
+function drawerMarket(tk){
+  const q=QUOTES[tk];if(!q||q.p==null)return'';
+  const tile=(l,v,clr)=>v==null?'':`<div class="dw-tile"><div class="dw-tile-l">${l}</div><div class="dw-tile-v"${clr?` style="color:${clr}"`:''}>${v}</div></div>`;
+  const pc=v=>v==null?null:v>=0?'var(--up)':'var(--dn)';
+  const v200=q.a200?+((q.p/q.a200-1)*100).toFixed(1):null;
+  const as=QUOTES_META?.as_of?` <span style="font-weight:400;letter-spacing:0">· ${esc(QUOTES_META.as_of.slice(0,10))}</span>`:'';
+  return `<div class="dw-sect">Market${as}</div><div class="dw-mkt">
+    ${tile('Price',q.p<10?q.p.toFixed(2):q.p.toFixed(0))}
+    ${tile('1 day',fmtPct(q.d1),pc(q.d1))}
+    ${tile('1 month',fmtPct(q.m1),pc(q.m1))}
+    ${tile('52w drawdown',q.dd!=null?q.dd.toFixed(1)+'%'+(q.dd<=-15?' ◈':''):null,q.dd<=-15?'var(--up)':null)}
+    ${tile('vs 200DMA',v200!=null?(v200>=0?'+':'')+v200+'%':null,pc(v200))}
+    ${tile('12 month',fmtPct(q.r1y),pc(q.r1y))}
+    ${tile('Fwd P/E',q.fpe||null)}
+    ${tile('Mkt cap',fmtMC(q.mc))}
+  </div>${fxNote(tk)}${q.dd<=-15?`<div class="dw-ddnote">◈ >15% off 52-week high.${q.r1y!=null&&q.r1y>60?` But still ${fmtPct(q.r1y)} over 12 months — this is profit-taking, not a value entry.`:' Entry-window threshold for insulated names.'}</div>`:''}`;
+}
+
+function drawerNews(tk){
+  if(!NEWS.length)return'';
+  const items=NEWS.filter(n=>(n.tk||[]).includes(tk)).slice(0,4);
+  if(!items.length)return'';
+  return `<div class="dw-sect">Headlines</div>`+items.map(n=>
+    `<div class="dw-newsrow"><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a><span>${n.s?esc(n.s)+' · ':''}${esc(n.d||'')}</span></div>`).join('');
+}
+
+// ── ASK CLAUDE ─────────────────────────────────────────────────────────────
+// Assembles a research brief from the record and opens it in the Claude desktop
+// app. Scheme verified against Claude.app: LaunchServices reports `claude:`
+// bound and claimed; an unregistered scheme errors kLSApplicationNotFoundErr.
+const CONV_DEF={
+ 1:'1 = monitor — on the map, not yet argued for',
+ 2:'2 = interested — a real case, not yet a core position',
+ 3:'3 = high conviction — the thesis has been argued and holds'};
+const FROTH_DEF={
+ 1:'1 = insulated — the thesis is not in the price',
+ 2:'2 = exposed — partly priced',
+ 3:'3 = high froth — the price embeds years of good news'};
+
+function briefFor(tk){
+  const c=COMPANIES.find(x=>x.ticker===tk); if(!c) return '';
+  const v=vinfo(c.vertical);
+  const cyc=CYCLE.find(x=>x.id===c.vertical)||{};
+  const q=QUOTES[tk]||{};
+  const sp=n=>n==null?'n/a':(n>=0?'+':'')+(+n).toFixed(1)+'%';   // always signed
+  const L=[];
+
+  L.push(`I keep a hard-assets research map. Pressure-test my read on ${c.name} (${tk}).`);
+  L.push('');
+  L.push('## What I have on file');
+  L.push(`- Vertical: ${v.n}${cyc.inn?` — inning ${cyc.inn}/9 of its structural cycle (capex gap ${cyc.capex}, business-cycle risk ${cyc.bc}, structural demand ${cyc.struct})`:''}`);
+  L.push(`- Chain layer: ${c.chain_layer||'unspecified'}`);
+  L.push(`- Geography: ${c.geo||'unspecified'}`);
+  L.push(`- Business type: ${(c.structure||'equity').replace(/_/g,' ')}`);
+  if(c.last_touched)L.push(`- Thesis last reviewed: ${c.last_touched}`);
+  L.push('');
+  L.push(`### My thesis${c.last_touched?` (written ${c.last_touched})`:''}`);
+  L.push(c.thesis_note||'(none recorded)');
+  L.push('');
+  L.push('### My ratings, and what they mean');
+  L.push(`- Conviction ${c.conviction}/3 — ${CONV_DEF[c.conviction]||''}`);
+  L.push('  Conviction measures REPLACEABILITY, not cheapness. A 3 means I think the position in the chain is hard to substitute — it is not a statement that the stock is undervalued.');
+  L.push(`- Froth ${c.froth}/3 — ${FROTH_DEF[c.froth]||''}`);
+  L.push('  Froth is about ENTRY PRICE, not business quality. A froth-3 name can be an excellent company I simply do not want to buy here.');
+  if(c.froth_note)L.push(`  My froth reasoning: ${c.froth_note}`);
+  L.push('');
+
+  // Live market data — every percentage signed
+  if(q.p!=null){
+    const ccy=(typeof fxCcy==='function'&&fxCcy(tk))||null;
+    L.push(`### Market data${QUOTES_META&&QUOTES_META.as_of?` (as of ${String(QUOTES_META.as_of).slice(0,10)})`:''}`);
+    L.push(`- Price: ${q.p}${ccy?` ${ccy} — local currency, NOT FX-converted`:''}`);
+    L.push(`- 1 day ${sp(q.d1)} · 1 month ${sp(q.m1)} · 12 months ${sp(q.r1y)}`);
+    if(q.dd!=null)L.push(`- ${sp(q.dd)} versus its 52-week high`);
+    if(q.fpe)L.push(`- Forward P/E: ${q.fpe}`);
+    if(q.mc)L.push(`- Market cap: ${fmtMC(q.mc)} USD`);
+    L.push('');
+  }
+
+  // Alerts currently flagged by the nightly scan
+  const al=((ALERTS&&ALERTS.alerts)||[]).filter(a=>a.tk===tk);
+  const brk=((BREAKING&&BREAKING.signals)||[]).filter(s=>(s.tk||[]).includes(tk));
+  if(al.length||brk.length){
+    L.push('### Currently flagged by my nightly scan');
+    al.forEach(a=>L.push(`- ${a.label}`));
+    brk.forEach(s=>L.push(`- [${s.sev}/${s.cat}] ${s.t} — my stance: ${s.stance}${s.measured?'':' (parsed headline, unverified)'}`));
+    L.push('');
+  }
+
+  if((c.themes||[]).length){
+    L.push('### Themes I have tagged it under');
+    L.push(c.themes.join(', '));
+    L.push('');
+  }
+
+  // Peers — same chain layer FIRST and labelled direct; a royalty company and a
+  // producer in the same commodity are not comparable and must not be conflated.
+  const sameV=COMPANIES.filter(x=>x.vertical===c.vertical&&x.ticker!==tk);
+  const norm=s=>(s||'').toLowerCase();
+  // Same chain layer is the real test. Structure only counts as a match when it
+  // is DISTINCTIVE — 'equity' covers three-quarters of the universe, so ORing on
+  // it would make almost every co-located name look like a direct comparable.
+  // Structures that behave alike are grouped: a royalty and a streaming company
+  // are the same animal, a producer is not. Plain 'equity' is deliberately NOT a
+  // family — it covers three-quarters of the universe and would match everything.
+  const FAMILY={streaming:'paper',royalty:'paper',physical_trust:'paper',
+                midstream:'toll',epc:'toll',utility:'toll'};
+  const fam=s=>FAMILY[s]||null;
+  const direct=sameV.filter(x=>norm(x.chain_layer)===norm(c.chain_layer)
+    ||(fam(c.structure)&&fam(x.structure)===fam(c.structure)));
+  const loose=sameV.filter(x=>!direct.includes(x));
+  const line=x=>`  - ${x.name} (${x.ticker}) — ${x.chain_layer||'?'}, ${(x.structure||'equity').replace(/_/g,' ')}, conviction ${x.conviction}/3, froth ${x.froth}/3`;
+  if(direct.length){
+    L.push('### Direct comparables — same chain layer or same business type');
+    direct.slice(0,8).forEach(x=>L.push(line(x)));
+    L.push('');
+  }
+  if(loose.length){
+    L.push('### Same vertical but a different layer — only loosely comparable');
+    L.push(`These sit in ${v.n} too, but at a different point in the chain, so they are not like-for-like.`);
+    loose.slice(0,8).forEach(x=>L.push(line(x)));
+    L.push('');
+  }
+
+  // Sources
+  const news=(NEWS||[]).filter(n=>(n.tk||[]).includes(tk)).slice(0,4);
+  if(news.length){
+    L.push('### Sources I have been reading');
+    news.forEach(n=>L.push(`- ${n.t}${n.s?` (${n.s}${n.d?', '+n.d:''})`:''}${n.u?` ${n.u}`:''}`));
+    L.push('');
+  }
+
+  // Questions ADAPT to the rating — asking a conviction-1 monitor to defend a
+  // chokepoint claim asks the model to defend a claim I never made.
+  L.push('## What I want from you');
+  if(c.conviction===3){
+    L.push(`1. I am claiming ${c.name} occupies a position that is hard to replace. Attack that. By what specific mechanism could a competitor, a substitute material, a new process or a policy change make it replaceable — and how long would that take?`);
+    L.push('2. What is the strongest bear case a serious investor would make here, stated properly rather than as a strawman?');
+    L.push('3. What would have to happen for me to drop this from conviction 3 to 2? Name the observable event, not a vague risk.');
+  }else if(c.conviction===2){
+    L.push(`1. What specifically would justify moving ${tk} to conviction 3 — what would I need to see, and is it observable from outside the company?`);
+    L.push('2. Conversely, what would push it down to a 1 and out of serious consideration?');
+    L.push('3. Am I holding this at 2 because the case is genuinely unproven, or because I have not done the work? Be blunt about which it looks like from what I have written.');
+  }else{
+    L.push(`1. Does ${tk} belong in a hard-assets universe at all, or am I collecting names? Argue the case for removing it.`);
+    L.push('2. If the underlying demand driver is real, is there a better-positioned way to own it — further up the chain, a different business type, or a different geography?');
+    L.push('3. What single fact would move this off the monitor list in either direction?');
+  }
+  L.push(`4. My froth read is ${c.froth}/3. Is the market pricing this the way I think it is?`);
+  L.push('');
+  L.push('Tell me plainly if my ratings are wrong — I would rather be corrected than agreed with.');
+  return L.join('\n');
+}
+
+// Deep link. Desktop tries the scheme and falls back to https if nothing takes
+// focus; mobile goes straight to https since universal links already route.
+const IS_MOBILE=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+const MAX_Q=7500;
+function askClaude(tk,ev){
+  if(ev&&ev.preventDefault)ev.preventDefault();
+  let brief=briefFor(tk);
+  if(!brief)return;
+  let q=encodeURIComponent(brief);
+  if(q.length>MAX_Q){
+    toast('Brief too long for a URL — opening an empty chat. Use Copy brief and paste it.');
+    q=encodeURIComponent(`Pressure-test my read on ${tk}. I will paste my notes next.`);
+  }
+  const https='https://claude.ai/new?q='+q;
+  if(IS_MOBILE){window.open(https,'_blank','noopener');return;}
+  let handled=false;
+  const took=()=>{handled=true;};
+  window.addEventListener('blur',took,{once:true});
+  document.addEventListener('visibilitychange',took,{once:true});
+  try{window.location.href='claude://claude.ai/new?q='+q;}catch(e){}
+  setTimeout(()=>{
+    window.removeEventListener('blur',took);
+    document.removeEventListener('visibilitychange',took);
+    if(!handled)window.open(https,'_blank','noopener');   // no dead click
+  },1500);
+}
+
+function toast(msg){
+  let t=document.getElementById('ha-toast');
+  if(!t){t=mk('div','');t.id='ha-toast';document.body.appendChild(t);}
+  t.textContent=msg; t.className='on';
+  clearTimeout(t._h); t._h=setTimeout(()=>{t.className='';},2600);
+}
+
+// Clipboard needs a REAL user gesture — this is wired to a click, not called
+// programmatically. execCommand fallback for non-secure contexts.
+function copyBrief(tk){
+  const brief=briefFor(tk);
+  if(!brief){toast('Nothing to copy for this record.');return;}
+  const done=()=>toast('Brief copied — paste it into Claude Code or any chat.');
+  const fail=()=>toast('Copy failed. Select the text manually.');
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(brief).then(done).catch(()=>legacyCopy(brief)?done():fail());
+  }else{
+    legacyCopy(brief)?done():fail();
+  }
+}
+function legacyCopy(text){
+  try{
+    const ta=document.createElement('textarea');
+    ta.value=text; ta.setAttribute('readonly','');
+    ta.style.cssText='position:fixed;left:-9999px;top:0';
+    document.body.appendChild(ta); ta.select();
+    const ok=document.execCommand('copy');
+    document.body.removeChild(ta);
+    return ok;
+  }catch(e){return false;}
+}
+
+// Header action icons. Inline SVG inherits theme colour; the mapped Yahoo
+// symbol is named in the tooltip so a wrong mapping is visible, not silent.
+function drawerActions(tk){
+  const el=document.getElementById('dw-actions');if(!el)return;
+  if(!tk){el.innerHTML='';return;}
+  const y=yahooSymbol(tk);
+  const ico=(href,title,path)=>`<a class="dw-ico" href="${href}" target="_blank" rel="noopener" title="${esc(title)}"><svg viewBox="0 0 24 24">${path}</svg></a>`;
+  el.innerHTML=
+    ico(yhChart(tk),`Chart — ${y}`,'<polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/>')
+   +ico(yhFin(tk),`Quote & financials — ${y}`,'<rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="9" x2="17" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="17" x2="13" y2="17"/>')
+   +`<button class="dw-ico" title="Open ${esc(tk)} in the Companies tab" onclick="closeDrawer();jumpToCompanies('${esc(tk)}')"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg></button>`
+   +`<a class="dw-ico dw-ico-ask" href="https://claude.ai/new?q=${encodeURIComponent('Pressure-test my read on '+tk)}" target="_blank" rel="noopener" title="Ask Claude — opens a pre-filled research brief on ${esc(tk)}" onclick="askClaude('${esc(tk)}',event)"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.7L3 21l1.9-5A8.2 8.2 0 0 1 4 11.5 8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/></svg></a>`
+   +`<button class="dw-ico" title="Copy the research brief for ${esc(tk)} to the clipboard" onclick="copyBrief('${esc(tk)}')"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>`;
+}
+
+function renderDrawer(accent,head,body){
+  document.getElementById('dw-accent').style.background=accent;
+  document.getElementById('dw-title').innerHTML=head;
+  document.getElementById('dw-content').innerHTML=body;
+  document.getElementById('dw-back').style.display=DW_STACK.length>1?'':'none';
+  document.getElementById('drawer').classList.add('on');
+  document.getElementById('drawer-bk').classList.add('on');
+  document.getElementById('dw-content').parentElement.scrollTop=0;
+  drawerActions(DW_STACK.length?(DW_STACK[DW_STACK.length-1].t==='th'?null:DW_STACK[DW_STACK.length-1].k):null);
+}
+
+function drawerBack(){
+  if(DW_STACK.length<2)return;
+  DW_STACK.pop();
+  const p=DW_STACK[DW_STACK.length-1];
+  if(p.t==='co')openCompanyDrawer(p.k,false);
+  else if(p.t==='ex')openExcludedNote(p.k,false);
+  else if(p.t==='ref')openRefNote(p.k,false);
+  else openThemeDrawer(p.k,false);
+}
+
+function closeDrawer(){
+  DW_STACK=[];
+  document.getElementById('drawer').classList.remove('on');
+  document.getElementById('drawer-bk').classList.remove('on');
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+// ── DATA LOADING ───────────────────────────────────────────────────────────
+async function loadData(){
+  const Q='?t='+Date.now();
+  const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
+  try{
+    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls]=await Promise.all([
+      fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
+      fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
+      fetchJ('excluded.json').catch(()=>null),
+      fetchJ('matrix.json').catch(()=>null),
+      fetchJ('explainers.json').catch(()=>null),
+      fetchJ('picks-shovels.json').catch(()=>null),
+      fetchJ('electricity.json').catch(()=>null),
+      fetchJ('themes.json').catch(()=>null),
+      fetchJ('explorer.json').catch(()=>null),
+      fetchJ('reference.json').catch(()=>null),
+      fetchJ('glossary.json').catch(()=>null),
+    ]);
+    COMPANIES=cos.companies||[];
+    CYCLE=cyc.cycles||[];
+    GEO=geo||{};
+    PORTFOLIO=port||{};
+    ANNOTATIONS=ann.annotations||[];
+    POLICY=pol||{};
+    EXCLUDED=excl?.excluded||[];
+    if(mat){VC_COLS=mat.verticals||[];ROWS=mat.chain_stages||[];MXC=mat.cells||{};DET=mat.highlighted_cells||{};B_BAND=mat.b_band||[];C_BAND=mat.c_band||[];}
+    if(expls){EXPLS=expls.explainers||expls||[];}
+    if(ps){PS=ps.categories||ps||[];}
+    if(el){EL_CHAIN=el.chain||[];EL_INTX=el.intersections||[];EL_AI=el.ai_themes||[];EL_CYCLE=el.cycle||[];
+      const bt=el.bottleneck||{};
+      const btt=document.getElementById('el-bt-title');const btb=document.getElementById('el-bt-body');
+      if(btt&&bt.title)btt.textContent=bt.title;
+      if(btb&&bt.body)btb.innerHTML=bt.body;}
+    if(th){THEMES=th.themes||th||[];}
+    if(expl){VC=expl.verticals||{};}
+    if(gls)GLOSSARY=gls.terms||[];
+    if(ref){
+      REF_MAP={};REF_BLOCK=new Set();
+      (ref.entities||[]).forEach(e=>{
+        if(e.ticker)REF_MAP[e.ticker]=e;
+        // context / private / state names carry no investing angle, so their
+        // tickers must NOT be hyperlinked — a plain ticker is the signal.
+        if(e.ticker&&e.type!=='candidate')REF_BLOCK.add(e.ticker);
+      });
+    }
+    if(mat){VORDER=mat.vertical_order||[];CROSS_V=mat.cross_links||{};}
+  }catch(e){console.warn('Static data load error:',e);}
+
+  // Build ticker utilities
+  TICKER_MAP=Object.fromEntries(COMPANIES.map(c=>[c.ticker,c.name]));
+  buildTickerRE();
+
+  // Live data (optional — CI-generated)
+  try{
+    const [q,idx,news,alerts,perf,brk]=await Promise.all([
+      fetchJ('quotes.json').catch(()=>null),
+      fetchJ('indices.json').catch(()=>null),
+      fetchJ('news.json').catch(()=>null),
+      fetchJ('alerts.json').catch(()=>null),
+      fetchJ('performance.json').catch(()=>null),
+      fetchJ('breaking.json').catch(()=>null),
+    ]);
+    if(q){QUOTES_META={as_of:q._meta?.as_of};delete q._meta;QUOTES=q;}
+    if(idx)IDX=idx;
+    if(Array.isArray(news))NEWS=news;
+    if(alerts?.alerts)ALERTS=alerts;
+    if(perf)PERF=perf;
+    if(brk)BREAKING=brk;
+  }catch(e){console.warn('Live data load error:',e);}
+
+  setMastDate();
+  renderMktBar();
+  renderAlertStrip();
+  buildTab('act');
+  renderActBadge();
+}
+
+loadData();
+</script>
+</body>
+</html>
