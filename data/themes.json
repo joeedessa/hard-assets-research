@@ -71,11 +71,10 @@
         "ai-demand-pull",
         "datacenter-power",
         "nuclear-ai-ppa",
-        "ai-chip-packaging",
-        "sic-power",
-        "inp-photonics",
         "transformer-bottleneck",
-        "grid-buildout"
+        "grid-buildout",
+        "sic-power",
+        "inp-photonics"
       ]
     },
     {
@@ -207,13 +206,10 @@
       "company_tags": [
         "critical-minerals",
         "china-export-controls",
-        "reshoring",
-        "copper-supercycle",
-        "lithium-cycle-turn",
-        "ev-demand",
         "hree-separation",
-        "resource-nationalism",
-        "tier1-assets"
+        "ev-demand",
+        "lithium-cycle-turn",
+        "copper-supercycle"
       ]
     },
     {
@@ -276,8 +272,6 @@
       "company_tags": [
         "defense-procurement",
         "robotics-magnets",
-        "critical-minerals",
-        "reshoring",
         "industrial-moat"
       ]
     },
@@ -404,8 +398,6 @@
       "company_tags": [
         "robotics-magnets",
         "ai-chip-packaging",
-        "reshoring",
-        "industrial-moat",
         "sic-power"
       ]
     }

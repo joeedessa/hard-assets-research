@@ -21,7 +21,8 @@
       "term structure (uranium)"
     ],
     "universe_note": "Names added 2026-08-05 carry provisional conviction (1-2) pending review; froth reflects current market posture. Conviction is an owner judgment and has not been assigned above 2 automatically.",
-    "as_of": "2026-08-05"
+    "as_of": "2026-08-05",
+    "review_fields": "last_touched = any edit to the record. last_reviewed = the thesis was genuinely re-read and re-argued on that date; null means it has not been, regardless of last_touched."
   },
   "companies": [
     {
@@ -31,7 +32,7 @@
       "chain_layer": "Mining + Magnets",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Only US integrated REE miner + Fort Worth magnet plant ramp. LREE to HREE path. DoD price floor $110/kg NdPr; GM OEM agreement active. China controls exit adds urgency.",
+      "thesis_note": "Owns the only integrated US rare-earth asset — Mountain Pass mining plus the Fort Worth magnet plant. Hard to replace because separation and magnet-making are two distinct capabilities and almost nobody outside China has both; a competitor would need a decade and a permitted orebody. Today: DoD price floor at $110/kg NdPr removes the downside China used to inflict, the GM offtake is live, and China sales have ended. What would break it: the magnet ramp slipping again, NdPr staying near the floor so the floor becomes the ceiling, or Washington deciding a price floor for one company is untenable. Uncomfortably, much of the equity is a bet on continued political sponsorship rather than on the orebody.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Equity ran hard on export control news; thesis intact but pricing in the headline risk. Incentive price tailwind real but spot NdPr still volatile. Watch magnet plant revenue ramp as confirmation.",
@@ -41,7 +42,8 @@
         "reshoring",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "LYC.AX",
@@ -50,7 +52,7 @@
       "chain_layer": "Mining + Separation",
       "geo": "AU/MY/US",
       "structure": "equity",
-      "thesis_note": "Only non-Chinese scaled REE separation. Seadrift TX DoD facility adds HREE pathway. H1 2026 net income A$80.21M (+1,259% YoY); first HREE (Dy/Tb) sales; 2026 revenue target A$1.1B.",
+      "thesis_note": "Owns the only scaled rare-earth separation outside China, now with heavy-REE capability at Kalgoorlie and the DoD-funded Seadrift plant in Texas. Hard to replace because heavy separation is a chemistry and permitting problem more than a capital one — Western attempts have taken 10+ years. Today: H1 2026 net income A$80.2M, first commercial Dy/Tb sales, A$1.1B revenue target. What would break it: China releasing HREE supply to crush the price before Seadrift reaches scale — it has done exactly this before and can afford to do it again. Malaysian licence politics remain a recurring tail risk.",
       "conviction": 3,
       "froth": 1,
       "froth_note": "HREE separation optionality largely unpriced — most Western investors still underestimate Seadrift's strategic significance. Early innings: cost curve advantage + monopoly position + government backing = insulated.",
@@ -60,7 +62,8 @@
         "hree-separation",
         "robotics-magnets"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "UUUU",
@@ -78,7 +81,8 @@
         "reshoring",
         "uranium-rebuild"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "6880.HK",
@@ -96,7 +100,8 @@
         "ev-demand",
         "china-export-controls"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "LEU",
@@ -105,7 +110,7 @@
       "chain_layer": "Enrichment",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Only US company with active domestic uranium enrichment. HALEU near-monopoly rebuild. DOE exercised Phase III option ($110M through June 2026) with 8-year extension options. $2.3B contingent backlog.",
+      "thesis_note": "Owns the only active US uranium enrichment and the only Western HALEU line. Hard to replace because enrichment is proliferation-controlled technology — capital alone cannot buy it, and the alternative suppliers are Russian or a European consortium. Today: DOE exercised the Phase III option with 8-year extensions, and there is a $2.3B contingent backlog. What would break it: Congress granting Russian import waivers, or advanced reactors arriving so late that HALEU demand never materialises. The uncomfortable part is that capacity is tiny — around 12 tonnes/year after 2030 — against demand that assumes a reactor fleet nobody has yet built.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "HALEU thesis well-understood by specialists; general market still underestimates the 8-year extension option value. $2.3B contingent backlog not captured in current valuation. Some premium for strategic monopoly already in price.",
@@ -115,7 +120,8 @@
         "nuclear-ai-ppa",
         "reshoring"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "CCO",
@@ -124,7 +130,7 @@
       "chain_layer": "Mining + Milling",
       "geo": "CA",
       "structure": "equity",
-      "thesis_note": "Tier-1 Athabasca Basin producer. McArthur River/Cigar Lake restart. Westinghouse stake. Flooding event May 2026 resolved within 17 days — demonstrated operational resilience. 2026 guidance maintained.",
+      "thesis_note": "Owns tier-1 Athabasca ore at McArthur River and Cigar Lake plus a 49% Westinghouse stake, so it spans fuel and reactor services. Hard to replace because grade is geology — Athabasca ore runs orders of magnitude above the global average and cannot be permitted into existence elsewhere. Today: 2026 guidance held at 19.5-21.5M lbs through the May flooding, resolved in 17 days. What would break it: a reactor incident anywhere resetting sentiment, Kazatomprom flooding the market, or utilities deferring contracting. Uncomfortably, this is the consensus uranium vehicle and the multiple already reflects that.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Uranium supercycle thesis well-covered; CCO is the large-cap vehicle. Multiple has expanded. Still structurally sound but not a hidden gem — institutional ownership is high. Some premium for the Westinghouse stake.",
@@ -133,7 +139,8 @@
         "nuclear-ai-ppa",
         "tier1-assets"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "SPUT",
@@ -142,7 +149,7 @@
       "chain_layer": "Physical uranium",
       "geo": "CA",
       "structure": "physical_trust",
-      "thesis_note": "Cleanest price leverage to spot U3O8. No operational or dilution risk. Building structural physical inventory position. At-the-market offering mechanism creates NAV-tracking buying when spot rises.",
+      "thesis_note": "Owns physical U3O8 and nothing else — no mine, no management, no dilution risk. Hard to replace as an instrument: it is the only vehicle giving clean spot exposure without operational risk, and its at-the-market mechanism means buying pressure removes physical from the market. Today: structurally accumulating inventory. What would break it: a persistent discount to NAV shutting off the ATM and turning it into a closed-end fund, or a utility contracting cycle that bypasses spot entirely. It also earns nothing while it waits — the carry is negative and the thesis is purely price.",
       "conviction": 3,
       "froth": 1,
       "froth_note": "Physical trust: price is spot U3O8. Can't really have 'froth' in the equity sense — it tracks the commodity. Discount to NAV occasionally widens (entry opportunity). Cleanest insulated structure in uranium.",
@@ -150,7 +157,8 @@
         "uranium-rebuild",
         "physical-commodity"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "CEG",
@@ -159,7 +167,7 @@
       "chain_layer": "Nuclear operations",
       "geo": "US",
       "structure": "utility",
-      "thesis_note": "Largest US nuclear fleet. AI PPA template (TMI-Microsoft). Fleet-wide PPA pipeline. Also in AI Hardware Research map (datacenter vertical) — reference-only here; not double-counted.",
+      "thesis_note": "Owns the largest US nuclear fleet and wrote the template for hyperscaler PPAs with the Three Mile Island restart. Hard to replace because you cannot build a merchant nuclear fleet — the assets are existing, licensed and irreplaceable at any price. Today: fleet-wide PPA pipeline expanding beyond the Microsoft deal. What would break it: any PPA disappointment, since the multiple now embeds a pipeline rather than a fleet. Uncomfortably this is the most crowded position in the universe, it is froth-3 for that reason, and it also sits in the AI Hardware map — this is reference exposure, not incremental.",
       "conviction": 3,
       "froth": 3,
       "froth_note": "AI PPA premium is fully priced; multiple has expanded far beyond utility peers. Excellent business but high froth: consensus owns it, it's had a massive run, and any PPA disappointment is a correction risk. Equity is well ahead of the underlying fleet value.",
@@ -167,7 +175,8 @@
         "nuclear-ai-ppa",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "NXE",
@@ -184,7 +193,8 @@
         "uranium-rebuild",
         "tier1-assets"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "PWR",
@@ -193,7 +203,7 @@
       "chain_layer": "Grid EPC",
       "geo": "US",
       "structure": "epc",
-      "thesis_note": "~40% US transmission/distribution EPC market share. Q1 2026 backlog $48.5B (record; +$20B in two years). Backlog growing faster than revenue — duration of work locked in.",
+      "thesis_note": "Owns roughly 40% of US transmission and distribution EPC — skilled linemen and long-standing utility relationships rather than assets. Hard to replace because the constraint is trained crews, and headcount takes years to build regardless of demand. Today: Q1 2026 backlog at a record $48.5B, up from about $28B two years ago, with backlog growing faster than revenue so duration is lengthening. What would break it: utility capex deferrals, or wage inflation outrunning fixed-price contracts. The backlog is visible to everyone, so the information edge is small — the case is durability, not surprise.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Record backlog visible and in the model; multiple expanded but backlog duration gives earnings visibility. Not expensive relative to growth — but not cheap. Some energy/infrastructure premium already in price.",
@@ -202,7 +212,8 @@
         "ai-demand-pull",
         "datacenter-power"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "ETN",
@@ -211,7 +222,7 @@
       "chain_layer": "Grid components",
       "geo": "US/IE",
       "structure": "equity",
-      "thesis_note": "Transformer + switchgear + data center power. 228 GW DC backlog = 12 years of orders at current rates. Electrical Americas orders +42% YoY Q1 2026. DC equipment orders +240% YoY.",
+      "thesis_note": "Owns transformer, switchgear and data-centre power capacity at a moment when transformer lead times are 2-4 years. Hard to replace because the bottleneck is grain-oriented electrical steel and winding capacity, both of which take years to add. Today: 228 GW of data-centre backlog, roughly 12 years of orders at current build rates; Electrical Americas orders +42% and DC orders +240%. What would break it: hyperscaler capex plateauing, or transformer capacity finally arriving in 2027-28 and turning scarcity rent into ordinary margin. Froth-3 — an excellent business at a price that already assumes the scarcity persists.",
       "conviction": 3,
       "froth": 3,
       "froth_note": "High froth: data center theme is fully priced, the stock is widely owned by growth and infrastructure funds, and the multiple is stretched vs. historical. Excellent business — but entry timing matters. A cooling in DC orders (even noise) is a correction risk.",
@@ -221,7 +232,8 @@
         "datacenter-power",
         "transformer-bottleneck"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "GEV",
@@ -230,7 +242,7 @@
       "chain_layer": "Generation + Grid",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Wind turbines + gas turbines + grid solutions. Q1 2026 orders $18.3B (+71% organically). Gas turbine slots 110 GW target. Total backlog heading to $200B by 2027 (pulled forward one year). Also in AI Hardware Research — reference only.",
+      "thesis_note": "Owns gas turbines, grid equipment and wind in one company — the only listed name spanning all three sides of the electricity build. Hard to replace because heavy gas turbine manufacturing is a three-firm global oligopoly with slot reservations booked years out. Today: Q1 2026 orders +71% organically, 21 GW of gas equipment contracted in the quarter, backlog target pulled forward to 2027. What would break it: the wind segment continuing to lose money, or gas slot reservations converting to orders more slowly than assumed. Froth-3, and the market is paying for the gas franchise while getting wind as a liability.",
       "conviction": 3,
       "froth": 3,
       "froth_note": "IPO momentum + backlog narrative = high investor attention. Already well-covered. Excellent underlying backlog but equity has priced in years of growth. Risk: execution risk on a massive backlog, wind margin recovery slower than expected.",
@@ -239,7 +251,8 @@
         "ai-demand-pull",
         "datacenter-power"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "EME",
@@ -256,7 +269,8 @@
         "grid-buildout",
         "datacenter-power"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "MYRG",
@@ -272,7 +286,8 @@
       "themes": [
         "grid-buildout"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "SCCO",
@@ -281,7 +296,7 @@
       "chain_layer": "Mining",
       "geo": "MX/PE",
       "structure": "equity",
-      "thesis_note": "Lowest-cost copper miner globally. 40+ year reserve life. Grupo Mexico controlled. Cost curve position: 1st quartile globally. Structural advantage through any copper price cycle.",
+      "thesis_note": "Owns the lowest-cost copper production globally with 40+ year reserve life in Peru and Mexico. Hard to replace because cost position is geology and scale — a new mine at this cost does not exist to be built. Today: producing through the copper deficit with the best margins in the industry. What would break it: Peruvian or Mexican resource nationalism, which is not hypothetical in either jurisdiction, or a Chinese construction slowdown taking copper demand with it. The uncomfortable part is Grupo Mexico control — minority holders have limited say and the free float is thin.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Copper supercycle thesis is consensus-owned; SCCO is the quality vehicle. Multiple is fair but not cheap. Lowest-cost position provides margin buffer. At current copper prices, FCF generation is exceptional — but the story is out.",
@@ -291,7 +306,8 @@
         "grid-buildout",
         "ev-demand"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "FCX",
@@ -308,7 +324,8 @@
         "copper-supercycle",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "FNV",
@@ -317,7 +334,7 @@
       "chain_layer": "Streaming/Royalty",
       "geo": "CA",
       "structure": "streaming",
-      "thesis_note": "Gold/silver streams at Cu mines. Zero capex, geopolitically optimal above smelter layer. 2025 record revenue $1,822.8M (+YoY); net income $1.11B; built WITHOUT Cobre Panama — restart is pure optionality. Dividend raised 16%.",
+      "thesis_note": "Owns royalty and streaming interests over other people's mines — mostly gold and silver, structurally positioned above the smelter so cost inflation lands on the operator. Hard to replace because the portfolio was assembled over decades at prices that no longer exist. Today: 2025 revenue $1,822.8M and net income $1.11B, built entirely WITHOUT Cobre Panama, so any restart is free optionality. What would break it: gold correcting hard, or the streaming model being competed away as miners find cheaper capital. At a premium multiple it is priced as the quality name it is.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Gold ATH has helped FNV significantly. Premium streaming multiple is structurally justified — zero capex, full upside. Cobre Panama restart optionality is genuinely not in price. Exposed to gold price correction.",
@@ -326,7 +343,8 @@
         "precious-metals",
         "copper-supercycle"
       ],
-      "last_touched": "2026-08-04"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "WPM",
@@ -335,7 +353,7 @@
       "chain_layer": "Streaming",
       "geo": "CA",
       "structure": "streaming",
-      "thesis_note": "Ag/Au streams across Cu and base metal mines globally. World's largest precious metals streamer by market cap. 2026 GEO guidance 860K-940K (record). Antamina silver stream added.",
+      "thesis_note": "Owns silver and gold streams attached to copper and base-metal mines, so it gets precious-metal exposure paid for by someone else's copper economics. Hard to replace for the same reason as FNV — the contracts were signed at historic prices. Today: record 2026 GEO guidance of 860-940K, with the expanded Antamina silver stream adding directly. What would break it: operator production shortfalls at mines it does not control, which is the hidden risk in every stream. It has overtaken FNV on market cap, so the size discount that once justified owning both has gone.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Premium streaming valuation; gold/silver prices are at ATH territory. Best risk-adjusted structure in the space but price reflects it. Silver exposure at current levels is a risk if industrial demand cools.",
@@ -343,7 +361,8 @@
         "streaming-structure",
         "precious-metals"
       ],
-      "last_touched": "2026-08-04"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "LNG",
@@ -352,7 +371,7 @@
       "chain_layer": "LNG Liquefaction",
       "geo": "US",
       "structure": "midstream",
-      "thesis_note": "Largest US LNG exporter. ~$2.50-3.50/MMBTU tolling fee irrespective of commodity price. European SPAs locked 20yr. NATO energy security instrument. Stage 3 expansion underway.",
+      "thesis_note": "Owns Sabine Pass and Corpus Christi and earns a tolling fee of roughly $2.50-3.50/MMBtu regardless of the gas price — an infrastructure toll, not a commodity bet. Hard to replace because a new US LNG terminal takes 5-7 years and FERC approval that is no longer freely granted. Today: 2025 revenue $19.976B, over 95% of capacity contracted through 2030, Corpus Christi Stage 3 Train 5 producing, and the Qatar Ras Laffan damage has made US supply structurally more necessary to Europe. What would break it: counterparty credit on 20-year SPAs in a downturn, or European demand destruction from sustained high prices.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Tolling structure insulates from gas price volatility — income is largely fee-based. Thesis well-understood. Not high froth; tolling fee certainty anchors valuation. Some premium for the geopolitical tailwind.",
@@ -361,7 +380,8 @@
         "european-energy-security",
         "nato-instrument"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "VGAS",
@@ -378,7 +398,8 @@
         "lng-supercycle",
         "european-energy-security"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "KMI",
@@ -395,7 +416,8 @@
         "gas-infrastructure",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "ET",
@@ -411,7 +433,8 @@
       "themes": [
         "gas-infrastructure"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "ALB",
@@ -429,7 +452,8 @@
         "ev-demand",
         "reshoring"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "SQM",
@@ -446,7 +470,8 @@
         "lithium-cycle-turn",
         "ev-demand"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "FLNC",
@@ -464,7 +489,8 @@
         "ai-demand-pull",
         "ev-demand"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "PPTA",
@@ -473,7 +499,7 @@
       "chain_layer": "Mining (Sb+Au)",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Stibnite mine — only significant Western antimony source. DoD MOU. Export controls active (China banned antimony exports Oct 2024). EIS process ongoing; permitting is the key risk.",
+      "thesis_note": "Owns Stibnite — the only significant Western antimony source, alongside gold. Hard to replace because antimony has no substitute in ammunition primers or PV glass clarification and China banned exports in September 2024. Today: construction commenced October 2025, a $2.7B EXIM loan approved, over $80M of DoD awards, and NPV of about $6.1B at $4,500/oz gold. What would break it: construction cost overruns against a $2.576B capex estimate, permitting litigation reopening, or China lifting the export ban and collapsing a price that has already risen roughly fourfold. This is now an execution story rather than a permitting one.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Export control catalyst is real and the DoD attention is genuine. Market is pricing some of this in — not fully, but not blind to it either. Permitting timeline is the uncertainty that keeps froth moderate. Pre-production.",
@@ -482,7 +508,8 @@
         "reshoring",
         "critical-minerals"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "AFMJF",
@@ -491,7 +518,7 @@
       "chain_layer": "Mining (Sn)",
       "geo": "CD",
       "structure": "equity",
-      "thesis_note": "World's highest-grade tin mine (Bisie, DRC). Direct AI chip packaging leverage. OTC-traded in US; listed on TSX-V. DRC geopolitical risk is real — monitor M23 conflict proximity.",
+      "thesis_note": "Owns Bisie, the world's highest-grade tin mine, in the DRC. Hard to replace because grade of that order is not discoverable on demand and tin supply is structurally short of solder demand. Today: 3D chiplet stacking and HBM packaging raise solder joints per chip, so AI is quietly a tin demand story. What would break it: DRC instability, which is a live and recurring risk rather than a tail one, and the fact that it trades OTC in the US with thin liquidity. A single-asset, single-jurisdiction name — the concentration is the thesis and the risk simultaneously.",
       "conviction": 3,
       "froth": 1,
       "froth_note": "OTC-traded; minimal institutional penetration in the US. DRC risk creates a persistent discount. World-class asset (Bisie AISC ~$11K/t vs spot ~$30K+) at a valuation that doesn't reflect it. Maximum insulation from hot money.",
@@ -499,7 +526,8 @@
         "ai-chip-packaging",
         "critical-minerals"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "AXTI",
@@ -516,7 +544,8 @@
         "ai-chip-packaging",
         "reshoring"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "WOLF",
@@ -534,7 +563,8 @@
         "ev-demand",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "COHR",
@@ -553,7 +583,8 @@
         "ai-demand-pull",
         "ai-chip-packaging"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "6963.JP",
@@ -571,7 +602,8 @@
         "ev-demand",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "5802.T",
@@ -589,7 +621,8 @@
         "ai-chip-packaging",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "NOK",
@@ -607,7 +640,8 @@
         "ai-chip-packaging",
         "reshoring"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "5706.JP",
@@ -624,7 +658,8 @@
         "ai-chip-packaging",
         "copper-supercycle"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "8358.TWO",
@@ -640,7 +675,8 @@
       "themes": [
         "ai-chip-packaging"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "2383.TW",
@@ -656,7 +692,8 @@
       "themes": [
         "ai-chip-packaging"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "6213.TW",
@@ -672,7 +709,8 @@
       "themes": [
         "ai-chip-packaging"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "VLO",
@@ -689,7 +727,8 @@
         "oil-geopolitics",
         "refining-margin"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "TDW",
@@ -706,7 +745,8 @@
         "oil-geopolitics",
         "offshore-recovery"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "STNG",
@@ -723,7 +763,8 @@
         "oil-geopolitics",
         "european-energy-security"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "NTR",
@@ -740,7 +781,8 @@
         "food-security",
         "resource-nationalism"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "MOS",
@@ -757,7 +799,8 @@
         "food-security",
         "resource-nationalism"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "ERII",
@@ -766,7 +809,7 @@
       "chain_layer": "Water treatment",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "~50% global market share in pressure exchangers for RO desalination. Near-monopoly niche. AI/semiconductor fabs + data centers are water-intensive — ERII is an indirect AI infrastructure play.",
+      "thesis_note": "Owns roughly half the global market for pressure exchangers in reverse-osmosis desalination — energy-recovery devices that cut RO power consumption substantially. Hard to replace because the device is qualified into plant designs and the installed base creates a specification standard. Today: expanding beyond desalination into CO2 refrigeration and wastewater. What would break it: desalination capex being lumpy and government-funded, so revenue is project-timed rather than recurring. The diversification is unproven and the core market is small in absolute terms.",
       "conviction": 3,
       "froth": 2,
       "froth_note": "Near-monopoly is recognized but ERII is small and not widely covered. AI/water angle is gaining attention. Some premium for the moat but not high froth — valuation is still reasonable for the recurring revenue quality.",
@@ -775,7 +818,8 @@
         "ai-demand-pull",
         "desalination"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "CWCO",
@@ -791,7 +835,8 @@
       "themes": [
         "water-scarcity"
       ],
-      "last_touched": "2026-08-04"
+      "last_touched": "2026-08-04",
+      "last_reviewed": null
     },
     {
       "ticker": "LIN",
@@ -800,7 +845,7 @@
       "chain_layer": "Industrial gases",
       "geo": "US/IE",
       "structure": "equity",
-      "thesis_note": "On-site ASU plants at chip fabs/hospitals under 15-20yr sole-source contracts. Infinite moat. Revenue is effectively fixed-cost, inflation-indexed utility revenue.",
+      "thesis_note": "Owns on-site air separation plants inside customer fabs and hospitals under 15-20 year sole-source contracts. Hard to replace because once the plant is behind the fence, switching means rebuilding infrastructure during a production shutdown — the switching cost is close to infinite. Today: every new AI chip fab needs ultra-high-purity gases and Linde builds on-site. What would break it: an industrial recession compressing volumes, or fab construction slowing. Froth-3 — the quality is not in question, the entry price is; this trades as a defensive compounder rather than a commodity name.",
       "conviction": 3,
       "froth": 3,
       "froth_note": "Industrial gas moat is fully priced and then some. LIN trades at a significant premium to historical multiples. The business is as safe as any in the market — but the valuation leaves little margin of safety. Entry timing matters.",
@@ -809,7 +854,8 @@
         "reshoring",
         "ai-demand-pull"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "APD",
@@ -826,7 +872,8 @@
         "industrial-moat",
         "hydrogen"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "ATI",
@@ -844,7 +891,8 @@
         "resource-nationalism",
         "defense-procurement"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "MTRN",
@@ -853,7 +901,7 @@
       "chain_layer": "Beryllium + specialty",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Only Western Be mine + only US Be processing. Defense-critical, <$1.5B mkt cap. Underowned. Beryllium is a Schedule II controlled material — zero substitutes for most defense applications.",
+      "thesis_note": "Owns the only Western beryllium mine and the only US beryllium processing. Hard to replace because beryllium has no substitute in the defence applications that use it, and the processing knowledge sits in one company. Today: a $65M defence-prime-funded capacity expansion is underway. What would break it: defence procurement cycles slowing, or the specialty materials segment diluting the beryllium moat with lower-margin business. The uncomfortable part is that beryllium is a small share of revenue — you buy a diversified materials company to own a monopoly that is a minority of it.",
       "conviction": 3,
       "froth": 1,
       "froth_note": "Beryllium is not on investors' radars. Sub-$1.5B, defense-critical, no non-US alternative. This is the definition of insulated: a quiet monopoly that most allocators have never heard of.",
@@ -862,7 +910,8 @@
         "reshoring",
         "critical-minerals"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     },
     {
       "ticker": "4004.JP",
@@ -880,7 +929,8 @@
         "ai-chip-packaging",
         "sic-power"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "RGLD",
@@ -897,7 +947,8 @@
         "streaming-structure",
         "precious-metals"
       ],
-      "last_touched": "2026-08-03"
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
     },
     {
       "ticker": "TECK",
@@ -915,7 +966,8 @@
         "tier1-assets",
         "reshoring"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "HBM",
@@ -933,7 +985,8 @@
         "reshoring",
         "critical-minerals"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "IVN.TO",
@@ -951,7 +1004,8 @@
         "tier1-assets",
         "resource-nationalism"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "XYL",
@@ -969,7 +1023,8 @@
         "ai-demand-pull",
         "desalination"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "ARIS",
@@ -986,7 +1041,8 @@
         "water-scarcity",
         "oil-geopolitics"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "CF",
@@ -1004,7 +1060,8 @@
         "gas-infrastructure",
         "reshoring"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "ICL",
@@ -1022,7 +1079,8 @@
         "critical-minerals",
         "ev-demand"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "VRT",
@@ -1040,7 +1098,8 @@
         "datacenter-power",
         "grid-buildout"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "PRY.MI",
@@ -1058,7 +1117,8 @@
         "ai-demand-pull",
         "transformer-bottleneck"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "NEX.PA",
@@ -1076,7 +1136,8 @@
         "european-energy-security",
         "transformer-bottleneck"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "UEC",
@@ -1094,7 +1155,8 @@
         "reshoring",
         "nuclear-ai-ppa"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "BWXT",
@@ -1113,7 +1175,8 @@
         "nuclear-ai-ppa",
         "reshoring"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "EQT",
@@ -1132,7 +1195,8 @@
         "lng-supercycle",
         "datacenter-power"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "SBSW",
@@ -1151,7 +1215,8 @@
         "reshoring",
         "resource-nationalism"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "PLS.AX",
@@ -1169,7 +1234,8 @@
         "ev-demand",
         "tier1-assets"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "MIN.AX",
@@ -1186,7 +1252,8 @@
         "lithium-cycle-turn",
         "ev-demand"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "PAAS",
@@ -1204,7 +1271,8 @@
         "ev-demand",
         "resource-nationalism"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "TFPM",
@@ -1221,7 +1289,8 @@
         "precious-metals",
         "streaming-structure"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "DNN",
@@ -1238,7 +1307,8 @@
         "uranium-rebuild",
         "tier1-assets"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "AR",
@@ -1256,7 +1326,8 @@
         "lng-supercycle",
         "datacenter-power"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "TROX",
@@ -1274,7 +1345,8 @@
         "defense-procurement",
         "reshoring"
       ],
-      "last_touched": "2026-08-05"
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
     },
     {
       "ticker": "GLNCY",
