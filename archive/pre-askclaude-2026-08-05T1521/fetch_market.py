@@ -112,21 +112,6 @@ MACRO_INDICES = {
     "10Y":    "^TNX",       # US 10-Year Treasury Yield
     "SPX":    "^GSPC",
     "VIX":    "^VIX",
-    # Producer-country FX. A move here changes miner margins and, for the
-    # commodity itself, changes who is a forced seller.
-    "AUDUSD": "AUDUSD=X",   # Australia — iron ore, lithium, REE
-    "USDCLP": "USDCLP=X",   # Chile — copper, lithium
-    "USDZAR": "USDZAR=X",   # South Africa — PGM, gold
-    "USDCAD": "USDCAD=X",   # Canada — uranium, copper, potash
-    "USDBRL": "USDBRL=X",   # Brazil — iron ore, niobium
-}
-# Currency -> what it prices, for the breaking-signal wording
-FX_PRODUCERS = {
-    "AUDUSD": "Australian supply (iron ore, lithium, REE)",
-    "USDCLP": "Chilean supply (copper, lithium)",
-    "USDZAR": "South African supply (PGM, gold)",
-    "USDCAD": "Canadian supply (uranium, copper, potash)",
-    "USDBRL": "Brazilian supply (iron ore, niobium)",
 }
 
 # Performance basket benchmarks
@@ -477,17 +462,10 @@ HEADLINE_CATS = [
     ("company-critical", "high", [
         "guidance cut", "cuts guidance", "slashes", "profit warning", "ceo steps down",
         "ceo resign", "cfo resign", "fraud", "investigation", "halts production",
-        "suspends production", "writedown", "write-down", "impairment",
-        "reserve downgrade", "cuts reserves", "resource downgrade", "mine life"]),
-    # Substitution is the real tail risk for a scarcity thesis — if the material
-    # can be designed out, the chokepoint stops being one.
-    ("substitution-threat", "high", [
-        "sodium-ion", "sodium ion", "rare-earth free", "rare earth free", "magnet-free",
-        "thrifting", "substitute for", "replaces copper", "replaces lithium",
-        "cobalt-free", "recycling breakthrough", "designed out", "alternative to"]),
+        "suspends production", "writedown", "write-down", "impairment"]),
     ("breakthrough", "medium", [
         "breakthrough", "first ever", "world first", "record grade", "new discovery",
-        "commercial scale", "doubles capacity"]),
+        "commercial scale", "doubles capacity", "substitute for"]),
 ]
 # Categories that keep mattering past 72 hours
 SLOW_BURN = {"deleveraging", "macro", "catastrophe"}
@@ -621,37 +599,6 @@ def compute_breaking(quotes, indices, news, companies):
             "stance": "MONITOR",
             "action": ("A dollar move of this size mechanically repositions every commodity price. "
                        "Read today's moves net of it before drawing conclusions."),
-            "tk": [], "date": today})
-
-    # Curve flip into backwardation — spot above forward means physical scarcity now
-    flips=[]
-    for cname, fut in (("WTI", "Brent"),):
-        a=(C.get(cname) or {}).get("p"); b=(C.get(fut) or {}).get("p")
-        if a and b and a > b:
-            flips.append((cname, fut, a, b))
-    checks.append(f"Curve flip into backwardation (front above deferred): "
-                  f"{len(flips)} of 1 pair flipped")
-    for cname, fut, a, b in flips:
-        sigs.append({"sev": "high", "cat": "curve-flip", "measured": True,
-            "t": f"{cname} ${a:.2f} above {fut} ${b:.2f} — front-month premium",
-            "ev": "Front trading above the deferred contract. Backwardation signals physical tightness now, not later.",
-            "stance": "REVIEW",
-            "action": ("The curve is paying for immediate delivery. That is a physical-scarcity signal "
-                       "and usually leads the equities rather than following them."),
-            "tk": [], "date": today})
-
-    # Producer-country FX — changes miner margins and who is a forced seller
-    fxmoves = [(k, (M.get(k) or {}).get("d1")) for k in FX_PRODUCERS]
-    fxmoves = [(k, d) for k, d in fxmoves if d is not None and abs(d) >= 1.5]
-    checks.append(f"Producer-country FX ±1.5%+ ({len(FX_PRODUCERS)} pairs tracked): {len(fxmoves)} moved")
-    for k, d in fxmoves:
-        sigs.append({"sev": "medium", "cat": "producer-fx", "measured": True,
-            "t": f"{k} {d:+.2f}% — {FX_PRODUCERS[k]}",
-            "ev": "Producer-currency move computed from today's close.",
-            "stance": "MONITOR",
-            "action": (f"A {d:+.2f}% move in {k} changes local-currency margins for producers there. "
-                       "A weaker producer currency cuts their costs in USD terms and makes them "
-                       "more willing sellers, which is bearish for the commodity at the margin."),
             "tk": [], "date": today})
 
     # 6. Headline classification — recency-gated, must touch a holding or be systemic

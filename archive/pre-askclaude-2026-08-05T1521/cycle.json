@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "description": "Cycle & innings scoring for all 11 commodity verticals. Innings 1=very early, 9=very late. Scores 0-100.",
+    "fields": {
+      "id": "vertical identifier matching verticals.json",
+      "inn": "innings position 1-9",
+      "struct": "structural demand strength 0-100",
+      "capex": "capex under-investment gap 0-100",
+      "bc": "business cycle sensitivity 0-100 (higher = more cyclical)",
+      "verdict": "short summary label",
+      "vc": "verdict color hex",
+      "sum": "full narrative summary"
+    },
+    "as_of": "2026-08-05"
+  },
+  "cycles": [
+    {
+      "id": "re",
+      "n": "REE & Specialty",
+      "c": "#993556",
+      "struct": 92,
+      "capex": 92,
+      "bc": 28,
+      "inn": 1,
+      "verdict": "Most underinvested",
+      "vc": "#E24B4A",
+      "sum": "Year 1-2 of Western supply chain build — now with China actively escalating and robotics adding a fresh demand layer not yet in sell-side models. In 2025 China expanded export controls from processing technology to HREE oxides, metals, and alloys (Sm, Gd, Tb, Dy, Lu, Sc, Y), directly threatening Western magnet supply chains for defense and EVs. MP Fort Worth magnet facility in commercial ramp — first OEM-qualified US NdFeB at production scale, with GM OEM agreement active. Lynas Seadrift TX DoD-funded HREE separation facility nearing completion (2026 target) — still the only meaningful HREE separation project outside China. HREE (Dy, Tb) separation: still essentially zero Western commercial capacity. Robotics demand multiplier: approximately 28 rare-earth magnet assemblies per humanoid robot (Tesla Optimus BOM teardown); frameless torque motors in every joint require NdFeB; AI-enabled robotics scaling is additive to EV demand, not a substitution — and it is not yet in commodity demand forecasts. JL Mag (6880.HK), China's dominant NdFeB maker, is the pure-play capturing this volume regardless of Western supply ambitions. Allient is actively redesigning motors to reduce REE content — historically the supply-anxiety signal that precedes scarcity rent. Low bc risk — defense procurement is policy-driven, not economically discretionary."
+    },
+    {
+      "id": "nu",
+      "n": "Nuclear & Uranium",
+      "c": "#534AB7",
+      "struct": 95,
+      "capex": 90,
+      "bc": 20,
+      "inn": 2,
+      "verdict": "Most structurally bullish",
+      "vc": "#E24B4A",
+      "sum": "Year 2-3 of decade-long structural rebuild. Russian enrichment import ban (2024) forcing Western supply chain rebuild — year 1-2 of that process. AI PPA buildout has accelerated far beyond the CEG-Microsoft TMI template: Amazon/Dominion, Google/Kairos Power SMR fleet, and other hyperscalers now signed or in active negotiation for nuclear baseload. Nuclear is now the preferred 24/7 carbon-free baseload for hyperscalers globally — price certainty (15-20yr contracts at $110-130/MWh) plus zero-carbon plus 90%+ capacity factor is unmatched by any alternative. Centrus Piketon HALEU production progressing. SPUT building structural physical inventory position. The structural deficit has not resolved — spot price volatility is noise against a decade-long supply rebuild."
+    },
+    {
+      "id": "elec",
+      "n": "Electricity & Grid",
+      "c": "#534AB7",
+      "struct": 94,
+      "capex": 88,
+      "bc": 22,
+      "inn": 2,
+      "verdict": "Active bottleneck supercycle",
+      "vc": "#E24B4A",
+      "sum": "Year 3-4 of a 10-year supercycle that is accelerating, not plateauing. The numbers are now in earnings. PWR Q1 2026 backlog: $48.5B (record; +$20B in two years). ETN Q1 2026: 228 GW of data center backlog = 12 years of orders at current build rates; DC equipment orders +240% YoY; Electrical Americas orders +42% YoY. GEV Q1 2026 orders: $18.3B (+71% organically); gas turbine slot reservations raised to 110 GW target; total backlog heading to $200B by 2027 (pulled forward one year from 2028). Transformer lead times remain 2-4yr — no new manufacturing capacity has relieved the bottleneck. Nuclear AI PPAs restructuring power contracting fundamentals: Amazon/Dominion 1.92 GW, Google/Kairos SMR, Meta Prometheus 6.6 GW all signed or in late negotiation. This is the clearest evidence-based supercycle across the entire hard assets universe."
+    },
+    {
+      "id": "cu",
+      "n": "Copper",
+      "c": "#D85A30",
+      "struct": 88,
+      "capex": 85,
+      "bc": 62,
+      "inn": 2,
+      "verdict": "Structurally bullish",
+      "vc": "#1D9E75",
+      "sum": "TC/RC confirmed negative across 2024-2025 — multiple smelters globally reported negative treatment charges, validating the structural concentrate shortage. Critical supply revision: FCX Grasberg Block Cave geometry issue cuts ~9% of copper and ~7% of gold output through 2031 — a multi-year reduction from the world's largest mine, not priced by consensus. SCCO Tia Maria: Peru revoked the production authorization in March 2026, then reinstated it 32 days later — LatAm political risk is real and must be modeled, but the project is back on track for mid-2027 start. No major new greenfield copper mine has reached FID. S&P Global 8Mt/yr deficit by 2030 thesis gaining mainstream credibility. China construction demand weakness offset by grid, EV, and data center copper demand. Leaching technology adds incremental supply — FCX targeting 300-400M lbs/yr by 2026-27 from existing deposits."
+    },
+    {
+      "id": "wl",
+      "n": "Industrial Water & Land",
+      "c": "#3B6D11",
+      "struct": 72,
+      "capex": 60,
+      "bc": 32,
+      "inn": 2,
+      "verdict": "Long-duration structural",
+      "vc": "#1D9E75",
+      "sum": "Year 2 of scarcity recognition. Water constrains Atacama copper/lithium production, nuclear SMR siting, and AI data center permitting in Arizona. Energy Recovery (ERII) desal near-monopoly is the cleanest listed expression at the water scarcity intersection. ARIS Water (Permian produced water) is most direct O&G water play. Low bc risk — mines need water regardless of economic conditions."
+    },
+    {
+      "id": "ng",
+      "n": "Natural Gas & LNG",
+      "c": "#EF9F27",
+      "struct": 85,
+      "capex": 72,
+      "bc": 52,
+      "inn": 3,
+      "verdict": "Structurally bullish",
+      "vc": "#1D9E75",
+      "sum": "Structural thesis reinforced by a geopolitical shock. Iran struck Qatar's Ras Laffan LNG complex on March 18, 2026 — approximately 17% of Qatar's LNG capacity damaged, with a 3-5yr repair timeline. EU gas storage fell to ~35% in late May 2026 vs. 48% five-year average. US became geopolitically irreplaceable: record US LNG exports 11.7M tonnes in March 2026 with ~64% to Europe; Cheniere (LNG) was upgraded across Wall Street as Qatar supply evaporated. Cheniere (LNG) 2025 record: $19.976B revenue, >46M tonnes delivered. Corpus Christi Stage 3 Train 5 achieved first LNG in February 2026; Trains 6-7 on track. The 20yr European SPAs were already permanent — the Qatar disruption makes them existentially necessary. AI data center power demand (gas-fired CCGT) is the third structural driver. Gas is simultaneously a NATO foreign policy asset and an AI infrastructure input."
+    },
+    {
+      "id": "ii",
+      "n": "Specialty Industrial Inputs",
+      "c": "#854F0B",
+      "struct": 72,
+      "capex": 55,
+      "bc": 38,
+      "inn": 3,
+      "verdict": "Hold / strategic",
+      "vc": "#1D9E75",
+      "sum": "Linde and APD are Western-controlled strategic assets with geopolitical tailwind and no geopolitical risk. On-site plant model has near-infinite switching cost and 15-20yr contracted revenue. ATI is mid-cycle on Ti supply chain diversification from Russia. Materion (MTRN) is underowned at <$1.5B market cap with essentially no listed competition for US beryllium — defense-critical."
+    },
+    {
+      "id": "tm",
+      "n": "Technology & Electronics Metals",
+      "c": "#185FA5",
+      "struct": 78,
+      "capex": 28,
+      "bc": 58,
+      "inn": 2,
+      "verdict": "Policy-driven urgency",
+      "vc": "#E24B4A",
+      "sum": "Export controls are now embedded market reality, not an emerging catalyst — and a new AI materials demand layer is emerging on top. Ga/Ge controls (Aug 2023) and Sb controls (Sept 2024) have permanently repriced affected markets: antimony spiked from ~$12,000/tonne pre-controls to ~$57,800/tonne peak by April 2025, now holding ~$51,800/tonne — a 4x structural reprice. Perpetua Resources (PPTA) crossed from permitting to construction: early works commenced October 2025, $2.7B EXIM Bank loan approved, DoD funding >$80M committed. At current gold prices (~$4,500+/oz), Stibnite NPV sensitivity reaches $6.1B. Alphamin (AFMJF) record FY2025 tin production 18,576 tonnes; 2026 guidance ~20,000 tonnes; LME tin ~$49,663/MT (+55% YoY). New AI materials layer: SiC wafer supply is being 'inherited' by AI 800V infrastructure as European EV demand softens — AI projected to represent ~50% of total SiC demand by 2030. Wolfspeed (WOLF), world's only 200mm SiC fab, is mispriced against the old EV cohort while AI demand accelerates. PCB/substrate materials are a parallel bottleneck: HVLP copper foil (Mitsui Kinzoku, Co-Tech) capacity relief pushed to 2027+; CCL prices +74.5% YoY in Korea; ABF near-monopoly at Ajinomoto. InP substrates for AI optical transceivers: Sumitomo Electric (5802.T) 2.4x capacity by 2028; Nokia (NOK) only vertically-integrated InP fab in the West. Key principle: the closer a material sits to the chip, the more pricing leverage its vendor has. DoD DPA Title III and Project Vault ($12B) starting to deploy capital — Western policy response remains severely lagging the strategic threat."
+    },
+    {
+      "id": "li",
+      "n": "Lithium & Battery Metals",
+      "c": "#1D9E75",
+      "struct": 80,
+      "capex": 42,
+      "bc": 68,
+      "inn": 4,
+      "verdict": "Post-boom correction",
+      "vc": "#EF9F27",
+      "sum": "Cycle turn confirmed. Li carbonate (LCE) troughed at ~$8,000/tonne mid-2025 (down ~83% from 2022 peak) and has recovered to ~$21,000/tonne by May 2026 (+162% from trough). ALB Q1 2026 adjusted EBITDA +148% YoY — the recovery is now showing in earnings, not just spot price. SQM's single largest risk resolved: Atacama operating rights extended to 2060 via Codelco joint venture deal (eliminating the nationalization overhang). 2026-2030 demand wave thesis unchanged: global EV penetration accelerating, grid-scale BESS now growing independently of EV cycle (standalone economics work). Stationary storage demand = the demand driver consensus is still underweighting. IRA domestic content requirements create US reshoring incentive with a 5-10yr supply response lag — patience still required but the trough is behind us."
+    },
+    {
+      "id": "fert",
+      "n": "Fertilizers & Crop Inputs",
+      "c": "#639922",
+      "struct": 68,
+      "capex": 48,
+      "bc": 52,
+      "inn": 4,
+      "verdict": "Selective — NTR + ERII",
+      "vc": "#EF9F27",
+      "sum": "Post-2022 spike normalization. Potash prices retreated from highs. Phosphate is the long-duration structural thesis — non-renewable, Morocco concentration, rising demand. Nitrogen highly correlated to natural gas prices. Nutrien (NTR) trades at a discount to intrinsic strategic value as the only complete NPK company globally."
+    },
+    {
+      "id": "oil",
+      "n": "Oil",
+      "c": "#5F5E5A",
+      "struct": 62,
+      "capex": 55,
+      "bc": 72,
+      "inn": 5,
+      "verdict": "Neutral — selective",
+      "vc": "#888780",
+      "sum": "Offshore drilling mid-cycle recovery (UDW utilization ~90%+, dayrates rising from 2020 trough). Shale returns-focused with capital discipline maintained. Refining structurally tighter post-2020 closures. Tankers have Russian rerouting structural tailwind. Long-term oil demand plateauing in developed markets. Best expressed via offshore (TDW, RIG/VAL UDW), complex refiners (VLO), product tankers (STNG)."
+    },
+    {
+      "id": "pg",
+      "n": "PGMs, Gold & Silver",
+      "c": "#888780",
+      "struct": 64,
+      "capex": 48,
+      "bc": 52,
+      "inn": 4,
+      "verdict": "Selective — Pt/H₂ + Gold",
+      "vc": "#EF9F27",
+      "sum": "Gold ATH: $5,589/oz on January 28, 2026 — highest ever recorded. Pulled back to ~$4,523/oz by May 2026 but J.P. Morgan projects $5,000/oz by Q4 2026; central bank net purchases Q1 2026: 244 tonnes. De-dollarization thesis intact and accelerating. Streaming company FCF at these prices is exceptional: FNV 2025 record revenue $1.82B, net income $1.11B (2x YoY); WPM now world's largest precious metals streamer by market cap with 2026 GEO guidance 860K-940K; RGLD acquired Sandstorm Gold ($3.5B, October 2025) transforming into a large-cap streaming/royalty house in a single transaction. The streaming structure maximizes FCF leverage at peak gold prices: fixed-cost streams + full commodity upside. Palladium in structural ICE-to-EV demand decline — avoid. Platinum hydrogen economy demand long-dated (2028-2035). SA structural fragility (Eskom, labor, grade decline) persistent. Best expressed: FNV, WPM, RGLD — exceptional FCF generation with zero SA operational risk."
+    }
+  ]
+}

@@ -168,6 +168,14 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   background:var(--color-background-primary)}
 .gl-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px}
 .gl-d{font-size:11px;color:var(--color-text-secondary);line-height:1.6}
+.act-route{display:flex;align-items:center;gap:12px;cursor:pointer;margin:14px 0 4px;
+  border:.5px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:8px;padding:11px 14px;
+  background:color-mix(in srgb,var(--accent) 7%,transparent);transition:all .12s}
+.act-route:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.act-route-ico{font-size:20px;flex-shrink:0}
+.act-route-t{font-size:12.5px;font-weight:600;color:var(--color-text-primary);margin-bottom:2px}
+.act-route-d{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
+.act-route-go{margin-left:auto;font-size:18px;color:var(--accent);flex-shrink:0}
 /* Act Now */
 .tab-badge{display:none;margin-left:5px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;
   font-size:9.5px;font-weight:700;line-height:16px;text-align:center;vertical-align:middle;color:#fff}
@@ -783,6 +791,12 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   .sh-hero{padding:12px 14px}
   .sh-hero-h{font-size:18px}
 }
+#ha-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(12px);
+  z-index:200;max-width:min(520px,92vw);padding:10px 16px;border-radius:8px;font-size:12px;line-height:1.5;
+  background:var(--color-text-primary);color:var(--paper);box-shadow:var(--shadow-3);
+  opacity:0;pointer-events:none;transition:opacity .18s,transform .18s}
+#ha-toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.dw-ico-ask:hover{color:var(--accent)}
 .ha-foot{margin-top:28px;padding:14px 16px;border-top:.5px solid var(--color-border-tertiary);
   font-size:10.5px;color:var(--color-text-tertiary);line-height:1.7;display:flex;flex-direction:column;gap:4px}
 </style>
@@ -1346,6 +1360,14 @@ function buildStartHere(){
     ${sigsHtml}
     <div class="fw-section-hdr">Learning path — recommended sequence through this dashboard</div>
     <div class="fw-path">${stepsHtml}</div>
+    <div class="act-route" onclick="ST('act')">
+      <div class="act-route-ico">⚡</div>
+      <div>
+        <div class="act-route-t">Act Now is the front door — this page is reference</div>
+        <div class="act-route-d">Anything that would change an allocation decision today lands there, and it stays silent when nothing does. Come here for the framework, the mental models and the vocabulary.</div>
+      </div>
+      <div class="act-route-go">→</div>
+    </div>
     <div class="fw-section-hdr">How to read company names</div>
     <div class="note-box" style="line-height:1.9">
       <b>A hyperlinked ticker means the name has an investing angle.</b> Plain text is deliberate — it marks context, not an oversight.<br>
@@ -2214,6 +2236,193 @@ function drawerNews(tk){
     `<div class="dw-newsrow"><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a><span>${n.s?esc(n.s)+' · ':''}${esc(n.d||'')}</span></div>`).join('');
 }
 
+// ── ASK CLAUDE ─────────────────────────────────────────────────────────────
+// Assembles a research brief from the record and opens it in the Claude desktop
+// app. Scheme verified against Claude.app: LaunchServices reports `claude:`
+// bound and claimed; an unregistered scheme errors kLSApplicationNotFoundErr.
+const CONV_DEF={
+ 1:'1 = monitor — on the map, not yet argued for',
+ 2:'2 = interested — a real case, not yet a core position',
+ 3:'3 = high conviction — the thesis has been argued and holds'};
+const FROTH_DEF={
+ 1:'1 = insulated — the thesis is not in the price',
+ 2:'2 = exposed — partly priced',
+ 3:'3 = high froth — the price embeds years of good news'};
+
+function briefFor(tk){
+  const c=COMPANIES.find(x=>x.ticker===tk); if(!c) return '';
+  const v=vinfo(c.vertical);
+  const cyc=CYCLE.find(x=>x.id===c.vertical)||{};
+  const q=QUOTES[tk]||{};
+  const sp=n=>n==null?'n/a':(n>=0?'+':'')+(+n).toFixed(1)+'%';   // always signed
+  const L=[];
+
+  L.push(`I keep a hard-assets research map. Pressure-test my read on ${c.name} (${tk}).`);
+  L.push('');
+  L.push('## What I have on file');
+  L.push(`- Vertical: ${v.n}${cyc.inn?` — inning ${cyc.inn}/9 of its structural cycle (capex gap ${cyc.capex}, business-cycle risk ${cyc.bc}, structural demand ${cyc.struct})`:''}`);
+  L.push(`- Chain layer: ${c.chain_layer||'unspecified'}`);
+  L.push(`- Geography: ${c.geo||'unspecified'}`);
+  L.push(`- Business type: ${(c.structure||'equity').replace(/_/g,' ')}`);
+  if(c.last_touched)L.push(`- Thesis last reviewed: ${c.last_touched}`);
+  L.push('');
+  L.push(`### My thesis${c.last_touched?` (written ${c.last_touched})`:''}`);
+  L.push(c.thesis_note||'(none recorded)');
+  L.push('');
+  L.push('### My ratings, and what they mean');
+  L.push(`- Conviction ${c.conviction}/3 — ${CONV_DEF[c.conviction]||''}`);
+  L.push('  Conviction measures REPLACEABILITY, not cheapness. A 3 means I think the position in the chain is hard to substitute — it is not a statement that the stock is undervalued.');
+  L.push(`- Froth ${c.froth}/3 — ${FROTH_DEF[c.froth]||''}`);
+  L.push('  Froth is about ENTRY PRICE, not business quality. A froth-3 name can be an excellent company I simply do not want to buy here.');
+  if(c.froth_note)L.push(`  My froth reasoning: ${c.froth_note}`);
+  L.push('');
+
+  // Live market data — every percentage signed
+  if(q.p!=null){
+    const ccy=(typeof fxCcy==='function'&&fxCcy(tk))||null;
+    L.push(`### Market data${QUOTES_META&&QUOTES_META.as_of?` (as of ${String(QUOTES_META.as_of).slice(0,10)})`:''}`);
+    L.push(`- Price: ${q.p}${ccy?` ${ccy} — local currency, NOT FX-converted`:''}`);
+    L.push(`- 1 day ${sp(q.d1)} · 1 month ${sp(q.m1)} · 12 months ${sp(q.r1y)}`);
+    if(q.dd!=null)L.push(`- ${sp(q.dd)} versus its 52-week high`);
+    if(q.fpe)L.push(`- Forward P/E: ${q.fpe}`);
+    if(q.mc)L.push(`- Market cap: ${fmtMC(q.mc)} USD`);
+    L.push('');
+  }
+
+  // Alerts currently flagged by the nightly scan
+  const al=((ALERTS&&ALERTS.alerts)||[]).filter(a=>a.tk===tk);
+  const brk=((BREAKING&&BREAKING.signals)||[]).filter(s=>(s.tk||[]).includes(tk));
+  if(al.length||brk.length){
+    L.push('### Currently flagged by my nightly scan');
+    al.forEach(a=>L.push(`- ${a.label}`));
+    brk.forEach(s=>L.push(`- [${s.sev}/${s.cat}] ${s.t} — my stance: ${s.stance}${s.measured?'':' (parsed headline, unverified)'}`));
+    L.push('');
+  }
+
+  if((c.themes||[]).length){
+    L.push('### Themes I have tagged it under');
+    L.push(c.themes.join(', '));
+    L.push('');
+  }
+
+  // Peers — same chain layer FIRST and labelled direct; a royalty company and a
+  // producer in the same commodity are not comparable and must not be conflated.
+  const sameV=COMPANIES.filter(x=>x.vertical===c.vertical&&x.ticker!==tk);
+  const norm=s=>(s||'').toLowerCase();
+  // Same chain layer is the real test. Structure only counts as a match when it
+  // is DISTINCTIVE — 'equity' covers three-quarters of the universe, so ORing on
+  // it would make almost every co-located name look like a direct comparable.
+  // Structures that behave alike are grouped: a royalty and a streaming company
+  // are the same animal, a producer is not. Plain 'equity' is deliberately NOT a
+  // family — it covers three-quarters of the universe and would match everything.
+  const FAMILY={streaming:'paper',royalty:'paper',physical_trust:'paper',
+                midstream:'toll',epc:'toll',utility:'toll'};
+  const fam=s=>FAMILY[s]||null;
+  const direct=sameV.filter(x=>norm(x.chain_layer)===norm(c.chain_layer)
+    ||(fam(c.structure)&&fam(x.structure)===fam(c.structure)));
+  const loose=sameV.filter(x=>!direct.includes(x));
+  const line=x=>`  - ${x.name} (${x.ticker}) — ${x.chain_layer||'?'}, ${(x.structure||'equity').replace(/_/g,' ')}, conviction ${x.conviction}/3, froth ${x.froth}/3`;
+  if(direct.length){
+    L.push('### Direct comparables — same chain layer or same business type');
+    direct.slice(0,8).forEach(x=>L.push(line(x)));
+    L.push('');
+  }
+  if(loose.length){
+    L.push('### Same vertical but a different layer — only loosely comparable');
+    L.push(`These sit in ${v.n} too, but at a different point in the chain, so they are not like-for-like.`);
+    loose.slice(0,8).forEach(x=>L.push(line(x)));
+    L.push('');
+  }
+
+  // Sources
+  const news=(NEWS||[]).filter(n=>(n.tk||[]).includes(tk)).slice(0,4);
+  if(news.length){
+    L.push('### Sources I have been reading');
+    news.forEach(n=>L.push(`- ${n.t}${n.s?` (${n.s}${n.d?', '+n.d:''})`:''}${n.u?` ${n.u}`:''}`));
+    L.push('');
+  }
+
+  // Questions ADAPT to the rating — asking a conviction-1 monitor to defend a
+  // chokepoint claim asks the model to defend a claim I never made.
+  L.push('## What I want from you');
+  if(c.conviction===3){
+    L.push(`1. I am claiming ${c.name} occupies a position that is hard to replace. Attack that. By what specific mechanism could a competitor, a substitute material, a new process or a policy change make it replaceable — and how long would that take?`);
+    L.push('2. What is the strongest bear case a serious investor would make here, stated properly rather than as a strawman?');
+    L.push('3. What would have to happen for me to drop this from conviction 3 to 2? Name the observable event, not a vague risk.');
+  }else if(c.conviction===2){
+    L.push(`1. What specifically would justify moving ${tk} to conviction 3 — what would I need to see, and is it observable from outside the company?`);
+    L.push('2. Conversely, what would push it down to a 1 and out of serious consideration?');
+    L.push('3. Am I holding this at 2 because the case is genuinely unproven, or because I have not done the work? Be blunt about which it looks like from what I have written.');
+  }else{
+    L.push(`1. Does ${tk} belong in a hard-assets universe at all, or am I collecting names? Argue the case for removing it.`);
+    L.push('2. If the underlying demand driver is real, is there a better-positioned way to own it — further up the chain, a different business type, or a different geography?');
+    L.push('3. What single fact would move this off the monitor list in either direction?');
+  }
+  L.push(`4. My froth read is ${c.froth}/3. Is the market pricing this the way I think it is?`);
+  L.push('');
+  L.push('Tell me plainly if my ratings are wrong — I would rather be corrected than agreed with.');
+  return L.join('\n');
+}
+
+// Deep link. Desktop tries the scheme and falls back to https if nothing takes
+// focus; mobile goes straight to https since universal links already route.
+const IS_MOBILE=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+const MAX_Q=7500;
+function askClaude(tk,ev){
+  if(ev&&ev.preventDefault)ev.preventDefault();
+  let brief=briefFor(tk);
+  if(!brief)return;
+  let q=encodeURIComponent(brief);
+  if(q.length>MAX_Q){
+    toast('Brief too long for a URL — opening an empty chat. Use Copy brief and paste it.');
+    q=encodeURIComponent(`Pressure-test my read on ${tk}. I will paste my notes next.`);
+  }
+  const https='https://claude.ai/new?q='+q;
+  if(IS_MOBILE){window.open(https,'_blank','noopener');return;}
+  let handled=false;
+  const took=()=>{handled=true;};
+  window.addEventListener('blur',took,{once:true});
+  document.addEventListener('visibilitychange',took,{once:true});
+  try{window.location.href='claude://claude.ai/new?q='+q;}catch(e){}
+  setTimeout(()=>{
+    window.removeEventListener('blur',took);
+    document.removeEventListener('visibilitychange',took);
+    if(!handled)window.open(https,'_blank','noopener');   // no dead click
+  },1500);
+}
+
+function toast(msg){
+  let t=document.getElementById('ha-toast');
+  if(!t){t=mk('div','');t.id='ha-toast';document.body.appendChild(t);}
+  t.textContent=msg; t.className='on';
+  clearTimeout(t._h); t._h=setTimeout(()=>{t.className='';},2600);
+}
+
+// Clipboard needs a REAL user gesture — this is wired to a click, not called
+// programmatically. execCommand fallback for non-secure contexts.
+function copyBrief(tk){
+  const brief=briefFor(tk);
+  if(!brief){toast('Nothing to copy for this record.');return;}
+  const done=()=>toast('Brief copied — paste it into Claude Code or any chat.');
+  const fail=()=>toast('Copy failed. Select the text manually.');
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(brief).then(done).catch(()=>legacyCopy(brief)?done():fail());
+  }else{
+    legacyCopy(brief)?done():fail();
+  }
+}
+function legacyCopy(text){
+  try{
+    const ta=document.createElement('textarea');
+    ta.value=text; ta.setAttribute('readonly','');
+    ta.style.cssText='position:fixed;left:-9999px;top:0';
+    document.body.appendChild(ta); ta.select();
+    const ok=document.execCommand('copy');
+    document.body.removeChild(ta);
+    return ok;
+  }catch(e){return false;}
+}
+
 // Header action icons. Inline SVG inherits theme colour; the mapped Yahoo
 // symbol is named in the tooltip so a wrong mapping is visible, not silent.
 function drawerActions(tk){
@@ -2224,7 +2433,9 @@ function drawerActions(tk){
   el.innerHTML=
     ico(yhChart(tk),`Chart — ${y}`,'<polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/>')
    +ico(yhFin(tk),`Quote & financials — ${y}`,'<rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="9" x2="17" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="17" x2="13" y2="17"/>')
-   +`<button class="dw-ico" title="Open ${esc(tk)} in the Companies tab" onclick="closeDrawer();jumpToCompanies('${esc(tk)}')"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg></button>`;
+   +`<button class="dw-ico" title="Open ${esc(tk)} in the Companies tab" onclick="closeDrawer();jumpToCompanies('${esc(tk)}')"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg></button>`
+   +`<a class="dw-ico dw-ico-ask" href="https://claude.ai/new?q=${encodeURIComponent('Pressure-test my read on '+tk)}" target="_blank" rel="noopener" title="Ask Claude — opens a pre-filled research brief on ${esc(tk)}" onclick="askClaude('${esc(tk)}',event)"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.7L3 21l1.9-5A8.2 8.2 0 0 1 4 11.5 8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/></svg></a>`
+   +`<button class="dw-ico" title="Copy the research brief for ${esc(tk)} to the clipboard" onclick="copyBrief('${esc(tk)}')"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>`;
 }
 
 function renderDrawer(accent,head,body){
