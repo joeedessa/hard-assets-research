@@ -1,19 +1,20 @@
 {
   "_meta": {
-    "description": "Universe matrix \u2014 11 verticals \u00d7 10 chain stages. Each cell has entries (label + style class) and optional highlighted detail.",
+    "description": "Universe matrix — 11 verticals × 10 chain stages. Each cell has entries (label + style class) and optional highlighted detail.",
     "style_classes": {
-      "v0": "Oil \u2014 grey",
-      "v1": "NG/LNG \u2014 amber",
-      "v2": "Nuclear \u2014 indigo",
-      "v3": "Copper \u2014 orange-red",
-      "v4": "Lithium \u2014 green",
-      "v5": "REE \u2014 pink",
-      "v6": "TechMet \u2014 blue",
-      "v7": "PGM/Ag \u2014 silver",
-      "v8": "Water \u2014 dark green",
-      "v9": "Ind.Inputs \u2014 brown",
-      "va": "Fertilizers \u2014 olive"
-    }
+      "v0": "Oil — grey",
+      "v1": "NG/LNG — amber",
+      "v2": "Nuclear — indigo",
+      "v3": "Copper — orange-red",
+      "v4": "Lithium — green",
+      "v5": "REE — pink",
+      "v6": "TechMet — blue",
+      "v7": "PGM/Ag — silver",
+      "v8": "Water — dark green",
+      "v9": "Ind.Inputs — brown",
+      "va": "Fertilizers — olive"
+    },
+    "as_of": "2026-08-05"
   },
   "verticals": [
     {
@@ -565,7 +566,7 @@
       ],
       "li": [
         [
-          "Spodumene \u2192 SC6%",
+          "Spodumene → SC6%",
           "v4"
         ],
         [
@@ -617,7 +618,7 @@
           "va"
         ],
         [
-          "Phosphate \u2192 phos. acid",
+          "Phosphate → phos. acid",
           "va"
         ]
       ]
@@ -659,7 +660,7 @@
           "v3"
         ],
         [
-          "Electrolytic \u2192 LME cathode",
+          "Electrolytic → LME cathode",
           "v3"
         ]
       ],
@@ -675,7 +676,7 @@
       ],
       "re": [
         [
-          "REE separation \u2014 CHOKEPOINT",
+          "REE separation — CHOKEPOINT",
           "v5"
         ],
         [
@@ -685,7 +686,7 @@
       ],
       "tm": [
         [
-          "Ga/Ge refining \u2014 China monopoly",
+          "Ga/Ge refining — China monopoly",
           "v6"
         ],
         [
@@ -931,7 +932,7 @@
       ],
       "ng": [
         [
-          "LNG regas EE,H\u00f6egh LNG",
+          "LNG regas EE,Höegh LNG",
           "v1"
         ],
         [
@@ -1021,7 +1022,7 @@
       ],
       "fert": [
         [
-          "Farmers \u2014 crop application",
+          "Farmers — crop application",
           "va"
         ],
         [
@@ -1125,16 +1126,16 @@
   },
   "highlighted_cells": {
     "rf_nu": {
-      "t": "Nuclear \u2014 Enrichment (most acute strategic gap in the universe)",
+      "t": "Nuclear — Enrichment (most acute strategic gap in the universe)",
       "f": [
         "fch",
         "fgp",
         "fgeo"
       ],
-      "b": "Centrus Energy (LEU) is the ONLY US company with active domestic uranium enrichment capacity. TENEX/Rosatom supplied ~28% of US SWU before the Prohibiting Russian Uranium Imports Act (2024). HALEU for SMRs/advanced reactors = essentially zero non-Russian supply \u2014 Centrus building from scratch with DoD/DOE support. Year 1-2 of a 10-year rebuild."
+      "b": "Centrus Energy (LEU) is the ONLY US company with active domestic uranium enrichment capacity. TENEX/Rosatom supplied ~28% of US SWU before the Prohibiting Russian Uranium Imports Act (2024). HALEU for SMRs/advanced reactors = essentially zero non-Russian supply — Centrus building from scratch with DoD/DOE support. Year 1-2 of a 10-year rebuild."
     },
     "rf_re": {
-      "t": "REE \u2014 Separation (single most acute geopolitical chokepoint)",
+      "t": "REE — Separation (single most acute geopolitical chokepoint)",
       "f": [
         "fch",
         "fgp",
@@ -1143,57 +1144,57 @@
       "b": "China controls ~85-90% of global REE separation. Outside China: MP Materials (NdPr at Mountain Pass + Fort Worth TX magnet facility); Lynas Malaysia + Seadrift TX (DoD-funded, under construction). HREE (Dy, Tb) separation: essentially NO Western capacity at all. Most strategically urgent single processing gap in critical minerals globally."
     },
     "di_nu": {
-      "t": "Nuclear Power Operations \u2014 AI data center PPA template",
+      "t": "Nuclear Power Operations — AI data center PPA template",
       "f": [
         "fgeo"
       ],
-      "b": "Constellation Energy (CEG \u2014 ~10% of US electricity). Microsoft Three Mile Island restart (2024) = 20yr PPA at ~$110/MWh for 24/7 carbon-free power. Template being replicated across CEG fleet. SMRs: GE-Hitachi BWRX-300 (Ontario Power 4-unit order \u2014 first Western commercial SMR contract); X-energy Xe-100 (Dow Chemical site); BWXT as components supplier."
+      "b": "Constellation Energy (CEG — ~10% of US electricity). Microsoft Three Mile Island restart (2024) = 20yr PPA at ~$110/MWh for 24/7 carbon-free power. Template being replicated across CEG fleet. SMRs: GE-Hitachi BWRX-300 (Ontario Power 4-unit order — first Western commercial SMR contract); X-energy Xe-100 (Dow Chemical site); BWXT as components supplier."
     },
     "di_cu": {
-      "t": "Copper \u2014 Grid infrastructure & transformer bottleneck",
+      "t": "Copper — Grid infrastructure & transformer bottleneck",
       "f": [
         "fgp"
       ],
-      "b": "Grid components: Hitachi Energy (world's largest LPT maker, multi-year backlog), ABB (ABBN), Eaton (ETN), GE Vernova (GEV). HV cables: Prysmian (PRY.MI), Nexans (NEX.PA) \u2014 3-4yr backlog. Grid EPC: Quanta (PWR, ~40% US market). Transformer lead times: 2-4 years. Unprecedented simultaneous demand from AI DCs + EVs + grid hardening."
+      "b": "Grid components: Hitachi Energy (world's largest LPT maker, multi-year backlog), ABB (ABBN), Eaton (ETN), GE Vernova (GEV). HV cables: Prysmian (PRY.MI), Nexans (NEX.PA) — 3-4yr backlog. Grid EPC: Quanta (PWR, ~40% US market). Transformer lead times: 2-4 years. Unprecedented simultaneous demand from AI DCs + EVs + grid hardening."
     },
     "rf_li": {
-      "t": "Lithium \u2014 Processing & cell manufacturing (Chinese chokehold)",
+      "t": "Lithium — Processing & cell manufacturing (Chinese chokehold)",
       "f": [
         "fch",
         "fgeo"
       ],
-      "b": "~70% of global LiOH conversion is Chinese. Battery precursor (pCAM): Umicore, BASF, CNGR/Huayou (China dominant). Cells: CATL (~37%), BYD, Panasonic, Samsung SDI, LGES, SK On. IRA domestic content requirements forcing reshoring \u2014 5-10yr lag. Arcadium (Rio Tinto) + Piedmont building non-Chinese conversion."
+      "b": "~70% of global LiOH conversion is Chinese. Battery precursor (pCAM): Umicore, BASF, CNGR/Huayou (China dominant). Cells: CATL (~37%), BYD, Panasonic, Samsung SDI, LGES, SK On. IRA domestic content requirements forcing reshoring — 5-10yr lag. Arcadium (Rio Tinto) + Piedmont building non-Chinese conversion."
     },
     "pr_nu": {
-      "t": "Uranium Mining \u2014 extreme supply concentration",
+      "t": "Uranium Mining — extreme supply concentration",
       "f": [
         "fch",
         "fgp",
         "fgeo"
       ],
-      "b": "Cameco (CCO \u2014 world's highest-grade; ~15% global supply); Kazatomprom (KAP \u2014 ~40% global ISR; geopolitically ambiguous); Paladin (Langer Heinrich, Namibia); UEC (US ISR); Boss Energy (Australia). Top 3 = ~65% of global supply. Supply has not met demand since Fukushima (2011) \u2014 12+ years of inventory drawdown."
+      "b": "Cameco (CCO — world's highest-grade; ~15% global supply); Kazatomprom (KAP — ~40% global ISR; geopolitically ambiguous); Paladin (Langer Heinrich, Namibia); UEC (US ISR); Boss Energy (Australia). Top 3 = ~65% of global supply. Supply has not met demand since Fukushima (2011) — 12+ years of inventory drawdown."
     },
     "rr_cu": {
-      "t": "Copper \u2014 Royalty & streaming (best risk-adjusted exposure in the vertical)",
+      "t": "Copper — Royalty & streaming (best risk-adjusted exposure in the vertical)",
       "f": [],
-      "b": "FNV and WPM hold silver/gold streams at major copper mines \u2014 best risk-adjusted structure in the hard assets universe. WPM key streams: Antamina Ag (Peru), Salobo Au (Brazil), Constancia Ag (Peru). Streaming = Cu upside without capex, processing risk, or jurisdictional concentration. Sits above the Chinese smelting chokepoint entirely."
+      "b": "FNV and WPM hold silver/gold streams at major copper mines — best risk-adjusted structure in the hard assets universe. WPM key streams: Antamina Ag (Peru), Salobo Au (Brazil), Constancia Ag (Peru). Streaming = Cu upside without capex, processing risk, or jurisdictional concentration. Sits above the Chinese smelting chokepoint entirely."
     },
     "pr_fert": {
-      "t": "Fertilizers \u2014 Potash mining (allied-nation food security play)",
+      "t": "Fertilizers — Potash mining (allied-nation food security play)",
       "f": [
         "fgeo"
       ],
-      "b": "Nutrien (NTR \u2014 world's largest K producer + significant N+P; ONLY complete NPK company globally; Canpotex JV with Mosaic controls Canadian export logistics worldwide). Mosaic (MOS \u2014 Esterhazy K + Florida P mining). ICL Group (Israel \u2014 Dead Sea Works K + Rotem P). OCP Morocco (state-owned private, ~70% global phosphate reserves \u2014 the long-term chokepoint to monitor)."
+      "b": "Nutrien (NTR — world's largest K producer + significant N+P; ONLY complete NPK company globally; Canpotex JV with Mosaic controls Canadian export logistics worldwide). Mosaic (MOS — Esterhazy K + Florida P mining). ICL Group (Israel — Dead Sea Works K + Rotem P). OCP Morocco (state-owned private, ~70% global phosphate reserves — the long-term chokepoint to monitor)."
     },
     "rc_li": {
-      "t": "Battery recycling \u2014 geopolitically domesticated supply",
+      "t": "Battery recycling — geopolitically domesticated supply",
       "f": [
         "fgeo"
       ],
-      "b": "Li-Cycle (LICY \u2014 hub+spoke hydromet; strategic asset); Redwood Materials (private \u2014 JB Straubel; DOE loan; major OEM partnerships). DoD + IRA funding flowing. Domesticated supply bypasses Chinese processing control. 2026-2030 is the inflection point as first generation of mass-market EVs reaches end-of-life."
+      "b": "Li-Cycle (LICY — hub+spoke hydromet; strategic asset); Redwood Materials (private — JB Straubel; DOE loan; major OEM partnerships). DoD + IRA funding flowing. Domesticated supply bypasses Chinese processing control. 2026-2030 is the inflection point as first generation of mass-market EVs reaches end-of-life."
     },
     "rf_nu2": {
-      "t": "Nuclear Fuel Fabrication \u2014 sticky oligopoly at the final processing step",
+      "t": "Nuclear Fuel Fabrication — sticky oligopoly at the final processing step",
       "f": [
         "fch"
       ],
@@ -1214,7 +1215,7 @@
         "Planet Labs PL",
         "Worley WOR.AX (EPC)",
         "Chart GTLS (cryo)",
-        "\u2014"
+        "—"
       ]
     },
     {
@@ -1228,7 +1229,7 @@
         "Tetra Tech TTEK (water)",
         "Quanta PWR (grid)",
         "MYR,Emcor,MasTec",
-        "\u2014",
+        "—",
         "Chart GTLS (cryo)",
         "CAT,Deere DE"
       ]
@@ -1260,8 +1261,8 @@
         "FNV (streams)",
         "CME,ICE (exchanges)",
         "FNV,WPM (streams)",
-        "\u2014",
-        "\u2014",
+        "—",
+        "—",
         "CME,ICE (ag futures)"
       ]
     },
@@ -1277,7 +1278,7 @@
         "Tin dross processors",
         "JM,Umicore,SBSW",
         "XYL,Veolia (water)",
-        "\u2014",
+        "—",
         "Struvite P recovery"
       ]
     }
@@ -1340,7 +1341,7 @@
         },
         {
           "n": "LNG regasification",
-          "s": "Excelerate EE, H\u00f6egh LNG, NFE import side"
+          "s": "Excelerate EE, Höegh LNG, NFE import side"
         }
       ],
       "tab": "th",
@@ -1352,7 +1353,7 @@
       "rows": [
         {
           "n": "Data centers",
-          "s": "AMZN, MSFT, GOOG \u2014 largest new industrial power users globally"
+          "s": "AMZN, MSFT, GOOG — largest new industrial power users globally"
         },
         {
           "n": "DC power systems",
@@ -1364,11 +1365,11 @@
         },
         {
           "n": "Nuclear for AI",
-          "s": "CEG\u2013Microsoft TMI restart; data center PPA pipeline growing rapidly"
+          "s": "CEG–Microsoft TMI restart; data center PPA pipeline growing rapidly"
         },
         {
           "n": "Gas for AI power",
-          "s": "VST, NRG, Calpine \u2014 CCGT default 24/7 dispatchable DC load"
+          "s": "VST, NRG, Calpine — CCGT default 24/7 dispatchable DC load"
         },
         {
           "n": "Water for AI",
@@ -1420,5 +1421,5 @@
     "ii": "wl",
     "fert": "ng"
   },
-  "integrated_companies": "Glencore GLEN.L (Cu+Co+coal+oil+trading) \u00b7 BHP (Cu+Fe+Ni+K) \u00b7 Rio Tinto (Cu+Li+Al+REE) \u00b7 XOM/Shell/Total (oil+gas+LNG) \u00b7 Nutrien NTR (K+N+P \u2014 only complete NPK) \u00b7 Siemens Energy ENR.DE (turbines+grid+wind) \u00b7 Umicore UMI.BR (Co+pCAM+PGM recycle) \u00b7 Johnson Matthey JMAT.L (PGM chemistry+autocatalyst+recycle)"
+  "integrated_companies": "Glencore GLEN.L (Cu+Co+coal+oil+trading) · BHP (Cu+Fe+Ni+K) · Rio Tinto (Cu+Li+Al+REE) · XOM/Shell/Total (oil+gas+LNG) · Nutrien NTR (K+N+P — only complete NPK) · Siemens Energy ENR.DE (turbines+grid+wind) · Umicore UMI.BR (Co+pCAM+PGM recycle) · Johnson Matthey JMAT.L (PGM chemistry+autocatalyst+recycle)"
 }

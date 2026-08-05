@@ -24,9 +24,13 @@ jobs:
           python3 - <<'EOF'
           import re, subprocess, sys, tempfile, os, pathlib
 
-          widget = pathlib.Path("widgets/widget_combined.html").read_text()
-          scripts = re.findall(r'<script[^>]*>(.*?)</script>', widget, re.DOTALL)
-          js = "\n".join(scripts)
+          js_parts = []
+          for f in ["index.html", "widgets/widget_combined.html"]:
+              p = pathlib.Path(f)
+              if not p.exists():
+                  continue
+              js_parts += re.findall(r'<script[^>]*>(.*?)</script>', p.read_text(), re.DOTALL)
+          js = "\n".join(js_parts)
           with tempfile.NamedTemporaryFile(suffix=".js", mode="w", delete=False) as f:
               f.write(js)
               fname = f.name
