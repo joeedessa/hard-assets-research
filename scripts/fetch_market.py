@@ -10,7 +10,7 @@ import os
 import sys
 import time
 import re
-from datetime import datetime, date, timedelta
+from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
 
 try:
@@ -439,6 +439,217 @@ def compute_alerts(quotes, indices):
     return {"alerts": alerts, "as_of": today}
 
 
+# ── ACT NOW: breaking-signal detection ────────────────────────────────────────
+# The design problem is the BAR, not the gathering. This must be silent on an
+# ordinary day, and its empty state must list the checks that ran so silence
+# reads as evidence rather than absence.
+
+HEADLINE_CATS = [
+    ("deleveraging", "critical", [
+        "default", "bankrupt", "chapter 11", "insolven", "credit default", "cds ",
+        "debt spiral", "margin call", "liquidat", "covenant breach", "going concern"]),
+    ("macro", "critical", [
+        "rate cut", "rate hike", "emergency meeting", "intervention", "circuit breaker",
+        "recession", "yield curve", "dollar surge", "currency crisis", "capital controls"]),
+    ("policy-shock", "high", [
+        "export ban", "export control", "export licens", "tariff", "sanction",
+        "nationalis", "nationaliz", "expropriat", "windfall tax", "royalty hike",
+        "permit denied", "licence revoked", "license revoked", "quota"]),
+    ("catastrophe", "high", [
+        "mine collapse", "tailings", "dam failure", "explosion", "fire at",
+        "refinery fire", "earthquake", "strike action", "workers strike", "blockade",
+        "force majeure", "shut down", "shutdown", "derailment", "flooding"]),
+    ("company-critical", "high", [
+        "guidance cut", "cuts guidance", "slashes", "profit warning", "ceo steps down",
+        "ceo resign", "cfo resign", "fraud", "investigation", "halts production",
+        "suspends production", "writedown", "write-down", "impairment"]),
+    ("breakthrough", "medium", [
+        "breakthrough", "first ever", "world first", "record grade", "new discovery",
+        "commercial scale", "doubles capacity", "substitute for"]),
+]
+# Categories that keep mattering past 72 hours
+SLOW_BURN = {"deleveraging", "macro", "catastrophe"}
+
+
+def _stance_for(tickers, comp_map):
+    """Derive a mechanical stance from our own conviction/froth tags."""
+    if not tickers:
+        return "MONITOR", "No holding is directly affected — context only."
+    recs = [comp_map[t] for t in tickers if t in comp_map]
+    if not recs:
+        return "MONITOR", "Named companies sit outside the investable universe."
+    hi_conv = [r for r in recs if r.get("conviction") == 3]
+    frothy = [r for r in recs if r.get("froth") == 3]
+    insulated = [r for r in recs if r.get("froth") == 1]
+    if frothy and not insulated:
+        return "STOP ADDING", ("High-froth names are involved (" +
+            ", ".join(r["ticker"] for r in frothy) + "). Entry windows close in a squeeze; do not chase.")
+    if insulated and not frothy:
+        return "BUY THE DISLOCATION", ("Insulated names are involved (" +
+            ", ".join(r["ticker"] for r in insulated) + "). Weakness here is opportunity, not information.")
+    if hi_conv:
+        return "THESIS AT RISK", ("Top-conviction holdings are named (" +
+            ", ".join(r["ticker"] for r in hi_conv) + "). Confirm the story before changing anything.")
+    return "MONITOR", "Affected names are lower-conviction; watch rather than act."
+
+
+def compute_breaking(quotes, indices, news, companies):
+    """Only events that would change an allocation decision today."""
+    print("Scanning for breaking signals...")
+    today = date.today().isoformat()
+    comp_map = {c["ticker"]: c for c in companies}
+    sigs, checks = [], []
+
+    moves = {t: q["d1"] for t, q in quotes.items() if q.get("d1") is not None}
+    n = len(moves) or 1
+    med = sorted(moves.values())[n // 2] if moves else 0.0
+    C = indices.get("commodities", {}) or {}
+    M = indices.get("macro", {}) or {}
+    # Sector proxy: the broad commodity index if present, else the universe median
+    sector = (C.get("CopperETF") or {}).get("d1")
+    sector = sector if sector is not None else med
+
+    # 1. Deleveraging signature — everything falls together
+    down5 = [t for t, d in moves.items() if d <= -5]
+    checks.append(f"Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): "
+                  f"{len(down5)}/{n} down 5%, sector {sector:+.1f}%")
+    if len(down5) >= 0.25 * n and sector is not None and sector <= -3:
+        st, act = "STAGE", ("Broad, correlated selling is a liquidity event, not a re-rating of the thesis. "
+                            "Do not catch the knife — publish and work the staged-entry list instead.")
+        sigs.append({"sev": "critical", "cat": "deleveraging", "measured": True,
+            "t": f"Correlated drawdown: {len(down5)} of {n} holdings down 5%+ with the sector {sector:+.1f}%",
+            "ev": f"Computed from today's closes. Universe median {med:+.1f}%.",
+            "stance": st, "action": act, "tk": sorted(down5)[:12], "date": today})
+
+    # 2. Reflex melt-up — the mirror image
+    up5 = [t for t, d in moves.items() if d >= 5]
+    checks.append(f"Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): "
+                  f"{len(up5)}/{n} up 5%, sector {sector:+.1f}%")
+    if len(up5) >= 0.25 * n and sector is not None and sector >= 4:
+        sigs.append({"sev": "high", "cat": "melt-up", "measured": True,
+            "t": f"Reflex melt-up: {len(up5)} of {n} holdings up 5%+ with the sector {sector:+.1f}%",
+            "ev": f"Computed from today's closes. Universe median {med:+.1f}%.",
+            "stance": "STOP ADDING",
+            "action": "Entry windows are closing. Anything bought into this tape is bought on momentum, not on the structural case.",
+            "tk": sorted(up5)[:12], "date": today})
+
+    # 3. Single-name collapse
+    collapse = [t for t, d in moves.items() if d <= -12]
+    checks.append(f"Single-name collapse (any holding −12%+ in a session): {len(collapse)} found")
+    for t in collapse:
+        st, act = _stance_for([t], comp_map)
+        r = comp_map.get(t, {})
+        sigs.append({"sev": "critical", "cat": "company-critical", "measured": True,
+            "t": f"{t} {moves[t]:+.1f}% in a single session",
+            "ev": f"Computed from today's close. Conviction {r.get('conviction','?')}, froth {r.get('froth','?')}.",
+            "stance": "REVIEW", "action": act, "tk": [t], "date": today})
+
+    # 4. Conviction-tier divergence — versus the MEDIAN, not absolute.
+    #    On a +6% tape an 8% move is beta, not news.
+    div = [(t, d) for t, d in moves.items()
+           if comp_map.get(t, {}).get("conviction") == 3 and abs(d - med) >= 8]
+    checks.append(f"Conviction-3 divergence (±8%+ versus the {med:+.1f}% universe median): {len(div)} found")
+    for t, d in div:
+        st, act = _stance_for([t], comp_map)
+        sigs.append({"sev": "high", "cat": "divergence", "measured": True,
+            "t": f"{t} {d:+.1f}% against a {med:+.1f}% universe median",
+            "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+            "stance": st, "action": act, "tk": [t], "date": today})
+
+    # 5. COMMODITY-SPECIFIC — where this diverges from the semis sibling
+    big_c = [(k, v["d1"]) for k, v in C.items() if v.get("d1") is not None and abs(v["d1"]) >= 5]
+    checks.append(f"Tracked commodity ±5%+ in a session: {len(big_c)} of {len(C)} moved")
+    for k, d in big_c:
+        sigs.append({"sev": "high", "cat": "commodity", "measured": True,
+            "t": f"{k} {d:+.1f}% in a session",
+            "ev": "Spot/futures move computed from today's close.",
+            "stance": "MONITOR" if abs(d) < 8 else "REVIEW",
+            "action": (f"The underlying moved {d:+.1f}% while the equities did their own thing. "
+                       "Check whether the equity complex has followed — divergence is the signal, not the move."),
+            "tk": [], "date": today})
+
+    # Spot vs equity divergence — equities ignoring the underlying
+    PAIRS = {"Copper": "cu", "Uranium": "nu", "Gold": "pg", "Lithium": "li", "WTI": "oil", "NatGas": "ng"}
+    for cname, vert in PAIRS.items():
+        cd = (C.get(cname) or {}).get("d1")
+        eq = [moves[c["ticker"]] for c in companies
+              if c.get("vertical") == vert and c["ticker"] in moves]
+        if cd is None or len(eq) < 2:
+            continue
+        eqm = sorted(eq)[len(eq) // 2]
+        gap = eqm - cd
+        if abs(gap) >= 4:
+            sigs.append({"sev": "medium", "cat": "spot-equity-divergence", "measured": True,
+                "t": f"{cname} {cd:+.1f}% but its equities {eqm:+.1f}% — a {gap:+.1f}pt gap",
+                "ev": f"Median of {len(eq)} {vert} holdings against the underlying.",
+                "stance": "MONITOR",
+                "action": ("Equities and the underlying have decoupled. Either the equity market is "
+                           "pricing something the spot is not, or it is wrong — worth knowing which."),
+                "tk": [c["ticker"] for c in companies if c.get("vertical") == vert][:8], "date": today})
+    checks.append(f"Spot-versus-equity divergence (>4pt gap on {len(PAIRS)} pairs): "
+                  f"{sum(1 for s in sigs if s['cat']=='spot-equity-divergence')} found")
+
+    # USD — the macro driver for the whole complex
+    dxy = (M.get("DXY") or {}).get("d1")
+    checks.append(f"USD (DXY) ±1%+ in a session: {dxy:+.2f}%" if dxy is not None else "USD (DXY): unavailable")
+    if dxy is not None and abs(dxy) >= 1:
+        sigs.append({"sev": "high", "cat": "macro", "measured": True,
+            "t": f"Dollar {dxy:+.2f}% — the macro driver for the whole complex",
+            "ev": "DXY session move. Commodities are priced in USD, so this moves everything at once.",
+            "stance": "MONITOR",
+            "action": ("A dollar move of this size mechanically repositions every commodity price. "
+                       "Read today's moves net of it before drawing conclusions."),
+            "tk": [], "date": today})
+
+    # 6. Headline classification — recency-gated, must touch a holding or be systemic
+    scanned = 0
+    for a in (news or []):
+        title = (a.get("t") or "").lower()
+        if not title:
+            continue
+        scanned += 1
+        for cat, sev, kws in HEADLINE_CATS:
+            if not any(k in title for k in kws):
+                continue
+            window = 8 if cat in SLOW_BURN else 3
+            d = a.get("d") or ""
+            if d:
+                try:
+                    if (date.today() - date.fromisoformat(d[:10])).days > window:
+                        break
+                except Exception:
+                    pass
+            hit = [t for t in comp_map if re.search(r"\b" + re.escape(t) + r"\b", a.get("t") or "")]
+            systemic = cat in ("macro", "deleveraging")
+            if not hit and not (systemic and sev == "critical"):
+                break
+            st, act = _stance_for(hit, comp_map)
+            sigs.append({"sev": sev, "cat": cat, "measured": False,
+                "t": a.get("t"),
+                "ev": f"Headline from {a.get('s','unknown source')}, {d or 'undated'}. Parsed text — not independently verified.",
+                "stance": st,
+                "action": act + " This is a parsed headline, not a datapoint — confirm before acting.",
+                "tk": hit, "src": {"u": a.get("u"), "s": a.get("s")}, "date": today})
+            break
+    checks.append(f"Headline scan across {len(HEADLINE_CATS)} severity categories "
+                  f"(3-day window, 8 for solvency/macro/catastrophe): {scanned} read")
+
+    order = {"critical": 0, "high": 1, "medium": 2}
+    sigs.sort(key=lambda s: (order.get(s["sev"], 3), not s.get("measured", False)))
+    state = "clear" if not sigs else ("critical" if any(s["sev"] == "critical" for s in sigs) else "elevated")
+    return {
+        "_meta": {
+            "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "bar": ("Only events likely to change an allocation decision today. Market-structure signals are "
+                    "computed from prices and are facts; headline-derived signals are parsed text and are marked "
+                    "unverified. Most days this page should be empty — that is the design."),
+            "checks": checks,
+        },
+        "state": state,
+        "signals": sigs[:24],
+    }
+
+
 def compute_performance(companies):
     """Compute equal-weight basket returns vs benchmarks over 1m/3m/6m/1y."""
     print("Computing performance...")
@@ -561,6 +772,10 @@ def main():
     # 5. Performance
     perf = compute_performance(companies)
     safe_write(DATA / "performance.json", perf)
+
+    breaking = compute_breaking(quotes, indices, news, companies)
+    safe_write(DATA / "breaking.json", breaking)
+    print(f"  breaking: {breaking['state']} — {len(breaking['signals'])} signal(s)")
 
     print(f"\nDone. {today}")
 

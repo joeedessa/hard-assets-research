@@ -163,6 +163,58 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .sh-path-icon{font-size:18px;margin-bottom:4px}
 .sh-path-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px}
 .sh-path-d{font-size:11px;color:var(--color-text-secondary);line-height:1.4}
+/* Act Now */
+.tab-badge{display:none;margin-left:5px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;
+  font-size:9.5px;font-weight:700;line-height:16px;text-align:center;vertical-align:middle;color:#fff}
+.tab-badge.on{display:inline-block;background:var(--warn)}
+.tab-badge.crit{background:var(--bad)}
+.act-state{border-radius:7px;padding:9px 12px;margin-bottom:10px;font-size:12px;line-height:1.6;
+  border:.5px solid var(--color-border-secondary);background:var(--color-background-secondary)}
+.act-state.act-critical{border-color:color-mix(in srgb,var(--bad) 55%,transparent);
+  background:color-mix(in srgb,var(--bad) 8%,transparent)}
+.act-state.act-elevated{border-color:color-mix(in srgb,var(--warn) 50%,transparent);
+  background:color-mix(in srgb,var(--warn) 7%,transparent)}
+.act-list{display:flex;flex-direction:column;gap:7px}
+.act-card{border:.5px solid var(--color-border-tertiary);border-left:3px solid var(--color-border-secondary);
+  border-radius:6px;padding:9px 12px;background:var(--color-background-primary)}
+.act-card.sev-critical{border-left-color:var(--bad)}
+.act-card.sev-high{border-left-color:var(--warn)}
+.act-card.sev-medium{border-left-color:var(--color-border-secondary)}
+.act-head{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:5px}
+.act-sev{font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 6px;border-radius:3px}
+.act-sev.sev-critical{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.act-sev.sev-high{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}
+.act-sev.sev-medium{background:var(--color-background-secondary);color:var(--color-text-tertiary)}
+.act-cat{font-size:10px;color:var(--color-text-tertiary);text-transform:capitalize}
+.act-prov{font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;
+  border-radius:3px;cursor:help}
+.act-prov.meas{background:color-mix(in srgb,var(--good) 14%,transparent);color:var(--good)}
+.act-prov.unver{background:var(--color-background-secondary);color:var(--color-text-tertiary);
+  border:.5px dashed var(--color-border-secondary)}
+.act-stance{margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.04em;padding:2px 8px;
+  border-radius:4px;border:.5px solid}
+.act-title{font-size:13px;font-weight:600;color:var(--color-text-primary);line-height:1.4;margin-bottom:4px}
+.act-action{font-size:11.5px;color:var(--color-text-secondary);line-height:1.6;margin-bottom:4px}
+.act-ev{font-size:10px;color:var(--color-text-tertiary);line-height:1.5}
+.act-src{color:var(--accent);margin-left:4px}
+.act-tks{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+.act-tk{font-family:var(--font-mono);font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;
+  background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);
+  color:var(--color-text-primary);cursor:pointer}
+.act-tk:hover{border-color:var(--accent);color:var(--accent)}
+.act-clear{text-align:center;padding:34px 20px;border:.5px dashed var(--color-border-secondary);
+  border-radius:8px;background:var(--color-background-secondary)}
+.act-clear-icon{width:42px;height:42px;margin:0 auto 10px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:20px;color:var(--good);
+  background:color-mix(in srgb,var(--good) 14%,transparent)}
+.act-clear-h{font-family:var(--font-display);font-size:18px;margin-bottom:6px;color:var(--color-text-primary)}
+.act-clear-b{font-size:12px;color:var(--color-text-secondary);line-height:1.65;max-width:560px;margin:0 auto}
+.act-checks{margin-top:10px;border:.5px solid var(--color-border-tertiary);border-radius:6px;
+  padding:8px 11px;background:var(--color-background-primary)}
+.act-checks-h{font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--color-text-tertiary);margin-bottom:5px}
+.act-check{font-size:10.5px;color:var(--color-text-secondary);line-height:1.75;display:flex;gap:6px}
+.act-tick{color:var(--good);flex-shrink:0}
 /* Start Here — framework content */
 .fw-macro{border-radius:7px;padding:10px 13px;border:.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);margin-bottom:8px}
 .fw-macro-title{font-size:15px;font-weight:600;color:var(--color-text-primary);margin-bottom:5px}
@@ -733,7 +785,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <!-- Order is the canonical reading journey. The Start Here learning path
        follows this same sequence — keep the two in step, and keep this markup
        order identical to TAB_IDS (ST() matches them by index). -->
-  <span class="tab on" onclick="ST('sh')">★ Start Here</span>
+  <span class="tab on" onclick="ST('act')">⚡ Act Now<span class="tab-badge" id="act-badge"></span></span>
+  <span class="tab" onclick="ST('sh')">Orientation</span>
   <span class="tab" onclick="ST('mx')">Universe Matrix</span>
   <span class="tab-sep"></span>
   <span class="tab" onclick="ST('cy')">Cycle &amp; Innings</span>
@@ -754,7 +807,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <span class="tab" onclick="ST('nt')">Notes</span>
 </div>
 <div class="content">
-  <div id="v-sh" class="view on"></div>
+  <div id="v-act" class="view on"></div>
+  <div id="v-sh" class="view"></div>
   <div id="v-mx" class="view"></div>
   <div id="v-vx" class="view"></div>
   <div id="v-ex" class="view">
@@ -868,6 +922,7 @@ let COMPANIES=[],CYCLE=[],GEO={},PORTFOLIO={},ANNOTATIONS=[],POLICY={},EXCLUDED=
 let VC_COLS=[],ROWS=[],MXC={},DET={},B_BAND=[],C_BAND=[];
 let EXPLS=[],PS=[],EL_CHAIN=[],EL_INTX=[],EL_AI=[],EL_CYCLE=[],THEMES=[],ACTORS=[];
 let VC={},VORDER=[],CROSS_V={};
+let BREAKING={state:'clear',signals:[],_meta:{}};
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
 let TICKER_MAP={};
@@ -1045,7 +1100,7 @@ function jumpToCompanies(tk){
 // ── Tab switching ──────────────────────────────────────────────────────────
 // MUST stay in the same order as the .tab spans in the markup — ST() pairs
 // them by index. Also the order the Start Here learning path walks.
-const TAB_IDS=['sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','nw','nt'];
+const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','nw','nt'];
 const built={};
 function ST(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
@@ -1055,7 +1110,8 @@ function ST(id){
   if(!built[id]){built[id]=true;buildTab(id);}
 }
 function buildTab(id){
-  if(id==='sh')buildStartHere();
+  if(id==='act')buildActNow();
+  else if(id==='sh')buildStartHere();
   else if(id==='mx')buildMatrix();
   else if(id==='vx')buildVerticals();
   else if(id==='ex')buildExpls();
@@ -1120,6 +1176,71 @@ function setMastDate(){
 }
 
 // ── START HERE ─────────────────────────────────────────────────────────────
+// ── ACT NOW ────────────────────────────────────────────────────────────────
+// The bar is the product. Silent most days; when silent it must show the checks
+// that ran, so absence of signal reads as evidence rather than as absence of work.
+const STANCE_META={
+ 'STAGE':{c:'var(--bad)',d:'Do not catch the knife. Work the staged-entry list instead.'},
+ 'STOP ADDING':{c:'var(--warn)',d:'Windows are closing — anything bought here is bought on momentum.'},
+ 'BUY THE DISLOCATION':{c:'var(--good)',d:'Weakness in insulated names is opportunity, not information.'},
+ 'THESIS AT RISK':{c:'var(--bad)',d:'A top-conviction holding is implicated. Confirm before changing anything.'},
+ 'REVIEW':{c:'var(--warn)',d:'Large enough to demand an explanation before the next decision.'},
+ 'MONITOR':{c:'var(--color-text-tertiary)',d:'Noted, not actionable on its own.'},
+};
+function renderActBadge(){
+  const b=document.getElementById('act-badge');if(!b)return;
+  const n=(BREAKING.signals||[]).length;
+  const crit=(BREAKING.signals||[]).some(s=>s.sev==='critical');
+  b.textContent=n?String(n):'';
+  b.className='tab-badge'+(n?(crit?' on crit':' on'):'');
+}
+function buildActNow(){
+  const el=document.getElementById('v-act');if(!el)return;
+  const sigs=BREAKING.signals||[];
+  const checks=(BREAKING._meta||{}).checks||[];
+  const asOf=(BREAKING._meta||{}).as_of||'';
+  const bar=(BREAKING._meta||{}).bar||'';
+
+  const checklist=checks.length?`<div class="act-checks"><div class="act-checks-h">Checks that ran${asOf?` · ${esc(asOf.slice(0,16).replace('T',' '))} UTC`:''}</div>
+    ${checks.map(c=>`<div class="act-check"><span class="act-tick">✓</span>${esc(c)}</div>`).join('')}</div>`:'';
+
+  if(!sigs.length){
+    el.innerHTML=`<div class="act-clear">
+      <div class="act-clear-icon">✓</div>
+      <div class="act-clear-h">Nothing clears the bar today</div>
+      <div class="act-clear-b">No event today is likely to change an allocation decision. That is the normal state of this page — it is built to stay quiet, so that when it speaks it means something.</div>
+    </div>${checklist}
+    <div class="note-box" style="margin-top:10px">${esc(bar)}</div>`;
+    return;
+  }
+
+  const card=s=>{
+    const sm=STANCE_META[s.stance]||STANCE_META.MONITOR;
+    const tks=(s.tk||[]).map(t=>`<span class="act-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join('');
+    const src=s.src&&s.src.u?`<a class="act-src" href="${esc(s.src.u)}" target="_blank" rel="noopener">${esc(s.src.s||'source')} ↗</a>`:'';
+    return `<div class="act-card sev-${esc(s.sev)}">
+      <div class="act-head">
+        <span class="act-sev sev-${esc(s.sev)}">${esc(s.sev)}</span>
+        <span class="act-cat">${esc((s.cat||'').replace(/-/g,' '))}</span>
+        <span class="act-prov ${s.measured?'meas':'unver'}" title="${s.measured?'Computed from prices — a fact':'Parsed from a headline — not independently verified'}">${s.measured?'measured':'unverified'}</span>
+        <span class="act-stance" style="color:${sm.c};border-color:${sm.c}55;background:color-mix(in srgb,${sm.c} 12%,transparent)">${esc(s.stance)}</span>
+      </div>
+      <div class="act-title">${linkifyTickers(esc(s.t||''))}</div>
+      <div class="act-action">${linkifyTickers(esc(s.action||''))}</div>
+      <div class="act-ev">${linkifyTickers(esc(s.ev||''))} ${src}</div>
+      ${tks?`<div class="act-tks">${tks}</div>`:''}
+    </div>`;
+  };
+  el.innerHTML=`
+    <div class="act-state act-${esc(BREAKING.state||'clear')}">
+      <b>${sigs.length} signal${sigs.length===1?'':'s'} cleared the bar</b> — ${esc(BREAKING.state==='critical'?'at least one is critical.':'none critical.')}
+      <span style="color:var(--color-text-tertiary)">Everything else that was checked is listed below.</span>
+    </div>
+    <div class="act-list">${sigs.map(card).join('')}</div>
+    ${checklist}
+    <div class="note-box" style="margin-top:10px">${esc(bar)}</div>`;
+}
+
 function buildStartHere(){
   const el=document.getElementById('v-sh');if(!el)return;
   const C=IDX.commodities||{},M=IDX.macro||{};
@@ -2119,24 +2240,27 @@ async function loadData(){
 
   // Live data (optional — CI-generated)
   try{
-    const [q,idx,news,alerts,perf]=await Promise.all([
+    const [q,idx,news,alerts,perf,brk]=await Promise.all([
       fetchJ('quotes.json').catch(()=>null),
       fetchJ('indices.json').catch(()=>null),
       fetchJ('news.json').catch(()=>null),
       fetchJ('alerts.json').catch(()=>null),
       fetchJ('performance.json').catch(()=>null),
+      fetchJ('breaking.json').catch(()=>null),
     ]);
     if(q){QUOTES_META={as_of:q._meta?.as_of};delete q._meta;QUOTES=q;}
     if(idx)IDX=idx;
     if(Array.isArray(news))NEWS=news;
     if(alerts?.alerts)ALERTS=alerts;
     if(perf)PERF=perf;
+    if(brk)BREAKING=brk;
   }catch(e){console.warn('Live data load error:',e);}
 
   setMastDate();
   renderMktBar();
   renderAlertStrip();
-  buildTab('sh');
+  buildTab('act');
+  renderActBadge();
 }
 
 loadData();
