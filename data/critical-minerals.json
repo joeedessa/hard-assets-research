@@ -30,20 +30,6 @@
   },
   "minerals": [
     {
-      "sym": "C",
-      "name": "Graphite",
-      "group": "battery",
-      "why": "Every lithium-ion anode. China controls the overwhelming majority of spherical and synthetic anode-grade supply, and put it under export licensing in Dec 2023.",
-      "lists": [
-        "us",
-        "eu-strategic"
-      ],
-      "china": "Export licensing from 2023-12-01",
-      "exposure": [],
-      "gap": "none",
-      "priority": 18
-    },
-    {
       "sym": "W",
       "name": "Tungsten",
       "group": "defense",
@@ -72,20 +58,6 @@
       "priority": 18
     },
     {
-      "sym": "Sc",
-      "name": "Scandium",
-      "group": "aerospace",
-      "why": "Aluminium-scandium alloys. Tiny market, almost entirely byproduct, under Chinese HREE licensing since 2025.",
-      "lists": [
-        "us",
-        "eu"
-      ],
-      "china": "HREE export licensing, 2025-04",
-      "exposure": [],
-      "gap": "none",
-      "priority": 18
-    },
-    {
       "sym": "Te",
       "name": "Tellurium",
       "group": "energy",
@@ -97,6 +69,27 @@
       "exposure": [],
       "gap": "none",
       "priority": 15
+    },
+    {
+      "sym": "C",
+      "name": "Graphite",
+      "group": "battery",
+      "why": "Every lithium-ion anode. China controls the overwhelming majority of spherical and synthetic anode-grade supply, and put it under export licensing in Dec 2023.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": "Export licensing from 2023-12-01",
+      "exposure": [
+        {
+          "tk": "NVX.AX",
+          "kind": "processing",
+          "name": "Novonix",
+          "conviction": 1
+        }
+      ],
+      "gap": "partial",
+      "priority": 14
     },
     {
       "sym": "Ga",
@@ -114,6 +107,12 @@
           "kind": "processing",
           "name": "AXT Inc",
           "conviction": 2
+        },
+        {
+          "tk": "AA",
+          "kind": "byproduct",
+          "name": "Alcoa",
+          "conviction": 1
         }
       ],
       "gap": "partial",
@@ -141,51 +140,36 @@
           "kind": "processing",
           "name": "Coherent Corp",
           "conviction": 2
+        },
+        {
+          "tk": "NEXA",
+          "kind": "byproduct",
+          "name": "Nexa Resources",
+          "conviction": 1
         }
       ],
       "gap": "partial",
       "priority": 14
     },
     {
-      "sym": "Co",
-      "name": "Cobalt",
-      "group": "battery",
-      "why": "Cathode stability. Mined overwhelmingly in the DRC, refined overwhelmingly in China.",
+      "sym": "Sc",
+      "name": "Scandium",
+      "group": "aerospace",
+      "why": "Aluminium-scandium alloys. Tiny market, almost entirely byproduct, under Chinese HREE licensing since 2025.",
       "lists": [
         "us",
-        "eu-strategic"
+        "eu"
       ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 12
-    },
-    {
-      "sym": "Ni",
-      "name": "Nickel",
-      "group": "battery",
-      "why": "High-nickel cathodes and stainless. Class 1 battery-grade supply is far tighter than headline nickel.",
-      "lists": [
-        "us",
-        "eu-strategic"
+      "china": "HREE export licensing, 2025-04",
+      "exposure": [
+        {
+          "tk": "NB",
+          "kind": "primary",
+          "name": "NioCorp Developments",
+          "conviction": 1
+        }
       ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 12
-    },
-    {
-      "sym": "Mn",
-      "name": "Manganese",
-      "group": "battery",
-      "why": "Battery-grade high-purity manganese sulphate is a separate, far more concentrated market than the ore.",
-      "lists": [
-        "us",
-        "eu-strategic"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
+      "gap": "covered",
       "priority": 12
     },
     {
@@ -221,20 +205,6 @@
         }
       ],
       "gap": "covered",
-      "priority": 12
-    },
-    {
-      "sym": "Nb",
-      "name": "Niobium",
-      "group": "defense",
-      "why": "Microalloying steel. Effectively a single-country, near-single-company supply from Brazil.",
-      "lists": [
-        "us",
-        "eu"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
       "priority": 12
     },
     {
@@ -336,6 +306,12 @@
           "conviction": 2
         },
         {
+          "tk": "NEXA",
+          "kind": "byproduct",
+          "name": "Nexa Resources",
+          "conviction": 1
+        },
+        {
           "tk": "NOK",
           "kind": "enduse",
           "name": "Nokia (ex-Infinera)",
@@ -344,32 +320,6 @@
       ],
       "gap": "partial",
       "priority": 11
-    },
-    {
-      "sym": "Al",
-      "name": "Aluminium / bauxite",
-      "group": "conductor",
-      "why": "Conductor, lightweighting and packaging. Smelting is an electricity arbitrage as much as a mining business.",
-      "lists": [
-        "eu"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 9
-    },
-    {
-      "sym": "Zr",
-      "name": "Zirconium",
-      "group": "nuclear",
-      "why": "Nuclear fuel cladding — hafnium-free zirconium is a specialised, concentrated supply chain.",
-      "lists": [
-        "us"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 9
     },
     {
       "sym": "Cr",
@@ -398,6 +348,102 @@
       "priority": 9
     },
     {
+      "sym": "Co",
+      "name": "Cobalt",
+      "group": "battery",
+      "why": "Cathode stability. Mined overwhelmingly in the DRC, refined overwhelmingly in China.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Ni",
+      "name": "Nickel",
+      "group": "battery",
+      "why": "High-nickel cathodes and stainless. Class 1 battery-grade supply is far tighter than headline nickel.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
+          "conviction": 2
+        },
+        {
+          "tk": "VALE",
+          "kind": "primary",
+          "name": "Vale",
+          "conviction": 1
+        },
+        {
+          "tk": "ERA.PA",
+          "kind": "primary",
+          "name": "Eramet",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Mn",
+      "name": "Manganese",
+      "group": "battery",
+      "why": "Battery-grade high-purity manganese sulphate is a separate, far more concentrated market than the ore.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ERA.PA",
+          "kind": "primary",
+          "name": "Eramet",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Nb",
+      "name": "Niobium",
+      "group": "defense",
+      "why": "Microalloying steel. Effectively a single-country, near-single-company supply from Brazil.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "NB",
+          "kind": "primary",
+          "name": "NioCorp Developments",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
       "sym": "REE",
       "name": "Rare earths (Nd, Pr, Dy, Tb)",
       "group": "magnet",
@@ -421,6 +467,12 @@
           "tk": "6880.HK",
           "kind": "processing",
           "name": "JL Mag Rare-Earth",
+          "conviction": 2
+        },
+        {
+          "tk": "ILU.AX",
+          "kind": "processing",
+          "name": "Iluka Resources",
           "conviction": 2
         },
         {
@@ -490,6 +542,12 @@
       "china": null,
       "exposure": [
         {
+          "tk": "ILU.AX",
+          "kind": "primary",
+          "name": "Iluka Resources",
+          "conviction": 2
+        },
+        {
           "tk": "TROX",
           "kind": "primary",
           "name": "Tronox Holdings",
@@ -500,6 +558,12 @@
           "kind": "processing",
           "name": "ATI Inc",
           "conviction": 2
+        },
+        {
+          "tk": "NB",
+          "kind": "byproduct",
+          "name": "NioCorp Developments",
+          "conviction": 1
         }
       ],
       "gap": "covered",
@@ -618,6 +682,46 @@
       "priority": 5
     },
     {
+      "sym": "Al",
+      "name": "Aluminium / bauxite",
+      "group": "conductor",
+      "why": "Conductor, lightweighting and packaging. Smelting is an electricity arbitrage as much as a mining business.",
+      "lists": [
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AA",
+          "kind": "primary",
+          "name": "Alcoa",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
+    },
+    {
+      "sym": "Zr",
+      "name": "Zirconium",
+      "group": "nuclear",
+      "why": "Nuclear fuel cladding — hafnium-free zirconium is a specialised, concentrated supply chain.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ILU.AX",
+          "kind": "primary",
+          "name": "Iluka Resources",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
+    },
+    {
       "sym": "Zn",
       "name": "Zinc",
       "group": "industrial",
@@ -627,6 +731,18 @@
       ],
       "china": null,
       "exposure": [
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
+          "conviction": 2
+        },
+        {
+          "tk": "NEXA",
+          "kind": "primary",
+          "name": "Nexa Resources",
+          "conviction": 1
+        },
         {
           "tk": "TECK",
           "kind": "byproduct",
@@ -640,8 +756,8 @@
           "conviction": 2
         }
       ],
-      "gap": "partial",
-      "priority": 5
+      "gap": "covered",
+      "priority": 3
     },
     {
       "sym": "Cu",
@@ -681,6 +797,12 @@
           "tk": "IVN.TO",
           "kind": "primary",
           "name": "Ivanhoe Mines",
+          "conviction": 2
+        },
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
           "conviction": 2
         },
         {

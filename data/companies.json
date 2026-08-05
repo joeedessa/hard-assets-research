@@ -1275,6 +1275,161 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05"
+    },
+    {
+      "ticker": "GLNCY",
+      "name": "Glencore",
+      "vertical": "ii",
+      "chain_layer": "Mining + trading",
+      "geo": "CH/global",
+      "structure": "equity",
+      "thesis_note": "The single widest fix for the critical-minerals gaps in this universe: cobalt, nickel, zinc and copper production plus the largest physical trading book in industrial metals. The trading arm is the point — it monetises dislocation rather than only suffering it, which is a different exposure from a pure miner.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Perennially cheap on headline multiples because the coal business and recurring legal provisions keep institutional holders away. That discount is the reason it screens well, not a mispricing to assume away.",
+      "themes": [
+        "critical-minerals",
+        "copper-supercycle",
+        "ev-demand",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "VALE",
+      "name": "Vale",
+      "vertical": "ii",
+      "chain_layer": "Nickel + iron ore",
+      "geo": "BR",
+      "structure": "equity",
+      "thesis_note": "Class 1 nickel at scale — the battery-grade tier that is far tighter than headline nickel, which is mostly Indonesian Class 2. Iron ore funds it. Closes the largest single-metal hole in the universe.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Brazilian jurisdiction, Samarco/Brumadinho liabilities and iron-ore beta to Chinese steel keep a permanent discount. Owned for the nickel, priced on the iron ore.",
+      "themes": [
+        "critical-minerals",
+        "ev-demand",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "ERA.PA",
+      "name": "Eramet",
+      "vertical": "ii",
+      "chain_layer": "Manganese + nickel",
+      "geo": "FR/GA/ID",
+      "structure": "equity",
+      "thesis_note": "One of the few listed routes to manganese, which the EU designates strategic for battery-grade sulphate and which has no Western high-purity capacity. Also nickel in Indonesia and a lithium project in Argentina.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Gabon and Indonesia operating risk plus French listing keep it thinly held by US investors. The manganese franchise is the asset; the rest is optionality.",
+      "themes": [
+        "critical-minerals",
+        "ev-demand",
+        "european-energy-security"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "NEXA",
+      "name": "Nexa Resources",
+      "vertical": "ii",
+      "chain_layer": "Zinc smelting",
+      "geo": "PE/BR",
+      "structure": "equity",
+      "thesis_note": "Zinc mining and smelting, and zinc is the host ore for germanium and indium — so it gates two semiconductor materials China restricted in 2023. Byproduct economics mean this supply cannot answer the germanium price on its own, which is exactly why the chokepoint persists.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Priced as a zinc miner; the germanium and indium byproduct streams are not in the multiple. LatAm jurisdiction discount.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AA",
+      "name": "Alcoa",
+      "vertical": "ii",
+      "chain_layer": "Bauxite + aluminium",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Integrated bauxite, alumina and aluminium. Gallium is an alumina-refining byproduct, so a Western gallium supply chain has to start from a refinery like this one — there is currently no Western primary gallium production at all.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Aluminium smelting is an electricity arbitrage and the equity trades on the power price and the LME as much as on the asset base. The gallium optionality is real but not yet a revenue line.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "NB",
+      "name": "NioCorp Developments",
+      "vertical": "tm",
+      "chain_layer": "Development (Nb+Sc+Ti)",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Elk Creek, Nebraska — niobium, scandium and titanium in one US deposit. Niobium supply is effectively single-country (Brazil) and scandium is almost entirely a Chinese-licensed byproduct, so a domestic source of both is a genuine policy asset. EXIM and DoD engagement.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Pre-production developer with no cash flow and real financing risk — this is a balance-sheet case as much as a froth case, and the froth scale does not capture that. Treat dilution as the base case.",
+      "themes": [
+        "critical-minerals",
+        "defense-procurement",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "ILU.AX",
+      "name": "Iluka Resources",
+      "vertical": "re",
+      "chain_layer": "Mineral sands + REE refinery",
+      "geo": "AU",
+      "structure": "equity",
+      "thesis_note": "Mineral sands (zircon, rutile, synthetic rutile) funding the Eneabba rare-earth refinery — an Australian-government-backed non-Chinese separation plant, one of very few outside China. Closes zirconium and adds a second Western REE separator alongside Lynas.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "The market prices the mineral sands cycle and treats Eneabba as a cost line rather than a strategic asset. Government funding de-risks the capex in a way peers do not have.",
+      "themes": [
+        "china-export-controls",
+        "hree-separation",
+        "critical-minerals",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "NVX.AX",
+      "name": "Novonix",
+      "vertical": "li",
+      "chain_layer": "Synthetic graphite anode",
+      "geo": "AU/US",
+      "structure": "equity",
+      "thesis_note": "Synthetic graphite anode material in Tennessee — the only meaningful non-Chinese route to a material China put under export licensing in Dec 2023 and which every lithium-ion anode requires. Closes the single largest designated gap in the universe.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Trading at a distressed level. This is a BALANCE-SHEET case, not a froth case — the froth scale measures whether the price runs ahead of the thesis, and here the question is solvency and offtake conversion, not valuation. Assume dilution.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "ev-demand",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     }
   ]
 }
