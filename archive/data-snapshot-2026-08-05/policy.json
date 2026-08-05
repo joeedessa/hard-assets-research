@@ -1,0 +1,163 @@
+{
+  "_meta": {
+    "description": "Policy & catalyst layer — regime cards, fiscal programs mapped to tickers, levers-to-watch. Updated: 2026-08-03.",
+    "fields": {
+      "regimes": "Active policy regimes shaping supply/demand",
+      "programs": "Fiscal programs + direct spending mapped to tickers",
+      "levers": "Upcoming policy decisions that could move markets"
+    }
+  },
+  "regimes": [
+    {
+      "id": "china-ree-export-controls",
+      "title": "China REE Export Controls",
+      "icon": "⚠️",
+      "status": "active",
+      "status_color": "#E24B4A",
+      "date": "2025-04-04",
+      "cliff": "2026-11-10",
+      "summary": "China placed seven heavy/medium REEs under export licensing in April 2025 (Sm, Gd, Tb, Dy, Lu, Sc, Y — plus alloys, oxides, magnets). A second tranche of 5 additional elements was deferred to November 10, 2026. The April controls were never suspended — the 'pause' narrative was a misread. An extraterritorial '50% rule' applies: products made outside China using Chinese-origin REEs also require export licenses.",
+      "tickers": ["MP", "LYC.AX", "UUUU", "6880.HK", "PPTA"],
+      "impact": "Bullish for Western REE producers; creates urgency for allied-nation supply chains; adds a floor under NdPr prices.",
+      "watch": "November 10, 2026 — second tranche cliff. Any guidance update from MOFCOM on application processing backlogs."
+    },
+    {
+      "id": "china-antimony-ban",
+      "title": "China Antimony Export Ban",
+      "icon": "🚫",
+      "status": "active",
+      "status_color": "#E24B4A",
+      "date": "2024-10-01",
+      "cliff": null,
+      "summary": "China banned antimony exports (effective October 2024) covering antimony ore, concentrates, and processed products. China produces ~50% of global antimony. Antimony trioxide is essential for flame retardants, lead-acid batteries, and military pyrotechnics. PPTA's Stibnite mine in Idaho is the only significant undeveloped Western antimony source.",
+      "tickers": ["PPTA"],
+      "impact": "Direct catalyst for Perpetua Resources; creates urgency for DoD and allies to secure Stibnite permitting.",
+      "watch": "Stibnite EIS completion and permitting decision. DoD funding tranche triggers."
+    },
+    {
+      "id": "russian-uranium-ban",
+      "title": "Russian Uranium Import Ban (US)",
+      "icon": "☢️",
+      "status": "active",
+      "status_color": "#E24B4A",
+      "date": "2024-05-13",
+      "cliff": null,
+      "summary": "Prohibiting Russian Uranium Imports Act signed May 2024. Russia (TENEX) supplied ~28% of US SWU — now banned with limited waivers expiring 2028. Forces Western enrichment rebuild. Centrus is the only US company with active enrichment capacity. Kazatomprom (Kazakhstan) is the swing uranium miner — geopolitically ambiguous (Russian/Chinese sphere influence).",
+      "tickers": ["LEU", "CCO", "SPUT", "NXE", "UUUU"],
+      "impact": "Structural demand floor under LEU; long-term bullish for all Western uranium supply chain.",
+      "watch": "Waiver expiration schedule (2028). HALEU commercial scale timeline. Western enrichment investment commitments."
+    },
+    {
+      "id": "ira-critical-minerals",
+      "title": "IRA Critical Minerals & 45X Credits",
+      "icon": "🏭",
+      "status": "active",
+      "status_color": "#16A34A",
+      "date": "2022-08-16",
+      "cliff": "2032-12-31",
+      "summary": "Inflation Reduction Act Section 45X provides production tax credits for US-manufactured clean energy components including battery cells, modules, and critical mineral processing. FEOC (Foreign Entity of Concern) rules exclude Chinese-origin materials from EV credit eligibility — creating direct demand for US/allied REE and lithium supply. Credits scale down after 2029.",
+      "tickers": ["MP", "LYC.AX", "ALB", "SQM", "MTRN", "LIN"],
+      "impact": "Accelerates US/allied critical mineral processing investment; creates above-market margins for qualifying US producers.",
+      "watch": "Congressional risk: any repeal of 45X or FEOC rules would remove the IRA reshoring premium. FEOC guidance updates from Treasury."
+    },
+    {
+      "id": "section-232-copper",
+      "title": "Section 232 — Copper & Derivatives",
+      "icon": "🔧",
+      "status": "investigating",
+      "status_color": "#EF9F27",
+      "date": "2025-02-25",
+      "cliff": null,
+      "summary": "Section 232 investigation into copper imports initiated February 2025. If tariffs imposed, US copper prices would decouple (upward) from LME. FCX and SCCO are the largest US copper producers — tariffs would benefit them via domestic price premium. Decision timeline: typically 270 days from initiation.",
+      "tickers": ["FCX", "SCCO"],
+      "impact": "Potentially very bullish for US copper producers; creates domestic price floor above LME.",
+      "watch": "Commerce Department determination. Tariff rate and product scope if imposed. LME/US spread if tariffs pass."
+    },
+    {
+      "id": "chips-act-domestic-production",
+      "title": "CHIPS Act — Semiconductor Fab Buildout",
+      "icon": "💻",
+      "status": "active",
+      "status_color": "#16A34A",
+      "date": "2022-08-09",
+      "cliff": "2030-12-31",
+      "summary": "CHIPS and Science Act ($52.7B) funding new semiconductor fabs in the US. Intel Fab 52/62 (Arizona), TSMC Phoenix, Samsung Austin, Micron Idaho in various stages of build. Each fab is a major consumer of industrial gases (LIN, APD on-site), specialty materials (LIN, Resonac), copper (interconnects), and water (ERII RO systems).",
+      "tickers": ["LIN", "APD", "ERII", "NOK", "4004.JP"],
+      "impact": "Creates long-term recurring revenue for on-site industrial gas contracts (15-20 year sole-source). Accelerates US specialty materials demand.",
+      "watch": "Fab construction progress and production ramp timelines. Intel restructuring impact on Fab 52/62 plans."
+    },
+    {
+      "id": "resource-nationalism-latam",
+      "title": "Resource Nationalism — LatAm Lithium & Copper",
+      "icon": "🌎",
+      "status": "active",
+      "status_color": "#EF9F27",
+      "date": "2023-04-20",
+      "cliff": null,
+      "summary": "Chile (lithium nationalization announced 2023, SQM concession renegotiated through 2060), Mexico (nationalized lithium resources 2022), Bolivia (state lithium company dominant). Copper: Peru has seen repeated mine blockades (Las Bambas, Antapaccay). Argentina's provinces are more mining-friendly. The trend is toward larger government royalty/equity stakes in mineral projects.",
+      "tickers": ["SQM", "ALB", "FCX", "SCCO", "MOS"],
+      "impact": "Increases country risk premium for LatAm exposure. Justifies streaming structures (FNV, WPM) — streams are above the mine-level political risk.",
+      "watch": "Chile government position on further nationalization. Peru mining conflict recurrence. Argentina Milei government mining reform progress."
+    }
+  ],
+  "programs": [
+    {
+      "id": "dod-ree-program",
+      "title": "DoD REE & Critical Mineral Programs",
+      "agency": "US Department of Defense",
+      "budget_approx": "$500M+",
+      "tickers": ["MP", "LYC.AX", "UUUU", "PPTA", "MTRN"],
+      "description": "Multiple DoD programs supporting domestic REE, antimony, and specialty mineral supply chains. MP Fort Worth magnet plant: DoD floor price $110/kg NdPr, production guaranteed. Lynas Seadrift: DoD-funded HREE separation facility. Perpetua/PPTA: DoD MOU for Stibnite antimony. Materion: defense-critical beryllium supply — Schedule II controlled substance."
+    },
+    {
+      "id": "doe-haleu-program",
+      "title": "DOE HALEU Production Program",
+      "agency": "US Department of Energy",
+      "budget_approx": "$700M+ through 2030",
+      "tickers": ["LEU"],
+      "description": "Centrus Energy under DOE contract to produce High-Assay Low-Enriched Uranium (HALEU) for advanced reactors and next-gen naval fuel. Phase III option exercised ($110M through June 2026); 8-year extension options. $2.3B contingent backlog. Centrus is the only US company with active HALEU production capacity."
+    },
+    {
+      "id": "eu-cma-crm-act",
+      "title": "EU Critical Raw Materials Act",
+      "agency": "European Commission",
+      "budget_approx": "€100M+ Strategic Projects",
+      "tickers": ["LYC.AX", "MP", "NTR", "MOS"],
+      "description": "EU CRM Act (2024): targets 10% domestic extraction, 40% domestic processing, and 25% recycling for strategic minerals by 2030. Also requires sourcing diversification away from single-country suppliers (implicitly targeting China). Strategic Projects designation accelerates permitting. Benefits allied-nation producers with EU ambitions."
+    }
+  ],
+  "levers": [
+    {
+      "id": "china-ree-tranche2",
+      "title": "China REE tranche-2 cliff",
+      "date": "2026-11-10",
+      "description": "Second tranche of REE export controls (5 additional elements) scheduled. If implemented, widens the supply shock. If deferred again, may reduce urgency premium — but does not remove the April 2025 controls.",
+      "tickers": ["MP", "LYC.AX", "UUUU"],
+      "bull_bear": "Bull: full implementation widens supply crunch. Bear: further deferral reduces urgency narrative."
+    },
+    {
+      "id": "section232-copper-decision",
+      "title": "Section 232 copper tariff decision",
+      "date": "2025-Q4/2026-Q1",
+      "description": "Commerce Department determination on copper import tariffs. 25% tariff would create a US premium above LME — directly benefiting FCX and SCCO domestic operations.",
+      "tickers": ["FCX", "SCCO"],
+      "bull_bear": "Bull: tariff creates domestic premium floor. Bear: no action maintains LME parity."
+    },
+    {
+      "id": "stibnite-eis",
+      "title": "Stibnite EIS / Permitting Decision",
+      "date": "2026-2027",
+      "description": "Perpetua Resources Stibnite mine Environmental Impact Statement completion. DoD MOU creates political urgency. Permitting is the only remaining obstacle to the sole significant Western antimony mine.",
+      "tickers": ["PPTA"],
+      "bull_bear": "Bull: EIS approval + DoD funding triggers project FID. Bear: further delay or denial keeps antimony supply structurally short."
+    },
+    {
+      "id": "lme-copper-physical-squeeze",
+      "title": "LME copper inventory / physical squeeze risk",
+      "date": "ongoing",
+      "description": "LME copper inventories have oscillated sharply. Physical squeeze events (March 2024, potential recurrence) can create extreme backwardation and short-term price spikes. Watch stocks-to-cancel ratios.",
+      "tickers": ["FCX", "SCCO", "FNV", "WPM"],
+      "bull_bear": "Bull: low inventories + demand pull from grid buildout = squeeze risk. Bear: demand softness from China property sector = inventory build."
+    }
+  ]
+}
