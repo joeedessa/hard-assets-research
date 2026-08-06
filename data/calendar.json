@@ -1,0 +1,1745 @@
+{
+  "_meta": {
+    "as_of": "2026-08-06T14:08:57+00:00",
+    "mode": "light",
+    "coverage": "20/20 scanned this pass",
+    "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
+  },
+  "events": [
+    {
+      "type": "earnings",
+      "tk": "AMG.AS",
+      "name": "AMG Critical Materials",
+      "d": "2026-07-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-07-29T15:30+00:00",
+        "tz": "Europe/Amsterdam"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CLH",
+      "name": "Clean Harbors",
+      "d": "2026-07-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-07-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ERA.PA",
+      "name": "Eramet",
+      "d": "2026-07-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-07-29T15:30+00:00",
+        "tz": "Europe/Paris"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "JCI",
+      "name": "Johnson Controls",
+      "d": "2026-07-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-07-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RIO",
+      "name": "Rio Tinto",
+      "d": "2026-07-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-07-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "WEIR.L",
+      "name": "Weir Group",
+      "d": "2026-07-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:30 BST",
+        "iso": "2026-07-29T15:30+00:00",
+        "tz": "Europe/London"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "APD",
+      "name": "Air Products",
+      "d": "2026-07-30",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-07-30T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SU.PA",
+      "name": "Schneider Electric",
+      "d": "2026-07-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-07-30T15:30+00:00",
+        "tz": "Europe/Paris"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TTEK",
+      "name": "Tetra Tech",
+      "d": "2026-07-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-07-29T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AFMJF",
+      "name": "Alphamin Resources",
+      "d": "2026-07-31",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-07-31T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ITRK.L",
+      "name": "Intertek",
+      "d": "2026-07-31",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:30 BST",
+        "iso": "2026-07-31T15:30+00:00",
+        "tz": "Europe/London"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UMI.BR",
+      "name": "Umicore",
+      "d": "2026-07-31",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:40 CEST",
+        "iso": "2026-07-31T15:40+00:00",
+        "tz": "Europe/Brussels"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TDW",
+      "name": "Tidewater",
+      "d": "2026-08-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ENR.DE",
+      "name": "Siemens Energy",
+      "d": "2026-08-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-08-05T15:30+00:00",
+        "tz": "Europe/Berlin"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLEN.L",
+      "name": "Glencore",
+      "d": "2026-08-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:30 BST",
+        "iso": "2026-08-05T15:30+00:00",
+        "tz": "Europe/London"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ICL",
+      "name": "ICL Group",
+      "d": "2026-08-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-05T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "4004.JP",
+      "name": "Resonac",
+      "d": "2026-08-06",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 02:30 EDT",
+        "iso": "2026-08-06T06:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ATI",
+      "name": "ATI Inc",
+      "d": "2026-08-06",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-06T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CEG",
+      "name": "Constellation Energy",
+      "d": "2026-08-06",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-06T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FLNC",
+      "name": "Fluence Energy",
+      "d": "2026-08-06",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLNCY",
+      "name": "Glencore",
+      "d": "2026-08-06",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HP",
+      "name": "H&P",
+      "d": "2026-08-06",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HWM",
+      "name": "Howmet Aerospace",
+      "d": "2026-08-06",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-06T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "LNG",
+      "name": "Cheniere Energy (LNG)",
+      "d": "2026-08-06",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-06T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NDA.DE",
+      "name": "Aurubis AG",
+      "d": "2026-08-06",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-08-06T15:30+00:00",
+        "tz": "Europe/Berlin"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SBLK",
+      "name": "Star Bulk Carriers",
+      "d": "2026-08-06",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SBMO.AS",
+      "name": "SBM Offshore",
+      "d": "2026-08-06",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-08-06T15:30+00:00",
+        "tz": "Europe/Amsterdam"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "5706.JP",
+      "name": "Mitsui Kinzoku",
+      "d": "2026-08-07",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 02:30 EDT",
+        "iso": "2026-08-07T06:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CLNE",
+      "name": "Clean Energy Fuels",
+      "d": "2026-08-07",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-06T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FLR",
+      "name": "Fluor",
+      "d": "2026-08-07",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-07T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MP",
+      "name": "MP Materials",
+      "d": "2026-08-07",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-06T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "WPM",
+      "name": "Wheaton Precious Metals",
+      "d": "2026-08-07",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-06T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AII.TO",
+      "name": "Almonty Industries",
+      "d": "2026-08-08",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-07T20:00+00:00",
+        "tz": "America/Toronto"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "INSW",
+      "name": "International Seaways",
+      "d": "2026-08-10",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-10T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ACM",
+      "name": "AECOM",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-10T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CWCO",
+      "name": "Consolidated Water",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-10T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BORR",
+      "name": "Borr Drilling",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "DNN",
+      "name": "Denison Mines",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EOAN.DE",
+      "name": "E.ON",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-08-12T15:30+00:00",
+        "tz": "Europe/Berlin"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FNV",
+      "name": "Franco-Nevada",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TRMB",
+      "name": "Trimble",
+      "d": "2026-08-12",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-12T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "COHR",
+      "name": "Coherent Corp",
+      "d": "2026-08-13",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-12T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLNG",
+      "name": "Golar LNG",
+      "d": "2026-08-13",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-13T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PAAS",
+      "name": "Pan American Silver",
+      "d": "2026-08-13",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-12T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PPTA",
+      "name": "Perpetua Resources",
+      "d": "2026-08-13",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-13T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FLNG",
+      "name": "Flex LNG",
+      "d": "2026-08-19",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-19T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FLS.CO",
+      "name": "FLSmidth",
+      "d": "2026-08-19",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:00 CEST",
+        "iso": "2026-08-19T15:00+00:00",
+        "tz": "Europe/Copenhagen"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ILU.AX",
+      "name": "Iluka Resources",
+      "d": "2026-08-19",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEST",
+        "iso": "2026-08-19T06:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SQM",
+      "name": "SQM",
+      "d": "2026-08-19",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-18T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "DE",
+      "name": "Deere & Co",
+      "d": "2026-08-20",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-20T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ODF.OL",
+      "name": "Odfjell",
+      "d": "2026-08-20",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:20 CEST",
+        "iso": "2026-08-20T14:20+00:00",
+        "tz": "Europe/Oslo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "WOLF",
+      "name": "Wolfspeed",
+      "d": "2026-08-20",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-19T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PLS.AX",
+      "name": "Pilbara Minerals",
+      "d": "2026-08-24",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEST",
+        "iso": "2026-08-24T06:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PRN.AX",
+      "name": "Perenti Group",
+      "d": "2026-08-24",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEST",
+        "iso": "2026-08-24T06:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "WOR.AX",
+      "name": "Worley Group",
+      "d": "2026-08-26",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEST",
+        "iso": "2026-08-26T06:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "LYC.AX",
+      "name": "Lynas Rare Earths",
+      "d": "2026-08-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEST",
+        "iso": "2026-08-27T06:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MIN.AX",
+      "name": "Mineral Resources",
+      "d": "2026-08-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEST",
+        "iso": "2026-08-27T06:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FRO",
+      "name": "Frontline",
+      "d": "2026-08-31",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-31T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SBSW",
+      "name": "Sibanye-Stillwater",
+      "d": "2026-09-01",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-09-01T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PL",
+      "name": "Planet Labs",
+      "d": "2026-09-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-09-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UEC",
+      "name": "Uranium Energy Corp",
+      "d": "2026-09-24",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-09-24T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NB",
+      "name": "NioCorp Developments",
+      "d": "2026-09-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-09-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SNI.OL",
+      "name": "Stolt-Nielsen",
+      "d": "2026-10-01",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:20 CEST",
+        "iso": "2026-10-01T14:20+00:00",
+        "tz": "Europe/Oslo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AA",
+      "name": "Alcoa",
+      "d": "2026-10-16",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-15T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ABBN.SW",
+      "name": "ABB Power Products",
+      "d": "2026-10-20",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-10-20T15:30+00:00",
+        "tz": "Europe/Zurich"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PNR",
+      "name": "Pentair",
+      "d": "2026-10-20",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-20T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CME",
+      "name": "CME Group",
+      "d": "2026-10-21",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-21T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EQT",
+      "name": "EQT Corporation",
+      "d": "2026-10-21",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-20T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VRT",
+      "name": "Vertiv Holdings",
+      "d": "2026-10-21",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-21T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FCX",
+      "name": "Freeport-McMoRan",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FTI",
+      "name": "TechnipFMC",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HON",
+      "name": "Honeywell",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "METSO.HE",
+      "name": "Metso",
+      "d": "2026-10-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 18:30 EEST",
+        "iso": "2026-10-22T15:30+00:00",
+        "tz": "Europe/Helsinki"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NOK",
+      "name": "Nokia (ex-Infinera)",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NSC",
+      "name": "Norfolk Southern",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PTEN",
+      "name": "Patterson-UTI",
+      "d": "2026-10-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-21T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SAND.ST",
+      "name": "Sandvik",
+      "d": "2026-10-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-10-22T15:30+00:00",
+        "tz": "Europe/Stockholm"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TECK",
+      "name": "Teck Resources",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UNP",
+      "name": "Union Pacific",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "URI",
+      "name": "United Rentals",
+      "d": "2026-10-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-21T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VLO",
+      "name": "Valero Energy",
+      "d": "2026-10-22",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-22T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CSX",
+      "name": "CSX",
+      "d": "2026-10-23",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-22T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EPD",
+      "name": "Enterprise Products",
+      "d": "2026-10-27",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-27T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HUBB",
+      "name": "Hubbell",
+      "d": "2026-10-27",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-27T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SPM.MI",
+      "name": "Saipem",
+      "d": "2026-10-27",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:30 CET",
+        "iso": "2026-10-27T15:30+00:00",
+        "tz": "Europe/Rome"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "2383.TW",
+      "name": "Elite Material",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 13:30 CST",
+        "iso": "2026-10-28T05:30+00:00",
+        "tz": "Asia/Taipei"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AROC",
+      "name": "Archrock",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GEV",
+      "name": "GE Vernova",
+      "d": "2026-10-28",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-28T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MOD",
+      "name": "Modine Manufacturing",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MTRN",
+      "name": "Materion",
+      "d": "2026-10-28",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-28T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NBR",
+      "name": "Nabors",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NE",
+      "name": "Noble Corp",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ORBIA.MX",
+      "name": "Orbia Advance",
+      "d": "2026-10-28",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 14:00 CST",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/Mexico_City"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SCCO",
+      "name": "Southern Copper",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AR",
+      "name": "Antero Resources",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ARIS",
+      "name": "Aris Water Solutions",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CAT",
+      "name": "Caterpillar",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "DHT",
+      "name": "DHT Holdings",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EME",
+      "name": "EMCOR Group",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HBM",
+      "name": "Hudbay Minerals",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ICE",
+      "name": "ICE",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ITRI",
+      "name": "Itron",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "IVN.TO",
+      "name": "Ivanhoe Mines",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/Toronto"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "KMI",
+      "name": "Kinder Morgan",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MYRG",
+      "name": "MYR Group",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PRY.MI",
+      "name": "Prysmian",
+      "d": "2026-10-29",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:30 CET",
+        "iso": "2026-10-29T15:30+00:00",
+        "tz": "Europe/Rome"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PWR",
+      "name": "Quanta Services",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RIG",
+      "name": "Transocean",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "STNG",
+      "name": "Scorpio Tankers",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TT",
+      "name": "Trane Technologies",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VAL",
+      "name": "Valaris",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "5802.T",
+      "name": "Sumitomo Electric",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-30T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AXTI",
+      "name": "AXT Inc",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-29T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "KMTUY",
+      "name": "Komatsu",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-29T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "LIN",
+      "name": "Linde",
+      "d": "2026-10-30",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-30T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MTZ",
+      "name": "MasTec",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-29T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NEXA",
+      "name": "Nexa Resources",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-29T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NVT",
+      "name": "nVent Electrical",
+      "d": "2026-10-30",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-30T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VALE",
+      "name": "Vale",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-29T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BWXT",
+      "name": "BWX Technologies",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ETN",
+      "name": "Eaton Corporation",
+      "d": "2026-11-03",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-03T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PRIM",
+      "name": "Primoris",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UUUU",
+      "name": "Energy Fuels",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VNP.TO",
+      "name": "5N Plus",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/Toronto"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "WMB",
+      "name": "Williams Companies",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ET",
+      "name": "Energy Transfer",
+      "d": "2026-11-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-04T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MOS",
+      "name": "Mosaic",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NXE",
+      "name": "NexGen Energy",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TFPM",
+      "name": "Triple Flag Precious Metals",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6963.JP",
+      "name": "ROHM",
+      "d": "2026-11-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 01:30 EST",
+        "iso": "2026-11-05T06:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AES",
+      "name": "AES Corporation",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ALB",
+      "name": "Albemarle",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CCO",
+      "name": "Cameco",
+      "d": "2026-11-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-05T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CF",
+      "name": "CF Industries",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EE",
+      "name": "Excelerate Energy",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EMR",
+      "name": "Emerson Electric",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ERII",
+      "name": "Energy Recovery",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "LEU",
+      "name": "Centrus Energy",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MNTK",
+      "name": "Montauk Renewables",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NRG",
+      "name": "NRG Energy",
+      "d": "2026-11-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-05T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NTR",
+      "name": "Nutrien",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RGLD",
+      "name": "Royal Gold",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ROK",
+      "name": "Rockwell Automation",
+      "d": "2026-11-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-05T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TROX",
+      "name": "Tronox Holdings",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "policy",
+      "d": "2026-11-10",
+      "name": "China REE tranche-2 cliff",
+      "detail": "",
+      "tk": null
+    }
+  ]
+}

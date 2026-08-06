@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-08-06T04:51:01+00:00",
+    "as_of": "2026-08-06T14:08:57+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 11/159 down 5%, sector +3.3%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 13/159 up 5%, sector +3.3%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 12/159 down 5%, sector +3.3%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 12/159 up 5%, sector +3.3%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.2% universe median): 2 found",
+      "Conviction-3 divergence (±8%+ versus the +0.0% universe median): 2 found",
       "Tracked commodity ±5%+ in a session: 0 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: +0.00%",
+      "USD (DXY) ±1%+ in a session: +0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 51 read"
@@ -21,7 +21,7 @@
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "PPTA +10.9% against a +0.2% universe median",
+      "t": "PPTA +10.9% against a +0.0% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "THESIS AT RISK",
       "action": "Top-conviction holdings are named (PPTA). Confirm the story before changing anything.",
@@ -34,7 +34,7 @@
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "MTRN +30.8% against a +0.2% universe median",
+      "t": "MTRN +30.8% against a +0.0% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "BUY THE DISLOCATION",
       "action": "Insulated names are involved (MTRN). Weakness here is opportunity, not information.",

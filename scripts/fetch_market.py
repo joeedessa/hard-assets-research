@@ -28,6 +28,22 @@ except ImportError:
 # ── Paths ──────────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
+
+# ── Refresh mode ──────────────────────────────────────────────────────────────
+# Four passes a day. The three intraday ones run LIGHT: prices, indices, alerts
+# and breaking signals, plus per-ticker detail only for names reporting now.
+# The evening pass runs FULL and rebuilds everything including RSS.
+MODE  = (os.environ.get("FETCH_MODE") or "full").strip().lower()
+LIGHT = MODE == "light"
+
+
+def load_prev(name):
+    """Previous contents of a data file, so a light pass never destroys what it skips."""
+    try:
+        with open(DATA / name) as f:
+            return json.load(f)
+    except Exception:
+        return {}
 DATA.mkdir(exist_ok=True)
 
 # ── Ticker universe ────────────────────────────────────────────────────────────
@@ -195,6 +211,10 @@ def mc_usd(info):
     return int(mc * fx.get(currency, 1.0))
 
 # ── Main fetch functions ───────────────────────────────────────────────────────
+PREV_QUOTES = {}
+REPORTING_NOW = set()
+
+
 def fetch_quotes(tickers):
     """Download per-equity market data using yfinance batch download."""
     print(f"Fetching {len(tickers)} equity tickers...")
@@ -259,14 +279,19 @@ def fetch_quotes(tickers):
             r1y = pct(price, safe_float(closes.iloc[0])) if len(closes) >= 200 else None
 
             # Info for market cap and fwd P/E (separate per-ticker call)
+            # Slow per-ticker detail. On a light pass this is skipped for everything
+            # except names reporting now — it is the dominant cost of the run.
             info = {}
-            try:
-                tick = yf.Ticker(yf_tk)
-                info = tick.info or {}
-            except Exception:
-                pass
+            if (not LIGHT) or orig_tk in REPORTING_NOW:
+                try:
+                    tick = yf.Ticker(yf_tk)
+                    info = tick.info or {}
+                except Exception:
+                    pass
 
             fpe = safe_float(info.get("forwardPE"), 1) if info.get("forwardPE") else None
+            # Actual release TIME — .calendar carries only a date.
+            ets = info.get("earningsTimestampStart") or info.get("earningsTimestamp")
             mc  = mc_usd(info)
 
             quotes[orig_tk] = {
@@ -279,7 +304,14 @@ def fetch_quotes(tickers):
                 "fpe": fpe,
                 "mc":  mc,
                 "r1y": r1y,
+                "ets": int(ets) if ets else None,
             }
+            # Never blank a field this pass did not fetch.
+            if LIGHT:
+                old = PREV_QUOTES.get(orig_tk, {})
+                for k in ("mc", "fpe", "ets"):
+                    if quotes[orig_tk].get(k) is None and old.get(k) is not None:
+                        quotes[orig_tk][k] = old[k]
         except Exception as e:
             print(f"  {orig_tk}: {e}", file=sys.stderr)
 
@@ -513,6 +545,163 @@ def _stance_for(tickers, comp_map):
         return "THESIS AT RISK", ("Top-conviction holdings are named (" +
             ", ".join(r["ticker"] for r in hi_conv) + "). Confirm the story before changing anything.")
     return "MONITOR", "Affected names are lower-conviction; watch rather than act."
+
+
+# ── EARNINGS CALENDAR ─────────────────────────────────────────────────────────
+# Exchange local trading hours, used to answer "before the open or after the
+# close?" — .calendar gives a DATE only, .info carries the actual timestamp.
+SESSIONS = {
+    "":      ("America/New_York", 9.5, 16.0),   # US default
+    ".TO":   ("America/Toronto",  9.5, 16.0),
+    ".V":    ("America/Toronto",  9.5, 16.0),
+    ".AX":   ("Australia/Sydney", 10.0, 16.0),
+    ".L":    ("Europe/London",    8.0, 16.5),
+    ".JO":   ("Africa/Johannesburg", 9.0, 17.0),
+    ".SW":   ("Europe/Zurich",    9.0, 17.5),
+    ".MI":   ("Europe/Rome",      9.0, 17.5),
+    ".PA":   ("Europe/Paris",     9.0, 17.5),
+    ".DE":   ("Europe/Berlin",    9.0, 17.5),
+    ".AS":   ("Europe/Amsterdam", 9.0, 17.5),
+    ".BR":   ("Europe/Brussels",  9.0, 17.5),
+    ".OL":   ("Europe/Oslo",      9.0, 16.5),
+    ".ST":   ("Europe/Stockholm", 9.0, 17.5),
+    ".HE":   ("Europe/Helsinki",  10.0, 18.5),
+    ".CO":   ("Europe/Copenhagen",9.0, 17.0),
+    ".T":    ("Asia/Tokyo",       9.0, 15.0),
+    ".HK":   ("Asia/Hong_Kong",   9.5, 16.0),
+    ".TW":   ("Asia/Taipei",      9.0, 13.5),
+    ".TWO":  ("Asia/Taipei",      9.0, 13.5),
+    ".SS":   ("Asia/Shanghai",    9.5, 15.0),
+    ".MX":   ("America/Mexico_City", 8.5, 15.0),
+}
+
+
+def _session_for(tk):
+    for sfx in sorted(SESSIONS, key=len, reverse=True):
+        if sfx and tk.endswith(sfx):
+            return SESSIONS[sfx]
+    return SESSIONS[""]
+
+
+def classify_release(tk, ets):
+    """Pre-open / after-close / mid-session, from an epoch timestamp.
+
+    A release landing EXACTLY on the bell counts as pre/post, never mid-session.
+    A midnight timestamp is date-only, so we say the time is unconfirmed rather
+    than inventing one.
+    """
+    if not ets:
+        return {"when": "unknown", "label": "time unconfirmed"}
+    try:
+        from zoneinfo import ZoneInfo
+        tzname, open_h, close_h = _session_for(tk)
+        dt_utc = datetime.fromtimestamp(int(ets), tz=timezone.utc)
+        loc = dt_utc.astimezone(ZoneInfo(tzname))
+        h = loc.hour + loc.minute / 60
+        if loc.hour == 0 and loc.minute == 0:
+            return {"when": "unknown", "label": "time unconfirmed",
+                    "iso": dt_utc.isoformat(timespec="minutes")}
+        if h <= open_h:
+            when, lab = "pre", "BEFORE THE OPEN"
+        elif h >= close_h:
+            when, lab = "post", "AFTER THE CLOSE"
+        else:
+            when, lab = "mid", "MID-SESSION"
+        return {"when": when,
+                "label": f"{lab} · {loc:%H:%M} {loc.tzname()}",
+                "iso": dt_utc.isoformat(timespec="minutes"),
+                "tz": tzname}
+    except Exception:
+        return {"when": "unknown", "label": "time unconfirmed"}
+
+
+def build_calendar(companies, quotes):
+    """Earnings dates + consensus, merged with hand-dated policy and catalyst entries."""
+    print("Building calendar...")
+    prev = load_prev("calendar.json")
+    prev_events = prev.get("events", []) if isinstance(prev, dict) else []
+
+    targets = sorted({c["ticker"] for c in companies
+                      if (c.get("conviction") or 0) >= 2 or c.get("froth")})
+    if LIGHT:
+        targets = [t for t in targets if t in REPORTING_NOW]
+        print(f"  light: re-scanning {len(targets)} reporting names, carrying the rest forward")
+
+    names = {c["ticker"]: c["name"] for c in companies}
+    today = date.today()
+    events, fails = [], 0
+
+    for t in targets:
+        try:
+            cal = yf.Ticker(yahoo_symbol(t)).calendar or {}
+            ed = cal.get("Earnings Date") or []
+            if not isinstance(ed, list):
+                ed = [ed]
+            if not ed:
+                continue
+            d0 = ed[0]
+            d0 = d0.date() if hasattr(d0, "date") else d0
+            if (d0 - today).days < -8 or (d0 - today).days > 400:
+                continue
+            ets = (quotes.get(t) or {}).get("ets")
+            ev = {"type": "earnings", "tk": t, "name": names.get(t, t),
+                  "d": d0.isoformat(), "release": classify_release(t, ets)}
+            for k, src in (("eps_avg", "EPS Average"), ("eps_low", "EPS Low"), ("eps_high", "EPS High")):
+                v = cal.get(src)
+                if isinstance(v, (int, float)):
+                    ev[k] = round(float(v), 2)
+            if len(ed) > 1:
+                ev["estimated_range"] = True
+            events.append(ev)
+        except Exception:
+            fails += 1
+        time.sleep(0.05)
+
+    # Carry forward earnings entries this pass did not touch
+    if LIGHT and prev_events:
+        seen = {(e.get("tk"), e.get("d")) for e in events if e.get("type") == "earnings"}
+        for e in prev_events:
+            if e.get("type") == "earnings" and (e.get("tk"), e.get("d")) not in seen:
+                events.append(e)
+
+    # Hand-dated policy cliffs and catalysts from the research files
+    for src, typ in (("policy.json", "policy"), ("portfolio.json", "catalyst")):
+        try:
+            doc = json.load(open(DATA / src))
+        except Exception:
+            continue
+        rows = (doc.get("levers") or []) if typ == "policy" else (doc.get("catalyst_table") or [])
+        for r in rows:
+            d = r.get("date") or r.get("d")
+            if not d or not isinstance(d, str):
+                continue
+            m = re.match(r"(\d{4}-\d{2}-\d{2})", d.strip())
+            if not m:
+                continue
+            try:
+                dd = date.fromisoformat(m.group(1))
+            except Exception:
+                continue
+            if (dd - today).days < -8:
+                continue
+            events.append({"type": typ, "d": dd.isoformat(),
+                           "name": r.get("title") or r.get("n") or r.get("event") or "Dated catalyst",
+                           "detail": (r.get("note") or r.get("detail") or r.get("why") or "")[:300],
+                           "tk": r.get("tk") or r.get("ticker")})
+
+    # Drop anything well past — the agenda is forward-looking by construction
+    events = [e for e in events if (date.fromisoformat(e["d"]) - today).days >= -8]
+    events.sort(key=lambda e: e["d"])
+    return {"_meta": {
+        "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "mode": MODE,
+        "coverage": f"{len(targets) - fails}/{len(targets)} scanned this pass",
+        "note": ("Earnings dates and consensus come from Yahoo Finance and are often estimated rather than "
+                 "company-confirmed — treat them as approximate until the company confirms. Release timing is "
+                 "derived from the earnings timestamp against exchange local hours; where the timestamp is "
+                 "date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries "
+                 "are hand-dated in the research files."),
+    }, "events": events}
 
 
 def compute_breaking(quotes, indices, news, companies):
@@ -843,9 +1032,25 @@ def safe_write(path, data):
 
 
 def main():
+    global PREV_QUOTES, REPORTING_NOW
     today = date.today().isoformat()
     companies = load_companies()
     tickers = [c["ticker"] for c in companies]
+    print(f"FETCH_MODE={MODE}")
+
+    PREV_QUOTES = {k: v for k, v in load_prev("quotes.json").items() if not k.startswith("_")}
+    if LIGHT:
+        # Names reporting within [-2,+1] days still get full detail on a light pass.
+        try:
+            cal = load_prev("calendar.json").get("events", [])
+            t0 = date.today()
+            for e in cal:
+                if e.get("type") == "earnings" and e.get("tk"):
+                    if -2 <= (date.fromisoformat(e["d"]) - t0).days <= 1:
+                        REPORTING_NOW.add(e["tk"])
+        except Exception:
+            pass
+        print(f"light pass: full detail for {len(REPORTING_NOW)} reporting name(s)")
 
     # 1. Per-equity quotes
     quotes_result = fetch_quotes(tickers)
@@ -868,18 +1073,32 @@ def main():
     indices = fetch_indices()
     safe_write(DATA / "indices.json", indices)
 
-    # 3. News
-    news = fetch_news()
-    if news:
-        safe_write(DATA / "news.json", news)
+    # 3. News — RSS is slow; a light pass reuses the last full pass rather than
+    #    writing an empty list and blanking the News tab.
+    if LIGHT:
+        news = load_prev("news.json") or []
+        if not isinstance(news, list):
+            news = []
+        print(f"  news: carried forward ({len(news)} items)")
+    else:
+        news = fetch_news()
+        if news:
+            safe_write(DATA / "news.json", news)
 
     # 4. Alerts
     alerts = compute_alerts(quotes, indices)
     safe_write(DATA / "alerts.json", alerts)
 
-    # 5. Performance
-    perf = compute_performance(companies)
-    safe_write(DATA / "performance.json", perf)
+    # 5. Performance — a 2y multi-ticker download; evening only.
+    if not LIGHT:
+        perf = compute_performance(companies)
+        safe_write(DATA / "performance.json", perf)
+    else:
+        print("  performance: skipped on a light pass (previous file kept)")
+
+    cal_doc = build_calendar(companies, quotes)
+    safe_write(DATA / "calendar.json", cal_doc)
+    print(f"  calendar.json: {len(cal_doc['events'])} events")
 
     breaking = compute_breaking(quotes, indices, news, companies)
     safe_write(DATA / "breaking.json", breaking)

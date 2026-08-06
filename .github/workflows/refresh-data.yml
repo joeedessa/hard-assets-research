@@ -1,51 +1,74 @@
 name: Refresh market data
 
+# Four passes a day, timed to the sessions this universe actually spans. Miners
+# skew ASX/TSX/LSE/JSE, so the slots differ from a US-only map. Cron is UTC and
+# ignores DST, so each slot carries ~1h of buffer rather than chasing the clock.
 on:
   schedule:
-    # 21:30 UTC weekdays — after US market close
-    - cron: "30 21 * * 1-5"
+    - cron: '45 6 * * 1-5'    # Asia post-close    — Tokyo 15:00, Taipei 13:30, ASX 16:00 AEST
+    - cron: '45 12 * * 1-5'   # US pre-open        — BMO releases ~12:30; Europe mid-session
+    - cron: '0 16 * * 1-5'    # Europe post-close  — London 16:30, Frankfurt/Paris 17:30
+    - cron: '30 21 * * 1-5'   # US post-close      — AMC releases + full end-of-day rebuild
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'full = everything; light = prices, signals and reporting names only'
+        default: full
+        type: choice
+        options: [full, light]
 
 permissions:
   contents: write
 
+# Only the evening pass rebuilds everything. The three intraday passes run light.
+env:
+  FETCH_MODE: >-
+    ${{ github.event_name == 'schedule'
+        && (github.event.schedule == '30 21 * * 1-5' && 'full' || 'light')
+        || inputs.mode || 'full' }}
+
+# Passes must not overlap — two writers on the same files would corrupt a commit.
+concurrency:
+  group: market-data
+  cancel-in-progress: false
+
 jobs:
-  fetch:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
+      # lxml is required by yfinance for earnings_dates/calendar; without it the
+      # calls fail silently and the agenda comes back empty.
       - name: Install dependencies
-        run: pip install yfinance feedparser
+        run: pip install --quiet yfinance feedparser lxml
 
-      - name: Run fetch script
+      - name: Fetch market data (${{ env.FETCH_MODE }})
         run: python scripts/fetch_market.py
 
-      - name: Validate output JSON
+      - name: Validate output
         run: |
-          for f in data/quotes.json data/indices.json data/alerts.json data/performance.json; do
-            python -c "import json,sys; json.load(open('$f')); print('OK:', '$f')"
-          done
-          # news.json may be empty array — still must be valid JSON
-          python -c "import json; json.load(open('data/news.json'))"
+          python - <<'EOF'
+          import json, glob
+          for f in sorted(glob.glob('data/*.json')):
+              json.load(open(f))
+          print('all data/*.json parse')
+          EOF
 
-      - name: Commit data if changed
+      - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/quotes.json data/indices.json data/news.json data/alerts.json data/performance.json
+          git add data/quotes.json data/indices.json data/news.json data/alerts.json \
+                  data/performance.json data/breaking.json data/calendar.json
           if git diff --cached --quiet; then
             echo "No data changes — nothing to commit"
           else
-            # Commit BEFORE pulling. `git pull --rebase` refuses to run with a
-            # dirty index, so doing it after `git add` failed every night with
-            # "cannot pull with rebase: Your index contains uncommitted changes".
-            git commit -m "chore: nightly data refresh $(date -u +%Y-%m-%d)"
+            # Commit BEFORE pulling: git pull --rebase refuses to run on a dirty index.
+            git commit -m "chore: market data refresh (${FETCH_MODE}) $(date -u +%Y-%m-%dT%H:%MZ)"
             git pull --rebase origin main
             git push
           fi
