@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-06T14:21:06+00:00",
+    "as_of": "2026-08-06T14:25:39+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
       "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 12/159 down 5%, sector +3.3%",
@@ -12,7 +12,7 @@
       "USD (DXY) ±1%+ in a session: +0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
-      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 51 read"
+      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
     ]
   },
   "state": "elevated",
