@@ -30,20 +30,6 @@
   },
   "minerals": [
     {
-      "sym": "W",
-      "name": "Tungsten",
-      "group": "defense",
-      "why": "Hardest metal in industrial use — armour, penetrators, cutting tools. China put it under export control in Feb 2025.",
-      "lists": [
-        "us",
-        "eu-strategic"
-      ],
-      "china": "Export controls from 2025-02",
-      "exposure": [],
-      "gap": "none",
-      "priority": 18
-    },
-    {
       "sym": "Bi",
       "name": "Bismuth",
       "group": "industrial",
@@ -53,22 +39,22 @@
         "eu-strategic"
       ],
       "china": "Export controls from 2025-02",
-      "exposure": [],
-      "gap": "none",
-      "priority": 18
-    },
-    {
-      "sym": "Te",
-      "name": "Tellurium",
-      "group": "energy",
-      "why": "CdTe thin-film solar; a copper-refining byproduct.",
-      "lists": [
-        "us"
+      "exposure": [
+        {
+          "tk": "VNP.TO",
+          "kind": "processing",
+          "name": "5N Plus",
+          "conviction": 2
+        },
+        {
+          "tk": "AMG.AS",
+          "kind": "processing",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        }
       ],
-      "china": "Export controls from 2025-02",
-      "exposure": [],
-      "gap": "none",
-      "priority": 15
+      "gap": "partial",
+      "priority": 14
     },
     {
       "sym": "C",
@@ -142,6 +128,12 @@
           "conviction": 2
         },
         {
+          "tk": "VNP.TO",
+          "kind": "processing",
+          "name": "5N Plus",
+          "conviction": 2
+        },
+        {
           "tk": "NEXA",
           "kind": "byproduct",
           "name": "Nexa Resources",
@@ -150,6 +142,27 @@
       ],
       "gap": "partial",
       "priority": 14
+    },
+    {
+      "sym": "W",
+      "name": "Tungsten",
+      "group": "defense",
+      "why": "Hardest metal in industrial use — armour, penetrators, cutting tools. China put it under export control in Feb 2025.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": "Export controls from 2025-02",
+      "exposure": [
+        {
+          "tk": "AII.TO",
+          "kind": "primary",
+          "name": "Almonty Industries",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 12
     },
     {
       "sym": "Sc",
@@ -173,20 +186,6 @@
       "priority": 12
     },
     {
-      "sym": "Ta",
-      "name": "Tantalum",
-      "group": "semis",
-      "why": "Capacitors. Conflict-mineral supply chain, heavily DRC/Rwanda.",
-      "lists": [
-        "us",
-        "eu"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 12
-    },
-    {
       "sym": "Sb",
       "name": "Antimony",
       "group": "defense",
@@ -202,6 +201,12 @@
           "kind": "primary",
           "name": "Perpetua Resources",
           "conviction": 3
+        },
+        {
+          "tk": "AMG.AS",
+          "kind": "processing",
+          "name": "AMG Critical Materials",
+          "conviction": 1
         }
       ],
       "gap": "covered",
@@ -212,34 +217,6 @@
       "name": "Hafnium",
       "group": "nuclear",
       "why": "Control rods and superalloys; a zirconium byproduct.",
-      "lists": [
-        "us",
-        "eu"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 12
-    },
-    {
-      "sym": "V",
-      "name": "Vanadium",
-      "group": "energy",
-      "why": "Steel strengthening and vanadium redox flow batteries for long-duration storage.",
-      "lists": [
-        "us",
-        "eu"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 12
-    },
-    {
-      "sym": "Fluorspar",
-      "name": "Fluorspar",
-      "group": "chemical",
-      "why": "Hydrofluoric acid feeds refrigerants, fluoropolymers and the LiPF6 battery electrolyte.",
       "lists": [
         "us",
         "eu"
@@ -276,6 +253,26 @@
       "exposure": [],
       "gap": "none",
       "priority": 12
+    },
+    {
+      "sym": "Te",
+      "name": "Tellurium",
+      "group": "energy",
+      "why": "CdTe thin-film solar; a copper-refining byproduct.",
+      "lists": [
+        "us"
+      ],
+      "china": "Export controls from 2025-02",
+      "exposure": [
+        {
+          "tk": "VNP.TO",
+          "kind": "processing",
+          "name": "5N Plus",
+          "conviction": 2
+        }
+      ],
+      "gap": "partial",
+      "priority": 11
     },
     {
       "sym": "In",
@@ -322,19 +319,6 @@
       "priority": 11
     },
     {
-      "sym": "Cr",
-      "name": "Chromium",
-      "group": "industrial",
-      "why": "Stainless steel; South Africa and Kazakhstan dominate.",
-      "lists": [
-        "us"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 9
-    },
-    {
       "sym": "B",
       "name": "Boron",
       "group": "industrial",
@@ -346,6 +330,69 @@
       "exposure": [],
       "gap": "none",
       "priority": 9
+    },
+    {
+      "sym": "Ta",
+      "name": "Tantalum",
+      "group": "semis",
+      "why": "Capacitors. Conflict-mineral supply chain, heavily DRC/Rwanda.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AMG.AS",
+          "kind": "primary",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "V",
+      "name": "Vanadium",
+      "group": "energy",
+      "why": "Steel strengthening and vanadium redox flow batteries for long-duration storage.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AMG.AS",
+          "kind": "primary",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Fluorspar",
+      "name": "Fluorspar",
+      "group": "chemical",
+      "why": "Hydrofluoric acid feeds refrigerants, fluoropolymers and the LiPF6 battery electrolyte.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ORBIA.MX",
+          "kind": "primary",
+          "name": "Orbia Advance",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
     },
     {
       "sym": "Co",
@@ -521,6 +568,12 @@
           "conviction": 1
         },
         {
+          "tk": "AMG.AS",
+          "kind": "processing",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        },
+        {
           "tk": "FLNC",
           "kind": "enduse",
           "name": "Fluence Energy",
@@ -618,42 +671,16 @@
           "kind": "primary",
           "name": "Sibanye-Stillwater",
           "conviction": 1
+        },
+        {
+          "tk": "THS.L",
+          "kind": "primary",
+          "name": "Tharisa",
+          "conviction": 1
         }
       ],
       "gap": "covered",
       "priority": 6
-    },
-    {
-      "sym": "Si",
-      "name": "Silicon metal",
-      "group": "semis",
-      "why": "Polysilicon, semiconductors and silicones. Energy-intensive smelting concentrated in China and Norway.",
-      "lists": [
-        "eu-strategic"
-      ],
-      "china": null,
-      "exposure": [
-        {
-          "tk": "WOLF",
-          "kind": "processing",
-          "name": "Wolfspeed",
-          "conviction": 2
-        },
-        {
-          "tk": "6963.JP",
-          "kind": "processing",
-          "name": "ROHM",
-          "conviction": 2
-        },
-        {
-          "tk": "COHR",
-          "kind": "processing",
-          "name": "Coherent Corp",
-          "conviction": 2
-        }
-      ],
-      "gap": "partial",
-      "priority": 5
     },
     {
       "sym": "He",
@@ -680,6 +707,64 @@
       ],
       "gap": "partial",
       "priority": 5
+    },
+    {
+      "sym": "Cr",
+      "name": "Chromium",
+      "group": "industrial",
+      "why": "Stainless steel; South Africa and Kazakhstan dominate.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "THS.L",
+          "kind": "primary",
+          "name": "Tharisa",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
+    },
+    {
+      "sym": "Si",
+      "name": "Silicon metal",
+      "group": "semis",
+      "why": "Polysilicon, semiconductors and silicones. Energy-intensive smelting concentrated in China and Norway.",
+      "lists": [
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AMG.AS",
+          "kind": "primary",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        },
+        {
+          "tk": "WOLF",
+          "kind": "processing",
+          "name": "Wolfspeed",
+          "conviction": 2
+        },
+        {
+          "tk": "6963.JP",
+          "kind": "processing",
+          "name": "ROHM",
+          "conviction": 2
+        },
+        {
+          "tk": "COHR",
+          "kind": "processing",
+          "name": "Coherent Corp",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
     },
     {
       "sym": "Al",

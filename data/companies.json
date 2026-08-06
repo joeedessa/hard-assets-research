@@ -1502,6 +1502,102 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AII.TO",
+      "name": "Almonty Industries",
+      "vertical": "tm",
+      "chain_layer": "Tungsten mining",
+      "geo": "CA/KR/PT",
+      "structure": "equity",
+      "thesis_note": "Owns Sangdong in South Korea — on restart, the largest tungsten mine outside China — plus producing Portuguese and Spanish assets. Hard to replace because China put tungsten under export control in February 2025 and controls the overwhelming majority of supply; tungsten has no substitute in armour, penetrators or carbide cutting tools, so defence demand is procurement-driven rather than economic. Today: Sangdong ramping with an offtake floor price, and a US listing pursued to widen access. What would break it: ramp slippage at Sangdong, which has slipped before, or China relaxing controls to strangle the project economics — the standard playbook against a Western entrant.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "The tungsten scarcity story is now reasonably well known and the equity has re-rated on the Korean restart. Execution risk on the ramp is the live variable, not the thesis.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "defense-procurement",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "VNP.TO",
+      "name": "5N Plus",
+      "vertical": "tm",
+      "chain_layer": "Specialty semiconductor materials",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Produces ultra-high-purity tellurium, bismuth, selenium and germanium compounds — the refined forms, not the ore. Hard to replace because purification to 5N/6N grade is a qualification-gated process: once a CdTe solar or space-solar customer qualifies a supplier, switching means requalifying the cell. Today: supplying the terrestrial and space photovoltaic chains and medical imaging. What would break it: thin-film solar losing further share to silicon PV, which would take tellurium demand with it, and the fact that its feedstocks are all byproducts it does not control.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Small-cap Canadian listing, thinly followed outside Canada. The tellurium and bismuth exposure is genuinely unusual and is not what the market prices it on.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AMG.AS",
+      "name": "AMG Critical Materials",
+      "vertical": "ii",
+      "chain_layer": "Specialty metals + recycling",
+      "geo": "NL/global",
+      "structure": "equity",
+      "thesis_note": "The broadest single fix for the remaining designated gaps: vanadium, tantalum, antimony, silicon metal and lithium in one company, spanning mining, refining and spent-catalyst recycling. Hard to replace because the vanadium recycling business reprocesses refinery catalyst — a feedstock nobody else has structured access to. Today: European listing with a lithium plant in Germany. What would break it: it is a collection of small cyclical businesses rather than one moat, so a broad specialty-metals downturn hits all of them together, and no single segment is large enough to carry the others.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Conglomerate discount and a European listing keep it off US screens. Owned for breadth of critical-mineral exposure rather than for a single thesis.",
+      "themes": [
+        "critical-minerals",
+        "reshoring",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "THS.L",
+      "name": "Tharisa",
+      "vertical": "pg",
+      "chain_layer": "Chrome + PGM mining",
+      "geo": "ZA/CY",
+      "structure": "equity",
+      "thesis_note": "Co-produces chrome concentrate and PGMs from the same South African orebody, so chrome revenue funds the PGM optionality. Hard to replace because chrome of this grade is concentrated in South Africa and Kazakhstan, and stainless steel has no substitute for it. Today: Karo PGM project in Zimbabwe under development. What would break it: South African power and logistics, which are chronic rather than occasional problems, and Zimbabwean jurisdiction risk on Karo.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Deeply discounted on South African and Zimbabwean risk. The dual chrome-PGM revenue is more defensive than a pure PGM miner, which the market does not credit.",
+      "themes": [
+        "critical-minerals",
+        "precious-metals",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "ORBIA.MX",
+      "name": "Orbia Advance",
+      "vertical": "ii",
+      "chain_layer": "Fluorspar + fluorine chain",
+      "geo": "MX",
+      "structure": "equity",
+      "thesis_note": "Owns the world's largest fluorspar mine and the integrated fluorine chain above it. Hard to replace because hydrofluoric acid derived from fluorspar feeds refrigerants, fluoropolymers and — critically here — the LiPF6 electrolyte in every lithium-ion cell, and the resource is geographically concentrated. Today: the fluorine business subsidises weaker polymer and infrastructure segments. What would break it: PVC and building-products cyclicality dominating the fluorine story, plus Mexican listing and governance discount. The fluorspar asset is better than the company that owns it.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Priced as a Mexican building-products conglomerate rather than as the owner of a critical-mineral chokepoint. That mismatch is the case; the conglomerate structure is why it persists.",
+      "themes": [
+        "critical-minerals",
+        "ev-demand",
+        "food-security"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
     }
   ]
 }
