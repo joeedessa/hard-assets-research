@@ -362,7 +362,7 @@
       ],
       "tm": [
         [
-          "Perpetua (PPTA) Sb+Au",
+          "Perpetua PPTA Sb+Au",
           "v6"
         ],
         [
@@ -438,7 +438,7 @@
       ],
       "nu": [
         [
-          "Cameco (CCO) ~15% global",
+          "Cameco CCO ~15% global",
           "v2"
         ],
         [
@@ -476,13 +476,13 @@
           "v5"
         ],
         [
-          "Lynas (LYC.AX) Mt.Weld",
+          "Lynas LYC.AX Mt.Weld",
           "v5"
         ]
       ],
       "tm": [
         [
-          "Alphamin (AFMJF) Sn DRC",
+          "Alphamin AFMJF Sn DRC",
           "v6"
         ],
         [
@@ -508,21 +508,21 @@
       ],
       "ii": [
         [
-          "Linde (LIN) air separation",
+          "Linde LIN air separation",
           "v9"
         ],
         [
-          "Air Products (APD)",
+          "Air Products APD",
           "v9"
         ]
       ],
       "fert": [
         [
-          "Nutrien (NTR) K+N+P unique",
+          "Nutrien NTR K+N+P unique",
           "va"
         ],
         [
-          "Mosaic (MOS),ICL Group",
+          "Mosaic MOS,ICL Group",
           "va"
         ]
       ]
@@ -550,7 +550,7 @@
           "v2"
         ],
         [
-          "UF6 conversion ConverDyn (state)",
+          "UF6 conversion ConverDyn",
           "v2"
         ]
       ],
@@ -640,17 +640,17 @@
           "v1"
         ],
         [
-          "Venture Global (VGAS)",
+          "Venture Global VGAS",
           "v1"
         ]
       ],
       "nu": [
         [
-          "Enrichment Centrus (LEU),Urenco (private)",
+          "Enrichment Centrus LEU,Urenco",
           "v2"
         ],
         [
-          "Fuel fab Westinghouse (private)",
+          "Fuel fab Westinghouse",
           "v2"
         ]
       ],
@@ -946,7 +946,7 @@
           "v2"
         ],
         [
-          "SMR pipeline GEH,X-energy (private)",
+          "SMR pipeline GEH,X-energy",
           "v2"
         ]
       ],
@@ -1050,7 +1050,7 @@
       ],
       "nu": [
         [
-          "Spent fuel reprocessing Orano (state)",
+          "Spent fuel reprocessing Orano",
           "v2"
         ],
         [
@@ -1076,7 +1076,7 @@
       ],
       "re": [
         [
-          "REE magnets Cyclic Materials (private)",
+          "REE magnets Cyclic Materials",
           "v5"
         ]
       ],
@@ -1148,14 +1148,14 @@
       "f": [
         "fgeo"
       ],
-      "b": "Constellation Energy (CEG — ~10% of US electricity). Microsoft Three Mile Island restart (2024) = 20yr PPA at ~$110/MWh for 24/7 carbon-free power. Template being replicated across CEG fleet. SMRs: GE-Hitachi BWRX-300 (Ontario Power 4-unit order — first Western commercial SMR contract); X-energy (private) Xe-100 (Dow Chemical site); BWXT as components supplier."
+      "b": "Constellation Energy (CEG — ~10% of US electricity). Microsoft Three Mile Island restart (2024) = 20yr PPA at ~$110/MWh for 24/7 carbon-free power. Template being replicated across CEG fleet. SMRs: GE-Hitachi BWRX-300 (Ontario Power 4-unit order — first Western commercial SMR contract); X-energy Xe-100 (Dow Chemical site); BWXT as components supplier."
     },
     "di_cu": {
       "t": "Copper — Grid infrastructure & transformer bottleneck",
       "f": [
         "fgp"
       ],
-      "b": "Grid components: Hitachi Energy (private, world's largest LPT maker, multi-year backlog), ABB (ABBN), Eaton (ETN), GE Vernova (GEV). HV cables: Prysmian (PRY.MI), Nexans (NEX.PA) — 3-4yr backlog. Grid EPC: Quanta (PWR, ~40% US market). Transformer lead times: 2-4 years. Unprecedented simultaneous demand from AI DCs + EVs + grid hardening."
+      "b": "Grid components: Hitachi Energy (world's largest LPT maker, multi-year backlog), ABB (ABBN), Eaton (ETN), GE Vernova (GEV). HV cables: Prysmian (PRY.MI), Nexans (NEX.PA) — 3-4yr backlog. Grid EPC: Quanta (PWR, ~40% US market). Transformer lead times: 2-4 years. Unprecedented simultaneous demand from AI DCs + EVs + grid hardening."
     },
     "rf_li": {
       "t": "Lithium — Processing & cell manufacturing (Chinese chokehold)",
@@ -1184,7 +1184,7 @@
       "f": [
         "fgeo"
       ],
-      "b": "Nutrien (NTR — world's largest K producer + significant N+P; ONLY complete NPK company globally; Canpotex (state) JV with Mosaic controls Canadian export logistics worldwide). Mosaic (MOS — Esterhazy K + Florida P mining). ICL Group (Israel — Dead Sea Works K + Rotem P). OCP Morocco (state-owned private, ~70% global phosphate reserves — the long-term chokepoint to monitor)."
+      "b": "Nutrien (NTR — world's largest K producer + significant N+P; ONLY complete NPK company globally; Canpotex JV with Mosaic controls Canadian export logistics worldwide). Mosaic (MOS — Esterhazy K + Florida P mining). ICL Group (Israel — Dead Sea Works K + Rotem P). OCP Morocco (state-owned private, ~70% global phosphate reserves — the long-term chokepoint to monitor)."
     },
     "rc_li": {
       "t": "Battery recycling — geopolitically domesticated supply",
@@ -1198,7 +1198,7 @@
       "f": [
         "fch"
       ],
-      "b": "Westinghouse (private, Brookfield-owned; Columbia SC + Springfields UK); Framatome (private, EDF subsidiary, France); GNF (GE-Hitachi + Toshiba JV, Wilmington NC). 5-7yr reactor qualification cycles = extremely sticky customer relationships. Once a utility qualifies a fuel supplier for a specific reactor design, they rarely switch."
+      "b": "Westinghouse (Brookfield-owned; Columbia SC + Springfields UK); Framatome (EDF subsidiary, France); GNF (GE-Hitachi + Toshiba JV, Wilmington NC). 5-7yr reactor qualification cycles = extremely sticky customer relationships. Once a utility qualifies a fuel supplier for a specific reactor design, they rarely switch."
     }
   },
   "b_band": [
@@ -1212,8 +1212,8 @@
         "Orica (explosives)",
         "Perenti (contract mining)",
         "SGS,Intertek (assay)",
-        "Planet Labs (PL)",
-        "Worley (WOR.AX, EPC)",
+        "Planet Labs PL",
+        "Worley WOR.AX (EPC)",
         "Chart GTLS (cryo)",
         "—"
       ]
@@ -1223,15 +1223,15 @@
       "items": [
         "Fluor,McDermott (oil)",
         "Primoris,MRC Global",
-        "TechnipFMC (FTI, LNG)",
-        "Worley (WOR.AX, mine)",
-        "BWXT,Framatome (private, nuc)",
-        "Tetra Tech (TTEK, water)",
-        "Quanta (PWR, grid)",
+        "TechnipFMC FTI (LNG)",
+        "Worley WOR.AX (mine)",
+        "BWXT,Framatome (nuc)",
+        "Tetra Tech TTEK (water)",
+        "Quanta PWR (grid)",
         "MYR,Emcor,MasTec",
         "—",
         "Chart GTLS (cryo)",
-        "CAT,Deere (DE)"
+        "CAT,Deere DE"
       ]
     },
     {
@@ -1247,7 +1247,7 @@
         "EMR,HON (automation)",
         "XYL,ERII (water tech)",
         "Chart GTLS (ASU)",
-        "CAT,Deere (DE)"
+        "CAT,Deere DE"
       ]
     },
     {
@@ -1271,7 +1271,7 @@
       "items": [
         "CLH,HCCI (lube)",
         "CLNE,MNTK (RNG)",
-        "Orano (state),Holtec (nuc)",
+        "Orano,Holtec (nuc)",
         "Aurubis,Metallo (Cu)",
         "Li-Cycle,Redwood (Li)",
         "Cyclic,Urban Mining",
@@ -1290,27 +1290,27 @@
       "rows": [
         {
           "n": "Generation",
-          "s": "VST,NRG,CEG (nuclear),Duke,NextEra NEE,GE Vernova (GEV)"
+          "s": "VST,NRG,CEG (nuclear),Duke,NextEra NEE,GE Vernova GEV"
         },
         {
           "n": "Transmission (HV)",
-          "s": "Hitachi Energy (private), ABB, Siemens Energy (ENR.DE), GE Vernova (GEV)"
+          "s": "Hitachi Energy, ABB, Siemens Energy ENR.DE, GE Vernova GEV"
         },
         {
           "n": "Distribution (MV/LV)",
-          "s": "AEP,Exelon,DTE; Eaton (ETN),ABB,nVent NVT; Itron (ITRI, meters)"
+          "s": "AEP,Exelon,DTE; Eaton ETN,ABB,nVent NVT; Itron ITRI (meters)"
         },
         {
           "n": "Grid storage (BESS)",
-          "s": "Fluence (FLNC), Tesla Megapack, AES Corp, NextEra, Eos EOSE"
+          "s": "Fluence FLNC, Tesla Megapack, AES Corp, NextEra, Eos EOSE"
         },
         {
           "n": "Grid EPC",
-          "s": "Quanta (PWR, ~40% US market), MYR (MYRG), Emcor (EME), MasTec (MTZ)"
+          "s": "Quanta PWR (~40% US market), MYR MYRG, Emcor EME, MasTec MTZ"
         },
         {
           "n": "Grid components",
-          "s": "Hitachi Energy (private), ABB, Eaton (ETN), GEV; Prysmian PRY + Nexans NEX"
+          "s": "Hitachi Energy, ABB, Eaton ETN, GEV; Prysmian PRY + Nexans NEX"
         }
       ],
       "tab": "el"
@@ -1321,15 +1321,15 @@
       "rows": [
         {
           "n": "Gas pipelines",
-          "s": "KMI, Energy Transfer (ET), Enterprise (EPD), Williams (WMB)"
+          "s": "KMI, Energy Transfer ET, Enterprise EPD, Williams WMB"
         },
         {
           "n": "LNG terminals",
-          "s": "Cheniere (LNG), Venture Global (VGAS), NFE, Sempra"
+          "s": "Cheniere (LNG), Venture Global VGAS, NFE, Sempra"
         },
         {
           "n": "Crude export terminals",
-          "s": "Moda Midstream (private, VLCC-capable), Enterprise (EPD), Plains PAA"
+          "s": "Moda Midstream (VLCC-capable), Enterprise EPD, Plains PAA"
         },
         {
           "n": "Crude & product storage",
@@ -1337,11 +1337,11 @@
         },
         {
           "n": "Refineries",
-          "s": "Valero (VLO), Marathon MPC, Phillips 66 PSX, PBF, HF Sinclair DINO"
+          "s": "Valero VLO, Marathon MPC, Phillips 66 PSX, PBF, HF Sinclair DINO"
         },
         {
           "n": "LNG regasification",
-          "s": "Excelerate (EE), Höegh LNG, NFE import side"
+          "s": "Excelerate EE, Höegh LNG, NFE import side"
         }
       ],
       "tab": "th",
@@ -1357,11 +1357,11 @@
         },
         {
           "n": "DC power systems",
-          "s": "Vertiv (VRT), Eaton (ETN), Schneider Electric (SU.PA)"
+          "s": "Vertiv VRT, Eaton ETN, Schneider Electric SU.PA"
         },
         {
           "n": "DC cooling",
-          "s": "Vertiv (liquid cooling fastest-growing), Modine (MOD), Evapco"
+          "s": "Vertiv (liquid cooling fastest-growing), Modine MOD, Evapco"
         },
         {
           "n": "Nuclear for AI",
@@ -1421,5 +1421,5 @@
     "ii": "wl",
     "fert": "ng"
   },
-  "integrated_companies": "Glencore (GLEN.L, Cu+Co+coal+oil+trading) · BHP (Cu+Fe+Ni+K) · Rio Tinto (Cu+Li+Al+REE) · XOM/Shell/Total (oil+gas+LNG) · Nutrien (NTR, K+N+P — only complete NPK) · Siemens Energy (ENR.DE, turbines+grid+wind) · Umicore (UMI.BR, Co+pCAM+PGM recycle) · Johnson Matthey (JMAT.L, PGM chemistry+autocatalyst+recycle)"
+  "integrated_companies": "Glencore GLEN.L (Cu+Co+coal+oil+trading) · BHP (Cu+Fe+Ni+K) · Rio Tinto (Cu+Li+Al+REE) · XOM/Shell/Total (oil+gas+LNG) · Nutrien NTR (K+N+P — only complete NPK) · Siemens Energy ENR.DE (turbines+grid+wind) · Umicore UMI.BR (Co+pCAM+PGM recycle) · Johnson Matthey JMAT.L (PGM chemistry+autocatalyst+recycle)"
 }

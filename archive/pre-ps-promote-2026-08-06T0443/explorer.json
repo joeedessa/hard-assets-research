@@ -71,7 +71,7 @@
           "l": "Storage & export terminals",
           "r": "Crude tankage, SPR, VLCC-capable export terminals",
           "f": [],
-          "d": "Vopak (Netherlands — global chokepoint tank terminals at strategic waterways). Moda Midstream (private, Ingleside TX — only fully VLCC-capable US crude export terminal). Enterprise (EPD, Houston Ship Channel)."
+          "d": "Vopak (Netherlands — global chokepoint tank terminals at strategic waterways). Moda Midstream (Ingleside TX — only fully VLCC-capable US crude export terminal). Enterprise (EPD, Houston Ship Channel)."
         },
         {
           "l": "Distribution & end-use",
@@ -216,7 +216,7 @@
             "choke",
             "geo"
           ],
-          "d": "Cameco Fuel Manufacturing (Port Hope, Canada); Orano (state, Malvési, France); ConverDyn (state, Honeywell Metropolis, Illinois — restarted 2023 after years of Russian dependency). Very few global facilities = critical single point of failure risk."
+          "d": "Cameco Fuel Manufacturing (Port Hope, Canada); Orano (Malvési, France); ConverDyn (Honeywell Metropolis, Illinois — restarted 2023 after years of Russian dependency). Very few global facilities = critical single point of failure risk."
         },
         {
           "l": "Enrichment (SWU) — most acute strategic gap",
@@ -226,7 +226,7 @@
             "gap",
             "geo"
           ],
-          "d": "MOST ACUTE STRATEGIC VULNERABILITY in US energy supply chain. Urenco (private); Centrus Energy (LEU — ONLY US company with active domestic enrichment; HALEU program at Piketon OH). TENEX/Rosatom was ~28% of US SWU before 2024 import ban. Year 1-2 of a decade-long rebuild."
+          "d": "MOST ACUTE STRATEGIC VULNERABILITY in US energy supply chain. Urenco (private, UK/NL/DE, UUSA plant New Mexico); Centrus Energy (LEU — ONLY US company with active domestic enrichment; HALEU program at Piketon OH). TENEX/Rosatom was ~28% of US SWU before 2024 import ban. Year 1-2 of a decade-long rebuild."
         },
         {
           "l": "Fuel fabrication — sticky oligopoly",
@@ -234,7 +234,7 @@
           "f": [
             "choke"
           ],
-          "d": "Westinghouse (private, Brookfield-owned; Columbia SC + Springfields UK); Framatome (private, EDF subsidiary, France); GNF (GE-Hitachi + Toshiba JV, Wilmington NC). 5-7yr reactor qualification cycles = extremely sticky customer relationships and recurring revenue — once qualified, utilities rarely switch."
+          "d": "Westinghouse (Brookfield-owned; Columbia SC + Springfields UK); Framatome (EDF subsidiary, France); GNF (GE-Hitachi + Toshiba JV, Wilmington NC). 5-7yr reactor qualification cycles = extremely sticky customer relationships and recurring revenue — once qualified, utilities rarely switch."
         },
         {
           "l": "Reactor construction & SMR development",
@@ -242,7 +242,7 @@
           "f": [
             "gap"
           ],
-          "d": "GE-Hitachi BWRX-300 (300 MWe; Ontario Power 4-unit order — first Western commercial SMR contract ever); X-energy (private) Xe-100 (Dow Chemical site); TerraPower Natrium; BWX Technologies (BWXT — naval reactor + SMR component manufacturer, the key enabling company for US SMR buildout)."
+          "d": "GE-Hitachi BWRX-300 (300 MWe; Ontario Power 4-unit order — first Western commercial SMR contract ever); X-energy Xe-100 (Dow Chemical site); TerraPower Natrium; BWX Technologies (BWXT — naval reactor + SMR component manufacturer, the key enabling company for US SMR buildout)."
         },
         {
           "l": "Nuclear power operations + AI PPAs",
@@ -256,7 +256,7 @@
           "l": "Waste, decommissioning & fuel recycling",
           "r": "Interim spent fuel storage; reprocessing; MOX fuel manufacture",
           "f": [],
-          "d": "Holtec (private — dry cask storage + HOLTEC SMR-300); EnergySolutions (private — Clive UT disposal); Orano (state, La Hague, France — world's leading closed fuel cycle reprocessing operation)."
+          "d": "Holtec (private — dry cask storage + HOLTEC SMR-300); EnergySolutions (private — Clive UT disposal); Orano (La Hague, France — world's leading closed fuel cycle reprocessing operation)."
         }
       ]
     },
@@ -325,7 +325,7 @@
             "cross",
             "gap"
           ],
-          "d": "Grid components: Hitachi Energy (private), ABB, ETN, GEV — all with multi-year backlogs. Grid EPC: PWR, EME. Transformer bottleneck: 2-4yr lead times. AI DCs + EVs + grid hardening simultaneously. EV: ~26kg Cu/vehicle."
+          "d": "Grid components: Hitachi Energy, ABB, ETN, GEV — all with multi-year backlogs. Grid EPC: PWR, EME. Transformer bottleneck: 2-4yr lead times. AI DCs + EVs + grid hardening simultaneously. EV: ~26kg Cu/vehicle."
         },
         {
           "l": "Recycling & secondary supply",
@@ -499,7 +499,7 @@
             "gap",
             "geo"
           ],
-          "d": "Cyclic Materials (private, Canada, private — $53M Series A; DoD engagement; mine-to-magnet recycling approach); Urban Mining Co (private, US, private); REEtec (Norway — low-acid separation process); HyProMag (UK). Pre-commercial at scale but strongly DoD + EU Critical Raw Materials Act supported."
+          "d": "Cyclic Materials (Canada, private — $53M Series A; DoD engagement; mine-to-magnet recycling approach); Urban Mining Co (US, private); REEtec (Norway — low-acid separation process); HyProMag (UK). Pre-commercial at scale but strongly DoD + EU Critical Raw Materials Act supported."
         }
       ]
     },
@@ -782,7 +782,7 @@
           "f": [
             "geo"
           ],
-          "d": "Saskatchewan potash (NTR, MOS) = largest Western allied-nation resource base. Morocco OCP Group (state) controls ~70% of global phosphate reserves — geopolitical chokepoint to monitor long-term. Russia/Belarus potash (Uralkali, Belaruskali) subject to Western sanctions but still reaches market via third-party intermediaries."
+          "d": "Saskatchewan potash (NTR, MOS) = largest Western allied-nation resource base. Morocco OCP Group (state-owned) controls ~70% of global phosphate reserves — geopolitical chokepoint to monitor long-term. Russia/Belarus potash (Uralkali, Belaruskali) subject to Western sanctions but still reaches market via third-party intermediaries."
         },
         {
           "l": "Exploration & mine development",
@@ -796,7 +796,7 @@
           "f": [
             "choke"
           ],
-          "d": "Nutrien (NTR — world's largest K producer + significant N+P; ONLY complete NPK company globally; Canpotex (state) JV with Mosaic controls all Canadian potash export logistics and pricing globally). Mosaic (MOS — Esterhazy K Saskatchewan + Florida P mining). ICL Group (Israel — Dead Sea Works K + Rotem P). OCP Morocco (state-owned — the phosphate chokepoint)."
+          "d": "Nutrien (NTR — world's largest K producer + significant N+P; ONLY complete NPK company globally; Canpotex JV with Mosaic controls all Canadian potash export logistics and pricing globally). Mosaic (MOS — Esterhazy K Saskatchewan + Florida P mining). ICL Group (Israel — Dead Sea Works K + Rotem P). OCP Morocco (state-owned — the phosphate chokepoint)."
         },
         {
           "l": "Primary processing",
@@ -808,19 +808,19 @@
           "l": "Fertilizer manufacturing & blending",
           "r": "NPK blends, urea granulation, ammonium nitrate; precision formulations",
           "f": [],
-          "d": "Nutrien (NTR — ONLY complete NPK under one roof globally; cross-sells all three nutrients through Nutrien Ag Solutions retail network — unique scale + distribution moat). Mosaic (MOS — K+P specialist). OCP Group (state, Morocco — world's largest phosphate + fertilizer exporter). Yara (N specialist + NPK blends)."
+          "d": "Nutrien (NTR — ONLY complete NPK under one roof globally; cross-sells all three nutrients through Nutrien Ag Solutions retail network — unique scale + distribution moat). Mosaic (MOS — K+P specialist). OCP Group (Morocco — world's largest phosphate + fertilizer exporter). Yara (N specialist + NPK blends)."
         },
         {
           "l": "Distribution & bulk logistics",
           "r": "Capesize/Panamax bulk vessels; rail and barge; port terminals; warehousing",
           "f": [],
-          "d": "Nutrien owns port facilities (Vancouver BC, Portland OR, New Orleans LA). Canpotex (state, NTR + MOS JV) controls Canadian potash export logistics globally. ADM, Cargill, Louis Dreyfus handle global logistics for OCP and others."
+          "d": "Nutrien owns port facilities (Vancouver BC, Portland OR, New Orleans LA). Canpotex (NTR + MOS JV) controls Canadian potash export logistics globally. ADM, Cargill, Louis Dreyfus handle global logistics for OCP and others."
         },
         {
           "l": "Trading & price discovery",
           "r": "Benchmark pricing; contract vs. spot markets; seasonal demand patterns",
           "f": [],
-          "d": "Potash historically priced via cartels: Canpotex (state, Canada) + BPC (Belarus/Russia — effectively collapsed 2022 when sanctions severed Belaruskali from Uralkali; potash pricing now more market-determined). CME Group (CME) provides listed fertilizer futures for urea, DAP, potash, and ammonia."
+          "d": "Potash historically priced via cartels: Canpotex (Canada) + BPC (Belarus/Russia — effectively collapsed 2022 when sanctions severed Belaruskali from Uralkali; potash pricing now more market-determined). CME Group (CME) provides listed fertilizer futures for urea, DAP, potash, and ammonia."
         },
         {
           "l": "Agricultural application & end-use",

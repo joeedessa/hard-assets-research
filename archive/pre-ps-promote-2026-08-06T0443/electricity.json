@@ -6,7 +6,7 @@
   },
   "bottleneck": {
     "title": "Critical bottleneck: power transformers & grid components — 2-4 year lead times",
-    "body": "Three demand drivers hit simultaneously: AI data centers (100-500MW+ per campus), EV charging infrastructure (each Level 3 station needs a substation upgrade), and grid hardening against extreme weather. Hitachi Energy (private), ABB, and Eaton have multi-year backlogs. Will persist 7-10 years regardless of new factory announcements. Quanta Services (PWR) builds the physical grid — ~40% US market share, backlog growing faster than revenue."
+    "body": "Three demand drivers hit simultaneously: AI data centers (100-500MW+ per campus), EV charging infrastructure (each Level 3 station needs a substation upgrade), and grid hardening against extreme weather. Hitachi Energy, ABB, and Eaton have multi-year backlogs. Will persist 7-10 years regardless of new factory announcements. Quanta Services (PWR) builds the physical grid — ~40% US market share, backlog growing faster than revenue."
   },
   "chain": [
     {
@@ -38,7 +38,7 @@
       "c": "#D85A30",
       "hi": true,
       "role": "High-voltage interstate lines, HVDC corridors, large power transformers, substations. THE bottleneck layer — 2-4yr transformer lead times.",
-      "tick": "Hitachi Energy (private — world's largest LPT manufacturer, unprecedented backlog); ABB (ABBN — second-largest LPT + HVDC); Siemens Energy (ENR.DE); GE Vernova (GEV — grid solutions)",
+      "tick": "Hitachi Energy (private/Hitachi — world's largest LPT manufacturer, unprecedented backlog); ABB (ABBN — second-largest LPT + HVDC); Siemens Energy (ENR.DE); GE Vernova (GEV — grid solutions)",
       "det": "Large power transformers (LPTs, >100 MVA) are the single most acute capital equipment bottleneck in the energy transition. Lead times for very large units (500MVA+) now exceed 4 years. There are fewer than 20 factories globally that manufacture the highest-specification units. US domestic manufacturing capacity is critically limited — 85%+ of US LPT procurement is imported. The bottleneck is not only manufacturing capacity but also the specialized grain-oriented electrical steel (GOES) used in transformer cores, and the skilled labor for installation."
     },
     {
@@ -102,7 +102,7 @@
       "n": "Uranium → nuclear baseload",
       "c": "#534AB7",
       "body": "Nuclear provides 24/7 carbon-free power with price certainty — the most attractive AI data center PPA structure. The full uranium supply chain (mining → enrichment → fuel fabrication → reactor) must scale to meet this demand. CEG is the most direct operator expression.",
-      "tick": "CCO (uranium) → Centrus (LEU, enrichment) → Westinghouse (private, fuel fab) → CEG (generation) → Microsoft, Amazon PPAs",
+      "tick": "CCO (uranium) → Centrus (LEU, enrichment) → Westinghouse (fuel fab) → CEG (generation) → Microsoft, Amazon PPAs",
       "demand": "CEG-Microsoft TMI at $110/MWh for 20 years is the commercial template. CEG has a pipeline of similar deals. Nuclear capacity factor 90%+ = always-on, unlike renewables."
     },
     {
@@ -148,7 +148,7 @@
     {
       "n": "Transmission: the 2-4yr transformer crisis",
       "body": "Building a new 500MW data center campus requires multiple large power transformers. Those transformers have 2-4yr lead times. The transmission line to carry power from the nearest large substation may require a year of permitting and a year of construction after that. Data center operators are now ordering transformers years before they have building permits — transformer lead time has become the critical path.",
-      "tick": "Hitachi Energy (private), ABB ABBN, Eaton (ETN), GEV — all report backlogs measured in years. Lead times for 500MVA+ units now 36-48 months in some cases."
+      "tick": "Hitachi Energy, ABB ABBN, Eaton (ETN), GEV — all report backlogs measured in years. Lead times for 500MVA+ units now 36-48 months in some cases."
     },
     {
       "n": "EPC: Quanta is the linchpin",
