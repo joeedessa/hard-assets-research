@@ -10,6 +10,7 @@ import os
 import sys
 import time
 import re
+import urllib.parse
 from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
 
@@ -568,6 +569,8 @@ SESSIONS = {
     ".HE":   ("Europe/Helsinki",  10.0, 18.5),
     ".CO":   ("Europe/Copenhagen",9.0, 17.0),
     ".T":    ("Asia/Tokyo",       9.0, 15.0),
+    ".JP":   ("Asia/Tokyo",       9.0, 15.0),
+    ".SH":   ("Asia/Shanghai",    9.5, 15.0),
     ".HK":   ("Asia/Hong_Kong",   9.5, 16.0),
     ".TW":   ("Asia/Taipei",      9.0, 13.5),
     ".TWO":  ("Asia/Taipei",      9.0, 13.5),
@@ -584,6 +587,7 @@ def _session_for(tk):
 
 
 def classify_release(tk, ets):
+    tk = yahoo_symbol(tk)   # normalise .JP -> .T etc before matching a session
     """Pre-open / after-close / mid-session, from an epoch timestamp.
 
     A release landing EXACTLY on the bell counts as pre/post, never mid-session.
@@ -691,6 +695,7 @@ def build_calendar(companies, quotes):
 
     # Drop anything well past — the agenda is forward-looking by construction
     events = [e for e in events if (date.fromisoformat(e["d"]) - today).days >= -8]
+    fetch_earnings_wire(events)
     events.sort(key=lambda e: e["d"])
     return {"_meta": {
         "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -702,6 +707,99 @@ def build_calendar(companies, quotes):
                  "date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries "
                  "are hand-dated in the research files."),
     }, "events": events}
+
+
+# ── EARNINGS WIRE ─────────────────────────────────────────────────────────────
+# Yahoo publishes reported EPS hours-to-days after a release; headlines land in
+# minutes. So a flash card leads with the wires and upgrades itself when figures
+# arrive. Accuracy is the whole problem and the RELEASE DATE is the gate: only
+# stories published ON OR AFTER it can describe this quarter.
+EARN_VOCAB = ("earnings", "results", "quarter", "q1", "q2", "q3", "q4", "half-year",
+              "interim", "profit", "revenue", "guidance", "outlook", "production report",
+              "quarterly activities", "trading update")
+
+# Language classifiers. We never scrape numbers out of prose — we label the
+# LANGUAGE and show the verbatim headline so the reader judges the number.
+WIRE_CUES = [
+    ("beat",              ["beat", "beats", "tops", "exceeds", "ahead of expectations", "better than expected"]),
+    ("miss",              ["miss", "misses", "falls short", "below expectations", "worse than expected", "disappoints"]),
+    ("guidance up",       ["raises guidance", "lifts guidance", "boosts outlook", "upgrades guidance", "raises forecast"]),
+    ("guidance cut",      ["cuts guidance", "lowers guidance", "trims outlook", "slashes forecast", "downgrades guidance"]),
+    ("guidance withdrawn",["withdraws guidance", "suspends guidance", "pulls guidance"]),
+    ("record quarter",    ["record quarter", "record revenue", "record profit", "record production", "all-time high"]),
+    ("dividend/buyback",  ["dividend", "buyback", "share repurchase", "special distribution"]),
+    # Commodity-specific — the ones that actually move a miner
+    ("production beat",   ["production beat", "output rises", "record output", "production ahead", "higher output"]),
+    ("production miss",   ["production miss", "output falls", "cuts production", "lower output", "production shortfall"]),
+    ("reserve upgrade",   ["reserve upgrade", "resource upgrade", "increases reserves", "mine life extension"]),
+    ("reserve downgrade", ["reserve downgrade", "cuts reserves", "resource downgrade", "writedown of reserves"]),
+    ("grade issues",      ["lower grade", "grade decline", "dilution", "ore grade"]),
+    ("AISC up",           ["cost inflation", "aisc up", "costs rise", "higher costs", "cost guidance raised"]),
+    ("AISC down",         ["aisc down", "costs fall", "lower costs", "cost reduction"]),
+    ("force majeure",     ["force majeure"]),
+    ("strike",            ["strike", "industrial action", "walkout", "union dispute"]),
+]
+
+
+def fetch_earnings_wire(events):
+    """Targeted per-company RSS for names reporting within [-3,+1] days.
+
+    Theme-level queries never surface smaller names, which is why they had no
+    coverage at all. These are per-ticker searches.
+    """
+    if feedparser is None or LIGHT is False and False:
+        pass
+    if feedparser is None:
+        print("earnings wire skipped — feedparser unavailable")
+        return 0
+    today = date.today()
+    hot = [e for e in events
+           if e.get("type") == "earnings" and e.get("tk")
+           and -3 <= (date.fromisoformat(e["d"]) - today).days <= 1]
+    if not hot:
+        print("earnings wire: nothing reporting in the window")
+        return 0
+    print(f"Earnings wire: {len(hot)} name(s) in the [-3,+1] window...")
+    n = 0
+    for e in hot:
+        q = urllib.parse.quote(f'"{e["name"]}" earnings OR results OR production')
+        url = f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
+        try:
+            feed = feedparser.parse(url)
+            gate = date.fromisoformat(e["d"])
+            hits = []
+            for entry in feed.entries[:14]:
+                title = (getattr(entry, "title", "") or "").strip()
+                if not title:
+                    continue
+                low = title.lower()
+                if not any(v in low for v in EARN_VOCAB):
+                    continue
+                pub = None
+                for attr in ("published_parsed", "updated_parsed"):
+                    tp = getattr(entry, attr, None)
+                    if tp:
+                        pub = date(tp.tm_year, tp.tm_mon, tp.tm_mday)
+                        break
+                # THE GATE: a story published before the release cannot describe it.
+                if pub is None or pub < gate:
+                    continue
+                cues = [name for name, kws in WIRE_CUES if any(k in low for k in kws)]
+                hits.append({"t": title[:190], "u": getattr(entry, "link", ""),
+                             "s": (getattr(entry, "source", {}) or {}).get("title", "")
+                                  if hasattr(entry, "source") else "",
+                             "d": pub.isoformat(), "cues": cues})
+                if len(hits) >= 4:
+                    break
+            if hits:
+                e["wire"] = hits
+                e["wire_gate"] = gate.isoformat()
+                n += 1
+            time.sleep(0.25)
+        except Exception:
+            pass
+    print(f"  earnings wire: {n} of {len(hot)} names have post-release coverage")
+    return n
 
 
 def compute_breaking(quotes, indices, news, companies):
