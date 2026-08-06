@@ -176,6 +176,19 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .act-route-t{font-size:12.5px;font-weight:600;color:var(--color-text-primary);margin-bottom:2px}
 .act-route-d{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
 .act-route-go{margin-left:auto;font-size:18px;color:var(--accent);flex-shrink:0}
+.cm-byp{font-size:10.5px;color:var(--color-text-secondary);line-height:1.55;margin-top:6px;
+  padding:5px 8px;border-radius:4px;background:var(--color-background-secondary);
+  border-left:2px solid var(--warn)}
+.cm-ctrl{margin-top:6px}
+.cm-ctrl-h{display:block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--color-text-tertiary);margin-bottom:3px}
+.cm-ctrl-i{display:inline-block;font-size:10px;padding:2px 7px;border-radius:3px;margin:2px 3px 0 0;
+  border:.5px solid var(--color-border-tertiary);background:var(--color-background-primary);cursor:help}
+.cm-ctrl-i b{font-family:var(--font-mono);font-size:9.5px;font-weight:700}
+.cm-ctrl-i i{font-style:normal;font-size:9px;opacity:.7}
+.cm-ctrl-i.cn{border-color:color-mix(in srgb,var(--bad) 40%,transparent)}
+.cm-ctrl-i.st{opacity:.65}
+.cm-ctrl-i.w{border-color:color-mix(in srgb,var(--good) 40%,transparent)}
 .cm-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:10px}
 .cm-stat{border:.5px solid var(--color-border-tertiary);border-radius:6px;padding:9px 12px;background:var(--color-background-primary)}
 .cm-stat-v{font-family:var(--font-mono);font-size:20px;font-weight:700;line-height:1.1}
@@ -2201,6 +2214,11 @@ function buildMinerals(force){
         <div class="cm-why">${esc(m.why)}</div>
         ${m.china?`<div class="cm-cn">China: ${esc(m.china)}</div>`:''}
         <div class="cm-exp">${exp}</div>
+        ${m.byproduct_of?`<div class="cm-byp"><b>Byproduct of ${esc(m.byproduct_of.host)}.</b> ${linkifyTickers(esc(m.byproduct_of.note))}</div>`:''}
+        ${(m.controllers||[]).length?`<div class="cm-ctrl"><span class="cm-ctrl-h">Who actually controls supply</span>${m.controllers.map(c=>{
+          const acc=c.access==='cn'?'listed in China':c.access==='state'?'state — not investable':c.access==='western'?'Western listed':'not listed';
+          const cls=c.access==='cn'?'cn':c.access==='state'?'st':'w';
+          return `<span class="cm-ctrl-i ${cls}" title="${esc(c.note)}">${esc(c.name)}${c.tk?` <b>${esc(c.tk)}</b>`:''} <i>${acc}</i></span>`;}).join('')}</div>`:''}
       </div>
       <div class="cm-r"><span class="cm-state" style="color:${g.c};border-color:${g.c}55;background:color-mix(in srgb,${g.c} 12%,transparent)">${g.l}</span></div>
     </div>`;

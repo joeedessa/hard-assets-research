@@ -26,7 +26,9 @@
       "byproduct": "Exposure only as a secondary output — supply cannot respond to this mineral's price alone.",
       "enduse": "A holding that consumes it. Not supply exposure.",
       "none": "No holding gives exposure."
-    }
+    },
+    "controllers_note": "Who actually controls supply, separately from what we own. A listed Chinese producer is investable via Stock Connect and is marked 'listed in China'; a state entity is marked as not investable. Conflating the two understates how much of the chokepoint is actually purchasable.",
+    "byproduct_note": "Where a mineral is a byproduct, the main suppliers are named together with what actually pays their bills. This is the mechanism behind the chokepoint: a producer whose revenue is 99% aluminium will not expand output because gallium tripled."
   },
   "minerals": [
     {
@@ -54,7 +56,11 @@
         }
       ],
       "gap": "partial",
-      "priority": 14
+      "priority": 14,
+      "byproduct_of": {
+        "host": "lead and copper refining",
+        "note": "Bismuth is a lead/copper smelting byproduct. 5N Plus (VNP.TO) and AMG (AMG.AS) process it; the upstream is Chinese lead smelters whose PRIMARY REVENUE IS LEAD AND ZINC."
+      }
     },
     {
       "sym": "C",
@@ -75,7 +81,21 @@
         }
       ],
       "gap": "partial",
-      "priority": 14
+      "priority": 14,
+      "controllers": [
+        {
+          "name": "BTR New Material",
+          "tk": "835185.BJ",
+          "access": "cn-unlisted-here",
+          "note": "Largest anode-material maker globally; not resolving on Yahoo."
+        },
+        {
+          "name": "Shanshan / Putailai",
+          "tk": null,
+          "access": "cn",
+          "note": "Chinese anode majors control the overwhelming majority of spherical and synthetic graphite."
+        }
+      ]
     },
     {
       "sym": "Ga",
@@ -102,7 +122,11 @@
         }
       ],
       "gap": "partial",
-      "priority": 14
+      "priority": 14,
+      "byproduct_of": {
+        "host": "alumina refining",
+        "note": "Gallium is extracted from the Bayer-process liquor at alumina refineries. Chalco (2600.HK) is the practical global source and Alcoa (AA) the Western one — but for both, PRIMARY REVENUE IS ALUMINIUM. Gallium is a trace stream worth a rounding error to them, so a higher gallium price does not make them produce more aluminium."
+      }
     },
     {
       "sym": "Ge",
@@ -141,7 +165,11 @@
         }
       ],
       "gap": "partial",
-      "priority": 14
+      "priority": 14,
+      "byproduct_of": {
+        "host": "zinc refining",
+        "note": "Germanium is recovered from zinc concentrate residues. Nexa (NEXA) and Korea Zinc are real sources, and 5N Plus (VNP.TO) purifies it — but PRIMARY REVENUE IS ZINC for the miners and a broad specialty-materials mix for 5N Plus. Germanium supply therefore tracks the zinc cycle, not germanium demand."
+      }
     },
     {
       "sym": "W",
@@ -162,7 +190,15 @@
         }
       ],
       "gap": "covered",
-      "priority": 12
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Xiamen Tungsten",
+          "tk": "600549.SS",
+          "access": "cn",
+          "note": "China's largest tungsten producer; China holds the overwhelming majority of supply and put it under export control in Feb 2025."
+        }
+      ]
     },
     {
       "sym": "Sc",
@@ -183,7 +219,11 @@
         }
       ],
       "gap": "covered",
-      "priority": 12
+      "priority": 12,
+      "byproduct_of": {
+        "host": "titanium, uranium and REE tailings",
+        "note": "Scandium is recovered from other operations' waste streams. NioCorp (NB) would produce it at Elk Creek alongside niobium, but PRIMARY REVENUE THERE IS NIOBIUM. No scandium-primary mine operates anywhere."
+      }
     },
     {
       "sym": "Sb",
@@ -210,7 +250,15 @@
         }
       ],
       "gap": "covered",
-      "priority": 12
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Hunan Gold / Chinese producers",
+          "tk": null,
+          "access": "cn",
+          "note": "China holds roughly half of global antimony supply and banned exports in Sep 2024."
+        }
+      ]
     },
     {
       "sym": "Hf",
@@ -224,7 +272,11 @@
       "china": null,
       "exposure": [],
       "gap": "none",
-      "priority": 12
+      "priority": 12,
+      "byproduct_of": {
+        "host": "zirconium separation",
+        "note": "Hafnium is separated from zirconium during nuclear-grade Zr production. The suppliers are Framatome, Westinghouse and ATI (ATI) — PRIMARY REVENUE IS ZIRCONIUM CLADDING AND SPECIALTY ALLOYS. Hafnium volume is a few hundred tonnes a year globally."
+      }
     },
     {
       "sym": "Mg",
@@ -238,7 +290,15 @@
       "china": null,
       "exposure": [],
       "gap": "none",
-      "priority": 12
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Chinese primary producers",
+          "tk": null,
+          "access": "cn",
+          "note": "China produces the overwhelming majority of primary magnesium; no listed Western vehicle of scale exists."
+        }
+      ]
     },
     {
       "sym": "Ba",
@@ -252,7 +312,15 @@
       "china": null,
       "exposure": [],
       "gap": "none",
-      "priority": 12
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Chinese and Indian producers",
+          "tk": null,
+          "access": "cn",
+          "note": "Barite supply is concentrated in China, India and Morocco."
+        }
+      ]
     },
     {
       "sym": "Te",
@@ -269,10 +337,20 @@
           "kind": "processing",
           "name": "5N Plus",
           "conviction": 2
+        },
+        {
+          "tk": "RIO",
+          "kind": "byproduct",
+          "name": "Rio Tinto",
+          "conviction": 1
         }
       ],
       "gap": "partial",
-      "priority": 11
+      "priority": 11,
+      "byproduct_of": {
+        "host": "copper refining",
+        "note": "Tellurium comes from copper anode slimes. Freeport (FCX) and Rio Tinto's Kennecott are genuine sources with PRIMARY REVENUE FROM COPPER; 5N Plus (VNP.TO) refines it to solar grade. No producer would expand copper output for tellurium."
+      }
     },
     {
       "sym": "In",
@@ -316,20 +394,11 @@
         }
       ],
       "gap": "partial",
-      "priority": 11
-    },
-    {
-      "sym": "B",
-      "name": "Boron",
-      "group": "industrial",
-      "why": "Borates for glass, agriculture and permanent-magnet grain refining; near-duopoly supply.",
-      "lists": [
-        "eu-strategic"
-      ],
-      "china": null,
-      "exposure": [],
-      "gap": "none",
-      "priority": 9
+      "priority": 11,
+      "byproduct_of": {
+        "host": "zinc refining",
+        "note": "Same host ore as germanium. Nexa (NEXA) and Korea Zinc again, with PRIMARY REVENUE FROM ZINC. Indium is a residue stream."
+      }
     },
     {
       "sym": "Ta",
@@ -392,7 +461,15 @@
         }
       ],
       "gap": "covered",
-      "priority": 6
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "Chinese producers",
+          "tk": null,
+          "access": "cn",
+          "note": "China is the largest fluorspar producer; Orbia's Mexican mine is the main non-Chinese alternative."
+        }
+      ]
     },
     {
       "sym": "Co",
@@ -413,7 +490,21 @@
         }
       ],
       "gap": "covered",
-      "priority": 6
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "CMOC Group",
+          "tk": "603993.SS",
+          "access": "cn",
+          "note": "Now the world's largest cobalt producer via TFM and KFM in the DRC — it overtook Glencore."
+        },
+        {
+          "name": "Huayou Cobalt",
+          "tk": "603799.SS",
+          "access": "cn",
+          "note": "Dominant cobalt refiner; the refining step is more concentrated than the mining."
+        }
+      ]
     },
     {
       "sym": "Ni",
@@ -530,7 +621,27 @@
         }
       ],
       "gap": "covered",
-      "priority": 6
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "China Northern Rare Earth",
+          "tk": "600111.SS",
+          "access": "cn",
+          "note": "Roughly half of Chinese light-REE quota; the single largest producer on earth."
+        },
+        {
+          "name": "Shenghe Resources",
+          "tk": "600392.SS",
+          "access": "cn",
+          "note": "REE trading and processing; historically an MP Materials offtake partner."
+        },
+        {
+          "name": "China Rare Earth Resources",
+          "tk": "000831.SZ",
+          "access": "cn",
+          "note": "State-consolidated southern heavy-REE producer."
+        }
+      ]
     },
     {
       "sym": "Li",
@@ -568,6 +679,12 @@
           "conviction": 1
         },
         {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
+          "conviction": 1
+        },
+        {
           "tk": "AMG.AS",
           "kind": "processing",
           "name": "AMG Critical Materials",
@@ -581,7 +698,21 @@
         }
       ],
       "gap": "covered",
-      "priority": 6
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "Ganfeng Lithium",
+          "tk": "1772.HK",
+          "access": "cn",
+          "note": "Largest lithium chemical converter; conversion is far more concentrated than mining."
+        },
+        {
+          "name": "Zijin Mining",
+          "tk": "2899.HK",
+          "access": "cn",
+          "note": "Copper, gold and increasingly lithium."
+        }
+      ]
     },
     {
       "sym": "Ti",
@@ -604,6 +735,12 @@
           "tk": "TROX",
           "kind": "primary",
           "name": "Tronox Holdings",
+          "conviction": 1
+        },
+        {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
           "conviction": 1
         },
         {
@@ -709,6 +846,40 @@
       "priority": 5
     },
     {
+      "sym": "B",
+      "name": "Boron",
+      "group": "industrial",
+      "why": "Borates for glass, agriculture and permanent-magnet grain refining; near-duopoly supply.",
+      "lists": [
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Eti Maden",
+          "tk": null,
+          "access": "state",
+          "note": "Turkish state monopoly holding the majority of world borate reserves — not investable."
+        },
+        {
+          "name": "Rio Tinto",
+          "tk": "RIO",
+          "access": "western",
+          "note": "US Borax at Boron, California — the main non-Turkish source."
+        }
+      ]
+    },
+    {
       "sym": "Cr",
       "name": "Chromium",
       "group": "industrial",
@@ -784,7 +955,15 @@
         }
       ],
       "gap": "covered",
-      "priority": 3
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Chalco / Aluminum Corp of China",
+          "tk": "2600.HK",
+          "access": "cn",
+          "note": "Bauxite through aluminium; also the practical source of gallium."
+        }
+      ]
     },
     {
       "sym": "Zr",
@@ -842,7 +1021,11 @@
         }
       ],
       "gap": "covered",
-      "priority": 3
+      "priority": 3,
+      "byproduct_of": {
+        "host": "primary, but gates two byproducts",
+        "note": "Zinc is mined for itself, but it is the host for germanium and indium — so zinc economics gate two semiconductor materials."
+      }
     },
     {
       "sym": "Cu",
@@ -891,6 +1074,12 @@
           "conviction": 2
         },
         {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
+          "conviction": 1
+        },
+        {
           "tk": "5706.JP",
           "kind": "processing",
           "name": "Mitsui Kinzoku",
@@ -916,7 +1105,15 @@
         }
       ],
       "gap": "covered",
-      "priority": 3
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Zijin Mining",
+          "tk": "2899.HK",
+          "access": "cn",
+          "note": "One of the fastest-growing copper producers globally."
+        }
+      ]
     },
     {
       "sym": "Sn",
@@ -936,7 +1133,15 @@
         }
       ],
       "gap": "covered",
-      "priority": 3
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Yunnan Tin",
+          "tk": "000960.SZ",
+          "access": "cn",
+          "note": "World's largest tin producer."
+        }
+      ]
     },
     {
       "sym": "P",
