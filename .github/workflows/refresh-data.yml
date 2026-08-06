@@ -69,6 +69,12 @@ jobs:
           else
             # Commit BEFORE pulling: git pull --rebase refuses to run on a dirty index.
             git commit -m "chore: market data refresh (${FETCH_MODE}) $(date -u +%Y-%m-%dT%H:%MZ)"
+            # ...and refuses again on unstaged changes. The pipeline may touch a
+            # file that is not in the add list above (calendar.json did exactly
+            # this and broke the 2026-08-05 run). Everything here is regenerated
+            # output, so discarding the remainder is safe and keeps the rebase clean.
+            git checkout -- . || true
+            git clean -fd data/ || true
             git pull --rebase origin main
             git push
           fi
