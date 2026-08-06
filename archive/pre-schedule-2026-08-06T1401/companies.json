@@ -1,0 +1,2971 @@
+{
+  "_meta": {
+    "description": "Company universe — one record per investable name across all verticals. Fields: ticker, name, vertical_id, chain_layer, geo, structure, thesis_note, conviction, froth, froth_note, themes[], sources[], last_touched.",
+    "conviction_scale": "1=monitor, 2=interested, 3=high conviction",
+    "froth_scale": "1=insulated (low froth), 2=exposed (moderate), 3=high froth (equity ahead of fundamentals)",
+    "structure_types": [
+      "equity",
+      "streaming",
+      "royalty",
+      "physical_trust",
+      "midstream",
+      "utility",
+      "epc"
+    ],
+    "froth_signals_ha": [
+      "spot/equity divergence",
+      "incentive price vs spot",
+      "cost curve position",
+      "inventory levels",
+      "contango vs backwardation",
+      "term structure (uranium)"
+    ],
+    "universe_note": "Names added 2026-08-05 carry provisional conviction (1-2) pending review; froth reflects current market posture. Conviction is an owner judgment and has not been assigned above 2 automatically.",
+    "as_of": "2026-08-05",
+    "review_fields": "last_touched = any edit to the record. last_reviewed = the thesis was genuinely re-read and re-argued on that date; null means it has not been, regardless of last_touched.",
+    "etf_screen_note": "GRID and PAVE holdings were screened on 2026-08-06 via yfinance, which exposes only the TOP TEN holdings per fund. The full constituent lists were not retrieved, so this is a partial screen and further constituents may still be uncovered."
+  },
+  "companies": [
+    {
+      "ticker": "MP",
+      "name": "MP Materials",
+      "vertical": "re",
+      "chain_layer": "Mining + Magnets",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns the only integrated US rare-earth asset — Mountain Pass mining plus the Fort Worth magnet plant. Hard to replace because separation and magnet-making are two distinct capabilities and almost nobody outside China has both; a competitor would need a decade and a permitted orebody. Today: DoD price floor at $110/kg NdPr removes the downside China used to inflict, the GM offtake is live, and China sales have ended. What would break it: the magnet ramp slipping again, NdPr staying near the floor so the floor becomes the ceiling, or Washington deciding a price floor for one company is untenable. Uncomfortably, much of the equity is a bet on continued political sponsorship rather than on the orebody.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Equity ran hard on export control news; thesis intact but pricing in the headline risk. Incentive price tailwind real but spot NdPr still volatile. Watch magnet plant revenue ramp as confirmation.",
+      "themes": [
+        "china-export-controls",
+        "robotics-magnets",
+        "reshoring",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "LYC.AX",
+      "name": "Lynas Rare Earths",
+      "vertical": "re",
+      "chain_layer": "Mining + Separation",
+      "geo": "AU/MY/US",
+      "structure": "equity",
+      "thesis_note": "Owns the only scaled rare-earth separation outside China, now with heavy-REE capability at Kalgoorlie and the DoD-funded Seadrift plant in Texas. Hard to replace because heavy separation is a chemistry and permitting problem more than a capital one — Western attempts have taken 10+ years. Today: H1 2026 net income A$80.2M, first commercial Dy/Tb sales, A$1.1B revenue target. What would break it: China releasing HREE supply to crush the price before Seadrift reaches scale — it has done exactly this before and can afford to do it again. Malaysian licence politics remain a recurring tail risk.",
+      "conviction": 3,
+      "froth": 1,
+      "froth_note": "HREE separation optionality largely unpriced — most Western investors still underestimate Seadrift's strategic significance. Early innings: cost curve advantage + monopoly position + government backing = insulated.",
+      "themes": [
+        "china-export-controls",
+        "reshoring",
+        "hree-separation",
+        "robotics-magnets"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "UUUU",
+      "name": "Energy Fuels",
+      "vertical": "re",
+      "chain_layer": "REE + U mining",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Dual REE + uranium exposure. White Mesa Mill processing monazite for REE separation. Small cap; thesis not widely followed. Unique optionality: only US facility processing both REE and uranium.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Small cap, niche thesis, limited institutional following. REE processing at White Mesa not yet in sell-side models. Spot leverage not captured by equity at current levels.",
+      "themes": [
+        "china-export-controls",
+        "reshoring",
+        "uranium-rebuild"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "6880.HK",
+      "name": "JL Mag Rare-Earth",
+      "vertical": "re",
+      "chain_layer": "NdFeB magnet mfg",
+      "geo": "CN",
+      "structure": "equity",
+      "thesis_note": "China's dominant sintered NdFeB magnet maker. ~28 REE magnet assemblies per humanoid robot (Optimus BOM teardown) — robotics scaling = compounding demand atop EVs. Pure-play on the magnet bottleneck China controls.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Chinese market; hard to assess froth directly. Robotics demand wave not yet in consensus models, but EV demand somewhat in price. Export control regime means margins may expand if China restricts supply.",
+      "themes": [
+        "robotics-magnets",
+        "ev-demand",
+        "china-export-controls"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "LEU",
+      "name": "Centrus Energy",
+      "vertical": "nu",
+      "chain_layer": "Enrichment",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns the only active US uranium enrichment and the only Western HALEU line. Hard to replace because enrichment is proliferation-controlled technology — capital alone cannot buy it, and the alternative suppliers are Russian or a European consortium. Today: DOE exercised the Phase III option with 8-year extensions, and there is a $2.3B contingent backlog. What would break it: Congress granting Russian import waivers, or advanced reactors arriving so late that HALEU demand never materialises. The uncomfortable part is that capacity is tiny — around 12 tonnes/year after 2030 — against demand that assumes a reactor fleet nobody has yet built.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "HALEU thesis well-understood by specialists; general market still underestimates the 8-year extension option value. $2.3B contingent backlog not captured in current valuation. Some premium for strategic monopoly already in price.",
+      "themes": [
+        "uranium-rebuild",
+        "haleu",
+        "nuclear-ai-ppa",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "CCO",
+      "name": "Cameco",
+      "vertical": "nu",
+      "chain_layer": "Mining + Milling",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Owns tier-1 Athabasca ore at McArthur River and Cigar Lake plus a 49% Westinghouse stake, so it spans fuel and reactor services. Hard to replace because grade is geology — Athabasca ore runs orders of magnitude above the global average and cannot be permitted into existence elsewhere. Today: 2026 guidance held at 19.5-21.5M lbs through the May flooding, resolved in 17 days. What would break it: a reactor incident anywhere resetting sentiment, Kazatomprom flooding the market, or utilities deferring contracting. Uncomfortably, this is the consensus uranium vehicle and the multiple already reflects that.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Uranium supercycle thesis well-covered; CCO is the large-cap vehicle. Multiple has expanded. Still structurally sound but not a hidden gem — institutional ownership is high. Some premium for the Westinghouse stake.",
+      "themes": [
+        "uranium-rebuild",
+        "nuclear-ai-ppa",
+        "tier1-assets"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "SPUT",
+      "name": "Sprott Physical Uranium Trust",
+      "vertical": "nu",
+      "chain_layer": "Physical uranium",
+      "geo": "CA",
+      "structure": "physical_trust",
+      "thesis_note": "Owns physical U3O8 and nothing else — no mine, no management, no dilution risk. Hard to replace as an instrument: it is the only vehicle giving clean spot exposure without operational risk, and its at-the-market mechanism means buying pressure removes physical from the market. Today: structurally accumulating inventory. What would break it: a persistent discount to NAV shutting off the ATM and turning it into a closed-end fund, or a utility contracting cycle that bypasses spot entirely. It also earns nothing while it waits — the carry is negative and the thesis is purely price.",
+      "conviction": 3,
+      "froth": 1,
+      "froth_note": "Physical trust: price is spot U3O8. Can't really have 'froth' in the equity sense — it tracks the commodity. Discount to NAV occasionally widens (entry opportunity). Cleanest insulated structure in uranium.",
+      "themes": [
+        "uranium-rebuild",
+        "physical-commodity"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "vertical": "nu",
+      "chain_layer": "Nuclear operations",
+      "geo": "US",
+      "structure": "utility",
+      "thesis_note": "Owns the largest US nuclear fleet and wrote the template for hyperscaler PPAs with the Three Mile Island restart. Hard to replace because you cannot build a merchant nuclear fleet — the assets are existing, licensed and irreplaceable at any price. Today: fleet-wide PPA pipeline expanding beyond the Microsoft deal. What would break it: any PPA disappointment, since the multiple now embeds a pipeline rather than a fleet. Uncomfortably this is the most crowded position in the universe, it is froth-3 for that reason, and it also sits in the AI Hardware map — this is reference exposure, not incremental.",
+      "conviction": 3,
+      "froth": 3,
+      "froth_note": "AI PPA premium is fully priced; multiple has expanded far beyond utility peers. Excellent business but high froth: consensus owns it, it's had a massive run, and any PPA disappointment is a correction risk. Equity is well ahead of the underlying fleet value.",
+      "themes": [
+        "nuclear-ai-ppa",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "NXE",
+      "name": "NexGen Energy",
+      "vertical": "nu",
+      "chain_layer": "Mining",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Arrow deposit — largest undeveloped high-grade uranium deposit in Athabasca Basin. Long development timeline but asset quality is exceptional. Production 2030+ if permitted on schedule.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Pre-production. Arrow asset quality is known but market discounts the long permitting/development timeline. Spot uranium going higher would close the valuation gap. Insulated from short-term froth cycles.",
+      "themes": [
+        "uranium-rebuild",
+        "tier1-assets"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "vertical": "elec",
+      "chain_layer": "Grid EPC",
+      "geo": "US",
+      "structure": "epc",
+      "thesis_note": "Owns roughly 40% of US transmission and distribution EPC — skilled linemen and long-standing utility relationships rather than assets. Hard to replace because the constraint is trained crews, and headcount takes years to build regardless of demand. Today: Q1 2026 backlog at a record $48.5B, up from about $28B two years ago, with backlog growing faster than revenue so duration is lengthening. What would break it: utility capex deferrals, or wage inflation outrunning fixed-price contracts. The backlog is visible to everyone, so the information edge is small — the case is durability, not surprise.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Record backlog visible and in the model; multiple expanded but backlog duration gives earnings visibility. Not expensive relative to growth — but not cheap. Some energy/infrastructure premium already in price.",
+      "themes": [
+        "grid-buildout",
+        "ai-demand-pull",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation",
+      "vertical": "elec",
+      "chain_layer": "Grid components",
+      "geo": "US/IE",
+      "structure": "equity",
+      "thesis_note": "Owns transformer, switchgear and data-centre power capacity at a moment when transformer lead times are 2-4 years. Hard to replace because the bottleneck is grain-oriented electrical steel and winding capacity, both of which take years to add. Today: 228 GW of data-centre backlog, roughly 12 years of orders at current build rates; Electrical Americas orders +42% and DC orders +240%. What would break it: hyperscaler capex plateauing, or transformer capacity finally arriving in 2027-28 and turning scarcity rent into ordinary margin. Froth-3 — an excellent business at a price that already assumes the scarcity persists.",
+      "conviction": 3,
+      "froth": 3,
+      "froth_note": "High froth: data center theme is fully priced, the stock is widely owned by growth and infrastructure funds, and the multiple is stretched vs. historical. Excellent business — but entry timing matters. A cooling in DC orders (even noise) is a correction risk.",
+      "themes": [
+        "grid-buildout",
+        "ai-demand-pull",
+        "datacenter-power",
+        "transformer-bottleneck"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "vertical": "elec",
+      "chain_layer": "Generation + Grid",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns gas turbines, grid equipment and wind in one company — the only listed name spanning all three sides of the electricity build. Hard to replace because heavy gas turbine manufacturing is a three-firm global oligopoly with slot reservations booked years out. Today: Q1 2026 orders +71% organically, 21 GW of gas equipment contracted in the quarter, backlog target pulled forward to 2027. What would break it: the wind segment continuing to lose money, or gas slot reservations converting to orders more slowly than assumed. Froth-3, and the market is paying for the gas franchise while getting wind as a liability.",
+      "conviction": 3,
+      "froth": 3,
+      "froth_note": "IPO momentum + backlog narrative = high investor attention. Already well-covered. Excellent underlying backlog but equity has priced in years of growth. Risk: execution risk on a massive backlog, wind margin recovery slower than expected.",
+      "themes": [
+        "grid-buildout",
+        "ai-demand-pull",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "EME",
+      "name": "EMCOR Group",
+      "vertical": "elec",
+      "chain_layer": "Grid EPC",
+      "geo": "US",
+      "structure": "epc",
+      "thesis_note": "Electrical/mechanical contractor. Data center + grid + industrial buildout leverage. Less covered than PWR, similar backlog dynamics with broader customer mix.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Less institutionally owned than PWR. EPC contractor with broader exposure — not a pure-play but benefits from grid buildout with less valuation premium. Under-followed relative to the opportunity.",
+      "themes": [
+        "grid-buildout",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "MYRG",
+      "name": "MYR Group",
+      "vertical": "elec",
+      "chain_layer": "Grid EPC",
+      "geo": "US",
+      "structure": "epc",
+      "thesis_note": "Pure-play T&D contractor. Smaller than PWR, higher torque to grid spending. Higher operating leverage — small cap, pure T&D, not diversified like EME.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Small cap pure-play; less covered than PWR/EME. Higher beta to grid spend. Insulated in froth terms: not a momentum name, not widely owned, undiscovered by most thematic allocators.",
+      "themes": [
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "SCCO",
+      "name": "Southern Copper",
+      "vertical": "cu",
+      "chain_layer": "Mining",
+      "geo": "MX/PE",
+      "structure": "equity",
+      "thesis_note": "Owns the lowest-cost copper production globally with 40+ year reserve life in Peru and Mexico. Hard to replace because cost position is geology and scale — a new mine at this cost does not exist to be built. Today: producing through the copper deficit with the best margins in the industry. What would break it: Peruvian or Mexican resource nationalism, which is not hypothetical in either jurisdiction, or a Chinese construction slowdown taking copper demand with it. The uncomfortable part is Grupo Mexico control — minority holders have limited say and the free float is thin.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Copper supercycle thesis is consensus-owned; SCCO is the quality vehicle. Multiple is fair but not cheap. Lowest-cost position provides margin buffer. At current copper prices, FCF generation is exceptional — but the story is out.",
+      "themes": [
+        "copper-supercycle",
+        "ai-demand-pull",
+        "grid-buildout",
+        "ev-demand"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "vertical": "cu",
+      "chain_layer": "Mining + Smelting",
+      "geo": "US/PH/ID",
+      "structure": "equity",
+      "thesis_note": "Largest US copper producer. Grasberg (Indonesia) world-class deposit. High capex leverage to copper price. Indonesia concentration risk. Cathode leaching volumes ramping.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "High-beta copper play; well-covered. Copper price leverage is real but so is Grasberg's operational complexity. Some premium in price for the scale/resource quality. Not high froth — just fairly priced for a cyclical mining company.",
+      "themes": [
+        "copper-supercycle",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "FNV",
+      "name": "Franco-Nevada",
+      "vertical": "pg",
+      "chain_layer": "Streaming/Royalty",
+      "geo": "CA",
+      "structure": "streaming",
+      "thesis_note": "Owns royalty and streaming interests over other people's mines — mostly gold and silver, structurally positioned above the smelter so cost inflation lands on the operator. Hard to replace because the portfolio was assembled over decades at prices that no longer exist. Today: 2025 revenue $1,822.8M and net income $1.11B, built entirely WITHOUT Cobre Panama, so any restart is free optionality. What would break it: gold correcting hard, or the streaming model being competed away as miners find cheaper capital. At a premium multiple it is priced as the quality name it is.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Gold ATH has helped FNV significantly. Premium streaming multiple is structurally justified — zero capex, full upside. Cobre Panama restart optionality is genuinely not in price. Exposed to gold price correction.",
+      "themes": [
+        "streaming-structure",
+        "precious-metals",
+        "copper-supercycle"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "WPM",
+      "name": "Wheaton Precious Metals",
+      "vertical": "pg",
+      "chain_layer": "Streaming",
+      "geo": "CA",
+      "structure": "streaming",
+      "thesis_note": "Owns silver and gold streams attached to copper and base-metal mines, so it gets precious-metal exposure paid for by someone else's copper economics. Hard to replace for the same reason as FNV — the contracts were signed at historic prices. Today: record 2026 GEO guidance of 860-940K, with the expanded Antamina silver stream adding directly. What would break it: operator production shortfalls at mines it does not control, which is the hidden risk in every stream. It has overtaken FNV on market cap, so the size discount that once justified owning both has gone.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Premium streaming valuation; gold/silver prices are at ATH territory. Best risk-adjusted structure in the space but price reflects it. Silver exposure at current levels is a risk if industrial demand cools.",
+      "themes": [
+        "streaming-structure",
+        "precious-metals"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "LNG",
+      "name": "Cheniere Energy (LNG)",
+      "vertical": "ng",
+      "chain_layer": "LNG Liquefaction",
+      "geo": "US",
+      "structure": "midstream",
+      "thesis_note": "Owns Sabine Pass and Corpus Christi and earns a tolling fee of roughly $2.50-3.50/MMBtu regardless of the gas price — an infrastructure toll, not a commodity bet. Hard to replace because a new US LNG terminal takes 5-7 years and FERC approval that is no longer freely granted. Today: 2025 revenue $19.976B, over 95% of capacity contracted through 2030, Corpus Christi Stage 3 Train 5 producing, and the Qatar Ras Laffan damage has made US supply structurally more necessary to Europe. What would break it: counterparty credit on 20-year SPAs in a downturn, or European demand destruction from sustained high prices.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Tolling structure insulates from gas price volatility — income is largely fee-based. Thesis well-understood. Not high froth; tolling fee certainty anchors valuation. Some premium for the geopolitical tailwind.",
+      "themes": [
+        "lng-supercycle",
+        "european-energy-security",
+        "nato-instrument"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "VGAS",
+      "name": "Venture Global",
+      "vertical": "ng",
+      "chain_layer": "LNG Liquefaction",
+      "geo": "US",
+      "structure": "midstream",
+      "thesis_note": "CP2 FID pending. Next large-scale US LNG capacity tranche. European SPA-backed. Recent IPO; legal disputes with customers over initial contracts cloud near-term sentiment.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Contract dispute overhang creates sentiment risk. CP2 FID timing is the catalyst. Recent IPO with some sell-side initiation. Not high froth given the legal noise — fairly priced for the uncertainty.",
+      "themes": [
+        "lng-supercycle",
+        "european-energy-security"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "KMI",
+      "name": "Kinder Morgan",
+      "vertical": "ng",
+      "chain_layer": "Pipeline Transmission",
+      "geo": "US",
+      "structure": "midstream",
+      "thesis_note": "Largest natural gas pipeline network in US. Fee-based, regulated cash flows. Undervalued relative to infrastructure replacement cost. AI data center demand adds incremental volumes.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Often overlooked in gas infrastructure — less exciting than LNG but regulated fee-based revenues are low risk. Insulated from commodity price swings. Not a momentum name; yield-oriented investors dominate the register.",
+      "themes": [
+        "gas-infrastructure",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "ET",
+      "name": "Energy Transfer",
+      "vertical": "ng",
+      "chain_layer": "Pipeline Transmission",
+      "geo": "US",
+      "structure": "midstream",
+      "thesis_note": "Extensive pipeline + NGL network. Higher yield, more commodity exposure than KMI. More complex corporate structure (LP) trades at persistent discount.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Structural discount for LP complexity is persistent — value trap or mispricing? Higher yield compensates. More commodity-exposed than KMI. Not high froth; multiple has been range-bound for years.",
+      "themes": [
+        "gas-infrastructure"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "vertical": "li",
+      "chain_layer": "Mining + Conversion",
+      "geo": "US/CL/AU",
+      "structure": "equity",
+      "thesis_note": "Largest US lithium company. Kings Mountain conversion facility. Reshoring IRA play. Currently at cyclical trough — lithium price collapsed from 2022 ATH. Demand wave 2026-2030 is structural.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Deep into cyclical trough — lithium carbonate prices well below incentive (~$10K/t vs $15-20K/t incentive for new hard rock mines). Equity is pricing in extended downside. The froth is negative — the thesis is early-cycle entry, not momentum. Maximum insulation from 'hot money'.",
+      "themes": [
+        "lithium-cycle-turn",
+        "ev-demand",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "SQM",
+      "name": "SQM",
+      "vertical": "li",
+      "chain_layer": "Brine Mining",
+      "geo": "CL",
+      "structure": "equity",
+      "thesis_note": "Atacama lowest-cost Li brine. Post-correction entry. Chile policy risk monitoring — government renegotiated concession through 2060. Lowest-cost lithium producer globally.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Similar to ALB: trough pricing, Chile overhang (resolved 2023 concession renewal), and the consensus bearish on lithium. The structural demand case is intact; current prices are below almost every cost curve model for new supply.",
+      "themes": [
+        "lithium-cycle-turn",
+        "ev-demand"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "FLNC",
+      "name": "Fluence Energy",
+      "vertical": "li",
+      "chain_layer": "Grid BESS",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Grid-scale battery storage. Independent demand driver from EV cycle. AI-era grid BESS — data center backup + renewable integration. Recurring services revenue growing.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "BESS demand is real and growing independently of EV lithium sentiment. Some premium for the AI/grid angle. Not high froth but also not cheap — execution risk on a high-growth, lower-margin business.",
+      "themes": [
+        "grid-buildout",
+        "ai-demand-pull",
+        "ev-demand"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "PPTA",
+      "name": "Perpetua Resources",
+      "vertical": "tm",
+      "chain_layer": "Mining (Sb+Au)",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns Stibnite — the only significant Western antimony source, alongside gold. Hard to replace because antimony has no substitute in ammunition primers or PV glass clarification and China banned exports in September 2024. Today: construction commenced October 2025, a $2.7B EXIM loan approved, over $80M of DoD awards, and NPV of about $6.1B at $4,500/oz gold. What would break it: construction cost overruns against a $2.576B capex estimate, permitting litigation reopening, or China lifting the export ban and collapsing a price that has already risen roughly fourfold. This is now an execution story rather than a permitting one.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Export control catalyst is real and the DoD attention is genuine. Market is pricing some of this in — not fully, but not blind to it either. Permitting timeline is the uncertainty that keeps froth moderate. Pre-production.",
+      "themes": [
+        "china-export-controls",
+        "reshoring",
+        "critical-minerals"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AFMJF",
+      "name": "Alphamin Resources",
+      "vertical": "tm",
+      "chain_layer": "Mining (Sn)",
+      "geo": "CD",
+      "structure": "equity",
+      "thesis_note": "Owns Bisie, the world's highest-grade tin mine, in the DRC. Hard to replace because grade of that order is not discoverable on demand and tin supply is structurally short of solder demand. Today: 3D chiplet stacking and HBM packaging raise solder joints per chip, so AI is quietly a tin demand story. What would break it: DRC instability, which is a live and recurring risk rather than a tail one, and the fact that it trades OTC in the US with thin liquidity. A single-asset, single-jurisdiction name — the concentration is the thesis and the risk simultaneously.",
+      "conviction": 3,
+      "froth": 1,
+      "froth_note": "OTC-traded; minimal institutional penetration in the US. DRC risk creates a persistent discount. World-class asset (Bisie AISC ~$11K/t vs spot ~$30K+) at a valuation that doesn't reflect it. Maximum insulation from hot money.",
+      "themes": [
+        "ai-chip-packaging",
+        "critical-minerals"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AXTI",
+      "name": "AXT Inc",
+      "vertical": "tm",
+      "chain_layer": "Specialty substrates",
+      "geo": "US/CN",
+      "structure": "equity",
+      "thesis_note": "GaAs/GaN substrates for 5G, EV inverters, satellite power electronics. Small cap ($150M range), dual US/China operations create geopolitical noise.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Micro-cap, dual-listed in spirit with CN ops. Very low institutional following for the thesis. Substrate demand is real but AXT's specific position (vs Japanese competitors) is the risk. Not priced for success.",
+      "themes": [
+        "ai-chip-packaging",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "vertical": "tm",
+      "chain_layer": "SiC wafer fab",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "World's only commercial 200mm SiC fab. Post-Chapter 11 turnaround. EV-built SiC capacity now 'inherited' by AI 800V infrastructure demand. Demonstrated first 300mm SiC crystal Jan 2026.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Post-bankruptcy — deep distressed value, not a momentum name. 300mm SiC is the long-term value driver but timeline is 2028+. The market is skeptical of the turnaround. Very low froth; contrarian positioning.",
+      "themes": [
+        "sic-power",
+        "ev-demand",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp",
+      "vertical": "tm",
+      "chain_layer": "SiC + InP substrates",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Tripled InP capacity; SiC substrate division growing. Only US company with meaningful InP and SiC substrate capacity at scale — both needed for AI photonics and 800V power.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "AI photonics theme has driven some multiple expansion. InP capacity tripling is real but sell-side coverage is following. Moderate froth — thesis is getting known but not yet consensus.",
+      "themes": [
+        "inp-photonics",
+        "sic-power",
+        "ai-demand-pull",
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "6963.JP",
+      "name": "ROHM",
+      "vertical": "tm",
+      "chain_layer": "SiC power devices",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Toyota BZ5 production win with 4th-gen SiC MOSFETs. 800V architecture expansion drives SiC MOSFET content per vehicle and per AI rack. Japan's leading SiC device maker.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Japanese listed; EV SiC thesis is known but 800V AI rack application is not yet in sell-side models. Some premium for Toyota relationship. Moderate — not high froth given FX and sector complexity.",
+      "themes": [
+        "sic-power",
+        "ev-demand",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "5802.T",
+      "name": "Sumitomo Electric",
+      "vertical": "tm",
+      "chain_layer": "InP substrates",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Mass-produces 2/3/4/6-inch InP substrates for AI optical transceivers. Capacity 2.4x by 2028 (internal + external). 6-inch InP ready for mass production — critical for coherent/EML transceiver scaling.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Japanese conglomerate; InP is a small part of revenue — limited direct pricing of the thesis. Moderate froth for the subsidiary exposure.",
+      "themes": [
+        "inp-photonics",
+        "ai-chip-packaging",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "NOK",
+      "name": "Nokia (ex-Infinera)",
+      "vertical": "tm",
+      "chain_layer": "InP photonic fab",
+      "geo": "FI/US",
+      "structure": "equity",
+      "thesis_note": "Only vertically-integrated InP photonic fab in the West (Sunnyvale + CHIPS Act-backed San Jose). Acquired Infinera 2024. InP foundry services to Lumentum and others.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Nokia's wireless business dominates investor framing — the InP fab story is not widely known. Discounted for wireless headwinds. Insulated: photonics upside is genuinely unpriced at the overall company level.",
+      "themes": [
+        "inp-photonics",
+        "ai-chip-packaging",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "5706.JP",
+      "name": "Mitsui Kinzoku",
+      "vertical": "tm",
+      "chain_layer": "HVLP copper foil",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "One of very few producers capable of HVLP (high-voltage low-profile) copper foil for AI PCBs. Capacity relief pushed to 2027+. Severe bottleneck — 'few players capable of production' (Citrini).",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Japanese conglomerate; HVLP foil is a small fraction of revenues. Thesis is largely unpriced. Capacity constraint is real but timeline to revenue impact is 2027+. Maximum insulation — story not out yet.",
+      "themes": [
+        "ai-chip-packaging",
+        "copper-supercycle"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "8358.TWO",
+      "name": "Co-Tech Development",
+      "vertical": "tm",
+      "chain_layer": "HVLP copper foil",
+      "geo": "TW",
+      "structure": "equity",
+      "thesis_note": "HVLP copper foil alongside Mitsui Kinzoku. One of two named pure-plays for high-frequency AI PCB copper foil bottleneck. Taiwan-listed.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Taiwan OTC-listed; very low accessibility for US investors. Thesis essentially unpriced in Western markets.",
+      "themes": [
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "2383.TW",
+      "name": "Elite Material",
+      "vertical": "tm",
+      "chain_layer": "CCL (copper-clad lam.)",
+      "geo": "TW",
+      "structure": "equity",
+      "thesis_note": "Leading CCL (copper-clad laminate) maker. Korean CCL prices +74.5% YoY mid-2026; lead times stretched for AI PCB qualification. Elite positioned across multiple AI board generations.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Taiwan-listed; CCL pricing surge (+74.5% YoY) is getting attention in Asia. Some premium building in. Still accessible for US investors via ADR/broker. Thesis gaining traction but not consensus.",
+      "themes": [
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "6213.TW",
+      "name": "ITEQ",
+      "vertical": "tm",
+      "chain_layer": "CCL (copper-clad lam.)",
+      "geo": "TW",
+      "structure": "equity",
+      "thesis_note": "Specialty CCL for high-speed networking and AI server PCBs. Lead times stretched as Korean pricing spikes. AI PCB ramp = structural CCL demand uplift.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Taiwan-listed; less covered than Elite Material. Thesis unpriced in Western markets.",
+      "themes": [
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "vertical": "oil",
+      "chain_layer": "Refining",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US refiner. Crack spread driven — independent of crude price. Post-2020 structural: capacity rationalization has permanently tightened refining margins vs. pre-pandemic.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Refining thesis: less consensus than upstream oil. Crack spread uncertainty keeps froth low. Post-capacity-rationalization structural is underappreciated. Insulated from AI/tech froth narrative.",
+      "themes": [
+        "oil-geopolitics",
+        "refining-margin"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "TDW",
+      "name": "Tidewater",
+      "vertical": "oil",
+      "chain_layer": "Offshore vessels",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Offshore supply vessels. Utilization ~90%+. Overlooked vs. drillers and E&P names. Day rate recovery is structural as offshore capex returns to pre-2015 levels.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Offshore vessel thesis has attracted some specialist investors; day rate data is public. Not high froth but some momentum in the broader offshore cycle thesis. Utilization >90% speaks for itself.",
+      "themes": [
+        "oil-geopolitics",
+        "offshore-recovery"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "STNG",
+      "name": "Scorpio Tankers",
+      "vertical": "oil",
+      "chain_layer": "Product tankers",
+      "geo": "MO",
+      "structure": "equity",
+      "thesis_note": "Product tankers. European tonne-miles structural tailwind from Russia sanctions rerouting. Leverage to refinery dislocation from Red Sea / Suez disruption.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Tanker thesis cycles quickly; product tankers less covered than crude tankers. Tonne-mile extension is structural and not fully priced. Russia/Suez routes are persistent tailwinds.",
+      "themes": [
+        "oil-geopolitics",
+        "european-energy-security"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "NTR",
+      "name": "Nutrien",
+      "vertical": "fert",
+      "chain_layer": "K+P+N production",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Only company with significant scale across all three primary nutrients (N, P, K). Post-2022 spike normalization; structural food security angle. Allied-nation supply vs Russia/Belarus.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Fertilizer thesis is post-spike, contrarian — prices have normalized. NTR is in the trough. Allied-nation supply security is a structural factor not yet priced by most investors. Insulated from momentum.",
+      "themes": [
+        "food-security",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "MOS",
+      "name": "Mosaic",
+      "vertical": "fert",
+      "chain_layer": "K+P mining/production",
+      "geo": "US/CA/BR",
+      "structure": "equity",
+      "thesis_note": "Potash + phosphate dual exposure. Canpotex JV logistics. Allied-nation supply security vs. Russian/Belarusian potash concentration. Brazil exposure adds emerging market demand.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Similar to NTR: post-spike normalization, contrarian positioning. Lower multiple than NTR; pure potash/phosphate exposure. Trough positioning thesis.",
+      "themes": [
+        "food-security",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "ERII",
+      "name": "Energy Recovery",
+      "vertical": "wl",
+      "chain_layer": "Water treatment",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns roughly half the global market for pressure exchangers in reverse-osmosis desalination — energy-recovery devices that cut RO power consumption substantially. Hard to replace because the device is qualified into plant designs and the installed base creates a specification standard. Today: expanding beyond desalination into CO2 refrigeration and wastewater. What would break it: desalination capex being lumpy and government-funded, so revenue is project-timed rather than recurring. The diversification is unproven and the core market is small in absolute terms.",
+      "conviction": 3,
+      "froth": 2,
+      "froth_note": "Near-monopoly is recognized but ERII is small and not widely covered. AI/water angle is gaining attention. Some premium for the moat but not high froth — valuation is still reasonable for the recurring revenue quality.",
+      "themes": [
+        "water-scarcity",
+        "ai-demand-pull",
+        "desalination"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "CWCO",
+      "name": "Consolidated Water",
+      "vertical": "wl",
+      "chain_layer": "Water supply/treatment",
+      "geo": "US/BZ/CY",
+      "structure": "equity",
+      "thesis_note": "Small-cap water company operating in water-stressed markets (Caribbean, US Gulf). Desalination and water treatment focus. AI/semiconductor water constraint play — new fabs and DCs choose sites partly on water availability. Clean balance sheet, consistent dividend, largely ignored.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Very small, very illiquid, very overlooked. Water as an infrastructure bottleneck is not on most investors screens. Insulated from conventional market froth cycles.",
+      "themes": [
+        "water-scarcity"
+      ],
+      "last_touched": "2026-08-04",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde",
+      "vertical": "ii",
+      "chain_layer": "Industrial gases",
+      "geo": "US/IE",
+      "structure": "equity",
+      "thesis_note": "Owns on-site air separation plants inside customer fabs and hospitals under 15-20 year sole-source contracts. Hard to replace because once the plant is behind the fence, switching means rebuilding infrastructure during a production shutdown — the switching cost is close to infinite. Today: every new AI chip fab needs ultra-high-purity gases and Linde builds on-site. What would break it: an industrial recession compressing volumes, or fab construction slowing. Froth-3 — the quality is not in question, the entry price is; this trades as a defensive compounder rather than a commodity name.",
+      "conviction": 3,
+      "froth": 3,
+      "froth_note": "Industrial gas moat is fully priced and then some. LIN trades at a significant premium to historical multiples. The business is as safe as any in the market — but the valuation leaves little margin of safety. Entry timing matters.",
+      "themes": [
+        "industrial-moat",
+        "reshoring",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "APD",
+      "name": "Air Products",
+      "vertical": "ii",
+      "chain_layer": "Industrial gases",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "On-site industrial gas + hydrogen infrastructure. ~40% global share with LIN. Hydrogen strategy overhang has compressed multiple vs LIN. CEO transition in 2024 refocusing on core.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Hydrogen strategy overreach created multiple discount vs LIN — now reversing under new strategy. Some residual skepticism from hydrogen write-downs. Fair value, not frothy.",
+      "themes": [
+        "industrial-moat",
+        "hydrogen"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "ATI",
+      "name": "ATI Inc",
+      "vertical": "ii",
+      "chain_layer": "Titanium + specialty alloys",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Primary US beneficiary of Boeing/Airbus titanium diversification away from Russia. Aerospace structural recovery + defense demand. Russia sanctions removed ~40% of global titanium sponge supply.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Aerospace recovery thesis is consensus; Russia diversification is an additional tailwind. Moderate premium for the reshoring/defense angle. Not high froth — aerospace cycle still has runway.",
+      "themes": [
+        "reshoring",
+        "resource-nationalism",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "MTRN",
+      "name": "Materion",
+      "vertical": "ii",
+      "chain_layer": "Beryllium + specialty",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns the only Western beryllium mine and the only US beryllium processing. Hard to replace because beryllium has no substitute in the defence applications that use it, and the processing knowledge sits in one company. Today: a $65M defence-prime-funded capacity expansion is underway. What would break it: defence procurement cycles slowing, or the specialty materials segment diluting the beryllium moat with lower-margin business. The uncomfortable part is that beryllium is a small share of revenue — you buy a diversified materials company to own a monopoly that is a minority of it.",
+      "conviction": 3,
+      "froth": 1,
+      "froth_note": "Beryllium is not on investors' radars. Sub-$1.5B, defense-critical, no non-US alternative. This is the definition of insulated: a quiet monopoly that most allocators have never heard of.",
+      "themes": [
+        "defense-procurement",
+        "reshoring",
+        "critical-minerals"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "4004.JP",
+      "name": "Resonac",
+      "vertical": "ii",
+      "chain_layer": "Specialty AI materials",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Ex-Showa Denko. Broad-line specialty materials across multiple AI bottlenecks: SiC slurry/abrasives, HAST test films, specialty gases. Single name with broadest AI-materials bottleneck exposure (Citrini).",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Japanese industrial conglomerate; AI-materials thesis is not in the framing of most Japanese equity investors. Broadest single-name AI materials exposure is almost entirely unpriced in Western portfolios.",
+      "themes": [
+        "ai-demand-pull",
+        "ai-chip-packaging",
+        "sic-power"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "RGLD",
+      "name": "Royal Gold",
+      "vertical": "pg",
+      "chain_layer": "Royalties/Streaming",
+      "geo": "US",
+      "structure": "royalty",
+      "thesis_note": "Gold royalties + streaming. Acquired Sandstorm Gold ($3.5B) + $1.0B Kansanshi stream — $5.4B of M&A transforms RGLD to large-cap streaming. 25th consecutive annual dividend increase.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Gold ATH has helped; Sandstorm integration is adding scale. Premium royalty multiple is warranted but stretched at current gold prices. Exposed to gold price correction.",
+      "themes": [
+        "streaming-structure",
+        "precious-metals"
+      ],
+      "last_touched": "2026-08-03",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources",
+      "vertical": "cu",
+      "chain_layer": "Mining",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Copper-focused after the coal separation. QB2 (Chile) ramping toward nameplate is the single largest new copper supply addition in the portfolio universe. Tier-1 jurisdiction, long reserve life.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Post-restructuring re-rating already partly done; copper leverage is understood by the market. Not a hidden name, but QB2 execution is still the swing factor.",
+      "themes": [
+        "copper-supercycle",
+        "tier1-assets",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "HBM",
+      "name": "Hudbay Minerals",
+      "vertical": "cu",
+      "chain_layer": "Mining",
+      "geo": "CA/PE",
+      "structure": "equity",
+      "thesis_note": "Mid-cap copper with Constancia (Peru) producing and Copper World (Arizona) as permitted US-domestic optionality — rare given 16-17yr democratic permitting timelines.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Mid-cap leverage to spot copper cuts both ways. Copper World is the asymmetric piece and is not fully in consensus numbers.",
+      "themes": [
+        "copper-supercycle",
+        "reshoring",
+        "critical-minerals"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "IVN.TO",
+      "name": "Ivanhoe Mines",
+      "vertical": "cu",
+      "chain_layer": "Mining",
+      "geo": "CA/DRC",
+      "structure": "equity",
+      "thesis_note": "Kamoa-Kakula is the highest-grade major new copper mine in the world and among the few genuinely large new supply sources this decade. Grade is the moat.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Exceptional orebody, but DRC jurisdiction and Chinese co-ownership are real discounts the market applies deliberately — not mispricing.",
+      "themes": [
+        "copper-supercycle",
+        "tier1-assets",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "XYL",
+      "name": "Xylem",
+      "vertical": "wl",
+      "chain_layer": "Water technology",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Broadest listed water platform — treatment, transport, metering and analytics. The default way to own water scarcity as infrastructure rather than as a commodity.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Quality compounder valuation; water scarcity is an accepted theme so little is unpriced. Owned for durability rather than asymmetry.",
+      "themes": [
+        "water-scarcity",
+        "ai-demand-pull",
+        "desalination"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "ARIS",
+      "name": "Aris Water Solutions",
+      "vertical": "wl",
+      "chain_layer": "Produced water",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Produced-water handling and recycling for Permian operators. Contracted, volume-linked infrastructure — a water toll on oil production rather than a bet on the oil price.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Small cap, niche, thinly followed. Water-handling contracts are genuinely under-modelled as infrastructure cash flows.",
+      "themes": [
+        "water-scarcity",
+        "oil-geopolitics"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "vertical": "fert",
+      "chain_layer": "Nitrogen production",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US nitrogen producer with structural Henry Hub gas-cost advantage over European producers priced off TTF. Food security plus a low-carbon ammonia optionality.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Earnings are highly gas-price levered in both directions — the cost advantage is real but the equity is cyclical, not insulated.",
+      "themes": [
+        "food-security",
+        "gas-infrastructure",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "ICL",
+      "name": "ICL Group",
+      "vertical": "fert",
+      "chain_layer": "Potash + specialty",
+      "geo": "IL",
+      "structure": "equity",
+      "thesis_note": "Dead Sea concession gives a low-cost potash and bromine position. Specialty phosphates for LFP battery cathodes add a non-agricultural demand leg.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Israeli listing and regional geopolitical risk keep a persistent discount. The battery-materials leg is not in most fertiliser models.",
+      "themes": [
+        "food-security",
+        "critical-minerals",
+        "ev-demand"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings",
+      "vertical": "elec",
+      "chain_layer": "DC power + cooling",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Data center power distribution and liquid cooling. At 100kW+ per rack, air cooling fails and direct liquid becomes mandatory — VRT is the scaled incumbent through that transition.",
+      "conviction": 2,
+      "froth": 3,
+      "froth_note": "One of the most crowded AI-infrastructure trades in the market. Business quality is real; the multiple already embeds years of DC growth. Entry timing matters more than thesis here.",
+      "themes": [
+        "ai-demand-pull",
+        "datacenter-power",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "PRY.MI",
+      "name": "Prysmian",
+      "vertical": "elec",
+      "chain_layer": "HV/HVDC cable",
+      "geo": "IT",
+      "structure": "equity",
+      "thesis_note": "Largest HV and subsea cable maker. HVDC interconnectors and offshore wind export cables are a hard physical bottleneck with a multi-year order backlog and effectively two credible suppliers.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Backlog gives visibility and the market knows it. Duopoly pricing power with Nexans is the under-appreciated part; European listing limits US flows.",
+      "themes": [
+        "grid-buildout",
+        "ai-demand-pull",
+        "transformer-bottleneck"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "NEX.PA",
+      "name": "Nexans",
+      "vertical": "elec",
+      "chain_layer": "HV/HVDC cable",
+      "geo": "FR",
+      "structure": "equity",
+      "thesis_note": "The other half of the HV cable duopoly with Prysmian. Portfolio pruned toward electrification; subsea and grid backlog extends past the decade.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Follows Prysmian's re-rating with a lag and trades at a discount. Less covered by US investors than the thesis warrants.",
+      "themes": [
+        "grid-buildout",
+        "european-energy-security",
+        "transformer-bottleneck"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "UEC",
+      "name": "Uranium Energy Corp",
+      "vertical": "nu",
+      "chain_layer": "ISR mining",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US-focused ISR uranium platform with fully permitted Wyoming and Texas capacity that can restart on price rather than on a decade of construction. Optionality on domestic supply mandates.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Restart optionality is the whole story and it is partly priced. Unhedged spot leverage means it moves violently with U3O8 in both directions.",
+      "themes": [
+        "uranium-rebuild",
+        "reshoring",
+        "nuclear-ai-ppa"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies",
+      "vertical": "nu",
+      "chain_layer": "Components + SMR",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Sole-source supplier of US naval nuclear reactors — defense procurement revenue that does not track the commodity cycle — plus SMR manufacturing and TRISO fuel capability.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Defense backlog gives genuine recession resistance, and the market pays for that certainty. SMR optionality is free-ish but slow to arrive.",
+      "themes": [
+        "uranium-rebuild",
+        "defense-procurement",
+        "nuclear-ai-ppa",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corporation",
+      "vertical": "ng",
+      "chain_layer": "Production",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US natural gas producer, Appalachian scale, now vertically integrated into midstream. Direct beneficiary of LNG export growth and gas-fired data center load.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Gas price beta is the dominant driver and is not insulated. The AI-power demand leg is the newer, less-modelled part of the case.",
+      "themes": [
+        "gas-infrastructure",
+        "ai-demand-pull",
+        "lng-supercycle",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "SBSW",
+      "name": "Sibanye-Stillwater",
+      "vertical": "pg",
+      "chain_layer": "PGM mining",
+      "geo": "ZA/US",
+      "structure": "equity",
+      "thesis_note": "Largest primary PGM producer with the only meaningful US platinum/palladium asset (Stillwater, Montana) — a designated critical mineral with no domestic alternative.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "South African operational and power risk keeps a deep discount. Stillwater's strategic value to US critical-minerals policy is not reflected in the price.",
+      "themes": [
+        "precious-metals",
+        "critical-minerals",
+        "reshoring",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "PLS.AX",
+      "name": "Pilbara Minerals",
+      "vertical": "li",
+      "chain_layer": "Spodumene mining",
+      "geo": "AU",
+      "structure": "equity",
+      "thesis_note": "Largest listed pure-play spodumene producer. Pilgangoora is a tier-1 hard-rock asset with expansion optionality and direct leverage to the spodumene price rather than to converted chemical.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Priced off spodumene spot, which troughed well below incentive levels. Pure-play leverage cuts both ways but the cycle-turn evidence is not yet in the multiple.",
+      "themes": [
+        "lithium-cycle-turn",
+        "ev-demand",
+        "tier1-assets"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "MIN.AX",
+      "name": "Mineral Resources",
+      "vertical": "li",
+      "chain_layer": "Mining + services",
+      "geo": "AU",
+      "structure": "equity",
+      "thesis_note": "Lithium plus iron ore plus a mining-services arm that earns through the cycle. The services business is the picks-and-shovels hedge against lithium price weakness.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Balance sheet leverage and capex commitments make this the highest-beta way to own the lithium turn. Services cash flow softens, but does not remove, the risk.",
+      "themes": [
+        "lithium-cycle-turn",
+        "ev-demand"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "PAAS",
+      "name": "Pan American Silver",
+      "vertical": "pg",
+      "chain_layer": "Silver + gold mining",
+      "geo": "CA/LatAm",
+      "structure": "equity",
+      "thesis_note": "Largest listed primary silver producer. Silver is the only precious metal with a large and growing industrial demand leg — solar cells and electrification — on top of the monetary bid.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Silver has run with gold and the equity has re-rated. The industrial demand leg is genuine but LatAm jurisdiction risk is a permanent discount.",
+      "themes": [
+        "precious-metals",
+        "ev-demand",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "TFPM",
+      "name": "Triple Flag Precious Metals",
+      "vertical": "pg",
+      "chain_layer": "Royalties/Streaming",
+      "geo": "CA",
+      "structure": "streaming",
+      "thesis_note": "Mid-cap streamer with a higher growth rate than the majors and the same structural advantages — fixed cost, no capex, full commodity upside.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Trades at a discount to FNV and WPM for size rather than quality. The preferred structure at a smaller-cap multiple.",
+      "themes": [
+        "precious-metals",
+        "streaming-structure"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "DNN",
+      "name": "Denison Mines",
+      "vertical": "nu",
+      "chain_layer": "ISR development",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Wheeler River / Phoenix is the lowest-cost undeveloped ISR uranium project in the Athabasca Basin. Permitting advanced; leverage is to the development decision as much as to spot.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Pre-production developer — no cash flow, so it trades on spot sentiment and permitting milestones. Deeply discounted relative to the asset's cost position.",
+      "themes": [
+        "uranium-rebuild",
+        "tier1-assets"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "AR",
+      "name": "Antero Resources",
+      "vertical": "ng",
+      "chain_layer": "Production + NGL",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Appalachian gas with the highest liquids content among peers, giving NGL exposure alongside dry gas. Direct beneficiary of LNG export growth and gas-fired data center demand.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Gas price beta dominates. The NGL mix differentiates it from pure dry-gas peers but does not insulate it.",
+      "themes": [
+        "gas-infrastructure",
+        "lng-supercycle",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "TROX",
+      "name": "Tronox Holdings",
+      "vertical": "ii",
+      "chain_layer": "TiO2 + Ti feedstock",
+      "geo": "US/ZA/AU",
+      "structure": "equity",
+      "thesis_note": "Vertically integrated titanium dioxide producer with its own mineral sands feedstock. Titanium is a designated critical mineral for aerospace and defence, and vertical integration is rare.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Deeply cyclical TiO2 pricing and a levered balance sheet keep this cheap. The critical-minerals angle on the feedstock side is not what the market prices it on.",
+      "themes": [
+        "critical-minerals",
+        "defense-procurement",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": null
+    },
+    {
+      "ticker": "GLNCY",
+      "name": "Glencore",
+      "vertical": "ii",
+      "chain_layer": "Mining + trading",
+      "geo": "CH/global",
+      "structure": "equity",
+      "thesis_note": "The single widest fix for the critical-minerals gaps in this universe: cobalt, nickel, zinc and copper production plus the largest physical trading book in industrial metals. The trading arm is the point — it monetises dislocation rather than only suffering it, which is a different exposure from a pure miner.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Perennially cheap on headline multiples because the coal business and recurring legal provisions keep institutional holders away. That discount is the reason it screens well, not a mispricing to assume away.",
+      "themes": [
+        "critical-minerals",
+        "copper-supercycle",
+        "ev-demand",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "VALE",
+      "name": "Vale",
+      "vertical": "ii",
+      "chain_layer": "Nickel + iron ore",
+      "geo": "BR",
+      "structure": "equity",
+      "thesis_note": "Class 1 nickel at scale — the battery-grade tier that is far tighter than headline nickel, which is mostly Indonesian Class 2. Iron ore funds it. Closes the largest single-metal hole in the universe.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Brazilian jurisdiction, Samarco/Brumadinho liabilities and iron-ore beta to Chinese steel keep a permanent discount. Owned for the nickel, priced on the iron ore.",
+      "themes": [
+        "critical-minerals",
+        "ev-demand",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "ERA.PA",
+      "name": "Eramet",
+      "vertical": "ii",
+      "chain_layer": "Manganese + nickel",
+      "geo": "FR/GA/ID",
+      "structure": "equity",
+      "thesis_note": "One of the few listed routes to manganese, which the EU designates strategic for battery-grade sulphate and which has no Western high-purity capacity. Also nickel in Indonesia and a lithium project in Argentina.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Gabon and Indonesia operating risk plus French listing keep it thinly held by US investors. The manganese franchise is the asset; the rest is optionality.",
+      "themes": [
+        "critical-minerals",
+        "ev-demand",
+        "european-energy-security"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "NEXA",
+      "name": "Nexa Resources",
+      "vertical": "ii",
+      "chain_layer": "Zinc smelting",
+      "geo": "PE/BR",
+      "structure": "equity",
+      "thesis_note": "Zinc mining and smelting, and zinc is the host ore for germanium and indium — so it gates two semiconductor materials China restricted in 2023. Byproduct economics mean this supply cannot answer the germanium price on its own, which is exactly why the chokepoint persists.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Priced as a zinc miner; the germanium and indium byproduct streams are not in the multiple. LatAm jurisdiction discount.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AA",
+      "name": "Alcoa",
+      "vertical": "ii",
+      "chain_layer": "Bauxite + aluminium",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Integrated bauxite, alumina and aluminium. Gallium is an alumina-refining byproduct, so a Western gallium supply chain has to start from a refinery like this one — there is currently no Western primary gallium production at all.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Aluminium smelting is an electricity arbitrage and the equity trades on the power price and the LME as much as on the asset base. The gallium optionality is real but not yet a revenue line.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "NB",
+      "name": "NioCorp Developments",
+      "vertical": "tm",
+      "chain_layer": "Development (Nb+Sc+Ti)",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Elk Creek, Nebraska — niobium, scandium and titanium in one US deposit. Niobium supply is effectively single-country (Brazil) and scandium is almost entirely a Chinese-licensed byproduct, so a domestic source of both is a genuine policy asset. EXIM and DoD engagement.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Pre-production developer with no cash flow and real financing risk — this is a balance-sheet case as much as a froth case, and the froth scale does not capture that. Treat dilution as the base case.",
+      "themes": [
+        "critical-minerals",
+        "defense-procurement",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "ILU.AX",
+      "name": "Iluka Resources",
+      "vertical": "re",
+      "chain_layer": "Mineral sands + REE refinery",
+      "geo": "AU",
+      "structure": "equity",
+      "thesis_note": "Mineral sands (zircon, rutile, synthetic rutile) funding the Eneabba rare-earth refinery — an Australian-government-backed non-Chinese separation plant, one of very few outside China. Closes zirconium and adds a second Western REE separator alongside Lynas.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "The market prices the mineral sands cycle and treats Eneabba as a cost line rather than a strategic asset. Government funding de-risks the capex in a way peers do not have.",
+      "themes": [
+        "china-export-controls",
+        "hree-separation",
+        "critical-minerals",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "NVX.AX",
+      "name": "Novonix",
+      "vertical": "li",
+      "chain_layer": "Synthetic graphite anode",
+      "geo": "AU/US",
+      "structure": "equity",
+      "thesis_note": "Synthetic graphite anode material in Tennessee — the only meaningful non-Chinese route to a material China put under export licensing in Dec 2023 and which every lithium-ion anode requires. Closes the single largest designated gap in the universe.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Trading at a distressed level. This is a BALANCE-SHEET case, not a froth case — the froth scale measures whether the price runs ahead of the thesis, and here the question is solvency and offtake conversion, not valuation. Assume dilution.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "ev-demand",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AII.TO",
+      "name": "Almonty Industries",
+      "vertical": "tm",
+      "chain_layer": "Tungsten mining",
+      "geo": "CA/KR/PT",
+      "structure": "equity",
+      "thesis_note": "Owns Sangdong in South Korea — on restart, the largest tungsten mine outside China — plus producing Portuguese and Spanish assets. Hard to replace because China put tungsten under export control in February 2025 and controls the overwhelming majority of supply; tungsten has no substitute in armour, penetrators or carbide cutting tools, so defence demand is procurement-driven rather than economic. Today: Sangdong ramping with an offtake floor price, and a US listing pursued to widen access. What would break it: ramp slippage at Sangdong, which has slipped before, or China relaxing controls to strangle the project economics — the standard playbook against a Western entrant.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "The tungsten scarcity story is now reasonably well known and the equity has re-rated on the Korean restart. Execution risk on the ramp is the live variable, not the thesis.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "defense-procurement",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "VNP.TO",
+      "name": "5N Plus",
+      "vertical": "tm",
+      "chain_layer": "Specialty semiconductor materials",
+      "geo": "CA",
+      "structure": "equity",
+      "thesis_note": "Produces ultra-high-purity tellurium, bismuth, selenium and germanium compounds — the refined forms, not the ore. Hard to replace because purification to 5N/6N grade is a qualification-gated process: once a CdTe solar or space-solar customer qualifies a supplier, switching means requalifying the cell. Today: supplying the terrestrial and space photovoltaic chains and medical imaging. What would break it: thin-film solar losing further share to silicon PV, which would take tellurium demand with it, and the fact that its feedstocks are all byproducts it does not control.",
+      "conviction": 2,
+      "froth": 1,
+      "froth_note": "Small-cap Canadian listing, thinly followed outside Canada. The tellurium and bismuth exposure is genuinely unusual and is not what the market prices it on.",
+      "themes": [
+        "critical-minerals",
+        "china-export-controls",
+        "ai-chip-packaging"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "AMG.AS",
+      "name": "AMG Critical Materials",
+      "vertical": "ii",
+      "chain_layer": "Specialty metals + recycling",
+      "geo": "NL/global",
+      "structure": "equity",
+      "thesis_note": "The broadest single fix for the remaining designated gaps: vanadium, tantalum, antimony, silicon metal and lithium in one company, spanning mining, refining and spent-catalyst recycling. Hard to replace because the vanadium recycling business reprocesses refinery catalyst — a feedstock nobody else has structured access to. Today: European listing with a lithium plant in Germany. What would break it: it is a collection of small cyclical businesses rather than one moat, so a broad specialty-metals downturn hits all of them together, and no single segment is large enough to carry the others.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Conglomerate discount and a European listing keep it off US screens. Owned for breadth of critical-mineral exposure rather than for a single thesis.",
+      "themes": [
+        "critical-minerals",
+        "reshoring",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "THS.L",
+      "name": "Tharisa",
+      "vertical": "pg",
+      "chain_layer": "Chrome + PGM mining",
+      "geo": "ZA/CY",
+      "structure": "equity",
+      "thesis_note": "Co-produces chrome concentrate and PGMs from the same South African orebody, so chrome revenue funds the PGM optionality. Hard to replace because chrome of this grade is concentrated in South Africa and Kazakhstan, and stainless steel has no substitute for it. Today: Karo PGM project in Zimbabwe under development. What would break it: South African power and logistics, which are chronic rather than occasional problems, and Zimbabwean jurisdiction risk on Karo.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Deeply discounted on South African and Zimbabwean risk. The dual chrome-PGM revenue is more defensive than a pure PGM miner, which the market does not credit.",
+      "themes": [
+        "critical-minerals",
+        "precious-metals",
+        "resource-nationalism"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "ORBIA.MX",
+      "name": "Orbia Advance",
+      "vertical": "ii",
+      "chain_layer": "Fluorspar + fluorine chain",
+      "geo": "MX",
+      "structure": "equity",
+      "thesis_note": "Owns the world's largest fluorspar mine and the integrated fluorine chain above it. Hard to replace because hydrofluoric acid derived from fluorspar feeds refrigerants, fluoropolymers and — critically here — the LiPF6 electrolyte in every lithium-ion cell, and the resource is geographically concentrated. Today: the fluorine business subsidises weaker polymer and infrastructure segments. What would break it: PVC and building-products cyclicality dominating the fluorine story, plus Mexican listing and governance discount. The fluorspar asset is better than the company that owns it.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Priced as a Mexican building-products conglomerate rather than as the owner of a critical-mineral chokepoint. That mismatch is the case; the conglomerate structure is why it persists.",
+      "themes": [
+        "critical-minerals",
+        "ev-demand",
+        "food-security"
+      ],
+      "last_touched": "2026-08-05",
+      "last_reviewed": "2026-08-05"
+    },
+    {
+      "ticker": "RIO",
+      "name": "Rio Tinto",
+      "vertical": "ii",
+      "chain_layer": "Diversified mining",
+      "geo": "AU/UK",
+      "structure": "equity",
+      "thesis_note": "Owns US Borax at Boron, California — the main non-Turkish source of a mineral the EU designates strategic, where the alternative is Eti Maden, a Turkish state monopoly holding most of world reserves. Also copper (Oyu Tolgoi, Escondida stake), titanium feedstock, tellurium at Kennecott and the Rincon lithium project. Hard to replace on borates specifically: the deposit is geological and there is no third source of scale. Today: Oyu Tolgoi underground ramping into the copper deficit. What would break it: it is a diversified major, so iron ore and Chinese steel demand dominate the share price and the borate franchise is invisible inside it — you accept iron-ore beta to own the boron.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Priced as an iron-ore major on a Chinese steel multiple. The critical-mineral franchises inside it are not what the market pays for, which is the case and the frustration simultaneously.",
+      "themes": [
+        "critical-minerals",
+        "copper-supercycle",
+        "reshoring"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": "2026-08-06"
+    },
+    {
+      "ticker": "AES",
+      "name": "AES Corporation",
+      "vertical": "elec",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "midstream",
+      "thesis_note": "Utility with a large grid-scale storage (BESS) build pipeline. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "NRG",
+      "name": "NRG Energy",
+      "vertical": "elec",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Gas generation fleet positioned for 24/7 dispatchable data center load. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "EPD",
+      "name": "Enterprise Products",
+      "vertical": "oil",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "midstream",
+      "thesis_note": "Large-cap midstream; NGL and export terminal infrastructure. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "WMB",
+      "name": "Williams Companies",
+      "vertical": "ng",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "midstream",
+      "thesis_note": "Gas pipeline network with direct data-center supply projects. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ENR.DE",
+      "name": "Siemens Energy",
+      "vertical": "elec",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Grid transmission equipment and gas turbines; European listing. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ITRI",
+      "name": "Itron",
+      "vertical": "elec",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Smart meters and grid edge intelligence. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electrical",
+      "vertical": "elec",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Electrical connection and protection; data center enclosures and liquid cooling. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "MOD",
+      "name": "Modine Manufacturing",
+      "vertical": "elec",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Thermal management; data center cooling coils and CDUs. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "MTZ",
+      "name": "MasTec",
+      "vertical": "elec",
+      "chain_layer": "Picks & shovels",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "Infrastructure EPC — the fourth major US grid contractor alongside PWR, MYRG and EME. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "RIG",
+      "name": "Transocean",
+      "vertical": "oil",
+      "chain_layer": "Contract drilling — offshore UDW",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Contract drilling — offshore UDW — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "VAL",
+      "name": "Valaris",
+      "vertical": "oil",
+      "chain_layer": "Contract drilling — offshore UDW",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Contract drilling — offshore UDW — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "NE",
+      "name": "Noble Corp",
+      "vertical": "oil",
+      "chain_layer": "Contract drilling — offshore UDW",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Contract drilling — offshore UDW — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "HP",
+      "name": "H&P",
+      "vertical": "oil",
+      "chain_layer": "Contract drilling — onshore",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "AutoSlide smart rig technology, ~20% US market share, highest margin onshore driller Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "PTEN",
+      "name": "Patterson-UTI",
+      "vertical": "oil",
+      "chain_layer": "Contract drilling — onshore",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Contract drilling — onshore — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "NBR",
+      "name": "Nabors",
+      "vertical": "oil",
+      "chain_layer": "Contract drilling — onshore",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Contract drilling — onshore — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "PRN.AX",
+      "name": "Perenti Group",
+      "vertical": "oil",
+      "chain_layer": "Contract mining services",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Ausdrill+Barminco Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ORI.AX",
+      "name": "Orica",
+      "vertical": "oil",
+      "chain_layer": "Contract mining services",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "world's largest commercial explosives manufacturer, essential for every mine blast Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "BVI.PA",
+      "name": "Bureau Veritas",
+      "vertical": "oil",
+      "chain_layer": "Assay, testing & certification",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "mining + oil division Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ITRK.L",
+      "name": "Intertek",
+      "vertical": "oil",
+      "chain_layer": "Assay, testing & certification",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Assay, testing & certification — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "TRMB",
+      "name": "Trimble",
+      "vertical": "oil",
+      "chain_layer": "Geo-data & resource modelling",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "precision positioning + land surveying Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs",
+      "vertical": "oil",
+      "chain_layer": "Geo-data & resource modelling",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "daily satellite imagery of mine sites Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "FTI",
+      "name": "TechnipFMC",
+      "vertical": "elec",
+      "chain_layer": "General energy EPC",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "subsea systems + LNG technology Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "SPM.MI",
+      "name": "Saipem",
+      "vertical": "elec",
+      "chain_layer": "General energy EPC",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "deepwater + LNG focus Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "FLR",
+      "name": "Fluor",
+      "vertical": "elec",
+      "chain_layer": "General energy EPC",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "large-scale global EPC Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "PRIM",
+      "name": "Primoris",
+      "vertical": "elec",
+      "chain_layer": "General energy EPC",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "General energy EPC — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "WOR.AX",
+      "name": "Worley Group",
+      "vertical": "elec",
+      "chain_layer": "Mine development EPC",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "global mining + energy EPC leader, Australia-listed Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ACM",
+      "name": "AECOM",
+      "vertical": "elec",
+      "chain_layer": "Mine development EPC",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "environmental + infrastructure Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "TTEK",
+      "name": "Tetra Tech",
+      "vertical": "elec",
+      "chain_layer": "Water & environmental EPC",
+      "geo": "—",
+      "structure": "epc",
+      "thesis_note": "water infrastructure + environmental consulting + government services Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ABBN.SW",
+      "name": "ABB Power Products",
+      "vertical": "ii",
+      "chain_layer": "Grid components — transformer bottleneck",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "transformer + switchgear Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell",
+      "vertical": "ii",
+      "chain_layer": "Grid components — cables & HV systems",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Grid components — cables & HV systems — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar",
+      "vertical": "ii",
+      "chain_layer": "Heavy mining equipment",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "world's largest mining equipment maker Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "KMTUY",
+      "name": "Komatsu",
+      "vertical": "ii",
+      "chain_layer": "Heavy mining equipment",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "second-largest Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "vertical": "ii",
+      "chain_layer": "Heavy mining equipment",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "underground + rock tools + metal cutting Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "METSO.HE",
+      "name": "Metso",
+      "vertical": "ii",
+      "chain_layer": "Minerals process equipment",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "world's largest mining process equipment company Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "FLS.CO",
+      "name": "FLSmidth",
+      "vertical": "ii",
+      "chain_layer": "Minerals process equipment",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "minerals + cement Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "WEIR.L",
+      "name": "Weir Group",
+      "vertical": "ii",
+      "chain_layer": "Minerals process equipment",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "slurry pumps + hydrocyclones Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "AROC",
+      "name": "Archrock",
+      "vertical": "ii",
+      "chain_layer": "Gas, LNG & cryogenic equipment",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "largest US contract compression Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "vertical": "ii",
+      "chain_layer": "Instrumentation & industrial automation",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "process automation + HVAC Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell",
+      "vertical": "ii",
+      "chain_layer": "Instrumentation & industrial automation",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "process solutions + safety + building mgmt Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "vertical": "ii",
+      "chain_layer": "Instrumentation & industrial automation",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "industrial automation + MES + smart manufacturing Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair",
+      "vertical": "ii",
+      "chain_layer": "Water treatment technology",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Water treatment technology — picks-and-shovels supplier. Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "YCA.L",
+      "name": "Yellow Cake plc",
+      "vertical": "pg",
+      "chain_layer": "Physical uranium trusts",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "London-listed, similar structure Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "CME",
+      "name": "CME Group",
+      "vertical": "pg",
+      "chain_layer": "Commodity futures exchanges",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "world's largest derivatives exchange Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ICE",
+      "name": "ICE",
+      "vertical": "pg",
+      "chain_layer": "Commodity futures exchanges",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "natural gas, power, carbon, agricultural derivatives Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore",
+      "vertical": "pg",
+      "chain_layer": "Physical trading houses — listed",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "London-listed Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "JMAT.L",
+      "name": "Johnson Matthey",
+      "vertical": "ii",
+      "chain_layer": "PGM autocatalyst recycling",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "world leader in both primary PGM chemistry AND autocatalyst recycling globally Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "UMI.BR",
+      "name": "Umicore",
+      "vertical": "ii",
+      "chain_layer": "PGM autocatalyst recycling",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Hoboken Belgium, world's most advanced precious metals recycling + pCAM battery materials Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "NDA.DE",
+      "name": "Aurubis AG",
+      "vertical": "ii",
+      "chain_layer": "Copper scrap processing",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "largest European copper smelter Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "CLH",
+      "name": "Clean Harbors",
+      "vertical": "ii",
+      "chain_layer": "Oil & gas recycling — lube re-refining",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Safety-Kleen brand Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "CLNE",
+      "name": "Clean Energy Fuels",
+      "vertical": "ii",
+      "chain_layer": "Renewable natural gas (RNG)",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "largest RNG distributor for transport fleet fueling Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "MNTK",
+      "name": "Montauk Renewables",
+      "vertical": "ii",
+      "chain_layer": "Renewable natural gas (RNG)",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "landfill gas to RNG, listed Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "FRO",
+      "name": "Frontline",
+      "vertical": "oil",
+      "chain_layer": "Crude tankers — VLCC & Suezmax",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "largest listed VLCC operator Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "DHT",
+      "name": "DHT Holdings",
+      "vertical": "oil",
+      "chain_layer": "Crude tankers — VLCC & Suezmax",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "pure-play VLCC Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "INSW",
+      "name": "International Seaways",
+      "vertical": "oil",
+      "chain_layer": "Crude tankers — VLCC & Suezmax",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "VLCC + Suezmax + product Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "FLNG",
+      "name": "Flex LNG",
+      "vertical": "oil",
+      "chain_layer": "LNG carriers",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "high-spec vessels, charter coverage locked at energy crisis highs Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "GLNG",
+      "name": "Golar LNG",
+      "vertical": "oil",
+      "chain_layer": "LNG carriers",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "LNG carriers + FLNG production assets Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "BORR",
+      "name": "Borr Drilling",
+      "vertical": "oil",
+      "chain_layer": "Jackup drillers",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "pure-play premium jackup operator Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "SBLK",
+      "name": "Star Bulk Carriers",
+      "vertical": "oil",
+      "chain_layer": "Dry bulk carriers",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "largest listed dry bulk operator, diversified fleet Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "GOGL",
+      "name": "Golden Ocean",
+      "vertical": "oil",
+      "chain_layer": "Dry bulk carriers",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "Capesize and Panamax focus, Fredriksen-controlled Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "SNI.OL",
+      "name": "Stolt-Nielsen",
+      "vertical": "oil",
+      "chain_layer": "Chemical tankers",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "world's largest chemical tanker operator, private/listed Oslo Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "ODF.OL",
+      "name": "Odfjell",
+      "vertical": "oil",
+      "chain_layer": "Chemical tankers",
+      "geo": "—",
+      "structure": "midstream",
+      "thesis_note": "chemical tankers + tank terminals, Oslo-listed Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "SBMO.AS",
+      "name": "SBM Offshore",
+      "vertical": "oil",
+      "chain_layer": "FPSOs — floating production",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "world's largest FPSO owner/operator Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "EE",
+      "name": "Excelerate Energy",
+      "vertical": "oil",
+      "chain_layer": "FSRUs — floating LNG regas",
+      "geo": "—",
+      "structure": "equity",
+      "thesis_note": "largest listed FSRU operator Promoted from the picks-and-shovels reference tier into the universe; the thesis is inherited from that map and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 (exposed) because an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true
+    },
+    {
+      "ticker": "SU.PA",
+      "name": "Schneider Electric",
+      "vertical": "elec",
+      "chain_layer": "DC power + automation",
+      "geo": "FR",
+      "structure": "equity",
+      "thesis_note": "Electrical distribution, UPS and data-centre power management — named repeatedly in our own AI-power chain map but never held. A core GRID constituent. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "JCI",
+      "name": "Johnson Controls",
+      "vertical": "elec",
+      "chain_layer": "Building + DC cooling",
+      "geo": "IE",
+      "structure": "equity",
+      "thesis_note": "Building controls and HVAC at the scale data centres need. Cooling is the second constraint after power. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "NG.L",
+      "name": "National Grid",
+      "vertical": "elec",
+      "chain_layer": "UK/US transmission",
+      "geo": "UK",
+      "structure": "equity",
+      "thesis_note": "Regulated transmission in the UK and US Northeast. A pure regulated-return way to own the grid buildout rather than the equipment cycle. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "EOAN.DE",
+      "name": "E.ON",
+      "vertical": "elec",
+      "chain_layer": "EU distribution grid",
+      "geo": "DE",
+      "structure": "equity",
+      "thesis_note": "European distribution networks — the continent's grid capex is regulated and therefore contracted rather than cyclical. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace",
+      "vertical": "ii",
+      "chain_layer": "Ti + Ni superalloy parts",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Titanium and nickel superalloy aerospace structures and engine components — downstream of the titanium supply we already track through ATI and TROX. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "TT",
+      "name": "Trane Technologies",
+      "vertical": "elec",
+      "chain_layer": "Thermal management",
+      "geo": "IE",
+      "structure": "equity",
+      "thesis_note": "Commercial HVAC and thermal management; direct exposure to data-centre cooling load. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals",
+      "vertical": "ii",
+      "chain_layer": "Equipment rental",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Rents the equipment every mine, grid and LNG project needs. Pure picks-and-shovels — it earns on activity regardless of which commodity is building. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX",
+      "vertical": "oil",
+      "chain_layer": "Rail freight",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Eastern US rail. Moves coal, chemicals, aggregates and frac sand — the physical logistics layer beneath the commodity complex. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "UNP",
+      "name": "Union Pacific",
+      "vertical": "oil",
+      "chain_layer": "Rail freight",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Western US rail; grain, coal, soda ash and industrial chemicals. Rail is a duopoly per corridor and cannot be rebuilt. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "NSC",
+      "name": "Norfolk Southern",
+      "vertical": "oil",
+      "chain_layer": "Rail freight",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Eastern US rail, overlapping CSX. Same duopoly structure and the same commodity-volume exposure. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Co",
+      "vertical": "fert",
+      "chain_layer": "Agricultural equipment",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Agricultural machinery — demand side of the fertiliser and food-security thesis rather than supply, but the equipment layer is where farm capex actually lands. Added from a GRID/PAVE ETF holdings screen; the thesis is a first pass and has NOT been independently re-argued.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Not yet assessed. Froth defaults to 2 — an unexamined name should not be presented as insulated.",
+      "themes": [
+        "picks-and-shovels"
+      ],
+      "last_touched": "2026-08-06",
+      "last_reviewed": null,
+      "provisional": true,
+      "source_screen": "GRID/PAVE top-10 holdings"
+    }
+  ]
+}

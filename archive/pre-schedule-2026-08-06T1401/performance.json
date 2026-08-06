@@ -1,0 +1,168 @@
+{
+  "_meta": {
+    "as_of": "2026-08-06T04:51:01+00:00",
+    "note": "Equal-weight, price-only, local currency. No rebalancing, dividends or FX conversion.",
+    "retrospective_warning": "The trailing table measures how TODAY'S universe performed in the past. It describes COMPOSITION, not forecasting skill, because the conviction and froth tags did not exist for most of that window and 21 of the 71 names were added on 2026-08-05. Only the since-inception tracks test the framework."
+  },
+  "tracks": [
+    {
+      "name": "Conviction ranking",
+      "inception": "2026-04-30",
+      "note": "Conviction scores have existed since the initial build on 2026-04-30 and were revised on 2026-08-04/05. Names added in the 2026-08-05 expansion are excluded below — they have no forward record yet.",
+      "rows": [
+        {
+          "label": "Conviction-3 holdings",
+          "n": 0,
+          "si": null
+        },
+        {
+          "label": "GSG — benchmark",
+          "n": 1,
+          "si": -11.1,
+          "bench": true
+        },
+        {
+          "label": "XLE — benchmark",
+          "n": 1,
+          "si": -3.2,
+          "bench": true
+        },
+        {
+          "label": "COPX — benchmark",
+          "n": 1,
+          "si": 9.3,
+          "bench": true
+        },
+        {
+          "label": "URA — benchmark",
+          "n": 1,
+          "si": -24.0,
+          "bench": true
+        },
+        {
+          "label": "SPY — benchmark",
+          "n": 1,
+          "si": 7.4,
+          "bench": true
+        }
+      ]
+    },
+    {
+      "name": "Froth lens",
+      "inception": "2026-08-04",
+      "note": "Froth tags were written on 2026-08-04. This window is far too short to judge them; it is published so the record accumulates in the open rather than being claimed later.",
+      "rows": [
+        {
+          "label": "Insulated (froth 1)",
+          "n": 19,
+          "si": 1.6
+        },
+        {
+          "label": "High froth (froth 3)",
+          "n": 0,
+          "si": null
+        },
+        {
+          "label": "GSG — benchmark",
+          "n": 1,
+          "si": 0.4,
+          "bench": true
+        },
+        {
+          "label": "XLE — benchmark",
+          "n": 1,
+          "si": -2.1,
+          "bench": true
+        },
+        {
+          "label": "COPX — benchmark",
+          "n": 1,
+          "si": 3.3,
+          "bench": true
+        },
+        {
+          "label": "URA — benchmark",
+          "n": 1,
+          "si": 0.9,
+          "bench": true
+        },
+        {
+          "label": "SPY — benchmark",
+          "n": 1,
+          "si": -0.2,
+          "bench": true
+        }
+      ]
+    }
+  ],
+  "retrospective": {
+    "label": "Retrospective composition — NOT a track record",
+    "mean": {
+      "1m": 1.7,
+      "3m": -6.6,
+      "6m": 11.1,
+      "1y": 77.5
+    },
+    "median": {
+      "1m": 1.8,
+      "3m": -5.9,
+      "6m": 6.2,
+      "1y": 35.5
+    },
+    "top_contributor": {
+      "1m": {
+        "ticker": "VGAS",
+        "ret": 56.4,
+        "contribution_pp": 0.4
+      },
+      "3m": {
+        "ticker": "MTRN",
+        "ret": 51.0,
+        "contribution_pp": 0.3
+      },
+      "6m": {
+        "ticker": "AXTI",
+        "ret": 265.9,
+        "contribution_pp": 1.7
+      },
+      "1y": {
+        "ticker": "AXTI",
+        "ret": 3246.8,
+        "contribution_pp": 20.8
+      }
+    },
+    "benchmarks": {
+      "GSG": {
+        "1m": 2.0,
+        "3m": -6.9,
+        "6m": 21.9,
+        "1y": 37.5
+      },
+      "XLE": {
+        "1m": 3.1,
+        "3m": 1.3,
+        "6m": 10.0,
+        "1y": 38.2
+      },
+      "COPX": {
+        "1m": 18.7,
+        "3m": 4.1,
+        "6m": 0.5,
+        "1y": 103.0
+      },
+      "URA": {
+        "1m": 3.0,
+        "3m": -26.4,
+        "6m": -18.1,
+        "1y": 11.1
+      },
+      "SPY": {
+        "1m": 3.3,
+        "3m": 5.2,
+        "6m": 12.8,
+        "1y": 23.9
+      }
+    }
+  },
+  "as_of": "2026-08-06"
+}
