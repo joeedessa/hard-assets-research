@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-07T14:01:04+00:00",
+    "as_of": "2026-08-07T16:52:50+00:00",
     "mode": "light",
     "coverage": "20/20 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -105,9 +105,9 @@
           "cues": []
         },
         {
-          "t": "AI data centres, Middle East demand drive record quarter at Siemens Energy - reuters.com",
+          "t": "AI data centres, Middle East demand drive record quarter at Siemens Energy - Reuters",
           "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSU9ueU9aZ0ZYRkd0N3pZZEtjVXFnM0QxVWJ6MUhZUmhTUjZPdUpQc19KZlpZLWhna1lRRnV1bmhvdnJSZzYxckFQdkZXZkF6dlI4X0U0WlRNUzhTUnhIeWpJYUIyYmlvelBYUlQ2RkFQRng2T25WV3dXYzYtaWhCUjlHQTJoTHhGOTNYRmUtV0FLTFJ2VWZrXzEza2JQcXN2ZDloZEtjWGUtbnFmcjFubXRWS3d0WEYyZ3Q1VXFKWUZtRHN6MUNUSg?oc=5",
-          "s": "reuters.com",
+          "s": "Reuters",
           "d": "2026-08-05",
           "cues": [
             "record quarter"
@@ -143,6 +143,13 @@
           "cues": []
         },
         {
+          "t": "Fluence reduces full-year guidance amid production delays - Renewables Now",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdmdENDZzeTdmNjlKcmZHTnV4czVCSzM4QmhpOGt5Qzk2TTVldVNmcVN0RkphVEhvYUE1YnlSZVF1RU12TGRCdEpiUWRCbEtpQkw1WGZuSHdJOVhKdWxOUVk5bVdQUlprWnhjZmxXajhUY1k4YjNEeGJJaXdNRy1zRXBrVHpOY1RScktZVFpDUEtEOUl5ODBrM1o5azlpQQ?oc=5",
+          "s": "Renewables Now",
+          "d": "2026-08-07",
+          "cues": []
+        },
+        {
           "t": "Fluence Energy Q3 Earnings Call Highlights - MarketBeat",
           "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdXo4LXhIb3ZLc3lDNWNCT3p6RzNuM0cwalo0dk12M2ZSbnRTY3IxQkRqcl94bU1vbDQ3Q084X3JLbjBMd29aR0piVENnR1NaYXFPX3p0Qk81dlNIMlZ0c1VBeDlkZ3N5WEUtOWdlQ2ZSOUtJeUs5WVlvRERoajdRUjUxWkZORDhxWTRzbElzUTdfNEJRNDFnTFNxVW0?oc=5",
           "s": "MarketBeat",
@@ -152,17 +159,10 @@
           ]
         },
         {
-          "t": "Fluence Energy Slides as Investors Reassess Earnings-Day Execution Risk - Quiver Quantitative",
+          "t": "Fluence Energy Slides as Investors Reassess Earnings-Day Execution Risk - quiverquant.com",
           "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWktTM1FJczl2NHF2bjNJWGZONHVFd1dTWGdrajcwU0ZXMDlyYUs2cXp3b1RhbmxVVGZtX3V1OEs1SVl6Rm8xdmgyZDRPWTBzTlNFRVlSMjg1empqQTdHMHU5cG5TQ3RnV1RqUjJkSnBQdWthRlB3VEFjT3FoX1R3LVBpRldFbnJkMk9tYllMMU15d2UwOVEweUJFT3lGSEVYMGM0Nm92RQ?oc=5",
-          "s": "Quiver Quantitative",
+          "s": "quiverquant.com",
           "d": "2026-08-05",
-          "cues": []
-        },
-        {
-          "t": "Fluence Energy Reports Higher Q3 Revenue, Cuts FY26 Outlook - TaiyangNews",
-          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yZDZ3VG5sLXBtR3NGV01BZnlsYXlhaHhUSlc0eHByd3Ffb1ZXSWhqcE40aVcxQmhDM2pxRm05QlVJRS1qcllqZWhILWdWWTJSVG1jTTBfeHJ0OU9mS09aVDI0cFN0MWpVWGpDNHFRdno0VEVyT3gyTHM4RGRPVkE?oc=5",
-          "s": "TaiyangNews",
-          "d": "2026-08-07",
           "cues": []
         }
       ],
@@ -181,16 +181,16 @@
       },
       "wire": [
         {
-          "t": "Glencore: What We Think of the Stock After Earnings - Morningstar",
+          "t": "Glencore: What We Think of the Stock After Earnings - global.morningstar.com",
           "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWk5LUUI1MThsVU9JNUV1emxNVVQ1eXFkMWVmelJtVW5lZ0Q4encyZ1BGNlM4MTJWTmJfZXNOVUFEbkhYYjBVUEdEOG1MWTRnVlloaVhRV1lXeF84SDE1dlpvWENPaUk1UHF6UllCY2xxQXl4d3Btc0I1Vk5BRFhGV25aS0pNUzc5X2FCZzk2a1Y?oc=5",
-          "s": "Morningstar",
+          "s": "global.morningstar.com",
           "d": "2026-08-06",
           "cues": []
         },
         {
-          "t": "Glencore earnings surge on trading windfall, plans Australian listing - reuters.com",
+          "t": "Glencore earnings surge on trading windfall, plans Australian listing - Reuters",
           "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSTZEUjBMdzFRckF2SThVdTFrNW9RZUlJa1FnSXZwUlRvUGRjZkZGRkxOMkIzNXBrTHVyVVdfaTZueGpWODcya2p4U3hmUWViaGo1WGJFdDh2ZlNZaWlFSnlLTFRpQjVUeUs1VnhNcGxvUUkzdFlPMDBlSDFWVFZGa0psZWg1T2ZEdVhqMmU4WnJBYi1jb201ZFQ5Tm9ZQVFnRmwxUlBNOUJhT1dycmFXZWZXVmJqaEtsbmtvQVNla1hpNVk?oc=5",
-          "s": "reuters.com",
+          "s": "Reuters",
           "d": "2026-08-05",
           "cues": []
         },
@@ -224,16 +224,16 @@
       },
       "wire": [
         {
-          "t": "Glencore: What We Think of the Stock After Earnings - Morningstar",
+          "t": "Glencore: What We Think of the Stock After Earnings - global.morningstar.com",
           "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWk5LUUI1MThsVU9JNUV1emxNVVQ1eXFkMWVmelJtVW5lZ0Q4encyZ1BGNlM4MTJWTmJfZXNOVUFEbkhYYjBVUEdEOG1MWTRnVlloaVhRV1lXeF84SDE1dlpvWENPaUk1UHF6UllCY2xxQXl4d3Btc0I1Vk5BRFhGV25aS0pNUzc5X2FCZzk2a1Y?oc=5",
-          "s": "Morningstar",
+          "s": "global.morningstar.com",
           "d": "2026-08-06",
           "cues": []
         },
         {
-          "t": "Glencore earnings surge on trading windfall, plans Australian listing - reuters.com",
+          "t": "Glencore earnings surge on trading windfall, plans Australian listing - Reuters",
           "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSTZEUjBMdzFRckF2SThVdTFrNW9RZUlJa1FnSXZwUlRvUGRjZkZGRkxOMkIzNXBrTHVyVVdfaTZueGpWODcya2p4U3hmUWViaGo1WGJFdDh2ZlNZaWlFSnlLTFRpQjVUeUs1VnhNcGxvUUkzdFlPMDBlSDFWVFZGa0psZWg1T2ZEdVhqMmU4WnJBYi1jb201ZFQ5Tm9ZQVFnRmwxUlBNOUJhT1dycmFXZWZXVmJqaEtsbmtvQVNla1hpNVk?oc=5",
-          "s": "reuters.com",
+          "s": "Reuters",
           "d": "2026-08-05",
           "cues": []
         },
@@ -324,6 +324,13 @@
       },
       "wire": [
         {
+          "t": "Star Bulk Carriers Q2 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNUdwMm5OcDREbUc3Y2FjSUVzbWE0WFIzX2lobWluM1ZqYlp1cDRpcjJ1UlJrN2Y5QU52VDZTMEdCMjl6dFVhVjZTN2ZzT1JodkNBT0ZMdjBtUW5tV3I4eHdKOG5PRG90SVIyQk9FWnVwSlkwcDNEMjUtX3hLUENfWEFXTDI2LTRGWDEyS0YxRmNKckZTWmJjYmt5Yw?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-07",
+          "cues": []
+        },
+        {
           "t": "Star Bulk Carriers Q2 Earnings Call Highlights - MarketBeat",
           "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX2ZpblZ5RkxicGt4S0V1MUVwTEhZQ2V0LTJJbldDbTFoOUtCQ1NBVE9Nc0tvZkxjc1N3ZU1rZEhxbXJRdTNYYlQyeWtFOHNPbXJEUVNlWExKZmd2Y092NE16aVFvVUhEVDVZeEQ5UVEtNzdDam9QTWNPS044aVdJQ0NYSHpOUWR0OHljNTJGYXlzYTZscUFPTTZldU52SW5va1E?oc=5",
           "s": "MarketBeat",
@@ -333,23 +340,16 @@
           ]
         },
         {
-          "t": "Star Bulk Carriers Corp. Reports Its Strongest Quarterly Results Since the Second Quarter of 2022 - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdThrMGYxT0F3blg3WXhSYnAyLTRtd29Mc01xczRfN0NXZnFsOGEwbHBYdDFrc0FnajZxUXk3UGl5V3Zib3FCRHJEajB1c0xtSEM2b0ZSSjI3ZVlSSnIzMXNWZWJfbTdTN0VIMUhiWm5HeVFfTS1qUHpZVnJrd09wTGI3R2FFaC1GcTZybHNfWlBoNUJSUU4xcDVNa2o?oc=5",
-          "s": "Yahoo Finance",
+          "t": "Star Bulk Posts Its Most Profitable Quarter Since Q2 2022 - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM0xuSlRNcFBfVFZzakhmZUVLbUZnVWtKd3M5OFlBMThEYVpZZktLLVVYSnUxb0RhVzBaMFRCWW9rUExhQU1weEFLb1pnUmxiZmROMW0zWi12T2ZLRXhwQnA4Rm9paXp2ZkJqZTFUSHl5VVdQTWNHTEtmZ3UxdjctRnZNaFd0MzM0akpDOWluanNXVVRlc3FrUm9ETjhLMnhVRUNiZ2otWmZiVElCTDAzN0xQU184TWxOa1E?oc=5",
+          "s": "Stock Titan",
           "d": "2026-08-05",
           "cues": []
         },
         {
-          "t": "Star Bulk Carriers Releases Q2 2026 Financial Results - AlphaStreet",
-          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQzh5THhLX2M2bU4yR2M3NXVpUnB2eFZBUWc0cEYyR0RTdG04enJIazc5aXBzT2c4Mm83ODZlWm40bWJIOE5FcWNzZVRVOWVJT2lKZjR5ZmdMQUpXekFLR1JVN2dsRWVSQ1RVTGxuYlpPVVBfbHZTS3dTZXhrOG9rYXZEVTRKSVRjRFBr0gGLAUFVX3lxTE1DOHlMeEtfYzZtTjJHYzc1dWlScHZ4VkFRZzRwRjJHRFN0bTh6ckhrNzlpcHNPZzgybzc4NmVabjRtYkg4TkVxY3NlVFU5ZUlPaUpmNHlmZ0xBSld6QUtHUlU3Z2xFZVJDVFVMbG5iWk9VUF9sdlNLd1NleGs4b2thdkRVNEpJVGNEUGs?oc=5",
-          "s": "AlphaStreet",
-          "d": "2026-08-06",
-          "cues": []
-        },
-        {
-          "t": "Star Bulk Carriers faces earnings test as dry bulk rates cool By Investing.com - Investing.com Nigeria",
-          "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZGFFV2pLZDNERXV4WlIwOTc5eEFqX1Q1cW1VUjNjbWhaY3BpQUUwWThJc3pwdlZCZ3FPYTZndk1Wams2TXpVbVJkbUF3NS1uYVd0dXdrWWp2NEdESHlHWDZQNS1wRlVWY19oWjlCekppVmhDb2V5Vlo5X0lPS2c5X2RPTWxwekExcml3dHBTaFdzZkc5VFlQN2UwNG5MRzI4YU15UlN6bi1QaUNMWEpJNndwUQ?oc=5",
-          "s": "Investing.com Nigeria",
+          "t": "Press Release: Star Bulk Carriers Corp. Reports Its Strongest Quarterly Results Since the Second Quarter of 2022 - Moomoo",
+          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVDVXc1dIM1gtSC1ibWM0NGdEczhaMmZEMjdrMEpKRkFudzRPTkJNWFFwWlplazRKV3RldGZmXzRQaGh4Yk1NUTZIOXBwSGZCdENSd0EwWnloRGxUS3JvMXdFaVlPRWFLeGUyZ216TjNGc29zQ2RGNlFJLWtQU1otOUppZkNiV1N5TnAtcS1XSUtSak5RMWZGWlB2WTJOT0s0SUhVS2hRLVFfWG9lV0p4UQ?oc=5",
+          "s": "Moomoo",
           "d": "2026-08-05",
           "cues": []
         }
@@ -398,9 +398,9 @@
           "cues": []
         },
         {
-          "t": "Constellation Energy to sell gas plant to LS Power, raises profit forecast - reuters.com",
+          "t": "Constellation Energy to sell gas plant to LS Power, raises profit forecast - Reuters",
           "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPblBjdFJEZEoxdDVkb29iTXNBa3Rzb085Z0ZIUTJUNzdDWUdkd2JoWmJtMjRJZm9iUXJ6X1VMcFhWcmREcWRiQ2NLSjJwWmNqa1B2SUJ4a3RudjNaQzZSNXIwd0hHa3ExMFNyN0xSUHZaM3ZmYjJuNUJsNDUwSWtSTGhQNllOTFo4SVZQX0d1b0Q4QlRQSEVoUDlxellFOG84Q2N5LW5fbmkwQkZKVXN2T2NuZmV6MHUweS1Zb2syaE1vUQ?oc=5",
-          "s": "reuters.com",
+          "s": "Reuters",
           "d": "2026-08-06",
           "cues": []
         },
@@ -412,10 +412,10 @@
           "cues": []
         },
         {
-          "t": "Is Constellation Energy (CEG) Still Cheap After Raised Guidance? - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcXE4aEJkOW40MThlYnIzQjVLT0lRbWFnUEdQLXo5eDJna09qZ09FSHJPcFlLaUdoSWNwelFxUVlqY1ZPdU4tbGw2V2V1d1ZBRHBvQ2ViT01EMDNZY2EtNXlmZ3l6d05EdU9HMkt0ZC1Ed3lfR2piMjRkUmoxY0JRajJCbzlXUThKT3NvbXhnR0xYWlJ1SzB2S3RMOGRydDVpYjJQN1RyQ1NEdnZvbURQeVYtYV9JV2NoalVjcjFlczFqVS05el9yUU1DQk1pM1RDbWdIYjhB0gHbAUFVX3lxTE1faVhaMlFYM2JjdC14dmFvTVlUU29TNGxwaUV5eHRJLWQzQlo0Y2J2eXZPMW5CMERiZEQxYWR6Mmd3VzBvWWM0YW5adkhBZDlVTmg1VEs5ZjNyeTZVdUxqb2Qtd3JvdnF3OUZ2eDVZczJQa1ZXQ0FQTXlWNzlHRmd5U2JfVVpBbUw3RzFZNThWRjRlNHV2TTZJQXFiWHVZcjVuOGhqVHlfNzFMZXNhZkE0SFE5bDY3R1FqQlF6YVEyTDRKajk1S01yRk56Rmx5N29Mckd0Zzd2bWc0VQ?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-07",
+          "t": "Nuclear Utility Constellation Leads Nasdaq 100 After Earnings - Investor's Business Daily",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdy1GTlJ2VjQtQ21hMXk3UlhhUzJsamp6MU5talh5YjR4QW9rSVlkSV9DZk1fcW5tZHRsQ0F5Rk53d3lxODE0Y3F4TjdtSngtQVo4dVhQUC1hV0N5bTdlVXRFYXZVWDZEd1dSWU9HYTQ2YkNTSFFmeEUtR2x2YV9KTjFkU2lXLVFnVXpXa1AzbFNrTWZhdzZMZy1yS05PZTlrc2c?oc=5",
+          "s": "Investor's Business Daily",
+          "d": "2026-08-06",
           "cues": []
         }
       ],
@@ -434,9 +434,9 @@
       },
       "wire": [
         {
-          "t": "Aurubis predicts H2 2026 profits - Recycling Today",
+          "t": "Aurubis predicts H2 2026 profits - recyclingtoday.com",
           "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcFlsMnVWSHVQMVZINWFETDNLaXJVOTRqRUJ0bGZMeVNtZk9VeUFlVUI4ckh3dW4zYThwWWVmTG13WmkzSU1MRFNYS1VYZmc5R19pcW9Yc0p1QUUyVktBZnZYa1ZaamxiTy1BWVY5U01nS0dRbS1zYVJwRUZEU0FSM2FQVjJ5TjF4RjRIOXRCRkZucE82dEY3MnE2SmpOV3l4RFdHZk1XYnc?oc=5",
-          "s": "Recycling Today",
+          "s": "recyclingtoday.com",
           "d": "2026-08-07",
           "cues": []
         },
@@ -493,6 +493,13 @@
           "cues": []
         },
         {
+          "t": "Earnings call transcript: SBM Offshore lifts 2026 outlook on strong H1 2026 - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMkU4M0NXdVVSY2dZMms5ZHV2TkVPLXFZdXBnWWtyZkZJSDFnUXVPdGlqaThvX19LRTA0X0NTeUpvQTIydEYzQVdfTGNFNUNoRmg1VllJSkcxcmp4aHZpVjVmcW1CZFVOMHF4MDQ2MXZFY0h6X0FoTnFFbnJ6MTRDUlVrR0JUMEM3SlFKY0w3UG04N1V3VFhVM3NqamI5TTFoXzRvUmQ1N2hrcGxYUjA3Z01uLWt6NmtBWGNHRldpRXU0NTlGSTkwdTdJN1kzdEhCLVRqUg?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-06",
+          "cues": []
+        },
+        {
           "t": "SBM Offshore lifts guidance as strong Turnkey gains cut debt and swell backlog - The Globe and Mail",
           "u": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQVFlUa293OFNTYkRnbnFoSVNKcjI4Z0hKZzdrak1nZ2M3ZHBCSDlFdUFFRTFjY3dpN1VMOXZNWl95MGZ3M2NfUGZyVWdxX0tsbTl0b3NLc0tGM0lCTmk3SVFldUFSUVZUeF82WkxYXzRTNUt6OUZxNUVYYXBXWXhYTHBjSTgxaFdLY3VLdk9MblRYWkdWZXZzZHRKbW1xcXlZSjNmNkdUcklZRnVMb3hFV3E2MUQyd1JzcTlEUUo4TDE5RmRLd1hTVFd5dzRsZjlKd1A2VTkxeU90cFhFb1NPdnJtSEloTzVRbXRqTjhUaG9MeWlxTFpv?oc=5",
           "s": "The Globe and Mail",
@@ -500,13 +507,6 @@
           "cues": [
             "guidance up"
           ]
-        },
-        {
-          "t": "Earnings call transcript: SBM Offshore lifts 2026 outlook on strong H1 2026 - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMkU4M0NXdVVSY2dZMms5ZHV2TkVPLXFZdXBnWWtyZkZJSDFnUXVPdGlqaThvX19LRTA0X0NTeUpvQTIydEYzQVdfTGNFNUNoRmg1VllJSkcxcmp4aHZpVjVmcW1CZFVOMHF4MDQ2MXZFY0h6X0FoTnFFbnJ6MTRDUlVrR0JUMEM3SlFKY0w3UG04N1V3VFhVM3NqamI5TTFoXzRvUmQ1N2hrcGxYUjA3Z01uLWt6NmtBWGNHRldpRXU0NTlGSTkwdTdJN1kzdEhCLVRqUg?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-06",
-          "cues": []
         }
       ],
       "wire_gate": "2026-08-06"
@@ -531,13 +531,6 @@
           "cues": []
         },
         {
-          "t": "ATI Inc. 2026 Q2 - Results - Earnings Call Presentation (NYSE:ATI) 2026-08-06 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaVpuUTBUNG1fb0hZQXhxdk1RZlVtUjlfcm92SFFWRGJWVmRJaU41S0R5MkdfVHlwU25yMW05RVI2Zy1BQU94OF9lLTZlRHpGamJQZm9vTWxGMUoteHRJSjF0Y1REMjZkd21wd0gxZFRjVGQ2WGFsVkNkRzhVMVk1cXNXcWtuaDZmSlo0YldlOV9oSjMtYXc?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-07",
-          "cues": []
-        },
-        {
           "t": "ATI Announces Second Quarter 2026 Results - PR Newswire",
           "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVHRIbDlRY2hqZW9rdzg0Sy1DWGdCdDdsRVdwMVNzVXUxdGZoaHg5amVPVFIwOHE4bGNxTEt3dDRuZXRxZmlzY2RZVm1JVnF1VmdUZ3JpMm1fZzF4cEhEeHhTMktaRDlhVXFSQ3lscWtkU3BFOFBSeEUtSTBudWlfV2NOeDRCemVkT2p4Vkw2ZVg0NmZTLUtPWEhPcTNLdw?oc=5",
           "s": "PR Newswire",
@@ -545,9 +538,16 @@
           "cues": []
         },
         {
-          "t": "ATI Inc (NYSE: ATI) boosts Q2 2026 earnings on aerospace demand - stocktitan.net",
+          "t": "ATI Inc. 2026 Q2 - Results - Earnings Call Presentation (NYSE:ATI) 2026-08-06 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaVpuUTBUNG1fb0hZQXhxdk1RZlVtUjlfcm92SFFWRGJWVmRJaU41S0R5MkdfVHlwU25yMW05RVI2Zy1BQU94OF9lLTZlRHpGamJQZm9vTWxGMUoteHRJSjF0Y1REMjZkd21wd0gxZFRjVGQ2WGFsVkNkRzhVMVk1cXNXcWtuaDZmSlo0YldlOV9oSjMtYXc?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-08-07",
+          "cues": []
+        },
+        {
+          "t": "ATI Inc (NYSE: ATI) boosts Q2 2026 earnings on aerospace demand - Stock Titan",
           "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaXBLRmR3TUNIek53MW5zUlN6RFo5amZDZFEyQlMwUHBNeG41WEZKTHNlbUZaYmlUakEyRmJLWEJsYzdCRHg5UGpiejd4NW9GUk5kU2ZsazJFcHBIV005bUY4TE9KNWFNdG9PTkpfRGhWVVFOdjZNTmU1RlpkMUxTdzdlV1hETzdnQXVFcWNlWnBCN215R0szUXctV0NLTUZV?oc=5",
-          "s": "stocktitan.net",
+          "s": "Stock Titan",
           "d": "2026-08-06",
           "cues": []
         }
@@ -637,9 +637,9 @@
           "cues": []
         },
         {
-          "t": "Howmet Aerospace (HWM) Q2 2026 Earnings Call Transcript - fortune.com",
+          "t": "Howmet Aerospace (HWM) Q2 2026 Earnings Call Transcript - Fortune",
           "u": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tVzNQYk8wWTJrT3l3ZkNwbWg3ZXA3dk05M3kzQWFhZnp6c0hSb0dYUXYzXzM0dldBNTRYd3NvTUpQZ0diRzN0eXlCUmVRSnh5d200ZllRaTVxLVZBamZyYk10cw?oc=5",
-          "s": "fortune.com",
+          "s": "Fortune",
           "d": "2026-08-06",
           "cues": []
         }
@@ -669,23 +669,23 @@
           ]
         },
         {
-          "t": "Cheniere Energy raises annual core profit outlook on strong LNG demand - reuters.com",
+          "t": "Cheniere Energy raises annual core profit outlook on strong LNG demand - Reuters",
           "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUjBNWTJfS0ZEcnUtT2tVWk9VVnd5c2Q0YkhQbkFpWC1uREQ4OTNxUG1XZXhZdlVTbHVUaVdrNnQxTkxSVzVzZW9wRFBFbmNvLVlUbXU0TU9xZWxSUFVjNEtMcWtvZW83eUppb0xiMHVqOW1vaVNiUzhVLWgtbFBhUW9Ccm0zM0J3UVRuTEpmTEFxOUVkNER5ZlhCWXVvMkV4YzJV?oc=5",
-          "s": "reuters.com",
+          "s": "Reuters",
           "d": "2026-08-06",
           "cues": []
         },
         {
-          "t": "Cheniere Energy (NYSE: LNG) Q2 profit jumps as LNG revenues grow - stocktitan.net",
+          "t": "Cheniere Energy (NYSE: LNG) Q2 profit jumps as LNG revenues grow - Stock Titan",
           "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSXl1a1U2QnRQd0VWU2VpX09MY0xvVXIzVTlHRkhCMG5nRy13dXE3emp3SU9LdzZOS2tBamFGZTBnUWZ0RHNtdDhDQnhaX2pSbklfUDlwbDdXY3BnM21uaS01T3dLdW0wbnZ1NndvS2lrMUJUdTRmcnY2NU9xajQtandjTXhMbGZLOUlBbFFEZE5xM3ZXYlctR19jbHpZNEVlSFlYYkpaWXJ2dUFLVGU0NA?oc=5",
-          "s": "stocktitan.net",
+          "s": "Stock Titan",
           "d": "2026-08-06",
           "cues": []
         },
         {
-          "t": "Cheniere Energy (LNG) Q2 Earnings and Revenues Beat Estimates - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMy01TU95em9BQnhOOUY0bV83Nm9XVmphUDVlSFRFOGRRZG5LNXB3Q1NZZ0VneXdJekNocFFPOWc3bVAxU1NZWUNXZjBrMFZxdFkyTmJDZElpWkcxN2pwMUR3UUI5QThybWV5MzFVX0sxQ1FQZkZRamV6ZTEwQWVHT01leUNCdUxVam85bzVZaGVWOVRTODZENzlfemI?oc=5",
-          "s": "Yahoo Finance",
+          "t": "Cheniere Energy Q2 2026 Earnings Call Transcript - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX0pSOGxzX0RBaVNRMzZhelY3Q01NNjlPMHR6dUxBR0NIWnZHQUVvQ0NYb0NIT0FCY1VZdHRrdF9pMEZneTZsTHRDSkFiamhBTjNnejlBbHU2dmRINWJlbUo3Y1dMaVlnYlNCM0p3Sl9ZSXRXdDdVMDF0bWtzYy1ZUzYzRzN1Zw?oc=5",
+          "s": "MarketBeat",
           "d": "2026-08-06",
           "cues": [
             "beat"
@@ -707,25 +707,25 @@
       },
       "wire": [
         {
-          "t": "MP Materials results beat expectations on rising sales, US price support - reuters.com",
+          "t": "MP Earnings Show Chinese Rare-Earth Monopoly Is Fading. The Stock Is Up. - Barron's",
+          "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQd3V5NUVDWkhjYi1nSEFPOU1HZW9PN0JhQ2x6ME53SGNJQVZSU2ZiNDFvdEY3T2RTWURUU2RMX3Fzdi1TQUw0QmN4T1o2SkNFenhnSXpnR2c5MmlWaHBxOFQyTGNqeVk2d1NnM2xCVHhfdWt3TTBiX3lWQ3lRZlJSTA?oc=5",
+          "s": "Barron's",
+          "d": "2026-08-07",
+          "cues": []
+        },
+        {
+          "t": "MP Materials results beat expectations on rising sales, US price support - Reuters",
           "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQOFc1Q2xVTXVkYjJJV0JKTThDN0N4LWdUbGhXdG9GYkI4U2VjVDgxREZwTU5jbTJqeW5qam5KZEhYeThKdmdRdlpVR25WU3JPTGJPdU5sdDJwakFxY1pERnhQUWdHSWtUWEc2bFVpaTAxdmg2N2VubVc5Z19FLUNhUkVaSWNpVlBuSUpjcW9HMWdRdnhVYkw5ZGlFOEJ0b0M5Q0JaaVl4c2twaUtOM3c3eVAyeGJIdw?oc=5",
-          "s": "reuters.com",
+          "s": "Reuters",
           "d": "2026-08-06",
           "cues": [
             "beat"
           ]
         },
         {
-          "t": "MP Earnings Show Chinese Rare-Earth Monopoly Is Fading - Barron's",
-          "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQd3V5NUVDWkhjYi1nSEFPOU1HZW9PN0JhQ2x6ME53SGNJQVZSU2ZiNDFvdEY3T2RTWURUU2RMX3Fzdi1TQUw0QmN4T1o2SkNFenhnSXpnR2c5MmlWaHBxOFQyTGNqeVk2d1NnM2xCVHhfdWt3TTBiX3lWQ3lRZlJSTA?oc=5",
-          "s": "Barron's",
-          "d": "2026-08-06",
-          "cues": []
-        },
-        {
-          "t": "MP Materials Sold 1,006 Metric Tons of NdPr Products in Q2 - stocktitan.net",
+          "t": "MP Materials Sold 1,006 Metric Tons of NdPr Products in Q2 - Stock Titan",
           "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTWFPVzhhajlYSUtLOXo0d0RmX0p4dGZwR1I1OWFOX1liVTJra2RtNW8yaUpVVWpNakpaaERoS3Ayc1pqWHF4Vy15V2xmd1BwYWlBX3E3VjItcE1fSm1YTVRBTDNUREI4cUN0dmxGN3kyTWlBcUM0TGd2TzZKdnJCbTd3ZHVIQ1R3UXRlUFlqeWFxXy1UTzQ2aQ?oc=5",
-          "s": "stocktitan.net",
+          "s": "Stock Titan",
           "d": "2026-08-06",
           "cues": []
         },
@@ -766,9 +766,9 @@
           "cues": []
         },
         {
-          "t": "Wheaton Precious Metals' Q2 profit nearly doubles, quarterly revenue hits record (WPM:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQb3hEaWNHcy1sU0JESS1nZm9NWG5kTGdTWmxLWlBoeFNOMEo0Rmtyd2xfMUM0b213Y0RJMXNWajI4MkczU194NWc0QlltLUVUMWJub2plRjI1RTd3ZlNGd0dXTzNVUFFIQm1BM2ZVdXJxdWhua2FIVTFiRy0waEFMbTVVaTV6UEpoYTZUdXdBdi1xMkVERk1MVGJkMGM5eTlLTjRUNk9lWVpmenlYX01mOVg3OV9qRnptQy01Z2QtNWxidGltS1d3d2tGTVRFV205d2Y4eHpyRC1aWXdSNjNHN0RrRk5qUHh4cWVkUUJUYzJKSGZEcUFOUjBDcWc1UklIdEpYU1Y0VnpaaEFjaUE?oc=5",
-          "s": "Seeking Alpha",
+          "t": "Wheaton Precious Metals Q2 Adjusted Earnings, Revenue Rise - Moomoo",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSUY1Ukh5UWthU0QzWmFncW9OQnZRUUQ4dWY3UFhDRHl5eXVKNWJoM3l6dV8wa1RXQzRMNy1JZ2o0RVBJQkhiYW80RVNqSkNNWmJXUTMwVVZ6LWwtX1AzWkVWaVJwUnZVRTNxdnlfU2lKNWNsdDdyX1dOVzRNWXRPcVNiSU9IUHlQeEZhUHRBSUIwaG1yYnE5YVlHa2ZfcGpB?oc=5",
+          "s": "Moomoo",
           "d": "2026-08-07",
           "cues": []
         },
@@ -832,6 +832,13 @@
       },
       "wire": [
         {
+          "t": "Fluor Reports Second Quarter 2026 Results - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcnpPVjk5M3ZJU0NuazU3OUhYQ3UyWllLYWJWV0NaR3V5YlQwTmxUMmZHelcwekMtek4yaXVyVEw0QVR6M1hlbWF4S2JmZzY3WVZSbnVzeUx4SHpaYU9lZjltMmo0WllFeEtoNUxLbEZZdGQ3ZmVjYjBzSldnNU44bjZjcEY2MXVnQ29wR1Vwd245bjQwVGZSQjl5b2Jvc0k?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-07",
+          "cues": []
+        },
+        {
           "t": "Fluor: Q2 Earnings Snapshot - Austin American-Statesman",
           "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeC1kdzBjVEJwYkh4dnY1VjdFX1JZWF9yTThmQk1KRktUUjZtU1FENzFKbzZlNWVmYnMtN0VOV1hiajUyS0hXaGhRQnYzNmI5UjBRTFNkcUhnZEItajJNWV9OdWFtbF9YbWhaNE9MRi1STzBNRXNqalRZOTFmWFhlbFd3UDVNQWg3dmc?oc=5",
           "s": "Austin American-Statesman",
@@ -848,16 +855,9 @@
           ]
         },
         {
-          "t": "FLUOR ($FLR) Releases Q2 2026 Earnings - Quiver Quantitative",
+          "t": "FLUOR ($FLR) Releases Q2 2026 Earnings - quiverquant.com",
           "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMWMtcmdkN083UGQwc2VUZUFaNS1ReGJ1TmJwVjZEalJ0V21wb2cwWTFvVEJMSTJvQnZBUklfS05oM0t1U0FpMlh5allnSUROT2xnUWlFcjdyUi1qNzcwQTBYYkFLWTZNZkZtTlBUZzFXbzlqOE1qX1I5ME8zeW5FTXV1VQ?oc=5",
-          "s": "Quiver Quantitative",
-          "d": "2026-08-07",
-          "cues": []
-        },
-        {
-          "t": "Fluor Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPd2JWMEQ0cGZmMTRHQWNVNkhaaDBjY1dPZ0FKREpmMk4wZnNveGdFaE0wcURXMEhiNFFLR2hBMEJTclctbGlDS3A0a1FsOEFXcFRsNXdibG05cUxHbjVsTGxoZVluVWhDeWp4ZW9UYTVwbU8tYXNoeHFGbEtHS3NZVnJnSjNxMDNvbUw1RDQ1X2VGQ3lRSkFoT01uOGZKdFptRHhmTlZ3REpIVGY2MEw2SndUZGRZNUhtaHpvUFVlY054RmZxM0gyNVd1aXNPcTVZeWxGM3NoRnN2Mk53d1ItZ25wRUs3T1NJQTVRdnExbFJVejJPcG1kMV9hTFJTUHM2ZWlv?oc=5",
-          "s": "Benzinga",
+          "s": "quiverquant.com",
           "d": "2026-08-07",
           "cues": []
         }
