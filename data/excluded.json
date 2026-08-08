@@ -105,10 +105,10 @@
     },
     {
       "ticker": "CAPS",
-      "name": "Capstone — ticker unresolved",
+      "name": "Capstone Holding Corp",
       "considered_for": "elec",
-      "date": "2026-08-07",
-      "reason": "Raised as 'Capstone Energy (CAPS)' — microturbines for data halls and edge sites, argued at ~3x revenue against Bloom Energy at 15-20x (Bloom checks out at 20.8x on $3.1B revenue, so the relative-value case is sound). BUT the ticker does not resolve to that business: CAPS is Capstone Holding Corp, a building materials distributor with $52M revenue. Capstone Green Energy returns no price data under CGRN, CGRNQ or CPSTQ, and CPST is now a Calamos ETF reusing the old symbol. Excluded until the actual listing is confirmed — the thesis may well be right, the security is unidentified."
+      "date": "2026-08-08",
+      "reason": "Not the company intended. CAPS is a building materials distributor. The microturbine business trades as CGEH (Capstone Energy+, OTC Pink) and is now IN the universe. Recorded so the wrong ticker is not picked up again."
     }
   ]
 }

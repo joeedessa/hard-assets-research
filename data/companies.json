@@ -3008,6 +3008,27 @@
       "last_touched": "2026-08-07",
       "last_reviewed": "2026-08-07",
       "source_note": "Raised as 'Established Solutions'; identified as Stabilis Solutions from the description (virtual pipeline to data centres and launch operations) and confirmed by market cap."
+    },
+    {
+      "ticker": "CGEH",
+      "name": "Capstone Energy+",
+      "vertical": "elec",
+      "chain_layer": "Microturbines / on-site power",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns microturbine manufacturing for on-site and edge generation — the same problem Bloom (BE) addresses with fuel cells and GE Vernova (GEV) with heavy turbines, at a different unit size. Hard to replace at its size band: heavy turbines are wrong for a 1-4MW edge site and there are thousands of those in the US, plus 20-30MW data halls that do not justify a utility interconnection. Today: ~$106M revenue against a $381M market cap, roughly 3.6x, versus Bloom at 20.8x on $3.1B — a genuine six-fold valuation gap for exposure to the same interconnect-queue bottleneck. Capacity is the option: reported to run near 10% utilisation, with roughly 1GW/year possible on three shifts, so incremental demand needs no new plant. What would break it: it emerged from the 2023 Chapter 11 of Capstone Green Energy, so the balance sheet and any residual claims deserve scrutiny before the valuation gap is treated as free; and microturbine economics depend on gas prices and on the interconnect queue staying blocked.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Down 7.1% over twelve months while every other answer to the same bottleneck re-rated hard — Bloom is up ~496%. On the froth scale that reads insulated, and the 3.6x-vs-20.8x gap supports it. But the reason for the discount is OTC Pink listing and post-bankruptcy history, not obscurity, so treat this as a governance-and-disclosure case rather than a pure valuation one.",
+      "themes": [
+        "ai-demand-pull",
+        "datacenter-power",
+        "gas-infrastructure",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-08",
+      "last_reviewed": "2026-08-08",
+      "data_caveat": "OTC Pink. Yahoo returns only ~37 price bars a year for this listing, so 200DMA and 12-month return will be null and the 1-day change can span several sessions. Breaking-signal divergence checks are unreliable for this name specifically — read its price directly rather than trusting the derived signals. Underlying liquidity is adequate (median ~$2.9M traded daily); the sparseness is Yahoo's coverage, not the market's."
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-08T11:47:57+00:00",
+    "as_of": "2026-08-08T12:07:04+00:00",
     "mode": "full",
-    "coverage": "161/161 scanned this pass",
+    "coverage": "162/162 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -90,8 +90,8 @@
           ]
         },
         {
-          "t": "Siemens Energy AG (SMEGF) (Q3 2026) Earnings Call Highlights: Record Orders and Margins Signal ... - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQelFDUkpudDBKQ0gwek5mNnNhLWs2dW1qTjJBR0EwQUlvX3d1MXRFdHBKZVdhMGhJbk9BVE14eXBVVTd3T2ZvV2V5MEt5SFBrTW9uaDZjaTg2cFRCYUlGYTlyNkJQVmZrZXY4dnpjQnpNTXZMSllPRmtQNG5wV21sbmJrZDdGY0pZOUlWUUhrcEtEOXc5RkE?oc=5",
+          "t": "Siemens Energy AG (ADRs) (ENR1.SG) Q3 FY2026 earnings call transcript - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaGlaNng5OXJ2LUNYNW96QmdocThQbDlTLWRjVmdnTC01THhJLVpFQnBIcWVabzc5ZVI2dGpUN21hSGZZWXIzOGt4eUowZG84ZEZVSUt0VThfM2ZKZVdXQVRPOEU1Y0wxOUlQM3JCS2NWU0RvMkdoTWVHX1V5bklEb2R5Q0NPRFNDMzJQZGozTzdpMEhm?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-08-05",
           "cues": []
@@ -281,6 +281,15 @@
           ]
         },
         {
+          "t": "Fluence Energy (FLNC) Could Be 23% Undervalued After Earnings Miss And Lowered Outlook - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbFdoZGJNMkxWcE56MG9nQlExbFAtYzVpR09HVzdMdW5QYnoyRkFQZWY5ZEVveHJQRmlLR19QcE52YllXRUF4YUpnLUxhZExSUHVPemJ5bFpndFhyTk1fRTY3N1NOYVVYWlhJcTlOcHNCQ3VnLS1TTFdzemFqZUxUNFNyUWl6RjVTOENjQnhFdFA3OTdrUmEtN0MxZ0QzT3lxS3FKdVhQMDZXdzJXVFZqVXM0UGJyd1VrcjhidGZSUXUyX3NsQjNLUmZ2d3FxakxySk9CTdIB2gFBVV95cUxQQ1U3T3ZleUl6RUtxOTBEQzBHLWp6dTFKUTRlYXVqU3htcU04dnJHWTcwR3NuVWQ2RDlpQklaaW5YR3NoT0FPaEo2WGd0RElPTkFzV1BGaWVjUW9NS2xpWm5MckNpaWR5OFZ0RlV1OUNpS2RoYUlnMFVmdUMwUFNBd0tzc2VRa3BheFBsdU1TTjlScTRCUkNfTTdiaEYyMmF2MnNhYmlScWVJMEdaNG5jMC1WY2ctaXhHR3VWcDVOWEszT3dvVG9UaTB4ZXNOTVhMMHVrSGh2ZXBiZw?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-06",
+          "cues": [
+            "miss"
+          ]
+        },
+        {
           "t": "Fluence Energy, Inc. 2026 Q3 - Results - Earnings Call Presentation (NASDAQ:FLNC) 2026-08-06 - Seeking Alpha",
           "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSzZHVDR5M3BnREVOZ2ZNWFJCOEM0Q2YwbWVKbzUxRXdmUnloc2lFSW1ob0JPaWtpNnl1WGZfdXptcXV6dnBpRDVNUzc5OXlEdEUzNFdmWUhid3R1cDUzNG4zOHJlSWJtOV9JdlVrM0JsS25rTjhBUFJTWEdPNEV0U1NLcDJ6RUtGQlRQbU1oV0tzcFNZTDhfOGFoQWxTSV9zMWF4Yg?oc=5",
           "s": "Seeking Alpha",
@@ -293,15 +302,6 @@
           "s": "renewablesnow.com",
           "d": "2026-08-07",
           "cues": []
-        },
-        {
-          "t": "Fluence Energy (FLNC) Could Be 23% Undervalued After Earnings Miss And Lowered Outlook - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbFdoZGJNMkxWcE56MG9nQlExbFAtYzVpR09HVzdMdW5QYnoyRkFQZWY5ZEVveHJQRmlLR19QcE52YllXRUF4YUpnLUxhZExSUHVPemJ5bFpndFhyTk1fRTY3N1NOYVVYWlhJcTlOcHNCQ3VnLS1TTFdzemFqZUxUNFNyUWl6RjVTOENjQnhFdFA3OTdrUmEtN0MxZ0QzT3lxS3FKdVhQMDZXdzJXVFZqVXM0UGJyd1VrcjhidGZSUXUyX3NsQjNLUmZ2d3FxakxySk9CTdIB2gFBVV95cUxQQ1U3T3ZleUl6RUtxOTBEQzBHLWp6dTFKUTRlYXVqU3htcU04dnJHWTcwR3NuVWQ2RDlpQklaaW5YR3NoT0FPaEo2WGd0RElPTkFzV1BGaWVjUW9NS2xpWm5MckNpaWR5OFZ0RlV1OUNpS2RoYUlnMFVmdUMwUFNBd0tzc2VRa3BheFBsdU1TTjlScTRCUkNfTTdiaEYyMmF2MnNhYmlScWVJMEdaNG5jMC1WY2ctaXhHR3VWcDVOWEszT3dvVG9UaTB4ZXNOTVhMMHVrSGh2ZXBiZw?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-06",
-          "cues": [
-            "miss"
-          ]
         }
       ],
       "wire_gate": "2026-08-06"
@@ -624,6 +624,16 @@
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-08-12T12:30+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CGEH",
+      "name": "Capstone Energy+",
+      "d": "2026-08-13",
+      "release": {
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {
