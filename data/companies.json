@@ -2966,6 +2966,48 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings"
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy",
+      "vertical": "elec",
+      "chain_layer": "Fuel cells / on-site power",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns solid-oxide fuel cells that generate power on-site from natural gas or hydrogen, bypassing the grid interconnect queue entirely. Hard to replace because the binding constraint on data-centre buildout has stopped being land or chips and become a utility interconnection that can take 4-7 years — Bloom sells the way around that queue, deployable in months. Today: revenue $3.1B and a wave of hyperscaler and colocation orders. What would break it: gas feedstock economics, the interconnect queue actually clearing, or SOFC stack degradation and replacement costs eating the lifetime economics. Sits alongside the gas-turbine route (GEV) and the nuclear-PPA route (CEG) as one of three answers to the same problem.",
+      "conviction": 1,
+      "froth": 3,
+      "froth_note": "Up roughly 496% over twelve months and trading near 21x revenue. The demand story is real and the order book is real; the price already embeds years of it. This is froth-3 on entry timing, not a judgment on the business — a >=15% drawdown is the condition, per the entry-window rule.",
+      "themes": [
+        "ai-demand-pull",
+        "datacenter-power",
+        "gas-infrastructure",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-07",
+      "last_reviewed": "2026-08-07",
+      "source_note": "Raised as an energy-transition/demand name; added after verifying the listing and the revenue multiple."
+    },
+    {
+      "ticker": "SLNG",
+      "name": "Stabilis Solutions",
+      "vertical": "ng",
+      "chain_layer": "Virtual pipeline / small-scale LNG",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Liquefies natural gas and trucks it to users with no pipeline connection — a virtual pipeline. Hard to replace where it matters because the customers are, by definition, sites a pipeline does not reach: stranded data centres, remote industrial loads and launch operations. Building a lateral takes years and an easement; a truck takes a day. Today: roughly $61M revenue on an $90M market cap, with data-centre and aerospace demand as the growth legs. What would break it: it is tiny and illiquid, contract-concentrated so a single customer loss is material, and the moment a pipeline does get built to a site the economics for that site disappear. The business is structurally a bridge, and bridges get replaced.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Up only 3.5% over twelve months while the data-centre power theme re-rated everything around it — the equity has not participated. That is either a mispricing or the market pricing the customer-concentration and sub-scale risk correctly, and at $90M market cap it is genuinely small rather than merely overlooked.",
+      "themes": [
+        "gas-infrastructure",
+        "datacenter-power",
+        "ai-demand-pull",
+        "lng-supercycle"
+      ],
+      "last_touched": "2026-08-07",
+      "last_reviewed": "2026-08-07",
+      "source_note": "Raised as 'Established Solutions'; identified as Stabilis Solutions from the description (virtual pipeline to data centres and launch operations) and confirmed by market cap."
     }
   ]
 }
