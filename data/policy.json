@@ -6,7 +6,7 @@
       "programs": "Fiscal programs + direct spending mapped to tickers",
       "levers": "Upcoming policy decisions that could move markets"
     },
-    "as_of": "2026-08-04"
+    "as_of": "2026-08-09"
   },
   "regimes": [
     {
@@ -135,6 +135,30 @@
       ],
       "impact": "Increases country risk premium for LatAm exposure. Justifies streaming structures (FNV, WPM) — streams are above the mine-level political risk.",
       "watch": "Chile government position on further nationalization. Peru mining conflict recurrence. Argentina Milei government mining reform progress."
+    },
+    {
+      "id": "production-origin-bans-equipment-authorisation",
+      "title": "Production-Origin Bans via Equipment Authorisation",
+      "icon": "🔌",
+      "status": "active",
+      "status_color": "#E24B4A",
+      "date": "2026-07-28",
+      "cliff": "2028-01-01",
+      "summary": "A THIRD kind of control, distinct from the two this map already tracks. Export controls govern what may be sold abroad; entity lists govern who is barred. This governs WHERE A THING IS BUILT, and enforces it through the radio certification gate rather than trade law — which is why it reaches consumer and commercial hardware that Commerce controls never touched. Written to generalise: the same instrument has already been used for uncrewed aircraft systems and consumer-grade routers, and further product classes are reportedly being drafted. FIRST INSTANCE RELEVANT HERE — FCC Public Notice DA 26-786 (PSHSB), released 2026-07-28, added foreign-produced connected power inverters to the Covered List. ADOPTED AND IN FORCE, not a proposal. COVERED: a device that converts DC to AC or AC to DC AND contains components enabling remote communication, control, sensing, data collection or monitoring via Wi-Fi, cellular, Bluetooth or similar connections — the definition enumerates microinverters, string inverters, central inverters and hybrid battery-based inverters. No kW threshold was found in any source, so it runs from a rooftop microinverter to utility scale. 'FOREIGN-PRODUCED' MEANS PLACE OF PRODUCTION, NOT NATIONALITY. The test is failure to qualify as a 'domestic end product' under the Buy American standard at 48 CFR 25.101(a), which for most manufactured goods requires US manufacture AND domestic components exceeding 65% of total component cost for items delivered CY2024-2028. A German, Japanese or Korean producer is caught on identical terms to a Chinese one, and a US-headquartered brand building in Mexico or Vietnam is caught. Note the consequence of the CONTENT test: US final assembly alone does not clear it. MECHANISM: covered equipment cannot receive FCC equipment authorisation (47 CFR 2.903(a)), and applicants must certify their equipment is not covered (47 CFR 2.911(d)(5)(i)) — which bars import, marketing and sale. PROSPECTIVE ONLY: previously authorised models, already-acquired devices, and federal government purchases and use are unaffected. The damage curve is therefore a slow product-cycle strangle, not a cliff. EXIT: case-by-case Conditional Approval from the Department of War or DHS.",
+      "tickers": [
+        "FLNC",
+        "BE",
+        "AES",
+        "GEV",
+        "ETN",
+        "SU.PA",
+        "ENR.DE",
+        "ABBN.SW"
+      ],
+      "impact": "A policy-manufactured onshoring mandate on the grid-hardware and storage stack. It is NOT a China ban — it is an everywhere-but-here ban with a discretionary licence, so the beneficiary set is 'whoever can certify US production at >65% domestic content', which is a materially smaller group than 'whoever is not Chinese'. Upstream, a binding US-production requirement pulls demand into US assembly and therefore onto power semiconductors (SiC and IGBT modules), magnetics, copper windings, capacitors, aluminium enclosures and enclosure steel. WHERE THE BOTTLENECK ACTUALLY SITS — tested rather than assumed: inverter final assembly is comparatively easy to stand up and both Enphase and SolarEdge already run US lines, so assembly is not the binding constraint. The constraint is (a) the 65% DOMESTIC CONTENT test, which reaches back into a component tier — power semis, magnetics, passives — that is largely not domestic, and (b) the Conditional Approval queue, which has no published review timetable. Both are consistent with the prior; assembly capacity is not.",
+      "watch": "Whether any Conditional Approval is granted, and how fast. Also whether the wireless-only wording of the connectivity prong creates a real escape hatch: the definition lists Wi-Fi, cellular, Bluetooth 'or other similar connections', so a utility-scale unit reaching SCADA over fibre or Ethernet may fall outside — but counsel describe this as a fact-specific, model-by-model question, not a settled carve-out, and it is untested.",
+      "interaction_45x": "STACKS WITH, BUT IS NOT THE SAME TEST AS, IRA 45X. 45X is a production tax CREDIT that rewards qualifying US manufacture, with FEOC rules excluding Chinese-origin material; failing it costs you a subsidy. This is a PROHIBITION enforced through equipment authorisation; failing it costs you market access. They diverge on the test itself: 45X domestic-content and FEOC rules are not the Buy American 'domestic end product' test at 48 CFR 25.101(a). A product can qualify for one and fail the other. From 2026-07-28 a manufacturer selling connected inverters into the US must satisfy both regimes independently.",
+      "verification": "Verified 2026-08-09 against the FCC Public Notice text (DA-26-786A1) plus client alerts from Stoel Rives, Crowell & Moring, K&L Gates and Morgan Lewis. The operative definitions sit in Appendices B and C of the Notice, which are scanned images without a text layer, so definitional language is taken from counsel summaries corroborated across at least two firms. NOT VERIFIED TO A SECOND SOURCE: a reported step-up of the domestic content threshold to 75% from 2029, and a reported firmware/software waiver expiring 2029-01-01 — both appear in Stoel Rives only and are recorded here as unconfirmed."
     }
   ],
   "programs": [
@@ -222,6 +246,22 @@
         "WPM"
       ],
       "bull_bear": "Bull: low inventories + demand pull from grid buildout = squeeze risk. Bear: demand softness from China property sector = inventory build."
+    },
+    {
+      "id": "fcc-inverter-conditional-approval",
+      "title": "FCC inverter Conditional Approval — who gets cleared, and how fast",
+      "date": "2028-01-01",
+      "description": "The live variable in the whole regime. Foreign-produced connected inverters are barred from FCC equipment authorisation unless the Department of War or DHS grants a case-by-case Conditional Approval. Applications go to conditional-approvals@fcc.gov as a machine-readable PDF by 2028-01-01, and must address corporate ownership, product and supply-chain provenance, and a time-bound US manufacturing plan covering capital expenditure, hiring and facility expansion, with ongoing progress reporting. CRITICALLY, NO REVIEW TIMETABLE HAS BEEN PUBLISHED, and as of 2026-08-09 no grant has been reported. Counsel are advising applicants to build agency review time into product launch schedules. The commercial outcome of the rule turns entirely on who clears this queue and when — which means allied manufacturers now hold their US market position at the pleasure of a discretionary licence with no deadline. That asymmetry is what makes this a regime rather than an incident: 'where is it built' has become a first-order question alongside 'who owns the technology'. The 2028-01-01 date on this entry is the APPLICATION deadline, not a decision date.",
+      "tickers": [
+        "FLNC",
+        "BE",
+        "AES",
+        "GEV",
+        "SU.PA",
+        "ENR.DE",
+        "ABBN.SW"
+      ],
+      "bull_bear": "Bull for names that can certify >65% domestic content, and for the US component tier that has to supply it — power semiconductors, magnetics, copper windings, passives. Bear for anyone dependent on a new foreign-built connected SKU, and for project timelines if the approval queue stalls. Watch for the first grant as the signal that the process functions at all."
     }
   ]
 }
