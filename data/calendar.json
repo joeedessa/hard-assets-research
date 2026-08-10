@@ -1,47 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-08-08T12:07:04+00:00",
-    "mode": "full",
-    "coverage": "162/162 scanned this pass",
+    "as_of": "2026-08-10T08:17:46+00:00",
+    "mode": "light",
+    "coverage": "4/4 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "AFMJF",
-      "name": "Alphamin Resources",
-      "d": "2026-07-31",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-07-31T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ITRK.L",
-      "name": "Intertek",
-      "d": "2026-07-31",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:30 BST",
-        "iso": "2026-07-31T15:30+00:00",
-        "tz": "Europe/London"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "UMI.BR",
-      "name": "Umicore",
-      "d": "2026-07-31",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:40 CEST",
-        "iso": "2026-07-31T15:40+00:00",
-        "tz": "Europe/Brussels"
-      }
-    },
     {
       "type": "earnings",
       "tk": "TDW",
@@ -497,6 +461,13 @@
       },
       "wire": [
         {
+          "t": "Mitsui Kinzoku (TSE:5706) Stock Faces Earnings Volatility Despite Profit Rebound - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSUttdFZrN01hNzVjMDl4OG1tRFNCaXNtN3FESDZfamlYV1E0VmdZTXJYdklWM04wTXNhX3VLSkZvRjFKdHBpeVpUeGhFOU5RRVFVZ2tIUl9GSmNtMWhjbGNBUmdEMVBGVUxqdTAydnJrVzdKdFByOXV6OU1uRDNOSlpKQzF0MVpNZ1F6RmtUU3d5TDdZd1phM0dfTmdOT2xLTWhxenpYam5tNlBxVkpGRDZTMFBjYmIxVkRqNjZXNjFCa2JuUXpZVE5pampESjJRNEp1SW1qVDU2Z9IB2gFBVV95cUxQSUttdFZrN01hNzVjMDl4OG1tRFNCaXNtN3FESDZfamlYV1E0VmdZTXJYdklWM04wTXNhX3VLSkZvRjFKdHBpeVpUeGhFOU5RRVFVZ2tIUl9GSmNtMWhjbGNBUmdEMVBGVUxqdTAydnJrVzdKdFByOXV6OU1uRDNOSlpKQzF0MVpNZ1F6RmtUU3d5TDdZd1phM0dfTmdOT2xLTWhxenpYam5tNlBxVkpGRDZTMFBjYmIxVkRqNjZXNjFCa2JuUXpZVE5pampESjJRNEp1SW1qVDU2Zw?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-09",
+          "cues": []
+        },
+        {
           "t": "Mitsui Kinzoku Swings to Profit in Fiscal Q1 - Moomoo",
           "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVnhMLXp0U29FOEZlSnQ3TXNGa2ZiTVp2NjRJbDVRem1NOEFEZ1plTjFFNkpXN3A2al9kZElfTmh6YUlOVVBFUTQ4TGphQlFsX1UzQ0pkUGo0amJQdWo0Q0FlV1hSdDhtR0x3dG42a1l1VFIyd1Jobjl2VlNDc3Bjem9FdTVVRUFSLXpidTV5OA?oc=5",
           "s": "Moomoo",
@@ -505,6 +476,54 @@
         }
       ],
       "wire_gate": "2026-08-07"
+    },
+    {
+      "type": "earnings",
+      "tk": "ACM",
+      "name": "AECOM",
+      "d": "2026-08-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-10T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "KeyCorp Research Analysts Lower Earnings Estimates for AECOM - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQR2VDUDdaTXkyYWxGQkJLbzRnYzR1MkktMjZaTE1hQ2RYRGUwMzlVaGx0c0FESk1vaVJISDNUX2otU3I2TjlYVWZuU01jMk1vbncyV2pISkxDVm02anJMSmZFVWxIUWx2eGY1RjBUbDlaVVo5dVFJdXRsaUFkZnZZRDV0ckJXVG5TdE14S0xzRDN0dDVaN3MzQmpzenFHMEcyWTB0cHZhTy1pbmRfWTI0enliWmg?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-10",
+          "cues": [
+            "beat"
+          ]
+        }
+      ],
+      "wire_gate": "2026-08-10"
+    },
+    {
+      "type": "earnings",
+      "tk": "AII.TO",
+      "name": "Almonty Industries",
+      "d": "2026-08-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-10T20:00+00:00",
+        "tz": "America/Toronto"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CWCO",
+      "name": "Consolidated Water",
+      "d": "2026-08-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-10T20:00+00:00",
+        "tz": "America/New_York"
+      }
     },
     {
       "type": "earnings",
@@ -1972,6 +1991,13 @@
       "type": "policy",
       "d": "2026-11-10",
       "name": "China REE tranche-2 cliff",
+      "detail": "",
+      "tk": null
+    },
+    {
+      "type": "policy",
+      "d": "2028-01-01",
+      "name": "FCC inverter Conditional Approval — who gets cleared, and how fast",
       "detail": "",
       "tk": null
     }
