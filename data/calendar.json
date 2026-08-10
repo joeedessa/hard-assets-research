@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-10T08:17:46+00:00",
+    "as_of": "2026-08-10T14:07:51+00:00",
     "mode": "light",
     "coverage": "4/4 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -468,6 +468,13 @@
           "cues": []
         },
         {
+          "t": "Recruit’s Results Powered Japan’s Earnings Day - Finimize",
+          "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMM3JVdVNPQndQZTVEYUxkVUdNTmt2Z2Z4bk1zVjVwaEdMbG1XMmh3TUt5em9TVnhNSGRBLURoUVR0RnVvcE04LXdGWk9NUXRCNzVIY1dkOHlOVUl3TWt3NjBmNDVGaDVCUV9uNHlzSG81QTdRb2dqakJici1jZw?oc=5",
+          "s": "Finimize",
+          "d": "2026-08-10",
+          "cues": []
+        },
+        {
           "t": "Mitsui Kinzoku Swings to Profit in Fiscal Q1 - Moomoo",
           "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVnhMLXp0U29FOEZlSnQ3TXNGa2ZiTVp2NjRJbDVRem1NOEFEZ1plTjFFNkpXN3A2al9kZElfTmh6YUlOVVBFUTQ4TGphQlFsX1UzQ0pkUGo0amJQdWo0Q0FlV1hSdDhtR0x3dG42a1l1VFIyd1Jobjl2VlNDc3Bjem9FdTVVRUFSLXpidTV5OA?oc=5",
           "s": "Moomoo",
@@ -535,7 +542,44 @@
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-08-10T12:30+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "International Seaways (INSW) Beats Q2 Earnings and Revenue Estimates - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVDI0bktIZkdmYUZlRVNuSGZZcXRKQ2NQaUFiQ3Rvd1ozVVlXckxPOXRSTmY0ZE1wTGsyYm1rNHRJazJSQVctSTg4WHlsWUgxUG9TRktGOFFQT0ZXQktjcnQzaVc2YmhwVEgxbUhRdTRvRVNra2dBRzlhaHRMMk05azRHZ1o0ck5JcENMVTVpM2FuUlpUeS0taWkwYXdWREdLeVE?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-10",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "International Seaways: Q2 Earnings Snapshot - KVUE",
+          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbXN2SlFTaWRHYlhFd1BFWjNXeWN0cnhCaG0zVXVFRGVOeUF0UmE4WTlqTVFOdVJlNl80Q1o4V3EyVEcwQWJmdUJDZ0p1NnQwLXBoeG02VGUxZmxRcjhXb0x6cm4wNW5TaWI5VU1Vd2wzNEtJZFJxeV80R3Utb3lFcXJFVUZmNDJFbDVJMGNNM19KYVZaU0hxWUdmcHZHOWVXMG5xMlNEQXp4Y1lFRF8yYWpIcEVIY2N1cWd4dWU1M3VyVER3MXlYYUNkekhQX0lEWFM3d3U0RQ?oc=5",
+          "s": "KVUE",
+          "d": "2026-08-10",
+          "cues": []
+        },
+        {
+          "t": "International Seaways Declares $5.05 Dividend After Record Q2 - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZ1RoVkpDanVocXNYUlMtQXBMRHJTU21JV2xCcWR1NDhqTTJmVUxsWE1vTlhyQVJJNG9IYXBMa0U3RGhsbzNhdVNYeGtNeF9XSVRJUzJSMVZTUFh2amZpc1VuVldSUVV2cmdYdHNhcXV0ZmhGTzM2eWlCbjlJSWthQXQ5UjVoY3JsOXpEaHF2WElXdDN2Q1dRMGdIRWw1MVhNV1gyWkNMUQ?oc=5",
+          "s": "Stock Titan",
+          "d": "2026-08-10",
+          "cues": [
+            "dividend/buyback"
+          ]
+        },
+        {
+          "t": "International Seaways earnings beat by $0.39, revenue topped estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVTktd2lQYTk0X3NSb3VwTTZJWkY3ajY2RUQxdlp4VkU1bFVYVDlQUHAwUEdQeEpmYlppc21nWDUxM2w2TkN2Z0QzUkFuLWFvSFRmeDZTRFVISG9LVlNMMlk2SnBIRXpBQWJsQ1l1cW1fcWRpSjNsM1VlY0tRa0w1SnFCZVRjLUxBNkVuQTZHU2lsdUJyS05GNzVYdG84eFpZUGVlMGFzdEprUS1FbThGU3BSQ1hxX3RFQ2dScm1JWWk?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-10",
+          "cues": [
+            "beat"
+          ]
+        }
+      ],
+      "wire_gate": "2026-08-10"
     },
     {
       "type": "earnings",
