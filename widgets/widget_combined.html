@@ -872,6 +872,9 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .dw-tile-v{font-family:var(--font-mono);font-size:13px;font-weight:600}
 .dw-fxnote{font-size:10px;color:var(--warn);background:color-mix(in srgb,var(--warn) 8%,transparent);
   border:.5px solid color-mix(in srgb,var(--warn) 22%,transparent);border-radius:4px;padding:4px 7px;margin-top:5px;line-height:1.45}
+.dw-shorthist{font-size:10px;line-height:1.55;margin-top:7px;padding:6px 9px;border-radius:4px;
+  color:var(--color-text-secondary);background:var(--color-background-secondary);
+  border-left:2px solid var(--warn)}
 .dw-ddnote{font-size:10px;color:var(--good);background:color-mix(in srgb,var(--good) 8%,transparent);border:.5px solid color-mix(in srgb,var(--good) 22%,transparent);
   border-radius:3px;padding:4px 7px;margin-top:3px;line-height:1.4}
 .dw-mxs{display:flex;flex-wrap:wrap;gap:14px;padding:8px 10px;border-radius:5px;
@@ -2639,12 +2642,12 @@ function drawerMarket(tk){
     ${tile('Price',q.p<10?q.p.toFixed(2):q.p.toFixed(0))}
     ${tile('1 day',fmtPct(q.d1),pc(q.d1))}
     ${tile('1 month',fmtPct(q.m1),pc(q.m1))}
-    ${tile('52w drawdown',q.dd!=null?q.dd.toFixed(1)+'%'+(q.dd<=-15?' ◈':''):null,q.dd<=-15?'var(--up)':null)}
+    ${tile(q.dd_full===false?'Drawdown (short history)':'52w drawdown',q.dd!=null?q.dd.toFixed(1)+'%'+(q.dd<=-15&&q.dd_full!==false?' ◈':''):null,q.dd<=-15&&q.dd_full!==false?'var(--up)':null)}
     ${tile('vs 200DMA',v200!=null?(v200>=0?'+':'')+v200+'%':null,pc(v200))}
     ${tile('12 month',fmtPct(q.r1y),pc(q.r1y))}
     ${tile('Fwd P/E',q.fpe||null)}
     ${tile('Mkt cap',fmtMC(q.mc))}
-  </div>${fxNote(tk)}${q.dd<=-15?`<div class="dw-ddnote">◈ >15% off 52-week high.${q.r1y!=null&&q.r1y>60?` But still ${fmtPct(q.r1y)} over 12 months — this is profit-taking, not a value entry.`:' Entry-window threshold for insulated names.'}</div>`:''}`;
+  </div>${fxNote(tk)}${q.dd_full===false?`<div class="dw-shorthist">Listed too recently for a 52-week comparison — ${q.bars!=null?esc(String(q.bars)):'fewer than 200'} trading sessions of history. The drawdown above is measured from the highest close we have, not from a 52-week high, and this name is excluded from entry-window and froth-vs-high signals rather than given a number those signals would misread.</div>`:''}${q.dd<=-15&&q.dd_full!==false?`<div class="dw-ddnote">◈ >15% off 52-week high.${q.r1y!=null&&q.r1y>60?` But still ${fmtPct(q.r1y)} over 12 months — this is profit-taking, not a value entry.`:' Entry-window threshold for insulated names.'}</div>`:''}`;
 }
 
 function drawerNews(tk){

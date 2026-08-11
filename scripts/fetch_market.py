@@ -186,6 +186,11 @@ MAX_VOICE_PER_FEED = 3
 
 # ── Froth alert thresholds ─────────────────────────────────────────────────────
 DRAWDOWN_THRESHOLD = -15.0        # % from 52w high → entry window flag
+# Trading days required before a drawdown may be called a 52-WEEK drawdown, and
+# before it is allowed to raise an entry-window alert. A year is ~252 sessions;
+# 200 leaves room for holidays and thin-name gaps without admitting a name that
+# listed last month.
+FULL_HISTORY_BARS = 200
 COMMODITY_MOVE_THRESHOLD = 5.0   # 1-day % move in commodity index → alert
 SINGLE_DAY_MOVE_THRESHOLD = 8.0  # 1-day % in equity → alert
 
@@ -267,9 +272,16 @@ def fetch_quotes(tickers):
             else:
                 m1 = None
 
-            # 52-week high drawdown
-            high_52w = safe_float(closes.max())
-            dd = pct(price, high_52w)  # will be <= 0
+            # Drawdown from the highest close AVAILABLE — which is only a
+            # 52-week high if a year of history exists. Recently listed names
+            # (CGEH had ~37 bars) were getting a drawdown computed off a few
+            # weeks and labelled "52w", which then fired the entry-window alert
+            # at -15%. A five-week pullback is not a 52-week entry window.
+            # We keep the number, record how many bars it covers, and let the
+            # alert and the UI decide what they are allowed to claim.
+            bars = len(closes)
+            high = safe_float(closes.max())
+            dd = pct(price, high)  # will be <= 0
 
             # 50/200 DMA
             a50  = safe_float(closes.tail(50).mean())  if len(closes) >= 50  else None
@@ -306,6 +318,9 @@ def fetch_quotes(tickers):
                 "mc":  mc,
                 "r1y": r1y,
                 "ets": int(ets) if ets else None,
+                "bars": bars,
+                # True only when the high really is a 52-week high.
+                "dd_full": bars >= FULL_HISTORY_BARS,
             }
             # Never blank a field this pass did not fetch.
             if LIGHT:
@@ -455,11 +470,20 @@ def compute_alerts(quotes, indices):
     # at -57% while up 2,805% on the year. Require the 12-month return to be
     # modest too, so "entry window" means cheap, not merely off its peak.
     MAX_1Y_FOR_ENTRY = 60.0   # % — above this the drawdown is profit-taking
+    short_history = []
     for tk, q in quotes.items():
         dd = q.get("dd")
         froth = froth_map.get(tk, 2)
         r1y = q.get("r1y")
         if dd is not None and dd <= DRAWDOWN_THRESHOLD and froth == 1:
+            # A recently listed name has no 52-week high, so it cannot be below
+            # one. Without this, a five-week pullback on a name with ~37 bars
+            # raises the same "entry window" flag as a genuine year-long
+            # de-rating, and the label asserts a 52-week comparison that was
+            # never computed.
+            if not q.get("dd_full"):
+                short_history.append((tk, q.get("bars")))
+                continue
             if r1y is not None and r1y > MAX_1Y_FOR_ENTRY:
                 continue   # still well up on the year — not a value entry
             alerts.append({
@@ -471,10 +495,18 @@ def compute_alerts(quotes, indices):
                 "date": today,
             })
 
+    if short_history:
+        print("  entry-window: suppressed for "
+              + ", ".join(f"{t} ({b} bars)" for t, b in short_history)
+              + " — too little history for a 52-week claim")
+
     # 5. High-froth names near 52w high (caution)
     for tk, q in quotes.items():
         dd = q.get("dd")
         froth = froth_map.get(tk, 2)
+        # Same gate: "within 5% of its 52w high" is meaningless on 37 bars.
+        if not q.get("dd_full"):
+            continue
         if dd is not None and dd >= -5.0 and froth == 3:
             alerts.append({
                 "type": "froth-high",
