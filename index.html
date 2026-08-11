@@ -177,6 +177,13 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .act-route-t{font-size:12.5px;font-weight:600;color:var(--color-text-primary);margin-bottom:2px}
 .act-route-d{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
 .act-route-go{margin-left:auto;font-size:18px;color:var(--accent);flex-shrink:0}
+.cm-tag.n25{background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);
+  border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.cm-n25{font-size:10px;line-height:1.55;margin-top:5px;color:var(--color-text-secondary);
+  padding:4px 7px;border-radius:4px;border-left:2px solid var(--accent);
+  background:var(--color-background-secondary)}
+.cm-nox{font-size:10px;line-height:1.55;margin-top:5px;color:var(--color-text-tertiary);
+  padding:4px 7px;border-radius:4px;border:.5px dashed var(--color-border-secondary)}
 .cm-byp{font-size:10.5px;color:var(--color-text-secondary);line-height:1.55;margin-top:6px;
   padding:5px 8px;border-radius:4px;background:var(--color-background-secondary);
   border-left:2px solid var(--warn)}
@@ -264,6 +271,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .cm-tag.eu{background:var(--color-background-secondary);color:var(--color-text-tertiary)}
 .cm-tag.cn{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
 .cm-why{font-size:11px;color:var(--color-text-secondary);line-height:1.55}
+.cm-cnx{font-size:10.5px;line-height:1.55;margin-top:3px;color:var(--color-text-tertiary)}
 .cm-cn{font-size:10px;color:var(--bad);margin-top:3px}
 .cm-exp{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
 .cm-holding{font-family:var(--font-mono);font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;
@@ -2404,7 +2412,8 @@ function buildMinerals(force){
     const lists=[
       m.lists.includes('us')?badge('US','us'):'',
       m.lists.includes('eu-strategic')?badge('EU strategic','eus'):(m.lists.includes('eu')?badge('EU','eu'):''),
-      m.china?badge('China-restricted','cn'):''
+      m.china?badge('China-restricted','cn'):'',
+      m.list_change_2025?badge('new · 2025','n25'):''
     ].join('');
     const exp=m.exposure.length
       ? m.exposure.map(x=>`<span class="cm-holding cm-${x.kind}" onclick="openCompanyDrawer('${esc(x.tk)}')" title="${esc(x.name)} — ${esc(CM_KIND[x.kind])}">${esc(x.tk)}<i>${x.kind[0]}</i></span>`).join('')
@@ -2417,7 +2426,10 @@ function buildMinerals(force){
       <div class="cm-m">
         <div class="cm-why">${esc(m.why)}</div>
         ${m.china?`<div class="cm-cn">China: ${esc(m.china)}</div>`:''}
+        ${m.china_context?`<div class="cm-cnx">China (context, not a restriction): ${esc(m.china_context)}</div>`:''}
         <div class="cm-exp">${exp}</div>
+        ${m.list_change_2025?`<div class="cm-n25">${esc(m.list_change_2025)}</div>`:''}
+        ${m.no_exposure_note?`<div class="cm-nox">${linkifyTickers(esc(m.no_exposure_note))}</div>`:''}
         ${m.byproduct_of?`<div class="cm-byp"><b>Byproduct of ${esc(m.byproduct_of.host)}.</b> ${linkifyTickers(esc(m.byproduct_of.note))}</div>`:''}
         ${(m.controllers||[]).length?`<div class="cm-ctrl"><span class="cm-ctrl-h">Who actually controls supply</span>${m.controllers.map(c=>{
           const acc=c.access==='cn'?'listed in China':c.access==='state'?'state — not investable':c.access==='western'?'Western listed':'not listed';

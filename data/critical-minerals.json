@@ -1,12 +1,12 @@
 {
   "_meta": {
     "description": "Critical-minerals coverage. Shows which officially designated minerals this universe actually gives exposure to, and — more importantly — which it does not.",
-    "as_of": "2026-08-05",
+    "as_of": "2026-08-11",
     "sources": {
       "us": {
-        "name": "US critical minerals list (USGS, 2022 final)",
-        "note": "50 minerals. Copper, potash, silicon, silver and lead appeared in the 2025 DRAFT revision but the 2022 list is the last one finalised. Uranium is excluded as a 'fuel mineral' by statute, not because it is unimportant.",
-        "url": "https://www.usgs.gov/news/national-news-release/us-geological-survey-releases-2022-list-critical-minerals"
+        "name": "US critical minerals list — FINAL 2025 revision (USGS / Dept. of the Interior)",
+        "note": "60 commodities. Published in the Federal Register 2025-11-07, superseding the 2022 list of 50. The ten additions are boron, copper, lead, metallurgical coal, phosphate, potash, rhenium, silicon, silver and uranium. URANIUM IS NOW DESIGNATED — the statutory 'fuel mineral' exclusion that kept it off earlier lists no longer applies. Entries carry a list_change_2025 field where their status changed.",
+        "url": "https://www.federalregister.gov/documents/2025/11/07/2025-19813/final-2025-list-of-critical-minerals"
       },
       "eu": {
         "name": "EU Critical Raw Materials Act (Reg. 2024/1252)",
@@ -28,7 +28,9 @@
       "none": "No holding gives exposure."
     },
     "controllers_note": "Who actually controls supply, separately from what we own. A listed Chinese producer is investable via Stock Connect and is marked 'listed in China'; a state entity is marked as not investable. Conflating the two understates how much of the chokepoint is actually purchasable.",
-    "byproduct_note": "Where a mineral is a byproduct, the main suppliers are named together with what actually pays their bills. This is the mechanism behind the chokepoint: a producer whose revenue is 99% aluminium will not expand output because gallium tripled."
+    "byproduct_note": "Where a mineral is a byproduct, the main suppliers are named together with what actually pays their bills. This is the mechanism behind the chokepoint: a producer whose revenue is 99% aluminium will not expand output because gallium tripled.",
+    "audit_2026_08_11": "This map was built against the USGS 2022 list and described it as 'the last one finalised', with the 2025 revision noted only as a draft. The 2025 revision was FINALISED on 2025-11-07, nine months before this audit, and expands the list from 50 to 60. The consequence was not cosmetic: copper, potash, phosphate, silver, silicon and uranium — six of this book's core verticals — were being shown as NOT US-designated when they are. Coverage was measured against the wrong denominator. Flags corrected and five newly designated minerals added as entries (lead, rhenium, arsenic, metallurgical coal, rubidium/caesium), three of which we deliberately do not cover and which now say so explicitly instead of being absent.",
+    "china_field_note": "'china' means an actual Chinese export restriction and drives the China-restricted badge and filter. Where the China story is dominance, consumption or ownership rather than a restriction, it sits in 'china_context' and carries no badge — otherwise the filter counts entries that contradict their own text."
   },
   "minerals": [
     {
@@ -586,7 +588,9 @@
       "name": "Rare earths (Nd, Pr, Dy, Tb)",
       "group": "magnet",
       "why": "Permanent magnets for EV traction motors, wind turbines, missile guidance and every robot joint. China separates the overwhelming majority, and heavy REE separation outside China is close to zero.",
-      "lists": [],
+      "lists": [
+        "us"
+      ],
       "china": "Processing technology export ban, 2023-12",
       "exposure": [
         {
@@ -641,7 +645,8 @@
           "access": "cn",
           "note": "State-consolidated southern heavy-REE producer."
         }
-      ]
+      ],
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (Federal Register, 2025-11-07) as the individual lanthanides plus Y and Sc. Not on the 2022 list this map was originally built against."
     },
     {
       "sym": "Li",
@@ -851,6 +856,7 @@
       "group": "industrial",
       "why": "Borates for glass, agriculture and permanent-magnet grain refining; near-duopoly supply.",
       "lists": [
+        "us",
         "eu-strategic"
       ],
       "china": null,
@@ -877,7 +883,8 @@
           "access": "western",
           "note": "US Borax at Boron, California — the main non-Turkish source."
         }
-      ]
+      ],
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (Federal Register, 2025-11-07) as boron. Not on the 2022 list this map was originally built against."
     },
     {
       "sym": "Cr",
@@ -905,6 +912,7 @@
       "group": "semis",
       "why": "Polysilicon, semiconductors and silicones. Energy-intensive smelting concentrated in China and Norway.",
       "lists": [
+        "us",
         "eu-strategic"
       ],
       "china": null,
@@ -935,7 +943,8 @@
         }
       ],
       "gap": "covered",
-      "priority": 3
+      "priority": 3,
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (Federal Register, 2025-11-07) as silicon. Not on the 2022 list this map was originally built against."
     },
     {
       "sym": "Al",
@@ -943,6 +952,7 @@
       "group": "conductor",
       "why": "Conductor, lightweighting and packaging. Smelting is an electricity arbitrage as much as a mining business.",
       "lists": [
+        "us",
         "eu"
       ],
       "china": null,
@@ -963,7 +973,8 @@
           "access": "cn",
           "note": "Bauxite through aluminium; also the practical source of gallium."
         }
-      ]
+      ],
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (Federal Register, 2025-11-07) as aluminum. Not on the 2022 list this map was originally built against."
     },
     {
       "sym": "Zr",
@@ -1033,6 +1044,7 @@
       "group": "conductor",
       "why": "The universal conductor. No substitute at scale; 16-17 year permitting in democracies.",
       "lists": [
+        "us",
         "eu-strategic"
       ],
       "china": null,
@@ -1113,7 +1125,8 @@
           "access": "cn",
           "note": "One of the fastest-growing copper producers globally."
         }
-      ]
+      ],
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (2025-11-07). Materially more than a label: copper is the largest vertical in this book, and its absence from the 2022 list was the standard objection to treating it as a strategic-supply story. That objection is now closed at the federal level."
     },
     {
       "sym": "Sn",
@@ -1149,6 +1162,7 @@
       "group": "food",
       "why": "Fertiliser and LFP cathode. Non-renewable and geographically extreme — Morocco holds most of the world's reserves.",
       "lists": [
+        "us",
         "eu"
       ],
       "china": null,
@@ -1173,14 +1187,17 @@
         }
       ],
       "gap": "covered",
-      "priority": 3
+      "priority": 3,
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (Federal Register, 2025-11-07) as phosphate. Not on the 2022 list this map was originally built against."
     },
     {
       "sym": "U",
       "name": "Uranium",
       "group": "energy",
       "why": "Reactor fuel. Excluded from the US critical list by statute as a fuel mineral, which is a legal artefact rather than a judgment on criticality.",
-      "lists": [],
+      "lists": [
+        "us"
+      ],
       "china": null,
       "exposure": [
         {
@@ -1239,14 +1256,17 @@
         }
       ],
       "gap": "covered",
-      "priority": 0
+      "priority": 0,
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (2025-11-07). This map previously recorded uranium as excluded from the US list as a statutory 'fuel mineral'. That exclusion no longer holds — uranium is now designated, which changes what federal permitting and funding authorities it can be reached by."
     },
     {
       "sym": "Ag",
       "name": "Silver",
       "group": "catalyst",
       "why": "Solar cells and electrical contacts — the only precious metal with a large, growing industrial demand leg.",
-      "lists": [],
+      "lists": [
+        "us"
+      ],
       "china": null,
       "exposure": [
         {
@@ -1281,7 +1301,8 @@
         }
       ],
       "gap": "covered",
-      "priority": 0
+      "priority": 0,
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (Federal Register, 2025-11-07) as silver. Not on the 2022 list this map was originally built against."
     },
     {
       "sym": "Au",
@@ -1336,7 +1357,9 @@
       "name": "Potash",
       "group": "food",
       "why": "Fertiliser. Concentrated in Canada, Russia and Belarus.",
-      "lists": [],
+      "lists": [
+        "us"
+      ],
       "china": null,
       "exposure": [
         {
@@ -1359,7 +1382,122 @@
         }
       ],
       "gap": "covered",
-      "priority": 0
+      "priority": 0,
+      "list_change_2025": "ADDED to the US list in the final 2025 revision (Federal Register, 2025-11-07) as potash. Not on the 2022 list this map was originally built against."
+    },
+    {
+      "sym": "Pb",
+      "name": "Lead",
+      "group": "industrial",
+      "why": "Lead-acid batteries, radiation shielding, ordnance. Added to the US list in 2025. Almost never mined alone — it comes out of zinc and copper systems.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "TECK",
+          "kind": "byproduct",
+          "name": "Teck Resources",
+          "conviction": 1
+        },
+        {
+          "tk": "GLEN.L",
+          "kind": "byproduct",
+          "name": "Glencore",
+          "conviction": 1
+        }
+      ],
+      "gap": "partial",
+      "priority": 31,
+      "byproduct_of": {
+        "host": "zinc and copper mining",
+        "note": "Lead is a zinc/copper co-product. Teck and Glencore both produce it, but their PRIMARY REVENUE DRIVERS ARE ZINC, COPPER AND COAL/TRADING respectively. Lead supply cannot respond to a lead price alone."
+      },
+      "list_change_2025": "Newly designated in the final 2025 US list. No entry existed on this map before.",
+      "china_context": "Not export-controlled; China is the largest refiner."
+    },
+    {
+      "sym": "Re",
+      "name": "Rhenium",
+      "group": "industrial",
+      "why": "Superalloys for jet engine turbine blades and platforming catalysts. One of the scarcest industrial metals; there is no rhenium mine anywhere.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "FCX",
+          "kind": "byproduct",
+          "name": "Freeport-McMoRan",
+          "conviction": 2
+        }
+      ],
+      "gap": "partial",
+      "priority": 24,
+      "byproduct_of": {
+        "host": "molybdenite roasting from porphyry copper",
+        "note": "Rhenium is recovered from flue dust when molybdenite concentrate is roasted, and molybdenite is itself a copper-porphyry byproduct. Freeport is among the largest Western producers, but its PRIMARY REVENUE DRIVER IS COPPER — rhenium is a rounding error in the P&L and gives no torque to the equity. Flagged for supply-chain completeness, not as an investment angle."
+      },
+      "list_change_2025": "Newly designated in the final 2025 US list.",
+      "china_context": "Not a Chinese chokepoint — the constraint is geological and metallurgical, not political."
+    },
+    {
+      "sym": "As",
+      "name": "Arsenic",
+      "group": "industrial",
+      "why": "Gallium arsenide semiconductors, wood preservatives, lead alloying. Regulated as a toxin, which suppresses Western production independently of demand.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [],
+      "gap": "none",
+      "priority": 34,
+      "byproduct_of": {
+        "host": "copper smelting",
+        "note": "Recovered from copper smelter flue dust. Western smelters treat it as a disposal liability rather than a product, which is precisely why no listed pure-play exists."
+      },
+      "list_change_2025": "Newly designated in the final 2025 US list.",
+      "no_exposure_note": "No listed Western producer exists and we do not expect one to emerge — the economics are negative before the environmental permitting is considered. Recorded as an uncoverable gap rather than a research task.",
+      "china_context": "China dominates production; not formally export-controlled."
+    },
+    {
+      "sym": "MetCoal",
+      "name": "Metallurgical coal",
+      "group": "industrial",
+      "why": "Blast-furnace steelmaking. Designated by the US in 2025 and simultaneously written into the 45X credit — a designation driven by industrial policy rather than by a supply chokepoint.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [],
+      "gap": "none",
+      "priority": 37,
+      "list_change_2025": "Newly designated in the final 2025 US list; OBBBA also added it as an applicable critical mineral for Section 45X, with that credit terminating for coal produced after 2029-12-31.",
+      "no_exposure_note": "DELIBERATE OMISSION, NOT AN OVERSIGHT. Met coal is on the list but fails this book's own selection test: it is neither capital-starved in the way the other verticals are nor a chokepoint the West is locked out of, and the 45X credit attached to it expires in 2029. Listed exposure is readily available (AMR, HCC, BTU, TECK) if that judgment changes. Flagged so the coverage map is honest about the denominator rather than quietly dropping an entry.",
+      "china_context": "China is the largest consumer and a large importer, not a supply chokepoint."
+    },
+    {
+      "sym": "RbCs",
+      "name": "Rubidium & caesium",
+      "group": "tech",
+      "why": "Caesium formate drilling fluids, atomic clocks, precision timing. Tiny markets with a single dominant supply source.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [],
+      "gap": "none",
+      "priority": 36,
+      "byproduct_of": {
+        "host": "lithium pegmatite mining",
+        "note": "Caesium and rubidium come from pollucite in lithium-bearing pegmatites. Supply is a lithium-mining byproduct and cannot respond to caesium demand alone."
+      },
+      "list_change_2025": "Rubidium newly designated in the final 2025 US list; caesium was already on the 2022 list.",
+      "no_exposure_note": "No listed Western exposure. The notable fact is ownership rather than geology: the principal non-Chinese caesium assets were bought by a Chinese company, which is a chokepoint created by M&A rather than by resource endowment.",
+      "china_context": "Sinomine acquired the Tanco mine (Manitoba) and the Bikita operation (Zimbabwe), consolidating most Western-hemisphere caesium supply under Chinese ownership."
     }
   ]
 }
