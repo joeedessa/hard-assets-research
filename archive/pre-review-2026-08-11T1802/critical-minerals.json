@@ -1,0 +1,1365 @@
+{
+  "_meta": {
+    "description": "Critical-minerals coverage. Shows which officially designated minerals this universe actually gives exposure to, and — more importantly — which it does not.",
+    "as_of": "2026-08-05",
+    "sources": {
+      "us": {
+        "name": "US critical minerals list (USGS, 2022 final)",
+        "note": "50 minerals. Copper, potash, silicon, silver and lead appeared in the 2025 DRAFT revision but the 2022 list is the last one finalised. Uranium is excluded as a 'fuel mineral' by statute, not because it is unimportant.",
+        "url": "https://www.usgs.gov/news/national-news-release/us-geological-survey-releases-2022-list-critical-minerals"
+      },
+      "eu": {
+        "name": "EU Critical Raw Materials Act (Reg. 2024/1252)",
+        "note": "34 critical raw materials, of which 17 are designated STRATEGIC with 2030 capacity benchmarks.",
+        "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials_en"
+      },
+      "cn": {
+        "name": "China export-control / restricted list",
+        "note": "Inverse signal: what China restricts is what China dominates. Cumulative through the 2025 REE expansion. Dates given per mineral.",
+        "url": "https://www.mofcom.gov.cn/"
+      }
+    },
+    "caveat": "Designations are transcribed from the cited list versions. Where a mineral's status changed in a draft or unpublished revision it is noted in the entry rather than silently updated. Verify before relying on any single flag.",
+    "exposure_scale": {
+      "primary": "A holding whose main business is producing or separating this mineral.",
+      "processing": "A holding that refines, converts or separates it but does not mine it.",
+      "byproduct": "Exposure only as a secondary output — supply cannot respond to this mineral's price alone.",
+      "enduse": "A holding that consumes it. Not supply exposure.",
+      "none": "No holding gives exposure."
+    },
+    "controllers_note": "Who actually controls supply, separately from what we own. A listed Chinese producer is investable via Stock Connect and is marked 'listed in China'; a state entity is marked as not investable. Conflating the two understates how much of the chokepoint is actually purchasable.",
+    "byproduct_note": "Where a mineral is a byproduct, the main suppliers are named together with what actually pays their bills. This is the mechanism behind the chokepoint: a producer whose revenue is 99% aluminium will not expand output because gallium tripled."
+  },
+  "minerals": [
+    {
+      "sym": "Bi",
+      "name": "Bismuth",
+      "group": "industrial",
+      "why": "Non-toxic lead replacement; a lead/copper byproduct under Chinese control since Feb 2025.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": "Export controls from 2025-02",
+      "exposure": [
+        {
+          "tk": "VNP.TO",
+          "kind": "processing",
+          "name": "5N Plus",
+          "conviction": 2
+        },
+        {
+          "tk": "AMG.AS",
+          "kind": "processing",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        }
+      ],
+      "gap": "partial",
+      "priority": 14,
+      "byproduct_of": {
+        "host": "lead and copper refining",
+        "note": "Bismuth is a lead/copper smelting byproduct. 5N Plus (VNP.TO) and AMG (AMG.AS) process it; the upstream is Chinese lead smelters whose PRIMARY REVENUE IS LEAD AND ZINC."
+      }
+    },
+    {
+      "sym": "C",
+      "name": "Graphite",
+      "group": "battery",
+      "why": "Every lithium-ion anode. China controls the overwhelming majority of spherical and synthetic anode-grade supply, and put it under export licensing in Dec 2023.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": "Export licensing from 2023-12-01",
+      "exposure": [
+        {
+          "tk": "NVX.AX",
+          "kind": "processing",
+          "name": "Novonix",
+          "conviction": 1
+        }
+      ],
+      "gap": "partial",
+      "priority": 14,
+      "controllers": [
+        {
+          "name": "BTR New Material",
+          "tk": "835185.BJ",
+          "access": "cn-unlisted-here",
+          "note": "Largest anode-material maker globally; not resolving on Yahoo."
+        },
+        {
+          "name": "Shanshan / Putailai",
+          "tk": null,
+          "access": "cn",
+          "note": "Chinese anode majors control the overwhelming majority of spherical and synthetic graphite."
+        }
+      ]
+    },
+    {
+      "sym": "Ga",
+      "name": "Gallium",
+      "group": "semis",
+      "why": "GaN power electronics and RF. China put it under export licensing in Aug 2023; there is no meaningful Western primary production because it is an aluminium byproduct.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": "Export licensing from 2023-08-01",
+      "exposure": [
+        {
+          "tk": "AXTI",
+          "kind": "processing",
+          "name": "AXT Inc",
+          "conviction": 2
+        },
+        {
+          "tk": "AA",
+          "kind": "byproduct",
+          "name": "Alcoa",
+          "conviction": 1
+        }
+      ],
+      "gap": "partial",
+      "priority": 14,
+      "byproduct_of": {
+        "host": "alumina refining",
+        "note": "Gallium is extracted from the Bayer-process liquor at alumina refineries. Chalco (2600.HK) is the practical global source and Alcoa (AA) the Western one — but for both, PRIMARY REVENUE IS ALUMINIUM. Gallium is a trace stream worth a rounding error to them, so a higher gallium price does not make them produce more aluminium."
+      }
+    },
+    {
+      "sym": "Ge",
+      "name": "Germanium",
+      "group": "semis",
+      "why": "Infrared optics, fibre and space solar. Same Aug 2023 Chinese controls; a zinc byproduct, so supply cannot respond to price independently.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": "Export licensing from 2023-08-01",
+      "exposure": [
+        {
+          "tk": "AXTI",
+          "kind": "processing",
+          "name": "AXT Inc",
+          "conviction": 2
+        },
+        {
+          "tk": "COHR",
+          "kind": "processing",
+          "name": "Coherent Corp",
+          "conviction": 2
+        },
+        {
+          "tk": "VNP.TO",
+          "kind": "processing",
+          "name": "5N Plus",
+          "conviction": 2
+        },
+        {
+          "tk": "NEXA",
+          "kind": "byproduct",
+          "name": "Nexa Resources",
+          "conviction": 1
+        }
+      ],
+      "gap": "partial",
+      "priority": 14,
+      "byproduct_of": {
+        "host": "zinc refining",
+        "note": "Germanium is recovered from zinc concentrate residues. Nexa (NEXA) and Korea Zinc are real sources, and 5N Plus (VNP.TO) purifies it — but PRIMARY REVENUE IS ZINC for the miners and a broad specialty-materials mix for 5N Plus. Germanium supply therefore tracks the zinc cycle, not germanium demand."
+      }
+    },
+    {
+      "sym": "W",
+      "name": "Tungsten",
+      "group": "defense",
+      "why": "Hardest metal in industrial use — armour, penetrators, cutting tools. China put it under export control in Feb 2025.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": "Export controls from 2025-02",
+      "exposure": [
+        {
+          "tk": "AII.TO",
+          "kind": "primary",
+          "name": "Almonty Industries",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Xiamen Tungsten",
+          "tk": "600549.SS",
+          "access": "cn",
+          "note": "China's largest tungsten producer; China holds the overwhelming majority of supply and put it under export control in Feb 2025."
+        }
+      ]
+    },
+    {
+      "sym": "Sc",
+      "name": "Scandium",
+      "group": "aerospace",
+      "why": "Aluminium-scandium alloys. Tiny market, almost entirely byproduct, under Chinese HREE licensing since 2025.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": "HREE export licensing, 2025-04",
+      "exposure": [
+        {
+          "tk": "NB",
+          "kind": "primary",
+          "name": "NioCorp Developments",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 12,
+      "byproduct_of": {
+        "host": "titanium, uranium and REE tailings",
+        "note": "Scandium is recovered from other operations' waste streams. NioCorp (NB) would produce it at Elk Creek alongside niobium, but PRIMARY REVENUE THERE IS NIOBIUM. No scandium-primary mine operates anywhere."
+      }
+    },
+    {
+      "sym": "Sb",
+      "name": "Antimony",
+      "group": "defense",
+      "why": "Flame retardants, ammunition primers, photovoltaic glass clarifier. China banned/licensed exports Sep 2024 and the price repriced permanently.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": "Export ban/licensing from 2024-09-15",
+      "exposure": [
+        {
+          "tk": "PPTA",
+          "kind": "primary",
+          "name": "Perpetua Resources",
+          "conviction": 3
+        },
+        {
+          "tk": "AMG.AS",
+          "kind": "processing",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Hunan Gold / Chinese producers",
+          "tk": null,
+          "access": "cn",
+          "note": "China holds roughly half of global antimony supply and banned exports in Sep 2024."
+        }
+      ]
+    },
+    {
+      "sym": "Hf",
+      "name": "Hafnium",
+      "group": "nuclear",
+      "why": "Control rods and superalloys; a zirconium byproduct.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [],
+      "gap": "none",
+      "priority": 12,
+      "byproduct_of": {
+        "host": "zirconium separation",
+        "note": "Hafnium is separated from zirconium during nuclear-grade Zr production. The suppliers are Framatome, Westinghouse and ATI (ATI) — PRIMARY REVENUE IS ZIRCONIUM CLADDING AND SPECIALTY ALLOYS. Hafnium volume is a few hundred tonnes a year globally."
+      }
+    },
+    {
+      "sym": "Mg",
+      "name": "Magnesium",
+      "group": "industrial",
+      "why": "Lightweighting alloys and aluminium alloying. China dominates primary production to an extreme degree.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [],
+      "gap": "none",
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Chinese primary producers",
+          "tk": null,
+          "access": "cn",
+          "note": "China produces the overwhelming majority of primary magnesium; no listed Western vehicle of scale exists."
+        }
+      ]
+    },
+    {
+      "sym": "Ba",
+      "name": "Barite",
+      "group": "energy",
+      "why": "Drilling mud weighting agent — unglamorous and genuinely hard to substitute.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [],
+      "gap": "none",
+      "priority": 12,
+      "controllers": [
+        {
+          "name": "Chinese and Indian producers",
+          "tk": null,
+          "access": "cn",
+          "note": "Barite supply is concentrated in China, India and Morocco."
+        }
+      ]
+    },
+    {
+      "sym": "Te",
+      "name": "Tellurium",
+      "group": "energy",
+      "why": "CdTe thin-film solar; a copper-refining byproduct.",
+      "lists": [
+        "us"
+      ],
+      "china": "Export controls from 2025-02",
+      "exposure": [
+        {
+          "tk": "VNP.TO",
+          "kind": "processing",
+          "name": "5N Plus",
+          "conviction": 2
+        },
+        {
+          "tk": "RIO",
+          "kind": "byproduct",
+          "name": "Rio Tinto",
+          "conviction": 1
+        }
+      ],
+      "gap": "partial",
+      "priority": 11,
+      "byproduct_of": {
+        "host": "copper refining",
+        "note": "Tellurium comes from copper anode slimes. Freeport (FCX) and Rio Tinto's Kennecott are genuine sources with PRIMARY REVENUE FROM COPPER; 5N Plus (VNP.TO) refines it to solar grade. No producer would expand copper output for tellurium."
+      }
+    },
+    {
+      "sym": "In",
+      "name": "Indium",
+      "group": "semis",
+      "why": "ITO for displays and touchscreens; a zinc byproduct.",
+      "lists": [
+        "us"
+      ],
+      "china": "Export controls from 2025-02",
+      "exposure": [
+        {
+          "tk": "AXTI",
+          "kind": "processing",
+          "name": "AXT Inc",
+          "conviction": 2
+        },
+        {
+          "tk": "COHR",
+          "kind": "processing",
+          "name": "Coherent Corp",
+          "conviction": 2
+        },
+        {
+          "tk": "5802.T",
+          "kind": "processing",
+          "name": "Sumitomo Electric",
+          "conviction": 2
+        },
+        {
+          "tk": "NEXA",
+          "kind": "byproduct",
+          "name": "Nexa Resources",
+          "conviction": 1
+        },
+        {
+          "tk": "NOK",
+          "kind": "enduse",
+          "name": "Nokia (ex-Infinera)",
+          "conviction": 2
+        }
+      ],
+      "gap": "partial",
+      "priority": 11,
+      "byproduct_of": {
+        "host": "zinc refining",
+        "note": "Same host ore as germanium. Nexa (NEXA) and Korea Zinc again, with PRIMARY REVENUE FROM ZINC. Indium is a residue stream."
+      }
+    },
+    {
+      "sym": "Ta",
+      "name": "Tantalum",
+      "group": "semis",
+      "why": "Capacitors. Conflict-mineral supply chain, heavily DRC/Rwanda.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AMG.AS",
+          "kind": "primary",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "V",
+      "name": "Vanadium",
+      "group": "energy",
+      "why": "Steel strengthening and vanadium redox flow batteries for long-duration storage.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AMG.AS",
+          "kind": "primary",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Fluorspar",
+      "name": "Fluorspar",
+      "group": "chemical",
+      "why": "Hydrofluoric acid feeds refrigerants, fluoropolymers and the LiPF6 battery electrolyte.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ORBIA.MX",
+          "kind": "primary",
+          "name": "Orbia Advance",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "Chinese producers",
+          "tk": null,
+          "access": "cn",
+          "note": "China is the largest fluorspar producer; Orbia's Mexican mine is the main non-Chinese alternative."
+        }
+      ]
+    },
+    {
+      "sym": "Co",
+      "name": "Cobalt",
+      "group": "battery",
+      "why": "Cathode stability. Mined overwhelmingly in the DRC, refined overwhelmingly in China.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "CMOC Group",
+          "tk": "603993.SS",
+          "access": "cn",
+          "note": "Now the world's largest cobalt producer via TFM and KFM in the DRC — it overtook Glencore."
+        },
+        {
+          "name": "Huayou Cobalt",
+          "tk": "603799.SS",
+          "access": "cn",
+          "note": "Dominant cobalt refiner; the refining step is more concentrated than the mining."
+        }
+      ]
+    },
+    {
+      "sym": "Ni",
+      "name": "Nickel",
+      "group": "battery",
+      "why": "High-nickel cathodes and stainless. Class 1 battery-grade supply is far tighter than headline nickel.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
+          "conviction": 2
+        },
+        {
+          "tk": "VALE",
+          "kind": "primary",
+          "name": "Vale",
+          "conviction": 1
+        },
+        {
+          "tk": "ERA.PA",
+          "kind": "primary",
+          "name": "Eramet",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Mn",
+      "name": "Manganese",
+      "group": "battery",
+      "why": "Battery-grade high-purity manganese sulphate is a separate, far more concentrated market than the ore.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ERA.PA",
+          "kind": "primary",
+          "name": "Eramet",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Nb",
+      "name": "Niobium",
+      "group": "defense",
+      "why": "Microalloying steel. Effectively a single-country, near-single-company supply from Brazil.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "NB",
+          "kind": "primary",
+          "name": "NioCorp Developments",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "REE",
+      "name": "Rare earths (Nd, Pr, Dy, Tb)",
+      "group": "magnet",
+      "why": "Permanent magnets for EV traction motors, wind turbines, missile guidance and every robot joint. China separates the overwhelming majority, and heavy REE separation outside China is close to zero.",
+      "lists": [],
+      "china": "Processing technology export ban, 2023-12",
+      "exposure": [
+        {
+          "tk": "MP",
+          "kind": "primary",
+          "name": "MP Materials",
+          "conviction": 3
+        },
+        {
+          "tk": "LYC.AX",
+          "kind": "primary",
+          "name": "Lynas Rare Earths",
+          "conviction": 3
+        },
+        {
+          "tk": "6880.HK",
+          "kind": "processing",
+          "name": "JL Mag Rare-Earth",
+          "conviction": 2
+        },
+        {
+          "tk": "ILU.AX",
+          "kind": "processing",
+          "name": "Iluka Resources",
+          "conviction": 2
+        },
+        {
+          "tk": "UUUU",
+          "kind": "byproduct",
+          "name": "Energy Fuels",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "China Northern Rare Earth",
+          "tk": "600111.SS",
+          "access": "cn",
+          "note": "Roughly half of Chinese light-REE quota; the single largest producer on earth."
+        },
+        {
+          "name": "Shenghe Resources",
+          "tk": "600392.SS",
+          "access": "cn",
+          "note": "REE trading and processing; historically an MP Materials offtake partner."
+        },
+        {
+          "name": "China Rare Earth Resources",
+          "tk": "000831.SZ",
+          "access": "cn",
+          "note": "State-consolidated southern heavy-REE producer."
+        }
+      ]
+    },
+    {
+      "sym": "Li",
+      "name": "Lithium",
+      "group": "battery",
+      "why": "Battery cathode and electrolyte. Mining is diversified; conversion to battery-grade chemical is not.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ALB",
+          "kind": "primary",
+          "name": "Albemarle",
+          "conviction": 2
+        },
+        {
+          "tk": "SQM",
+          "kind": "primary",
+          "name": "SQM",
+          "conviction": 2
+        },
+        {
+          "tk": "PLS.AX",
+          "kind": "primary",
+          "name": "Pilbara Minerals",
+          "conviction": 2
+        },
+        {
+          "tk": "MIN.AX",
+          "kind": "primary",
+          "name": "Mineral Resources",
+          "conviction": 1
+        },
+        {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
+          "conviction": 1
+        },
+        {
+          "tk": "AMG.AS",
+          "kind": "processing",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        },
+        {
+          "tk": "FLNC",
+          "kind": "enduse",
+          "name": "Fluence Energy",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 6,
+      "controllers": [
+        {
+          "name": "Ganfeng Lithium",
+          "tk": "1772.HK",
+          "access": "cn",
+          "note": "Largest lithium chemical converter; conversion is far more concentrated than mining."
+        },
+        {
+          "name": "Zijin Mining",
+          "tk": "2899.HK",
+          "access": "cn",
+          "note": "Copper, gold and increasingly lithium."
+        }
+      ]
+    },
+    {
+      "sym": "Ti",
+      "name": "Titanium",
+      "group": "defense",
+      "why": "Aerospace structures. Sponge and mill-product capacity outside Russia and China is the bottleneck, not the ore.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ILU.AX",
+          "kind": "primary",
+          "name": "Iluka Resources",
+          "conviction": 2
+        },
+        {
+          "tk": "TROX",
+          "kind": "primary",
+          "name": "Tronox Holdings",
+          "conviction": 1
+        },
+        {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
+          "conviction": 1
+        },
+        {
+          "tk": "ATI",
+          "kind": "processing",
+          "name": "ATI Inc",
+          "conviction": 2
+        },
+        {
+          "tk": "NB",
+          "kind": "byproduct",
+          "name": "NioCorp Developments",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "Be",
+      "name": "Beryllium",
+      "group": "defense",
+      "why": "Defence-critical with essentially zero Western substitute; one integrated Western producer.",
+      "lists": [
+        "us",
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "MTRN",
+          "kind": "primary",
+          "name": "Materion",
+          "conviction": 3
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "PGM",
+      "name": "Platinum group (Pt, Pd, Rh, Ir, Ru)",
+      "group": "catalyst",
+      "why": "Autocatalysts, hydrogen electrolysers and fuel cells. Iridium and ruthenium are tiny, opaque markets with acute single-country concentration.",
+      "lists": [
+        "us",
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "WPM",
+          "kind": "primary",
+          "name": "Wheaton Precious Metals",
+          "conviction": 3
+        },
+        {
+          "tk": "FNV",
+          "kind": "primary",
+          "name": "Franco-Nevada",
+          "conviction": 3
+        },
+        {
+          "tk": "SBSW",
+          "kind": "primary",
+          "name": "Sibanye-Stillwater",
+          "conviction": 1
+        },
+        {
+          "tk": "THS.L",
+          "kind": "primary",
+          "name": "Tharisa",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 6
+    },
+    {
+      "sym": "He",
+      "name": "Helium",
+      "group": "industrial",
+      "why": "Semiconductor fabs, MRI and cryogenics. Cannot be synthesised; a natural-gas byproduct.",
+      "lists": [
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "LIN",
+          "kind": "processing",
+          "name": "Linde",
+          "conviction": 3
+        },
+        {
+          "tk": "APD",
+          "kind": "processing",
+          "name": "Air Products",
+          "conviction": 2
+        }
+      ],
+      "gap": "partial",
+      "priority": 5
+    },
+    {
+      "sym": "B",
+      "name": "Boron",
+      "group": "industrial",
+      "why": "Borates for glass, agriculture and permanent-magnet grain refining; near-duopoly supply.",
+      "lists": [
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Eti Maden",
+          "tk": null,
+          "access": "state",
+          "note": "Turkish state monopoly holding the majority of world borate reserves — not investable."
+        },
+        {
+          "name": "Rio Tinto",
+          "tk": "RIO",
+          "access": "western",
+          "note": "US Borax at Boron, California — the main non-Turkish source."
+        }
+      ]
+    },
+    {
+      "sym": "Cr",
+      "name": "Chromium",
+      "group": "industrial",
+      "why": "Stainless steel; South Africa and Kazakhstan dominate.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "THS.L",
+          "kind": "primary",
+          "name": "Tharisa",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
+    },
+    {
+      "sym": "Si",
+      "name": "Silicon metal",
+      "group": "semis",
+      "why": "Polysilicon, semiconductors and silicones. Energy-intensive smelting concentrated in China and Norway.",
+      "lists": [
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AMG.AS",
+          "kind": "primary",
+          "name": "AMG Critical Materials",
+          "conviction": 1
+        },
+        {
+          "tk": "WOLF",
+          "kind": "processing",
+          "name": "Wolfspeed",
+          "conviction": 2
+        },
+        {
+          "tk": "6963.JP",
+          "kind": "processing",
+          "name": "ROHM",
+          "conviction": 2
+        },
+        {
+          "tk": "COHR",
+          "kind": "processing",
+          "name": "Coherent Corp",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
+    },
+    {
+      "sym": "Al",
+      "name": "Aluminium / bauxite",
+      "group": "conductor",
+      "why": "Conductor, lightweighting and packaging. Smelting is an electricity arbitrage as much as a mining business.",
+      "lists": [
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AA",
+          "kind": "primary",
+          "name": "Alcoa",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Chalco / Aluminum Corp of China",
+          "tk": "2600.HK",
+          "access": "cn",
+          "note": "Bauxite through aluminium; also the practical source of gallium."
+        }
+      ]
+    },
+    {
+      "sym": "Zr",
+      "name": "Zirconium",
+      "group": "nuclear",
+      "why": "Nuclear fuel cladding — hafnium-free zirconium is a specialised, concentrated supply chain.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "ILU.AX",
+          "kind": "primary",
+          "name": "Iluka Resources",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
+    },
+    {
+      "sym": "Zn",
+      "name": "Zinc",
+      "group": "industrial",
+      "why": "Galvanising — and the host ore for germanium and indium, so it gates two semiconductor materials.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
+          "conviction": 2
+        },
+        {
+          "tk": "NEXA",
+          "kind": "primary",
+          "name": "Nexa Resources",
+          "conviction": 1
+        },
+        {
+          "tk": "TECK",
+          "kind": "byproduct",
+          "name": "Teck Resources",
+          "conviction": 2
+        },
+        {
+          "tk": "HBM",
+          "kind": "byproduct",
+          "name": "Hudbay Minerals",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 3,
+      "byproduct_of": {
+        "host": "primary, but gates two byproducts",
+        "note": "Zinc is mined for itself, but it is the host for germanium and indium — so zinc economics gate two semiconductor materials."
+      }
+    },
+    {
+      "sym": "Cu",
+      "name": "Copper",
+      "group": "conductor",
+      "why": "The universal conductor. No substitute at scale; 16-17 year permitting in democracies.",
+      "lists": [
+        "eu-strategic"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "SCCO",
+          "kind": "primary",
+          "name": "Southern Copper",
+          "conviction": 3
+        },
+        {
+          "tk": "FCX",
+          "kind": "primary",
+          "name": "Freeport-McMoRan",
+          "conviction": 2
+        },
+        {
+          "tk": "TECK",
+          "kind": "primary",
+          "name": "Teck Resources",
+          "conviction": 2
+        },
+        {
+          "tk": "HBM",
+          "kind": "primary",
+          "name": "Hudbay Minerals",
+          "conviction": 2
+        },
+        {
+          "tk": "IVN.TO",
+          "kind": "primary",
+          "name": "Ivanhoe Mines",
+          "conviction": 2
+        },
+        {
+          "tk": "GLNCY",
+          "kind": "primary",
+          "name": "Glencore",
+          "conviction": 2
+        },
+        {
+          "tk": "RIO",
+          "kind": "primary",
+          "name": "Rio Tinto",
+          "conviction": 1
+        },
+        {
+          "tk": "5706.JP",
+          "kind": "processing",
+          "name": "Mitsui Kinzoku",
+          "conviction": 2
+        },
+        {
+          "tk": "8358.TWO",
+          "kind": "processing",
+          "name": "Co-Tech Development",
+          "conviction": 1
+        },
+        {
+          "tk": "PRY.MI",
+          "kind": "enduse",
+          "name": "Prysmian",
+          "conviction": 2
+        },
+        {
+          "tk": "NEX.PA",
+          "kind": "enduse",
+          "name": "Nexans",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Zijin Mining",
+          "tk": "2899.HK",
+          "access": "cn",
+          "note": "One of the fastest-growing copper producers globally."
+        }
+      ]
+    },
+    {
+      "sym": "Sn",
+      "name": "Tin",
+      "group": "semis",
+      "why": "Solder. Every chip package and PCB joint; 3D chiplet stacking increases joints per chip.",
+      "lists": [
+        "us"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "AFMJF",
+          "kind": "primary",
+          "name": "Alphamin Resources",
+          "conviction": 3
+        }
+      ],
+      "gap": "covered",
+      "priority": 3,
+      "controllers": [
+        {
+          "name": "Yunnan Tin",
+          "tk": "000960.SZ",
+          "access": "cn",
+          "note": "World's largest tin producer."
+        }
+      ]
+    },
+    {
+      "sym": "P",
+      "name": "Phosphate",
+      "group": "food",
+      "why": "Fertiliser and LFP cathode. Non-renewable and geographically extreme — Morocco holds most of the world's reserves.",
+      "lists": [
+        "eu"
+      ],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "NTR",
+          "kind": "primary",
+          "name": "Nutrien",
+          "conviction": 2
+        },
+        {
+          "tk": "MOS",
+          "kind": "primary",
+          "name": "Mosaic",
+          "conviction": 2
+        },
+        {
+          "tk": "ICL",
+          "kind": "primary",
+          "name": "ICL Group",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 3
+    },
+    {
+      "sym": "U",
+      "name": "Uranium",
+      "group": "energy",
+      "why": "Reactor fuel. Excluded from the US critical list by statute as a fuel mineral, which is a legal artefact rather than a judgment on criticality.",
+      "lists": [],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "CCO",
+          "kind": "primary",
+          "name": "Cameco",
+          "conviction": 3
+        },
+        {
+          "tk": "SPUT",
+          "kind": "primary",
+          "name": "Sprott Physical Uranium Trust",
+          "conviction": 3
+        },
+        {
+          "tk": "NXE",
+          "kind": "primary",
+          "name": "NexGen Energy",
+          "conviction": 2
+        },
+        {
+          "tk": "UEC",
+          "kind": "primary",
+          "name": "Uranium Energy Corp",
+          "conviction": 2
+        },
+        {
+          "tk": "UUUU",
+          "kind": "primary",
+          "name": "Energy Fuels",
+          "conviction": 2
+        },
+        {
+          "tk": "DNN",
+          "kind": "primary",
+          "name": "Denison Mines",
+          "conviction": 1
+        },
+        {
+          "tk": "LEU",
+          "kind": "processing",
+          "name": "Centrus Energy",
+          "conviction": 3
+        },
+        {
+          "tk": "BWXT",
+          "kind": "processing",
+          "name": "BWX Technologies",
+          "conviction": 2
+        },
+        {
+          "tk": "CEG",
+          "kind": "enduse",
+          "name": "Constellation Energy",
+          "conviction": 3
+        }
+      ],
+      "gap": "covered",
+      "priority": 0
+    },
+    {
+      "sym": "Ag",
+      "name": "Silver",
+      "group": "catalyst",
+      "why": "Solar cells and electrical contacts — the only precious metal with a large, growing industrial demand leg.",
+      "lists": [],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "WPM",
+          "kind": "primary",
+          "name": "Wheaton Precious Metals",
+          "conviction": 3
+        },
+        {
+          "tk": "FNV",
+          "kind": "primary",
+          "name": "Franco-Nevada",
+          "conviction": 3
+        },
+        {
+          "tk": "PAAS",
+          "kind": "primary",
+          "name": "Pan American Silver",
+          "conviction": 2
+        },
+        {
+          "tk": "RGLD",
+          "kind": "primary",
+          "name": "Royal Gold",
+          "conviction": 2
+        },
+        {
+          "tk": "TFPM",
+          "kind": "primary",
+          "name": "Triple Flag Precious Metals",
+          "conviction": 2
+        }
+      ],
+      "gap": "covered",
+      "priority": 0
+    },
+    {
+      "sym": "Au",
+      "name": "Gold",
+      "group": "monetary",
+      "why": "Monetary hedge and central-bank reserve asset rather than an industrial input.",
+      "lists": [],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "FNV",
+          "kind": "primary",
+          "name": "Franco-Nevada",
+          "conviction": 3
+        },
+        {
+          "tk": "WPM",
+          "kind": "primary",
+          "name": "Wheaton Precious Metals",
+          "conviction": 3
+        },
+        {
+          "tk": "RGLD",
+          "kind": "primary",
+          "name": "Royal Gold",
+          "conviction": 2
+        },
+        {
+          "tk": "TFPM",
+          "kind": "primary",
+          "name": "Triple Flag Precious Metals",
+          "conviction": 2
+        },
+        {
+          "tk": "PAAS",
+          "kind": "primary",
+          "name": "Pan American Silver",
+          "conviction": 2
+        },
+        {
+          "tk": "PPTA",
+          "kind": "byproduct",
+          "name": "Perpetua Resources",
+          "conviction": 3
+        }
+      ],
+      "gap": "covered",
+      "priority": 0
+    },
+    {
+      "sym": "K",
+      "name": "Potash",
+      "group": "food",
+      "why": "Fertiliser. Concentrated in Canada, Russia and Belarus.",
+      "lists": [],
+      "china": null,
+      "exposure": [
+        {
+          "tk": "NTR",
+          "kind": "primary",
+          "name": "Nutrien",
+          "conviction": 2
+        },
+        {
+          "tk": "MOS",
+          "kind": "primary",
+          "name": "Mosaic",
+          "conviction": 2
+        },
+        {
+          "tk": "ICL",
+          "kind": "primary",
+          "name": "ICL Group",
+          "conviction": 1
+        }
+      ],
+      "gap": "covered",
+      "priority": 0
+    }
+  ]
+}

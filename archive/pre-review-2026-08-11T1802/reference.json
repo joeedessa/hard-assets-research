@@ -1,0 +1,221 @@
+{
+  "_meta": {
+    "description": "Non-universe entities named in the research prose, classified so the UI can tell the reader what is investable and what is context. Drives the linking convention.",
+    "convention": "Company Name (TICKER) — ticker clickable = has an investing angle. Company Name (private) = not listed. Context-only names render as plain text with no link.",
+    "types": {
+      "candidate": "Listed, on-thesis, genuinely investable — referenced but not yet assessed for the universe. Clickable; opens a short 'not yet assessed' note.",
+      "context": "Named for context only — customer, downstream buyer, or macro reference with no direct hard-asset investing angle. NOT clickable by design.",
+      "private": "Privately held, no listed equity. Rendered '(private)'. NOT clickable.",
+      "state": "State-owned, a JV, or otherwise not investable as listed equity. NOT clickable."
+    },
+    "note": "Names in companies.json are the investable universe (full drawer). Names in excluded.json were assessed and rejected (why-not note). This file covers everything else that gets mentioned.",
+    "as_of": "2026-08-05"
+  },
+  "entities": [
+    {
+      "ticker": "GTLS",
+      "name": "Chart Industries",
+      "type": "context",
+      "vertical": "ng",
+      "note": "Cryogenic equipment for LNG, industrial gas and hydrogen. Yahoo returns no price data as of 2026-08-05 — likely acquired or delisted; treat as historical reference until confirmed."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "type": "context",
+      "note": "Hyperscaler — a demand driver for power, copper and water, not a hard-asset investment."
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "type": "context",
+      "note": "Hyperscaler; counterparty on the CEG Three Mile Island PPA. Demand side only."
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet",
+      "type": "context",
+      "note": "Hyperscaler; first corporate SMR fleet PPA (Kairos). Demand side only."
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "type": "context",
+      "note": "Hyperscaler; announced multi-GW nuclear procurement. Demand side only."
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "type": "context",
+      "note": "Magnet, lithium and Megapack demand reference — an end customer, not a hard-asset play."
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC",
+      "type": "context",
+      "note": "Fab customer for industrial gases and specialty materials. Semiconductor thesis, not hard assets."
+    },
+    {
+      "ticker": "GM",
+      "name": "General Motors",
+      "type": "context",
+      "note": "OEM offtake counterparty (MP magnet agreement). Demand side."
+    },
+    {
+      "ticker": "F",
+      "name": "Ford",
+      "type": "context",
+      "note": "OEM offtake reference. Demand side."
+    },
+    {
+      "ticker": "BYD",
+      "name": "BYD",
+      "type": "context",
+      "note": "Chinese EV/battery OEM cited for demand scale."
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "type": "context",
+      "note": "Fab customer for industrial gases and substrates."
+    },
+    {
+      "name": "Heron Power",
+      "type": "private",
+      "note": "Solid-state transformers; $140M Series B (a16z American Dynamism, Breakthrough Energy). Ex-Tesla powertrain leadership."
+    },
+    {
+      "name": "DG Matrix",
+      "type": "private",
+      "note": "Solid-state transformers; $60M Series A with ABB and Mitsubishi Heavy as strategic investors."
+    },
+    {
+      "name": "Kairos Power",
+      "type": "private",
+      "note": "Fluoride-salt-cooled SMR developer; Google fleet PPA counterparty."
+    },
+    {
+      "name": "X-energy",
+      "type": "private",
+      "note": "TRISO-fuelled HTGR SMR developer; Amazon-backed."
+    },
+    {
+      "name": "Holtec International",
+      "type": "private",
+      "note": "Spent-fuel storage casks and SMR-300 development."
+    },
+    {
+      "name": "Redwood Materials",
+      "type": "private",
+      "note": "Battery recycling and cathode materials; the leading US private recycler."
+    },
+    {
+      "name": "Moda Midstream",
+      "type": "private",
+      "note": "VLCC-capable crude export terminal operator."
+    },
+    {
+      "name": "Hitachi Energy",
+      "type": "private",
+      "note": "Grid transmission equipment; a Hitachi subsidiary with no separate listing."
+    },
+    {
+      "name": "Urenco",
+      "type": "private",
+      "note": "Enrichment consortium owned by the UK, Dutch and German states plus utilities."
+    },
+    {
+      "name": "Eotron",
+      "type": "private",
+      "note": "SiC cold plate and fluid-cooled interposer research."
+    },
+    {
+      "name": "TENEX / Rosatom",
+      "type": "state",
+      "note": "Russian state enrichment supplier — was ~28% of US SWU before the 2024 import ban. Not investable."
+    },
+    {
+      "name": "OCP Group",
+      "type": "state",
+      "note": "Moroccan state phosphate producer; controls the majority of global reserves. Not listed."
+    },
+    {
+      "name": "Canpotex",
+      "type": "state",
+      "note": "Potash export JV of Nutrien and Mosaic — a marketing entity, not separately investable."
+    },
+    {
+      "name": "Orano",
+      "type": "state",
+      "note": "French state-owned fuel cycle and reprocessing company."
+    },
+    {
+      "name": "ConverDyn",
+      "type": "state",
+      "note": "US uranium conversion JV (Honeywell/General Atomics)."
+    },
+    {
+      "name": "CNNC",
+      "type": "state",
+      "note": "China National Nuclear Corporation — state-owned."
+    },
+    {
+      "name": "Seequent/Leapfrog",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Framatome",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Urban Mining Co",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Shearwater GeoServices",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Cyclic Materials",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "name": "Westinghouse",
+      "type": "private",
+      "note": "Named in Picks & Shovels; privately held, no listed equity."
+    },
+    {
+      "ticker": "DO",
+      "name": "Diamond Offshore",
+      "type": "context",
+      "vertical": "oil",
+      "note": "Absorbed by Noble Corp (NE). No longer trades."
+    },
+    {
+      "ticker": "SAND",
+      "name": "Sandstorm Gold",
+      "type": "context",
+      "vertical": "pg",
+      "note": "Acquired by Royal Gold (RGLD) in 2025. No longer trades."
+    },
+    {
+      "ticker": "LICY",
+      "name": "Li-Cycle Holdings",
+      "type": "context",
+      "vertical": "ii",
+      "note": "Li-Cycle — no price data as of 2026-08-06, consistent with its 2025 insolvency."
+    },
+    {
+      "ticker": "HCCI",
+      "name": "Heritage Crystal Clean",
+      "type": "context",
+      "vertical": "ii",
+      "note": "Heritage-Crystal Clean taken private in 2023. No longer trades."
+    }
+  ]
+}
