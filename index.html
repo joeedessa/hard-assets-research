@@ -678,6 +678,9 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .pol-scope{font-size:11px;color:var(--color-text-secondary);line-height:1.6;margin-top:6px;
   padding:6px 9px;border-radius:4px;background:var(--color-background-secondary);
   border-left:2px solid var(--accent)}
+.pol-src{margin-top:6px;font-size:10px;color:var(--color-text-tertiary)}
+.pol-src summary{cursor:pointer;user-select:none}
+.pol-src ul{margin:4px 0 0 14px;padding:0;line-height:1.55}
 .pol-verify{font-size:10px;color:var(--color-text-tertiary);line-height:1.55;margin-top:6px;
   padding:5px 8px;border-radius:4px;border:.5px dashed var(--color-border-secondary)}
 .pol-watch{font-size:10px;color:var(--color-text-tertiary);border-top:.5px solid var(--color-border-tertiary);
@@ -2042,6 +2045,7 @@ function buildPolicy(){
       ${r.scope?`<div class="pol-scope"><b>Scope:</b> ${linkifyTickers(esc(r.scope))}</div>`:''}
       ${r.interaction_45x?`<div class="pol-scope"><b>Interaction with 45X:</b> ${linkifyTickers(esc(r.interaction_45x))}</div>`:''}
       ${r.watch?`<div class="pol-watch"><b>Watch:</b> ${esc(r.watch)}</div>`:''}
+      ${Array.isArray(r.sources)&&r.sources.length?`<details class="pol-src"><summary>Sources (${r.sources.length})</summary><ul>${r.sources.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></details>`:''}
       ${r.verification?`<div class="pol-verify"><b>Verification:</b> ${esc(r.verification)}</div>`:''}
       <div class="pol-tks">${(r.tickers||[]).map(t=>`<span class="pol-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join('')}</div>
     </div>`).join('');

@@ -7,7 +7,9 @@
       "levers": "Upcoming policy decisions that could move markets"
     },
     "as_of": "2026-08-11",
-    "dating_note": "Levers carry a human-readable 'date' which may be a range, a quarter or 'ongoing'. Only entries with a resolvable 'date_iso' enter the What's Next agenda. Where a proxy date is used it is labelled as such in date_note and is not an announced date. Where a window has passed with no outcome, that is recorded rather than silently rolled forward."
+    "dating_note": "Levers carry a human-readable 'date' which may be a range, a quarter or 'ongoing'. Only entries with a resolvable 'date_iso' enter the What's Next agenda. Where a proxy date is used it is labelled as such in date_note and is not an announced date. Where a window has passed with no outcome, that is recorded rather than silently rolled forward.",
+    "sourcing_note": "AUDIT 2026-08-11: every entry in this file was previously unsourced — no citation field existed, which is exactly the condition that let the FCC paraphrase error through unchallenged. Regimes now carry a 'sources' array and, where a claim was found wrong, a 'verification' field recording what was corrected rather than fixing it silently. Programs are not yet re-verified and are the remaining gap.",
+    "audit_2026_08_11": "Five of eight regimes carried material errors. Two were stale (Section 232 copper still marked 'investigating' a year after tariffs took effect; the China US-specific antimony ban still described as active nine months after it was suspended). Two were wrong on the substance (the REE extraterritorial threshold is 0.1%, not 50%, and is suspended; the 45X critical-minerals taper is 2031-2033, not 2029). One inverted an investment conclusion: the enacted copper tariff exempts cathode and concentrate, so it does not hand FCX and SCCO the domestic premium this card asserted. Common cause with the FCC error — a claim written once from a secondary summary and never re-checked against a primary source."
   },
   "regimes": [
     {
@@ -18,7 +20,7 @@
       "status_color": "#E24B4A",
       "date": "2025-04-04",
       "cliff": "2026-11-10",
-      "summary": "China placed seven heavy/medium REEs under export licensing in April 2025 (Sm, Gd, Tb, Dy, Lu, Sc, Y — plus alloys, oxides, magnets). A second tranche of 5 additional elements was deferred to November 10, 2026. The April controls were never suspended — the 'pause' narrative was a misread. An extraterritorial '50% rule' applies: products made outside China using Chinese-origin REEs also require export licenses.",
+      "summary": "China placed seven heavy/medium REEs under export licensing in April 2025 (Sm, Gd, Tb, Dy, Lu, Sc, Y — plus alloys, oxides, magnets). THESE APRIL CONTROLS ARE IN FORCE AND WERE NEVER SUSPENDED; the 'pause' narrative conflates them with the later tranche. A SECOND, SEPARATE PACKAGE announced 2025-10-09 (MOFCOM Announcement No. 61 and companions) added five further elements (holmium, erbium, thulium, europium, ytterbium) AND introduced China's first extraterritorial export control — a 0.1% DE MINIMIS RULE requiring a Chinese licence for magnets made anywhere in the world containing as little as 0.1% Chinese-origin controlled REE, or made using Chinese processing technology. It is the mirror image of the US de minimis and Foreign Direct Product Rule. THAT OCTOBER PACKAGE IS SUSPENDED, not in force: China suspended it for one year to 2026-11-10 under the November 2025 de-escalation, alongside BIS suspending its Affiliates Rule.",
       "tickers": [
         "MP",
         "LYC.AX",
@@ -26,23 +28,36 @@
         "6880.HK",
         "PPTA"
       ],
-      "impact": "Bullish for Western REE producers; creates urgency for allied-nation supply chains; adds a floor under NdPr prices.",
-      "watch": "November 10, 2026 — second tranche cliff. Any guidance update from MOFCOM on application processing backlogs."
+      "impact": "Bullish for Western REE producers; creates urgency for allied supply chains; puts a floor under NdPr. The asymmetry to hold in mind: the licensing regime that BINDS TODAY is the April 2025 one, while the instrument with genuinely global reach — the 0.1% rule — is switched off but reversible by announcement. The 0.1% threshold is low enough to be effectively a universal licensing requirement on the world magnet trade, which is why 2026-11-10 is the single largest dated policy risk on this map.",
+      "watch": "2026-11-10 — expiry of the one-year suspension of the October 2025 package, including the 0.1% extraterritorial rule and the five added elements. Whether the suspension is renewed, allowed to lapse or traded away. MOFCOM licence processing backlogs under the April regime.",
+      "verification": "Verified 2026-08-11 against Jones Day, Pillsbury and European Parliament EPRS briefings. CORRECTION LOGGED: this card previously described an extraterritorial '50% rule' as currently applying. Two errors — the threshold is 0.1%, not 50% (the 50% figure is the US BIS Affiliates Rule ownership test, a different instrument on the other side of the same standoff), and the rule is SUSPENDED until 2026-11-10 rather than in force. A reader would have concluded a binding constraint existed today that does not.",
+      "sources": [
+        "MOFCOM Announcement No. 61 (2025-10-09)",
+        "Jones Day, 'BIS Suspends Affiliates Rule, China Pauses Rare Earth Export Controls' (2025-11)",
+        "Pillsbury, 'China Suspends Export Controls on Certain Critical Minerals and Related Items'",
+        "European Parliament EPRS, 'China's rare-earth export restrictions' (2025-11-24)"
+      ]
     },
     {
       "id": "china-antimony-ban",
-      "title": "China Antimony Export Ban",
+      "title": "China Antimony Controls — licensing in force, US ban suspended",
       "icon": "🚫",
       "status": "active",
       "status_color": "#E24B4A",
-      "date": "2024-10-01",
-      "cliff": null,
-      "summary": "China banned antimony exports (effective October 2024) covering antimony ore, concentrates, and processed products. China produces ~50% of global antimony. Antimony trioxide is essential for flame retardants, lead-acid batteries, and military pyrotechnics. PPTA's Stibnite mine in Idaho is the only significant undeveloped Western antimony source.",
+      "date": "2024-09-15",
+      "cliff": "2026-11-27",
+      "summary": "TWO DISTINCT MEASURES, previously collapsed into one. (1) EXPORT LICENSING, announced 2024-08-15 and effective 2024-09-15, applying WORLDWIDE to antimony ore, concentrates, oxides and processed products — a licence-and-end-user-documentation regime, not a ban. This is in force. (2) An OUTRIGHT BAN on exports of antimony, gallium and germanium TO THE UNITED STATES specifically, announced 2024-12-03. THAT US BAN IS CURRENTLY SUSPENDED — lifted 2025-11 under the trade truce and running to 2026-11-27. The suspension did not delist the metals: they remain on the dual-use control list, every shipment still needs a licence, and the separate prohibition on supplying US MILITARY end-users was not suspended. China produces roughly half of global antimony. PPTA's Stibnite in Idaho is the only significant undeveloped Western source.",
       "tickers": [
         "PPTA"
       ],
-      "impact": "Direct catalyst for Perpetua Resources; creates urgency for DoD and allies to secure Stibnite permitting.",
-      "watch": "Stibnite EIS completion and permitting decision. DoD funding tranche triggers."
+      "impact": "Direct catalyst for Perpetua; sustains DoD urgency on Stibnite permitting. Note the structure: the binding constraint on US buyers today is licensing friction and the military-end-user carve-out, not a total cutoff — the total cutoff is a switch Beijing can re-flip on 2026-11-27 without new legislation.",
+      "watch": "2026-11-27 — expiry of the suspension of the US-specific export prohibition. Licence approval rates under the worldwide regime. Stibnite EIS completion and DoD funding tranche triggers.",
+      "verification": "Verified 2026-08-11 against Reuters/CNBC reporting of the 2025-11-09 suspension, Fastmarkets, and CSET's translation of MOFCOM Notice 2024 No. 46. CORRECTION LOGGED: this card said 'China banned antimony exports (effective October 2024)'. Three errors — the October date (the licensing measure was announced 2024-08-15, effective 2024-09-15), the characterisation as a ban (it was licensing; the ban came 2024-12-03 and was US-specific), and the omission that the ban has been suspended since 2025-11. The card overstated a live constraint by roughly one full escalation rung.",
+      "sources": [
+        "MOFCOM Notice 2024 No. 46 (2024-12-03) — CSET translation",
+        "Reuters/CNBC, 'China suspends ban on exports of gallium, germanium, antimony to US' (2025-11-09)",
+        "Fastmarkets, 'Uncertainty lingers over antimony exports following US-China truce'"
+      ]
     },
     {
       "id": "russian-uranium-ban",
@@ -52,7 +67,7 @@
       "status_color": "#E24B4A",
       "date": "2024-05-13",
       "cliff": null,
-      "summary": "Prohibiting Russian Uranium Imports Act signed May 2024. Russia (TENEX) supplied ~28% of US SWU — now banned with limited waivers expiring 2028. Forces Western enrichment rebuild. Centrus is the only US company with active enrichment capacity. Kazatomprom (Kazakhstan) is the swing uranium miner — geopolitically ambiguous (Russian/Chinese sphere influence).",
+      "summary": "Prohibiting Russian Uranium Imports Act (PL 118-62) signed 2024-05-13, effective 2024-08-11. Russia (TENEX) supplied roughly 28% of US SWU. Waivers are available where no alternative viable source exists or where imports are in the national interest, but are subject to annual aggregate limits and MUST TERMINATE NO LATER THAN 2028-01-01, after which no waiver or extension may be granted. The prohibition itself then runs to 2040-12-31. Forces a Western enrichment rebuild. Centrus is the only US company with active enrichment capacity. Kazatomprom is the swing miner and geopolitically ambiguous.",
       "tickers": [
         "LEU",
         "CCO",
@@ -61,7 +76,13 @@
         "UUUU"
       ],
       "impact": "Structural demand floor under LEU; long-term bullish for all Western uranium supply chain.",
-      "watch": "Waiver expiration schedule (2028). HALEU commercial scale timeline. Western enrichment investment commitments."
+      "watch": "2028-01-01 — hard waiver cliff, after which no further waivers may be granted. HALEU commercial scale timeline. Western enrichment investment commitments against a demand floor that is legislated to 2040.",
+      "verification": "Verified 2026-08-11 against the statute as compiled (govinfo COMPS-17656) and DOE waiver guidance. The prior text was accurate; added the precise waiver termination date and the 2040-12-31 sunset, which had been omitted and which is what makes the demand floor a sixteen-year one rather than open-ended.",
+      "sources": [
+        "Public Law 118-62, Prohibiting Russian Uranium Imports Act (govinfo COMPS-17656)",
+        "DOE Office of Nuclear Energy, Russian Uranium Ban Waiver Guidance",
+        "89 FR 45259 — Instructions for Requesting a Waiver (2024-05-24)"
+      ]
     },
     {
       "id": "ira-critical-minerals",
@@ -70,8 +91,8 @@
       "status": "active",
       "status_color": "#16A34A",
       "date": "2022-08-16",
-      "cliff": "2032-12-31",
-      "summary": "Inflation Reduction Act Section 45X provides production tax credits for US-manufactured clean energy components including battery cells, modules, and critical mineral processing. FEOC (Foreign Entity of Concern) rules exclude Chinese-origin materials from EV credit eligibility — creating direct demand for US/allied REE and lithium supply. Credits scale down after 2029.",
+      "cliff": "2033-12-31",
+      "summary": "Inflation Reduction Act Section 45X provides production tax credits for US-manufactured clean energy components including battery cells, modules and critical mineral processing. FEOC (Foreign Entity of Concern) rules exclude Chinese-origin material from EV credit eligibility, creating direct demand for US and allied REE and lithium supply. PHASE-DOWN, CORRECTED: under the IRA as enacted, applicable CRITICAL MINERALS had NO phase-out at all — the credit was permanent for them, unlike the 2030-2032 taper on components. The One Big Beautiful Bill Act changed that, introducing a critical-minerals taper of 75% of credit value for 2031, 50% for 2032, 25% for 2033 and zero after 2033-12-31, effective for tax years beginning after 2025-07-04. OBBBA also added metallurgical coal to the definition of an applicable critical mineral, with that credit terminating for coal produced after 2029-12-31.",
       "tickers": [
         "MP",
         "LYC.AX",
@@ -80,24 +101,36 @@
         "MTRN",
         "LIN"
       ],
-      "impact": "Accelerates US/allied critical mineral processing investment; creates above-market margins for qualifying US producers.",
-      "watch": "Congressional risk: any repeal of 45X or FEOC rules would remove the IRA reshoring premium. FEOC guidance updates from Treasury."
+      "impact": "Accelerates US and allied critical mineral processing investment and supports above-market margins for qualifying US producers — but the permanence that underwrote long-dated processing project economics is gone. A separation or refining plant reaching steady state late this decade now amortises against a credit that starts shrinking in 2031, which shortens the payback window that project FIDs were originally underwritten on.",
+      "watch": "Treasury FEOC guidance updates. Congressional risk to 45X generally. Whether the 2031-2033 taper is modified again — it has already been changed once, which is itself the datapoint on how firm it is.",
+      "verification": "Verified 2026-08-11 against CRS IF12809, Hunton's Nickel Report on the OBBBA 45X amendments, and RSM's OBBBA clean-energy summary. CORRECTION LOGGED: this card said 'Credits scale down after 2029'. Wrong year and wrong baseline — the critical-minerals taper runs 2031-2033, and the 2029 date belongs to the newly added metallurgical coal category, not to the minerals this universe holds.",
+      "sources": [
+        "CRS IF12809, The Section 45X Advanced Manufacturing Production Credit",
+        "Hunton, 'Metallurgical Coal Added as Critical Mineral for Section 45X While Phasing out Credits for Other Applicable Critical Minerals'",
+        "RSM US, OBBBA clean energy credits summary"
+      ]
     },
     {
       "id": "section-232-copper",
-      "title": "Section 232 — Copper & Derivatives",
+      "title": "Section 232 — Copper & Derivatives (TARIFFS IN FORCE)",
       "icon": "🔧",
-      "status": "investigating",
-      "status_color": "#EF9F27",
+      "status": "active",
+      "status_color": "#E24B4A",
       "date": "2025-02-25",
       "cliff": null,
-      "summary": "Section 232 investigation into copper imports initiated February 2025. If tariffs imposed, US copper prices would decouple (upward) from LME. FCX and SCCO are the largest US copper producers — tariffs would benefit them via domestic price premium. Decision timeline: typically 270 days from initiation.",
+      "summary": "RESOLVED, NOT PENDING — this entry previously read 'investigating' and asked what would happen 'if tariffs imposed'. They were imposed. Investigation initiated 2025-02-25; Presidential Proclamation effective 2025-08-01 applied a 50% Section 232 tariff to the COPPER INPUT VALUE of semi-finished copper products (pipe, wire, rod, sheet, tube) and copper-intensive derivatives (cables, connectors). Modified effective 2026-04-06: the tariff now applies to the FULL CUSTOMS VALUE rather than the metal content only, at 50% on semi-finished products and 25% on copper-intensive derivatives — 10% where at least 95% of the copper, steel and aluminium content is US-sourced. THE SCOPE EXCLUSION IS THE WHOLE STORY: copper ores, concentrates, mattes, CATHODES, anodes and scrap were NOT tariffed. The duty lands on fabricated product, not on refined metal.",
       "tickers": [
         "FCX",
         "SCCO"
       ],
-      "impact": "Potentially very bullish for US copper producers; creates domestic price floor above LME.",
-      "watch": "Commerce Department determination. Tariff rate and product scope if imposed. LME/US spread if tariffs pass."
+      "impact": "CORRECTED — THE EARLIER READ WAS BACKWARDS ON MECHANISM. This entry previously said tariffs would benefit FCX and SCCO through a domestic price premium. That was written for a tariff on refined copper, which is not the tariff that was enacted. Cathode and concentrate are exempt, so the miners' primary product does not carry the duty and does not get a mechanical US premium from it. The beneficiaries are US FABRICATORS with domestic input — mills and rod/wire/tube producers now protected against imported semis — while US manufacturers who BUY semis face a 50% input cost step and the 25%/10% derivative split creates a direct incentive to domesticate copper content. FCX and SCCO remain copper-price longs; they are not tariff beneficiaries in the way this card previously asserted. INFERENCE, NOT MEASURED: we have not measured the COMEX-LME spread before and after the cathode exclusion, so the size of any residual premium is not established here.",
+      "watch": "Whether cathode is ever brought into scope — that, not the current rule, is what would create the miner premium originally described. Derivative-list expansions via the inclusions process. Whether the full-customs-value basis from 2026-04-06 survives legal challenge.",
+      "verification": "Verified 2026-08-11 against the Federal Register proclamation 'Adjusting Imports of Copper Into the United States' (2025-08-05), CBP guidance CSMS #65794272, and White & Case alerts covering both the original action and the 2026-04-06 modification. CORRECTION LOGGED: this card carried status 'investigating' and a conditional 'if tariffs imposed' framing for roughly a year after the tariffs took effect, and its stated benefit mechanism assumed a refined-copper tariff that was never enacted.",
+      "sources": [
+        "Federal Register 2025-14893, Adjusting Imports of Copper Into the United States (2025-08-05)",
+        "CBP CSMS #65794272 — Section 232 duties on copper and copper derivative products",
+        "White & Case, 'United States modifies steel, aluminum, and copper Section 232 tariffs' (2026)"
+      ]
     },
     {
       "id": "chips-act-domestic-production",
@@ -162,7 +195,16 @@
       "watch": "Whether any Conditional Approval is granted, and how fast. Also whether the wireless-only wording of the connectivity prong creates a real escape hatch: the definition lists Wi-Fi, cellular, Bluetooth 'or other similar connections', so a utility-scale unit reaching SCADA over fibre or Ethernet may fall outside — but counsel describe this as a fact-specific, model-by-model question, not a settled carve-out, and it is untested.",
       "interaction_45x": "STACKS WITH, BUT IS NOT THE SAME TEST AS, IRA 45X. 45X is a production tax CREDIT that rewards qualifying US manufacture, with FEOC rules excluding Chinese-origin material; failing it costs you a subsidy. This is a PROHIBITION enforced through equipment authorisation; failing it costs you market access. They diverge on the test itself: 45X domestic-content and FEOC rules are not the Buy American 'domestic end product' test at 48 CFR 25.101(a). A product can qualify for one and fail the other. From 2026-07-28 a manufacturer selling connected inverters into the US must satisfy both regimes independently.",
       "verification": "Verified 2026-08-11 against the FCC Public Notice text (DA-26-786A1) plus client alerts from Wiley, Stoel Rives, Crowell & Moring, K&L Gates and Morgan Lewis. The operative definitions sit in Appendices B and C of the Notice, which are scanned images without a text layer, so the definitional wording above is taken from counsel and corroborated across four firms. CORRECTION LOGGED: an earlier version of this entry stated the rule caught one-way inverters because the definition reads 'DC to AC or AC to DC'. That was wrong — it was based on a paraphrase that dropped the opening qualifier. The adopted text begins 'any bi-directional power device or system', which Wiley confirms is an explicit qualifier. The firmware/software blanket waiver running to at least 2029-01-01 is now corroborated by two firms (Stoel, Wiley). REMOVED as unverifiable: a reported step-up of the domestic content threshold to 75% from 2029 appeared in one firm only and could not be stood up against a second source. The 65% figure for CY2024-2028 is the standard FAR test and is confirmed; whether and how it steps up afterwards is not recorded here because it is not established.",
-      "scope": "NOT a solar rule. Counsel describe the reach as covering commercial solar, battery AND WIND projects, home solar and battery systems, ELECTRIC VEHICLE CHARGERS, and data centres — and the Notice states expressly that, unlike the router listing, these inverters are 'not limited to residential or consumer applications'. THE BOUNDARY THAT ACTUALLY DEFINES SCOPE: the rule's reach is set by WHERE THE WIRELESS IS, not by what the device does. The connectivity prong names Wi-Fi, cellular, Bluetooth 'or other similar connections', so distributed and edge assets — rooftop solar, home batteries, commercial BESS, EV chargers — are squarely caught, because that is where cellular and Wi-Fi live. Heavy fixed plant talking over hardwired fibre or fieldbus (HVDC converter stations, smelter rectifiers, large industrial drives) is arguably outside, though that argument is untested. The effect is that the rule reshapes the DISTRIBUTED power-electronics market while largely missing the utility-scale transmission one — a strange boundary for a security rule, defensible only on attack-surface grounds."
+      "scope": "NOT a solar rule. Counsel describe the reach as covering commercial solar, battery AND WIND projects, home solar and battery systems, ELECTRIC VEHICLE CHARGERS, and data centres — and the Notice states expressly that, unlike the router listing, these inverters are 'not limited to residential or consumer applications'. THE BOUNDARY THAT ACTUALLY DEFINES SCOPE: the rule's reach is set by WHERE THE WIRELESS IS, not by what the device does. The connectivity prong names Wi-Fi, cellular, Bluetooth 'or other similar connections', so distributed and edge assets — rooftop solar, home batteries, commercial BESS, EV chargers — are squarely caught, because that is where cellular and Wi-Fi live. Heavy fixed plant talking over hardwired fibre or fieldbus (HVDC converter stations, smelter rectifiers, large industrial drives) is arguably outside, though that argument is untested. The effect is that the rule reshapes the DISTRIBUTED power-electronics market while largely missing the utility-scale transmission one — a strange boundary for a security rule, defensible only on attack-surface grounds.",
+      "sources": [
+        "FCC Public Notice DA 26-786 (PSHSB), released 2026-07-28",
+        "Wiley Rein client alert",
+        "Stoel Rives client alert",
+        "Crowell & Moring client alert",
+        "K&L Gates client alert",
+        "Morgan Lewis client alert",
+        "48 CFR 25.101(a); 47 CFR 2.903(a); 47 CFR 2.911(d)(5)(i)"
+      ]
     }
   ],
   "programs": [
@@ -218,17 +260,30 @@
       "bull_bear": "Bull: full implementation widens supply crunch. Bear: further deferral reduces urgency narrative."
     },
     {
+      "id": "china-antimony-suspension-expiry",
+      "title": "China US-specific antimony/gallium/germanium ban — suspension expiry",
+      "date": "2026-11-27",
+      "date_iso": "2026-11-27",
+      "description": "China's outright prohibition on exporting antimony, gallium and germanium to the US (2024-12-03) has been suspended since 2025-11 and the suspension runs to 2026-11-27. Reinstatement requires no new instrument — the measure exists and is merely switched off. Seventeen days after the REE tranche-2 cliff, which makes November 2026 a concentrated month of China-supply decision risk rather than two unrelated dates.",
+      "tickers": [
+        "PPTA",
+        "UUUU",
+        "MP"
+      ],
+      "bull_bear": "Bull for Western antimony and tech-metals supply if reinstated. Bear for US downstream users of flame retardants, ordnance and semiconductor feedstock. A quiet renewal is the base case only if the wider truce holds.",
+      "date_note": "Announced expiry date of a suspension, not a discretionary review — reliable as a date, unknowable as to outcome."
+    },
+    {
       "id": "section232-copper-decision",
-      "title": "Section 232 copper tariff decision",
-      "date": "2025-Q4/2026-Q1",
-      "description": "Commerce Department determination on copper import tariffs. 25% tariff would create a US premium above LME — directly benefiting FCX and SCCO domestic operations.",
+      "title": "Section 232 copper — RESOLVED 2025-08-01, modified 2026-04-06",
+      "date": "2026-04-06",
+      "description": "CLOSED. Retained as a record, not a forward lever. The determination came: 50% on semi-finished copper and copper-intensive derivatives from 2025-08-01, rebased to full customs value from 2026-04-06 with derivatives at 25% (10% at >=95% US content). Ores, concentrates, cathodes, anodes and scrap excluded.",
       "tickers": [
         "FCX",
         "SCCO"
       ],
-      "bull_bear": "Bull: tariff creates domestic premium floor. Bear: no action maintains LME parity.",
-      "date_unresolved": "'2025-Q4/2026-Q1' has no resolvable calendar date — excluded from the agenda by design",
-      "date_note": "Decision window stated as 2025-Q4/2026-Q1 and now PAST as of 2026-08-11 with no announced outcome located. Overdue rather than upcoming — treat the silence as the datapoint. Excluded from the forward agenda deliberately."
+      "bull_bear": "Resolved. The live question is no longer whether a tariff arrives but whether refined cathode is ever added to scope — the only path to the domestic miner premium originally posited.",
+      "date_note": "CORRECTION LOGGED: this lever was previously marked 'PAST WITH NO OUTCOME' as of 2026-08-11. That was wrong — the outcome had occurred twice, in 2025-08 and 2026-04. The silence was in our sourcing, not in Washington. Kept off the forward agenda because it is now history rather than a pending decision."
     },
     {
       "id": "stibnite-eis",
