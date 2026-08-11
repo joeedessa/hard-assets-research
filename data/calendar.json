@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-10T22:04:52+00:00",
-    "mode": "full",
-    "coverage": "162/162 scanned this pass",
+    "as_of": "2026-08-11T07:57:47+00:00",
+    "mode": "light",
+    "coverage": "13/13 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -180,23 +180,23 @@
       },
       "wire": [
         {
-          "t": "Aecom: Fiscal Q3 Earnings Snapshot - kare11.com",
-          "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRGVXcEFhQS1QQkRkbWN0UGo5RUlNalNtWWUwVzlQbXJ1Xy1MQm5TZ08wVGpYcTI5R1hYVEpGWHJ5dVNwRmdUTEEwd2gyb05GTGlqNVQ3NEpwTkJ6VWxicXRHZGJwaHZRcm80OVVkZTdNYjBOcWZqTUNuOE5QOUZaZkR0RVZQTi1VQmphNTJvekVkQXktOGpjMlhoTGUzYktwOW9EMk1SaVFtOHdtRVRDZHhwc0NSalpicExlcnBmV1QyMmN0d1lDb2JMMDVFZw?oc=5",
-          "s": "kare11.com",
+          "t": "Aecom: Fiscal Q3 Earnings Snapshot - KING5.com",
+          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWGI1eGdKTFFvV3hfaXUtWUQ2R1R0djZ3dWpWN3lDdWtpMVNPV2xIbkZ6a2dRSHV1WXhSelpKSlA0VTk3SkppeXloVjVMSEJ6RjE0Y1NQN1k0YlRSa21pcTMzLUNITUEzaTNMdnR0LUNFVDlMUndyb2RCSGxDSGpESy1pdDktQVlOUTdUd1FQUnhLVDE5VjJjTXZydzVGczZWdXNUYjVCTzI5WjNOU1BGS0thYksyLVFaRTF6MC1DcnFyMndyZG54WVRoR1k?oc=5",
+          "s": "KING5.com",
           "d": "2026-08-10",
           "cues": []
         },
         {
-          "t": "AECOM reports third quarter fiscal 2026 results - Yahoo! Finance Canada",
-          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNk5lb0syaWd6Q3hEdUVoYmlvUDRoZ1hMcXM2dkRVT2Vhdkxad1YzUmphVDNRUWx3ekE0MWFXMEpod0pqVVZMWUYxYldtczZPQUoxME1xTzF2WDE0bXZuTXc4UXM1VWNWZklkOWdXY1FteU8tWk9FcS1vQzFEWm9JcGtJRl9DaUpHb0Uw?oc=5",
-          "s": "Yahoo! Finance Canada",
+          "t": "AECOM slides as investors appear cautious ahead of earnings and remain focused on prior claims and cash-flow concerns - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOblpqbk4yajNTQVIzS1dQZWo1RklfX3kwTFZhc3pGUXdmSHc0MDhOWEpHLVpVbm5QR1liMjdEXzZZX1lWMlFVbVZlOWdYZWtTOUtWRDVuUzIzX05SLVhtVVNRRWladkh1Sk5VblAteFJFQ1dQQXh4U0I2U2NSVnh6U2lJTXZ2NzRtQ1Nrd3lVZ0Z6NXgzTGdUeTRGVXlNNUZxTDAxNW9CazdUVDNfSnRPZFlJVUlIU0tmMGJDLXhSN085LURCNktpbnJiNVpqN213Sjc5bWw3YWhlemZ1UENvSGM5OGY?oc=5",
+          "s": "Quiver Quantitative",
           "d": "2026-08-10",
           "cues": []
         },
         {
-          "t": "AECOM Fiscal Q3 2026 Earnings: Project Charge Drives a GAAP Loss - tradingkey.com",
+          "t": "AECOM Fiscal Q3 2026 Earnings: Project Charge Drives a GAAP Loss - TradingKey",
           "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4UkI5b0luRW5UNHNjUkdPWjVzWXJ5em03ai1ESTd4dE1fUVo5bnpaemZsUUhwQnBrQTRYaFVtUEo5YTB4WmhNcWFlaWtOVVZMM1hIX0dvOHIwbFBKeU51ZzJtekoyb3Y1RThmcnRn?oc=5",
-          "s": "tradingkey.com",
+          "s": "TradingKey",
           "d": "2026-08-10",
           "cues": []
         },
@@ -260,9 +260,9 @@
           ]
         },
         {
-          "t": "Consolidated Water: Q2 Earnings Snapshot - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWlVKUHl5aWZDR04wTnJDdmVVakprRUkzemNicVU4WXl6aHp3dEl4NFhiZ2FaQXcySkUyWHRZQlBWMDJiRUltVVIxT1o3SGN5WXA1SDFHa3NvbWZVXzBiX1BqY0VUc29YWmJ0VklHY1k4LVpjc2l6UGJSTE1QaXNvcG03Q0ZPcDRTQzJjeFV5bmoxQ0Y1ci1F?oc=5",
-          "s": "marketscreener.com",
+          "t": "Consolidated Water Co Ltd reports results for the quarter ended June 30 - Earnings Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOQXU5ekhaZ1BBdGRpMWY3SE9fajVGc1pBbHhyTU51Y1lHRkdmYWhqb0NLcE9IUUlxSHpXdzd0bFNwY3p2Yy16OGhQQjAtZjNpX3cwY2k3RVc2VTduYnRsUFRpaDRtUWlyN1FjRDM5NzRyODJfMzlqUGlSUW9PcU0tdGtndHdQNFNib2FSbFh2WXg3RG9Ja1FtWTlDa1ZJQW8wYUF1aVV6U2w3eFVaYjZ6Z2pNNjkyRmVDQTk1UEdSbHozRWhWWWlpMEtfRzY1SEg4WGFlVWdIVGV0aFFCcUFvNnppZGZkVmllM21HaGxNTQ?oc=5",
+          "s": "TradingView",
           "d": "2026-08-10",
           "cues": []
         }
@@ -282,10 +282,17 @@
       },
       "wire": [
         {
-          "t": "International Seaways Inc (INSW) (Q2 2026) Earnings Call Highlights: Record Results and ... - Yahoo Finance Singapore",
-          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUWljT1NRR3NBNTQwOVRjNk5VcE5oZnU5alVpOGtqbUtNWUgzVFo0X1ZscDNCODZCd2pmZ1I0bFlJYzNKeERZVy0ySWdMNlZqX1gyNVFuVmFxV0ZhSmYxYTQ0dE1HUmJqYl81aXFxUWpIc21SUm5NNThuVDluYUtQbGhIUjVaRktoZXc?oc=5",
-          "s": "Yahoo Finance Singapore",
+          "t": "International Seaways Inc (INSW) (Q2 2026) Earnings Call Highlights: Record Results and ... - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVVotbnREaVotdDlicjNybkctWWhLeGZra2FtQ19MYVo1cFZlNUtoYjBaSjFvQ2c4SjFodlBqQzNKMllKTVMyXzZ1ZERzU1kzQ1B6Z1BXMzZwTG1xY1U3UUpYWTl5V0hBaDI3NF8zQkdReGJ4aVoycjgtYnhTVHJNOWpfY1FaV19kc0FaWDlDSGJ3eWJValVuSTNpSTV3b2c?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-08-10",
+          "cues": []
+        },
+        {
+          "t": "International Seaways, Inc. 2026 Q2 - Results - Earnings Call Presentation (NYSE:INSW) 2026-08-11 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeTY3LTJ4bGVlNXZpOWdkZEt6cXhic3A1Z1lCOUxvUERrbTdBQzhXdzEtRGVSZWFOZHAtN1g3SmVmbzVDakVaRm9aT2Y1YXl3R0ZZSEpvV3kxQWRxZFFkNFpuSVQ5bEFtQlFOckdSSVY4WGRjT3BhR3RLRUZkQnZIUW5pdXlpdmRGZ0hnbzd2bkFQbThueE1sRlZtU3dwX2V1Q0JZM3NkM0wyNlk1RUNOZko2Yi1aalRyMlRNY3RHbkJRNl9pU2Jr?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-08-11",
           "cues": []
         },
         {
@@ -298,18 +305,9 @@
           ]
         },
         {
-          "t": "International Seaways Declares $5.05 Dividend After Record Q2 - stocktitan.net",
-          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZ1RoVkpDanVocXNYUlMtQXBMRHJTU21JV2xCcWR1NDhqTTJmVUxsWE1vTlhyQVJJNG9IYXBMa0U3RGhsbzNhdVNYeGtNeF9XSVRJUzJSMVZTUFh2amZpc1VuVldSUVV2cmdYdHNhcXV0ZmhGTzM2eWlCbjlJSWthQXQ5UjVoY3JsOXpEaHF2WElXdDN2Q1dRMGdIRWw1MVhNV1gyWkNMUQ?oc=5",
-          "s": "stocktitan.net",
-          "d": "2026-08-10",
-          "cues": [
-            "dividend/buyback"
-          ]
-        },
-        {
-          "t": "International Seaways: Q2 Earnings Snapshot - WKYC",
-          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNU41ZENPQW1oelR1S2FtLXRMVFFidTdBczZ2UjBmNnJwNW5xWDdpaHQzX2ZNNWdYNjk1QmZmWmtXRW84ek1YODJMQWlyM25vOFlEZ3I0MkRDcUpBVUlFOWNxdjduRFp3N3g0c2VaamxjOENuWG1JVkpJZlR5alViY2NBUFFxb0tleHZraGcxcjlWUUpxVVk4WndzdlVONldNbXh2dFRIdW1veURXMnFXejZpbm50bVJMVDR6V1lBZXRtT01FRF9VbkduUElka0VrVjFHb29tYw?oc=5",
-          "s": "WKYC",
+          "t": "International Seaways: Q2 Earnings Snapshot - KVUE",
+          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbXN2SlFTaWRHYlhFd1BFWjNXeWN0cnhCaG0zVXVFRGVOeUF0UmE4WTlqTVFOdVJlNl80Q1o4V3EyVEcwQWJmdUJDZ0p1NnQwLXBoeG02VGUxZmxRcjhXb0x6cm4wNW5TaWI5VU1Vd2wzNEtJZFJxeV80R3Utb3lFcXJFVUZmNDJFbDVJMGNNM19KYVZaU0hxWUdmcHZHOWVXMG5xMlNEQXp4Y1lFRF8yYWpIcEVIY2N1cWd4dWU1M3VyVER3MXlYYUNkekhQX0lEWFM3d3U0RQ?oc=5",
+          "s": "KVUE",
           "d": "2026-08-10",
           "cues": []
         }
