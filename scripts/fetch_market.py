@@ -676,7 +676,7 @@ def build_calendar(companies, quotes):
             continue
         rows = (doc.get("levers") or []) if typ == "policy" else (doc.get("catalyst_table") or [])
         for r in rows:
-            d = r.get("date") or r.get("d")
+            d = r.get("date_iso") or r.get("date") or r.get("d")
             if not d or not isinstance(d, str):
                 continue
             m = re.match(r"(\d{4}-\d{2}-\d{2})", d.strip())

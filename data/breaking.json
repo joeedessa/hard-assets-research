@@ -1,18 +1,18 @@
 {
   "_meta": {
-    "as_of": "2026-08-11T16:56:16+00:00",
+    "as_of": "2026-08-11T18:11:48+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 3/162 down 5%, sector -1.7%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 5/162 up 5%, sector -1.7%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 4/169 down 5%, sector -2.0%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 6/169 up 5%, sector -2.0%",
       "Single-name collapse (any holding −12%+ in a session): 1 found",
-      "Conviction-3 divergence (±8%+ versus the +0.6% universe median): 0 found",
+      "Conviction-3 divergence (±8%+ versus the +0.7% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 0 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
       "USD (DXY) ±1%+ in a session: +0.00%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 1 moved",
-      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
+      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 51 read"
     ]
   },
   "state": "critical",

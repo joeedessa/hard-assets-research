@@ -23,7 +23,14 @@
     "universe_note": "Names added 2026-08-05 carry provisional conviction (1-2) pending review; froth reflects current market posture. Conviction is an owner judgment and has not been assigned above 2 automatically.",
     "as_of": "2026-08-05",
     "review_fields": "last_touched = any edit to the record. last_reviewed = the thesis was genuinely re-read and re-argued on that date; null means it has not been, regardless of last_touched.",
-    "etf_screen_note": "GRID and PAVE holdings were screened on 2026-08-06 via yfinance, which exposes only the TOP TEN holdings per fund. The full constituent lists were not retrieved, so this is a partial screen and further constituents may still be uncovered."
+    "etf_screen_note": "GRID and PAVE holdings were screened on 2026-08-06 via yfinance, which exposes only the TOP TEN holdings per fund. The full constituent lists were not retrieved, so this is a partial screen and further constituents may still be uncovered.",
+    "tiers": {
+      "assessed": "Thesis written and re-argued by the owner; conviction and froth are considered judgments. Counted as the investable universe.",
+      "tracked": "On the map and priced nightly, but the thesis is inherited or provisional and has not been re-argued. Present deliberately — coverage is useful — but these are NOT owner judgments and should not be read as recommendations."
+    },
+    "tier_note": "The universe grew from 50 to 160+ names in August 2026, largely via bulk promotion from the picks-and-shovels map and ETF screens. Rather than prune, every record now declares which tier it is in, so the count is honest: a tracked name is coverage, an assessed name is a judgment.",
+    "selection_criteria": "Capex gap is the PRIMARY selection criterion — under-investment creates price support because supply cannot answer a price signal quickly. It is not the only one, and Technology Metals is the vertical that makes that explicit: it carries the largest share of the book on the LOWEST capex gap (28). The second criterion, stated here because it was previously implicit, is CHOKEPOINT POSITION — a step in the chain where few suppliers can constrain everything downstream, regardless of whether that step is under-invested. SiC substrates, InP photonics, HVLP copper foil and antimony qualify on chokepoint grounds, not capex grounds. A name needs one of the two, not both; where a name has neither it should be tier 'tracked' rather than 'assessed'.",
+    "oil_stance": "Oil is deliberately de-emphasised as a STRUCTURAL thesis — inning 5, business-cycle risk 72, and the highest correlation to GDP in the book. It is nonetheless the largest vertical by count because the picks-and-shovels promotion added drillers, OFS and shipping, which are cyclical service exposures rather than structural commodity ones. Those are tier 'tracked'. The assessed oil names are refining and product shipping, where the post-2020 capacity closure argument is structural rather than a barrel call. Recorded 2026-08-11 as a decision, not neglect."
   },
   "companies": [
     {
@@ -44,7 +51,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "LYC.AX",
@@ -64,7 +72,8 @@
         "robotics-magnets"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "UUUU",
@@ -83,7 +92,8 @@
         "uranium-rebuild"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "6880.HK",
@@ -102,7 +112,8 @@
         "china-export-controls"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "LEU",
@@ -122,7 +133,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "CCO",
@@ -141,7 +153,8 @@
         "tier1-assets"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "SPUT",
@@ -159,7 +172,8 @@
         "physical-commodity"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "CEG",
@@ -177,7 +191,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "NXE",
@@ -195,7 +210,8 @@
         "tier1-assets"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "PWR",
@@ -214,7 +230,8 @@
         "datacenter-power"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "ETN",
@@ -234,7 +251,8 @@
         "transformer-bottleneck"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "GEV",
@@ -253,7 +271,8 @@
         "datacenter-power"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "EME",
@@ -271,7 +290,8 @@
         "datacenter-power"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "MYRG",
@@ -288,7 +308,8 @@
         "grid-buildout"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "SCCO",
@@ -308,7 +329,8 @@
         "ev-demand"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "FCX",
@@ -326,7 +348,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "FNV",
@@ -345,7 +368,8 @@
         "copper-supercycle"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "WPM",
@@ -363,7 +387,8 @@
         "precious-metals"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "LNG",
@@ -382,7 +407,8 @@
         "nato-instrument"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "VGAS",
@@ -400,7 +426,8 @@
         "european-energy-security"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "KMI",
@@ -418,7 +445,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "ET",
@@ -435,7 +463,8 @@
         "gas-infrastructure"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "ALB",
@@ -454,7 +483,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "SQM",
@@ -472,16 +502,17 @@
         "ev-demand"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "FLNC",
       "name": "Fluence Energy",
-      "vertical": "li",
-      "chain_layer": "Grid BESS",
+      "vertical": "elec",
+      "chain_layer": "Grid BESS + power conversion",
       "geo": "US",
       "structure": "equity",
-      "thesis_note": "Grid-scale battery storage. Independent demand driver from EV cycle. AI-era grid BESS — data center backup + renewable integration. Recurring services revenue growing.",
+      "thesis_note": "Owns grid-scale battery energy storage integration — the system, not the cell. Refiled from the Lithium vertical to Electricity & Grid on 2026-08-11: it was placed by its input commodity, but its economics and its regulatory risk both sit in the grid stack. Hard to replace on the software and integration layer rather than the hardware, which is commoditising. MOST FCC-EXPOSED NAME IN THIS BOOK: DA 26-786 names hybrid battery-based inverters explicitly, and a BESS power-conversion system is exactly that. Where its inverters are produced is the determining fact and is NOT verified here. What would break it: cell supply is Chinese-dominated and it does not control it; margins on integration are thin; and if its PCS supply is foreign-produced the certification path for new models runs through a Conditional Approval queue with no published timetable.",
       "conviction": 2,
       "froth": 2,
       "froth_note": "BESS demand is real and growing independently of EV lithium sentiment. Some premium for the AI/grid angle. Not high froth but also not cheap — execution risk on a high-growth, lower-margin business.",
@@ -490,8 +521,10 @@
         "ai-demand-pull",
         "ev-demand"
       ],
-      "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed",
+      "data_caveat": "Inverter/PCS manufacturing location not verified. Under FCC DA 26-786 this is the determining fact for whether new models can be certified, and it is unresolved."
     },
     {
       "ticker": "PPTA",
@@ -510,7 +543,8 @@
         "critical-minerals"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "AFMJF",
@@ -528,7 +562,8 @@
         "critical-minerals"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "AXTI",
@@ -546,7 +581,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "WOLF",
@@ -565,7 +601,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "COHR",
@@ -585,7 +622,8 @@
         "ai-chip-packaging"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "6963.JP",
@@ -604,7 +642,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "5802.T",
@@ -623,7 +662,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "NOK",
@@ -642,7 +682,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "5706.JP",
@@ -660,7 +701,8 @@
         "copper-supercycle"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "8358.TWO",
@@ -677,7 +719,8 @@
         "ai-chip-packaging"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "2383.TW",
@@ -694,7 +737,8 @@
         "ai-chip-packaging"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "6213.TW",
@@ -711,7 +755,8 @@
         "ai-chip-packaging"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "VLO",
@@ -729,7 +774,8 @@
         "refining-margin"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "TDW",
@@ -747,7 +793,8 @@
         "offshore-recovery"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "STNG",
@@ -765,7 +812,8 @@
         "european-energy-security"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "NTR",
@@ -783,7 +831,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "MOS",
@@ -801,7 +850,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "ERII",
@@ -820,7 +870,8 @@
         "desalination"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "CWCO",
@@ -837,7 +888,8 @@
         "water-scarcity"
       ],
       "last_touched": "2026-08-04",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "LIN",
@@ -856,7 +908,8 @@
         "ai-demand-pull"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "APD",
@@ -874,7 +927,8 @@
         "hydrogen"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "ATI",
@@ -893,7 +947,8 @@
         "defense-procurement"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "MTRN",
@@ -912,7 +967,8 @@
         "critical-minerals"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "4004.JP",
@@ -931,7 +987,8 @@
         "sic-power"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "RGLD",
@@ -949,7 +1006,8 @@
         "precious-metals"
       ],
       "last_touched": "2026-08-03",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "TECK",
@@ -968,7 +1026,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "HBM",
@@ -987,7 +1046,8 @@
         "critical-minerals"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "IVN.TO",
@@ -1006,7 +1066,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "XYL",
@@ -1025,7 +1086,8 @@
         "desalination"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "ARIS",
@@ -1043,7 +1105,8 @@
         "oil-geopolitics"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "CF",
@@ -1062,7 +1125,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "ICL",
@@ -1081,7 +1145,8 @@
         "ev-demand"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "VRT",
@@ -1100,7 +1165,8 @@
         "grid-buildout"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "PRY.MI",
@@ -1119,7 +1185,8 @@
         "transformer-bottleneck"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "NEX.PA",
@@ -1138,7 +1205,8 @@
         "transformer-bottleneck"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "UEC",
@@ -1157,7 +1225,8 @@
         "nuclear-ai-ppa"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "BWXT",
@@ -1177,7 +1246,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "EQT",
@@ -1197,7 +1267,8 @@
         "datacenter-power"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "SBSW",
@@ -1217,7 +1288,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "PLS.AX",
@@ -1236,7 +1308,8 @@
         "tier1-assets"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "MIN.AX",
@@ -1254,7 +1327,8 @@
         "ev-demand"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "PAAS",
@@ -1273,7 +1347,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "TFPM",
@@ -1291,7 +1366,8 @@
         "streaming-structure"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "DNN",
@@ -1309,7 +1385,8 @@
         "tier1-assets"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "AR",
@@ -1328,7 +1405,8 @@
         "datacenter-power"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "TROX",
@@ -1347,7 +1425,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": null
+      "last_reviewed": null,
+      "tier": "tracked"
     },
     {
       "ticker": "GLNCY",
@@ -1367,7 +1446,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "VALE",
@@ -1386,7 +1466,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "ERA.PA",
@@ -1405,7 +1486,8 @@
         "european-energy-security"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "NEXA",
@@ -1424,7 +1506,8 @@
         "ai-chip-packaging"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "AA",
@@ -1443,7 +1526,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "NB",
@@ -1462,7 +1546,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "ILU.AX",
@@ -1482,7 +1567,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "NVX.AX",
@@ -1502,7 +1588,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "AII.TO",
@@ -1522,7 +1609,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "VNP.TO",
@@ -1541,7 +1629,8 @@
         "ai-chip-packaging"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "AMG.AS",
@@ -1560,7 +1649,8 @@
         "defense-procurement"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "THS.L",
@@ -1579,7 +1669,8 @@
         "resource-nationalism"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "ORBIA.MX",
@@ -1598,7 +1689,8 @@
         "food-security"
       ],
       "last_touched": "2026-08-05",
-      "last_reviewed": "2026-08-05"
+      "last_reviewed": "2026-08-05",
+      "tier": "assessed"
     },
     {
       "ticker": "RIO",
@@ -1617,7 +1709,8 @@
         "reshoring"
       ],
       "last_touched": "2026-08-06",
-      "last_reviewed": "2026-08-06"
+      "last_reviewed": "2026-08-06",
+      "tier": "assessed"
     },
     {
       "ticker": "AES",
@@ -1635,7 +1728,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "NRG",
@@ -1653,7 +1747,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "EPD",
@@ -1671,7 +1766,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "WMB",
@@ -1689,7 +1785,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ENR.DE",
@@ -1707,7 +1804,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ITRI",
@@ -1725,7 +1823,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "NVT",
@@ -1743,7 +1842,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "MOD",
@@ -1761,7 +1861,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "MTZ",
@@ -1779,7 +1880,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "RIG",
@@ -1797,7 +1899,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "VAL",
@@ -1815,7 +1918,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "NE",
@@ -1833,7 +1937,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "HP",
@@ -1851,7 +1956,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "PTEN",
@@ -1869,7 +1975,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "NBR",
@@ -1887,7 +1994,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "PRN.AX",
@@ -1905,7 +2013,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ORI.AX",
@@ -1923,7 +2032,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "BVI.PA",
@@ -1941,7 +2051,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ITRK.L",
@@ -1959,7 +2070,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "TRMB",
@@ -1977,7 +2089,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "PL",
@@ -1995,7 +2108,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "FTI",
@@ -2013,7 +2127,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "SPM.MI",
@@ -2031,7 +2146,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "FLR",
@@ -2049,7 +2165,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "PRIM",
@@ -2067,7 +2184,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "WOR.AX",
@@ -2085,7 +2203,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ACM",
@@ -2103,7 +2222,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "TTEK",
@@ -2121,7 +2241,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ABBN.SW",
@@ -2139,7 +2260,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "HUBB",
@@ -2157,7 +2279,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "CAT",
@@ -2175,7 +2298,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "KMTUY",
@@ -2193,7 +2317,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "SAND.ST",
@@ -2211,7 +2336,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "METSO.HE",
@@ -2229,7 +2355,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "FLS.CO",
@@ -2247,7 +2374,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "WEIR.L",
@@ -2265,7 +2393,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "AROC",
@@ -2283,7 +2412,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "EMR",
@@ -2301,7 +2431,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "HON",
@@ -2319,7 +2450,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ROK",
@@ -2337,7 +2469,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "PNR",
@@ -2355,7 +2488,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "YCA.L",
@@ -2373,7 +2507,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "CME",
@@ -2391,7 +2526,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ICE",
@@ -2409,7 +2545,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "GLEN.L",
@@ -2427,7 +2564,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "JMAT.L",
@@ -2445,7 +2583,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "UMI.BR",
@@ -2463,7 +2602,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "NDA.DE",
@@ -2481,7 +2621,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "CLH",
@@ -2499,7 +2640,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "CLNE",
@@ -2517,7 +2659,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "MNTK",
@@ -2535,7 +2678,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "FRO",
@@ -2553,7 +2697,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "DHT",
@@ -2571,7 +2716,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "INSW",
@@ -2589,7 +2735,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "FLNG",
@@ -2607,7 +2754,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "GLNG",
@@ -2625,7 +2773,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "BORR",
@@ -2643,7 +2792,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "SBLK",
@@ -2661,7 +2811,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "GOGL",
@@ -2679,7 +2830,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "SNI.OL",
@@ -2697,7 +2849,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "ODF.OL",
@@ -2715,7 +2868,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "SBMO.AS",
@@ -2733,7 +2887,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "EE",
@@ -2751,7 +2906,8 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": null,
-      "provisional": true
+      "provisional": true,
+      "tier": "tracked"
     },
     {
       "ticker": "SU.PA",
@@ -2771,7 +2927,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "JCI",
@@ -2791,7 +2948,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "NG.L",
@@ -2811,7 +2969,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "EOAN.DE",
@@ -2831,7 +2990,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "HWM",
@@ -2850,7 +3010,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "TT",
@@ -2870,7 +3031,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "URI",
@@ -2889,7 +3051,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "CSX",
@@ -2908,7 +3071,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "UNP",
@@ -2927,7 +3091,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "NSC",
@@ -2946,7 +3111,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "DE",
@@ -2965,7 +3131,8 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "source_screen": "GRID/PAVE top-10 holdings"
+      "source_screen": "GRID/PAVE top-10 holdings",
+      "tier": "tracked"
     },
     {
       "ticker": "BE",
@@ -2986,7 +3153,8 @@
       ],
       "last_touched": "2026-08-07",
       "last_reviewed": "2026-08-07",
-      "source_note": "Raised as an energy-transition/demand name; added after verifying the listing and the revenue multiple."
+      "source_note": "Raised as an energy-transition/demand name; added after verifying the listing and the revenue multiple.",
+      "tier": "assessed"
     },
     {
       "ticker": "SLNG",
@@ -3007,7 +3175,8 @@
       ],
       "last_touched": "2026-08-07",
       "last_reviewed": "2026-08-07",
-      "source_note": "Raised as 'Established Solutions'; identified as Stabilis Solutions from the description (virtual pipeline to data centres and launch operations) and confirmed by market cap."
+      "source_note": "Raised as 'Established Solutions'; identified as Stabilis Solutions from the description (virtual pipeline to data centres and launch operations) and confirmed by market cap.",
+      "tier": "assessed"
     },
     {
       "ticker": "CGEH",
@@ -3028,7 +3197,147 @@
       ],
       "last_touched": "2026-08-08",
       "last_reviewed": "2026-08-08",
-      "data_caveat": "OTC Pink. Yahoo returns only ~37 price bars a year for this listing, so 200DMA and 12-month return will be null and the 1-day change can span several sessions. Breaking-signal divergence checks are unreliable for this name specifically — read its price directly rather than trusting the derived signals. Underlying liquidity is adequate (median ~$2.9M traded daily); the sparseness is Yahoo's coverage, not the market's."
+      "data_caveat": "OTC Pink. Yahoo returns only ~37 price bars a year for this listing, so 200DMA and 12-month return will be null and the 1-day change can span several sessions. Breaking-signal divergence checks are unreliable for this name specifically — read its price directly rather than trusting the derived signals. Underlying liquidity is adequate (median ~$2.9M traded daily); the sparseness is Yahoo's coverage, not the market's.",
+      "tier": "assessed"
+    },
+    {
+      "ticker": "ENPH",
+      "name": "Enphase Energy",
+      "vertical": "elec",
+      "chain_layer": "Microinverters + storage",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Owns US microinverter manufacturing — contract lines with Salcomp in Arlington, Texas, alongside other domestic sites. Directly advantaged by FCC DA 26-786 (2026-07-28), which bars foreign-produced connected inverters from equipment authorisation: a competitor without US production cannot certify a new model at all. Hard to replace to the extent the moat is regulatory rather than technical — the microinverter architecture itself is copyable, the certification position is not. What would break it: the 65% domestic CONTENT test is the real bar and US assembly alone does not clear it, so verify component sourcing before assuming compliance; and residential solar demand is rate-sensitive and has been weak.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Up ~29% over twelve months, well below the AI-power complex. Priced as a residential solar name, which is what it is — the regulatory moat from the FCC rule is recent and not obviously in the multiple. Whether it clears 65% domestic content is NOT publicly verified.",
+      "themes": [
+        "reshoring",
+        "grid-buildout",
+        "critical-minerals"
+      ],
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed",
+      "data_caveat": "Domestic content share not publicly disclosed; US manufacturing presence is confirmed, 65% Buy American compliance is NOT."
+    },
+    {
+      "ticker": "SEDG",
+      "name": "SolarEdge Technologies",
+      "vertical": "elec",
+      "chain_layer": "Inverters + optimizers",
+      "geo": "IL/US",
+      "structure": "equity",
+      "thesis_note": "Runs US inverter manufacturing across Austin (single-phase), Florida (three-phase and optimizers) and Utah (batteries), and has been exporting US-built residential inverters to Europe since late 2025 — evidence the lines are real rather than announced. Same FCC DA 26-786 advantage as Enphase, from a weaker starting position: an Israeli-headquartered company whose US plants are what keep it certifiable. What would break it: heavy prior losses and balance-sheet repair still in progress, European residential demand soft, and the same unverified 65% content question.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Up ~33% over twelve months from a deeply depressed base — this is a recovery situation with a regulatory tailwind, not a compounder. The distress is the reason it is cheap.",
+      "themes": [
+        "reshoring",
+        "grid-buildout"
+      ],
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed",
+      "data_caveat": "US manufacturing confirmed and shipping; 65% Buy American domestic-content compliance NOT verified."
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac Holdings",
+      "vertical": "elec",
+      "chain_layer": "Home standby + storage",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "US-manufactured backup generation and home energy storage. Relevant here on two counts: grid unreliability is the demand driver, and its storage products contain the battery-based inverters DA 26-786 names — with domestic production it is on the right side of that rule. What would break it: demand is weather-and-outage driven and therefore lumpy, and the residential storage business is subscale against its generator franchise.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Up only 9.4% over twelve months while adjacent grid names re-rated hard. Cheap relative to the complex; the reason is that the core business is cyclical generators, not the storage story.",
+      "themes": [
+        "grid-buildout",
+        "reshoring",
+        "datacenter-power"
+      ],
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "vertical": "oil",
+      "chain_layer": "Refining + midstream",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Largest US refiner by capacity, with the MPLX midstream stake attached. The structural case is not the oil price but post-2020 refinery closures: US and European capacity was retired permanently while product demand did not fall proportionally, so crack spreads have a floor they did not have last cycle. Complexity lets it run heavy and sour crude that simpler refiners cannot. What would break it: cracks are still cyclical and a demand recession compresses them; and refining is a permanent target for windfall-tax politics.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Up ~114% over twelve months on exactly the crack-spread expansion described above. The thesis has already paid; this is not an entry, it is coverage of a vertical that had none.",
+      "themes": [
+        "refining-margin",
+        "oil-geopolitics"
+      ],
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "vertical": "oil",
+      "chain_layer": "Refining + midstream",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Refining plus a large midstream and chemicals arm, so earnings are less purely crack-levered than a standalone refiner. Same structural closure argument as MPC. What would break it: activist pressure to break up the company is live and the outcome is uncertain; chemicals is in its own downcycle.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Up ~95% over twelve months. Same observation as MPC — the re-rating has happened, this is coverage rather than a call.",
+      "themes": [
+        "refining-margin",
+        "oil-geopolitics"
+      ],
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed"
+    },
+    {
+      "ticker": "IPI",
+      "name": "Intrepid Potash",
+      "vertical": "fert",
+      "chain_layer": "Potash + Trio",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "The only US-based potash producer of scale. Matters because potash is otherwise concentrated in Canada, Russia and Belarus — two of which are sanction-exposed — so a domestic source is a genuine security asset regardless of its size. Also sells water rights in the Permian, an unusual second leg. What would break it: it is small, high-cost relative to Canadian solution mining, and potash prices are set by a global oligopoly it has no influence over.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Small-cap, high-cost, and priced accordingly. The security premium on domestic potash is not something the market pays for today, which is the case and the frustration at once.",
+      "themes": [
+        "food-security",
+        "reshoring",
+        "water-scarcity"
+      ],
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed"
+    },
+    {
+      "ticker": "UAN",
+      "name": "CVR Partners",
+      "vertical": "fert",
+      "chain_layer": "Nitrogen (pet coke)",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Nitrogen fertilizer producer that gasifies petroleum coke rather than natural gas at its Coffeyville plant — a genuinely differentiated feedstock position that decouples part of its cost base from Henry Hub. Structured as an MLP, so distributions are variable and tax treatment differs. What would break it: single-asset concentration risk at Coffeyville, and the pet-coke advantage inverts if gas prices fall far enough.",
+      "conviction": 1,
+      "froth": 1,
+      "froth_note": "Up ~51% over twelve months with nitrogen pricing. The feedstock differentiation is real but the market prices it as a variable-distribution MLP, which caps the multiple.",
+      "themes": [
+        "food-security",
+        "gas-infrastructure"
+      ],
+      "last_touched": "2026-08-11",
+      "last_reviewed": "2026-08-11",
+      "tier": "assessed",
+      "data_caveat": "MLP structure — variable distributions and K-1 tax reporting; not directly comparable to C-corp peers in this book."
     }
   ]
 }

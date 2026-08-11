@@ -6,7 +6,8 @@
       "programs": "Fiscal programs + direct spending mapped to tickers",
       "levers": "Upcoming policy decisions that could move markets"
     },
-    "as_of": "2026-08-09"
+    "as_of": "2026-08-11",
+    "dating_note": "Levers carry a human-readable 'date' which may be a range, a quarter or 'ongoing'. Only entries with a resolvable 'date_iso' enter the What's Next agenda. Where a proxy date is used it is labelled as such in date_note and is not an announced date. Where a window has passed with no outcome, that is recorded rather than silently rolled forward."
   },
   "regimes": [
     {
@@ -144,13 +145,15 @@
       "status_color": "#E24B4A",
       "date": "2026-07-28",
       "cliff": "2028-01-01",
-      "summary": "A THIRD kind of control, distinct from the two this map already tracks. Export controls govern what may be sold abroad; entity lists govern who is barred. This governs WHERE A THING IS BUILT, and enforces it through the radio certification gate rather than trade law — which is why it reaches consumer and commercial hardware that Commerce controls never touched. Written to generalise: the same instrument has already been used for uncrewed aircraft systems and consumer-grade routers, and further product classes are reportedly being drafted. FIRST INSTANCE RELEVANT HERE — FCC Public Notice DA 26-786 (PSHSB), released 2026-07-28, added foreign-produced connected power inverters to the Covered List. ADOPTED AND IN FORCE, not a proposal. COVERED: a device that converts DC to AC or AC to DC AND contains components enabling remote communication, control, sensing, data collection or monitoring via Wi-Fi, cellular, Bluetooth or similar connections — the definition enumerates microinverters, string inverters, central inverters and hybrid battery-based inverters. No kW threshold was found in any source, so it runs from a rooftop microinverter to utility scale. 'FOREIGN-PRODUCED' MEANS PLACE OF PRODUCTION, NOT NATIONALITY. The test is failure to qualify as a 'domestic end product' under the Buy American standard at 48 CFR 25.101(a), which for most manufactured goods requires US manufacture AND domestic components exceeding 65% of total component cost for items delivered CY2024-2028. A German, Japanese or Korean producer is caught on identical terms to a Chinese one, and a US-headquartered brand building in Mexico or Vietnam is caught. Note the consequence of the CONTENT test: US final assembly alone does not clear it. MECHANISM: covered equipment cannot receive FCC equipment authorisation (47 CFR 2.903(a)), and applicants must certify their equipment is not covered (47 CFR 2.911(d)(5)(i)) — which bars import, marketing and sale. PROSPECTIVE ONLY: previously authorised models, already-acquired devices, and federal government purchases and use are unaffected. The damage curve is therefore a slow product-cycle strangle, not a cliff. EXIT: case-by-case Conditional Approval from the Department of War or DHS.",
+      "summary": "A THIRD kind of control, distinct from the two this map already tracks. Export controls govern what may be sold abroad; entity lists govern who is barred. This governs WHERE A THING IS BUILT, and enforces it through the radio certification gate rather than trade law — which is why it reaches consumer and commercial hardware that Commerce controls never touched. Written to generalise: the same instrument has already been used for uncrewed aircraft systems and consumer-grade routers, and further product classes are reportedly being drafted. FIRST INSTANCE RELEVANT HERE — FCC Public Notice DA 26-786 (PSHSB), released 2026-07-28, added foreign-produced connected power inverters to the Covered List. ADOPTED AND IN FORCE, not a proposal. COVERED, verbatim: 'any bi-directional power device or system that: converts direct current electricity to alternating current electricity, or converts alternating current electricity to direct current electricity (including microinverters, string inverters, central inverters, and hybrid (battery-based) inverters); AND contains components that enable remote communication, control, sensing, data collection, or monitoring through Wi-Fi, cellular, Bluetooth, or other similar connections.' Note 'bi-directional' is an explicit qualifier at the outset; the conversion clause elaborates what such a device does rather than describing two alternative device types. No kW threshold appears in any source consulted, so it runs from a rooftop microinverter to utility scale. 'FOREIGN-PRODUCED' MEANS PLACE OF PRODUCTION, NOT NATIONALITY. The test is failure to qualify as a 'domestic end product' under the Buy American standard at 48 CFR 25.101(a), which for most manufactured goods requires US manufacture AND domestic components exceeding 65% of total component cost for items delivered CY2024-2028. A German, Japanese or Korean producer is caught on identical terms to a Chinese one, and a US-headquartered brand building in Mexico or Vietnam is caught. Note the consequence of the CONTENT test: US final assembly alone does not clear it. MECHANISM: covered equipment cannot receive FCC equipment authorisation (47 CFR 2.903(a)), and applicants must certify their equipment is not covered (47 CFR 2.911(d)(5)(i)) — which bars import, marketing and sale. PROSPECTIVE ONLY: previously authorised models, already-acquired devices, and federal government purchases and use are unaffected. The damage curve is a slow product-cycle strangle, not a cliff. A blanket waiver relating to firmware/software is reported to run at least until 2029-01-01. EXIT: case-by-case Conditional Approval from the Department of War or DHS.",
       "tickers": [
         "FLNC",
         "BE",
+        "CGEH",
         "AES",
         "GEV",
         "ETN",
+        "VRT",
         "SU.PA",
         "ENR.DE",
         "ABBN.SW"
@@ -158,7 +161,8 @@
       "impact": "A policy-manufactured onshoring mandate on the grid-hardware and storage stack. It is NOT a China ban — it is an everywhere-but-here ban with a discretionary licence, so the beneficiary set is 'whoever can certify US production at >65% domestic content', which is a materially smaller group than 'whoever is not Chinese'. Upstream, a binding US-production requirement pulls demand into US assembly and therefore onto power semiconductors (SiC and IGBT modules), magnetics, copper windings, capacitors, aluminium enclosures and enclosure steel. WHERE THE BOTTLENECK ACTUALLY SITS — tested rather than assumed: inverter final assembly is comparatively easy to stand up and both Enphase and SolarEdge already run US lines, so assembly is not the binding constraint. The constraint is (a) the 65% DOMESTIC CONTENT test, which reaches back into a component tier — power semis, magnetics, passives — that is largely not domestic, and (b) the Conditional Approval queue, which has no published review timetable. Both are consistent with the prior; assembly capacity is not.",
       "watch": "Whether any Conditional Approval is granted, and how fast. Also whether the wireless-only wording of the connectivity prong creates a real escape hatch: the definition lists Wi-Fi, cellular, Bluetooth 'or other similar connections', so a utility-scale unit reaching SCADA over fibre or Ethernet may fall outside — but counsel describe this as a fact-specific, model-by-model question, not a settled carve-out, and it is untested.",
       "interaction_45x": "STACKS WITH, BUT IS NOT THE SAME TEST AS, IRA 45X. 45X is a production tax CREDIT that rewards qualifying US manufacture, with FEOC rules excluding Chinese-origin material; failing it costs you a subsidy. This is a PROHIBITION enforced through equipment authorisation; failing it costs you market access. They diverge on the test itself: 45X domestic-content and FEOC rules are not the Buy American 'domestic end product' test at 48 CFR 25.101(a). A product can qualify for one and fail the other. From 2026-07-28 a manufacturer selling connected inverters into the US must satisfy both regimes independently.",
-      "verification": "Verified 2026-08-09 against the FCC Public Notice text (DA-26-786A1) plus client alerts from Stoel Rives, Crowell & Moring, K&L Gates and Morgan Lewis. The operative definitions sit in Appendices B and C of the Notice, which are scanned images without a text layer, so definitional language is taken from counsel summaries corroborated across at least two firms. NOT VERIFIED TO A SECOND SOURCE: a reported step-up of the domestic content threshold to 75% from 2029, and a reported firmware/software waiver expiring 2029-01-01 — both appear in Stoel Rives only and are recorded here as unconfirmed."
+      "verification": "Verified 2026-08-11 against the FCC Public Notice text (DA-26-786A1) plus client alerts from Wiley, Stoel Rives, Crowell & Moring, K&L Gates and Morgan Lewis. The operative definitions sit in Appendices B and C of the Notice, which are scanned images without a text layer, so the definitional wording above is taken from counsel and corroborated across four firms. CORRECTION LOGGED: an earlier version of this entry stated the rule caught one-way inverters because the definition reads 'DC to AC or AC to DC'. That was wrong — it was based on a paraphrase that dropped the opening qualifier. The adopted text begins 'any bi-directional power device or system', which Wiley confirms is an explicit qualifier. The firmware/software blanket waiver running to at least 2029-01-01 is now corroborated by two firms (Stoel, Wiley). REMOVED as unverifiable: a reported step-up of the domestic content threshold to 75% from 2029 appeared in one firm only and could not be stood up against a second source. The 65% figure for CY2024-2028 is the standard FAR test and is confirmed; whether and how it steps up afterwards is not recorded here because it is not established.",
+      "scope": "NOT a solar rule. Counsel describe the reach as covering commercial solar, battery AND WIND projects, home solar and battery systems, ELECTRIC VEHICLE CHARGERS, and data centres — and the Notice states expressly that, unlike the router listing, these inverters are 'not limited to residential or consumer applications'. THE BOUNDARY THAT ACTUALLY DEFINES SCOPE: the rule's reach is set by WHERE THE WIRELESS IS, not by what the device does. The connectivity prong names Wi-Fi, cellular, Bluetooth 'or other similar connections', so distributed and edge assets — rooftop solar, home batteries, commercial BESS, EV chargers — are squarely caught, because that is where cellular and Wi-Fi live. Heavy fixed plant talking over hardwired fibre or fieldbus (HVDC converter stations, smelter rectifiers, large industrial drives) is arguably outside, though that argument is untested. The effect is that the rule reshapes the DISTRIBUTED power-electronics market while largely missing the utility-scale transmission one — a strange boundary for a security rule, defensible only on attack-surface grounds."
     }
   ],
   "programs": [
@@ -222,7 +226,9 @@
         "FCX",
         "SCCO"
       ],
-      "bull_bear": "Bull: tariff creates domestic premium floor. Bear: no action maintains LME parity."
+      "bull_bear": "Bull: tariff creates domestic premium floor. Bear: no action maintains LME parity.",
+      "date_unresolved": "'2025-Q4/2026-Q1' has no resolvable calendar date — excluded from the agenda by design",
+      "date_note": "Decision window stated as 2025-Q4/2026-Q1 and now PAST as of 2026-08-11 with no announced outcome located. Overdue rather than upcoming — treat the silence as the datapoint. Excluded from the forward agenda deliberately."
     },
     {
       "id": "stibnite-eis",
@@ -232,7 +238,10 @@
       "tickers": [
         "PPTA"
       ],
-      "bull_bear": "Bull: EIS approval + DoD funding triggers project FID. Bear: further delay or denial keeps antimony supply structurally short."
+      "bull_bear": "Bull: EIS approval + DoD funding triggers project FID. Bear: further delay or denial keeps antimony supply structurally short.",
+      "date_unresolved": "'2026-2027' has no resolvable calendar date — excluded from the agenda by design",
+      "date_iso": "2026-12-31",
+      "date_note": "Range '2026-2027'. Year-end 2026 used as a placeholder so the item appears on the agenda; this is NOT an announced date and the true date may fall anywhere in the range."
     },
     {
       "id": "lme-copper-physical-squeeze",
@@ -245,7 +254,9 @@
         "FNV",
         "WPM"
       ],
-      "bull_bear": "Bull: low inventories + demand pull from grid buildout = squeeze risk. Bear: demand softness from China property sector = inventory build."
+      "bull_bear": "Bull: low inventories + demand pull from grid buildout = squeeze risk. Bear: demand softness from China property sector = inventory build.",
+      "date_unresolved": "'ongoing' has no resolvable calendar date — excluded from the agenda by design",
+      "date_note": "Continuous condition with no scheduled date. Excluded from the forward agenda by design — it is a state to monitor, not an event to await."
     },
     {
       "id": "fcc-inverter-conditional-approval",

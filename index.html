@@ -675,6 +675,11 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .pol-status.active{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad)}
 .pol-status.investigating{background:color-mix(in srgb,var(--warn) 14%,transparent);color:var(--warn)}
 .pol-body{font-size:11px;color:var(--color-text-secondary);line-height:1.5;margin-bottom:5px}
+.pol-scope{font-size:11px;color:var(--color-text-secondary);line-height:1.6;margin-top:6px;
+  padding:6px 9px;border-radius:4px;background:var(--color-background-secondary);
+  border-left:2px solid var(--accent)}
+.pol-verify{font-size:10px;color:var(--color-text-tertiary);line-height:1.55;margin-top:6px;
+  padding:5px 8px;border-radius:4px;border:.5px dashed var(--color-border-secondary)}
 .pol-watch{font-size:10px;color:var(--color-text-tertiary);border-top:.5px solid var(--color-border-tertiary);
   padding-top:5px;line-height:1.4}
 .pol-watch b{color:var(--color-text-secondary)}
@@ -779,6 +784,8 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .co-d1{font-size:10px;font-family:var(--font-mono)}
 .co-badges{display:flex;gap:3px;flex-wrap:wrap;align-items:center}
 .badge-sm{font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;white-space:nowrap}
+.badge-tracked{background:var(--color-background-secondary);color:var(--color-text-tertiary);
+  border:.5px dashed var(--color-border-secondary);cursor:help}
 .badge-ins{background:color-mix(in srgb,var(--good) 13%,transparent);color:var(--good)}
 .badge-exp{background:color-mix(in srgb,var(--warn) 14%,transparent);color:var(--warn)}
 .badge-hf{background:color-mix(in srgb,var(--bad) 13%,transparent);color:var(--bad)}
@@ -1086,7 +1093,7 @@ let GLOSSARY=[];
 let MINERALS={minerals:[],_meta:{}};
 let CALENDAR={events:[],_meta:{}};
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
-let CO_STATE={q:'',v:null,froth:null,sort:'conv'};
+let CO_STATE={q:'',v:null,froth:null,sort:'conv',tier:null};
 let TICKER_MAP={};
 let EXCL_MAP={};
 let REF_MAP={},REF_BLOCK=new Set();
@@ -2032,7 +2039,10 @@ function buildPolicy(){
       <div class="pol-card-h"><span class="pol-icon">${esc(r.icon||'📋')}</span><div><div class="pol-title">${esc(r.title)}${r.cliff?`<span class="pol-cliff">cliff ${esc(r.cliff)}</span>`:''}</div><div class="pol-date">Since ${esc(r.date)}</div></div></div>
       <div class="pol-status ${r.status||'active'}">${esc(r.status||'active')}</div>
       <div class="pol-body">${esc(r.summary)}</div>
+      ${r.scope?`<div class="pol-scope"><b>Scope:</b> ${linkifyTickers(esc(r.scope))}</div>`:''}
+      ${r.interaction_45x?`<div class="pol-scope"><b>Interaction with 45X:</b> ${linkifyTickers(esc(r.interaction_45x))}</div>`:''}
       ${r.watch?`<div class="pol-watch"><b>Watch:</b> ${esc(r.watch)}</div>`:''}
+      ${r.verification?`<div class="pol-verify"><b>Verification:</b> ${esc(r.verification)}</div>`:''}
       <div class="pol-tks">${(r.tickers||[]).map(t=>`<span class="pol-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join('')}</div>
     </div>`).join('');
 
@@ -2171,6 +2181,13 @@ function coVertPills(){
   return `<span class="pill${!CO_STATE.v?' on':''}" onclick="CO_STATE.v=null;renderCo()">All</span>`
     +VERTICALS.map(v=>`<span class="pill${CO_STATE.v===v.id?' on':''}" style="${CO_STATE.v===v.id?'background:'+v.c+'22;color:'+v.c+';border-color:'+v.c+'55':''}" onclick="CO_STATE.v='${v.id}';renderCo()">${esc(v.n)}</span>`).join('');
 }
+function coTierPills(){
+  const n=t=>COMPANIES.filter(c=>(c.tier||'tracked')===t).length;
+  const pill=(v,l,ttl)=>`<span class="pill${CO_STATE.tier===v?' on':''}" title="${esc(ttl)}" onclick="CO_STATE.tier=${v?`'${v}'`:'null'};renderCo()">${l}</span>`;
+  return pill(null,'All tiers','Everything on the map')
+    +pill('assessed',`Assessed · ${n('assessed')}`,'Thesis written and re-argued by the owner — these are considered judgments')
+    +pill('tracked',`Tracked · ${n('tracked')}`,'On the map and priced, but the thesis is inherited or provisional and has NOT been re-argued');
+}
 function coFrothPills(){
   return `<span class="pill${!CO_STATE.froth?' on':''}" onclick="CO_STATE.froth=null;renderCo()">Any froth</span>`
     +[1,2,3].map(f=>`<span class="pill${CO_STATE.froth===f?' on':''}" onclick="CO_STATE.froth=${f};renderCo()">${FROTH_META[f].l}</span>`).join('');
@@ -2181,6 +2198,7 @@ function coSorts(){
 function renderCoControls(){
   const vp=document.getElementById('co-vpills');if(vp)vp.innerHTML=coVertPills();
   const fp=document.getElementById('co-fpills');if(fp)fp.innerHTML=coFrothPills();
+  const tp=document.getElementById('co-tpills');if(tp)tp.innerHTML=coTierPills();
   const sp=document.getElementById('co-sorts');if(sp)sp.innerHTML=coSorts();
 }
 
@@ -2193,6 +2211,7 @@ function buildCompanies(){
     </div>
     <div class="pills" id="co-vpills"></div>
     <div class="pills" id="co-fpills"></div>
+    <div class="pills" id="co-tpills"></div>
     <div id="co-list" class="co-list"></div>
   `;
   renderCoControls();
@@ -2206,6 +2225,7 @@ function renderCo(){
   let cos=[...COMPANIES];
   if(CO_STATE.v)cos=cos.filter(c=>c.vertical===CO_STATE.v);
   if(CO_STATE.froth)cos=cos.filter(c=>c.froth===CO_STATE.froth);
+  if(CO_STATE.tier)cos=cos.filter(c=>(c.tier||'tracked')===CO_STATE.tier);
   if(q)cos=cos.filter(c=>(c.ticker||'').toLowerCase().includes(q)||(c.name||'').toLowerCase().includes(q)||(c.themes||[]).some(t=>t.includes(q)));
   if(CO_STATE.sort==='conv')cos.sort((a,b)=>b.conviction-a.conviction||(a.name||'').localeCompare(b.name||''));
   else if(CO_STATE.sort==='tk')cos.sort((a,b)=>(a.ticker||'').localeCompare(b.ticker||''));
@@ -2220,11 +2240,13 @@ function renderCo(){
     const convDot=`<span style="width:7px;height:7px;border-radius:50%;background:${convColor(c.conviction)};display:inline-block;flex-shrink:0"></span>`;
     const frothBadge=`<span class="badge-sm badge-${fm.cls}">${fm.l}</span>`;
     const vBadge=`<span class="badge-sm" style="background:${v.c}18;color:${v.c}">${esc(v.n)}</span>`;
+    const tBadge=(c.tier||'tracked')==='tracked'
+      ?`<span class="badge-sm badge-tracked" title="Coverage only — the thesis is inherited or provisional and has not been re-argued">tracked</span>`:'';
     const priceHtml=q?.p?`<div class="co-price">${q.p<10?q.p.toFixed(2):q.p.toFixed(0)}</div><div class="co-d1" style="color:${chgColor(q.d1)}">${fmtPct(q.d1)}</div>`:'';
     return `<div class="co-row" onclick="openCompanyDrawer('${esc(c.ticker)}')">
       <div>${convDot}</div>
       <div class="co-mid">
-        <div style="display:flex;align-items:center;gap:6px"><span class="co-tk">${esc(c.ticker)}</span><div class="co-badges">${frothBadge}${vBadge}</div></div>
+        <div style="display:flex;align-items:center;gap:6px"><span class="co-tk">${esc(c.ticker)}</span><div class="co-badges">${frothBadge}${vBadge}${tBadge}</div></div>
         <div class="co-nm">${esc(c.name)}</div>
         <div class="co-layer">${esc(c.chain_layer)}</div>
       </div>
