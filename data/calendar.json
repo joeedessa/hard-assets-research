@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-11T07:57:47+00:00",
+    "as_of": "2026-08-11T14:07:24+00:00",
     "mode": "light",
     "coverage": "13/13 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -180,34 +180,35 @@
       },
       "wire": [
         {
+          "t": "Is AECOM (ACM) Undervalued As Weak Earnings Put Its Fair Value Story To The Test? - Yahoo Finance UK",
+          "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaldCcGhDSTBFaEpVOXJKQ3Z5WFA5OXBhSVBmV2M0OXBydnllUDVmT0ZFLWNnRGpoWDZJQ3I3Q2pOTGpxeC11UVMtdEw0TmxGRXI5MU81Z1lzdHFWTGJvYlluZ1pZNGsyaEFweWxkYlA2Vm1JZG1YZm5aQTF0cGtPckw5VHVoU1VMUU9Tdg?oc=5",
+          "s": "Yahoo Finance UK",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "AECOM (ACM) Stock Still Looks Fairly Priced With Earnings Support - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZ0dMWndDZF9IOFdkeHhldXI3MkpySzMxZEdFVUFEcTRUUElrcEVuQi1vNnRYTEZjdWU1NEE1b2xoX0EzWWhCbTVPa3NRRzN4dGFUOVZ5NDR2dHhaU2pXaVBwbWplN0d4YkFvTGFiQ3BNZU9fSWpURmdtaHNqc0lueG9pdmdkWlhMSlJmdjhTQUs2Ujc3WG05RWw1bUZWTkZiTmx0YUZ3ZGRVMDd3ZzNOZlBZcHV1RjRVSHZzNGxoNXkzQmlB0gHKAUFVX3lxTE5PUFY1Y3NwcXhON0c3VS1wQVFuUWRzbmE1TDFucEw4Wjh5amtiRWZYSjdDTG0xdUoxa3lhb053SEE2MDNIVW9uejR5b0dlLWphaEg2Z3NyMWtPbzhIMEZtSnlEZkhJeko4UE1DUk81eEdvRUN3aDV1Q1FISHVDSmkzTFV1cngxQWd0dG52dTJHb2tWS2FTTUEwSFRSRkpCVU5LTWd5YTk2dW9RRTM3R1VXU24tVGJ5bzZ3Wl9iSE11NjRfRGtIMU9XQWc?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: AECOM Q3 2026 revenue tops forecasts, EPS misses - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaDZoX2JuWVJfakhhNGw1OWI1RVJldlBEMEo4eWpSa0FUd1dIYktWV2FLTUplMlg3NmRLekJDeGdYdkNJVlFST0NYY2tneE5GaWQyYUdQVC11V21iOU54LU5WYzhnVHU5Q3l1UWdBZGw2cHFDLXFkUnQwNXVPemMyQm9qVzJrWUltb3FBTnpEVF95OUJqN0kxanJrT19KMEJfSHJ3LWNZV2hubHExdW1LeFV2ekYwTmh1SWNseURnbWhxZFQyc25F?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-11",
+          "cues": [
+            "beat",
+            "miss"
+          ]
+        },
+        {
           "t": "Aecom: Fiscal Q3 Earnings Snapshot - KING5.com",
           "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWGI1eGdKTFFvV3hfaXUtWUQ2R1R0djZ3dWpWN3lDdWtpMVNPV2xIbkZ6a2dRSHV1WXhSelpKSlA0VTk3SkppeXloVjVMSEJ6RjE0Y1NQN1k0YlRSa21pcTMzLUNITUEzaTNMdnR0LUNFVDlMUndyb2RCSGxDSGpESy1pdDktQVlOUTdUd1FQUnhLVDE5VjJjTXZydzVGczZWdXNUYjVCTzI5WjNOU1BGS0thYksyLVFaRTF6MC1DcnFyMndyZG54WVRoR1k?oc=5",
           "s": "KING5.com",
           "d": "2026-08-10",
           "cues": []
-        },
-        {
-          "t": "AECOM slides as investors appear cautious ahead of earnings and remain focused on prior claims and cash-flow concerns - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOblpqbk4yajNTQVIzS1dQZWo1RklfX3kwTFZhc3pGUXdmSHc0MDhOWEpHLVpVbm5QR1liMjdEXzZZX1lWMlFVbVZlOWdYZWtTOUtWRDVuUzIzX05SLVhtVVNRRWladkh1Sk5VblAteFJFQ1dQQXh4U0I2U2NSVnh6U2lJTXZ2NzRtQ1Nrd3lVZ0Z6NXgzTGdUeTRGVXlNNUZxTDAxNW9CazdUVDNfSnRPZFlJVUlIU0tmMGJDLXhSN085LURCNktpbnJiNVpqN213Sjc5bWw3YWhlemZ1UENvSGM5OGY?oc=5",
-          "s": "Quiver Quantitative",
-          "d": "2026-08-10",
-          "cues": []
-        },
-        {
-          "t": "AECOM Fiscal Q3 2026 Earnings: Project Charge Drives a GAAP Loss - TradingKey",
-          "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4UkI5b0luRW5UNHNjUkdPWjVzWXJ5em03ai1ESTd4dE1fUVo5bnpaemZsUUhwQnBrQTRYaFVtUEo5YTB4WmhNcWFlaWtOVVZMM1hIX0dvOHIwbFBKeU51ZzJtekoyb3Y1RThmcnRn?oc=5",
-          "s": "TradingKey",
-          "d": "2026-08-10",
-          "cues": []
-        },
-        {
-          "t": "AECOM falls 4% on earnings miss, lowered guidance - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONjFGaE54aXZjMklfYnRoYUpOcktRUWUzMks2NXgwX01RYWFTd0VOSTNfTFRkWG5temJQeXp4ZjA1dC1QQzNTd01hZFJCS1IwdmRBRUd6T1I1bG9pcHVFLWhOWUEyOG5udk1CMlZmNGh5WDgwcllqbHI2eGlTUGtMNnJLM2RfX09jcTgzMldrRzVJZHZVLTVoNHhkY0d6MVBGTUE?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-10",
-          "cues": [
-            "miss"
-          ]
         }
       ],
       "wire_gate": "2026-08-10"
@@ -237,16 +238,16 @@
       },
       "wire": [
         {
-          "t": "Consolidated Water Reports Second Quarter 2026 Results - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWnM3Qkhtd2J6Ymhvd2k0Slc2NzFCRXR4VS1seU5aX0dNdThhSUxIZEZKZm03aV9QazI1WldDWHlOUWJrN3ZHalJpNTF4OWxJdkE3S2FuY2ZidlhnODV1cHQ0aENERTg4SmtNX2piYU1DQkJQMGZBd0tMWEtUUlAtZXdieUpzSGpGaHRXUmFiM1F0anhvNk1uZ0dKS1pNU0ZiR3VfWDZDeUJhQQ?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-08-10",
+          "t": "Consolidated Water earnings matched, revenue topped estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdnV6aXZOdW9SdjJmWUNlaHNfOWJ0T2c0aTN6aTNRT25iZnNodWZpbmVGbDNWalkxbTBQNFpGeENCUXhtOWFUN2NxUkd3MWJpX1psYkJiYkhWaDlWZkZYbVNwRDBpRWpnZTBSRE9wWVdKWnFkNFJuSzg4WDRTZVc5dGk3YXRPWmNxb2tPUU1IX1dBYm11dURDaXRzRGpCSldHbGNKRkl0ekc4T3lx?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-11",
           "cues": []
         },
         {
-          "t": "Consolidated Water: Q2 Earnings Snapshot - kare11.com",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMXQ1T2dPZnJCdVhyM2xaNDVlMjg3cFFSaUw3bndTdzZqbEx1OG9TMkFjY2NBNHZ2eFRDanFLTmU1TFF4bl9VRmRJS01SV3Y5LTdaNmFYZUg5OUJTVTNkN29XT3htUUVOYjQxRUxyaWdCRXJvWXQxNXZJWDd2SkZRaGJybjNzOEhqZHlKSE5Udnd5NFkxYndnRWMydWliVGlWM3NpVkhha1R2amFScjFjSXRiNl9EanlibVI1a0VUaW9PSzV4ZkxkSU5ZVHdmN19GaVZ1SjJB?oc=5",
-          "s": "kare11.com",
+          "t": "Consolidated Water: Q2 Earnings Snapshot - KTVB",
+          "u": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZ19wdk1fQi11dDVPbmZrMEZfaDI3c1A0UnRQUWNQeFFsTUdRNTEtODlScUw2MXFQVlV3QW9qUVItMEVSWHlDNk02RXRHSlVFc0RUWVNqTFdJU2tZeXFkSU1yQzZwZDc1NlRuWXdzS0l0b3dCR2RfM2tPdHNKTFBnWWJnMGtEcmstZGRPV3FZbjJsdFNiNDUtaXhuUkRqbl9JaWl1UThjbllTN0NOaHY4dW1wRW43UnpiWXpIdHN0ZmFDdXpjcEtTN0l3Um4wbmpFam9r?oc=5",
+          "s": "KTVB",
           "d": "2026-08-10",
           "cues": []
         },
@@ -260,9 +261,9 @@
           ]
         },
         {
-          "t": "Consolidated Water Co Ltd reports results for the quarter ended June 30 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOQXU5ekhaZ1BBdGRpMWY3SE9fajVGc1pBbHhyTU51Y1lHRkdmYWhqb0NLcE9IUUlxSHpXdzd0bFNwY3p2Yy16OGhQQjAtZjNpX3cwY2k3RVc2VTduYnRsUFRpaDRtUWlyN1FjRDM5NzRyODJfMzlqUGlSUW9PcU0tdGtndHdQNFNib2FSbFh2WXg3RG9Ja1FtWTlDa1ZJQW8wYUF1aVV6U2w3eFVaYjZ6Z2pNNjkyRmVDQTk1UEdSbHozRWhWWWlpMEtfRzY1SEg4WGFlVWdIVGV0aFFCcUFvNnppZGZkVmllM21HaGxNTQ?oc=5",
-          "s": "TradingView",
+          "t": "Consolidated Water Q2 Revenue Falls 2 Percent To 32.9 Million - quiverquant.com",
+          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdmZmTHg4Wm9GdTBSOVowLUdEZDNfYy00cnBpLXVLazVybHFJalJXcnZaMXY1T3ZGY2pDSms3dkt1cUtDZS1nR3U4anFOZUZPd2taUHFSS0tVdGV3QnY2OGMxSHgtd2ZxS2FCQWRPUUpuWk1LeGhHTWFzVWE5cWJnaTNtZnBuNzQ3cGptT3pVQl9FRHdWQVBvWlN3?oc=5",
+          "s": "quiverquant.com",
           "d": "2026-08-10",
           "cues": []
         }
@@ -296,13 +297,11 @@
           "cues": []
         },
         {
-          "t": "International Seaways Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQajdRMjVHd0VNSmR6d2RLZVVkR0pDV1Jtcm4xS3ZEMFJSSFVpZDY1ZzFtZENfQjVXSXpuanA2bkxnbXVUQl9YTm92SGZtU1VwLU1iSTVJOGlVVW8tRG83OVl1QXdPeFF3ell1YkpEVF9NS0dzU2F3dW1vdV9BMDRlaFd4OUJDMXdzYjR4M2hJbXo0cVg1NGUzczF0VWFESnlaM1c1VERB?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-10",
-          "cues": [
-            "beat"
-          ]
+          "t": "International Seaways reports $295m Q2 net income on higher charter earnings - Baird Maritime",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWTYwcGtLRGxWa2J4OUw1Mmo4bS13LUdrTUppNVBuUzB4X1dXa0xXVDQtclJjZndWOUo1SEdiX1hQd1ZZS3ZMSVVDeFV3eWJSVlN2VjlZV1BIMUh3RF9KZmVsSGJST2xVQkI5VlhHNW1fMnY0ZHFaeklxaUlfOEs3eDZxaXd6MVVSSVlrY0ZQRVdtWVpPZnh4cF9SMXdzeGJqbUdLdG1BT2JHeDlwMF9EMUNHbTA1RTA2UkNGaFdtY9IBzAFBVV95cUxPa09CMERZZlM1MERPUUFuTkNJaExocFRtWWJYcjFlU3NxM0RRRVllYThvVkFlU2JBQjBRTTl2LUVnc1JXSVdMWENjVVFaaktONW1OS040T3Z6elJFWXhJQjE2N1B4eG1JSnBBUzhGc01DVVRSQ1hzcDE5SVZMU2lEQlF1NjdWbzdaNWg4cHVxd29PTVVIdWEzbkQ5SHJTaWg4VUU3UGNTS2hNanpHbF9TS05lWF8taU9YSHJHTy04VXRBRHZSdGZUd09YTUc?oc=5",
+          "s": "Baird Maritime",
+          "d": "2026-08-11",
+          "cues": []
         },
         {
           "t": "International Seaways: Q2 Earnings Snapshot - KVUE",
@@ -313,6 +312,18 @@
         }
       ],
       "wire_gate": "2026-08-10"
+    },
+    {
+      "type": "earnings",
+      "tk": "AII.TO",
+      "name": "Almonty Industries",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/Toronto"
+      }
     },
     {
       "type": "earnings",
@@ -348,7 +359,17 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-08-11T20:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Franco-Nevada earnings on deck as gold volatility tests royalty model - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTWJmZFoyY3pCbDRvNjJ6Tk8wS1l3TnBreV8tZ1VLempGMm51dXVSTi1XUmRxLS1fV3IwOU9DNjAyQlFKRFFUbmlNMV9FcGg1bTMtWGMwaVhUcWp0S01sMmhHNmVmMWVJQ29MeXQ2bFpwSU5CemhwZDdQeTEyaWRRaHpTYlNFVUlTTkl5SkpkTTlQVF8tR1JGSExrUlU1SEo0ME10SVRabldSV2E4UldJRFMtX01selRscEJSTHNB?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-11",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-11"
     },
     {
       "type": "earnings",
@@ -1634,6 +1655,18 @@
     },
     {
       "type": "earnings",
+      "tk": "INSW",
+      "name": "International Seaways",
+      "d": "2026-11-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-05T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "6963.JP",
       "name": "ROHM",
       "d": "2026-11-05",
@@ -1725,6 +1758,18 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 07:30 EST",
         "iso": "2026-11-06T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CWCO",
+      "name": "Consolidated Water",
+      "d": "2026-11-09",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-09T20:00+00:00",
         "tz": "America/New_York"
       }
     },
