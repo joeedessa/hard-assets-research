@@ -1,165 +1,66 @@
 {
   "_meta": {
-    "description": "Valuation metrics per company. Populated as data is gathered. All fields optional — enrich incrementally. Fields: ticker, ev_ebitda, p_nav, fcf_yield_pct, capex_cycle_pos, mkt_cap_bn, price_usd, last_updated, notes.",
+    "description": "Valuation metrics per company. Machine fields refresh on every full pass; judgment fields are written by hand and never touched by the pipeline.",
+    "as_of": "2026-08-11",
+    "auto_fields": "ev_ebitda, fcf_yield_pct, mkt_cap_bn, price_usd — sourced from Yahoo Finance on the nightly full pass and stamped with last_updated.",
+    "human_fields": "capex_cycle_pos, notes — analyst judgment. The pipeline never writes these, so a fresh price can never make a stale opinion look current.",
     "capex_cycle_pos_scale": "trough / early-recovery / mid-cycle / late-cycle / peak",
-    "instructions": "Update this file after each earnings season or when conducting company-specific research. Link to annotations.json via ticker key.",
-    "as_of": "2026-04-30",
-    "review_note": "Last substantive content change 2026-04-30. Framing is historical, not a current judgment — treat the analysis as of that date until re-reviewed."
+    "coverage_note": "Covers the 44 assessed names. Tracked names are priced in quotes.json but not carried here — metrics imply an analytical view we have not formed for them.",
+    "ev_ebitda_note": "Withheld where EBITDA is negative: a negative multiple is undefined, not cheap.",
+    "prior_state": "Before 2026-08-11 this file held 24 records with every valuation field null since 2026-04-30, and was not loaded by the app."
   },
   "metrics": [
     {
-      "ticker": "MP",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Magnet ramp capex heavy near-term; FCF inflection expected post-Fort Worth ramp."
-    },
-    {
-      "ticker": "LYC.AX",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Seadrift TX capex phase. Margin inflection when Kalgoorlie + TX reach steady state."
-    },
-    {
-      "ticker": "LEU",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "HALEU deployment contract with DOE is milestone trigger. Revenue lumpy."
-    },
-    {
-      "ticker": "CCO",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "McArthur River/Cigar Lake at full capacity. Westinghouse 49% stake adds fuel services exposure."
-    },
-    {
-      "ticker": "SPUT",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
+      "ticker": "AA",
       "capex_cycle_pos": null,
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Track premium/discount to NAV vs. spot U3O8. Physical trust — no FCF concept applies."
+      "notes": null,
+      "ev_ebitda": 6.3,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 14.07,
+      "price_usd": 53.27,
+      "fcf_yield_pct": 6.8,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
-      "ticker": "CEG",
-      "ev_ebitda": null,
+      "ticker": "AFMJF",
+      "ev_ebitda": 2.9,
       "p_nav": null,
-      "fcf_yield_pct": null,
+      "fcf_yield_pct": 22.6,
       "capex_cycle_pos": "mid-cycle",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "AI PPA pipeline is key earnings driver to model. Watch contracted vs. merchant mix shift."
+      "mkt_cap_bn": 1.46,
+      "price_usd": 1.13,
+      "last_updated": "2026-08-11",
+      "notes": "Bisie mine producing. Track quarterly tin production and realized price vs. LME.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
-      "ticker": "PWR",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Backlog-to-revenue ratio is the key metric. Watch backlog growth vs. burn rate quarterly."
-    },
-    {
-      "ticker": "ETN",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Electrical segment margin expansion from transformer pricing power. Data center power fastest-growing."
-    },
-    {
-      "ticker": "GEV",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Gas turbine + offshore wind + grid solutions. Watch order intake across all three segments."
-    },
-    {
-      "ticker": "SCCO",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "mid-cycle",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Lowest-cost producer = highest margin leverage to Cu price moves."
-    },
-    {
-      "ticker": "FCX",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "mid-cycle",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Grasberg ore body transition complete. Capex cycle normalizing."
-    },
-    {
-      "ticker": "FNV",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
+      "ticker": "AII.TO",
       "capex_cycle_pos": null,
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Streaming — zero capex. Track GEOs (gold-equivalent ounces) guidance and new deal pipeline."
-    },
-    {
-      "ticker": "WPM",
+      "notes": null,
       "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": null,
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Streaming — zero capex. Watch Ag/Au stream volumes and new streaming deal announcements."
-    },
-    {
-      "ticker": "LNG",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "mid-cycle",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Track contracted vs. spot cargo mix. Stage 3 expansion in ramp. SPA pipeline important."
+      "ev_ebitda_note": "not meaningful — EBITDA is negative or not reported",
+      "mkt_cap_bn": 3.21,
+      "price_usd": 19.25,
+      "fcf_yield_pct": -1.9,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
       "ticker": "ALB",
@@ -173,70 +74,459 @@
       "notes": "Li price trough — watch Li carbonate spot as lead indicator. Kings Mountain is the structural inflection."
     },
     {
-      "ticker": "SQM",
-      "ev_ebitda": null,
-      "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "trough",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Chile policy risk (Codelco JV) monitoring required. Lowest-cost brine advantage durable."
+      "ticker": "AMG.AS",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 5.9,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 1.18,
+      "price_usd": 33.2,
+      "fcf_yield_pct": 0.3,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
-      "ticker": "PPTA",
-      "ev_ebitda": null,
+      "ticker": "BE",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 148.5,
+      "ev_ebitda_note": "EBITDA is near zero, so this multiple measures the denominator, not the valuation — read it as pre-earnings, not as expensive",
+      "mkt_cap_bn": 62.57,
+      "price_usd": 212.54,
+      "fcf_yield_pct": 0.8,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "CCO",
+      "ev_ebitda": 14.5,
       "p_nav": null,
-      "fcf_yield_pct": null,
+      "fcf_yield_pct": 6.6,
       "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Pre-revenue development stage. Permitting decision is the binary catalyst."
+      "mkt_cap_bn": 1.23,
+      "price_usd": 2.42,
+      "last_updated": "2026-08-11",
+      "notes": "McArthur River/Cigar Lake at full capacity. Westinghouse 49% stake adds fuel services exposure.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
-      "ticker": "AFMJF",
-      "ev_ebitda": null,
+      "ticker": "CEG",
+      "ev_ebitda": 15.1,
       "p_nav": null,
-      "fcf_yield_pct": null,
+      "fcf_yield_pct": -6.7,
       "capex_cycle_pos": "mid-cycle",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Bisie mine producing. Track quarterly tin production and realized price vs. LME."
+      "mkt_cap_bn": 98.27,
+      "price_usd": 277.5,
+      "last_updated": "2026-08-11",
+      "notes": "AI PPA pipeline is key earnings driver to model. Watch contracted vs. merchant mix shift.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "CGEH",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 57.3,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 0.38,
+      "price_usd": 9.85,
+      "fcf_yield_pct": -1.3,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "ENPH",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 26.5,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 5.53,
+      "price_usd": 42.08,
+      "fcf_yield_pct": 1.4,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "ERA.PA",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 22.3,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 1.36,
+      "price_usd": 47.36,
+      "fcf_yield_pct": -19.4,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
       "ticker": "ERII",
-      "ev_ebitda": null,
+      "ev_ebitda": 13.7,
       "p_nav": null,
-      "fcf_yield_pct": null,
+      "fcf_yield_pct": 9.1,
       "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Watch desal contract win rate + industrial segment (defense/mining water) growth rate."
+      "mkt_cap_bn": 0.4,
+      "price_usd": 7.8,
+      "last_updated": "2026-08-11",
+      "notes": "Watch desal contract win rate + industrial segment (defense/mining water) growth rate.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "ETN",
+      "ev_ebitda": 29.1,
+      "p_nav": null,
+      "fcf_yield_pct": 1.7,
+      "capex_cycle_pos": "early-recovery",
+      "mkt_cap_bn": 178.06,
+      "price_usd": 458.74,
+      "last_updated": "2026-08-11",
+      "notes": "Electrical segment margin expansion from transformer pricing power. Data center power fastest-growing.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "FCX",
+      "ev_ebitda": 12.5,
+      "p_nav": null,
+      "fcf_yield_pct": 2.2,
+      "capex_cycle_pos": "mid-cycle",
+      "mkt_cap_bn": 96.15,
+      "price_usd": 68.64,
+      "last_updated": "2026-08-11",
+      "notes": "Grasberg ore body transition complete. Capex cycle normalizing.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "FLNC",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": null,
+      "ev_ebitda_note": "not meaningful — EBITDA is negative or not reported",
+      "mkt_cap_bn": 2.95,
+      "price_usd": 12.99,
+      "fcf_yield_pct": 0.1,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "FNV",
+      "ev_ebitda": 23.9,
+      "p_nav": null,
+      "fcf_yield_pct": -1.8,
+      "capex_cycle_pos": null,
+      "mkt_cap_bn": 46.39,
+      "price_usd": 240.55,
+      "last_updated": "2026-08-11",
+      "notes": "Streaming — zero capex. Track GEOs (gold-equivalent ounces) guidance and new deal pipeline.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "ev_ebitda": 65.2,
+      "p_nav": null,
+      "fcf_yield_pct": 5.9,
+      "capex_cycle_pos": "early-recovery",
+      "mkt_cap_bn": 267.93,
+      "price_usd": 1007.16,
+      "last_updated": "2026-08-11",
+      "notes": "Gas turbine + offshore wind + grid solutions. Watch order intake across all three segments.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "GLNCY",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 10.0,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 90.17,
+      "price_usd": 15.39,
+      "fcf_yield_pct": 3.5,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "GNRC",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 20.9,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 12.63,
+      "price_usd": 214.39,
+      "fcf_yield_pct": 2.3,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "ILU.AX",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 11.1,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 2.04,
+      "price_usd": 7.38,
+      "fcf_yield_pct": -20.1,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "IPI",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 5.0,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 0.5,
+      "price_usd": 37.0,
+      "fcf_yield_pct": 7.4,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "LEU",
+      "ev_ebitda": 305.6,
+      "p_nav": null,
+      "fcf_yield_pct": -3.4,
+      "capex_cycle_pos": "early-recovery",
+      "mkt_cap_bn": 3.72,
+      "price_usd": 185.84,
+      "last_updated": "2026-08-11",
+      "notes": "HALEU deployment contract with DOE is milestone trigger. Revenue lumpy.",
+      "ev_ebitda_note": "EBITDA is near zero, so this multiple measures the denominator, not the valuation — read it as pre-earnings, not as expensive",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
       "ticker": "LIN",
-      "ev_ebitda": null,
+      "ev_ebitda": 18.2,
       "p_nav": null,
-      "fcf_yield_pct": null,
+      "fcf_yield_pct": 1.8,
       "capex_cycle_pos": "mid-cycle",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "On-site plant contract signings = leading indicator. Track new project backlog + TSMC fab wins."
+      "mkt_cap_bn": 226.63,
+      "price_usd": 491.42,
+      "last_updated": "2026-08-11",
+      "notes": "On-site plant contract signings = leading indicator. Track new project backlog + TSMC fab wins.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "LNG",
+      "ev_ebitda": 11.1,
+      "p_nav": null,
+      "fcf_yield_pct": 1.3,
+      "capex_cycle_pos": "mid-cycle",
+      "mkt_cap_bn": 55.27,
+      "price_usd": 267.5,
+      "last_updated": "2026-08-11",
+      "notes": "Track contracted vs. spot cargo mix. Stage 3 expansion in ramp. SPA pipeline important.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "LYC.AX",
+      "ev_ebitda": 124.8,
+      "p_nav": null,
+      "fcf_yield_pct": -2.8,
+      "capex_cycle_pos": "early-recovery",
+      "mkt_cap_bn": 10.76,
+      "price_usd": 16.71,
+      "last_updated": "2026-08-11",
+      "notes": "Seadrift TX capex phase. Margin inflection when Kalgoorlie + TX reach steady state.",
+      "ev_ebitda_note": "EBITDA is near zero, so this multiple measures the denominator, not the valuation — read it as pre-earnings, not as expensive",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "MP",
+      "ev_ebitda": 237.9,
+      "p_nav": null,
+      "fcf_yield_pct": -4.4,
+      "capex_cycle_pos": "early-recovery",
+      "mkt_cap_bn": 9.79,
+      "price_usd": 54.94,
+      "last_updated": "2026-08-11",
+      "notes": "Magnet ramp capex heavy near-term; FCF inflection expected post-Fort Worth ramp.",
+      "ev_ebitda_note": "EBITDA is near zero, so this multiple measures the denominator, not the valuation — read it as pre-earnings, not as expensive",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "MPC",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 8.0,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 97.06,
+      "price_usd": 332.42,
+      "fcf_yield_pct": 9.5,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
       "ticker": "MTRN",
-      "ev_ebitda": null,
+      "ev_ebitda": 30.7,
       "p_nav": null,
-      "fcf_yield_pct": null,
+      "fcf_yield_pct": 0.2,
       "capex_cycle_pos": "early-recovery",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Defense contract renewals are the key catalyst. Small cap — liquidity risk aware."
+      "mkt_cap_bn": 5.86,
+      "price_usd": 281.13,
+      "last_updated": "2026-08-11",
+      "notes": "Defense contract renewals are the key catalyst. Small cap — liquidity risk aware.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "NB",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": null,
+      "ev_ebitda_note": "not meaningful — EBITDA is negative or not reported",
+      "mkt_cap_bn": 0.77,
+      "price_usd": 5.28,
+      "fcf_yield_pct": -3.7,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "NEXA",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 4.0,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 1.9,
+      "price_usd": 14.34,
+      "fcf_yield_pct": 19.6,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
       "ticker": "NTR",
@@ -250,15 +540,91 @@
       "notes": "Track potash price cycle + retail distribution margin. Jansen Stage 1 adds supply overhang."
     },
     {
-      "ticker": "VLO",
+      "ticker": "NVX.AX",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": null,
+      "ev_ebitda_note": "not meaningful — EBITDA is negative or not reported",
+      "mkt_cap_bn": 0.1,
+      "price_usd": 0.16,
+      "fcf_yield_pct": -85.4,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "ORBIA.MX",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 45.3,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 44.85,
+      "price_usd": 23.26,
+      "fcf_yield_pct": 0.9,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "PPTA",
       "ev_ebitda": null,
       "p_nav": null,
-      "fcf_yield_pct": null,
-      "capex_cycle_pos": "mid-cycle",
-      "mkt_cap_bn": null,
-      "price_usd": null,
-      "last_updated": null,
-      "notes": "Crack spread is primary earnings driver — track Gulf Coast 321 crack spread weekly."
+      "fcf_yield_pct": -3.7,
+      "capex_cycle_pos": "early-recovery",
+      "mkt_cap_bn": 3.13,
+      "price_usd": 25.0,
+      "last_updated": "2026-08-11",
+      "notes": "Pre-revenue development stage. Permitting decision is the binary catalyst.",
+      "ev_ebitda_note": "not meaningful — EBITDA is negative or not reported",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "PSX",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 10.4,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 89.03,
+      "price_usd": 222.71,
+      "fcf_yield_pct": 5.1,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "PWR",
+      "ev_ebitda": 34.7,
+      "p_nav": null,
+      "fcf_yield_pct": 1.9,
+      "capex_cycle_pos": "early-recovery",
+      "mkt_cap_bn": 100.49,
+      "price_usd": 668.82,
+      "last_updated": "2026-08-11",
+      "notes": "Backlog-to-revenue ratio is the key metric. Watch backlog growth vs. burn rate quarterly.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     },
     {
       "ticker": "RGLD",
@@ -270,6 +636,201 @@
       "price_usd": null,
       "last_updated": null,
       "notes": "Gold royalties. Track GEO deliveries + new royalty deal pipeline. No operational risk."
+    },
+    {
+      "ticker": "RIO",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 8.1,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 164.23,
+      "price_usd": 100.9,
+      "fcf_yield_pct": 2.2,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "SCCO",
+      "ev_ebitda": 16.8,
+      "p_nav": null,
+      "fcf_yield_pct": 3.1,
+      "capex_cycle_pos": "mid-cycle",
+      "mkt_cap_bn": 163.35,
+      "price_usd": 193.22,
+      "last_updated": "2026-08-11",
+      "notes": "Lowest-cost producer = highest margin leverage to Cu price moves.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "SEDG",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": null,
+      "ev_ebitda_note": "not meaningful — EBITDA is negative or not reported",
+      "mkt_cap_bn": 2.04,
+      "price_usd": 33.29,
+      "fcf_yield_pct": 6.0,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "SLNG",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 43.8,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 0.09,
+      "price_usd": 5.04,
+      "fcf_yield_pct": -19.7,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "SPUT",
+      "ev_ebitda": null,
+      "p_nav": null,
+      "fcf_yield_pct": null,
+      "capex_cycle_pos": null,
+      "mkt_cap_bn": null,
+      "price_usd": 28.7,
+      "last_updated": "2026-08-11",
+      "notes": "Track premium/discount to NAV vs. spot U3O8. Physical trust — no FCF concept applies.",
+      "ev_ebitda_note": "not meaningful — EBITDA is negative or not reported",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "SQM",
+      "ev_ebitda": null,
+      "p_nav": null,
+      "fcf_yield_pct": null,
+      "capex_cycle_pos": "trough",
+      "mkt_cap_bn": null,
+      "price_usd": null,
+      "last_updated": null,
+      "notes": "Chile policy risk (Codelco JV) monitoring required. Lowest-cost brine advantage durable."
+    },
+    {
+      "ticker": "THS.L",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 1.4,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 0.35,
+      "price_usd": 116.5,
+      "fcf_yield_pct": -16.9,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "UAN",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 6.0,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 1.27,
+      "price_usd": 119.51,
+      "fcf_yield_pct": 8.8,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "VALE",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 1.9,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 60.96,
+      "price_usd": 14.32,
+      "fcf_yield_pct": 21.8,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "VLO",
+      "ev_ebitda": null,
+      "p_nav": null,
+      "fcf_yield_pct": null,
+      "capex_cycle_pos": "mid-cycle",
+      "mkt_cap_bn": null,
+      "price_usd": null,
+      "last_updated": null,
+      "notes": "Crack spread is primary earnings driver — track Gulf Coast 321 crack spread weekly."
+    },
+    {
+      "ticker": "VNP.TO",
+      "capex_cycle_pos": null,
+      "notes": null,
+      "ev_ebitda": 25.4,
+      "ev_ebitda_note": null,
+      "mkt_cap_bn": 2.07,
+      "price_usd": 31.58,
+      "fcf_yield_pct": 4.6,
+      "last_updated": "2026-08-11",
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
+    },
+    {
+      "ticker": "WPM",
+      "ev_ebitda": 23.4,
+      "p_nav": null,
+      "fcf_yield_pct": -5.8,
+      "capex_cycle_pos": null,
+      "mkt_cap_bn": 60.78,
+      "price_usd": 133.84,
+      "last_updated": "2026-08-11",
+      "notes": "Streaming — zero capex. Watch Ag/Au stream volumes and new streaming deal announcements.",
+      "ev_ebitda_note": null,
+      "auto_fields": [
+        "ev_ebitda",
+        "fcf_yield_pct",
+        "mkt_cap_bn",
+        "price_usd"
+      ]
     }
   ]
 }

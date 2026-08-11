@@ -217,6 +217,18 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .wn-cue-miss,.wn-cue-guidancecut,.wn-cue-guidancewithdrawn,.wn-cue-productionmiss,.wn-cue-reservedowngrade,
 .wn-cue-aiscup,.wn-cue-forcemajeure,.wn-cue-strike,.wn-cue-gradeissues{
   background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad);border-color:transparent}
+.wn-figs{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;margin:7px 0 4px;
+  padding:7px 9px;border-radius:5px;background:var(--color-background-secondary);
+  border-left:2px solid var(--good)}
+.wn-fig{display:flex;flex-direction:column;gap:1px}
+.wn-fig i{font-style:normal;font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--color-text-tertiary)}
+.wn-fig b{font-size:13px;font-variant-numeric:tabular-nums;color:var(--color-text-primary)}
+/* Signed figures set their colour on the wrapper; the value must inherit it
+   rather than be overridden back to the default text colour. */
+.wn-fig.wn-signed b{color:inherit}
+.wn-fig-note{font-size:9.5px;line-height:1.45;color:var(--color-text-tertiary);flex-basis:100%;cursor:help}
+.wn-fig-src{font-size:9.5px;color:var(--color-text-tertiary);margin-left:auto;align-self:flex-end}
 .wn-wire-foot{font-size:9px;color:var(--color-text-tertiary);margin-top:4px;line-height:1.45}
 .wn-list{display:flex;flex-direction:column;gap:3px;margin-bottom:10px}
 .wn-row{display:grid;grid-template-columns:86px 1fr;gap:10px;align-items:start;
@@ -861,6 +873,20 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   border:.5px solid color-mix(in srgb,var(--warn) 22%,transparent);border-radius:4px;padding:4px 7px;margin-top:5px;line-height:1.45}
 .dw-ddnote{font-size:10px;color:var(--good);background:color-mix(in srgb,var(--good) 8%,transparent);border:.5px solid color-mix(in srgb,var(--good) 22%,transparent);
   border-radius:3px;padding:4px 7px;margin-top:3px;line-height:1.4}
+.dw-mxs{display:flex;flex-wrap:wrap;gap:14px;padding:8px 10px;border-radius:5px;
+  background:var(--color-background-secondary)}
+.dw-mx{display:flex;flex-direction:column;gap:1px}
+.dw-mx i{font-style:normal;font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary)}
+.dw-mx b{font-size:14px;font-variant-numeric:tabular-nums;color:var(--color-text-primary)}
+.dw-mx em{font-style:normal;font-size:9px;color:var(--color-text-tertiary);max-width:150px;line-height:1.4}
+.dw-mx-caveat b{color:var(--warn)}
+.dw-mx-na b{color:var(--color-text-tertiary)}
+.dw-mx-src{font-size:9.5px;color:var(--color-text-tertiary);margin-top:4px;line-height:1.45}
+.dw-cyc{display:flex;align-items:baseline;gap:7px;margin-top:7px}
+.dw-cyc i{font-style:normal;font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary)}
+.dw-cyc b{font-size:12px;color:var(--accent)}
+.dw-mx-note{font-size:11px;line-height:1.6;color:var(--color-text-secondary);margin-top:5px;
+  padding-left:8px;border-left:2px solid var(--color-border-secondary)}
 .dw-peer{display:flex;align-items:center;gap:6px;padding:4px 0;
   border-bottom:.5px solid var(--color-border-tertiary);cursor:pointer;font-size:11px}
 .dw-peer:last-child{border-bottom:none}
@@ -1102,6 +1128,7 @@ let VC={},VORDER=[],CROSS_V={};
 let BREAKING={state:'clear',signals:[],_meta:{}};
 let GLOSSARY=[];
 let MINERALS={minerals:[],_meta:{}};
+let METRICS={},METRICS_META={};
 let CALENDAR={events:[],_meta:{}};
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv',tier:null};
@@ -2325,10 +2352,22 @@ const WN_BUCKETS=[
 // hours-to-days after a release, so most cards are wires-only at first and say so.
 function wnWire(e,q){
   const w=e.wire||[];
-  if(!w.length)return '';
-  const prov = e.reported!=null
-    ? `<span class="wn-prov ok">confirmed figures</span>`
+  const rep=e.reported;
+  // A name can post figures without attracting wire coverage, and vice versa.
+  // Either one alone is worth a card; only the absence of both is nothing.
+  if(!w.length && !rep)return '';
+  const prov = rep
+    ? `<span class="wn-prov ok" title="Actual EPS posted by ${esc(rep.source||'the data provider')}${rep.fetched?' — retrieved '+esc(rep.fetched):''}">confirmed figures</span>`
     : `<span class="wn-prov wire">figures not published yet — reaction and wires only</span>`;
+  const beat = rep && rep.surprise_pct!=null ? rep.surprise_pct : null;
+  const figs = rep ? `<div class="wn-figs">
+      <span class="wn-fig"><i>reported EPS</i><b>${esc(String(rep.eps))}</b></span>
+      ${rep.eps_est!=null?`<span class="wn-fig"><i>consensus</i><b>${esc(String(rep.eps_est))}</b></span>`:''}
+      ${rep.surprise_abs!=null?`<span class="wn-fig wn-signed" style="color:${chgColor(rep.surprise_abs)}"><i>beat / miss</i><b>${rep.surprise_abs>0?'+':''}${esc(String(rep.surprise_abs))}</b></span>`:''}
+      ${beat!=null?`<span class="wn-fig wn-surp wn-signed" style="color:${chgColor(beat)}"><i>surprise</i><b>${beat>0?'+':''}${esc(String(beat))}%</b></span>`:''}
+      ${rep.pct_suppressed?`<span class="wn-fig-note" title="A percentage against a near-zero consensus is arithmetic, not information">% withheld: ${esc(rep.pct_suppressed)}</span>`:''}
+      <span class="wn-fig-src">${esc(rep.source||'')}${rep.eps_est==null?' · no consensus posted, so no surprise is computed':''}</span>
+    </div>` : '';
   const react = q && q.d1!=null
     ? `<span class="wn-react" style="color:${chgColor(q.d1)}">session ${fmtPct(q.d1)}</span>` : '';
   const items=w.map(h=>{
@@ -2339,8 +2378,9 @@ function wnWire(e,q){
   return `<div class="wn-wire">
     <div class="wn-wire-h">⚡ ${prov}${react}
       ${e.wire_gate?`<span class="wn-gate" title="Only stories published on or after the release date are shown, so last quarter's coverage cannot read as this quarter's">gated to ${esc(e.wire_gate)}+</span>`:''}</div>
+    ${figs}
     ${items}
-    <div class="wn-wire-foot">Language is classified, never numbers — the chips label what the headline SAYS. Guidance is not machine-readable; read the stories.</div>
+    ${w.length?`<div class="wn-wire-foot">Language is classified, never numbers — the chips label what the headline SAYS. Guidance is not machine-readable; read the stories.</div>`:''}
   </div>`;
 }
 
@@ -2494,6 +2534,34 @@ function buildNotes(){
 // ── DRAWER ─────────────────────────────────────────────────────────────────
 let DW_STACK=[];
 
+// Valuation block. The machine fields and the judgment fields are shown as two
+// separate things with two separate dates, because a price refreshed last night
+// must not make a capex-cycle read from April look current.
+function drawerMetrics(tk){
+  const m=METRICS[tk];
+  if(!m)return '';
+  const cell=(label,val,suffix,note)=>{
+    if(val==null)return note?`<span class="dw-mx dw-mx-na"><i>${esc(label)}</i><b>n/m</b><em>${esc(note)}</em></span>`:'';
+    // A note can also qualify a value that IS present — a 200x multiple is a
+    // statement about the denominator, and showing it bare would mislead.
+    return `<span class="dw-mx${note?' dw-mx-caveat':''}"><i>${esc(label)}</i><b>${esc(String(val))}${suffix||''}</b>${note?`<em>${esc(note)}</em>`:''}</span>`;
+  };
+  const auto=[
+    cell('EV / EBITDA',m.ev_ebitda,'×',m.ev_ebitda_note),
+    cell('FCF yield',m.fcf_yield_pct,'%'),
+    cell('Market cap',m.mkt_cap_bn!=null?'$'+m.mkt_cap_bn:null,'bn'),
+  ].filter(Boolean).join('');
+  const cyc=m.capex_cycle_pos
+    ? `<div class="dw-cyc"><i>Capex cycle</i><b>${esc(m.capex_cycle_pos)}</b></div>` : '';
+  if(!auto && !cyc && !m.notes)return '';
+  return `<div class="dw-sect">Valuation &amp; cycle</div>
+    ${auto?`<div class="dw-mxs">${auto}</div>
+      <div class="dw-mx-src">Observed figures, Yahoo Finance${m.last_updated?` · refreshed ${esc(m.last_updated)}`:''}</div>`:''}
+    ${cyc}
+    ${m.notes?`<div class="dw-mx-note">${linkifyTickers(esc(m.notes))}</div>`:''}
+    ${(cyc||m.notes)?`<div class="dw-mx-src">Analyst judgment — written by hand, never refreshed by the pipeline${METRICS_META.as_of?`. File last built ${esc(METRICS_META.as_of)}`:''}</div>`:''}`;
+}
+
 function openCompanyDrawer(tk,push=true){
   const c=COMPANIES.find(x=>x.ticker===tk);
   if(!c){return;}
@@ -2519,6 +2587,7 @@ function openCompanyDrawer(tk,push=true){
      <div class="dw-sect">Chain layer</div><div class="dw-layer">${esc(c.chain_layer||'—')}</div>
      <div class="dw-sect">Thesis</div><div class="dw-thesis">${linkifyTickers(esc(c.thesis_note||''))}</div>
      ${c.froth_note?`<div class="dw-sect">Froth lens</div><div class="dw-thesis" style="border-left-color:${fm.c}">${esc(c.froth_note)}</div>`:''}
+     ${drawerMetrics(c.ticker)}
      ${drawerMarket(c.ticker)}
      ${drawerNews(c.ticker)}
      ${themes?`<div class="dw-sect">Themes</div><div>${themes}</div>`:''}
@@ -2820,7 +2889,7 @@ async function loadData(){
   const Q='?t='+Date.now();
   const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
   try{
-    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls,cmin,cal]=await Promise.all([
+    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls,cmin,cal,met]=await Promise.all([
       fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
       fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
       fetchJ('excluded.json').catch(()=>null),
@@ -2834,6 +2903,7 @@ async function loadData(){
       fetchJ('glossary.json').catch(()=>null),
       fetchJ('critical-minerals.json').catch(()=>null),
       fetchJ('calendar.json').catch(()=>null),
+      fetchJ('metrics.json').catch(()=>null),
     ]);
     COMPANIES=cos.companies||[];
     CYCLE=cyc.cycles||[];
@@ -2855,6 +2925,7 @@ async function loadData(){
     if(gls)GLOSSARY=gls.terms||[];
     if(cmin)MINERALS=cmin;
     if(cal)CALENDAR=cal;
+    if(met){METRICS={};(met.metrics||[]).forEach(r=>METRICS[r.ticker]=r);METRICS_META=met._meta||{};}
     if(ref){
       REF_MAP={};REF_BLOCK=new Set();
       (ref.entities||[]).forEach(e=>{

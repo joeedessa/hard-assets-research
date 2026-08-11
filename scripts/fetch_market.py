@@ -696,6 +696,7 @@ def build_calendar(companies, quotes):
     # Drop anything well past — the agenda is forward-looking by construction
     events = [e for e in events if (date.fromisoformat(e["d"]) - today).days >= -8]
     fetch_earnings_wire(events)
+    fetch_reported_figures(events)
     events.sort(key=lambda e: e["d"])
     return {"_meta": {
         "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -799,6 +800,88 @@ def fetch_earnings_wire(events):
         except Exception:
             pass
     print(f"  earnings wire: {n} of {len(hot)} names have post-release coverage")
+    return n
+
+
+def fetch_reported_figures(events):
+    """Populate e['reported'] once Yahoo posts actual EPS against a release.
+
+    The flash card has always branched on this field to swap 'figures not
+    published yet' for 'confirmed figures', but nothing ever wrote it, so every
+    card in the app's history has rendered the wires-only caption regardless of
+    whether the numbers had landed. This closes that.
+
+    Only names whose release date has PASSED are queried — a future date has no
+    reported figure by definition, and asking for one wastes a call per name.
+    We report the surprise Yahoo computes rather than deriving it ourselves; if
+    Yahoo has the actual but no estimate, the actual still goes through and the
+    surprise is simply absent.
+    """
+    if yf is None:
+        return 0
+    today = date.today()
+    due = [e for e in events
+           if e.get("type") == "earnings" and e.get("tk")
+           and -8 <= (date.fromisoformat(e["d"]) - today).days <= 0]
+    if not due:
+        print("  reported figures: nothing has reported in the window")
+        return 0
+
+    n = 0
+    for e in due:
+        try:
+            df = yf.Ticker(yahoo_symbol(e["tk"])).get_earnings_dates(limit=8)
+            if df is None or df.empty:
+                continue
+            target = date.fromisoformat(e["d"])
+            row = None
+            for idx, r in df.iterrows():
+                d = idx.date() if hasattr(idx, "date") else idx
+                # Yahoo's calendar date and its earnings_dates index can differ
+                # by a day across timezones; accept an adjacent match.
+                if abs((d - target).days) <= 1:
+                    row = r
+                    break
+            if row is None:
+                continue
+
+            def num(col):
+                v = row.get(col)
+                try:
+                    f = float(v)
+                except (TypeError, ValueError):
+                    return None
+                return None if f != f else round(f, 4)  # f != f filters NaN
+
+            actual = num("Reported EPS")
+            if actual is None:
+                continue  # date has passed but Yahoo has not posted the figure
+            rep = {"eps": actual, "source": "Yahoo Finance",
+                   "fetched": today.isoformat()}
+            est = num("EPS Estimate")
+            if est is not None:
+                rep["eps_est"] = est
+            surp = num("Surprise(%)")
+            if est is not None:
+                # Absolute beat/miss always survives; it cannot be distorted.
+                rep["surprise_abs"] = round(actual - est, 4)
+            # A percentage against a near-zero estimate is arithmetic, not
+            # information: FLNC printing -$0.19 against a +$0.01 consensus is a
+            # 20-cent miss, which Yahoo renders as -1,998%. Below the threshold
+            # we keep the cash delta and say why the percentage is withheld.
+            PCT_FLOOR = 0.15
+            if surp is not None and est is not None and abs(est) >= PCT_FLOOR:
+                rep["surprise_pct"] = round(surp, 1)
+            elif est is not None:
+                rep["pct_suppressed"] = (
+                    f"consensus of {est:+.2f} is too near zero for a percentage to mean "
+                    f"anything — the beat/miss is {actual - est:+.2f} per share")
+            e["reported"] = rep
+            n += 1
+            time.sleep(0.05)
+        except Exception:
+            continue
+    print(f"  reported figures: {n} of {len(due)} names have posted actuals")
     return n
 
 
@@ -1117,6 +1200,94 @@ def compute_performance(companies):
     }
 
 
+def enrich_metrics(companies, quotes):
+    """Fill the mechanical half of metrics.json; never touch the judgment half.
+
+    metrics.json had 24 records, of which only capex_cycle_pos and notes were
+    ever populated — every valuation field was null and had been since
+    2026-04-30. The file also was not loaded by the app at all, so the research
+    that WAS in it (a capex-cycle read on 20 names, which is this book's primary
+    selection criterion) was invisible.
+
+    The split enforced here: ev_ebitda, fcf_yield_pct, mkt_cap_bn and price_usd
+    are observable and get refreshed on every full pass with a date attached.
+    capex_cycle_pos and notes are judgments and are NEVER written by this script
+    — they carry their own review date so a stale opinion cannot hide behind a
+    fresh price.
+    """
+    print("Enriching metrics...")
+    doc = load_prev("metrics.json") or {}
+    rows = {r["ticker"]: r for r in doc.get("metrics", [])}
+
+    # Cover every assessed name, not the arbitrary 24 the file happened to hold.
+    targets = [c for c in companies if c.get("tier") == "assessed"]
+    machine, judged = 0, 0
+
+    for c in targets:
+        tk = c["ticker"]
+        r = rows.setdefault(tk, {"ticker": tk, "capex_cycle_pos": None, "notes": None})
+        try:
+            info = yf.Ticker(yahoo_symbol(tk)).info or {}
+        except Exception:
+            continue
+
+        ev_ebitda = safe_float(info.get("enterpriseToEbitda"), 1)
+        # A negative EV/EBITDA means negative EBITDA. The ratio is not "cheap",
+        # it is undefined as a multiple, so it is withheld rather than shown.
+        r["ev_ebitda"] = ev_ebitda if (ev_ebitda is not None and ev_ebitda > 0) else None
+        if r["ev_ebitda"] is None:
+            r["ev_ebitda_note"] = "not meaningful — EBITDA is negative or not reported"
+        elif r["ev_ebitda"] > 100:
+            # Same failure mode as a surprise percentage against a penny estimate:
+            # the denominator is near zero, so the ratio is arithmetic rather than
+            # a valuation. Kept visible, but never presented as "expensive".
+            r["ev_ebitda_note"] = ("EBITDA is near zero, so this multiple measures the "
+                                   "denominator, not the valuation — read it as pre-earnings, "
+                                   "not as expensive")
+        else:
+            r["ev_ebitda_note"] = None
+
+        mc = mc_usd(info)
+        r["mkt_cap_bn"] = round(mc / 1e9, 2) if mc else None
+        r["price_usd"] = (quotes.get(tk) or {}).get("p")
+
+        fcf = info.get("freeCashflow")
+        try:
+            r["fcf_yield_pct"] = round(float(fcf) / mc * 100, 1) if (fcf and mc) else None
+        except (TypeError, ValueError, ZeroDivisionError):
+            r["fcf_yield_pct"] = None
+
+        r["last_updated"] = date.today().isoformat()
+        r["auto_fields"] = ["ev_ebitda", "fcf_yield_pct", "mkt_cap_bn", "price_usd"]
+        machine += 1
+        if r.get("capex_cycle_pos"):
+            judged += 1
+        time.sleep(0.05)
+
+    out = sorted(rows.values(), key=lambda r: r["ticker"])
+    covered = sum(1 for r in out if r.get("ev_ebitda") is not None)
+    print(f"  metrics: {machine} names refreshed, {covered} with a usable EV/EBITDA, "
+          f"{judged} carrying a human capex-cycle read")
+
+    return {"_meta": {
+        "description": "Valuation metrics per company. Machine fields refresh on every full pass; "
+                       "judgment fields are written by hand and never touched by the pipeline.",
+        "as_of": date.today().isoformat(),
+        "auto_fields": "ev_ebitda, fcf_yield_pct, mkt_cap_bn, price_usd — sourced from Yahoo Finance "
+                       "on the nightly full pass and stamped with last_updated.",
+        "human_fields": "capex_cycle_pos, notes — analyst judgment. The pipeline never writes these, "
+                        "so a fresh price can never make a stale opinion look current.",
+        "capex_cycle_pos_scale": "trough / early-recovery / mid-cycle / late-cycle / peak",
+        "coverage_note": f"Covers the {len(targets)} assessed names. Tracked names are priced in "
+                         "quotes.json but not carried here — metrics imply an analytical view we "
+                         "have not formed for them.",
+        "ev_ebitda_note": "Withheld where EBITDA is negative: a negative multiple is undefined, "
+                          "not cheap.",
+        "prior_state": "Before 2026-08-11 this file held 24 records with every valuation field null "
+                       "since 2026-04-30, and was not loaded by the app.",
+    }, "metrics": out}
+
+
 def safe_write(path, data):
     """Write JSON only if the fetch produced valid non-empty data."""
     if data is None:
@@ -1193,6 +1364,12 @@ def main():
         safe_write(DATA / "performance.json", perf)
     else:
         print("  performance: skipped on a light pass (previous file kept)")
+
+    # 6. Metrics — one .info call per assessed name; evening only.
+    if not LIGHT:
+        safe_write(DATA / "metrics.json", enrich_metrics(companies, quotes))
+    else:
+        print("  metrics: skipped on a light pass (previous file kept)")
 
     cal_doc = build_calendar(companies, quotes)
     safe_write(DATA / "calendar.json", cal_doc)
