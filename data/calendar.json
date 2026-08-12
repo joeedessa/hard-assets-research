@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-12T04:11:02+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-08-12T08:05:40+00:00",
+    "mode": "light",
+    "coverage": "13/13 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -218,6 +218,256 @@
       "type": "earnings",
       "tk": "ACM",
       "name": "AECOM",
+      "d": "2026-08-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-10T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "AECOM touts data center pipeline amid fiscal Q3 loss - Construction Dive",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzNod0NnbUN4d0QycjJEeUdsaDdGM3VhOVRNVUdtSUFrTERoY0tTd3pWQjZ0a3hHdWFLYkV3eEVvSzVzSVJ2cDBDUU41cFBBR0Jmd0ZkblhFYlk5RjdxVkNSbE5pRE9hSEh0MjRaN0xuZ0hDQjl3U3Z1TkFFMVI2U2pHajZ2dkpkZ21adkFScjMtZmVvUHc?oc=5",
+          "s": "Construction Dive",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "AECOM (ACM) Stock Slides After Project Charge Triggers Quarterly Loss - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNVQ5MktjUGVXc19ZVUNEeG0tamRMMGNXYktsSlgzM29VeXJfQWtEQkNtLXlMZ0hfRzEtTmJ1NkwydmpGVlNrd25renl5YkpSMG9iUl9SZkk2UGpyOHRiX0hkQmhDd3R1VTdnVHhOQlF3UWkxR0ZsX0Vvb2VzdElralVzZUk1cjczc3NDaGZLNktvbFJpRkR1S0cwRHVwVGFuamNPMGY5NFhRbi1EcmtpWnFGekNsdnFnU0FCNENtOFduOWhKeExweDh30gHKAUFVX3lxTE01VDkyS2NQZVdzX1lVQ0R4bS1qZEwwY1diS2xKWDMzb1V5cl9Ba0RCQ20teUxnSF9HMS1OYnU2TDJ2akZWU2t3bmt6eXliSlIwb2JSX1JmSTZQanI4dGJfSGRCaEN3dHVVN2dUeE5CUXdRaTFHRmxfRW9vZXN0SWtqVXNlSTVyNzNzc0NoZks2S29sUmlGRHVLRzBEdXBUYW5qY08wZjk0WFFuLURya2lacUZ6Q2x2cWdTQUI0Q204V245aEp4THB4OHc?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "AECOM Q3 Earnings Call Highlights - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2FzTGdLbnoxcGlRd3JrbXU1U05QZTRfVHdKRnN4U2gtb1FWY19OcUYxOHlZOHE0RnVvOGRLblEzOHI2UmU1VWlRRWkxMFBZX3N6Wl9Pc3prNkdJVkM2NlhIY09tc0padWpqTG5IQmVNVVZrc1c0Tngta0xTeWJobDJZV3Nva3dmSUgzSWdBY0c?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-11",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Why Aecom Group Earnings Made the Stock Drop - Currently.com",
+          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdy1PVy1nSW5VUnZEdnNEYzdEcDl2NUdQNkF3NWtyc2k2dlNRRDY3ZUdVQV9PUXJjeDQ4Rl8zN09Rb0hLTDFfR25pcm94VVlUVGo5YzRQRk1pb1B5VVJPLVlyU08tcFN3elZtS2xuUXJmU1RxMVkxUnR2UklxTXU2NEFqWVRURUE?oc=5",
+          "s": "Currently.com",
+          "d": "2026-08-11",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-10",
+      "reported": {
+        "eps": -0.5,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-12",
+        "eps_est": 1.46,
+        "surprise_abs": -1.96,
+        "surprise_pct": -134.2
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AII.TO",
+      "name": "Almonty Industries",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/Toronto"
+      },
+      "wire": [
+        {
+          "t": "Almonty Industries Reports Second Quarter 2026 Financial Results - Business Wire",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbFBzNFQ3WTg5RVRvZjQ5NDVNQUpqcG9DU2hVSHpqZzFJNm5SWmNDQVBaS2pka1RCUGxpRkViV3BlVXFiTEY0T1dpZXNkdkdJbWMwemRpdjA1MlJKZkh4XzhTaFhpMVd2dWdKSU1BcWE2V1ZmWlRTRWFJeW54eXktUFFQTndYY3NVX2RqdkpMTGdaeVBlY3I0RmE2aVpXTmZCcGJzWFJ1c3BGMzRyQ3ZPV0dyRHNFVEwtaEUyU2h3?oc=5",
+          "s": "Business Wire",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Almonty Industries Inc. (ALM) Q2 Earnings Match Estimates - Yahoo! Finance Canada",
+          "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbHdFeFh4UkhrYlZQajZ0eUw0WjB3R3Z4dTFvbllKS2JjS3BLanFhV1I1M1Z1YnFiOEs2bXVuNG9pNDFTRVhhbXNjTVFVT3NHRjdXU0FlY3M5YVQwRkpBaGhJdXVvRTdWMHdJN3ZpSTRFNzJ0U3NyRGJlcnhCSlV3cW9YS2Q?oc=5",
+          "s": "Yahoo! Finance Canada",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Almonty Industries Q2 Swings to Earnings, Revenue Rises - Moomoo",
+          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZE41d21WT1g5SVJKUW5zaTVqeFRaMGZ6d2l1bTJJUWo3Vm9SSGhoZXBRQ050ejdCYVpsMXViUDJsMkpMckRkc0lNQ1hOLXB5MW9PUXBPVmVZcmNqLUd0Vk81anJ2Y0xTWDNuRXRkdHNJSlYxVVlPUVNMdi1Nd1NvNERtamxSZ3B0Y0U5NWZKeHdPZ1p0NmxMbm02MHk?oc=5",
+          "s": "Moomoo",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Almonty Industries (ASX:AII) Reports Major Earnings Shift as Tungsten Prices Lift Revenue - Kalkine",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS3c4WEk1Z2JGSG5xWlowUzJlcnNpbkktSkFjWHpxLXc1V0lWVTViV2M4a1FrN3RPSU1MdVMtbk9YWnFEbnlwMndlMExxdEdIRklDY3NaWkxQSXpZRzU4enFjLWduTXNKYXNHSExQcmxCNFdOc21kQ0VaYVc0VkU5eXVMQ0o4OTk1UFZVQmRNR3pvRmd6bTN6OXNMSnpRLW95VlhrUEMwb2VlSVNINHhxUzBiVDhyZ2VBOXdhSmpR?oc=5",
+          "s": "Kalkine",
+          "d": "2026-08-12",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-11"
+    },
+    {
+      "type": "earnings",
+      "tk": "BORR",
+      "name": "Borr Drilling",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Borr Drilling Limited Announces Second Quarter 2026 Results - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX3JIcjlsQ1lqR2RnMlIxQWZGb3BvZWxKbDBfY0F0SU9RZDNaMW5fTkdKRm12VTZhSlEwY2F1VHBsRkd0OWxqZGxfeGNLdzE4NXZmd1FPNVoybEhPQjFTUnUxZlJMVnNrUGFjMTNGeEEtU1Fwa3k5RXQwMjIwdlgxRkRhM1FCcHJyOWNpekltV0lYd1Etc1RDcHliTQ?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Borr Drilling: Q2 Earnings Snapshot - kare11.com",
+          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZEZ5Mk5NNGRxNnA2cVliTTBuYjQxU1o4bVl2TEFwblpXVU5YcjlnUlJHNkNJSnVTM1dnbXk4SC1LdlZOUERSQ3RmMUJtOVZzcUFza0VpLW8xbW9WY0x4ODdoWEpqaUNkUTJueGNuRHNTaGtUbmpjc3RFUEdyNktvdVNjT1FUOVQxTzdjUXBSa1JTbFlEVUpQSTBJdExqeVFBcDRXQUloYzRSTGF1emVOdnVEbEpRX0s0ZE5GYXloT0hreXBnOW9obzZyRm40VkU?oc=5",
+          "s": "kare11.com",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Borr Drilling Limited (BORR) Stock Falls on Q2 2026 Earnings - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ0lrT01DSklVemRCMzhZa3VtZE5oR3ppZlFrbXgyV3NZdVVRM1RoU1ZOcEdDaTk4SGd0NGxFaWFrV2x4N094cWg2SEt3RjllZEozeWIwREQzNWR3OWM3SjV1LU0xNi1tR2l3NGRlWk1aVGp5S3JTNE11c3V5eUZydF9GZnhoandtOXMwWGVsRzBRWFp5c0NwSFByM0JBdw?oc=5",
+          "s": "Quiver Quantitative",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Borr Drilling Reports Quarterly Loss - Offshore Engineer Magazine",
+          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SR19wajNDbE1scmZ5VVhxMHNDMUxnMzI4TTFRRnUzb3diSWt2MXVoMklXRWdINkQzRzBiWm5SS3ROY1hWcTNLanFJUDVXaGhlRzJ4eDZmN2c1eHFxNFI0bnBiTU1NSjZFT3NEYUhiNG5RTFVtQlpocjZmQklBM1k?oc=5",
+          "s": "Offshore Engineer Magazine",
+          "d": "2026-08-12",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-11"
+    },
+    {
+      "type": "earnings",
+      "tk": "DNN",
+      "name": "Denison Mines",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FNV",
+      "name": "Franco-Nevada",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Franco-Nevada (FNV) Releases Q2 2026 Earnings: Revenue Jumps 57.3% - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOWwtMWx6WWpBdzJET2YxNzBWdFdkOVNXZC1PNEpmcTBBeHNBUERDRFl0UDk2WWd4YzFvUUdFV0FFU3hTVHdDVEFKVGRESVVnQXhmYVZCbzF2ZUVETmRfLXJEMTNpTmpiWVFweWpzT1FMLTdJREQzenBzaWRjdXZUSVpORXptejJIcmx3eTlLZDRidFRJUWc3SEF3SHdLRWRRb09xUTN3R3dRZ3k0aEdR?oc=5",
+          "s": "Quiver Quantitative",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Franco-Nevada: Q2 Earnings Snapshot - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLXJ1eHk3elZFSlk4YVp3c0Z2NEtSdjNRcTFnTkRITmVuUk5nSlA5MGdpMGdGMVBwMlY3VTFVaDNfdmNtZVZxLXE3cTVYTlRQM2hWMkxBSDdPV0tSSGxtRXdZZ1JQRW9kRWxmVzU3UjVpMHlZdUJfYmZpeTE4RXdvSVVsTUJFZmQxN1Z0V2t5TTFRMlJCcW42MUVsbHkzMnR4?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Franco-Nevada Corporation reports results for the quarter ended June 30 - Earnings Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxONU9mY2xScWxJUm1xU3dxb1ZTOFhzMVhWZGlVX2oxZTlFU3Y0MzA0Um5UaThha19GWkZscFZaMjNGYlE0MHBLTUlhRHVsUVlSWVlvQ29zNlhDd0dPamJHX2tUQ3ZQb3NIV3U1NEFyY0xuN1Y2X3lSaFRWc3JVSTRUSlBZWUcyMGJRYzB1VHhNaXZWdlB1LVpDWWQzWGxOSG1KblZnQTBIYXdOSmhranVuUUlCUGZkT2t2QW4zbG9yU3IwSDNJMXJrRVNkZklsNlFYNlRPbml1V2p3c3lyTjFfQXkwQ2F0amRTcl9uZjlFUQ?oc=5",
+          "s": "TradingView",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Franco-Nevada earnings on deck as gold volatility tests royalty model - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTWJmZFoyY3pCbDRvNjJ6Tk8wS1l3TnBreV8tZ1VLempGMm51dXVSTi1XUmRxLS1fV3IwOU9DNjAyQlFKRFFUbmlNMV9FcGg1bTMtWGMwaVhUcWp0S01sMmhHNmVmMWVJQ29MeXQ2bFpwSU5CemhwZDdQeTEyaWRRaHpTYlNFVUlTTkl5SkpkTTlQVF8tR1JGSExrUlU1SEo0ME10SVRabldSV2E4UldJRFMtX01selRscEJSTHNB?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-11",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-11",
+      "reported": {
+        "eps": 1.81,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-12",
+        "eps_est": 1.97,
+        "surprise_abs": -0.16,
+        "surprise_pct": -8.3
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SLNG",
+      "name": "Stabilis Solutions",
+      "d": "2026-08-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-11T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Stabilis Solutions Announces Second Quarter 2026 Results - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSXNacGZaTDNZRXFkbzNNUWZEWjVhR1VpTm9xNU9fY2hGSlhlTEtJTW1qZkZXSWtEeVNKUW5HU1BDcFppczM4V1NaSTdRSDhfSVJTMUJvQl9rcUhmN0dIMDhsbkw5bFd5dXJHNUlOZmVpUmZtdFJKdnpUOTZMeU1KcjN2elpVSnR1TVFYUFZnRW8tWjFVVXdnTk5HTGtTdTUzM1E?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Stabilis Executes LNG Contract; U.S. Data Center Service Expected in Q3 - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcmp1cjV1TkNJY2RTc19mVmdUUXhwdmNTelg2V285ZXo0NV8weGRBNlk5M2ljT0pMZDhZQ2ZSVWtBYThvOE9CenFJREpoem15WnJuRVN5YXlwV253Njh2TmF3Y3JmX2RkTGpmb1FjYTFPSXozc3U2dWlqOEVyRDljZTVfakI2TDlfNDFWVFJMN2Q3YWtBVm5pNTEtbmxHY25ORktJN2FR?oc=5",
+          "s": "Stock Titan",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "Stabilis Solutions earnings missed by $0.21, revenue fell short of estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaU8wNkZ0YlBEUUNhLV9xdHZNa3d5Z1ViemZFTFNGNllaVGdEYmFveDBrQVNfZldwaTQzQkMwUlFTRm82amttOUNjUERITzZVMjJ0dldBek1lbF9BaUhtQ0RkbjdRYlZVRDAwN2M2eHVhbW43YlVackRWb0w4NURiT3lPSlFzSGFybEhkdE1KWlJyLTIwWlNoTmR6cFFBbTZMc3VnQ3RLLXdhWWlZdjZMWFItYVlibmJDbTlhS3V3?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-11",
+          "cues": [
+            "miss"
+          ]
+        },
+        {
+          "t": "Stabilis Solutions (NASDAQ:SLNG) Posts Earnings Results, Misses Estimates By $0.17 EPS - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcGNqRVE4NUlfUUI5ajFERnhZQjBlNV8wbHhzdlllN3JoYkhJeTJUMXRaVExfQXkyTXAyN2dSX1p3c3lyOW0yWjRoRk85OGRudDIxeXVQOHVtZmRXSEJCQ1V5YXkyTUtTZTdzbXNJQURWQzI1NEFTX0U5ZGdiVU9vanJKS0V4NGJCZjZ1MlEyY1V5MXhscTNHSk9NUkU3ekJ3TWVoQlhIMG4tTUZCbUtNZ2JHS0M5OURwQ3ZtZXg3VV9UcjdtN0E0RDZvM1c1UU0?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-11",
+          "cues": [
+            "beat",
+            "miss"
+          ]
+        }
+      ],
+      "wire_gate": "2026-08-11"
+    },
+    {
+      "type": "earnings",
+      "tk": "ACM",
+      "name": "AECOM",
       "d": "2026-08-11",
       "release": {
         "when": "post",
@@ -234,10 +484,10 @@
           "cues": []
         },
         {
-          "t": "Why Aecom Group Earnings Made the Stock Drop - Currently.com",
-          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdy1PVy1nSW5VUnZEdnNEYzdEcDl2NUdQNkF3NWtyc2k2dlNRRDY3ZUdVQV9PUXJjeDQ4Rl8zN09Rb0hLTDFfR25pcm94VVlUVGo5YzRQRk1pb1B5VVJPLVlyU08tcFN3elZtS2xuUXJmU1RxMVkxUnR2UklxTXU2NEFqWVRURUE?oc=5",
-          "s": "Currently.com",
-          "d": "2026-08-11",
+          "t": "AECOM (ACM) Stock Slides After Project Charge Triggers Quarterly Loss - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNVQ5MktjUGVXc19ZVUNEeG0tamRMMGNXYktsSlgzM29VeXJfQWtEQkNtLXlMZ0hfRzEtTmJ1NkwydmpGVlNrd25renl5YkpSMG9iUl9SZkk2UGpyOHRiX0hkQmhDd3R1VTdnVHhOQlF3UWkxR0ZsX0Vvb2VzdElralVzZUk1cjczc3NDaGZLNktvbFJpRkR1S0cwRHVwVGFuamNPMGY5NFhRbi1EcmtpWnFGekNsdnFnU0FCNENtOFduOWhKeExweDh30gHKAUFVX3lxTE01VDkyS2NQZVdzX1lVQ0R4bS1qZEwwY1diS2xKWDMzb1V5cl9Ba0RCQ20teUxnSF9HMS1OYnU2TDJ2akZWU2t3bmt6eXliSlIwb2JSX1JmSTZQanI4dGJfSGRCaEN3dHVVN2dUeE5CUXdRaTFHRmxfRW9vZXN0SWtqVXNlSTVyNzNzc0NoZks2S29sUmlGRHVLRzBEdXBUYW5qY08wZjk0WFFuLURya2lacUZ6Q2x2cWdTQUI0Q204V245aEp4THB4OHc?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-12",
           "cues": []
         },
         {
@@ -250,9 +500,9 @@
           ]
         },
         {
-          "t": "Why Aecom Group Earnings Made the Stock Drop - The Motley Fool",
-          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWnRvOWE3ZDZJN1QyeHBpTlNUSVU1cktaT0d2N3VvQ2hQUW5EQUM0WUMyTXFoMEFQZTFTNGRfSWFXS3kyQk11LVV6cTJkWUZzb0RDLUo2OXl0RWdHX1RUY0U2R3dNc3lVWEtXX0h4QlZIeGQ2LVhFQUhrUUgyTG5tRUFHbDFWemlab0gzZkduQjY?oc=5",
-          "s": "The Motley Fool",
+          "t": "Why Aecom Group Earnings Made the Stock Drop - Currently.com",
+          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdy1PVy1nSW5VUnZEdnNEYzdEcDl2NUdQNkF3NWtyc2k2dlNRRDY3ZUdVQV9PUXJjeDQ4Rl8zN09Rb0hLTDFfR25pcm94VVlUVGo5YzRQRk1pb1B5VVJPLVlyU08tcFN3elZtS2xuUXJmU1RxMVkxUnR2UklxTXU2NEFqWVRURUE?oc=5",
+          "s": "Currently.com",
           "d": "2026-08-11",
           "cues": []
         }
@@ -266,6 +516,91 @@
         "surprise_abs": -1.96,
         "surprise_pct": -134.2
       }
+    },
+    {
+      "type": "earnings",
+      "tk": "CGEH",
+      "name": "Capstone Energy+",
+      "d": "2026-08-12",
+      "release": {
+        "when": "unknown",
+        "label": "time unconfirmed"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "COHR",
+      "name": "Coherent Corp",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-12T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EOAN.DE",
+      "name": "E.ON",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CEST",
+        "iso": "2026-08-12T15:30+00:00",
+        "tz": "Europe/Berlin"
+      },
+      "wire": [
+        {
+          "t": "E.ON Posts Rise in Earnings, Continues Grid Investments - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcGpCbEl4RDNuQ29WWmQ4VW9Dd2tNTUc1SGhJajVlMGxqeGZzNm8wcVYzMVNGQ1RRd3J3Z0M3RzdVT2g5YmExUnhFd2JOQW5QV0NDUGVaTWI2cGpyUFZQcEl2Vll3c1dIRmFEM2wxbXdhOGF0ZDR6Z1h2NzM0N0ZIRjlqVzVvamo3elRmVXZpM2pGT1ZHLU1vcWZBMUM2LThSYjhYWU94VENOMXM?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "E.ON SE (0MPP) Announces H1 2026 EBITDA of €5.4 Billion, Confirms 2026 Outlook Amid €3 Billion Investment Drive - Kalkine Media",
+          "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQOHRKMDNaQzllV0htMnkwTWdrQ1YxdDRwYnZXTkl6bVp3MEd6X0NiTEhlMHJPRnVmR0ptMVhvYm0yUF9fYlV4YUxCb01ueXhuQy1uNW1BVVhrR3BWeXZLaDNBV1RGNWJPUjJRQ1VhejBJT2FHakc2eWNKcXU0RmMtWkdHVm82UVpvajhtYVNGZkQ2b2tuS0dWQnRGN195WmxHVjdKbTFiWEF1dGItTV90VzBzOTAyZ2tfODVDeUZRUHFTVmVnNkZ3V3FaTV9FWFNwc0xMdVNWZ3hzLTdIcmgtOVg2YXJuWXRNcTMxakVR?oc=5",
+          "s": "Kalkine Media",
+          "d": "2026-08-12",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-12"
+    },
+    {
+      "type": "earnings",
+      "tk": "PAAS",
+      "name": "Pan American Silver",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-12T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TRMB",
+      "name": "Trimble",
+      "d": "2026-08-12",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-12T12:30+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Trimble Gears Up For Q2 Print; Here Are The Recent Forecast Changes From Wall Street's Most Accurate Analysts - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOUWVzRkRRcjZxTlVXTGRBejdsQ21DSWpxTlhoUlVNUkdTWnRfdzl2WDZMMm51clB6MVpYSDVBRERCOVVJc2YzRm1FWlNEUmY5b0pLdDlzdGRROHpoZUJ5cl9DRzFXR04tUW5kVXRfYVdOeGo2Y21pNk5zUHpLXzhiVXR0TjF3MExLZC1Ib01rVVBjajZXRDhmbGczeWVPbjMxT3JRQTR6ZzhqLVhoRURVd09zQU8tUmxSYzNId2RJQko2SGxGaGhtQW1TbVl4WWotT1VfVXAxaXBna1c3QXd4b3c1TUhvT21xZHRJVUdHdHVmWUNQMzRob3VSUE52aGtZWGJ4TlJTN0p5Mmo0X2pZ?oc=5",
+          "s": "Benzinga",
+          "d": "2026-08-12",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-12"
     },
     {
       "type": "earnings",
@@ -314,6 +649,20 @@
           "s": "Yahoo Finance",
           "d": "2026-08-12",
           "cues": []
+        },
+        {
+          "t": "Borr Drilling: Q2 Earnings Snapshot - kare11.com",
+          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZEZ5Mk5NNGRxNnA2cVliTTBuYjQxU1o4bVl2TEFwblpXVU5YcjlnUlJHNkNJSnVTM1dnbXk4SC1LdlZOUERSQ3RmMUJtOVZzcUFza0VpLW8xbW9WY0x4ODdoWEpqaUNkUTJueGNuRHNTaGtUbmpjc3RFUEdyNktvdVNjT1FUOVQxTzdjUXBSa1JTbFlEVUpQSTBJdExqeVFBcDRXQUloYzRSTGF1emVOdnVEbEpRX0s0ZE5GYXloT0hreXBnOW9obzZyRm40VkU?oc=5",
+          "s": "kare11.com",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Borr Drilling Reports Quarterly Loss - Offshore Engineer Magazine",
+          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SR19wajNDbE1scmZ5VVhxMHNDMUxnMzI4TTFRRnUzb3diSWt2MXVoMklXRWdINkQzRzBiWm5SS3ROY1hWcTNLanFJUDVXaGhlRzJ4eDZmN2c1eHFxNFI0bnBiTU1NSjZFT3NEYUhiNG5RTFVtQlpocjZmQklBM1k?oc=5",
+          "s": "Offshore Engineer Magazine",
+          "d": "2026-08-12",
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-12"
@@ -332,18 +681,6 @@
     },
     {
       "type": "earnings",
-      "tk": "EOAN.DE",
-      "name": "E.ON",
-      "d": "2026-08-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:30 CEST",
-        "iso": "2026-08-12T15:30+00:00",
-        "tz": "Europe/Berlin"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "FNV",
       "name": "Franco-Nevada",
       "d": "2026-08-12",
@@ -352,6 +689,14 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-08-11T20:00+00:00",
         "tz": "America/New_York"
+      },
+      "reported": {
+        "eps": 1.81,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-12",
+        "eps_est": 1.97,
+        "surprise_abs": -0.16,
+        "surprise_pct": -8.3
       }
     },
     {
@@ -364,17 +709,41 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-08-11T20:00+00:00",
         "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Stabilis Solutions earnings missed by $0.21, revenue fell short of estimates - Investing.com UK",
+          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMlpRZU9TZGlFbnJmTlZxR2V0QnZvU3NCMVVRN0ZGYl9VcDRHaDE1WExlc25EaERtUWdCV3k2Z0RQbDRHRVU1RHRNM1Q3NDREcUdfbXcteUZWZmZHV1RhZkdSVndRa1pES1FvSHJYczdXTkhGcXAwcjl3bWE4ZXRzQ1lia08zUWFIM2dITWZVeER0R1NwWnY1aW1xVU1NbWE5cEhYSVd5dFQxV2VMdUVjVHpFQ2tlcTdTajkyOWtWcmt2d0gtQy04Q205OWs?oc=5",
+          "s": "Investing.com UK",
+          "d": "2026-08-12",
+          "cues": [
+            "miss"
+          ]
+        }
+      ],
+      "wire_gate": "2026-08-12"
+    },
+    {
+      "type": "earnings",
+      "tk": "GLNG",
+      "name": "Golar LNG",
+      "d": "2026-08-13",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-13T12:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "TRMB",
-      "name": "Trimble",
-      "d": "2026-08-12",
+      "tk": "PPTA",
+      "name": "Perpetua Resources",
+      "d": "2026-08-13",
       "release": {
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-08-12T12:30+00:00",
+        "iso": "2026-08-13T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -402,18 +771,6 @@
     },
     {
       "type": "earnings",
-      "tk": "GLNG",
-      "name": "Golar LNG",
-      "d": "2026-08-13",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-08-13T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "PAAS",
       "name": "Pan American Silver",
       "d": "2026-08-13",
@@ -421,18 +778,6 @@
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-08-12T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "PPTA",
-      "name": "Perpetua Resources",
-      "d": "2026-08-13",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-08-13T12:30+00:00",
         "tz": "America/New_York"
       }
     },
