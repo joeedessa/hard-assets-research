@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-11T22:10:36+00:00",
+    "as_of": "2026-08-12T04:09:04+00:00",
     "note": "Equal-weight, price-only, local currency. No rebalancing, dividends or FX conversion.",
     "retrospective_warning": "The trailing table measures how TODAY'S universe performed in the past. It describes COMPOSITION, not forecasting skill, because the conviction and froth tags did not exist for most of that window and 21 of the 71 names were added on 2026-08-05. Only the since-inception tracks test the framework."
   },
@@ -55,7 +55,7 @@
         {
           "label": "Insulated (froth 1)",
           "n": 19,
-          "si": 6.3
+          "si": 7.2
         },
         {
           "label": "High froth (froth 3)",
@@ -98,16 +98,16 @@
   "retrospective": {
     "label": "Retrospective composition — NOT a track record",
     "mean": {
-      "1m": 3.3,
-      "3m": -4.4,
-      "6m": 11.5,
+      "1m": 3.7,
+      "3m": -4.3,
+      "6m": 11.9,
       "1y": 82.2
     },
     "median": {
-      "1m": 3.3,
-      "3m": -4.2,
-      "6m": 6.6,
-      "1y": 38.8
+      "1m": 3.6,
+      "3m": -3.8,
+      "6m": 5.4,
+      "1y": 38.5
     },
     "top_contributor": {
       "1m": {
@@ -117,13 +117,13 @@
       },
       "3m": {
         "ticker": "6213.TW",
-        "ret": 70.1,
-        "contribution_pp": 0.4
+        "ret": 81.4,
+        "contribution_pp": 0.5
       },
       "6m": {
         "ticker": "6213.TW",
-        "ret": 328.0,
-        "contribution_pp": 2.0
+        "ret": 341.2,
+        "contribution_pp": 2.1
       },
       "1y": {
         "ticker": "AXTI",
@@ -164,5 +164,5 @@
       }
     }
   },
-  "as_of": "2026-08-11"
+  "as_of": "2026-08-12"
 }
