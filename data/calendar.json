@@ -1,31 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-08-12T16:55:39+00:00",
-    "mode": "light",
-    "coverage": "13/13 scanned this pass",
+    "as_of": "2026-08-12T22:10:10+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "TDW",
-      "name": "Tidewater",
-      "d": "2026-08-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-03T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.44,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 0.43,
-        "surprise_abs": 0.01,
-        "surprise_pct": 3.3
-      }
-    },
     {
       "type": "earnings",
       "tk": "ENR.DE",
@@ -48,6 +28,26 @@
     },
     {
       "type": "earnings",
+      "tk": "FLNC",
+      "name": "Fluence Energy",
+      "d": "2026-08-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "reported": {
+        "eps": -0.19,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-12",
+        "eps_est": 0.01,
+        "surprise_abs": -0.2,
+        "pct_suppressed": "consensus of +0.01 is too near zero for a percentage to mean anything — the beat/miss is -0.20 per share"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "GLEN.L",
       "name": "Glencore",
       "d": "2026-08-05",
@@ -56,6 +56,38 @@
         "label": "AFTER THE CLOSE · 16:30 BST",
         "iso": "2026-08-05T15:30+00:00",
         "tz": "Europe/London"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLNCY",
+      "name": "Glencore",
+      "d": "2026-08-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HP",
+      "name": "H&P",
+      "d": "2026-08-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "reported": {
+        "eps": -0.11,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-12",
+        "eps_est": 0.1,
+        "surprise_abs": -0.21,
+        "pct_suppressed": "consensus of +0.10 is too near zero for a percentage to mean anything — the beat/miss is -0.21 per share"
       }
     },
     {
@@ -80,6 +112,26 @@
     },
     {
       "type": "earnings",
+      "tk": "SBLK",
+      "name": "Star Bulk Carriers",
+      "d": "2026-08-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-05T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "reported": {
+        "eps": 1.21,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-12",
+        "eps_est": 0.93,
+        "surprise_abs": 0.28,
+        "surprise_pct": 30.8
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "4004.JP",
       "name": "Resonac",
       "d": "2026-08-06",
@@ -88,58 +140,6 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2026-08-06T06:30+00:00",
         "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "FLNC",
-      "name": "Fluence Energy",
-      "d": "2026-08-06",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-05T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.19,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 0.01,
-        "surprise_abs": -0.2,
-        "pct_suppressed": "consensus of +0.01 is too near zero for a percentage to mean anything — the beat/miss is -0.20 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "GLNCY",
-      "name": "Glencore",
-      "d": "2026-08-06",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-05T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "HP",
-      "name": "H&P",
-      "d": "2026-08-06",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-05T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.11,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 0.1,
-        "surprise_abs": -0.21,
-        "pct_suppressed": "consensus of +0.10 is too near zero for a percentage to mean anything — the beat/miss is -0.21 per share"
       }
     },
     {
@@ -160,26 +160,6 @@
         "eps_est": 2.24,
         "surprise_abs": 0.37,
         "surprise_pct": 16.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SBLK",
-      "name": "Star Bulk Carriers",
-      "d": "2026-08-06",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-05T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 1.21,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 0.93,
-        "surprise_abs": 0.28,
-        "surprise_pct": 30.8
       }
     },
     {
@@ -227,24 +207,24 @@
       },
       "wire": [
         {
+          "t": "Why Aecom Group Earnings Made the Stock Drop - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZnZ6b1Z4WGVHa0x1TTZROVJqLXNFR0R0U2JHb3ZTTGJpMGpXQTh0blkzeVBZdjRuQm92YWZScDRONTBkQUVkMjh3enNrR0NmamtmTHlCZzM4S2lxN01VemgyTzJlRXdSQ3lxUFV4YXpyaDVNY3RUVzl2SUZyT3lob0dRajUwaGhBeGVOQmFrWFdCYkhPUDhudUVn?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
+          "t": "AECOM touts data center pipeline amid fiscal Q3 loss - constructiondive.com",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzNod0NnbUN4d0QycjJEeUdsaDdGM3VhOVRNVUdtSUFrTERoY0tTd3pWQjZ0a3hHdWFLYkV3eEVvSzVzSVJ2cDBDUU41cFBBR0Jmd0ZkblhFYlk5RjdxVkNSbE5pRE9hSEh0MjRaN0xuZ0hDQjl3U3Z1TkFFMVI2U2pHajZ2dkpkZ21adkFScjMtZmVvUHc?oc=5",
+          "s": "constructiondive.com",
+          "d": "2026-08-11",
+          "cues": []
+        },
+        {
           "t": "AECOM (ACM) Stock Slides After Project Charge Triggers Quarterly Loss - simplywall.st",
           "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNVQ5MktjUGVXc19ZVUNEeG0tamRMMGNXYktsSlgzM29VeXJfQWtEQkNtLXlMZ0hfRzEtTmJ1NkwydmpGVlNrd25renl5YkpSMG9iUl9SZkk2UGpyOHRiX0hkQmhDd3R1VTdnVHhOQlF3UWkxR0ZsX0Vvb2VzdElralVzZUk1cjczc3NDaGZLNktvbFJpRkR1S0cwRHVwVGFuamNPMGY5NFhRbi1EcmtpWnFGekNsdnFnU0FCNENtOFduOWhKeExweDh30gHKAUFVX3lxTE01VDkyS2NQZVdzX1lVQ0R4bS1qZEwwY1diS2xKWDMzb1V5cl9Ba0RCQ20teUxnSF9HMS1OYnU2TDJ2akZWU2t3bmt6eXliSlIwb2JSX1JmSTZQanI4dGJfSGRCaEN3dHVVN2dUeE5CUXdRaTFHRmxfRW9vZXN0SWtqVXNlSTVyNzNzc0NoZks2S29sUmlGRHVLRzBEdXBUYW5qY08wZjk0WFFuLURya2lacUZ6Q2x2cWdTQUI0Q204V245aEp4THB4OHc?oc=5",
           "s": "simplywall.st",
           "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "AECOM touts data center pipeline amid fiscal Q3 loss - Construction Dive",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzNod0NnbUN4d0QycjJEeUdsaDdGM3VhOVRNVUdtSUFrTERoY0tTd3pWQjZ0a3hHdWFLYkV3eEVvSzVzSVJ2cDBDUU41cFBBR0Jmd0ZkblhFYlk5RjdxVkNSbE5pRE9hSEh0MjRaN0xuZ0hDQjl3U3Z1TkFFMVI2U2pHajZ2dkpkZ21adkFScjMtZmVvUHc?oc=5",
-          "s": "Construction Dive",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Is AECOM (ACM) Undervalued As Weak Earnings Put Its Fair Value Story To The Test? - Yahoo Finance UK",
-          "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaldCcGhDSTBFaEpVOXJKQ3Z5WFA5OXBhSVBmV2M0OXBydnllUDVmT0ZFLWNnRGpoWDZJQ3I3Q2pOTGpxeC11UVMtdEw0TmxGRXI5MU81Z1lzdHFWTGJvYlluZ1pZNGsyaEFweWxkYlA2Vm1JZG1YZm5aQTF0cGtPckw5VHVoU1VMUU9Tdg?oc=5",
-          "s": "Yahoo Finance UK",
-          "d": "2026-08-11",
           "cues": []
         },
         {
@@ -278,16 +258,18 @@
       },
       "wire": [
         {
+          "t": "Borr Drilling Q2 Earnings Call Highlights - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQN3V2bldUZ3pvbmQxQWtGVkhodDEwdzhBNTgzWWEtdmJtaVBHNnd1T0lGdmZNWVJWdE5TbEE2cW05dE85Z0pVNHFucF9SOHNmdTRtZ1hDMXBabmZxN2lUdEhLWmxhX3VPT1ROc2pjSWdUODVfcGs2TmItV0x3Rm9KUlFlQTQ4dS0wMXU0VmFZbExMQ09LczJQclJPZTdVS2Z2T3JEOGhYYzNIU0d2TWtBeWZMbEhDUDZmWnNoYzVNT3JUM284Z0RHZ25tOTB6a2tUcXFGS293?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-12",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
           "t": "Borr Drilling (BORR) On Q2 Results, Refinancing And Rig Deal With Valuation In Focus - Yahoo Finance",
           "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdU5QS240Y2wxWVZWLW5GeHZRa1ZhUHE0NHdpd3ZReEFURk12Wno4UGR3U2hrQVZXQWNDczRxTFNJOTlGNHQtNzQ1NHBrSGI3ODFwRlFSTGFEWHIzNDgwSFE5UVRtYkdyMS1uMnU2R2FvdVd1WjNuQ0V1bkl1V2JYa1hHTXlmQ1p4cEVGVFowYkxqZVktSkhQQzJ3?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Borr Drilling: Q2 Earnings Snapshot - KVUE",
-          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQc2FGYU5UZFotWGdTVEx4aHlCNktRVjU1c3V5ckd2TTJWR3lKV2VrNmR5MGJjWjZsTWFEdlZnQlBlUkVHVGZXUGxpZ1JEU1l5MnlWaUpzYnpPVE5idUZRbnFCMTdiVEN5YXpWQUdxd3AyYnRtQzdNVXRzaTh3VEVReEhFbUU0MnZROVEzVUc1eHlIZFZGSHVxZS1ndldxaTNXWTRpMklfb2V3aEtyM0YzT1BDSEQ1LVBza2VyV01EMDdlQ0FiRWU5ZDREd2Y?oc=5",
-          "s": "KVUE",
           "d": "2026-08-12",
           "cues": []
         },
@@ -301,10 +283,10 @@
           ]
         },
         {
-          "t": "Borr Drilling Limited (BORR) Stock Falls on Q2 2026 Earnings - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ0lrT01DSklVemRCMzhZa3VtZE5oR3ppZlFrbXgyV3NZdVVRM1RoU1ZOcEdDaTk4SGd0NGxFaWFrV2x4N094cWg2SEt3RjllZEozeWIwREQzNWR3OWM3SjV1LU0xNi1tR2l3NGRlWk1aVGp5S3JTNE11c3V5eUZydF9GZnhoandtOXMwWGVsRzBRWFp5c0NwSFByM0JBdw?oc=5",
-          "s": "Quiver Quantitative",
-          "d": "2026-08-11",
+          "t": "Borr Drilling: Q2 Earnings Snapshot - kare11.com",
+          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZEZ5Mk5NNGRxNnA2cVliTTBuYjQxU1o4bVl2TEFwblpXVU5YcjlnUlJHNkNJSnVTM1dnbXk4SC1LdlZOUERSQ3RmMUJtOVZzcUFza0VpLW8xbW9WY0x4ODdoWEpqaUNkUTJueGNuRHNTaGtUbmpjc3RFUEdyNktvdVNjT1FUOVQxTzdjUXBSa1JTbFlEVUpQSTBJdExqeVFBcDRXQUloYzRSTGF1emVOdnVEbEpRX0s0ZE5GYXloT0hreXBnOW9obzZyRm40VkU?oc=5",
+          "s": "kare11.com",
+          "d": "2026-08-12",
           "cues": []
         }
       ],
@@ -320,237 +302,37 @@
     },
     {
       "type": "earnings",
-      "tk": "AII.TO",
-      "name": "Almonty Industries",
-      "d": "2026-08-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/Toronto"
-      },
-      "wire": [
-        {
-          "t": "Almonty Industries Reports Second Quarter 2026 Financial Results - Business Wire",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbFBzNFQ3WTg5RVRvZjQ5NDVNQUpqcG9DU2hVSHpqZzFJNm5SWmNDQVBaS2pka1RCUGxpRkViV3BlVXFiTEY0T1dpZXNkdkdJbWMwemRpdjA1MlJKZkh4XzhTaFhpMVd2dWdKSU1BcWE2V1ZmWlRTRWFJeW54eXktUFFQTndYY3NVX2RqdkpMTGdaeVBlY3I0RmE2aVpXTmZCcGJzWFJ1c3BGMzRyQ3ZPV0dyRHNFVEwtaEUyU2h3?oc=5",
-          "s": "Business Wire",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Almonty Industries Inc. (ALM) Q2 Earnings Match Estimates - Yahoo! Finance Canada",
-          "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbHdFeFh4UkhrYlZQajZ0eUw0WjB3R3Z4dTFvbllKS2JjS3BLanFhV1I1M1Z1YnFiOEs2bXVuNG9pNDFTRVhhbXNjTVFVT3NHRjdXU0FlY3M5YVQwRkpBaGhJdXVvRTdWMHdJN3ZpSTRFNzJ0U3NyRGJlcnhCSlV3cW9YS2Q?oc=5",
-          "s": "Yahoo! Finance Canada",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Almonty Industries Q2 Swings to Earnings, Revenue Rises - Moomoo",
-          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZE41d21WT1g5SVJKUW5zaTVqeFRaMGZ6d2l1bTJJUWo3Vm9SSGhoZXBRQ050ejdCYVpsMXViUDJsMkpMckRkc0lNQ1hOLXB5MW9PUXBPVmVZcmNqLUd0Vk81anJ2Y0xTWDNuRXRkdHNJSlYxVVlPUVNMdi1Nd1NvNERtamxSZ3B0Y0U5NWZKeHdPZ1p0NmxMbm02MHk?oc=5",
-          "s": "Moomoo",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Almonty Industries (ASX:AII) Reports Major Earnings Shift as Tungsten Prices Lift Revenue - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS3c4WEk1Z2JGSG5xWlowUzJlcnNpbkktSkFjWHpxLXc1V0lWVTViV2M4a1FrN3RPSU1MdVMtbk9YWnFEbnlwMndlMExxdEdIRklDY3NaWkxQSXpZRzU4enFjLWduTXNKYXNHSExQcmxCNFdOc21kQ0VaYVc0VkU5eXVMQ0o4OTk1UFZVQmRNR3pvRmd6bTN6OXNMSnpRLW95VlhrUEMwb2VlSVNINHhxUzBiVDhyZ2VBOXdhSmpR?oc=5",
-          "s": "Kalkine",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-11"
-    },
-    {
-      "type": "earnings",
-      "tk": "DNN",
-      "name": "Denison Mines",
-      "d": "2026-08-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Denison Mines earnings missed, revenue topped estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPemhjTksyZDdJSUNHZDMyeXRDbFBOSmlsRTl6ZGFnaDQ1Q0J2aGwyb1Q5ZllyNTZBcjdKb3JQUjNrVjZkU1N5aExDZTZDaE16QS13TzNYblpyMEt2aHZ4Uk1rSXFuWURIUUlLTldsNURzUHN0Yjh6S1RiQUZOOWhvUjNHLWgycDM2ZTF0VndubUZmUGpEWWdmeWg3R3RsWkNzcGt3cg?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-12",
-          "cues": [
-            "miss"
-          ]
-        }
-      ],
-      "wire_gate": "2026-08-11"
-    },
-    {
-      "type": "earnings",
-      "tk": "FNV",
-      "name": "Franco-Nevada",
-      "d": "2026-08-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Franco-Nevada Corporation 2026 Q2 - Results - Earnings Call Presentation (TSX:FNV:CA) 2026-08-12 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTTBXS3VUZkZCZUVscTJQbEhMM2R6SXdjU011Z0hVS3Jub0Q4S29pZEhBdklPbVY4TXdpYzhRMUt6MEJuS0VfNERTSi0wbDd5V2FaUjU3TUJEYWlXSFBtenJ2MkVmeTg1dkkzRDlGeUU1WGpjNTRobmdJLVlPa1hiN1I2Tk9wVzRoRGFaNlN4ajBwdnNaSk1TWkQ2V3pNcmRsQjItcENBVjNQNmxlX2Q5M1ZsRVJfWkQxYnFYdEo5MnBfV0EtQjlZ?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Franco-Nevada (FNV) Releases Q2 2026 Earnings: Revenue Jumps 57.3% - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOWwtMWx6WWpBdzJET2YxNzBWdFdkOVNXZC1PNEpmcTBBeHNBUERDRFl0UDk2WWd4YzFvUUdFV0FFU3hTVHdDVEFKVGRESVVnQXhmYVZCbzF2ZUVETmRfLXJEMTNpTmpiWVFweWpzT1FMLTdJREQzenBzaWRjdXZUSVpORXptejJIcmx3eTlLZDRidFRJUWc3SEF3SHdLRWRRb09xUTN3R3dRZ3k0aEdR?oc=5",
-          "s": "Quiver Quantitative",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Franco-Nevada: Q2 Earnings Snapshot - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLXJ1eHk3elZFSlk4YVp3c0Z2NEtSdjNRcTFnTkRITmVuUk5nSlA5MGdpMGdGMVBwMlY3VTFVaDNfdmNtZVZxLXE3cTVYTlRQM2hWMkxBSDdPV0tSSGxtRXdZZ1JQRW9kRWxmVzU3UjVpMHlZdUJfYmZpeTE4RXdvSVVsTUJFZmQxN1Z0V2t5TTFRMlJCcW42MUVsbHkzMnR4?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Franco-Nevada (FNV) Q2 2026 profit surges on higher metals - Stock Titan",
-          "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNamtRMGpsMmJsQVp4RG1VZW1sYU1ETUZ1bk16TlU3SUR0MDVUNG1UdWlfZmwyWVhjWWVldEtQcTRzSWpoRG5PLWlsVDl1UFV2bXQ4MktkeGRtbE9SOHYxZ1FPVDl3RXd2c3NubmZVWXl5UDY3V3RweXJRX3N4WVJDV0NwdVNaQ3k2VVJVUnh5OGlPMVQ5UlFXM28tdllqYnBwUGZCcW5xOHNqd0hJUkwwYkhxQQ?oc=5",
-          "s": "Stock Titan",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-11",
-      "reported": {
-        "eps": 1.81,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 1.97,
-        "surprise_abs": -0.16,
-        "surprise_pct": -8.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SLNG",
-      "name": "Stabilis Solutions",
-      "d": "2026-08-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Stabilis Solutions Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOGhEcXdtMUtaVV82S05CRFJlX2VjeDZPSmtYUV9CZUZyRlA5TUVaZEtkNkp1YU1UQnYzYkZZU2hpSk9JVENnNVRQY1ljSnNESXV6TDB6YkVJRnpGQ2dKVFZoVGwtaVBKMk9nY1B1aEU0RGYzc0YycUpGb1lPWTdFMGtRSnZ0ZXZhSzZTSlFFM0s5UlM2cXBvVU5jZjRYQUJJbmc?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-12",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Earnings call transcript: Stabilis Solutions misses Q2 2026 estimates as stock falls - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNVUptajVPWjExZHlxREtiRHJ6TzR1cy1NMlRlUHJFdEYyWEdNOUhybnFZbnRzeDRRVzVWLU1OcVBwLW10ZTFMLVpXb01OR2g0Y3lxTm1lZC1zUmNmRU9saEdjb1lreThZV01zcGRscDdsZnZ6cnBvQWVyN0FZdUZyTW9fUlZiWkc3TFFldHAxUVc3aUFBUHJsQjA5NFBKYzZNY1VUYV8ydEo0eG90ZzZBMjNodDM0U0hUVkhCaGdRNlFfelRNNHJCZ2RMVVoybWdMLWRjMmxR?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-12",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Stabilis Solutions Announces Second Quarter 2026 Results - ACCESS Newswire",
-          "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQ2hoSXpUeGo3MWZUOXBqZ1hXYzdNZHRXTlBTMkUxT2lOQmNISDVFM052dmtsTGI3OGNUQ0hHckpmZmZfSW5xMjIxS3J4aENXTFVpRWIxX2JWXzVDYmJ2Mi1YUVk1WUdDMFRVdk9vby1rSXFzcDJobm9ZZHJrQVlHSlZCMmRDTkxmaFBqd3drWl8zS0xtSmg1M0pHeFNMZlBvMnY4OWpzZlV4LVFkVWVwVE5TUm13eWp3V0Q5RFd2Y1l6TkJTMXZKOA?oc=5",
-          "s": "ACCESS Newswire",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Stabilis Solutions Inc reports results for the quarter ended June 30 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxObFVtY3ZTQV9ZRE1XU2tYaFkxV1BWZDVzeVl1VFl0NG5KN3N5RHdlOXRYeDY3aEI5YUFwNTNySGkzT1ZaY3lTRF9xNVMzX3dHR011Q1I5Qkxqc2szald6YTNaZkI5VXFFeDJnQ0twUWhHUVgtVmN6ejlpVHdIdTdrLVhqZFg4cVVHVFloRTdXMVVKaXV1Y1Q4LVNBLURxTVBST1VzbGNvMnJSU1BPdnExWkY2YVYzcGJEWEdmSkVlMC04bWwwZ3ZsNjEyMlJGTXZoRGxxblVqaHQyc1k3X0gzcUZ6dzM5SGhBa3ow?oc=5",
-          "s": "TradingView",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-11",
-      "reported": {
-        "eps": -0.25,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 0.01,
-        "surprise_abs": -0.26,
-        "pct_suppressed": "consensus of +0.01 is too near zero for a percentage to mean anything — the beat/miss is -0.26 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ACM",
-      "name": "AECOM",
-      "d": "2026-08-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-10T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "AECOM (ACM) Stock Slides After Project Charge Triggers Quarterly Loss - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNVQ5MktjUGVXc19ZVUNEeG0tamRMMGNXYktsSlgzM29VeXJfQWtEQkNtLXlMZ0hfRzEtTmJ1NkwydmpGVlNrd25renl5YkpSMG9iUl9SZkk2UGpyOHRiX0hkQmhDd3R1VTdnVHhOQlF3UWkxR0ZsX0Vvb2VzdElralVzZUk1cjczc3NDaGZLNktvbFJpRkR1S0cwRHVwVGFuamNPMGY5NFhRbi1EcmtpWnFGekNsdnFnU0FCNENtOFduOWhKeExweDh30gHKAUFVX3lxTE01VDkyS2NQZVdzX1lVQ0R4bS1qZEwwY1diS2xKWDMzb1V5cl9Ba0RCQ20teUxnSF9HMS1OYnU2TDJ2akZWU2t3bmt6eXliSlIwb2JSX1JmSTZQanI4dGJfSGRCaEN3dHVVN2dUeE5CUXdRaTFHRmxfRW9vZXN0SWtqVXNlSTVyNzNzc0NoZks2S29sUmlGRHVLRzBEdXBUYW5qY08wZjk0WFFuLURya2lacUZ6Q2x2cWdTQUI0Q204V245aEp4THB4OHc?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "AECOM touts data center pipeline amid fiscal Q3 loss - Construction Dive",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzNod0NnbUN4d0QycjJEeUdsaDdGM3VhOVRNVUdtSUFrTERoY0tTd3pWQjZ0a3hHdWFLYkV3eEVvSzVzSVJ2cDBDUU41cFBBR0Jmd0ZkblhFYlk5RjdxVkNSbE5pRE9hSEh0MjRaN0xuZ0hDQjl3U3Z1TkFFMVI2U2pHajZ2dkpkZ21adkFScjMtZmVvUHc?oc=5",
-          "s": "Construction Dive",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Is AECOM (ACM) Undervalued As Weak Earnings Put Its Fair Value Story To The Test? - Yahoo Finance UK",
-          "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaldCcGhDSTBFaEpVOXJKQ3Z5WFA5OXBhSVBmV2M0OXBydnllUDVmT0ZFLWNnRGpoWDZJQ3I3Q2pOTGpxeC11UVMtdEw0TmxGRXI5MU81Z1lzdHFWTGJvYlluZ1pZNGsyaEFweWxkYlA2Vm1JZG1YZm5aQTF0cGtPckw5VHVoU1VMUU9Tdg?oc=5",
-          "s": "Yahoo Finance UK",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "Why Aecom Group Earnings Made the Stock Drop - The Motley Fool",
-          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWnRvOWE3ZDZJN1QyeHBpTlNUSVU1cktaT0d2N3VvQ2hQUW5EQUM0WUMyTXFoMEFQZTFTNGRfSWFXS3kyQk11LVV6cTJkWUZzb0RDLUo2OXl0RWdHX1RUY0U2R3dNc3lVWEtXX0h4QlZIeGQ2LVhFQUhrUUgyTG5tRUFHbDFWemlab0gzZkduQjY?oc=5",
-          "s": "The Motley Fool",
-          "d": "2026-08-11",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-11",
-      "reported": {
-        "eps": -0.5,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 1.46,
-        "surprise_abs": -1.96,
-        "surprise_pct": -134.2
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "CGEH",
       "name": "Capstone Energy+",
       "d": "2026-08-12",
       "release": {
         "when": "unknown",
         "label": "time unconfirmed"
-      }
+      },
+      "wire": [
+        {
+          "t": "Capstone Energy+ Reports Results for First Quarter of Fiscal 2027 - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPLVZvSmk3ZHFZRzlNWkV1TS1YWVBfLVliZjBHVFZxSHI4Rmc5ekJ4V1RxME04b3ZzMlhHX181X0U1WGFLNEx6aERBR21pbzVXamFXTXk4djlCNURaM2RST0F2Yl90aHh0Q2tfSkZmTEdSTEE5N1FrWDFtNDFDZGxYMXZBMFVqRTkteWYzWjM0S3NQTThKOXB2MlJR?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Capstone Energy+ (CEPL) posts Q1 profit to net income, raises cash and secures $500M shelf - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMl9EU0U1d0o2dEpSOTZPVksxZHJzYnFfay1iYXJNRUZNeTZsY2N1NDdVTWc2bWp2OXVadm02UzEzb1lNdjRqbzdIeFdtRE9DZmxrRHA5T3NDSjVzOUd6ckpNWFpmNnZsNDJEZGxGdDZ6MEpsaV9vdzFWRDhUOHZKZ1RiTmZLbUJxQnR6bHI3LXZMZUdubHhiSHYwQWZUVUlzOFZoNjFZSF8wUTBLTlQ3dWVyZnFZcTNs?oc=5",
+          "s": "Stock Titan",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: Capstone Energy+ posts margin gains in Q1 2026 - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWXFBc3BRa3l1RkE2c2NTMEwtRGdqeFFZbzBPNGk3a2hTZ1dPUGxPWXNkY2VxSmFtWVJoQUhld2szYTgwNXU2bzcxRVp3M2h2SmNmLWdyWmRvMDU4STZiZGF6NFFTbVNrN3ZTdHB5SUwxX0VvUXdQbVdvb25SLURMOERvR3oxeW9VckVUVVd1TldaaVZLQWIzVTlDdUxvWFQzdXR0Qy1xOFhlSEVYVWNVdEFkM2lHN1hFbmctaElsaUJBdWlR?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-12",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-12"
     },
     {
       "type": "earnings",
@@ -565,9 +347,32 @@
       },
       "wire": [
         {
-          "t": "Coherent Likely To Report Higher Q4 Earnings; These Most Accurate Analysts Revise Forecasts Ahead Of Earn - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQcXU2TktmYXJDRVhTLUNHa3lITjRsUWVlM1JFc1pXOWpyYjk0b1ROamd3YjlCLV9PVm14SkJPZ2Z6b1NETU1KUFVUc216MWZhcDJZZ0tOOHZsbWdqcnZONkg4eUwxUUt2cHhFVXVsV3J0VkVXRVNPOHE5WWdCWXF4Y1p4X25HWmhjeGtNMGpvcUNHOVhYMTgxNXRvVkt3cE1YM1lvcW9CMk52djdfSmNodm9GWGJsR1Q4T0ZqQVlMUEJ2TzZ3dC1NXzRtVk1ndXFDMElLNEFhVXpEUmNUb2NYNm9JMGZmX2F5RlY5QU96SDFMVlRZQlBxLU9Lb3JSNDVKUnRYbk8xVnpsQzFSLVBoRFJEYnFOeVE3eVE?oc=5",
-          "s": "Benzinga",
+          "t": "Coherent Stock Drops Despite Earnings Beat and Strong Outlook - Barron's",
+          "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGbGtvNkNUbjFUSzgyeWdCVDNmUFBpbFBubUsyM3BpT2Y5Q0xTVGxIUmpHaE1ycURLVDlGMWVkRmJ4dU1EOGZHNGJlaWZRWVBPYUJlR2kzUzlFcENTYUtLbnhHR2hsOG8tanNNM1lsT0puX0NERjZxT2Exaw?oc=5",
+          "s": "Barron's",
+          "d": "2026-08-12",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Earnings Flash (COHR) Coherent Corp. Posts Q4 Adjusted EPS $1.74 per Share - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUmhiZG1LY2l5TVY4U3pkcUt2bDVNd1Fsa20weF9qOVItYUotRWZJcXo4amItVHB6c2dmVGF6aEtIT1NPSDNFUFVua0dZSkVIU3hYbktodGNhb21TWndQT3dza0otVTRSVlNicXV3STVvbVZ6Y2lXUkpPUS15UzFVVExlV1huODM4bzBPYUJtUm1Pa0J4STlCbVYwLVBhazg5OTZ0TUVFS2VzamRBNzFwUUtOWDlBWmpTeWtJWVBUMEs?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Coherent Corp. Reports Fourth Quarter and Full Year Fiscal 2026 Results - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMWhwMENSMF9FbUNYTU9PaHpzcDJVQWtmMzVKRE1tMjFTaUpMMnZtdUdlR19IbkFuZmVWdEI3TGdxd2lldXMzdWVLak1sRkQ1bDkwZWVFcXN2TlRGS1ZEbnJ0QmVza2JsMjgyVlpLS0RCSzA2Mzdxb0MtLXFTS1ZIeDRFOFZoZm1WSUJTdnRueXFiLXBNRXVNb09sRHdXTndIQXZB?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Coherent: Fiscal Q4 Earnings Snapshot - KVUE",
+          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdTBCYTJoVVl6X2o2N21CODdObFBQLVczZEN6V3JMMU1OOXhpaTBZVVJxS0gzb2liTE80bzlWdm45NGRJSm5BUU55VHZmNHFyOUxVcTdGSG0waUJVUHRfVVgyMTZuS1ZwNUNXa2ZCTW1PWmprd2tKb3k0cndZOHdfXy1NUlFkcnZoZTZNVDRSVHVSYjg5UWo3djZ2MzdpdTJqSGdydFFOZ2NJS3NlMXpYcFVJcU05RnhlTjBGWUVQWTVKSEpmN3owYmZ6VUswZlk?oc=5",
+          "s": "KVUE",
           "d": "2026-08-12",
           "cues": []
         }
@@ -587,6 +392,20 @@
       },
       "wire": [
         {
+          "t": "Denison Reports Financial and Operational Results for Q2 2026, Highlighted by Significant Initial Progress from Construction Activities at the Phoenix In-Situ Recovery ('ISR') Uranium Mine -",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNXFWTm9aQ2FnUFdEcTQyVTdwWUQzZ1lNUU11MXFhWHdSd2RMZUQzVHJpby1PMkJOV182QnI4US0tdi1CTmtDcHhoNFlVWi0zelAyRENDci14TlAyYkh1bzJvaXUzdUpoeUxpOWFMTGViV3NxNFNkTE1TZ0dqWEZOMS1iaFVKdnFINUZKeFNBRVZDR1EwVUthWkI2NGJZczJyUndKaw?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Denison Mines Corp reports results for the quarter ended June 30 - Earnings Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUVNUNTN0elBJVmdBY0dlVVIyT2tMeHlETFJMWWxIVGxrbjBNOFpLOExYeDhtVDJ1MUh6MWVrSXRieEJXMUNTWXVzbmlwbWxJOThyRUNJTmRseU9xQkZZSmQzaVhfRlp4RGRFWXl2bnZ6azIxQmRCWkpNMVlPYTFlT3dZMUw4MFluQ0JZeWxYZFAteWJFUFZEZ0VkYmlQN2t4cjc1VzlDV1E3YXRBT2x2RkpnS2dRZXpnR3dnTWY4U1k2U2tGY1d6SGh4aWZQanhkQjNhcC16cTdGRnJFYnJndzAyN29DUQ?oc=5",
+          "s": "TradingView",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
           "t": "Denison Mines earnings missed, revenue topped estimates - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPemhjTksyZDdJSUNHZDMyeXRDbFBOSmlsRTl6ZGFnaDQ1Q0J2aGwyb1Q5ZllyNTZBcjdKb3JQUjNrVjZkU1N5aExDZTZDaE16QS13TzNYblpyMEt2aHZ4Uk1rSXFuWURIUUlLTldsNURzUHN0Yjh6S1RiQUZOOWhvUjNHLWgycDM2ZTF0VndubUZmUGpEWWdmeWg3R3RsWkNzcGt3cg?oc=5",
           "s": "Investing.com",
@@ -594,6 +413,13 @@
           "cues": [
             "miss"
           ]
+        },
+        {
+          "t": "Denison Q2 Results: $91.6m uranium sales, Phoenix construction on track - scanx.trade",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNT3FNUXRYc3lIYTgyNFBzSFV3a1AzSkV5SnNXMGtENXUxWEVvY1JaQWQtU05raUo3TmJQTEZxMV9kVlpmdk52RUllRmV5dlI4d2c0eFROcUxaNWt4NWRBV3lMeGhpWDdvTy16ZG5oMWFWTkZTdjVOZ1dPczZieGxONUJUSEpBeWFKSEFpN0hXejlpSUNpUEVndkJGZ0R2RFZ0SUJxNFJFMXp3eUdSNnJGM3AtRHh0Wk9tVzZtZUlTaw?oc=5",
+          "s": "scanx.trade",
+          "d": "2026-08-12",
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-12"
@@ -611,6 +437,13 @@
       },
       "wire": [
         {
+          "t": "E.ON Reaffirms 2026 Outlook as First-Half Earnings Edge Higher - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPU1RqQXNYV3plNEhwSUtfWmZjNDktUG5jYzRQZEZ3bWpLQVJJSnBpb0RDU1c2akVIWjVZdDc3anJiNXB3YU9XbEdCbF95YjU2R0NSUl82dExka2lXWmtlQkk3VnU0Q2JGR0I4RnZGT0pQamVmcjY5YlZZb0FQRk03NUxGRUJvQTR1QWlsSXhYUmY?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
           "t": "Earnings call transcript: E.ON posts steady H1 2026 growth as shares slip - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSFpDSF9LQm1SV1N1ZzcyNUoyTklTTzVLMGVqTTJlN2JmNXBMVHpaT2NuT0l5c29GVEc3WGFHNVVXOVpRNzlRc2JGbkNCSGtmUlItWTlOSklyXzRYTnE0TkdBNEpWaWxKUTR4QWhYQTF6UzhCeXluSnUwR0dsSW5uZVB2X2d6TzlnMnY3bGhWY3MzcDJpODJqdGUxSmU5a2h0UEFmN2FvaDA2Z25pTEpWaWxqZE8xemxjT0VHOXh0b0RyZDBIRXc?oc=5",
           "s": "Investing.com",
@@ -625,16 +458,9 @@
           "cues": []
         },
         {
-          "t": "E.ON Reaffirms 2026 Outlook as First-Half Earnings Edge Higher - Crude Oil Prices Today | OilPrice.com",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaVVRWjI4REtWOUFxUzZXUzZJWFZSdnBFVm5CV3V5THpZTkwtUXdOc2tIV3JjME5oUkFoOW1SMXZaWmU5VzdLOGRMVGN4bmRhRU96YUhiWmMwekdmMGR0bzk0RXp6TVltNUxoLXlrNVdCOENwWldVTzYzbHhuTzF6YXFSTENWNkJpVE9wUGZXbkYwWGxRTVRURzQ1UjJoSm9sdFHSAacBQVVfeXFMTlEwWngtS2Vvc3lIS2l1al9VV2VmQ1lETEtpMnlDR1pOMXYyMVlCWkJ1b1lCWDRtOFVWdXY1VnFwNGFZZkE0VWVDX1VLc2dSSEt1QjF0c2lZVWg0dlRsQlJLTTZTX21pY0ZFc2lJSmFUNXpzNmFMejlzSnFEQVRHUnZoSnpzdXA4Z2pYek05SDFDd1NMcHlQQi0tSWdrSzdkUlg4QXp2VVk?oc=5",
-          "s": "Crude Oil Prices Today | OilPrice.com",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "E.ON SE 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:EONGY) 2026-08-12 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPLXpFemFVRWV3dnlRYjhSb3JOS2o5TGw5cVF5X2JKeGVOS1dObVlKdzZXUG03ZlMyTXZSY1hDaXQydXVtQnQ1LWdXaFM1SHpzRlFpRDQxZzlqN1Y5SVlHUEZpQ1dyN3BheWZBYThpeWFyUGs2YkJ3WDYyS1BwMG5XdnJPOG5lMXFuM3dDa09zWGdHV0ZPdEhZMU1PY1dJN0xZR2R3RGRteG5wdXZqTDZDZEdOck9XSzg?oc=5",
-          "s": "Seeking Alpha",
+          "t": "E.ON Stock Falls 2.1% Despite 5.4 Billion Profit - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa05vRzBJZHY0Rmh4V1lUbm1PRl9yOFNnTXVsdjhoTlVGS2RYZWk0ODEyc25Vcy1oTXpFZG0xT0RNUGgzMW9Bcm9TQzN6Q0JudzM0MG5CaFRIbUs0b3hlZC1SdlYwYmdiZ2piTV9tMW9wamduWDE5aHJiMWFVRDZBZ3daUDdKdURsdTdOUzJZOTExR2ZSTm9seGNGbHFjVnAyUmFvNUMyU2ZEWDg?oc=5",
+          "s": "TradingView",
           "d": "2026-08-12",
           "cues": []
         }
@@ -662,18 +488,37 @@
       },
       "wire": [
         {
-          "t": "Pan American Silver (TSX:PAAS) Heads Into Q2 Earnings, Is The Upside Already Priced In? - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVk1KVURZMjRnRXV5TWtReWtWeTByYV8zZkNqMC04R2E2eGZXU0w1eDZ2MmE5SzNWLXQ0Tk00Q2tGSEJobGNxY0xJMEVBMF9qd05XN1NpZTdwOVVrWjlpdm93Y1EtR1dSRnpEdk1NSThZMU96TnhSX2JuRkRxWVJRNXcwaWtnS3VleFN4aGt4U2ZGU3ZLOGZDcl83bWhTam5MQTFqSWpwUFVKb2prMGgzX3hFUkViWmpxaEZfTlEwbG5XSDBTajlfTzdpcENGYmtuNm1NY0d6T3hPNzDSAeABQVVfeXFMTjFnbU1xZzdWREZ0MWtFY1pfQTYxRUlkTGh2R0lxMVpZMzRUSVZ6cW5WUTUxTmJ6LUNNVnNwREVyNlJfUWt2SUgtVzAxZEpKQU15eHpZaTJQdFF3Q2hqVl9FM2RvakwyLW1VXzR0Q3N2OU81anMycklkNFlmRENQUmRRREdTdmxIeWhwNVREb1RRRE41ZDB0QTk3MWxPQjNCUlV3bU5CYjdjWFVlX0tNYU5NZWxpM05NZ0QyNkJ3RGlNQWRnX29STW9fUTktX3FrdU84Nm41Sm41Yjd1OFBuQnE?oc=5",
-          "s": "simplywall.st",
+          "t": "Pan American Silver Reports Second Quarter 2026 Financial Results - Business Wire",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ2FYZ2ZFTkduOHJNLURKUnFEaU0yam5CNUN2ZFZfaGxhU2tac3huRnVXTGgyUHB2cnc2Vy1vZmNybF9mS051OXVYeEFtdmdpY0Iwd2hKQTdYa0RQTUhFSjR3M01jRVhVeWxtWE9EZ3dWeFpKbXNKS1UxOGNKTkxPSnF0cHQ1Z3FFeXJKQmZDckVnQ0k2RUp2NW0tWlVjMS1SWVNmdTI5YzVzMUloLXdMellweF9reUdrQ1JkNUQtZw?oc=5",
+          "s": "Business Wire",
           "d": "2026-08-12",
           "cues": []
         },
         {
-          "t": "Pan American Silver earnings in focus as estimates cool By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcUlMWWxIYVBSTDV1Umlwcy0tWDlhZlQ1dUtTUEU5SVFxZ3duSHlDdzZfWnl0QmpuSWRQdTRTeF9uQ2pNNFNBdEw3dmRQbV9vM1lSTVVNMk0wRUlwcTRVaUpuaGxJZFpBUFg4VERxRFZzbnRUaGh3dGpLdFI0RF9JcWxYbzlDdmF5UUVZVm5JWlZTbG1EUVItVHVnZUtjYlpfWVlEczhZbmRXVFU?oc=5",
-          "s": "Investing.com India",
+          "t": "Pan American Silver: Q2 Earnings Snapshot - KING5.com",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS1J5MEVoeU1UV2tUd0s3NEFMWjI4VUw3Rjl6czdpQUxVbllFLXpwOEdKTjU2R2J4SEhXU01lcXhNSE1OaGx3R2hGZ2JBZ3c1dWFsY0dQazgtdWRZV3FWeG51aW5QR0xjbmNPNTdYRkdXOFZlUW95ZHlaUmpSV0ZOYlNJbEo3NDlwUG5mRDFCSmhqeUpTVEJ1YW9hOHVkRUpJVkNtT184RmNTblo5aVRJcjhjVUhURzdmMjhOa1paTXlKYll1WFA5SFA0VWdJQVI4ejlJY25R?oc=5",
+          "s": "KING5.com",
           "d": "2026-08-12",
           "cues": []
+        },
+        {
+          "t": "Pan American Silver (NYSE:PAAS) Releases Earnings Results, Misses Expectations By $0.11 EPS - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWm85T0FGakU2SXdDb29VTlJEaUFfejBCR1diY1lEaFN0MG5UU0ZobE9KZDJncVZQOGdTWXAxVFJNckRldFZBWjZSeUlZZmRzcGxJTFItWEFhdEtESE5nZG02NzQwemJuRHNNWWpUZ3R5dEpwMVdzSjZOY1pPUHh5Y3B4eV9WQXpUTGtOaFBMcmlqREpLMldNZWVNYjNQSUZ1bHV2SThjX3JGUHFpWjBFRjc0NTE0VU8wQVBXN2o5NGxLN1NNUDZoM0JSSURUYUZrOUhjMnlB?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-12",
+          "cues": [
+            "beat",
+            "miss"
+          ]
+        },
+        {
+          "t": "Pan American Silver NQ earnings missed by $0.19, revenue fell short of estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOazhBNzFxc2VCUWxlWkZUZ1A1MVRIRml5SFNoLVFFd3loWnNDX3hKeXNJMUxrOVhvTjI5OGFDSWhQeTBtT1F0d2dZa3I1RnlBdzZ1RlJvMGFTS0pWYm43OXJXSm8xVlNDelZjclhlTGhGM3p3V0FtVUVBSU1lNk1LOW16NjBuUUFROVlFM0x0SzFMdDlyNW1iMnBKUHp5R216MnJKYUlValZzMURyaTA3UU9hTWE1Ny1YX2ZINGw4SUdtZXc?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-12",
+          "cues": [
+            "miss"
+          ]
         }
       ],
       "wire_gate": "2026-08-12"
@@ -698,17 +543,8 @@
           "cues": []
         },
         {
-          "t": "Trimble Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM0hOQ1hxeHV3cy0xSWlEUGJIbHZnQXgzbnQtbjFqczA1cFgtdXowYkZBbEZPRzBTWE1nZmJsUmpmQ3lkaFg3b01PbE53QnowR0pQd19TbXNOSWxYVnBEbGpZNGVyOFNoLTBEUEM0enlQNF9NUEp3YXRtOTBpTG5ZbEhmV21jT2J5ZUljaEZDbzZqbkE?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-12",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Update: Trimble's Q2 Non-GAAP Earnings, Revenue Rise - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMThKN3FqRVd0aFY3czhpQjBfTnU1UFE1cjJVc3Fkb1RUYVNWdjB4SGNhOWFvcTdLWUR3MHZ1Y0ZreXpoV2FwejlNMEVNTHY5dXU4NHIzNTNCQW5maUtGRlhrU0ZiSlRvNTY0eU50d2sta09ZcVFMeGYwVWYxaXZaU1BMOUZiNDh6LXozNnVYa0N3c2s?oc=5",
+          "t": "Trimble Q2 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV1dYM1NTbGVjNGlWN25yWWhpd0RsSkp3WnZnOGxSX2dndVEwREtMTWVvTkZYVWg5SlpsRTF5NDh5eVdUNGczbXhPRm9PZlR1MFZRbGJvTktETl9Lb1pXT3ktcUtZZXVMdlhCQURBUGNPVjh5TkhaQ0tUSXdYSkZJcERqS2xJTW1fRVZiQTdLZ2VpTm9jcmpNNy1IMy1VNGRWMVE?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-08-12",
           "cues": []
@@ -721,78 +557,11 @@
           "cues": [
             "beat"
           ]
-        }
-      ],
-      "wire_gate": "2026-08-12"
-    },
-    {
-      "type": "earnings",
-      "tk": "AII.TO",
-      "name": "Almonty Industries",
-      "d": "2026-08-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/Toronto"
-      },
-      "wire": [
-        {
-          "t": "Almonty Industries (ASX:AII) Reports Major Earnings Shift as Tungsten Prices Lift Revenue - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS3c4WEk1Z2JGSG5xWlowUzJlcnNpbkktSkFjWHpxLXc1V0lWVTViV2M4a1FrN3RPSU1MdVMtbk9YWnFEbnlwMndlMExxdEdIRklDY3NaWkxQSXpZRzU4enFjLWduTXNKYXNHSExQcmxCNFdOc21kQ0VaYVc0VkU5eXVMQ0o4OTk1UFZVQmRNR3pvRmd6bTN6OXNMSnpRLW95VlhrUEMwb2VlSVNINHhxUzBiVDhyZ2VBOXdhSmpR?oc=5",
-          "s": "Kalkine",
-          "d": "2026-08-12",
-          "cues": []
         },
         {
-          "t": "Almonty Industries (ASX:AII) Reports Sharp Revenue Growth as Tungsten Prices Lift Quarterly Results - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVEJNb1JDSkFlVXduNDIwdlVlaU9xOHc4NVU3am4yZlEwUG9yRERqZ1ZZeUJZbjhMRms3b1VFb09UbkdLQl9SRTJfNTlZVmRqakFPLXV0d3BXMzdtdy15elBqR0pRcE56VmF5UzQ3ak5PWC1zTzhkWkc2TU5SY0pDQ0h3NlhTWXdJTUFia2JqUm1KSHpkVnFQam0tdjZudkhMcDVtUGxGWEQ4NFhURW1PQ1RVLTJtS0ZnTXZtUnRhX2Z5V2hPYVlNbjV3UQ?oc=5",
-          "s": "Kalkine",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-12"
-    },
-    {
-      "type": "earnings",
-      "tk": "BORR",
-      "name": "Borr Drilling",
-      "d": "2026-08-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Borr Drilling (BORR) On Q2 Results, Refinancing And Rig Deal With Valuation In Focus - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdU5QS240Y2wxWVZWLW5GeHZRa1ZhUHE0NHdpd3ZReEFURk12Wno4UGR3U2hrQVZXQWNDczRxTFNJOTlGNHQtNzQ1NHBrSGI3ODFwRlFSTGFEWHIzNDgwSFE5UVRtYkdyMS1uMnU2R2FvdVd1WjNuQ0V1bkl1V2JYa1hHTXlmQ1p4cEVGVFowYkxqZVktSkhQQzJ3?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Borr Drilling: Q2 Earnings Snapshot - KVUE",
-          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQc2FGYU5UZFotWGdTVEx4aHlCNktRVjU1c3V5ckd2TTJWR3lKV2VrNmR5MGJjWjZsTWFEdlZnQlBlUkVHVGZXUGxpZ1JEU1l5MnlWaUpzYnpPVE5idUZRbnFCMTdiVEN5YXpWQUdxd3AyYnRtQzdNVXRzaTh3VEVReEhFbUU0MnZROVEzVUc1eHlIZFZGSHVxZS1ndldxaTNXWTRpMklfb2V3aEtyM0YzT1BDSEQ1LVBza2VyV01EMDdlQ0FiRWU5ZDREd2Y?oc=5",
-          "s": "KVUE",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Borr Drilling Q2 2026 miss sparks 10% stock drop - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZzhhdjRkQkNuQVlYVzF6c29fZXZtTnduYkhMTWNEaE1lSmp1MjJONDNuQ2J3NUZzSTdVRHhEMlR2bkt4bHZKMEprUkV6RV9IT212cEZqdXlvRWFsQktia2NVQXVVTzRKM1RQYXNMa21VN0Z0bVN4dDRKZ0xPczJVclJkZnIyWGtkbXpxN1hmU0g4Snhhb1E2MFBuekNlS3Q3SUJWOVBVVVhOSHRHV3ZVQi1pMm16akF3Z0lHNGVwWHo2WFU4ajJj?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-12",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Borr Drilling (NYSE:BORR) Shares Gap Down Following Weak Earnings - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX3hVRklFamY0ZGNIYmU3RjVzeXFQYVhBbHo3OHZoLS13NU1XMGtRbmNtRXhJMnI4blNGTi1oOFBkSEl3ZjRRcDhGM0VLOWZlRG5ZMTV3TU0xcmhmNi11MkJTUzJBdEctVXFkcTZONDRETzVobmE4OFdDdFVRRzNLR0J0M3VhWE5zbXc0SFF5UGFmWFV0eS1Vb09BbDRtUU44SXoyLV8zQ1p2OUxCWnotc2JBZmFNNGc?oc=5",
-          "s": "MarketBeat",
+          "t": "Trimble’s (NASDAQ:TRMB) Q2 CY2026: Beats On Revenue, Full-Year Outlook Slightly Exceeds Expectations - StockStory",
+          "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNS0JGSFNkTXRJdmc0bVk3NVBaT2hOX2lkVHd6S2hJSXNNS3hnWTlDZVRlWkpqbEN3WjVoYVYyUmdoQ1VfWFNQYTNUcHNrTmYtSmdiZHZuQmNLX0RfLUR6eW16cUsxUTlrRlVNUlRmdjNfSHZJaU03UDU3MEotRGh0WkNqN1NvNG55SksyVnQ4QVd1V0pHYVM0TG1pSkcxU042dDNfMktkM0hPaGY3WGJONEs5eTBjQ1BWc1hPV3libUY2YXFTa1M2WU1FdS1QZEhPUm1tMWVEaGdkNGZBTXR1TW9uUWVFTXgw?oc=5",
+          "s": "StockStory",
           "d": "2026-08-12",
           "cues": [
             "beat"
@@ -801,118 +570,12 @@
       ],
       "wire_gate": "2026-08-12",
       "reported": {
-        "eps": -0.21,
+        "eps": 0.86,
         "source": "Yahoo Finance",
         "fetched": "2026-08-12",
-        "eps_est": -0.12,
-        "surprise_abs": -0.09,
-        "pct_suppressed": "consensus of -0.12 is too near zero for a percentage to mean anything — the beat/miss is -0.09 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "FNV",
-      "name": "Franco-Nevada",
-      "d": "2026-08-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 1.81,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 1.97,
-        "surprise_abs": -0.16,
-        "surprise_pct": -8.3
-      },
-      "wire": [
-        {
-          "t": "Franco-Nevada Corporation 2026 Q2 - Results - Earnings Call Presentation (TSX:FNV:CA) 2026-08-12 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTTBXS3VUZkZCZUVscTJQbEhMM2R6SXdjU011Z0hVS3Jub0Q4S29pZEhBdklPbVY4TXdpYzhRMUt6MEJuS0VfNERTSi0wbDd5V2FaUjU3TUJEYWlXSFBtenJ2MkVmeTg1dkkzRDlGeUU1WGpjNTRobmdJLVlPa1hiN1I2Tk9wVzRoRGFaNlN4ajBwdnNaSk1TWkQ2V3pNcmRsQjItcENBVjNQNmxlX2Q5M1ZsRVJfWkQxYnFYdEo5MnBfV0EtQjlZ?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Franco-Nevada (FNV) Q2 2026 profit surges on higher metals - Stock Titan",
-          "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNamtRMGpsMmJsQVp4RG1VZW1sYU1ETUZ1bk16TlU3SUR0MDVUNG1UdWlfZmwyWVhjWWVldEtQcTRzSWpoRG5PLWlsVDl1UFV2bXQ4MktkeGRtbE9SOHYxZ1FPVDl3RXd2c3NubmZVWXl5UDY3V3RweXJRX3N4WVJDV0NwdVNaQ3k2VVJVUnh5OGlPMVQ5UlFXM28tdllqYnBwUGZCcW5xOHNqd0hJUkwwYkhxQQ?oc=5",
-          "s": "Stock Titan",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Earnings Flash (FNV) Franco-Nevada Corporation Reports Q2 Revenue $580.9M, vs. FactSet Est of $616.7M - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSTI0V0RWRmNudHdWQ2N4bThjcy1FT0xIbDN3aC1GUU5JN2t6VG93aXFmNW5WLWFlLXdBZFlCM2Zwc0Q5UnZ1U3cwcVc5VkhwWlJOVHNhaGkwRktDcTd4ZnFfUUpBX0ZCM19FREdwVUJaWGNHVUc5dmhfSWIzUmp2M21SdDFVMWNRUmFxV0FZS1JRNnBHZ2E2ZldYaXFRUElFXzZBRk9ZLXltS0dnRTQtOXpsb1o0WTR0UXA2UGNXb1lMUjZOaXFfZDJGZ20yaW9la2YyM0tva2s5QWVGV2d2RQ?oc=5",
-          "s": "marketscreener.com",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Earnings Flash (FNV) Franco-Nevada Corporation Posts Q2 Adjusted EPS $1.81 vs. FactSet Est of $1.96 - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcDBqTzIwdkk5Vl92M1VtTFNzVV9VRklLbTBMZTFOdUhUU2JhSnNsNG40dm8wdVVmalB1WEdkM0lheVpSa1ZNb05yYXhKMU1nTGZDWUNDYmVDZ3h6VHdMUVBNQlFPU0VVVFRvdGZuNFk3MllvRWhKMmFlOG9rcE9VMWx6WGIwdTh3bUUtWlpZY2hydjhvMTNTSGJHTDFlVTJsLURVSVFOYUhtazJXX2pqeUtQMXJqS3VEaHhkUGw1Zm5ZVk9BclFpSVduYjhvV3F3Yi1EQm9UdWxOVGZkZVZPeA?oc=5",
-          "s": "marketscreener.com",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-12"
-    },
-    {
-      "type": "earnings",
-      "tk": "SLNG",
-      "name": "Stabilis Solutions",
-      "d": "2026-08-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-11T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Stabilis Solutions Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOGhEcXdtMUtaVV82S05CRFJlX2VjeDZPSmtYUV9CZUZyRlA5TUVaZEtkNkp1YU1UQnYzYkZZU2hpSk9JVENnNVRQY1ljSnNESXV6TDB6YkVJRnpGQ2dKVFZoVGwtaVBKMk9nY1B1aEU0RGYzc0YycUpGb1lPWTdFMGtRSnZ0ZXZhSzZTSlFFM0s5UlM2cXBvVU5jZjRYQUJJbmc?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-12",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Earnings call transcript: Stabilis Solutions misses Q2 2026 estimates as stock falls - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNVUptajVPWjExZHlxREtiRHJ6TzR1cy1NMlRlUHJFdEYyWEdNOUhybnFZbnRzeDRRVzVWLU1OcVBwLW10ZTFMLVpXb01OR2g0Y3lxTm1lZC1zUmNmRU9saEdjb1lreThZV01zcGRscDdsZnZ6cnBvQWVyN0FZdUZyTW9fUlZiWkc3TFFldHAxUVc3aUFBUHJsQjA5NFBKYzZNY1VUYV8ydEo0eG90ZzZBMjNodDM0U0hUVkhCaGdRNlFfelRNNHJCZ2RMVVoybWdMLWRjMmxR?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-12",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Stabilis Solutions Inc reports results for the quarter ended June 30 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxObFVtY3ZTQV9ZRE1XU2tYaFkxV1BWZDVzeVl1VFl0NG5KN3N5RHdlOXRYeDY3aEI5YUFwNTNySGkzT1ZaY3lTRF9xNVMzX3dHR011Q1I5Qkxqc2szald6YTNaZkI5VXFFeDJnQ0twUWhHUVgtVmN6ejlpVHdIdTdrLVhqZFg4cVVHVFloRTdXMVVKaXV1Y1Q4LVNBLURxTVBST1VzbGNvMnJSU1BPdnExWkY2YVYzcGJEWEdmSkVlMC04bWwwZ3ZsNjEyMlJGTXZoRGxxblVqaHQyc1k3X0gzcUZ6dzM5SGhBa3ow?oc=5",
-          "s": "TradingView",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Stabilis Solutions, Inc. 2026: Revenue $11.92M, EPS ($0.25) — 10-Q Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPLTRGVi1qNmRSc0VYajRBU2ZmVmZBY0ZrRWY5VWFYTFhOZ2hjZTR0RDM2SGlUalVTQTlBU1g2QUFwaWNaMlVSSEtwcDF0akdHcklsTVJVaWJDTXFUVFB6SDItRjNBdlNFVUJFdmhidldpTDAyamNqUHdfS2tfZ0REc1JXdlFla3VOSzZsYnRoVFAtS1lDSWdmUnU4cmZMYkl4bHV3MWJDM0lMZXk4X3JBUEFQWmNDZ2FvMGxpUWlPWEhRNTM2?oc=5",
-          "s": "TradingView",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-12",
-      "reported": {
-        "eps": -0.25,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-12",
-        "eps_est": 0.01,
-        "surprise_abs": -0.26,
-        "pct_suppressed": "consensus of +0.01 is too near zero for a percentage to mean anything — the beat/miss is -0.26 per share"
+        "eps_est": 0.8,
+        "surprise_abs": 0.06,
+        "surprise_pct": 7.2
       }
     },
     {
@@ -941,35 +604,13 @@
     },
     {
       "type": "earnings",
-      "tk": "CGEH",
-      "name": "Capstone Energy+",
-      "d": "2026-08-13",
-      "release": {
-        "when": "unknown",
-        "label": "time unconfirmed"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "COHR",
-      "name": "Coherent Corp",
-      "d": "2026-08-13",
+      "tk": "SQM",
+      "name": "SQM",
+      "d": "2026-08-18",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-12T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "PAAS",
-      "name": "Pan American Silver",
-      "d": "2026-08-13",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-12T20:00+00:00",
+        "iso": "2026-08-18T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1011,13 +652,13 @@
     },
     {
       "type": "earnings",
-      "tk": "SQM",
-      "name": "SQM",
+      "tk": "WOLF",
+      "name": "Wolfspeed",
       "d": "2026-08-19",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-18T20:00+00:00",
+        "iso": "2026-08-19T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1043,18 +684,6 @@
         "label": "MID-SESSION · 16:20 CEST",
         "iso": "2026-08-20T14:20+00:00",
         "tz": "Europe/Oslo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "WOLF",
-      "name": "Wolfspeed",
-      "d": "2026-08-20",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-19T20:00+00:00",
-        "tz": "America/New_York"
       }
     },
     {
@@ -1145,7 +774,7 @@
       "type": "earnings",
       "tk": "PL",
       "name": "Planet Labs",
-      "d": "2026-09-04",
+      "d": "2026-09-03",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
@@ -1169,7 +798,7 @@
       "type": "earnings",
       "tk": "NB",
       "name": "NioCorp Developments",
-      "d": "2026-09-29",
+      "d": "2026-09-28",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
@@ -1193,7 +822,7 @@
       "type": "earnings",
       "tk": "AA",
       "name": "Alcoa",
-      "d": "2026-10-16",
+      "d": "2026-10-15",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
@@ -1211,6 +840,18 @@
         "label": "AFTER THE CLOSE · 17:30 CEST",
         "iso": "2026-10-20T15:30+00:00",
         "tz": "Europe/Zurich"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EQT",
+      "name": "EQT Corporation",
+      "d": "2026-10-20",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-20T20:00+00:00",
+        "tz": "America/New_York"
       }
     },
     {
@@ -1239,13 +880,25 @@
     },
     {
       "type": "earnings",
-      "tk": "EQT",
-      "name": "EQT Corporation",
+      "tk": "PTEN",
+      "name": "Patterson-UTI",
       "d": "2026-10-21",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-20T20:00+00:00",
+        "iso": "2026-10-21T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "URI",
+      "name": "United Rentals",
+      "d": "2026-10-21",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-21T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1258,6 +911,18 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-21T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CSX",
+      "name": "CSX",
+      "d": "2026-10-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-22T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1335,18 +1000,6 @@
     },
     {
       "type": "earnings",
-      "tk": "PTEN",
-      "name": "Patterson-UTI",
-      "d": "2026-10-22",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-21T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "SAND.ST",
       "name": "Sandvik",
       "d": "2026-10-22",
@@ -1383,18 +1036,6 @@
     },
     {
       "type": "earnings",
-      "tk": "URI",
-      "name": "United Rentals",
-      "d": "2026-10-22",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-21T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "VLO",
       "name": "Valero Energy",
       "d": "2026-10-22",
@@ -1407,13 +1048,13 @@
     },
     {
       "type": "earnings",
-      "tk": "CSX",
-      "name": "CSX",
-      "d": "2026-10-23",
+      "tk": "AROC",
+      "name": "Archrock",
+      "d": "2026-10-27",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-22T20:00+00:00",
+        "iso": "2026-10-27T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1426,6 +1067,30 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-27T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BE",
+      "name": "Bloom Energy",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ENPH",
+      "name": "Enphase Energy",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1455,6 +1120,66 @@
     },
     {
       "type": "earnings",
+      "tk": "MOD",
+      "name": "Modine Manufacturing",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NBR",
+      "name": "Nabors",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NE",
+      "name": "Noble Corp",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ORBIA.MX",
+      "name": "Orbia Advance",
+      "d": "2026-10-27",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 14:00 CST",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/Mexico_City"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SCCO",
+      "name": "Southern Copper",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "SPM.MI",
       "name": "Saipem",
       "d": "2026-10-27",
@@ -1479,37 +1204,37 @@
     },
     {
       "type": "earnings",
-      "tk": "AROC",
-      "name": "Archrock",
+      "tk": "AR",
+      "name": "Antero Resources",
       "d": "2026-10-28",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
+        "iso": "2026-10-28T20:00+00:00",
         "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "BE",
-      "name": "Bloom Energy",
+      "tk": "ARIS",
+      "name": "Aris Water Solutions",
       "d": "2026-10-28",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
+        "iso": "2026-10-28T20:00+00:00",
         "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "ENPH",
-      "name": "Enphase Energy",
+      "tk": "DHT",
+      "name": "DHT Holdings",
       "d": "2026-10-28",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
+        "iso": "2026-10-28T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1539,13 +1264,25 @@
     },
     {
       "type": "earnings",
-      "tk": "MOD",
-      "name": "Modine Manufacturing",
+      "tk": "IVN.TO",
+      "name": "Ivanhoe Mines",
       "d": "2026-10-28",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/Toronto"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "KMI",
+      "name": "Kinder Morgan",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1563,57 +1300,9 @@
     },
     {
       "type": "earnings",
-      "tk": "NBR",
-      "name": "Nabors",
+      "tk": "MYRG",
+      "name": "MYR Group",
       "d": "2026-10-28",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NE",
-      "name": "Noble Corp",
-      "d": "2026-10-28",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ORBIA.MX",
-      "name": "Orbia Advance",
-      "d": "2026-10-28",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 14:00 CST",
-        "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/Mexico_City"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SCCO",
-      "name": "Southern Copper",
-      "d": "2026-10-28",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "AR",
-      "name": "Antero Resources",
-      "d": "2026-10-29",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
@@ -1623,13 +1312,49 @@
     },
     {
       "type": "earnings",
-      "tk": "ARIS",
-      "name": "Aris Water Solutions",
-      "d": "2026-10-29",
+      "tk": "RIG",
+      "name": "Transocean",
+      "d": "2026-10-28",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UAN",
+      "name": "CVR Partners",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VAL",
+      "name": "Valaris",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AXTI",
+      "name": "AXT Inc",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-29T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1642,18 +1367,6 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-29T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "DHT",
-      "name": "DHT Holdings",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1707,25 +1420,13 @@
     },
     {
       "type": "earnings",
-      "tk": "IVN.TO",
-      "name": "Ivanhoe Mines",
+      "tk": "KMTUY",
+      "name": "Komatsu",
       "d": "2026-10-29",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
-        "tz": "America/Toronto"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "KMI",
-      "name": "Kinder Morgan",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
+        "iso": "2026-10-29T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1743,13 +1444,25 @@
     },
     {
       "type": "earnings",
-      "tk": "MYRG",
-      "name": "MYR Group",
+      "tk": "MTZ",
+      "name": "MasTec",
       "d": "2026-10-29",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
+        "iso": "2026-10-29T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NEXA",
+      "name": "Nexa Resources",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-29T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1791,18 +1504,6 @@
     },
     {
       "type": "earnings",
-      "tk": "RIG",
-      "name": "Transocean",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "STNG",
       "name": "Scorpio Tankers",
       "d": "2026-10-29",
@@ -1827,25 +1528,13 @@
     },
     {
       "type": "earnings",
-      "tk": "UAN",
-      "name": "CVR Partners",
+      "tk": "VALE",
+      "name": "Vale",
       "d": "2026-10-29",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "VAL",
-      "name": "Valaris",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
+        "iso": "2026-10-29T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1863,30 +1552,6 @@
     },
     {
       "type": "earnings",
-      "tk": "AXTI",
-      "name": "AXT Inc",
-      "d": "2026-10-30",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-29T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "KMTUY",
-      "name": "Komatsu",
-      "d": "2026-10-30",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-29T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "LIN",
       "name": "Linde",
       "d": "2026-10-30",
@@ -1894,30 +1559,6 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-30T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "MTZ",
-      "name": "MasTec",
-      "d": "2026-10-30",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-29T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NEXA",
-      "name": "Nexa Resources",
-      "d": "2026-10-30",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-29T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1935,33 +1576,57 @@
     },
     {
       "type": "earnings",
-      "tk": "VALE",
-      "name": "Vale",
-      "d": "2026-10-30",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-29T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "FNV",
-      "name": "Franco-Nevada",
-      "d": "2026-11-03",
+      "tk": "BWXT",
+      "name": "BWX Technologies",
+      "d": "2026-11-02",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "iso": "2026-11-02T20:00+00:00",
         "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "BWXT",
-      "name": "BWX Technologies",
-      "d": "2026-11-03",
+      "tk": "PRIM",
+      "name": "Primoris",
+      "d": "2026-11-02",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UUUU",
+      "name": "Energy Fuels",
+      "d": "2026-11-02",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VNP.TO",
+      "name": "5N Plus",
+      "d": "2026-11-02",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/Toronto"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "WMB",
+      "name": "Williams Companies",
+      "d": "2026-11-02",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
@@ -1983,6 +1648,30 @@
     },
     {
       "type": "earnings",
+      "tk": "FNV",
+      "name": "Franco-Nevada",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MOS",
+      "name": "Mosaic",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "MPC",
       "name": "Marathon Petroleum",
       "d": "2026-11-03",
@@ -1995,56 +1684,104 @@
     },
     {
       "type": "earnings",
-      "tk": "PRIM",
-      "name": "Primoris",
+      "tk": "NXE",
+      "name": "NexGen Energy",
       "d": "2026-11-03",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "iso": "2026-11-03T20:00+00:00",
         "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "UUUU",
-      "name": "Energy Fuels",
+      "tk": "TFPM",
+      "name": "Triple Flag Precious Metals",
       "d": "2026-11-03",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "iso": "2026-11-03T20:00+00:00",
         "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "VNP.TO",
-      "name": "5N Plus",
-      "d": "2026-11-03",
+      "tk": "AES",
+      "name": "AES Corporation",
+      "d": "2026-11-04",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
-        "tz": "America/Toronto"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "WMB",
-      "name": "Williams Companies",
-      "d": "2026-11-03",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "iso": "2026-11-04T20:00+00:00",
         "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "SLNG",
-      "name": "Stabilis Solutions",
+      "tk": "ALB",
+      "name": "Albemarle",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CF",
+      "name": "CF Industries",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CLNE",
+      "name": "Clean Energy Fuels",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EE",
+      "name": "Excelerate Energy",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EMR",
+      "name": "Emerson Electric",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ERII",
+      "name": "Energy Recovery",
       "d": "2026-11-04",
       "release": {
         "when": "mid",
@@ -2067,25 +1804,61 @@
     },
     {
       "type": "earnings",
-      "tk": "MOS",
-      "name": "Mosaic",
+      "tk": "IPI",
+      "name": "Intrepid Potash",
       "d": "2026-11-04",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "iso": "2026-11-04T20:00+00:00",
         "tz": "America/New_York"
       }
     },
     {
       "type": "earnings",
-      "tk": "NXE",
-      "name": "NexGen Energy",
+      "tk": "LEU",
+      "name": "Centrus Energy",
       "d": "2026-11-04",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MNTK",
+      "name": "Montauk Renewables",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NTR",
+      "name": "Nutrien",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RGLD",
+      "name": "Royal Gold",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -2103,13 +1876,25 @@
     },
     {
       "type": "earnings",
-      "tk": "TFPM",
-      "name": "Triple Flag Precious Metals",
+      "tk": "SLNG",
+      "name": "Stabilis Solutions",
       "d": "2026-11-04",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TROX",
+      "name": "Tronox Holdings",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -2127,30 +1912,6 @@
     },
     {
       "type": "earnings",
-      "tk": "AES",
-      "name": "AES Corporation",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ALB",
-      "name": "Albemarle",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "CCO",
       "name": "Cameco",
       "d": "2026-11-05",
@@ -2158,66 +1919,6 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 07:30 EST",
         "iso": "2026-11-05T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CF",
-      "name": "CF Industries",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CLNE",
-      "name": "Clean Energy Fuels",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "EE",
-      "name": "Excelerate Energy",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "EMR",
-      "name": "Emerson Electric",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ERII",
-      "name": "Energy Recovery",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -2247,37 +1948,13 @@
     },
     {
       "type": "earnings",
-      "tk": "IPI",
-      "name": "Intrepid Potash",
+      "tk": "MP",
+      "name": "MP Materials",
       "d": "2026-11-05",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "LEU",
-      "name": "Centrus Energy",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "MNTK",
-      "name": "Montauk Renewables",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
+        "iso": "2026-11-05T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -2295,30 +1972,6 @@
     },
     {
       "type": "earnings",
-      "tk": "NTR",
-      "name": "Nutrien",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "RGLD",
-      "name": "Royal Gold",
-      "d": "2026-11-05",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "ROK",
       "name": "Rockwell Automation",
       "d": "2026-11-05",
@@ -2331,13 +1984,13 @@
     },
     {
       "type": "earnings",
-      "tk": "TROX",
-      "name": "Tronox Holdings",
+      "tk": "WPM",
+      "name": "Wheaton Precious Metals",
       "d": "2026-11-05",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
+        "iso": "2026-11-05T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -2367,30 +2020,6 @@
     },
     {
       "type": "earnings",
-      "tk": "MP",
-      "name": "MP Materials",
-      "d": "2026-11-06",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-05T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "WPM",
-      "name": "Wheaton Precious Metals",
-      "d": "2026-11-06",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-05T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "CEG",
       "name": "Constellation Energy",
       "d": "2026-11-09",
@@ -2405,7 +2034,7 @@
       "type": "earnings",
       "tk": "CWCO",
       "name": "Consolidated Water",
-      "d": "2026-11-10",
+      "d": "2026-11-09",
       "release": {
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
