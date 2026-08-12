@@ -8,8 +8,10 @@
     },
     "as_of": "2026-08-11",
     "dating_note": "Levers carry a human-readable 'date' which may be a range, a quarter or 'ongoing'. Only entries with a resolvable 'date_iso' enter the What's Next agenda. Where a proxy date is used it is labelled as such in date_note and is not an announced date. Where a window has passed with no outcome, that is recorded rather than silently rolled forward.",
-    "sourcing_note": "AUDIT 2026-08-11: every entry in this file was previously unsourced — no citation field existed, which is exactly the condition that let the FCC paraphrase error through unchallenged. Regimes now carry a 'sources' array and, where a claim was found wrong, a 'verification' field recording what was corrected rather than fixing it silently. Programs are not yet re-verified and are the remaining gap.",
-    "audit_2026_08_11": "Five of eight regimes carried material errors. Two were stale (Section 232 copper still marked 'investigating' a year after tariffs took effect; the China US-specific antimony ban still described as active nine months after it was suspended). Two were wrong on the substance (the REE extraterritorial threshold is 0.1%, not 50%, and is suspended; the 45X critical-minerals taper is 2031-2033, not 2029). One inverted an investment conclusion: the enacted copper tariff exempts cathode and concentrate, so it does not hand FCX and SCCO the domestic premium this card asserted. Common cause with the FCC error — a claim written once from a secondary summary and never re-checked against a primary source."
+    "sourcing_note": "AUDIT 2026-08-11: every entry in this file was previously unsourced — no citation field existed, which is exactly the condition that let the FCC paraphrase error through unchallenged. All regimes AND all programs now carry a 'sources' array and, where a claim was found wrong, a 'verification' field recording what was corrected rather than fixing it silently.",
+    "audit_2026_08_11": "Five of eight regimes carried material errors. Two were stale (Section 232 copper still marked 'investigating' a year after tariffs took effect; the China US-specific antimony ban still described as active nine months after it was suspended). Two were wrong on the substance (the REE extraterritorial threshold is 0.1%, not 50%, and is suspended; the 45X critical-minerals taper is 2031-2033, not 2029). One inverted an investment conclusion: the enacted copper tariff exempts cathode and concentrate, so it does not hand FCX and SCCO the domestic premium this card asserted. Common cause with the FCC error — a claim written once from a secondary summary and never re-checked against a primary source.",
+    "audit_programs_2026_08_11": "All three programs were wrong, and in the same direction: every budget figure UNDERSTATED the commitment. DoD '$500M+' against >$1.2B and an omitted 15% equity stake in MP; DOE HALEU tracking a $110M extension that expired 2026-06-30 while a $900M task order signed on 2026-07-01 went unrecorded; EU '€100M+' against €22.5B, a 225x error. Two outright false claims removed — Materion beryllium as a 'Schedule II controlled substance' (a DEA drug classification with no application to a metal) and HALEU as 'next-gen naval fuel' (naval propulsion uses HEU). The systematic understatement matters directionally: state support for this supply chain is materially larger than this dashboard was representing.",
+    "coverage_2026_08_11": "All 8 regimes and all 3 programs now carry sources. Six regimes and all three programs were verified against primary or firm-level sources this pass; CHIPS was spot-checked only and says so in its own verification field. Levers inherit their sourcing from the regime they belong to."
   },
   "regimes": [
     {
@@ -149,7 +151,12 @@
         "4004.JP"
       ],
       "impact": "Creates long-term recurring revenue for on-site industrial gas contracts (15-20 year sole-source). Accelerates US specialty materials demand.",
-      "watch": "Fab construction progress and production ramp timelines. Intel restructuring impact on Fab 52/62 plans."
+      "watch": "Fab construction progress and production ramp timelines. Intel restructuring impact on Fab 52/62 plans.",
+      "verification": "Spot-checked 2026-08-11. The $52.7B headline authorisation and the named fab programmes are consistent with the Act as passed and with public build announcements. NOT RE-VERIFIED AT PROJECT LEVEL: individual fab timelines move constantly and the Intel restructuring in particular makes the Fab 52/62 schedule a live question. Treat the demand-pull thesis as sound and the specific ramp dates as unconfirmed.",
+      "sources": [
+        "CHIPS and Science Act of 2022 (PL 117-167)",
+        "Spot-check only — individual fab schedules not independently verified"
+      ]
     },
     {
       "id": "resource-nationalism-latam",
@@ -159,7 +166,7 @@
       "status_color": "#EF9F27",
       "date": "2023-04-20",
       "cliff": null,
-      "summary": "Chile (lithium nationalization announced 2023, SQM concession renegotiated through 2060), Mexico (nationalized lithium resources 2022), Bolivia (state lithium company dominant). Copper: Peru has seen repeated mine blockades (Las Bambas, Antapaccay). Argentina's provinces are more mining-friendly. The trend is toward larger government royalty/equity stakes in mineral projects.",
+      "summary": "Chile: the SQM-Codelco partnership is no longer a proposal — it CLOSED in 2025 as Nova Andino Litio, after Chinese regulatory approval in November 2025, consolidating Salar de Atacama lithium through 2060. THE TERM THIS CARD OMITTED IS THE ONE THAT MATTERS TO AN SQM HOLDER: management runs in two periods — SQM manages to 2030, and CODELCO TAKES OVER MANAGEMENT FROM 2031 TO 2060. Economic rights attached to the Codelco Series A and SQM Series B shares took effect 2025-01-01. So this is not a royalty increase; it is a scheduled transfer of operating control to the state, with a known date. Mexico nationalised lithium resources in 2022. Bolivia's state lithium company is dominant. Copper: Peru has seen repeated mine blockades (Las Bambas, Antapaccay). Argentina's provinces remain more mining-friendly. The trend is toward larger government royalty and equity positions in mineral projects.",
       "tickers": [
         "SQM",
         "ALB",
@@ -167,8 +174,15 @@
         "SCCO",
         "MOS"
       ],
-      "impact": "Increases country risk premium for LatAm exposure. Justifies streaming structures (FNV, WPM) — streams are above the mine-level political risk.",
-      "watch": "Chile government position on further nationalization. Peru mining conflict recurrence. Argentina Milei government mining reform progress."
+      "impact": "Increases the country risk premium on LatAm exposure and justifies streaming structures (FNV, WPM), which sit above mine-level political risk. For SQM specifically the risk is now DATED rather than diffuse: the question is not whether Chile asserts control but what a Codelco-managed Atacama looks like from 2031, which is inside the holding period of anyone owning this for the lithium cycle.",
+      "watch": "Nova Andino Litio operational performance under SQM management to 2030 and the handover terms. Peru mining conflict recurrence. Argentina mining reform progress. Any move by Chile to extend the model to copper.",
+      "verification": "Verified 2026-08-11 against Codelco and SQM announcements of the Nova Andino Litio formation, Benchmark Mineral Intelligence and China SAMR approval reporting. CORRECTION LOGGED: the card described the SQM concession as 'renegotiated through 2060', which was true as far as it went but omitted that the JV has since CLOSED and that operating control transfers to Codelco in 2031. A reader would have taken this as a term-extension story rather than a scheduled change of operator.",
+      "sources": [
+        "Codelco, 'Codelco and SQM form NovaAndino Litio' (2025)",
+        "SQM, partnership agreement announcement",
+        "Benchmark Mineral Intelligence, 'SQM's Atacama lithium operation secured to 2060'",
+        "China SAMR conditional approval (2025-11)"
+      ]
     },
     {
       "id": "production-origin-bans-equipment-authorisation",
@@ -212,7 +226,7 @@
       "id": "dod-ree-program",
       "title": "DoD REE & Critical Mineral Programs",
       "agency": "US Department of Defense",
-      "budget_approx": "$500M+",
+      "budget_approx": ">$1.2B committed, plus a 10-year offtake and an equity stake",
       "tickers": [
         "MP",
         "LYC.AX",
@@ -220,30 +234,54 @@
         "PPTA",
         "MTRN"
       ],
-      "description": "Multiple DoD programs supporting domestic REE, antimony, and specialty mineral supply chains. MP Fort Worth magnet plant: DoD floor price $110/kg NdPr, production guaranteed. Lynas Seadrift: DoD-funded HREE separation facility. Perpetua/PPTA: DoD MOU for Stibnite antimony. Materion: defense-critical beryllium supply — Schedule II controlled substance."
+      "description": "THE HEADLINE FACT THIS CARD OMITTED: under the 2025-07-09 agreements the DoD IS MP's LARGEST SHAREHOLDER, at roughly 15% on an as-converted, as-exercised basis. That is not a grant programme — it is the US government taking a control-adjacent position in a listed miner, and it changes the governance and the alignment story, not just the funding one. MP package: $400M of Series A convertible preferred plus warrants, a commitment for up to $350M more in additional preferred, a $150M loan for heavy rare earth separation, a 10-year commitment to purchase 7,000 t/yr of magnets, and a $110/kg NdPr price floor. THE FLOOR IS A CONTRACT-FOR-DIFFERENCE, NOT A GUARANTEED PRICE: DoD pays MP the shortfall per kg when the market trades below $110, and pays nothing when it trades above. Rare earth prices moved ABOVE the floor in February 2026, so as things stand the CFD is out of the money — it is a downside backstop that is not currently contributing revenue. LYNAS SEADRIFT: US government contribution is now roughly $258M, up from the ~$120M announced in June 2022, on an expenditure-reimbursement basis for a heavy rare earth separation plant on a 149-acre site bought from Union Carbide; targeted operational in Lynas FY2026 (to 2026-06-30) — OPERATIONAL STATUS AS OF 2026-08-11 IS NOT CONFIRMED HERE. PERPETUA/STIBNITE: total DoD awards exceed $80M — a $59.2M DPA Title III Technology Investment Agreement for construction readiness and permitting, plus an Ordnance Technology Initiative Agreement aggregating up to $22.4M with performance extended through end-2026. MATERION: defence-critical beryllium; DoD co-funded its high-purity beryllium facility in Ohio, completed 2011.",
+      "verification": "Verified 2026-08-11 against MP's 2025-07-09 announcement and 8-K, the SEC 424B5, FAS and Columbia CGEP analyses of the transaction, Lynas ASX disclosure and DoD Industrial Base Policy releases, and Perpetua's award announcements. CORRECTIONS LOGGED: (1) '$500M+' understated committed support by more than half — the MP package alone reaches $900M before the offtake. (2) The DoD equity stake, the largest single fact in this programme, was entirely absent. (3) The card described a 'DoD floor price $110/kg NdPr, production guaranteed'. The floor is a contract-for-difference and nothing about production is guaranteed by it. (4) REMOVED as false: Materion beryllium was described as a 'Schedule II controlled substance'. Schedule II is a DEA drug classification and has no application to beryllium. Beryllium is a STRATEGIC AND CRITICAL MATERIAL under the National Defense Stockpile framework; the genuine barrier to entry is occupational — it is a regulated carcinogen causing chronic beryllium disease, which is what keeps new entrants out.",
+      "sources": [
+        "MP Materials, 'Transformational Public-Private Partnership with the Department of Defense' (2025-07-09)",
+        "MP Materials Form 8-K and Form 424B5 (SEC, 2025)",
+        "FAS, 'Unpacking the DoD and MP Partnership'",
+        "Columbia CGEP, 'MP Materials Deal Marks a Significant Shift in US Rare Earths Policy'",
+        "Lynas Rare Earths, 'U.S. DoD Strengthens Support for Lynas U.S. Facility'",
+        "DoD Industrial Base Policy, heavy rare earth separation contract award (2023)",
+        "Perpetua Resources, DPA Title III and OTIA award announcements"
+      ]
     },
     {
       "id": "doe-haleu-program",
       "title": "DOE HALEU Production Program",
       "agency": "US Department of Energy",
-      "budget_approx": "$700M+ through 2030",
+      "budget_approx": "$900M task order, up to $1.07B with options",
       "tickers": [
         "LEU"
       ],
-      "description": "Centrus Energy under DOE contract to produce High-Assay Low-Enriched Uranium (HALEU) for advanced reactors and next-gen naval fuel. Phase III option exercised ($110M through June 2026); 8-year extension options. $2.3B contingent backlog. Centrus is the only US company with active HALEU production capacity."
+      "description": "Centrus Energy under DOE contract to produce High-Assay Low-Enriched Uranium for advanced reactors. CURRENT STATE: on 2026-07-01 Centrus signed a competitively awarded $900M task order supporting large-scale HALEU production capacity, with options for up to $170M of HALEU purchases for Departmental missions — $1.07B including options. This supersedes the small annual production extensions the card was tracking. HISTORY: DOE split the first three-year extension into a one-year and a two-year option and exercised the first on 2025-06-17, starting Phase III at roughly $110M through 2026-06-30, with options for up to eight further years at DOE's sole discretion and subject to appropriations. Centrus is the only US company with active HALEU production capacity.",
+      "verification": "Verified 2026-08-11 against Centrus press releases and 8-K filings, ANS Nuclear Newswire and World Nuclear News. CORRECTIONS LOGGED: (1) The card's live figure, 'Phase III option exercised ($110M through June 2026)', described a window that CLOSED on 2026-06-30, and it missed the 2026-07-01 $900M task order — the programme was reported at an order of magnitude below its current size. (2) '$700M+ through 2030' is not a figure any source supports and has been replaced with the contracted amounts. (3) REMOVED as unsubstantiated: the claim that this HALEU is for 'next-gen naval fuel'. The DOE HALEU programme is directed at advanced commercial reactors; naval propulsion runs on highly enriched uranium, which is a different material and a different programme. No source consulted connects this contract to naval fuel. (4) The '$2.3B contingent backlog' figure could not be tied to a specific disclosure and has been dropped rather than carried forward.",
+      "sources": [
+        "Centrus Energy, '$900 Million Award; Intends to Transition HALEU Production Cascade to Commercial Operation' (2026-07-01)",
+        "Centrus Energy Form 8-K, DOE contract extension (2025-06)",
+        "ANS Nuclear Newswire, 'DOE extends Centrus's HALEU production contract by one year' (2025-06-25)",
+        "World Nuclear News, 'Centrus HALEU contract extended'"
+      ]
     },
     {
       "id": "eu-cma-crm-act",
       "title": "EU Critical Raw Materials Act",
       "agency": "European Commission",
-      "budget_approx": "€100M+ Strategic Projects",
+      "budget_approx": "€22.5B across 47 Strategic Projects",
       "tickers": [
         "LYC.AX",
         "MP",
         "NTR",
         "MOS"
       ],
-      "description": "EU CRM Act (2024): targets 10% domestic extraction, 40% domestic processing, and 25% recycling for strategic minerals by 2030. Also requires sourcing diversification away from single-country suppliers (implicitly targeting China). Strategic Projects designation accelerates permitting. Benefits allied-nation producers with EU ambitions."
+      "description": "EU Critical Raw Materials Act (Reg. 2024/1252), in force May 2024. 2030 benchmarks for each STRATEGIC raw material: at least 10% of EU annual consumption from domestic extraction, at least 40% from domestic processing, at least 25% from recycling — AND, the benchmark this card omitted and the one that most directly targets China, NOT MORE THAN 65% OF EU ANNUAL CONSUMPTION FROM A SINGLE THIRD COUNTRY at any relevant processing stage. The first three are capacity-building targets; the 65% cap is a diversification ceiling, and it is the one that creates procurement demand for allied producers regardless of whether Europe builds anything itself. STRATEGIC PROJECTS: 47 designated across 13 member states, covering 14 of the 17 strategic raw materials — 25 extraction, 24 processing, 10 recycling, 2 substitution — carrying €22.5B of total investment plus streamlined permitting. COUNTERWEIGHT, ON THE RECORD: in February 2026 the European Court of Auditors warned that many of these projects are unlikely to deliver by 2030. Treat the benchmarks as stated policy intent, not as a supply forecast.",
+      "verification": "Verified 2026-08-11 against the European Commission CRM Act pages and factsheet, the IEA policy database and the European Court of Auditors' February 2026 assessment. CORRECTIONS LOGGED: (1) '€100M+ Strategic Projects' understated the designated investment by more than two hundred times — the figure is €22.5B. (2) The 65% single-third-country cap was missing entirely, and it is the benchmark with the most direct read-through to allied producers. (3) The card offered no counterweight to the targets; the Court of Auditors' finding is now recorded so the benchmarks are not read as a delivery schedule.",
+      "sources": [
+        "Regulation (EU) 2024/1252 — Critical Raw Materials Act",
+        "European Commission, European Critical Raw Materials Act factsheet and Strategic Projects designations",
+        "IEA Policies database, 'European Critical Raw Materials Act'",
+        "European Court of Auditors assessment (2026-02)"
+      ]
     }
   ],
   "levers": [
@@ -257,7 +295,10 @@
         "LYC.AX",
         "UUUU"
       ],
-      "bull_bear": "Bull: full implementation widens supply crunch. Bear: further deferral reduces urgency narrative."
+      "bull_bear": "Bull: full implementation widens supply crunch. Bear: further deferral reduces urgency narrative.",
+      "sources": [
+        "Derives from the linked regime entry — see that entry's sources"
+      ]
     },
     {
       "id": "china-antimony-suspension-expiry",
@@ -271,7 +312,10 @@
         "MP"
       ],
       "bull_bear": "Bull for Western antimony and tech-metals supply if reinstated. Bear for US downstream users of flame retardants, ordnance and semiconductor feedstock. A quiet renewal is the base case only if the wider truce holds.",
-      "date_note": "Announced expiry date of a suspension, not a discretionary review — reliable as a date, unknowable as to outcome."
+      "date_note": "Announced expiry date of a suspension, not a discretionary review — reliable as a date, unknowable as to outcome.",
+      "sources": [
+        "Derives from the linked regime entry — see that entry's sources"
+      ]
     },
     {
       "id": "section232-copper-decision",
@@ -283,7 +327,10 @@
         "SCCO"
       ],
       "bull_bear": "Resolved. The live question is no longer whether a tariff arrives but whether refined cathode is ever added to scope — the only path to the domestic miner premium originally posited.",
-      "date_note": "CORRECTION LOGGED: this lever was previously marked 'PAST WITH NO OUTCOME' as of 2026-08-11. That was wrong — the outcome had occurred twice, in 2025-08 and 2026-04. The silence was in our sourcing, not in Washington. Kept off the forward agenda because it is now history rather than a pending decision."
+      "date_note": "CORRECTION LOGGED: this lever was previously marked 'PAST WITH NO OUTCOME' as of 2026-08-11. That was wrong — the outcome had occurred twice, in 2025-08 and 2026-04. The silence was in our sourcing, not in Washington. Kept off the forward agenda because it is now history rather than a pending decision.",
+      "sources": [
+        "Derives from the linked regime entry — see that entry's sources"
+      ]
     },
     {
       "id": "stibnite-eis",
@@ -296,7 +343,10 @@
       "bull_bear": "Bull: EIS approval + DoD funding triggers project FID. Bear: further delay or denial keeps antimony supply structurally short.",
       "date_unresolved": "'2026-2027' has no resolvable calendar date — excluded from the agenda by design",
       "date_iso": "2026-12-31",
-      "date_note": "Range '2026-2027'. Year-end 2026 used as a placeholder so the item appears on the agenda; this is NOT an announced date and the true date may fall anywhere in the range."
+      "date_note": "Range '2026-2027'. Year-end 2026 used as a placeholder so the item appears on the agenda; this is NOT an announced date and the true date may fall anywhere in the range.",
+      "sources": [
+        "Derives from the linked regime entry — see that entry's sources"
+      ]
     },
     {
       "id": "lme-copper-physical-squeeze",
@@ -311,7 +361,10 @@
       ],
       "bull_bear": "Bull: low inventories + demand pull from grid buildout = squeeze risk. Bear: demand softness from China property sector = inventory build.",
       "date_unresolved": "'ongoing' has no resolvable calendar date — excluded from the agenda by design",
-      "date_note": "Continuous condition with no scheduled date. Excluded from the forward agenda by design — it is a state to monitor, not an event to await."
+      "date_note": "Continuous condition with no scheduled date. Excluded from the forward agenda by design — it is a state to monitor, not an event to await.",
+      "sources": [
+        "Derives from the linked regime entry — see that entry's sources"
+      ]
     },
     {
       "id": "fcc-inverter-conditional-approval",
@@ -327,7 +380,10 @@
         "ENR.DE",
         "ABBN.SW"
       ],
-      "bull_bear": "Bull for names that can certify >65% domestic content, and for the US component tier that has to supply it — power semiconductors, magnetics, copper windings, passives. Bear for anyone dependent on a new foreign-built connected SKU, and for project timelines if the approval queue stalls. Watch for the first grant as the signal that the process functions at all."
+      "bull_bear": "Bull for names that can certify >65% domestic content, and for the US component tier that has to supply it — power semiconductors, magnetics, copper windings, passives. Bear for anyone dependent on a new foreign-built connected SKU, and for project timelines if the approval queue stalls. Watch for the first grant as the signal that the process functions at all.",
+      "sources": [
+        "Derives from the linked regime entry — see that entry's sources"
+      ]
     }
   ]
 }

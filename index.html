@@ -2094,6 +2094,8 @@ function buildPolicy(){
       <div class="prog-agency">${esc(p.agency)}</div>
       ${p.budget_approx?`<div class="prog-budget">${esc(p.budget_approx)}</div>`:''}
       <div class="prog-body">${linkifyTickers(esc(p.description))}</div>
+      ${p.verification?`<div class="pol-verify"><b>Verification:</b> ${esc(p.verification)}</div>`:''}
+      ${Array.isArray(p.sources)&&p.sources.length?`<details class="pol-src"><summary>Sources (${p.sources.length})</summary><ul>${p.sources.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></details>`:''}
     </div>`).join('');
 
   const leverCards=levers.map(l=>`

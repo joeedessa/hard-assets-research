@@ -1,58 +1,65 @@
 {
   "_meta": {
-    "as_of": "2026-08-11T22:11:35+00:00",
+    "as_of": "2026-08-12T04:04:39+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 6/169 down 5%, sector -1.0%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 8/169 up 5%, sector -1.0%",
-      "Single-name collapse (any holding −12%+ in a session): 1 found",
-      "Conviction-3 divergence (±8%+ versus the +0.6% universe median): 1 found",
-      "Tracked commodity ±5%+ in a session: 0 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 7/169 down 5%, sector -1.0%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 14/169 up 5%, sector -1.0%",
+      "Single-name collapse (any holding −12%+ in a session): 0 found",
+      "Conviction-3 divergence (±8%+ versus the +0.5% universe median): 1 found",
+      "Tracked commodity ±5%+ in a session: 1 of 12 moved",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
       "USD (DXY) ±1%+ in a session: +0.00%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
-      "Producer-country FX ±1.5%+ (5 pairs tracked): 1 moved",
-      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
+      "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
+      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 51 read"
     ]
   },
-  "state": "critical",
+  "state": "elevated",
   "signals": [
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "5706.JP -13.5% in a single session",
-      "ev": "Computed from today's close. Conviction 2, froth 1.",
-      "stance": "REVIEW",
-      "action": "Insulated names are involved (5706.JP). Weakness here is opportunity, not information.",
-      "tk": [
-        "5706.JP"
-      ],
-      "date": "2026-08-11"
-    },
     {
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "AFMJF -7.6% against a +0.6% universe median",
+      "t": "AFMJF -7.6% against a +0.5% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "BUY THE DISLOCATION",
       "action": "Insulated names are involved (AFMJF). Weakness here is opportunity, not information.",
       "tk": [
         "AFMJF"
       ],
-      "date": "2026-08-11"
+      "date": "2026-08-12"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "REE +6.9% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +6.9% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-08-12"
     },
     {
       "sev": "medium",
-      "cat": "producer-fx",
+      "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "USDBRL +1.80% — Brazilian supply (iron ore, niobium)",
-      "ev": "Producer-currency move computed from today's close.",
+      "t": "NatGas +4.9% but its equities +0.6% — a -4.3pt gap",
+      "ev": "Median of 8 ng holdings against the underlying.",
       "stance": "MONITOR",
-      "action": "A +1.80% move in USDBRL changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
-      "tk": [],
-      "date": "2026-08-11"
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "LNG",
+        "VGAS",
+        "KMI",
+        "ET",
+        "EQT",
+        "AR",
+        "WMB",
+        "SLNG"
+      ],
+      "date": "2026-08-12"
     }
   ]
 }
