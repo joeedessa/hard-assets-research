@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-13T08:07:17+00:00",
+    "as_of": "2026-08-13T14:09:53+00:00",
     "mode": "light",
     "coverage": "9/9 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -221,10 +221,10 @@
           "cues": []
         },
         {
-          "t": "Why Aecom Group Earnings Made the Stock Drop - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZnZ6b1Z4WGVHa0x1TTZROVJqLXNFR0R0U2JHb3ZTTGJpMGpXQTh0blkzeVBZdjRuQm92YWZScDRONTBkQUVkMjh3enNrR0NmamtmTHlCZzM4S2lxN01VemgyTzJlRXdSQ3lxUFV4YXpyaDVNY3RUVzl2SUZyT3lob0dRajUwaGhBeGVOQmFrWFdCYkhPUDhudUVn?oc=5",
+          "t": "AECOM reports third quarter fiscal 2026 results - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNY3hXSXZnZ0xEeXhSOTVPLXZxalZQUHRyZWthX2FnTVlQVUFvTUprMXhOa2ZVa3BUWWRLYzI4WUpZWW9fZ3E3bS1USThiOTZJWHdBWjZ0SlFiN1RaMklsNmxHRjJsb0lMcExKS05jZ0VwaUhCTkpXdDdDcVI0VHFfSUk0TmRxY2N5UEVocUVlQy12RHNqS1RCMjE0ZS1qNV8z?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-08-11",
+          "d": "2026-08-10",
           "cues": []
         },
         {
@@ -274,13 +274,11 @@
           ]
         },
         {
-          "t": "Earnings call transcript: Borr Drilling Q2 2026 miss sparks 10% stock drop - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZzhhdjRkQkNuQVlYVzF6c29fZXZtTnduYkhMTWNEaE1lSmp1MjJONDNuQ2J3NUZzSTdVRHhEMlR2bkt4bHZKMEprUkV6RV9IT212cEZqdXlvRWFsQktia2NVQXVVTzRKM1RQYXNMa21VN0Z0bVN4dDRKZ0xPczJVclJkZnIyWGtkbXpxN1hmU0g4Snhhb1E2MFBuekNlS3Q3SUJWOVBVVVhOSHRHV3ZVQi1pMm16akF3Z0lHNGVwWHo2WFU4ajJj?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-12",
-          "cues": [
-            "miss"
-          ]
+          "t": "Borr Drilling (NYSE: BORR) Q2 2026 loss widens as refinancing hits earnings but backlog grows - stocktitan.net",
+          "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOFlPVHVsSUR5ZFNkQ0xwUlpBdlItWjk4OUxFeFdPaC1fZ21oVUhrak9BQTEwUUpkcV9hVVh6SzM2c01STFpDaEJhVjNVSi1CY25wTUdvd2tibHQ3eVBuT0ZrX3M5dDlFN205b3E1TVlTX0YtY0Q5SzRKLTFOSXpydzBTaV9pZnp6Y0lKMkNQbGdPMmozOXNDeWxkYzJYaVFtQ1M0RnJjdnBIZVJyWmRqekc2bw?oc=5",
+          "s": "stocktitan.net",
+          "d": "2026-08-13",
+          "cues": []
         },
         {
           "t": "Borr Drilling Limited (BORR) Stock Falls on Q2 2026 Earnings - Quiver Quantitative",
@@ -298,6 +296,57 @@
         "eps_est": -0.12,
         "surprise_abs": -0.09,
         "pct_suppressed": "consensus of -0.12 is too near zero for a percentage to mean anything — the beat/miss is -0.09 per share"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PAAS",
+      "name": "Pan American Silver",
+      "d": "2026-08-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-08-12T20:00+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Pan American Silver Reports Second Quarter 2026 Financial Results - Business Wire",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ2FYZ2ZFTkduOHJNLURKUnFEaU0yam5CNUN2ZFZfaGxhU2tac3huRnVXTGgyUHB2cnc2Vy1vZmNybF9mS051OXVYeEFtdmdpY0Iwd2hKQTdYa0RQTUhFSjR3M01jRVhVeWxtWE9EZ3dWeFpKbXNKS1UxOGNKTkxPSnF0cHQ1Z3FFeXJKQmZDckVnQ0k2RUp2NW0tWlVjMS1SWVNmdTI5YzVzMUloLXdMellweF9reUdrQ1JkNUQtZw?oc=5",
+          "s": "Business Wire",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Compared to Estimates, Pan American Silver (PAAS) Q2 Earnings: A Look at Key Metrics - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaWR3TXZfRkc3VGVXbnh4TzFXZjJCaEJCZ0lXMmk0c2xfenV0alpjdGJSd1pJU2tqeDZrLV8zZlJPTl9YMVlMOWRIbS1wQ3FOVE52RnU4LXdvb1VvOEEwVWphQjVmVWhwNmIyek10TllyZnZxVVRSckU3RU45Nm02cjBZUjRaQ3pPaHozNERSYnlQUVdzaExWR0JJRmE5MXNIdXFfSzdn?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-13",
+          "cues": []
+        },
+        {
+          "t": "Pan American Silver: Q2 Earnings Snapshot - KING5.com",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS1J5MEVoeU1UV2tUd0s3NEFMWjI4VUw3Rjl6czdpQUxVbllFLXpwOEdKTjU2R2J4SEhXU01lcXhNSE1OaGx3R2hGZ2JBZ3c1dWFsY0dQazgtdWRZV3FWeG51aW5QR0xjbmNPNTdYRkdXOFZlUW95ZHlaUmpSV0ZOYlNJbEo3NDlwUG5mRDFCSmhqeUpTVEJ1YW9hOHVkRUpJVkNtT184RmNTblo5aVRJcjhjVUhURzdmMjhOa1paTXlKYll1WFA5SFA0VWdJQVI4ejlJY25R?oc=5",
+          "s": "KING5.com",
+          "d": "2026-08-12",
+          "cues": []
+        },
+        {
+          "t": "Pan American Silver (PAAS) Releases Q2 2026 Earnings: Revenue Up 38.4%, EPS Rises to $0.72 - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaFgwN1NBdmpJZTJCekluNFJOcUNjODRZWHdRWkZoRWtkZUFCUzM3UWRfOEx6X1Y4WVNxeGowX3FxSGJxc0xyTGdMTkVlcjZYMGxrYU5nUXRmRnFmSGZwdHdHMnJ3aTc2eXpTWjkzaFQ5TVF2bThESkRWUjF1eWphOU9WZ1JUbW1tWGtCY21teGo2eDNxbG1qZDFmcVdGNlVTU3c2MWlXcGtoSjQwS1RwODFfeEE3b2o3QjlXYkZXY1JFR3gzRzQ1WkkyYkVCLUNF?oc=5",
+          "s": "Quiver Quantitative",
+          "d": "2026-08-12",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-12",
+      "reported": {
+        "eps": 0.73,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-13",
+        "eps_est": 0.87,
+        "surprise_abs": -0.14,
+        "surprise_pct": -16.5
       }
     },
     {
@@ -327,9 +376,9 @@
           ]
         },
         {
-          "t": "Capstone Energy+ (CEPL) posts Q1 profit to net income, raises cash and secures $500M shelf - Stock Titan",
+          "t": "Capstone Energy+ (CEPL) posts Q1 profit to net income, raises cash and secures $500M shelf - stocktitan.net",
           "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMl9EU0U1d0o2dEpSOTZPVksxZHJzYnFfay1iYXJNRUZNeTZsY2N1NDdVTWc2bWp2OXVadm02UzEzb1lNdjRqbzdIeFdtRE9DZmxrRHA5T3NDSjVzOUd6ckpNWFpmNnZsNDJEZGxGdDZ6MEpsaV9vdzFWRDhUOHZKZ1RiTmZLbUJxQnR6bHI3LXZMZUdubHhiSHYwQWZUVUlzOFZoNjFZSF8wUTBLTlQ3dWVyZnFZcTNs?oc=5",
-          "s": "Stock Titan",
+          "s": "stocktitan.net",
           "d": "2026-08-12",
           "cues": []
         },
@@ -356,20 +405,20 @@
       },
       "wire": [
         {
-          "t": "Coherent Corp. Reports Fourth Quarter and Full Year Fiscal 2026 Results - GlobeNewswire",
-          "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOc0h3emY0YkM2ZEhJTFE2LVR1blNKeVBMMVZSTW00NjA4T3ItaGRxU3hlQW9UTFJlVVNweWh5THVQUkVtRGYzdmw5aEc4WDh2SjN5bVZDR0RjVnpCaGlPT1ZoMmVoek1JUWVIOHVUVmlpSE12TzUzbWo3bXh0QXMwOV9MbW91MXJFazRpMDhuOF9majltS3V3VmJUVFluT3N4MlQ4aXhTemIwOU43akhmSWxPTnBQRHV2bzduYlM2OXB0eFlmaW1Xa2FlRHVKYi1qSWpOLTBRX0MzRXpLalNZ?oc=5",
-          "s": "GlobeNewswire",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
           "t": "Coherent Stock Drops Despite Earnings Beat and Strong Outlook - Barron's",
           "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGbGtvNkNUbjFUSzgyeWdCVDNmUFBpbFBubUsyM3BpT2Y5Q0xTVGxIUmpHaE1ycURLVDlGMWVkRmJ4dU1EOGZHNGJlaWZRWVBPYUJlR2kzUzlFcENTYUtLbnhHR2hsOG8tanNNM1lsT0puX0NERjZxT2Exaw?oc=5",
           "s": "Barron's",
-          "d": "2026-08-12",
+          "d": "2026-08-13",
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "Coherent Corp. Reports Fourth Quarter and Full Year Fiscal 2026 Results - GlobeNewswire",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPOFVQV1VxZ1NaZG5EQkNZNnVzbXg0ZW4xMjNMb0QtMWJXbndhaE9lcm1hS2FZTDVSVmhjRV9GWVJleU02VFhsQ0JPZ1ZNdjdMR0RPNXJuZUtyUXhsUkxwb01YWXo0N2VxSUpkUkJoU3J5bTgxM1hoX2VqOWtrU0liSXk3U3E3QUN6V0xqakotTnZFV1RXQTRFcUZXdlJMV0RQVjBJZkdSbnphb21ZZkplSC03S0RZa3FOSkZ6czljXzA2YWRKaVk0d0k0T1JTU3BZcS1ycXl1TjFudw?oc=5",
+          "s": "GlobeNewswire",
+          "d": "2026-08-12",
+          "cues": []
         },
         {
           "t": "Earnings Flash (COHR) Coherent Corp. Posts Q4 Adjusted EPS $1.74 per Share - marketscreener.com",
@@ -379,10 +428,10 @@
           "cues": []
         },
         {
-          "t": "Coherent Corp. (COHR) Q4 FY2026 earnings call transcript - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQelN0R3lyUVQyT01fdUNScmlVNzQydHpEamtiYXY4dkZYS2VpUzBGbkdCTHRuZEZwRGtsRy0xZC1tZVFnZ1ppLUtROFlsUzNQZUNKQjJobWFUaldGa3ZyS1RNWXBDTkpfRGxlLXJsWGdYOG95T3JLdmpaSHFQSzJJTzFjUnRIWXIzcjF3ZA?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-08-12",
+          "t": "Coherent Corp (COHR) Reports Strong Q4 Earnings but Faces Stock Price Pullback - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPd0M2ZkIwM1QxaFMwMzR5NGhmcDNxT3JPbmQxa3JHS3g5NVVZcGhnWkNTRTBQbG82MUhFVmdvYzczYjhyTXhjVGZnN0FGbXdWVnU4OWk5akQwVk5DWXB6T1Z2dW5vYVcwWVFPWWhMaHViV2VlcnZ0WVJRSWpEQVFBakdYYmxmZ1RCSlIwRVFoSFlkb3dYZ3RRd3VTdWUwN2RRU0dYV2xMVzNodXNZbDlrRWpUbE80UQ?oc=5",
+          "s": "GuruFocus",
+          "d": "2026-08-13",
           "cues": []
         }
       ],
@@ -429,6 +478,15 @@
           "d": "2026-08-12",
           "cues": [
             "miss"
+          ]
+        },
+        {
+          "t": "Denison Mines earnings beat by $0.04, revenue fell short of estimates - Investing.com Canada",
+          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQLWQydVBXcmV0bFRZU0R6WjRTZHdFLUM0dFZRYkx5d2llOEd4dHdoY3BlS3BsLTVrODBFZXZMOHJsX0lObDhzY2N1ckdXQjM0LWJFZnNPOXBIVjhBSmUyM3NSYjE2LTVpOHNBOGVJaHpKV202V0FmZV9MaWNSLVpDMW42aGlRWTBSVmVSdGgzUU1LUEpBa2Y2NEUxRDcxSFBVM053?oc=5",
+          "s": "Investing.com Canada",
+          "d": "2026-08-12",
+          "cues": [
+            "beat"
           ]
         }
       ],
@@ -495,49 +553,6 @@
     },
     {
       "type": "earnings",
-      "tk": "PAAS",
-      "name": "Pan American Silver",
-      "d": "2026-08-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-12T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Pan American Silver Reports Second Quarter 2026 Financial Results - Business Wire",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ2FYZ2ZFTkduOHJNLURKUnFEaU0yam5CNUN2ZFZfaGxhU2tac3huRnVXTGgyUHB2cnc2Vy1vZmNybF9mS051OXVYeEFtdmdpY0Iwd2hKQTdYa0RQTUhFSjR3M01jRVhVeWxtWE9EZ3dWeFpKbXNKS1UxOGNKTkxPSnF0cHQ1Z3FFeXJKQmZDckVnQ0k2RUp2NW0tWlVjMS1SWVNmdTI5YzVzMUloLXdMellweF9reUdrQ1JkNUQtZw?oc=5",
-          "s": "Business Wire",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Pan American Silver: Q2 Earnings Snapshot - KING5.com",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS1J5MEVoeU1UV2tUd0s3NEFMWjI4VUw3Rjl6czdpQUxVbllFLXpwOEdKTjU2R2J4SEhXU01lcXhNSE1OaGx3R2hGZ2JBZ3c1dWFsY0dQazgtdWRZV3FWeG51aW5QR0xjbmNPNTdYRkdXOFZlUW95ZHlaUmpSV0ZOYlNJbEo3NDlwUG5mRDFCSmhqeUpTVEJ1YW9hOHVkRUpJVkNtT184RmNTblo5aVRJcjhjVUhURzdmMjhOa1paTXlKYll1WFA5SFA0VWdJQVI4ejlJY25R?oc=5",
-          "s": "KING5.com",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Compared to Estimates, Pan American Silver (PAAS) Q2 Earnings: A Look at Key Metrics - Yahoo Finance Singapore",
-          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNGJia0ZmQm9KVG8tRF9RaUQ3UnZIc2hFdVV2X3lCdUt2alp4QjlEcFk1SnRSQmJxeG9sTmpvQUNXVjE1VzNxSDd2b2dfMHFKOHJPcHhFNXZnU1J4dFgtTlFuZEtGWXJIamZCVXU5SDA2Zkx3c05qR2kxODRfZlk4MlVVcTAzMWpxeGQzaDZTdWY?oc=5",
-          "s": "Yahoo Finance Singapore",
-          "d": "2026-08-13",
-          "cues": []
-        },
-        {
-          "t": "Pan American Silver (PAAS) Releases Q2 2026 Earnings: Revenue Up 38.4%, EPS Rises to $0.72 - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaFgwN1NBdmpJZTJCekluNFJOcUNjODRZWHdRWkZoRWtkZUFCUzM3UWRfOEx6X1Y4WVNxeGowX3FxSGJxc0xyTGdMTkVlcjZYMGxrYU5nUXRmRnFmSGZwdHdHMnJ3aTc2eXpTWjkzaFQ5TVF2bThESkRWUjF1eWphOU9WZ1JUbW1tWGtCY21teGo2eDNxbG1qZDFmcVdGNlVTU3c2MWlXcGtoSjQwS1RwODFfeEE3b2o3QjlXYkZXY1JFR3gzRzQ1WkkyYkVCLUNF?oc=5",
-          "s": "Quiver Quantitative",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-12"
-    },
-    {
-      "type": "earnings",
       "tk": "TRMB",
       "name": "Trimble",
       "d": "2026-08-12",
@@ -556,11 +571,20 @@
           "cues": []
         },
         {
-          "t": "Trimble Q2 Earnings Call Highlights - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV1dYM1NTbGVjNGlWN25yWWhpd0RsSkp3WnZnOGxSX2dndVEwREtMTWVvTkZYVWg5SlpsRTF5NDh5eVdUNGczbXhPRm9PZlR1MFZRbGJvTktETl9Lb1pXT3ktcUtZZXVMdlhCQURBUGNPVjh5TkhaQ0tUSXdYSkZJcERqS2xJTW1fRVZiQTdLZ2VpTm9jcmpNNy1IMy1VNGRWMVE?oc=5",
+          "t": "Trimble Inc (TRMB) (Q2 2026) Earnings Call Highlights: Record ARR and Raised Guidance Amid ... - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRlVyZW9CNnZpdVV4eVZmOGlIRFhkM3JwU0ZPc3F0M2V1ZXp3X2xBMUxWM0F4XzEtajFjNEJ2YlRMbkhNa1F5SkhaVUw3Si1yUzNfbkNQNW9Ha1pWd1VhWm1IYlFVT1dQZncxZEw2eUhuQ2tnaFg3SFFUYU9kTUhsSElxd25YQUVnQ0wtSHFFeG12QzA?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-08-12",
           "cues": []
+        },
+        {
+          "t": "Trimble Q2 Earnings Call Highlights - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM0hOQ1hxeHV3cy0xSWlEUGJIbHZnQXgzbnQtbjFqczA1cFgtdXowYkZBbEZPRzBTWE1nZmJsUmpmQ3lkaFg3b01PbE53QnowR0pQd19TbXNOSWxYVnBEbGpZNGVyOFNoLTBEUEM0enlQNF9NUEp3YXRtOTBpTG5ZbEhmV21jT2J5ZUljaEZDbzZqbkE?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-12",
+          "cues": [
+            "beat"
+          ]
         },
         {
           "t": "Trimble earnings beat by $0.06, revenue topped estimates - Investing.com",
@@ -570,13 +594,6 @@
           "cues": [
             "beat"
           ]
-        },
-        {
-          "t": "Trimble sees freight ‘green shoots’ as transportation revenue rises 5% - FreightWaves",
-          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQ05CSUlxXzdpMllIMlppMHJublN2Q3ZleUVBXzhiX0tPYy1WS3lRaWFULVNXdmtybmhpV3JTdjdMd1MzTDNVNGxaOFRVNGlXTHhrQXhHZjJhazlBdXlTOHd3MnpjdXVvMU4yZ3Q2QVNjRkg5N2pQOXV5QUR1aTJmcWpudF84MmdSWW9kTXM4SFg3anhiU1ZqVFdkMUZUQmI3bi04?oc=5",
-          "s": "FreightWaves",
-          "d": "2026-08-12",
-          "cues": []
         }
       ],
       "wire_gate": "2026-08-12",
@@ -599,7 +616,38 @@
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-08-13T12:30+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Golar LNG Limited Interim results for the period ended June 30, 2026 - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRi13TExyZTAzZGxHM2pfSVRYM0YtTEVoYzU1b0RnQlhfYkdSR09IcFM1ZlBYVHNMQ29XRWt4a1AtQTNMd3AtQ01lTmNHeFFtVXB1Q29uN25PZ2swMHpSTy1oSWlzaGpfMTI4bWpmZTlibV9nX2RPOEl5YU9WakhCejEyUmFLaFFfUHg5Y0pnS1Y3cWxR?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-13",
+          "cues": []
+        },
+        {
+          "t": "Golar LNG: Q2 Earnings Snapshot - KTVB",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVmxtYTRLdUxOb0RBeDZoWTU4ZTdCSW9hVWpMQXA3X2pkelJoVWNHeTMyOUhPbUx0Y2tBd2tMdnJPQWVETXJxN1V5YXlDVlRhSExZbkRINTRYaS16Q1k4SWdtM1NRTEFOdEtxOWpZbXFTb2pTTTFQMEtRMER4ZjdGRDVUcFBURV9OUV9MdnpMeHNQdmJzUlh4NWt1MnVHNjVnS3AwV1hKcU4zSENPQUtNRW8yOVRKY2RCOFF6dkh1ZVpERHhKVGlV?oc=5",
+          "s": "KTVB",
+          "d": "2026-08-13",
+          "cues": []
+        },
+        {
+          "t": "GOLAR LNG ($GLNG) Releases Q2 2026 Earnings - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVVVhdWgyaTVzcEhySkFlTkQxMHItOGtiUXhIdmltUk1LaXZKRFJhRGZjM2F2djVNS0dsSGFkdmtNd0w1cEQ3VU5ST3d0VTVZQ2pvdFZ5aEFFS2s4Qk1jRnlKNFhPc1JHclJSNFdpakdYd3BITkpsZkdhcmhNMGFTb0hKTDBzdnpXOGc?oc=5",
+          "s": "Quiver Quantitative",
+          "d": "2026-08-13",
+          "cues": []
+        },
+        {
+          "t": "Golar LNG Limited 2026 Q2 - Results - Earnings Call Presentation (NASDAQ:GLNG) 2026-08-13 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTEYtczJwZzRwenRGSUIxdnA2djJSY1hZWWVDNHYxOHRnb1NhLXpEWlNTT0k2Sk9SeGV3d3RXZWM3THlKXzFIczk1X3gwdk82eFZjZlhoTmZvek5LMGpJV1d0WlYyckRvdVJKWllKVFBjQjVOeDJJcFhvTW5haG10RFFqZ2g2NTJyeXRtSVMta3I0NlVFRWlGa1N2ZDRfeENwTmlwdlJ2ZU9VazZ6cEJOZzY0aEt4a25LUGxxRA?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-08-13",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-13"
     },
     {
       "type": "earnings",
@@ -1647,6 +1695,18 @@
     },
     {
       "type": "earnings",
+      "tk": "DNN",
+      "name": "Denison Mines",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "ETN",
       "name": "Eaton Corporation",
       "d": "2026-11-03",
@@ -1714,6 +1774,30 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "COHR",
+      "name": "Coherent Corp",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TRMB",
+      "name": "Trimble",
+      "d": "2026-11-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-04T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1911,6 +1995,16 @@
     },
     {
       "type": "earnings",
+      "tk": "CGEH",
+      "name": "Capstone Energy+",
+      "d": "2026-11-05",
+      "release": {
+        "when": "unknown",
+        "label": "time unconfirmed"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "6963.JP",
       "name": "ROHM",
       "d": "2026-11-05",
@@ -2059,6 +2153,18 @@
       "name": "China REE tranche-2 cliff",
       "detail": "",
       "tk": null
+    },
+    {
+      "type": "earnings",
+      "tk": "EOAN.DE",
+      "name": "E.ON",
+      "d": "2026-11-11",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:30 CET",
+        "iso": "2026-11-11T15:30+00:00",
+        "tz": "Europe/Berlin"
+      }
     },
     {
       "type": "policy",
