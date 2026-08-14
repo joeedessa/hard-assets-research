@@ -891,7 +891,116 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .dw-cyc b{font-size:12px;color:var(--accent)}
 .dw-mx-note{font-size:11px;line-height:1.6;color:var(--color-text-secondary);margin-top:5px;
   padding-left:8px;border-left:2px solid var(--color-border-secondary)}
-.dw-peer{display:flex;align-items:center;gap:6px;padding:4px 0;
+/* ── Trends ─────────────────────────────────────────────────────────────── */
+.tr-head{padding:11px 13px;border-radius:6px;margin-bottom:10px;
+  background:var(--color-background-secondary);border-left:3px solid var(--accent)}
+.tr-head-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:4px}
+.tr-head-b{font-size:11px;line-height:1.65;color:var(--color-text-secondary)}
+.tr-note{font-size:11px;line-height:1.6}
+.tr-breadth{display:flex;align-items:center;gap:13px;padding:9px 13px;border-radius:6px;
+  margin-bottom:12px;background:var(--color-background-secondary);
+  border:.5px solid var(--color-border-secondary)}
+.tr-breadth.tape{border-color:var(--warn);background:color-mix(in srgb,var(--warn) 8%,transparent)}
+.tr-br-n{font-size:22px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.tr-br-l{font-size:11px;line-height:1.55;color:var(--color-text-secondary)}
+.tr-board{display:flex;gap:9px;min-width:940px;align-items:flex-start}
+.tr-col{flex:1 1 0;min-width:176px;border:.5px solid var(--color-border-secondary);
+  border-radius:6px;overflow:hidden;background:var(--color-background-primary)}
+.tr-col-h{font-size:10.5px;font-weight:600;padding:7px 9px 2px;color:var(--color-text-primary);
+  display:flex;align-items:center;gap:6px}
+.tr-ord{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;
+  border-radius:50%;background:var(--accent);color:#fff;font-size:9px;flex:0 0 auto}
+.tr-col-r{font-size:9.5px;color:var(--color-text-tertiary);padding:0 9px 7px;line-height:1.4}
+.tr-blk{padding:6px 9px;border-top:.5px solid var(--color-border-secondary)}
+.tr-blk-h{font-size:9px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px;
+  color:var(--color-text-tertiary)}
+.tr-blk.bull{background:color-mix(in srgb,var(--up) 6%,transparent)}
+.tr-blk.bear{background:color-mix(in srgb,var(--dn) 6%,transparent)}
+.tr-chip{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-family:var(--font-mono,monospace);
+  padding:2px 5px;margin:0 3px 3px 0;border-radius:3px;cursor:pointer;
+  background:var(--color-background-secondary);border:.5px solid var(--color-border-secondary);
+  color:var(--color-text-primary)}
+.tr-chip:hover{border-color:var(--accent)}
+.tr-chip i{font-style:normal;font-size:8.5px;color:var(--color-text-tertiary)}
+.tr-chip b{color:var(--warn);font-size:9px}
+.tr-chip.ws{border-style:dashed;border-color:var(--warn)}
+.tr-empty{font-size:10px;color:var(--color-text-tertiary);font-style:italic}
+.tr-movers{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:6px;margin-bottom:6px}
+.tr-mv{display:flex;align-items:baseline;gap:7px;padding:6px 9px;border-radius:4px;cursor:pointer;
+  background:var(--color-background-secondary);border:.5px solid var(--color-border-secondary)}
+.tr-mv:hover{border-color:var(--accent)}
+.tr-mv-tk{font-family:var(--font-mono,monospace);font-size:11px;font-weight:600}
+.tr-mv-x{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--accent)}
+.tr-mv-d{font-size:11px;font-variant-numeric:tabular-nums}
+.tr-mv-n{font-size:10px;color:var(--color-text-secondary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.tr-mv-a{font-size:9px;color:var(--color-text-tertiary);white-space:nowrap}
+.tr-ctl{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0}
+.tr-ctl-l{font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-tertiary);
+  margin-left:6px}
+.tr-ctl-l:first-child{margin-left:0}
+.tr-q{font-size:11px;padding:3px 8px;border-radius:4px;background:var(--color-background-secondary);
+  border:.5px solid var(--color-border-secondary);color:var(--color-text-primary);width:112px}
+.tr-warn{font-size:10px;color:var(--warn)}
+.tr-tbl{width:100%;min-width:1010px;border-collapse:collapse;font-size:11px}
+.tr-tbl th{text-align:right;font-size:9px;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--color-text-tertiary);font-weight:500;padding:5px 7px;white-space:nowrap;
+  border-bottom:.5px solid var(--color-border-secondary)}
+.tr-tbl th:first-child{text-align:left}
+.tr-tbl td{text-align:right;padding:5px 7px;font-variant-numeric:tabular-nums;white-space:nowrap;
+  border-bottom:.5px solid var(--color-border-tertiary,var(--color-border-secondary))}
+.tr-tbl tbody tr{cursor:pointer}
+.tr-tbl tbody tr:hover{background:var(--color-background-secondary)}
+.tr-tk{text-align:left!important;font-family:var(--font-mono,monospace);font-size:11px}
+.tr-tk i{display:block;font-style:normal;font-family:var(--font-sans,inherit);font-size:9.5px;
+  color:var(--color-text-tertiary);max-width:168px;overflow:hidden;text-overflow:ellipsis}
+.tr-na{color:var(--color-text-tertiary)}
+.tr-test{display:inline-flex;align-items:center;gap:3px;font-size:9.5px;padding:1px 5px;border-radius:3px;
+  border:.5px solid;cursor:help}
+.tr-test i{font-style:normal;font-size:8.5px;opacity:.7}
+.tr-at{display:inline-block;font-size:8.5px;margin-left:4px;padding:0 4px;border-radius:3px;
+  background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent);cursor:help}
+.tr-foot{font-size:10px;line-height:1.6;color:var(--color-text-tertiary);margin-top:10px;
+  padding:8px 11px;border-radius:5px;border:.5px dashed var(--color-border-secondary)}
+/* drawer trend block */
+.dwt-rungs{display:flex;flex-direction:column;gap:3px}
+.dwt-rung{display:flex;align-items:center;gap:7px;font-size:10.5px;padding:4px 8px;border-radius:4px;
+  background:var(--color-background-secondary);border-left:2px solid transparent;cursor:help}
+.dwt-rung.bull{border-left-color:var(--up)}
+.dwt-rung.bear{border-left-color:var(--dn)}
+.dwt-ord{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;
+  border-radius:50%;background:var(--color-border-secondary);color:var(--color-text-secondary);font-size:8.5px}
+.dwt-lab{flex:1;color:var(--color-text-secondary)}
+.dwt-st{font-weight:600}
+.dwt-rung.bull .dwt-st{color:var(--up)}
+.dwt-rung.bear .dwt-st{color:var(--dn)}
+.dwt-x{font-size:9px;color:var(--accent);cursor:help}
+.dwt-dists{display:flex;flex-wrap:wrap;gap:13px;margin-top:8px;padding:7px 9px;border-radius:4px;
+  background:var(--color-background-secondary)}
+.dwt-d{display:flex;flex-direction:column;gap:1px}
+.dwt-d i{font-style:normal;font-size:9px;color:var(--color-text-tertiary)}
+.dwt-d b{font-size:12px;font-variant-numeric:tabular-nums}
+.dwt-note{font-size:9px;color:var(--color-text-tertiary);line-height:1.45;flex-basis:100%}
+.dwt-test{font-size:10px;line-height:1.55;margin-top:5px;padding:5px 8px;border-radius:4px;
+  border-left:2px solid;background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.dwt-ctx{font-size:10.5px;line-height:1.65;margin-top:7px;color:var(--color-text-secondary);
+  display:flex;flex-direction:column;gap:4px}
+.dwt-tape{color:var(--warn)}
+.dwt-tag{font-size:8.5px;padding:0 4px;border-radius:3px}
+.dwt-tag.bad{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.dwt-tag.good{background:color-mix(in srgb,var(--good) 16%,transparent);color:var(--good)}
+.dwt-flat{color:var(--color-text-tertiary);font-weight:500;cursor:help}
+.dwt-none{font-size:10px;color:var(--color-text-tertiary);font-style:italic}
+.dwt-basis{font-size:9.5px;line-height:1.5;color:var(--color-text-tertiary);margin-top:7px}
+.dwt-link{color:var(--accent);cursor:pointer;white-space:nowrap}
+.dwt-link:hover{text-decoration:underline}
+@media(max-width:768px){
+  .tr-breadth{gap:9px;padding:8px 10px}
+  .tr-br-n{font-size:18px}
+  .tr-movers{grid-template-columns:1fr}
+  .tr-q{width:100%}
+}
+.dw-peer{
+display:flex;align-items:center;gap:6px;padding:4px 0;
   border-bottom:.5px solid var(--color-border-tertiary);cursor:pointer;font-size:11px}
 .dw-peer:last-child{border-bottom:none}
 .dw-peer:hover{color:var(--accent)}
@@ -998,6 +1107,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <span class="tab" onclick="ST('pol')">Policy</span>
   <span class="tab-sep"></span>
   <span class="tab" onclick="ST('co')">Companies</span>
+  <span class="tab" onclick="ST('tr')">Trends</span>
   <span class="tab" onclick="ST('nw')">News</span>
   <span class="tab" onclick="ST('nt')">Notes</span>
   <span class="tab" onclick="ST('wn')">What's Next</span>
@@ -1044,6 +1154,7 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   <div id="v-fm" class="view"></div>
   <div id="v-nw" class="view"></div>
   <div id="v-co" class="view"></div>
+  <div id="v-tr" class="view"></div>
   <div id="v-nt" class="view"></div>
   <div id="v-wn" class="view"></div>
   <div id="v-cm" class="view"></div>
@@ -1133,6 +1244,10 @@ let BREAKING={state:'clear',signals:[],_meta:{}};
 let GLOSSARY=[];
 let MINERALS={minerals:[],_meta:{}};
 let METRICS={},METRICS_META={};
+// Weekly and monthly frames are a separate file, fetched only when asked for.
+// A 200-month average needs 200 months of history and nobody wants that on
+// every page load.
+let TRENDS=null,TRENDS_WM=null,TR_TF='d',TR_WM_STATE='idle',TR_SORT='atr',TR_Q='';
 let CALENDAR={events:[],_meta:{}};
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
 let CO_STATE={q:'',v:null,froth:null,sort:'conv',tier:null};
@@ -1311,7 +1426,7 @@ function jumpToCompanies(tk){
 // ── Tab switching ──────────────────────────────────────────────────────────
 // MUST stay in the same order as the .tab spans in the markup — ST() pairs
 // them by index. Also the order the Start Here learning path walks.
-const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','nw','nt','wn','cm','gl'];
+const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','tr','nw','nt','wn','cm','gl'];
 const built={};
 function ST(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
@@ -1336,6 +1451,7 @@ function buildTab(id){
   else if(id==='pol')buildPolicy();
   else if(id==='nw')buildNews();
   else if(id==='co')buildCompanies();
+  else if(id==='tr')buildTrends();
   else if(id==='nt')buildNotes();
   else if(id==='wn')buildWhatsNext();
   else if(id==='cm')buildMinerals();
@@ -1516,7 +1632,8 @@ function buildStartHere(){
     {n:4,name:'Vertical Explorer',tab:'vx',c:'#534AB7',desc:'Drill into one chain end to end \u2014 mine to end-use, where value is captured, and which steps are chokepoints.'},
     {n:5,name:'Portfolio',tab:'ps',c:'#EF9F27',desc:'The defining insight and three-cluster structure. Work through the four screening questions \u2014 apply them mechanically to every position.'},
     {n:6,name:'Companies',tab:'co',c:'#185FA5',desc:'The names. Filter by vertical, conviction or froth. Structure badges show the access type (streaming vs. equity vs. physical trust).'},
-    {n:7,name:'Research Notes',tab:'nt',c:'#993556',desc:'Chronological event log. What changed and when \u2014 the gap between the original thesis and current reality.'}
+    {n:7,name:'Trends',tab:'tr',c:'#0E7C66',desc:'Where each name sits against its 21/50/150/200 averages, what has crossed in the last ten sessions, and whether today\u2019s move is large FOR THAT NAME. Timing, not thesis \u2014 read it after you have decided what you want to own, never instead.'},
+    {n:8,name:'Research Notes',tab:'nt',c:'#993556',desc:'Chronological event log. What changed and when \u2014 the gap between the original thesis and current reality.'}
   ];
   const stepsHtml=steps.map(p=>`<div class="fw-step" onclick="ST('${p.tab}')"><div class="fw-step-num" style="background:${p.c}">${p.n}</div><div class="fw-step-name">${p.name}</div><div class="fw-step-desc">${p.desc}</div></div>`).join('');
 
@@ -2390,6 +2507,207 @@ function wnWire(e,q){
   </div>`;
 }
 
+// ── TRENDS ─────────────────────────────────────────────────────────────────
+// The ladder is ordered by how EARLY a signal fires, not how reliable it is,
+// and the layout is the message: the left column is always crowded and the
+// right nearly empty. A name in several columns is climbing the ladder.
+const TR_LADDER=[
+  {id:'ema5x21', label:'5-EMA × 21-EMA',  role:'timing trigger, noisy'},
+  {id:'pxX50',   label:'price × 50-SMA',  role:'swing trend break'},
+  {id:'ema21x50',label:'21-EMA × 50-SMA', role:'intermediate turn'},
+  {id:'pxX200',  label:'price × 200-SMA', role:'regime change'},
+  {id:'sma50x200',label:'50-SMA × 200-SMA',role:'golden / death cross, late but clean'},
+];
+const TR_TF_LABEL={d:'Daily',w:'Weekly',m:'Monthly'};
+
+function setTrTf(tf){
+  if(tf===TR_TF)return;
+  if(tf!=='d'&&!TRENDS_WM){loadTrendsWM(tf);return;}
+  TR_TF=tf;renderTrends();
+}
+async function loadTrendsWM(tf){
+  if(TR_WM_STATE==='loading')return;
+  TR_WM_STATE='loading';renderTrends();
+  try{
+    const r=await fetch(BASE+'trends-wm.json?t='+Date.now());
+    if(!r.ok)throw new Error(r.status);
+    TRENDS_WM=await r.json();TR_WM_STATE='ok';TR_TF=tf;
+  }catch(e){TR_WM_STATE='error';}
+  renderTrends();
+}
+function setTrSort(s){TR_SORT=s;renderTrends();}
+function trFrame(tk){
+  if(TR_TF==='d')return TRENDS?.names?.[tk]?.d||null;
+  return TRENDS_WM?.names?.[tk]?.[TR_TF]||null;
+}
+
+// A relative figure smaller than a fifth of the name's own typical daily move
+// is not a direction. Colouring it green or red would assert outperformance
+// from arithmetic, so it renders grey and says "little changed".
+function trRel(v,noise,title){
+  if(v==null)return '<span class="tr-na">—</span>';
+  if(noise!=null&&Math.abs(v)<noise)
+    return `<span class="tr-na" title="${esc(title)}. ${v>0?'+':''}${v.toFixed(1)}pp is under a fifth of this name's typical daily move (${noise.toFixed(1)}pp), so no direction is claimed.">little changed</span>`;
+  return `<span style="color:${v>=0?'var(--up)':'var(--dn)'}" title="${esc(title)}">${v>0?'+':''}${v.toFixed(1)}</span>`;
+}
+function trPct(v,inv){
+  if(v==null)return '<span class="tr-na">—</span>';
+  const c=(inv?-v:v)>=0?'var(--up)':'var(--dn)';
+  return `<span style="color:${c}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
+}
+const TR_STATE_META={
+  held:{l:'held',c:'var(--good)',t:'Price was above the level when it was tested and is still above'},
+  reclaimed:{l:'reclaimed',c:'var(--good)',t:'Price was below at the test and has since recovered above'},
+  rejected:{l:'rejected',c:'var(--bad)',t:'Price was below at the test and remains below'},
+  lost:{l:'lost',c:'var(--bad)',t:'Price was above at the test and has since fallen below'},
+};
+function trTest(t,n){
+  if(!t)return '<span class="tr-na" title="Nothing came within 2% of this level in the last 15 bars. Silence is a valid answer — no state is inferred from a level price never went near.">—</span>';
+  const m=TR_STATE_META[t.state];
+  return `<span class="tr-test" style="color:${m.c};border-color:${m.c}55" title="${esc(m.t)}. Closest approach ${t.gap}% ${t.ago===0?'this bar':t.ago+' bar'+(t.ago===1?'':'s')+' ago'}, measured on the bar ${t.probe==='low'?'LOW (support test)':'HIGH (resistance test)'}.">${m.l}<i>${t.ago}b</i></span>`;
+}
+
+// The record high is the higher of the last 3 years of DAILY closes and a
+// month-end monthly series. Those are different bases and the label has to say
+// which one produced the number — "highest monthly close" would be false
+// whenever an intra-month peak in the daily window supplied it.
+const lcFirst=s=>s?s.charAt(0).toLowerCase()+s.slice(1):s;
+// inline use sits inside a sentence that supplies its own full stop
+const noDot=s=>s?s.replace(/\.\s*$/,''):s;
+function athBasis(rg){
+  const deep=rg.ath_deep?`month-end closes back to ${rg.ath_since}`
+    :`a short history starting ${rg.ath_since} — this is the highest ever recorded HERE, not a tested record`;
+  return rg.ath_from_daily
+    ? `Highest daily close in the last ${rg.ath_daily_years} years. Deeper history is ${deep}, and none of it is higher.`
+    : `Highest month-end close since ${rg.ath_since}. The last ${rg.ath_daily_years} years of daily closes did not exceed it.`;
+}
+
+function buildTrends(){renderTrends();}
+
+function renderTrends(){
+  const el=document.getElementById('v-tr');if(!el)return;
+  if(!TRENDS){el.innerHTML='<div class="note-box">Trend data loading… If this persists, trends.json has not been generated yet — it is written by the nightly full pass.</div>';return;}
+  const N=TRENDS.names||{},M=TRENDS._meta||{},B=TRENDS.breadth||{};
+  const tks=Object.keys(N);
+
+  // ── the trade-off, stated wherever these signals appear ──────────────────
+  const head=`<div class="tr-head">
+    <div class="tr-head-t">Early and noisy versus late and clean</div>
+    <div class="tr-head-b">${esc(M.ladder_note||'')}</div>
+  </div>`;
+
+  // ── breadth ─────────────────────────────────────────────────────────────
+  const bp=B.down_pct;
+  const breadth=bp==null?'':`<div class="tr-breadth${B.tape?' tape':''}">
+    <div class="tr-br-n" style="color:${B.tape?'var(--warn)':'var(--color-text-primary)'}">${bp.toFixed(0)}%</div>
+    <div class="tr-br-l"><b>${B.down} of ${B.n} names down today.</b> ${esc(B.note||'')}</div>
+  </div>`;
+
+  // ── ladder board ────────────────────────────────────────────────────────
+  const cell=(sig,dir)=>{
+    const hits=tks.map(tk=>{
+      const c=N[tk]?.d?.cross?.[sig];const r=c&&c.recent;
+      return (r&&r.dir===dir)?{tk,r}:null;}).filter(Boolean)
+      .sort((a,b)=>a.r.ago-b.r.ago);
+    if(!hits.length)return '<div class="tr-empty">none</div>';
+    return hits.map(h=>`<span class="tr-chip${h.r.whipsaw?' ws':''}" onclick="openCompanyDrawer('${esc(h.tk)}')" title="${esc(N[h.tk].name)} — crossed ${h.r.ago===0?'on the latest close':h.r.ago+' session'+(h.r.ago===1?'':'s')+' ago'}${h.r.whipsaw?`. WHIPSAW: the sign reversed ${h.r.n_flips} times inside the same 10-session window — this level is contested, not resolved.`:''}">${esc(h.tk)}<i>${h.r.ago}</i>${h.r.whipsaw?'<b>⇄</b>':''}</span>`).join('');
+  };
+  const cols=TR_LADDER.map((r,i)=>{
+    const nb=tks.filter(tk=>N[tk]?.d?.cross?.[r.id]?.recent?.dir==='bull').length;
+    const nr=tks.filter(tk=>N[tk]?.d?.cross?.[r.id]?.recent?.dir==='bear').length;
+    return `<div class="tr-col">
+      <div class="tr-col-h"><span class="tr-ord">${i+1}</span>${esc(r.label)}</div>
+      <div class="tr-col-r">${esc(r.role)}</div>
+      <div class="tr-blk bull"><div class="tr-blk-h">bullish · ${nb}</div>${cell(r.id,'bull')}</div>
+      <div class="tr-blk bear"><div class="tr-blk-h">bearish · ${nr}</div>${cell(r.id,'bear')}</div>
+    </div>`;}).join('');
+
+  // ── biggest moves, ranked against each name's own volatility ────────────
+  const movers=tks.map(tk=>({tk,m:N[tk].move})).filter(x=>x.m.atr_x!=null)
+    .sort((a,b)=>Math.abs(b.m.atr_x)-Math.abs(a.m.atr_x)).slice(0,12)
+    .map(x=>`<div class="tr-mv" onclick="openCompanyDrawer('${esc(x.tk)}')">
+      <span class="tr-mv-tk">${esc(x.tk)}</span>
+      <span class="tr-mv-x">${x.m.atr_x.toFixed(1)}×</span>
+      <span class="tr-mv-d">${trPct(x.m.d1)}</span>
+      <span class="tr-mv-n">${esc(N[x.tk].name)}</span>
+      <span class="tr-mv-a">ATR ${x.m.atr_pct!=null?x.m.atr_pct.toFixed(1)+'%':'—'}</span>
+    </div>`).join('');
+  const rejected=tks.filter(tk=>N[tk].move.atr_rejected);
+
+  // ── timeframe pills ─────────────────────────────────────────────────────
+  const pill=tf=>`<span class="pill${TR_TF===tf?' on':''}" onclick="setTrTf('${tf}')" title="${tf==='d'?'Daily bars, loaded with the page':'Fetched on demand — a 200-period average on this frequency needs that much history'}">${TR_TF_LABEL[tf]}${tf!=='d'&&TR_WM_STATE==='loading'?' …':''}</span>`;
+  const wmErr=TR_WM_STATE==='error'?'<span class="tr-warn">Weekly/monthly data could not be loaded.</span>':'';
+
+  // ── table ───────────────────────────────────────────────────────────────
+  const q=TR_Q.toLowerCase();
+  let rows=tks.filter(tk=>!q||tk.toLowerCase().includes(q)||(N[tk].name||'').toLowerCase().includes(q));
+  const sortv=tk=>{const f=trFrame(tk),r=N[tk];
+    return TR_SORT==='atr'?-Math.abs(r.move.atr_x??-1):
+           TR_SORT==='d200'?-(f?.d200??-9999):
+           TR_SORT==='rsi'?-(r.range.rsi??-1):
+           TR_SORT==='rel'?-(r.rel.sec??-9999):
+           TR_SORT==='off52h'?(r.range.off52h??9999):0;};
+  rows.sort((a,b)=>sortv(a)-sortv(b)||a.localeCompare(b));
+
+  const noFrame=rows.filter(tk=>!trFrame(tk)).length;
+  const body=rows.map(tk=>{
+    const r=N[tk],f=trFrame(tk);
+    const at=(v,lbl)=>v!=null&&Math.abs(v)<=2?`<span class="tr-at" title="Within 2% — an exact tick is rare, so the question is whether it is testing the level">at ${lbl}</span>`:'';
+    const rsi=r.range.rsi;
+    const rsiC=rsi==null?'':rsi>70?'var(--bad)':rsi<30?'var(--good)':'';
+    return `<tr onclick="openCompanyDrawer('${esc(tk)}')">
+      <td class="tr-tk">${esc(tk)}<i>${esc(r.name)}</i></td>
+      <td>${f?trPct(f.d21):'<span class="tr-na">—</span>'}</td>
+      <td>${f?trPct(f.d50):'<span class="tr-na">—</span>'}</td>
+      <td>${f?trPct(f.d150):'<span class="tr-na">—</span>'}</td>
+      <td>${f?trPct(f.d200):'<span class="tr-na">—</span>'}</td>
+      <td>${trTest(f?.test150,150)}</td>
+      <td>${trTest(f?.test200,200)}</td>
+      <td>${r.move.atr_x!=null?`<b>${r.move.atr_x.toFixed(1)}×</b> ${trPct(r.move.d1)}`:trPct(r.move.d1)}</td>
+      <td>${trRel(r.rel.mkt,r.rel.noise,'vs '+r.rel.mkt_name)}</td>
+      <td>${r.rel.sec!=null?trRel(r.rel.sec,r.rel.noise,'vs the median of '+r.rel.peers+' same-vertical peers'):'<span class="tr-na" title="Fewer than 3 peers with data — no figure reported">—</span>'}</td>
+      <td>${trPct(r.range.off52h)}${at(r.range.off52h,'52w high')}</td>
+      <td>${r.range.offath!=null?`<span title="${esc(athBasis(r.range))}">${r.range.offath.toFixed(1)}%${r.range.ath_deep?'':'*'}</span>${at(r.range.offath,'record')}`:'—'}</td>
+      <td>${rsi!=null?`<span style="color:${rsiC}" title="${rsi>70?'Above 70 — stretched':rsi<30?'Below 30 — washed out':'Neutral'}">${rsi.toFixed(0)}</span>`:'<span class="tr-na">—</span>'}</td>
+    </tr>`;}).join('');
+
+  const sortPill=(id,l)=>`<span class="pill${TR_SORT===id?' on':''}" onclick="setTrSort('${id}')">${l}</span>`;
+
+  el.innerHTML=`${head}${breadth}
+    <div class="sect-h">Recent crosses · last 10 sessions · daily</div>
+    <div class="note-box tr-note">Left to right is the order a name actually moves through. The left column is crowded and the right nearly empty by construction — that gap IS the reliability trade-off. A name appearing in several columns is climbing the ladder. <b>⇄ marks a whipsaw</b>: the sign reversed again inside the same window, so the level is contested rather than resolved. The number on each chip is sessions since the cross.</div>
+    <div class="hscroll"><div class="tr-board">${cols}</div></div>
+
+    <div class="sect-h">Biggest moves for the name, not in the abstract</div>
+    <div class="note-box tr-note">Ranked by the move divided by the name's own 14-day ATR, never by raw percentage. A 3% day in something that normally moves 0.8% outranks a 6% day in a junior explorer. Both figures are shown.${rejected.length?` <b>${rejected.length} name(s) have no multiple</b> — their ATR exceeds half the share price, which is arithmetically impossible and means the ATR predates a split while the price does not. Rejected rather than shown as a misleadingly small multiple.`:''}</div>
+    <div class="tr-movers">${movers||'<div class="tr-empty">No usable ATR figures.</div>'}</div>
+
+    <div class="sect-h">Every name · distance from the averages</div>
+    <div class="tr-ctl">
+      <span class="tr-ctl-l">Timeframe</span>${pill('d')}${pill('w')}${pill('m')}${wmErr}
+      <span class="tr-ctl-l">Sort</span>${sortPill('atr','Move vs ATR')}${sortPill('d200','Above 200')}${sortPill('rsi','RSI')}${sortPill('rel','vs sector')}${sortPill('off52h','Near 52w high')}
+      <input class="tr-q" placeholder="filter…" value="${esc(TR_Q)}" oninput="TR_Q=this.value;renderTrends()">
+    </div>
+    ${noFrame?`<div class="note-box tr-note">${noFrame} name(s) have no ${TR_TF_LABEL[TR_TF].toLowerCase()} frame — not enough history at this frequency. Shown as — rather than filled with a shorter average wearing the wrong label.</div>`:''}
+    <div class="hscroll"><table class="tr-tbl">
+      <thead><tr>
+        <th>Name</th><th>21</th><th>50</th><th>150</th><th>200</th>
+        <th title="Did price test the 150 recently, and what happened?">150 test</th>
+        <th title="Did price test the 200 recently, and what happened?">200 test</th>
+        <th title="Today's move as a multiple of the name's own 14-day ATR, and the raw percentage">Move</th>
+        <th title="Day % minus the name's LOCAL index — Nikkei for Tokyo, ASX 200 for Sydney, not the S&P for everything. Percentage points.">vs mkt</th>
+        <th title="Day % minus the median of same-vertical peers. At least 3 peers required. Percentage points.">vs sector</th>
+        <th>off 52w high</th><th>off record</th><th>RSI</th>
+      </tr></thead><tbody>${body}</tbody></table></div>
+    <div class="tr-foot">
+      <b>Basis.</b> ${esc(M.basis||'')} ${esc(M.level_test_basis||'')}
+      ${TR_TF!=='d'&&TRENDS_WM?' '+esc(TRENDS_WM._meta?.basis||''):''}
+      ${(M.stale_dropped||[]).length?`<br><b>Dropped:</b> ${(M.stale_dropped||[]).map(x=>esc(x.tk)+' ('+esc(x.why)+')').join(', ')} — a delisted instrument does not leave the feed, so staleness is measured from the last non-null close.`:''}
+      ${(M.unsettled_bar_dropped||[]).length?`<br><b>Forming bar dropped for ${(M.unsettled_bar_dropped||[]).length} name(s)</b> whose market is open right now: ${(M.unsettled_bar_dropped||[]).map(esc).join(', ')}. Every rule here evaluates on settled closes, so an intraday touch does not count.`:''}
+    </div>`;
+  initHScrollers();
+}
+
 function buildWhatsNext(){
   const el=document.getElementById('v-wn');if(!el)return;
   const evs=(CALENDAR.events||[]).slice();
@@ -2568,6 +2886,53 @@ function drawerMetrics(tk){
     ${(cyc||m.notes)?`<div class="dw-mx-src">Analyst judgment — written by hand, never refreshed by the pipeline${METRICS_META.as_of?`. File last built ${esc(METRICS_META.as_of)}`:''}</div>`:''}`;
 }
 
+// Trend block for the company drawer. Each figure states its own basis; a
+// figure that cannot be made trustworthy is absent rather than caveated.
+function dwtRel(v,noise){
+  if(noise!=null&&Math.abs(v)<noise)
+    return `<b class="dwt-flat" title="${v>0?'+':''}${v.toFixed(1)}pp is under a fifth of this name's typical daily move (${noise.toFixed(1)}pp) — too small to call a direction">little changed</b>`;
+  return `<b style="color:${v>=0?'var(--up)':'var(--dn)'}">${v>0?'+':''}${v.toFixed(1)}pp</b>`;
+}
+function drawerTrend(tk){
+  const r=TRENDS?.names?.[tk];
+  if(!r)return '';
+  const f=r.d,cr=f.cross||{};
+  const rung=TR_LADDER.map((L,i)=>{
+    const c=cr[L.id];if(!c||!c.state)return '';
+    const bull=c.state==='bull',rc=c.recent;
+    return `<div class="dwt-rung ${bull?'bull':'bear'}" title="${esc(L.role)}">
+      <span class="dwt-ord">${i+1}</span>
+      <span class="dwt-lab">${esc(L.label)}</span>
+      <span class="dwt-st">${bull?'above':'below'}</span>
+      ${rc?`<span class="dwt-x" title="Crossed ${rc.ago===0?'on the latest close':rc.ago+' session'+(rc.ago===1?'':'s')+' ago'}${rc.whipsaw?`. WHIPSAW — the sign reversed ${rc.n_flips} times inside the same 10-session window, so this level is contested rather than resolved.`:''}">crossed ${rc.ago}b${rc.whipsaw?' ⇄':''}</span>`:''}
+    </div>`;}).join('');
+  const d=(v,l)=>v==null?'':`<span class="dwt-d"><i>${l}</i><b style="color:${v>=0?'var(--up)':'var(--dn)'}">${v>0?'+':''}${v.toFixed(1)}%</b></span>`;
+  const tests=[['150',f.test150],['200',f.test200]].filter(x=>x[1]).map(([n,t])=>{
+    const m=TR_STATE_META[t.state];
+    return `<div class="dwt-test" style="border-left-color:${m.c}">
+      <b style="color:${m.c}">${n}-SMA ${m.l}</b> — closest approach ${t.gap}% ${t.ago===0?'on the latest bar':t.ago+' bar'+(t.ago===1?'':'s')+' ago'}, measured on the bar ${t.probe==='low'?'LOW, a support test':'HIGH, a resistance test'}.
+    </div>`;}).join('');
+  const mv=r.move,rg=r.range,rl=r.rel;
+  const breadth=TRENDS.breadth||{};
+  const rsiTag=rg.rsi==null?'':rg.rsi>70?' <span class="dwt-tag bad">stretched</span>':rg.rsi<30?' <span class="dwt-tag good">washed out</span>':'';
+  const near=(v)=>v!=null&&Math.abs(v)<=2;
+  return `<div class="dw-sect">Trend — ${esc(r.asof)} · settled close</div>
+    <div class="dwt-rungs">${rung||'<div class="dwt-none">No ladder state — not enough history.</div>'}</div>
+    <div class="dwt-dists">${d(f.d21,'21')}${d(f.d50,'50')}${d(f.d150,'150')}${d(f.d200,'200')}
+      ${f.warmup_short?'<span class="dwt-note">Short history — recursive averages withheld where the seeding convention would drive the answer.</span>':''}</div>
+    ${tests||''}
+    <div class="dwt-ctx">
+      ${mv.atr_x!=null?`<div><b>Today ${mv.d1>0?'+':''}${mv.d1.toFixed(1)}% = ${mv.atr_x.toFixed(1)}× its own ATR</b> (this name typically moves ${mv.atr_pct.toFixed(1)}% a day). Ranked against itself, not in the abstract.</div>`
+        :`<div><b>Today ${mv.d1>0?'+':''}${mv.d1.toFixed(1)}%.</b> No ATR multiple: ${esc((mv.atr_rejected||'ATR unavailable').replace(/^withheld — /,''))}.</div>`}
+      ${rl.mkt!=null?`<div>Versus its own market (${esc(rl.mkt_name)}): ${dwtRel(rl.mkt,rl.noise)}${rl.sec!=null?` · versus the median of ${rl.peers} same-vertical peers: ${dwtRel(rl.sec,rl.noise)}`:' · no sector figure, fewer than 3 peers'}</div>`:''}
+      ${breadth.tape?`<div class="dwt-tape">${esc(breadth.note)}</div>`:''}
+      <div>${rg.off52h!=null?`${near(rg.off52h)?'<b>At its 52-week high</b> (within 2%)':`${Math.abs(rg.off52h).toFixed(1)}% below the 52-week high`}`:''}${rg.off52l!=null?`, ${rg.off52l.toFixed(1)}% above the 52-week low`:''}.
+        ${rg.offath!=null?`<span title="${esc(athBasis(rg))}">${near(rg.offath)?'<b>At its record</b>':`${Math.abs(rg.offath).toFixed(1)}% below its record`}</span> — ${rg.ath_deep?esc(noDot(lcFirst(athBasis(rg)))):`<i>highest ever recorded here</i> — our history only starts ${esc(rg.ath_since)}, so this record was never tested against a longer past`}.`:''}
+        ${rg.rsi!=null?` RSI ${rg.rsi.toFixed(0)}.${rsiTag}`:rg.rsi_short?' RSI withheld — too little history for it to be seed-independent.':''}</div>
+    </div>
+    <div class="dwt-basis">Daily bars, settled closes only. Level tests use the bar low against the level when price is above it and the high when below, over 15 bars, counting an approach only within 2%. <span class="dwt-link" onclick="closeDrawer();ST('tr');TR_Q='${esc(tk)}';if(!built['tr']){built['tr']=true;buildTrends();}else renderTrends()">Open in Trends →</span></div>`;
+}
+
 function openCompanyDrawer(tk,push=true){
   const c=COMPANIES.find(x=>x.ticker===tk);
   if(!c){return;}
@@ -2593,6 +2958,7 @@ function openCompanyDrawer(tk,push=true){
      <div class="dw-sect">Chain layer</div><div class="dw-layer">${esc(c.chain_layer||'—')}</div>
      <div class="dw-sect">Thesis</div><div class="dw-thesis">${linkifyTickers(esc(c.thesis_note||''))}</div>
      ${c.froth_note?`<div class="dw-sect">Froth lens</div><div class="dw-thesis" style="border-left-color:${fm.c}">${esc(c.froth_note)}</div>`:''}
+     ${drawerTrend(c.ticker)}
      ${drawerMetrics(c.ticker)}
      ${drawerMarket(c.ticker)}
      ${drawerNews(c.ticker)}
@@ -2895,7 +3261,7 @@ async function loadData(){
   const Q='?t='+Date.now();
   const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
   try{
-    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls,cmin,cal,met]=await Promise.all([
+    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls,cmin,cal,met,trd]=await Promise.all([
       fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
       fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
       fetchJ('excluded.json').catch(()=>null),
@@ -2910,6 +3276,7 @@ async function loadData(){
       fetchJ('critical-minerals.json').catch(()=>null),
       fetchJ('calendar.json').catch(()=>null),
       fetchJ('metrics.json').catch(()=>null),
+      fetchJ('trends.json').catch(()=>null),
     ]);
     COMPANIES=cos.companies||[];
     CYCLE=cyc.cycles||[];
@@ -2931,6 +3298,7 @@ async function loadData(){
     if(gls)GLOSSARY=gls.terms||[];
     if(cmin)MINERALS=cmin;
     if(cal)CALENDAR=cal;
+    if(trd){TRENDS=trd;}
     if(met){METRICS={};(met.metrics||[]).forEach(r=>METRICS[r.ticker]=r);METRICS_META=met._meta||{};}
     if(ref){
       REF_MAP={};REF_BLOCK=new Set();

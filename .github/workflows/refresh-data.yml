@@ -62,8 +62,13 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/quotes.json data/indices.json data/news.json data/alerts.json \
-                  data/performance.json data/breaking.json data/calendar.json
+          # Stage the whole data directory rather than an explicit list. The
+          # list had already gone stale twice: metrics.json and the two trends
+          # files were being written by the pipeline and then silently dropped
+          # here, so the nightly run produced them and never committed them.
+          # This runs on a clean checkout, so the only changes in data/ are the
+          # ones this pass just wrote.
+          git add data/
           if git diff --cached --quiet; then
             echo "No data changes — nothing to commit"
           else

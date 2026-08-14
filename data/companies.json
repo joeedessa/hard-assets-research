@@ -1592,7 +1592,7 @@
       "tier": "assessed"
     },
     {
-      "ticker": "AII.TO",
+      "ticker": "ALM",
       "name": "Almonty Industries",
       "vertical": "tm",
       "chain_layer": "Tungsten mining",
@@ -1608,9 +1608,10 @@
         "defense-procurement",
         "reshoring"
       ],
-      "last_touched": "2026-08-05",
+      "last_touched": "2026-08-12",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "data_caveat": "TICKER MIGRATED 2026-07-17: previously held as AII.TO. Almonty consolidated to its Nasdaq listing; the Toronto line stopped trading 2026-07-17 and Yahoo kept serving its last close of C$19.25 as though live. Yahoo carried the full price history across to ALM, so trend and moving-average figures are continuous."
     },
     {
       "ticker": "VNP.TO",
@@ -3179,7 +3180,7 @@
       "tier": "assessed"
     },
     {
-      "ticker": "CGEH",
+      "ticker": "CEPL",
       "name": "Capstone Energy+",
       "vertical": "elec",
       "chain_layer": "Microturbines / on-site power",
@@ -3195,9 +3196,9 @@
         "gas-infrastructure",
         "grid-buildout"
       ],
-      "last_touched": "2026-08-08",
+      "last_touched": "2026-08-12",
       "last_reviewed": "2026-08-08",
-      "data_caveat": "OTC Pink. Yahoo returns only ~37 price bars a year for this listing, so 200DMA and 12-month return will be null and the 1-day change can span several sessions. Breaking-signal divergence checks are unreliable for this name specifically — read its price directly rather than trusting the derived signals. Underlying liquidity is adequate (median ~$2.9M traded daily); the sparseness is Yahoo's coverage, not the market's.",
+      "data_caveat": "TICKER MIGRATED 2026-07-08: previously held as CGEH on OTCQX, which ceased quotation when Nasdaq trading began. UNLIKE the Almonty migration, the price history did NOT carry across — CEPL starts at 2026-07-08 with 27 sessions, so no moving average longer than that exists and the name is excluded from the trend ladder until it has depth. NOTED, NOT EXPLAINED: CEPL trades at $6.75 with a ~$220M market cap against CGEH's last OTCQX print of $9.85 and ~$381M. The company describes a 'simplified capital structure' in the same announcement; we have not reconciled the two figures and do not assert why they differ.",
       "tier": "assessed"
     },
     {

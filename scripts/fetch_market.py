@@ -28,6 +28,7 @@ except ImportError:
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))   # for sibling modules
 DATA = ROOT / "data"
 
 # ── Refresh mode ──────────────────────────────────────────────────────────────
@@ -1396,6 +1397,20 @@ def main():
         safe_write(DATA / "performance.json", perf)
     else:
         print("  performance: skipped on a light pass (previous file kept)")
+
+    # 6b. Trends — three batch downloads (daily/weekly/monthly); evening only.
+    if not LIGHT:
+        try:
+            from trends import build_trends
+            td, twm = build_trends(companies, SESSIONS, yahoo_symbol)
+            if td:
+                safe_write(DATA / "trends.json", td)
+                safe_write(DATA / "trends-wm.json", twm)
+        except Exception as e:
+            # A trend build failure must not take down the whole nightly run.
+            print(f"  trends: FAILED — {e}", file=sys.stderr)
+    else:
+        print("  trends: skipped on a light pass (previous file kept)")
 
     # 6. Metrics — one .info call per assessed name; evening only.
     if not LIGHT:
