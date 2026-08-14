@@ -1,30 +1,45 @@
 {
   "_meta": {
-    "as_of": "2026-08-14T16:49:44+00:00",
+    "as_of": "2026-08-14T21:47:53+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 0/169 down 5%, sector +0.6%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 5/169 up 5%, sector +0.6%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 0/169 down 5%, sector +0.2%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 8/169 up 5%, sector +0.2%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.7% universe median): 0 found",
+      "Conviction-3 divergence (±8%+ versus the +0.6% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 1 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: -0.40%",
+      "USD (DXY) ±1%+ in a session: -0.30%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
     ]
   },
-  "state": "elevated",
+  "state": "critical",
   "signals": [
+    {
+      "sev": "critical",
+      "cat": "deleveraging",
+      "measured": false,
+      "t": "Surviving a contractor's bankruptcy at $10 billion in, a steel terminal on the Texas waterway kept its workers building through a brutal Gulf summer, and the ship that finally sail",
+      "ev": "Headline from Energies Media, Fri, 14 Au. Parsed text — not independently verified.",
+      "stance": "MONITOR",
+      "action": "No holding is directly affected — context only. This is a parsed headline, not a datapoint — confirm before acting.",
+      "tk": [],
+      "src": {
+        "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2WEF3SDdhOW1fUDVjWUJLcUdVV0p1cXFfVURVN2d4NFlMaDJLcnFyWU8tNnJUNE5iYzVMX2ZhWFEtbURlNDdtVG5HQmFPSEttOVowN0g3ZHlWdUEzLW9JNC04TENMRXRLaDBPQlJES1R0MFlqLUhwb2picmd6bDA?oc=5",
+        "s": "Energies Media"
+      },
+      "date": "2026-08-14"
+    },
     {
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "REE +8.4% in a session",
+      "t": "REE +5.5% in a session",
       "ev": "Spot/futures move computed from today's close.",
-      "stance": "REVIEW",
-      "action": "The underlying moved +8.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +5.5% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-08-14"
     }
