@@ -1,33 +1,31 @@
 {
   "_meta": {
-    "as_of": "2026-08-14T08:03:21+00:00",
+    "as_of": "2026-08-14T14:04:03+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 5/168 down 5%, sector -3.1%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 1/168 up 5%, sector -3.1%",
-      "Single-name collapse (any holding −12%+ in a session): 1 found",
-      "Conviction-3 divergence (±8%+ versus the -0.4% universe median): 0 found",
-      "Tracked commodity ±5%+ in a session: 0 of 12 moved",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 0/169 down 5%, sector +0.9%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 5/169 up 5%, sector +0.9%",
+      "Single-name collapse (any holding −12%+ in a session): 0 found",
+      "Conviction-3 divergence (±8%+ versus the +0.9% universe median): 0 found",
+      "Tracked commodity ±5%+ in a session: 1 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: -0.20%",
+      "USD (DXY) ±1%+ in a session: -0.40%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
     ]
   },
-  "state": "critical",
+  "state": "elevated",
   "signals": [
     {
-      "sev": "critical",
-      "cat": "company-critical",
+      "sev": "high",
+      "cat": "commodity",
       "measured": true,
-      "t": "CEPL -18.3% in a single session",
-      "ev": "Computed from today's close. Conviction 1, froth 1.",
-      "stance": "REVIEW",
-      "action": "Insulated names are involved (CEPL). Weakness here is opportunity, not information.",
-      "tk": [
-        "CEPL"
-      ],
+      "t": "REE +6.0% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +6.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
       "date": "2026-08-14"
     }
   ]

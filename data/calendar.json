@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-14T08:03:21+00:00",
+    "as_of": "2026-08-14T14:04:03+00:00",
     "mode": "light",
     "coverage": "3/3 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -136,15 +136,6 @@
       },
       "wire": [
         {
-          "t": "Borr Drilling Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXVBUjNmTzdkTVJxM3g0dWRkdnktSno0Xzd5T1c4WFJiQk01S2s2Z00ybDZ0ZzZtUmJmdVN0TXBkSi1jS21mMEltZlhnNEJZYzVmYUZJZ1N3OGtBUlRnTWtWeDhobG1GZUdyVHRnMXJMeHR1RHZmQWhIazgwRmxJNUl4UmxjMUw4TUhvQmxGUXRLd3pZQW5Bd09GRQ?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-12",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
           "t": "Borr Drilling Ltd (BORR) (Q2 2026) Earnings Call Highlights: Strong Operational Performance and ... - Yahoo Finance",
           "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ1FqUlg5Ujl0T1dpMWE0U2l0UUU3alBickdJcFlqU3JrN2QwSlItTTdOSXhwak80S19Pdnhvb1pVQm1MMGN4OExORW1pNWZkRG1tZlJraGNMMEY0ekk2MExVTlAzUDdWTGE4bTVOS091WjJaNGt3R2J6MlFtRDdkMm5BY25mS1AyZlRiOTVmX2lfWVdu?oc=5",
           "s": "Yahoo Finance",
@@ -164,6 +155,15 @@
           "s": "kare11.com",
           "d": "2026-08-12",
           "cues": []
+        },
+        {
+          "t": "Earnings call transcript: Borr Drilling Q2 2026 miss sparks 10% stock drop - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZzhhdjRkQkNuQVlYVzF6c29fZXZtTnduYkhMTWNEaE1lSmp1MjJONDNuQ2J3NUZzSTdVRHhEMlR2bkt4bHZKMEprUkV6RV9IT212cEZqdXlvRWFsQktia2NVQXVVTzRKM1RQYXNMa21VN0Z0bVN4dDRKZ0xPczJVclJkZnIyWGtkbXpxN1hmU0g4Snhhb1E2MFBuekNlS3Q3SUJWOVBVVVhOSHRHV3ZVQi1pMm16akF3Z0lHNGVwWHo2WFU4ajJj?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-12",
+          "cues": [
+            "miss"
+          ]
         }
       ],
       "wire_gate": "2026-08-11",
@@ -205,22 +205,18 @@
           ]
         },
         {
-          "t": "Pan American Silver Slides After Q2 Earnings Misses Expectations - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxONUpKY1BZRENwZWFvQUgzRUpHamVKbnhaa1UyeFJGOUFmVnc0VzRwRFhac0RVSlhwQm8tZmF3UlJON204SENmdTZVVTh1amRqcmlPQmtwNFFWckVfRl96VGMyNzlWT3cwZ04zMmtWeVJOSEZrMWFkM2xtZGVzWjhCbXRXQXNYdWltc0otbmFveklvLUpxdHV3RHA3MXYydw?oc=5",
-          "s": "Quiver Quantitative",
+          "t": "Full Transcript: Pan American Silver Q2 2026 Earnings Call - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTnZXa1A3QzR6U3BnWXhISWwzQlIwTllVVk9Jc0RzYTlVTndoT2RIWjJrQmF5VE9EWXVJcVJsMUlCTUptQ3NJX21PNlJvYnBhNno5NjZJekpadzdCV0ZwVDRTUmdrOVdRb08ySTJjQ0QxMFBBSTlpUm5Uak5Vc1pqR3FMWGwwVURicnFsY1FIVUpnUUFmcWN6Tk5wZlVpa0lYT1JTcA?oc=5",
+          "s": "Benzinga",
           "d": "2026-08-13",
-          "cues": [
-            "miss"
-          ]
+          "cues": []
         },
         {
-          "t": "Pan American Silver slides as Q2 earnings miss on lagging gold production (PAAS:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYXhpWnhqTElvSlh3MjhjX3dnVkY0Q1V5c0tSMTIydmwwU0lVRUNadUVrcGxNcHhvcC02TjdkM2ZDTkN2SUJxelItTTNMUjA3RFYxMmNYNXdIeUw2SHVYN1U1UUtwWlNxNzdyOG5FT3kxVktSc080MFhJc0NBSzh4VGVqQzlEb2tUYVdpQUZRTTJxaF9aX3plZWJaMUFPQjM4NlFmc2RfTHRSTHB4R0NpWA?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-13",
-          "cues": [
-            "miss"
-          ]
+          "t": "Pan American Silver: Q2 Earnings Snapshot - KING5.com",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS1J5MEVoeU1UV2tUd0s3NEFMWjI4VUw3Rjl6czdpQUxVbllFLXpwOEdKTjU2R2J4SEhXU01lcXhNSE1OaGx3R2hGZ2JBZ3c1dWFsY0dQazgtdWRZV3FWeG51aW5QR0xjbmNPNTdYRkdXOFZlUW95ZHlaUmpSV0ZOYlNJbEo3NDlwUG5mRDFCSmhqeUpTVEJ1YW9hOHVkRUpJVkNtT184RmNTblo5aVRJcjhjVUhURzdmMjhOa1paTXlKYll1WFA5SFA0VWdJQVI4ejlJY25R?oc=5",
+          "s": "KING5.com",
+          "d": "2026-08-12",
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-12",
@@ -1619,6 +1615,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLNG",
+      "name": "Golar LNG",
+      "d": "2026-11-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-05T12:30+00:00",
         "tz": "America/New_York"
       }
     },
