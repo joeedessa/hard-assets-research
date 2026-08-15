@@ -696,6 +696,11 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .pol-status.active{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad)}
 .pol-status.investigating{background:color-mix(in srgb,var(--warn) 14%,transparent);color:var(--warn)}
 .pol-body{font-size:11px;color:var(--color-text-secondary);line-height:1.5;margin-bottom:5px}
+.pol-impact{font-size:11px;color:var(--color-text-secondary);line-height:1.6;margin-top:6px;
+  padding:6px 9px;border-radius:4px;background:var(--color-background-secondary);
+  border-left:2px solid var(--good)}
+.lev-datenote{font-size:9.5px;line-height:1.5;color:var(--color-text-tertiary);margin-top:3px;
+  padding-left:7px;border-left:2px solid var(--warn)}
 .pol-scope{font-size:11px;color:var(--color-text-secondary);line-height:1.6;margin-top:6px;
   padding:6px 9px;border-radius:4px;background:var(--color-background-secondary);
   border-left:2px solid var(--accent)}
@@ -861,6 +866,9 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .dw-sect:first-child{margin-top:0}
 .dw-layer{font-size:12px;color:var(--color-text-secondary);background:var(--color-background-secondary);
   padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:4px}
+.dw-caveat{font-size:11px;line-height:1.65;color:var(--color-text-secondary);
+  padding:7px 10px;border-radius:4px;background:var(--color-background-secondary);
+  border-left:2px solid var(--warn)}
 .dw-thesis{font-size:12px;color:var(--color-text-secondary);line-height:1.6;
   border-left:3px solid var(--color-border-secondary);padding-left:9px}
 .dw-chip{font-size:10.5px;padding:3px 8px;border-radius:20px;background:var(--color-background-secondary);
@@ -2198,6 +2206,7 @@ function buildPolicy(){
       <div class="pol-card-h"><span class="pol-icon">${esc(r.icon||'📋')}</span><div><div class="pol-title">${esc(r.title)}${r.cliff?`<span class="pol-cliff">cliff ${esc(r.cliff)}</span>`:''}</div><div class="pol-date">Since ${esc(r.date)}</div></div></div>
       <div class="pol-status ${r.status||'active'}">${esc(r.status||'active')}</div>
       <div class="pol-body">${esc(r.summary)}</div>
+      ${r.impact?`<div class="pol-impact"><b>Why it matters here:</b> ${linkifyTickers(esc(r.impact))}</div>`:''}
       ${r.scope?`<div class="pol-scope"><b>Scope:</b> ${linkifyTickers(esc(r.scope))}</div>`:''}
       ${r.interaction_45x?`<div class="pol-scope"><b>Interaction with 45X:</b> ${linkifyTickers(esc(r.interaction_45x))}</div>`:''}
       ${r.watch?`<div class="pol-watch"><b>Watch:</b> ${esc(r.watch)}</div>`:''}
@@ -2220,6 +2229,7 @@ function buildPolicy(){
     <div class="lev-card">
       <div class="lev-title">${esc(l.title)}</div>
       <div class="lev-date">${esc(l.date)}</div>
+      ${l.date_note?`<div class="lev-datenote">${esc(l.date_note)}</div>`:''}
       <div class="lev-body">${esc(l.description)}</div>
       <div class="lev-bb">${esc(l.bull_bear)}</div>
       <div style="margin-top:5px">${(l.tickers||[]).map(t=>`<span class="pol-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join(' ')}</div>
@@ -2760,7 +2770,18 @@ function buildWhatsNext(){
 
 function buildMinerals(force){
   const el=document.getElementById('v-cm');if(!el)return;
-  const ms=(MINERALS.minerals)||[];
+  // THE NOTE-BOX BELOW CLAIMS THIS ORDER, so it has to actually happen — for a
+  // long time it did not, and the tab rendered in file order while telling the
+  // reader it was ranked. Gap severity leads because "least held" is the primary
+  // claim; priority breaks ties. Priority is NOT used as the primary key: it was
+  // scored at different times on different scales (the original no-exposure
+  // entries sit at 12, ones added 2026-08-11 at 34-37), so ranking on it alone
+  // would order by when a row was written rather than by how exposed we are.
+  const CM_RANK={none:0,'enduse-only':1,partial:2,covered:3};
+  const ms=((MINERALS.minerals)||[]).slice().sort((a,b)=>
+    (CM_RANK[a.gap]??9)-(CM_RANK[b.gap]??9) ||
+    (b.priority??0)-(a.priority??0) ||
+    (a.name||'').localeCompare(b.name||''));
   if(!ms.length){el.innerHTML='<div class="note-box">Critical-minerals data loading…</div>';return;}
   const meta=MINERALS._meta||{};
   const counts={none:0,'enduse-only':0,partial:0,covered:0};
@@ -2957,6 +2978,7 @@ function openCompanyDrawer(tk,push=true){
      </div>
      <div class="dw-sect">Chain layer</div><div class="dw-layer">${esc(c.chain_layer||'—')}</div>
      <div class="dw-sect">Thesis</div><div class="dw-thesis">${linkifyTickers(esc(c.thesis_note||''))}</div>
+     ${c.data_caveat?`<div class="dw-sect">Data caveat</div><div class="dw-caveat">${linkifyTickers(esc(c.data_caveat))}</div>`:''}
      ${c.froth_note?`<div class="dw-sect">Froth lens</div><div class="dw-thesis" style="border-left-color:${fm.c}">${esc(c.froth_note)}</div>`:''}
      ${drawerTrend(c.ticker)}
      ${drawerMetrics(c.ticker)}
