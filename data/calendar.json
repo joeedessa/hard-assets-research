@@ -1,75 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-08-14T21:47:53+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-08-17T07:39:39+00:00",
+    "mode": "light",
+    "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "4004.JP",
-      "name": "Resonac",
-      "d": "2026-08-06",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-08-06T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NDA.DE",
-      "name": "Aurubis AG",
-      "d": "2026-08-06",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:30 CEST",
-        "iso": "2026-08-06T15:30+00:00",
-        "tz": "Europe/Berlin"
-      },
-      "reported": {
-        "eps": 2.61,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-14",
-        "eps_est": 2.24,
-        "surprise_abs": 0.37,
-        "surprise_pct": 16.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SBMO.AS",
-      "name": "SBM Offshore",
-      "d": "2026-08-06",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:30 CEST",
-        "iso": "2026-08-06T15:30+00:00",
-        "tz": "Europe/Amsterdam"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "5706.JP",
-      "name": "Mitsui Kinzoku",
-      "d": "2026-08-07",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-08-07T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 294.08,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-14",
-        "eps_est": 448.64,
-        "surprise_abs": -154.56,
-        "surprise_pct": -34.5
-      }
-    },
     {
       "type": "earnings",
       "tk": "ACM",
@@ -84,7 +20,7 @@
       "reported": {
         "eps": -0.5,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-14",
+        "fetched": "2026-08-17",
         "eps_est": 1.46,
         "surprise_abs": -1.96,
         "surprise_pct": -134.2
@@ -137,10 +73,10 @@
       "reported": {
         "eps": -0.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-14",
-        "eps_est": -0.12,
-        "surprise_abs": -0.09,
-        "pct_suppressed": "consensus of -0.12 is too near zero for a percentage to mean anything — the beat/miss is -0.09 per share"
+        "fetched": "2026-08-17",
+        "eps_est": -0.22,
+        "surprise_abs": 0.01,
+        "surprise_pct": 1.5
       }
     },
     {
@@ -190,7 +126,7 @@
       "reported": {
         "eps": 0.73,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-14",
+        "fetched": "2026-08-17",
         "eps_est": 0.87,
         "surprise_abs": -0.14,
         "surprise_pct": -16.5
@@ -209,14 +145,46 @@
       },
       "wire": [
         {
+          "t": "Perpetua Resources (TSX:PPTA) Reports Fresh Idaho Drilling Results, Is The Premium Valuation Justified? - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONGsyQ0hDS2xMREJmVUlCOUh4cWlOLXF1aUVGeDgxcTAtZnd1cFpnYVZsS0k4TjNYUzVDdGJDOEhWOWFFbzcxcFVzV2F4WFBRbU94VEFBejA1UDd5eU1oaHJ3Y0xldG1rUXZRcVFwb2RiY1ItVms4QlFMM21WXzdKSDBpbjJtOTZubDZ1RWtZeS1HY1ZPLU5JRXFac2NBX2JMdTZ6U2RRT3NFYi1VM2lUTDVEemQ1MkRubHpQMkFIT2xCV0daeEZmQVFvSGhseDN0T0JpYm9rQXlEUdIB3wFBVV95cUxNSC02aHo3aHFyM3FSekdnQm5PTUwxRmZHRXBSV0N6emhWM1RxOEJyUHd5SjJxMFVSMzhhb2pFRUh3MldrNFRSc2MzTFZTemNCQlg0ZlU1Q1Rud0xWT3VrWVFvZkZ6OUt1SURZeV9ld2c2VHJjQURQVEh0czhXdEM2M1JJSmRLS1hfaXUwYi1hRHJiTG5oM0s1eV9QdGdqRUZKWjl3TmFrRXdRdXhoNXR4UlNoOEctNmhJQlMwSW9SbzhqejZRc1BxQTBGdmJKcEREdjdJaFBaRDJVV3lFdXJV?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-17",
+          "cues": []
+        },
+        {
+          "t": "Perpetua Resources (NASDAQ:PPTA) Announces Earnings Results, Misses Expectations By $0.59 EPS - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNnNsOHdXQWZIeUpBM21tSjl0VjUtcElhb1ExTTgwUVNYcmlCMGFGb3h4OVJOZWI0dTNLM1JqUW5rcDZKT19LYXQ3NXNFWFdyZlQ3ZDNodlJ1MlJKUEkxaXEteDBTQ3BiUzZaeE1jVUdZNDhpR1drZHFRRmFUMjg3cUVsWWltUHVmczZ3a0dLQXdRVUpoZTI2S2ZUTjJCQ3V6VWJudXUwSlRUQUUzdFV1bmhleVJKN014dld0M2VuZVgwY0ZMNkFrNzdvcVgwdGpZZVpPTlQwVnY?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-15",
+          "cues": [
+            "beat",
+            "miss"
+          ]
+        },
+        {
           "t": "Perpetua Resources Corp. reports results for the quarter ended June 30 - Earnings Summary - TradingView",
           "u": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQQkx6ODB0VExjSUJEYWJWTmJIWXFaUy1vVmN5Y0pNYWhZaVI5X1FfLTNJdHR2MEx1NTVWYXFFVmdVYmJIOGhkTHNDczY1b2toZ0RZYzhsSnBnZ2V3NkY2V2tsektlekNvOWxjbVdGaWhpT2xTRlVnb3lRbDlyeE1qMzNFS2Zjbi1aMDlYeHk4ZG9JbW50TDF3SHN2emtTM0tLUXlHSzc2b2ZQa2J2UW1KWlF4U2RZTVNCUUpIODFNenQ3TW04QndMTHQ2WmZKcGFzRUVIYTlKOTExb2lrRkc2Q2d3WEp1RjNUS0lGNQ?oc=5",
           "s": "TradingView",
           "d": "2026-08-14",
           "cues": []
+        },
+        {
+          "t": "Perpetua Resources Corp. Reports Earnings Results for the Second Quarter and Six Months Ended June 30, 2026 - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdWkxQjczUFVJT2VzV1JfbFZOdE5EZ3pwbDh4cUhDd21tM25CajRnTHV3STZsRjJzSkQ1cXRrMi1jOXZYekNSRDBTQmM5OGpJWng1UmRCcFJGTGxKb3oxZWlWelU0ZzZjYmN5aEJwNkZFSUptTFVndERQN1M0eU5sZ2xkOHB3ejVaSVlzWHA2QmhTc0dIel8tRU5TTWdrcUlWZExZQ2tjUVdNc0drVzdPZ0Z4dmhqOTZVWkdKNWY5QWlLUDNMYXBkc2s2YjhXMkVBMW1ncDdrRmlCeWVHVnFiWmJPTVhaaWs?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-08-14",
+          "cues": []
         }
       ],
-      "wire_gate": "2026-08-14"
+      "wire_gate": "2026-08-14",
+      "reported": {
+        "eps": -0.78,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-17",
+        "eps_est": -0.27,
+        "surprise_abs": -0.51,
+        "surprise_pct": -188.9
+      }
     },
     {
       "type": "earnings",
