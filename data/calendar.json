@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-17T16:24:07+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-08-17T21:48:28+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -37,39 +37,6 @@
         "iso": "2026-08-11T20:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Borr Drilling Ltd (BORR) (Q2 2026) Earnings Call Highlights: Strong Operational Performance and ... - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ1FqUlg5Ujl0T1dpMWE0U2l0UUU3alBickdJcFlqU3JrN2QwSlItTTdOSXhwak80S19Pdnhvb1pVQm1MMGN4OExORW1pNWZkRG1tZlJraGNMMEY0ekk2MExVTlAzUDdWTGE4bTVOS091WjJaNGt3R2J6MlFtRDdkMm5BY25mS1AyZlRiOTVmX2lfWVdu?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Borr Drilling Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYXVBUjNmTzdkTVJxM3g0dWRkdnktSno0Xzd5T1c4WFJiQk01S2s2Z00ybDZ0ZzZtUmJmdVN0TXBkSi1jS21mMEltZlhnNEJZYzVmYUZJZ1N3OGtBUlRnTWtWeDhobG1GZUdyVHRnMXJMeHR1RHZmQWhIazgwRmxJNUl4UmxjMUw4TUhvQmxGUXRLd3pZQW5Bd09GRQ?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-12",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Borr Drilling Limited (BORR) Stock Falls on Q2 2026 Earnings - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ0lrT01DSklVemRCMzhZa3VtZE5oR3ppZlFrbXgyV3NZdVVRM1RoU1ZOcEdDaTk4SGd0NGxFaWFrV2x4N094cWg2SEt3RjllZEozeWIwREQzNWR3OWM3SjV1LU0xNi1tR2l3NGRlWk1aVGp5S3JTNE11c3V5eUZydF9GZnhoandtOXMwWGVsRzBRWFp5c0NwSFByM0JBdw?oc=5",
-          "s": "Quiver Quantitative",
-          "d": "2026-08-11",
-          "cues": []
-        },
-        {
-          "t": "BORR Extends Mexican Rig Bet As Earnings Momentum Stumbles - StocksToTrade",
-          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfU2ZucjFUZzFDUjVaeFpxTEhWRFpoVFpRWmpUby13UFY1LWFBeXpFOG5QcE9oeU12c0NmUm1rbXpUVlhBWDJhUndYcVNoYml2WFppeVROUXh0NDhlZHQ0cHZiVGVwR1Z6MzJXZjYtOExfM25ld2VPRHVFQXVCa0k?oc=5",
-          "s": "StocksToTrade",
-          "d": "2026-08-14",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-11",
       "reported": {
         "eps": -0.21,
         "source": "Yahoo Finance",
@@ -81,66 +48,13 @@
     },
     {
       "type": "earnings",
-      "tk": "PAAS",
-      "name": "Pan American Silver",
-      "d": "2026-08-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-12T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Pan American Silver Reports Second Quarter 2026 Financial Results - Business Wire",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ2FYZ2ZFTkduOHJNLURKUnFEaU0yam5CNUN2ZFZfaGxhU2tac3huRnVXTGgyUHB2cnc2Vy1vZmNybF9mS051OXVYeEFtdmdpY0Iwd2hKQTdYa0RQTUhFSjR3M01jRVhVeWxtWE9EZ3dWeFpKbXNKS1UxOGNKTkxPSnF0cHQ1Z3FFeXJKQmZDckVnQ0k2RUp2NW0tWlVjMS1SWVNmdTI5YzVzMUloLXdMellweF9reUdrQ1JkNUQtZw?oc=5",
-          "s": "Business Wire",
-          "d": "2026-08-12",
-          "cues": []
-        },
-        {
-          "t": "Pan American Silver Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZkdodGZlQ3BvZnJRUU00U21HYWtDbE5udWc2LURZbmozTVBhbVotT1VCM045amFva3FzekFBTGR4amZfLVp0ajNlSDdqQ3E2RzF6N3ZMNnptOVJBQ2VORjB3MHM0c21zRWJYZlpTaGtySE9SWlptMU91MWFqM091V2JvWTB5TDE2dU9qZG8zcWN5QThyUUtoV3hzdnZvOU1uWHBF?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-14",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "PAAS Q2 Earnings Call Keeps Silver View, Flags Gold Pressure - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNElGbG0zR0F0dUctNXo2Q2JvcDBiQk1LSEdZYnNNWUJZbFhZbXdqNVFGMS1uYmJiUTdIb0dTQmJQbHQzQUtjWXBBNEJtMFhoalBTZ1A0TnVZeUJRR0tKS0ltLWRWOENLdmFsLWV1bWwwTlkzQ3BNOWtHSi1xMWVBNHZidXJOMlpURWRpcy1pNklUZDExcHE3MGY4SnFoT3lIUVcxUS0yaFRYcXRsMXhMSE9landrdw?oc=5",
-          "s": "TradingView",
-          "d": "2026-08-14",
-          "cues": []
-        },
-        {
-          "t": "Pan American Silver: Q2 Earnings Snapshot - KING5.com",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPS1J5MEVoeU1UV2tUd0s3NEFMWjI4VUw3Rjl6czdpQUxVbllFLXpwOEdKTjU2R2J4SEhXU01lcXhNSE1OaGx3R2hGZ2JBZ3c1dWFsY0dQazgtdWRZV3FWeG51aW5QR0xjbmNPNTdYRkdXOFZlUW95ZHlaUmpSV0ZOYlNJbEo3NDlwUG5mRDFCSmhqeUpTVEJ1YW9hOHVkRUpJVkNtT184RmNTblo5aVRJcjhjVUhURzdmMjhOa1paTXlKYll1WFA5SFA0VWdJQVI4ejlJY25R?oc=5",
-          "s": "KING5.com",
-          "d": "2026-08-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-12",
-      "reported": {
-        "eps": 0.73,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-17",
-        "eps_est": 0.87,
-        "surprise_abs": -0.14,
-        "surprise_pct": -16.5
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "PPTA",
       "name": "Perpetua Resources",
-      "d": "2026-08-14",
+      "d": "2026-08-17",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-14T20:00+00:00",
+        "iso": "2026-08-17T20:00+00:00",
         "tz": "America/New_York"
       },
       "wire": [
@@ -164,27 +78,9 @@
           "s": "The Globe and Mail",
           "d": "2026-08-17",
           "cues": []
-        },
-        {
-          "t": "Perpetua Resources (NASDAQ:PPTA) Announces Earnings Results, Misses Expectations By $0.59 EPS - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNnNsOHdXQWZIeUpBM21tSjl0VjUtcElhb1ExTTgwUVNYcmlCMGFGb3h4OVJOZWI0dTNLM1JqUW5rcDZKT19LYXQ3NXNFWFdyZlQ3ZDNodlJ1MlJKUEkxaXEteDBTQ3BiUzZaeE1jVUdZNDhpR1drZHFRRmFUMjg3cUVsWWltUHVmczZ3a0dLQXdRVUpoZTI2S2ZUTjJCQ3V6VWJudXUwSlRUQUUzdFV1bmhleVJKN014dld0M2VuZVgwY0ZMNkFrNzdvcVgwdGpZZVpPTlQwVnY?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-08-15",
-          "cues": [
-            "beat",
-            "miss"
-          ]
         }
       ],
-      "wire_gate": "2026-08-14",
-      "reported": {
-        "eps": -0.78,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-17",
-        "eps_est": -0.27,
-        "surprise_abs": -0.51,
-        "surprise_pct": -188.9
-      }
+      "wire_gate": "2026-08-17"
     },
     {
       "type": "earnings",
@@ -1703,6 +1599,18 @@
         "label": "MID-SESSION · 16:30 CET",
         "iso": "2026-11-11T15:30+00:00",
         "tz": "Europe/Berlin"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PAAS",
+      "name": "Pan American Silver",
+      "d": "2026-11-16",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-16T20:00+00:00",
+        "tz": "America/New_York"
       }
     },
     {
