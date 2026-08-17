@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-17T07:39:39+00:00",
+    "as_of": "2026-08-17T13:27:27+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
       "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 1/169 down 5%, sector +0.2%",
@@ -8,8 +8,8 @@
       "Single-name collapse (any holding −12%+ in a session): 1 found",
       "Conviction-3 divergence (±8%+ versus the +0.9% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 1 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
-      "USD (DXY) ±1%+ in a session: -0.30%",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
+      "USD (DXY) ±1%+ in a session: -0.20%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
@@ -21,7 +21,7 @@
       "sev": "critical",
       "cat": "company-critical",
       "measured": true,
-      "t": "JMAT.L -21.6% in a single session",
+      "t": "JMAT.L -22.1% in a single session",
       "ev": "Computed from today's close. Conviction 1, froth 2.",
       "stance": "REVIEW",
       "action": "Affected names are lower-conviction; watch rather than act.",
@@ -54,26 +54,6 @@
       "stance": "MONITOR",
       "action": "The underlying moved +5.5% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-08-17"
-    },
-    {
-      "sev": "medium",
-      "cat": "spot-equity-divergence",
-      "measured": true,
-      "t": "NatGas -3.3% but its equities +2.3% — a +5.6pt gap",
-      "ev": "Median of 8 ng holdings against the underlying.",
-      "stance": "MONITOR",
-      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
-      "tk": [
-        "LNG",
-        "VGAS",
-        "KMI",
-        "ET",
-        "EQT",
-        "AR",
-        "WMB",
-        "SLNG"
-      ],
       "date": "2026-08-17"
     }
   ]
