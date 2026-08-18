@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-18T16:28:39+00:00",
-    "mode": "light",
-    "coverage": "6/6 scanned this pass",
+    "as_of": "2026-08-18T21:46:04+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -45,49 +45,6 @@
         "surprise_abs": 0.01,
         "surprise_pct": 1.5
       }
-    },
-    {
-      "type": "earnings",
-      "tk": "PPTA",
-      "name": "Perpetua Resources",
-      "d": "2026-08-17",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-17T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Perpetua Resources Announces Second Quarter 2026 Financial Results - PR Newswire",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPek1lZmZJdlhUTzk4U0UwdS1xU0x2bk5YT2ZHR05YTkVXdzJQYWxnNmJsN0Y3WVZSY0c1eTVMMzhoa2NWNGF6YnAtQVk0X1MzcE01R3pqNkdHbUI0NXlHdGptckNwVlhaZi1pSThTSDloYVM5RndwbGF2Z1JOeEU2RENVMXQ5VnhnbDAwQ2NnSFZDVDRQXy04XzhkUF9zVk1MTUtwaVI4UE94OFlicHdiUk1jVmVDR3dyVFowYWo0MA?oc=5",
-          "s": "PR Newswire",
-          "d": "2026-08-17",
-          "cues": []
-        },
-        {
-          "t": "Perpetua Resources (TSX:PPTA) Reports Fresh Idaho Drilling Results, Is The Premium Valuation Justified? - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONGsyQ0hDS2xMREJmVUlCOUh4cWlOLXF1aUVGeDgxcTAtZnd1cFpnYVZsS0k4TjNYUzVDdGJDOEhWOWFFbzcxcFVzV2F4WFBRbU94VEFBejA1UDd5eU1oaHJ3Y0xldG1rUXZRcVFwb2RiY1ItVms4QlFMM21WXzdKSDBpbjJtOTZubDZ1RWtZeS1HY1ZPLU5JRXFac2NBX2JMdTZ6U2RRT3NFYi1VM2lUTDVEemQ1MkRubHpQMkFIT2xCV0daeEZmQVFvSGhseDN0T0JpYm9rQXlEUdIB3wFBVV95cUxNSC02aHo3aHFyM3FSekdnQm5PTUwxRmZHRXBSV0N6emhWM1RxOEJyUHd5SjJxMFVSMzhhb2pFRUh3MldrNFRSc2MzTFZTemNCQlg0ZlU1Q1Rud0xWT3VrWVFvZkZ6OUt1SURZeV9ld2c2VHJjQURQVEh0czhXdEM2M1JJSmRLS1hfaXUwYi1hRHJiTG5oM0s1eV9QdGdqRUZKWjl3TmFrRXdRdXhoNXR4UlNoOEctNmhJQlMwSW9SbzhqejZRc1BxQTBGdmJKcEREdjdJaFBaRDJVV3lFdXJV?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-17",
-          "cues": []
-        },
-        {
-          "t": "Earnings Flash (PPTA) Perpetua Resources Posts Q2 Net Loss $97.5M , vs. FactSet Est of $33.8M Loss - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQREl2WnJXMWprX01BMnZjMGhwOGN2aE9nS1E4b1lOS3hRU0ZHQ1dEMVlpNG9HYXUxZFFSbjlfOGVESWFhM2V5cGdwVXp4TFdSM3hHVGR5S1JsOHB0M2Y0VVVEYXczVThCN0NyZkF3Wm9zTWhTdGJabkFyVkhXU3lqdFFsZ3lGb1FFXzlfVGJLZ1haYWQzb0hVQW4wNUo0cWZOa1RQM05OamMyRUR1TDFESWI5NlM3OFo2c3BNOGhNWDlVdnNleHFWWko3SFFqRENhR25mWU9sWEJWMThK?oc=5",
-          "s": "marketscreener.com",
-          "d": "2026-08-17",
-          "cues": []
-        },
-        {
-          "t": "Perpetua Resources Announces Second Quarter 2026 Financial Results - The Globe and Mail",
-          "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOc3lsNGYzeTNqeGRiemQ1ck1HRTVBYURzbVgxSGpmNmhId21ZcVVxcXprbnpDZkl3QW84ZHNwMzlRUHJHN0RQWjZ5cFVsaHQ1NURSMllndTlFcUw1alA2ZUh4NW5ZMHNaYmtQTDBwanJHeEdHd3RMa2c0YzFWMW9GWV9DQUNwZm1pVVNMWTNLVFdkWjcwNUhaZFhpc0d5NGJLRGdaY1dremJtRk1oZ3BjampSeDR3REJDaXRxLWFaYk9lbk1wRnFVY3pjVVM1VlJFZzJrckNJc0hydURiSUZEWTQ0bk4?oc=5",
-          "s": "The Globe and Mail",
-          "d": "2026-08-17",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-17"
     },
     {
       "type": "earnings",
@@ -209,8 +166,8 @@
     },
     {
       "type": "earnings",
-      "tk": "WOR.AX",
-      "name": "Worley Group",
+      "tk": "LYC.AX",
+      "name": "Lynas Rare Earths",
       "d": "2026-08-26",
       "release": {
         "when": "post",
@@ -221,13 +178,13 @@
     },
     {
       "type": "earnings",
-      "tk": "LYC.AX",
-      "name": "Lynas Rare Earths",
-      "d": "2026-08-27",
+      "tk": "WOR.AX",
+      "name": "Worley Group",
+      "d": "2026-08-26",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:12 AEST",
-        "iso": "2026-08-27T06:12+00:00",
+        "iso": "2026-08-26T06:12+00:00",
         "tz": "Australia/Sydney"
       }
     },
