@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-17T21:48:28+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-08-18T07:25:13+00:00",
+    "mode": "light",
+    "coverage": "6/6 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": -0.5,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-17",
+        "fetched": "2026-08-18",
         "eps_est": 1.46,
         "surprise_abs": -1.96,
         "surprise_pct": -134.2
@@ -40,7 +40,7 @@
       "reported": {
         "eps": -0.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-17",
+        "fetched": "2026-08-18",
         "eps_est": -0.22,
         "surprise_abs": 0.01,
         "surprise_pct": 1.5
@@ -66,9 +66,9 @@
           "cues": []
         },
         {
-          "t": "Perpetua Resources (TSX:PPTA) Reports Fresh Idaho Drilling Results, Is The Premium Valuation Justified? - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONGsyQ0hDS2xMREJmVUlCOUh4cWlOLXF1aUVGeDgxcTAtZnd1cFpnYVZsS0k4TjNYUzVDdGJDOEhWOWFFbzcxcFVzV2F4WFBRbU94VEFBejA1UDd5eU1oaHJ3Y0xldG1rUXZRcVFwb2RiY1ItVms4QlFMM21WXzdKSDBpbjJtOTZubDZ1RWtZeS1HY1ZPLU5JRXFac2NBX2JMdTZ6U2RRT3NFYi1VM2lUTDVEemQ1MkRubHpQMkFIT2xCV0daeEZmQVFvSGhseDN0T0JpYm9rQXlEUdIB3wFBVV95cUxNSC02aHo3aHFyM3FSekdnQm5PTUwxRmZHRXBSV0N6emhWM1RxOEJyUHd5SjJxMFVSMzhhb2pFRUh3MldrNFRSc2MzTFZTemNCQlg0ZlU1Q1Rud0xWT3VrWVFvZkZ6OUt1SURZeV9ld2c2VHJjQURQVEh0czhXdEM2M1JJSmRLS1hfaXUwYi1hRHJiTG5oM0s1eV9QdGdqRUZKWjl3TmFrRXdRdXhoNXR4UlNoOEctNmhJQlMwSW9SbzhqejZRc1BxQTBGdmJKcEREdjdJaFBaRDJVV3lFdXJV?oc=5",
-          "s": "simplywall.st",
+          "t": "Earnings Flash (PPTA) Perpetua Resources Posts Q2 Net Loss $97.5M , vs. FactSet Est of $33.8M Loss - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQREl2WnJXMWprX01BMnZjMGhwOGN2aE9nS1E4b1lOS3hRU0ZHQ1dEMVlpNG9HYXUxZFFSbjlfOGVESWFhM2V5cGdwVXp4TFdSM3hHVGR5S1JsOHB0M2Y0VVVEYXczVThCN0NyZkF3Wm9zTWhTdGJabkFyVkhXU3lqdFFsZ3lGb1FFXzlfVGJLZ1haYWQzb0hVQW4wNUo0cWZOa1RQM05OamMyRUR1TDFESWI5NlM3OFo2c3BNOGhNWDlVdnNleHFWWko3SFFqRENhR25mWU9sWEJWMThK?oc=5",
+          "s": "marketscreener.com",
           "d": "2026-08-17",
           "cues": []
         },
@@ -76,6 +76,13 @@
           "t": "Perpetua Resources Announces Second Quarter 2026 Financial Results - The Globe and Mail",
           "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOc3lsNGYzeTNqeGRiemQ1ck1HRTVBYURzbVgxSGpmNmhId21ZcVVxcXprbnpDZkl3QW84ZHNwMzlRUHJHN0RQWjZ5cFVsaHQ1NURSMllndTlFcUw1alA2ZUh4NW5ZMHNaYmtQTDBwanJHeEdHd3RMa2c0YzFWMW9GWV9DQUNwZm1pVVNMWTNLVFdkWjcwNUhaZFhpc0d5NGJLRGdaY1dremJtRk1oZ3BjampSeDR3REJDaXRxLWFaYk9lbk1wRnFVY3pjVVM1VlJFZzJrckNJc0hydURiSUZEWTQ0bk4?oc=5",
           "s": "The Globe and Mail",
+          "d": "2026-08-17",
+          "cues": []
+        },
+        {
+          "t": "Perpetua Resources (TSX:PPTA) Reports Fresh Idaho Drilling Results, Is The Premium Valuation Justified? - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONGsyQ0hDS2xMREJmVUlCOUh4cWlOLXF1aUVGeDgxcTAtZnd1cFpnYVZsS0k4TjNYUzVDdGJDOEhWOWFFbzcxcFVzV2F4WFBRbU94VEFBejA1UDd5eU1oaHJ3Y0xldG1rUXZRcVFwb2RiY1ItVms4QlFMM21WXzdKSDBpbjJtOTZubDZ1RWtZeS1HY1ZPLU5JRXFac2NBX2JMdTZ6U2RRT3NFYi1VM2lUTDVEemQ1MkRubHpQMkFIT2xCV0daeEZmQVFvSGhseDN0T0JpYm9rQXlEUdIB3wFBVV95cUxNSC02aHo3aHFyM3FSekdnQm5PTUwxRmZHRXBSV0N6emhWM1RxOEJyUHd5SjJxMFVSMzhhb2pFRUh3MldrNFRSc2MzTFZTemNCQlg0ZlU1Q1Rud0xWT3VrWVFvZkZ6OUt1SURZeV9ld2c2VHJjQURQVEh0czhXdEM2M1JJSmRLS1hfaXUwYi1hRHJiTG5oM0s1eV9QdGdqRUZKWjl3TmFrRXdRdXhoNXR4UlNoOEctNmhJQlMwSW9SbzhqejZRc1BxQTBGdmJKcEREdjdJaFBaRDJVV3lFdXJV?oc=5",
+          "s": "simplywall.st",
           "d": "2026-08-17",
           "cues": []
         }
@@ -1599,6 +1606,18 @@
         "label": "MID-SESSION · 16:30 CET",
         "iso": "2026-11-11T15:30+00:00",
         "tz": "Europe/Berlin"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PPTA",
+      "name": "Perpetua Resources",
+      "d": "2026-11-12",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-12T20:00+00:00",
+        "tz": "America/New_York"
       }
     },
     {
