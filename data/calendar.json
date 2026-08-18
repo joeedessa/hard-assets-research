@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-18T13:31:11+00:00",
+    "as_of": "2026-08-18T16:28:39+00:00",
     "mode": "light",
     "coverage": "6/6 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -99,7 +99,17 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-08-18T20:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "SQM Looks 42.2% Overvalued on GF Value™ Heading into Earnings - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZDNxMkhqcXlkUUxHSmh6VFJ6MktEbkRVZ2IwVVlXZ1lPaXdQb0RSTzBvakE1eDNJZjNrcmpMbHFod0pHaXpSd1RCUVd1UU56UGtRcHF4ZHl4aUJSeHFKcmZlZGx1SWs5dlBRWUhuVDdDOHpiTFFnekJYNEVjeTV5T05acU9yME5sbGV3TkFXZXlrcmJfMFFhZXRORzVwdw?oc=5",
+          "s": "GuruFocus",
+          "d": "2026-08-18",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-18"
     },
     {
       "type": "earnings",
