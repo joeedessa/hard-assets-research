@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-19T13:32:30+00:00",
+    "as_of": "2026-08-19T16:29:21+00:00",
     "mode": "light",
     "coverage": "7/7 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -39,6 +39,15 @@
       },
       "wire": [
         {
+          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - Reuters",
+          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM0IxeC1BdVVETHYxZktiNmdUNFFLTnNwQWNwcTJnN2tHbEdOVHVhalRBOERka3ZPVGdwNFZjNHpabHhYWXo0aDVYWk9SeFF0bzlCUnFYVFVMbW9vSGt1a2ZhQy1ocDJuZmNMS0tYQjBrdlFFejZGRDVManRRdHhSM3NNdXdGS21HMEozbjJDLVA0TUE5TkZ1ZUxlOFF0UndNWDl3MHdqVGUydkJPQl9qVlc1X0RNLWJpdGVJb2x5Z29OSGM?oc=5",
+          "s": "Reuters",
+          "d": "2026-08-19",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
           "t": "SQM: Q2 Earnings Snapshot - KTVB",
           "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONlU5cWJDUWZReFQwLVBpS1JQVTlSck9seks3WFFtVjA2TDJvOUlOaXI0QTVVTDM5VDdOSkIteEl3VUpGOG1idDJEaDRCaGhoX01kc2FlVHR0RktHZmRDYUI2QmRZZktBQm5mWXlBNGhxZzRSSHlLb05RVnpfYWFWTFpmWnk2b0QzM2diZTNJMENFMGI5ZXhFRFI0NFFBUUFQaUo2WmJtVW5UenAzbmxhdkUxZHlud1VSU3dVRk9XNA?oc=5",
           "s": "KTVB",
@@ -46,25 +55,20 @@
           "cues": []
         },
         {
-          "t": "SQM Reports Earnings for the Six Months Ended June 30, 2026 - uk.finance.yahoo.com",
+          "t": "SQM Reports Earnings for the Six Months Ended June 30, 2026 - Yahoo Finance UK",
           "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUW50UGx4dXlndmtYMHpHbXJOTklpWkE5R3ljZW9qeUs4a0hsbjlCcTk5Y1ZhX2pFWVVMakl5bXdCWGV2aWtTSXpjT0daVDZaNDdOYTF5bEExb29qNjQ4MVpqU1BnaXVWbmhsOWxCZDVHRVdzVkdMbm9KcVRxdGhHSUx2SXNYY2c?oc=5",
-          "s": "uk.finance.yahoo.com",
+          "s": "Yahoo Finance UK",
           "d": "2026-08-19",
           "cues": []
         },
         {
-          "t": "SQM Reports Record Lithium Volumes, Strong Q2 and First-Half 2026 Results - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMDUwMng2c2VxU04tc2IwNlM3RFA5Q3VLMElBMVloNGs5SjBJRmpkamExTVUxOVUyUVlGVWI0SlRuYjFFQ1FHNXQ1M0t5Rllxek9vbG1Cem84U1F2SjNxTmsteUFSX1luNVBDR25DVFE3UU9YTlhFNFlEOXctMWFaRnREbXluR19lUEt0cUVmNG1OYUNMd3VjYkV6MXNZbEVYbWl5allkUEhNLV9h?oc=5",
-          "s": "Quiver Quantitative",
+          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMUNyODFQRzA1d053a3M5bFAzOEZMY2dxWC1GRXJOX3F0SUpGWnZVRGJ0V0luM01BU2pvRkxsOXBwSGQ0bm5YX0tqaDlqcUlENGY1dTVKbzlkVnN6U09uZDFtaFFyUTd3YmxicW5CTVdXczVlU0dnaGdfY1F2WWFmbXpfVlJPcjRJQVJKYnV2ZnRDSXRrTkdCWGRWME81czFsbFZlMVMxUWRFQVd5MW0tTlZZdEN0V3dacTR1ZURXajQycnNhYWp3RklySGFCZHVvY1BEbmJUampNVC12?oc=5",
+          "s": "TradingView",
           "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "SQM Looks 42.2% Overvalued on GF Value™ Heading into Earnings - GuruFocus",
-          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZDNxMkhqcXlkUUxHSmh6VFJ6MktEbkRVZ2IwVVlXZ1lPaXdQb0RSTzBvakE1eDNJZjNrcmpMbHFod0pHaXpSd1RCUVd1UU56UGtRcHF4ZHl4aUJSeHFKcmZlZGx1SWs5dlBRWUhuVDdDOHpiTFFnekJYNEVjeTV5T05acU9yME5sbGV3TkFXZXlrcmJfMFFhZXRORzVwdw?oc=5",
-          "s": "GuruFocus",
-          "d": "2026-08-18",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
       "wire_gate": "2026-08-18",
@@ -90,13 +94,6 @@
       },
       "wire": [
         {
-          "t": "Flex LNG - Second Quarter 2026 Earnings Release - Yahoo! Finance Canada",
-          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX09tMjJSRjVrdzcwTWVDbnFZOTZaNkxRTXdyRmhTemJkMng3ZDREZXJiTUdnbzhUMFQtVFJYNzFMdVRxbW9zbFZyMV9pSnNvWTJNN3JTS3ExM0hEZlByUVRxUmltRzV5clBoX0xpNmo1anFmMlNIRzdEVnN1anM0QkpsVQ?oc=5",
-          "s": "Yahoo! Finance Canada",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
           "t": "FLEX LNG ($FLNG) Releases Q2 2026 Earnings - Quiver Quantitative",
           "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNm8teXRGelFOdnRHaDE2X1lYdmV4c1YyOURMOWpnR0xYdWtJNXBIOVBBcHl0bkp5X0hYdnpqQmRpLU1GUy1uRDhqTkljWmxiQ2FIZkppcllndlk1dHVJcE5xT1IyVDJUSTNKTHhTMFpCRFRKeHp4SzhlN1lXcnF2Sk5md3dhRmRk?oc=5",
           "s": "Quiver Quantitative",
@@ -104,20 +101,27 @@
           "cues": []
         },
         {
+          "t": "Flex LNG - Second Quarter 2026 Earnings Release - Yahoo! Finance Canada",
+          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX09tMjJSRjVrdzcwTWVDbnFZOTZaNkxRTXdyRmhTemJkMng3ZDREZXJiTUdnbzhUMFQtVFJYNzFMdVRxbW9zbFZyMV9pSnNvWTJNN3JTS3ExM0hEZlByUVRxUmltRzV5clBoX0xpNmo1anFmMlNIRzdEVnN1anM0QkpsVQ?oc=5",
+          "s": "Yahoo! Finance Canada",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Flex LNG Q2 Earnings Call Highlights - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWlhoNDlvdV9MRUpGelNFTl9ETkQwTTBGdXEycHVMN3UzY0RzQjVDYlI5WWExR2RXR0N1eXEwR0NWMF8tZjhTR21iX1ktdF9qQWNUOUlZQkxxVkdpanZTZUNBazVQZ25rYWxLVWw0a2xVazlQcVRTZHpWUERzSEJrNDRhQ1VFVFR3Qm96M3F1T2gtNVlz?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-08-19",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
           "t": "Flex LNG: Q2 Earnings Snapshot - kens5.com",
           "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWkR1cnRQaVRmYTJUbElfVi1wYjlqb0RZY1BRT2hZMkRHT3BUSEIzaFhCWW5ObEQ0dThPVVFFLVQtcFdoZEhxVFkwODhxU2dhRl9yWlpYbjNtUjd0Z0VGcWQ5SU5ELTRIY2M3WTdic3JUVl9fdTREU3Z3Ykx0TGFlSllPd3lnZTI5Ny00MzdCM0tuRWdHc1M2OXJDYkVlUG5HSjVWWmRwTFB2cVpITWJlWm1KaFJJTEx5bW9GQkFNV3pza29WZ3Vj?oc=5",
           "s": "kens5.com",
           "d": "2026-08-19",
           "cues": []
-        },
-        {
-          "t": "Flex LNG (NYSE:FLNG) Issues Quarterly Earnings Results - marketbeat.com",
-          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMUoxQWFZc1JLR3ZVWHdnVkJxd3M2MWM0M3MyNDhlVHdVRHFqOVI4akNtU0twZUJaZlRtaFRCUnNUVXBQNElERTNfVnpHeGxSekw5TnRQdFAtaldWcGNaLWNHajVwREtIT1lWMWt4UjdpVDk1Y216VzVEbmdlVDdEcWZrWnZHM1hrWnd1Vmlnd0VwQ1JEUVA5a0YwU2VuUXp4dmU1SWgzRGY?oc=5",
-          "s": "marketbeat.com",
-          "d": "2026-08-19",
-          "cues": [
-            "beat"
-          ]
         }
       ],
       "wire_gate": "2026-08-19",
@@ -143,16 +147,16 @@
       },
       "wire": [
         {
-          "t": "Rockwool, Lundbeck, Carlsberg, Jyske Bank and FLSmidth report results - The Copenhagen Post",
-          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYWI3eEl0eUhLQ2xYaTk4R0NhSjFiQmowb2JCREdPWkJfaTVHaUxqWmlrZ1VmNkJVRGZ6ZU9oaDljcTFRSE1FTWRxS1gxYm93MGVxWlpsRmRlVkpsUm8yT3FDOEcyWE5kb0tDRnRGRU5vS2s2cEh1Y1lwMXpUTWFvelVsNk96UFNjdzNnLW54RkFQZ3gtNFJVZnV2aXlzazEwX2tUQTRVNGw2ODBRdFd6V202QjA2US12UTBSckZ1VG4wSW80a0o2Vm1RcndSb2xCX3I1TFhkYVAtQUt6?oc=5",
-          "s": "The Copenhagen Post",
+          "t": "FLSmidth raises full-year guidance after strong Q2 results; shares jump - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNFZyMzFZSzNVejNucmpfcjc4MFk1Qm9nbmUtMmRtbV9mZXFGc1ZRemZfV2l0ZGU0V2pCbk5CY252ZzlkR1ZDU3JaSENJZVlyREd4eFJuOU4yQWZBUjMwOEZFQTBQaXNDLTF5eWZqeUdsRlFyMHk2NmM3YUU3RFhZYUdfSGFlVFdreTZiX0I3eVdLRzQ2TExMY3lxcDNfWDFOdjYzWUUyTG1kcldFMS1mdw?oc=5",
+          "s": "Investing.com",
           "d": "2026-08-19",
           "cues": []
         },
         {
-          "t": "Earnings call transcript: FLSmidth rises on stronger margins in Q2 2026 - Investing.com Canada",
-          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTWhxYWY2S0VlN0V4ZTNKUU1XWXdWRlI3am05UXZ6NGlZaWJFUUUybXVoWVE2M1lvRGNqa1doN2dXemF0X3VGN1NHVTRaWXlKRVhkRDEzYXJUcEEwUThvTHY1QzNndzR5dWIzYzBzT0FwVUI1Mjlma1hIaVRQc3NfLTRNdkNibmE5TjdIOWJPSFFiR01QRllTOENSVmxPa1pZUW5FMFlwejJjeF9ucFNpaVpjNFVZZERuSG5pU3M2RTF0Rm8?oc=5",
-          "s": "Investing.com Canada",
+          "t": "Rockwool, Lundbeck, Carlsberg, Jyske Bank and FLSmidth report results - The Copenhagen Post",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYWI3eEl0eUhLQ2xYaTk4R0NhSjFiQmowb2JCREdPWkJfaTVHaUxqWmlrZ1VmNkJVRGZ6ZU9oaDljcTFRSE1FTWRxS1gxYm93MGVxWlpsRmRlVkpsUm8yT3FDOEcyWE5kb0tDRnRGRU5vS2s2cEh1Y1lwMXpUTWFvelVsNk96UFNjdzNnLW54RkFQZ3gtNFJVZnV2aXlzazEwX2tUQTRVNGw2ODBRdFd6V202QjA2US12UTBSckZ1VG4wSW80a0o2Vm1RcndSb2xCX3I1TFhkYVAtQUt6?oc=5",
+          "s": "The Copenhagen Post",
           "d": "2026-08-19",
           "cues": []
         },
@@ -164,8 +168,8 @@
           "cues": []
         },
         {
-          "t": "FLSmidth raises full-year guidance after strong Q2 results; shares jump By Investing.com - Investing.com Australia",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWTRTV3BxZTU3NGpoa0hiVzNSRnZ5WHo5RmlIbGt2UFZBclVSWGFBd00xOW1USU0wT0FseHpiNnloYl9LX25Nc3JNUjBuQXFzcWdDUlAzd0FwYUFaR0JSZi0ySWcxRFFhVWloUXlQUC1BSXBGZGtVZDZfbFExWWhDaDg2MGcxYW0yQzNuMURaZ0s4Vm40STBvczYtTW1HNGt4LUVJUXRIRVdkV2lxWEtvU09KWHFuR0NBdE9FLS10OA?oc=5",
+          "t": "Earnings call transcript: FLSmidth rises on stronger margins in Q2 2026 By Investing.com - Investing.com Australia",
+          "u": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWlJ2NVl3Yk1ZcV9fc0JyNHhlSEhFdVBBUmZMaEp3V3huelFUYW0wTWl0NzRnbERvSjdVT1hEX2U0YW14UGJzNWg4YkJ5ektqdFJ4LWNhSjcyX1A4b3F5RGJZd3hwMWtVd0tpNVp2c3c1a2xKb0dlWkpTN2ZaNUlNd0YxNzhQaUJ3NGoyTmd3ano5alppbElEaC05RUpxUUc4SnZfY2FuSE13MjFoak52UUFGVV9qZzBFRkQ4YWZMS2l0cmJiTWlWUklBUTc5c2dhYlJR?oc=5",
           "s": "Investing.com Australia",
           "d": "2026-08-19",
           "cues": []
@@ -227,6 +231,15 @@
       },
       "wire": [
         {
+          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - Reuters",
+          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM0IxeC1BdVVETHYxZktiNmdUNFFLTnNwQWNwcTJnN2tHbEdOVHVhalRBOERka3ZPVGdwNFZjNHpabHhYWXo0aDVYWk9SeFF0bzlCUnFYVFVMbW9vSGt1a2ZhQy1ocDJuZmNMS0tYQjBrdlFFejZGRDVManRRdHhSM3NNdXdGS21HMEozbjJDLVA0TUE5TkZ1ZUxlOFF0UndNWDl3MHdqVGUydkJPQl9qVlc1X0RNLWJpdGVJb2x5Z29OSGM?oc=5",
+          "s": "Reuters",
+          "d": "2026-08-19",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
           "t": "SQM: Q2 Earnings Snapshot - KTVB",
           "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONlU5cWJDUWZReFQwLVBpS1JQVTlSck9seks3WFFtVjA2TDJvOUlOaXI0QTVVTDM5VDdOSkIteEl3VUpGOG1idDJEaDRCaGhoX01kc2FlVHR0RktHZmRDYUI2QmRZZktBQm5mWXlBNGhxZzRSSHlLb05RVnpfYWFWTFpmWnk2b0QzM2diZTNJMENFMGI5ZXhFRFI0NFFBUUFQaUo2WmJtVW5UenAzbmxhdkUxZHlud1VSU3dVRk9XNA?oc=5",
           "s": "KTVB",
@@ -234,18 +247,20 @@
           "cues": []
         },
         {
-          "t": "SQM Reports Earnings for the Six Months Ended June 30, 2026 - uk.finance.yahoo.com",
+          "t": "SQM Reports Earnings for the Six Months Ended June 30, 2026 - Yahoo Finance UK",
           "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUW50UGx4dXlndmtYMHpHbXJOTklpWkE5R3ljZW9qeUs4a0hsbjlCcTk5Y1ZhX2pFWVVMakl5bXdCWGV2aWtTSXpjT0daVDZaNDdOYTF5bEExb29qNjQ4MVpqU1BnaXVWbmhsOWxCZDVHRVdzVkdMbm9KcVRxdGhHSUx2SXNYY2c?oc=5",
-          "s": "uk.finance.yahoo.com",
+          "s": "Yahoo Finance UK",
           "d": "2026-08-19",
           "cues": []
         },
         {
-          "t": "SQM Reports Record Lithium Volumes, Strong Q2 and First-Half 2026 Results - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMDUwMng2c2VxU04tc2IwNlM3RFA5Q3VLMElBMVloNGs5SjBJRmpkamExTVUxOVUyUVlGVWI0SlRuYjFFQ1FHNXQ1M0t5Rllxek9vbG1Cem84U1F2SjNxTmsteUFSX1luNVBDR25DVFE3UU9YTlhFNFlEOXctMWFaRnREbXluR19lUEt0cUVmNG1OYUNMd3VjYkV6MXNZbEVYbWl5allkUEhNLV9h?oc=5",
-          "s": "Quiver Quantitative",
+          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMUNyODFQRzA1d053a3M5bFAzOEZMY2dxWC1GRXJOX3F0SUpGWnZVRGJ0V0luM01BU2pvRkxsOXBwSGQ0bm5YX0tqaDlqcUlENGY1dTVKbzlkVnN6U09uZDFtaFFyUTd3YmxicW5CTVdXczVlU0dnaGdfY1F2WWFmbXpfVlJPcjRJQVJKYnV2ZnRDSXRrTkdCWGRWME81czFsbFZlMVMxUWRFQVd5MW0tTlZZdEN0V3dacTR1ZURXajQycnNhYWp3RklySGFCZHVvY1BEbmJUampNVC12?oc=5",
+          "s": "TradingView",
           "d": "2026-08-19",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
       "wire_gate": "2026-08-19",
