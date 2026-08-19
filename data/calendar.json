@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-19T07:26:03+00:00",
+    "as_of": "2026-08-19T13:32:30+00:00",
     "mode": "light",
     "coverage": "7/7 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -39,9 +39,23 @@
       },
       "wire": [
         {
-          "t": "SQM: Q2 Earnings Snapshot - 10TV",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV0JtQ0M3cFJJTVRwdDJpVVg2Vk5JX1NmY1NtZzhxeFpSMFZvbHdUYUNra2F4SlFmM3RXQ2tWNjBPaXpucExmYndtSWE5d1c5cnB0Q3BpTkVMeEktMS14dUNCYVhjNGNXM2JrOWN3S20yXzloMHBNaGFUUFFKTXF3TlA5WERON3k3eXlMUTM5OG1BcHM0Z2s1cktiU3Mza0xFMDBtNE5xN1o3cnhQbUVIWFk0WU90SUhyc21RZW1JNA?oc=5",
-          "s": "10TV",
+          "t": "SQM: Q2 Earnings Snapshot - KTVB",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONlU5cWJDUWZReFQwLVBpS1JQVTlSck9seks3WFFtVjA2TDJvOUlOaXI0QTVVTDM5VDdOSkIteEl3VUpGOG1idDJEaDRCaGhoX01kc2FlVHR0RktHZmRDYUI2QmRZZktBQm5mWXlBNGhxZzRSSHlLb05RVnpfYWFWTFpmWnk2b0QzM2diZTNJMENFMGI5ZXhFRFI0NFFBUUFQaUo2WmJtVW5UenAzbmxhdkUxZHlud1VSU3dVRk9XNA?oc=5",
+          "s": "KTVB",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "SQM Reports Earnings for the Six Months Ended June 30, 2026 - uk.finance.yahoo.com",
+          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUW50UGx4dXlndmtYMHpHbXJOTklpWkE5R3ljZW9qeUs4a0hsbjlCcTk5Y1ZhX2pFWVVMakl5bXdCWGV2aWtTSXpjT0daVDZaNDdOYTF5bEExb29qNjQ4MVpqU1BnaXVWbmhsOWxCZDVHRVdzVkdMbm9KcVRxdGhHSUx2SXNYY2c?oc=5",
+          "s": "uk.finance.yahoo.com",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "SQM Reports Record Lithium Volumes, Strong Q2 and First-Half 2026 Results - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMDUwMng2c2VxU04tc2IwNlM3RFA5Q3VLMElBMVloNGs5SjBJRmpkamExTVUxOVUyUVlGVWI0SlRuYjFFQ1FHNXQ1M0t5Rllxek9vbG1Cem84U1F2SjNxTmsteUFSX1luNVBDR25DVFE3UU9YTlhFNFlEOXctMWFaRnREbXluR19lUEt0cUVmNG1OYUNMd3VjYkV6MXNZbEVYbWl5allkUEhNLV9h?oc=5",
+          "s": "Quiver Quantitative",
           "d": "2026-08-19",
           "cues": []
         },
@@ -53,7 +67,15 @@
           "cues": []
         }
       ],
-      "wire_gate": "2026-08-18"
+      "wire_gate": "2026-08-18",
+      "reported": {
+        "eps": 2.31,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-19",
+        "eps_est": 2.04,
+        "surprise_abs": 0.27,
+        "surprise_pct": 13.0
+      }
     },
     {
       "type": "earnings",
@@ -68,13 +90,18 @@
       },
       "wire": [
         {
-          "t": "Flex LNG declares a $0.75-per-share dividend, its 20th consecutive ordinary quarterly payout - Stock Titan",
-          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaU5SMkxxUjRNWXVwT0dIdUdteVN0Yi1fd0gtdUpVU0RZdWlHXzI5V1pHb3g1Z3lqa3dsYlZVd3dkMmd2U3FmU05ncUxWajVRQjd3ZFRZVnhzS1g0TktJamdfNzI0NXB5RTlEUEpmNHJsUFQxTFcwV1NVMWtHc0dEMVd1X1BXVVJ3SHJGRXRsR0ZyclE1UUVr?oc=5",
-          "s": "Stock Titan",
+          "t": "Flex LNG - Second Quarter 2026 Earnings Release - Yahoo! Finance Canada",
+          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX09tMjJSRjVrdzcwTWVDbnFZOTZaNkxRTXdyRmhTemJkMng3ZDREZXJiTUdnbzhUMFQtVFJYNzFMdVRxbW9zbFZyMV9pSnNvWTJNN3JTS3ExM0hEZlByUVRxUmltRzV5clBoX0xpNmo1anFmMlNIRzdEVnN1anM0QkpsVQ?oc=5",
+          "s": "Yahoo! Finance Canada",
           "d": "2026-08-19",
-          "cues": [
-            "dividend/buyback"
-          ]
+          "cues": []
+        },
+        {
+          "t": "FLEX LNG ($FLNG) Releases Q2 2026 Earnings - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNm8teXRGelFOdnRHaDE2X1lYdmV4c1YyOURMOWpnR0xYdWtJNXBIOVBBcHl0bkp5X0hYdnpqQmRpLU1GUy1uRDhqTkljWmxiQ2FIZkppcllndlk1dHVJcE5xT1IyVDJUSTNKTHhTMFpCRFRKeHp4SzhlN1lXcnF2Sk5md3dhRmRk?oc=5",
+          "s": "Quiver Quantitative",
+          "d": "2026-08-19",
+          "cues": []
         },
         {
           "t": "Flex LNG: Q2 Earnings Snapshot - kens5.com",
@@ -84,21 +111,24 @@
           "cues": []
         },
         {
-          "t": "Flex LNG : Earnings Release Q2 2026 - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOVBpNUhZZEwwaTRZTS04ajBPVzdHMmRTelFTZ19FN01CNHUtcm1ld1Bmd2dqVm9yaXAxZDRqZDFseVBWVG8zYTl2ZkdMNFJJckJMa0REQ3dQdnBvbk1GeDc2UDAyUEtrSmNfVnhTM0N0eWo5UE0yeDJkR2hJamJKeHlzZGxMUlBnZE0tRFFucw?oc=5",
-          "s": "marketscreener.com",
+          "t": "Flex LNG (NYSE:FLNG) Issues Quarterly Earnings Results - marketbeat.com",
+          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMUoxQWFZc1JLR3ZVWHdnVkJxd3M2MWM0M3MyNDhlVHdVRHFqOVI4akNtU0twZUJaZlRtaFRCUnNUVXBQNElERTNfVnpHeGxSekw5TnRQdFAtaldWcGNaLWNHajVwREtIT1lWMWt4UjdpVDk1Y216VzVEbmdlVDdEcWZrWnZHM1hrWnd1Vmlnd0VwQ1JEUVA5a0YwU2VuUXp4dmU1SWgzRGY?oc=5",
+          "s": "marketbeat.com",
           "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "Flex LNG will stream its second-quarter results with live Q&A - Stock Titan",
-          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNEdFWklCNDlsazdhdmJTNmVaYmxGZ0NNWVF0Q2lhM3VILW1vSlBnb3FKRW03eDRQempuS3cwQllTdWFZWWNWTnJfSTdqbDN3ZndxOVJ1Y3hsUTg4a3RzYkRyVzhaZnYyeWpYbEFiRm5BWVFlVF9OM0lKdDVDTXBKS0k3T1FsTmxmQXVr?oc=5",
-          "s": "Stock Titan",
-          "d": "2026-08-19",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
-      "wire_gate": "2026-08-19"
+      "wire_gate": "2026-08-19",
+      "reported": {
+        "eps": 0.79,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-19",
+        "eps_est": 0.61,
+        "surprise_abs": 0.18,
+        "surprise_pct": 30.1
+      }
     },
     {
       "type": "earnings",
@@ -113,14 +143,40 @@
       },
       "wire": [
         {
+          "t": "Rockwool, Lundbeck, Carlsberg, Jyske Bank and FLSmidth report results - The Copenhagen Post",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYWI3eEl0eUhLQ2xYaTk4R0NhSjFiQmowb2JCREdPWkJfaTVHaUxqWmlrZ1VmNkJVRGZ6ZU9oaDljcTFRSE1FTWRxS1gxYm93MGVxWlpsRmRlVkpsUm8yT3FDOEcyWE5kb0tDRnRGRU5vS2s2cEh1Y1lwMXpUTWFvelVsNk96UFNjdzNnLW54RkFQZ3gtNFJVZnV2aXlzazEwX2tUQTRVNGw2ODBRdFd6V202QjA2US12UTBSckZ1VG4wSW80a0o2Vm1RcndSb2xCX3I1TFhkYVAtQUt6?oc=5",
+          "s": "The Copenhagen Post",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: FLSmidth rises on stronger margins in Q2 2026 - Investing.com Canada",
+          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTWhxYWY2S0VlN0V4ZTNKUU1XWXdWRlI3am05UXZ6NGlZaWJFUUUybXVoWVE2M1lvRGNqa1doN2dXemF0X3VGN1NHVTRaWXlKRVhkRDEzYXJUcEEwUThvTHY1QzNndzR5dWIzYzBzT0FwVUI1Mjlma1hIaVRQc3NfLTRNdkNibmE5TjdIOWJPSFFiR01QRllTOENSVmxPa1pZUW5FMFlwejJjeF9ucFNpaVpjNFVZZERuSG5pU3M2RTF0Rm8?oc=5",
+          "s": "Investing.com Canada",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
           "t": "FLSmidth H1 2026 Results: Organic revenue up 4%, guidance raised - scanx.trade",
           "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzIzSjFHTjJrREZCaHFySTZ3a3dWVC1NN3JFWE9SeENaWll0aXZNSlRSZHJQWTRDUV9xY216OWJKWU80V3V5ZEp5dGJmNk9ybGxtV2FVZDJaekRTWHRQam5fSGdBS2NNbVlYNjI2MGxwanVkbXBzQXlZcVFSRVRjLTlFa05FUzV5SGo5SUZlRi0xdndzNFctSHFsa243aWRkYnZLVDQ5UnV2ZmFwVVdpTExjUW1HRnM3Q0E?oc=5",
           "s": "scanx.trade",
           "d": "2026-08-19",
           "cues": []
+        },
+        {
+          "t": "FLSmidth raises full-year guidance after strong Q2 results; shares jump By Investing.com - Investing.com Australia",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWTRTV3BxZTU3NGpoa0hiVzNSRnZ5WHo5RmlIbGt2UFZBclVSWGFBd00xOW1USU0wT0FseHpiNnloYl9LX25Nc3JNUjBuQXFzcWdDUlAzd0FwYUFaR0JSZi0ySWcxRFFhVWloUXlQUC1BSXBGZGtVZDZfbFExWWhDaDg2MGcxYW0yQzNuMURaZ0s4Vm40STBvczYtTW1HNGt4LUVJUXRIRVdkV2lxWEtvU09KWHFuR0NBdE9FLS10OA?oc=5",
+          "s": "Investing.com Australia",
+          "d": "2026-08-19",
+          "cues": []
         }
       ],
-      "wire_gate": "2026-08-19"
+      "wire_gate": "2026-08-19",
+      "reported": {
+        "eps": 8.3,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-19"
+      }
     },
     {
       "type": "earnings",
@@ -157,6 +213,50 @@
         }
       ],
       "wire_gate": "2026-08-19"
+    },
+    {
+      "type": "earnings",
+      "tk": "SQM",
+      "name": "SQM",
+      "d": "2026-08-19",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-08-19T12:30+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "SQM: Q2 Earnings Snapshot - KTVB",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONlU5cWJDUWZReFQwLVBpS1JQVTlSck9seks3WFFtVjA2TDJvOUlOaXI0QTVVTDM5VDdOSkIteEl3VUpGOG1idDJEaDRCaGhoX01kc2FlVHR0RktHZmRDYUI2QmRZZktBQm5mWXlBNGhxZzRSSHlLb05RVnpfYWFWTFpmWnk2b0QzM2diZTNJMENFMGI5ZXhFRFI0NFFBUUFQaUo2WmJtVW5UenAzbmxhdkUxZHlud1VSU3dVRk9XNA?oc=5",
+          "s": "KTVB",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "SQM Reports Earnings for the Six Months Ended June 30, 2026 - uk.finance.yahoo.com",
+          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUW50UGx4dXlndmtYMHpHbXJOTklpWkE5R3ljZW9qeUs4a0hsbjlCcTk5Y1ZhX2pFWVVMakl5bXdCWGV2aWtTSXpjT0daVDZaNDdOYTF5bEExb29qNjQ4MVpqU1BnaXVWbmhsOWxCZDVHRVdzVkdMbm9KcVRxdGhHSUx2SXNYY2c?oc=5",
+          "s": "uk.finance.yahoo.com",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "SQM Reports Record Lithium Volumes, Strong Q2 and First-Half 2026 Results - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMDUwMng2c2VxU04tc2IwNlM3RFA5Q3VLMElBMVloNGs5SjBJRmpkamExTVUxOVUyUVlGVWI0SlRuYjFFQ1FHNXQ1M0t5Rllxek9vbG1Cem84U1F2SjNxTmsteUFSX1luNVBDR25DVFE3UU9YTlhFNFlEOXctMWFaRnREbXluR19lUEt0cUVmNG1OYUNMd3VjYkV6MXNZbEVYbWl5allkUEhNLV9h?oc=5",
+          "s": "Quiver Quantitative",
+          "d": "2026-08-19",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-19",
+      "reported": {
+        "eps": 2.31,
+        "source": "Yahoo Finance",
+        "fetched": "2026-08-19",
+        "eps_est": 2.04,
+        "surprise_abs": 0.27,
+        "surprise_pct": 13.0
+      }
     },
     {
       "type": "earnings",
