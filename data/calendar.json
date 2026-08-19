@@ -1,31 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-08-18T21:46:04+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-08-19T07:26:03+00:00",
+    "mode": "light",
+    "coverage": "7/7 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "ACM",
-      "name": "AECOM",
-      "d": "2026-08-10",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-08-10T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.5,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-18",
-        "eps_est": 1.46,
-        "surprise_abs": -1.96,
-        "surprise_pct": -134.2
-      }
-    },
     {
       "type": "earnings",
       "tk": "BORR",
@@ -40,7 +20,7 @@
       "reported": {
         "eps": -0.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-18",
+        "fetched": "2026-08-19",
         "eps_est": -0.22,
         "surprise_abs": 0.01,
         "surprise_pct": 1.5
@@ -58,6 +38,13 @@
         "tz": "America/New_York"
       },
       "wire": [
+        {
+          "t": "SQM: Q2 Earnings Snapshot - 10TV",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV0JtQ0M3cFJJTVRwdDJpVVg2Vk5JX1NmY1NtZzhxeFpSMFZvbHdUYUNra2F4SlFmM3RXQ2tWNjBPaXpucExmYndtSWE5d1c5cnB0Q3BpTkVMeEktMS14dUNCYVhjNGNXM2JrOWN3S20yXzloMHBNaGFUUFFKTXF3TlA5WERON3k3eXlMUTM5OG1BcHM0Z2s1cktiU3Mza0xFMDBtNE5xN1o3cnhQbUVIWFk0WU90SUhyc21RZW1JNA?oc=5",
+          "s": "10TV",
+          "d": "2026-08-19",
+          "cues": []
+        },
         {
           "t": "SQM Looks 42.2% Overvalued on GF Value™ Heading into Earnings - GuruFocus",
           "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZDNxMkhqcXlkUUxHSmh6VFJ6MktEbkRVZ2IwVVlXZ1lPaXdQb0RSTzBvakE1eDNJZjNrcmpMbHFod0pHaXpSd1RCUVd1UU56UGtRcHF4ZHl4aUJSeHFKcmZlZGx1SWs5dlBRWUhuVDdDOHpiTFFnekJYNEVjeTV5T05acU9yME5sbGV3TkFXZXlrcmJfMFFhZXRORzVwdw?oc=5",
@@ -78,7 +65,40 @@
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-08-19T12:30+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Flex LNG declares a $0.75-per-share dividend, its 20th consecutive ordinary quarterly payout - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaU5SMkxxUjRNWXVwT0dIdUdteVN0Yi1fd0gtdUpVU0RZdWlHXzI5V1pHb3g1Z3lqa3dsYlZVd3dkMmd2U3FmU05ncUxWajVRQjd3ZFRZVnhzS1g0TktJamdfNzI0NXB5RTlEUEpmNHJsUFQxTFcwV1NVMWtHc0dEMVd1X1BXVVJ3SHJGRXRsR0ZyclE1UUVr?oc=5",
+          "s": "Stock Titan",
+          "d": "2026-08-19",
+          "cues": [
+            "dividend/buyback"
+          ]
+        },
+        {
+          "t": "Flex LNG: Q2 Earnings Snapshot - kens5.com",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWkR1cnRQaVRmYTJUbElfVi1wYjlqb0RZY1BRT2hZMkRHT3BUSEIzaFhCWW5ObEQ0dThPVVFFLVQtcFdoZEhxVFkwODhxU2dhRl9yWlpYbjNtUjd0Z0VGcWQ5SU5ELTRIY2M3WTdic3JUVl9fdTREU3Z3Ykx0TGFlSllPd3lnZTI5Ny00MzdCM0tuRWdHc1M2OXJDYkVlUG5HSjVWWmRwTFB2cVpITWJlWm1KaFJJTEx5bW9GQkFNV3pza29WZ3Vj?oc=5",
+          "s": "kens5.com",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Flex LNG : Earnings Release Q2 2026 - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOVBpNUhZZEwwaTRZTS04ajBPVzdHMmRTelFTZ19FN01CNHUtcm1ld1Bmd2dqVm9yaXAxZDRqZDFseVBWVG8zYTl2ZkdMNFJJckJMa0REQ3dQdnBvbk1GeDc2UDAyUEtrSmNfVnhTM0N0eWo5UE0yeDJkR2hJamJKeHlzZGxMUlBnZE0tRFFucw?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Flex LNG will stream its second-quarter results with live Q&A - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNEdFWklCNDlsazdhdmJTNmVaYmxGZ0NNWVF0Q2lhM3VILW1vSlBnb3FKRW03eDRQempuS3cwQllTdWFZWWNWTnJfSTdqbDN3ZndxOVJ1Y3hsUTg4a3RzYkRyVzhaZnYyeWpYbEFiRm5BWVFlVF9OM0lKdDVDTXBKS0k3T1FsTmxmQXVr?oc=5",
+          "s": "Stock Titan",
+          "d": "2026-08-19",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-19"
     },
     {
       "type": "earnings",
@@ -90,7 +110,17 @@
         "label": "AFTER THE CLOSE · 17:00 CEST",
         "iso": "2026-08-19T15:00+00:00",
         "tz": "Europe/Copenhagen"
-      }
+      },
+      "wire": [
+        {
+          "t": "FLSmidth H1 2026 Results: Organic revenue up 4%, guidance raised - scanx.trade",
+          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzIzSjFHTjJrREZCaHFySTZ3a3dWVC1NN3JFWE9SeENaWll0aXZNSlRSZHJQWTRDUV9xY216OWJKWU80V3V5ZEp5dGJmNk9ybGxtV2FVZDJaekRTWHRQam5fSGdBS2NNbVlYNjI2MGxwanVkbXBzQXlZcVFSRVRjLTlFa05FUzV5SGo5SUZlRi0xdndzNFctSHFsa243aWRkYnZLVDQ5UnV2ZmFwVVdpTExjUW1HRnM3Q0E?oc=5",
+          "s": "scanx.trade",
+          "d": "2026-08-19",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-19"
     },
     {
       "type": "earnings",
@@ -102,7 +132,31 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-19T06:12+00:00",
         "tz": "Australia/Sydney"
-      }
+      },
+      "wire": [
+        {
+          "t": "Iluka Resources Ltd (ILKAF) (H1 2026) Earnings Call Highlights: - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxObWlubW9fRlFzM3h4U1I3dkg0LWhRbDZnR29jS09QZzVTTzNIdzQ1c3U0WVdwMWgyeDFTTVpEbzQ2MHMxOENXZFozdmVtY0xaQWFjQXVLVVdWUjBaRENsenVROUFBWVpaWGNEQ3g3RFZQWUNFTWlBSHZrb1A5N3BEdHRNTnJuQnFKc2FXeTZsVTVSa3BfdFptSXZTMVJmckdVTTJRM0E5THQwSFZjb1lIOExwbjc4Si1PZ19RR1VfNlVGUUxUNUpkTzZnOFIxRzFaNE5CZWFIRUdVdVFySWZBc3BDY0ZhZURaZGlhakhR?oc=5",
+          "s": "GuruFocus",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Iluka Resources Limited 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:ILKAY) 2026-08-18 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR1ZFSGp1OVpqTm8wNzUyUllsYWpBM2RCTlVoeVJqU19OdzZOMVhCZWNNSm5sdjJOdzNHQjVHODctREM3LXJWdVFNb3d4VzdzSzFmblIyQUl3MXpxczdEemQtb0R1czE0TmhaMXg3MVJFS1p4ZmtYcEs4Z1NvalpuY01CQVdxX0NsNF9peUdmdURJam5RZEpyOGxyWFJ3NUY5elczV1ZqczF3NGM?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Iluka Resources (ASX:ILU) Under Pressure as Market Reviews Half-Year Results and Critical Minerals Strategy - Kalkine",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPejE0THZVNTY0LVc2NTNwX2UzaWhYanE2eTBTRWNDaWVWV0xESUVNZTRPMlI0QzlQeDhyNG1pYlpWUmN5LUF6NkxFYmVnbXpybDI1a25vYTFlS2RQSGw3STFtYU82MW1ybmdKemVxSUw4VmtrTXBYYldLckFKS21yaXdmbGd6b3hNZnFuZklDbldicTdnWUJZRXNOY2ZXLVpXdlFVaXVrdmVLUXNoUk9JanRIXzAxdnFWc0RONEpDYktUUkhFWVRPVnZUYWtlOU9ySDFHcWln?oc=5",
+          "s": "Kalkine",
+          "d": "2026-08-19",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-19"
     },
     {
       "type": "earnings",
