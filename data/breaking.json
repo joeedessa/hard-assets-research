@@ -1,20 +1,45 @@
 {
   "_meta": {
-    "as_of": "2026-08-20T13:35:09+00:00",
+    "as_of": "2026-08-20T16:32:56+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 1/169 down 5%, sector -0.9%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 3/169 up 5%, sector -0.9%",
-      "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the -0.3% universe median): 0 found",
-      "Tracked commodity ±5%+ in a session: 0 of 12 moved",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 12/169 down 5%, sector +0.9%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 2/169 up 5%, sector +0.9%",
+      "Single-name collapse (any holding −12%+ in a session): 1 found",
+      "Conviction-3 divergence (±8%+ versus the -0.2% universe median): 0 found",
+      "Tracked commodity ±5%+ in a session: 1 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: -0.10%",
+      "USD (DXY) ±1%+ in a session: +0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 46 read"
     ]
   },
-  "state": "clear",
-  "signals": []
+  "state": "critical",
+  "signals": [
+    {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "WOLF -17.0% in a single session",
+      "ev": "Computed from today's close. Conviction 2, froth 1.",
+      "stance": "REVIEW",
+      "action": "Insulated names are involved (WOLF). Weakness here is opportunity, not information.",
+      "tk": [
+        "WOLF"
+      ],
+      "date": "2026-08-20"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "REE -5.8% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved -5.8% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-08-20"
+    }
+  ]
 }
