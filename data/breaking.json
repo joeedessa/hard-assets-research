@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-08-19T21:49:35+00:00",
+    "as_of": "2026-08-20T07:28:25+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 12/169 down 5%, sector +3.2%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 7/169 down 5%, sector +3.2%",
       "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 17/169 up 5%, sector +3.2%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.1% universe median): 2 found",
-      "Tracked commodity ±5%+ in a session: 2 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: -0.90%",
+      "Conviction-3 divergence (±8%+ versus the +0.2% universe median): 2 found",
+      "Tracked commodity ±5%+ in a session: 0 of 12 moved",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 2 found",
+      "USD (DXY) ±1%+ in a session: -0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 46 read"
@@ -21,49 +21,64 @@
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "WPM +11.1% against a +0.1% universe median",
+      "t": "WPM +11.1% against a +0.2% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "THESIS AT RISK",
       "action": "Top-conviction holdings are named (WPM). Confirm the story before changing anything.",
       "tk": [
         "WPM"
       ],
-      "date": "2026-08-19"
+      "date": "2026-08-20"
     },
     {
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "PPTA +8.5% against a +0.1% universe median",
+      "t": "PPTA +8.5% against a +0.2% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "THESIS AT RISK",
       "action": "Top-conviction holdings are named (PPTA). Confirm the story before changing anything.",
       "tk": [
         "PPTA"
       ],
-      "date": "2026-08-19"
+      "date": "2026-08-20"
     },
     {
-      "sev": "high",
-      "cat": "commodity",
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "Silver +5.0% in a session",
-      "ev": "Spot/futures move computed from today's close.",
+      "t": "Copper -0.5% but its equities +3.7% — a +4.2pt gap",
+      "ev": "Median of 5 cu holdings against the underlying.",
       "stance": "MONITOR",
-      "action": "The underlying moved +5.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-08-19"
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "SCCO",
+        "FCX",
+        "TECK",
+        "HBM",
+        "IVN.TO"
+      ],
+      "date": "2026-08-20"
     },
     {
-      "sev": "high",
-      "cat": "commodity",
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "Platinum +6.0% in a session",
-      "ev": "Spot/futures move computed from today's close.",
+      "t": "Gold +1.2% but its equities +6.4% — a +5.2pt gap",
+      "ev": "Median of 11 pg holdings against the underlying.",
       "stance": "MONITOR",
-      "action": "The underlying moved +6.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-08-19"
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "FNV",
+        "WPM",
+        "RGLD",
+        "SBSW",
+        "PAAS",
+        "TFPM",
+        "THS.L",
+        "YCA.L"
+      ],
+      "date": "2026-08-20"
     }
   ]
 }
