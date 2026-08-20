@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-20T07:28:25+00:00",
+    "as_of": "2026-08-20T13:35:09+00:00",
     "mode": "light",
     "coverage": "7/7 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -42,11 +42,13 @@
           "cues": []
         },
         {
-          "t": "FLEX LNG Ltd. 2026 Q2 - Results - Earnings Call Presentation (NYSE:FLNG) 2026-08-19 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMDBoZGlyU1g3MjZhTG1mRjhoSDc2dTlSZmVyWGZEVnczR1NSWl8xaXhZUVFTd2VTX2todm44b3p2c2RTeVBrT0I2WGxFaVBYbFZHNnlEWVpYcEN5czVNOS12b183UGdJTjJMc2pUQ3hGR0F3SEloem1tX3R5Y2tlV1AydEUyZmtZdlM1RG5rN19mcmFIdGVDcFpjREw?oc=5",
-          "s": "Seeking Alpha",
+          "t": "Flex Lng Q2 2026 Earnings Beat Estimates - AlphaStreet",
+          "u": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAyVTNxaHFmLVNxRVdpR1kzZDFSdHlGSi1WY3pJVkdpNEJrYzBNdlRmU1B2ZlhzMXozUV8tUFpZSGdJdExMU3lfcUJoQlFTRDNWNEJFUjFUd21PLURNSXhld1BJYy1pQkttVEZFcTR6RXpYa3h2Q2NZNUx30gF6QVVfeXFMUDJVM3FocWYtU3FFV2lHWTNkMVJ0eUZKLVZjeklWR2k0QmtjME12VGZTUHZmWHMxejNRXy1QWllIZ0l0TExTeV9xQmhCUVNEM1Y0QkVSMVR3bU8tRE1JeGV3UEljLWlCS21URkVxNHpFelhreHZDY1k1THc?oc=5",
+          "s": "AlphaStreet",
           "d": "2026-08-19",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
       "wire_gate": "2026-08-19",
@@ -58,6 +60,49 @@
         "surprise_abs": 0.18,
         "surprise_pct": 30.1
       }
+    },
+    {
+      "type": "earnings",
+      "tk": "ILU.AX",
+      "name": "Iluka Resources",
+      "d": "2026-08-19",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEST",
+        "iso": "2026-08-19T06:12+00:00",
+        "tz": "Australia/Sydney"
+      },
+      "wire": [
+        {
+          "t": "Iluka Resources Limited 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:ILKAY) 2026-08-18 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR1ZFSGp1OVpqTm8wNzUyUllsYWpBM2RCTlVoeVJqU19OdzZOMVhCZWNNSm5sdjJOdzNHQjVHODctREM3LXJWdVFNb3d4VzdzSzFmblIyQUl3MXpxczdEemQtb0R1czE0TmhaMXg3MVJFS1p4ZmtYcEs4Z1NvalpuY01CQVdxX0NsNF9peUdmdURJam5RZEpyOGxyWFJ3NUY5elczV1ZqczF3NGM?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Iluka Resources Ltd (ILKAF) (H1 2026) Earnings Call Highlights: - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxObWlubW9fRlFzM3h4U1I3dkg0LWhRbDZnR29jS09QZzVTTzNIdzQ1c3U0WVdwMWgyeDFTTVpEbzQ2MHMxOENXZFozdmVtY0xaQWFjQXVLVVdWUjBaRENsenVROUFBWVpaWGNEQ3g3RFZQWUNFTWlBSHZrb1A5N3BEdHRNTnJuQnFKc2FXeTZsVTVSa3BfdFptSXZTMVJmckdVTTJRM0E5THQwSFZjb1lIOExwbjc4Si1PZ19RR1VfNlVGUUxUNUpkTzZnOFIxRzFaNE5CZWFIRUdVdVFySWZBc3BDY0ZhZURaZGlhakhR?oc=5",
+          "s": "GuruFocus",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Iluka Resources (ASX:ILU) Under Pressure as Market Reviews Half-Year Results and Critical Minerals Strategy - Kalkine",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPejE0THZVNTY0LVc2NTNwX2UzaWhYanE2eTBTRWNDaWVWV0xESUVNZTRPMlI0QzlQeDhyNG1pYlpWUmN5LUF6NkxFYmVnbXpybDI1a25vYTFlS2RQSGw3STFtYU82MW1ybmdKemVxSUw4VmtrTXBYYldLckFKS21yaXdmbGd6b3hNZnFuZklDbldicTdnWUJZRXNOY2ZXLVpXdlFVaXVrdmVLUXNoUk9JanRIXzAxdnFWc0RONEpDYktUUkhFWVRPVnZUYWtlOU9ySDFHcWln?oc=5",
+          "s": "Kalkine",
+          "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "ILU:ASX Announcement - Iluka Half Year Results to 30 June 2026 - 19 Aug 2026 - Market Index",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZFZUbVJ4UFZJWXVBZGYwbm85TG5GSXF5Q29uSXlld2pFLUVCbWRlZS1DTWlLR3RvWjV2ZnM1M0NDY0wtSFZUMTFDc2hDUm5nQkc3dU9pZzNsUmZYTFotNGNEaTBYN1N5ejRjN3lKcFZXUXlDUy1QWkI5eTJVREh3WG9MTEdTRVh5Ukt3VWlwTjFPcERFeGhNN0pWUk5sLUlpV25aZA?oc=5",
+          "s": "Market Index",
+          "d": "2026-08-19",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-19"
     },
     {
       "type": "earnings",
@@ -93,9 +138,9 @@
           "cues": []
         },
         {
-          "t": "Earnings call transcript: FLSmidth rises on stronger margins in Q2 2026 - Investing.com Canada",
-          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTWhxYWY2S0VlN0V4ZTNKUU1XWXdWRlI3am05UXZ6NGlZaWJFUUUybXVoWVE2M1lvRGNqa1doN2dXemF0X3VGN1NHVTRaWXlKRVhkRDEzYXJUcEEwUThvTHY1QzNndzR5dWIzYzBzT0FwVUI1Mjlma1hIaVRQc3NfLTRNdkNibmE5TjdIOWJPSFFiR01QRllTOENSVmxPa1pZUW5FMFlwejJjeF9ucFNpaVpjNFVZZERuSG5pU3M2RTF0Rm8?oc=5",
-          "s": "Investing.com Canada",
+          "t": "FLSmidth H1 2026 Results: Organic revenue up 4%, guidance raised - scanx.trade",
+          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzIzSjFHTjJrREZCaHFySTZ3a3dWVC1NN3JFWE9SeENaWll0aXZNSlRSZHJQWTRDUV9xY216OWJKWU80V3V5ZEp5dGJmNk9ybGxtV2FVZDJaekRTWHRQam5fSGdBS2NNbVlYNjI2MGxwanVkbXBzQXlZcVFSRVRjLTlFa05FUzV5SGo5SUZlRi0xdndzNFctSHFsa243aWRkYnZLVDQ5UnV2ZmFwVVdpTExjUW1HRnM3Q0E?oc=5",
+          "s": "scanx.trade",
           "d": "2026-08-19",
           "cues": []
         }
@@ -106,49 +151,6 @@
         "source": "Yahoo Finance",
         "fetched": "2026-08-20"
       }
-    },
-    {
-      "type": "earnings",
-      "tk": "ILU.AX",
-      "name": "Iluka Resources",
-      "d": "2026-08-19",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:12 AEST",
-        "iso": "2026-08-19T06:12+00:00",
-        "tz": "Australia/Sydney"
-      },
-      "wire": [
-        {
-          "t": "Iluka Resources Limited 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:ILKAY) 2026-08-18 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR1ZFSGp1OVpqTm8wNzUyUllsYWpBM2RCTlVoeVJqU19OdzZOMVhCZWNNSm5sdjJOdzNHQjVHODctREM3LXJWdVFNb3d4VzdzSzFmblIyQUl3MXpxczdEemQtb0R1czE0TmhaMXg3MVJFS1p4ZmtYcEs4Z1NvalpuY01CQVdxX0NsNF9peUdmdURJam5RZEpyOGxyWFJ3NUY5elczV1ZqczF3NGM?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "Iluka Resources Ltd (ILKAF) (H1 2026) Earnings Call Highlights: - GuruFocus",
-          "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxObWlubW9fRlFzM3h4U1I3dkg0LWhRbDZnR29jS09QZzVTTzNIdzQ1c3U0WVdwMWgyeDFTTVpEbzQ2MHMxOENXZFozdmVtY0xaQWFjQXVLVVdWUjBaRENsenVROUFBWVpaWGNEQ3g3RFZQWUNFTWlBSHZrb1A5N3BEdHRNTnJuQnFKc2FXeTZsVTVSa3BfdFptSXZTMVJmckdVTTJRM0E5THQwSFZjb1lIOExwbjc4Si1PZ19RR1VfNlVGUUxUNUpkTzZnOFIxRzFaNE5CZWFIRUdVdVFySWZBc3BDY0ZhZURaZGlhakhR?oc=5",
-          "s": "GuruFocus",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "ILU:ASX Announcement - Iluka Half Year Results to 30 June 2026 - 19 Aug 2026 - Market Index",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZFZUbVJ4UFZJWXVBZGYwbm85TG5GSXF5Q29uSXlld2pFLUVCbWRlZS1DTWlLR3RvWjV2ZnM1M0NDY0wtSFZUMTFDc2hDUm5nQkc3dU9pZzNsUmZYTFotNGNEaTBYN1N5ejRjN3lKcFZXUXlDUy1QWkI5eTJVREh3WG9MTEdTRVh5Ukt3VWlwTjFPcERFeGhNN0pWUk5sLUlpV25aZA?oc=5",
-          "s": "Market Index",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "Iluka Resources (ASX:ILU) Under Pressure as Market Reviews Half-Year Results and Critical Minerals Strategy - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPejE0THZVNTY0LVc2NTNwX2UzaWhYanE2eTBTRWNDaWVWV0xESUVNZTRPMlI0QzlQeDhyNG1pYlpWUmN5LUF6NkxFYmVnbXpybDI1a25vYTFlS2RQSGw3STFtYU82MW1ybmdKemVxSUw4VmtrTXBYYldLckFKS21yaXdmbGd6b3hNZnFuZklDbldicTdnWUJZRXNOY2ZXLVpXdlFVaXVrdmVLUXNoUk9JanRIXzAxdnFWc0RONEpDYktUUkhFWVRPVnZUYWtlOU9ySDFHcWln?oc=5",
-          "s": "Kalkine",
-          "d": "2026-08-19",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-19"
     },
     {
       "type": "earnings",
@@ -163,18 +165,9 @@
       },
       "wire": [
         {
-          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - reuters.com",
+          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - Reuters",
           "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM0IxeC1BdVVETHYxZktiNmdUNFFLTnNwQWNwcTJnN2tHbEdOVHVhalRBOERka3ZPVGdwNFZjNHpabHhYWXo0aDVYWk9SeFF0bzlCUnFYVFVMbW9vSGt1a2ZhQy1ocDJuZmNMS0tYQjBrdlFFejZGRDVManRRdHhSM3NNdXdGS21HMEozbjJDLVA0TUE5TkZ1ZUxlOFF0UndNWDl3MHdqVGUydkJPQl9qVlc1X0RNLWJpdGVJb2x5Z29OSGM?oc=5",
-          "s": "reuters.com",
-          "d": "2026-08-19",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTEwtWFpjcE5zRGpmVmNxeTFCX09zdnhSN0xhMi1mSENfMnFzbGFiaXFXTldjdHNlMzg3XzQzVFoyQXVnQkFQTi1JbmlyOVZKM24xbkF3QVp6endMYzhQYk1naUJpSDJGLTlkYTZOemRmN2JYN05ZRThKaGs1S2F6RERob1FCUW1Rc29qcXZMWE84YmlKMlB2LURhTjNJcFl1SlQ2VUsyMGhGVGFycndNaFRpVV9OVzlEWGR4akxFX0hqSXIycTVjZFJxeHFQN1lSRVJKTVh3bFlTTFNj?oc=5",
-          "s": "TradingView",
+          "s": "Reuters",
           "d": "2026-08-19",
           "cues": [
             "beat"
@@ -188,13 +181,20 @@
           "cues": []
         },
         {
-          "t": "Earnings call transcript: SQM beats Q2 2026 estimates as lithium sales hit record - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVGp6OC1OVGRiT2hYbjM4LVBLeUlRbW81OUl1aVdmMHdlMnc0RUpsUFI4MzNSTVdINGJvTHZWbTFOX1M5UVFnMFpOWWFWVXN0dGlDVWlmaF84X2RFNXZVRVRiamFuS29lbDB4RkdoOHN0UVR3WERlc0t0SlVERWk1VE1MMTQyVGg1cUxFYVAtc21hTkxnWjZMMTFGcjExcWkzdXpUb1MwQ3Y3Z2ZZQnIxT0MxN2dHS3dOZjFkLUJDVmdkR1dfV2JxUWhtTTJkUW9VcFE?oc=5",
-          "s": "Investing.com",
+          "t": "Chilean miner SQM's shares rise after earnings beat, higher lithium outlook - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTEwtWFpjcE5zRGpmVmNxeTFCX09zdnhSN0xhMi1mSENfMnFzbGFiaXFXTldjdHNlMzg3XzQzVFoyQXVnQkFQTi1JbmlyOVZKM24xbkF3QVp6endMYzhQYk1naUJpSDJGLTlkYTZOemRmN2JYN05ZRThKaGs1S2F6RERob1FCUW1Rc29qcXZMWE84YmlKMlB2LURhTjNJcFl1SlQ2VUsyMGhGVGFycndNaFRpVV9OVzlEWGR4akxFX0hqSXIycTVjZFJxeHFQN1lSRVJKTVh3bFlTTFNj?oc=5",
+          "s": "TradingView",
           "d": "2026-08-19",
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "SQM Q2 2026 slides: lithium sales surge drives record results - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSW1uczlTM0gteGlyRjI4SlhSWVMtcFp5SjdDS0xQbjVEajlIOG5pM2sxeHFpUzJYNDdqV0JGWTRmeXJvc0cwdUt5ZG81bmJQRzNzN25aRk9rRTliYlFwZ0FQTFF0Q2lZNmE2WUdhelRjOWhLVGdXMzNqVlcyZ3NnVTI1QUUxWFRwVGRkdVFIbEZ1Sno2WTRGbDVUVXVLMnkyRXJYMnZidlpDaTZjb1pLTlludk5waDNO?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-19",
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-19",
@@ -227,31 +227,27 @@
           "cues": []
         },
         {
-          "t": "Power-Chip Maker Wolfspeed’s Stock Falls Despite Earnings Beat - Barron's",
+          "t": "Wolfspeed’s AI Data-Center Sales Increase. Why the Stock Is Falling on Earnings. - Barron's",
           "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1Tl9jNVBGa29QdWhta1ktRHdnZzI3aXp1REhhTm50bXM0NkY5RWtueEtIVUZVSlRRNS0tZWc4T3F5dkVIdDdZVVhib3BDczB4eTJZbU10Q3hISFhZcjkyOXMwRlNad0FWOU5NMjFVY2x5NE44bDdqeGJTQ2s?oc=5",
           "s": "Barron's",
-          "d": "2026-08-19",
-          "cues": [
-            "beat"
-          ]
+          "d": "2026-08-20",
+          "cues": []
         },
         {
-          "t": "Wolfspeed Q4 Earnings Call Highlights - marketbeat.com",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUllTbkl3SW9BMVkzODdLSVI4eGJ5UFRBN2dMTmtRdXFPN2RLMGxNOURvYzFQQnZzZU9rd3dvM3pVMW96UU5WaENVX2VZZEh6MlVlUTZGNno0dDczQk1vTUVYNVZuMnJtWjlxcVQzM2YtRk5SQy0ta183SWJiYThCUFFLdlpOb0NTSHJTM2w3cGpvMjRCRVpBVENvSTkyRUtRenVkT3lzZFVPb2ZDNGI4bTZwYzhlcjdKR2NzRW1YVlZjVWhvVU5HMUFIeDNqOXpmQmFJMnVn?oc=5",
-          "s": "marketbeat.com",
-          "d": "2026-08-19",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Wolfspeed earnings missed by $1.74, revenue fell short of estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYnhzS2VCcHMyZkJWNWdGSkxDS090MWJtZnMwZjZCS29DYURKXzkxXzRIdkpsQml1eTF5Z1VocFJkNk4xWXBvNXEtMldQUXJHTl9FUFBZa3Y2U2o3QUhuU0YyOVYtanktaTluS213ZzNoS19nc1llTVh6cWsxMVNDRVZrMG9HeVk1Ulo2WTRQTkI0UHFCbFp5MDVhWjFwNm5ySlBjc09fbmFUV3dpTlVicWdR?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-19",
+          "t": "Wolfspeed shares tumble after Q4 earnings miss and cautious outlook - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObC15cXJwY2steFJkbVh3UjZMbHFEclB4Wjh4RkRQTW5ncHBkSFV4NVBjQmJXcUE2a1Q0S1JfQ2gwZE82SmxMTFpfWHBmTkNZSENONWFSTlNHdXo0R0xYZUp6Q3pNUHZCd29ZZkR2X0M2QURyZmJHdG9oeDVMYUNyMUJGTW1fUWpyOWRHTFJxMV80bVNpUnMyNUJ2eHI4cC1IdHc?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-08-20",
           "cues": [
             "miss"
           ]
+        },
+        {
+          "t": "Wolfspeed (WOLF) Falls After Earnings As Valuation Hinges On Cash Flow And AI Growth - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMUNTX2h2SVBQVHJCaEp1eGp1Snhfbnhid1VEMGJVNXlhWVdVcmNHU0VDNEl2cjBzTmZadTVwclNRS2xzbUJfb2NpVVM4WXBjcnZQVzNTOVpBOEFWUGxXMTg4LWZSVzNKU2t2T1Q3aE13eFRSX21QaVRpUmVnTWtEQ3Y5YTAyTGtqSDJjbDROZXZ6VGl1VUFCTkJSN1dmOVZibjBzaHg1Q3ZJVVlNTU1FN1RhbmhKNHNDZG55U04zV09Ob2o2MVc3YkhRSTbSAdIBQVVfeXFMTm4tdEVNMWxEMGFvZUthSDZDVmhQNXQ2aXVtd2o0SkF1NEJ1MjEzaXhnaHliZEFTWk5TZ0l2ajBSaWxwS25OaXJOOXZFSl9OVHNkQmtyRENqamVUeXN2dUttbzhsSXFZUnJ5cGZDbk9tdTlMYXZfTEJJT092QjNYa1hwdE53eWpOeUtVUThCNGhtX3puLXhfR0NOa0pZOFN3WC15UjM3UHNSVkI0RGhFUV9VeTRUSXhOTVhmU2MtQzYxM29PWDQ2OHh6OTNfT3dveFdB?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-20",
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-19",
@@ -274,7 +270,33 @@
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-08-20T12:30+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Deere Narrows Profit Outlook as Farm Recovery Seen in 2027 - Bloomberg.com",
+          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbFNyNE9lQ1MzdjIwU1k4Vl9oZ1lkdHNaNzd3TzNQZTlBNmlIdUJXX1E4VFpzM0h4MWNsOXZKRjdCdXB5UHV5Z1prRVlsZUhraWd1cHBQaFI0MnZwNEdaWm11bUdDUkZwRThxU2ZpcVFQOTJIMU1wWGhGd3V3U3FWaXk5R0dCMjFqWDRjam5PV1NWeTZiV1RCT3lwUU5wZVllUE1TSGpHNjhDWU1UbkE?oc=5",
+          "s": "Bloomberg.com",
+          "d": "2026-08-20",
+          "cues": []
+        },
+        {
+          "t": "Deere: Fiscal Q3 Earnings Snapshot - KVUE",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZTlpdUktWjZZaTJNSm52TFpDRTQ0OGxyTHBDYlVicHgxV1dWTUpBb3ZXMFJtSWJzVDNuTDJWU1dHa0lnLW5WM2c2R2VvUXVUMHhqdHp3aHl2OWhPTHZSTTMyUXpsZXRWNmh0czU0RnpjR0JFbnVJekg2N0lTc0VwdUluVlNNWE9SSjlobkJPOW1FcG14U2FOeERKQTRfUDhTdEhtQW5ua0tKc2JIQ1QyUGVmckZMSU51ckpkUmpNMTlaa18tSlR6VmxHNA?oc=5",
+          "s": "KVUE",
+          "d": "2026-08-20",
+          "cues": []
+        },
+        {
+          "t": "Is Deere & Co (DE) Stock Overvalued After Q3 Earnings Beat? EPS - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPX2VfTGxrbUFCa0tRbGlmVTdiYUs3S1NVVGRtSFpUYUxCWVR3eTNGVlV4OFEtMk1ibTFmX0dReTVSanZpbGVjeE5XYkNDWUN1bWFBSGhXeGRTQWpRVnhiNzFHTTJyRE9ZRVc1VndoUW5CR190TkV3Wm14eUR6THJEdXFjcndxbEVoOGc3ajZLNERpdmJNcV9iN00wUGs4Tm9TYzBoN0VfdmVDU0lXVTN2d3NNUHpCUWVRbDVvX1dObGFkUUYyZEdxREU3V0pEc05FblZ5X1duclBnVDlEOEdYcWVsNjJJVXB0RkI3NzBGR2tiOUh5NHNYdV9Lb1hDNS1MdFdDNjQxbG1rLTZJZ2dVRFozN3ZGcWM?oc=5",
+          "s": "GuruFocus",
+          "d": "2026-08-20",
+          "cues": [
+            "beat"
+          ]
+        }
+      ],
+      "wire_gate": "2026-08-20"
     },
     {
       "type": "earnings",
@@ -286,7 +308,17 @@
         "label": "MID-SESSION · 16:20 CEST",
         "iso": "2026-08-20T14:20+00:00",
         "tz": "Europe/Oslo"
-      }
+      },
+      "wire": [
+        {
+          "t": "Earnings call transcript: Odfjell Technology posts record Q2 2026 EBITDA By Investing.com - Investing.com Australia",
+          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQczhJcURrUEROWEFmdFQtcFc1UFV6TFpLelZOYkhVSWozSjB0WUdMY1ItRlp2ekZxWnNZUnQyVVJ5Wk9MdW55ZlJ2V2sxVVVPZElYbWVCSy1IWWl2VmtReHdtQUhMUkx4dWozbm5YeU14WmVHYVBMWF94UzNQS2hVMFprZktIbUhLYnZFTW5ubENKd3YzU3cxY2pScjFMaTNHbXRDMlNxclVCVXAzeGlZVktCcFA1X3Z2Yk0wVktvUFd0S0Zp?oc=5",
+          "s": "Investing.com Australia",
+          "d": "2026-08-20",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-20"
     },
     {
       "type": "earnings",
@@ -1322,6 +1354,18 @@
     },
     {
       "type": "earnings",
+      "tk": "WOLF",
+      "name": "Wolfspeed",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "AES",
       "name": "AES Corporation",
       "d": "2026-11-04",
@@ -1713,6 +1757,18 @@
     },
     {
       "type": "earnings",
+      "tk": "FLS.CO",
+      "name": "FLSmidth",
+      "d": "2026-11-11",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:00 CET",
+        "iso": "2026-11-11T15:00+00:00",
+        "tz": "Europe/Copenhagen"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "EOAN.DE",
       "name": "E.ON",
       "d": "2026-11-11",
@@ -1744,6 +1800,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-16T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SQM",
+      "name": "SQM",
+      "d": "2026-11-17",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-17T20:00+00:00",
         "tz": "America/New_York"
       }
     },
