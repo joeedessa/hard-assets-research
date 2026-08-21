@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-08-21T13:33:44+00:00",
+    "as_of": "2026-08-21T16:31:19+00:00",
     "mode": "light",
     "coverage": "4/4 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -19,17 +19,17 @@
       },
       "wire": [
         {
-          "t": "Flex LNG reports higher Q2 earnings on increased charter revenues - Baird Maritime",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRdIBvwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRQ?oc=5",
-          "s": "Baird Maritime",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
           "t": "Flex LNG - Second Quarter 2026 Earnings Release - Yahoo Finance",
           "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb3FPdmdvcjEyYVRTLWVPSUkxRERwZlQ3QVRmZ3BxN2JWbGZqaWFCb21yY1VIbVQtWmU2YjRDR3Zod0ZEVU1pYnA5SXdrWVg2Q0hLWV9JQk9wc0kxVGJBeFpmQ0hHc0VDVmRoTExXZkc5MG1YZ2toQ2daeHdaLTE3UktpRFNsZzZSRkt2dWdNTFkwUVgyYTA3Yg?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-08-19",
+          "cues": []
+        },
+        {
+          "t": "Flex LNG reports higher Q2 earnings on increased charter revenues - Baird Maritime",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRdIBvwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRQ?oc=5",
+          "s": "Baird Maritime",
+          "d": "2026-08-21",
           "cues": []
         },
         {
@@ -106,10 +106,24 @@
       },
       "wire": [
         {
+          "t": "Deere & Co. reports Q3 results - world-agritech.com",
+          "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAwb3FabmpIeExGbXVrLWExa2xhTmdkYURaeFJYVmh1U0lJUFE0UDRiS2oxNU9lT19INGtDb2ZiUWVsZGk4QnZIWmZCTVYtUmJmemZEMjFQR1VDZDZFc0lLNFNFWF9FRjhmdUw2eXU0SS00Vllp?oc=5",
+          "s": "world-agritech.com",
+          "d": "2026-08-21",
+          "cues": []
+        },
+        {
           "t": "Deere Narrows Profit Outlook as Farm Recovery Seen in 2027 - Bloomberg.com",
           "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbFNyNE9lQ1MzdjIwU1k4Vl9oZ1lkdHNaNzd3TzNQZTlBNmlIdUJXX1E4VFpzM0h4MWNsOXZKRjdCdXB5UHV5Z1prRVlsZUhraWd1cHBQaFI0MnZwNEdaWm11bUdDUkZwRThxU2ZpcVFQOTJIMU1wWGhGd3V3U3FWaXk5R0dCMjFqWDRjam5PV1NWeTZiV1RCT3lwUU5wZVllUE1TSGpHNjhDWU1UbkE?oc=5",
           "s": "Bloomberg.com",
           "d": "2026-08-20",
+          "cues": []
+        },
+        {
+          "t": "Deere Analysts Increase Their Forecasts After Strong Q2 Results - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb2d4aXJhdUNSUFE1U0IwalRBemJFRHFVb0JMTS1zVzVCYldaRDE5ZTNIRWpQQnpxTnZ4QnRSRTRVdFBvblRDWUFWX201Nkp3cWtxNV96bU1hckloS3N3ODMyQi1zUUwxVXFIaWo5bG5JaFFBcXVGTFkwdTZfLXJIcDBsY2RkUW5BT1o1ZmwzcjQ4U3FoNV94UUp2cTE1emxLOUZVR1hlZDBMd1JZT09wWXhFMEpGQVUtclZwM3JtaG40Qm03Yk45a3Y0TUVKQXBKOVZFdA?oc=5",
+          "s": "Benzinga",
+          "d": "2026-08-21",
           "cues": []
         },
         {
@@ -120,20 +134,6 @@
           "cues": [
             "beat"
           ]
-        },
-        {
-          "t": "Deere reports 3Q profit of $1.379B - Quad Cities Business Journal",
-          "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB3TG9IN1JDTHB1LUhWX0pFLTUyQ1JHN1BFQnc4UzBibXFaOHl1b2QwU1MyQTZGcU9yUDZoS01paWxhMU1kdjRGZ01oY2xJTGItR2FaNzN1U1Rvd0pqNXUtaWN5RlhYbWVfVVV0SFBmYlBHSTQ?oc=5",
-          "s": "Quad Cities Business Journal",
-          "d": "2026-08-20",
-          "cues": []
-        },
-        {
-          "t": "Deere & Co (DE) (Q3 2026) Earnings Call Highlights: Strong Margi - GuruFocus",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZ2JFVFpQU1MwLUZ6UzFkRFdVWXo2WVlLSHJtN2ZlZnB3VVhKMDBUOHgwNVZaT1EtaGU3RlAyak82bGJ5N1l1azRtXzdvbXdpX1FjY1RNWHJWNm9GNGdGVnZKd19mUFlkYnBwcjVIMzRRSWwxNFVlWXN4S1NiNURYSnprOUMxZkpFdWk3azBYQkV1a0hxbC0yTFBqVlZyM0k0RHN6NUdydURKZXBjTnBnZ2VYSWNXVjB1RUl0YmtDWjJ2MkdPSm5jUzZkMTNSd3NuOWV2N013?oc=5",
-          "s": "GuruFocus",
-          "d": "2026-08-20",
-          "cues": []
         }
       ],
       "wire_gate": "2026-08-20",
@@ -180,10 +180,10 @@
           "cues": []
         },
         {
-          "t": "Odfjell Technology Ltd. 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:ODTLF) 2026-08-20 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR05Td3hsMGs2V1pad295VXZKdUtlUDdLeWdXWTNZSXgzOGRRMXJFbHFsQVVCU3hjTmwzTURsdEs0QmFaalJCWk95Z2lScFBXWWpxeks2QVdteHZJN044TEdXSDJsaVF2dEhPVHpKQXJkTmltZUs5NndETXZtbGdJcG9scU5yT3lwdGxKOUdyTWdmaUFiSDhhLTNnaU9vWGt1cjhEMVlzOXhva3pkNlE3RWt0RkxNQ1hmM09fQmp5c0JmQjQ?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-20",
+          "t": "Results: Odfjell Drilling Ltd. Exceeded Expectations And The Consensus Has Updated Its Estimates - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOV0VrNlNqUW95bXphWUk1MS10TDZIc3dxcUhIMnM1QVZhQ3lSU05sQ19manJLMUNTeG5fOGJnN213WDdyNmt3NE45VDd0VF9vZHFFY0kyZ0ZPajJHYV9sSWg4dFF1ZnBYNFBSUmlfSU9sYkFucDQ3VGFrSUY3blRhVjdwcGVlUWNscmQ5bVNQUjdLMHZvZVR3YUpoaUdlaGRUZ0FHR0JjQmNHQWoxcGVIYVpKWUNqbHZibmhaUFZnSVcxa253QWEwRlVsSVVrSHZY0gHWAUFVX3lxTE1pTDNPRVhpQUpvY3JqbktoZTUxS2VxWXdQalJGWENzUkJrcTBrVFNBbk5oT0RtUDBXZ1dibjYwbnhpVk4tZ1J5LWxBeFN3TFo5THdXYngwTUN4YlZwbnRLM0ZaaFMxTF91Ym1HcHhwYkpSdTZSekFMNzFQR3RoTjd4cmFMNDBrSldTeUdYb29nWUhOUEcxWmkzZVZtX25LdWwydmxSM2xxTm1tbDZlSmF4RmRNMC0zcDM4cGhaOFZiQk8zSk5MWlRhQ1FuWEM5dThBY0ZVU2c?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-21",
           "cues": []
         }
       ],
