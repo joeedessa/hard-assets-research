@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-21T16:31:19+00:00",
-    "mode": "light",
-    "coverage": "4/4 scanned this pass",
+    "as_of": "2026-08-21T21:46:36+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -26,13 +26,6 @@
           "cues": []
         },
         {
-          "t": "Flex LNG reports higher Q2 earnings on increased charter revenues - Baird Maritime",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRdIBvwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRQ?oc=5",
-          "s": "Baird Maritime",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
           "t": "FLEX LNG ($FLNG) Releases Q2 2026 Earnings - Quiver Quantitative",
           "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNm8teXRGelFOdnRHaDE2X1lYdmV4c1YyOURMOWpnR0xYdWtJNXBIOVBBcHl0bkp5X0hYdnpqQmRpLU1GUy1uRDhqTkljWmxiQ2FIZkppcllndlk1dHVJcE5xT1IyVDJUSTNKTHhTMFpCRFRKeHp4SzhlN1lXcnF2Sk5md3dhRmRk?oc=5",
           "s": "Quiver Quantitative",
@@ -40,10 +33,17 @@
           "cues": []
         },
         {
-          "t": "Flex LNG: Q2 Earnings Snapshot - kens5.com",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWkR1cnRQaVRmYTJUbElfVi1wYjlqb0RZY1BRT2hZMkRHT3BUSEIzaFhCWW5ObEQ0dThPVVFFLVQtcFdoZEhxVFkwODhxU2dhRl9yWlpYbjNtUjd0Z0VGcWQ5SU5ELTRIY2M3WTdic3JUVl9fdTREU3Z3Ykx0TGFlSllPd3lnZTI5Ny00MzdCM0tuRWdHc1M2OXJDYkVlUG5HSjVWWmRwTFB2cVpITWJlWm1KaFJJTEx5bW9GQkFNV3pza29WZ3Vj?oc=5",
-          "s": "kens5.com",
-          "d": "2026-08-19",
+          "t": "Flex LNG reports higher Q2 earnings on increased charter revenues - Baird Maritime",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRdIBvwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRQ?oc=5",
+          "s": "Baird Maritime",
+          "d": "2026-08-21",
+          "cues": []
+        },
+        {
+          "t": "Flex LNG profits jump - Royal Gazette | Bermuda",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUzBjbXM0bDNzcG9VSHo4emRuQlpJbFc1RGpDbWpMdEhDSW1fQ3BfYXRmZHZfZW42cmZCdWNkakxGb2F6V1FsZnp2anVRc3hxTmh3ZTUxMDMyR2tjZ0JBZTdUdFpUTW1RVTVEZVVrS0hFQ2tWRnhPUFdqMWtWcFdwZ1J6WnltckhOV3MtTjJFMG1TOGZuVEJ0ZGpySmdPWmJNa3c?oc=5",
+          "s": "Royal Gazette | Bermuda",
+          "d": "2026-08-21",
           "cues": []
         }
       ],
@@ -120,13 +120,6 @@
           "cues": []
         },
         {
-          "t": "Deere Analysts Increase Their Forecasts After Strong Q2 Results - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb2d4aXJhdUNSUFE1U0IwalRBemJFRHFVb0JMTS1zVzVCYldaRDE5ZTNIRWpQQnpxTnZ4QnRSRTRVdFBvblRDWUFWX201Nkp3cWtxNV96bU1hckloS3N3ODMyQi1zUUwxVXFIaWo5bG5JaFFBcXVGTFkwdTZfLXJIcDBsY2RkUW5BT1o1ZmwzcjQ4U3FoNV94UUp2cTE1emxLOUZVR1hlZDBMd1JZT09wWXhFMEpGQVUtclZwM3JtaG40Qm03Yk45a3Y0TUVKQXBKOVZFdA?oc=5",
-          "s": "Benzinga",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
           "t": "Deere Stock Soars After Construction Unit Drives Earnings Beat - Investopedia",
           "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSTROUnJOVVpBX2ZQdGtGdG9RLTdudmdaeXNqaGtfZ1U2UlpSemxVaDhkRTQ1YUVCVXcteTBtN3ZnRVY2QTEtazhpcGx0R2lGRHpHVmxVTnQydUlUbGlDXzgxdUVfT1RnellMS2dJSlVtN3FaakM4SV9qNWtHUUR2OUd0d2RKY3BzQ21tTXNkZjlhdWZlYXBlbW1LX3o1dVN2c1BvcVhuYkF4QTlzcVBmNHFEWDlzSUpR?oc=5",
           "s": "Investopedia",
@@ -134,6 +127,13 @@
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "Deere Analysts Increase Their Forecasts After Strong Q2 Results - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb2d4aXJhdUNSUFE1U0IwalRBemJFRHFVb0JMTS1zVzVCYldaRDE5ZTNIRWpQQnpxTnZ4QnRSRTRVdFBvblRDWUFWX201Nkp3cWtxNV96bU1hckloS3N3ODMyQi1zUUwxVXFIaWo5bG5JaFFBcXVGTFkwdTZfLXJIcDBsY2RkUW5BT1o1ZmwzcjQ4U3FoNV94UUp2cTE1emxLOUZVR1hlZDBMd1JZT09wWXhFMEpGQVUtclZwM3JtaG40Qm03Yk45a3Y0TUVKQXBKOVZFdA?oc=5",
+          "s": "Benzinga",
+          "d": "2026-08-21",
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-20",
@@ -144,57 +144,6 @@
         "eps_est": 4.71,
         "surprise_abs": 0.39,
         "surprise_pct": 8.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ODF.OL",
-      "name": "Odfjell",
-      "d": "2026-08-20",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 16:20 CEST",
-        "iso": "2026-08-20T14:20+00:00",
-        "tz": "Europe/Oslo"
-      },
-      "wire": [
-        {
-          "t": "Odfjell Q2 2026 slides: earnings surge on stronger spot rates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQc1FDUjFxaU5IdlJ4UklPT0toQ0ExUlU0U3JJaWFuY3hoalAwd28xZjlRYlZqSVowVFFpU2RneVFjNmFBdjV0aG9pUXlzenBJSmdLbjdFVU90OVdPaEpCQW9lcmVzYXBhZHZqMmJCTzE5UkdyQTB0ZmR6Q1BZSFZ1Q05SYkdWdjdGLWpmUWFvSmtTT2hfdFRLbE9LOHBaOE5nMTdNQ0Z5ZkJmTUZyS002enUzUl9LaVBl?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
-          "t": "Odfjell warns rising newbuilding deliveries threaten chemical tanker earnings after strong Q2 - Lloyd's List",
-          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMEtSa2pyQkdraEJOaks5ZFY0eDYwOTl3Q3ZveEdfT19EbUhMcTlSLVo3ZWlTLVlVa2p0X3Fuejl5cjZQWUE4NDJITEZOcC0xR0N1R3hzSnBEUVBQN21tOHFRZjVGQzJ1UzdRLWdjenRUZHBySzBFVTBrVGJwa3hvSUNRckFSVERFM283Wm5Wc3dZOWg4M3ZDeDlLOE9Ncng1S2NiZk1TOXBseFNMMGlUQjZyTkd5dTBuaHZNb1g1UjNWNEZkTXdSSFNR?oc=5",
-          "s": "Lloyd's List",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
-          "t": "Odfjell posts $54m net income in Q2 2026 - Baird Maritime",
-          "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQM2lyOUxSLTEzajVYNWdhMVZDZV94RVQwTzVvTldoQzRydF9mSFEyY3pvX2JnYmNkUXVvbzZDT2xNaUw3TS1mR0dTSkRGU2hOOUNkZW1PZ3ZhOXdJY2hieDlZNWZfWVRuc0YydnBMbHl2dlpvNlNQVlpPbW5hWm5iS0VORHFoYjV3TU5NN19YRdIBnAFBVV95cUxNUk9ma3hZNDA0VGkwb09UaHpYb0Zpd0RnVkl1dUlucFN0UnNzT3ZPUXctdUhYQi1sRUpTS1NYV2k5UnMtXzFwWjE3WlJEbGFZdzJBcWhiZjRaN3dtZ3dqbkR1dW9oa2hsNm11NWRyalB2RFJKdVd1N0ZQLXY3dDdoTnNXVG5ldzZrZnFqQi1PV0JSdGJwd0prN0E4Qmg?oc=5",
-          "s": "Baird Maritime",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
-          "t": "Results: Odfjell Drilling Ltd. Exceeded Expectations And The Consensus Has Updated Its Estimates - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOV0VrNlNqUW95bXphWUk1MS10TDZIc3dxcUhIMnM1QVZhQ3lSU05sQ19manJLMUNTeG5fOGJnN213WDdyNmt3NE45VDd0VF9vZHFFY0kyZ0ZPajJHYV9sSWg4dFF1ZnBYNFBSUmlfSU9sYkFucDQ3VGFrSUY3blRhVjdwcGVlUWNscmQ5bVNQUjdLMHZvZVR3YUpoaUdlaGRUZ0FHR0JjQmNHQWoxcGVIYVpKWUNqbHZibmhaUFZnSVcxa253QWEwRlVsSVVrSHZY0gHWAUFVX3lxTE1pTDNPRVhpQUpvY3JqbktoZTUxS2VxWXdQalJGWENzUkJrcTBrVFNBbk5oT0RtUDBXZ1dibjYwbnhpVk4tZ1J5LWxBeFN3TFo5THdXYngwTUN4YlZwbnRLM0ZaaFMxTF91Ym1HcHhwYkpSdTZSekFMNzFQR3RoTjd4cmFMNDBrSldTeUdYb29nWUhOUEcxWmkzZVZtX25LdWwydmxSM2xxTm1tbDZlSmF4RmRNMC0zcDM4cGhaOFZiQk8zSk5MWlRhQ1FuWEM5dThBY0ZVU2c?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-21",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-20",
-      "reported": {
-        "eps": 0.71,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-21",
-        "eps_est": 0.42,
-        "surprise_abs": 0.29,
-        "surprise_pct": 68.1
       }
     },
     {
@@ -261,11 +210,11 @@
       "type": "earnings",
       "tk": "FRO",
       "name": "Frontline",
-      "d": "2026-08-31",
+      "d": "2026-08-28",
       "release": {
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-08-31T12:30+00:00",
+        "iso": "2026-08-28T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1231,18 +1180,6 @@
     },
     {
       "type": "earnings",
-      "tk": "ODF.OL",
-      "name": "Odfjell",
-      "d": "2026-11-04",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:20 CET",
-        "iso": "2026-11-04T14:20+00:00",
-        "tz": "Europe/Oslo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "AES",
       "name": "AES Corporation",
       "d": "2026-11-04",
@@ -1395,6 +1332,18 @@
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-04T20:00+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ODF.OL",
+      "name": "Odfjell",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:20 CET",
+        "iso": "2026-11-04T14:20+00:00",
+        "tz": "Europe/Oslo"
       }
     },
     {
