@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-24T16:34:27+00:00",
-    "mode": "light",
-    "coverage": "2/2 scanned this pass",
+    "as_of": "2026-08-24T21:53:36+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -17,37 +17,6 @@
         "iso": "2026-08-19T12:30+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Flex LNG - Second Quarter 2026 Earnings Release - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb3FPdmdvcjEyYVRTLWVPSUkxRERwZlQ3QVRmZ3BxN2JWbGZqaWFCb21yY1VIbVQtWmU2YjRDR3Zod0ZEVU1pYnA5SXdrWVg2Q0hLWV9JQk9wc0kxVGJBeFpmQ0hHc0VDVmRoTExXZkc5MG1YZ2toQ2daeHdaLTE3UktpRFNsZzZSRkt2dWdNTFkwUVgyYTA3Yg?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "FLEX LNG ($FLNG) Releases Q2 2026 Earnings - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNm8teXRGelFOdnRHaDE2X1lYdmV4c1YyOURMOWpnR0xYdWtJNXBIOVBBcHl0bkp5X0hYdnpqQmRpLU1GUy1uRDhqTkljWmxiQ2FIZkppcllndlk1dHVJcE5xT1IyVDJUSTNKTHhTMFpCRFRKeHp4SzhlN1lXcnF2Sk5md3dhRmRk?oc=5",
-          "s": "Quiver Quantitative",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "Flex LNG reports higher Q2 earnings on increased charter revenues - Baird Maritime",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRdIBvwFBVV95cUxPTmxhVnNfLV9JdXVfRUU4OXUxMC04MUo5TEQ3SEpBRlJQV2VWSENaRWtON2JTQ242R3MzRGpnUFBKZ214Qk84M29HMVAyT3NNNDEtbE1fSWxURE1FRlZINUNLYjRDbi1OQmltNC10bzU2RkVGenRPbHpkbkZuaGlSOUJzY0FVbzlqZnBFQWRoQ1JhXzhrNUtKVWtZcXlHVjNWSWdjajhaT1JwdHBsZTMzMTdUdjV5cldBODBxOHBqRQ?oc=5",
-          "s": "Baird Maritime",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
-          "t": "Flex LNG profits jump - Royal Gazette | Bermuda",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUzBjbXM0bDNzcG9VSHo4emRuQlpJbFc1RGpDbWpMdEhDSW1fQ3BfYXRmZHZfZW42cmZCdWNkakxGb2F6V1FsZnp2anVRc3hxTmh3ZTUxMDMyR2tjZ0JBZTdUdFpUTW1RVTVEZVVrS0hFQ2tWRnhPUFdqMWtWcFdwZ1J6WnltckhOV3MtTjJFMG1TOGZuVEJ0ZGpySmdPWmJNa3c?oc=5",
-          "s": "Royal Gazette | Bermuda",
-          "d": "2026-08-21",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-19",
       "reported": {
         "eps": 0.79,
         "source": "Yahoo Finance",
@@ -67,31 +36,7 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-19T06:12+00:00",
         "tz": "Australia/Sydney"
-      },
-      "wire": [
-        {
-          "t": "Iluka Resources Limited 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:ILKAY) 2026-08-18 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR1ZFSGp1OVpqTm8wNzUyUllsYWpBM2RCTlVoeVJqU19OdzZOMVhCZWNNSm5sdjJOdzNHQjVHODctREM3LXJWdVFNb3d4VzdzSzFmblIyQUl3MXpxczdEemQtb0R1czE0TmhaMXg3MVJFS1p4ZmtYcEs4Z1NvalpuY01CQVdxX0NsNF9peUdmdURJam5RZEpyOGxyWFJ3NUY5elczV1ZqczF3NGM?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "Iluka Resources (ASX:ILU) Under Pressure as Market Reviews Half-Year Results and Critical Minerals Strategy - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPejE0THZVNTY0LVc2NTNwX2UzaWhYanE2eTBTRWNDaWVWV0xESUVNZTRPMlI0QzlQeDhyNG1pYlpWUmN5LUF6NkxFYmVnbXpybDI1a25vYTFlS2RQSGw3STFtYU82MW1ybmdKemVxSUw4VmtrTXBYYldLckFKS21yaXdmbGd6b3hNZnFuZklDbldicTdnWUJZRXNOY2ZXLVpXdlFVaXVrdmVLUXNoUk9JanRIXzAxdnFWc0RONEpDYktUUkhFWVRPVnZUYWtlOU9ySDFHcWln?oc=5",
-          "s": "Kalkine",
-          "d": "2026-08-19",
-          "cues": []
-        },
-        {
-          "t": "ILU:ASX Announcement - Iluka Half Year Results to 30 June 2026 - 19 Aug 2026 - Market Index",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZFZUbVJ4UFZJWXVBZGYwbm85TG5GSXF5Q29uSXlld2pFLUVCbWRlZS1DTWlLR3RvWjV2ZnM1M0NDY0wtSFZUMTFDc2hDUm5nQkc3dU9pZzNsUmZYTFotNGNEaTBYN1N5ejRjN3lKcFZXUXlDUy1QWkI5eTJVREh3WG9MTEdTRVh5Ukt3VWlwTjFPcERFeGhNN0pWUk5sLUlpV25aZA?oc=5",
-          "s": "Market Index",
-          "d": "2026-08-19",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-19"
+      }
     },
     {
       "type": "earnings",
@@ -104,39 +49,6 @@
         "iso": "2026-08-20T12:30+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Deere & Co. reports Q3 results - world-agritech.com",
-          "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAwb3FabmpIeExGbXVrLWExa2xhTmdkYURaeFJYVmh1U0lJUFE0UDRiS2oxNU9lT19INGtDb2ZiUWVsZGk4QnZIWmZCTVYtUmJmemZEMjFQR1VDZDZFc0lLNFNFWF9FRjhmdUw2eXU0SS00Vllp?oc=5",
-          "s": "world-agritech.com",
-          "d": "2026-08-21",
-          "cues": []
-        },
-        {
-          "t": "Deere Narrows Profit Outlook as Farm Recovery Seen in 2027 - Bloomberg.com",
-          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbFNyNE9lQ1MzdjIwU1k4Vl9oZ1lkdHNaNzd3TzNQZTlBNmlIdUJXX1E4VFpzM0h4MWNsOXZKRjdCdXB5UHV5Z1prRVlsZUhraWd1cHBQaFI0MnZwNEdaWm11bUdDUkZwRThxU2ZpcVFQOTJIMU1wWGhGd3V3U3FWaXk5R0dCMjFqWDRjam5PV1NWeTZiV1RCT3lwUU5wZVllUE1TSGpHNjhDWU1UbkE?oc=5",
-          "s": "Bloomberg.com",
-          "d": "2026-08-20",
-          "cues": []
-        },
-        {
-          "t": "Deere Stock Soars After Construction Unit Drives Earnings Beat - Investopedia",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSTROUnJOVVpBX2ZQdGtGdG9RLTdudmdaeXNqaGtfZ1U2UlpSemxVaDhkRTQ1YUVCVXcteTBtN3ZnRVY2QTEtazhpcGx0R2lGRHpHVmxVTnQydUlUbGlDXzgxdUVfT1RnellMS2dJSlVtN3FaakM4SV9qNWtHUUR2OUd0d2RKY3BzQ21tTXNkZjlhdWZlYXBlbW1LX3o1dVN2c1BvcVhuYkF4QTlzcVBmNHFEWDlzSUpR?oc=5",
-          "s": "Investopedia",
-          "d": "2026-08-20",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Deere Analysts Increase Their Forecasts After Strong Q2 Results - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb2d4aXJhdUNSUFE1U0IwalRBemJFRHFVb0JMTS1zVzVCYldaRDE5ZTNIRWpQQnpxTnZ4QnRSRTRVdFBvblRDWUFWX201Nkp3cWtxNV96bU1hckloS3N3ODMyQi1zUUwxVXFIaWo5bG5JaFFBcXVGTFkwdTZfLXJIcDBsY2RkUW5BT1o1ZmwzcjQ4U3FoNV94UUp2cTE1emxLOUZVR1hlZDBMd1JZT09wWXhFMEpGQVUtclZwM3JtaG40Qm03Yk45a3Y0TUVKQXBKOVZFdA?oc=5",
-          "s": "Benzinga",
-          "d": "2026-08-21",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-20",
       "reported": {
         "eps": 5.1,
         "source": "Yahoo Finance",
@@ -166,6 +78,13 @@
           "cues": []
         },
         {
+          "t": "Pilbara Minerals (ASX:PLS) Shares Rebound On Profit Surge But Expansion Questions Linger - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON2EwQ3M2VUJpTmdmYTV3OEwtYWxyODBEV1N3VGMyR1RjNk1abDAycm94WjJQSmJqZnh1WVZEMl9YeGhweHExSjdPYU5zNWZCU2NxckpERXJZQXY0RnBDNlkxVHBuM0xiSF9xMGtneXZVUURfNlhzeVR0VnRJQzBaTjJzVS1hamxTVl9NVE4xNGZfM0JiV1QwQ2toVktQNmU3LVZQYmlmZTR4T2xGc0RDSUZuM2RMMU5BVG9CeGg5TjFoZlM5ZUFvczd2SFjSAdIBQVVfeXFMTUxGZGo1NnRZRV9OTTVLM1ctQ0ROMllpQ2JYNmNUcDNQWXRrQm1ISC1Nb1pJM0ZpTDM3TnlFUVB0NFBKSjFLY2pwMFo3amRfS3VzQ3h2MHMwTDRpNHhPUURtcThPdFp6Z0hmX1VWTUJjU0R1SENJSXZtS2VqZTFBVk9ZaHBuRUwwUGJaS0hKelBpVFFYSDhwT0VTRkZscVZBSnNuazNYLURKSm1JUjFOLTJxLWVQd2NHMTh1STdWWlZ2V3NiaG1hWDk1WEhHYzFtSjlR?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-24",
+          "cues": []
+        },
+        {
           "t": "Stocks to Watch Today Amid Results: Perenti, Pilbara Minerals and Nuix - Kalkine",
           "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZkxvOTh3WjJab3o4ZkFtYVpKcUtGMk5xcy1XcFdDSWtKODJydlZTOXN3U09kSTFiLWZFQVNHU0FtYnQ2ZGl6UGk4QkF0bEczMFREYm5sdXBBUktKbmNIQV8zMlJoVm56bkgyQmd2MnQtYU1VQU9Fb3pmcGlvY0NwSVZMZzRnSjF5UHNuVl8tcGloUkU4QUIwQlhlUlNCS00wdU5iblQ5dUdFY2dWWkE?oc=5",
           "s": "Kalkine",
@@ -176,13 +95,6 @@
           "t": "Pilbara Minerals FY26 slides: record EBITDA, 152% revenue surge - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYlN3R0pFd3lUaWFSY2syS3lEcEg3cGhKZTBRVkZJNWVWU2xUYjlCNldPXzN5OTVYeGhXTG9KS0htSjRtaHVtandEZ1dHTXFoLTNWV2NVQ1NfYUg1emFrODkyMjNYbTlyclRWYnVZa2pjTE95RHBwMlp0U0FFWmIxSXlubTBtZGVKSURRUFpnejctTzBKUWdnVXU4NmJzLTdIb0RSbWlVSnh2ZHBPRnQzd0pWWmxpLUFi?oc=5",
           "s": "Investing.com",
-          "d": "2026-08-24",
-          "cues": []
-        },
-        {
-          "t": "Pilbara Minerals (ASX:PLS) FY26 Results: Revenue Surges 152% as Lithium Market Recovers - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUFFrcE5nUEJ0X081WDFBOHVjc1d3OGo0N3l6c3VuTjBRSmpSVXpkY1YzYkExdklnNV9HZUZtUW4xZDNxLVZoa1U4dHY4cXlUZGlZalBfTko4NWVGNklFRGVBLVI0R3htNFVjS0hCMV9vSXowWEJBM2pnQllLazlXN3hHdTZhcjRKelRTZnBCd1lkQzRQa0tRYlB1WGszV2xOcHpPc2Z4QzRySzBsRFE1RDR3Vm1hMTdo?oc=5",
-          "s": "Kalkine",
           "d": "2026-08-24",
           "cues": []
         }
