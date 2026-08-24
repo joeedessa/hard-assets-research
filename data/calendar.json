@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-21T21:46:36+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-08-24T07:45:22+00:00",
+    "mode": "light",
+    "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -51,7 +51,7 @@
       "reported": {
         "eps": 0.79,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-21",
+        "fetched": "2026-08-24",
         "eps_est": 0.61,
         "surprise_abs": 0.18,
         "surprise_pct": 30.1
@@ -140,7 +140,7 @@
       "reported": {
         "eps": 5.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-21",
+        "fetched": "2026-08-24",
         "eps_est": 4.71,
         "surprise_abs": 0.39,
         "surprise_pct": 8.3
@@ -156,7 +156,38 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-24T06:12+00:00",
         "tz": "Australia/Sydney"
-      }
+      },
+      "wire": [
+        {
+          "t": "Earnings call transcript: Pilbara Minerals posts record H2 2026 results, shares rise 4.1% - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPREt6c2FpRHFma3FwUWs1dEdGWEZ2NmVIOGxDaU1LOGJaQTdPSlVWWUNEWVBfQnlEcGNRdWpvalU0SnI0V0N4ODUyaWtEcExodnc0TmlCYzN2Q3Eyb29FTy1OcVc0VVRkb0JOWTNkbV9HMUk4Y2thVmFPbzV4a2IwTHBIZzVFZ3QzdjlieXVZQVlqRW9FaVFqZDIwdXBMTGUwQVVxUVk1LTBkZnAtMGRrbExvOFJSRFdGanl0SlhhNmtzTVZDNzNJMFVCaUo0Sk1mZ25sOUZETTI?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-24",
+          "cues": []
+        },
+        {
+          "t": "Stocks to Watch Today Amid Results: Perenti, Pilbara Minerals and Nuix - Kalkine",
+          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZkxvOTh3WjJab3o4ZkFtYVpKcUtGMk5xcy1XcFdDSWtKODJydlZTOXN3U09kSTFiLWZFQVNHU0FtYnQ2ZGl6UGk4QkF0bEczMFREYm5sdXBBUktKbmNIQV8zMlJoVm56bkgyQmd2MnQtYU1VQU9Fb3pmcGlvY0NwSVZMZzRnSjF5UHNuVl8tcGloUkU4QUIwQlhlUlNCS00wdU5iblQ5dUdFY2dWWkE?oc=5",
+          "s": "Kalkine",
+          "d": "2026-08-24",
+          "cues": []
+        },
+        {
+          "t": "Pilbara Minerals FY26 slides: record EBITDA, 152% revenue surge - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYlN3R0pFd3lUaWFSY2syS3lEcEg3cGhKZTBRVkZJNWVWU2xUYjlCNldPXzN5OTVYeGhXTG9KS0htSjRtaHVtandEZ1dHTXFoLTNWV2NVQ1NfYUg1emFrODkyMjNYbTlyclRWYnVZa2pjTE95RHBwMlp0U0FFWmIxSXlubTBtZGVKSURRUFpnejctTzBKUWdnVXU4NmJzLTdIb0RSbWlVSnh2ZHBPRnQzd0pWWmxpLUFi?oc=5",
+          "s": "Investing.com",
+          "d": "2026-08-24",
+          "cues": []
+        },
+        {
+          "t": "Pilbara Minerals (ASX:PLS) FY26 Results: Revenue Surges 152% as Lithium Market Recovers - Kalkine",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUFFrcE5nUEJ0X081WDFBOHVjc1d3OGo0N3l6c3VuTjBRSmpSVXpkY1YzYkExdklnNV9HZUZtUW4xZDNxLVZoa1U4dHY4cXlUZGlZalBfTko4NWVGNklFRGVBLVI0R3htNFVjS0hCMV9vSXowWEJBM2pnQllLazlXN3hHdTZhcjRKelRTZnBCd1lkQzRQa0tRYlB1WGszV2xOcHpPc2Z4QzRySzBsRFE1RDR3Vm1hMTdo?oc=5",
+          "s": "Kalkine",
+          "d": "2026-08-24",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-24"
     },
     {
       "type": "earnings",
