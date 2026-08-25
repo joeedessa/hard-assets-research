@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-25T16:34:30+00:00",
-    "mode": "light",
-    "coverage": "4/4 scanned this pass",
+    "as_of": "2026-08-25T21:51:36+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -36,26 +36,6 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-19T06:12+00:00",
         "tz": "Australia/Sydney"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "DE",
-      "name": "Deere & Co",
-      "d": "2026-08-20",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-08-20T12:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 5.1,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-25",
-        "eps_est": 4.71,
-        "surprise_abs": 0.39,
-        "surprise_pct": 8.3
       }
     },
     {
@@ -1593,6 +1573,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-17T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "DE",
+      "name": "Deere & Co",
+      "d": "2026-11-25",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-25T12:30+00:00",
         "tz": "America/New_York"
       }
     },
