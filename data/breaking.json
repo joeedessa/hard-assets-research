@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-08-25T21:51:36+00:00",
+    "as_of": "2026-08-26T07:33:32+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 4/169 down 5%, sector +1.9%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 8/169 up 5%, sector +1.9%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 3/169 down 5%, sector +1.9%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 9/169 up 5%, sector +1.9%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.1% universe median): 1 found",
-      "Tracked commodity ±5%+ in a session: 1 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
-      "USD (DXY) ±1%+ in a session: -0.10%",
+      "Conviction-3 divergence (±8%+ versus the +0.2% universe median): 1 found",
+      "Tracked commodity ±5%+ in a session: 0 of 12 moved",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
+      "USD (DXY) ±1%+ in a session: +0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
@@ -21,45 +21,14 @@
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "LEU +9.2% against a +0.1% universe median",
+      "t": "LEU +9.2% against a +0.2% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "THESIS AT RISK",
       "action": "Top-conviction holdings are named (LEU). Confirm the story before changing anything.",
       "tk": [
         "LEU"
       ],
-      "date": "2026-08-25"
-    },
-    {
-      "sev": "high",
-      "cat": "commodity",
-      "measured": true,
-      "t": "Brent -6.8% in a session",
-      "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved -6.8% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-08-25"
-    },
-    {
-      "sev": "medium",
-      "cat": "spot-equity-divergence",
-      "measured": true,
-      "t": "WTI -4.6% but its equities -0.3% — a +4.3pt gap",
-      "ev": "Median of 33 oil holdings against the underlying.",
-      "stance": "MONITOR",
-      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
-      "tk": [
-        "VLO",
-        "TDW",
-        "STNG",
-        "EPD",
-        "RIG",
-        "VAL",
-        "NE",
-        "HP"
-      ],
-      "date": "2026-08-25"
+      "date": "2026-08-26"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-25T21:51:36+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-08-26T07:33:32+00:00",
+    "mode": "light",
+    "coverage": "5/5 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 0.79,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-25",
+        "fetched": "2026-08-26",
         "eps_est": 0.61,
         "surprise_abs": 0.18,
         "surprise_pct": 30.1
@@ -103,7 +103,42 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-26T06:12+00:00",
         "tz": "Australia/Sydney"
-      }
+      },
+      "wire": [
+        {
+          "t": "Lynas Rare Earths Limited 2026 Q4 - Results - Earnings Call Presentation (OTCMKTS:LYSDY) 2026-08-25 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdG1rbHlnbzNTaWtncWc2WGRjekVad0U1ZXRxay0zSG80dTlTMEo1VUZuNEF0OXZPRmVPWlZKekhpOERiWmw3TUdBb1J3VDJzcW9lbk9XbjNiNnhVTkR5MEpUMllEbTdkbnF2ckNPdWdPNlUtSE90dDktZEgzTnBROHgtdkcyZV9YR1A3b09QVXUySHFOcmRzWHNTQ2xyMzN3YWN6NVlURm1taUExZUE?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-08-26",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: Lynas Rare Earths shares fall after FY 2026 update - Investing.com India",
+          "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPV3AtNGpFZEU4Yi1YbWpWeWNyZm9NUGVQWU83N014bGVLYXE1RS1YQjhhTThJcVBTT0VsSmRLZWVtZkhJLTJDV180VmZoYWk4R29lWFc3Rlpfdlg3VnlaQkhKOF83cXVGblFjUTU0aTlwdHhEaklWSXhldW1CTm9hLXAzeWhqSVBQN3EyVnJmckxXMm9xWlNzZXAyVE1IdzNEVnJOQVVJT1FWcTF6bEdNbGRhN1FIREIzQ2tKQS14bFdXSExDeFdWa25NTjdZdkZqX1E?oc=5",
+          "s": "Investing.com India",
+          "d": "2026-08-26",
+          "cues": []
+        },
+        {
+          "t": "LYC: Record profit and revenue, project completions, and global supply chain expansion marked FY26 - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNaERHYXVJV2E3ZUkxZlB0eXNjbElEZmpmZGtaQzBfVm5jMjdWRDdObjQ3RlZJOTZ4MHc4eV9tMGRlMmgwUGpDQkMzREZLOEh2b3R1TERCVlVpa21fRE50cDdrV3pTTjdkOC1wNUtNNV9iS1cyUUxjUWtIeGROWFVidlZIVnlZU01oREQ2b2xYR0RKcHdiT0FZMHI1QWZwS20xbWF4b1lqb29iU2VYWFpiU3NPVS1wR2FQbi1tOXhyOXFmanItc1dQYXBfeTdYczN1RlhEN1BDWDhkakljQWxMdjNqY1dzbTBUMkhWcnN5ZEpIVFZ5ZElmNWthcHhQbVU3YllTaFRtQ2Q3UQ?oc=5",
+          "s": "TradingView",
+          "d": "2026-08-26",
+          "cues": [
+            "record quarter"
+          ]
+        },
+        {
+          "t": "Lynas Rare Earths misses profit forecasts on climbing costs - The Malaysian Reserve",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTFRuMl81aU5DSXlzTWJwMmZjN3UtTmJTTHo0QWE4bkNPOU5GNFVHZUdZNFp0bWMtR1hadkhsNGxEN2lKa1MxSzNHdkpiR3RTQWlyUVhwM0RZdUhPalJyektycDdfNGU2UW1QR19KUTJsOXFUTUhobEV5dEVia1hEOHRvcjRvQXc1MER6LVpLNUR0UGM4bTdtamRyVkpTR0pCM2RIVE13?oc=5",
+          "s": "The Malaysian Reserve",
+          "d": "2026-08-26",
+          "cues": [
+            "miss"
+          ]
+        }
+      ],
+      "wire_gate": "2026-08-26"
     },
     {
       "type": "earnings",
