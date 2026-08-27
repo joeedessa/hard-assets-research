@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-26T16:46:49+00:00",
-    "mode": "light",
-    "coverage": "5/5 scanned this pass",
+    "as_of": "2026-08-27T00:55:56+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 0.79,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-26",
+        "fetched": "2026-08-27",
         "eps_est": 0.61,
         "surprise_abs": 0.18,
         "surprise_pct": 30.1
@@ -106,13 +106,18 @@
       },
       "wire": [
         {
-          "t": "Lynas Rare Earths Misses Profit Forecasts on Climbing Costs - Bloomberg",
-          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUJPRFkycVY4Z29NcDl6R1ZNdDRuRWVfd2stdGVKMFRxVGJtWFh5dlB5SlM5YnBEa29rM2lZTC1JaWZIa2pTSFJhcTBKNmFFczg4aG1HSjRpT1hqS2sxa1dxT1ZkMVJTcU9IbXVrMjFhLXlxeGlCMExPTXoxYWNCaTNvaXlUUkxBQVF3dFh0Mm44dUpmSmJtSHVfbllEODc0Y01namNjVGQzY2dRU3dJ?oc=5",
-          "s": "Bloomberg",
+          "t": "Earnings call transcript: Lynas Rare Earths shares fall after FY 2026 update - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZnRhS3NtTjVPVUd0YjNOTW94S3FSQkRTa0pLa2Qtd3pIcmI2ZTJwRnZxNGlwMHA0YkppZU9nOUNVOUpiU2tfb2FNZGdhbEktV0huaVZVWlBwNWhkaFZTRmVMUldIRlZHRDFhSGpBem1Cd0FicXFuYkdxXzV2YjZZdUU2SGVyTGtfVTlfWGpMaWtaOWFUYVYyYTBSWEQ3eVd0ZUZHZG1mOHlMbFR0dG9GN3Q2cGRNZ2Z4NzRsRjhKOHR3Q0p3Q1ZfTHNZZw?oc=5",
+          "s": "Investing.com",
           "d": "2026-08-26",
-          "cues": [
-            "miss"
-          ]
+          "cues": []
+        },
+        {
+          "t": "Lynas Posts Record $703M Revenue as Capex Overrun Exposes Rare Earth Equipment Trap - Tech Times",
+          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMEZ3XzZMNXBRZzZpVE1HOVU2aVFOM0FWRFAyV0dWZU5OcHlTdDlGaUtseGVqT1VsZkxLbUVHdVZPUzdGMndRbGItV1I1dTlrclExMTduME00X1BPd3lrWklWOHhBcXRtLTAtaHRDdW51TnYxUktvTVJJYVhWWDE0MTI5ZTdsc0V3eHF3NTI4aTN4Qlp3bURFenBKQmRWang5azItaWtMWmhXM0hRTzRzZWpQMTduNmJRcU94OGk2SS10TGllYWdYcjJ3dGtCN1k?oc=5",
+          "s": "Tech Times",
+          "d": "2026-08-26",
+          "cues": []
         },
         {
           "t": "Lynas Rare Earths Limited 2026 Q4 - Results - Earnings Call Presentation (OTCMKTS:LYSDY) 2026-08-25 - Seeking Alpha",
@@ -122,18 +127,13 @@
           "cues": []
         },
         {
-          "t": "Lynas Rare Earths Eyes US Magnet Plant and New Supply Deals as Profit Soars - finance.biggo.com",
-          "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDelpnTmVLd3hqZ2NFQkdvS2VxUkR3NG5yR1dEdklxOU5FdHp5b21vbS02QkJscXZCVW9qMkUzekQxTVhwdVZ4eWpIWkFyNG1EM0pWX0tNRUhVQWduc000OEVmX203amY0Z3dXeXNlX3VfTm85Qmc?oc=5",
-          "s": "finance.biggo.com",
+          "t": "Lynas Rare Earths Misses Profit Forecasts on Climbing Costs - Bloomberg",
+          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUJPRFkycVY4Z29NcDl6R1ZNdDRuRWVfd2stdGVKMFRxVGJtWFh5dlB5SlM5YnBEa29rM2lZTC1JaWZIa2pTSFJhcTBKNmFFczg4aG1HSjRpT1hqS2sxa1dxT1ZkMVJTcU9IbXVrMjFhLXlxeGlCMExPTXoxYWNCaTNvaXlUUkxBQVF3dFh0Mm44dUpmSmJtSHVfbllEODc0Y01namNjVGQzY2dRU3dJ?oc=5",
+          "s": "Bloomberg",
           "d": "2026-08-26",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Lynas Rare Earths shares fall after FY 2026 update - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPV3AtNGpFZEU4Yi1YbWpWeWNyZm9NUGVQWU83N014bGVLYXE1RS1YQjhhTThJcVBTT0VsSmRLZWVtZkhJLTJDV180VmZoYWk4R29lWFc3Rlpfdlg3VnlaQkhKOF83cXVGblFjUTU0aTlwdHhEaklWSXhldW1CTm9hLXAzeWhqSVBQN3EyVnJmckxXMm9xWlNzZXAyVE1IdzNEVnJOQVVJT1FWcTF6bEdNbGRhN1FIREIzQ2tKQS14bFdXSExDeFdWa25NTjdZdkZqX1E?oc=5",
-          "s": "Investing.com India",
-          "d": "2026-08-26",
-          "cues": []
+          "cues": [
+            "miss"
+          ]
         }
       ],
       "wire_gate": "2026-08-26"
@@ -468,10 +468,8 @@
       "name": "Archrock",
       "d": "2026-10-27",
       "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/New_York"
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {
@@ -1052,6 +1050,18 @@
     },
     {
       "type": "earnings",
+      "tk": "AFMJF",
+      "name": "Alphamin Resources",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "DNN",
       "name": "Denison Mines",
       "d": "2026-11-03",
@@ -1136,6 +1146,18 @@
     },
     {
       "type": "earnings",
+      "tk": "XYL",
+      "name": "Xylem",
+      "d": "2026-11-03",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-03T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "AES",
       "name": "AES Corporation",
       "d": "2026-11-04",
@@ -1160,6 +1182,18 @@
     },
     {
       "type": "earnings",
+      "tk": "AMG.AS",
+      "name": "AMG Critical Materials",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:30 CET",
+        "iso": "2026-11-04T15:30+00:00",
+        "tz": "Europe/Amsterdam"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "CF",
       "name": "CF Industries",
       "d": "2026-11-04",
@@ -1167,6 +1201,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CLH",
+      "name": "Clean Harbors",
+      "d": "2026-11-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-04T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1251,6 +1297,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "JCI",
+      "name": "Johnson Controls",
+      "d": "2026-11-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-04T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1388,6 +1446,18 @@
     },
     {
       "type": "earnings",
+      "tk": "APD",
+      "name": "Air Products",
+      "d": "2026-11-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-05T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "CCO",
       "name": "Cameco",
       "d": "2026-11-05",
@@ -1456,6 +1526,18 @@
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-05T20:00+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NG.L",
+      "name": "National Grid",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:30 GMT",
+        "iso": "2026-11-05T15:30+00:00",
+        "tz": "Europe/London"
       }
     },
     {
@@ -1543,11 +1625,59 @@
       }
     },
     {
+      "type": "earnings",
+      "tk": "TDW",
+      "name": "Tidewater",
+      "d": "2026-11-09",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-09T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "5706.JP",
+      "name": "Mitsui Kinzoku",
+      "d": "2026-11-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-10T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
       "type": "policy",
       "d": "2026-11-10",
       "name": "China REE tranche-2 cliff",
       "detail": "",
       "tk": null
+    },
+    {
+      "type": "earnings",
+      "tk": "4004.JP",
+      "name": "Resonac",
+      "d": "2026-11-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-11T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ENR.DE",
+      "name": "Siemens Energy",
+      "d": "2026-11-11",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:30 CET",
+        "iso": "2026-11-11T15:30+00:00",
+        "tz": "Europe/Berlin"
+      }
     },
     {
       "type": "earnings",
@@ -1575,6 +1705,42 @@
     },
     {
       "type": "earnings",
+      "tk": "ICL",
+      "name": "ICL Group",
+      "d": "2026-11-11",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-11T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TTEK",
+      "name": "Tetra Tech",
+      "d": "2026-11-11",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-11T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ORI.AX",
+      "name": "Orica",
+      "d": "2026-11-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:12 AEDT",
+        "iso": "2026-11-12T06:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "PPTA",
       "name": "Perpetua Resources",
       "d": "2026-11-12",
@@ -1582,6 +1748,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-12T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HP",
+      "name": "H&P",
+      "d": "2026-11-16",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-16T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1599,6 +1777,18 @@
     },
     {
       "type": "earnings",
+      "tk": "ACM",
+      "name": "AECOM",
+      "d": "2026-11-17",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-17T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "SQM",
       "name": "SQM",
       "d": "2026-11-17",
@@ -1606,6 +1796,54 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-17T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BORR",
+      "name": "Borr Drilling",
+      "d": "2026-11-18",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-18T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SBLK",
+      "name": "Star Bulk Carriers",
+      "d": "2026-11-18",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-18T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "JMAT.L",
+      "name": "Johnson Matthey",
+      "d": "2026-11-19",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:30 GMT",
+        "iso": "2026-11-19T15:30+00:00",
+        "tz": "Europe/London"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FLNC",
+      "name": "Fluence Energy",
+      "d": "2026-11-23",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-23T20:00+00:00",
         "tz": "America/New_York"
       }
     },
