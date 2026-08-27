@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-27T00:55:56+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-08-27T17:55:06+00:00",
+    "mode": "light",
+    "coverage": "4/4 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -51,6 +51,13 @@
       },
       "wire": [
         {
+          "t": "Pilbara Minerals (ASX:PLS) Shares Rebound On Profit Surge But Expansion Questions Linger - webull.com",
+          "u": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MTkE3VGdXajRNWkQ2YVFDdHN2Rk5ia0dhcUJqdTZoRTBZZ2k2SWNYSGxjTFFELWhhWUVuSkNvNldnRFU1RGduMUtkbDF5SzBNcUsyTTVSbjY?oc=5",
+          "s": "webull.com",
+          "d": "2026-08-25",
+          "cues": []
+        },
+        {
           "t": "Earnings call transcript: Pilbara Minerals posts record H2 2026 results, shares rise 4.1% - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPREt6c2FpRHFma3FwUWs1dEdGWEZ2NmVIOGxDaU1LOGJaQTdPSlVWWUNEWVBfQnlEcGNRdWpvalU0SnI0V0N4ODUyaWtEcExodnc0TmlCYzN2Q3Eyb29FTy1OcVc0VVRkb0JOWTNkbV9HMUk4Y2thVmFPbzV4a2IwTHBIZzVFZ3QzdjlieXVZQVlqRW9FaVFqZDIwdXBMTGUwQVVxUVk1LTBkZnAtMGRrbExvOFJSRFdGanl0SlhhNmtzTVZDNzNJMFVCaUo0Sk1mZ25sOUZETTI?oc=5",
           "s": "Investing.com",
@@ -61,13 +68,6 @@
           "t": "Stocks to Watch Today Amid Results: Perenti, Pilbara Minerals and Nuix - Kalkine",
           "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZkxvOTh3WjJab3o4ZkFtYVpKcUtGMk5xcy1XcFdDSWtKODJydlZTOXN3U09kSTFiLWZFQVNHU0FtYnQ2ZGl6UGk4QkF0bEczMFREYm5sdXBBUktKbmNIQV8zMlJoVm56bkgyQmd2MnQtYU1VQU9Fb3pmcGlvY0NwSVZMZzRnSjF5UHNuVl8tcGloUkU4QUIwQlhlUlNCS00wdU5iblQ5dUdFY2dWWkE?oc=5",
           "s": "Kalkine",
-          "d": "2026-08-24",
-          "cues": []
-        },
-        {
-          "t": "Pilbara Minerals (ASX:PLS) Shares Rebound On Profit Surge But Expansion Questions Linger - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON2EwQ3M2VUJpTmdmYTV3OEwtYWxyODBEV1N3VGMyR1RjNk1abDAycm94WjJQSmJqZnh1WVZEMl9YeGhweHExSjdPYU5zNWZCU2NxckpERXJZQXY0RnBDNlkxVHBuM0xiSF9xMGtneXZVUURfNlhzeVR0VnRJQzBaTjJzVS1hamxTVl9NVE4xNGZfM0JiV1QwQ2toVktQNmU3LVZQYmlmZTR4T2xGc0RDSUZuM2RMMU5BVG9CeGg5TjFoZlM5ZUFvczd2SFjSAdIBQVVfeXFMTUxGZGo1NnRZRV9OTTVLM1ctQ0ROMllpQ2JYNmNUcDNQWXRrQm1ISC1Nb1pJM0ZpTDM3TnlFUVB0NFBKSjFLY2pwMFo3amRfS3VzQ3h2MHMwTDRpNHhPUURtcThPdFp6Z0hmX1VWTUJjU0R1SENJSXZtS2VqZTFBVk9ZaHBuRUwwUGJaS0hKelBpVFFYSDhwT0VTRkZscVZBSnNuazNYLURKSm1JUjFOLTJxLWVQd2NHMTh1STdWWlZ2V3NiaG1hWDk1WEhHYzFtSjlR?oc=5",
-          "s": "simplywall.st",
           "d": "2026-08-24",
           "cues": []
         },
@@ -113,27 +113,27 @@
           "cues": []
         },
         {
-          "t": "Lynas Posts Record $703M Revenue as Capex Overrun Exposes Rare Earth Equipment Trap - Tech Times",
-          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMEZ3XzZMNXBRZzZpVE1HOVU2aVFOM0FWRFAyV0dWZU5OcHlTdDlGaUtseGVqT1VsZkxLbUVHdVZPUzdGMndRbGItV1I1dTlrclExMTduME00X1BPd3lrWklWOHhBcXRtLTAtaHRDdW51TnYxUktvTVJJYVhWWDE0MTI5ZTdsc0V3eHF3NTI4aTN4Qlp3bURFenBKQmRWang5azItaWtMWmhXM0hRTzRzZWpQMTduNmJRcU94OGk2SS10TGllYWdYcjJ3dGtCN1k?oc=5",
-          "s": "Tech Times",
-          "d": "2026-08-26",
+          "t": "Surging Full-Year Earnings Could Be A Game Changer For Lynas Rare Earths (ASX:LYC) - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNc1N0Wk5MMV9NTkViSll1QkMtbUkycS1rWVFYNmZUV3BaQXNUUXVZMGNfUjlqcEpxME1vckhNazVsbXotb0VFSnJhLXdjNzdfZjdSN2U2dDJZSHZYWDI3MF8td3hyYl85c19KX1B3dEYyUVRHU3VpaUZvcWhSRjE4R20wZUh6NzlsNjRlbzVyczhkVk1oTGhMeUJZR3Nqc1pueE5ZVWVHaU90SHpXdmthNENDanNLRFBveVJjQXNzQzBUZGJfbFhYTHgwYUJxNV9OMl9LRHFlb9IB3AFBVV95cUxPTjBaeHF2M25oNzN6S1VzZmlLb2dWcXdlb2NSaHZGYzROeGhDUDBiLUF5YWtVVF9nZUNobU43VUxySnNnMW9DcVk1Y3hmaGJTZ2J4Q3ZhcXlGaV91NzhWNlo3Vk1NbzdfSS00a09uTGY4dktmS1NMZ0NCSkVjVVdULWRUM0kzclZiWkZYWUpCbTVTT2kzbEt6YThtUWRiLUVQMGpTNmVBVVd1bk1TellQRUV5LU5yWnNRUVZjd21oUzZlMVJ0TFNOWGhUN2FCS3VpalFNbjk1V1RPVVY4?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-27",
           "cues": []
         },
         {
-          "t": "Lynas Rare Earths Limited 2026 Q4 - Results - Earnings Call Presentation (OTCMKTS:LYSDY) 2026-08-25 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdG1rbHlnbzNTaWtncWc2WGRjekVad0U1ZXRxay0zSG80dTlTMEo1VUZuNEF0OXZPRmVPWlZKekhpOERiWmw3TUdBb1J3VDJzcW9lbk9XbjNiNnhVTkR5MEpUMllEbTdkbnF2ckNPdWdPNlUtSE90dDktZEgzTnBROHgtdkcyZV9YR1A3b09QVXUySHFOcmRzWHNTQ2xyMzN3YWN6NVlURm1taUExZUE?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-26",
-          "cues": []
-        },
-        {
-          "t": "Lynas Rare Earths Misses Profit Forecasts on Climbing Costs - Bloomberg",
+          "t": "Lynas Rare Earths Misses Profit Forecasts on Climbing Costs - Bloomberg.com",
           "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUJPRFkycVY4Z29NcDl6R1ZNdDRuRWVfd2stdGVKMFRxVGJtWFh5dlB5SlM5YnBEa29rM2lZTC1JaWZIa2pTSFJhcTBKNmFFczg4aG1HSjRpT1hqS2sxa1dxT1ZkMVJTcU9IbXVrMjFhLXlxeGlCMExPTXoxYWNCaTNvaXlUUkxBQVF3dFh0Mm44dUpmSmJtSHVfbllEODc0Y01namNjVGQzY2dRU3dJ?oc=5",
-          "s": "Bloomberg",
+          "s": "Bloomberg.com",
           "d": "2026-08-26",
           "cues": [
             "miss"
           ]
+        },
+        {
+          "t": "Lynas Rare Earths profit jumps 27-fold after prices hit record - AFR",
+          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObGU0QUdNUXVrYUZBcHotams3TGMxaEYtTEQ0R1hmV3JPcDBONVdveG0tUmVHaE56MGVRSGVMVHZ1UWNTbTJCcGRGQWw1YkpYWWRpX0ZXVGpzTHRJTnFpRm9RaFdRX0F6V25mLUZrUUhIWHlLZkdWa3N6OVRiVU9TcXVQYy1DclJpVV8yOTVXYzAybk4xNzYwNG9MUVpPdHU3NW5hQXAxNWVXMUowM1RYX2ZEbEJBUQ?oc=5",
+          "s": "AFR",
+          "d": "2026-08-26",
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-26"
@@ -160,7 +160,40 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-27T06:12+00:00",
         "tz": "Australia/Sydney"
-      }
+      },
+      "wire": [
+        {
+          "t": "Mineral Resources Ltd (MALRF) (FY 2026) Earnings Call Highlights - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPT1VrUDFWYWd4Rmg1a0FfR0dsTGh1cEZPU3lGLWduRS13RWdGV0pTYTdVTTBwWFlfbWpoMEozSjdzNVRmSmNfU1hpZVlkbnBMUUhNVWhYcC15MUZUMGFVM3BEbUZQc1p0VWQwMDUtS2xDYzkxV2NZQlkyNGdlR04wTnhuOThxNVRJMnFrVklhdmJyejh2QjV6SXZmU2hBUFFzMFJmZ0NYc1dLTlcySkNCVFJyeHBCNWhIVWJYc09US0hWODRIOFlMQXBEUzI3dnMtTlBIMHlwNEZjYnl3WjBhOWRoQ1BtOEYtVnNqRW9VNA?oc=5",
+          "s": "GuruFocus",
+          "d": "2026-08-27",
+          "cues": []
+        },
+        {
+          "t": "Mineral Resources (ASX:MIN) Shares Wrestle With Record Profit And Debt Risk - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSnVzdWg0bW03Ullvc200YnJHaFEyeTE0aGlJVWt0ZTQ1R3F6MjVXQVBVaHlYalgwU3JZcnplN1BpeUoyeC10dUcxMzd5TngtYmxIcS1PeWp4T0RQeEZrc21iSWhKWS1GNlZ2ZjJySlgyVTlISjJRbkEycndRU1pfaHItamNNT1h0eXh1dko4RFRFc084d0J0VU1BS0V4UW5pWjV3cG1SbXY5X2s0VmJUaUZWLVRXY19ueUd3UVBqOVpDb1RuR0tIcUUtQWlIejNTblZWX3lxb9IB3AFBVV95cUxPT0JQNFRMcDdHamU1SWtQNFhHLXR5RkxMbDM2d3RNUy1CM25qRHhnZEJxLVM5YXpwQU9ZUVJWSEdJZUZxZEVzS1RsRFBaR3RsaGMyZ3htNjJtYXpITEJjY1p0UU8wWTFvMTh2cWZNOEpTT3MtdWMwR3FFUzBGVGZLUzJmN2pReEcwRDlVZEFZV0tBOFpYYzgxemdFeHhHVlc3Y3BYaDN0YnV2eXQyeWZSalhTWlNoaUdfT2tlWnAzWC1yNE9uRktEMloxSFlWSmFUTS1mRV9HNUo5QzB5?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-08-27",
+          "cues": [
+            "record quarter"
+          ]
+        },
+        {
+          "t": "Earnings call transcript: Mineral Resources posts record H2 2026 results By Investing.com - Investing.com India",
+          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTUNxTzdIR3V4LWFtbmk4UzRuRXdjVzZrUGYwX2ZTWWZ6c1JKa1lvc2dmQXRiVHRFcVhNbHd2bmYwZ3VidF9aT3ZqQWVIV0NPaXlPS1AtYTJJZHZZRGhkZUJhVTRGRXkycWpMY3MtTkZRUU5NU0JvU0M1NjY2Z3VoWHk3eUdxLURuSER3QjFBM05jVlpMdWU4OUZZRlZKS1BSMGFjSzVWbWJBYUs2SFBUM09qZmlVZXlZcTItSEx6TTNpSV9YSHNZa05ha2w?oc=5",
+          "s": "Investing.com India",
+          "d": "2026-08-27",
+          "cues": []
+        },
+        {
+          "t": "Mineral Resources Shares Swing 10% Intraday Following Strong FY26 Results - thebull.com.au",
+          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRGNvNFY4RUoxdVgtQ0p5Tjh3S1dqOGh6RXVRTVY1MkdaTHJfcWpFbFREN3VDYURxUnVrSXFGR0VzcGh6TU11N3J2VlFjYkNGVU9ySU12aVo4NldTNExzT1Vhajd5SnFjbVVocF9wODNzcC1tdkwtaGpfbERFR3FORGVqZDNDbkxYdTZIc1hsNHo5OXNIWmVlb2JQUUVHaVBXVEdB?oc=5",
+          "s": "thebull.com.au",
+          "d": "2026-08-27",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-08-27"
     },
     {
       "type": "earnings",
