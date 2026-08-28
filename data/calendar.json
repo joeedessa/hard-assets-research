@@ -1,43 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-08-27T22:37:48+00:00",
+    "as_of": "2026-08-28T00:45:04+00:00",
     "mode": "light",
     "coverage": "4/4 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "FLNG",
-      "name": "Flex LNG",
-      "d": "2026-08-19",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-08-19T12:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.79,
-        "source": "Yahoo Finance",
-        "fetched": "2026-08-27",
-        "eps_est": 0.61,
-        "surprise_abs": 0.18,
-        "surprise_pct": 30.1
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ILU.AX",
-      "name": "Iluka Resources",
-      "d": "2026-08-19",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:12 AEST",
-        "iso": "2026-08-19T06:12+00:00",
-        "tz": "Australia/Sydney"
-      }
-    },
     {
       "type": "earnings",
       "tk": "PLS.AX",
