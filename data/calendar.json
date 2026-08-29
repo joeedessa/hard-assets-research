@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-29T00:23:57+00:00",
-    "mode": "light",
-    "coverage": "2/2 scanned this pass",
+    "as_of": "2026-08-29T03:15:29+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -58,14 +58,14 @@
         },
         {
           "t": "Lynas Rare Earths Limited 2026 Q4 - Results - Earnings Call Presentation (OTCMKTS:LYSDY) 2026-08-25 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdG1rbHlnbzNTaWtncWc2WGRjekVad0U1ZXRxay0zSG80dTlTMEo1VUZuNEF0OXZPRmVPWlZKekhpOERiWmw3TUdBb1J3VDJzcW9lbk9XbjNiNnhVTkR5MEpUMllEbTdkbnF2ckNPdWdPNlUtSE90dDktZEgzTnBROHgtdkcyZV9YR1A3b09QVXUySHFOcmRzWHNTQ2xyMzN3YWN6NVlURm1taUExZUE?oc=5",
+          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQnl1X1BMbkhNVUNoTXpoX3BnOF9vTWVua1k5clFEc0I1dk9FU1RRazBhZWhOcVNDYVRlZ3kxUHZEN0kyTFpYUmttVHlka0s1SWlpcVZOTGZGN3I0QVA1MjEycDdQdlF0am0yM2hKWmFUYzVRc1pxaFJOYXFiem5LaERQaWZ4TkFOZUlKT2dySmp0MVpQZzE2WXJDZVN4bmt6cEZoLXBhZXA3ZWFXdXI1WnhtZVdURmp3YmpNeDl4MllJdWIzQWVPajRnQVZXTVk?oc=5",
           "s": "Seeking Alpha",
           "d": "2026-08-26",
           "cues": []
         },
         {
           "t": "Surging Full-Year Earnings Could Be A Game Changer For Lynas Rare Earths (ASX:LYC) - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTjBaeHF2M25oNzN6S1VzZmlLb2dWcXdlb2NSaHZGYzROeGhDUDBiLUF5YWtVVF9nZUNobU43VUxySnNnMW9DcVk1Y3hmaGJTZ2J4Q3ZhcXlGaV91NzhWNlo3Vk1NbzdfSS00a09uTGY4dktmS1NMZ0NCSkVjVVdULWRUM0kzclZiWkZYWUpCbTVTT2kzbEt6YThtUWRiLUVQMGpTNmVBVVd1bk1TellQRUV5LU5yWnNRUVZjd21oUzZlMVJ0TFNOWGhUN2FCS3VpalFNbjk1V1RPVVY40gHcAUFVX3lxTE9OMFp4cXYzbmg3M3pLVXNmaUtvZ1Zxd2VvY1JodkZjNE54aENQMGItQXlha1VUX2dlQ2htTjdVTHJKc2cxb0NxWTVjeGZoYlNnYnhDdmFxeUZpX3U3OFY2WjdWTU1vN19JLTRrT25MZjh2S2ZLU0xnQ0JKRWNVV1QtZFQzSTNyVmJaRlhZSkJtNVNPaTNsS3phOG1RZGItRVAwalM2ZUFVV3VuTVN6WVBFRXktTnJac1FRVmN3bWhTNmUxUnRMU05YaFQ3YUJLdWlqUU1uOTVXVE9VVjg?oc=5",
+          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNc1N0Wk5MMV9NTkViSll1QkMtbUkycS1rWVFYNmZUV3BaQXNUUXVZMGNfUjlqcEpxME1vckhNazVsbXotb0VFSnJhLXdjNzdfZjdSN2U2dDJZSHZYWDI3MF8td3hyYl85c19KX1B3dEYyUVRHU3VpaUZvcWhSRjE4R20wZUh6NzlsNjRlbzVyczhkVk1oTGhMeUJZR3Nqc1pueE5ZVWVHaU90SHpXdmthNENDanNLRFBveVJjQXNzQzBUZGJfbFhYTHgwYUJxNV9OMl9LRHFlb9IB3AFBVV95cUxPTjBaeHF2M25oNzN6S1VzZmlLb2dWcXdlb2NSaHZGYzROeGhDUDBiLUF5YWtVVF9nZUNobU43VUxySnNnMW9DcVk1Y3hmaGJTZ2J4Q3ZhcXlGaV91NzhWNlo3Vk1NbzdfSS00a09uTGY4dktmS1NMZ0NCSkVjVVdULWRUM0kzclZiWkZYWUpCbTVTT2kzbEt6YThtUWRiLUVQMGpTNmVBVVd1bk1TellQRUV5LU5yWnNRUVZjd21oUzZlMVJ0TFNOWGhUN2FCS3VpalFNbjk1V1RPVVY4?oc=5",
           "s": "simplywall.st",
           "d": "2026-08-27",
           "cues": []
@@ -146,18 +146,20 @@
       },
       "wire": [
         {
-          "t": "Frontline Ltd. Q2 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQ2FKbS1Ca0NZdWlibXR4QU5uYXBHSW82V3ZMODJpTXR2UFgzajBQa210N2NhYm1oNVBZNU9XWkUzTVowNi1RRTVRZDk0NHl6TW9VQXdTRnZJeXd6MVhPenNDbjJKRkdlTkMtbEFUX1lva1FqbHFwSFZZXzcwTHBiUUQ4eGVMVjFHQy1tek9WMThkX0xKVE9vQkp4NA?oc=5",
+          "t": "Frontline Q2 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNUs0cFFsVUN4VzVyUVZtSllCQzdjcWthdjQ5U1ZJLUJ0akN1M3hQNEtfekh6Z3NNamk3RnpackNKNkExTXk4RzBMUjBQazRVR3FGX09nbFdwLW9iSlV5UzZ4RFpzUHU5bVcwa0FtWmJ4eFBmR2tSUTBSMVBfeVZzV3FEd2RzWjJldTh2bjR4MkFmcXQxR1hpT0Z4amRQVkdNaE45eg?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-08-28",
           "cues": []
         },
         {
-          "t": "How Surging 2026 Earnings At Frontline (FRO) Have Changed Its Investment Story - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNd21ULTJZWmNwMTc1akVXcUVzNDJ4NzlXcjNnY1NFZmNEUDdsQ3hhQUNEYXJtSThDaFBCMTFjOExWd0pQazRKblYwQzMtMFpzUDNYU3RncnpTVmdFS1kzQkNsQ25TZVZTUmdjdGZVTnhiVGxFcm1OWm1mWWR3UGNhTG1kRjJWeXFQTGtoUFpsclV1X0RPN3VKeXlrNmZaUVJ1c2tCZGpva3lLdndKS3o0TkIySEUtQ0U1UVBYZmZWLWNkTXpl0gHEAUFVX3lxTE13bVQtMllaY3AxNzVqRVdxRXM0Mng3OVdyM2djU0VmY0RQN2xDeGFBQ0Rhcm1JOENoUEIxMWM4TFZ3SlBrNEpuVjBDMy0wWnNQM1hTdGdyelNWZ0VLWTNCQ2xDblNlVlNSZ2N0ZlVOeGJUbEVybU5abWZZZHdQY2FMbWRGMlZ5cVBMa2hQWmxyVXVfRE83dUp5eWs2ZlpRUnVza0Jkam9reUt2d0pLejROQjJIRS1DRTVRUFhmZlYtY2RNemU?oc=5",
+          "t": "Frontline (FRO) Stock Catches Eyes After Record Profit And Low P E - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZmYzcGhCMVdwUHc5YVQ4ZXVXbVpLOXJlYVZDa3lRRGZXQlNISDFXQjhmWnhzUFdFTDdBNFJyS2hQanplTElKVEM5ckJOajJybnV5clRxNGF0aHk5UFNoaWFabjdnb3NFcHd3NmJ3NHRsZDJhZjBRZXFGVkN0czVjM3p5Q2U3STd4VDM3ZFBBazdkQnRid1QzVWFXVnpNNzd4SFFsSWk2YWhtSHVhUUlseGF2MXViU2VRNEQzZlp0WkvSAcYBQVVfeXFMT000Rm9NSVJtblVrR05PZDhLdHAwSzJ1S01hWHdPM0RuN3VqVVVRa2ZocnZEREo0aGl6ZVZvUzktODc0Z1kzVnJPQ1poRkNkMWVvQklBemJhcEdSWVB4TFNhWnhrR0VKUno1cThmb0ZVb1ZiZm9wOUUzZGxjbDlJcTlYY0FSc2ljWUFNY2VjdXo4dHltM0NiUk1zS1hfZk82NjZ3c29oUG1JRkM0eG9SYWhPX2lCTVRGZi1fY3lORjA1QlNURklR?oc=5",
           "s": "simplywall.st",
-          "d": "2026-08-28",
-          "cues": []
+          "d": "2026-08-29",
+          "cues": [
+            "record quarter"
+          ]
         },
         {
           "t": "Earnings call transcript: Frontline posts record Q2 2026 profit, shares rise - Investing.com",
@@ -167,13 +169,11 @@
           "cues": []
         },
         {
-          "t": "Frontline Q2 Earnings Call Highlights - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNTB6OTVoUkFoeldHT2phRUo3SVFuMHdaam5WZVdkYkZoV01hZ2pSS0JEWVpYODlfSW5aWTlhMDJsQ3hjWmx0TW12TUlURW05Vko3bGR2S2tTUWtZOWZ0MndkRXVRamVaQ3ptYW5pWUM5amdqTGRtcHZuNmVwRzUzb1Noam81b2x6NW5JN3A3djh3NnktU1J0czFFZkJCbkxxSE14ag?oc=5",
-          "s": "MarketBeat",
+          "t": "Frontline PLC reports results for the quarter ended June 30 - Earnings Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdl8yZFU0WEZnTzF2QXp4bm9hMEdoRWJER0wtY1RaQWxTbmswSVBTMUdkenAzV1FvY1BHS05jNktYSHhhUE5POEc0dTBxQlh4Tk5pRkVCMDBFYWE4d1FFc3VPV24yZFFKbDdJM01vR3JuSDd4S08xaUQyQ3ljUXdLZGpuNFpEclktMlZFRkhXdlMxb0MtNjgzUUFaS1laMHhWUU1zTTFadlc2VHBLd0ZWUE9ma3h0bTF1VWk3eGw4cms1bkJpOGpvbnFpSFVaaG1STU0zUEFycXNvTy16MGVR?oc=5",
+          "s": "TradingView",
           "d": "2026-08-28",
-          "cues": [
-            "beat"
-          ]
+          "cues": []
         }
       ],
       "wire_gate": "2026-08-28",
