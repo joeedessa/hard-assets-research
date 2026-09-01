@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-01T00:42:32+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-09-01T12:03:15+00:00",
+    "mode": "light",
+    "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -96,7 +96,26 @@
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-09-01T12:30+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Sibanye Stillwater swings to R18.8bn H1 profit | SBSW SEC Filing - Form 6-K - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSlZvV1pieXlWSGNfeGdJNFZwdjg3RmRZQzV1Ny1XT3pHVUhQYkRPbXFnUjlseGdrc2c5eVV5Um9IZU05cTZjcjNhY2tBbGZzU2tJRTdjRmJTdjlsRWV6NHZteHVveUc5RlFoeHgzeVVROHNENkxaRHhRUHRwRVRwNG1FTVRWZ1o5RkFPUUNPSXNrU1pPZnZrMjYzSnYxTnpORmlaYWFYUDFMSzlHWXNpMXh0dVBpX0dQVmc?oc=5",
+          "s": "Stock Titan",
+          "d": "2026-09-01",
+          "cues": []
+        },
+        {
+          "t": "SIBANYE STILLWATER LIMITED – Financial Results for the six months ended 30 June 2026 and Interim Dividend Declaration - Moneyweb",
+          "u": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUnU4ZHF6Z0pvcW9ZTGZrcUlkTW1KbmE4SWRIOXBBZ2lRRHFBNjk3Qjg0ODliWWZiNWxXWFo4bWJ5SndWWGNnSnZXdXpzRWMydm1ydVRMWGd0SHBBS2NLQVREZFpCYUtZaS1ZV1RhcGF3VU04d2kxaHByWDZySElrSmdhYlNSU1ZPdWRtQm55TEtvOW9xN0hjNzk4Z2RPYUFtQjR1OFh1aVFSeG0tS1MyakVhX0ZRY3RnRHAzMndfb3llbWtQNGJiSXJqMHEzdXA0SDBYdl9fRGR0YnBUcWRESU9pVkdzOWc?oc=5",
+          "s": "Moneyweb",
+          "d": "2026-09-01",
+          "cues": [
+            "dividend/buyback"
+          ]
+        }
+      ],
+      "wire_gate": "2026-09-01"
     },
     {
       "type": "earnings",
