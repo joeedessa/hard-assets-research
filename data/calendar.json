@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-08-31T21:18:12+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-09-01T00:42:32+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -40,38 +40,7 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-26T06:12+00:00",
         "tz": "Australia/Sydney"
-      },
-      "wire": [
-        {
-          "t": "Earnings call transcript: Lynas Rare Earths shares fall after FY 2026 update - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZnRhS3NtTjVPVUd0YjNOTW94S3FSQkRTa0pLa2Qtd3pIcmI2ZTJwRnZxNGlwMHA0YkppZU9nOUNVOUpiU2tfb2FNZGdhbEktV0huaVZVWlBwNWhkaFZTRmVMUldIRlZHRDFhSGpBem1Cd0FicXFuYkdxXzV2YjZZdUU2SGVyTGtfVTlfWGpMaWtaOWFUYVYyYTBSWEQ3eVd0ZUZHZG1mOHlMbFR0dG9GN3Q2cGRNZ2Z4NzRsRjhKOHR3Q0p3Q1ZfTHNZZw?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-26",
-          "cues": []
-        },
-        {
-          "t": "Lynas Rare Earths profit jumps 27-fold after prices hit record - AFR",
-          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObGU0QUdNUXVrYUZBcHotams3TGMxaEYtTEQ0R1hmV3JPcDBONVdveG0tUmVHaE56MGVRSGVMVHZ1UWNTbTJCcGRGQWw1YkpYWWRpX0ZXVGpzTHRJTnFpRm9RaFdRX0F6V25mLUZrUUhIWHlLZkdWa3N6OVRiVU9TcXVQYy1DclJpVV8yOTVXYzAybk4xNzYwNG9MUVpPdHU3NW5hQXAxNWVXMUowM1RYX2ZEbEJBUQ?oc=5",
-          "s": "AFR",
-          "d": "2026-08-26",
-          "cues": []
-        },
-        {
-          "t": "Lynas Rare Earths Limited 2026 Q4 - Results - Earnings Call Presentation (OTCMKTS:LYSDY) 2026-08-25 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQnl1X1BMbkhNVUNoTXpoX3BnOF9vTWVua1k5clFEc0I1dk9FU1RRazBhZWhOcVNDYVRlZ3kxUHZEN0kyTFpYUmttVHlka0s1SWlpcVZOTGZGN3I0QVA1MjEycDdQdlF0am0yM2hKWmFUYzVRc1pxaFJOYXFiem5LaERQaWZ4TkFOZUlKT2dySmp0MVpQZzE2WXJDZVN4bmt6cEZoLXBhZXA3ZWFXdXI1WnhtZVdURmp3YmpNeDl4MllJdWIzQWVPajRnQVZXTVk?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-08-26",
-          "cues": []
-        },
-        {
-          "t": "Surging Full-Year Earnings Could Be A Game Changer For Lynas Rare Earths (ASX:LYC) - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNc1N0Wk5MMV9NTkViSll1QkMtbUkycS1rWVFYNmZUV3BaQXNUUXVZMGNfUjlqcEpxME1vckhNazVsbXotb0VFSnJhLXdjNzdfZjdSN2U2dDJZSHZYWDI3MF8td3hyYl85c19KX1B3dEYyUVRHU3VpaUZvcWhSRjE4R20wZUh6NzlsNjRlbzVyczhkVk1oTGhMeUJZR3Nqc1pueE5ZVWVHaU90SHpXdmthNENDanNLRFBveVJjQXNzQzBUZGJfbFhYTHgwYUJxNV9OMl9LRHFlb9IB3AFBVV95cUxPTjBaeHF2M25oNzN6S1VzZmlLb2dWcXdlb2NSaHZGYzROeGhDUDBiLUF5YWtVVF9nZUNobU43VUxySnNnMW9DcVk1Y3hmaGJTZ2J4Q3ZhcXlGaV91NzhWNlo3Vk1NbzdfSS00a09uTGY4dktmS1NMZ0NCSkVjVVdULWRUM0kzclZiWkZYWUpCbTVTT2kzbEt6YThtUWRiLUVQMGpTNmVBVVd1bk1TellQRUV5LU5yWnNRUVZjd21oUzZlMVJ0TFNOWGhUN2FCS3VpalFNbjk1V1RPVVY4?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-27",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-26"
+      }
     },
     {
       "type": "earnings",
@@ -95,43 +64,7 @@
         "label": "AFTER THE CLOSE · 16:12 AEST",
         "iso": "2026-08-27T06:12+00:00",
         "tz": "Australia/Sydney"
-      },
-      "wire": [
-        {
-          "t": "Mineral Resources Ltd (MALRF) (FY 2026) Earnings Call Highlights - GuruFocus",
-          "u": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPT1VrUDFWYWd4Rmg1a0FfR0dsTGh1cEZPU3lGLWduRS13RWdGV0pTYTdVTTBwWFlfbWpoMEozSjdzNVRmSmNfU1hpZVlkbnBMUUhNVWhYcC15MUZUMGFVM3BEbUZQc1p0VWQwMDUtS2xDYzkxV2NZQlkyNGdlR04wTnhuOThxNVRJMnFrVklhdmJyejh2QjV6SXZmU2hBUFFzMFJmZ0NYc1dLTlcySkNCVFJyeHBCNWhIVWJYc09US0hWODRIOFlMQXBEUzI3dnMtTlBIMHlwNEZjYnl3WjBhOWRoQ1BtOEYtVnNqRW9VNA?oc=5",
-          "s": "GuruFocus",
-          "d": "2026-08-27",
-          "cues": []
-        },
-        {
-          "t": "Mineral Resources FY26 slides: record profit, dividend return - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObkpJUkZqNnBmVWVucEFHVGk5eEhCcW51OVVtUktmZ3QwZUlrTFdMV1FmQVdWdDFxM2U2RnlTNUR3Q2NqbDN6c2NlQ01sWTg4Ylk2d0VhcjNyWkJ5UHZuS3dLUDA0MzV1NGJFcjR5UWVjbDR4dzZQWXFjVnBId0pYWFloT1oxNEkxck1WLXFZSmdZQ244UExmaVR0RDVWUWluc0hIMDRDNTZ6OW94RmUwM2ZxdjNYQWM?oc=5",
-          "s": "Investing.com",
-          "d": "2026-08-27",
-          "cues": [
-            "record quarter",
-            "dividend/buyback"
-          ]
-        },
-        {
-          "t": "Mineral Resources (ASX:MIN) Shares Wrestle With Record Profit And Debt Risk - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSnVzdWg0bW03Ullvc200YnJHaFEyeTE0aGlJVWt0ZTQ1R3F6MjVXQVBVaHlYalgwU3JZcnplN1BpeUoyeC10dUcxMzd5TngtYmxIcS1PeWp4T0RQeEZrc21iSWhKWS1GNlZ2ZjJySlgyVTlISjJRbkEycndRU1pfaHItamNNT1h0eXh1dko4RFRFc084d0J0VU1BS0V4UW5pWjV3cG1SbXY5X2s0VmJUaUZWLVRXY19ueUd3UVBqOVpDb1RuR0tIcUUtQWlIejNTblZWX3lxb9IB3AFBVV95cUxPT0JQNFRMcDdHamU1SWtQNFhHLXR5RkxMbDM2d3RNUy1CM25qRHhnZEJxLVM5YXpwQU9ZUVJWSEdJZUZxZEVzS1RsRFBaR3RsaGMyZ3htNjJtYXpITEJjY1p0UU8wWTFvMTh2cWZNOEpTT3MtdWMwR3FFUzBGVGZLUzJmN2pReEcwRDlVZEFZV0tBOFpYYzgxemdFeHhHVlc3Y3BYaDN0YnV2eXQyeWZSalhTWlNoaUdfT2tlWnAzWC1yNE9uRktEMloxSFlWSmFUTS1mRV9HNUo5QzB5?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-27",
-          "cues": [
-            "record quarter"
-          ]
-        },
-        {
-          "t": "Earnings call transcript: Mineral Resources posts record H2 2026 results By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTUNxTzdIR3V4LWFtbmk4UzRuRXdjVzZrUGYwX2ZTWWZ6c1JKa1lvc2dmQXRiVHRFcVhNbHd2bmYwZ3VidF9aT3ZqQWVIV0NPaXlPS1AtYTJJZHZZRGhkZUJhVTRGRXkycWpMY3MtTkZRUU5NU0JvU0M1NjY2Z3VoWHk3eUdxLURuSER3QjFBM05jVlpMdWU4OUZZRlZKS1BSMGFjSzVWbWJBYUs2SFBUM09qZmlVZXlZcTItSEx6TTNpSV9YSHNZa05ha2w?oc=5",
-          "s": "Investing.com India",
-          "d": "2026-08-27",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-08-27"
+      }
     },
     {
       "type": "earnings",
@@ -144,45 +77,10 @@
         "iso": "2026-08-28T12:30+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "What Frontline (FRO)'s Record Q2 Results and Dividend Moves Mean For Shareholders - finance.yahoo.com",
-          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPckFtNzNWOXB0SFAyMTVqQ1ZzV0VJbW5lMzNfbl8tWS1WQTZDMndVUm13LVIwR3F4c3N0ZVZXNkZvV3QtZGFOTkNGa1ZRSl9NbmQwZ3RMdkQyNVJ4Uy0wcVFWYW9UYk5HdWlXT1ppeU1zRXVFVVNMQ1ZZWjlPN1RfREpCYnJablhjY3J3ajg0UGdoN0ktbEtRVWVBVFI?oc=5",
-          "s": "finance.yahoo.com",
-          "d": "2026-08-29",
-          "cues": [
-            "dividend/buyback"
-          ]
-        },
-        {
-          "t": "Strong tanker earnings drive Q2 profit for Frontline - Baird Maritime",
-          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOelJzVDhGbE1oeXV0Z21OVU1lcUxTV3UzNjNaLWc0NldsV3BTSmtFWXliaEU5VUN1RXNYbmdzMXFFeDZsbjk0R2ZaMEFVVVJ5VEtWU0p1NlZWRGppZ1ZWZkdob2JWZ2ZmQUY2S3h3dTlQZW5TNXh6RjZuNTRBMVBrQkkxcGpBc0tnOHVVLUdRUHNBQjFESFpqWHkwaDJHYU9a0gGuAUFVX3lxTE4tREl0RVZxTV9RSXJkNkFEMDBkS0YwTFp0d3RSZXpkUkZQU21nQ2w1aFROM3Q3ZGQyanBUTGY2Z3pzLUhoak1FWUN6cjZLc1RibnY0aE5CZVBFT0xvZ0RDazROU0xlZTVlRGh6cW1vejJkZmNpN0xzRGJYU3lBOE96cXFJZi01NWVHZTlWTjRjUnRpaEVHUDB3SGRrZ25ObkZxcDduZklYSFY0aHJQQQ?oc=5",
-          "s": "Baird Maritime",
-          "d": "2026-08-31",
-          "cues": []
-        },
-        {
-          "t": "How Surging 2026 Earnings At Frontline (FRO) Have Changed Its Investment Story - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSjhlY2NLYjg5ekY2eXhfbjlBN3VwenVqeE00STJsVmc1eEhUd0tUb2lEczNuY2FjbTN3cDdGVkw0bVlTY0VfNWlodW5BWWdHTndkWTNvUDZLRERJMUZaQU1faXFRMXduU0p2d3I2UFJIbFc4cktXeUtvTjMtOWRBaFU2aTZUWXcyelh5QjhYbnBON2U3Yk5pVnNTVUVucmR1UVRkYVowM0FxM0tzT3Uxcy02X2Y1Nk5Yd3o0dlJONNIBxAFBVV95cUxNd21ULTJZWmNwMTc1akVXcUVzNDJ4NzlXcjNnY1NFZmNEUDdsQ3hhQUNEYXJtSThDaFBCMTFjOExWd0pQazRKblYwQzMtMFpzUDNYU3RncnpTVmdFS1kzQkNsQ25TZVZTUmdjdGZVTnhiVGxFcm1OWm1mWWR3UGNhTG1kRjJWeXFQTGtoUFpsclV1X0RPN3VKeXlrNmZaUVJ1c2tCZGpva3lLdndKS3o0TkIySEUtQ0U1UVBYZmZWLWNkTXpl?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-08-28",
-          "cues": []
-        },
-        {
-          "t": "Frontline (FRO) Q2 2026 Earnings Call: Record Profit and Strong Q3 Bookings - TradingKey",
-          "u": "https://news.google.com/rss/articles/CBMickFVX3lxTE4xa0NLWlJFMmFWZ2VvOHB0blJObC1iNXJPNTVEcDBNS0gyYWlUYldjZTFqOVQ2ZlhBUnZuQlZia3F2ZnpodTdobjU2NTNTcy1fS0pqRmpPMFdEX1N0aHBRSVpIcGhsME42b1NXTWVuVXlzZw?oc=5",
-          "s": "TradingKey",
-          "d": "2026-08-31",
-          "cues": [
-            "record quarter"
-          ]
-        }
-      ],
-      "wire_gate": "2026-08-28",
       "reported": {
         "eps": 2.61,
         "source": "Yahoo Finance",
-        "fetched": "2026-08-31",
+        "fetched": "2026-09-01",
         "eps_est": 2.62,
         "surprise_abs": -0.01,
         "surprise_pct": -0.5
