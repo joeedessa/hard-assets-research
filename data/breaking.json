@@ -1,60 +1,20 @@
 {
   "_meta": {
-    "as_of": "2026-09-01T12:03:15+00:00",
+    "as_of": "2026-09-01T16:57:46+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 18/169 down 5%, sector -3.7%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 1/169 up 5%, sector -3.7%",
-      "Single-name collapse (any holding −12%+ in a session): 2 found",
-      "Conviction-3 divergence (±8%+ versus the -1.3% universe median): 1 found",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 3/169 down 5%, sector -2.1%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 1/169 up 5%, sector -2.1%",
+      "Single-name collapse (any holding −12%+ in a session): 0 found",
+      "Conviction-3 divergence (±8%+ versus the -0.4% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 0 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: +0.20%",
+      "USD (DXY) ±1%+ in a session: +0.30%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
     ]
   },
-  "state": "critical",
-  "signals": [
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "LEU -12.0% in a single session",
-      "ev": "Computed from today's close. Conviction 3, froth 2.",
-      "stance": "REVIEW",
-      "action": "Top-conviction holdings are named (LEU). Confirm the story before changing anything.",
-      "tk": [
-        "LEU"
-      ],
-      "date": "2026-09-01"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "CEPL -12.0% in a single session",
-      "ev": "Computed from today's close. Conviction 1, froth 1.",
-      "stance": "REVIEW",
-      "action": "Insulated names are involved (CEPL). Weakness here is opportunity, not information.",
-      "tk": [
-        "CEPL"
-      ],
-      "date": "2026-09-01"
-    },
-    {
-      "sev": "high",
-      "cat": "divergence",
-      "measured": true,
-      "t": "LEU -12.0% against a -1.3% universe median",
-      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
-      "stance": "THESIS AT RISK",
-      "action": "Top-conviction holdings are named (LEU). Confirm the story before changing anything.",
-      "tk": [
-        "LEU"
-      ],
-      "date": "2026-09-01"
-    }
-  ]
+  "state": "clear",
+  "signals": []
 }
