@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-02T11:44:58+00:00",
+    "as_of": "2026-09-02T16:53:04+00:00",
     "mode": "light",
     "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -75,30 +75,32 @@
       },
       "wire": [
         {
-          "t": "Sibanye-Stillwater profit rises to R18.8bn - Mining Review Africa",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUkZYZDB2X25TUEh2WmlYeE92MmJGRUNaZ25UZmxGU01KTlhYSzM4NVBDQ0RJQ25TUVJJLV85Mk1aVDg2N1dJbDRJMVFuQzFCU003bzl3djlIbE1ONUNYM0RMeWJQdTFrOVJSbFBNSEJvWlFOUHFMbDFhdEs0TDBoRjJTLWxnWU5pRnhtRFI2cXNBb185Z19OZUFHdFBGNkU5c0HSAaoBQVVfeXFMTlRfNXE0WjNlZ3YzVnhUQThfMnM3X2lUQWR3MGtIWHJIRkg0S2JxRWUxcmNXWDZJd1VyQkxPa3UwQVZvLU9Ydl9fdmRPYkgxYTVMMHNqbzhWd3JjN28teUxIcU9EYVgyVmRyeWhwLS1SM3JESERxWUVMM0tucFlOWnpZc3A4elo1LWhJSzRPTXZUaFBCUFBoR2hpbmFzaEF4dDBQQ2FwWEgtTGc?oc=5",
-          "s": "Mining Review Africa",
+          "t": "Sibanye Stillwater's 1H Results Trigger Massive Turnaround Upside (Review) (NYSE:SBSW) - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQb1JqMkJhV2VUaDNfdDF6dERKYTMzNl95TjRTaVFsNEFqTlVfbHFFNGhJQlFmZ1BEbDlINGM5TDFWUGs0enphbEdyaEl4bGQxZHItY1lleC0yNGRneElQRGlrSVdFMXNzeDBuOHEyQklmVllJck9QYndhOU5SYTAtYURCbWRESzh5YW5vOGhjLWJ4dGNGZXE0UWg2RzJmaDlTX3luUVBCY3Z4aUtYWDJSeEJ3?oc=5",
+          "s": "Seeking Alpha",
           "d": "2026-09-02",
           "cues": []
         },
         {
-          "t": "Sibanye Stillwater Ltd (SBSW) (H1 2026) Earnings Call Highlights: Record EBITDA and Debt ... By GuruFocus - Investing.com Canada",
-          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdDhiUmZXbkdaM1FQUG81bXRJQU5DUjBZMDc0YjY4d25fY0dmel8wZGsyUDQ2X0xUWXJxYlZHcTdSanFqTThxTnJsRWVSZHhLNGVYb1B6RERvWGYtMkZRcTJwTVFGaWVHVERIVVVnZmlwOGs3V1RaWV9zZy1ucWQ3bmtLVFo5R25nVEl5OEZ1dlpkQjB0NktmTF8xeFNMczUzTGhSTHI0a2drUTdDZjhWY2pTMGZqNE9pRnE2THJKck0xZDRHbVZUQXh6SVhxWUg3?oc=5",
-          "s": "Investing.com Canada",
+          "t": "Sibanye-Stillwater earnings rocket 111%, R5.7bn dividend declared - Mining Weekly",
+          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaUtORXdvNUFXRzFuY1pVampkYjZfTFNwdmFYcXZ5UEZfcGVfSEhYRmVybkNKNWRpZ0cxNHNJR3lySU5NMEJLa3B5OHRwNlZRSjNkYzNoR0Y5WXJIUVFrR0t5czFlOWFMVWFHNnhsTTVjV1ZaeWcwcEJ6ZGhtVG1pcE9UcFRJMU5EZTdiYkhNeHEycUpRQ3MyeFdaWmFUMWRPeFVCbTU5Tl9qUU1WdDUw?oc=5",
+          "s": "Mining Weekly",
           "d": "2026-09-01",
+          "cues": [
+            "dividend/buyback"
+          ]
+        },
+        {
+          "t": "Sibanye-Stillwater profit rises to R18.8bn - miningreview.com",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUkZYZDB2X25TUEh2WmlYeE92MmJGRUNaZ25UZmxGU01KTlhYSzM4NVBDQ0RJQ25TUVJJLV85Mk1aVDg2N1dJbDRJMVFuQzFCU003bzl3djlIbE1ONUNYM0RMeWJQdTFrOVJSbFBNSEJvWlFOUHFMbDFhdEs0TDBoRjJTLWxnWU5pRnhtRFI2cXNBb185Z19OZUFHdFBGNkU5c0HSAaoBQVVfeXFMTlRfNXE0WjNlZ3YzVnhUQThfMnM3X2lUQWR3MGtIWHJIRkg0S2JxRWUxcmNXWDZJd1VyQkxPa3UwQVZvLU9Ydl9fdmRPYkgxYTVMMHNqbzhWd3JjN28teUxIcU9EYVgyVmRyeWhwLS1SM3JESERxWUVMM0tucFlOWnpZc3A4elo1LWhJSzRPTXZUaFBCUFBoR2hpbmFzaEF4dDBQQ2FwWEgtTGc?oc=5",
+          "s": "miningreview.com",
+          "d": "2026-09-02",
           "cues": []
         },
         {
-          "t": "Sibanye Stillwater swings to R18.8bn H1 profit | SBSW SEC Filing - Form 6-K - stocktitan.net",
+          "t": "Sibanye Stillwater swings to R18.8bn H1 profit | SBSW SEC Filing - Form 6-K - Stock Titan",
           "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSlZvV1pieXlWSGNfeGdJNFZwdjg3RmRZQzV1Ny1XT3pHVUhQYkRPbXFnUjlseGdrc2c5eVV5Um9IZU05cTZjcjNhY2tBbGZzU2tJRTdjRmJTdjlsRWV6NHZteHVveUc5RlFoeHgzeVVROHNENkxaRHhRUHRwRVRwNG1FTVRWZ1o5RkFPUUNPSXNrU1pPZnZrMjYzSnYxTnpORmlaYWFYUDFMSzlHWXNpMXh0dVBpX0dQVmc?oc=5",
-          "s": "stocktitan.net",
-          "d": "2026-09-01",
-          "cues": []
-        },
-        {
-          "t": "Sibanye Stillwater Limited Reports Earnings Results for the Half Year Ended June 30, 2026 - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVmZ0Y0dMOXFpMXllT2VzQjQ5dUxLUU1CanBtdFIzaVhjSGNCd0FHQTBWbHJtMTZWb1BGZDNKZUIzdWZPUk5hWEZQOGRuS1JPNzhhbjBWS21OR2dST2RXcTl6Y0o1dkI5QUFkMjFUWVU0NE5VT09KX1FLZ2RieFl1Q0dOeGo3OG96TGJNaWJydW1GWVdlWm9ScUl4dlR0dFlfTWhVSTJWeFJpWGpwOFFweGdqS3lmXzRtbF9XNFcwU0IzMU1zY0dpaXp3ak9MX2h5Ym03N1ZxWng?oc=5",
-          "s": "marketscreener.com",
+          "s": "Stock Titan",
           "d": "2026-09-01",
           "cues": []
         }
