@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-03T19:05:46+00:00",
-    "mode": "light",
-    "coverage": "2/2 scanned this pass",
+    "as_of": "2026-09-03T23:24:33+00:00",
+    "mode": "full",
+    "coverage": "169/169 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -75,9 +75,9 @@
       },
       "wire": [
         {
-          "t": "Sibanye-Stillwater earnings rocket 111%, R5.7bn dividend declared - Mining Weekly",
+          "t": "Sibanye-Stillwater earnings rocket 111%, R5.7bn dividend declared - miningweekly.com",
           "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaUtORXdvNUFXRzFuY1pVampkYjZfTFNwdmFYcXZ5UEZfcGVfSEhYRmVybkNKNWRpZ0cxNHNJR3lySU5NMEJLa3B5OHRwNlZRSjNkYzNoR0Y5WXJIUVFrR0t5czFlOWFMVWFHNnhsTTVjV1ZaeWcwcEJ6ZGhtVG1pcE9UcFRJMU5EZTdiYkhNeHEycUpRQ3MyeFdaWmFUMWRPeFVCbTU5Tl9qUU1WdDUw?oc=5",
-          "s": "Mining Weekly",
+          "s": "miningweekly.com",
           "d": "2026-09-01",
           "cues": [
             "dividend/buyback"
@@ -91,16 +91,16 @@
           "cues": []
         },
         {
-          "t": "Sibanye Stillwater swings to R18.8bn H1 profit | SBSW SEC Filing - Form 6-K - stocktitan.net",
+          "t": "Sibanye Stillwater swings to R18.8bn H1 profit | SBSW SEC Filing - Form 6-K - Stock Titan",
           "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSlZvV1pieXlWSGNfeGdJNFZwdjg3RmRZQzV1Ny1XT3pHVUhQYkRPbXFnUjlseGdrc2c5eVV5Um9IZU05cTZjcjNhY2tBbGZzU2tJRTdjRmJTdjlsRWV6NHZteHVveUc5RlFoeHgzeVVROHNENkxaRHhRUHRwRVRwNG1FTVRWZ1o5RkFPUUNPSXNrU1pPZnZrMjYzSnYxTnpORmlaYWFYUDFMSzlHWXNpMXh0dVBpX0dQVmc?oc=5",
-          "s": "stocktitan.net",
+          "s": "Stock Titan",
           "d": "2026-09-01",
           "cues": []
         },
         {
-          "t": "Sibanye-Stillwater Posts First Half Headline Earnings Per Share Of 6.01 South African Rand - tradingview.com",
+          "t": "Sibanye-Stillwater Posts First Half Headline Earnings Per Share Of 6.01 South African Rand - TradingView",
           "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9CdWtCd3c2THBVVC12OXhURlJ4bVZZdDZEUEQ0d253Ym5qVmhob0xVMnY2ZEktWDZ1SVJUamxVZkV0WHJ2X1huRFVndGRoN0tEYzJNZFJFUURRYTlsZmpBUEhZamlBNWlNVklHRU9nSC0zVVZZTnBz?oc=5",
-          "s": "tradingview.com",
+          "s": "TradingView",
           "d": "2026-09-01",
           "cues": []
         }
@@ -120,16 +120,34 @@
       },
       "wire": [
         {
-          "t": "Safety Set as I Await Smith & Wesson, Planet Labs Earnings - TheStreet Pro",
-          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWXMxTzB2VHhQSXE0a0RsRTBEVnEtTkdHbTZVZTZGTnB2U2dqaUUzcDNIRlA5ZmRnRk1wNGlvMTVHWWdqTmc3X2xFN1lsVDR1cTg5QURTUUg3b0pXX2VyYmhZTTJ1Mjd4VnNQVEtIUUFTQ0FiUWFnWlhhbXlDc1ZfU0xOVjRlMFZmV0ZOdmtjQlQwLTRrNnJzVQ?oc=5",
-          "s": "TheStreet Pro",
+          "t": "Planet Labs Earnings Top Wall Street Estimates as Military Space Business Grows - Barron's",
+          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAwbXYwSDJpLVhjQWdGeV9OLTZDdlcydW1fdC1HaE9vTE04WkVzX01TLTdMejVZRVpsWm81OGlwMkhoQjRTWTMzLThENEoteTdsZTVJVWFmNktlNXNEcTNxVGxVQ20yNzJBbXVvS3VyZlNXNXJ0UWRoMk1CVXNPMms?oc=5",
+          "s": "Barron's",
           "d": "2026-09-03",
           "cues": []
         },
         {
-          "t": "PL Stock Crashes To Over 8-Month Lows Ahead Of Q2 Results — Retail Says Earnings Could ‘Cement’ Shares Below $15 - tradingview.com",
-          "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOTk9URkp1WjRVbWtnU0NvVHA0SWJYZURYbElvY3RPTmxiS1NLVUFjdUR5NVFJRGdGQlRzUzF2TE9EUTNQOWY0ZXV6TWVsSlFLUDkzekY3dGd2Q3lOSWdUN20yNmJmRzJRcHVDaTVKRGhEc25ZTTNOTlJyamF2RHdydmxvTjlqa0RJcDRENE5KTE1XRmtvLTY1OHBoYUR0YjRXaDlxclR4REUwc0doaXcyTF95WlRxWDVzRUN6VFZqVlNuRV9kOWxKWGliRG05SnBOZGUzWGRTY3VlYzZUZGZDMFktNGJNa0tlYmRiSHZOaHZid1E0TVM4SmNpVXE?oc=5",
-          "s": "tradingview.com",
+          "t": "Earnings call transcript: Planet Labs tops Q2 2026 estimates, shares rebound - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcDZnSDhjcXh5ZVdiWFlNUllfcDBCSTFxckxfcXcycmlqUjI1aU9WMDJIU2RkMTRZdWs0UlNyUS1IbEljZEdoSFRQb2Q2ekpvQWZUMm1RbnotZVdBbmN6NGRRU0lKNi1wR0N1VF85Nk55V0F3MDZMSy10NnpyT1VBMXU5RS1hTGVQZmtqVWdXMTljOUJfOG1BZ2RXem5IT0ZocHMxcVpETS1pUDFNQ29tbUs3UjVWeDRBNkZqU0NjakFiS3RsSWUtSl9n?oc=5",
+          "s": "Investing.com",
+          "d": "2026-09-03",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "PL Stock Jumps 8% After-Hours As Planet Labs Delivers A Blowout Quarter — Retail Calls Q2 ‘A Clean Beat’ Despite Soft Q3 Outlook - Stocktwits",
+          "u": "https://news.google.com/rss/articles/CBMingJBVV95cUxQamxWZTdyb05mTXdYbUxpQm01eXA3NjBpSFRQOFdNSXRHSG1pMnprUUN6aFZQSS1NaGdQdFNBZmt5QVJzR3FLV3JYNTNNX2hibnpzbmdZY3d4UXhiZ2tIaWZFb2s0b2VzTDNuQlhyQzBBREtIXzNkWTVBdnVXUVhSLUZRSmJxTmF5NmR1NmJCOVVnSmxVTVppZFQzbEJjbVFEbmxVcEdVeUxiMnp6Sllla1N6UnZUNGVBdmNsTkJJRXJ4U1dpTVdzQlpWVDc3WTZFX2NFVTVUZjJyOXJCX0xGTGNxWHp6cWk2TFptU1JSeGFrTnZmUUZIYzVZRUZST0NiTW1KT2g4S3NjSjY4RHpnb0YwWUFQV3EzeUdqQVVB?oc=5",
+          "s": "Stocktwits",
+          "d": "2026-09-03",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Planet Labs PBC Q2 2026: Revenue $116.1M, EPS $(0.03) — 10-Q Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNazh4MUwwc0owUHVydnpydm9aQmkwS0JrZk1mUGJDaEoxSWpPVmxCaVVRbmsxMUc5dEc2Tno5S3cwamk4MUFjWk5FV0JHUmVxeE5OdDdhRExTVFAzUmhrd29Wak9SUzhDbUdLdThyeXBKa1BFanM2aENGNDJiaHB2OW41NW9HUURlMkx3NkZjcmd3dmZzMGF1bGN1eEpiWkJXbmJpLTdQTEtaX1NMY3ktQ1RqQzZpaXBvNC1kS1U2Yw?oc=5",
+          "s": "TradingView",
           "d": "2026-09-03",
           "cues": []
         }
