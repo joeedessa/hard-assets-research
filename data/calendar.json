@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-03T11:44:26+00:00",
+    "as_of": "2026-09-03T16:42:27+00:00",
     "mode": "light",
     "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -75,13 +75,6 @@
       },
       "wire": [
         {
-          "t": "Sibanye Stillwater reports H1 profit more than tripled, approves two new projects (SBSW:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWXdYOVZ2eXRkU2NpOTlEZUsxQkhMblVsUGppUW9jODhqQ3dnV2c1Tm9NYV9jamh4bnhDbmRud0Ftc05sUjRFSV80bFRHYTB2dlVaVHdGYXRsazBxbVFFbTNHNXNFNkd0Yk1keGY0bjhnNHh1dHFWbEdHTnM3eUYwM1c1cE9ULW1vN3gxOVp0cC1vSk5YVVgteWZlX2hicW9QRG02S0VMWVZYaEE1M2g1b3o3MUxrclJFOEE?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-09-01",
-          "cues": []
-        },
-        {
           "t": "Sibanye Stillwater swings to R18.8bn H1 profit | SBSW SEC Filing - Form 6-K - Stock Titan",
           "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSlZvV1pieXlWSGNfeGdJNFZwdjg3RmRZQzV1Ny1XT3pHVUhQYkRPbXFnUjlseGdrc2c5eVV5Um9IZU05cTZjcjNhY2tBbGZzU2tJRTdjRmJTdjlsRWV6NHZteHVveUc5RlFoeHgzeVVROHNENkxaRHhRUHRwRVRwNG1FTVRWZ1o5RkFPUUNPSXNrU1pPZnZrMjYzSnYxTnpORmlaYWFYUDFMSzlHWXNpMXh0dVBpX0dQVmc?oc=5",
           "s": "Stock Titan",
@@ -94,6 +87,15 @@
           "s": "TradingView",
           "d": "2026-09-01",
           "cues": []
+        },
+        {
+          "t": "Sibanye-Stillwater earnings rocket 111%, R5.7bn dividend declared - Mining Weekly",
+          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcWpMQVRYazdNUXZVMkZmMFc4TWN3M1Y5bXdJOEItTDhLVnJZcXNHWXh1ZVFrVDFzTGxrdEFqXzNvNDhOMnJOR1Y4OVpuS1ItMk95c1J5QzhyMUgwX0tTM08zbTNBaGs1bE5ZNmR1OTB4XzNGRHRaRmM2d3dTU3BybFNoZ2xuQWpQZkdDeXZObGRKc3ZQbmtmbmdHOWd5STNQcnFZQXkyaUJlR1l6QkduSktEWFFrZDNUaWc?oc=5",
+          "s": "Mining Weekly",
+          "d": "2026-09-01",
+          "cues": [
+            "dividend/buyback"
+          ]
         },
         {
           "t": "Earnings call transcript: Sibanye-Stillwater posts strong H1 2026 gains, shares slip premarket - Investing.com Nigeria",
@@ -115,7 +117,17 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-09-03T20:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Planet Labs earnings up next: Can AI and defense sustain momentum? - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQkItbVZ0UTE5eVA5ZE4wdnRUUEw0cWtFTTFpbG9wODNmX3JseXN2dGFrU2dRaEM2QzQ0ZXVDNTRqS3dQRjFRUnhSWHlwenYyTmdGb3FKbW54Rnkxa3dqcEU2WWtXeHRnblFkbW95NjdUeXNaYUhtS2laTUZBM3lJc29XQUtwZENER0hEQkRPRWNYNGRxM2FwSXNBLS1GUmtYMmQ0SGV4b2wwWnFUQ0dMTzVhVkZLV1J3?oc=5",
+          "s": "Investing.com",
+          "d": "2026-09-03",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-09-03"
     },
     {
       "type": "earnings",
