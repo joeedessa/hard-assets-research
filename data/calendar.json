@@ -1,35 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-09-03T23:24:33+00:00",
-    "mode": "full",
-    "coverage": "169/169 scanned this pass",
+    "as_of": "2026-09-04T11:45:30+00:00",
+    "mode": "light",
+    "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "LYC.AX",
-      "name": "Lynas Rare Earths",
-      "d": "2026-08-26",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:12 AEST",
-        "iso": "2026-08-26T06:12+00:00",
-        "tz": "Australia/Sydney"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "WOR.AX",
-      "name": "Worley Group",
-      "d": "2026-08-26",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:12 AEST",
-        "iso": "2026-08-26T06:12+00:00",
-        "tz": "Australia/Sydney"
-      }
-    },
     {
       "type": "earnings",
       "tk": "MIN.AX",
@@ -56,7 +32,7 @@
       "reported": {
         "eps": 2.61,
         "source": "Yahoo Finance",
-        "fetched": "2026-09-03",
+        "fetched": "2026-09-04",
         "eps_est": 2.62,
         "surprise_abs": -0.01,
         "surprise_pct": -0.5
@@ -75,32 +51,32 @@
       },
       "wire": [
         {
-          "t": "Sibanye-Stillwater earnings rocket 111%, R5.7bn dividend declared - miningweekly.com",
+          "t": "Sibanye Stillwater Limited 2026 Q2 - Results - Earnings Call Presentation (NYSE:SBSW) 2026-09-03 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPellCaVBwbDB3R0Rvby0yVllaN0k1aTlnZmp6aGx6bnk5VmZNYXJQZGVoOUNRTEVTcXFMSkludFI1Y0hpZG5ubGg3dlpud3dOZHBHMFZ4NWExSkhxajlRWUo0TE1yblVmVG5CWlNRMVpnNmNseGdOandCcGJrY1JtUTRJdlZsb1h4bzg5VHRrNGE2clpLOWMxQUF1alZGcTl0RGtYUF9Gd09kb3ZEVU1N?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-09-03",
+          "cues": []
+        },
+        {
+          "t": "Sibanye-Stillwater earnings rocket 111%, R5.7bn dividend declared - Mining Weekly",
           "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaUtORXdvNUFXRzFuY1pVampkYjZfTFNwdmFYcXZ5UEZfcGVfSEhYRmVybkNKNWRpZ0cxNHNJR3lySU5NMEJLa3B5OHRwNlZRSjNkYzNoR0Y5WXJIUVFrR0t5czFlOWFMVWFHNnhsTTVjV1ZaeWcwcEJ6ZGhtVG1pcE9UcFRJMU5EZTdiYkhNeHEycUpRQ3MyeFdaWmFUMWRPeFVCbTU5Tl9qUU1WdDUw?oc=5",
-          "s": "miningweekly.com",
+          "s": "Mining Weekly",
           "d": "2026-09-01",
           "cues": [
             "dividend/buyback"
           ]
         },
         {
-          "t": "Sibanye Stillwater reports H1 profit more than tripled, approves two new projects (SBSW:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWXdYOVZ2eXRkU2NpOTlEZUsxQkhMblVsUGppUW9jODhqQ3dnV2c1Tm9NYV9jamh4bnhDbmRud0Ftc05sUjRFSV80bFRHYTB2dlVaVHdGYXRsazBxbVFFbTNHNXNFNkd0Yk1keGY0bjhnNHh1dHFWbEdHTnM3eUYwM1c1cE9ULW1vN3gxOVp0cC1vSk5YVVgteWZlX2hicW9QRG02S0VMWVZYaEE1M2g1b3o3MUxrclJFOEE?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-09-01",
+          "t": "Sibanye Stillwater (47V) Q2 2024 Earnings Report - Results, Call & Slides - TipRanks",
+          "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPOWVEN2pKQlVNWWlYV3BzYnNRNDhBNjZZRXBEMFFKd2F3QU9aaWFfNl9CLWNLd0R3Q3lLR3daRjVkcDRlTTZJdk1GUmx4UEJzb3ljUEwwVUxlV3NMQnFSazVNUlNJZ0xkUS03amdNRWFUWk85VDlfTzMzTUlMTkhvQUJ5UQ?oc=5",
+          "s": "TipRanks",
+          "d": "2026-09-03",
           "cues": []
         },
         {
           "t": "Sibanye Stillwater swings to R18.8bn H1 profit | SBSW SEC Filing - Form 6-K - Stock Titan",
           "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSlZvV1pieXlWSGNfeGdJNFZwdjg3RmRZQzV1Ny1XT3pHVUhQYkRPbXFnUjlseGdrc2c5eVV5Um9IZU05cTZjcjNhY2tBbGZzU2tJRTdjRmJTdjlsRWV6NHZteHVveUc5RlFoeHgzeVVROHNENkxaRHhRUHRwRVRwNG1FTVRWZ1o5RkFPUUNPSXNrU1pPZnZrMjYzSnYxTnpORmlaYWFYUDFMSzlHWXNpMXh0dVBpX0dQVmc?oc=5",
           "s": "Stock Titan",
-          "d": "2026-09-01",
-          "cues": []
-        },
-        {
-          "t": "Sibanye-Stillwater Posts First Half Headline Earnings Per Share Of 6.01 South African Rand - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9CdWtCd3c2THBVVC12OXhURlJ4bVZZdDZEUEQ0d253Ym5qVmhob0xVMnY2ZEktWDZ1SVJUamxVZkV0WHJ2X1huRFVndGRoN0tEYzJNZFJFUURRYTlsZmpBUEhZamlBNWlNVklHRU9nSC0zVVZZTnBz?oc=5",
-          "s": "TradingView",
           "d": "2026-09-01",
           "cues": []
         }
@@ -123,13 +99,13 @@
           "t": "Planet Labs Earnings Top Wall Street Estimates as Military Space Business Grows - Barron's",
           "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAwbXYwSDJpLVhjQWdGeV9OLTZDdlcydW1fdC1HaE9vTE04WkVzX01TLTdMejVZRVpsWm81OGlwMkhoQjRTWTMzLThENEoteTdsZTVJVWFmNktlNXNEcTNxVGxVQ20yNzJBbXVvS3VyZlNXNXJ0UWRoMk1CVXNPMms?oc=5",
           "s": "Barron's",
-          "d": "2026-09-03",
+          "d": "2026-09-04",
           "cues": []
         },
         {
-          "t": "Earnings call transcript: Planet Labs tops Q2 2026 estimates, shares rebound - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcDZnSDhjcXh5ZVdiWFlNUllfcDBCSTFxckxfcXcycmlqUjI1aU9WMDJIU2RkMTRZdWs0UlNyUS1IbEljZEdoSFRQb2Q2ekpvQWZUMm1RbnotZVdBbmN6NGRRU0lKNi1wR0N1VF85Nk55V0F3MDZMSy10NnpyT1VBMXU5RS1hTGVQZmtqVWdXMTljOUJfOG1BZ2RXem5IT0ZocHMxcVpETS1pUDFNQ29tbUs3UjVWeDRBNkZqU0NjakFiS3RsSWUtSl9n?oc=5",
-          "s": "Investing.com",
+          "t": "Planet Labs (NYSE: PL) Shares Rise on Q2 Beat Despite Soft Guidance - ChartMill",
+          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbjRRYWxfWmROa2stUWItRTAxSVhieVp5eUxHWkpiWU9STnNKNlBxTEZHal9qZF84enVhbnB6TUlxaUloWkUycVdTSnVxcElUcjdNX2d2NF9vQ05VcVAzRS1CV2JUTEk0YkNadG1vYmpaeTZSb252enByVFgycDFCU1lBd09YRjNHcUpzeGc5RlhDQnphR05OYk9uY3FvT1Vrajc2NmlyY3FjWTlHaDJpTDBwWmM?oc=5",
+          "s": "ChartMill",
           "d": "2026-09-03",
           "cues": [
             "beat"
@@ -139,20 +115,30 @@
           "t": "PL Stock Jumps 8% After-Hours As Planet Labs Delivers A Blowout Quarter — Retail Calls Q2 ‘A Clean Beat’ Despite Soft Q3 Outlook - Stocktwits",
           "u": "https://news.google.com/rss/articles/CBMingJBVV95cUxQamxWZTdyb05mTXdYbUxpQm01eXA3NjBpSFRQOFdNSXRHSG1pMnprUUN6aFZQSS1NaGdQdFNBZmt5QVJzR3FLV3JYNTNNX2hibnpzbmdZY3d4UXhiZ2tIaWZFb2s0b2VzTDNuQlhyQzBBREtIXzNkWTVBdnVXUVhSLUZRSmJxTmF5NmR1NmJCOVVnSmxVTVppZFQzbEJjbVFEbmxVcEdVeUxiMnp6Sllla1N6UnZUNGVBdmNsTkJJRXJ4U1dpTVdzQlpWVDc3WTZFX2NFVTVUZjJyOXJCX0xGTGNxWHp6cWk2TFptU1JSeGFrTnZmUUZIYzVZRUZST0NiTW1KT2g4S3NjSjY4RHpnb0YwWUFQV3EzeUdqQVVB?oc=5",
           "s": "Stocktwits",
-          "d": "2026-09-03",
+          "d": "2026-09-04",
           "cues": [
             "beat"
           ]
         },
         {
-          "t": "Planet Labs PBC Q2 2026: Revenue $116.1M, EPS $(0.03) — 10-Q Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNazh4MUwwc0owUHVydnpydm9aQmkwS0JrZk1mUGJDaEoxSWpPVmxCaVVRbmsxMUc5dEc2Tno5S3cwamk4MUFjWk5FV0JHUmVxeE5OdDdhRExTVFAzUmhrd29Wak9SUzhDbUdLdThyeXBKa1BFanM2aENGNDJiaHB2OW41NW9HUURlMkx3NkZjcmd3dmZzMGF1bGN1eEpiWkJXbmJpLTdQTEtaX1NMY3ktQ1RqQzZpaXBvNC1kS1U2Yw?oc=5",
-          "s": "TradingView",
+          "t": "Planet Labs (NYSE:PL) Exceeds Q2 CY2026 Expectations, Stock Soars - StockStory",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONXlOTUR2dWV0WlFBY2pmaU5iRGI3LWpESnp0Z1FzTjVRdXNDU21QQk9GbnVUY1FLX2lEcG12bXg4VWx2d1RuNkI4QVVQZzRNanBRVzZScVNfeTZybXNuNVlWNi1lOE5qX3Y2bU81Z1kwd2JNejJ4OFBjekdRS2ozQ0NOZWQ2UWU3TmVVZE5sYzdsSThxOTRZSzROSXZCUmVETzMtT0o4WERBWUNiUm1EUW9yd01XN2s?oc=5",
+          "s": "StockStory",
           "d": "2026-09-03",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
-      "wire_gate": "2026-09-03"
+      "wire_gate": "2026-09-03",
+      "reported": {
+        "eps": 0.02,
+        "source": "Yahoo Finance",
+        "fetched": "2026-09-04",
+        "eps_est": -0.02,
+        "surprise_abs": 0.04,
+        "pct_suppressed": "consensus of -0.02 is too near zero for a percentage to mean anything — the beat/miss is +0.04 per share"
+      }
     },
     {
       "type": "earnings",

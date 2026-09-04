@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-09-03T23:24:33+00:00",
+    "as_of": "2026-09-04T11:45:30+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 6/169 down 5%, sector +1.5%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 4/169 up 5%, sector +1.5%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 5/169 down 5%, sector +1.5%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 6/169 up 5%, sector +1.5%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.1% universe median): 0 found",
-      "Tracked commodity ±5%+ in a session: 1 of 12 moved",
+      "Conviction-3 divergence (±8%+ versus the +0.4% universe median): 0 found",
+      "Tracked commodity ±5%+ in a session: 0 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: -0.60%",
+      "USD (DXY) ±1%+ in a session: +0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
@@ -17,17 +17,6 @@
   },
   "state": "elevated",
   "signals": [
-    {
-      "sev": "high",
-      "cat": "commodity",
-      "measured": true,
-      "t": "Palladium +6.5% in a session",
-      "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved +6.5% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-09-03"
-    },
     {
       "sev": "high",
       "cat": "company-critical",
@@ -43,7 +32,7 @@
         "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5yYmpwcFFGQjMzazNoQm1pYTU2N0ZwcUwwSnJrMEI0T2h4YmFUSFFOdFRwSnJVbm94T1R3N1VJRUxQODVpWHo1WWFGN3g5bzNnYXphSWtHS1JTeFNnS25XbXpyUTBQdU1idWdB?oc=5",
         "s": "Oil Change International"
       },
-      "date": "2026-09-03"
+      "date": "2026-09-04"
     }
   ]
 }
