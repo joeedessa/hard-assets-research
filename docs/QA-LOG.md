@@ -23,7 +23,7 @@ checklist](#pre-flight-checklist). After finding a bug, add it to the matching
 class using the [template](#append-template) at the bottom. If it fits no existing
 class, open a new one — a new class is a genuine finding.
 
-Last updated: 2026-09-05. 51 entries across 9 failure classes.
+Last updated: 2026-09-05. 54 entries across 9 failure classes.
 
 ---
 
@@ -37,6 +37,7 @@ Three of the checks below are automated. Run them; do not re-do them by hand.
 | `python3 scripts/audit_schema.py` | data fields the renderer never reads (3.1, 3.2, 3.7) | no — needs a human to say which fields are intentionally internal |
 | `python3 scripts/audit_schema.py --symbols` | dead tickers still priced as live (1.8, 3.5) | no — needs network |
 | `python3 scripts/verify_trends.py [TICKERS]` | trend maths, recomputed from raw series by a different code path (Class 6) | no — needs network |
+| `scripts/dom_field_sweep.js` (paste in browser console) | fields whose VALUES never reach the rendered page — catches nested fields and per-file misses the static sweep cannot (3.9) | no — needs the running page |
 | `python3 scripts/verify_breaking.py` | the Act Now signals — measured rules re-derived from quotes/indices, every headline signal's age and ticker attribution justified from the raw record (6.5, 7.3) | no network needed — **candidate for CI** |
 
 ---
@@ -393,6 +394,31 @@ is wrong, and nothing errors.
   testable assertion.** Assert it in the browser: the check here walks the rendered
   rows and fails if a covered mineral precedes an uncovered one.
 
+### 3.9 A value-level sweep found four whole blocks the name-level sweep had passed
+- **What broke** — `scripts/audit_schema.py` reported clean while four blocks of
+  research had never been rendered: the **geopolitical actor map** (44 cells — "which
+  chain stages China actually controls", promised by the learning path), the
+  **Portfolio four screening questions** (the learning path tells the reader to "work
+  through" them) and its catalyst table, `matrix.integrated_companies`, the two
+  `source_note` provenance entries — and `levers[].sources`, which I had added that
+  morning and not rendered, the fourth time this session I wrote to a field
+  believing it was visible.
+- **Why it survived** — The name-level sweep has two blind spots. It walked only
+  top-level record keys, so `themes[].items[].why` and `portfolio.four_questions[].q`
+  were never tested. And a field name read by *any* builder passes for *all* files:
+  `why` renders on Picks & Shovels, so it "passed" everywhere. A tool that reports
+  clean is more dangerous than no tool.
+- **Fix** — All rendered. `audit_schema.py` now walks every level and top-level
+  scalars, and says its remaining limit out loud. `scripts/dom_field_sweep.js` tests
+  **values** against the rendered page — every tab, every heat-map row, every theme
+  detail, every drawer — which catches both blind spots by construction. It also
+  corrects two probe errors of my own: `innerText` excludes hidden panes (only the
+  active tab was being tested), and data with `<b>` markup never matches
+  `textContent` unless tags are stripped first.
+- **Standing check** — Run the static sweep on every change and the DOM sweep on
+  every audit. A miss the DOM sweep cannot explain is a bug, not noise; a pane it
+  cannot open is a gap in the sweep to fix, not a reason to dismiss the miss.
+
 ---
 
 ## Class 4 — Asserting without checking
@@ -671,6 +697,47 @@ known to be wrong.
   claim-repetition count from this session is the map: before editing any figure,
   count its copies across `data/*.json` and `index.html` and fix them as one change.
 
+### 9.4 Research prose hardcoded in `index.html` — outside every data audit
+- **What broke** — The tail of `buildGeo()` is a "Key chokepoints" block written
+  directly into the JavaScript template, dated 2026-08-03. It still said *"China
+  banned [antimony] exports Oct 2024"* — the exact claim corrected in `policy.json`
+  on 2026-08-11 — and repeated the Kazatomprom "40% of mining" without its basis.
+  The Class 9 sweep that had just caught the "50% rule" in four places **missed this
+  one**: its pattern matched `\bban\b`, and the text said "banned".
+- **Why it survived** — Every audit in this repo iterates `data/*.json`. Prose that
+  lives in `index.html` is invisible to all of them, and it is the prose most likely
+  to be stale because nobody thinks of a renderer as a place claims live. Twenty
+  labelled claims are hardcoded there.
+- **Fix** — Both lines corrected; header re-dated. The other hardcoded claims are
+  listed in this entry's discovery script output and are on the open-risks table
+  until each is sourced or moved into a data file.
+- **Standing check** — Class 9 sweeps must include `index.html`, and their patterns
+  must match inflections (`ban|banned|banning`). Longer term: **prose belongs in
+  data files**, where the audits can see it. Hardcoded research text in the renderer
+  is a defect in itself.
+
+### 9.5 A whole theme item built on a claim removed four weeks earlier
+- **What broke** — "HALEU for next-gen naval fuel" was removed from `policy.json` on
+  2026-08-11 as unsubstantiated. The Defense theme in `themes.json` still carried an
+  entire item on it: label *"Uranium — naval nuclear propulsion"*, rationale *"US
+  Navy's nuclear-powered fleet requires enriched uranium fuel. HALEU is needed for
+  advanced naval … designs."* Naval reactors run on HEU that NNSA supplies from excess
+  weapons material, sufficient into the 2050s (GAO-26-107385). No listed name sells
+  the Navy fuel. The item was not a phrase to fix; its thesis was false.
+- **Why it survived** — The sweep pattern that caught the "50% rule" in four files
+  looked for `HALEU … naval` within 60 characters; here the words sat in different
+  fields of the same record. And my exclusion filter for "already-logged corrections"
+  clipped its context window mid-word ("REMOVED" → "MOVED"), so five real
+  corrections showed up as live while this real one was nearly lost among them.
+- **Fix** — Rewritten onto the defense angles that hold: NNSA's unobligated
+  enrichment need for tritium (FY2026 Defense Fuels Program names the AC100 —
+  Centrus's centrifuge), Project Pele's TRISO/HALEU microreactor (BWXT), and the
+  Russian import ban. Not removed — the owner's rule — but no longer wrong.
+- **Standing check** — When a *claim* is removed, search for its *premise* as well as
+  its wording: "naval" alone would have found this in seconds. And a Class 9 sweep's
+  exclusion filter must widen its context window enough to see the whole correction
+  sentence, or it will cry wolf on the fixes and drown the one live copy.
+
 ---
 
 ## Open and recurring risks
@@ -688,6 +755,7 @@ Not yet fixed, or fixed in a way that needs watching.
 | Two ticker conventions (ours vs Yahoo) remain a live source of lookup bugs. | Structural |
 | `themes`, `electricity`, `picks-shovels`, `geopolitical` now carry corrections and sources **inline in prose** and a `_meta.verification` block, but no per-record `sources` array like `policy.json` — adding one needs renderer support in four builders first, or it lands in Class 3. | Open — next chunk |
 | Geopolitical heat-map detail renders only on click; corrections there are invisible until a row is expanded. | Known — by design, but worth a visual cue |
+| ~20 research claims are hardcoded as prose in `index.html` (Orientation macro text, Geopolitical "Key chokepoints", mental-model cards). Outside every data-file audit. Two were stale on 2026-09-05. Move to data files or source each. | Open |
 
 ---
 

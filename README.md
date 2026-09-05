@@ -24,8 +24,18 @@ Live: https://joeedessa.github.io/hard-assets-research/
   opens with a pre-flight checklist. **Read it before shipping a change, and append
   to it after finding a bug.** Most defects here were not crashes: they were
   confidently phrased, correctly rendered statements that were false.
-- Repeatable audits, none of them CI gates:
-  - `python3 scripts/audit_schema.py` — data fields the renderer never reads.
+- Repeatable audits:
+  - `python3 scripts/verify_breaking.py` — the Act Now signals re-derived from their
+    inputs by an independent code path; every headline attribution must be justified
+    by the headline text. **Runs in CI.**
+  - `python3 scripts/audit_schema.py` — data fields no builder reads at all (static,
+    name-level; says its own limit out loud).
+  - `scripts/dom_field_sweep.js` — paste into the browser console: tests field
+    **values** against the rendered page, every tab and drawer. Catches what the
+    static sweep cannot.
   - `python3 scripts/audit_schema.py --symbols` — dead tickers still priced as live.
   - `python3 scripts/verify_trends.py [TICKERS]` — trend maths recomputed from raw
     price series by a different code path.
+- **A correction is not done until the old wording is grepped across every data
+  file and `index.html`.** Research prose is repeated across tabs by design; the same
+  wrong sentence has been found live in five places after being fixed in one.

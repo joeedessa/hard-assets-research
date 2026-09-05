@@ -866,6 +866,29 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .dw-sect:first-child{margin-top:0}
 .dw-layer{font-size:12px;color:var(--color-text-secondary);background:var(--color-background-secondary);
   padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:4px}
+.ga-legend{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px}
+.ga-lg{font-size:9.5px;padding:2px 7px;border-radius:3px;border:.5px solid transparent}
+.ga-tbl{border-collapse:collapse;font-size:10.5px;min-width:820px;width:100%}
+.ga-tbl th{font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary);font-weight:500;padding:5px 7px;text-align:left;border-bottom:.5px solid var(--color-border-secondary)}
+.ga-tbl tbody th{font-size:10.5px;text-transform:none;letter-spacing:0;color:var(--color-text-primary);font-weight:600;white-space:nowrap}
+.ga-c{padding:6px 8px;line-height:1.45;border-bottom:.5px solid var(--color-border-tertiary,var(--color-border-secondary));border-left:3px solid transparent;vertical-align:top;min-width:180px}
+.a-us{border-left-color:var(--good)!important;background:color-mix(in srgb,var(--good) 7%,transparent)}
+.a-cn{border-left-color:var(--bad)!important;background:color-mix(in srgb,var(--bad) 8%,transparent)}
+.a-ru{border-left-color:var(--warn)!important;background:color-mix(in srgb,var(--warn) 8%,transparent)}
+.a-na{border-left-color:var(--accent)!important;background:color-mix(in srgb,var(--accent) 7%,transparent)}
+.a-sa{border-left-color:#D0479E!important;background:color-mix(in srgb,#D0479E 8%,transparent)}
+.a-mx{border-left-color:#8B5CF6!important;background:color-mix(in srgb,#8B5CF6 8%,transparent)}
+.ga-lg.a-us{color:var(--good);border-color:var(--good)}.ga-lg.a-cn{color:var(--bad);border-color:var(--bad)}.ga-lg.a-ru{color:var(--warn);border-color:var(--warn)}.ga-lg.a-na{color:var(--accent);border-color:var(--accent)}.ga-lg.a-sa{color:#D0479E;border-color:#D0479E}.ga-lg.a-mx{color:#8B5CF6;border-color:#8B5CF6}
+.ps-qs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px;margin-bottom:12px}
+.ps-q{padding:9px 11px;border-radius:6px;background:var(--color-background-secondary);border-left:3px solid var(--accent)}
+.ps-q-q{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:4px}
+.ps-q-a{font-size:11px;line-height:1.6;color:var(--color-text-secondary)}
+.ps-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin-bottom:12px}
+.ps-cat{padding:8px 10px;border-radius:6px;border:.5px solid var(--color-border-secondary)}
+.ps-cat-h{font-size:11px;font-weight:600;margin-bottom:4px}
+.ps-cat ul{margin:0;padding-left:16px;font-size:10.5px;line-height:1.55;color:var(--color-text-secondary)}
+.mx-integrated{font-size:11px;line-height:1.6;margin-top:8px}
+.dw-srcnote{font-size:11px;line-height:1.65;color:var(--color-text-secondary);padding:7px 10px;border-radius:4px;background:var(--color-background-secondary);border-left:2px solid var(--color-border-secondary)}
 .dw-caveat{font-size:11px;line-height:1.65;color:var(--color-text-secondary);
   padding:7px 10px;border-radius:4px;background:var(--color-background-secondary);
   border-left:2px solid var(--warn)}
@@ -1252,6 +1275,7 @@ let BREAKING={state:'clear',signals:[],_meta:{}};
 let GLOSSARY=[];
 let MINERALS={minerals:[],_meta:{}};
 let METRICS={},METRICS_META={};
+let MX_INTEGRATED='';
 // Weekly and monthly frames are a separate file, fetched only when asked for.
 // A 200-month average needs 200 months of history and nobody wants that on
 // every page load.
@@ -1724,6 +1748,7 @@ function buildMatrix(){
     <div class="note-box" style="margin-bottom:5px">Dimension A — ${ROWS.length} value chain stages × ${nC} commodity verticals. <span style="background:color-mix(in srgb,var(--accent) 8%,transparent);border:.5px solid var(--accent);padding:1px 5px;border-radius:2px;color:var(--accent);font-weight:500;font-size:9.5px">blue cells</span> = analytical detail, opens a panel below with a link onward. Every other cell jumps straight to that vertical in the Vertical Explorer.</div>
     <div class="mx-grid" data-hscroll><div class="mx-g" style="${colStyle}">${hdr}${rowsHtml}${leg}</div></div>
     <div class="mx-det" id="mx-det"></div>
+    ${MX_INTEGRATED?`<div class="note-box mx-integrated"><b>Integrated majors that span several columns:</b> ${linkifyTickers(esc(MX_INTEGRATED))}</div>`:''}
     ${bbHtml}${cbHtml}`;
 }
 
@@ -2141,6 +2166,11 @@ function buildPortfolio(){
     ${pi.body?`<div class="ps-insight"><div class="ps-insight-t">${esc(pi.title||'Defining insight')}</div><div class="ps-insight-b">${esc(pi.body)}</div></div>`:''}
     ${clusters.length?`<div class="ps-clusters">${clusters.map(cl=>`<div class="ps-cluster"><div class="ps-cluster-h" style="background:${esc(cl.color)}18;color:${esc(cl.color)}">${esc(cl.title)}</div><div class="ps-cluster-b"><ul>${(cl.items||[]).map(item=>`<li>${item}</li>`).join('')}</ul></div></div>`).join('')}</div>`:''}
     <div class="sect-h">Entry windows — insulated names ≥15% off 52-week high</div>
+    ${(PORTFOLIO.four_questions||[]).length?`<div class="sect-h">The four screening questions — apply mechanically to every position</div>
+    <div class="ps-qs">${PORTFOLIO.four_questions.map(x=>`<div class="ps-q"><div class="ps-q-q">${esc(x.q)}</div><div class="ps-q-a">${linkifyTickers(esc(x.a||''))}</div></div>`).join('')}</div>`:''}
+    ${(PORTFOLIO.catalyst_table||[]).length?`<div class="sect-h">Catalysts by vertical</div>
+    <div class="note-box">${esc((PORTFOLIO._meta&&PORTFOLIO._meta.catalyst_table_note)||'Grouped by vertical as prose. These are not dated events and do not feed the What\'s Next agenda.')}</div>
+    <div class="ps-cats">${PORTFOLIO.catalyst_table.map(r=>`<div class="ps-cat"><div class="ps-cat-h" style="color:${esc(r.c||'var(--accent)')}">${esc(r.n||r.id||'')}</div><ul>${(r.cats||[]).map(c=>`<li>${linkifyTickers(esc(c))}</li>`).join('')}</ul></div>`).join('')}</div>`:''}
     <div class="ew-grid">${ewHtml}</div>
     <div class="sect-h">Scoreboard — equal-weight basket vs benchmarks</div>
     ${sbHtml}
@@ -2233,6 +2263,7 @@ function buildPolicy(){
       <div class="lev-body">${esc(l.description)}</div>
       <div class="lev-bb">${esc(l.bull_bear)}</div>
       <div style="margin-top:5px">${(l.tickers||[]).map(t=>`<span class="pol-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`).join(' ')}</div>
+      ${Array.isArray(l.sources)&&l.sources.length?`<details class="pol-src"><summary>Sources (${l.sources.length})</summary><ul>${l.sources.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></details>`:''}
     </div>`).join('');
 
   el.innerHTML=`
@@ -2277,16 +2308,31 @@ function buildGeo(){
       <thead><tr><th class="geo-th" style="text-align:left">Vertical</th>${cols.map(c=>`<th class="geo-th">${esc(c)}</th>`).join('')}</tr></thead>
       <tbody>${heatRows}</tbody>
     </table></div>
-    <div class="sect-h">Key chokepoints — 2026-08-03</div>
+    <div class="sect-h">Key chokepoints — reviewed 2026-09-05</div>
     <div class="note-box">
-      <b>REE magnets:</b> China controls ~80% of global processing + the largest magnet manufacturers. Export controls since Apr 2025.<br>
-      <b>Uranium enrichment:</b> Russia (TENEX) was 28% of US SWU — now banned. Kazatomprom (Kazakhstan) = 40% of mining: ambiguous sphere.<br>
+      <b>REE magnets:</b> China refined 91% of the world's magnet rare earths and made 94% of sintered NdFeB magnets in 2024 (IEA Global Critical Minerals Outlook 2025; this line previously said ~80%). Export licensing since Apr 2025.<br>
+      <b>Uranium enrichment:</b> Russia (TENEX) was 28% of US SWU — now banned. Kazakhstan ≈ 40% of world mine output (all via Kazatomprom-operated JVs, 100% basis; Kazatomprom's attributable share ≈ 20%): ambiguous sphere.<br>
       <b>Copper:</b> Democratic mine-permitting asymmetry (15-20yr vs 3-5yr in authoritarian states) is the constraint, not geology.<br>
-      <b>Antimony:</b> China banned exports Oct 2024. China = ~50% of global supply. PPTA Stibnite is the only meaningful Western alternative.<br>
-      <b>Lithium:</b> Chile, Argentina, Australia mine it; China processes 60%+ of global lithium. IRA FEOC rules creating reshoring urgency.<br>
+      <b>Antimony:</b> China imposed export LICENSING worldwide from 2024-09-15 and a US-specific export BAN on 2024-12-03; that ban has been SUSPENDED since 2025-11 (to 2026-11-27) while licensing still binds. China ≈ half of global supply. PPTA Stibnite is the only meaningful Western alternative.<br>
+      <b>Lithium:</b> Chile, Argentina, Australia mine it; China is the dominant refiner — ~72% of lithium hydroxide capacity (Benchmark), and the top three refining countries together hold 86% (IEA 2025). IRA FEOC rules creating reshoring urgency.<br>
       <b>LNG routes:</b> Red Sea/Suez disruption has extended tonne-miles for product tankers. European SPAs locked; US LNG is NATO energy policy.
     </div>
   `;
+  // Actor control map — WHO holds each chain stage, per vertical. This block
+  // existed in geopolitical.json from the start (44 cells) and was never
+  // rendered; the learning path promised "which chain stages China actually
+  // controls" and the page did not show it.
+  const AM=(GEO.actor_map||[]),ACOLS=(GEO._meta&&GEO._meta.actor_map_cols)||['Mining / Extraction','Processing / Refining','Transport / Infra','End-use / Demand'];
+  const ACL=(GEO._meta&&GEO._meta.actor_classes)||{};
+  if(AM.length){
+    const legend=Object.entries(ACL).map(([k,v])=>`<span class="ga-lg ${esc(k)}">${esc(v.split(' — ')[0])}</span>`).join('');
+    const rows=AM.map(r=>`<tr><th>${esc(r.n)}</th>${(r.l||[]).map(c=>`<td class="ga-c ${esc(c.c||'')}">${linkifyTickers(esc(c.t||''))}</td>`).join('')}</tr>`).join('');
+    el.insertAdjacentHTML('beforeend',`
+      <div class="sect-h">Who controls each stage — actor map</div>
+      <div class="note-box">Colour is the controlling actor at that stage, not a score. Read across a row to see where a vertical's chokepoint actually sits — for most it is processing, not mining.</div>
+      <div class="ga-legend">${legend}</div>
+      <div data-hscroll><table class="ga-tbl"><thead><tr><th></th>${ACOLS.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>`);
+  }
   initHScrollers(el);   // buildGeo re-runs on row expand, so re-attach here
 }
 
@@ -2979,6 +3025,7 @@ function openCompanyDrawer(tk,push=true){
      <div class="dw-sect">Chain layer</div><div class="dw-layer">${esc(c.chain_layer||'—')}</div>
      <div class="dw-sect">Thesis</div><div class="dw-thesis">${linkifyTickers(esc(c.thesis_note||''))}</div>
      ${c.data_caveat?`<div class="dw-sect">Data caveat</div><div class="dw-caveat">${linkifyTickers(esc(c.data_caveat))}</div>`:''}
+     ${c.source_note?`<div class="dw-sect">How it entered the book</div><div class="dw-srcnote">${linkifyTickers(esc(c.source_note))}</div>`:''}
      ${c.froth_note?`<div class="dw-sect">Froth lens</div><div class="dw-thesis" style="border-left-color:${fm.c}">${esc(c.froth_note)}</div>`:''}
      ${drawerTrend(c.ticker)}
      ${drawerMetrics(c.ticker)}
@@ -3307,7 +3354,7 @@ async function loadData(){
     ANNOTATIONS=ann.annotations||[];
     POLICY=pol||{};
     EXCLUDED=excl?.excluded||[];
-    if(mat){VC_COLS=mat.verticals||[];ROWS=mat.chain_stages||[];MXC=mat.cells||{};DET=mat.highlighted_cells||{};B_BAND=mat.b_band||[];C_BAND=mat.c_band||[];}
+    if(mat){VC_COLS=mat.verticals||[];ROWS=mat.chain_stages||[];MXC=mat.cells||{};DET=mat.highlighted_cells||{};B_BAND=mat.b_band||[];C_BAND=mat.c_band||[];MX_INTEGRATED=mat.integrated_companies||'';}
     if(expls){EXPLS=expls.explainers||expls||[];}
     if(ps){PS=ps.categories||ps||[];}
     if(el){EL_CHAIN=el.chain||[];EL_INTX=el.intersections||[];EL_AI=el.ai_themes||[];EL_CYCLE=el.cycle||[];

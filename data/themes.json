@@ -243,9 +243,9 @@
           "why": "Beryllium is in nuclear warheads, defense electronics, radar systems, and aerospace structures. No substitute in many applications. Systematically underowned at <$1.5B market cap."
         },
         {
-          "lbl": "Uranium — naval nuclear propulsion",
-          "ticks": "Cameco (CCO), Centrus Energy (LEU, HALEU for advanced naval + SMR reactors)",
-          "why": "US Navy's nuclear-powered fleet requires enriched uranium fuel. HALEU is needed for advanced naval and SMR reactor designs. Centrus is rebuilding US HALEU production capability."
+          "lbl": "Uranium — defense fuel is a stockpile-and-enrichment story, not naval demand",
+          "ticks": "Centrus Energy (LEU — its AC100 is the large-centrifuge technology NNSA's FY2026 Defense Fuels Program names for future unobligated enrichment; $900M DOE task order for Piketon, first new capacity 2029); BWX Technologies (BWXT — Project Pele, DoD's TRISO/HALEU microreactor, fuel delivered to INL 2025-12, power expected 2028); Cameco (CCO — commercial supply, no naval role)",
+          "why": "CORRECTED 2026-09-05. This item previously said the US Navy's fleet 'requires enriched uranium fuel' and that 'HALEU is needed for advanced naval reactor designs'. Neither is a demand driver for any listed name. Naval reactors run on HIGHLY enriched uranium that NNSA supplies from material declared excess to weapons needs — sufficient into the 2050s (GAO-26-107385) — not on commercial uranium and not on HALEU. The defense angles that ARE real: (1) NNSA needs UNOBLIGATED domestic enrichment for tritium production by the early 2040s and plans to meet it with centrifuge technology including the AC100, Centrus's design; (2) DoD microreactors — Project Pele uses TRISO, a HALEU-based fuel; (3) the Russian import ban forcing a Western enrichment rebuild. The same false 'naval fuel' claim was removed from policy.json on 2026-08-11 and survived here for four weeks."
         },
         {
           "lbl": "Antimony — ammunition & grid batteries",

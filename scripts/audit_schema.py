@@ -49,7 +49,7 @@ KNOWN_INTERNAL = {
     ("companies.json", "last_reviewed"), ("companies.json", "provisional"),
     ("companies.json", "source_note"), ("companies.json", "source_screen"),
     ("critical-minerals.json", "group"), ("critical-minerals.json", "sym"),
-    ("matrix.json", "ids"),
+    ("matrix.json", "ids"), ("matrix.json", "color"), ("matrix.json", "c"),
     ("policy.json", "status_color"), ("policy.json", "date_iso"),
     ("policy.json", "date_unresolved"), ("portfolio.json", "cats"),
 }
@@ -57,6 +57,12 @@ KNOWN_INTERNAL = {
 
 def sweep_fields():
     html = (ROOT / "index.html").read_text()
+    # Vertical ids (oil, cu, re …) appear as dict KEYS in matrix bands and are
+    # read dynamically as row[v.id]; they are lookups, not fields.
+    try:
+        vids = {v["id"] for v in json.load(open(ROOT / "data" / "matrix.json")).get("verticals", [])}
+    except Exception:
+        vids = set()
     findings, reviewed = [], 0
     for f in sorted(glob.glob(str(ROOT / "data" / "*.json"))):
         base = os.path.basename(f)
@@ -65,21 +71,43 @@ def sweep_fields():
         doc = json.load(open(f))
         if not isinstance(doc, dict):
             continue
-        for _key, arr in doc.items():
-            if not (isinstance(arr, list) and arr and isinstance(arr[0], dict)):
+        # Walk EVERY level, not only top-level record arrays. themes[].items[].why
+        # and portfolio.four_questions[].q were never checked by the earlier
+        # version because they sit one level down or under a non-array key.
+        counts = {}
+
+        def walk(node):
+            if isinstance(node, list):
+                for n in node:
+                    walk(n)
+            elif isinstance(node, dict):
+                for k, v in node.items():
+                    if k == "_meta":
+                        continue
+                    if isinstance(v, (str, int, float, bool)) or v is None:
+                        counts[k] = counts.get(k, 0) + 1
+                    walk(v)
+        walk(doc)
+        for k, n in sorted(counts.items()):
+            if k in SKIP_FIELDS or k in vids:
                 continue
-            counts = {}
-            for rec in arr:
-                for k in rec:
-                    counts[k] = counts.get(k, 0) + 1
-            for k, n in sorted(counts.items()):
-                if k in SKIP_FIELDS:
-                    continue
-                reviewed += 1
-                # `.field`, ['field'] or "field" anywhere in the renderer
-                if re.search(r'[.\[]\s*[\'"]?' + re.escape(k) + r'\b', html):
-                    continue
-                findings.append((base, k, n, (base, k) in KNOWN_INTERNAL))
+            reviewed += 1
+            # `.field`, ['field'] or "field" anywhere in the renderer.
+            # LIMIT, stated plainly: a name used by ANY builder passes for ALL
+            # files. "why" renders for picks-shovels, so it passes for themes
+            # too. This sweep catches fields no builder reads at all; for
+            # per-file coverage run scripts/dom_field_sweep.js in the browser,
+            # which tests VALUES against the rendered page.
+            if re.search(r'[.\[]\s*[\'"]?' + re.escape(k) + r'\b', html):
+                continue
+            findings.append((base, k, n, (base, k) in KNOWN_INTERNAL))
+        # top-level scalar keys (matrix.integrated_companies was one of these)
+        for k, v in doc.items():
+            if k == "_meta" or not isinstance(v, str) or k in SKIP_FIELDS:
+                continue
+            reviewed += 1
+            if not re.search(r'[.\[]\s*[\'"]?' + re.escape(k) + r'\b', html):
+                findings.append((base, k, 1, (base, k) in KNOWN_INTERNAL))
 
     new = [x for x in findings if not x[3]]
     known = [x for x in findings if x[3]]
