@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-04",
+    "as_of": "2026-09-05",
     "description": "Per-name moving-average ladder, level tests and move context.",
     "ladder": [
       {
@@ -41,8 +41,8 @@
   },
   "breadth": {
     "n": 169,
-    "down": 65,
-    "down_pct": 38.5,
+    "down": 70,
+    "down_pct": 41.4,
     "tape": false,
     "note": "Breadth is not one-sided, so a large single-name move is more likely to be about the name."
   },
@@ -204,7 +204,7 @@
         "sd60": 2.26
       },
       "rel": {
-        "mkt": -0.07,
+        "mkt": 0.55,
         "mkt_name": "S&P/ASX 200",
         "sec": -0.47,
         "peers": 4,
@@ -346,7 +346,7 @@
         "sd60": 5.41
       },
       "rel": {
-        "mkt": -0.57,
+        "mkt": -2.69,
         "mkt_name": "Hang Seng",
         "sec": -1.82,
         "peers": 4,
@@ -435,7 +435,7 @@
       "rel": {
         "mkt": 2.39,
         "mkt_name": "S&P 500",
-        "sec": 1.72,
+        "sec": 1.75,
         "peers": 7,
         "noise": 1.34
       },
@@ -518,7 +518,7 @@
       "rel": {
         "mkt": 0.38,
         "mkt_name": "S&P 500",
-        "sec": -0.56,
+        "sec": -0.29,
         "peers": 7,
         "noise": 0.25
       },
@@ -537,16 +537,16 @@
     "SPUT": {
       "name": "Sprott Physical Uranium Trust",
       "v": "nu",
-      "asof": "2026-09-03",
-      "bars": 371,
+      "asof": "2026-09-04",
+      "bars": 372,
       "settled": true,
       "d": {
-        "px": 28.71,
-        "bars": 371,
-        "d21": 0.68,
-        "d50": 1.61,
-        "d150": 4.59,
-        "d200": 5.65,
+        "px": 28.656,
+        "bars": 372,
+        "d21": 0.44,
+        "d50": 1.35,
+        "d150": 4.33,
+        "d200": 5.39,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -579,25 +579,25 @@
         }
       },
       "move": {
-        "d1": 0.58,
-        "atr_pct": 0.44,
-        "atr_x": 1.32,
+        "d1": -0.19,
+        "atr_pct": 0.42,
+        "atr_x": 0.45,
         "atr_rejected": null,
-        "sigma": 1.27,
-        "sd60": 0.46
+        "sigma": -0.42,
+        "sd60": 0.45
       },
       "rel": {
-        "mkt": 0.95,
+        "mkt": 0.19,
         "mkt_name": "S&P 500",
-        "sec": 0.28,
+        "sec": -0.48,
         "peers": 7,
-        "noise": 0.09
+        "noise": 0.08
       },
       "range": {
-        "off52h": -0.08,
-        "off52l": 13.68,
-        "offath": -0.08,
-        "rsi": 60.6,
+        "off52h": -0.26,
+        "off52l": 13.47,
+        "offath": -0.26,
+        "rsi": 57.8,
         "rsi_short": false,
         "ath_since": "2025-03-14",
         "ath_deep": false,
@@ -677,7 +677,7 @@
       "rel": {
         "mkt": 5.26,
         "mkt_name": "S&P 500",
-        "sec": 4.59,
+        "sec": 4.62,
         "peers": 7,
         "noise": 0.68
       },
@@ -770,7 +770,7 @@
       "rel": {
         "mkt": 0.94,
         "mkt_name": "S&P 500",
-        "sec": 0.27,
+        "sec": 0.3,
         "peers": 7,
         "noise": 0.9
       },
@@ -853,7 +853,7 @@
       "rel": {
         "mkt": 1.08,
         "mkt_name": "S&P 500",
-        "sec": -0.06,
+        "sec": -0.16,
         "peers": 32,
         "noise": 0.78
       },
@@ -946,7 +946,7 @@
       "rel": {
         "mkt": 3.83,
         "mkt_name": "S&P 500",
-        "sec": 2.78,
+        "sec": 2.65,
         "peers": 32,
         "noise": 0.69
       },
@@ -1029,7 +1029,7 @@
       "rel": {
         "mkt": 0.39,
         "mkt_name": "S&P 500",
-        "sec": -0.78,
+        "sec": -0.85,
         "peers": 32,
         "noise": 0.9
       },
@@ -1122,7 +1122,7 @@
       "rel": {
         "mkt": 2.11,
         "mkt_name": "S&P 500",
-        "sec": 1.05,
+        "sec": 0.92,
         "peers": 32,
         "noise": 0.7
       },
@@ -1205,7 +1205,7 @@
       "rel": {
         "mkt": 1.25,
         "mkt_name": "S&P 500",
-        "sec": 0.2,
+        "sec": 0.07,
         "peers": 32,
         "noise": 1.06
       },
@@ -1225,15 +1225,15 @@
       "name": "Southern Copper",
       "v": "cu",
       "asof": "2026-09-04",
-      "bars": 753,
+      "bars": 754,
       "settled": true,
       "d": {
         "px": 198.76,
-        "bars": 753,
-        "d21": -1.05,
-        "d50": 5.77,
-        "d150": 7.39,
-        "d200": 12.91,
+        "bars": 754,
+        "d21": -0.94,
+        "d50": 6.46,
+        "d150": 8.92,
+        "d200": 14.4,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -1263,34 +1263,28 @@
             "state": "bull",
             "recent": null
           }
-        },
-        "test150": {
-          "state": "held",
-          "ago": 13,
-          "gap": 1.48,
-          "probe": "low"
         }
       },
       "move": {
         "d1": -0.39,
-        "atr_pct": 4.26,
+        "atr_pct": 4.19,
         "atr_x": 0.09,
         "atr_rejected": null,
         "sigma": -0.12,
-        "sd60": 3.32
+        "sd60": 3.23
       },
       "rel": {
         "mkt": -0.01,
         "mkt_name": "S&P 500",
         "sec": -0.71,
         "peers": 4,
-        "noise": 0.85
+        "noise": 0.84
       },
       "range": {
         "off52h": -9.53,
-        "off52l": 107.52,
+        "off52l": 111.22,
         "offath": -9.53,
-        "rsi": 49.9,
+        "rsi": 50.3,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -1430,7 +1424,7 @@
       "rel": {
         "mkt": -1.15,
         "mkt_name": "S&P 500",
-        "sec": -0.48,
+        "sec": -0.31,
         "peers": 10,
         "noise": 0.63
       },
@@ -1507,7 +1501,7 @@
       "rel": {
         "mkt": -0.68,
         "mkt_name": "S&P 500",
-        "sec": 0.23,
+        "sec": 0.4,
         "peers": 10,
         "noise": 0.78
       },
@@ -1524,7 +1518,7 @@
       }
     },
     "LNG": {
-      "name": "Cheniere Energy (LNG)",
+      "name": "Cheniere Energy",
       "v": "ng",
       "asof": "2026-09-04",
       "bars": 754,
@@ -2053,7 +2047,7 @@
       "rel": {
         "mkt": 1.85,
         "mkt_name": "S&P 500",
-        "sec": 0.79,
+        "sec": 0.66,
         "peers": 32,
         "noise": 1.6
       },
@@ -2164,12 +2158,12 @@
       "bars": 754,
       "settled": true,
       "d": {
-        "px": 1.09,
+        "px": 1.07,
         "bars": 754,
-        "d21": 1.06,
-        "d50": 3.79,
-        "d150": 14.9,
-        "d200": 19.86,
+        "d21": -0.62,
+        "d50": 1.92,
+        "d150": 12.8,
+        "d200": 17.67,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -2180,8 +2174,13 @@
         "warmup_short": false,
         "cross": {
           "ema5x21": {
-            "state": "bull",
-            "recent": null
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
           },
           "pxX50": {
             "state": "bull",
@@ -2202,25 +2201,25 @@
         }
       },
       "move": {
-        "d1": 0.93,
-        "atr_pct": 3.32,
-        "atr_x": 0.28,
+        "d1": -0.93,
+        "atr_pct": 3.38,
+        "atr_x": 0.27,
         "atr_rejected": null,
-        "sigma": 0.34,
+        "sigma": -0.34,
         "sd60": 2.74
       },
       "rel": {
-        "mkt": 1.3,
+        "mkt": -0.55,
         "mkt_name": "S&P 500",
-        "sec": -1.5,
+        "sec": -3.35,
         "peers": 14,
-        "noise": 0.66
+        "noise": 0.68
       },
       "range": {
-        "off52h": -7.63,
-        "off52l": 84.18,
-        "offath": -7.63,
-        "rsi": 53.4,
+        "off52h": -9.32,
+        "off52l": 80.8,
+        "offath": -9.32,
+        "rsi": 49.5,
         "rsi_short": false,
         "ath_since": "2010-05-01",
         "ath_deep": true,
@@ -2373,7 +2372,7 @@
         "test200": {
           "state": "rejected",
           "ago": 0,
-          "gap": 0.48,
+          "gap": 0.47,
           "probe": "high"
         }
       },
@@ -2550,7 +2549,7 @@
         "sd60": 4.48
       },
       "rel": {
-        "mkt": 2.92,
+        "mkt": 1.49,
         "mkt_name": "Nikkei 225",
         "sec": 0.85,
         "peers": 14,
@@ -2627,7 +2626,7 @@
         "sd60": 4.36
       },
       "rel": {
-        "mkt": 1.6,
+        "mkt": 0.17,
         "mkt_name": "Nikkei 225",
         "sec": -1.0,
         "peers": 14,
@@ -2708,7 +2707,7 @@
       },
       "move": {
         "d1": 2.66,
-        "atr_pct": 4.49,
+        "atr_pct": 4.5,
         "atr_x": 0.59,
         "atr_rejected": null,
         "sigma": 0.66,
@@ -2792,7 +2791,7 @@
         "sd60": 6.2
       },
       "rel": {
-        "mkt": 0.68,
+        "mkt": -0.75,
         "mkt_name": "Nikkei 225",
         "sec": -1.92,
         "peers": 14,
@@ -2879,7 +2878,7 @@
         "sd60": 6.17
       },
       "rel": {
-        "mkt": 7.05,
+        "mkt": 4.87,
         "mkt_name": "TAIEX",
         "sec": 4.49,
         "peers": 14,
@@ -2955,7 +2954,7 @@
         "sd60": 4.7
       },
       "rel": {
-        "mkt": 3.03,
+        "mkt": 0.85,
         "mkt_name": "TAIEX",
         "sec": 0.41,
         "peers": 14,
@@ -3026,7 +3025,7 @@
         "sd60": 5.85
       },
       "rel": {
-        "mkt": 1.64,
+        "mkt": -0.54,
         "mkt_name": "TAIEX",
         "sec": -1.45,
         "peers": 14,
@@ -3571,8 +3570,8 @@
       },
       "move": {
         "d1": 1.04,
-        "atr_pct": 2.55,
-        "atr_x": 0.41,
+        "atr_pct": 2.56,
+        "atr_x": 0.4,
         "atr_rejected": null,
         "sigma": 0.68,
         "sd60": 1.53
@@ -3663,7 +3662,7 @@
       "rel": {
         "mkt": -0.58,
         "mkt_name": "S&P 500",
-        "sec": -1.34,
+        "sec": -1.32,
         "peers": 34,
         "noise": 0.35
       },
@@ -3734,7 +3733,7 @@
       "rel": {
         "mkt": -0.59,
         "mkt_name": "S&P 500",
-        "sec": -1.35,
+        "sec": -1.33,
         "peers": 34,
         "noise": 0.42
       },
@@ -3806,8 +3805,8 @@
       },
       "move": {
         "d1": 2.99,
-        "atr_pct": 3.84,
-        "atr_x": 0.78,
+        "atr_pct": 3.86,
+        "atr_x": 0.77,
         "atr_rejected": null,
         "sigma": 1.08,
         "sd60": 2.77
@@ -3815,7 +3814,7 @@
       "rel": {
         "mkt": 3.36,
         "mkt_name": "S&P 500",
-        "sec": 2.65,
+        "sec": 2.77,
         "peers": 34,
         "noise": 0.77
       },
@@ -3886,7 +3885,7 @@
       "rel": {
         "mkt": 1.91,
         "mkt_name": "S&P 500",
-        "sec": 1.19,
+        "sec": 1.31,
         "peers": 34,
         "noise": 1.1
       },
@@ -3970,9 +3969,9 @@
         "sd60": 4.63
       },
       "rel": {
-        "mkt": 0.69,
+        "mkt": -0.74,
         "mkt_name": "Nikkei 225",
-        "sec": 0.18,
+        "sec": 0.3,
         "peers": 34,
         "noise": 1.21
       },
@@ -4055,7 +4054,7 @@
       "rel": {
         "mkt": -0.66,
         "mkt_name": "S&P 500",
-        "sec": 0.26,
+        "sec": 0.42,
         "peers": 10,
         "noise": 0.59
       },
@@ -4676,7 +4675,7 @@
       "rel": {
         "mkt": 4.73,
         "mkt_name": "S&P 500",
-        "sec": 3.67,
+        "sec": 3.54,
         "peers": 32,
         "noise": 1.0
       },
@@ -4695,16 +4694,16 @@
     "PRY.MI": {
       "name": "Prysmian",
       "v": "elec",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
-        "px": 119.8,
-        "bars": 760,
-        "d21": -2.43,
-        "d50": -6.5,
-        "d150": -3.28,
-        "d200": 4.32,
+        "px": 122.25,
+        "bars": 761,
+        "d21": -0.39,
+        "d50": -4.28,
+        "d150": -1.4,
+        "d200": 6.26,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -4737,37 +4736,37 @@
         },
         "test150": {
           "state": "rejected",
-          "ago": 6,
+          "ago": 7,
           "gap": 0.05,
           "probe": "high"
         },
         "test200": {
           "state": "held",
-          "ago": 2,
+          "ago": 3,
           "gap": 1.2,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 0.59,
-        "atr_pct": 3.91,
-        "atr_x": 0.15,
+        "d1": 2.05,
+        "atr_pct": 3.82,
+        "atr_x": 0.54,
         "atr_rejected": null,
-        "sigma": 0.24,
-        "sd60": 2.47
+        "sigma": 0.82,
+        "sd60": 2.48
       },
       "rel": {
-        "mkt": -0.29,
+        "mkt": 2.32,
         "mkt_name": "FTSE MIB",
-        "sec": -0.2,
+        "sec": 1.24,
         "peers": 32,
-        "noise": 0.78
+        "noise": 0.76
       },
       "range": {
-        "off52h": -23.65,
-        "off52l": 57.81,
-        "offath": -23.65,
-        "rsi": 43.4,
+        "off52h": -22.08,
+        "off52l": 58.96,
+        "offath": -22.08,
+        "rsi": 47.6,
         "rsi_short": false,
         "ath_since": "2007-06-01",
         "ath_deep": true,
@@ -4778,16 +4777,16 @@
     "NEX.PA": {
       "name": "Nexans",
       "v": "elec",
-      "asof": "2026-09-03",
-      "bars": 766,
+      "asof": "2026-09-04",
+      "bars": 767,
       "settled": true,
       "d": {
-        "px": 138.6,
-        "bars": 766,
-        "d21": -0.28,
-        "d50": 1.15,
-        "d150": 0.87,
-        "d200": 3.44,
+        "px": 136.6,
+        "bars": 767,
+        "d21": -1.56,
+        "d50": -0.24,
+        "d150": -0.6,
+        "d200": 1.89,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -4801,16 +4800,16 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 0,
+              "ago": 1,
               "whipsaw": false,
               "n_flips": 1
             }
           },
           "pxX50": {
-            "state": "bull",
+            "state": "bear",
             "recent": {
-              "dir": "bull",
-              "ago": 7,
+              "dir": "bear",
+              "ago": 0,
               "whipsaw": true,
               "n_flips": 3
             }
@@ -4819,7 +4818,7 @@
             "state": "bull",
             "recent": {
               "dir": "bull",
-              "ago": 5,
+              "ago": 6,
               "whipsaw": false,
               "n_flips": 1
             }
@@ -4834,38 +4833,38 @@
           }
         },
         "test150": {
-          "state": "held",
-          "ago": 8,
+          "state": "lost",
+          "ago": 9,
           "gap": 0.03,
           "probe": "low"
         },
         "test200": {
           "state": "held",
-          "ago": 2,
+          "ago": 3,
           "gap": 1.56,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 0.65,
-        "atr_pct": 2.92,
-        "atr_x": 0.22,
+        "d1": -1.44,
+        "atr_pct": 2.98,
+        "atr_x": 0.48,
         "atr_rejected": null,
-        "sigma": 0.31,
+        "sigma": -0.68,
         "sd60": 2.13
       },
       "rel": {
-        "mkt": 0.58,
+        "mkt": -1.35,
         "mkt_name": "CAC 40",
-        "sec": -0.14,
+        "sec": -2.3,
         "peers": 32,
-        "noise": 0.58
+        "noise": 0.6
       },
       "range": {
-        "off52h": -15.94,
-        "off52l": 25.34,
-        "offath": -15.94,
-        "rsi": 49.5,
+        "off52h": -17.15,
+        "off52l": 23.53,
+        "offath": -17.15,
+        "rsi": 45.8,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -4945,7 +4944,7 @@
       "rel": {
         "mkt": 0.64,
         "mkt_name": "S&P 500",
-        "sec": -0.3,
+        "sec": -0.03,
         "peers": 7,
         "noise": 1.15
       },
@@ -5016,7 +5015,7 @@
       "rel": {
         "mkt": -1.28,
         "mkt_name": "S&P 500",
-        "sec": -2.22,
+        "sec": -1.95,
         "peers": 7,
         "noise": 0.78
       },
@@ -5187,7 +5186,7 @@
       "rel": {
         "mkt": -2.14,
         "mkt_name": "S&P 500",
-        "sec": -1.47,
+        "sec": -1.3,
         "peers": 10,
         "noise": 0.84
       },
@@ -5273,7 +5272,7 @@
         "sd60": 3.33
       },
       "rel": {
-        "mkt": -2.58,
+        "mkt": -1.96,
         "mkt_name": "S&P/ASX 200",
         "sec": 0.69,
         "peers": 4,
@@ -5361,7 +5360,7 @@
         "sd60": 2.51
       },
       "rel": {
-        "mkt": -1.87,
+        "mkt": -1.25,
         "mkt_name": "S&P/ASX 200",
         "sec": 1.75,
         "peers": 4,
@@ -5451,7 +5450,7 @@
       "rel": {
         "mkt": -2.02,
         "mkt_name": "S&P 500",
-        "sec": -1.35,
+        "sec": -1.18,
         "peers": 10,
         "noise": 0.86
       },
@@ -5539,7 +5538,7 @@
       "rel": {
         "mkt": -1.45,
         "mkt_name": "S&P 500",
-        "sec": -0.78,
+        "sec": -0.6,
         "peers": 10,
         "noise": 0.69
       },
@@ -5606,7 +5605,7 @@
         "test150": {
           "state": "rejected",
           "ago": 0,
-          "gap": 0.62,
+          "gap": 0.47,
           "probe": "high"
         },
         "test200": {
@@ -5627,7 +5626,7 @@
       "rel": {
         "mkt": 0.67,
         "mkt_name": "S&P 500",
-        "sec": -0.27,
+        "sec": 0.03,
         "peers": 7,
         "noise": 1.01
       },
@@ -5701,7 +5700,7 @@
       },
       "move": {
         "d1": -0.71,
-        "atr_pct": 2.61,
+        "atr_pct": 2.63,
         "atr_x": 0.27,
         "atr_rejected": null,
         "sigma": -0.34,
@@ -5712,7 +5711,7 @@
         "mkt_name": "S&P 500",
         "sec": -0.84,
         "peers": 7,
-        "noise": 0.52
+        "noise": 0.53
       },
       "range": {
         "off52h": -12.71,
@@ -5772,7 +5771,7 @@
       },
       "move": {
         "d1": -1.43,
-        "atr_pct": 6.7,
+        "atr_pct": 6.72,
         "atr_x": 0.21,
         "atr_rejected": null,
         "sigma": -0.35,
@@ -5781,7 +5780,7 @@
       "rel": {
         "mkt": -1.06,
         "mkt_name": "S&P 500",
-        "sec": -1.81,
+        "sec": -1.79,
         "peers": 34,
         "noise": 1.34
       },
@@ -5804,12 +5803,12 @@
       "bars": 754,
       "settled": true,
       "d": {
-        "px": 16.22,
+        "px": 16.25,
         "bars": 754,
-        "d21": 4.32,
-        "d50": 12.16,
-        "d150": 13.16,
-        "d200": 20.73,
+        "d21": 4.5,
+        "d50": 12.36,
+        "d150": 13.37,
+        "d200": 20.95,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -5842,25 +5841,25 @@
         }
       },
       "move": {
-        "d1": -0.61,
-        "atr_pct": 2.15,
-        "atr_x": 0.29,
+        "d1": -0.43,
+        "atr_pct": 2.14,
+        "atr_x": 0.2,
         "atr_rejected": null,
-        "sigma": -0.28,
+        "sigma": -0.19,
         "sd60": 2.23
       },
       "rel": {
-        "mkt": -0.24,
+        "mkt": -0.05,
         "mkt_name": "S&P 500",
-        "sec": -0.99,
+        "sec": -0.79,
         "peers": 34,
         "noise": 0.43
       },
       "range": {
-        "off52h": -0.61,
-        "off52l": 117.55,
-        "offath": -0.61,
-        "rsi": 66.5,
+        "off52h": -0.43,
+        "off52l": 117.95,
+        "offath": -0.43,
+        "rsi": 67.2,
         "rsi_short": false,
         "ath_since": "2012-03-01",
         "ath_deep": true,
@@ -5940,7 +5939,7 @@
       "rel": {
         "mkt": 0.11,
         "mkt_name": "S&P 500",
-        "sec": -0.64,
+        "sec": -0.62,
         "peers": 34,
         "noise": 0.58
       },
@@ -5959,16 +5958,16 @@
     "ERA.PA": {
       "name": "Eramet",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 766,
+      "asof": "2026-09-04",
+      "bars": 767,
       "settled": true,
       "d": {
-        "px": 44.86,
-        "bars": 766,
-        "d21": -1.42,
-        "d50": -0.14,
-        "d150": -12.76,
-        "d200": -17.2,
+        "px": 44.46,
+        "bars": 767,
+        "d21": -2.1,
+        "d50": -1.0,
+        "d150": -13.26,
+        "d200": -17.88,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -5982,7 +5981,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 6,
+              "ago": 7,
               "whipsaw": false,
               "n_flips": 1
             }
@@ -5991,19 +5990,14 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 1,
+              "ago": 2,
               "whipsaw": true,
-              "n_flips": 4
+              "n_flips": 3
             }
           },
           "ema21x50": {
             "state": "bull",
-            "recent": {
-              "dir": "bull",
-              "ago": 9,
-              "whipsaw": false,
-              "n_flips": 1
-            }
+            "recent": null
           },
           "pxX200": {
             "state": "bear",
@@ -6016,25 +6010,25 @@
         }
       },
       "move": {
-        "d1": -0.04,
-        "atr_pct": 3.52,
-        "atr_x": 0.01,
+        "d1": -0.89,
+        "atr_pct": 3.44,
+        "atr_x": 0.26,
         "atr_rejected": null,
-        "sigma": -0.02,
-        "sd60": 2.45
+        "sigma": -0.45,
+        "sd60": 1.97
       },
       "rel": {
-        "mkt": -0.11,
+        "mkt": -0.8,
         "mkt_name": "CAC 40",
-        "sec": -0.42,
+        "sec": -1.25,
         "peers": 34,
-        "noise": 0.7
+        "noise": 0.69
       },
       "range": {
-        "off52h": -48.44,
-        "off52l": 8.73,
-        "offath": -91.3,
-        "rsi": 45.7,
+        "off52h": -48.9,
+        "off52l": 7.76,
+        "offath": -91.38,
+        "rsi": 43.6,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -6113,7 +6107,7 @@
       "rel": {
         "mkt": 0.01,
         "mkt_name": "S&P 500",
-        "sec": -0.74,
+        "sec": -0.72,
         "peers": 34,
         "noise": 1.17
       },
@@ -6194,7 +6188,7 @@
       "rel": {
         "mkt": -1.74,
         "mkt_name": "S&P 500",
-        "sec": -2.49,
+        "sec": -2.47,
         "peers": 34,
         "noise": 0.85
       },
@@ -6366,7 +6360,7 @@
         "sd60": 3.11
       },
       "rel": {
-        "mkt": 0.43,
+        "mkt": 1.05,
         "mkt_name": "S&P/ASX 200",
         "sec": 0.28,
         "peers": 4,
@@ -6437,7 +6431,7 @@
         "sd60": 4.67
       },
       "rel": {
-        "mkt": 4.3,
+        "mkt": 4.92,
         "mkt_name": "S&P/ASX 200",
         "sec": 7.92,
         "peers": 4,
@@ -6617,16 +6611,16 @@
     "AMG.AS": {
       "name": "AMG Critical Materials",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 766,
+      "asof": "2026-09-04",
+      "bars": 767,
       "settled": true,
       "d": {
-        "px": 31.6,
-        "bars": 766,
-        "d21": -0.95,
-        "d50": 1.35,
-        "d150": -7.42,
-        "d200": -4.69,
+        "px": 31.54,
+        "bars": 767,
+        "d21": -1.03,
+        "d50": 1.23,
+        "d150": -7.51,
+        "d200": -4.96,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -6640,7 +6634,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 0,
+              "ago": 1,
               "whipsaw": false,
               "n_flips": 1
             }
@@ -6649,19 +6643,14 @@
             "state": "bull",
             "recent": {
               "dir": "bull",
-              "ago": 7,
+              "ago": 8,
               "whipsaw": true,
-              "n_flips": 3
+              "n_flips": 2
             }
           },
           "ema21x50": {
             "state": "bull",
-            "recent": {
-              "dir": "bull",
-              "ago": 9,
-              "whipsaw": false,
-              "n_flips": 1
-            }
+            "recent": null
           },
           "pxX200": {
             "state": "bear",
@@ -6674,37 +6663,37 @@
         },
         "test150": {
           "state": "rejected",
-          "ago": 14,
-          "gap": 0.15,
+          "ago": 13,
+          "gap": 0.8,
           "probe": "high"
         },
         "test200": {
           "state": "rejected",
-          "ago": 6,
+          "ago": 7,
           "gap": 0.08,
           "probe": "high"
         }
       },
       "move": {
-        "d1": 0.0,
-        "atr_pct": 3.7,
-        "atr_x": 0.0,
+        "d1": -0.19,
+        "atr_pct": 3.54,
+        "atr_x": 0.05,
         "atr_rejected": null,
-        "sigma": 0.0,
-        "sd60": 2.77
+        "sigma": -0.07,
+        "sd60": 2.66
       },
       "rel": {
-        "mkt": -0.09,
+        "mkt": -0.99,
         "mkt_name": "AEX",
-        "sec": -0.38,
+        "sec": -0.55,
         "peers": 34,
-        "noise": 0.74
+        "noise": 0.71
       },
       "range": {
-        "off52h": -24.46,
-        "off52l": 28.65,
-        "offath": -37.88,
-        "rsi": 48.2,
+        "off52h": -24.61,
+        "off52l": 28.41,
+        "offath": -38.0,
+        "rsi": 47.8,
         "rsi_short": false,
         "ath_since": "2007-08-01",
         "ath_deep": true,
@@ -6715,16 +6704,16 @@
     "THS.L": {
       "name": "Tharisa",
       "v": "pg",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
         "px": 126.0,
-        "bars": 760,
-        "d21": 4.04,
-        "d50": 7.93,
-        "d150": 4.87,
-        "d200": 6.85,
+        "bars": 761,
+        "d21": 3.66,
+        "d50": 7.69,
+        "d150": 4.94,
+        "d200": 6.72,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -6757,29 +6746,29 @@
         },
         "test150": {
           "state": "held",
-          "ago": 7,
+          "ago": 8,
           "gap": 0.46,
           "probe": "low"
         },
         "test200": {
           "state": "held",
-          "ago": 8,
+          "ago": 9,
           "gap": 0.15,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 1.2,
-        "atr_pct": 3.46,
-        "atr_x": 0.35,
+        "d1": 0.0,
+        "atr_pct": 3.44,
+        "atr_x": 0.0,
         "atr_rejected": null,
-        "sigma": 0.71,
-        "sd60": 1.69
+        "sigma": 0.0,
+        "sd60": 1.68
       },
       "rel": {
-        "mkt": 0.51,
+        "mkt": 0.0,
         "mkt_name": "FTSE 100",
-        "sec": 2.5,
+        "sec": 1.46,
         "peers": 10,
         "noise": 0.69
       },
@@ -6802,12 +6791,12 @@
       "bars": 753,
       "settled": true,
       "d": {
-        "px": 20.52,
+        "px": 20.59,
         "bars": 753,
-        "d21": -5.04,
-        "d50": -9.52,
-        "d150": -5.31,
-        "d200": 0.09,
+        "d21": -4.75,
+        "d50": -9.21,
+        "d150": -4.99,
+        "d200": 0.43,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -6852,25 +6841,25 @@
         }
       },
       "move": {
-        "d1": -1.68,
-        "atr_pct": 3.23,
-        "atr_x": 0.52,
+        "d1": -1.34,
+        "atr_pct": 3.22,
+        "atr_x": 0.42,
         "atr_rejected": null,
-        "sigma": -1.12,
-        "sd60": 1.5
+        "sigma": -0.9,
+        "sd60": 1.49
       },
       "rel": {
-        "mkt": -0.81,
+        "mkt": -0.47,
         "mkt_name": "IPC Mexico",
-        "sec": -2.05,
+        "sec": -1.7,
         "peers": 34,
-        "noise": 0.65
+        "noise": 0.64
       },
       "range": {
-        "off52h": -16.55,
-        "off52l": 38.84,
-        "offath": -62.32,
-        "rsi": 33.7,
+        "off52h": -16.27,
+        "off52l": 39.31,
+        "offath": -62.19,
+        "rsi": 34.3,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -6933,7 +6922,7 @@
       "rel": {
         "mkt": 0.79,
         "mkt_name": "S&P 500",
-        "sec": 0.08,
+        "sec": 0.2,
         "peers": 34,
         "noise": 0.41
       },
@@ -7010,7 +6999,7 @@
       "rel": {
         "mkt": 0.44,
         "mkt_name": "S&P 500",
-        "sec": -0.72,
+        "sec": -0.79,
         "peers": 32,
         "noise": 0.07
       },
@@ -7072,7 +7061,7 @@
       },
       "move": {
         "d1": 6.42,
-        "atr_pct": 4.37,
+        "atr_pct": 4.38,
         "atr_x": 1.47,
         "atr_rejected": null,
         "sigma": 1.81,
@@ -7081,9 +7070,9 @@
       "rel": {
         "mkt": 6.8,
         "mkt_name": "S&P 500",
-        "sec": 5.74,
+        "sec": 5.61,
         "peers": 32,
-        "noise": 0.87
+        "noise": 0.88
       },
       "range": {
         "off52h": -34.9,
@@ -7269,16 +7258,16 @@
     "ENR.DE": {
       "name": "Siemens Energy",
       "v": "elec",
-      "asof": "2026-09-03",
-      "bars": 762,
+      "asof": "2026-09-04",
+      "bars": 763,
       "settled": true,
       "d": {
-        "px": 145.4,
-        "bars": 762,
-        "d21": -2.93,
-        "d50": -4.93,
-        "d150": -8.71,
-        "d200": -3.22,
+        "px": 146.52,
+        "bars": 763,
+        "d21": -1.99,
+        "d50": -4.1,
+        "d150": -7.98,
+        "d200": -2.61,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -7292,7 +7281,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 8,
+              "ago": 9,
               "whipsaw": false,
               "n_flips": 1
             }
@@ -7309,7 +7298,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 3,
+              "ago": 4,
               "whipsaw": false,
               "n_flips": 1
             }
@@ -7320,38 +7309,38 @@
           }
         },
         "test150": {
-          "state": "lost",
-          "ago": 14,
-          "gap": 0.36,
-          "probe": "low"
+          "state": "rejected",
+          "ago": 12,
+          "gap": 0.74,
+          "probe": "high"
         },
         "test200": {
           "state": "lost",
-          "ago": 5,
+          "ago": 6,
           "gap": 0.13,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 2.22,
-        "atr_pct": 4.01,
-        "atr_x": 0.55,
+        "d1": 0.77,
+        "atr_pct": 3.93,
+        "atr_x": 0.2,
         "atr_rejected": null,
-        "sigma": 0.74,
-        "sd60": 3.01
+        "sigma": 0.26,
+        "sd60": 2.96
       },
       "rel": {
-        "mkt": 1.59,
+        "mkt": 0.6,
         "mkt_name": "DAX",
-        "sec": 1.54,
+        "sec": -0.09,
         "peers": 32,
-        "noise": 0.8
+        "noise": 0.79
       },
       "range": {
-        "off52h": -22.5,
-        "off52l": 66.73,
-        "offath": -22.5,
-        "rsi": 42.6,
+        "off52h": -21.91,
+        "off52l": 64.41,
+        "offath": -21.91,
+        "rsi": 44.4,
         "rsi_short": false,
         "ath_since": "2020-10-01",
         "ath_deep": true,
@@ -7415,7 +7404,7 @@
         "test200": {
           "state": "held",
           "ago": 0,
-          "gap": 1.57,
+          "gap": 1.58,
           "probe": "low"
         }
       },
@@ -7430,7 +7419,7 @@
       "rel": {
         "mkt": 1.9,
         "mkt_name": "S&P 500",
-        "sec": 0.85,
+        "sec": 0.72,
         "peers": 32,
         "noise": 0.61
       },
@@ -7498,7 +7487,7 @@
       },
       "move": {
         "d1": 2.59,
-        "atr_pct": 4.63,
+        "atr_pct": 4.64,
         "atr_x": 0.56,
         "atr_rejected": null,
         "sigma": 0.77,
@@ -7507,7 +7496,7 @@
       "rel": {
         "mkt": 2.97,
         "mkt_name": "S&P 500",
-        "sec": 1.91,
+        "sec": 1.78,
         "peers": 32,
         "noise": 0.93
       },
@@ -7575,7 +7564,7 @@
       },
       "move": {
         "d1": 4.3,
-        "atr_pct": 5.97,
+        "atr_pct": 5.99,
         "atr_x": 0.72,
         "atr_rejected": null,
         "sigma": 0.99,
@@ -7584,9 +7573,9 @@
       "rel": {
         "mkt": 4.68,
         "mkt_name": "S&P 500",
-        "sec": 3.63,
+        "sec": 3.49,
         "peers": 32,
-        "noise": 1.19
+        "noise": 1.2
       },
       "range": {
         "off52h": -36.57,
@@ -7661,7 +7650,7 @@
       "rel": {
         "mkt": 2.49,
         "mkt_name": "S&P 500",
-        "sec": 1.44,
+        "sec": 1.31,
         "peers": 32,
         "noise": 1.18
       },
@@ -7889,8 +7878,8 @@
       },
       "move": {
         "d1": -2.1,
-        "atr_pct": 3.26,
-        "atr_x": 0.64,
+        "atr_pct": 3.34,
+        "atr_x": 0.63,
         "atr_rejected": null,
         "sigma": -0.76,
         "sd60": 2.76
@@ -7900,7 +7889,7 @@
         "mkt_name": "S&P 500",
         "sec": -2.27,
         "peers": 32,
-        "noise": 0.65
+        "noise": 0.67
       },
       "range": {
         "off52h": -14.31,
@@ -7915,7 +7904,7 @@
       }
     },
     "HP": {
-      "name": "H&P",
+      "name": "Helmerich & Payne",
       "v": "oil",
       "asof": "2026-09-04",
       "bars": 754,
@@ -8108,7 +8097,7 @@
       },
       "move": {
         "d1": -2.29,
-        "atr_pct": 4.58,
+        "atr_pct": 4.59,
         "atr_x": 0.5,
         "atr_rejected": null,
         "sigma": -0.72,
@@ -8213,7 +8202,7 @@
         "sd60": 2.44
       },
       "rel": {
-        "mkt": -0.9,
+        "mkt": -0.28,
         "mkt_name": "S&P/ASX 200",
         "sec": -0.6,
         "peers": 32,
@@ -8296,7 +8285,7 @@
         "sd60": 1.06
       },
       "rel": {
-        "mkt": -0.15,
+        "mkt": 0.47,
         "mkt_name": "S&P/ASX 200",
         "sec": 0.23,
         "peers": 32,
@@ -8317,16 +8306,16 @@
     "BVI.PA": {
       "name": "Bureau Veritas",
       "v": "oil",
-      "asof": "2026-09-03",
-      "bars": 766,
+      "asof": "2026-09-04",
+      "bars": 767,
       "settled": true,
       "d": {
-        "px": 27.25,
-        "bars": 766,
-        "d21": -0.94,
-        "d50": -0.79,
-        "d150": 2.43,
-        "d200": 2.94,
+        "px": 27.2,
+        "bars": 767,
+        "d21": -1.03,
+        "d50": -1.05,
+        "d150": 2.21,
+        "d200": 2.74,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -8340,7 +8329,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 5,
+              "ago": 6,
               "whipsaw": true,
               "n_flips": 2
             }
@@ -8349,14 +8338,19 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 3,
+              "ago": 4,
               "whipsaw": false,
               "n_flips": 1
             }
           },
           "ema21x50": {
-            "state": "bull",
-            "recent": null
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
           },
           "pxX200": {
             "state": "bull",
@@ -8369,37 +8363,37 @@
         },
         "test150": {
           "state": "held",
-          "ago": 1,
+          "ago": 2,
           "gap": 1.32,
           "probe": "low"
         },
         "test200": {
           "state": "held",
-          "ago": 1,
+          "ago": 2,
           "gap": 1.83,
           "probe": "low"
         }
       },
       "move": {
-        "d1": -0.07,
-        "atr_pct": 1.46,
-        "atr_x": 0.05,
+        "d1": -0.18,
+        "atr_pct": 1.43,
+        "atr_x": 0.13,
         "atr_rejected": null,
-        "sigma": -0.05,
-        "sd60": 1.44
+        "sigma": -0.13,
+        "sd60": 1.43
       },
       "rel": {
-        "mkt": -0.14,
+        "mkt": -0.09,
         "mkt_name": "CAC 40",
-        "sec": -0.24,
+        "sec": -0.35,
         "peers": 32,
         "noise": 0.29
       },
       "range": {
-        "off52h": -6.9,
-        "off52l": 10.97,
-        "offath": -6.98,
-        "rsi": 44.5,
+        "off52h": -7.07,
+        "off52l": 10.77,
+        "offath": -7.15,
+        "rsi": 43.5,
         "rsi_short": false,
         "ath_since": "2007-11-01",
         "ath_deep": true,
@@ -8410,16 +8404,16 @@
     "ITRK.L": {
       "name": "Intertek",
       "v": "oil",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
-        "px": 5845.0,
-        "bars": 760,
-        "d21": 0.08,
-        "d50": 0.27,
-        "d150": 15.41,
-        "d200": 18.13,
+        "px": 5860.0,
+        "bars": 761,
+        "d21": 0.31,
+        "d50": 0.51,
+        "d150": 15.49,
+        "d200": 18.3,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -8452,25 +8446,25 @@
         }
       },
       "move": {
-        "d1": 0.0,
+        "d1": 0.26,
         "atr_pct": 0.23,
-        "atr_x": 0.0,
+        "atr_x": 1.1,
         "atr_rejected": null,
-        "sigma": 0.0,
-        "sd60": 0.4
+        "sigma": 0.74,
+        "sd60": 0.35
       },
       "rel": {
-        "mkt": -0.7,
+        "mkt": 0.26,
         "mkt_name": "FTSE 100",
-        "sec": -0.17,
+        "sec": 0.17,
         "peers": 32,
         "noise": 0.05
       },
       "range": {
-        "off52h": -0.17,
-        "off52l": 63.21,
-        "offath": -7.58,
-        "rsi": 60.2,
+        "off52h": 0.0,
+        "off52l": 63.63,
+        "offath": -7.35,
+        "rsi": 68.2,
         "rsi_short": false,
         "ath_since": "2002-06-01",
         "ath_deep": true,
@@ -8672,7 +8666,7 @@
       },
       "move": {
         "d1": -0.3,
-        "atr_pct": 2.84,
+        "atr_pct": 2.85,
         "atr_x": 0.11,
         "atr_rejected": null,
         "sigma": -0.14,
@@ -8681,7 +8675,7 @@
       "rel": {
         "mkt": 0.08,
         "mkt_name": "S&P 500",
-        "sec": -1.09,
+        "sec": -1.16,
         "peers": 32,
         "noise": 0.57
       },
@@ -8700,16 +8694,16 @@
     "SPM.MI": {
       "name": "Saipem",
       "v": "elec",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
-        "px": 4.407,
-        "bars": 760,
-        "d21": -0.93,
-        "d50": 0.86,
-        "d150": 9.23,
-        "d200": 21.1,
+        "px": 4.352,
+        "bars": 761,
+        "d21": -1.98,
+        "d50": -0.48,
+        "d150": 7.63,
+        "d200": 19.24,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -8720,12 +8714,22 @@
         "warmup_short": false,
         "cross": {
           "ema5x21": {
-            "state": "bull",
-            "recent": null
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
           },
           "pxX50": {
-            "state": "bull",
-            "recent": null
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
           },
           "ema21x50": {
             "state": "bull",
@@ -8742,25 +8746,25 @@
         }
       },
       "move": {
-        "d1": -0.16,
-        "atr_pct": 2.88,
-        "atr_x": 0.06,
+        "d1": -1.25,
+        "atr_pct": 2.86,
+        "atr_x": 0.44,
         "atr_rejected": null,
-        "sigma": -0.06,
+        "sigma": -0.51,
         "sd60": 2.45
       },
       "rel": {
-        "mkt": -1.03,
+        "mkt": -0.97,
         "mkt_name": "FTSE MIB",
-        "sec": -0.95,
+        "sec": -2.11,
         "peers": 32,
-        "noise": 0.58
+        "noise": 0.57
       },
       "range": {
-        "off52h": -8.59,
-        "off52l": 107.82,
-        "offath": -95.71,
-        "rsi": 47.7,
+        "off52h": -9.73,
+        "off52l": 105.22,
+        "offath": -95.77,
+        "rsi": 43.9,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -8833,7 +8837,7 @@
       "rel": {
         "mkt": -1.95,
         "mkt_name": "S&P 500",
-        "sec": -3.12,
+        "sec": -3.19,
         "peers": 32,
         "noise": 0.79
       },
@@ -8904,7 +8908,7 @@
       "rel": {
         "mkt": 1.52,
         "mkt_name": "S&P 500",
-        "sec": 0.46,
+        "sec": 0.33,
         "peers": 32,
         "noise": 1.0
       },
@@ -8983,9 +8987,9 @@
         "sd60": 2.18
       },
       "rel": {
-        "mkt": -0.16,
+        "mkt": 0.46,
         "mkt_name": "S&P/ASX 200",
-        "sec": -0.48,
+        "sec": -0.55,
         "peers": 32,
         "noise": 0.56
       },
@@ -9061,7 +9065,7 @@
       "rel": {
         "mkt": 0.0,
         "mkt_name": "S&P 500",
-        "sec": -1.16,
+        "sec": -1.24,
         "peers": 32,
         "noise": 0.75
       },
@@ -9137,7 +9141,7 @@
       "rel": {
         "mkt": -0.67,
         "mkt_name": "S&P 500",
-        "sec": -1.84,
+        "sec": -1.91,
         "peers": 32,
         "noise": 0.49
       },
@@ -9156,16 +9160,16 @@
     "ABBN.SW": {
       "name": "ABB Power Products",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 751,
+      "asof": "2026-09-04",
+      "bars": 752,
       "settled": true,
       "d": {
-        "px": 77.22,
-        "bars": 751,
-        "d21": -3.15,
-        "d50": -5.2,
-        "d150": 0.8,
-        "d200": 7.36,
+        "px": 77.76,
+        "bars": 752,
+        "d21": -2.25,
+        "d50": -4.38,
+        "d150": 1.39,
+        "d200": 7.94,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -9199,30 +9203,30 @@
         "test150": {
           "state": "held",
           "ago": 0,
-          "gap": 0.33,
+          "gap": 0.19,
           "probe": "low"
         }
       },
       "move": {
-        "d1": -0.31,
-        "atr_pct": 2.27,
-        "atr_x": 0.14,
+        "d1": 0.7,
+        "atr_pct": 2.2,
+        "atr_x": 0.32,
         "atr_rejected": null,
-        "sigma": -0.18,
+        "sigma": 0.4,
         "sd60": 1.76
       },
       "rel": {
-        "mkt": -0.53,
+        "mkt": 0.69,
         "mkt_name": "SMI",
-        "sec": -0.69,
+        "sec": 0.48,
         "peers": 34,
-        "noise": 0.45
+        "noise": 0.44
       },
       "range": {
-        "off52h": -12.8,
-        "off52l": 48.53,
-        "offath": -12.8,
-        "rsi": 37.1,
+        "off52h": -12.2,
+        "off52l": 47.39,
+        "offath": -12.2,
+        "rsi": 40.0,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -9297,7 +9301,7 @@
       "rel": {
         "mkt": 0.5,
         "mkt_name": "S&P 500",
-        "sec": -0.25,
+        "sec": -0.23,
         "peers": 34,
         "noise": 0.57
       },
@@ -9380,7 +9384,7 @@
       "rel": {
         "mkt": 2.1,
         "mkt_name": "S&P 500",
-        "sec": 1.39,
+        "sec": 1.5,
         "peers": 34,
         "noise": 0.68
       },
@@ -9403,12 +9407,12 @@
       "bars": 754,
       "settled": true,
       "d": {
-        "px": 48.14,
+        "px": 48.13,
         "bars": 754,
-        "d21": 4.77,
-        "d50": 11.6,
-        "d150": 11.62,
-        "d200": 18.34,
+        "d21": 4.75,
+        "d50": 11.58,
+        "d150": 11.6,
+        "d200": 18.32,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -9447,24 +9451,24 @@
         }
       },
       "move": {
-        "d1": -0.45,
+        "d1": -0.48,
         "atr_pct": 2.23,
-        "atr_x": 0.2,
+        "atr_x": 0.21,
         "atr_rejected": null,
-        "sigma": -0.21,
+        "sigma": -0.22,
         "sd60": 2.12
       },
       "rel": {
-        "mkt": -0.08,
+        "mkt": -0.1,
         "mkt_name": "S&P 500",
         "sec": -0.83,
         "peers": 34,
         "noise": 0.45
       },
       "range": {
-        "off52h": -5.77,
-        "off52l": 54.34,
-        "offath": -5.77,
+        "off52h": -5.79,
+        "off52l": 54.31,
+        "offath": -5.79,
         "rsi": 64.8,
         "rsi_short": false,
         "ath_since": "2007-08-01",
@@ -9476,16 +9480,16 @@
     "SAND.ST": {
       "name": "Sandvik",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 752,
+      "asof": "2026-09-04",
+      "bars": 753,
       "settled": true,
       "d": {
-        "px": 380.2,
-        "bars": 752,
-        "d21": 1.13,
-        "d50": 1.98,
-        "d150": 1.85,
-        "d200": 7.25,
+        "px": 390.1,
+        "bars": 753,
+        "d21": 3.41,
+        "d50": 4.61,
+        "d150": 4.42,
+        "d200": 9.88,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -9497,27 +9501,22 @@
         "cross": {
           "ema5x21": {
             "state": "bull",
-            "recent": {
-              "dir": "bull",
-              "ago": 9,
-              "whipsaw": false,
-              "n_flips": 1
-            }
+            "recent": null
           },
           "pxX50": {
             "state": "bull",
             "recent": {
               "dir": "bull",
-              "ago": 0,
+              "ago": 1,
               "whipsaw": true,
-              "n_flips": 3
+              "n_flips": 2
             }
           },
           "ema21x50": {
             "state": "bull",
             "recent": {
               "dir": "bull",
-              "ago": 4,
+              "ago": 5,
               "whipsaw": false,
               "n_flips": 1
             }
@@ -9533,37 +9532,37 @@
         },
         "test150": {
           "state": "reclaimed",
-          "ago": 10,
+          "ago": 11,
           "gap": 0.09,
           "probe": "high"
         },
         "test200": {
           "state": "held",
-          "ago": 14,
-          "gap": 1.54,
+          "ago": 13,
+          "gap": 1.95,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 2.73,
-        "atr_pct": 2.54,
-        "atr_x": 1.07,
+        "d1": 2.6,
+        "atr_pct": 2.51,
+        "atr_x": 1.04,
         "atr_rejected": null,
-        "sigma": 1.19,
-        "sd60": 2.28
+        "sigma": 1.13,
+        "sd60": 2.3
       },
       "rel": {
-        "mkt": 1.73,
+        "mkt": 2.42,
         "mkt_name": "OMX Stockholm 30",
-        "sec": 2.39,
+        "sec": 2.38,
         "peers": 34,
-        "noise": 0.51
+        "noise": 0.5
       },
       "range": {
-        "off52h": -7.67,
-        "off52l": 64.35,
-        "offath": -7.67,
-        "rsi": 53.7,
+        "off52h": -5.27,
+        "off52l": 66.44,
+        "offath": -5.27,
+        "rsi": 59.2,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -9574,16 +9573,16 @@
     "METSO.HE": {
       "name": "Metso",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 752,
+      "asof": "2026-09-04",
+      "bars": 753,
       "settled": true,
       "d": {
-        "px": 17.53,
-        "bars": 752,
-        "d21": 1.88,
-        "d50": 7.92,
-        "d150": 10.67,
-        "d200": 12.52,
+        "px": 17.74,
+        "bars": 753,
+        "d21": 2.81,
+        "d50": 8.78,
+        "d150": 11.93,
+        "d200": 13.73,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -9616,31 +9615,31 @@
         },
         "test150": {
           "state": "held",
-          "ago": 11,
+          "ago": 12,
           "gap": 1.24,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 1.39,
-        "atr_pct": 2.87,
-        "atr_x": 0.48,
+        "d1": 1.2,
+        "atr_pct": 2.76,
+        "atr_x": 0.43,
         "atr_rejected": null,
-        "sigma": 0.56,
-        "sd60": 2.46
+        "sigma": 0.5,
+        "sd60": 2.4
       },
       "rel": {
-        "mkt": 1.46,
+        "mkt": 0.39,
         "mkt_name": "OMX Helsinki 25",
-        "sec": 1.05,
+        "sec": 0.98,
         "peers": 34,
-        "noise": 0.57
+        "noise": 0.55
       },
       "range": {
-        "off52h": -4.62,
-        "off52l": 65.07,
-        "offath": -4.62,
-        "rsi": 56.6,
+        "off52h": -3.48,
+        "off52l": 62.95,
+        "offath": -3.48,
+        "rsi": 58.9,
         "rsi_short": false,
         "ath_since": "2006-11-01",
         "ath_deep": true,
@@ -9651,16 +9650,16 @@
     "FLS.CO": {
       "name": "FLSmidth",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 749,
+      "asof": "2026-09-04",
+      "bars": 750,
       "settled": true,
       "d": {
-        "px": 566.0,
-        "bars": 749,
-        "d21": 2.42,
-        "d50": 11.95,
-        "d150": 10.61,
-        "d200": 14.39,
+        "px": 574.0,
+        "bars": 750,
+        "d21": 3.5,
+        "d50": 13.05,
+        "d150": 12.13,
+        "d200": 15.88,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -9688,47 +9687,42 @@
           },
           "sma50x200": {
             "state": "bull",
-            "recent": {
-              "dir": "bull",
-              "ago": 9,
-              "whipsaw": false,
-              "n_flips": 1
-            }
+            "recent": null
           }
         },
         "test150": {
-          "state": "reclaimed",
+          "state": "held",
           "ago": 14,
-          "gap": 0.08,
-          "probe": "high"
+          "gap": 0.22,
+          "probe": "low"
         },
         "test200": {
           "state": "held",
-          "ago": 14,
-          "gap": 0.34,
+          "ago": 13,
+          "gap": 1.58,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 0.35,
-        "atr_pct": 3.13,
-        "atr_x": 0.11,
+        "d1": 1.41,
+        "atr_pct": 3.0,
+        "atr_x": 0.47,
         "atr_rejected": null,
-        "sigma": 0.15,
-        "sd60": 2.31
+        "sigma": 0.61,
+        "sd60": 2.3
       },
       "rel": {
-        "mkt": 0.55,
+        "mkt": 1.61,
         "mkt_name": "OMX Copenhagen 25",
-        "sec": -0.0,
+        "sec": 1.19,
         "peers": 34,
-        "noise": 0.63
+        "noise": 0.6
       },
       "range": {
-        "off52h": -6.83,
-        "off52l": 46.49,
-        "offath": -6.83,
-        "rsi": 58.8,
+        "off52h": -5.51,
+        "off52l": 48.56,
+        "offath": -5.51,
+        "rsi": 61.2,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -9739,16 +9733,16 @@
     "WEIR.L": {
       "name": "Weir Group",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
-        "px": 2690.0,
-        "bars": 760,
-        "d21": -1.38,
-        "d50": 3.6,
-        "d150": -3.1,
-        "d200": -4.37,
+        "px": 2724.0,
+        "bars": 761,
+        "d21": -0.12,
+        "d50": 4.64,
+        "d150": -1.76,
+        "d200": -3.16,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -9774,7 +9768,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 2,
+              "ago": 3,
               "whipsaw": true,
               "n_flips": 2
             }
@@ -9786,37 +9780,37 @@
         },
         "test150": {
           "state": "lost",
-          "ago": 7,
+          "ago": 8,
           "gap": 0.71,
           "probe": "low"
         },
         "test200": {
           "state": "lost",
-          "ago": 7,
+          "ago": 8,
           "gap": 0.02,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 1.28,
-        "atr_pct": 2.97,
-        "atr_x": 0.43,
+        "d1": 1.26,
+        "atr_pct": 2.87,
+        "atr_x": 0.44,
         "atr_rejected": null,
         "sigma": 0.56,
         "sd60": 2.27
       },
       "rel": {
-        "mkt": 0.58,
+        "mkt": 1.27,
         "mkt_name": "FTSE 100",
-        "sec": 0.94,
+        "sec": 1.04,
         "peers": 34,
-        "noise": 0.59
+        "noise": 0.57
       },
       "range": {
-        "off52h": -24.13,
-        "off52l": 18.29,
-        "offath": -24.13,
-        "rsi": 48.6,
+        "off52h": -23.17,
+        "off52l": 19.79,
+        "offath": -23.17,
+        "rsi": 51.3,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -9891,7 +9885,7 @@
       "rel": {
         "mkt": 0.77,
         "mkt_name": "S&P 500",
-        "sec": 0.06,
+        "sec": 0.18,
         "peers": 34,
         "noise": 0.72
       },
@@ -9972,7 +9966,7 @@
       "rel": {
         "mkt": 2.11,
         "mkt_name": "S&P 500",
-        "sec": 1.4,
+        "sec": 1.52,
         "peers": 34,
         "noise": 0.52
       },
@@ -10055,7 +10049,7 @@
       "rel": {
         "mkt": 1.33,
         "mkt_name": "S&P 500",
-        "sec": 0.62,
+        "sec": 0.73,
         "peers": 34,
         "noise": 0.51
       },
@@ -10130,7 +10124,7 @@
       "move": {
         "d1": 1.29,
         "atr_pct": 2.46,
-        "atr_x": 0.53,
+        "atr_x": 0.52,
         "atr_rejected": null,
         "sigma": 0.64,
         "sd60": 2.03
@@ -10138,7 +10132,7 @@
       "rel": {
         "mkt": 1.67,
         "mkt_name": "S&P 500",
-        "sec": 0.96,
+        "sec": 1.07,
         "peers": 34,
         "noise": 0.49
       },
@@ -10209,7 +10203,7 @@
       "rel": {
         "mkt": 0.69,
         "mkt_name": "S&P 500",
-        "sec": -0.06,
+        "sec": 0.05,
         "peers": 34,
         "noise": 0.65
       },
@@ -10228,16 +10222,16 @@
     "YCA.L": {
       "name": "Yellow Cake plc",
       "v": "pg",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
-        "px": 578.0,
-        "bars": 760,
-        "d21": 1.0,
-        "d50": 4.92,
-        "d150": -0.75,
-        "d200": -0.9,
+        "px": 570.0,
+        "bars": 761,
+        "d21": -0.36,
+        "d50": 3.31,
+        "d150": -1.99,
+        "d200": -2.32,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -10263,7 +10257,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 2,
+              "ago": 3,
               "whipsaw": true,
               "n_flips": 2
             }
@@ -10275,37 +10269,37 @@
         },
         "test150": {
           "state": "lost",
-          "ago": 7,
+          "ago": 8,
           "gap": 0.15,
           "probe": "low"
         },
         "test200": {
           "state": "rejected",
-          "ago": 11,
+          "ago": 12,
           "gap": 0.2,
           "probe": "high"
         }
       },
       "move": {
-        "d1": 2.39,
-        "atr_pct": 2.88,
-        "atr_x": 0.83,
+        "d1": -1.38,
+        "atr_pct": 2.93,
+        "atr_x": 0.47,
         "atr_rejected": null,
-        "sigma": 1.36,
-        "sd60": 1.76
+        "sigma": -0.79,
+        "sd60": 1.75
       },
       "rel": {
-        "mkt": 1.69,
+        "mkt": -1.38,
         "mkt_name": "FTSE 100",
-        "sec": 3.68,
+        "sec": -0.09,
         "peers": 10,
-        "noise": 0.58
+        "noise": 0.59
       },
       "range": {
-        "off52h": -19.94,
-        "off52l": 15.48,
-        "offath": -22.36,
-        "rsi": 53.8,
+        "off52h": -21.05,
+        "off52l": 13.89,
+        "offath": -23.44,
+        "rsi": 50.4,
         "rsi_short": false,
         "ath_since": "2018-08-01",
         "ath_deep": true,
@@ -10380,7 +10374,7 @@
       "rel": {
         "mkt": 0.11,
         "mkt_name": "S&P 500",
-        "sec": 1.02,
+        "sec": 1.19,
         "peers": 10,
         "noise": 0.44
       },
@@ -10463,7 +10457,7 @@
       "rel": {
         "mkt": -1.65,
         "mkt_name": "S&P 500",
-        "sec": -0.98,
+        "sec": -0.8,
         "peers": 10,
         "noise": 0.45
       },
@@ -10482,16 +10476,16 @@
     "GLEN.L": {
       "name": "Glencore",
       "v": "pg",
-      "asof": "2026-09-03",
-      "bars": 757,
+      "asof": "2026-09-04",
+      "bars": 758,
       "settled": true,
       "d": {
-        "px": 605.8,
-        "bars": 757,
-        "d21": 4.49,
-        "d50": 11.09,
-        "d150": 11.0,
-        "d200": 18.39,
+        "px": 601.7,
+        "bars": 758,
+        "d21": 3.43,
+        "d50": 10.01,
+        "d150": 10.12,
+        "d200": 17.32,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -10524,31 +10518,31 @@
         },
         "test150": {
           "state": "held",
-          "ago": 13,
+          "ago": 14,
           "gap": 1.21,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 1.66,
-        "atr_pct": 2.78,
-        "atr_x": 0.6,
+        "d1": -0.68,
+        "atr_pct": 2.74,
+        "atr_x": 0.25,
         "atr_rejected": null,
-        "sigma": 0.84,
-        "sd60": 1.99
+        "sigma": -0.34,
+        "sd60": 1.98
       },
       "rel": {
-        "mkt": 0.96,
+        "mkt": -0.67,
         "mkt_name": "FTSE 100",
-        "sec": 2.95,
+        "sec": 0.78,
         "peers": 10,
-        "noise": 0.56
+        "noise": 0.55
       },
       "range": {
-        "off52h": -1.47,
-        "off52l": 112.31,
-        "offath": -1.47,
-        "rsi": 66.8,
+        "off52h": -2.13,
+        "off52l": 110.1,
+        "offath": -2.13,
+        "rsi": 64.0,
         "rsi_short": false,
         "ath_since": "2011-06-01",
         "ath_deep": true,
@@ -10559,16 +10553,16 @@
     "JMAT.L": {
       "name": "Johnson Matthey",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
-        "px": 2258.0,
-        "bars": 760,
-        "d21": -6.46,
-        "d50": -11.63,
-        "d150": -16.21,
-        "d200": -17.62,
+        "px": 2292.0,
+        "bars": 761,
+        "d21": -4.61,
+        "d50": -10.02,
+        "d150": -14.77,
+        "d200": -16.31,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -10601,25 +10595,25 @@
         }
       },
       "move": {
-        "d1": 0.71,
-        "atr_pct": 3.71,
-        "atr_x": 0.19,
+        "d1": 1.51,
+        "atr_pct": 3.54,
+        "atr_x": 0.43,
         "atr_rejected": null,
-        "sigma": 0.22,
+        "sigma": 0.46,
         "sd60": 3.3
       },
       "rel": {
-        "mkt": 0.02,
+        "mkt": 1.51,
         "mkt_name": "FTSE 100",
-        "sec": 0.38,
+        "sec": 1.29,
         "peers": 34,
-        "noise": 0.74
+        "noise": 0.71
       },
       "range": {
-        "off52h": -28.95,
-        "off52l": 1.44,
-        "offath": -54.76,
-        "rsi": 33.9,
+        "off52h": -27.88,
+        "off52l": 2.96,
+        "offath": -54.08,
+        "rsi": 37.5,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -10630,16 +10624,16 @@
     "UMI.BR": {
       "name": "Umicore",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 766,
+      "asof": "2026-09-04",
+      "bars": 767,
       "settled": true,
       "d": {
-        "px": 23.12,
-        "bars": 766,
-        "d21": 0.44,
-        "d50": 6.31,
-        "d150": 13.76,
-        "d200": 18.15,
+        "px": 22.92,
+        "bars": 767,
+        "d21": -0.39,
+        "d50": 5.18,
+        "d150": 12.65,
+        "d200": 16.88,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -10672,25 +10666,25 @@
         }
       },
       "move": {
-        "d1": 0.43,
-        "atr_pct": 3.37,
-        "atr_x": 0.13,
+        "d1": -0.87,
+        "atr_pct": 3.34,
+        "atr_x": 0.26,
         "atr_rejected": null,
-        "sigma": 0.17,
-        "sd60": 2.52
+        "sigma": -0.35,
+        "sd60": 2.48
       },
       "rel": {
-        "mkt": -0.48,
+        "mkt": -0.41,
         "mkt_name": "BEL 20",
-        "sec": 0.1,
+        "sec": -1.22,
         "peers": 34,
         "noise": 0.67
       },
       "range": {
-        "off52h": -12.75,
-        "off52l": 85.59,
-        "offath": -51.49,
-        "rsi": 52.7,
+        "off52h": -13.51,
+        "off52l": 83.99,
+        "offath": -51.91,
+        "rsi": 50.6,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -10701,16 +10695,16 @@
     "NDA.DE": {
       "name": "Aurubis AG",
       "v": "ii",
-      "asof": "2026-09-03",
-      "bars": 762,
+      "asof": "2026-09-04",
+      "bars": 763,
       "settled": true,
       "d": {
         "px": 174.0,
-        "bars": 762,
-        "d21": -0.8,
-        "d50": -1.05,
-        "d150": -2.77,
-        "d200": 4.69,
+        "bars": 763,
+        "d21": -0.72,
+        "d50": -0.93,
+        "d150": -2.8,
+        "d200": 4.47,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -10724,7 +10718,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 2,
+              "ago": 3,
               "whipsaw": true,
               "n_flips": 2
             }
@@ -10733,7 +10727,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 2,
+              "ago": 3,
               "whipsaw": true,
               "n_flips": 2
             }
@@ -10753,31 +10747,31 @@
         },
         "test150": {
           "state": "rejected",
-          "ago": 7,
+          "ago": 8,
           "gap": 0.24,
           "probe": "high"
         },
         "test200": {
           "state": "held",
-          "ago": 12,
+          "ago": 13,
           "gap": 1.67,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 0.46,
-        "atr_pct": 3.57,
-        "atr_x": 0.13,
+        "d1": 0.0,
+        "atr_pct": 3.48,
+        "atr_x": 0.0,
         "atr_rejected": null,
-        "sigma": 0.18,
-        "sd60": 2.55
+        "sigma": 0.0,
+        "sd60": 2.46
       },
       "rel": {
         "mkt": -0.17,
         "mkt_name": "DAX",
-        "sec": 0.13,
+        "sec": -0.36,
         "peers": 34,
-        "noise": 0.71
+        "noise": 0.7
       },
       "range": {
         "off52h": -20.62,
@@ -10851,7 +10845,7 @@
       "rel": {
         "mkt": -0.11,
         "mkt_name": "S&P 500",
-        "sec": -0.86,
+        "sec": -0.84,
         "peers": 34,
         "noise": 0.41
       },
@@ -10922,7 +10916,7 @@
       "rel": {
         "mkt": 2.23,
         "mkt_name": "S&P 500",
-        "sec": 1.52,
+        "sec": 1.63,
         "peers": 34,
         "noise": 1.02
       },
@@ -11003,7 +10997,7 @@
       "rel": {
         "mkt": -0.51,
         "mkt_name": "S&P 500",
-        "sec": -1.27,
+        "sec": -1.25,
         "peers": 34,
         "noise": 1.03
       },
@@ -11207,7 +11201,7 @@
       },
       "move": {
         "d1": 2.21,
-        "atr_pct": 3.28,
+        "atr_pct": 3.29,
         "atr_x": 0.67,
         "atr_rejected": null,
         "sigma": 0.8,
@@ -11550,10 +11544,10 @@
       "bars": 50,
       "settled": true,
       "d": {
-        "px": 23.1228,
+        "px": 23.12,
         "bars": 50,
         "d21": null,
-        "d50": -7.87,
+        "d50": -7.88,
         "d150": null,
         "d200": null,
         "have": {
@@ -11588,7 +11582,7 @@
         }
       },
       "move": {
-        "d1": -2.39,
+        "d1": -2.41,
         "atr_pct": null,
         "atr_x": null,
         "atr_rejected": "withheld — 50 bars is below the 70-bar warm-up a 14-period Wilder ATR needs before the seeding convention stops driving the answer",
@@ -11596,16 +11590,16 @@
         "sd60": 4.65
       },
       "rel": {
-        "mkt": -2.02,
+        "mkt": -2.03,
         "mkt_name": "S&P 500",
-        "sec": -2.56,
+        "sec": -2.57,
         "peers": 32,
         "noise": null
       },
       "range": {
-        "off52h": -20.92,
-        "off52l": 9.74,
-        "offath": -20.92,
+        "off52h": -20.93,
+        "off52l": 9.73,
+        "offath": -20.93,
         "rsi": null,
         "rsi_short": true,
         "ath_since": "2026-06-26",
@@ -11617,16 +11611,16 @@
     "SNI.OL": {
       "name": "Stolt-Nielsen",
       "v": "oil",
-      "asof": "2026-09-03",
-      "bars": 752,
+      "asof": "2026-09-04",
+      "bars": 753,
       "settled": true,
       "d": {
-        "px": 332.0,
-        "bars": 752,
-        "d21": 2.43,
-        "d50": 5.16,
-        "d150": 6.29,
-        "d200": 4.46,
+        "px": 338.0,
+        "bars": 753,
+        "d21": 3.87,
+        "d50": 6.79,
+        "d150": 8.12,
+        "d200": 6.35,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -11659,37 +11653,37 @@
         },
         "test150": {
           "state": "held",
-          "ago": 14,
-          "gap": 0.74,
+          "ago": 12,
+          "gap": 1.02,
           "probe": "low"
         },
         "test200": {
           "state": "held",
-          "ago": 13,
+          "ago": 14,
           "gap": 0.01,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 1.07,
-        "atr_pct": 2.5,
-        "atr_x": 0.43,
+        "d1": 1.81,
+        "atr_pct": 2.68,
+        "atr_x": 0.67,
         "atr_rejected": null,
-        "sigma": 0.54,
-        "sd60": 1.97
+        "sigma": 0.91,
+        "sd60": 1.98
       },
       "rel": {
-        "mkt": 0.01,
+        "mkt": 0.75,
         "mkt_name": "Oslo All Share",
-        "sec": 0.98,
+        "sec": 1.72,
         "peers": 32,
-        "noise": 0.5
+        "noise": 0.54
       },
       "range": {
-        "off52h": -6.29,
-        "off52l": 17.94,
-        "offath": -34.89,
-        "rsi": 60.8,
+        "off52h": -4.59,
+        "off52l": 20.07,
+        "offath": -33.71,
+        "rsi": 65.5,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -11700,16 +11694,16 @@
     "ODF.OL": {
       "name": "Odfjell",
       "v": "oil",
-      "asof": "2026-09-03",
-      "bars": 752,
+      "asof": "2026-09-04",
+      "bars": 753,
       "settled": true,
       "d": {
-        "px": 119.0,
-        "bars": 752,
-        "d21": 6.35,
-        "d50": 9.95,
-        "d150": 6.83,
-        "d200": 4.98,
+        "px": 121.8,
+        "bars": 753,
+        "d21": 7.98,
+        "d50": 12.16,
+        "d150": 9.35,
+        "d200": 7.42,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -11735,9 +11729,9 @@
             "state": "bull",
             "recent": {
               "dir": "bull",
-              "ago": 3,
+              "ago": 4,
               "whipsaw": true,
-              "n_flips": 3
+              "n_flips": 2
             }
           },
           "sma50x200": {
@@ -11747,37 +11741,37 @@
         },
         "test150": {
           "state": "held",
-          "ago": 2,
+          "ago": 3,
           "gap": 0.28,
           "probe": "low"
         },
         "test200": {
           "state": "held",
-          "ago": 1,
+          "ago": 2,
           "gap": 1.12,
           "probe": "low"
         }
       },
       "move": {
-        "d1": 2.94,
-        "atr_pct": 3.15,
-        "atr_x": 0.93,
+        "d1": 2.35,
+        "atr_pct": 3.06,
+        "atr_x": 0.77,
         "atr_rejected": null,
-        "sigma": 1.4,
-        "sd60": 2.1
+        "sigma": 1.11,
+        "sd60": 2.11
       },
       "rel": {
-        "mkt": 1.89,
+        "mkt": 1.3,
         "mkt_name": "Oslo All Share",
-        "sec": 2.86,
+        "sec": 2.27,
         "peers": 32,
-        "noise": 0.63
+        "noise": 0.61
       },
       "range": {
-        "off52h": -8.1,
-        "off52l": 23.29,
-        "offath": -18.85,
-        "rsi": 66.5,
+        "off52h": -5.94,
+        "off52l": 26.19,
+        "offath": -16.94,
+        "rsi": 70.1,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -11788,16 +11782,16 @@
     "SBMO.AS": {
       "name": "SBM Offshore",
       "v": "oil",
-      "asof": "2026-09-03",
-      "bars": 766,
+      "asof": "2026-09-04",
+      "bars": 767,
       "settled": true,
       "d": {
-        "px": 35.48,
-        "bars": 766,
-        "d21": 3.23,
-        "d50": 8.5,
-        "d150": 8.26,
-        "d200": 14.8,
+        "px": 35.32,
+        "bars": 767,
+        "d21": 2.51,
+        "d50": 7.68,
+        "d150": 7.64,
+        "d200": 14.06,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -11830,25 +11824,25 @@
         }
       },
       "move": {
-        "d1": 1.49,
-        "atr_pct": 2.67,
-        "atr_x": 0.56,
+        "d1": -0.45,
+        "atr_pct": 2.59,
+        "atr_x": 0.17,
         "atr_rejected": null,
-        "sigma": 0.56,
+        "sigma": -0.17,
         "sd60": 2.65
       },
       "rel": {
-        "mkt": 1.4,
+        "mkt": -1.25,
         "mkt_name": "AEX",
-        "sec": 1.4,
+        "sec": -0.62,
         "peers": 32,
-        "noise": 0.53
+        "noise": 0.52
       },
       "range": {
-        "off52h": -1.73,
-        "off52l": 72.46,
-        "offath": -1.73,
-        "rsi": 58.6,
+        "off52h": -2.18,
+        "off52l": 71.68,
+        "offath": -2.18,
+        "rsi": 57.4,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -11908,7 +11902,7 @@
       },
       "move": {
         "d1": 0.83,
-        "atr_pct": 3.7,
+        "atr_pct": 3.71,
         "atr_x": 0.22,
         "atr_rejected": null,
         "sigma": 0.39,
@@ -11936,16 +11930,16 @@
     "SU.PA": {
       "name": "Schneider Electric",
       "v": "elec",
-      "asof": "2026-09-03",
-      "bars": 766,
+      "asof": "2026-09-04",
+      "bars": 767,
       "settled": true,
       "d": {
-        "px": 287.35,
-        "bars": 766,
-        "d21": -2.01,
-        "d50": 1.06,
-        "d150": 7.11,
-        "d200": 11.0,
+        "px": 288.0,
+        "bars": 767,
+        "d21": -1.62,
+        "d50": 1.21,
+        "d150": 7.24,
+        "d200": 11.11,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -11959,7 +11953,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 2,
+              "ago": 3,
               "whipsaw": false,
               "n_flips": 1
             }
@@ -11983,25 +11977,25 @@
         }
       },
       "move": {
-        "d1": 0.21,
-        "atr_pct": 2.39,
-        "atr_x": 0.09,
+        "d1": 0.23,
+        "atr_pct": 2.33,
+        "atr_x": 0.1,
         "atr_rejected": null,
         "sigma": 0.1,
         "sd60": 2.2
       },
       "rel": {
-        "mkt": 0.14,
+        "mkt": 0.32,
         "mkt_name": "CAC 40",
-        "sec": -0.58,
+        "sec": -0.64,
         "peers": 32,
-        "noise": 0.48
+        "noise": 0.47
       },
       "range": {
-        "off52h": -7.6,
-        "off52l": 31.28,
-        "offath": -7.6,
-        "rsi": 45.2,
+        "off52h": -7.4,
+        "off52l": 31.58,
+        "offath": -7.4,
+        "rsi": 45.9,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -12071,7 +12065,7 @@
       },
       "move": {
         "d1": 1.91,
-        "atr_pct": 2.54,
+        "atr_pct": 2.55,
         "atr_x": 0.75,
         "atr_rejected": null,
         "sigma": 1.01,
@@ -12080,7 +12074,7 @@
       "rel": {
         "mkt": 2.28,
         "mkt_name": "S&P 500",
-        "sec": 1.23,
+        "sec": 1.1,
         "peers": 32,
         "noise": 0.51
       },
@@ -12099,16 +12093,16 @@
     "NG.L": {
       "name": "National Grid",
       "v": "elec",
-      "asof": "2026-09-03",
-      "bars": 760,
+      "asof": "2026-09-04",
+      "bars": 761,
       "settled": true,
       "d": {
-        "px": 1146.0,
-        "bars": 760,
-        "d21": -2.79,
-        "d50": -5.18,
-        "d150": -9.0,
-        "d200": -7.11,
+        "px": 1151.0,
+        "bars": 761,
+        "d21": -2.16,
+        "d50": -4.6,
+        "d150": -8.56,
+        "d200": -6.7,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -12141,31 +12135,31 @@
         },
         "test200": {
           "state": "rejected",
-          "ago": 10,
+          "ago": 11,
           "gap": 1.47,
           "probe": "high"
         }
       },
       "move": {
-        "d1": -0.13,
-        "atr_pct": 1.99,
-        "atr_x": 0.07,
+        "d1": 0.44,
+        "atr_pct": 1.97,
+        "atr_x": 0.22,
         "atr_rejected": null,
-        "sigma": -0.1,
+        "sigma": 0.35,
         "sd60": 1.25
       },
       "rel": {
-        "mkt": -0.83,
+        "mkt": 0.44,
         "mkt_name": "FTSE 100",
-        "sec": -0.92,
+        "sec": -0.43,
         "peers": 32,
-        "noise": 0.4
+        "noise": 0.39
       },
       "range": {
-        "off52h": -18.12,
-        "off52l": 11.14,
-        "offath": -18.12,
-        "rsi": 36.8,
+        "off52h": -17.76,
+        "off52l": 11.63,
+        "offath": -17.76,
+        "rsi": 38.9,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -12176,16 +12170,16 @@
     "EOAN.DE": {
       "name": "E.ON",
       "v": "elec",
-      "asof": "2026-09-03",
-      "bars": 762,
+      "asof": "2026-09-04",
+      "bars": 763,
       "settled": true,
       "d": {
-        "px": 17.455,
-        "bars": 762,
-        "d21": -2.46,
-        "d50": -5.68,
-        "d150": -5.05,
-        "d200": -1.52,
+        "px": 17.5,
+        "bars": 763,
+        "d21": -2.01,
+        "d50": -5.39,
+        "d150": -4.81,
+        "d200": -1.34,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -12211,7 +12205,7 @@
             "state": "bear",
             "recent": {
               "dir": "bear",
-              "ago": 1,
+              "ago": 2,
               "whipsaw": true,
               "n_flips": 4
             }
@@ -12221,39 +12215,33 @@
             "recent": null
           }
         },
-        "test150": {
-          "state": "rejected",
-          "ago": 14,
-          "gap": 0.04,
-          "probe": "high"
-        },
         "test200": {
           "state": "lost",
-          "ago": 4,
+          "ago": 5,
           "gap": 0.0,
           "probe": "low"
         }
       },
       "move": {
-        "d1": -0.03,
-        "atr_pct": 2.13,
-        "atr_x": 0.01,
+        "d1": 0.26,
+        "atr_pct": 2.07,
+        "atr_x": 0.12,
         "atr_rejected": null,
-        "sigma": -0.02,
-        "sd60": 1.47
+        "sigma": 0.17,
+        "sd60": 1.48
       },
       "rel": {
-        "mkt": -0.66,
+        "mkt": 0.09,
         "mkt_name": "DAX",
-        "sec": -0.82,
+        "sec": -0.6,
         "peers": 32,
-        "noise": 0.43
+        "noise": 0.41
       },
       "range": {
-        "off52h": -11.41,
-        "off52l": 20.05,
-        "offath": -11.41,
-        "rsi": 38.4,
+        "off52h": -11.18,
+        "off52l": 20.36,
+        "offath": -11.18,
+        "rsi": 39.6,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -12325,7 +12313,7 @@
       "move": {
         "d1": -0.47,
         "atr_pct": 3.47,
-        "atr_x": 0.14,
+        "atr_x": 0.13,
         "atr_rejected": null,
         "sigma": -0.22,
         "sd60": 2.14
@@ -12333,7 +12321,7 @@
       "rel": {
         "mkt": -0.09,
         "mkt_name": "S&P 500",
-        "sec": -0.85,
+        "sec": -0.83,
         "peers": 34,
         "noise": 0.69
       },
@@ -12358,10 +12346,10 @@
       "d": {
         "px": 447.9,
         "bars": 754,
-        "d21": -1.75,
-        "d50": -4.38,
-        "d150": -2.52,
-        "d200": 1.02,
+        "d21": -1.54,
+        "d50": -4.16,
+        "d150": -2.29,
+        "d200": 1.26,
         "have": {
           "ema5": true,
           "ema21": true,
@@ -12404,32 +12392,32 @@
           "probe": "high"
         },
         "test200": {
-          "state": "reclaimed",
-          "ago": 2,
-          "gap": 0.1,
-          "probe": "high"
+          "state": "held",
+          "ago": 0,
+          "gap": 0.07,
+          "probe": "low"
         }
       },
       "move": {
-        "d1": 0.61,
-        "atr_pct": 2.42,
-        "atr_x": 0.25,
+        "d1": 0.85,
+        "atr_pct": 2.41,
+        "atr_x": 0.35,
         "atr_rejected": null,
-        "sigma": 0.33,
+        "sigma": 0.46,
         "sd60": 1.85
       },
       "rel": {
-        "mkt": 0.98,
+        "mkt": 1.22,
         "mkt_name": "S&P 500",
-        "sec": -0.18,
+        "sec": 0.02,
         "peers": 32,
         "noise": 0.48
       },
       "range": {
-        "off52h": -11.04,
-        "off52l": 19.54,
-        "offath": -11.04,
-        "rsi": 42.5,
+        "off52h": -10.83,
+        "off52l": 19.83,
+        "offath": -10.83,
+        "rsi": 43.3,
         "rsi_short": false,
         "ath_since": "2001-10-01",
         "ath_deep": true,
@@ -12499,8 +12487,8 @@
       },
       "move": {
         "d1": 1.61,
-        "atr_pct": 3.03,
-        "atr_x": 0.53,
+        "atr_pct": 3.07,
+        "atr_x": 0.52,
         "atr_rejected": null,
         "sigma": 0.66,
         "sd60": 2.42
@@ -12508,7 +12496,7 @@
       "rel": {
         "mkt": 1.98,
         "mkt_name": "S&P 500",
-        "sec": 1.27,
+        "sec": 1.39,
         "peers": 34,
         "noise": 0.61
       },
@@ -12580,7 +12568,7 @@
       },
       "move": {
         "d1": 0.86,
-        "atr_pct": 2.09,
+        "atr_pct": 2.1,
         "atr_x": 0.41,
         "atr_rejected": null,
         "sigma": 0.6,
@@ -12742,7 +12730,7 @@
       },
       "move": {
         "d1": 0.5,
-        "atr_pct": 2.01,
+        "atr_pct": 2.03,
         "atr_x": 0.25,
         "atr_rejected": null,
         "sigma": 0.36,
@@ -12753,7 +12741,7 @@
         "mkt_name": "S&P 500",
         "sec": 0.41,
         "peers": 32,
-        "noise": 0.4
+        "noise": 0.41
       },
       "range": {
         "off52h": -6.66,
@@ -12819,7 +12807,7 @@
       },
       "move": {
         "d1": -0.13,
-        "atr_pct": 2.87,
+        "atr_pct": 2.88,
         "atr_x": 0.04,
         "atr_rejected": null,
         "sigma": -0.06,
@@ -12830,7 +12818,7 @@
         "mkt_name": "S&P 500",
         "sec": 0.63,
         "peers": 6,
-        "noise": 0.57
+        "noise": 0.58
       },
       "range": {
         "off52h": -0.69,
@@ -12921,7 +12909,7 @@
       "rel": {
         "mkt": 7.73,
         "mkt_name": "S&P 500",
-        "sec": 6.68,
+        "sec": 6.54,
         "peers": 32,
         "noise": 1.52
       },
@@ -13063,7 +13051,7 @@
       "rel": {
         "mkt": -3.37,
         "mkt_name": "S&P 500",
-        "sec": -4.53,
+        "sec": -4.6,
         "peers": 32,
         "noise": null
       },
@@ -13145,7 +13133,7 @@
       "rel": {
         "mkt": 0.54,
         "mkt_name": "S&P 500",
-        "sec": -0.62,
+        "sec": -0.7,
         "peers": 32,
         "noise": 1.05
       },
@@ -13221,7 +13209,7 @@
       "rel": {
         "mkt": 1.56,
         "mkt_name": "S&P 500",
-        "sec": 0.51,
+        "sec": 0.37,
         "peers": 32,
         "noise": 1.45
       },
@@ -13304,7 +13292,7 @@
       "rel": {
         "mkt": 2.74,
         "mkt_name": "S&P 500",
-        "sec": 1.69,
+        "sec": 1.56,
         "peers": 32,
         "noise": 0.95
       },
@@ -13366,7 +13354,7 @@
       },
       "move": {
         "d1": 0.31,
-        "atr_pct": 2.82,
+        "atr_pct": 2.83,
         "atr_x": 0.11,
         "atr_rejected": null,
         "sigma": 0.14,
@@ -13377,7 +13365,7 @@
         "mkt_name": "S&P 500",
         "sec": 0.22,
         "peers": 32,
-        "noise": 0.56
+        "noise": 0.57
       },
       "range": {
         "off52h": 0.0,
@@ -13585,7 +13573,7 @@
       },
       "move": {
         "d1": -0.54,
-        "atr_pct": 2.37,
+        "atr_pct": 2.39,
         "atr_x": 0.23,
         "atr_rejected": null,
         "sigma": -0.34,
@@ -13596,7 +13584,7 @@
         "mkt_name": "S&P 500",
         "sec": 0.01,
         "peers": 6,
-        "noise": 0.47
+        "noise": 0.48
       },
       "range": {
         "off52h": -2.34,

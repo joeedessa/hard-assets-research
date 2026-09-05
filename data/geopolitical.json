@@ -28,7 +28,8 @@
       "High",
       "Very high"
     ],
-    "as_of": "2026-08-05"
+    "as_of": "2026-09-05",
+    "verification": "Numeric claims in heatmap detail verified 2026-09-05 against WNA and Kazatomprom 2025 results (uranium), S&P Global/IEA (copper smelting), Chile's National Lithium Strategy text and Codelco/SQM JV terms (lithium), Benchmark (LiOH/pCAM), Statista/Mining Technology (cobalt), USGS MCS 2026 and IPA rhodium factsheet (PGMs), Jones Day/Pillsbury (REE October 2025 package). Corrections are stated inline in the sentence they replace. Heatmap SCORES (0-5) are the owner's judgment and were not changed."
   },
   "heatmap": [
     {
@@ -62,7 +63,7 @@
         3,
         5
       ],
-      "det": "Russian enrichment (TENEX) supplied ~28% of US SWU. Kazatomprom controls ~40% of global uranium mining (geopolitically ambiguous — between Russian and Chinese influence spheres). Prohibiting Russian Uranium Imports Act (2024) forces Western supply chain rebuild. Centrus (LEU) is the sole US enrichment company with active capacity. Nuclear AI PPA demand adds tech race urgency beyond traditional energy security framing."
+      "det": "Russian enrichment (TENEX) supplied ~28% of US SWU. Kazakhstan produced ~40% of world uranium in 2025 (25,839 tU, WNA), all through Kazatomprom-operated JVs on a 100% basis — but Kazatomprom's ATTRIBUTABLE share is ~20% (its own 2025 results); the '40%' is a country figure, not a corporate one (geopolitically ambiguous — between Russian and Chinese influence spheres). Prohibiting Russian Uranium Imports Act (2024) forces Western supply chain rebuild. Centrus (LEU) is the sole US enrichment company with active capacity. Nuclear AI PPA demand adds tech race urgency beyond traditional energy security framing."
     },
     {
       "n": "Copper",
@@ -73,7 +74,7 @@
         2,
         5
       ],
-      "det": "Mining is relatively distributed across friendly nations (Chile, Peru, US, Australia, DRC) — no single adversarial actor controls geology. China dominates smelting (~40%) but this is a processing advantage, not a geological lock. The dominant structural constraint is the permitting asymmetry: democratic countries take 15-20yr for mine development vs. 3-5yr in authoritarian states. Tech race relevance is very high — copper is in every piece of grid infrastructure, EV, and data center."
+      "det": "Mining is relatively distributed across friendly nations (Chile, Peru, US, Australia, DRC) — no single adversarial actor controls geology. China dominates smelting (~50% of 2025 smelter output and 12 of the 20 largest smelters — S&P Global/IEA; this card previously said ~40%) but this is a processing advantage, not a geological lock. The dominant structural constraint is the permitting asymmetry: democratic countries take 15-20yr for mine development vs. 3-5yr in authoritarian states. Tech race relevance is very high — copper is in every piece of grid infrastructure, EV, and data center."
     },
     {
       "n": "Lithium",
@@ -84,7 +85,7 @@
         3,
         5
       ],
-      "det": "Chile nationalization risk is real (2023 decree requiring 20-30% state participation in new projects). Chinese processing dominance: ~70% LiOH conversion, ~85% pCAM. IRA domestic content = US policy response — but with 5-10yr lag before meaningful reshoring. Cobalt (~65% DRC, Glencore dominant) and Nickel (Indonesian Class 2 oversupply) have distinct concentration profiles within this vertical."
+      "det": "Chile nationalization risk is real: the 2023 National Lithium Strategy requires a STATE MAJORITY stake in salars deemed strategic (Atacama, Maricunga), executed through Codelco/ENAMI — the '20-30% state participation' this card previously cited does not exist in the strategy; the SQM–Codelco JV that resulted hands operating control to Codelco from 2031. Chinese processing dominance: ~72% of lithium hydroxide refining capacity and >80% of pCAM (Benchmark; China was 87% of cathode capacity in 2024). IRA domestic content = US policy response — but with 5-10yr lag before meaningful reshoring. Cobalt (~72% of 2025 mine output from the DRC — this card previously said ~65%; Glencore and CMOC dominant, CMOC now the largest producer) and Nickel (Indonesian Class 2 oversupply) have distinct concentration profiles within this vertical."
     },
     {
       "n": "REE",
@@ -95,7 +96,7 @@
         3,
         5
       ],
-      "det": "China escalated in April 2025 to full export licensing controls on seven heavy/medium REEs (Sm, Gd, Tb, Dy, Lu, Sc, Y) plus an extraterritorial '50% rule' — products made anywhere using Chinese-origin REEs now require export licenses. Export volumes fell sharply April-May 2025, forcing production cuts at magnet-dependent OEMs. Western response has substantially upgraded: DoD-funded Lynas Seadrift TX HREE separation facility (first Western HREE capacity); MP Materials DoD 'price protection payment' floor at $110/kg NdPr + Apple $500M deal + H2 2026 commercial magnet ramp; Project Vault + executive orders; IRA EV magnet domestic content rules. Still: two companies vs. a 30-year entrenched Chinese industrial complex. HREE (Dy, Tb) Western commercial separation: still essentially zero. Pentagon lists REE as the single highest-priority critical mineral gap. Moving from 'Low' to 'Moderate' as real capital is now flowing, but the structural deficit is decades in the making."
+      "det": "China escalated in April 2025 to full export licensing controls on seven heavy/medium REEs (Sm, Gd, Tb, Dy, Lu, Sc, Y) The separate October 2025 package added five more elements and China's first extraterritorial control — a 0.1% de-minimis rule on magnets made anywhere with Chinese-origin REE or Chinese processing technology — but that package is SUSPENDED until 2026-11-10 under the November 2025 truce; only the April licensing binds today. (This card previously described an in-force '50% rule'; the threshold was wrong and so was the status.) Export volumes fell sharply April-May 2025, forcing production cuts at magnet-dependent OEMs. Western response has upgraded, with one major reversal: the DoD-funded Lynas Seadrift TX HREE separation plant — which this card previously counted as 'first Western HREE capacity' — is NOT being built as planned; Lynas flagged 'significant uncertainty' in 2025-08 and on 2026-03-16 the US redirected US$96M of its construction funding to buying Lynas product from Malaysia instead. What stands: MP Materials DoD 'price protection payment' floor at $110/kg NdPr + Apple $500M deal + H2 2026 commercial magnet ramp; Project Vault + executive orders; IRA EV magnet domestic content rules. Still: two companies vs. a 30-year entrenched Chinese industrial complex. HREE (Dy, Tb) Western commercial separation: still essentially zero. Pentagon lists REE as the single highest-priority critical mineral gap. Moving from 'Low' to 'Moderate' as real capital is now flowing, but the structural deficit is decades in the making."
     },
     {
       "n": "Tech Metals",
@@ -106,7 +107,7 @@
         2,
         5
       ],
-      "det": "China's Ga/Ge controls (Aug 2023) and Sb controls (Sept 2024) have created permanent market dislocations — antimony repriced from ~$12,000/tonne to ~$57,800/tonne peak (380% spike); tin and germanium structurally tighter. Western policy response upgraded from zero to nascent: DoD DPA Title III awards flowing; US EXIM approved $2.7B loan for Perpetua Resources (Stibnite — only significant Western Sb source); Project Vault ($12B public-private critical minerals reserve) includes tech metals; DoD >$80M in Stibnite project funding. However: no meaningful Western Ga/Ge primary production exists; GaN semiconductor supply chain remains structurally dependent on Chinese-processed gallium; the gap between strategic urgency and deployed capital is still the largest in the universe."
+      "det": "China's Ga/Ge controls (Aug 2023) and Sb controls (Sept 2024) have created permanent market dislocations — antimony repriced from ~$12,000/tonne to ~$57,800/tonne peak (380% spike); tin and germanium structurally tighter. Western policy response upgraded from zero to nascent: DoD DPA Title III awards flowing; US EXIM board approved a $2.9B, 13-year senior secured loan for Perpetua's Stibnite on 2026-05-21 ($2.4B upfront facility plus capitalised construction interest and EXIM's exposure fee; this card previously said $2.7B); Perpetua guides to a final investment decision in H2 2026 — Stibnite remains the only significant Western Sb source; Project Vault — the US Strategic Critical Minerals Reserve announced 2026-02, up to $12B (up to $10B EXIM financing plus ~$2B private), demand-driven rather than a forecast stockpile, covering all 60 minerals on the USGS 2025 list with initial emphasis on rare earths — includes tech metals; DoD >$80M in Stibnite project funding. However: no meaningful Western Ga/Ge primary production exists; GaN semiconductor supply chain remains structurally dependent on Chinese-processed gallium; the gap between strategic urgency and deployed capital is still the largest in the universe."
     },
     {
       "n": "PGMs & Silver",
@@ -117,7 +118,7 @@
         2,
         3
       ],
-      "det": "South Africa (75% Pt, ~40% Rh) has structural political/labor/Eskom fragility — not adversarially weaponized but systemically fragile. Russia (40% Pd via Norilsk) largely unavailable to Western investors post-2022 sanctions. Silver has no adversarial concentration. Platinum hydrogen economy demand is long-dated (2028-2035). Gold is the monetary/geopolitical hedge by design — central bank buying at record levels since 2022 as de-dollarization accelerates."
+      "det": "South Africa (>70% of mined platinum and ~80% of mined rhodium — USGS MCS 2026 / IPA; this card previously said ~40% Rh, which understated rhodium's concentration by half — rhodium is MORE concentrated in South Africa than platinum, not less) has structural political/labor/Eskom fragility — not adversarially weaponized but systemically fragile. Russia (40% Pd via Norilsk) largely unavailable to Western investors post-2022 sanctions. Silver has no adversarial concentration. Platinum hydrogen economy demand is long-dated (2028-2035). Gold is the monetary/geopolitical hedge by design — central bank buying at record levels since 2022 as de-dollarization accelerates."
     },
     {
       "n": "Water & Land",

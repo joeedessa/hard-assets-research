@@ -7,7 +7,8 @@
       "moderate"
     ],
     "note": "Cat 6 (Shipping & Marine) added per master brief — not in original Widget 2 build.",
-    "as_of": "2026-08-04"
+    "as_of": "2026-09-05",
+    "verification": "Numeric claims verified 2026-09-05: Quanta, Halliburton and Energy Recovery market-share percentages withdrawn as unsourced ('largest'/'dominant' retained); Franco-Nevada market cap updated from '$30B+' to ~$51B from quotes.json; recycled copper restated at ~32% of demand per ICA and the 'almost entirely Western' claim withdrawn; PGM autocatalyst recycling restated at ~20–25% per WPIC. Margin figures (TGS ~80% gross) and H&P ~20% US rig share were NOT independently verified this pass."
   },
   "categories": [
     {
@@ -64,7 +65,7 @@
         {
           "n": "Oilfield services — integrated",
           "r": "MWD/LWD, directional drilling, completion fluids, fracking. Serve all E&P basins.",
-          "t": "SLB (largest by revenue, international-heavy, digital focus); HAL (US fracking, ~40% market share); BKR (rotating equipment, LNG technology crossover)",
+          "t": "SLB (largest by revenue, international-heavy, digital focus); HAL (largest US pressure pumper; no reliable share figure — the '~40%' previously shown here was unsourced and is withdrawn); BKR (rotating equipment, LNG technology crossover)",
           "srv": [
             "Oil",
             "NG"
@@ -117,7 +118,7 @@
         {
           "n": "Grid & power EPC",
           "r": "Building transmission lines, substations, solar/wind farms, and data center power infrastructure. THE AI/grid picks-and-shovels.",
-          "t": "Quanta Services (PWR — ~40% US power grid construction market share; multi-year order backlog; backlog growing faster than revenue; most direct single-stock AI/grid thesis); MYR Group (MYRG); Emcor (EME); MasTec (MTZ)",
+          "t": "Quanta Services (PWR — largest US grid contractor — no reliable market-share figure is published; the '~40%' previously shown here was unsourced and is withdrawn; multi-year order backlog; backlog growing faster than revenue; most direct single-stock AI/grid thesis); MYR Group (MYRG); Emcor (EME); MasTec (MTZ)",
           "srv": [
             "Electricity",
             "NG",
@@ -251,7 +252,7 @@
         {
           "n": "Water treatment technology",
           "r": "Membrane filtration, RO systems, UV disinfection, smart water metering.",
-          "t": "Xylem (XYL — dominant US water tech platform post-Evoqua; Sensus smart metering + process water); Energy Recovery (ERII — RO desalination PX devices, ~50% global market share, near-monopoly); Pentair (PNR)",
+          "t": "Xylem (XYL — dominant US water tech platform post-Evoqua; Sensus smart metering + process water); Energy Recovery (ERII — RO desalination PX devices, dominant supplier (20,000+ PX units shipped; no audited market-share figure is published — the '~50%' previously shown here was unsourced and is withdrawn)); Pentair (PNR)",
           "srv": [
             "Water"
           ],
@@ -270,7 +271,7 @@
         {
           "n": "Metal royalty & streaming — gold/silver/PGM",
           "r": "Provide upfront capital; receive % of production at fixed cost. No capex, no processing risk, diversified globally. BEST risk-adjusted structure in the universe.",
-          "t": "Franco-Nevada (FNV — $30B+, most diversified; 100+ streams; the gold standard of quality in resource investing); Wheaton PM (WPM — silver + gold + Pd; major streams at Antamina, Salobo, Constancia, Stillwater); Royal Gold (RGLD — gold-focused royalties + streams)",
+          "t": "Franco-Nevada (FNV — ~$51B market cap (2026-09; previously shown as $30B+), most diversified; 100+ streams; the gold standard of quality in resource investing); Wheaton PM (WPM — silver + gold + Pd; major streams at Antamina, Salobo, Constancia, Stillwater); Royal Gold (RGLD — gold-focused royalties + streams)",
           "srv": [
             "Cu",
             "PGM",
@@ -330,7 +331,7 @@
       "c": "#3B6D11",
       "title": "Recycling & secondary supply",
       "sub": "Creates domesticated Western supply independent of adversarial processing control",
-      "why": "Recycling is the most underappreciated layer from a geopolitical perspective. Battery recycling creates domesticated lithium, cobalt, and nickel supply not subject to Chinese processing control. REE magnet recycling creates rare earth supply outside Chinese separation. PGM autocatalyst recycling provides ~30-40% of platinum and palladium supply entirely within Western supply chains. Copper scrap is ~35% of global copper supply — almost entirely Western. The DoD funds battery and REE recycling explicitly for supply chain security reasons — not because of the near-term economics, but because domesticated supply is a strategic national security asset.",
+      "why": "Recycling is the most underappreciated layer from a geopolitical perspective. Battery recycling creates domesticated lithium, cobalt, and nickel supply not subject to Chinese processing control. REE magnet recycling creates rare earth supply outside Chinese separation. Recycling supplies roughly a quarter of platinum and palladium (WPIC: ~25% of Pt supply, about 80% of it from spent autocatalysts), largely within Western, Japanese and Chinese refining loops — this entry previously said 30–40% and 'entirely Western'. Recycled copper meets about 32% of global copper demand (ICA) — with Europe near 50% and China the largest importer of scrap, so it is not an exclusively Western resource; this entry previously said ~35% and 'almost entirely Western'. The DoD funds battery and REE recycling explicitly for supply chain security reasons — not because of the near-term economics, but because domesticated supply is a strategic national security asset.",
       "cards": [
         {
           "n": "Lithium-ion battery recycling",
@@ -345,7 +346,7 @@
         },
         {
           "n": "PGM autocatalyst recycling",
-          "r": "~30-40% of Pt/Pd supply from recycled autocatalysts. Large, established, growing industry.",
+          "r": "~20–25% of Pt/Pd supply from recycled autocatalysts (WPIC). Large, established, growing industry.",
           "t": "Johnson Matthey (JMAT.L — world leader in both primary PGM chemistry AND autocatalyst recycling globally; dual exposure); Umicore (UMI.BR — Hoboken Belgium, world's most advanced precious metals recycling + pCAM battery materials)",
           "srv": [
             "PGMs"
@@ -365,7 +366,7 @@
         },
         {
           "n": "Copper scrap processing",
-          "r": "~35% of global Cu supply from scrap. Almost entirely within Western supply chains — geopolitically favorable.",
+          "r": "~32% of global Cu demand met by recycled copper (ICA). Almost entirely within Western supply chains — geopolitically favorable.",
           "t": "Aurubis AG (NDA.DE — largest European copper smelter; Hamburg + Bulgaria; substantial secondary Cu scrap processing alongside primary concentrate smelting); Metallo (Belgium, private — e-waste Cu + precious metals)",
           "srv": [
             "Cu"

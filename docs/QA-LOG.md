@@ -23,7 +23,7 @@ checklist](#pre-flight-checklist). After finding a bug, add it to the matching
 class using the [template](#append-template) at the bottom. If it fits no existing
 class, open a new one — a new class is a genuine finding.
 
-Last updated: 2026-08-15. 43 entries across 8 failure classes.
+Last updated: 2026-09-05. 51 entries across 9 failure classes.
 
 ---
 
@@ -37,6 +37,7 @@ Three of the checks below are automated. Run them; do not re-do them by hand.
 | `python3 scripts/audit_schema.py` | data fields the renderer never reads (3.1, 3.2, 3.7) | no — needs a human to say which fields are intentionally internal |
 | `python3 scripts/audit_schema.py --symbols` | dead tickers still priced as live (1.8, 3.5) | no — needs network |
 | `python3 scripts/verify_trends.py [TICKERS]` | trend maths, recomputed from raw series by a different code path (Class 6) | no — needs network |
+| `python3 scripts/verify_breaking.py` | the Act Now signals — measured rules re-derived from quotes/indices, every headline signal's age and ticker attribution justified from the raw record (6.5, 7.3) | no network needed — **candidate for CI** |
 
 ---
 
@@ -54,6 +55,12 @@ Distilled from everything below. Ordered by how often it has actually caught som
 - [ ] A **percentage with a near-zero denominator** is arithmetic, not information.
       Withhold it and keep the absolute figure.
 - [ ] Distinguish **measured** from **inferred** in the text itself.
+- [ ] A hedge ("not confirmed", "spot-checked only") is a **to-do with a date**, not
+      a resting state. Two of these sat for weeks and both hid material changes.
+- [ ] After correcting any fact, **grep its old wording across every data file and
+      `index.html`**. The same sentence is repeated across tabs by design (Class 9).
+- [ ] Every share percentage names its **basis**: country vs company, attributable vs
+      operated, production vs reserves vs capacity.
 - [ ] Any sentence describing **the page's own behaviour** ("sorted by…", "ranked
       by…", "excludes…") is a testable assertion. Test it against the rendered DOM.
 
@@ -82,6 +89,8 @@ Distilled from everything below. Ordered by how often it has actually caught som
       that shares an assumption with the original proves nothing.
 - [ ] When a verifier and the page disagree, **establish which is wrong** before
       changing either.
+- [ ] For any `try/except` that continues, ask what the output looks like if it
+      fires on **every** record. If "normal", the guard fails open (6.5).
 
 ---
 
@@ -170,6 +179,38 @@ and nothing in the system notices. Everything here rendered perfectly.
   name what was dropped. Tickers corrected, not removed.
 - **Standing check** — Run the universe-wide staleness sweep on any pipeline change.
 
+### 1.9 Lynas Seadrift: a "delay" that was a pivot
+- **What broke** — The DoD program card said the Texas heavy-rare-earth plant was
+  "targeted operational in FY2026", later softened to "status not confirmed". Both
+  framings implied a schedule slip. The reality: Lynas told the market in 2025-08
+  there was *"significant uncertainty as to whether construction … will proceed, and
+  if so, in what form"*, and on **2026-03-16 the US Government redirected US$96M of
+  construction funding to buying Lynas product from Malaysia instead**. The US-soil
+  HREE separation capacity the card implied does not exist and has no date.
+- **Why it survived** — "Not confirmed" felt honest, so nobody went and confirmed.
+  A hedge is not a check. Also, Lynas's own "US Project Updates" page stops in
+  2023-12 — an official page that has gone quiet reads as "no news" when it means
+  "no longer maintained".
+- **Fix** — Rewritten with the sequence and its thesis consequence; the page-source
+  trap recorded in the entry's `verification` field.
+- **Standing check** — A hedge ("not confirmed", "status unclear") is a to-do with a
+  date on it, not a resting state. And check when an official status page was last
+  updated before treating its silence as information.
+
+### 1.10 CHIPS: "various stages of build" while one fab had run for two years
+- **What broke** — The card listed four fab programmes as "in various stages of
+  build". TSMC Arizona Fab 1 had been in N4 volume production since Q4 2024 and Intel
+  Fab 52 since 2025-10. It also named "Samsung Austin" — Samsung's *legacy* fab; the
+  CHIPS-funded one is **Taylor**.
+- **Why it survived** — It carried an honest "spot-checked only" disclosure, and the
+  disclosure did its job too well: it made the entry feel handled. See 1.9 — same
+  mechanism.
+- **Fix** — Per-fab status with a source and date on each. Wafer-per-month figures
+  **withheld** because sources conflict by more than 2× on TSMC Arizona and the
+  demand-pull thesis does not need them.
+- **Standing check** — A "spot-checked" flag has a shelf life. Put a re-check date on
+  it, or it becomes permanent.
+
 ---
 
 ## Class 2 — Figures that are arithmetically valid and meaningless
@@ -226,6 +267,24 @@ simply not about what the label says it is about.
   magnitude. A +0.03pp relative move was rendered as outperformance.
 - **Fix** — Below a fifth of the name's own typical daily move the figure reads
   "little changed" in grey. This affected **~50 of 167 rows** on each column.
+
+### 2.7 A market cap on a dead ticker that did not match its own last close
+- **What broke** — The `CEPL`/`CGEH` "discrepancy" was carried as an open risk for
+  three weeks. Resolving it from primary data took ten minutes: shares outstanding
+  were unchanged (32.2M → 32.6M), and CEPL opened at $9.75 against CGEH's last $9.85
+  — the gap was a ~50% price fall *after* listing. But the "~$381M" figure that made
+  it look structural was the data provider's market cap on the dead CGEH symbol, and
+  **it did not even equal price × shares for that symbol** (9.85 × 32.2M ≈ $317M). It
+  was from some earlier date than the last close.
+- **Why it survived** — I recorded the observation "deliberately unexplained" as if
+  that were rigour. It was deferral. Two numbers from the same provider on the same
+  symbol were assumed to be from the same moment.
+- **Fix** — Caveat rewritten with the reconciliation. Also noted: web searches for
+  this name return filings from **Capstone Holding Corp** (CIK 887151), a different
+  issuer — one result about a reverse-split authorisation nearly got imported.
+- **Standing check** — On a delisted symbol, every derived field (market cap, P/E,
+  float) is unreliable, not merely stale — cross-check against price × shares. And
+  confirm the CIK before importing anything from a search on a common company name.
 
 ---
 
@@ -449,6 +508,27 @@ My own reasoning failures. Each produced a confident, wrong statement.
 - **Implementation** — `settled = NOT (lastBar >= sessionStart AND now < sessionEnd)`.
   16 Asia-Pacific names correctly had a forming bar dropped on the first run.
 
+### 6.5 A `try/except: pass` that switched off the front door's recency gate
+- **What broke** — News dates were stored as `published[:10]`, which on an RFC-2822
+  string (`"Thu, 03 Sep 2026 …"`) yields **`"Thu, 03 Se"`**. That rendered verbatim in
+  the News tab and every drawer — it looked like a deliberately short date, so no
+  one questioned it. Downstream, the headline classifier's `date.fromisoformat()`
+  failed on every item inside a `try/except: pass`, which meant **the 3-day/8-day
+  recency window described in `breaking.json`'s own metadata never applied to a
+  single headline**. 0 of 48 stored dates were parseable when caught.
+- **Why it survived** — Two separate camouflages. The broken date *looked* like a
+  format choice. And the gate failed *open*: an exception path that continues
+  produces the same output as "no articles were too old", so the Act Now tab looked
+  plausible on every quiet day. Found only by reading the raw record behind one
+  signal, not by anything on screen.
+- **Fix** — Dates parsed from `published_parsed` (or RFC-2822) to ISO. An article
+  whose date cannot be parsed now has an *unknown* age and is **excluded and
+  counted** ("N excluded as undated" appears in the checks list) rather than passed.
+- **Standing check** — A guard that fails open is not a guard. When an exception
+  path leads to `continue`/`pass`, ask what the output looks like if it fires on
+  every record — if the answer is "normal", it will hide for months.
+  `verify_breaking.py` now re-derives every headline signal's age from `news.json`.
+
 ### 6.4 Instrument readings that were misleading
 - **What broke** — `getBoundingClientRect` reported all five mobile drawer icons
   offscreen; the screenshot showed them rendering correctly.
@@ -473,6 +553,32 @@ My own reasoning failures. Each produced a confident, wrong statement.
   dict** rather than by position — positional maps over the same case space have
   silently mismatched rows before.
 
+### 7.3 A ticker is not a word
+- **What broke** — The Act Now front door showed a **company-critical signal on
+  Cheniere** for *"Japan Bank for International Cooperation Launches Investigation
+  of Freeport LNG"* — Freeport LNG is a private company. The headline classifier
+  attributed tickers by matching every universe symbol as a bare whole word, so the
+  commodity word "LNG" hit Cheniere's ticker. Four LNG-market headlines were
+  attributed to Cheniere at the time; **80 tickers in this universe are ≤3 letters**
+  (AA, AR, BE, CAT, DE, HP, ICE, MP, NE, RIG, TT, VAL …) and all were exposed.
+- **Why it survived** — Whole-word matching feels precise. It is precise about
+  *strings*, not about *meaning*, and the app already knew this — `AMBIGUOUS_TK`
+  exists in the linkifier for exactly LNG and CF — but the pipeline never got the
+  rule. Same knowledge, two places, one applied.
+- **Fix** — Attribution now matches on the **company name** (full, or
+  suffix-stripped when ≥5 chars). Bare tickers count only at 4+ characters or with
+  an exchange suffix; short ones only in explicit forms — `(LNG)`, `$LNG`,
+  `NYSE: LNG`. Names ≤3 chars (SQM, ICE, CSX) attribute *only* from the explicit
+  form, by design: a false negative is the cheaper error on the front door.
+- **Two data defects surfaced by testing the rule**: Cheniere was stored as
+  `"Cheniere Energy (LNG)"` — the prose ticker convention leaking into the `name`
+  field — and H&P as its 3-letter nickname, which no prose rule can ever match.
+  Both normalised; `"Nokia (ex-Infinera)"` would have failed the same way and the
+  key derivation now strips any trailing parenthetical.
+- **Standing check** — `verify_breaking.py` prints, for every headline signal, the
+  exact substring that justifies each attributed ticker, using a deliberately
+  cruder rule than the pipeline's. Any attribution it cannot justify fails the run.
+
 ---
 
 ## Class 8 — Git and pipeline mechanics
@@ -495,19 +601,93 @@ My own reasoning failures. Each produced a confident, wrong statement.
 
 ---
 
+## Class 9 — One fact, many copies
+
+A correction is applied where the error was *found*, and the same sentence lives on
+in every other file that repeated it. Distinct from Class 1: the fact was already
+known to be wrong.
+
+### 9.1 The "50% rule" survived its own correction in four places
+- **What broke** — On 2026-08-11 the REE "extraterritorial 50% rule" claim was
+  corrected in `policy.json` (threshold 0.1%, and suspended). Three weeks later the
+  original wording was still live in **`geopolitical.json`, `annotations.json`,
+  `portfolio.json`, and hardcoded prose in `index.html`** — four copies, including one
+  that renders on the Geopolitical heat map with a weaponisation score of 5 justified
+  by it.
+- **Why it survived** — The audit was file-scoped. Nothing connected "this claim is
+  wrong" to "where else is this claim". The research prose repeats key facts across
+  tabs by design, so any single correction is a minority of copies.
+- **Fix** — All four rewritten inline with the correction stated. The Seadrift
+  "delay" (1.9) had the same shape: corrected in the DoD program entry, still cited as
+  "first Western HREE capacity" in the REE heat-map entry.
+- **Standing check** — **A correction is not done until the distinctive tokens of the
+  old claim have been grepped across every data file and `index.html`.** The sweep
+  script from this session (patterns for each corrected claim, excluding contexts
+  containing "previously/corrected/CORRECTION") should be re-run after any audit;
+  it found this in seconds.
+
+### 9.2 Figures that were wrong in the heat map, right next to a score built on them
+- **What broke** — `geopolitical.json` heat-map detail carried: South Africa "~40% Rh"
+  (it is **~80%** — rhodium is *more* concentrated in South Africa than platinum, and
+  the card implied the reverse); Chile "20–30% state participation" (the 2023 strategy
+  requires a **state majority** in strategic salars; no such percentage exists); China
+  copper smelting "~40%" (**~50%**); DRC cobalt "~65%" (**~72%**); "Kazatomprom
+  controls ~40% of global uranium" (true only for **Kazakhstan on a 100%-operated
+  basis** — Kazatomprom's attributable share is ~20%); EXIM Perpetua loan "$2.7B"
+  (**$2.9B**, approved 2026-05-21).
+- **Why it survived** — Numbers inside prose next to a 0–5 score read as the
+  *justification* for the score, and the score is what the eye lands on. Nobody
+  re-derives the justification of a number they agree with.
+- **Fix** — Each corrected inline with the basis and the previous value stated, so a
+  reader can see the change. Scores untouched — they are the owner's judgment.
+- **Standing check** — Every percentage that names a *share* must name its basis
+  (country vs company; attributable vs operated; production vs reserves vs capacity).
+  Half of these errors were basis confusion, not bad data.
+
+### 9.3 Thirty-three occurrences, four files deep, of numbers nobody could source
+- **What broke** — The first pass over `themes.json`, `electricity.json`,
+  `picks-shovels.json` and the entries they share with `matrix.json`, `explainers.json`
+  and `explorer.json`. Three market-share percentages had **no source at all** and
+  were withdrawn — Quanta "~40% of US grid construction" (7 copies), Halliburton
+  "~40% of US fracking" (2), Energy Recovery "~50%" (3); only "largest" is
+  supportable for each. Three had the **wrong basis**: Constellation "~10% of US
+  electricity" is ~10% of US *carbon-free* electricity (3 copies); the TMI PPA
+  "$110/MWh" is a *Jefferies estimate* of $110–115, the price is undisclosed (8
+  copies across 5 files); "380GW offshore wind by 2030 … locked in regardless of
+  policy" is a GOWA *target* — GWEC's own forecast was ~234GW (3 copies). Three were
+  simply off: VSMPO was ~60% of Airbus, not ~35%; recycled copper is ~32% not ~35%
+  and is not "almost entirely Western" (China is the largest scrap importer); PGM
+  autocatalyst recycling is ~20–25% of supply, not 30–40%. Franco-Nevada "$30B+" is
+  ~$51B — true, and 40% understated.
+- **Why it survived** — A round number with a tilde in front of it reads as a
+  considered estimate. Nobody asks where "~40%" came from because the tilde already
+  concedes imprecision; it does not concede *absence of a source*, which is what it
+  was hiding three times here. And the same sentence had been pasted into up to five
+  files, so any one reader saw it corroborated by the others.
+- **Fix** — Every occurrence rewritten in place with the basis and the previous
+  value visible ("previously shown here as …"). Unsourceable percentages withdrawn,
+  not softened.
+- **Standing check** — **"~N%" needs a source exactly as much as "N%".** And the
+  claim-repetition count from this session is the map: before editing any figure,
+  count its copies across `data/*.json` and `index.html` and fix them as one change.
+
+---
+
 ## Open and recurring risks
 
 Not yet fixed, or fixed in a way that needs watching.
 
 | Risk | Status |
 |---|---|
-| `CEPL` price/market cap ($6.75 / ~$220M) does not reconcile with `CGEH`'s last OTCQX print ($9.85 / ~$381M). Recorded as an observation, deliberately not explained. | Open |
-| Lynas Seadrift "targeted operational FY2026" — operational status not confirmed. | Open |
-| CHIPS Act regime is **spot-checked only**; individual fab ramp dates not independently verified. | Known gap, disclosed in the entry |
+| ~~`CEPL` price/market cap does not reconcile with `CGEH`'s last print~~ | **Closed 2026-09-05** — shares unchanged (32.2M→32.6M); it was a ~50% post-listing price fall. See 2.7. |
+| ~~Lynas Seadrift "targeted operational FY2026" — status not confirmed~~ | **Closed 2026-09-05** — not a delay, a pivot: construction funding redirected to offtake in 2026-03. See 1.9. |
+| ~~CHIPS Act regime spot-checked only~~ | **Closed 2026-09-05** — verified per fab. "Samsung Austin" was the wrong fab; one fab had been in volume production for ~2 years while the card said "various stages of build". See 1.10. |
 | `verify_trends.py` requires network, so it is a manual/dev tool and **not a CI gate**. Nothing automatically re-checks trend maths. | Structural |
 | Weekly/monthly frames are precomputed, so the whole file loads on first toggle. | Accepted trade-off |
 | `conviction` and `froth` are owner judgments; the `tracked` tier explicitly does **not** carry one. Do not let coverage read as conviction. | By design — keep visible |
 | Two ticker conventions (ours vs Yahoo) remain a live source of lookup bugs. | Structural |
+| `themes`, `electricity`, `picks-shovels`, `geopolitical` now carry corrections and sources **inline in prose** and a `_meta.verification` block, but no per-record `sources` array like `policy.json` — adding one needs renderer support in four builders first, or it lands in Class 3. | Open — next chunk |
+| Geopolitical heat-map detail renders only on click; corrections there are invisible until a row is expanded. | Known — by design, but worth a visual cue |
 
 ---
 

@@ -373,6 +373,31 @@ def fetch_news():
     articles = []
     seen_urls = set()
 
+    def iso_pub(entry):
+        """Publication date as YYYY-MM-DD, or '' if the feed gave none.
+
+        The previous code stored published[:10], which on an RFC-2822 string
+        ("Thu, 03 Sep 2026 …") yields "Thu, 03 Se". That rendered as-is in the
+        News tab and, worse, made every date.fromisoformat() call downstream
+        fail inside a try/except — which silently switched OFF the recency gate
+        on headline signals. 0 of 48 stored dates were parseable when caught.
+        """
+        for attr in ("published_parsed", "updated_parsed"):
+            tp = getattr(entry, attr, None)
+            if tp:
+                try:
+                    return date(tp.tm_year, tp.tm_mon, tp.tm_mday).isoformat()
+                except Exception:
+                    pass
+        raw = getattr(entry, "published", "") or getattr(entry, "updated", "") or ""
+        if raw:
+            try:
+                from email.utils import parsedate_to_datetime
+                return parsedate_to_datetime(raw).date().isoformat()
+            except Exception:
+                pass
+        return ""
+
     def add_article(title, url, source, pub_date, tickers):
         if url in seen_urls:
             return
@@ -397,7 +422,7 @@ def fetch_news():
                     break
                 title = getattr(entry, "title", "")
                 url   = getattr(entry, "link", "")
-                pub   = getattr(entry, "published", "")[:10] if hasattr(entry, "published") else ""
+                pub   = iso_pub(entry)
                 src   = getattr(entry, "source", {})
                 src_name = src.get("title", "Google News") if isinstance(src, dict) else "Google News"
                 if title and url:
@@ -417,7 +442,7 @@ def fetch_news():
                     break
                 title = getattr(entry, "title", "")
                 url   = getattr(entry, "link", "")
-                pub   = getattr(entry, "published", "")[:10] if hasattr(entry, "published") else ""
+                pub   = iso_pub(entry)
                 if title and url:
                     add_article(title, url, feed_name, pub, [])
                     count += 1
@@ -918,6 +943,82 @@ def fetch_reported_figures(events):
     return n
 
 
+# Corporate suffixes stripped from a company name to get the form a headline
+# actually uses ("Cheniere Energy" -> "Cheniere", "Perpetua Resources" -> "Perpetua").
+_NAME_SUFFIXES = ("inc", "inc.", "corp", "corp.", "corporation", "ltd", "ltd.", "limited",
+                  "plc", "s.a.", "sa", "ag", "n.v.", "nv", "asa", "co", "co.", "company",
+                  "holdings", "holding", "group", "energy", "resources", "materials",
+                  "industries", "mining", "metals", "minerals", "technologies", "technology",
+                  "partners", "lp", "l.p.", "rare earths", "international", "industrial")
+
+
+def _name_keys(name):
+    """The full name plus a suffix-stripped short form, when the short form is
+    long enough to be unambiguous in prose."""
+    # A trailing parenthetical — "(LNG)", "(ex-Infinera)" — is an annotation, not
+    # part of the name, and left in place it defeats matching entirely: "Nokia
+    # (ex-Infinera)" never equals "Nokia" in a headline.
+    name = re.sub(r"\s*\([^)]*\)\s*$", "", name.strip())
+    keys = {name}
+    short = name
+    changed = True
+    while changed:
+        changed = False
+        low = short.lower()
+        for suf in sorted(_NAME_SUFFIXES, key=len, reverse=True):
+            if low.endswith(" " + suf):
+                short = short[: -len(suf) - 1].rstrip(" ,&")   # "Deere & Co" -> "Deere"
+                changed = True
+                break
+    if len(short) >= 5 and short != name:
+        keys.add(short)
+    return keys
+
+
+def _headline_hits(title, comp_map):
+    """Which universe names does this headline actually concern?
+
+    A TICKER IS NOT A WORD. The previous rule matched every universe ticker as a
+    bare whole word in the headline, so "Freeport LNG" (a private company) was
+    attributed to Cheniere (ticker LNG), and "US LNG exports rose 23%" — a story
+    about the commodity — became a company-critical signal on the front door.
+    80 tickers in this universe are three letters or fewer and can collide with
+    ordinary prose (AA, AR, BE, CAT, DE, HP, ICE, MP, NE, RIG, TT, VAL …).
+
+    Rule: match on the COMPANY NAME (full, or suffix-stripped when the result is
+    at least 5 characters). A bare ticker counts only when it is 4+ characters or
+    carries an exchange suffix; a short bare ticker counts only in an explicitly
+    ticker-shaped form — (LNG), $LNG, NYSE: LNG, NASDAQ: LNG. This mirrors the
+    app's AMBIGUOUS_TK rule for links, generalised.
+    """
+    # KNOWN LIMIT, by design: names of 3 characters or fewer (SQM, ICE, CSX) are
+    # skipped as name keys and their bare tickers are short, so those companies
+    # attribute ONLY from an explicit ticker form. "ICE" in a headline is usually
+    # the exchange or immigration enforcement; a false negative is the cheaper
+    # error on the front door.
+    hits = []
+    for tk, c in comp_map.items():
+        matched = False
+        for key in _name_keys(c.get("name", "") or ""):
+            if len(key) < 4:
+                continue
+            flags = 0 if len(key) <= 5 else re.I          # short names: exact case
+            if re.search(r"(?<![A-Za-z])" + re.escape(key) + r"(?![A-Za-z])", title, flags):
+                matched = True
+                break
+        if not matched:
+            bare = tk.split(".")[0]
+            if len(bare) >= 4 or "." in tk:
+                if re.search(r"\b" + re.escape(tk) + r"\b", title):
+                    matched = True
+            else:
+                if re.search(r"(?:\(|\$|NYSE:\s*|NASDAQ:\s*|NYSE American:\s*)" + re.escape(bare) + r"\b", title):
+                    matched = True
+        if matched:
+            hits.append(tk)
+    return hits
+
+
 def compute_breaking(quotes, indices, news, companies):
     """Only events that would change an allocation decision today."""
     print("Scanning for breaking signals...")
@@ -1058,24 +1159,31 @@ def compute_breaking(quotes, indices, news, companies):
             "tk": [], "date": today})
 
     # 6. Headline classification — recency-gated, must touch a holding or be systemic
-    scanned = 0
+    scanned, undated, expired = 0, 0, 0
     for a in (news or []):
         title = (a.get("t") or "").lower()
         if not title:
             continue
         scanned += 1
+        # The recency gate. An article whose date cannot be parsed has an
+        # UNKNOWN age and therefore cannot pass a recency test — it is excluded
+        # and counted, not waved through. The previous code caught the parse
+        # error and continued, which disabled this gate for every headline.
+        pub = None
+        try:
+            pub = date.fromisoformat((a.get("d") or "")[:10])
+        except Exception:
+            undated += 1
+            continue
+        age = (date.today() - pub).days
         for cat, sev, kws in HEADLINE_CATS:
             if not any(k in title for k in kws):
                 continue
             window = 8 if cat in SLOW_BURN else 3
-            d = a.get("d") or ""
-            if d:
-                try:
-                    if (date.today() - date.fromisoformat(d[:10])).days > window:
-                        break
-                except Exception:
-                    pass
-            hit = [t for t in comp_map if re.search(r"\b" + re.escape(t) + r"\b", a.get("t") or "")]
+            if age > window:
+                expired += 1
+                break
+            hit = _headline_hits(a.get("t") or "", comp_map)
             systemic = cat in ("macro", "deleveraging")
             if not hit and not (systemic and sev == "critical"):
                 break
@@ -1088,7 +1196,8 @@ def compute_breaking(quotes, indices, news, companies):
                 "tk": hit, "src": {"u": a.get("u"), "s": a.get("s")}, "date": today})
             break
     checks.append(f"Headline scan across {len(HEADLINE_CATS)} severity categories "
-                  f"(3-day window, 8 for solvency/macro/catastrophe): {scanned} read")
+                  f"(3-day window, 8 for solvency/macro/catastrophe): {scanned} read, "
+                  f"{expired} outside their window, {undated} excluded as undated")
 
     order = {"critical": 0, "high": 1, "medium": 2}
     sigs.sort(key=lambda s: (order.get(s["sev"], 3), not s.get("measured", False)))

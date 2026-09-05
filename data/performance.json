@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-04T23:06:49+00:00",
+    "as_of": "2026-09-05T14:03:55+00:00",
     "note": "Equal-weight, price-only, local currency. No rebalancing, dividends or FX conversion.",
     "retrospective_warning": "The trailing table measures how TODAY'S universe performed in the past. It describes COMPOSITION, not forecasting skill, because the conviction and froth tags did not exist for most of that window and 21 of the 71 names were added on 2026-08-05. Only the since-inception tracks test the framework."
   },
@@ -98,15 +98,15 @@
   "retrospective": {
     "label": "Retrospective composition — NOT a track record",
     "mean": {
-      "1m": 1.4,
-      "3m": 1.6,
+      "1m": 1.5,
+      "3m": 2.0,
       "6m": 10.3,
-      "1y": 64.6
+      "1y": 64.5
     },
     "median": {
       "1m": 0.8,
-      "3m": 3.1,
-      "6m": 5.7,
+      "3m": 4.4,
+      "6m": 6.4,
       "1y": 37.6
     },
     "top_contributor": {
@@ -164,5 +164,5 @@
       }
     }
   },
-  "as_of": "2026-09-04"
+  "as_of": "2026-09-05"
 }

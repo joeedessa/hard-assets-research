@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-04T23:07:53+00:00",
+    "as_of": "2026-09-05T14:06:21+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
       "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 0/169 down 5%, sector -0.6%",
@@ -12,27 +12,9 @@
       "USD (DXY) ±1%+ in a session: +0.20%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
-      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read"
+      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 51 read, 0 outside their window, 0 excluded as undated"
     ]
   },
-  "state": "elevated",
-  "signals": [
-    {
-      "sev": "high",
-      "cat": "company-critical",
-      "measured": false,
-      "t": "Japan Bank for International Cooperation Launches Investigation of Freeport LNG Following Community Complaints - Oil Change International",
-      "ev": "Headline from Oil Change International, Thu, 03 Se. Parsed text — not independently verified.",
-      "stance": "THESIS AT RISK",
-      "action": "Top-conviction holdings are named (LNG). Confirm the story before changing anything. This is a parsed headline, not a datapoint — confirm before acting.",
-      "tk": [
-        "LNG"
-      ],
-      "src": {
-        "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5yYmpwcFFGQjMzazNoQm1pYTU2N0ZwcUwwSnJrMEI0T2h4YmFUSFFOdFRwSnJVbm94T1R3N1VJRUxQODVpWHo1WWFGN3g5bzNnYXphSWtHS1JTeFNnS25XbXpyUTBQdU1idWdB?oc=5",
-        "s": "Oil Change International"
-      },
-      "date": "2026-09-04"
-    }
-  ]
+  "state": "clear",
+  "signals": []
 }

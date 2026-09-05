@@ -24,6 +24,12 @@ jobs:
       - name: Widget copy is in sync with index.html
         run: python3 scripts/sync_widget.py --check
 
+      # The Act Now tab is the front door. This re-derives every signal from the
+      # committed inputs by an independent code path and requires each headline
+      # attribution to be justified by the headline text. No network needed.
+      - name: Breaking signals agree with their inputs
+        run: python3 scripts/verify_breaking.py
+
       - name: Syntax-check app JavaScript
         run: |
           # Each HTML copy is checked SEPARATELY. Concatenating them collides on

@@ -392,7 +392,7 @@
     },
     {
       "ticker": "LNG",
-      "name": "Cheniere Energy (LNG)",
+      "name": "Cheniere Energy",
       "vertical": "ng",
       "chain_layer": "LNG Liquefaction",
       "geo": "US",
@@ -1943,7 +1943,7 @@
     },
     {
       "ticker": "HP",
-      "name": "H&P",
+      "name": "Helmerich & Payne",
       "vertical": "oil",
       "chain_layer": "Contract drilling — onshore",
       "geo": "—",
@@ -3196,9 +3196,9 @@
         "gas-infrastructure",
         "grid-buildout"
       ],
-      "last_touched": "2026-08-12",
+      "last_touched": "2026-09-05",
       "last_reviewed": "2026-08-08",
-      "data_caveat": "TICKER MIGRATED 2026-07-08: previously held as CGEH on OTCQX, which ceased quotation when Nasdaq trading began. UNLIKE the Almonty migration, the price history did NOT carry across — CEPL starts at 2026-07-08 with 27 sessions, so no moving average longer than that exists and the name is excluded from the trend ladder until it has depth. NOTED, NOT EXPLAINED: CEPL trades at $6.75 with a ~$220M market cap against CGEH's last OTCQX print of $9.85 and ~$381M. The company describes a 'simplified capital structure' in the same announcement; we have not reconciled the two figures and do not assert why they differ.",
+      "data_caveat": "TICKER MIGRATED 2026-07-08: previously held as CGEH on OTCQX, which ceased quotation when Nasdaq trading began. Price history did NOT carry across, so CEPL's series starts 2026-07-08; it entered the trend ladder once it passed 30 sessions. THE PRICE GAP IS RECONCILED (2026-09-05): shares outstanding are essentially unchanged across the migration (32.2M as CGEH, 32.6M as CEPL — no reverse split, no restructuring), and CEPL opened at $9.75 on its first Nasdaq session, within 1% of CGEH's last OTCQX close of $9.85, then closed that day at $11.88 and has since declined to $5.66 (2026-09-04). The difference is a post-listing PRICE FALL of roughly 50% from the day-one close, not a capital-structure change. The '~$381M' market cap previously quoted for CGEH was the data provider's stale figure on a dead ticker and did not even match its own last close (9.85 × 32.2M ≈ $317M) — treat any market cap on a delisted symbol as unreliable, not merely old. Beware also that web searches for this name return filings from Capstone Holding Corp (CIK 887151), a different issuer.",
       "tier": "assessed"
     },
     {

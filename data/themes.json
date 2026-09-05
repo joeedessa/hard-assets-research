@@ -7,7 +7,8 @@
       "bc": "Business cycle risk 0-100 (higher = more cyclical)"
     },
     "company_tags_note": "Each theme lists the companies.json theme tags that belong to it, bridging the two vocabularies so the Demand Themes tab can show real holdings.",
-    "as_of": "2026-08-05"
+    "as_of": "2026-09-05",
+    "verification": "Numeric claims verified 2026-09-05: Quanta market-share percentage withdrawn as unsourced (IBISWorld supports 'largest' only); CEG–Microsoft TMI PPA restated as a 20-year term with an undisclosed price and a Jefferies estimate of $110–115/MWh; VSMPO share restated per Forbes/Aviation Week (~35–40% Boeing, ~60% Airbus, Boeing figures unreconciled across sources); Russia+Belarus ~40% of potash exports pre-2022 confirmed (IFPRI/OSW); IIJA $65B grid figure is the White House headline allocation. Corrections are stated inline in the sentence they replace."
   },
   "themes": [
     {
@@ -27,11 +28,11 @@
         {
           "lbl": "Nuclear AI PPAs",
           "ticks": "Constellation Energy (CEG — TMI restart template); Duke; Dominion; BWXT (SMR components)",
-          "why": "24/7 carbon-free + 15-20yr price certainty = what hyperscalers need. CEG-Microsoft TMI at $110/MWh for 20yr is the commercial template."
+          "why": "24/7 carbon-free + 15-20yr price certainty = what hyperscalers need. CEG-Microsoft TMI (20yr term; price undisclosed; Jefferies estimated $110–115/MWh) is the commercial template."
         },
         {
           "lbl": "Grid EPC & transformers",
-          "ticks": "Quanta (PWR, ~40% US market); Hitachi Energy (private), ABB, Eaton (ETN, transformers)",
+          "ticks": "Quanta (PWR, largest US grid contractor — no reliable market-share figure is published; the '~40%' previously shown here was unsourced and is withdrawn); Hitachi Energy (private), ABB, Eaton (ETN, transformers)",
           "why": "Every new DC campus needs substation connection. Transformer lead times 2-4yr. PWR backlog growing faster than revenue."
         },
         {
@@ -124,7 +125,7 @@
         {
           "lbl": "Titanium supply diversification",
           "ticks": "ATI Inc (ATI — largest US Ti/specialty metals; direct beneficiary of VSMPO-AVISMA diversification)",
-          "why": "VSMPO-AVISMA (Russia) was ~35% of Boeing/Airbus Ti supply. ATI is the primary US beneficiary of aerospace supply chain diversification post-2022."
+          "why": "VSMPO-AVISMA (Russia) was ~35–40% of Boeing's and ~60% of Airbus's Ti supply pre-2022 (previously stated as ~35% for both). ATI is the primary US beneficiary of aerospace supply chain diversification post-2022."
         }
       ],
       "thesis": "The 2022 Russia-Ukraine war compressed a decade of energy supply chain diversification into 18 months. US LNG is locked in as Europe's primary gas source for 20+ years. Western uranium enrichment is being rebuilt from scratch. REE processing is being onshored with DoD funding. Allied-nation supply for everything from potash to titanium commands a structural premium that will persist for decades.",
@@ -178,7 +179,7 @@
         {
           "lbl": "Grid EPC — installing the transition",
           "ticks": "Quanta Services (PWR), MYR Group MYRG, Emcor (EME)",
-          "why": "Someone has to build the transmission lines and substations. Quanta has ~40% US grid construction market share. Multi-year backlog."
+          "why": "Someone has to build the transmission lines and substations. Quanta is the largest US transmission and distribution contractor (IBISWorld); no reliable market-share percentage is published — the '~40%' previously stated here was unsourced and is withdrawn. Multi-year backlog."
         },
         {
           "lbl": "Silver — solar cell paste",

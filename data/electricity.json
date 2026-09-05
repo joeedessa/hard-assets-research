@@ -2,7 +2,8 @@
   "_meta": {
     "description": "Electricity & Grid — derived sector detail for Widget 2. Four sub-views: chain, intersections, AI themes, cycle.",
     "note": "Electricity is a derived sector — output of fuel verticals, input to all economic activity.",
-    "as_of": "2026-08-05"
+    "as_of": "2026-09-05",
+    "verification": "Numeric claims verified 2026-09-05: CEG restated as ~10% of US CARBON-FREE electricity (Constellation); TMI PPA price restated as undisclosed with a Jefferies estimate; LPT import share restated per DOE's July 2024 report to Congress (>80% of >60 MVA units, 2019 data); 380GW-by-2030 restated as the GOWA target versus GWEC's ~234GW 2024 forecast, and the 'locked in regardless of policy' framing withdrawn; Quanta share withdrawn as unsourced. CCGT ~60% efficiency and nuclear 90%+ capacity factor are consistent with EIA/NEI and were not changed."
   },
   "bottleneck": {
     "title": "Critical bottleneck: power transformers & grid components — 2-4 year lead times",
@@ -22,8 +23,8 @@
       "c": "#534AB7",
       "hi": true,
       "role": "24/7 carbon-free baseload. 90%+ capacity factor. Preferred for AI data center PPAs — price certainty over 15-20 years at above-market rates.",
-      "tick": "Constellation Energy (CEG — largest US nuclear fleet, ~10% of US electricity; Microsoft TMI restart PPA template); Duke, Dominion; SMRs: BWXT, GEH BWRX-300",
-      "det": "The CEG-Microsoft Three Mile Island restart deal (2024) established the commercial template: a 20-year PPA at ~$110/MWh for 24/7 carbon-free power. Hyperscalers are now competing for nuclear PPAs. CEG has a pipeline of similar deals. Nuclear provides 24/7 baseload + carbon-free credentials + long-term price certainty — exactly the combination data centers need and will pay above-market rates for. SMRs (GE-Hitachi BWRX-300, Ontario Power 4-unit order) will enable purpose-built nuclear for data centers by the early 2030s."
+      "tick": "Constellation Energy (CEG — largest US nuclear fleet, ~10% of US CARBON-FREE electricity (not of all US generation — this entry previously omitted the qualifier); Microsoft TMI restart PPA template); Duke, Dominion; SMRs: BWXT, GEH BWRX-300",
+      "det": "The CEG-Microsoft Three Mile Island restart deal (2024) established the commercial template: a 20-year PPA (price undisclosed; Jefferies estimated $110–115/MWh) for 24/7 carbon-free power. Hyperscalers are now competing for nuclear PPAs. CEG has a pipeline of similar deals. Nuclear provides 24/7 baseload + carbon-free credentials + long-term price certainty — exactly the combination data centers need and will pay above-market rates for. SMRs (GE-Hitachi BWRX-300, Ontario Power 4-unit order) will enable purpose-built nuclear for data centers by the early 2030s."
     },
     {
       "n": "Generation — offshore wind",
@@ -31,7 +32,7 @@
       "hi": false,
       "role": "Large-scale carbon-free generation. Direct-drive turbines use 600-1,000kg NdFeB REE magnets per MW — key cross-vertical demand driver.",
       "tick": "Siemens Gamesa (SGRE/ENR.DE — SG 14-222 direct-drive turbine, ~1,000kg NdFeB per unit); Vestas (VWS.CO); GE Vernova (GEV — Haliade-X); Ørsted (ORSTED.CO)",
-      "det": "Offshore wind is the largest single demand driver for rare earth NdFeB permanent magnets after EV motors. Each SG 14-222 direct-drive turbine uses approximately 1,000kg of rare earth magnets. Global offshore wind buildout targets of 380GW+ by 2030 represent a structural multi-year REE demand program that is locked in regardless of policy changes. The bottleneck is REE separation and magnet manufacturing capacity — not turbine manufacturing."
+      "det": "Offshore wind is the largest single demand driver for rare earth NdFeB permanent magnets after EV motors. Each SG 14-222 direct-drive turbine uses approximately 1,000kg of rare earth magnets. The 380GW-by-2030 figure is the Global Offshore Wind Alliance's 1.5°C-aligned TARGET (GOWA/GWEC), not a forecast — GWEC's own 2024 outlook projected roughly 234GW installed by 2030. Offshore wind is a large structural REE demand driver, but this is a target, not a locked-in schedule; this entry previously called it 'locked in regardless of policy changes', which was wrong. The bottleneck is REE separation and magnet manufacturing capacity — not turbine manufacturing."
     },
     {
       "n": "Transmission — HV transformers & lines",
@@ -39,7 +40,7 @@
       "hi": true,
       "role": "High-voltage interstate lines, HVDC corridors, large power transformers, substations. THE bottleneck layer — 2-4yr transformer lead times.",
       "tick": "Hitachi Energy (private — world's largest LPT manufacturer, unprecedented backlog); ABB (ABBN — second-largest LPT + HVDC); Siemens Energy (ENR.DE); GE Vernova (GEV — grid solutions)",
-      "det": "Large power transformers (LPTs, >100 MVA) are the single most acute capital equipment bottleneck in the energy transition. Lead times for very large units (500MVA+) now exceed 4 years. There are fewer than 20 factories globally that manufacture the highest-specification units. US domestic manufacturing capacity is critically limited — 85%+ of US LPT procurement is imported. The bottleneck is not only manufacturing capacity but also the specialized grain-oriented electrical steel (GOES) used in transformer cores, and the skilled labor for installation."
+      "det": "Large power transformers (LPTs, >100 MVA) are the single most acute capital equipment bottleneck in the energy transition. Lead times for very large units (500MVA+) now exceed 4 years. There are fewer than 20 factories globally that manufacture the highest-specification units. US domestic manufacturing capacity is critically limited — over 80% of new large power transformers (>60 MVA) are imported per DOE's July 2024 report to Congress (2019 data), with domestic supply meeting roughly 20% of demand. The bottleneck is not only manufacturing capacity but also the specialized grain-oriented electrical steel (GOES) used in transformer cores, and the skilled labor for installation."
     },
     {
       "n": "Transmission — HVDC & interconnection",
@@ -70,7 +71,7 @@
       "c": "#185FA5",
       "hi": true,
       "role": "Building transmission lines, substations, solar/wind farms, and data center power infrastructure. Most direct single-stock AI/grid buildout expression.",
-      "tick": "Quanta Services (PWR — ~40% US power grid construction market share; largest listed grid EPC company; multi-year backlog; backlog growing faster than revenue); MYR Group (MYRG — T&D + commercial electrical); Emcor Group (EME — industrial + mechanical + DC power); MasTec (MTZ)",
+      "tick": "Quanta Services (PWR — largest US grid contractor — no reliable market-share figure is published; the '~40%' previously shown here was unsourced and is withdrawn; largest listed grid EPC company; multi-year backlog; backlog growing faster than revenue); MYR Group (MYRG — T&D + commercial electrical); Emcor Group (EME — industrial + mechanical + DC power); MasTec (MTZ)",
       "det": "Quanta Services is the most direct single-stock expression of the AI/grid buildout thesis. Every new data center campus, every offshore wind interconnection, every grid hardening project requires physical construction. The Quanta moat: a union labor force and equipment fleet (cranes, trailers, specialized line trucks) built over decades that cannot be quickly replicated. New entrants cannot show up and win this market — the skilled linemen, the equipment, the project management expertise are barriers to entry that protect margin."
     },
     {
@@ -103,7 +104,7 @@
       "c": "#534AB7",
       "body": "Nuclear provides 24/7 carbon-free power with price certainty — the most attractive AI data center PPA structure. The full uranium supply chain (mining → enrichment → fuel fabrication → reactor) must scale to meet this demand. CEG is the most direct operator expression.",
       "tick": "CCO (uranium) → Centrus (LEU, enrichment) → Westinghouse (private, fuel fab) → CEG (generation) → Microsoft, Amazon PPAs",
-      "demand": "CEG-Microsoft TMI at $110/MWh for 20 years is the commercial template. CEG has a pipeline of similar deals. Nuclear capacity factor 90%+ = always-on, unlike renewables."
+      "demand": "CEG-Microsoft TMI (20-year term; price undisclosed; Jefferies estimated $110–115/MWh) is the commercial template. CEG has a pipeline of similar deals. Nuclear capacity factor 90%+ = always-on, unlike renewables."
     },
     {
       "n": "Copper → grid infrastructure",
@@ -122,9 +123,9 @@
     {
       "n": "REE → direct-drive wind turbines",
       "c": "#993556",
-      "body": "Direct-drive offshore wind turbines use 600-1,000kg NdFeB magnets per MW. Global offshore wind buildout (380GW+ by 2030) is one of the largest structural REE demand drivers alongside EV motors — and it is largely locked in by national targets.",
+      "body": "Direct-drive offshore wind turbines use 600-1,000kg NdFeB magnets per MW. Offshore wind is one of the largest structural REE demand drivers alongside EV motors; the 380GW-by-2030 figure is a GOWA target (GWEC's 2024 forecast: ~234GW), so it is ambition rather than schedule.",
       "tick": "MP Materials, Lynas (REE separation) → MP Fort Worth, Hitachi Metals (NdFeB magnets) → Siemens Gamesa, GEV (turbines) → offshore wind farms",
-      "demand": "380GW offshore wind by 2030 = up to 190,000 tonnes NdFeB magnets. Entire Western REE separation capacity today is insufficient to supply this without Chinese supply chain involvement."
+      "demand": "380GW of offshore wind by 2030 (the GOWA target; GWEC forecast ~234GW) would need up to ~190,000 t of NdFeB — 'up to' because that assumes every turbine is direct-drive permanent-magnet, which roughly half are not. Entire Western REE separation capacity today is insufficient to supply this without Chinese supply chain involvement."
     },
     {
       "n": "Water → power plant cooling",
@@ -142,7 +143,7 @@
     },
     {
       "n": "Generation: gas + nuclear are the answer",
-      "body": "Renewables are insufficient for always-on AI compute — intermittency is fatal for data centers requiring 99.9999% uptime. Hyperscalers are signing 20-year direct PPAs with gas generators and nuclear operators. The Microsoft-Constellation Three Mile Island deal (2024) is the archetype: 20yr PPA at ~$110/MWh for 24/7 nuclear power. Google, Amazon, and Microsoft have all signed similar deals.",
+      "body": "Renewables are insufficient for always-on AI compute — intermittency is fatal for data centers requiring 99.9999% uptime. Hyperscalers are signing 20-year direct PPAs with gas generators and nuclear operators. The Microsoft-Constellation Three Mile Island deal (2024) is the archetype: 20yr PPA (price undisclosed; Jefferies estimated $110–115/MWh) for 24/7 nuclear power. Google, Amazon, and Microsoft have all signed similar deals.",
       "tick": "CEG (nuclear PPAs); VST, NRG (gas generation PPAs); Duke, Dominion (utility-scale PPAs); Entergy (Louisiana data center power growth)"
     },
     {
@@ -153,7 +154,7 @@
     {
       "n": "EPC: Quanta is the linchpin",
       "body": "Someone has to build the transmission lines and substations connecting data centers to the grid. That someone is overwhelmingly Quanta Services (PWR). Quanta's combination of transmission EPC, substation construction, and distribution work means every major data center corridor buildout flows through their order book. PWR backlog has been growing faster than revenue — indicating demand pull that exceeds current capacity.",
-      "tick": "Quanta Services (PWR — ~40% US power grid construction); Emcor (EME — data center power + HVAC); MYR Group (MYRG)"
+      "tick": "Quanta Services (PWR — largest US grid contractor — no reliable market-share figure is published; the '~40%' previously shown here was unsourced and is withdrawn); Emcor (EME — data center power + HVAC); MYR Group (MYRG)"
     },
     {
       "n": "Cooling: liquid cooling is the new standard",
