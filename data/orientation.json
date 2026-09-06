@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "description": "Review layer for the Orientation tab, written 2026-09-05 at the owner's request: what the seven-forces framing leaves out, the watchouts the book has learned the hard way, and where the chokepoints physically sit. The legacy Orientation prose still lives in index.html (QA-LOG 9.4, open); new material goes here so the audits can see it.",
+    "as_of": "2026-09-05",
+    "review_findings": [
+      "Every one of the seven forces is a DEMAND story. The tab had no account of how shortages end — over-investment, duplicated capacity, Chinese export of overcapacity, switching, innovation, policy reversal. That is now the Gluts & Reversals tab, and the section below is its summary.",
+      "The claim 'energy transition demands 6–10× more copper, lithium, cobalt and rare earths per unit of capacity' was unsourced. The IEA figures it approximates are: a typical EV needs about six times the mineral inputs of a conventional car, and an onshore wind plant about nine times a gas-fired plant of the same capacity (IEA, The Role of Critical Minerals in Clean Energy Transitions, 2021). Restated with that basis.",
+      "Geography was implicit. The processing chokepoints the tab describes — forgings, sponge, cathode precursors, cables, marine engines, yards — sit disproportionately in Japan and Korea, and the book held four Japanese names and no Korean ones until 2026-09-05.",
+      "Shipbuilding was absent from the defense force, though it is where rearmament demand is most visibly colliding with a capacity limit. Added.",
+      "The learning path skipped the two tabs that now carry these views; both added.",
+      "The 'defining insight' box cites business-cycle-risk scores; those are consistent with cycle.json (nu 20, re 28, elec 22, cu 62) and were left as written."
+    ]
+  },
+  "energy_transition_intensity": {
+    "claim": "A typical electric car requires about six times the mineral inputs of a conventional car; an onshore wind plant about nine times the mineral resources of a gas-fired plant of equivalent capacity.",
+    "source": "IEA, The Role of Critical Minerals in Clean Energy Transitions (2021)",
+    "note": "The tab previously said '6–10× more copper, lithium, cobalt and rare earths per unit of capacity' with no source. The IEA figures are per vehicle and per plant, across all minerals — not per unit of capacity for each named metal."
+  },
+  "what_breaks_this": {
+    "intro": "A book of shortages needs a view of how each one ends. The Gluts & Reversals tab scores every vertical; the mechanisms are these.",
+    "items": [
+      {"t": "Over-investment from inflated prices", "b": "High prices bring supply 3–7 years later, all at once. Lithium just did this: −89% from the 2022 peak, ~175kt LCE surplus in 2023. The under-investment this book leans on is the aftermath of the last glut."},
+      {"t": "Deglobalisation duplicates capacity", "b": "If the US, EU, Japan and Australia each build their own separation plant, enrichment cascade and transformer factory, the world ends up with more than one market needed. Policy floors keep the uneconomic plants running. This is the mechanism specific to this cycle."},
+      {"t": "China exports its overcapacity", "b": "Steel (131Mt exported in 2025, 680Mt+ global excess), polysilicon (44% utilisation), battery cells (~4,800 GWh planned vs ~1,000 GWh demand). Tariffs redirect the flow; they cap the price reshored capacity can earn."},
+      {"t": "Switching and innovation", "b": "Sodium-ion at LFP cost parity projected late 2026; aluminium for copper at high price ratios; magnet-free motors; PGM thrifting. The switch is slow, then permanent."},
+      {"t": "Policy reversal", "b": "45X has already been amended once. A floor out of the money — the MP CFD since 2026-02 — costs nothing until it is needed, which is when it will be questioned."}
+    ],
+    "link_tab": "glut"
+  },
+  "watchouts": {
+    "intro": "Things this dashboard has got wrong, turned into rules. Each traces to an entry in docs/QA-LOG.md.",
+    "items": [
+      {"t": "Backlog is not cash", "b": "Fincantieri: record €74.2bn backlog, shares −40% in the same quarter. Yards and primes are valued on conversion, not orders."},
+      {"t": "An order book is not oversupply", "b": "Tankers: 22–30% of the fleet on order, yet effective supply grows under 3% a year once fleet age (14.3 years) and the 23% shadow share are netted out."},
+      {"t": "A floor is not revenue", "b": "MP's $110/kg NdPr floor is a contract-for-difference that pays nothing while prices sit above it — as they have since 2026-02."},
+      {"t": "Designation is not demand", "b": "Metallurgical coal is on the US critical-minerals list and fails every test this book applies. A list is a policy signal, not a shortage."},
+      {"t": "A hedge is a to-do with a date", "b": "'Not confirmed' and 'spot-checked only' sat for weeks on two entries that had materially changed (Lynas Seadrift pivoted; CHIPS fabs entered volume production)."},
+      {"t": "A share percentage needs its basis", "b": "Kazakhstan is ~40% of uranium on a country, 100%-operated basis; Kazatomprom's attributable share is ~20%. Both are true; only one answers the question asked."},
+      {"t": "A ticker is not a word", "b": "The commodity 'LNG' in a headline is not Cheniere. Name-based attribution, or an explicit ticker form, before a signal reaches the front door."},
+      {"t": "Correct a fact everywhere it lives", "b": "The same wrong sentence has been found live in five places after being fixed in one. Research prose is repeated across tabs by design."}
+    ]
+  },
+  "geography": {
+    "intro": "Where the mid-chain chokepoints physically sit.",
+    "items": [
+      {"t": "Japan", "b": "Reactor-vessel forgings (Japan Steel Works, ~80% of the largest), titanium sponge outside Russia/China, Class 1 nickel and cathode precursors (Sumitomo Metal Mining), the three cable makers, marine engines, and now a first warship export. Mostly held as 5–20% lines inside conglomerates — which is why it screens badly and is under-owned. See the Japan theme.", "link_theme": "japan"},
+      {"t": "Korea", "b": "The yard capacity the US Navy is now formally asking to borrow (RFIs for destroyers and fleet tankers, 2026-07), and the world's LNG-carrier builders. First Korean names entered the book 2026-09-05. See Shipping & Yards.", "link_tab": "mar"},
+      {"t": "China", "b": "91% of refined magnet rare earths, 94% of sintered magnets, ~50% of copper smelting, ~72% of lithium hydroxide capacity (IEA 2025; Benchmark). The processing layer, not the mine. See the Geopolitical actor map."}
+    ]
+  }
+}

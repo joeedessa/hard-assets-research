@@ -23,7 +23,7 @@ checklist](#pre-flight-checklist). After finding a bug, add it to the matching
 class using the [template](#append-template) at the bottom. If it fits no existing
 class, open a new one — a new class is a genuine finding.
 
-Last updated: 2026-09-05. 54 entries across 9 failure classes.
+Last updated: 2026-09-05. 57 entries across 9 failure classes.
 
 ---
 
@@ -79,7 +79,8 @@ Distilled from everything below. Ordered by how often it has actually caught som
 **Code and pipeline**
 - [ ] After editing either HTML copy, run `python3 scripts/sync_widget.py`.
 - [ ] Check JS brace balance after every scripted edit to `index.html`.
-- [ ] Confirm `TAB_IDS` order still matches the `.tab` span markup order.
+- [ ] Confirm `TAB_IDS` order still matches the `.tab` span markup order, and that
+      every pane shares one parent — "visible" means `clientWidth > 0` (5.8).
 - [ ] If the pipeline writes a new file, add it to what the nightly workflow commits.
 - [ ] After editing a ticker in `companies.json`, **run a full pass** — generated
       files keep the old symbol until they are rebuilt.
@@ -211,6 +212,24 @@ and nothing in the system notices. Everything here rendered perfectly.
   demand-pull thesis does not need them.
 - **Standing check** — A "spot-checked" flag has a shelf life. Put a re-check date on
   it, or it becomes permanent.
+
+### 1.11 "6–10× more copper, lithium, cobalt and rare earths per unit of capacity"
+- **What broke** — The opening paragraph of the Orientation tab — the first thing a
+  reader sees — carried this figure with no source. The IEA statistic it
+  approximates is per *vehicle* (an EV needs ~6× the mineral inputs of a conventional
+  car) and per *plant* (onshore wind ~9× a gas plant of equal capacity), across all
+  minerals — not per unit of capacity for each named metal (IEA, The Role of Critical
+  Minerals in Clean Energy Transitions, 2021).
+- **Why it survived** — It sits in prose hardcoded in `index.html` (9.4), so no data
+  audit ever saw it, and it is the kind of round range ("6–10×") that reads as a
+  considered summary. The Orientation review the owner asked for on 2026-09-05 was
+  the first time anyone re-read the tab as a set of claims.
+- **Fix** — Restated inline with the IEA basis and the previous wording visible. The
+  full review's findings are recorded in `data/orientation.json` and rendered as a
+  collapsible block on the tab.
+- **Standing check** — The Orientation tab is a set of claims like any other. It goes
+  through the same sourcing pass; its remaining hardcoded prose is on the open-risks
+  table until moved into data.
 
 ---
 
@@ -504,6 +523,24 @@ My own reasoning failures. Each produced a confident, wrong statement.
 - **Standing check** — Click all tabs programmatically and assert the matching pane is
   visible. Keep the Start Here learning path in the same order.
 
+### 5.8 A pane inserted inside another pane — and a check that said it was fine
+- **What broke** — The new Shipping & Yards tab rendered blank. Its pane had been
+  inserted by a regex "after the `v-el` pane line", but `v-el` does not close on its
+  own line (it holds static markup), so `v-mar` became `v-el`'s **first child**. With
+  its own tab active, its parent is hidden, so it has zero width. Every DOM count
+  passed: 8 rows, 4 cards, 9 defense rows — all present, none visible.
+- **Why it survived** — The tab-alignment check tested the pane's *own*
+  `display`, which was `block`. Visibility is a property of the ancestor chain. A
+  screenshot — the instrument dismissed as unreliable earlier the same day —
+  caught it in one frame.
+- **Fix** — Pane moved to sibling level (inserted before the next pane in
+  `TAB_IDS` order). Structural proof added: an HTML parse asserting every `v-*`
+  pane shares one parent and depth.
+- **Standing check** — "Rendered" means `clientWidth > 0` on the active pane, not
+  `display !== 'none'`. Run the pane-parent parse after touching the pane
+  markup. And when the DOM says yes and a screenshot says no, the screenshot is
+  the one describing what the reader sees.
+
 ---
 
 ## Class 6 — Verification that proves nothing
@@ -737,6 +774,21 @@ known to be wrong.
   its wording: "naval" alone would have found this in seconds. And a Class 9 sweep's
   exclusion filter must widen its context window enough to see the whole correction
   sentence, or it will cry wolf on the fixes and drown the one live copy.
+
+### 9.6 Two more copies inside the record I had just corrected
+- **What broke** — While adding new themes I re-read the Defense theme that 9.5 had
+  fixed hours earlier. Its `positions[]` still read *"CCO/LEU (nuclear propulsion)"*
+  and the REE item still cited *"Lynas (LYC.AX, DoD-funded TX facility)"* — the two
+  claims corrected in `policy.json` on 2026-08-11 and in this same file's `items[]`
+  on 2026-09-05. Same record, different fields.
+- **Why it survived** — 9.5's fix edited the field the sweep had flagged and stopped.
+  A record is not one field; the prose convention in this repo repeats a fact in
+  `lbl`, `ticks`, `why`, `positions` and `thesis` of the same theme.
+- **Fix** — Both rewritten. The premise sweep ("naval", "Seadrift", "TX facility")
+  is now what closes an item, not the field-level hit.
+- **Standing check** — After correcting a claim in a record, grep the *whole record*
+  for its premise before moving on. Class 9 operates within files, not only across
+  them.
 
 ---
 

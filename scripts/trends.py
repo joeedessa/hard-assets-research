@@ -103,6 +103,7 @@ MARKET_INDEX = {
     ".SS":  ("000001.SS",  "SSE Composite"),
     ".SH":  ("000001.SS",  "SSE Composite"),
     ".MX":  ("^MXX",       "IPC Mexico"),
+    ".KS":  ("^KS11",      "KOSPI"),
 }
 
 

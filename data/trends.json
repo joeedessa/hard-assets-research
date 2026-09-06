@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-05",
+    "as_of": "2026-09-06",
     "description": "Per-name moving-average ladder, level tests and move context.",
     "ladder": [
       {
@@ -40,9 +40,9 @@
     "unsettled_bar_dropped": []
   },
   "breadth": {
-    "n": 169,
-    "down": 70,
-    "down_pct": 41.4,
+    "n": 202,
+    "down": 88,
+    "down_pct": 43.6,
     "tape": false,
     "note": "Breadth is not one-sided, so a large single-name move is more likely to be about the name."
   },
@@ -435,8 +435,8 @@
       "rel": {
         "mkt": 2.39,
         "mkt_name": "S&P 500",
-        "sec": 1.75,
-        "peers": 7,
+        "sec": 1.78,
+        "peers": 8,
         "noise": 1.34
       },
       "range": {
@@ -518,8 +518,8 @@
       "rel": {
         "mkt": 0.38,
         "mkt_name": "S&P 500",
-        "sec": -0.29,
-        "peers": 7,
+        "sec": -0.28,
+        "peers": 8,
         "noise": 0.25
       },
       "range": {
@@ -589,8 +589,8 @@
       "rel": {
         "mkt": 0.19,
         "mkt_name": "S&P 500",
-        "sec": -0.48,
-        "peers": 7,
+        "sec": -0.47,
+        "peers": 8,
         "noise": 0.08
       },
       "range": {
@@ -677,8 +677,8 @@
       "rel": {
         "mkt": 5.26,
         "mkt_name": "S&P 500",
-        "sec": 4.62,
-        "peers": 7,
+        "sec": 4.65,
+        "peers": 8,
         "noise": 0.68
       },
       "range": {
@@ -770,8 +770,8 @@
       "rel": {
         "mkt": 0.94,
         "mkt_name": "S&P 500",
-        "sec": 0.3,
-        "peers": 7,
+        "sec": 0.33,
+        "peers": 8,
         "noise": 0.9
       },
       "range": {
@@ -853,8 +853,8 @@
       "rel": {
         "mkt": 1.08,
         "mkt_name": "S&P 500",
-        "sec": -0.16,
-        "peers": 32,
+        "sec": -0.17,
+        "peers": 37,
         "noise": 0.78
       },
       "range": {
@@ -946,8 +946,8 @@
       "rel": {
         "mkt": 3.83,
         "mkt_name": "S&P 500",
-        "sec": 2.65,
-        "peers": 32,
+        "sec": 2.61,
+        "peers": 37,
         "noise": 0.69
       },
       "range": {
@@ -1029,8 +1029,8 @@
       "rel": {
         "mkt": 0.39,
         "mkt_name": "S&P 500",
-        "sec": -0.85,
-        "peers": 32,
+        "sec": -0.86,
+        "peers": 37,
         "noise": 0.9
       },
       "range": {
@@ -1122,8 +1122,8 @@
       "rel": {
         "mkt": 2.11,
         "mkt_name": "S&P 500",
-        "sec": 0.92,
-        "peers": 32,
+        "sec": 0.89,
+        "peers": 37,
         "noise": 0.7
       },
       "range": {
@@ -1205,8 +1205,8 @@
       "rel": {
         "mkt": 1.25,
         "mkt_name": "S&P 500",
-        "sec": 0.07,
-        "peers": 32,
+        "sec": 0.03,
+        "peers": 37,
         "noise": 1.06
       },
       "range": {
@@ -1277,7 +1277,7 @@
         "mkt": -0.01,
         "mkt_name": "S&P 500",
         "sec": -0.71,
-        "peers": 4,
+        "peers": 6,
         "noise": 0.84
       },
       "range": {
@@ -1348,7 +1348,7 @@
         "mkt": 0.61,
         "mkt_name": "S&P 500",
         "sec": 0.22,
-        "peers": 4,
+        "peers": 6,
         "noise": 0.79
       },
       "range": {
@@ -1893,8 +1893,8 @@
       "rel": {
         "mkt": -4.07,
         "mkt_name": "S&P 500",
-        "sec": -2.69,
-        "peers": 4,
+        "sec": -3.04,
+        "peers": 5,
         "noise": 0.93
       },
       "range": {
@@ -1976,8 +1976,8 @@
       "rel": {
         "mkt": -3.82,
         "mkt_name": "S&P 500",
-        "sec": -2.44,
-        "peers": 4,
+        "sec": -2.79,
+        "peers": 5,
         "noise": 0.74
       },
       "range": {
@@ -2047,8 +2047,8 @@
       "rel": {
         "mkt": 1.85,
         "mkt_name": "S&P 500",
-        "sec": 0.66,
-        "peers": 32,
+        "sec": 0.62,
+        "peers": 37,
         "noise": 1.6
       },
       "range": {
@@ -2135,8 +2135,8 @@
       "rel": {
         "mkt": 0.54,
         "mkt_name": "S&P 500",
-        "sec": -2.27,
-        "peers": 14,
+        "sec": -2.2,
+        "peers": 15,
         "noise": 1.01
       },
       "range": {
@@ -2211,8 +2211,8 @@
       "rel": {
         "mkt": -0.55,
         "mkt_name": "S&P 500",
-        "sec": -3.35,
-        "peers": 14,
+        "sec": -3.29,
+        "peers": 15,
         "noise": 0.68
       },
       "range": {
@@ -2304,8 +2304,8 @@
       "rel": {
         "mkt": 10.06,
         "mkt_name": "S&P 500",
-        "sec": 7.78,
-        "peers": 14,
+        "sec": 8.25,
+        "peers": 15,
         "noise": 2.6
       },
       "range": {
@@ -2387,8 +2387,8 @@
       "rel": {
         "mkt": 6.0,
         "mkt_name": "S&P 500",
-        "sec": 3.73,
-        "peers": 14,
+        "sec": 4.2,
+        "peers": 15,
         "noise": 1.89
       },
       "range": {
@@ -2475,8 +2475,8 @@
       "rel": {
         "mkt": 6.98,
         "mkt_name": "S&P 500",
-        "sec": 4.7,
-        "peers": 14,
+        "sec": 5.17,
+        "peers": 15,
         "noise": 1.64
       },
       "range": {
@@ -2551,8 +2551,8 @@
       "rel": {
         "mkt": 1.49,
         "mkt_name": "Nikkei 225",
-        "sec": 0.85,
-        "peers": 14,
+        "sec": 1.32,
+        "peers": 15,
         "noise": 1.05
       },
       "range": {
@@ -2628,8 +2628,8 @@
       "rel": {
         "mkt": 0.17,
         "mkt_name": "Nikkei 225",
-        "sec": -1.0,
-        "peers": 14,
+        "sec": -0.94,
+        "peers": 15,
         "noise": 1.06
       },
       "range": {
@@ -2716,8 +2716,8 @@
       "rel": {
         "mkt": 3.04,
         "mkt_name": "S&P 500",
-        "sec": 0.77,
-        "peers": 14,
+        "sec": 1.23,
+        "peers": 15,
         "noise": 0.9
       },
       "range": {
@@ -2793,8 +2793,8 @@
       "rel": {
         "mkt": -0.75,
         "mkt_name": "Nikkei 225",
-        "sec": -1.92,
-        "peers": 14,
+        "sec": -1.85,
+        "peers": 15,
         "noise": 1.57
       },
       "range": {
@@ -2880,8 +2880,8 @@
       "rel": {
         "mkt": 4.87,
         "mkt_name": "TAIEX",
-        "sec": 4.49,
-        "peers": 14,
+        "sec": 4.96,
+        "peers": 15,
         "noise": 1.38
       },
       "range": {
@@ -2956,8 +2956,8 @@
       "rel": {
         "mkt": 0.85,
         "mkt_name": "TAIEX",
-        "sec": 0.41,
-        "peers": 14,
+        "sec": 0.94,
+        "peers": 15,
         "noise": 1.17
       },
       "range": {
@@ -3027,8 +3027,8 @@
       "rel": {
         "mkt": -0.54,
         "mkt_name": "TAIEX",
-        "sec": -1.45,
-        "peers": 14,
+        "sec": -1.39,
+        "peers": 15,
         "noise": 1.5
       },
       "range": {
@@ -3503,8 +3503,8 @@
       "rel": {
         "mkt": 0.11,
         "mkt_name": "S&P 500",
-        "sec": 1.78,
-        "peers": 3,
+        "sec": -1.3,
+        "peers": 5,
         "noise": 0.73
       },
       "range": {
@@ -3579,8 +3579,8 @@
       "rel": {
         "mkt": 1.41,
         "mkt_name": "S&P 500",
-        "sec": 3.07,
-        "peers": 3,
+        "sec": 1.3,
+        "peers": 5,
         "noise": 0.51
       },
       "range": {
@@ -3662,8 +3662,8 @@
       "rel": {
         "mkt": -0.58,
         "mkt_name": "S&P 500",
-        "sec": -1.32,
-        "peers": 34,
+        "sec": -0.84,
+        "peers": 55,
         "noise": 0.35
       },
       "range": {
@@ -3733,8 +3733,8 @@
       "rel": {
         "mkt": -0.59,
         "mkt_name": "S&P 500",
-        "sec": -1.33,
-        "peers": 34,
+        "sec": -0.85,
+        "peers": 55,
         "noise": 0.42
       },
       "range": {
@@ -3814,8 +3814,8 @@
       "rel": {
         "mkt": 3.36,
         "mkt_name": "S&P 500",
-        "sec": 2.77,
-        "peers": 34,
+        "sec": 3.18,
+        "peers": 55,
         "noise": 0.77
       },
       "range": {
@@ -3885,8 +3885,8 @@
       "rel": {
         "mkt": 1.91,
         "mkt_name": "S&P 500",
-        "sec": 1.31,
-        "peers": 34,
+        "sec": 1.72,
+        "peers": 55,
         "noise": 1.1
       },
       "range": {
@@ -3971,8 +3971,8 @@
       "rel": {
         "mkt": -0.74,
         "mkt_name": "Nikkei 225",
-        "sec": 0.3,
-        "peers": 34,
+        "sec": 0.71,
+        "peers": 55,
         "noise": 1.21
       },
       "range": {
@@ -4126,7 +4126,7 @@
         "mkt": 0.78,
         "mkt_name": "S&P 500",
         "sec": 0.48,
-        "peers": 4,
+        "peers": 6,
         "noise": 0.61
       },
       "range": {
@@ -4197,7 +4197,7 @@
         "mkt": -0.56,
         "mkt_name": "S&P 500",
         "sec": -1.26,
-        "peers": 4,
+        "peers": 6,
         "noise": 0.95
       },
       "range": {
@@ -4280,7 +4280,7 @@
         "mkt": 1.35,
         "mkt_name": "S&P/TSX Composite",
         "sec": 1.1,
-        "peers": 4,
+        "peers": 6,
         "noise": 0.87
       },
       "range": {
@@ -4361,8 +4361,8 @@
       "rel": {
         "mkt": -1.66,
         "mkt_name": "S&P 500",
-        "sec": -1.78,
-        "peers": 3,
+        "sec": -3.07,
+        "peers": 5,
         "noise": 0.53
       },
       "range": {
@@ -4438,8 +4438,8 @@
       "rel": {
         "mkt": -2.06,
         "mkt_name": "S&P 500",
-        "sec": -2.17,
-        "peers": 3,
+        "sec": -3.47,
+        "peers": 5,
         "noise": 0.96
       },
       "range": {
@@ -4675,8 +4675,8 @@
       "rel": {
         "mkt": 4.73,
         "mkt_name": "S&P 500",
-        "sec": 3.54,
-        "peers": 32,
+        "sec": 3.51,
+        "peers": 37,
         "noise": 1.0
       },
       "range": {
@@ -4758,8 +4758,8 @@
       "rel": {
         "mkt": 2.32,
         "mkt_name": "FTSE MIB",
-        "sec": 1.24,
-        "peers": 32,
+        "sec": 1.2,
+        "peers": 37,
         "noise": 0.76
       },
       "range": {
@@ -4856,8 +4856,8 @@
       "rel": {
         "mkt": -1.35,
         "mkt_name": "CAC 40",
-        "sec": -2.3,
-        "peers": 32,
+        "sec": -2.32,
+        "peers": 37,
         "noise": 0.6
       },
       "range": {
@@ -4944,8 +4944,8 @@
       "rel": {
         "mkt": 0.64,
         "mkt_name": "S&P 500",
-        "sec": -0.03,
-        "peers": 7,
+        "sec": 0.01,
+        "peers": 8,
         "noise": 1.15
       },
       "range": {
@@ -5015,8 +5015,8 @@
       "rel": {
         "mkt": -1.28,
         "mkt_name": "S&P 500",
-        "sec": -1.95,
-        "peers": 7,
+        "sec": -1.94,
+        "peers": 8,
         "noise": 0.78
       },
       "range": {
@@ -5274,8 +5274,8 @@
       "rel": {
         "mkt": -1.96,
         "mkt_name": "S&P/ASX 200",
-        "sec": 0.69,
-        "peers": 4,
+        "sec": -0.71,
+        "peers": 5,
         "noise": 1.0
       },
       "range": {
@@ -5362,8 +5362,8 @@
       "rel": {
         "mkt": -1.25,
         "mkt_name": "S&P/ASX 200",
-        "sec": 1.75,
-        "peers": 4,
+        "sec": 0.71,
+        "peers": 5,
         "noise": 0.89
       },
       "range": {
@@ -5626,8 +5626,8 @@
       "rel": {
         "mkt": 0.67,
         "mkt_name": "S&P 500",
-        "sec": 0.03,
-        "peers": 7,
+        "sec": 0.06,
+        "peers": 8,
         "noise": 1.01
       },
       "range": {
@@ -5780,8 +5780,8 @@
       "rel": {
         "mkt": -1.06,
         "mkt_name": "S&P 500",
-        "sec": -1.79,
-        "peers": 34,
+        "sec": -1.31,
+        "peers": 55,
         "noise": 1.34
       },
       "range": {
@@ -5851,8 +5851,8 @@
       "rel": {
         "mkt": -0.05,
         "mkt_name": "S&P 500",
-        "sec": -0.79,
-        "peers": 34,
+        "sec": -0.31,
+        "peers": 55,
         "noise": 0.43
       },
       "range": {
@@ -5939,8 +5939,8 @@
       "rel": {
         "mkt": 0.11,
         "mkt_name": "S&P 500",
-        "sec": -0.62,
-        "peers": 34,
+        "sec": -0.14,
+        "peers": 55,
         "noise": 0.58
       },
       "range": {
@@ -6020,8 +6020,8 @@
       "rel": {
         "mkt": -0.8,
         "mkt_name": "CAC 40",
-        "sec": -1.25,
-        "peers": 34,
+        "sec": -0.77,
+        "peers": 55,
         "noise": 0.69
       },
       "range": {
@@ -6107,8 +6107,8 @@
       "rel": {
         "mkt": 0.01,
         "mkt_name": "S&P 500",
-        "sec": -0.72,
-        "peers": 34,
+        "sec": -0.24,
+        "peers": 55,
         "noise": 1.17
       },
       "range": {
@@ -6188,8 +6188,8 @@
       "rel": {
         "mkt": -1.74,
         "mkt_name": "S&P 500",
-        "sec": -2.47,
-        "peers": 34,
+        "sec": -2.0,
+        "peers": 55,
         "noise": 0.85
       },
       "range": {
@@ -6264,8 +6264,8 @@
       "rel": {
         "mkt": 1.11,
         "mkt_name": "S&P 500",
-        "sec": -1.69,
-        "peers": 14,
+        "sec": -1.63,
+        "peers": 15,
         "noise": 1.33
       },
       "range": {
@@ -6433,8 +6433,8 @@
       "rel": {
         "mkt": 4.92,
         "mkt_name": "S&P/ASX 200",
-        "sec": 7.92,
-        "peers": 4,
+        "sec": 6.88,
+        "peers": 5,
         "noise": 1.75
       },
       "range": {
@@ -6515,8 +6515,8 @@
       "rel": {
         "mkt": -1.14,
         "mkt_name": "S&P 500",
-        "sec": -3.94,
-        "peers": 14,
+        "sec": -3.88,
+        "peers": 15,
         "noise": 1.33
       },
       "range": {
@@ -6592,8 +6592,8 @@
       "rel": {
         "mkt": 2.81,
         "mkt_name": "S&P/TSX Composite",
-        "sec": 0.59,
-        "peers": 14,
+        "sec": 1.06,
+        "peers": 15,
         "noise": 1.25
       },
       "range": {
@@ -6685,8 +6685,8 @@
       "rel": {
         "mkt": -0.99,
         "mkt_name": "AEX",
-        "sec": -0.55,
-        "peers": 34,
+        "sec": -0.07,
+        "peers": 55,
         "noise": 0.71
       },
       "range": {
@@ -6851,8 +6851,8 @@
       "rel": {
         "mkt": -0.47,
         "mkt_name": "IPC Mexico",
-        "sec": -1.7,
-        "peers": 34,
+        "sec": -1.22,
+        "peers": 55,
         "noise": 0.64
       },
       "range": {
@@ -6922,8 +6922,8 @@
       "rel": {
         "mkt": 0.79,
         "mkt_name": "S&P 500",
-        "sec": 0.2,
-        "peers": 34,
+        "sec": 0.61,
+        "peers": 55,
         "noise": 0.41
       },
       "range": {
@@ -6999,8 +6999,8 @@
       "rel": {
         "mkt": 0.44,
         "mkt_name": "S&P 500",
-        "sec": -0.79,
-        "peers": 32,
+        "sec": -0.81,
+        "peers": 37,
         "noise": 0.07
       },
       "range": {
@@ -7070,8 +7070,8 @@
       "rel": {
         "mkt": 6.8,
         "mkt_name": "S&P 500",
-        "sec": 5.61,
-        "peers": 32,
+        "sec": 5.57,
+        "peers": 37,
         "noise": 0.88
       },
       "range": {
@@ -7332,8 +7332,8 @@
       "rel": {
         "mkt": 0.6,
         "mkt_name": "DAX",
-        "sec": -0.09,
-        "peers": 32,
+        "sec": -0.11,
+        "peers": 37,
         "noise": 0.79
       },
       "range": {
@@ -7419,8 +7419,8 @@
       "rel": {
         "mkt": 1.9,
         "mkt_name": "S&P 500",
-        "sec": 0.72,
-        "peers": 32,
+        "sec": 0.68,
+        "peers": 37,
         "noise": 0.61
       },
       "range": {
@@ -7496,8 +7496,8 @@
       "rel": {
         "mkt": 2.97,
         "mkt_name": "S&P 500",
-        "sec": 1.78,
-        "peers": 32,
+        "sec": 1.74,
+        "peers": 37,
         "noise": 0.93
       },
       "range": {
@@ -7573,8 +7573,8 @@
       "rel": {
         "mkt": 4.68,
         "mkt_name": "S&P 500",
-        "sec": 3.49,
-        "peers": 32,
+        "sec": 3.46,
+        "peers": 37,
         "noise": 1.2
       },
       "range": {
@@ -7650,8 +7650,8 @@
       "rel": {
         "mkt": 2.49,
         "mkt_name": "S&P 500",
-        "sec": 1.31,
-        "peers": 32,
+        "sec": 1.27,
+        "peers": 37,
         "noise": 1.18
       },
       "range": {
@@ -8675,8 +8675,8 @@
       "rel": {
         "mkt": 0.08,
         "mkt_name": "S&P 500",
-        "sec": -1.16,
-        "peers": 32,
+        "sec": -1.18,
+        "peers": 37,
         "noise": 0.57
       },
       "range": {
@@ -8756,8 +8756,8 @@
       "rel": {
         "mkt": -0.97,
         "mkt_name": "FTSE MIB",
-        "sec": -2.11,
-        "peers": 32,
+        "sec": -2.12,
+        "peers": 37,
         "noise": 0.57
       },
       "range": {
@@ -8837,8 +8837,8 @@
       "rel": {
         "mkt": -1.95,
         "mkt_name": "S&P 500",
-        "sec": -3.19,
-        "peers": 32,
+        "sec": -3.21,
+        "peers": 37,
         "noise": 0.79
       },
       "range": {
@@ -8908,8 +8908,8 @@
       "rel": {
         "mkt": 1.52,
         "mkt_name": "S&P 500",
-        "sec": 0.33,
-        "peers": 32,
+        "sec": 0.29,
+        "peers": 37,
         "noise": 1.0
       },
       "range": {
@@ -8989,8 +8989,8 @@
       "rel": {
         "mkt": 0.46,
         "mkt_name": "S&P/ASX 200",
-        "sec": -0.55,
-        "peers": 32,
+        "sec": -0.57,
+        "peers": 37,
         "noise": 0.56
       },
       "range": {
@@ -9065,8 +9065,8 @@
       "rel": {
         "mkt": 0.0,
         "mkt_name": "S&P 500",
-        "sec": -1.24,
-        "peers": 32,
+        "sec": -1.25,
+        "peers": 37,
         "noise": 0.75
       },
       "range": {
@@ -9141,8 +9141,8 @@
       "rel": {
         "mkt": -0.67,
         "mkt_name": "S&P 500",
-        "sec": -1.91,
-        "peers": 32,
+        "sec": -1.92,
+        "peers": 37,
         "noise": 0.49
       },
       "range": {
@@ -9218,8 +9218,8 @@
       "rel": {
         "mkt": 0.69,
         "mkt_name": "SMI",
-        "sec": 0.48,
-        "peers": 34,
+        "sec": 0.89,
+        "peers": 55,
         "noise": 0.44
       },
       "range": {
@@ -9301,8 +9301,8 @@
       "rel": {
         "mkt": 0.5,
         "mkt_name": "S&P 500",
-        "sec": -0.23,
-        "peers": 34,
+        "sec": 0.31,
+        "peers": 55,
         "noise": 0.57
       },
       "range": {
@@ -9384,8 +9384,8 @@
       "rel": {
         "mkt": 2.1,
         "mkt_name": "S&P 500",
-        "sec": 1.5,
-        "peers": 34,
+        "sec": 1.91,
+        "peers": 55,
         "noise": 0.68
       },
       "range": {
@@ -9461,8 +9461,8 @@
       "rel": {
         "mkt": -0.1,
         "mkt_name": "S&P 500",
-        "sec": -0.83,
-        "peers": 34,
+        "sec": -0.36,
+        "peers": 55,
         "noise": 0.45
       },
       "range": {
@@ -9554,8 +9554,8 @@
       "rel": {
         "mkt": 2.42,
         "mkt_name": "OMX Stockholm 30",
-        "sec": 2.38,
-        "peers": 34,
+        "sec": 2.79,
+        "peers": 55,
         "noise": 0.5
       },
       "range": {
@@ -9631,8 +9631,8 @@
       "rel": {
         "mkt": 0.39,
         "mkt_name": "OMX Helsinki 25",
-        "sec": 0.98,
-        "peers": 34,
+        "sec": 1.39,
+        "peers": 55,
         "noise": 0.55
       },
       "range": {
@@ -9714,8 +9714,8 @@
       "rel": {
         "mkt": 1.61,
         "mkt_name": "OMX Copenhagen 25",
-        "sec": 1.19,
-        "peers": 34,
+        "sec": 1.6,
+        "peers": 55,
         "noise": 0.6
       },
       "range": {
@@ -9802,8 +9802,8 @@
       "rel": {
         "mkt": 1.27,
         "mkt_name": "FTSE 100",
-        "sec": 1.04,
-        "peers": 34,
+        "sec": 1.45,
+        "peers": 55,
         "noise": 0.57
       },
       "range": {
@@ -9885,8 +9885,8 @@
       "rel": {
         "mkt": 0.77,
         "mkt_name": "S&P 500",
-        "sec": 0.18,
-        "peers": 34,
+        "sec": 0.59,
+        "peers": 55,
         "noise": 0.72
       },
       "range": {
@@ -9966,8 +9966,8 @@
       "rel": {
         "mkt": 2.11,
         "mkt_name": "S&P 500",
-        "sec": 1.52,
-        "peers": 34,
+        "sec": 1.93,
+        "peers": 55,
         "noise": 0.52
       },
       "range": {
@@ -10049,8 +10049,8 @@
       "rel": {
         "mkt": 1.33,
         "mkt_name": "S&P 500",
-        "sec": 0.73,
-        "peers": 34,
+        "sec": 1.14,
+        "peers": 55,
         "noise": 0.51
       },
       "range": {
@@ -10132,8 +10132,8 @@
       "rel": {
         "mkt": 1.67,
         "mkt_name": "S&P 500",
-        "sec": 1.07,
-        "peers": 34,
+        "sec": 1.48,
+        "peers": 55,
         "noise": 0.49
       },
       "range": {
@@ -10203,8 +10203,8 @@
       "rel": {
         "mkt": 0.69,
         "mkt_name": "S&P 500",
-        "sec": 0.05,
-        "peers": 34,
+        "sec": 0.51,
+        "peers": 55,
         "noise": 0.65
       },
       "range": {
@@ -10605,8 +10605,8 @@
       "rel": {
         "mkt": 1.51,
         "mkt_name": "FTSE 100",
-        "sec": 1.29,
-        "peers": 34,
+        "sec": 1.7,
+        "peers": 55,
         "noise": 0.71
       },
       "range": {
@@ -10676,8 +10676,8 @@
       "rel": {
         "mkt": -0.41,
         "mkt_name": "BEL 20",
-        "sec": -1.22,
-        "peers": 34,
+        "sec": -0.74,
+        "peers": 55,
         "noise": 0.67
       },
       "range": {
@@ -10769,8 +10769,8 @@
       "rel": {
         "mkt": -0.17,
         "mkt_name": "DAX",
-        "sec": -0.36,
-        "peers": 34,
+        "sec": 0.19,
+        "peers": 55,
         "noise": 0.7
       },
       "range": {
@@ -10845,8 +10845,8 @@
       "rel": {
         "mkt": -0.11,
         "mkt_name": "S&P 500",
-        "sec": -0.84,
-        "peers": 34,
+        "sec": -0.37,
+        "peers": 55,
         "noise": 0.41
       },
       "range": {
@@ -10916,8 +10916,8 @@
       "rel": {
         "mkt": 2.23,
         "mkt_name": "S&P 500",
-        "sec": 1.63,
-        "peers": 34,
+        "sec": 2.04,
+        "peers": 55,
         "noise": 1.02
       },
       "range": {
@@ -10997,8 +10997,8 @@
       "rel": {
         "mkt": -0.51,
         "mkt_name": "S&P 500",
-        "sec": -1.25,
-        "peers": 34,
+        "sec": -0.77,
+        "peers": 55,
         "noise": 1.03
       },
       "range": {
@@ -11987,8 +11987,8 @@
       "rel": {
         "mkt": 0.32,
         "mkt_name": "CAC 40",
-        "sec": -0.64,
-        "peers": 32,
+        "sec": -0.65,
+        "peers": 37,
         "noise": 0.47
       },
       "range": {
@@ -12074,8 +12074,8 @@
       "rel": {
         "mkt": 2.28,
         "mkt_name": "S&P 500",
-        "sec": 1.1,
-        "peers": 32,
+        "sec": 1.06,
+        "peers": 37,
         "noise": 0.51
       },
       "range": {
@@ -12151,8 +12151,8 @@
       "rel": {
         "mkt": 0.44,
         "mkt_name": "FTSE 100",
-        "sec": -0.43,
-        "peers": 32,
+        "sec": -0.44,
+        "peers": 37,
         "noise": 0.39
       },
       "range": {
@@ -12233,8 +12233,8 @@
       "rel": {
         "mkt": 0.09,
         "mkt_name": "DAX",
-        "sec": -0.6,
-        "peers": 32,
+        "sec": -0.62,
+        "peers": 37,
         "noise": 0.41
       },
       "range": {
@@ -12321,8 +12321,8 @@
       "rel": {
         "mkt": -0.09,
         "mkt_name": "S&P 500",
-        "sec": -0.83,
-        "peers": 34,
+        "sec": -0.35,
+        "peers": 55,
         "noise": 0.69
       },
       "range": {
@@ -12409,8 +12409,8 @@
       "rel": {
         "mkt": 1.22,
         "mkt_name": "S&P 500",
-        "sec": 0.02,
-        "peers": 32,
+        "sec": -0.03,
+        "peers": 37,
         "noise": 0.48
       },
       "range": {
@@ -12496,8 +12496,8 @@
       "rel": {
         "mkt": 1.98,
         "mkt_name": "S&P 500",
-        "sec": 1.39,
-        "peers": 34,
+        "sec": 1.8,
+        "peers": 55,
         "noise": 0.61
       },
       "range": {
@@ -12909,8 +12909,8 @@
       "rel": {
         "mkt": 7.73,
         "mkt_name": "S&P 500",
-        "sec": 6.54,
-        "peers": 32,
+        "sec": 6.51,
+        "peers": 37,
         "noise": 1.52
       },
       "range": {
@@ -13051,8 +13051,8 @@
       "rel": {
         "mkt": -3.37,
         "mkt_name": "S&P 500",
-        "sec": -4.6,
-        "peers": 32,
+        "sec": -4.62,
+        "peers": 37,
         "noise": null
       },
       "range": {
@@ -13133,8 +13133,8 @@
       "rel": {
         "mkt": 0.54,
         "mkt_name": "S&P 500",
-        "sec": -0.7,
-        "peers": 32,
+        "sec": -0.71,
+        "peers": 37,
         "noise": 1.05
       },
       "range": {
@@ -13209,8 +13209,8 @@
       "rel": {
         "mkt": 1.56,
         "mkt_name": "S&P 500",
-        "sec": 0.37,
-        "peers": 32,
+        "sec": 0.34,
+        "peers": 37,
         "noise": 1.45
       },
       "range": {
@@ -13292,8 +13292,8 @@
       "rel": {
         "mkt": 2.74,
         "mkt_name": "S&P 500",
-        "sec": 1.56,
-        "peers": 32,
+        "sec": 1.52,
+        "peers": 37,
         "noise": 0.95
       },
       "range": {
@@ -13593,6 +13593,2766 @@
         "rsi": 65.7,
         "rsi_short": false,
         "ath_since": "2011-05-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "HII": {
+      "name": "Huntington Ingalls",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 754,
+      "settled": true,
+      "d": {
+        "px": 285.93,
+        "bars": 754,
+        "d21": -4.12,
+        "d50": -3.43,
+        "d150": -16.59,
+        "d200": -17.09,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 5,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": -1.65,
+        "atr_pct": 2.92,
+        "atr_x": 0.57,
+        "atr_rejected": null,
+        "sigma": -0.62,
+        "sd60": 2.66
+      },
+      "rel": {
+        "mkt": -1.28,
+        "mkt_name": "S&P 500",
+        "sec": -1.53,
+        "peers": 55,
+        "noise": 0.58
+      },
+      "range": {
+        "off52h": -36.42,
+        "off52l": 8.84,
+        "offath": -36.42,
+        "rsi": 37.7,
+        "rsi_short": false,
+        "ath_since": "2011-04-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "GD": {
+      "name": "General Dynamics",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 754,
+      "settled": true,
+      "d": {
+        "px": 359.39,
+        "bars": 754,
+        "d21": -4.69,
+        "d50": -4.87,
+        "d150": 1.13,
+        "d200": 2.01,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 8,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 0,
+          "gap": 0.75,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "held",
+          "ago": 0,
+          "gap": 1.63,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -1.77,
+        "atr_pct": 2.02,
+        "atr_x": 0.88,
+        "atr_rejected": null,
+        "sigma": -1.21,
+        "sd60": 1.46
+      },
+      "rel": {
+        "mkt": -1.4,
+        "mkt_name": "S&P 500",
+        "sec": -1.65,
+        "peers": 55,
+        "noise": 0.4
+      },
+      "range": {
+        "off52h": -9.24,
+        "off52l": 15.5,
+        "offath": -9.24,
+        "rsi": 31.1,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "TKMS.DE": {
+      "name": "TKMS",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 221,
+      "settled": true,
+      "d": {
+        "px": 83.2,
+        "bars": 221,
+        "d21": -5.79,
+        "d50": -3.69,
+        "d150": -1.99,
+        "d200": 0.03,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 3,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 2,
+          "gap": 0.0,
+          "probe": "high"
+        },
+        "test200": {
+          "state": "held",
+          "ago": 3,
+          "gap": 0.07,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -0.12,
+        "atr_pct": 4.2,
+        "atr_x": 0.03,
+        "atr_rejected": null,
+        "sigma": -0.03,
+        "sd60": 4.26
+      },
+      "rel": {
+        "mkt": -0.29,
+        "mkt_name": "DAX",
+        "sec": 0.07,
+        "peers": 55,
+        "noise": 0.84
+      },
+      "range": {
+        "off52h": -20.0,
+        "off52l": 44.57,
+        "offath": -20.0,
+        "rsi": 39.7,
+        "rsi_short": false,
+        "ath_since": "2025-10-21",
+        "ath_deep": false,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "FCT.MI": {
+      "name": "Fincantieri",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 761,
+      "settled": true,
+      "d": {
+        "px": 12.215,
+        "bars": 761,
+        "d21": -2.39,
+        "d50": -1.45,
+        "d150": -3.96,
+        "d200": -12.57,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 5,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 3,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 5,
+          "gap": 0.02,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": 0.16,
+        "atr_pct": 2.98,
+        "atr_x": 0.06,
+        "atr_rejected": null,
+        "sigma": 0.06,
+        "sd60": 2.59
+      },
+      "rel": {
+        "mkt": 0.44,
+        "mkt_name": "FTSE MIB",
+        "sec": 0.35,
+        "peers": 55,
+        "noise": 0.6
+      },
+      "range": {
+        "off52h": -54.62,
+        "off52l": 24.57,
+        "offath": -54.62,
+        "rsi": 42.8,
+        "rsi_short": false,
+        "ath_since": "2014-08-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "BA.L": {
+      "name": "BAE Systems",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 761,
+      "settled": true,
+      "d": {
+        "px": 1956.5,
+        "bars": 761,
+        "d21": -5.7,
+        "d50": -3.5,
+        "d150": -4.44,
+        "d200": -1.68,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 3,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 3,
+          "gap": 0.17,
+          "probe": "high"
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 1,
+          "gap": 0.02,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": -1.14,
+        "atr_pct": 2.65,
+        "atr_x": 0.43,
+        "atr_rejected": null,
+        "sigma": -0.63,
+        "sd60": 1.82
+      },
+      "rel": {
+        "mkt": -1.13,
+        "mkt_name": "FTSE 100",
+        "sec": -1.02,
+        "peers": 55,
+        "noise": 0.53
+      },
+      "range": {
+        "off52h": -16.06,
+        "off52l": 21.57,
+        "offath": -16.06,
+        "rsi": 31.5,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "SAAB-B.ST": {
+      "name": "Saab",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 753,
+      "settled": true,
+      "d": {
+        "px": 589.4,
+        "bars": 753,
+        "d21": -6.17,
+        "d50": -2.44,
+        "d150": -1.22,
+        "d200": -0.14,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 1,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          }
+        },
+        "test150": {
+          "state": "lost",
+          "ago": 1,
+          "gap": 0.49,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "lost",
+          "ago": 1,
+          "gap": 0.76,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -1.39,
+        "atr_pct": 3.13,
+        "atr_x": 0.44,
+        "atr_rejected": null,
+        "sigma": -0.55,
+        "sd60": 2.52
+      },
+      "rel": {
+        "mkt": -1.57,
+        "mkt_name": "OMX Stockholm 30",
+        "sec": -1.27,
+        "peers": 55,
+        "noise": 0.63
+      },
+      "range": {
+        "off52h": -19.09,
+        "off52l": 30.27,
+        "offath": -19.09,
+        "rsi": 33.9,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "ASB.AX": {
+      "name": "Austal",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 762,
+      "settled": true,
+      "d": {
+        "px": 4.33,
+        "bars": 762,
+        "d21": 4.04,
+        "d50": 9.54,
+        "d150": -2.26,
+        "d200": -14.99,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 0,
+          "gap": 0.57,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": 1.17,
+        "atr_pct": 5.68,
+        "atr_x": 0.21,
+        "atr_rejected": null,
+        "sigma": 0.31,
+        "sd60": 3.72
+      },
+      "rel": {
+        "mkt": 1.33,
+        "mkt_name": "S&P/ASX 200",
+        "sec": 1.36,
+        "peers": 55,
+        "noise": 1.14
+      },
+      "range": {
+        "off52h": -50.57,
+        "off52l": 27.73,
+        "offath": -50.57,
+        "rsi": 57.6,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "329180.KS": {
+      "name": "HD Hyundai Heavy Industries",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 729,
+      "settled": true,
+      "d": {
+        "px": 436500.0,
+        "bars": 729,
+        "d21": -5.81,
+        "d50": -11.06,
+        "d150": -21.26,
+        "d200": -21.18,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": 0.34,
+        "atr_pct": 5.61,
+        "atr_x": 0.06,
+        "atr_rejected": null,
+        "sigma": 0.09,
+        "sd60": 3.79
+      },
+      "rel": {
+        "mkt": -1.29,
+        "mkt_name": "KOSPI",
+        "sec": 0.53,
+        "peers": 55,
+        "noise": 1.12
+      },
+      "range": {
+        "off52h": -40.69,
+        "off52l": 3.44,
+        "offath": -40.69,
+        "rsi": 39.1,
+        "rsi_short": false,
+        "ath_since": "2021-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "009540.KS": {
+      "name": "HD Korea Shipbuilding & Offshore",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 729,
+      "settled": true,
+      "d": {
+        "px": 348500.0,
+        "bars": 729,
+        "d21": -2.47,
+        "d50": -2.38,
+        "d150": -10.39,
+        "d200": -11.7,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": 1.31,
+        "atr_pct": 5.04,
+        "atr_x": 0.26,
+        "atr_rejected": null,
+        "sigma": 0.34,
+        "sd60": 3.9
+      },
+      "rel": {
+        "mkt": -0.33,
+        "mkt_name": "KOSPI",
+        "sec": 1.5,
+        "peers": 55,
+        "noise": 1.01
+      },
+      "range": {
+        "off52h": -26.04,
+        "off52l": 8.34,
+        "offath": -26.04,
+        "rsi": 45.8,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "042660.KS": {
+      "name": "Hanwha Ocean",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 729,
+      "settled": true,
+      "d": {
+        "px": 86800.0,
+        "bars": 729,
+        "d21": -0.88,
+        "d50": -2.53,
+        "d150": -24.17,
+        "d200": -25.42,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": 0.35,
+        "atr_pct": 5.57,
+        "atr_x": 0.06,
+        "atr_rejected": null,
+        "sigma": 0.06,
+        "sd60": 5.85
+      },
+      "rel": {
+        "mkt": -1.29,
+        "mkt_name": "KOSPI",
+        "sec": 0.54,
+        "peers": 55,
+        "noise": 1.11
+      },
+      "range": {
+        "off52h": -42.09,
+        "off52l": 16.35,
+        "offath": -81.19,
+        "rsi": 48.1,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": false,
+        "ath_daily_years": 3
+      }
+    },
+    "010140.KS": {
+      "name": "Samsung Heavy Industries",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 729,
+      "settled": true,
+      "d": {
+        "px": 21400.0,
+        "bars": 729,
+        "d21": 1.03,
+        "d50": -1.68,
+        "d150": -18.86,
+        "d200": -18.75,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": -1.15,
+        "atr_pct": 4.7,
+        "atr_x": 0.25,
+        "atr_rejected": null,
+        "sigma": -0.29,
+        "sd60": 3.98
+      },
+      "rel": {
+        "mkt": -2.79,
+        "mkt_name": "KOSPI",
+        "sec": -1.03,
+        "peers": 55,
+        "noise": 0.94
+      },
+      "range": {
+        "off52h": -37.79,
+        "off52l": 10.31,
+        "offath": -38.92,
+        "rsi": 50.2,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": false,
+        "ath_daily_years": 3
+      }
+    },
+    "7011.JP": {
+      "name": "Mitsubishi Heavy Industries",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 3754.0,
+        "bars": 734,
+        "d21": -4.46,
+        "d50": -3.73,
+        "d150": -11.72,
+        "d200": -11.24,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 8,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "lost",
+          "ago": 13,
+          "gap": 0.36,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 12,
+          "gap": 0.58,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": -1.08,
+        "atr_pct": 3.54,
+        "atr_x": 0.31,
+        "atr_rejected": null,
+        "sigma": -0.41,
+        "sd60": 2.66
+      },
+      "rel": {
+        "mkt": -2.34,
+        "mkt_name": "Nikkei 225",
+        "sec": -0.96,
+        "peers": 55,
+        "noise": 0.71
+      },
+      "range": {
+        "off52h": -27.53,
+        "off52l": 7.65,
+        "offath": -27.53,
+        "rsi": 40.4,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "7012.JP": {
+      "name": "Kawasaki Heavy Industries",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 2433.5,
+        "bars": 734,
+        "d21": -7.03,
+        "d50": -10.88,
+        "d150": -18.81,
+        "d200": -13.58,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 6,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 13,
+          "gap": 1.66,
+          "probe": "high"
+        },
+        "test200": {
+          "state": "lost",
+          "ago": 14,
+          "gap": 0.64,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -0.69,
+        "atr_pct": 3.88,
+        "atr_x": 0.18,
+        "atr_rejected": null,
+        "sigma": -0.23,
+        "sd60": 3.01
+      },
+      "rel": {
+        "mkt": -1.95,
+        "mkt_name": "Nikkei 225",
+        "sec": -0.57,
+        "peers": 55,
+        "noise": 0.78
+      },
+      "range": {
+        "off52h": -33.36,
+        "off52l": 41.51,
+        "offath": -33.36,
+        "rsi": 33.3,
+        "rsi_short": false,
+        "ath_since": "2004-12-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "7013.JP": {
+      "name": "IHI",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 2624.5,
+        "bars": 734,
+        "d21": -3.87,
+        "d50": -5.77,
+        "d150": -16.03,
+        "d200": -15.19,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 8,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 13,
+          "gap": 0.77,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": -0.57,
+        "atr_pct": 4.46,
+        "atr_x": 0.13,
+        "atr_rejected": null,
+        "sigma": -0.17,
+        "sd60": 3.27
+      },
+      "rel": {
+        "mkt": -1.82,
+        "mkt_name": "Nikkei 225",
+        "sec": -0.45,
+        "peers": 55,
+        "noise": 0.89
+      },
+      "range": {
+        "off52h": -41.51,
+        "off52l": 25.71,
+        "offath": -41.51,
+        "rsi": 42.8,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "7004.JP": {
+      "name": "Kanadevia",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 1155.0,
+        "bars": 734,
+        "d21": -3.21,
+        "d50": -5.55,
+        "d150": -2.67,
+        "d200": 2.35,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "lost",
+          "ago": 5,
+          "gap": 0.01,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "held",
+          "ago": 0,
+          "gap": 1.82,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -0.52,
+        "atr_pct": 2.97,
+        "atr_x": 0.17,
+        "atr_rejected": null,
+        "sigma": -0.22,
+        "sd60": 2.35
+      },
+      "rel": {
+        "mkt": -1.77,
+        "mkt_name": "Nikkei 225",
+        "sec": -0.4,
+        "peers": 55,
+        "noise": 0.59
+      },
+      "range": {
+        "off52h": -20.51,
+        "off52l": 28.09,
+        "offath": -20.51,
+        "rsi": 40.4,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "7003.JP": {
+      "name": "Mitsui E&S",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 4287.0,
+        "bars": 734,
+        "d21": -0.6,
+        "d50": -3.06,
+        "d150": -19.87,
+        "d200": -22.5,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 3,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": 2.1,
+        "atr_pct": 4.92,
+        "atr_x": 0.43,
+        "atr_rejected": null,
+        "sigma": 0.59,
+        "sd60": 3.53
+      },
+      "rel": {
+        "mkt": 0.84,
+        "mkt_name": "Nikkei 225",
+        "sec": 2.29,
+        "peers": 55,
+        "noise": 0.98
+      },
+      "range": {
+        "off52h": -46.9,
+        "off52l": 9.95,
+        "offath": -46.9,
+        "rsi": 48.4,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "7014.JP": {
+      "name": "Namura Shipbuilding",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 4800.0,
+        "bars": 734,
+        "d21": 5.88,
+        "d50": 14.04,
+        "d150": 11.87,
+        "d200": 12.76,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 12,
+          "gap": 0.21,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "held",
+          "ago": 12,
+          "gap": 0.2,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": 4.35,
+        "atr_pct": 5.08,
+        "atr_x": 0.86,
+        "atr_rejected": null,
+        "sigma": 1.21,
+        "sd60": 3.61
+      },
+      "rel": {
+        "mkt": 3.09,
+        "mkt_name": "Nikkei 225",
+        "sec": 4.54,
+        "peers": 55,
+        "noise": 1.02
+      },
+      "range": {
+        "off52h": -15.67,
+        "off52l": 60.95,
+        "offath": -15.67,
+        "rsi": 60.0,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "5803.JP": {
+      "name": "Fujikura",
+      "v": "elec",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 5053.0,
+        "bars": 734,
+        "d21": -3.05,
+        "d50": -1.47,
+        "d150": 3.26,
+        "d200": 14.59,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 1,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 1,
+          "gap": 0.35,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": 2.06,
+        "atr_pct": 6.8,
+        "atr_x": 0.3,
+        "atr_rejected": null,
+        "sigma": 0.33,
+        "sd60": 6.22
+      },
+      "rel": {
+        "mkt": 0.8,
+        "mkt_name": "Nikkei 225",
+        "sec": 1.21,
+        "peers": 37,
+        "noise": 1.36
+      },
+      "range": {
+        "off52h": -35.67,
+        "off52l": 166.79,
+        "offath": -35.67,
+        "rsi": 47.4,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "5801.JP": {
+      "name": "Furukawa Electric",
+      "v": "elec",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 3844.0,
+        "bars": 734,
+        "d21": -0.03,
+        "d50": 1.52,
+        "d150": 2.88,
+        "d200": 25.97,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 1,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 0,
+              "whipsaw": true,
+              "n_flips": 7
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 3,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 2,
+          "gap": 0.19,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": 6.39,
+        "atr_pct": 7.55,
+        "atr_x": 0.85,
+        "atr_rejected": null,
+        "sigma": 1.02,
+        "sd60": 6.26
+      },
+      "rel": {
+        "mkt": 5.14,
+        "mkt_name": "Nikkei 225",
+        "sec": 5.55,
+        "peers": 37,
+        "noise": 1.51
+      },
+      "range": {
+        "off52h": -36.08,
+        "off52l": 363.62,
+        "offath": -36.08,
+        "rsi": 49.9,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "6501.JP": {
+      "name": "Hitachi",
+      "v": "elec",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 5377.0,
+        "bars": 734,
+        "d21": 0.24,
+        "d50": 5.41,
+        "d150": 7.47,
+        "d200": 7.51,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 6,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 8,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          }
+        }
+      },
+      "move": {
+        "d1": 0.47,
+        "atr_pct": 2.87,
+        "atr_x": 0.16,
+        "atr_rejected": null,
+        "sigma": 0.23,
+        "sd60": 2.06
+      },
+      "rel": {
+        "mkt": -0.79,
+        "mkt_name": "Nikkei 225",
+        "sec": -0.41,
+        "peers": 37,
+        "noise": 0.57
+      },
+      "range": {
+        "off52h": -7.05,
+        "off52l": 42.07,
+        "offath": -7.05,
+        "rsi": 52.1,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "6503.JP": {
+      "name": "Mitsubishi Electric",
+      "v": "elec",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 5248.0,
+        "bars": 734,
+        "d21": -6.05,
+        "d50": -8.08,
+        "d150": -8.47,
+        "d200": -3.56,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 11,
+          "gap": 0.63,
+          "probe": "high"
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 2,
+          "gap": 0.33,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": -1.17,
+        "atr_pct": 3.55,
+        "atr_x": 0.33,
+        "atr_rejected": null,
+        "sigma": -0.4,
+        "sd60": 2.91
+      },
+      "rel": {
+        "mkt": -2.42,
+        "mkt_name": "Nikkei 225",
+        "sec": -2.04,
+        "peers": 37,
+        "noise": 0.71
+      },
+      "range": {
+        "off52h": -20.0,
+        "off52l": 52.92,
+        "offath": -20.0,
+        "rsi": 36.0,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "6504.JP": {
+      "name": "Fuji Electric",
+      "v": "elec",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 13110.0,
+        "bars": 734,
+        "d21": -4.43,
+        "d50": -3.52,
+        "d150": 0.71,
+        "d200": 4.2,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 5,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 3,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 2,
+          "gap": 0.08,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "held",
+          "ago": 1,
+          "gap": 1.96,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": 2.14,
+        "atr_pct": 4.17,
+        "atr_x": 0.51,
+        "atr_rejected": null,
+        "sigma": 0.68,
+        "sd60": 3.16
+      },
+      "rel": {
+        "mkt": 0.89,
+        "mkt_name": "Nikkei 225",
+        "sec": 1.3,
+        "peers": 37,
+        "noise": 0.83
+      },
+      "range": {
+        "off52h": -24.11,
+        "off52l": 45.02,
+        "offath": -24.11,
+        "rsi": 41.9,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "5631.JP": {
+      "name": "Japan Steel Works",
+      "v": "nu",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 7303.0,
+        "bars": 734,
+        "d21": -3.37,
+        "d50": -5.23,
+        "d150": -14.03,
+        "d200": -14.74,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 13,
+          "gap": 1.81,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": 0.21,
+        "atr_pct": 4.07,
+        "atr_x": 0.05,
+        "atr_rejected": null,
+        "sigma": 0.07,
+        "sd60": 2.95
+      },
+      "rel": {
+        "mkt": -1.05,
+        "mkt_name": "Nikkei 225",
+        "sec": -0.07,
+        "peers": 8,
+        "noise": 0.81
+      },
+      "range": {
+        "off52h": -29.38,
+        "off52l": 3.43,
+        "offath": -29.38,
+        "rsi": 43.2,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "6361.JP": {
+      "name": "Ebara",
+      "v": "wl",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 4436.0,
+        "bars": 734,
+        "d21": -10.51,
+        "d50": -19.61,
+        "d150": -17.01,
+        "d200": -11.68,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 7,
+          "gap": 0.06,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": 1.05,
+        "atr_pct": 5.37,
+        "atr_x": 0.19,
+        "atr_rejected": null,
+        "sigma": 0.25,
+        "sd60": 4.14
+      },
+      "rel": {
+        "mkt": -0.21,
+        "mkt_name": "Nikkei 225",
+        "sec": 1.31,
+        "peers": 5,
+        "noise": 1.07
+      },
+      "range": {
+        "off52h": -34.18,
+        "off52l": 50.62,
+        "offath": -34.18,
+        "rsi": 31.4,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "6370.JP": {
+      "name": "Kurita Water",
+      "v": "wl",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 7833.0,
+        "bars": 734,
+        "d21": -4.14,
+        "d50": -9.38,
+        "d150": -6.3,
+        "d200": -0.87,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 7,
+          "gap": 0.1,
+          "probe": "high"
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 2,
+          "gap": 0.38,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": 1.71,
+        "atr_pct": 3.46,
+        "atr_x": 0.5,
+        "atr_rejected": null,
+        "sigma": 0.63,
+        "sd60": 2.71
+      },
+      "rel": {
+        "mkt": 0.46,
+        "mkt_name": "Nikkei 225",
+        "sec": 1.98,
+        "peers": 5,
+        "noise": 0.69
+      },
+      "range": {
+        "off52h": -18.09,
+        "off52l": 61.11,
+        "offath": -18.09,
+        "rsi": 38.0,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "4091.JP": {
+      "name": "Nippon Sanso",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 5471.0,
+        "bars": 734,
+        "d21": -4.46,
+        "d50": -7.49,
+        "d150": -5.16,
+        "d200": -0.96,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 9,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 6,
+          "gap": 0.17,
+          "probe": "high"
+        },
+        "test200": {
+          "state": "lost",
+          "ago": 10,
+          "gap": 0.87,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -2.3,
+        "atr_pct": 2.9,
+        "atr_x": 0.8,
+        "atr_rejected": null,
+        "sigma": -1.25,
+        "sd60": 1.85
+      },
+      "rel": {
+        "mkt": -3.56,
+        "mkt_name": "Nikkei 225",
+        "sec": -2.18,
+        "peers": 55,
+        "noise": 0.58
+      },
+      "range": {
+        "off52h": -14.54,
+        "off52l": 21.59,
+        "offath": -14.54,
+        "rsi": 37.0,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "5401.JP": {
+      "name": "Nippon Steel",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 691.9,
+        "bars": 734,
+        "d21": 2.65,
+        "d50": 10.16,
+        "d150": 14.88,
+        "d200": 14.08,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": -1.8,
+        "atr_pct": 2.56,
+        "atr_x": 0.71,
+        "atr_rejected": null,
+        "sigma": -1.03,
+        "sd60": 1.76
+      },
+      "rel": {
+        "mkt": -3.06,
+        "mkt_name": "Nikkei 225",
+        "sec": -1.68,
+        "peers": 55,
+        "noise": 0.51
+      },
+      "range": {
+        "off52h": -1.8,
+        "off52l": 30.3,
+        "offath": -22.75,
+        "rsi": 59.2,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": false,
+        "ath_daily_years": 3
+      }
+    },
+    "5713.JP": {
+      "name": "Sumitomo Metal Mining",
+      "v": "li",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 10075.0,
+        "bars": 734,
+        "d21": -1.31,
+        "d50": 15.26,
+        "d150": 8.45,
+        "d200": 18.84,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": -0.84,
+        "atr_pct": 5.97,
+        "atr_x": 0.14,
+        "atr_rejected": null,
+        "sigma": -0.18,
+        "sd60": 4.77
+      },
+      "rel": {
+        "mkt": -2.09,
+        "mkt_name": "Nikkei 225",
+        "sec": 1.28,
+        "peers": 5,
+        "noise": 1.19
+      },
+      "range": {
+        "off52h": -21.45,
+        "off52l": 163.45,
+        "offath": -21.45,
+        "rsi": 51.0,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "5711.JP": {
+      "name": "Mitsubishi Materials",
+      "v": "cu",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 5231.0,
+        "bars": 734,
+        "d21": -2.13,
+        "d50": 10.62,
+        "d150": 5.07,
+        "d200": 13.38,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "move": {
+        "d1": -3.08,
+        "atr_pct": 5.87,
+        "atr_x": 0.52,
+        "atr_rejected": null,
+        "sigma": -0.76,
+        "sd60": 4.06
+      },
+      "rel": {
+        "mkt": -4.33,
+        "mkt_name": "Nikkei 225",
+        "sec": -3.4,
+        "peers": 6,
+        "noise": 1.17
+      },
+      "range": {
+        "off52h": -14.25,
+        "off52l": 112.95,
+        "offath": -14.25,
+        "rsi": 49.7,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "5016.JP": {
+      "name": "JX Advanced Metals",
+      "v": "cu",
+      "asof": "2026-09-04",
+      "bars": 359,
+      "settled": true,
+      "d": {
+        "px": 3619.0,
+        "bars": 359,
+        "d21": -3.7,
+        "d50": -6.64,
+        "d150": -7.67,
+        "d200": 5.64,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "lost",
+          "ago": 13,
+          "gap": 0.09,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": 2.41,
+        "atr_pct": 5.66,
+        "atr_x": 0.42,
+        "atr_rejected": null,
+        "sigma": 0.43,
+        "sd60": 5.56
+      },
+      "rel": {
+        "mkt": 1.15,
+        "mkt_name": "Nikkei 225",
+        "sec": 2.48,
+        "peers": 6,
+        "noise": 1.13
+      },
+      "range": {
+        "off52h": -36.73,
+        "off52l": 193.89,
+        "offath": -36.73,
+        "rsi": 44.7,
+        "rsi_short": false,
+        "ath_since": "2025-03-19",
+        "ath_deep": false,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "5726.JP": {
+      "name": "Osaka Titanium",
+      "v": "tm",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 2722.0,
+        "bars": 734,
+        "d21": -2.23,
+        "d50": -1.29,
+        "d150": 1.11,
+        "d200": 7.16,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 1,
+          "gap": 0.27,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "held",
+          "ago": 5,
+          "gap": 1.84,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -1.02,
+        "atr_pct": 5.75,
+        "atr_x": 0.18,
+        "atr_rejected": null,
+        "sigma": -0.24,
+        "sd60": 4.29
+      },
+      "rel": {
+        "mkt": -2.27,
+        "mkt_name": "Nikkei 225",
+        "sec": -3.38,
+        "peers": 15,
+        "noise": 1.15
+      },
+      "range": {
+        "off52h": -18.97,
+        "off52l": 54.69,
+        "offath": -77.91,
+        "rsi": 47.1,
+        "rsi_short": false,
+        "ath_since": "2002-04-01",
+        "ath_deep": true,
+        "ath_from_daily": false,
+        "ath_daily_years": 3
+      }
+    },
+    "5714.JP": {
+      "name": "Dowa",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 9254.0,
+        "bars": 734,
+        "d21": -3.69,
+        "d50": 3.12,
+        "d150": -1.9,
+        "d200": 5.49,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "lost",
+          "ago": 1,
+          "gap": 0.98,
+          "probe": "low"
+        }
+      },
+      "move": {
+        "d1": -2.07,
+        "atr_pct": 4.5,
+        "atr_x": 0.46,
+        "atr_rejected": null,
+        "sigma": -0.73,
+        "sd60": 2.84
+      },
+      "rel": {
+        "mkt": -3.33,
+        "mkt_name": "Nikkei 225",
+        "sec": -1.95,
+        "peers": 55,
+        "noise": 0.9
+      },
+      "range": {
+        "off52h": -20.5,
+        "off52l": 86.08,
+        "offath": -20.5,
+        "rsi": 45.8,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
+        "ath_deep": true,
+        "ath_from_daily": true,
+        "ath_daily_years": 3
+      }
+    },
+    "4063.JP": {
+      "name": "Shin-Etsu Chemical",
+      "v": "ii",
+      "asof": "2026-09-04",
+      "bars": 734,
+      "settled": true,
+      "d": {
+        "px": 5786.0,
+        "bars": 734,
+        "d21": -4.87,
+        "d50": -11.1,
+        "d150": -11.26,
+        "d200": -5.35,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 8,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 14,
+          "gap": 0.88,
+          "probe": "high"
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 8,
+          "gap": 0.11,
+          "probe": "high"
+        }
+      },
+      "move": {
+        "d1": -1.25,
+        "atr_pct": 2.56,
+        "atr_x": 0.49,
+        "atr_rejected": null,
+        "sigma": -0.47,
+        "sd60": 2.65
+      },
+      "rel": {
+        "mkt": -2.5,
+        "mkt_name": "Nikkei 225",
+        "sec": -1.13,
+        "peers": 55,
+        "noise": 0.51
+      },
+      "range": {
+        "off52h": -25.88,
+        "off52l": 34.03,
+        "offath": -25.88,
+        "rsi": 32.3,
+        "rsi_short": false,
+        "ath_since": "2001-10-01",
         "ath_deep": true,
         "ath_from_daily": true,
         "ath_daily_years": 3

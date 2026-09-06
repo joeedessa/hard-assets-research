@@ -86,6 +86,7 @@ SUFFIX_MAP = {
     ".HE": ".HE",    # Helsinki
     ".CO": ".CO",    # Copenhagen
     ".HK": ".HK",    # Hong Kong — numeric part padded to 4 digits below
+    ".KS": ".KS",    # Korea Exchange (KOSPI) — six-digit codes, e.g. 329180.KS
 }
 
 
@@ -634,6 +635,7 @@ SESSIONS = {
     ".TWO":  ("Asia/Taipei",      9.0, 13.5),
     ".SS":   ("Asia/Shanghai",    9.5, 15.0),
     ".MX":   ("America/Mexico_City", 8.5, 15.0),
+    ".KS":   ("Asia/Seoul",         9.0, 15.5),
 }
 
 

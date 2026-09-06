@@ -30,7 +30,8 @@
     },
     "tier_note": "The universe grew from 50 to 160+ names in August 2026, largely via bulk promotion from the picks-and-shovels map and ETF screens. Rather than prune, every record now declares which tier it is in, so the count is honest: a tracked name is coverage, an assessed name is a judgment.",
     "selection_criteria": "Capex gap is the PRIMARY selection criterion — under-investment creates price support because supply cannot answer a price signal quickly. It is not the only one, and Technology Metals is the vertical that makes that explicit: it carries the largest share of the book on the LOWEST capex gap (28). The second criterion, stated here because it was previously implicit, is CHOKEPOINT POSITION — a step in the chain where few suppliers can constrain everything downstream, regardless of whether that step is under-invested. SiC substrates, InP photonics, HVLP copper foil and antimony qualify on chokepoint grounds, not capex grounds. A name needs one of the two, not both; where a name has neither it should be tier 'tracked' rather than 'assessed'.",
-    "oil_stance": "Oil is deliberately de-emphasised as a STRUCTURAL thesis — inning 5, business-cycle risk 72, and the highest correlation to GDP in the book. It is nonetheless the largest vertical by count because the picks-and-shovels promotion added drillers, OFS and shipping, which are cyclical service exposures rather than structural commodity ones. Those are tier 'tracked'. The assessed oil names are refining and product shipping, where the post-2020 capacity closure argument is structural rather than a barrel call. Recorded 2026-08-11 as a decision, not neglect."
+    "oil_stance": "Oil is deliberately de-emphasised as a STRUCTURAL thesis — inning 5, business-cycle risk 72, and the highest correlation to GDP in the book. It is nonetheless the largest vertical by count because the picks-and-shovels promotion added drillers, OFS and shipping, which are cyclical service exposures rather than structural commodity ones. Those are tier 'tracked'. The assessed oil names are refining and product shipping, where the post-2020 capacity closure argument is structural rather than a barrel call. Recorded 2026-08-11 as a decision, not neglect.",
+    "universe_note_2026_09_05": "33 names added from the owner's 2026-09-05 brief: Western naval yards, Korean yards (first .KS symbols in the book), and a Japan industrial set. All TRACKED at conviction 1–2 with a source_note; conviction is the owner's. Two candidates were not added because their Yahoo symbols were dead on the day: Toho Titanium (5727.T) and HD Hyundai Mipo (010620.KS, merged)."
   },
   "companies": [
     {
@@ -3339,6 +3340,675 @@
       "last_reviewed": "2026-08-11",
       "tier": "assessed",
       "data_caveat": "MLP structure — variable distributions and K-1 tax reporting; not directly comparable to C-corp peers in this book."
+    },
+    {
+      "ticker": "HII",
+      "name": "Huntington Ingalls",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — naval (carriers, submarines)",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Sole builder of US nuclear aircraft carriers and one of two submarine yards. The demand is appropriated, not cyclical; the constraint is labour and supplier capacity, which is why the Navy is now asking Korean yards for help.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Priced as a defense prime; the upside case is throughput, not orders.",
+      "themes": [
+        "shipbuilding",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "GD",
+      "name": "General Dynamics",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — naval (Electric Boat, NASSCO, Bath)",
+      "geo": "US",
+      "structure": "equity",
+      "thesis_note": "Electric Boat builds Virginia and Columbia-class submarines; NASSCO is partnering with Samsung Heavy on the next-generation logistics ship. Marine Systems is one of four segments.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "shipbuilding",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "TKMS.DE",
+      "name": "TKMS",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — submarines and frigates",
+      "geo": "DE",
+      "structure": "equity",
+      "thesis_note": "Spun out of thyssenkrupp and listed 2025-10 (~€3.8bn at IPO; thyssenkrupp keeps 51%). Record €20.1bn order book at June 2026; won Canada's submarine programme over Hanwha Ocean in 2026-07; six Type 212CD boats for Germany and Norway. The purest listed European submarine exposure.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Thin float and a 51% parent; the market has been sceptical of cash conversion despite the backlog.",
+      "themes": [
+        "shipbuilding",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "data_caveat": "Listed only since 2025-10, so trend indicators carry short history; the 200-day average did not exist until mid-2026."
+    },
+    {
+      "ticker": "FCT.MI",
+      "name": "Fincantieri",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — naval + cruise",
+      "geo": "IT",
+      "structure": "equity",
+      "thesis_note": "Backlog €74.2bn at Q1 2026, 8.1× FY2025 revenue, €42.7bn firm across 94 vessels to 2036. Guidance raised. The shares nevertheless fell ~40% around the print — the case for holding this is that the market is wrong about execution, and that has to be argued, not assumed.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "The record-backlog/plunging-share combination is the WATCHOUT for the whole theme: backlog is not cash.",
+      "themes": [
+        "shipbuilding",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "BA.L",
+      "name": "BAE Systems",
+      "vertical": "ii",
+      "chain_layer": "Defense prime — submarines, naval ships, munitions",
+      "geo": "UK",
+      "structure": "equity",
+      "thesis_note": "Order backlog £83.6bn at end-2025 on £36.8bn intake; naval (Dreadnought, SSN-AUKUS, Type 26) is one segment among air, land and electronics.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "shipbuilding",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "SAAB-B.ST",
+      "name": "Saab",
+      "vertical": "ii",
+      "chain_layer": "Defense — submarines (Kockums) within a broader prime",
+      "geo": "SE",
+      "structure": "equity",
+      "thesis_note": "Poland ordered three A26 submarines (~SEK 47bn, deliveries to 2038); Kockums merged into a new 'Naval' business area from 2026-04-01. Naval is a minority of Saab.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "shipbuilding",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "ASB.AX",
+      "name": "Austal",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — naval, US (Mobile, AL) and Australia",
+      "geo": "AU",
+      "structure": "equity",
+      "thesis_note": "Small-cap yard with a US Navy footprint. Not yet reviewed in depth — entered so the name is priced and trended while that review is done.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Small cap, programme-concentrated.",
+      "themes": [
+        "shipbuilding",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "data_caveat": "Not yet assessed beyond listing verification. Thesis note is a placeholder, and says so."
+    },
+    {
+      "ticker": "329180.KS",
+      "name": "HD Hyundai Heavy Industries",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — naval + commercial (largest yard group)",
+      "geo": "KR",
+      "structure": "equity",
+      "thesis_note": "Cooperating with HII on auxiliaries and automation; a recipient of the US Navy's 2026-07 RFIs for destroyers and fleet tankers. The capacity the US is trying to borrow.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Korean yard equities re-rated hard on the US narrative; execution and margin on US work unproven.",
+      "themes": [
+        "shipbuilding",
+        "shipping-orderbook",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "data_caveat": "First Korean names in this book (2026-09-05). Pipeline support for .KS symbols, Seoul session hours and the KOSPI benchmark was added the same day — first full pass to follow."
+    },
+    {
+      "ticker": "009540.KS",
+      "name": "HD Korea Shipbuilding & Offshore",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — holding company (HHI group)",
+      "geo": "KR",
+      "structure": "equity",
+      "thesis_note": "Intermediate holding for HD Hyundai Heavy, HD Hyundai Mipo (merged in) and HD Hyundai Samho. Overlaps 329180.KS — hold one, not both.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Holding-company discount; double-counts HHI if held together.",
+      "themes": [
+        "shipbuilding",
+        "shipping-orderbook"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "data_caveat": "Overlaps 329180.KS. Listed so the group is complete, flagged so it is not double-weighted."
+    },
+    {
+      "ticker": "042660.KS",
+      "name": "Hanwha Ocean",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — submarines, LNG carriers; owns Philly Shipyard",
+      "geo": "KR",
+      "structure": "equity",
+      "thesis_note": "Bought Philly Shipyard for $100M in 2024 with a $5bn investment plan (over $200M spent, 2,000+ workers) and won its first US Navy contract. Lost Canada's submarine programme to TKMS in 2026-07. The most direct Korean-yards-in-America exposure.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Narrative-driven; US yard economics are unproven and the $5bn is a plan, not spent.",
+      "themes": [
+        "shipbuilding",
+        "shipping-orderbook",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "010140.KS",
+      "name": "Samsung Heavy Industries",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — LNG carriers, FLNG; NASSCO partnership",
+      "geo": "KR",
+      "structure": "equity",
+      "thesis_note": "LNG-carrier specialist at the segment with the highest order book (40% of fleet); partnering with GD NASSCO on the US next-generation logistics ship.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Most exposed of the three to the LNG-carrier order cycle turning.",
+      "themes": [
+        "shipbuilding",
+        "shipping-orderbook"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "7011.JP",
+      "name": "Mitsubishi Heavy Industries",
+      "vertical": "ii",
+      "chain_layer": "Defense prime — frigates, gas turbines, nuclear plant",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Prime on the upgraded Mogami frigate: Australia's three-ship order (first of up to 11, programme up to A$20bn, first delivery 2029) is Japan's largest defense export ever; Japan ordered three more for ¥128.6bn. Also gas turbines and nuclear plant. Defense is a minority of a very large group.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "shipbuilding",
+        "japan-industrial",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "7012.JP",
+      "name": "Kawasaki Heavy Industries",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — submarines; LNG carriers; gas turbines; hydrogen",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Alternates submarine construction with MHI for the JMSDF; builds LNG carriers and gas turbines. Defense and marine are two of many segments.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "shipbuilding",
+        "japan-industrial",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "7013.JP",
+      "name": "IHI",
+      "vertical": "ii",
+      "chain_layer": "Aero engines, turbochargers, nuclear components, defense",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Aero-engine partner on Western programmes; nuclear components; defense systems. Conglomerate exposure.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "japan-industrial",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "7004.JP",
+      "name": "Kanadevia",
+      "vertical": "ii",
+      "chain_layer": "Marine engines, waste-to-energy plant (ex-Hitachi Zosen)",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Renamed from Hitachi Zosen in 2024. Marine diesel engines and environmental plant; the engine tier below the yards.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Small-cap; engine cycle follows the yard cycle with a lag.",
+      "themes": [
+        "shipbuilding",
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "7003.JP",
+      "name": "Mitsui E&S",
+      "vertical": "ii",
+      "chain_layer": "Marine engines (MAN licence), port cranes, naval",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Licensed builder of MAN large-bore marine engines — the engine capacity behind Japanese and some Korean yards. Restructured out of shipbuilding into engines and machinery.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Post-restructuring balance sheet; engine order intake is the read-through.",
+      "themes": [
+        "shipbuilding",
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "7014.JP",
+      "name": "Namura Shipbuilding",
+      "vertical": "ii",
+      "chain_layer": "Shipbuilding — bulkers and tankers",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Mid-size Japanese commercial yard: bulk carriers and tankers. Direct exposure to the 11% bulk / 22% tanker order books.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Small cap; commercial-yard margins are thin and cyclical.",
+      "themes": [
+        "shipbuilding",
+        "shipping-orderbook",
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "5803.JP",
+      "name": "Fujikura",
+      "vertical": "elec",
+      "chain_layer": "Optical fibre and data-centre cabling",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Spider-Web-Ribbon high-density optical cable for AI data centres; data-centre sales 2.3× in FY2026 to record results. The cleanest of the three Japanese cable makers on the DC theme.",
+      "conviction": 2,
+      "froth": 3,
+      "froth_note": "Has re-rated sharply on the DC story; the highest-froth name in the Japan set.",
+      "themes": [
+        "japan-industrial",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "5801.JP",
+      "name": "Furukawa Electric",
+      "vertical": "elec",
+      "chain_layer": "Power cables, optical, DC liquid cooling",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Two DC exposures: optical interconnect and chip-level liquid-cooling modules, the latter guided from ¥6bn (FY2026) to ¥25bn (FY2027). FY2026 guidance raised to ¥1.3tn revenue / ¥65bn operating profit.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Guidance-driven; the cooling number is a projection.",
+      "themes": [
+        "japan-industrial",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6501.JP",
+      "name": "Hitachi",
+      "vertical": "elec",
+      "chain_layer": "Transformers and HVDC (Hitachi Energy) inside a conglomerate",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Parent of Hitachi Energy — one of the three names adding North American transformer capacity toward 2028. The transformer shortage is the thesis; Hitachi Energy is one segment of a very large group.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "japan-industrial",
+        "ai-demand-pull",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6503.JP",
+      "name": "Mitsubishi Electric",
+      "vertical": "elec",
+      "chain_layer": "Power semiconductors, T&D equipment, defense radar",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Power semis and grid equipment for the electrification theme; also radar and systems on the Mogami frigates. Conglomerate.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate: the thesis line is a minority of revenue, so the equity prices many other things. Froth judged on the group, not the line.",
+      "themes": [
+        "japan-industrial",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6504.JP",
+      "name": "Fuji Electric",
+      "vertical": "elec",
+      "chain_layer": "Power semiconductors, substation and drive equipment",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "IGBT/SiC power semis and substation equipment; a purer power-electronics play than Mitsubishi Electric.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Cyclical semis exposure inside an industrial.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "5631.JP",
+      "name": "Japan Steel Works",
+      "vertical": "nu",
+      "chain_layer": "Reactor pressure-vessel forgings; turbine rotors",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Holds roughly 80% of the world market for the largest nuclear forgings (Muroran). Any Western reactor restart or new build routes through it. Targets 200+ power-plant rotor shafts in FY2028, 1.5× FY2025. Shares roughly 4× since end-2023 — the re-rating has started.",
+      "conviction": 2,
+      "froth": 3,
+      "froth_note": "Already re-rated ~4×; the chokepoint is real but the entry is not cheap.",
+      "themes": [
+        "japan-industrial",
+        "nuclear-fuel-cycle"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6361.JP",
+      "name": "Ebara",
+      "vertical": "wl",
+      "chain_layer": "Pumps — data-centre cooling, LNG, semiconductor",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Pumps and compressors across three of this book's themes: DC cooling loops, LNG plant, and semiconductor fabs (dry vacuum pumps).",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Broad industrial; no single thesis line dominates.",
+      "themes": [
+        "japan-industrial",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6370.JP",
+      "name": "Kurita Water",
+      "vertical": "wl",
+      "chain_layer": "Ultrapure water for semiconductor fabs",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Ultrapure-water systems for fabs; every US fab build (TSMC Arizona, Intel, Micron) is a Kurita-class order.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Steady industrial; fab capex cycle is the driver.",
+      "themes": [
+        "japan-industrial",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "4091.JP",
+      "name": "Nippon Sanso",
+      "vertical": "ii",
+      "chain_layer": "Industrial gases (Taiyo Nippon Sanso, Matheson in the US)",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Fourth global gas major; on-site supply to fabs and steel. The Japanese route into the same sole-source gas contracts that LIN and APD hold.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Gas majors trade as quality compounders; limited froth.",
+      "themes": [
+        "japan-industrial",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "5401.JP",
+      "name": "Nippon Steel",
+      "vertical": "ii",
+      "chain_layer": "Steel; owner of US Steel",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Completed the US Steel acquisition; the direct Japanese owner of US steelmaking capacity under Section 232 protection. Also the name most exposed to Chinese steel overcapacity (record 131Mt exports in 2025) — see Gluts.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Steel is the archetypal glut industry; the US asset is the differentiator.",
+      "themes": [
+        "japan-industrial",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "5713.JP",
+      "name": "Sumitomo Metal Mining",
+      "vertical": "li",
+      "chain_layer": "Class 1 nickel and cobalt refining; cathode materials",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "One of the few non-Chinese refiners of battery-grade nickel and cobalt, plus NCA cathode for Panasonic/Tesla. Also gold (Hishikari) and copper smelting.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Nickel price exposure; Indonesian supply swings dominate.",
+      "themes": [
+        "japan-industrial",
+        "battery-supply-chain"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "5711.JP",
+      "name": "Mitsubishi Materials",
+      "vertical": "cu",
+      "chain_layer": "Copper smelting and refining (Naoshima); cement",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Japanese custom copper smelting — the Western-aligned smelter capacity that matters when TC/RCs go to zero and China holds ~50% of smelting.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Smelter margins are the thinnest link in the copper chain.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "5016.JP",
+      "name": "JX Advanced Metals",
+      "vertical": "cu",
+      "chain_layer": "Copper foil, sputtering targets, tantalum/niobium",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "IPO'd 2025 out of ENEOS. Sputtering targets and copper foil for semiconductors and packaging — mid-chain processing the West lacks.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Recent IPO; short trading history.",
+      "themes": [
+        "japan-industrial",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "data_caveat": "Listed 2025; trend indicators may be withheld until history is deep enough."
+    },
+    {
+      "ticker": "5726.JP",
+      "name": "Osaka Titanium",
+      "vertical": "tm",
+      "chain_layer": "Titanium sponge",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "One of two Japanese sponge producers — with Toho Titanium, the aerospace-grade sponge supply outside Russia and China. Direct beneficiary of the post-2022 VSMPO diversification.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Small cap; aerospace cycle and yen.",
+      "themes": [
+        "japan-industrial",
+        "defense-procurement"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "data_caveat": "Toho Titanium (5727) could not be verified as a live Yahoo symbol on 2026-09-05 and was NOT added; Osaka Titanium stands in for the sponge exposure."
+    },
+    {
+      "ticker": "5714.JP",
+      "name": "Dowa",
+      "vertical": "ii",
+      "chain_layer": "Non-ferrous smelting and metals recycling",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Recycling and smelting of precious and minor metals from e-scrap — the urban-mine route to the same tech metals.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Diversified; recycling margins follow metal prices.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "4063.JP",
+      "name": "Shin-Etsu Chemical",
+      "vertical": "ii",
+      "chain_layer": "Silicon wafers, PVC, rare-earth magnets",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "World's largest silicon-wafer and PVC producer, and a Japanese NdFeB magnet maker. Three of this book's themes in one balance sheet.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Quality compounder; already well owned.",
+      "themes": [
+        "japan-industrial",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-09-05",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
     }
   ]
 }

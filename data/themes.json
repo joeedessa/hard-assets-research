@@ -224,7 +224,7 @@
       "items": [
         {
           "lbl": "REE for guidance, radar & sonar",
-          "ticks": "MP Materials (Fort Worth magnets, DoD relationship); Lynas (LYC.AX, DoD-funded TX facility)",
+          "ticks": "MP Materials (Fort Worth magnets, DoD relationship); Lynas (LYC.AX — the DoD-funded Texas plant is NOT proceeding as planned; US$96M redirected to offtake from Malaysia in 2026-03)",
           "why": "Precision guidance systems, radar arrays, sonar transducers, and electric motors in ships/planes/submarines all require NdFeB magnets. DoD has listed REE as the single highest-priority critical mineral gap."
         },
         {
@@ -267,7 +267,7 @@
       "risk": "Defense procurement cycles are measured in years — requires patience. Budget sequestration or political shifts could slow spending. Some names (MTRN, ALM) have limited liquidity — position sizing constrained.",
       "positions": [
         "Highest conviction: MTRN (Be — monopoly, underowned), MP/LYC.AX (REE defense), ATI (Ti diversification)",
-        "Strong structural: PPTA (Sb + DoD MOU + gold optionality), HXL (CF), CCO/LEU (nuclear propulsion)",
+        "Strong structural: PPTA (Sb + DoD MOU + gold optionality), HXL (CF), LEU (unobligated enrichment + HALEU — naval propulsion is NOT a driver; see item), CCO (commercial fuel)",
         "Second-order: AXTI (GaAs substrates), ALM (tungsten, thin liquidity)"
       ],
       "company_tags": [
@@ -400,6 +400,96 @@
         "robotics-magnets",
         "ai-chip-packaging",
         "sic-power"
+      ]
+    },
+    {
+      "id": "maritime",
+      "n": "Shipbuilding & Maritime — defense demand meets a 17-year order-book high",
+      "c": "#0E7C66",
+      "sub": "Yards are the shared chokepoint between rearmament and the tanker/LNG/bulk fleets. Both are booked out; neither is the same as cash.",
+      "struct": 84,
+      "near": 78,
+      "bc": 40,
+      "items": [
+        {
+          "lbl": "Naval shipbuilding — demand arriving as policy",
+          "ticks": "HII, GD (US primes); TKMS (TKMS.DE), Fincantieri (FCT.MI), BAE (BA.L), Saab (SAAB-B.ST) (Europe); Mitsubishi Heavy (7011.JP) (Japan); HD Hyundai Heavy (329180.KS), Hanwha Ocean (042660.KS), Samsung Heavy (010140.KS) (Korea, now bidding for US Navy work)",
+          "why": "Record backlogs everywhere: BAE £83.6bn, Fincantieri €74.2bn (8.1× revenue), TKMS €20.1bn. In 2026-07 the US Navy issued RFIs to Korean yards for destroyers and fleet tankers — the first move to end an 80-year bar on foreign-built warships. WATCHOUT: Fincantieri's shares fell ~40% on a record backlog. Backlog is not cash. And the SHIPS for America Act is NOT law — it has sat in committee since 2025-04."
+        },
+        {
+          "lbl": "Order books by segment — read against age, not alone",
+          "ticks": "FLNG, GLNG (LNG carriers, 40% of fleet on order); FRO, DHT, INSW (VLCC ~30%, crude 22%); STNG (products 19%); SBLK, GOGL (bulk 11%, Capesize 3%)",
+          "why": "Global orderbook 17% of fleet at Q1 2026, highest since 2011 (Clarksons). But the tanker fleet averages 14.3 years, demolitions are at decade lows, and 23% of large tankers are in the shadow trade — so effective supply grows under 3% a year despite record ordering. The Gluts view treats shipbuilding as the textbook 3–4-year-lag capacity industry."
+        },
+        {
+          "lbl": "Engines, forgings and the tier below the yard",
+          "ticks": "Mitsui E&S (7003.JP — MAN-licensed marine engines); Kanadevia (7004.JP); IHI (7013.JP); Japan Steel Works (5631.JP — also the reactor-vessel forger)",
+          "why": "Yard capacity is visible; engine and heavy-forging capacity is the quieter bottleneck, and it is concentrated in Japan and Korea."
+        }
+      ],
+      "thesis": "Two demand streams — rearmament and fleet renewal — are landing on one constrained yard base, mostly in Korea and Japan, with US and European policy trying to pull capacity home. Backlogs are real and multi-year. The discipline this theme needs is to separate booked from delivered: a yard's backlog/revenue multiple, the effective fleet growth after age and shadow absorption, and legislation that has actually passed.",
+      "risk": "A capacity industry at a cyclical high. Korean yards expanding into the US are adding docks at the top of the order cycle; a trade slowdown from deglobalisation hits the segment with the second-largest order book (containers, 37%). Legislative risk in the US: RFIs and an executive Maritime Action Plan are not appropriations.",
+      "positions": [
+        "Structural: TKMS.DE (submarine backlog, Canada win), HII (sole US nuclear-carrier yard), 042660.KS / 329180.KS (Korean capacity the US Navy now wants)",
+        "Cyclical / owners: FRO, DHT (age-constrained VLCC supply), FLNG (LNG wave — deferred, not cancelled)",
+        "Proposed conviction cap 1–2 for all new names; owner to set."
+      ],
+      "company_tags": [
+        "shipbuilding",
+        "shipping-orderbook",
+        "defense-procurement",
+        "reshoring"
+      ]
+    },
+    {
+      "id": "japan",
+      "n": "Japan — the quiet industrial re-rating",
+      "c": "#B4532A",
+      "sub": "The chokepoints this book cares about — reactor forgings, cables, power semis, titanium sponge, marine engines — are disproportionately Japanese, and mostly held as small lines inside conglomerates.",
+      "struct": 82,
+      "near": 70,
+      "bc": 45,
+      "items": [
+        {
+          "lbl": "Nuclear — the forging nobody else makes at scale",
+          "ticks": "Japan Steel Works (5631.JP — ~80% of the world's large reactor-vessel forgings; shares roughly 4× since end-2023; targets 200+ turbine rotor shafts in FY2028, 1.5× FY2025)",
+          "why": "A reactor restart or new build anywhere in the West routes through Muroran. This is the purest chokepoint in the Japan set (Nikkei Asia, Energy Intelligence)."
+        },
+        {
+          "lbl": "Grid and data-centre interconnect",
+          "ticks": "Fujikura (5803.JP — DC sales 2.3× in FY2026), Furukawa Electric (5801.JP — liquid-cooling modules guided ¥6bn → ¥25bn FY2026→FY2027), Sumitomo Electric (5802.T — HTS wire, InP), Hitachi (6501.JP — Hitachi Energy transformers/HVDC), Mitsubishi Electric (6503.JP), Fuji Electric (6504.JP)",
+          "why": "The 'big three' cable makers rotated out of commodity wire into optical and DC cabling; Hitachi owns the transformer capacity the US grid is short of."
+        },
+        {
+          "lbl": "Defense industrial base coming out of the shadows",
+          "ticks": "Mitsubishi Heavy (7011.JP — Mogami frigates: Australia's largest-ever import order; Japan ¥128.6bn), Kawasaki Heavy (7012.JP — submarines), IHI (7013.JP), NEC / Mitsubishi Electric / Hitachi (radar, systems)",
+          "why": "Record FY2026 defense budget and the first warship export in the post-war era. Defense is still a small slice of each conglomerate's revenue — the exposure is diluted."
+        },
+        {
+          "lbl": "Materials processing the West lacks",
+          "ticks": "Osaka Titanium (5726.JP — sponge), JX Advanced Metals (5016.JP — copper foil, sputtering targets), Sumitomo Metal Mining (5713.JP — Class 1 nickel, cathode), Mitsubishi Materials (5711.JP — copper smelting), Nippon Sanso (4091.JP — gases), Shin-Etsu (4063.JP — wafers), Dowa (5714.JP — recycling), Nippon Steel (5401.JP — owns US Steel)",
+          "why": "Japan kept the mid-chain processing that the US let go. Titanium sponge outside Russia/China is Japan; Class 1 nickel refining outside China is largely SMM."
+        },
+        {
+          "lbl": "Water and thermal",
+          "ticks": "Ebara (6361.JP — pumps for data-centre cooling, LNG, semis), Kurita (6370.JP — ultrapure water for fabs)",
+          "why": "Every new fab and data centre in the US is a Japanese pump and water-treatment order."
+        }
+      ],
+      "thesis": "Japan is where the West's missing middle of the supply chain still exists: forgings, sponge, cathode precursors, cables, marine engines. Most of it sits inside conglomerates where the relevant line is 5–20% of revenue, which is why it screens badly and is under-owned by thematic money. The re-rating case is that the chokepoint lines grow into the valuation while the conglomerate discount narrows under governance reform. Every new name here enters as TRACKED at conviction 1–2; the owner sets conviction.",
+      "risk": "Dilution — the thesis line is small inside each group. Yen. Conglomerate governance can absorb the gains. Many names have already re-rated hard (JSW ~4×); entry timing matters more than usual. Korea competes on ships and steel.",
+      "positions": [
+        "Chokepoint purest: 5631.JP (JSW)",
+        "Grid/DC: 5803.JP, 5801.JP, 6501.JP",
+        "Defense: 7011.JP",
+        "Processing: 5726.JP, 5016.JP, 5713.JP",
+        "All proposed at conviction 1–2; owner to set."
+      ],
+      "company_tags": [
+        "japan-industrial",
+        "reshoring",
+        "defense-procurement",
+        "ai-demand-pull"
       ]
     }
   ]

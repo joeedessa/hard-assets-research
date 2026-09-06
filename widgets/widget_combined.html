@@ -923,6 +923,58 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .dw-mx-note{font-size:11px;line-height:1.6;color:var(--color-text-secondary);margin-top:5px;
   padding-left:8px;border-left:2px solid var(--color-border-secondary)}
 /* ── Trends ─────────────────────────────────────────────────────────────── */
+.mar-tbl{width:100%;min-width:900px;border-collapse:collapse;font-size:11px}
+.mar-tbl th{text-align:left;font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-tertiary);font-weight:500;padding:5px 8px;border-bottom:.5px solid var(--color-border-secondary)}
+.mar-tbl td{padding:7px 8px;vertical-align:top;border-bottom:.5px solid var(--color-border-tertiary,var(--color-border-secondary));line-height:1.5}
+.mar-seg{font-weight:600;white-space:nowrap;color:var(--color-text-primary)}
+.mar-pct{white-space:nowrap;min-width:110px}.mar-pct b{font-size:14px;font-variant-numeric:tabular-nums}
+.mar-bar{height:4px;border-radius:2px;background:var(--color-background-secondary);margin-top:4px;overflow:hidden}.mar-bar i{display:block;height:100%;background:var(--accent)}
+.mar-basis{color:var(--color-text-secondary);max-width:260px}
+.mar-src{display:block;font-size:9px;color:var(--color-text-tertiary);margin-top:2px}
+.mar-note{color:var(--color-text-secondary);max-width:420px}
+.mar-tks{margin-top:4px;display:flex;flex-wrap:wrap;gap:4px}
+.mar-ctxs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin-bottom:10px}
+.mar-ctx{padding:9px 11px;border-radius:6px;background:var(--color-background-secondary);border-left:3px solid var(--warn)}
+.mar-ctx-v{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--color-text-primary)}
+.mar-ctx-l{font-size:10px;color:var(--color-text-secondary);margin-top:2px}
+.mar-ctx-n{font-size:10px;line-height:1.5;color:var(--color-text-tertiary);margin-top:5px}
+.mar-defs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px;margin-bottom:10px}
+.mar-def{padding:9px 11px;border-radius:6px;border:.5px solid var(--color-border-secondary)}
+.mar-def-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px}
+.mar-def-r{font-size:11px;font-weight:600;color:var(--accent)}
+.mar-def-b{font-size:11px;line-height:1.6;color:var(--color-text-secondary)}
+.mar-ind{margin:6px 0 0 16px;padding:0;font-size:10.5px;line-height:1.55}
+.gl-mechs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px;margin-bottom:10px}
+.gl-mech{padding:9px 11px;border-radius:6px;background:var(--color-background-secondary)}
+.gl-mech-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:4px}
+.gl-mech-b{font-size:11px;line-height:1.6;color:var(--color-text-secondary)}
+.gl-mech-k{font-size:10px;line-height:1.5;color:var(--color-text-tertiary);margin-top:4px}
+.gl-vs{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:8px;margin-bottom:10px}
+.gl-v{padding:9px 11px;border-radius:6px;border:.5px solid var(--color-border-secondary);border-left:3px solid}
+.gl-v-h{display:flex;align-items:baseline;gap:8px;margin-bottom:5px}
+.gl-v-n{font-size:12px;font-weight:600;flex:1}
+.gl-score{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;cursor:help}
+.gl-score i{font-style:normal;font-size:8.5px;font-weight:500;margin-left:4px;padding:0 4px;border-radius:3px;background:var(--color-background-secondary);color:var(--color-text-tertiary);vertical-align:middle}
+.gl-hz{font-size:10px;color:var(--color-text-tertiary);white-space:nowrap}
+.gl-v-m{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:5px}
+.gl-tag{font-size:9px;padding:1px 6px;border-radius:3px;background:var(--color-background-secondary);color:var(--color-text-secondary);cursor:help}
+.gl-v-b{font-size:11px;line-height:1.6;color:var(--color-text-secondary);margin-top:3px}
+.gl-counter{color:var(--color-text-tertiary)}
+.gl-v-w{font-size:10px;line-height:1.5;margin-top:5px;color:var(--color-text-tertiary);border-top:.5px dashed var(--color-border-secondary);padding-top:4px}
+.gl-ans{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px;margin-bottom:10px}
+.gl-an{padding:9px 11px;border-radius:6px;background:var(--color-background-secondary)}
+.gl-an-h{display:flex;justify-content:space-between;gap:8px;font-size:11px;margin-bottom:4px}.gl-an-h span{color:var(--color-text-tertiary);font-size:10px;white-space:nowrap}
+.gl-an-b{font-size:11px;line-height:1.6;color:var(--color-text-secondary)}
+.gl-an-l{font-size:10.5px;line-height:1.55;color:var(--color-text-primary);margin-top:5px}
+@media(max-width:768px){.mar-ctxs,.mar-defs,.gl-mechs,.gl-vs,.gl-ans{grid-template-columns:1fr}}
+.or-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin-bottom:12px}
+.or-card{padding:9px 11px;border-radius:6px;background:var(--color-background-secondary);border-left:3px solid var(--color-border-secondary)}
+.or-break{border-left-color:#E0762B}.or-watch{border-left-color:var(--warn)}.or-geo{border-left-color:var(--accent)}
+.or-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:3px}
+.or-b{font-size:11px;line-height:1.6;color:var(--color-text-secondary)}
+.or-rev{margin-bottom:12px}
+.or-foot{font-size:10.5px;line-height:1.6;color:var(--color-text-tertiary);padding:7px 10px;border-radius:4px;border:.5px dashed var(--color-border-secondary);margin-bottom:8px}
+@media(max-width:768px){.or-grid{grid-template-columns:1fr}}
 .tr-head{padding:11px 13px;border-radius:6px;margin-bottom:10px;
   background:var(--color-background-secondary);border-left:3px solid var(--accent)}
 .tr-head-t{font-size:12px;font-weight:600;color:var(--color-text-primary);margin-bottom:4px}
@@ -1131,6 +1183,7 @@ display:flex;align-items:center;gap:6px;padding:4px 0;
   <span class="tab-sep"></span>
   <span class="tab" onclick="ST('th')">Demand Themes</span>
   <span class="tab" onclick="ST('el')">Electricity &amp; Grid</span>
+  <span class="tab" onclick="ST('mar')">Shipping &amp; Yards</span>
   <span class="tab" onclick="ST('pk')">Picks &amp; Shovels</span>
   <span class="tab-sep"></span>
   <span class="tab" onclick="ST('ps')">Portfolio</span>
@@ -1143,6 +1196,7 @@ display:flex;align-items:center;gap:6px;padding:4px 0;
   <span class="tab" onclick="ST('nt')">Notes</span>
   <span class="tab" onclick="ST('wn')">What's Next</span>
   <span class="tab" onclick="ST('cm')">Critical Minerals</span>
+  <span class="tab" onclick="ST('glut')">Gluts &amp; Reversals</span>
   <span class="tab" onclick="ST('gl')">Glossary</span>
 </div>
 <div class="content">
@@ -1173,6 +1227,7 @@ display:flex;align-items:center;gap:6px;padding:4px 0;
     <div class="th-nav" id="th-nav"></div>
     <div id="th-detail"></div>
   </div>
+  <div id="v-mar" class="view"></div>
   <div id="v-pk" class="view">
     <div class="note-box"><b>Picks &amp; shovels</b> — cross-cutting companies that serve ALL commodity verticals. <span style="display:inline-block;border-left:3px solid var(--bad);padding-left:4px;color:var(--bad);font-weight:500">red border</span> = highest conviction &nbsp;<span class="badge b-hot">hot</span> active now &nbsp;<span class="badge b-str">structural</span> long-duration &nbsp;<span class="badge b-mod">moderate</span> mid-cycle</div>
     <div class="pills" id="ps-pills"><button class="pill on" onclick="setPsFilter('all',this)">All categories</button></div>
@@ -1189,6 +1244,7 @@ display:flex;align-items:center;gap:6px;padding:4px 0;
   <div id="v-nt" class="view"></div>
   <div id="v-wn" class="view"></div>
   <div id="v-cm" class="view"></div>
+  <div id="v-glut" class="view"></div>
   <div id="v-gl" class="view"></div>
 </div>
 <footer class="ha-foot">
@@ -1276,6 +1332,7 @@ let GLOSSARY=[];
 let MINERALS={minerals:[],_meta:{}};
 let METRICS={},METRICS_META={};
 let MX_INTEGRATED='';
+let MARITIME=null,GLUTS=null,ORIENT=null;
 // Weekly and monthly frames are a separate file, fetched only when asked for.
 // A 200-month average needs 200 months of history and nobody wants that on
 // every page load.
@@ -1296,7 +1353,7 @@ let TICKER_RE=null;
 // links built from the raw ticker are dead for most non-US listings.
 const YH_SUFFIX={'.JP':'.T','.SH':'.SS','.TWO':'.TWO','.TW':'.TW','.T':'.T','.AX':'.AX',
  '.TO':'.TO','.V':'.V','.L':'.L','.JO':'.JO','.SW':'.SW','.MI':'.MI','.PA':'.PA','.DE':'.DE',
- '.AS':'.AS','.BR':'.BR','.OL':'.OL','.ST':'.ST','.HE':'.HE','.CO':'.CO','.HK':'.HK'};
+ '.AS':'.AS','.BR':'.BR','.OL':'.OL','.ST':'.ST','.HE':'.HE','.CO':'.CO','.HK':'.HK','.KS':'.KS'};
 function yahooSymbol(tk){
   if(!tk)return '';
   const keys=Object.keys(YH_SUFFIX).sort((a,b)=>b.length-a.length);
@@ -1458,7 +1515,7 @@ function jumpToCompanies(tk){
 // ── Tab switching ──────────────────────────────────────────────────────────
 // MUST stay in the same order as the .tab spans in the markup — ST() pairs
 // them by index. Also the order the Start Here learning path walks.
-const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','pk','ps','fm','pol','co','tr','nw','nt','wn','cm','gl'];
+const TAB_IDS=['act','sh','mx','cy','geo','vx','ex','th','el','mar','pk','ps','fm','pol','co','tr','nw','nt','wn','cm','glut','gl'];
 const built={};
 function ST(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
@@ -1476,6 +1533,8 @@ function buildTab(id){
   else if(id==='geo')buildGeo();
   else if(id==='cy')buildCycle();
   else if(id==='el')buildEl();
+  else if(id==='mar')buildMaritime();
+  else if(id==='glut')buildGluts();
   else if(id==='th')buildThemes();
   else if(id==='pk')buildPS();
   else if(id==='ps')buildPortfolio();
@@ -1626,7 +1685,7 @@ function buildStartHere(){
     {icon:'⚡',title:'AI power demand',color:'#534AB7',body:'AI training and inference requires 24/7 power at scale. Hyperscalers have turned to nuclear as the only source combining price certainty (15–20yr PPAs at $110–130/MWh), zero-carbon credentials, and 90%+ capacity factor. Amazon signed for 1.92 GW, Google signed the first-ever corporate SMR fleet PPA, Meta announced a 6.6 GW strategy. ETN\'s 228 GW data center backlog is 12 years of orders at current build rates.'},
     {icon:'🔋',title:'Energy transition',color:'#1D9E75',body:'Every GW of offshore wind requires ~3× more copper per MW than a gas plant. Every EV drivetrain needs 6–8 rare earth magnets. Every grid battery requires lithium, manganese, nickel, or iron phosphate. Decarbonization is fundamentally a materials-intensive exercise — the S&amp;P Global 8 Mt/yr copper deficit projected for 2030 flows directly from this math. The supply chains required simply were not built during the 2010s.'},
     {icon:'🏅',title:'Monetary debasement',color:'#888780',body:'Central bank net gold purchases: Q1 2026 = 244 tonnes; full-year 2024 ≈ 1,037 tonnes — highest in recorded history. The 2022 Russian reserve freeze demonstrated that USD assets held in Western custodians can be seized, prompting a structural shift toward physical gold in sovereign reserves. Gold hit $5,589/oz on January 28, 2026. J.P. Morgan projects $5,000/oz by Q4 2026.'},
-    {icon:'🛡️',title:'Defense & autonomy',color:'#A32D2D',body:'Defense budgets are rising across every major bloc, and the character of war has changed. Drones, loitering munitions and increasingly autonomous systems are CONSUMED rather than maintained — a consumption model needs production lines and materials, not a 30-year sustainment contract. Tungsten for penetrators, antimony for primers, rare-earth magnets for every actuator and seeker head, titanium and specialty alloys for airframes. As AI and robotics move into the field, the binding constraint moves further toward magnets, alloys and manufacturing capacity rather than software.'},
+    {icon:'🛡️',title:'Defense & autonomy',color:'#A32D2D',body:'Defense budgets are rising across every major bloc, and the character of war has changed. Drones, loitering munitions and increasingly autonomous systems are CONSUMED rather than maintained — a consumption model needs production lines and materials, not a 30-year sustainment contract. Tungsten for penetrators, antimony for primers, rare-earth magnets for every actuator and seeker head, titanium and specialty alloys for airframes. As AI and robotics move into the field, the binding constraint moves further toward magnets, alloys and manufacturing capacity rather than software. The most visible collision of rearmament with a physical limit is shipbuilding: every Western yard is at a record backlog and the US Navy is formally asking Korean yards to build destroyers — see Shipping &amp; Yards.'},
     {icon:'📦',title:'Just-in-case inventory',color:'#854F0B',body:'Four decades of just-in-time assumed that supply was always purchasable at a price. Export controls, sanctions and shipping disruption have made that assumption expensive, and buyers are rebuilding buffer stock. Restocking is a ONE-TIME demand pulse layered on top of ordinary consumption, and government strategic stockpiling — the US National Defense Stockpile expansion, EU CRM Act reserve targets — sits on top of that again. Watch for it in inventory-to-sales ratios and stockpile appropriations rather than in spot prices, which move later.'},
     {icon:'🏭',title:'Reshoring — probably through automation',color:'#185FA5',body:'Manufacturing is returning to the US and allied countries for security reasons rather than cost. What is NOT yet settled is whether it returns jobs. The plants being announced are heavily automated, which would make reshoring a robotics and capital-equipment story rather than an employment one. That distinction matters for this map: an automated plant consumes MORE precision components, motors, magnets and industrial gases per unit of output than a labour-intensive one, so the automation path reinforces the materials thesis rather than diluting it. Treat this as a hypothesis to test against capex disclosures and headcount, not a settled fact.'},
   ];
@@ -1664,13 +1723,15 @@ function buildStartHere(){
     {n:4,name:'Vertical Explorer',tab:'vx',c:'#534AB7',desc:'Drill into one chain end to end \u2014 mine to end-use, where value is captured, and which steps are chokepoints.'},
     {n:5,name:'Portfolio',tab:'ps',c:'#EF9F27',desc:'The defining insight and three-cluster structure. Work through the four screening questions \u2014 apply them mechanically to every position.'},
     {n:6,name:'Companies',tab:'co',c:'#185FA5',desc:'The names. Filter by vertical, conviction or froth. Structure badges show the access type (streaming vs. equity vs. physical trust).'},
-    {n:7,name:'Trends',tab:'tr',c:'#0E7C66',desc:'Where each name sits against its 21/50/150/200 averages, what has crossed in the last ten sessions, and whether today\u2019s move is large FOR THAT NAME. Timing, not thesis \u2014 read it after you have decided what you want to own, never instead.'},
-    {n:8,name:'Research Notes',tab:'nt',c:'#993556',desc:'Chronological event log. What changed and when \u2014 the gap between the original thesis and current reality.'}
+    {n:7,name:'Shipping & Yards',tab:'mar',c:'#0E7C66',desc:'Order books by segment read against fleet age, and the defense shipbuilding build-out. Where rearmament meets a physical limit.'},
+    {n:8,name:'Gluts & Reversals',tab:'glut',c:'#E0762B',desc:'How each shortage ends: over-investment, duplicated capacity, Chinese exports, switching, innovation, policy reversal. Proposed glut-risk score per vertical.'},
+    {n:9,name:'Trends',tab:'tr',c:'#0E7C66',desc:'Where each name sits against its 21/50/150/200 averages, what has crossed in the last ten sessions, and whether today\u2019s move is large FOR THAT NAME. Timing, not thesis \u2014 read it after you have decided what you want to own, never instead.'},
+    {n:10,name:'Research Notes',tab:'nt',c:'#993556',desc:'Chronological event log. What changed and when \u2014 the gap between the original thesis and current reality.'}
   ];
   const stepsHtml=steps.map(p=>`<div class="fw-step" onclick="ST('${p.tab}')"><div class="fw-step-num" style="background:${p.c}">${p.n}</div><div class="fw-step-name">${p.name}</div><div class="fw-step-desc">${p.desc}</div></div>`).join('');
 
   el.innerHTML=`
-    <div class="fw-macro"><div class="fw-macro-title">Why hard assets, why now</div><div class="fw-macro-body">Seven structural forces are converging simultaneously — and each reinforces the others. <b>Deglobalization</b> is forcing supply chain regionalization: governments are paying strategic premiums to secure domestic production of materials they cannot afford to import from adversaries. <b>AI infrastructure</b> requires massive physical inputs — power, copper, transformers, rare earth magnets — that have no software substitute and take a decade to build. <b>Energy transition</b> demands 6–10× more copper, lithium, cobalt, and rare earths per unit of capacity than the fossil fuel system it replaces. <b>Monetary debasement</b> has driven central banks to record gold purchases as de-dollarization accelerates post-2022 Russia sanctions. <b>Defense spending</b> is rising across every major bloc, and the character of war has changed: drones, loitering munitions and increasingly autonomous systems are consumed in volume rather than maintained for decades. That turns defense from a slow procurement cycle into a manufacturing and materials problem — and as AI and robotics enter the battlefield, the binding constraint becomes magnets, alloys, propellants and production lines rather than software. <b>Just-in-case is displacing just-in-time.</b> Four decades of inventory minimisation assumed supply was always purchasable; export controls and shipping disruption have made that assumption expensive. Rebuilding buffer stock is a one-time demand pulse on top of consumption, and strategic stockpiling by governments sits on top of that again. <b>Manufacturing is returning to the US</b> — the same deglobalization impulse, driven by security rather than cost. Whether that actually returns jobs is unresolved and worth watching: the plants being built are heavily automated, which would make reshoring a robotics and capital-equipment story more than an employment one — and would reinforce the materials demand rather than dilute it. These are not cyclical trends — they are structural regime changes that will play out over decades, and the supply chains required were not built during the previous era of cheap capital and globalization.</div></div><div class="fw-refine"><div class="fw-refine-h">The point is refining, not mining</div><div class="fw-refine-b">Every force above is usually described as a race for raw material. It is not. The chokepoint is almost always the <b>processing step between the ore and the usable input</b> — and that is where China built its position. Rare earths are the clearest case: the oxides are geologically common and mined in several countries, but <b>separating</b> them into individual elements, and then converting those into sintered NdFeB magnets, is concentrated to the point of near-monopoly. Owning a rare-earth deposit without access to separation buys you nothing. The same pattern repeats across the map — lithium <i>conversion</i> rather than spodumene, uranium <i>enrichment</i> rather than U3O8, battery-grade <i>spherical</i> graphite rather than flake, high-purity manganese <i>sulphate</i> rather than ore, Class 1 nickel rather than laterite. This is why the Universe Matrix is built as chain stages rather than commodities, and why a holding is graded on which stage it occupies: <b>primary production, processing, byproduct or end-use are not interchangeable exposures.</b></div></div>
+    <div class="fw-macro"><div class="fw-macro-title">Why hard assets, why now</div><div class="fw-macro-body">Seven structural forces are converging simultaneously — and each reinforces the others. <b>Deglobalization</b> is forcing supply chain regionalization: governments are paying strategic premiums to secure domestic production of materials they cannot afford to import from adversaries. <b>AI infrastructure</b> requires massive physical inputs — power, copper, transformers, rare earth magnets — that have no software substitute and take a decade to build. <b>Energy transition</b> is far more mineral-intensive than the system it replaces: a typical electric car needs about six times the mineral inputs of a conventional car, and an onshore wind plant about nine times a gas plant of the same capacity (IEA, <i>The Role of Critical Minerals in Clean Energy Transitions</i>, 2021 — this line previously said '6–10× per unit of capacity' without a source). <b>Monetary debasement</b> has driven central banks to record gold purchases as de-dollarization accelerates post-2022 Russia sanctions. <b>Defense spending</b> is rising across every major bloc, and the character of war has changed: drones, loitering munitions and increasingly autonomous systems are consumed in volume rather than maintained for decades. That turns defense from a slow procurement cycle into a manufacturing and materials problem — and as AI and robotics enter the battlefield, the binding constraint becomes magnets, alloys, propellants and production lines rather than software. <b>Just-in-case is displacing just-in-time.</b> Four decades of inventory minimisation assumed supply was always purchasable; export controls and shipping disruption have made that assumption expensive. Rebuilding buffer stock is a one-time demand pulse on top of consumption, and strategic stockpiling by governments sits on top of that again. <b>Manufacturing is returning to the US</b> — the same deglobalization impulse, driven by security rather than cost. Whether that actually returns jobs is unresolved and worth watching: the plants being built are heavily automated, which would make reshoring a robotics and capital-equipment story more than an employment one — and would reinforce the materials demand rather than dilute it. These are not cyclical trends — they are structural regime changes that will play out over decades, and the supply chains required were not built during the previous era of cheap capital and globalization.</div></div><div class="fw-refine"><div class="fw-refine-h">The point is refining, not mining</div><div class="fw-refine-b">Every force above is usually described as a race for raw material. It is not. The chokepoint is almost always the <b>processing step between the ore and the usable input</b> — and that is where China built its position. Rare earths are the clearest case: the oxides are geologically common and mined in several countries, but <b>separating</b> them into individual elements, and then converting those into sintered NdFeB magnets, is concentrated to the point of near-monopoly. Owning a rare-earth deposit without access to separation buys you nothing. The same pattern repeats across the map — lithium <i>conversion</i> rather than spodumene, uranium <i>enrichment</i> rather than U3O8, battery-grade <i>spherical</i> graphite rather than flake, high-purity manganese <i>sulphate</i> rather than ore, Class 1 nickel rather than laterite. This is why the Universe Matrix is built as chain stages rather than commodities, and why a holding is graded on which stage it occupies: <b>primary production, processing, byproduct or end-use are not interchangeable exposures.</b></div></div>
     <div class="fw-drivers">${driversHtml}</div>
     <div class="fw-insight"><div class="fw-insight-label">The defining structural insight</div><div class="fw-insight-title">Four verticals at inning 1–2, with the highest capex gaps in the universe</div><div class="fw-insight-body">Nuclear/Uranium (inning 2), REE (inning 1), Electricity/Grid (inning 2) and Copper (inning 2) all share the same structural profile: demand is mathematically locked in by AI power, the enrichment rebuild, grid buildout and electrification; supply chains are starved of investment after a decade+ of neglect; and lead times are so long that even committed investment today cannot solve the deficit quickly. Three of the four carry business cycle risk below 30 — the <b>most defensible positions in a recessionary environment</b>, since government procurement and grid buildout happen regardless of GDP. <b>Copper is the deliberate exception:</b> at BC risk 62 it is materially more cyclical and demands more entry-timing discipline — but its supply case is the hardest of the four to argue against, with no substitute and 16–17 year permitting in democracies.</div><div class="fw-trio"><div class="fw-trio-item" style="background:#534AB712;border:.5px solid #534AB744"><div class="fw-trio-name" style="color:#534AB7">Nuclear / Uranium</div><div class="fw-trio-stats">Inning 2 · Capex gap 90<br>BC risk 20 · Structural 95</div></div><div class="fw-trio-item" style="background:#99355612;border:.5px solid #99355544"><div class="fw-trio-name" style="color:#993556">REE &amp; Specialty</div><div class="fw-trio-stats">Inning 1 · Capex gap 92<br>BC risk 28 · Structural 92</div></div><div class="fw-trio-item" style="background:#185FA512;border:.5px solid #185FA544"><div class="fw-trio-name" style="color:#185FA5">Electricity / Grid</div><div class="fw-trio-stats">Inning 2 · Capex gap 88<br>BC risk 22 · Structural 94</div></div><div class="fw-trio-item" style="background:#D85A3012;border:.5px solid #D85A3044"><div class="fw-trio-name" style="color:#D85A30">Copper</div><div class="fw-trio-stats">Inning 2 · Capex gap 85<br>BC risk 62 · Structural 88</div></div></div></div>
     <div class="sh-stats">${statsHtml}</div>
@@ -1678,6 +1739,17 @@ function buildStartHere(){
     <div class="fw-models">${modelsHtml}</div>
     <div class="fw-section-hdr">Signals to watch — per-vertical leading indicators</div>
     ${sigsHtml}
+    ${ORIENT?`
+    <div class="fw-section-hdr">What breaks this thesis</div>
+    <div class="note-box" style="line-height:1.7">${esc(ORIENT.what_breaks_this?.intro||'')} <span class="dwt-link" onclick="ST('${esc(ORIENT.what_breaks_this?.link_tab||'glut')}')">Open Gluts &amp; Reversals →</span></div>
+    <div class="or-grid">${(ORIENT.what_breaks_this?.items||[]).map(x=>`<div class="or-card or-break"><div class="or-t">${esc(x.t)}</div><div class="or-b">${linkifyTickers(esc(x.b))}</div></div>`).join('')}</div>
+    <div class="fw-section-hdr">Watchouts — rules this book learned the hard way</div>
+    <div class="note-box" style="line-height:1.7">${esc(ORIENT.watchouts?.intro||'')}</div>
+    <div class="or-grid">${(ORIENT.watchouts?.items||[]).map(x=>`<div class="or-card or-watch"><div class="or-t">${esc(x.t)}</div><div class="or-b">${linkifyTickers(esc(x.b))}</div></div>`).join('')}</div>
+    <div class="fw-section-hdr">Where the chokepoints physically sit</div>
+    <div class="or-grid">${(ORIENT.geography?.items||[]).map(x=>`<div class="or-card or-geo"><div class="or-t">${esc(x.t)}</div><div class="or-b">${linkifyTickers(esc(x.b))}${x.link_theme?` <span class="dwt-link" onclick="openThemeDrawer('${esc(x.link_theme)}')">theme →</span>`:''}${x.link_tab?` <span class="dwt-link" onclick="ST('${esc(x.link_tab)}')">tab →</span>`:''}</div></div>`).join('')}</div>
+    ${ORIENT.energy_transition_intensity?`<div class="or-foot"><b>Basis for the mineral-intensity line above.</b> ${esc(ORIENT.energy_transition_intensity.claim||'')} <span class="mar-src" style="display:inline">— ${esc(ORIENT.energy_transition_intensity.source||'')}</span> ${esc(ORIENT.energy_transition_intensity.note||'')}</div>`:''}
+    <details class="pol-src or-rev"><summary>Orientation review — ${esc(ORIENT._meta?.as_of||'')} (${(ORIENT._meta?.review_findings||[]).length} findings)</summary><ul>${(ORIENT._meta?.review_findings||[]).map(f=>`<li>${esc(f)}</li>`).join('')}</ul></details>`:''}
     <div class="fw-section-hdr">Learning path — recommended sequence through this dashboard</div>
     <div class="fw-path">${stepsHtml}</div>
     <div class="act-route" onclick="ST('act')">
@@ -2638,6 +2710,67 @@ function athBasis(rg){
     : `Highest month-end close since ${rg.ath_since}. The last ${rg.ath_daily_years} years of daily closes did not exceed it.`;
 }
 
+// ── SHIPPING & YARDS ───────────────────────────────────────────────────────
+function buildMaritime(){
+  const el=document.getElementById('v-mar');if(!el)return;
+  if(!MARITIME){el.innerHTML='<div class="note-box">Maritime data loading…</div>';return;}
+  const M=MARITIME,meta=M._meta||{};
+  const tk=t=>`<span class="pol-tk" onclick="openCompanyDrawer('${esc(t)}')">${esc(t)}</span>`;
+  const obRows=(M.orderbooks||[]).map(o=>`<tr>
+    <td class="mar-seg">${esc(o.segment)}</td>
+    <td class="mar-pct"><b>${o.ob_pct_fleet}%</b><div class="mar-bar"><i style="width:${Math.min(100,o.ob_pct_fleet*2.2)}%"></i></div></td>
+    <td class="mar-basis">${esc(o.basis)}<span class="mar-src">${esc(o.source)} · ${esc(o.date)}</span></td>
+    <td class="mar-note">${o.note?linkifyTickers(esc(o.note)):''}${(o.tickers||[]).length?`<div class="mar-tks">${o.tickers.map(tk).join(' ')}</div>`:''}</td></tr>`).join('');
+  const ctx=(M.fleet_context||[]).map(f=>`<div class="mar-ctx"><div class="mar-ctx-v">${esc(f.value)}</div><div class="mar-ctx-l">${esc(f.metric)}<span class="mar-src">${esc(f.source)} · ${esc(f.date)}</span></div><div class="mar-ctx-n">${esc(f.note||'')}</div></div>`).join('');
+  const D=M.defense||{};
+  const defRows=(D.rows||[]).map(r=>`<div class="mar-def"><div class="mar-def-h"><span class="mar-def-r">${esc(r.region)}</span><span class="mar-src">${esc(r.source)} · ${esc(r.date)}</span></div><div class="mar-def-b">${linkifyTickers(esc(r.event))}</div>${(r.tickers||[]).length?`<div class="mar-tks">${r.tickers.map(tk).join(' ')}</div>`:''}</div>`).join('');
+  const G=M.glut_watch||{};
+  el.innerHTML=`
+    <div class="tr-head"><div class="tr-head-t">Read an order book against the fleet's age, never alone</div><div class="tr-head-b">${esc(meta.reading_rule||'')}</div></div>
+    <div class="sect-h">Order books by segment — % of existing fleet</div>
+    <div class="hscroll"><table class="mar-tbl"><thead><tr><th>Segment</th><th>On order</th><th>Basis · source · date</th><th>What it means here</th></tr></thead><tbody>${obRows}</tbody></table></div>
+    <div class="sect-h">Why record ordering is not yet oversupply — the tanker fleet</div>
+    <div class="mar-ctxs">${ctx}</div>
+    <div class="sect-h">Defense shipbuilding — demand arriving as policy</div>
+    <div class="note-box tr-note">${esc(D.framing||'')}</div>
+    <div class="mar-defs">${defRows}</div>
+    <div class="sect-h">Where this meets the Gluts view</div>
+    <div class="note-box tr-note">${esc(G.note||'')}${(G.indicators||[]).length?`<ul class="mar-ind">${G.indicators.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>`:''} <span class="dwt-link" onclick="ST('glut')">Open Gluts &amp; Reversals →</span></div>
+    <div class="tr-foot"><b>Verification.</b> ${esc(meta.verification||'')}</div>`;
+  initHScrollers(el);
+}
+
+// ── GLUTS & REVERSALS ─────────────────────────────────────────────────────
+// Where the thesis breaks. Scores are PROPOSED by the analyst, not the owner's,
+// and the label says so on every row.
+const GLUT_C={5:'var(--bad)',4:'#E0762B',3:'var(--warn)',2:'var(--accent)',1:'var(--good)'};
+function buildGluts(){
+  const el=document.getElementById('v-glut');if(!el)return;
+  if(!GLUTS){el.innerHTML='<div class="note-box">Gluts data loading…</div>';return;}
+  const G=GLUTS,meta=G._meta||{};
+  const mech={};(G.mechanisms||[]).forEach(m=>mech[m.id]=m);
+  const mechs=(G.mechanisms||[]).map(m=>`<div class="gl-mech"><div class="gl-mech-t">${esc(m.title)}</div><div class="gl-mech-b">${esc(m.how)}</div><div class="gl-mech-k"><b>Tell:</b> ${esc(m.tell)}</div><div class="gl-mech-k"><b>Lag:</b> ${esc(m.lag)}</div></div>`).join('');
+  const verts=(G.verticals||[]).slice().sort((a,b)=>b.glut_risk-a.glut_risk).map(v=>{const vi=vinfo(v.id)||{};return `<div class="gl-v" style="border-left-color:${GLUT_C[v.glut_risk]||'var(--accent)'}">
+    <div class="gl-v-h"><span class="gl-v-n" style="color:${vi.c||'inherit'}">${esc(v.n)}</span><span class="gl-score" style="color:${GLUT_C[v.glut_risk]}" title="${esc(meta.scoring_note||'')}">${v.glut_risk}/5${v.proposed?'<i>proposed</i>':''}</span><span class="gl-hz">${esc(v.horizon)}</span></div>
+    <div class="gl-v-m">${(v.mechanisms||[]).map(k=>`<span class="gl-tag" title="${esc(mech[k]?.how||'')}">${esc(mech[k]?.title||k)}</span>`).join('')}</div>
+    <div class="gl-v-b"><b>Evidence.</b> ${linkifyTickers(esc(v.evidence))}</div>
+    ${v.counter&&v.counter!=='—'?`<div class="gl-v-b gl-counter"><b>Counter.</b> ${linkifyTickers(esc(v.counter))}</div>`:''}
+    <div class="gl-v-w"><b>Watch:</b> ${esc(v.watch)}</div></div>`;}).join('');
+  const analogs=(G.analogs||[]).map(a=>`<div class="gl-an"><div class="gl-an-h"><b>${esc(a.case)}</b><span>${esc(a.period)}</span></div><div class="gl-an-b">${esc(a.what_happened)}</div><div class="gl-an-l"><b>Lesson.</b> ${esc(a.lesson)}</div><div class="mar-src">${esc(a.source)}</div></div>`).join('');
+  el.innerHTML=`
+    <div class="tr-head"><div class="tr-head-t">Where this thesis breaks</div><div class="tr-head-b">${esc(meta.why_this_exists||'')}</div></div>
+    <div class="note-box tr-note"><b>Scores are proposed, not decided.</b> ${esc(meta.scoring_note||'')}</div>
+    <div class="sect-h">Six ways a shortage becomes a glut</div>
+    <div class="gl-mechs">${mechs}</div>
+    <div class="sect-h">Per vertical — proposed glut risk, most exposed first</div>
+    <div class="gl-vs">${verts}</div>
+    <div class="sect-h">What it looked like last time</div>
+    <div class="gl-ans">${analogs}</div>
+    <div class="sect-h">Leading indicators</div>
+    <div class="note-box tr-note"><ul class="mar-ind">${(G.indicators||[]).map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>
+    <div class="tr-foot"><b>Verification.</b> ${esc(meta.verification||'')}</div>`;
+}
+
 function buildTrends(){renderTrends();}
 
 function renderTrends(){
@@ -3059,7 +3192,7 @@ function openThemeDrawer(id,push=true){
 // 9 of the universe price in non-USD and quotes are NOT FX-converted.
 // Say so wherever a price is shown in detail, rather than burying it in _meta.
 const FX_SUFFIX={'.AX':'AUD','.HK':'HKD','.T':'JPY','.JP':'JPY','.TW':'TWD','.TWO':'TWD',
-                 '.L':'GBp','.TO':'CAD','.MI':'EUR','.PA':'EUR','.DE':'EUR','.AS':'EUR'};
+                 '.L':'GBp','.TO':'CAD','.MI':'EUR','.PA':'EUR','.DE':'EUR','.AS':'EUR','.KS':'KRW','.ST':'SEK','.OL':'NOK','.SW':'CHF','.BR':'EUR','.HE':'EUR','.CO':'DKK','.MX':'MXN'};
 function fxCcy(tk){
   const k=Object.keys(FX_SUFFIX).sort((a,b)=>b.length-a.length).find(s=>tk.endsWith(s));
   return k?FX_SUFFIX[k]:null;
@@ -3330,7 +3463,7 @@ async function loadData(){
   const Q='?t='+Date.now();
   const fetchJ=n=>fetch(BASE+n+Q).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
   try{
-    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls,cmin,cal,met,trd]=await Promise.all([
+    const [cos,cyc,geo,port,ann,pol,excl,mat,expls,ps,el,th,expl,ref,gls,cmin,cal,met,trd,mar,glt,ori]=await Promise.all([
       fetchJ('companies.json'),fetchJ('cycle.json'),fetchJ('geopolitical.json'),
       fetchJ('portfolio.json'),fetchJ('annotations.json'),fetchJ('policy.json'),
       fetchJ('excluded.json').catch(()=>null),
@@ -3346,6 +3479,9 @@ async function loadData(){
       fetchJ('calendar.json').catch(()=>null),
       fetchJ('metrics.json').catch(()=>null),
       fetchJ('trends.json').catch(()=>null),
+      fetchJ('maritime.json').catch(()=>null),
+      fetchJ('gluts.json').catch(()=>null),
+      fetchJ('orientation.json').catch(()=>null),
     ]);
     COMPANIES=cos.companies||[];
     CYCLE=cyc.cycles||[];
@@ -3368,6 +3504,9 @@ async function loadData(){
     if(cmin)MINERALS=cmin;
     if(cal)CALENDAR=cal;
     if(trd){TRENDS=trd;}
+    if(mar){MARITIME=mar;}
+    if(glt){GLUTS=glt;}
+    if(ori){ORIENT=ori;}
     if(met){METRICS={};(met.metrics||[]).forEach(r=>METRICS[r.ticker]=r);METRICS_META=met._meta||{};}
     if(ref){
       REF_MAP={};REF_BLOCK=new Set();
