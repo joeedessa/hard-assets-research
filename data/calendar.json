@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-06T10:32:30+00:00",
+    "as_of": "2026-09-06T18:35:12+00:00",
     "mode": "full",
-    "coverage": "202/202 scanned this pass",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -43,17 +43,17 @@
       },
       "wire": [
         {
+          "t": "Planet Labs Earnings Top Wall Street Estimates as Military Space Business Grows - barrons.com",
+          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAwbXYwSDJpLVhjQWdGeV9OLTZDdlcydW1fdC1HaE9vTE04WkVzX01TLTdMejVZRVpsWm81OGlwMkhoQjRTWTMzLThENEoteTdsZTVJVWFmNktlNXNEcTNxVGxVQ20yNzJBbXVvS3VyZlNXNXJ0UWRoMk1CVXNPMms?oc=5",
+          "s": "barrons.com",
+          "d": "2026-09-04",
+          "cues": []
+        },
+        {
           "t": "Planet Labs (PL) Is Down 9.3% After Raising 2027 Guidance And Tilting Further Toward Defense - simplywall.st",
           "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYkNQaGI1aVNqMjNVVzJaYWl3dVZ2dUs3UnRsdGtwSXhscExYTTZMdmhpMWVpbU5fbFdnOWtIWlFNRXJqZ3hrVjdVdHI2alU2YVVidVVIUFVhc2JhajRQLWlodmxnMldONGxMV1pPX1VFQjNja2xNTU9EZUpaRWxIQ0FHUEZnUlh1WVpKT1kxSEdTd0FmX2kyMEJycVBKN0FrZ1FKaF9ncy1lMF9zSHN1ZUxiS3liQ0h1WG8yRVdQUERjTlE5TWZOczRvRXJxRE42Y05hRTlXS3XSAd4BQVVfeXFMUGtsZFpodTVTczNGUVpxX3UwWTFlSnhTdmh5UjFWaEs0b0ZQX1djOFlfai1nUjBRYmFXbVJPTlVrcmZmekdxOW1PR1YzLTJQMzFWUjlKRW9xbTU0Yk9HeGdCV2s2MEhpV0RaN09SUnQyRjhkTHo0NVhIa0RLRFV6cDdtellXaE1wa04wOHBKUFFTUE92WlA5QVdmeEQ5VzRTWWRuSTY3SXdkNTUwR0xBdW5PNUoxaFRTZUExRUd0TXR5bHpGRzc5UWozaFBidnY5eHpHUC0yMHpiYnZLai1R?oc=5",
           "s": "simplywall.st",
           "d": "2026-09-06",
-          "cues": []
-        },
-        {
-          "t": "Planet Labs Earnings Top Wall Street Estimates as Military Space Business Grows - Barron's",
-          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAwbXYwSDJpLVhjQWdGeV9OLTZDdlcydW1fdC1HaE9vTE04WkVzX01TLTdMejVZRVpsWm81OGlwMkhoQjRTWTMzLThENEoteTdsZTVJVWFmNktlNXNEcTNxVGxVQ20yNzJBbXVvS3VyZlNXNXJ0UWRoMk1CVXNPMms?oc=5",
-          "s": "Barron's",
-          "d": "2026-09-04",
           "cues": []
         },
         {
@@ -119,6 +119,18 @@
         "label": "MID-SESSION · 16:20 CEST",
         "iso": "2026-10-01T14:20+00:00",
         "tz": "Europe/Oslo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6506.JP",
+      "name": "Yaskawa Electric",
+      "d": "2026-10-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-09T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -351,6 +363,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6954.JP",
+      "name": "Fanuc",
+      "d": "2026-10-23",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-23T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "CSX",
       "name": "CSX",
       "d": "2026-10-23",
@@ -383,6 +407,18 @@
         "label": "MID-SESSION · 15:00 KST",
         "iso": "2026-10-26T06:00+00:00",
         "tz": "Asia/Seoul"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6305.JP",
+      "name": "Hitachi Construction Machinery",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-27T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -615,6 +651,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6301.JP",
+      "name": "Komatsu",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-29T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "6501.JP",
       "name": "Hitachi",
       "d": "2026-10-29",
@@ -641,6 +689,42 @@
       "type": "earnings",
       "tk": "6504.JP",
       "name": "Fuji Electric",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-29T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "8053.JP",
+      "name": "Sumitomo Corp",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-29T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "9503.JP",
+      "name": "Kansai Electric Power",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-29T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "9508.JP",
+      "name": "Kyushu Electric Power",
       "d": "2026-10-29",
       "release": {
         "when": "post",
@@ -915,6 +999,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6268.JP",
+      "name": "Nabtesco",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-30T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "AXTI",
       "name": "AXT Inc",
       "d": "2026-10-30",
@@ -1007,6 +1103,30 @@
         "label": "MID-SESSION · 15:00 KST",
         "iso": "2026-11-02T06:00+00:00",
         "tz": "Asia/Seoul"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "8002.JP",
+      "name": "Marubeni",
+      "d": "2026-11-03",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-03T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "8058.JP",
+      "name": "Mitsubishi Corp",
+      "d": "2026-11-03",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-03T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -1109,6 +1229,42 @@
       "type": "earnings",
       "tk": "5401.JP",
       "name": "Nippon Steel",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6367.JP",
+      "name": "Daikin",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "8001.JP",
+      "name": "Itochu",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "9107.JP",
+      "name": "Kawasaki Kisen",
       "d": "2026-11-04",
       "release": {
         "when": "post",
@@ -1275,6 +1431,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6366.JP",
+      "name": "Chiyoda",
+      "d": "2026-11-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-05T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "6963.JP",
       "name": "ROHM",
       "d": "2026-11-05",
@@ -1313,6 +1481,30 @@
       "type": "earnings",
       "tk": "7014.JP",
       "name": "Namura Shipbuilding",
+      "d": "2026-11-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-05T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "8031.JP",
+      "name": "Mitsui & Co",
+      "d": "2026-11-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-05T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "9101.JP",
+      "name": "NYK Line",
       "d": "2026-11-05",
       "release": {
         "when": "post",
@@ -1611,6 +1803,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6326.JP",
+      "name": "Kubota",
+      "d": "2026-11-06",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-06T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "7011.JP",
       "name": "Mitsubishi Heavy Industries",
       "d": "2026-11-06",
@@ -1719,6 +1923,18 @@
     },
     {
       "type": "earnings",
+      "tk": "9104.JP",
+      "name": "Mitsui O.S.K. Lines",
+      "d": "2026-11-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-09T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "CEG",
       "name": "Constellation Energy",
       "d": "2026-11-09",
@@ -1767,6 +1983,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6383.JP",
+      "name": "Daifuku",
+      "d": "2026-11-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-10T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "CWCO",
       "name": "Consolidated Water",
       "d": "2026-11-10",
@@ -1798,6 +2026,18 @@
     },
     {
       "type": "earnings",
+      "tk": "1963.JP",
+      "name": "JGC Holdings",
+      "d": "2026-11-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-11T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "4004.JP",
       "name": "Resonac",
       "d": "2026-11-11",
@@ -1824,6 +2064,30 @@
       "type": "earnings",
       "tk": "5714.JP",
       "name": "Dowa",
+      "d": "2026-11-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-11T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6324.JP",
+      "name": "Harmonic Drive Systems",
+      "d": "2026-11-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-11T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6481.JP",
+      "name": "THK",
       "d": "2026-11-11",
       "release": {
         "when": "post",
@@ -1950,6 +2214,18 @@
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-11T20:00+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6273.JP",
+      "name": "SMC",
+      "d": "2026-11-13",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-13T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {

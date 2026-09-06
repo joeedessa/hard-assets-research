@@ -29,9 +29,16 @@
       "tracked": "On the map and priced nightly, but the thesis is inherited or provisional and has not been re-argued. Present deliberately — coverage is useful — but these are NOT owner judgments and should not be read as recommendations."
     },
     "tier_note": "The universe grew from 50 to 160+ names in August 2026, largely via bulk promotion from the picks-and-shovels map and ETF screens. Rather than prune, every record now declares which tier it is in, so the count is honest: a tracked name is coverage, an assessed name is a judgment.",
-    "selection_criteria": "Capex gap is the PRIMARY selection criterion — under-investment creates price support because supply cannot answer a price signal quickly. It is not the only one, and Technology Metals is the vertical that makes that explicit: it carries the largest share of the book on the LOWEST capex gap (28). The second criterion, stated here because it was previously implicit, is CHOKEPOINT POSITION — a step in the chain where few suppliers can constrain everything downstream, regardless of whether that step is under-invested. SiC substrates, InP photonics, HVLP copper foil and antimony qualify on chokepoint grounds, not capex grounds. A name needs one of the two, not both; where a name has neither it should be tier 'tracked' rather than 'assessed'.",
+    "selection_criteria": "Capex gap is the PRIMARY selection criterion — under-investment creates price support because supply cannot answer a price signal quickly. It is not the only one, and Technology Metals is the vertical that makes that explicit: it carries the largest share of the book on the LOWEST capex gap (28). The second criterion, stated here because it was previously implicit, is CHOKEPOINT POSITION — a step in the chain where few suppliers can constrain everything downstream, regardless of whether that step is under-invested. SiC substrates, InP photonics, HVLP copper foil and antimony qualify on chokepoint grounds, not capex grounds. A name needs one of the two, not both; where a name has neither it should be tier 'tracked' rather than 'assessed'. THIRD, made explicit on 2026-09-06: a name may enter as a VOLUME BENEFICIARY — no chokepoint and no capex gap of its own, but revenue that scales with the build-out this book describes (machinery, shipping, utilities restarting nuclear, trading houses). The 'role' field says which kind each name is.",
     "oil_stance": "Oil is deliberately de-emphasised as a STRUCTURAL thesis — inning 5, business-cycle risk 72, and the highest correlation to GDP in the book. It is nonetheless the largest vertical by count because the picks-and-shovels promotion added drillers, OFS and shipping, which are cyclical service exposures rather than structural commodity ones. Those are tier 'tracked'. The assessed oil names are refining and product shipping, where the post-2020 capacity closure argument is structural rather than a barrel call. Recorded 2026-08-11 as a decision, not neglect.",
-    "universe_note_2026_09_05": "33 names added from the owner's 2026-09-05 brief: Western naval yards, Korean yards (first .KS symbols in the book), and a Japan industrial set. All TRACKED at conviction 1–2 with a source_note; conviction is the owner's. Two candidates were not added because their Yahoo symbols were dead on the day: Toho Titanium (5727.T) and HD Hyundai Mipo (010620.KS, merged)."
+    "universe_note_2026_09_05": "33 names added from the owner's 2026-09-05 brief: Western naval yards, Korean yards (first .KS symbols in the book), and a Japan industrial set. All TRACKED at conviction 1–2 with a source_note; conviction is the owner's. Two candidates were not added because their Yahoo symbols were dead on the day: Toho Titanium (5727.T) and HD Hyundai Mipo (010620.KS, merged).",
+    "roles": {
+      "chokepoint": "Few suppliers can constrain everything downstream; pricing power comes from scarcity of the STEP, not of the commodity. Dated — a shortage that capacity is answering (transformers by 2028) moves a name out of this bucket.",
+      "beneficiary": "Revenue and margin scale with the build-out or the commodity price in a competitive market. Grows with the cycle; no structural pricing power. Most of the book's shipping, midstream, machinery, utility and miner names.",
+      "enabler": "Picks and shovels — sells to every side regardless of who wins: EPC, drilling, seismic, gases, exchanges, streaming and royalty.",
+      "optionality": "Value depends on a permit, a price threshold or a decision not yet taken. Binary-ish; sized accordingly."
+    },
+    "role_note": "Added 2026-09-06. The stated criteria (capex gap, chokepoint) never admitted the category most of the book actually holds — VOLUME BENEFICIARIES like the EPCs, shipowners and refiners. Every record now declares a role so a reader can see what KIND of exposure a name is. Roles are the analyst's proposal (157 placed by explicit judgment, 45 by chain-layer rule) and are labelled proposed until the owner confirms. Chokepoint status is dated: a shortage that capacity is answering moves a name to beneficiary — see Gluts."
   },
   "companies": [
     {
@@ -53,7 +60,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "LYC.AX",
@@ -74,7 +83,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "UUUU",
@@ -94,7 +105,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6880.HK",
@@ -114,7 +127,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "LEU",
@@ -135,7 +150,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CCO",
@@ -155,7 +172,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SPUT",
@@ -174,7 +193,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CEG",
@@ -193,7 +214,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NXE",
@@ -212,7 +235,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "optionality",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PWR",
@@ -232,7 +257,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ETN",
@@ -253,7 +280,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "GEV",
@@ -273,7 +302,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "EME",
@@ -292,7 +323,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MYRG",
@@ -310,7 +343,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SCCO",
@@ -331,7 +366,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FCX",
@@ -350,7 +387,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": "2026-08-11",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FNV",
@@ -370,7 +409,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "WPM",
@@ -389,7 +430,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "LNG",
@@ -409,7 +452,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "VGAS",
@@ -428,7 +473,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "KMI",
@@ -447,7 +494,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ET",
@@ -465,7 +514,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ALB",
@@ -485,7 +536,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SQM",
@@ -504,7 +557,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FLNC",
@@ -525,7 +580,9 @@
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
       "tier": "assessed",
-      "data_caveat": "Inverter/PCS manufacturing location not verified. Under FCC DA 26-786 this is the determining fact for whether new models can be certified, and it is unresolved."
+      "data_caveat": "Inverter/PCS manufacturing location not verified. Under FCC DA 26-786 this is the determining fact for whether new models can be certified, and it is unresolved.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PPTA",
@@ -545,7 +602,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "optionality",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "AFMJF",
@@ -564,7 +623,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "AXTI",
@@ -583,7 +644,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "WOLF",
@@ -603,7 +666,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "COHR",
@@ -624,7 +689,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6963.JP",
@@ -644,7 +711,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5802.T",
@@ -664,7 +733,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NOK",
@@ -684,7 +755,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5706.JP",
@@ -703,7 +776,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "8358.TWO",
@@ -721,7 +796,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "2383.TW",
@@ -739,7 +816,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6213.TW",
@@ -757,7 +836,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "VLO",
@@ -776,7 +857,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TDW",
@@ -795,7 +878,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "STNG",
@@ -814,7 +899,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NTR",
@@ -833,7 +920,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MOS",
@@ -852,7 +941,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ERII",
@@ -872,7 +963,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CWCO",
@@ -890,7 +983,9 @@
       ],
       "last_touched": "2026-08-04",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "LIN",
@@ -910,7 +1005,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "APD",
@@ -929,7 +1026,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ATI",
@@ -949,7 +1048,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MTRN",
@@ -969,7 +1070,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "4004.JP",
@@ -989,7 +1092,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "RGLD",
@@ -1008,7 +1113,9 @@
       ],
       "last_touched": "2026-08-03",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TECK",
@@ -1028,7 +1135,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "HBM",
@@ -1048,7 +1157,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "IVN.TO",
@@ -1068,7 +1179,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "XYL",
@@ -1088,7 +1201,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ARIS",
@@ -1107,7 +1222,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CF",
@@ -1127,7 +1244,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ICL",
@@ -1147,7 +1266,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "VRT",
@@ -1167,7 +1288,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PRY.MI",
@@ -1187,7 +1310,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NEX.PA",
@@ -1207,7 +1332,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "UEC",
@@ -1227,7 +1354,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "optionality",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "BWXT",
@@ -1248,7 +1377,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "EQT",
@@ -1269,7 +1400,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SBSW",
@@ -1290,7 +1423,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PLS.AX",
@@ -1310,7 +1445,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MIN.AX",
@@ -1329,7 +1466,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PAAS",
@@ -1349,7 +1488,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TFPM",
@@ -1368,7 +1509,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "DNN",
@@ -1387,7 +1530,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "optionality",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "AR",
@@ -1407,7 +1552,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TROX",
@@ -1427,7 +1574,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": null,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "GLNCY",
@@ -1448,7 +1597,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "VALE",
@@ -1468,7 +1619,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ERA.PA",
@@ -1488,7 +1641,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NEXA",
@@ -1508,7 +1663,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "AA",
@@ -1528,7 +1685,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NB",
@@ -1548,7 +1707,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ILU.AX",
@@ -1569,7 +1730,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NVX.AX",
@@ -1590,7 +1753,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ALM",
@@ -1612,7 +1777,9 @@
       "last_touched": "2026-08-12",
       "last_reviewed": "2026-08-05",
       "tier": "assessed",
-      "data_caveat": "TICKER MIGRATED 2026-07-17: previously held as AII.TO. Almonty consolidated to its Nasdaq listing; the Toronto line stopped trading 2026-07-17 and Yahoo kept serving its last close of C$19.25 as though live. Yahoo carried the full price history across to ALM, so trend and moving-average figures are continuous."
+      "data_caveat": "TICKER MIGRATED 2026-07-17: previously held as AII.TO. Almonty consolidated to its Nasdaq listing; the Toronto line stopped trading 2026-07-17 and Yahoo kept serving its last close of C$19.25 as though live. Yahoo carried the full price history across to ALM, so trend and moving-average figures are continuous.",
+      "role": "optionality",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "VNP.TO",
@@ -1632,7 +1799,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "AMG.AS",
@@ -1652,7 +1821,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "THS.L",
@@ -1672,7 +1843,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "optionality",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ORBIA.MX",
@@ -1692,7 +1865,9 @@
       ],
       "last_touched": "2026-08-05",
       "last_reviewed": "2026-08-05",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "RIO",
@@ -1712,7 +1887,9 @@
       ],
       "last_touched": "2026-08-06",
       "last_reviewed": "2026-08-06",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "AES",
@@ -1731,7 +1908,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NRG",
@@ -1750,7 +1929,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "EPD",
@@ -1769,7 +1950,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "WMB",
@@ -1788,7 +1971,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ENR.DE",
@@ -1807,7 +1992,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ITRI",
@@ -1826,7 +2013,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NVT",
@@ -1845,7 +2034,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MOD",
@@ -1864,7 +2055,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MTZ",
@@ -1883,7 +2076,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "RIG",
@@ -1902,7 +2097,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "VAL",
@@ -1921,7 +2118,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NE",
@@ -1940,7 +2139,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "HP",
@@ -1959,7 +2160,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PTEN",
@@ -1978,7 +2181,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NBR",
@@ -1997,7 +2202,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PRN.AX",
@@ -2016,7 +2223,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ORI.AX",
@@ -2035,7 +2244,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "BVI.PA",
@@ -2054,7 +2265,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ITRK.L",
@@ -2073,7 +2286,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TRMB",
@@ -2092,7 +2307,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PL",
@@ -2111,7 +2328,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FTI",
@@ -2130,7 +2349,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SPM.MI",
@@ -2149,7 +2370,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FLR",
@@ -2168,7 +2391,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PRIM",
@@ -2187,7 +2412,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "WOR.AX",
@@ -2206,7 +2433,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ACM",
@@ -2225,7 +2454,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TTEK",
@@ -2244,7 +2475,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ABBN.SW",
@@ -2263,7 +2496,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "HUBB",
@@ -2282,7 +2517,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CAT",
@@ -2301,7 +2538,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "KMTUY",
@@ -2320,7 +2559,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SAND.ST",
@@ -2339,7 +2580,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "METSO.HE",
@@ -2358,7 +2601,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FLS.CO",
@@ -2377,7 +2622,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "WEIR.L",
@@ -2396,7 +2643,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "AROC",
@@ -2415,7 +2664,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "EMR",
@@ -2434,7 +2685,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "HON",
@@ -2453,7 +2706,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ROK",
@@ -2472,7 +2727,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PNR",
@@ -2491,7 +2748,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "YCA.L",
@@ -2510,7 +2769,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CME",
@@ -2529,7 +2790,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ICE",
@@ -2548,7 +2811,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "GLEN.L",
@@ -2567,7 +2832,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "JMAT.L",
@@ -2586,7 +2853,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "UMI.BR",
@@ -2605,7 +2874,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NDA.DE",
@@ -2624,7 +2895,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CLH",
@@ -2643,7 +2916,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CLNE",
@@ -2662,7 +2937,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MNTK",
@@ -2681,7 +2958,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FRO",
@@ -2700,7 +2979,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "DHT",
@@ -2719,7 +3000,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "INSW",
@@ -2738,7 +3021,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FLNG",
@@ -2757,7 +3042,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "GLNG",
@@ -2776,7 +3063,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "BORR",
@@ -2795,7 +3084,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SBLK",
@@ -2814,7 +3105,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "GOGL",
@@ -2833,7 +3126,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SNI.OL",
@@ -2852,7 +3147,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ODF.OL",
@@ -2871,7 +3168,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SBMO.AS",
@@ -2890,7 +3189,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "EE",
@@ -2909,7 +3210,9 @@
       "last_touched": "2026-08-06",
       "last_reviewed": null,
       "provisional": true,
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SU.PA",
@@ -2930,7 +3233,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "JCI",
@@ -2951,7 +3256,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NG.L",
@@ -2972,7 +3279,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "EOAN.DE",
@@ -2993,7 +3302,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "HWM",
@@ -3013,7 +3324,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TT",
@@ -3034,7 +3347,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "URI",
@@ -3054,7 +3369,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CSX",
@@ -3074,7 +3391,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "UNP",
@@ -3094,7 +3413,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "NSC",
@@ -3114,7 +3435,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "DE",
@@ -3134,7 +3457,9 @@
       "last_reviewed": null,
       "provisional": true,
       "source_screen": "GRID/PAVE top-10 holdings",
-      "tier": "tracked"
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "BE",
@@ -3156,7 +3481,9 @@
       "last_touched": "2026-08-07",
       "last_reviewed": "2026-08-07",
       "source_note": "Raised as an energy-transition/demand name; added after verifying the listing and the revenue multiple.",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SLNG",
@@ -3178,7 +3505,9 @@
       "last_touched": "2026-08-07",
       "last_reviewed": "2026-08-07",
       "source_note": "Raised as 'Established Solutions'; identified as Stabilis Solutions from the description (virtual pipeline to data centres and launch operations) and confirmed by market cap.",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "CEPL",
@@ -3200,7 +3529,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": "2026-08-08",
       "data_caveat": "TICKER MIGRATED 2026-07-08: previously held as CGEH on OTCQX, which ceased quotation when Nasdaq trading began. Price history did NOT carry across, so CEPL's series starts 2026-07-08; it entered the trend ladder once it passed 30 sessions. THE PRICE GAP IS RECONCILED (2026-09-05): shares outstanding are essentially unchanged across the migration (32.2M as CGEH, 32.6M as CEPL — no reverse split, no restructuring), and CEPL opened at $9.75 on its first Nasdaq session, within 1% of CGEH's last OTCQX close of $9.85, then closed that day at $11.88 and has since declined to $5.66 (2026-09-04). The difference is a post-listing PRICE FALL of roughly 50% from the day-one close, not a capital-structure change. The '~$381M' market cap previously quoted for CGEH was the data provider's stale figure on a dead ticker and did not even match its own last close (9.85 × 32.2M ≈ $317M) — treat any market cap on a delisted symbol as unreliable, not merely old. Beware also that web searches for this name return filings from Capstone Holding Corp (CIK 887151), a different issuer.",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ENPH",
@@ -3221,7 +3552,9 @@
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
       "tier": "assessed",
-      "data_caveat": "Domestic content share not publicly disclosed; US manufacturing presence is confirmed, 65% Buy American compliance is NOT."
+      "data_caveat": "Domestic content share not publicly disclosed; US manufacturing presence is confirmed, 65% Buy American compliance is NOT.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SEDG",
@@ -3241,7 +3574,9 @@
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
       "tier": "assessed",
-      "data_caveat": "US manufacturing confirmed and shipping; 65% Buy American domestic-content compliance NOT verified."
+      "data_caveat": "US manufacturing confirmed and shipping; 65% Buy American domestic-content compliance NOT verified.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "GNRC",
@@ -3261,7 +3596,9 @@
       ],
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "MPC",
@@ -3280,7 +3617,9 @@
       ],
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "PSX",
@@ -3299,7 +3638,9 @@
       ],
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "IPI",
@@ -3319,7 +3660,9 @@
       ],
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
-      "tier": "assessed"
+      "tier": "assessed",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "UAN",
@@ -3339,7 +3682,9 @@
       "last_touched": "2026-08-11",
       "last_reviewed": "2026-08-11",
       "tier": "assessed",
-      "data_caveat": "MLP structure — variable distributions and K-1 tax reporting; not directly comparable to C-corp peers in this book."
+      "data_caveat": "MLP structure — variable distributions and K-1 tax reporting; not directly comparable to C-corp peers in this book.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "HII",
@@ -3359,7 +3704,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "GD",
@@ -3379,7 +3726,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "TKMS.DE",
@@ -3400,7 +3749,9 @@
       "last_reviewed": null,
       "tier": "tracked",
       "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
-      "data_caveat": "Listed only since 2025-10, so trend indicators carry short history; the 200-day average did not exist until mid-2026."
+      "data_caveat": "Listed only since 2025-10, so trend indicators carry short history; the 200-day average did not exist until mid-2026.",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "FCT.MI",
@@ -3420,7 +3771,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "BA.L",
@@ -3440,7 +3793,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "SAAB-B.ST",
@@ -3460,7 +3815,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "ASB.AX",
@@ -3481,7 +3838,9 @@
       "last_reviewed": null,
       "tier": "tracked",
       "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
-      "data_caveat": "Not yet assessed beyond listing verification. Thesis note is a placeholder, and says so."
+      "data_caveat": "Not yet assessed beyond listing verification. Thesis note is a placeholder, and says so.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "329180.KS",
@@ -3503,7 +3862,9 @@
       "last_reviewed": null,
       "tier": "tracked",
       "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
-      "data_caveat": "First Korean names in this book (2026-09-05). Pipeline support for .KS symbols, Seoul session hours and the KOSPI benchmark was added the same day — first full pass to follow."
+      "data_caveat": "First Korean names in this book (2026-09-05). Pipeline support for .KS symbols, Seoul session hours and the KOSPI benchmark was added the same day — first full pass to follow.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "009540.KS",
@@ -3524,7 +3885,9 @@
       "last_reviewed": null,
       "tier": "tracked",
       "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
-      "data_caveat": "Overlaps 329180.KS. Listed so the group is complete, flagged so it is not double-weighted."
+      "data_caveat": "Overlaps 329180.KS. Listed so the group is complete, flagged so it is not double-weighted.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "042660.KS",
@@ -3545,7 +3908,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "010140.KS",
@@ -3565,7 +3930,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "7011.JP",
@@ -3586,7 +3953,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "7012.JP",
@@ -3607,7 +3976,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "7013.JP",
@@ -3627,7 +3998,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "7004.JP",
@@ -3647,7 +4020,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "7003.JP",
@@ -3667,7 +4042,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "7014.JP",
@@ -3688,7 +4065,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5803.JP",
@@ -3708,7 +4087,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5801.JP",
@@ -3728,7 +4109,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6501.JP",
@@ -3749,7 +4132,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6503.JP",
@@ -3769,7 +4154,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6504.JP",
@@ -3788,7 +4175,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5631.JP",
@@ -3808,7 +4197,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6361.JP",
@@ -3828,7 +4219,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "6370.JP",
@@ -3848,7 +4241,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "4091.JP",
@@ -3868,7 +4263,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5401.JP",
@@ -3888,7 +4285,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5713.JP",
@@ -3908,7 +4307,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5711.JP",
@@ -3927,7 +4328,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5016.JP",
@@ -3948,7 +4351,9 @@
       "last_reviewed": null,
       "tier": "tracked",
       "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
-      "data_caveat": "Listed 2025; trend indicators may be withheld until history is deep enough."
+      "data_caveat": "Listed 2025; trend indicators may be withheld until history is deep enough.",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5726.JP",
@@ -3969,7 +4374,9 @@
       "last_reviewed": null,
       "tier": "tracked",
       "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
-      "data_caveat": "Toho Titanium (5727) could not be verified as a live Yahoo symbol on 2026-09-05 and was NOT added; Osaka Titanium stands in for the sponge exposure."
+      "data_caveat": "Toho Titanium (5727) could not be verified as a live Yahoo symbol on 2026-09-05 and was NOT added; Osaka Titanium stands in for the sponge exposure.",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "5714.JP",
@@ -3988,7 +4395,9 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
     },
     {
       "ticker": "4063.JP",
@@ -4008,7 +4417,531 @@
       "last_touched": "2026-09-05",
       "last_reviewed": null,
       "tier": "tracked",
-      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set."
+      "source_note": "Added 2026-09-05 from the owner's 2026-09-05 brief (defense shipbuilding / shipping order books / Japan). Entered as TRACKED at conviction 1; conviction is the owner's to set.",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm"
+    },
+    {
+      "ticker": "6268.JP",
+      "name": "Nabtesco",
+      "vertical": "ii",
+      "chain_layer": "Precision reducers (RV) for industrial robots",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "RV cycloidal reducers for the large joints of industrial robot arms — one of two suppliers that between them dominate the world market, including for Chinese robot makers. Widely quoted at ~60% share of large-robot reducers; that figure is NOT independently sourced here and is flagged as such.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Robot capex cycle; also aircraft and rail components.",
+      "themes": [
+        "japan-industrial",
+        "robotics-magnets",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 2; conviction is the owner's to set.",
+      "data_caveat": "Market-share figures for reducers are repeated everywhere and sourced almost nowhere. Treat the '~60%' as folklore until a primary source is attached."
+    },
+    {
+      "ticker": "6324.JP",
+      "name": "Harmonic Drive Systems",
+      "vertical": "ii",
+      "chain_layer": "Strain-wave gears for robot joints",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "The strain-wave (harmonic) gear used in the small joints of robots and cobots and in humanoid actuators. Effectively the reference supplier; Chinese entrants are scaling. High multiple, small cap.",
+      "conviction": 2,
+      "froth": 3,
+      "froth_note": "Priced for the humanoid narrative; the highest-froth name in the automation set.",
+      "themes": [
+        "japan-industrial",
+        "robotics-magnets"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6273.JP",
+      "name": "SMC",
+      "vertical": "ii",
+      "chain_layer": "Pneumatic components — global leader",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "World's largest pneumatic-component maker; a component in nearly every automated line. Reclassified from 'industrial beta' (the Machinery-ETF read of 2026-09-05) to chokepoint on reflection: breadth of installed base and catalogue is the moat.",
+      "conviction": 2,
+      "froth": 2,
+      "froth_note": "Quality compounder, rarely cheap.",
+      "themes": [
+        "japan-industrial",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 2; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6481.JP",
+      "name": "THK",
+      "vertical": "ii",
+      "chain_layer": "Linear motion guides",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Invented the linear motion guide; a core component of machine tools, semiconductor equipment and robots.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Machine-tool cycle exposure.",
+      "themes": [
+        "japan-industrial",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6506.JP",
+      "name": "Yaskawa Electric",
+      "vertical": "ii",
+      "chain_layer": "Servo motors, drives, industrial robots",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Among the largest servo and industrial-robot makers globally (Motoman). Servos are the motion layer of every automated plant.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Cyclical; China competition in servos.",
+      "themes": [
+        "japan-industrial",
+        "robotics-magnets",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6954.JP",
+      "name": "Fanuc",
+      "vertical": "ii",
+      "chain_layer": "Industrial robots, CNC controls",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "One of the world's largest robot makers and the dominant CNC controller supplier for machine tools. The most direct listed expression of reshored factory capex.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Well owned; China robot share pressure.",
+      "themes": [
+        "japan-industrial",
+        "robotics-magnets",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6594.JP",
+      "name": "Nidec",
+      "vertical": "ii",
+      "chain_layer": "Precision and traction motors",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "World's largest small precision motor maker, expanding into EV traction and machine tools. Motors are where magnets meet the buildout.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "EV traction unit has been loss-making; governance episodes.",
+      "themes": [
+        "japan-industrial",
+        "robotics-magnets"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "chokepoint",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6383.JP",
+      "name": "Daifuku",
+      "vertical": "ii",
+      "chain_layer": "Material handling and warehouse automation",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "World's largest material-handling systems maker — semiconductor fab AMHS and logistics automation. Grows with fab and warehouse capex; competitive market.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Project-based; fab capex timing.",
+      "themes": [
+        "japan-industrial",
+        "reshoring"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "8058.JP",
+      "name": "Mitsubishi Corp",
+      "vertical": "ii",
+      "chain_layer": "Trading house — LNG, coking coal, copper, infrastructure",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "The largest sogo shosha: equity stakes across LNG (Cameron, Brunei), coking coal, copper (Escondida, Quellaveco) and power. The broadest single listed claim on the commodities-and-infrastructure cycle in Japan.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Diversified; earnings track commodity prices with a lag.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "8031.JP",
+      "name": "Mitsui & Co",
+      "vertical": "ii",
+      "chain_layer": "Trading house — LNG, iron ore, infrastructure",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Sogo shosha with the largest LNG equity portfolio among the five and major iron-ore stakes. Beneficiary of the third LNG wave and of any Japan infrastructure cycle.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate or diversified group: the thesis line is a minority of revenue.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "8001.JP",
+      "name": "Itochu",
+      "vertical": "ii",
+      "chain_layer": "Trading house — diversified, consumer-tilted",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "The least resource-heavy of the five trading houses; included for completeness of the group, weakest fit to this book.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate or diversified group: the thesis line is a minority of revenue.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "8002.JP",
+      "name": "Marubeni",
+      "vertical": "ii",
+      "chain_layer": "Trading house — power, grains, metals",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Sogo shosha with the largest independent power portfolio of the five; also grains and aluminium.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate or diversified group: the thesis line is a minority of revenue.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "8053.JP",
+      "name": "Sumitomo Corp",
+      "vertical": "ii",
+      "chain_layer": "Trading house — metals, power, tubular goods",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Sogo shosha with steel tubular, nickel (Ambatovy) and power interests.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Conglomerate or diversified group: the thesis line is a minority of revenue.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6301.JP",
+      "name": "Komatsu",
+      "vertical": "ii",
+      "chain_layer": "Mining and construction equipment",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Second-largest mining and construction equipment maker globally. A volume beneficiary of any mining capex upturn — the same exposure as CAT, in yen.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Mining capex cycle; already in the Machinery ETF top weights.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6326.JP",
+      "name": "Kubota",
+      "vertical": "ii",
+      "chain_layer": "Agricultural machinery, water infrastructure",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Tractors and small construction equipment, plus ductile iron pipe and water treatment — the food-and-water side of this book.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Agri cycle; US tariff exposure.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6367.JP",
+      "name": "Daikin",
+      "vertical": "elec",
+      "chain_layer": "HVAC — data-centre and building cooling",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "World's largest air-conditioning maker; data-centre cooling is a growing line. Volume beneficiary of the cooling build-out rather than a chokepoint.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Well owned; housing cycle exposure.",
+      "themes": [
+        "japan-industrial",
+        "ai-demand-pull"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6305.JP",
+      "name": "Hitachi Construction Machinery",
+      "vertical": "ii",
+      "chain_layer": "Mining equipment — ultra-large excavators",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Ultra-large hydraulic excavators and mining trucks; a purer mining-capex beneficiary than Komatsu.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Mining capex cycle.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "1963.JP",
+      "name": "JGC Holdings",
+      "vertical": "ng",
+      "chain_layer": "LNG and energy EPC",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "One of the two Japanese LNG engineering houses (with Chiyoda). Beneficiary of the third LNG wave's construction phase; the Ras Laffan rebuild is in its addressable market.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Lumpy project margins; LNG FID timing.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "6366.JP",
+      "name": "Chiyoda",
+      "vertical": "ng",
+      "chain_layer": "LNG EPC",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "LNG plant engineer with a long Qatar history. Restructured after project losses; high operating leverage to LNG construction.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Balance-sheet history; project execution risk.",
+      "themes": [
+        "japan-industrial"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "enabler",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "9101.JP",
+      "name": "NYK Line",
+      "vertical": "oil",
+      "chain_layer": "Shipping line — LNG carriers, car carriers, bulk",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Japan's largest shipping group; large LNG-carrier fleet. Beneficiary of the LNG wave and the tanker/bulk cycle; exposed to the 40% LNG-carrier order book.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Container earnings (ONE stake) dominate; cyclical.",
+      "themes": [
+        "japan-industrial",
+        "shipping-orderbook"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "9104.JP",
+      "name": "Mitsui O.S.K. Lines",
+      "vertical": "oil",
+      "chain_layer": "Shipping line — LNG carriers, tankers, bulk",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "World's largest LNG-carrier operator by fleet. The most direct Japanese owner exposure to LNG shipping.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "ONE stake; LNG carrier oversupply risk.",
+      "themes": [
+        "japan-industrial",
+        "shipping-orderbook"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "9107.JP",
+      "name": "Kawasaki Kisen",
+      "vertical": "oil",
+      "chain_layer": "Shipping line — car carriers, bulk, LNG",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Third of the Japanese lines; car carriers and bulk.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Cyclical; ONE stake.",
+      "themes": [
+        "japan-industrial",
+        "shipping-orderbook"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "9503.JP",
+      "name": "Kansai Electric Power",
+      "vertical": "nu",
+      "chain_layer": "Nuclear-restart utility",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "The Japanese utility furthest along in nuclear restarts (Takahama, Ohi, Mihama). The cleanest listed beneficiary of Japan's nuclear return; every restart displaces LNG imports.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Regulated; restart approvals are political.",
+      "themes": [
+        "japan-industrial",
+        "nuclear-fuel-cycle"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
+    },
+    {
+      "ticker": "9508.JP",
+      "name": "Kyushu Electric Power",
+      "vertical": "nu",
+      "chain_layer": "Nuclear-restart utility",
+      "geo": "JP",
+      "structure": "equity",
+      "thesis_note": "Sendai and Genkai restarted; the second-cleanest nuclear-restart utility.",
+      "conviction": 1,
+      "froth": 2,
+      "froth_note": "Regulated; restart approvals are political.",
+      "themes": [
+        "japan-industrial",
+        "nuclear-fuel-cycle"
+      ],
+      "last_touched": "2026-09-06",
+      "last_reviewed": null,
+      "tier": "tracked",
+      "role": "beneficiary",
+      "role_basis": "proposed 2026-09-06 (analyst) — owner to confirm",
+      "source_note": "Added 2026-09-06 from the owner's Japan automation/beneficiary brief. Entered as TRACKED at conviction 1; conviction is the owner's to set."
     }
   ]
 }

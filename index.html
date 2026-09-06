@@ -821,6 +821,9 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
 .co-d1{font-size:10px;font-family:var(--font-mono)}
 .co-badges{display:flex;gap:3px;flex-wrap:wrap;align-items:center}
 .badge-sm{font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;white-space:nowrap}
+.badge-role{background:transparent;border:.5px solid;cursor:help;margin-left:3px}
+.dw-role{font-size:10.5px;line-height:1.55;color:var(--color-text-secondary);padding:6px 9px;border-radius:4px;background:var(--color-background-secondary);border-left:2px solid;margin:6px 0 8px}
+.dw-role-b{display:block;font-size:9px;color:var(--color-text-tertiary);margin-top:2px}
 .badge-tracked{background:var(--color-background-secondary);color:var(--color-text-tertiary);
   border:.5px dashed var(--color-border-secondary);cursor:help}
 .badge-ins{background:color-mix(in srgb,var(--good) 13%,transparent);color:var(--good)}
@@ -1347,7 +1350,7 @@ let MARITIME=null,GLUTS=null,ORIENT=null;
 let TRENDS=null,TRENDS_WM=null,TR_TF='d',TR_WM_STATE='idle',TR_SORT='atr',TR_Q='';
 let CALENDAR={events:[],_meta:{}};
 let QUOTES={},QUOTES_META={},IDX={},NEWS=[],ALERTS={alerts:[]},PERF={};
-let CO_STATE={q:'',v:null,froth:null,sort:'conv',tier:null};
+let CO_STATE={q:'',v:null,froth:null,sort:'conv',tier:null,role:null};
 let TICKER_MAP={};
 let EXCL_MAP={};
 let REF_MAP={},REF_BLOCK=new Set();
@@ -2522,6 +2525,16 @@ function coTierPills(){
     +pill('assessed',`Assessed · ${n('assessed')}`,'Thesis written and re-argued by the owner — these are considered judgments')
     +pill('tracked',`Tracked · ${n('tracked')}`,'On the map and priced, but the thesis is inherited or provisional and has NOT been re-argued');
 }
+// Role pills — what KIND of exposure a name is. Roles are the analyst's
+// proposal until the owner confirms them; every tooltip says so.
+const ROLE_META={chokepoint:{l:'Chokepoint',c:'var(--bad)'},beneficiary:{l:'Volume beneficiary',c:'var(--accent)'},enabler:{l:'Enabler',c:'var(--good)'},optionality:{l:'Optionality',c:'var(--warn)'}};
+function roleDef(k){return ((window.COMPANIES_META&&COMPANIES_META.roles)||{})[k]||'';}
+function coRolePills(){
+  const n=r=>COMPANIES.filter(c=>c.role===r).length;
+  const pill=(v,l,ttl)=>`<span class="pill${CO_STATE.role===v?' on':''}" title="${esc(ttl)}" onclick="CO_STATE.role=${v?`'${v}'`:'null'};renderCo()">${l}</span>`;
+  return pill(null,'All roles','Every kind of exposure')
+    +Object.keys(ROLE_META).map(k=>pill(k,`${ROLE_META[k].l} · ${n(k)}`,roleDef(k)+' Proposed by the analyst — owner to confirm.')).join('');
+}
 function coFrothPills(){
   return `<span class="pill${!CO_STATE.froth?' on':''}" onclick="CO_STATE.froth=null;renderCo()">Any froth</span>`
     +[1,2,3].map(f=>`<span class="pill${CO_STATE.froth===f?' on':''}" onclick="CO_STATE.froth=${f};renderCo()">${FROTH_META[f].l}</span>`).join('');
@@ -2533,6 +2546,7 @@ function renderCoControls(){
   const vp=document.getElementById('co-vpills');if(vp)vp.innerHTML=coVertPills();
   const fp=document.getElementById('co-fpills');if(fp)fp.innerHTML=coFrothPills();
   const tp=document.getElementById('co-tpills');if(tp)tp.innerHTML=coTierPills();
+  const rp=document.getElementById('co-rpills');if(rp)rp.innerHTML=coRolePills();
   const sp=document.getElementById('co-sorts');if(sp)sp.innerHTML=coSorts();
 }
 
@@ -2546,6 +2560,7 @@ function buildCompanies(){
     <div class="pills" id="co-vpills"></div>
     <div class="pills" id="co-fpills"></div>
     <div class="pills" id="co-tpills"></div>
+    <div class="pills" id="co-rpills"></div>
     <div id="co-list" class="co-list"></div>
   `;
   renderCoControls();
@@ -2560,6 +2575,7 @@ function renderCo(){
   if(CO_STATE.v)cos=cos.filter(c=>c.vertical===CO_STATE.v);
   if(CO_STATE.froth)cos=cos.filter(c=>c.froth===CO_STATE.froth);
   if(CO_STATE.tier)cos=cos.filter(c=>(c.tier||'tracked')===CO_STATE.tier);
+  if(CO_STATE.role)cos=cos.filter(c=>c.role===CO_STATE.role);
   if(q)cos=cos.filter(c=>(c.ticker||'').toLowerCase().includes(q)||(c.name||'').toLowerCase().includes(q)||(c.themes||[]).some(t=>t.includes(q)));
   if(CO_STATE.sort==='conv')cos.sort((a,b)=>b.conviction-a.conviction||(a.name||'').localeCompare(b.name||''));
   else if(CO_STATE.sort==='tk')cos.sort((a,b)=>(a.ticker||'').localeCompare(b.ticker||''));
@@ -2576,11 +2592,12 @@ function renderCo(){
     const vBadge=`<span class="badge-sm" style="background:${v.c}18;color:${v.c}">${esc(v.n)}</span>`;
     const tBadge=(c.tier||'tracked')==='tracked'
       ?`<span class="badge-sm badge-tracked" title="Coverage only — the thesis is inherited or provisional and has not been re-argued">tracked</span>`:'';
+    const rBadge=c.role&&ROLE_META[c.role]?`<span class="badge-sm badge-role" style="color:${ROLE_META[c.role].c};border-color:${ROLE_META[c.role].c}66" title="${esc(roleDef(c.role))} ${esc(c.role_basis||'')}">${ROLE_META[c.role].l.toLowerCase()}</span>`:'';
     const priceHtml=q?.p?`<div class="co-price">${q.p<10?q.p.toFixed(2):q.p.toFixed(0)}</div><div class="co-d1" style="color:${chgColor(q.d1)}">${fmtPct(q.d1)}</div>`:'';
     return `<div class="co-row" onclick="openCompanyDrawer('${esc(c.ticker)}')">
       <div>${convDot}</div>
       <div class="co-mid">
-        <div style="display:flex;align-items:center;gap:6px"><span class="co-tk">${esc(c.ticker)}</span><div class="co-badges">${frothBadge}${vBadge}${tBadge}</div></div>
+        <div style="display:flex;align-items:center;gap:6px"><span class="co-tk">${esc(c.ticker)}</span><div class="co-badges">${frothBadge}${vBadge}${tBadge}${rBadge}</div></div>
         <div class="co-nm">${esc(c.name)}</div>
         <div class="co-layer">${esc(c.chain_layer)}</div>
       </div>
@@ -3199,6 +3216,7 @@ function openCompanyDrawer(tk,push=true){
        <span class="dw-badge" style="background:var(--color-background-secondary);color:var(--color-text-secondary)">${esc(c.structure||'')}</span>
        ${c.last_touched?`<span class="dw-badge" style="background:var(--color-background-secondary);color:var(--color-text-tertiary)">↻ ${esc(c.last_touched)}</span>`:''}
      </div>
+     ${c.role&&ROLE_META[c.role]?`<div class="dw-role" style="border-left-color:${ROLE_META[c.role].c}"><b style="color:${ROLE_META[c.role].c}">${ROLE_META[c.role].l}</b> — ${esc(roleDef(c.role))}<span class="dw-role-b">${esc(c.role_basis||'')}</span></div>`:''}
      <div class="dw-sect">Chain layer</div><div class="dw-layer">${esc(c.chain_layer||'—')}</div>
      <div class="dw-sect">Thesis</div><div class="dw-thesis">${linkifyTickers(esc(c.thesis_note||''))}</div>
      ${c.data_caveat?`<div class="dw-sect">Data caveat</div><div class="dw-caveat">${linkifyTickers(esc(c.data_caveat))}</div>`:''}
@@ -3527,7 +3545,7 @@ async function loadData(){
       fetchJ('gluts.json').catch(()=>null),
       fetchJ('orientation.json').catch(()=>null),
     ]);
-    COMPANIES=cos.companies||[];
+    COMPANIES=cos.companies||[];window.COMPANIES_META=cos._meta||{};
     CYCLE=cyc.cycles||[];
     GEO=geo||{};
     PORTFOLIO=port||{};

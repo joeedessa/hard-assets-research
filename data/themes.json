@@ -474,6 +474,16 @@
           "lbl": "Water and thermal",
           "ticks": "Ebara (6361.JP — pumps for data-centre cooling, LNG, semis), Kurita (6370.JP — ultrapure water for fabs)",
           "why": "Every new fab and data centre in the US is a Japanese pump and water-treatment order."
+        },
+        {
+          "lbl": "Automation — the motion-control layer, and it passes the chokepoint test",
+          "ticks": "Nabtesco (6268.JP — RV reducers), Harmonic Drive (6324.JP — strain-wave gears), SMC (6273.JP — pneumatics), THK (6481.JP — linear guides), Yaskawa (6506.JP — servos, robots), Fanuc (6954.JP — robots, CNC), Nidec (6594.JP — motors); Daifuku (6383.JP — material handling, volume beneficiary)",
+          "why": "Reshoring is a robotics-and-capital-equipment story, and the two suppliers of precision reducers sit inside almost every robot arm on earth, including Chinese ones. Reducer market shares are widely quoted and rarely sourced — flagged on each record. Boundary with the sibling AI-hardware dashboard: this book holds the materials-adjacent motion layer; robot makers and sensor names are shared."
+        },
+        {
+          "lbl": "Beneficiaries — grow with the cycle without owning a chokepoint",
+          "ticks": "Trading houses: Mitsubishi Corp (8058.JP), Mitsui & Co (8031.JP), Marubeni (8002.JP), Sumitomo Corp (8053.JP), Itochu (8001.JP); machinery: Komatsu (6301.JP), Hitachi Construction (6305.JP), Kubota (6326.JP), Daikin (6367.JP); LNG engineers: JGC (1963.JP), Chiyoda (6366.JP); lines: NYK (9101.JP), MOL (9104.JP), K Line (9107.JP); nuclear-restart utilities: Kansai Electric (9503.JP), Kyushu Electric (9508.JP)",
+          "why": "Added 2026-09-06 after the owner asked whether the book only looks for chokepoints. It does not, and never said so: every name now carries a ROLE — chokepoint, volume beneficiary, enabler, optionality — so the kind of exposure is visible. These are the Japanese volume beneficiaries; the trading houses are the broadest single claim on the commodity-and-infrastructure cycle, and the two utilities are the cleanest listed expression of Japan's nuclear return."
         }
       ],
       "thesis": "Japan is where the West's missing middle of the supply chain still exists: forgings, sponge, cathode precursors, cables, marine engines. Most of it sits inside conglomerates where the relevant line is 5–20% of revenue, which is why it screens badly and is under-owned by thematic money. The re-rating case is that the chokepoint lines grow into the valuation while the conglomerate discount narrows under governance reform. Every new name here enters as TRACKED at conviction 1–2; the owner sets conviction.",
@@ -483,7 +493,8 @@
         "Grid/DC: 5803.JP, 5801.JP, 6501.JP",
         "Defense: 7011.JP",
         "Processing: 5726.JP, 5016.JP, 5713.JP",
-        "All proposed at conviction 1–2; owner to set."
+        "All proposed at conviction 1–2; owner to set.",
+        "Automation chokepoints: 6268.JP, 6324.JP, 6273.JP · Beneficiaries: 8058.JP, 8031.JP, 9503.JP · all proposed at conviction 1–2"
       ],
       "company_tags": [
         "japan-industrial",

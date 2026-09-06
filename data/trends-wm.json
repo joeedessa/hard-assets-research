@@ -17727,6 +17727,2160 @@
           }
         }
       }
+    },
+    "6268.JP": {
+      "w": {
+        "px": 4457.0,
+        "bars": 261,
+        "d21": -7.43,
+        "d50": 1.17,
+        "d150": 42.25,
+        "d200": 44.93,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 4457.0,
+        "bars": 300,
+        "d21": 12.86,
+        "d50": 43.68,
+        "d150": 56.84,
+        "d200": 81.29,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "6324.JP": {
+      "w": {
+        "px": 5730.0,
+        "bars": 261,
+        "d21": -6.87,
+        "d50": 19.7,
+        "d150": 45.74,
+        "d200": 44.69,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 1,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 5730.0,
+        "bars": 300,
+        "d21": 21.26,
+        "d50": 41.2,
+        "d150": 42.11,
+        "d200": 81.44,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 5,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "6273.JP": {
+      "w": {
+        "px": 67140.0,
+        "bars": 261,
+        "d21": -4.23,
+        "d50": 4.73,
+        "d150": 5.15,
+        "d200": 4.42,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 13,
+          "gap": 0.05,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "held",
+          "ago": 13,
+          "gap": 0.06,
+          "probe": "low"
+        }
+      },
+      "m": {
+        "px": 67140.0,
+        "bars": 300,
+        "d21": 5.32,
+        "d50": 4.92,
+        "d150": 40.65,
+        "d200": 71.45,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 5,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 11,
+          "gap": 0.6,
+          "probe": "low"
+        }
+      }
+    },
+    "6481.JP": {
+      "w": {
+        "px": 6348.0,
+        "bars": 261,
+        "d21": -4.5,
+        "d50": 17.0,
+        "d150": 66.31,
+        "d200": 82.4,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 6348.0,
+        "bars": 300,
+        "d21": 25.41,
+        "d50": 81.99,
+        "d150": 138.86,
+        "d200": 173.99,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "6506.JP": {
+      "w": {
+        "px": 4570.0,
+        "bars": 261,
+        "d21": -16.58,
+        "d50": -10.23,
+        "d150": -2.46,
+        "d200": -4.83,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 5,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 8,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          }
+        },
+        "test150": {
+          "state": "lost",
+          "ago": 4,
+          "gap": 0.0,
+          "probe": "low"
+        },
+        "test200": {
+          "state": "rejected",
+          "ago": 0,
+          "gap": 0.45,
+          "probe": "high"
+        }
+      },
+      "m": {
+        "px": 4570.0,
+        "bars": 300,
+        "d21": -4.74,
+        "d50": -4.03,
+        "d150": 29.41,
+        "d200": 61.39,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 8,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": true,
+              "n_flips": 4
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 3,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "reclaimed",
+          "ago": 13,
+          "gap": 0.1,
+          "probe": "high"
+        }
+      }
+    },
+    "6954.JP": {
+      "w": {
+        "px": 5931.0,
+        "bars": 261,
+        "d21": -10.33,
+        "d50": -4.53,
+        "d150": 25.18,
+        "d200": 29.36,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 5931.0,
+        "bars": 300,
+        "d21": 4.59,
+        "d50": 29.15,
+        "d150": 51.74,
+        "d200": 73.32,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 14,
+          "gap": 1.32,
+          "probe": "low"
+        }
+      }
+    },
+    "6594.JP": {
+      "w": {
+        "px": 2611.0,
+        "bars": 261,
+        "d21": 1.09,
+        "d50": 9.11,
+        "d150": -4.46,
+        "d200": -11.34,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 0,
+          "gap": 0.37,
+          "probe": "high"
+        }
+      },
+      "m": {
+        "px": 2611.0,
+        "bars": 300,
+        "d21": 0.15,
+        "d50": -13.16,
+        "d150": -20.1,
+        "d200": -1.86,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 2,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "rejected",
+          "ago": 12,
+          "gap": 1.02,
+          "probe": "high"
+        }
+      }
+    },
+    "6383.JP": {
+      "w": {
+        "px": 5661.0,
+        "bars": 261,
+        "d21": -9.61,
+        "d50": -3.29,
+        "d150": 38.89,
+        "d200": 54.38,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 5,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 1,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 5661.0,
+        "bars": 300,
+        "d21": 8.98,
+        "d50": 55.42,
+        "d150": 146.95,
+        "d200": 221.07,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "8058.JP": {
+      "w": {
+        "px": 4902.0,
+        "bars": 261,
+        "d21": 2.55,
+        "d50": 9.38,
+        "d150": 47.86,
+        "d200": 67.99,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 2,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 4902.0,
+        "bars": 300,
+        "d21": 21.59,
+        "d50": 71.22,
+        "d150": 246.24,
+        "d200": 323.93,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "8031.JP": {
+      "w": {
+        "px": 5019.0,
+        "bars": 261,
+        "d21": -0.1,
+        "d50": 1.59,
+        "d150": 37.2,
+        "d200": 53.59,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 2,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 5019.0,
+        "bars": 300,
+        "d21": 14.5,
+        "d50": 56.48,
+        "d150": 225.27,
+        "d200": 300.45,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "8001.JP": {
+      "w": {
+        "px": 2204.0,
+        "bars": 261,
+        "d21": 9.86,
+        "d50": 13.08,
+        "d150": 40.8,
+        "d200": 57.97,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 5,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 9,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 2204.0,
+        "bars": 300,
+        "d21": 21.58,
+        "d50": 60.09,
+        "d150": 220.45,
+        "d200": 304.6,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "8002.JP": {
+      "w": {
+        "px": 5073.0,
+        "bars": 261,
+        "d21": -0.25,
+        "d50": 3.29,
+        "d150": 54.24,
+        "d200": 73.96,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 5073.0,
+        "bars": 300,
+        "d21": 18.53,
+        "d50": 76.47,
+        "d150": 279.2,
+        "d200": 366.07,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "8053.JP": {
+      "w": {
+        "px": 1820.0,
+        "bars": 261,
+        "d21": 9.95,
+        "d50": 22.75,
+        "d150": 72.86,
+        "d200": 94.58,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 6,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 1820.0,
+        "bars": 300,
+        "d21": 34.6,
+        "d50": 96.71,
+        "d150": 274.64,
+        "d200": 351.41,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "6301.JP": {
+      "w": {
+        "px": 7493.0,
+        "bars": 261,
+        "d21": 9.94,
+        "d50": 20.98,
+        "d150": 57.0,
+        "d200": 72.22,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 6,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 7493.0,
+        "bars": 300,
+        "d21": 29.35,
+        "d50": 73.99,
+        "d150": 169.97,
+        "d200": 209.49,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "6326.JP": {
+      "w": {
+        "px": 3006.0,
+        "bars": 261,
+        "d21": 9.82,
+        "d50": 19.4,
+        "d150": 42.74,
+        "d200": 46.49,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 3006.0,
+        "bars": 300,
+        "d21": 25.37,
+        "d50": 45.67,
+        "d150": 73.45,
+        "d200": 103.31,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        },
+        "test150": {
+          "state": "held",
+          "ago": 13,
+          "gap": 1.8,
+          "probe": "low"
+        }
+      }
+    },
+    "6367.JP": {
+      "w": {
+        "px": 20500.0,
+        "bars": 261,
+        "d21": -7.77,
+        "d50": -1.47,
+        "d150": 4.66,
+        "d200": 0.02,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 3,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          }
+        },
+        "test200": {
+          "state": "held",
+          "ago": 2,
+          "gap": 0.3,
+          "probe": "low"
+        }
+      },
+      "m": {
+        "px": 20500.0,
+        "bars": 300,
+        "d21": 0.94,
+        "d50": -0.23,
+        "d150": 34.49,
+        "d200": 69.07,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 9,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 0,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "6305.JP": {
+      "w": {
+        "px": 5977.0,
+        "bars": 261,
+        "d21": 8.84,
+        "d50": 13.84,
+        "d150": 40.03,
+        "d200": 49.54,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 5977.0,
+        "bars": 300,
+        "d21": 21.15,
+        "d50": 51.17,
+        "d150": 114.48,
+        "d200": 148.9,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "1963.JP": {
+      "w": {
+        "px": 2344.0,
+        "bars": 261,
+        "d21": -0.17,
+        "d50": 8.99,
+        "d150": 49.04,
+        "d200": 47.54,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 2344.0,
+        "bars": 300,
+        "d21": 18.85,
+        "d50": 44.6,
+        "d150": 52.01,
+        "d200": 43.79,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 9,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        }
+      }
+    },
+    "6366.JP": {
+      "w": {
+        "px": 693.0,
+        "bars": 261,
+        "d21": -9.21,
+        "d50": -14.75,
+        "d150": 39.86,
+        "d200": 48.82,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bear",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bear",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bear",
+            "recent": {
+              "dir": "bear",
+              "ago": 4,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 693.0,
+        "bars": 300,
+        "d21": 4.84,
+        "d50": 48.45,
+        "d150": 20.95,
+        "d200": 5.97,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bear",
+            "recent": null
+          }
+        },
+        "test200": {
+          "state": "held",
+          "ago": 3,
+          "gap": 1.42,
+          "probe": "low"
+        }
+      }
+    },
+    "9101.JP": {
+      "w": {
+        "px": 7158.0,
+        "bars": 261,
+        "d21": 18.64,
+        "d50": 31.24,
+        "d150": 49.89,
+        "d200": 66.54,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 6,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 8,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 7158.0,
+        "bars": 262,
+        "d21": 32.23,
+        "d50": 67.87,
+        "d150": 281.97,
+        "d200": 369.2,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "9104.JP": {
+      "w": {
+        "px": 6969.0,
+        "bars": 261,
+        "d21": 14.61,
+        "d50": 28.98,
+        "d150": 44.35,
+        "d200": 59.75,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 5,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 6969.0,
+        "bars": 300,
+        "d21": 29.28,
+        "d50": 61.41,
+        "d150": 251.94,
+        "d200": 315.39,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "9107.JP": {
+      "w": {
+        "px": 3328.0,
+        "bars": 261,
+        "d21": 18.04,
+        "d50": 35.7,
+        "d150": 57.06,
+        "d200": 80.32,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 3328.0,
+        "bars": 300,
+        "d21": 37.03,
+        "d50": 83.52,
+        "d150": 341.6,
+        "d200": 448.68,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "9503.JP": {
+      "w": {
+        "px": 2947.0,
+        "bars": 261,
+        "d21": 19.45,
+        "d50": 20.95,
+        "d150": 38.8,
+        "d200": 51.31,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 2,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 3,
+              "whipsaw": true,
+              "n_flips": 3
+            }
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 0,
+              "whipsaw": true,
+              "n_flips": 2
+            }
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 2947.0,
+        "bars": 300,
+        "d21": 25.85,
+        "d50": 52.05,
+        "d150": 128.89,
+        "d200": 144.11,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
+    },
+    "9508.JP": {
+      "w": {
+        "px": 2158.5,
+        "bars": 261,
+        "d21": 18.95,
+        "d50": 25.75,
+        "d150": 49.65,
+        "d200": 69.5,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": {
+              "dir": "bull",
+              "ago": 7,
+              "whipsaw": false,
+              "n_flips": 1
+            }
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      },
+      "m": {
+        "px": 2158.5,
+        "bars": 300,
+        "d21": 31.12,
+        "d50": 70.45,
+        "d150": 111.07,
+        "d200": 111.37,
+        "have": {
+          "ema5": true,
+          "ema21": true,
+          "sma50": true,
+          "sma150": true,
+          "sma200": true
+        },
+        "warmup_short": false,
+        "cross": {
+          "ema5x21": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX50": {
+            "state": "bull",
+            "recent": null
+          },
+          "ema21x50": {
+            "state": "bull",
+            "recent": null
+          },
+          "pxX200": {
+            "state": "bull",
+            "recent": null
+          },
+          "sma50x200": {
+            "state": "bull",
+            "recent": null
+          }
+        }
+      }
     }
   }
 }

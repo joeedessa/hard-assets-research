@@ -23,7 +23,7 @@ checklist](#pre-flight-checklist). After finding a bug, add it to the matching
 class using the [template](#append-template) at the bottom. If it fits no existing
 class, open a new one — a new class is a genuine finding.
 
-Last updated: 2026-09-06. 58 entries across 9 failure classes.
+Last updated: 2026-09-06. 59 entries across 9 failure classes.
 
 ---
 
@@ -230,6 +230,27 @@ and nothing in the system notices. Everything here rendered perfectly.
 - **Standing check** — The Orientation tab is a set of claims like any other. It goes
   through the same sourcing pass; its remaining hardcoded prose is on the open-risks
   table until moved into data.
+
+### 1.12 The selection criteria never admitted the category most of the book holds
+- **What broke** — The stated criteria were capex gap and chokepoint position. Asked
+  on 2026-09-06 whether the book only looked at chokepoints, the honest answer was
+  that it already held dozens of names that are neither — Quanta and the EPCs, the
+  tanker and bulker owners, the refiners, the machinery makers — as **volume
+  beneficiaries**, without ever naming the category. A reader comparing the criteria
+  to the list would have concluded the list was wrong. The criteria were.
+- **Why it survived** — Names were added because they obviously belonged; the
+  framing was written earlier and never re-read against the universe it described.
+  A description of the page's own selection rule is a claim about the page (see the
+  "sorted by" entry, 3.8), and it was false.
+- **Fix** — A `role` on every record — chokepoint / volume beneficiary / enabler /
+  optionality — with a definition, a filter and a badge, all labelled *proposed*
+  until the owner confirms. 157 placed by explicit judgment, 45 by chain-layer rule.
+  Criteria text amended to state the third category. The Japan set gained the
+  automation chokepoints (reducers, servos, pneumatics) and the beneficiaries
+  (trading houses, machinery, LNG engineers, lines, nuclear-restart utilities).
+- **Standing check** — Re-read the selection criteria against the actual universe
+  on each audit. Chokepoint status is dated: when the Gluts view says capacity is
+  arriving (transformers by 2028), the role moves.
 
 ---
 
