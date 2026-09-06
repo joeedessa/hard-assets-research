@@ -23,7 +23,7 @@ checklist](#pre-flight-checklist). After finding a bug, add it to the matching
 class using the [template](#append-template) at the bottom. If it fits no existing
 class, open a new one — a new class is a genuine finding.
 
-Last updated: 2026-09-05. 57 entries across 9 failure classes.
+Last updated: 2026-09-06. 58 entries across 9 failure classes.
 
 ---
 
@@ -540,6 +540,23 @@ My own reasoning failures. Each produced a confident, wrong statement.
   `display !== 'none'`. Run the pane-parent parse after touching the pane
   markup. And when the DOM says yes and a screenshot says no, the screenshot is
   the one describing what the reader sees.
+
+### 5.9 Twenty-two tabs, a hidden scrollbar, and no way to move the bar with a mouse
+- **What broke** — Reported by the owner from a desktop screenshot: the tab bar
+  overflowed after the two new tabs, its scrollbar is hidden by design, and nothing
+  else scrolled it. On a trackpad a horizontal swipe worked; on a mouse the tabs to
+  the right simply did not exist.
+- **Why it survived** — Every render check counted tabs and asserted index
+  alignment; none asked whether a tab could be *reached*. The bar had always fit
+  the developer's viewport, and grew two tabs at a time.
+- **Fix** — Edge arrows shown only when there is something to scroll to, vertical
+  wheel mapped to horizontal scroll over the bar, and the active tab scrolled into
+  view on every switch. Smooth `scrollBy` did not move the bar in the embedded
+  browser at all — direct `scrollLeft` assignment does — so the first version of
+  the fix passed its own DOM checks while doing nothing.
+- **Standing check** — Any horizontally scrolling strip needs an affordance that
+  works without a trackpad. Test reachability, not presence: click the arrow and
+  assert `scrollLeft` changed.
 
 ---
 

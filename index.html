@@ -120,6 +120,15 @@ body{margin:0;padding:0 0 48px;background:var(--paper);color:var(--color-text-pr
   backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   border-bottom:.5px solid var(--color-border-tertiary);overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
+.tabs-wrap{position:sticky;top:0;z-index:60}
+.tabs-wrap .tabs{position:static;padding-right:48px}  /* room for the last tab to clear the arrow */
+.tabs-arrow{position:absolute;top:0;bottom:0;width:34px;border:0;cursor:pointer;font-size:22px;line-height:1;
+  color:var(--color-text-secondary);display:none;align-items:center;justify-content:center;padding:0 0 3px;z-index:2}
+.tabs-arrow-l{left:0;background:linear-gradient(90deg,var(--paper) 60%,transparent)}
+.tabs-arrow-r{right:0;background:linear-gradient(270deg,var(--paper) 60%,transparent)}
+.tabs-arrow:hover{color:var(--accent)}
+.tabs-wrap.can-left .tabs-arrow-l,.tabs-wrap.can-right .tabs-arrow-r{display:flex}
+@media(hover:none){.tabs-arrow{width:26px;font-size:18px}}
 .tab{padding:7px 11px;font-size:12px;cursor:pointer;color:var(--color-text-secondary);
   border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .12s,border-color .12s;flex-shrink:0}
 .tab:hover{color:var(--color-text-primary)}
@@ -1511,6 +1520,41 @@ function jumpToCompanies(tk){
   renderCo();
 }
 
+// ── Tab bar scrolling ──────────────────────────────────────────────────────
+// 22 tabs no longer fit a laptop width and the bar hides its scrollbar, so on a
+// mouse there was no way to move it. Three affordances: arrows at the edges
+// (shown only when there is something to scroll to), vertical wheel mapped to
+// horizontal scroll while over the bar, and the active tab kept in view.
+function tabsScrollToActive(){
+  const bar=document.querySelector('.tabs'),on=bar&&bar.querySelector('.tab.on');
+  if(!bar||!on)return;
+  const b=bar.getBoundingClientRect(),r=on.getBoundingClientRect();
+  if(r.left<b.left+48)bar.scrollLeft+=r.left-b.left-64;
+  else if(r.right>b.right-48)bar.scrollLeft+=r.right-b.right+72;
+  tabsUpdateArrows();
+}
+function tabsUpdateArrows(){
+  const bar=document.querySelector('.tabs'),wrap=bar&&bar.parentElement;
+  if(!bar||!wrap||!wrap.classList.contains('tabs-wrap'))return;
+  const max=bar.scrollWidth-bar.clientWidth;
+  wrap.classList.toggle('can-left',bar.scrollLeft>4);
+  wrap.classList.toggle('can-right',max-bar.scrollLeft>12);
+}
+function initTabScroller(){
+  const bar=document.querySelector('.tabs');if(!bar||bar.parentElement.classList.contains('tabs-wrap'))return;
+  const wrap=document.createElement('div');wrap.className='tabs-wrap';
+  bar.parentNode.insertBefore(wrap,bar);wrap.appendChild(bar);
+  const mk=(dir)=>{const b=document.createElement('button');b.type='button';b.className='tabs-arrow tabs-arrow-'+dir;b.setAttribute('aria-label',dir==='l'?'Scroll tabs left':'Scroll tabs right');b.textContent=dir==='l'?'‹':'›';
+    b.addEventListener('click',()=>{bar.scrollLeft+=(dir==='l'?-1:1)*Math.max(200,bar.clientWidth*0.6);tabsUpdateArrows();});return b;};
+  wrap.appendChild(mk('l'));wrap.appendChild(mk('r'));
+  bar.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)&&bar.scrollWidth>bar.clientWidth){bar.scrollLeft+=e.deltaY;e.preventDefault();}},{passive:false});
+  bar.addEventListener('scroll',tabsUpdateArrows,{passive:true});
+  window.addEventListener('resize',tabsUpdateArrows);
+  tabsUpdateArrows();
+}
+document.addEventListener('DOMContentLoaded',initTabScroller);
+if(document.readyState!=='loading')initTabScroller();
+
 // ── Tab switching ──────────────────────────────────────────────────────────
 // MUST stay in the same order as the .tab spans in the markup — ST() pairs
 // them by index. Also the order the Start Here learning path walks.
@@ -1519,6 +1563,7 @@ const built={};
 function ST(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
   document.querySelectorAll('.tab').forEach((t,i)=>{if(TAB_IDS[i]===id)t.classList.add('on');else t.classList.remove('on');});
+  tabsScrollToActive();
   const el=document.getElementById('v-'+id);
   if(el)el.classList.add('on');
   if(!built[id]){built[id]=true;buildTab(id);}
