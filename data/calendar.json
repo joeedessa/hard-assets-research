@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-06T18:35:12+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-09-07T13:02:51+00:00",
+    "mode": "light",
+    "coverage": "0/0 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -43,18 +43,22 @@
       },
       "wire": [
         {
-          "t": "Planet Labs Earnings Top Wall Street Estimates as Military Space Business Grows - barrons.com",
-          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAwbXYwSDJpLVhjQWdGeV9OLTZDdlcydW1fdC1HaE9vTE04WkVzX01TLTdMejVZRVpsWm81OGlwMkhoQjRTWTMzLThENEoteTdsZTVJVWFmNktlNXNEcTNxVGxVQ20yNzJBbXVvS3VyZlNXNXJ0UWRoMk1CVXNPMms?oc=5",
-          "s": "barrons.com",
+          "t": "Planet Labs Stock Surges on Earnings Beat Driven by Doubling Defense Revenue - Barron's",
+          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1EaDBfbXBZckJVbG44b0l4M2FOWDR6akltNHo0UnBlQkZ2Sjc5cmF4RHQwRnlCdDRVQmRHcm8zY09fR2VyWVBhVFdHckY5Q01PTkRybVhnUUVWT0R3ZmhWWVhVMkZZZ0lqMmg5Z1RodkpwLW9RZXlv?oc=5",
+          "s": "Barron's",
           "d": "2026-09-04",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         },
         {
-          "t": "Planet Labs (PL) Is Down 9.3% After Raising 2027 Guidance And Tilting Further Toward Defense - simplywall.st",
-          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYkNQaGI1aVNqMjNVVzJaYWl3dVZ2dUs3UnRsdGtwSXhscExYTTZMdmhpMWVpbU5fbFdnOWtIWlFNRXJqZ3hrVjdVdHI2alU2YVVidVVIUFVhc2JhajRQLWlodmxnMldONGxMV1pPX1VFQjNja2xNTU9EZUpaRWxIQ0FHUEZnUlh1WVpKT1kxSEdTd0FmX2kyMEJycVBKN0FrZ1FKaF9ncy1lMF9zSHN1ZUxiS3liQ0h1WG8yRVdQUERjTlE5TWZOczRvRXJxRE42Y05hRTlXS3XSAd4BQVVfeXFMUGtsZFpodTVTczNGUVpxX3UwWTFlSnhTdmh5UjFWaEs0b0ZQX1djOFlfai1nUjBRYmFXbVJPTlVrcmZmekdxOW1PR1YzLTJQMzFWUjlKRW9xbTU0Yk9HeGdCV2s2MEhpV0RaN09SUnQyRjhkTHo0NVhIa0RLRFV6cDdtellXaE1wa04wOHBKUFFTUE92WlA5QVdmeEQ5VzRTWWRuSTY3SXdkNTUwR0xBdW5PNUoxaFRTZUExRUd0TXR5bHpGRzc5UWozaFBidnY5eHpHUC0yMHpiYnZLai1R?oc=5",
-          "s": "simplywall.st",
-          "d": "2026-09-06",
-          "cues": []
+          "t": "Stock Market Today, Sept. 4: Planet Labs Dips 1% Despite Earnings Beat, Full-Year Guidance Raise - The Motley Fool",
+          "u": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ25yejVhRXlvM2VOWjVlV2xqcDlLM2t0d3lDSG1OemcxWUY5WHIyYTM2MVZXeGFRZUtyX29Oajk2UEdVSXdibE44YXZsXzF1dTh0ekw4VmZ1MHZyOVJEUWRTV1ljY1M4TEhObkdveGRTSjNfX2FDQnA3VEkwTnR5WFVrZWdXZnJrYkRPQmYyN2QtdU05NGZEVDczREhXMkZNODJONUlXZFNlSzhoZF9VVldOT01vMVZXTDRza0k5ei15OHZRZndJTkNRU1B0RjhJZFQ0SEFwRkFyNTZXcWdsS3l2enFvMjg?oc=5",
+          "s": "The Motley Fool",
+          "d": "2026-09-04",
+          "cues": [
+            "beat"
+          ]
         },
         {
           "t": "Planet Labs Rallies 10% as Record Revenue Overrides Soft Q3 Guidance - 24/7 Wall St.",
@@ -66,20 +70,18 @@
           ]
         },
         {
-          "t": "Stock Market Today, Sept. 4: Planet Labs Dips 1% Despite Earnings Beat, Full-Year Guidance Raise - The Motley Fool",
-          "u": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZ25yejVhRXlvM2VOWjVlV2xqcDlLM2t0d3lDSG1OemcxWUY5WHIyYTM2MVZXeGFRZUtyX29Oajk2UEdVSXdibE44YXZsXzF1dTh0ekw4VmZ1MHZyOVJEUWRTV1ljY1M4TEhObkdveGRTSjNfX2FDQnA3VEkwTnR5WFVrZWdXZnJrYkRPQmYyN2QtdU05NGZEVDczREhXMkZNODJONUlXZFNlSzhoZF9VVldOT01vMVZXTDRza0k5ei15OHZRZndJTkNRU1B0RjhJZFQ0SEFwRkFyNTZXcWdsS3l2enFvMjg?oc=5",
-          "s": "The Motley Fool",
-          "d": "2026-09-04",
-          "cues": [
-            "beat"
-          ]
+          "t": "Planet Labs (PL) Is Down 9.3% After Raising 2027 Guidance And Tilting Further Toward Defense - simplywall.st",
+          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYkNQaGI1aVNqMjNVVzJaYWl3dVZ2dUs3UnRsdGtwSXhscExYTTZMdmhpMWVpbU5fbFdnOWtIWlFNRXJqZ3hrVjdVdHI2alU2YVVidVVIUFVhc2JhajRQLWlodmxnMldONGxMV1pPX1VFQjNja2xNTU9EZUpaRWxIQ0FHUEZnUlh1WVpKT1kxSEdTd0FmX2kyMEJycVBKN0FrZ1FKaF9ncy1lMF9zSHN1ZUxiS3liQ0h1WG8yRVdQUERjTlE5TWZOczRvRXJxRE42Y05hRTlXS3XSAd4BQVVfeXFMUGtsZFpodTVTczNGUVpxX3UwWTFlSnhTdmh5UjFWaEs0b0ZQX1djOFlfai1nUjBRYmFXbVJPTlVrcmZmekdxOW1PR1YzLTJQMzFWUjlKRW9xbTU0Yk9HeGdCV2s2MEhpV0RaN09SUnQyRjhkTHo0NVhIa0RLRFV6cDdtellXaE1wa04wOHBKUFFTUE92WlA5QVdmeEQ5VzRTWWRuSTY3SXdkNTUwR0xBdW5PNUoxaFRTZUExRUd0TXR5bHpGRzc5UWozaFBidnY5eHpHUC0yMHpiYnZLai1R?oc=5",
+          "s": "simplywall.st",
+          "d": "2026-09-06",
+          "cues": []
         }
       ],
       "wire_gate": "2026-09-04",
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-09-06",
+        "fetched": "2026-09-07",
         "eps_est": -0.02,
         "surprise_abs": 0.04,
         "pct_suppressed": "consensus of -0.02 is too near zero for a percentage to mean anything — the beat/miss is +0.04 per share"
