@@ -1,23 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-09-08T23:31:25+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-09-09T11:54:15+00:00",
+    "mode": "light",
+    "coverage": "0/0 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "ASB.AX",
-      "name": "Austal",
-      "d": "2026-08-31",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:12 AEST",
-        "iso": "2026-08-31T06:12+00:00",
-        "tz": "Australia/Sydney"
-      }
-    },
     {
       "type": "earnings",
       "tk": "SBSW",
@@ -44,7 +32,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-09-08",
+        "fetched": "2026-09-09",
         "eps_est": -0.02,
         "surprise_abs": 0.04,
         "pct_suppressed": "consensus of -0.02 is too near zero for a percentage to mean anything — the beat/miss is +0.04 per share"
