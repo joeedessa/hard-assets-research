@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-09T19:04:43+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-09-09T23:25:40+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -56,10 +56,8 @@
       "name": "NioCorp Developments",
       "d": "2026-09-28",
       "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-09-28T20:00+00:00",
-        "tz": "America/New_York"
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {
@@ -316,18 +314,6 @@
     },
     {
       "type": "earnings",
-      "tk": "4063.JP",
-      "name": "Shin-Etsu Chemical",
-      "d": "2026-10-23",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-23T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "6954.JP",
       "name": "Fanuc",
       "d": "2026-10-23",
@@ -360,6 +346,18 @@
         "label": "MID-SESSION · 15:00 KST",
         "iso": "2026-10-26T06:00+00:00",
         "tz": "Asia/Seoul"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "4063.JP",
+      "name": "Shin-Etsu Chemical",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-27T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -700,18 +698,6 @@
     },
     {
       "type": "earnings",
-      "tk": "4091.JP",
-      "name": "Nippon Sanso",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-29T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "6301.JP",
       "name": "Komatsu",
       "d": "2026-10-29",
@@ -992,10 +978,8 @@
       "name": "Vale",
       "d": "2026-10-29",
       "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-29T20:00+00:00",
-        "tz": "America/New_York"
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {
@@ -1252,6 +1236,18 @@
     },
     {
       "type": "earnings",
+      "tk": "4091.JP",
+      "name": "Nippon Sanso",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "5401.JP",
       "name": "Nippon Steel",
       "d": "2026-11-04",
@@ -1316,10 +1312,8 @@
       "name": "Albemarle",
       "d": "2026-11-04",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {
