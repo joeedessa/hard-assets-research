@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "as_of": "2026-09-10T18:56:41+00:00",
+    "as_of": "2026-09-10T23:19:45+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 20/226 down 5%, sector -7.0%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 22/226 down 5%, sector -7.0%",
       "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 1/226 up 5%, sector -7.0%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
       "Conviction-3 divergence (±8%+ versus the -1.5% universe median): 0 found",
@@ -11,7 +11,7 @@
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
       "USD (DXY) ±1%+ in a session: +0.30%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
-      "Producer-country FX ±1.5%+ (5 pairs tracked): 1 moved",
+      "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 0 outside their window, 0 excluded as undated"
     ]
   },
@@ -21,10 +21,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "WTI +6.3% in a session",
+      "t": "WTI +8.1% in a session",
       "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved +6.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "stance": "REVIEW",
+      "action": "The underlying moved +8.1% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-10"
     },
@@ -32,10 +32,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Brent +6.0% in a session",
+      "t": "Brent +7.5% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved +6.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved +7.5% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-10"
     },
@@ -43,10 +43,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Silver -5.3% in a session",
+      "t": "Silver -5.7% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved -5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved -5.7% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-10"
     },
@@ -54,10 +54,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Platinum -6.6% in a session",
+      "t": "Platinum -7.0% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved -6.6% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved -7.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-10"
     },
@@ -65,10 +65,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Palladium -5.4% in a session",
+      "t": "Palladium -5.5% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved -5.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved -5.5% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-10"
     },
@@ -76,10 +76,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "REE -5.4% in a session",
+      "t": "REE -5.5% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved -5.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved -5.5% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-10"
     },
@@ -98,7 +98,7 @@
       "sev": "medium",
       "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "WTI +6.3% but its equities +0.1% — a -6.2pt gap",
+      "t": "WTI +8.1% but its equities +0.1% — a -8.0pt gap",
       "ev": "Median of 36 oil holdings against the underlying.",
       "stance": "MONITOR",
       "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
@@ -112,17 +112,6 @@
         "NE",
         "HP"
       ],
-      "date": "2026-09-10"
-    },
-    {
-      "sev": "medium",
-      "cat": "producer-fx",
-      "measured": true,
-      "t": "USDCLP +1.80% — Chilean supply (copper, lithium)",
-      "ev": "Producer-currency move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "A +1.80% move in USDCLP changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
-      "tk": [],
       "date": "2026-09-10"
     }
   ]
