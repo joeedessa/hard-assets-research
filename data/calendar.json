@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-14T20:08:58+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-09-14T23:58:08+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -1292,18 +1292,6 @@
     },
     {
       "type": "earnings",
-      "tk": "AMG.AS",
-      "name": "AMG Critical Materials",
-      "d": "2026-11-04",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 16:30 CET",
-        "iso": "2026-11-04T15:30+00:00",
-        "tz": "Europe/Amsterdam"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "CF",
       "name": "CF Industries",
       "d": "2026-11-04",
@@ -1624,6 +1612,18 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2026-11-05T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AMG.AS",
+      "name": "AMG Critical Materials",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:30 CET",
+        "iso": "2026-11-05T15:30+00:00",
+        "tz": "Europe/Amsterdam"
       }
     },
     {
@@ -2203,10 +2203,8 @@
       "name": "SQM",
       "d": "2026-11-17",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-17T20:00+00:00",
-        "tz": "America/New_York"
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {

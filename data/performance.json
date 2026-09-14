@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-11T23:24:14+00:00",
+    "as_of": "2026-09-14T23:56:35+00:00",
     "note": "Equal-weight, price-only, local currency. No rebalancing, dividends or FX conversion.",
     "retrospective_warning": "The trailing table measures how TODAY'S universe performed in the past. It describes COMPOSITION, not forecasting skill, because the conviction and froth tags did not exist for most of that window and 21 of the 71 names were added on 2026-08-05. Only the since-inception tracks test the framework."
   },
@@ -18,31 +18,31 @@
         {
           "label": "GSG — benchmark",
           "n": 1,
-          "si": 6.0,
+          "si": 6.1,
           "bench": true
         },
         {
           "label": "XLE — benchmark",
           "n": 1,
-          "si": 10.0,
+          "si": 9.0,
           "bench": true
         },
         {
           "label": "COPX — benchmark",
           "n": 1,
-          "si": 11.6,
+          "si": 7.9,
           "bench": true
         },
         {
           "label": "URA — benchmark",
           "n": 1,
-          "si": -22.8,
+          "si": -25.2,
           "bench": true
         },
         {
           "label": "SPY — benchmark",
           "n": 1,
-          "si": 6.6,
+          "si": 6.1,
           "bench": true
         }
       ]
@@ -55,7 +55,7 @@
         {
           "label": "Insulated (froth 1)",
           "n": 19,
-          "si": 6.7
+          "si": 3.8
         },
         {
           "label": "High froth (froth 3)",
@@ -65,31 +65,31 @@
         {
           "label": "GSG — benchmark",
           "n": 1,
-          "si": 19.8,
+          "si": 19.9,
           "bench": true
         },
         {
           "label": "XLE — benchmark",
           "n": 1,
-          "si": 11.3,
+          "si": 10.3,
           "bench": true
         },
         {
           "label": "COPX — benchmark",
           "n": 1,
-          "si": 5.4,
+          "si": 1.9,
           "bench": true
         },
         {
           "label": "URA — benchmark",
           "n": 1,
-          "si": 2.4,
+          "si": -0.7,
           "bench": true
         },
         {
           "label": "SPY — benchmark",
           "n": 1,
-          "si": -0.9,
+          "si": -1.4,
           "bench": true
         }
       ]
@@ -98,71 +98,71 @@
   "retrospective": {
     "label": "Retrospective composition — NOT a track record",
     "mean": {
-      "1m": -2.6,
-      "3m": -1.9,
-      "6m": 6.5,
-      "1y": 54.4
+      "1m": -4.8,
+      "3m": -3.8,
+      "6m": 4.3,
+      "1y": 50.5
     },
     "median": {
-      "1m": -2.9,
-      "3m": -1.5,
-      "6m": 2.2,
-      "1y": 35.8
+      "1m": -5.4,
+      "3m": -4.2,
+      "6m": 0.6,
+      "1y": 35.0
     },
     "top_contributor": {
       "1m": {
-        "ticker": "MNTK",
-        "ret": 40.4,
-        "contribution_pp": 0.2
+        "ticker": "9503.T",
+        "ret": 25.3,
+        "contribution_pp": 0.1
       },
       "3m": {
         "ticker": "6213.TW",
-        "ret": 98.9,
+        "ret": 94.1,
         "contribution_pp": 0.4
       },
       "6m": {
         "ticker": "6213.TW",
-        "ret": 266.6,
-        "contribution_pp": 1.2
+        "ret": 237.2,
+        "contribution_pp": 1.1
       },
       "1y": {
         "ticker": "AXTI",
-        "ret": 1810.6,
-        "contribution_pp": 8.2
+        "ret": 1459.0,
+        "contribution_pp": 6.6
       }
     },
     "benchmarks": {
       "GSG": {
-        "1m": 13.2,
-        "3m": 19.3,
-        "6m": 17.2,
-        "1y": 60.9
+        "1m": 12.4,
+        "3m": 21.1,
+        "6m": 19.3,
+        "1y": 60.4
       },
       "XLE": {
-        "1m": 6.7,
-        "3m": 14.0,
-        "6m": 14.5,
-        "1y": 50.7
+        "1m": 4.2,
+        "3m": 17.0,
+        "6m": 13.0,
+        "1y": 50.2
       },
       "COPX": {
-        "1m": 3.5,
-        "3m": 3.3,
-        "6m": 16.3,
-        "1y": 71.5
+        "1m": -0.1,
+        "3m": -4.3,
+        "6m": 9.2,
+        "1y": 64.7
       },
       "URA": {
-        "1m": -3.8,
-        "3m": -4.4,
-        "6m": -11.7,
-        "1y": 6.9
+        "1m": -6.1,
+        "3m": -12.2,
+        "6m": -15.5,
+        "1y": 5.1
       },
       "SPY": {
-        "1m": -1.7,
-        "3m": 3.3,
-        "6m": 16.0,
-        "1y": 17.5
+        "1m": -2.0,
+        "3m": 1.1,
+        "6m": 14.3,
+        "1y": 17.0
       }
     }
   },
-  "as_of": "2026-09-11"
+  "as_of": "2026-09-14"
 }
