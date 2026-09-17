@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-17T19:32:21+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-09-17T23:37:27+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -166,18 +166,6 @@
       "type": "earnings",
       "tk": "FCX",
       "name": "Freeport-McMoRan",
-      "d": "2026-10-22",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-22T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "FTI",
-      "name": "TechnipFMC",
       "d": "2026-10-22",
       "release": {
         "when": "pre",
@@ -800,6 +788,18 @@
     },
     {
       "type": "earnings",
+      "tk": "FTI",
+      "name": "TechnipFMC",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "HBM",
       "name": "Hudbay Minerals",
       "d": "2026-10-29",
@@ -1220,18 +1220,6 @@
     },
     {
       "type": "earnings",
-      "tk": "5401.JP",
-      "name": "Nippon Steel",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-04T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "6367.JP",
       "name": "Daikin",
       "d": "2026-11-04",
@@ -1528,6 +1516,18 @@
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-04T20:00+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "5401.JP",
+      "name": "Nippon Steel",
+      "d": "2026-11-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-05T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -1939,18 +1939,6 @@
       }
     },
     {
-      "type": "earnings",
-      "tk": "6383.JP",
-      "name": "Daifuku",
-      "d": "2026-11-10",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-10T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
       "type": "policy",
       "d": "2026-11-10",
       "name": "China REE tranche-2 cliff",
@@ -2009,6 +1997,18 @@
       "type": "earnings",
       "tk": "6324.JP",
       "name": "Harmonic Drive Systems",
+      "d": "2026-11-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-11T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6383.JP",
+      "name": "Daifuku",
       "d": "2026-11-11",
       "release": {
         "when": "post",
