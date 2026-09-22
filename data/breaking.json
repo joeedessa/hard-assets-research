@@ -1,30 +1,54 @@
 {
   "_meta": {
-    "as_of": "2026-09-22T17:19:31+00:00",
+    "as_of": "2026-09-22T19:34:04+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 2/225 down 5%, sector +1.8%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 4/225 up 5%, sector +1.8%",
-      "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.3% universe median): 0 found",
-      "Tracked commodity ±5%+ in a session: 1 of 12 moved",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 1/226 down 5%, sector +3.1%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 3/226 up 5%, sector +3.1%",
+      "Single-name collapse (any holding −12%+ in a session): 1 found",
+      "Conviction-3 divergence (±8%+ versus the +0.4% universe median): 0 found",
+      "Tracked commodity ±5%+ in a session: 2 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 2 found",
-      "USD (DXY) ±1%+ in a session: +0.20%",
+      "USD (DXY) ±1%+ in a session: +0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 0 outside their window, 0 excluded as undated"
     ]
   },
-  "state": "elevated",
+  "state": "critical",
   "signals": [
+    {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "VGAS -12.7% in a single session",
+      "ev": "Computed from today's close. Conviction 2, froth 2.",
+      "stance": "REVIEW",
+      "action": "Affected names are lower-conviction; watch rather than act.",
+      "tk": [
+        "VGAS"
+      ],
+      "date": "2026-09-22"
+    },
     {
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "NatGas +9.9% in a session",
+      "t": "WTI -5.9% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved -5.9% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-09-22"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "NatGas +10.9% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "REVIEW",
-      "action": "The underlying moved +9.9% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved +10.9% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-22"
     },
@@ -32,7 +56,7 @@
       "sev": "medium",
       "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "WTI -4.8% but its equities +0.1% — a +4.9pt gap",
+      "t": "WTI -5.9% but its equities -0.6% — a +5.3pt gap",
       "ev": "Median of 36 oil holdings against the underlying.",
       "stance": "MONITOR",
       "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
@@ -52,7 +76,7 @@
       "sev": "medium",
       "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "NatGas +9.9% but its equities -0.2% — a -10.1pt gap",
+      "t": "NatGas +10.9% but its equities -0.9% — a -11.8pt gap",
       "ev": "Median of 10 ng holdings against the underlying.",
       "stance": "MONITOR",
       "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
