@@ -1,23 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-09-22T19:34:04+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-09-22T23:42:13+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "UEC",
-      "name": "Uranium Energy Corp",
-      "d": "2026-09-24",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-09-24T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
     {
       "type": "earnings",
       "tk": "NB",
@@ -27,6 +15,18 @@
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-09-28T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UEC",
+      "name": "Uranium Energy Corp",
+      "d": "2026-09-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-09-29T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -232,18 +232,6 @@
         "label": "AFTER THE CLOSE · 17:30 CEST",
         "iso": "2026-10-22T15:30+00:00",
         "tz": "Europe/Stockholm"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "TECK",
-      "name": "Teck Resources",
-      "d": "2026-10-22",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-22T12:30+00:00",
-        "tz": "America/New_York"
       }
     },
     {
@@ -922,6 +910,18 @@
       "type": "earnings",
       "tk": "STNG",
       "name": "Scorpio Tankers",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TECK",
+      "name": "Teck Resources",
       "d": "2026-10-29",
       "release": {
         "when": "pre",
