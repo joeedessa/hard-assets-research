@@ -1,17 +1,17 @@
 {
   "_meta": {
-    "as_of": "2026-09-23T23:51:19+00:00",
+    "as_of": "2026-09-24T12:15:12+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 12/226 down 5%, sector -0.5%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 3/226 up 5%, sector -0.5%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 13/226 down 5%, sector -0.5%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 5/226 up 5%, sector -0.5%",
       "Single-name collapse (any holding −12%+ in a session): 1 found",
-      "Conviction-3 divergence (±8%+ versus the -0.4% universe median): 0 found",
+      "Conviction-3 divergence (±8%+ versus the -0.7% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 1 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
-      "USD (DXY) ±1%+ in a session: +0.70%",
+      "USD (DXY) ±1%+ in a session: +0.20%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
-      "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
+      "Producer-country FX ±1.5%+ (5 pairs tracked): 3 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 1 outside their window, 0 excluded as undated"
     ]
   },
@@ -28,24 +28,24 @@
       "tk": [
         "VGAS"
       ],
-      "date": "2026-09-23"
+      "date": "2026-09-24"
     },
     {
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "NatGas +7.1% in a session",
+      "t": "NatGas +5.3% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved +7.1% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved +5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-09-23"
+      "date": "2026-09-24"
     },
     {
       "sev": "medium",
       "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "NatGas +7.1% but its equities -0.5% — a -7.6pt gap",
+      "t": "NatGas +5.3% but its equities -0.8% — a -6.1pt gap",
       "ev": "Median of 10 ng holdings against the underlying.",
       "stance": "MONITOR",
       "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
@@ -59,7 +59,40 @@
         "WMB",
         "SLNG"
       ],
-      "date": "2026-09-23"
+      "date": "2026-09-24"
+    },
+    {
+      "sev": "medium",
+      "cat": "producer-fx",
+      "measured": true,
+      "t": "USDCLP +2.10% — Chilean supply (copper, lithium)",
+      "ev": "Producer-currency move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "A +2.10% move in USDCLP changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
+      "tk": [],
+      "date": "2026-09-24"
+    },
+    {
+      "sev": "medium",
+      "cat": "producer-fx",
+      "measured": true,
+      "t": "USDZAR +1.70% — South African supply (PGM, gold)",
+      "ev": "Producer-currency move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "A +1.70% move in USDZAR changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
+      "tk": [],
+      "date": "2026-09-24"
+    },
+    {
+      "sev": "medium",
+      "cat": "producer-fx",
+      "measured": true,
+      "t": "USDBRL +1.60% — Brazilian supply (iron ore, niobium)",
+      "ev": "Producer-currency move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "A +1.60% move in USDBRL changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
+      "tk": [],
+      "date": "2026-09-24"
     }
   ]
 }
