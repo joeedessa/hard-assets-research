@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-25T19:49:13+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-09-26T00:00:43+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -680,18 +680,6 @@
     },
     {
       "type": "earnings",
-      "tk": "6503.JP",
-      "name": "Mitsubishi Electric",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-29T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "6504.JP",
       "name": "Fuji Electric",
       "d": "2026-10-29",
@@ -980,6 +968,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6503.JP",
+      "name": "Mitsubishi Electric",
+      "d": "2026-10-30",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-30T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "LIN",
       "name": "Linde",
       "d": "2026-10-30",
@@ -1232,8 +1232,32 @@
     },
     {
       "type": "earnings",
+      "tk": "7013.JP",
+      "name": "IHI",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "8001.JP",
       "name": "Itochu",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "8031.JP",
+      "name": "Mitsui & Co",
       "d": "2026-11-04",
       "release": {
         "when": "post",
@@ -1580,32 +1604,8 @@
     },
     {
       "type": "earnings",
-      "tk": "7013.JP",
-      "name": "IHI",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-05T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "7014.JP",
       "name": "Namura Shipbuilding",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-05T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "8031.JP",
-      "name": "Mitsui & Co",
       "d": "2026-11-05",
       "release": {
         "when": "post",
