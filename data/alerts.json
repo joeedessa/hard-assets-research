@@ -3,8 +3,15 @@
     {
       "type": "commodity-move",
       "tk": null,
-      "label": "Brent down 5.3% today",
-      "d1": -5.3,
+      "label": "Brent down 5.9% today",
+      "d1": -5.9,
+      "date": "2026-09-28"
+    },
+    {
+      "type": "equity-move",
+      "tk": "5706.JP",
+      "label": "5706.JP ▼ 90.0%",
+      "d1": -90.0,
       "date": "2026-09-28"
     },
     {
@@ -16,9 +23,16 @@
     },
     {
       "type": "equity-move",
+      "tk": "MOD",
+      "label": "MOD ▼ 11.9%",
+      "d1": -11.9,
+      "date": "2026-09-28"
+    },
+    {
+      "type": "equity-move",
       "tk": "BE",
-      "label": "BE ▼ 8.0%",
-      "d1": -8.0,
+      "label": "BE ▼ 9.3%",
+      "d1": -9.3,
       "date": "2026-09-28"
     },
     {
@@ -31,57 +45,57 @@
     {
       "type": "entry-window",
       "tk": "LYC.AX",
-      "label": "LYC.AX -35.6% below 52w high — entry window (insulated)",
-      "dd": -35.6,
-      "r1y": -15.4,
+      "label": "LYC.AX -37.6% below 52w high — entry window (insulated)",
+      "dd": -37.6,
+      "r1y": -18.0,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "UUUU",
-      "label": "UUUU -59.8% below 52w high — entry window (insulated)",
-      "dd": -59.8,
-      "r1y": -32.5,
+      "label": "UUUU -60.2% below 52w high — entry window (insulated)",
+      "dd": -60.2,
+      "r1y": -33.3,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "NXE",
-      "label": "NXE -34.6% below 52w high — entry window (insulated)",
-      "dd": -34.6,
-      "r1y": 1.0,
+      "label": "NXE -35.3% below 52w high — entry window (insulated)",
+      "dd": -35.3,
+      "r1y": 0.0,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "EME",
-      "label": "EME -18.2% below 52w high — entry window (insulated)",
-      "dd": -18.2,
-      "r1y": 20.7,
+      "label": "EME -19.0% below 52w high — entry window (insulated)",
+      "dd": -19.0,
+      "r1y": 19.4,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "MYRG",
-      "label": "MYRG -41.9% below 52w high — entry window (insulated)",
-      "dd": -41.9,
-      "r1y": 40.8,
+      "label": "MYRG -43.0% below 52w high — entry window (insulated)",
+      "dd": -43.0,
+      "r1y": 38.0,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "ALB",
-      "label": "ALB -49.3% below 52w high — entry window (insulated)",
-      "dd": -49.3,
-      "r1y": 26.4,
+      "label": "ALB -50.0% below 52w high — entry window (insulated)",
+      "dd": -50.0,
+      "r1y": 24.6,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "SQM",
-      "label": "SQM -29.0% below 52w high — entry window (insulated)",
-      "dd": -29.0,
-      "r1y": 53.8,
+      "label": "SQM -29.6% below 52w high — entry window (insulated)",
+      "dd": -29.6,
+      "r1y": 52.3,
       "date": "2026-09-28"
     },
     {
@@ -95,41 +109,49 @@
     {
       "type": "entry-window",
       "tk": "WOLF",
-      "label": "WOLF -62.6% below 52w high — entry window (insulated)",
-      "dd": -62.6,
-      "r1y": 24.3,
+      "label": "WOLF -62.4% below 52w high — entry window (insulated)",
+      "dd": -62.4,
+      "r1y": 25.0,
+      "date": "2026-09-28"
+    },
+    {
+      "type": "entry-window",
+      "tk": "5706.JP",
+      "label": "5706.JP -95.8% below 52w high — entry window (insulated)",
+      "dd": -95.8,
+      "r1y": -80.0,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "MOS",
-      "label": "MOS -33.8% below 52w high — entry window (insulated)",
-      "dd": -33.8,
-      "r1y": -32.4,
+      "label": "MOS -34.8% below 52w high — entry window (insulated)",
+      "dd": -34.8,
+      "r1y": -33.5,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "CWCO",
-      "label": "CWCO -27.2% below 52w high — entry window (insulated)",
-      "dd": -27.2,
-      "r1y": -19.4,
+      "label": "CWCO -27.8% below 52w high — entry window (insulated)",
+      "dd": -27.8,
+      "r1y": -20.0,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "ICL",
-      "label": "ICL -24.6% below 52w high — entry window (insulated)",
-      "dd": -24.6,
-      "r1y": -18.0,
+      "label": "ICL -24.9% below 52w high — entry window (insulated)",
+      "dd": -24.9,
+      "r1y": -18.3,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "SBSW",
-      "label": "SBSW -48.7% below 52w high — entry window (insulated)",
-      "dd": -48.7,
-      "r1y": -3.6,
+      "label": "SBSW -48.3% below 52w high — entry window (insulated)",
+      "dd": -48.3,
+      "r1y": -3.0,
       "date": "2026-09-28"
     },
     {
@@ -143,25 +165,25 @@
     {
       "type": "entry-window",
       "tk": "TFPM",
-      "label": "TFPM -24.0% below 52w high — entry window (insulated)",
-      "dd": -24.0,
-      "r1y": 7.6,
+      "label": "TFPM -25.1% below 52w high — entry window (insulated)",
+      "dd": -25.1,
+      "r1y": 6.1,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "DNN",
-      "label": "DNN -40.5% below 52w high — entry window (insulated)",
-      "dd": -40.5,
-      "r1y": -6.8,
+      "label": "DNN -40.7% below 52w high — entry window (insulated)",
+      "dd": -40.7,
+      "r1y": -7.2,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "TROX",
-      "label": "TROX -61.2% below 52w high — entry window (insulated)",
-      "dd": -61.2,
-      "r1y": 0.2,
+      "label": "TROX -61.7% below 52w high — entry window (insulated)",
+      "dd": -61.7,
+      "r1y": -1.0,
       "date": "2026-09-28"
     },
     {
@@ -169,7 +191,7 @@
       "tk": "VALE",
       "label": "VALE -21.6% below 52w high — entry window (insulated)",
       "dd": -21.6,
-      "r1y": 36.8,
+      "r1y": 36.9,
       "date": "2026-09-28"
     },
     {
@@ -177,23 +199,23 @@
       "tk": "ERA.PA",
       "label": "ERA.PA -49.0% below 52w high — entry window (insulated)",
       "dd": -49.0,
-      "r1y": -20.8,
+      "r1y": -20.7,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "NB",
-      "label": "NB -69.8% below 52w high — entry window (insulated)",
-      "dd": -69.8,
-      "r1y": -46.8,
+      "label": "NB -70.2% below 52w high — entry window (insulated)",
+      "dd": -70.2,
+      "r1y": -47.5,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "ILU.AX",
-      "label": "ILU.AX -36.2% below 52w high — entry window (insulated)",
-      "dd": -36.2,
-      "r1y": -6.5,
+      "label": "ILU.AX -35.4% below 52w high — entry window (insulated)",
+      "dd": -35.4,
+      "r1y": -5.4,
       "date": "2026-09-28"
     },
     {
@@ -207,56 +229,49 @@
     {
       "type": "entry-window",
       "tk": "AMG.AS",
-      "label": "AMG.AS -31.7% below 52w high — entry window (insulated)",
-      "dd": -31.7,
-      "r1y": 0.9,
+      "label": "AMG.AS -32.4% below 52w high — entry window (insulated)",
+      "dd": -32.4,
+      "r1y": -0.1,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "THS.L",
-      "label": "THS.L -16.5% below 52w high — entry window (insulated)",
-      "dd": -16.5,
-      "r1y": 18.7,
-      "date": "2026-09-28"
-    },
-    {
-      "type": "entry-window",
-      "tk": "ORBIA.MX",
-      "label": "ORBIA.MX -20.3% below 52w high — entry window (insulated)",
-      "dd": -20.3,
-      "r1y": 16.3,
-      "date": "2026-09-28"
-    },
-    {
-      "type": "entry-window",
-      "tk": "SLNG",
-      "label": "SLNG -20.2% below 52w high — entry window (insulated)",
-      "dd": -20.2,
+      "label": "THS.L -15.1% below 52w high — entry window (insulated)",
+      "dd": -15.1,
       "r1y": 20.6,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
+      "tk": "ORBIA.MX",
+      "label": "ORBIA.MX -20.5% below 52w high — entry window (insulated)",
+      "dd": -20.5,
+      "r1y": 15.9,
+      "date": "2026-09-28"
+    },
+    {
+      "type": "entry-window",
+      "tk": "SLNG",
+      "label": "SLNG -21.9% below 52w high — entry window (insulated)",
+      "dd": -21.9,
+      "r1y": 18.1,
+      "date": "2026-09-28"
+    },
+    {
+      "type": "entry-window",
       "tk": "GNRC",
-      "label": "GNRC -30.1% below 52w high — entry window (insulated)",
-      "dd": -30.1,
-      "r1y": 24.5,
+      "label": "GNRC -30.7% below 52w high — entry window (insulated)",
+      "dd": -30.7,
+      "r1y": 23.5,
       "date": "2026-09-28"
     },
     {
       "type": "entry-window",
       "tk": "IPI",
-      "label": "IPI -31.3% below 52w high — entry window (insulated)",
-      "dd": -31.3,
-      "r1y": 11.9,
-      "date": "2026-09-28"
-    },
-    {
-      "type": "froth-high",
-      "tk": "ETN",
-      "label": "ETN within 5% of 52w high — high froth, caution",
-      "dd": -5.0,
+      "label": "IPI -33.4% below 52w high — entry window (insulated)",
+      "dd": -33.4,
+      "r1y": 8.4,
       "date": "2026-09-28"
     }
   ],
