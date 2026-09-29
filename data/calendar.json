@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-28T21:35:08+00:00",
-    "mode": "light",
-    "coverage": "2/2 scanned this pass",
+    "as_of": "2026-09-29T01:07:20+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -236,6 +236,18 @@
     },
     {
       "type": "earnings",
+      "tk": "SCCO",
+      "name": "Southern Copper",
+      "d": "2026-10-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-22T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "UNP",
       "name": "Union Pacific",
       "d": "2026-10-22",
@@ -436,18 +448,6 @@
         "label": "MID-SESSION · 14:00 CST",
         "iso": "2026-10-27T20:00+00:00",
         "tz": "America/Mexico_City"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SCCO",
-      "name": "Southern Copper",
-      "d": "2026-10-27",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/New_York"
       }
     },
     {
