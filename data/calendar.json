@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-09-29T01:07:20+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-09-29T13:21:47+00:00",
+    "mode": "light",
+    "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -28,6 +28,45 @@
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-09-29T12:30+00:00",
         "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Uranium Energy Corp Reports Fiscal 2026 Results - PR Newswire",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONWE3MmZ3aXFMSnRDRU1zQjI1QU93cVAtM2JCdl9VOWkwSXhObjhDY0JwWmVqbmI5dFhGdUxVNUtKQi10dEM3bUpoQ0FRald3SGJ6OGsydEI3VHl4dmRVUm1SSzExbjQ3anVPdXFEZGhBczFGVU5wMGM5YjJyeVdCeFlzVTJYQldMdTc4MDFJN1VtR2hNNXhjU2J2YXZZVHpueFdvVGFn?oc=5",
+          "s": "PR Newswire",
+          "d": "2026-09-29",
+          "cues": []
+        },
+        {
+          "t": "Uranium Energy: Fiscal Q4 Earnings Snapshot - kare11.com",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSDJRZHljNjM3WVR0SlZIeS1YOVF6QXJQeERNdW41M3RhQ0hubTVKTEp5V2ZuQWZwZWNrNnktQ1pJQUtSU3FmSFI0OF9vQkVKS0VSNWJJSDlsd0xQeXBaRVdOX2tCc19TYXU0ekphZmJjUEpyVGc0cElyTFo3T3FyUFg4VV8zNzZWQ09MSjFCdjN5b1lWNWltSnF2clFpNDlTd1ZQRVFGSTBiQ1RCNVlpbEk4UWg1dU1oVk1RY1Q3bUpCTnFsUldlTk41VTltbUVSQ1pqQ1ZuVXMxUQ?oc=5",
+          "s": "kare11.com",
+          "d": "2026-09-29",
+          "cues": []
+        },
+        {
+          "t": "Uranium Energy Corp Reports 2026 Results - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQllzSXNSZVk0X1NocFV3aHlzLU5Sa0NEaUFrekQzaEJrbGYwMEdXUGgzMEE5a0FxcDNGT2phcWQ5OEZsSnJpX0d0dWRFNVktRC1uZ1hWdFdTbG0zc01GQV84TTlQNlQ2cVduNFc3bDRZc2lSRUJvTU11X2JLLUozZXg0RFRmTTIwSDJTa2xpd0RNY3hYWkpCcnhIdEx1TnFvNGpnXzhhMGllbUZ2TmJz?oc=5",
+          "s": "TradingView",
+          "d": "2026-09-29",
+          "cues": []
+        },
+        {
+          "t": "Earnings Scheduled For September 29, 2026 - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc213eUZwZ0xpWjR6SEFUVnhhU1JNVmtiZ1kxNHJKeXVYVWk0amJaRlBfUXpPdjRaLVNfZ0RseVhEX3BSQmRQdVBqMzYzeXl6UlF6Ukhod0VOVnFPZ2FCNjI1dnZBeU1JMV9SalRDXzItcVA5NjNyM0U1eUZRYlFvbUdFRHNSNzZTeVZqSmlLSlpUNHF6?oc=5",
+          "s": "Benzinga",
+          "d": "2026-09-29",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-09-29",
+      "reported": {
+        "eps": -0.12,
+        "source": "Yahoo Finance",
+        "fetched": "2026-09-29",
+        "eps_est": -0.05,
+        "surprise_abs": -0.07,
+        "pct_suppressed": "consensus of -0.05 is too near zero for a percentage to mean anything — the beat/miss is -0.07 per share"
       }
     },
     {
@@ -2159,6 +2198,18 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2026-11-13T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NB",
+      "name": "NioCorp Developments",
+      "d": "2026-11-16",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-16T20:00+00:00",
+        "tz": "America/New_York"
       }
     },
     {

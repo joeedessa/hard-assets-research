@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-09-29T01:07:20+00:00",
+    "as_of": "2026-09-29T13:21:47+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 3/226 down 5%, sector +0.6%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 5/226 up 5%, sector +0.6%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 8/226 down 5%, sector -1.7%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 2/226 up 5%, sector -1.7%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the -0.2% universe median): 0 found",
-      "Tracked commodity ±5%+ in a session: 2 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: +0.30%",
+      "Conviction-3 divergence (±8%+ versus the -0.8% universe median): 0 found",
+      "Tracked commodity ±5%+ in a session: 1 of 12 moved",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
+      "USD (DXY) ±1%+ in a session: +0.20%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 47 read, 0 outside their window, 0 excluded as undated"
@@ -21,22 +21,31 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Brent -5.3% in a session",
+      "t": "Brent -8.7% in a session",
       "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved -5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "stance": "REVIEW",
+      "action": "The underlying moved -8.7% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-09-29"
     },
     {
-      "sev": "high",
-      "cat": "commodity",
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "Silver -5.0% in a session",
-      "ev": "Spot/futures move computed from today's close.",
+      "t": "Gold +0.5% but its equities -4.2% — a -4.7pt gap",
+      "ev": "Median of 11 pg holdings against the underlying.",
       "stance": "MONITOR",
-      "action": "The underlying moved -5.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "FNV",
+        "WPM",
+        "RGLD",
+        "SBSW",
+        "PAAS",
+        "TFPM",
+        "THS.L",
+        "YCA.L"
+      ],
       "date": "2026-09-29"
     }
   ]
