@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-09-29T13:21:47+00:00",
+    "as_of": "2026-09-29T18:18:39+00:00",
     "mode": "light",
     "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -45,16 +45,18 @@
           "cues": []
         },
         {
+          "t": "Uranium Energy (UEC) Reports Q4 Loss, Beats Revenue Estimates - Yahoo! Finance Canada",
+          "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM1hyTEp6M2pySFNGRGR1ZGFjeWRRYUllOXBiaFNxb2JkY3ZDVmZzMHRkcXdFMThPNXdCU3A0dldhVGVzSzRIQ25WbS1VSGhYbHIzWXp5Sy01UE5BT1VVUWJCZkVYRU9zekxlZV9XLU0zUFE2b1luVDhTeVBlSy1wRFJidWo?oc=5",
+          "s": "Yahoo! Finance Canada",
+          "d": "2026-09-29",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
           "t": "Uranium Energy Corp Reports 2026 Results - TradingView",
           "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQllzSXNSZVk0X1NocFV3aHlzLU5Sa0NEaUFrekQzaEJrbGYwMEdXUGgzMEE5a0FxcDNGT2phcWQ5OEZsSnJpX0d0dWRFNVktRC1uZ1hWdFdTbG0zc01GQV84TTlQNlQ2cVduNFc3bDRZc2lSRUJvTU11X2JLLUozZXg0RFRmTTIwSDJTa2xpd0RNY3hYWkpCcnhIdEx1TnFvNGpnXzhhMGllbUZ2TmJz?oc=5",
           "s": "TradingView",
-          "d": "2026-09-29",
-          "cues": []
-        },
-        {
-          "t": "Earnings Scheduled For September 29, 2026 - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc213eUZwZ0xpWjR6SEFUVnhhU1JNVmtiZ1kxNHJKeXVYVWk0amJaRlBfUXpPdjRaLVNfZ0RseVhEX3BSQmRQdVBqMzYzeXl6UlF6Ukhod0VOVnFPZ2FCNjI1dnZBeU1JMV9SalRDXzItcVA5NjNyM0U1eUZRYlFvbUdFRHNSNzZTeVZqSmlLSlpUNHF6?oc=5",
-          "s": "Benzinga",
           "d": "2026-09-29",
           "cues": []
         }
