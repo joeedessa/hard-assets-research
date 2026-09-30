@@ -1,23 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-09-29T20:27:01+00:00",
-    "mode": "light",
-    "coverage": "2/2 scanned this pass",
+    "as_of": "2026-09-30T00:39:16+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "NB",
-      "name": "NioCorp Developments",
-      "d": "2026-09-28",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-09-28T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
     {
       "type": "earnings",
       "tk": "UEC",
@@ -38,25 +26,23 @@
           "cues": []
         },
         {
-          "t": "Uranium Energy: Fiscal Q4 Earnings Snapshot - kare11.com",
-          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSDJRZHljNjM3WVR0SlZIeS1YOVF6QXJQeERNdW41M3RhQ0hubTVKTEp5V2ZuQWZwZWNrNnktQ1pJQUtSU3FmSFI0OF9vQkVKS0VSNWJJSDlsd0xQeXBaRVdOX2tCc19TYXU0ekphZmJjUEpyVGc0cElyTFo3T3FyUFg4VV8zNzZWQ09MSjFCdjN5b1lWNWltSnF2clFpNDlTd1ZQRVFGSTBiQ1RCNVlpbEk4UWg1dU1oVk1RY1Q3bUpCTnFsUldlTk41VTltbUVSQ1pqQ1ZuVXMxUQ?oc=5",
-          "s": "kare11.com",
+          "t": "What Uranium Energy (UEC) Said on Its Q4 Earnings Call - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZmRIVzlTNEFwV01FZ1VhSThZZ2dPcU40eHgyTlJwd1BDY0NJb3k1TWdWVE9sWl9IMEpNdlNGeTF6VHJTWjFtWldzTnhTZnNwdl9OdlZYdUZiMF9YQjRjOUhvWXQ3OEd0WFo4R0tRR0Z2d0s4M0pUT0otMVVjdDdsaGt3QTRFcWQyZ09z?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-09-29",
           "cues": []
         },
         {
-          "t": "Uranium Energy (UEC) Reports Q4 Loss, Beats Revenue Estimates - ca.finance.yahoo.com",
-          "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM1hyTEp6M2pySFNGRGR1ZGFjeWRRYUllOXBiaFNxb2JkY3ZDVmZzMHRkcXdFMThPNXdCU3A0dldhVGVzSzRIQ25WbS1VSGhYbHIzWXp5Sy01UE5BT1VVUWJCZkVYRU9zekxlZV9XLU0zUFE2b1luVDhTeVBlSy1wRFJidWo?oc=5",
-          "s": "ca.finance.yahoo.com",
+          "t": "Earnings call transcript: Uranium Energy posts strong Q4 2026 production gains - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYXBxM2hVLV9oWndwWkFfUVhPS09qUmhvOEtmcU5tVmxvNjNSamRvYThLQXRtU1RvVkdHdGNaRFRFakJqaE5Ba3JyOUd1bDlXRWphSGdIRFhVS1F5MHl5dnY4dXlBMHVxY0ZSbkpoX1dJTlhuNVNlQ2F1MmdVNUd4MWVIcW1CQ0RCWGNlN2E3LWc2dGdHU3NOZGJWcFRJQ0s3VVRsQ0liRHVxVHNrWlBzU1haLXNJT05wMTJpcnN4Z0pQNWMwak1VNTlrd0k2dw?oc=5",
+          "s": "Investing.com",
           "d": "2026-09-29",
-          "cues": [
-            "beat"
-          ]
+          "cues": []
         },
         {
-          "t": "Uranium Energy Corp Reports 2026 Results - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQllzSXNSZVk0X1NocFV3aHlzLU5Sa0NEaUFrekQzaEJrbGYwMEdXUGgzMEE5a0FxcDNGT2phcWQ5OEZsSnJpX0d0dWRFNVktRC1uZ1hWdFdTbG0zc01GQV84TTlQNlQ2cVduNFc3bDRZc2lSRUJvTU11X2JLLUozZXg0RFRmTTIwSDJTa2xpd0RNY3hYWkpCcnhIdEx1TnFvNGpnXzhhMGllbUZ2TmJz?oc=5",
-          "s": "TradingView",
+          "t": "Uranium Energy Corp (UEC) Reports 157% Q4 Production Surge Amid Strategic Inventory Build - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQkFvOHJPZjdIc0FHazFjeldiMmNfMl9DRGlMQkJ3a1k4SWphbllzTG9QdnBFMkVYSlZfaGYzc2d3VFMtbTJKQTNKVUJNOXgzV1N1MmdCNmQ0X1ZsOVpaUEZ6WU13M2dIV2dhcWVTeHlMT3NxYjZMNGFSd1BGRnlsamxwcGczMkhDWWpGbGI1OWRxd3QzZXo2RXRYdHRwVVRoTWlva0ZhR3JpUmRBLUszaUxlYWJJbDZ5S2VXMERxWDJYZm8?oc=5",
+          "s": "GuruFocus",
           "d": "2026-09-29",
           "cues": []
         }
@@ -65,7 +51,7 @@
       "reported": {
         "eps": -0.12,
         "source": "Yahoo Finance",
-        "fetched": "2026-09-29",
+        "fetched": "2026-09-30",
         "eps_est": -0.05,
         "surprise_abs": -0.07,
         "pct_suppressed": "consensus of -0.05 is too near zero for a percentage to mean anything — the beat/miss is -0.07 per share"
@@ -501,6 +487,18 @@
         "label": "MID-SESSION · 16:30 CET",
         "iso": "2026-10-27T15:30+00:00",
         "tz": "Europe/Rome"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "XYL",
+      "name": "Xylem",
+      "d": "2026-10-27",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-27T12:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
@@ -1232,18 +1230,6 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-03T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "XYL",
-      "name": "Xylem",
-      "d": "2026-11-03",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-03T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -2204,8 +2190,8 @@
     },
     {
       "type": "earnings",
-      "tk": "NB",
-      "name": "NioCorp Developments",
+      "tk": "HP",
+      "name": "Helmerich & Payne",
       "d": "2026-11-16",
       "release": {
         "when": "mid",
@@ -2216,8 +2202,8 @@
     },
     {
       "type": "earnings",
-      "tk": "HP",
-      "name": "Helmerich & Payne",
+      "tk": "NB",
+      "name": "NioCorp Developments",
       "d": "2026-11-16",
       "release": {
         "when": "mid",
