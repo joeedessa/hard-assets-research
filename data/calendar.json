@@ -1,62 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-09-30T20:32:13+00:00",
-    "mode": "light",
-    "coverage": "2/2 scanned this pass",
+    "as_of": "2026-10-01T00:40:31+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "UEC",
-      "name": "Uranium Energy Corp",
-      "d": "2026-09-29",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-09-29T12:30+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Uranium Energy Corp (UEC) (Q4 2026) Earnings Call Highlights: Record Realized Prices, 157% ... - finance.yahoo.com",
-          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTHROWHBiWTdGdlFQSk5kckZ3MDZwMHk2ejB1SDBXZ0R2bFVxd25YSW05cWZHVEUtUllfeGpWanZiRHQxVG1UWlRZY0tWNFg2eXZfR2gxYVJLV3FmUl9pa0lOTk5fWFQ5YnByWHFCTWVsYlhrb2xkUkI5M0d2NUI0emN0RXFPcTY0aEVwZkZwMjFfREhFRjFvRURGUU0?oc=5",
-          "s": "finance.yahoo.com",
-          "d": "2026-09-30",
-          "cues": []
-        },
-        {
-          "t": "Uranium Energy Corp Reports Fiscal 2026 Results - PR Newswire",
-          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONWE3MmZ3aXFMSnRDRU1zQjI1QU93cVAtM2JCdl9VOWkwSXhObjhDY0JwWmVqbmI5dFhGdUxVNUtKQi10dEM3bUpoQ0FRald3SGJ6OGsydEI3VHl4dmRVUm1SSzExbjQ3anVPdXFEZGhBczFGVU5wMGM5YjJyeVdCeFlzVTJYQldMdTc4MDFJN1VtR2hNNXhjU2J2YXZZVHpueFdvVGFn?oc=5",
-          "s": "PR Newswire",
-          "d": "2026-09-29",
-          "cues": []
-        },
-        {
-          "t": "UEC Q4 Earnings Call Highlights Production Ramp and U.S. Strategy - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTnNPOURxaE9BbVFsckprbU1lZzhsbjh1ZFd5ZU1HdndHaXEzTkhRR0tSNGlwWURka0N6QUFzQ191X25tUVJtT3J6c05iZ3BYckphc1pESjcyTE4zYVVUV1JjN0loN0c4azc1VHh6d19FLWNKZU1BdGVOUDNpejJ2bmVYNUIySWNsM2hhZGE4QjFkQ0FJR1M4M09ZQUhJU3NyZy1MX2FuUFZRTjZXSmRfY2ZnQ0JoR2prMnhzOQ?oc=5",
-          "s": "TradingView",
-          "d": "2026-09-30",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Uranium Energy posts strong Q4 2026 production gains - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYXBxM2hVLV9oWndwWkFfUVhPS09qUmhvOEtmcU5tVmxvNjNSamRvYThLQXRtU1RvVkdHdGNaRFRFakJqaE5Ba3JyOUd1bDlXRWphSGdIRFhVS1F5MHl5dnY4dXlBMHVxY0ZSbkpoX1dJTlhuNVNlQ2F1MmdVNUd4MWVIcW1CQ0RCWGNlN2E3LWc2dGdHU3NOZGJWcFRJQ0s3VVRsQ0liRHVxVHNrWlBzU1haLXNJT05wMTJpcnN4Z0pQNWMwak1VNTlrd0k2dw?oc=5",
-          "s": "Investing.com",
-          "d": "2026-09-29",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-09-29",
-      "reported": {
-        "eps": -0.12,
-        "source": "Yahoo Finance",
-        "fetched": "2026-09-30",
-        "eps_est": -0.05,
-        "surprise_abs": -0.07,
-        "pct_suppressed": "consensus of -0.05 is too near zero for a percentage to mean anything — the beat/miss is -0.07 per share"
-      }
-    },
     {
       "type": "earnings",
       "tk": "SNI.OL",
@@ -337,18 +286,6 @@
       "type": "earnings",
       "tk": "4063.JP",
       "name": "Shin-Etsu Chemical",
-      "d": "2026-10-27",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-27T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "6305.JP",
-      "name": "Hitachi Construction Machinery",
       "d": "2026-10-27",
       "release": {
         "when": "post",
@@ -697,6 +634,18 @@
       "type": "earnings",
       "tk": "6301.JP",
       "name": "Komatsu",
+      "d": "2026-10-29",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-29T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6305.JP",
+      "name": "Hitachi Construction Machinery",
       "d": "2026-10-29",
       "release": {
         "when": "post",
