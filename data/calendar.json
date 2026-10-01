@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-10-01T13:56:13+00:00",
+    "as_of": "2026-10-01T18:35:30+00:00",
     "mode": "light",
     "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -26,21 +26,36 @@
           "cues": []
         },
         {
+          "t": "Stolt-Nielsen Q3 2026 Earnings Call Is Live - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQWVCX05rRFdJakhHUDNEa0pQblBqZE1pcTYxdU85UF9UQkhJX0VRZXFFNjAwNnJXUy12VTlrLUhOZFh4cGpLYk9PSUFTMDNhRkJlUmpTMGZ6MENxLWxjN0NsOTFDaS05d0xtSUs1Z2NXaVFmNG04SmVid3c5bUlwVkN1NVZWSkEyZEtLZWx3SVlPT09INWhVYVJEWGdjeDJTTFl5d1hWNXpGQjFZTUJDUWdB?oc=5",
+          "s": "TradingView",
+          "d": "2026-10-01",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: Stolt-Nielsen Q3 2026 profit rises, stock falls 4% - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSlJYdElpQWkySUxfSGRIWUVkTWNoaGljeWp1SGJCSy0yb0t5OWNKMGVBSUVsUVlZSEF4WWxHMkZFRnBFZ01hOUY5S0VlOFlQRy1tRzhjU1dxZXpLS2djcXFsa0ZFeWlhT3hhby1YRGE1QzVuQmFCaU5TYTN0NXp2WURYTURGVV9kVHZfWnVnUlVpVTdXcFpTN0RmaDVjYnlITkx5S3dRLXZwRkx4V1FpU3V6RlNUYWFkTHdCVFI3Vi1raFhmQVBj?oc=5",
+          "s": "Investing.com",
+          "d": "2026-10-01",
+          "cues": []
+        },
+        {
           "t": "Stolt-Nielsen Limited Reports Earnings Results for the Third Quarter and Nine Months Ended August 31, 2026 - marketscreener.com",
           "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQNHUyUHg5NS1yUHhSTm1wel9lTUdzbEk0dTlqVzdJVmNEWTU2SC1NclpJXzZhbFZjbF9zaFJnNTQ4U3AzRW9kaVZyckdOS05MQml6cUpsV3BNZUZwSDJpUVF4aHRTckZBWDBqbXFaNVJDZDFPV2E0alNiTVljNVNENzZ6dUpDaG5RR0ZiYS1PRElQNWZ6SjlTWlVpZl9wT2FOcE1fS3BGNDFIOU80VGIzR2c0cUMwLVU3ZEJsbGc5Wkd0YmRSVU56bWhrcWllOEhrcFJDNzkwMkVJMDhYci1mUXMwTVVqdlZW?oc=5",
           "s": "marketscreener.com",
           "d": "2026-10-01",
           "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Stolt-Nielsen Q3 2026 profit rises, stock falls 4% - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWjNCcEdLaGE1R1JBV2ZYckRKekNVeTl2UXdyakhocVUwQXEyU2lKNHBwd2pKREZ1bEhhN2NlaFd6bXNoVWNWbmR4T3R2RnRxWk10Z0IyelQxZjFiemZMNXdyVlZIQ2tiV3Zoc3Q0ZW1rZGp2NzNtTG95bTZ5b3lhSDFYYUx0eF9ZWndOUDc2OWZadkZMZkVsV19Qd3pFUjZOUGdFdVlPcVQtLUx5WW9wVGxGZWRWVWM3a0JlU1NRZDdDcWRkdEVPNk9oZVIwZw?oc=5",
-          "s": "Investing.com India",
-          "d": "2026-10-01",
-          "cues": []
         }
       ],
-      "wire_gate": "2026-10-01"
+      "wire_gate": "2026-10-01",
+      "reported": {
+        "eps": 1.59,
+        "source": "Yahoo Finance",
+        "fetched": "2026-10-01",
+        "eps_est": 1.07,
+        "surprise_abs": 0.52,
+        "surprise_pct": 48.3
+      }
     },
     {
       "type": "earnings",
