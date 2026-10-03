@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "as_of": "2026-10-02T20:21:33+00:00",
+    "as_of": "2026-10-03T00:36:42+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 1/226 down 5%, sector +3.0%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 10/226 up 5%, sector +3.0%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 0/226 down 5%, sector -1.5%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 9/226 up 5%, sector -1.5%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.8% universe median): 1 found",
+      "Conviction-3 divergence (±8%+ versus the +0.1% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 0 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
       "USD (DXY) ±1%+ in a session: -0.20%",
@@ -18,19 +18,6 @@
   "state": "elevated",
   "signals": [
     {
-      "sev": "high",
-      "cat": "divergence",
-      "measured": true,
-      "t": "MTRN +9.5% against a +0.8% universe median",
-      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
-      "stance": "BUY THE DISLOCATION",
-      "action": "Insulated names are involved (MTRN). Weakness here is opportunity, not information.",
-      "tk": [
-        "MTRN"
-      ],
-      "date": "2026-10-02"
-    },
-    {
       "sev": "medium",
       "cat": "producer-fx",
       "measured": true,
@@ -39,7 +26,7 @@
       "stance": "MONITOR",
       "action": "A +1.70% move in USDCLP changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
       "tk": [],
-      "date": "2026-10-02"
+      "date": "2026-10-03"
     }
   ]
 }

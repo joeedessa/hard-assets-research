@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-02T20:21:33+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-10-03T00:36:42+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -51,7 +51,7 @@
       "reported": {
         "eps": 1.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-02",
+        "fetched": "2026-10-03",
         "eps_est": 1.08,
         "surprise_abs": 0.19,
         "surprise_pct": 17.2
@@ -174,18 +174,6 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-21T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "FCX",
-      "name": "Freeport-McMoRan",
-      "d": "2026-10-22",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-22T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -395,6 +383,18 @@
     },
     {
       "type": "earnings",
+      "tk": "FCX",
+      "name": "Freeport-McMoRan",
+      "d": "2026-10-27",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-27T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "HUBB",
       "name": "Hubbell",
       "d": "2026-10-27",
@@ -499,6 +499,18 @@
         "label": "AFTER THE CLOSE · 13:30 CST",
         "iso": "2026-10-28T05:30+00:00",
         "tz": "Asia/Taipei"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6501.JP",
+      "name": "Hitachi",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-10-28T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -707,32 +719,8 @@
     },
     {
       "type": "earnings",
-      "tk": "6501.JP",
-      "name": "Hitachi",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-29T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "6504.JP",
       "name": "Fuji Electric",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-29T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "8053.JP",
-      "name": "Sumitomo Corp",
       "d": "2026-10-29",
       "release": {
         "when": "post",
@@ -1067,6 +1055,18 @@
     },
     {
       "type": "earnings",
+      "tk": "8053.JP",
+      "name": "Sumitomo Corp",
+      "d": "2026-11-02",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-02T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "BWXT",
       "name": "BWX Technologies",
       "d": "2026-11-02",
@@ -1123,18 +1123,6 @@
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-02T20:00+00:00",
         "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "8058.JP",
-      "name": "Mitsubishi Corp",
-      "d": "2026-11-03",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-03T06:30+00:00",
-        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -1259,18 +1247,6 @@
     },
     {
       "type": "earnings",
-      "tk": "6367.JP",
-      "name": "Daikin",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-04T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "7013.JP",
       "name": "IHI",
       "d": "2026-11-04",
@@ -1309,6 +1285,18 @@
       "type": "earnings",
       "tk": "8031.JP",
       "name": "Mitsui & Co",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "8058.JP",
+      "name": "Mitsubishi Corp",
       "d": "2026-11-04",
       "release": {
         "when": "post",
@@ -1595,6 +1583,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6367.JP",
+      "name": "Daikin",
+      "d": "2026-11-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-05T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "6370.JP",
       "name": "Kurita Water",
       "d": "2026-11-05",
@@ -1621,18 +1621,6 @@
       "type": "earnings",
       "tk": "7004.JP",
       "name": "Kanadevia",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-05T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "7014.JP",
-      "name": "Namura Shipbuilding",
       "d": "2026-11-05",
       "release": {
         "when": "post",
@@ -1849,6 +1837,18 @@
       "type": "earnings",
       "tk": "6326.JP",
       "name": "Kubota",
+      "d": "2026-11-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-09T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "7014.JP",
+      "name": "Namura Shipbuilding",
       "d": "2026-11-09",
       "release": {
         "when": "post",
