@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-05T22:19:56+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-10-06T01:51:24+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -17,41 +17,10 @@
         "iso": "2026-10-01T14:20+00:00",
         "tz": "Europe/Oslo"
       },
-      "wire": [
-        {
-          "t": "Stolt-Nielsen Ltd (SOIEF) (Q3 2026) Earnings Call Highlights: Diversification Shields Results ... - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYWhnVjRyalFBUGN2R19EcDRBa2ttY1o3ckxfaldWcUllcnlIT3pWZkk1MmViZWFXTDNvUFhMQmNxdkhSSmFuODVvR3dNemxKX2pVd3R4NGFjNTBBRnpNT2JJUGU5dkVCZGUyWVhjTlBhOHpZNUk2cXJoekdEaHJ1NEFsZHdHT1pBV3RRa2EzNGYydFhzRFE?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-10-02",
-          "cues": []
-        },
-        {
-          "t": "Stolt-Nielsen’s Q3 profit rises to $84.4m as tanker earnings ease - Baird Maritime",
-          "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNX1BDUzZKTDNZSkJESTdNOXdETnJ5S0dGZTJudDQ5VF92cXVvTlFmVlVPWkJJREM4RFV5Mi1qNXdLMkhfM1lZQzlJQVZ5SzhtYTZMWFR0aW9nLVV4V2xQTjlBS2tvTVRyTkF3dFBQZTZPQXhjX1A0bGY1dXZQN0tneDkwRHdwYWtX0gGWAUFVX3lxTFBaN0NjaklnbVM0NGNfbnBhX2l6THVoOFpXLURPMkxfNkpSTzhEcnpXT295d1dfQzFYZ0tRbkY5MEc3U0dKcndiZUFHMjZXU0MxUDNiZDNrMl9hXzRzS3dpWGd4bko4Y2h5RTBUTDRfZzd4WnV4dzdQOHI3a1hvLXVZREdXdUY2N29Cckw2WVFGS0VUTklKZw?oc=5",
-          "s": "Baird Maritime",
-          "d": "2026-10-02",
-          "cues": []
-        },
-        {
-          "t": "Stolt-Nielsen Limited 2026 Q3 - Results - Earnings Call Presentation (OTCMKTS:SOIEF) 2026-10-01 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNjBfNHlmRXZJRkFIRS1CLU5QN2tBVEo5UWg2cDlMVkd1NDlSNXk3VGNfVjRwdXlPX1NCWEhlSU5Yc2lQb3hJQk5FdzNDRzVsNm5LTTcyN29Xa1N5T0piUkVKcHpnakllenY3N3Q3eVBPN3BwcGU1Yk5UcUlfcTYyeDRsWFo3Ny1DZFpiTGVLZkxjbWJ0TExHdDVSU292WEtlU0pFdEVRYzQ?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-10-02",
-          "cues": []
-        },
-        {
-          "t": "Stolt Nielsen (OB:SNI) Stock Gains Fresh Backing From Profit And Cash Surge - Simply Wall Street",
-          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQbzVLU2hhNWcwZmxrekF0NFhZa3ZXaUY5bHFYX0FtMUtteFJZN1dpbTQxWnB5MHBhVlMzVFpWQ3ZqSUcyVmRmaWJNN3cxX2VVbV8ySGt2WGhYNjZObWcxOXZsUU5wdjBUNTZjaThlQlJYbGtmZWZKVkhJb3lTT3lTcGl3ZGNkVVRzLWNHeTFaTkpoZTRKbzF5ZF85M3ZuWTctbEJCNFc5Q0Z2R3hfcU9YcmpKbEFlTXlacG9Nc0t1NlkzUHYzaDNuWmljUzZxZDIzVkNNaWwwc9IB3AFBVV95cUxPRURXQ3I0MHVwX21TQ09BUFJwUE1naGxFSHYtS3lpVEVMdkZtMHBjV3l2R0t2ZGtFaE8yOHJqWTYwTFJPTE5kVkFhM19KR3owc3N5OFgwcTV5Zm9fMG5nUW1VWDVkODk4TldzbXNCY3RoSFJnQnpJV0E1RGVuRk1tTzZmaUJvVEVQcWJYSnlDck8yUy0tMUlQc3pTeFAxdllwbng4Wi1jOHpTSU51Y3VlN1hqUThEeXh1d2tfLXZEM1lHdVItemVUMjh4dGwxRUY0czIwMEl3SjVxbFBq?oc=5",
-          "s": "Simply Wall Street",
-          "d": "2026-10-02",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-10-01",
       "reported": {
         "eps": 1.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-05",
+        "fetched": "2026-10-06",
         "eps_est": 1.08,
         "surprise_abs": 0.19,
         "surprise_pct": 17.2
@@ -875,6 +844,18 @@
     },
     {
       "type": "earnings",
+      "tk": "LIN",
+      "name": "Linde",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "LNG",
       "name": "Cheniere Energy",
       "d": "2026-10-29",
@@ -1019,18 +1000,6 @@
     },
     {
       "type": "earnings",
-      "tk": "LIN",
-      "name": "Linde",
-      "d": "2026-10-30",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-30T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "NVT",
       "name": "nVent Electrical",
       "d": "2026-10-30",
@@ -1155,10 +1124,8 @@
       "name": "Energy Transfer",
       "d": "2026-11-03",
       "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-03T12:30+00:00",
-        "tz": "America/New_York"
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {
@@ -1954,6 +1921,18 @@
       }
     },
     {
+      "type": "earnings",
+      "tk": "7003.JP",
+      "name": "Mitsui E&S",
+      "d": "2026-11-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-10T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
       "type": "policy",
       "d": "2026-11-10",
       "name": "China REE tranche-2 cliff",
@@ -2118,25 +2097,13 @@
     },
     {
       "type": "earnings",
-      "tk": "7003.JP",
-      "name": "Mitsui E&S",
-      "d": "2026-11-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-12T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "ORI.AX",
       "name": "Orica",
       "d": "2026-11-12",
       "release": {
         "when": "post",
-        "label": "AFTER THE CLOSE · 17:12 AEDT",
-        "iso": "2026-11-12T06:12+00:00",
+        "label": "AFTER THE CLOSE · 16:12 AEDT",
+        "iso": "2026-11-12T05:12+00:00",
         "tz": "Australia/Sydney"
       }
     },
