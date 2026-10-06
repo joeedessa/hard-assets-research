@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "as_of": "2026-10-06T18:38:43+00:00",
+    "as_of": "2026-10-06T20:47:25+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 1/226 down 5%, sector +0.6%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 17/226 up 5%, sector +0.6%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 2/225 down 5%, sector -0.1%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 16/225 up 5%, sector -0.1%",
       "Single-name collapse (any holding −12%+ in a session): 0 found",
-      "Conviction-3 divergence (±8%+ versus the +0.6% universe median): 2 found",
+      "Conviction-3 divergence (±8%+ versus the +0.4% universe median): 2 found",
       "Tracked commodity ±5%+ in a session: 0 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
       "USD (DXY) ±1%+ in a session: -0.30%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 1 moved",
@@ -21,7 +21,7 @@
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "LEU +8.6% against a +0.6% universe median",
+      "t": "LEU +8.8% against a +0.4% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "THESIS AT RISK",
       "action": "Top-conviction holdings are named (LEU). Confirm the story before changing anything.",
@@ -34,32 +34,12 @@
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "CEG +11.6% against a +0.6% universe median",
+      "t": "CEG +12.2% against a +0.4% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "STOP ADDING",
       "action": "High-froth names are involved (CEG). Entry windows close in a squeeze; do not chase.",
       "tk": [
         "CEG"
-      ],
-      "date": "2026-10-06"
-    },
-    {
-      "sev": "medium",
-      "cat": "spot-equity-divergence",
-      "measured": true,
-      "t": "Uranium +0.2% but its equities +5.0% — a +4.8pt gap",
-      "ev": "Median of 11 nu holdings against the underlying.",
-      "stance": "MONITOR",
-      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
-      "tk": [
-        "LEU",
-        "CCO",
-        "SPUT",
-        "CEG",
-        "NXE",
-        "UEC",
-        "BWXT",
-        "DNN"
       ],
       "date": "2026-10-06"
     },
