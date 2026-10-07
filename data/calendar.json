@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-06T20:47:25+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-10-07T00:54:21+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 1.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-06",
+        "fetched": "2026-10-07",
         "eps_est": 1.08,
         "surprise_abs": 0.19,
         "surprise_pct": 17.2
@@ -366,6 +366,18 @@
       "type": "earnings",
       "tk": "HUBB",
       "name": "Hubbell",
+      "d": "2026-10-27",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-27T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ITRI",
+      "name": "Itron",
       "d": "2026-10-27",
       "release": {
         "when": "pre",
@@ -820,18 +832,6 @@
     },
     {
       "type": "earnings",
-      "tk": "ITRI",
-      "name": "Itron",
-      "d": "2026-10-29",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-29T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "KMTUY",
       "name": "Komatsu",
       "d": "2026-10-29",
@@ -1124,8 +1124,10 @@
       "name": "Energy Transfer",
       "d": "2026-11-03",
       "release": {
-        "when": "unknown",
-        "label": "time unconfirmed"
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-03T12:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
@@ -2085,18 +2087,6 @@
     },
     {
       "type": "earnings",
-      "tk": "6361.JP",
-      "name": "Ebara",
-      "d": "2026-11-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-12T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "ORI.AX",
       "name": "Orica",
       "d": "2026-11-12",
@@ -2123,6 +2113,18 @@
       "type": "earnings",
       "tk": "6273.JP",
       "name": "SMC",
+      "d": "2026-11-13",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-13T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6361.JP",
+      "name": "Ebara",
       "d": "2026-11-13",
       "release": {
         "when": "post",
