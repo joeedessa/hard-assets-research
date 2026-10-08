@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-07T20:59:59+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-10-08T01:09:30+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 1.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-07",
+        "fetched": "2026-10-08",
         "eps_est": 1.08,
         "surprise_abs": 0.19,
         "surprise_pct": 17.2
@@ -64,18 +64,6 @@
     },
     {
       "type": "earnings",
-      "tk": "EQT",
-      "name": "EQT Corporation",
-      "d": "2026-10-20",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-20T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "PNR",
       "name": "Pentair",
       "d": "2026-10-20",
@@ -102,18 +90,6 @@
       "type": "earnings",
       "tk": "CSX",
       "name": "CSX",
-      "d": "2026-10-21",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-21T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "PTEN",
-      "name": "Patterson-UTI",
       "d": "2026-10-21",
       "release": {
         "when": "post",
@@ -352,6 +328,18 @@
     },
     {
       "type": "earnings",
+      "tk": "EQT",
+      "name": "EQT Corporation",
+      "d": "2026-10-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-27T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "FCX",
       "name": "Freeport-McMoRan",
       "d": "2026-10-27",
@@ -520,6 +508,18 @@
     },
     {
       "type": "earnings",
+      "tk": "CLH",
+      "name": "Clean Harbors",
+      "d": "2026-10-28",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-28T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "DHT",
       "name": "DHT Holdings",
       "d": "2026-10-28",
@@ -623,6 +623,18 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-28T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PTEN",
+      "name": "Patterson-UTI",
+      "d": "2026-10-28",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-28T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1216,6 +1228,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6366.JP",
+      "name": "Chiyoda",
+      "d": "2026-11-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "7013.JP",
       "name": "IHI",
       "d": "2026-11-04",
@@ -1319,18 +1343,6 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CLH",
-      "name": "Clean Harbors",
-      "d": "2026-11-04",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-04T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1456,6 +1468,18 @@
     },
     {
       "type": "earnings",
+      "tk": "PAAS",
+      "name": "Pan American Silver",
+      "d": "2026-11-04",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "RGLD",
       "name": "Royal Gold",
       "d": "2026-11-04",
@@ -1530,18 +1554,6 @@
       "type": "earnings",
       "tk": "5401.JP",
       "name": "Nippon Steel",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-05T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "6366.JP",
-      "name": "Chiyoda",
       "d": "2026-11-05",
       "release": {
         "when": "post",
@@ -1935,6 +1947,18 @@
       }
     },
     {
+      "type": "earnings",
+      "tk": "7012.JP",
+      "name": "Kawasaki Heavy Industries",
+      "d": "2026-11-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2026-11-10T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
       "type": "policy",
       "d": "2026-11-10",
       "name": "China REE tranche-2 cliff",
@@ -2005,18 +2029,6 @@
       "type": "earnings",
       "tk": "6383.JP",
       "name": "Daifuku",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-11T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "7012.JP",
-      "name": "Kawasaki Heavy Industries",
       "d": "2026-11-11",
       "release": {
         "when": "post",
@@ -2161,18 +2173,6 @@
       "type": "earnings",
       "tk": "NB",
       "name": "NioCorp Developments",
-      "d": "2026-11-16",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-16T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "PAAS",
-      "name": "Pan American Silver",
       "d": "2026-11-16",
       "release": {
         "when": "mid",
