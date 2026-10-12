@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-10T01:05:34+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-10-12T16:09:53+00:00",
+    "mode": "light",
+    "coverage": "0/0 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -19,6 +19,31 @@
       },
       "wire": [
         {
+          "t": "Yaskawa Electric: Bullish On Results Beat And Favorable Outlook (OTCMKTS:YASKY) - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSTNZLTF0MksxMzlSamFyRk4zU0RsYmptS2wzaDd2M3hBSF8tMTh5dW5DRzl6enZHZWM3SFROWWExTEZLRVdwczNNVmd0QkFfUzd3UUQxbjNCZTdid0ozV0E1c0x1MFdiTkVRa3V1c2F0RjBuNTRPdjJfU3kyMWxGUzF5QVdvMjhGZ0k5WlFjVzgwcGppaTFMU2RwT2czSE5R?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-10-12",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Yaskawa Electric Q2 2027 Earnings Results and Report - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPczNQNGU0UGJ6VUo3a0tLSmhEWG1vbE1zYkxlWUozZmRSaWVqWWl0ejRZYmZLcmZiTENTMGZuakRXeGkyaldGdXVHWDlYWWgxVkg3dVRoblNuZXpFT09UbklMSDV4UnlwUm9hdWNFZ3VQLTUzYnNyWXFveVNJdlhlZ0RsLWhMbXBtdlE?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-10-09",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "YASKAWA Electric Corporation Revises Consolidated Earnings Guidance for the Fiscal Year Ending February 28, 2027 - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTExoS1VGOE1aUW1NbGcwaGFKS0JDU0EtT0xXSExqVTRJd01vYzgzZnl5YmV2ZmtiLTVXcHJoLUdrcFNTRndCb2o0ZmotUDZfXzVVdkQ3Ul85dlJEbHU1bENNaVVhdm04aEVpRVNxaS1wRkMtNk9mSC1YVVV6czJydXNYcklhajF5TGV5YzRuZ0Z4dkNMRzR3ZE5yLXFOdmMybjBZMTFtTHBILVUzS2phcWI0b1FTbzdoa05SSFB5YVBXNldIWV9ZZU9iLXZudjFHZHQtM0pGZVhUek9qNXVKakZteld5RGlK?oc=5",
+          "s": "www.marketscreener.com",
+          "d": "2026-10-09",
+          "cues": []
+        },
+        {
           "t": "YASKAWA Electric : Consolidated Results for the First Half of the Fiscal Year Ending February 28, 2027 - www.marketscreener.com",
           "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQRVlad2NwTVBLUjhxSk1IRF9RUDV2cXJoRXh5a1d0Y0N4QWtmSy1mUEVZeHk5ME1qb2luSWRlMUFKSWNRdHEwMVUwQmJvQkdnRUlVelJlUktlemhnRlZ4NDRhdmkwdm1TMXo4RmQwa2l5Z2tURVZNRzdna2xRZC1yZXI3NWRHSkhOSTBUa1FmZVc5ZU1VSXVMTEJLdlJPU09QR3pQLWxELUFUVlFkVElCYjNDczBmQjNvRjNoX1hydENSUXNhdl9uQXhORjBuY0Y5VGdtUUVZa3JHSEZJcUotNEJGdEQ?oc=5",
           "s": "www.marketscreener.com",
@@ -30,7 +55,7 @@
       "reported": {
         "eps": 52.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-10",
+        "fetched": "2026-10-12",
         "eps_est": 36.15,
         "surprise_abs": 16.06,
         "surprise_pct": 44.4
