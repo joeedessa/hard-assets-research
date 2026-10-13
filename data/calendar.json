@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-12T22:43:41+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-10-13T02:41:15+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -17,45 +17,10 @@
         "iso": "2026-10-09T06:30+00:00",
         "tz": "Asia/Tokyo"
       },
-      "wire": [
-        {
-          "t": "Yaskawa Electric Earnings: Fair Value Raised to JPY 5,350 As Sales Conversion Accelerate - Morningstar",
-          "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbGN6NzdiY1MxS0k0VVQ4TkZ5clU5ZHBCRGUtdXM2M1BwNENmN2Zrd1hKbzVyUm5VRF9adXVqWnR3b09xZkFJY0dGVDF2Z3E3QXRLUlFLeklUdk8yTERtVF9VcUU2UUlSdU1jZ29KSlZNRVBMNXBsdGZUWnE4VWlPNVhRNkk5LTZ6SnZoTXNPQ2VJVmMtM3NhVHczYnoyX2lCbUktYzlMYm5TTW1HelBSRmpyOG1mUlo3ejFLR0dOd3RkcUdtbG12V01BZ2g0eS1CVlJKdWMwdFhnQkc5Rm9RbXVxWWFaUUtDRnFRdVd3?oc=5",
-          "s": "Morningstar",
-          "d": "2026-10-12",
-          "cues": []
-        },
-        {
-          "t": "Yaskawa Electric: Bullish On Results Beat And Favorable Outlook (OTCMKTS:YASKY) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSTNZLTF0MksxMzlSamFyRk4zU0RsYmptS2wzaDd2M3hBSF8tMTh5dW5DRzl6enZHZWM3SFROWWExTEZLRVdwczNNVmd0QkFfUzd3UUQxbjNCZTdid0ozV0E1c0x1MFdiTkVRa3V1c2F0RjBuNTRPdjJfU3kyMWxGUzF5QVdvMjhGZ0k5WlFjVzgwcGppaTFMU2RwT2czSE5R?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-10-12",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Yaskawa Electric Q2 2027 Earnings Results and Report - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPczNQNGU0UGJ6VUo3a0tLSmhEWG1vbE1zYkxlWUozZmRSaWVqWWl0ejRZYmZLcmZiTENTMGZuakRXeGkyaldGdXVHWDlYWWgxVkg3dVRoblNuZXpFT09UbklMSDV4UnlwUm9hdWNFZ3VQLTUzYnNyWXFveVNJdlhlZ0RsLWhMbXBtdlE?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-10-09",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "YASKAWA Electric Corporation Revises Consolidated Earnings Guidance for the Fiscal Year Ending February 28, 2027 - www.marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTExoS1VGOE1aUW1NbGcwaGFKS0JDU0EtT0xXSExqVTRJd01vYzgzZnl5YmV2ZmtiLTVXcHJoLUdrcFNTRndCb2o0ZmotUDZfXzVVdkQ3Ul85dlJEbHU1bENNaVVhdm04aEVpRVNxaS1wRkMtNk9mSC1YVVV6czJydXNYcklhajF5TGV5YzRuZ0Z4dkNMRzR3ZE5yLXFOdmMybjBZMTFtTHBILVUzS2phcWI0b1FTbzdoa05SSFB5YVBXNldIWV9ZZU9iLXZudjFHZHQtM0pGZVhUek9qNXVKakZteld5RGlK?oc=5",
-          "s": "www.marketscreener.com",
-          "d": "2026-10-09",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-10-09",
       "reported": {
         "eps": 52.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-12",
+        "fetched": "2026-10-13",
         "eps_est": 36.15,
         "surprise_abs": 16.06,
         "surprise_pct": 44.4
@@ -142,6 +107,18 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-21T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BE",
+      "name": "Bloom Energy",
+      "d": "2026-10-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-22T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -279,6 +256,18 @@
     },
     {
       "type": "earnings",
+      "tk": "NE",
+      "name": "Noble Corp",
+      "d": "2026-10-26",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-26T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "4063.JP",
       "name": "Shin-Etsu Chemical",
       "d": "2026-10-27",
@@ -310,18 +299,6 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-27T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "BE",
-      "name": "Bloom Energy",
-      "d": "2026-10-27",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -425,18 +402,6 @@
       "type": "earnings",
       "tk": "NBR",
       "name": "Nabors",
-      "d": "2026-10-27",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NE",
-      "name": "Noble Corp",
       "d": "2026-10-27",
       "release": {
         "when": "post",
@@ -627,18 +592,6 @@
     },
     {
       "type": "earnings",
-      "tk": "RIG",
-      "name": "Transocean",
-      "d": "2026-10-28",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "UAN",
       "name": "CVR Partners",
       "d": "2026-10-28",
@@ -713,18 +666,6 @@
       "type": "earnings",
       "tk": "9503.JP",
       "name": "Kansai Electric Power",
-      "d": "2026-10-29",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-29T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "9508.JP",
-      "name": "Kyushu Electric Power",
       "d": "2026-10-29",
       "release": {
         "when": "post",
@@ -999,6 +940,16 @@
     },
     {
       "type": "earnings",
+      "tk": "9508.JP",
+      "name": "Kyushu Electric Power",
+      "d": "2026-10-30",
+      "release": {
+        "when": "unknown",
+        "label": "time unconfirmed"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "GD",
       "name": "General Dynamics",
       "d": "2026-10-30",
@@ -1061,6 +1012,18 @@
       "type": "earnings",
       "tk": "PRIM",
       "name": "Primoris",
+      "d": "2026-11-02",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RIG",
+      "name": "Transocean",
       "d": "2026-11-02",
       "release": {
         "when": "mid",
