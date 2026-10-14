@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-10-14T17:38:04+00:00",
+    "as_of": "2026-10-14T19:58:13+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 46/226 down 5%, sector -4.5%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 1/226 up 5%, sector -4.5%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 42/226 down 5%, sector -4.4%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 3/226 up 5%, sector -4.4%",
       "Single-name collapse (any holding −12%+ in a session): 1 found",
-      "Conviction-3 divergence (±8%+ versus the -1.4% universe median): 1 found",
+      "Conviction-3 divergence (±8%+ versus the -1.0% universe median): 2 found",
       "Tracked commodity ±5%+ in a session: 2 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: +0.50%",
+      "USD (DXY) ±1%+ in a session: +0.40%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 1 outside their window, 0 excluded as undated"
@@ -34,7 +34,20 @@
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "PPTA -10.5% against a -1.4% universe median",
+      "t": "LEU -10.4% against a -1.0% universe median",
+      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+      "stance": "THESIS AT RISK",
+      "action": "Top-conviction holdings are named (LEU). Confirm the story before changing anything.",
+      "tk": [
+        "LEU"
+      ],
+      "date": "2026-10-14"
+    },
+    {
+      "sev": "high",
+      "cat": "divergence",
+      "measured": true,
+      "t": "PPTA -10.3% against a -1.0% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "THESIS AT RISK",
       "action": "Top-conviction holdings are named (PPTA). Confirm the story before changing anything.",
@@ -47,10 +60,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Silver -5.6% in a session",
+      "t": "Silver -5.8% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved -5.6% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved -5.8% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-10-14"
     },
@@ -58,10 +71,10 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "REE -6.8% in a session",
+      "t": "REE -6.2% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved -6.8% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved -6.2% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-10-14"
     }
