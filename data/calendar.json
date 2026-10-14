@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-13T20:58:46+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-10-14T00:29:15+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 52.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-13",
+        "fetched": "2026-10-14",
         "eps_est": 36.15,
         "surprise_abs": 16.06,
         "surprise_pct": 44.4
@@ -311,18 +311,6 @@
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-10-27T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "EPD",
-      "name": "Enterprise Products",
-      "d": "2026-10-27",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-27T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -702,6 +690,18 @@
       "type": "earnings",
       "tk": "EME",
       "name": "EMCOR Group",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EPD",
+      "name": "Enterprise Products",
       "d": "2026-10-29",
       "release": {
         "when": "pre",
@@ -1118,18 +1118,6 @@
     },
     {
       "type": "earnings",
-      "tk": "FNV",
-      "name": "Franco-Nevada",
-      "d": "2026-11-03",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "IVN.TO",
       "name": "Ivanhoe Mines",
       "d": "2026-11-03",
@@ -1324,18 +1312,6 @@
       "type": "earnings",
       "tk": "CF",
       "name": "CF Industries",
-      "d": "2026-11-04",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CLNE",
-      "name": "Clean Energy Fuels",
       "d": "2026-11-04",
       "release": {
         "when": "mid",
@@ -1648,6 +1624,18 @@
       "type": "earnings",
       "tk": "CEPL",
       "name": "Capstone Energy+",
+      "d": "2026-11-05",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-05T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CLNE",
+      "name": "Clean Energy Fuels",
       "d": "2026-11-05",
       "release": {
         "when": "mid",
@@ -2057,6 +2045,18 @@
         "label": "MID-SESSION · 16:00 CET",
         "iso": "2026-11-11T15:00+00:00",
         "tz": "Europe/Copenhagen"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FNV",
+      "name": "Franco-Nevada",
+      "d": "2026-11-11",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-11T20:00+00:00",
+        "tz": "America/New_York"
       }
     },
     {
