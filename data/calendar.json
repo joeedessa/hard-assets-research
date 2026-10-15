@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-15T19:41:44+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-10-15T23:45:56+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -39,30 +39,32 @@
       },
       "wire": [
         {
+          "t": "Alcoa Posts Higher Third-Quarter Profit, Sales on Increased Production - WSJ",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTlVLNGpQRnZxVXJWUkx4Ukd1dzlSVlZNUTNxN2wzUmZjZlo0d1BqWXdtODA2Z3BPZjJyS3ZKVGlVT3VGNFVMV1NFc1JpdFcxV09Bd1pWMi1yMUE5LW5lbVMwcmd0T095N1MyRWxzQkp3Z0JSWmFjSHczU0gwUVV3elA3d3ZDOWJoQnFTNXJCemxBbDFBRUtHWTlmRlNLdjlCUzdlclhTWnVaTVRZUDVhc1RMZlNuc3M?oc=5",
+          "s": "WSJ",
+          "d": "2026-10-15",
+          "cues": []
+        },
+        {
+          "t": "Alcoa Earnings Were a Relief, and the Stock Looks Cheap - Barron's",
+          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XWlhfbWdWWGRQUDJUWWd3aFFnN2NTRnhpdTZJN1ZLZlpZU2xFR1NvNUd2T1FVbmZWNjFqUWNValZmVGtxeC02SkdMXzJuc3kxbElxbkNTcjR3QTU3WlRGZ3RKcVo0XzQ4blhTUGlLaWRhc1pwa000?oc=5",
+          "s": "Barron's",
+          "d": "2026-10-15",
+          "cues": []
+        },
+        {
+          "t": "Alcoa shares rise 2% on Q3 earnings beat - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdjFzS1ZGdkRHSjFHQzhRSU13YVQ2cUp6aW1nZG9DcENjRDZqS0VHOHIwSHdtdlFRSWVFaU5oeENRSmJwaHVoNk1sLWFiVGszUlFZeVV2TENsSnVnVm9lUHo0WlZyMk5NR0VvcDR1RV8tZmViR1Y5LUJqbzd2Um9DTG5oRXd6MGVUUmw0V0QwNnI?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-10-15",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
           "t": "Alcoa earnings on deck: Can aluminum offset alumina weakness? - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONkJuUlVOZldWWWdBckMzWFkxblhHd2VIYlRfZVpLNXRpZ1dtcEpNWVJzRC1oUWFiQzl5b3hKR05KMS1Ca2t1bFRHVUZKQm9jRkZ0LUhvTFpKZzQzbkkxWHlKWjNFbHhnN3FBeHNNRjZ1TG1MTWQtT1ZZTWp6eFlrVTdvQ09zWTM2NWM3XzM4aG02Ym9qZFNJN0tFRmZ3MW9LQTFMdWlnT3V0S0ZDS1dHWnRB?oc=5",
           "s": "Investing.com",
-          "d": "2026-10-15",
-          "cues": []
-        },
-        {
-          "t": "Alcoa (AA) Stock May Be Below Fair Value On Earnings - Simply Wall Street",
-          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNl9ZYlEtY194S2xKbW5aeHNKMEp1RHBoMTVHUm04TVZqRjJVaE16anpTbmZRN2x2THRJR1hzN3JuXzE3anZ1alp0R3V2TTV6NVpDNkJidWotOEtwZXExWF9ja3F1Nm9Pckw0NEJwY1B2aEd6WlE4eG9MMmFyaThOemNIT3YyeDZhak1TOTZTYkFhX2J2NmdrcHNZR2s5N2FRVTNXdU0tbTlHenNudzNkSNIBtgFBVV95cUxNQTJ6TnloVjI1TXpTN0FYcml3WGNMLW43ZnlmdE1vQVEzY1pUWndVV0xGbk1TTURXbjF6c1RqV05rLXZra0JfOEkxdF9XY2NPTkNrTDlKOGQwR1loZW1kVW4tcVlrS3ZwYlhyQ1pWbmtzV3JYMUZxSWpjaVAyQTNVbjlDTGlEbVdJYm5kLW1ucGtBOHQtOGJQTjhZV21WZmluMXBhOXhuOXBSdGtacGVBZVloVlpkdw?oc=5",
-          "s": "Simply Wall Street",
-          "d": "2026-10-15",
-          "cues": []
-        },
-        {
-          "t": "Alcoa Corp (AA) Earnings Anticipated on October 15, 2026, Amid V - GuruFocus",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNEp1WVVGbllwY2NCa1BQZkpNZkFfY09STGZZOEI3TTBvLXFfeENGMFQwS0cwdDkya3Flcl9zZEt3a09vWExndGJvMDctbzhHdElDQjlZWTRmSlBrUkhKOEdWcjl1VDJvekFveUM3bVN6NVJGUjVNWV9MSUwwOTNfWWhOeUxHQ0FFYWVtZ3gxeFczb1JJYW41QzJlT1U1cWJzYXVDMW5uMjRFQnVzM0NyYlpTWW9mX1U?oc=5",
-          "s": "GuruFocus",
-          "d": "2026-10-15",
-          "cues": []
-        },
-        {
-          "t": "Alcoa set to report Q3 2026 earnings amid mixed forecasts and a major $8B acquisition proposal - Pluang",
-          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZlpBRlk2aXRMUFNfQzdTVW8wQUpOMG1VLVhMWF9QTkYwREhFcVVCaFdzeHdCMFhpalRsazczQ3hmMl9IWVAzMzdhYXNqUktQdE9HYU1BbU9GNGxtSENFbHgzaGZBSmt5ekJyaTVWeXJmTl9HLWRSUWxUTTFGRy14bjNJaThHN21fUm1n?oc=5",
-          "s": "Pluang",
           "d": "2026-10-15",
           "cues": []
         }
@@ -599,18 +601,6 @@
     },
     {
       "type": "earnings",
-      "tk": "VAL",
-      "name": "Valaris",
-      "d": "2026-10-28",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "VRT",
       "name": "Vertiv Holdings",
       "d": "2026-10-28",
@@ -745,18 +735,6 @@
       "type": "earnings",
       "tk": "FTI",
       "name": "TechnipFMC",
-      "d": "2026-10-29",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-29T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "HBM",
-      "name": "Hudbay Minerals",
       "d": "2026-10-29",
       "release": {
         "when": "pre",
@@ -1067,6 +1045,18 @@
       "type": "earnings",
       "tk": "UUUU",
       "name": "Energy Fuels",
+      "d": "2026-11-02",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-02T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VAL",
+      "name": "Valaris",
       "d": "2026-11-02",
       "release": {
         "when": "mid",
@@ -1645,10 +1635,8 @@
       "name": "Cameco",
       "d": "2026-11-05",
       "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-05T12:30+00:00",
-        "tz": "America/New_York"
+        "when": "unknown",
+        "label": "time unconfirmed"
       }
     },
     {
@@ -2111,6 +2099,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-11T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HBM",
+      "name": "Hudbay Minerals",
+      "d": "2026-11-12",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-12T12:30+00:00",
         "tz": "America/New_York"
       }
     },
