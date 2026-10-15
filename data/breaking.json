@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-10-15T00:02:29+00:00",
+    "as_of": "2026-10-15T12:09:38+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 38/226 down 5%, sector -1.1%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 2/226 up 5%, sector -1.1%",
-      "Single-name collapse (any holding −12%+ in a session): 2 found",
-      "Conviction-3 divergence (±8%+ versus the -1.2% universe median): 2 found",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 78/226 down 5%, sector -4.2%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 0/226 up 5%, sector -4.2%",
+      "Single-name collapse (any holding −12%+ in a session): 4 found",
+      "Conviction-3 divergence (±8%+ versus the -3.4% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 1 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: +0.00%",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 3 found",
+      "USD (DXY) ±1%+ in a session: -0.40%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 1 outside their window, 0 excluded as undated"
@@ -17,6 +17,30 @@
   },
   "state": "critical",
   "signals": [
+    {
+      "sev": "critical",
+      "cat": "deleveraging",
+      "measured": true,
+      "t": "Correlated drawdown: 78 of 226 holdings down 5%+ with the sector -4.2%",
+      "ev": "Computed from today's closes. Universe median -3.4%.",
+      "stance": "STAGE",
+      "action": "Broad, correlated selling is a liquidity event, not a re-rating of the thesis. Do not catch the knife — publish and work the staged-entry list instead.",
+      "tk": [
+        "042660.KS",
+        "2383.TW",
+        "4004.JP",
+        "5016.JP",
+        "5631.JP",
+        "5706.JP",
+        "5711.JP",
+        "5713.JP",
+        "5714.JP",
+        "5726.JP",
+        "5801.JP",
+        "5802.T"
+      ],
+      "date": "2026-10-15"
+    },
     {
       "sev": "critical",
       "cat": "company-critical",
@@ -34,38 +58,38 @@
       "sev": "critical",
       "cat": "company-critical",
       "measured": true,
-      "t": "ERA.PA -14.4% in a single session",
-      "ev": "Computed from today's close. Conviction 1, froth 1.",
+      "t": "5706.JP -13.1% in a single session",
+      "ev": "Computed from today's close. Conviction 2, froth 1.",
       "stance": "REVIEW",
-      "action": "Insulated names are involved (ERA.PA). Weakness here is opportunity, not information.",
+      "action": "Insulated names are involved (5706.JP). Weakness here is opportunity, not information.",
       "tk": [
-        "ERA.PA"
+        "5706.JP"
       ],
       "date": "2026-10-15"
     },
     {
-      "sev": "high",
-      "cat": "divergence",
+      "sev": "critical",
+      "cat": "company-critical",
       "measured": true,
-      "t": "LEU -10.7% against a -1.2% universe median",
-      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
-      "stance": "THESIS AT RISK",
-      "action": "Top-conviction holdings are named (LEU). Confirm the story before changing anything.",
+      "t": "5803.JP -12.7% in a single session",
+      "ev": "Computed from today's close. Conviction 2, froth 3.",
+      "stance": "REVIEW",
+      "action": "High-froth names are involved (5803.JP). Entry windows close in a squeeze; do not chase.",
       "tk": [
-        "LEU"
+        "5803.JP"
       ],
       "date": "2026-10-15"
     },
     {
-      "sev": "high",
-      "cat": "divergence",
+      "sev": "critical",
+      "cat": "company-critical",
       "measured": true,
-      "t": "PPTA -10.2% against a -1.2% universe median",
-      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
-      "stance": "THESIS AT RISK",
-      "action": "Top-conviction holdings are named (PPTA). Confirm the story before changing anything.",
+      "t": "5801.JP -13.1% in a single session",
+      "ev": "Computed from today's close. Conviction 2, froth 2.",
+      "stance": "REVIEW",
+      "action": "Affected names are lower-conviction; watch rather than act.",
       "tk": [
-        "PPTA"
+        "5801.JP"
       ],
       "date": "2026-10-15"
     },
@@ -73,11 +97,70 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Silver -5.6% in a session",
+      "t": "REE -5.8% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved -5.6% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved -5.8% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
+      "date": "2026-10-15"
+    },
+    {
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
+      "measured": true,
+      "t": "Copper -0.6% but its equities -5.6% — a -5.0pt gap",
+      "ev": "Median of 7 cu holdings against the underlying.",
+      "stance": "MONITOR",
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "SCCO",
+        "FCX",
+        "TECK",
+        "HBM",
+        "IVN.TO",
+        "5711.JP",
+        "5016.JP"
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
+      "measured": true,
+      "t": "Gold +1.4% but its equities -3.6% — a -5.0pt gap",
+      "ev": "Median of 11 pg holdings against the underlying.",
+      "stance": "MONITOR",
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "FNV",
+        "WPM",
+        "RGLD",
+        "SBSW",
+        "PAAS",
+        "TFPM",
+        "THS.L",
+        "YCA.L"
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
+      "measured": true,
+      "t": "NatGas +2.2% but its equities -2.4% — a -4.6pt gap",
+      "ev": "Median of 10 ng holdings against the underlying.",
+      "stance": "MONITOR",
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "LNG",
+        "VGAS",
+        "KMI",
+        "ET",
+        "EQT",
+        "AR",
+        "WMB",
+        "SLNG"
+      ],
       "date": "2026-10-15"
     }
   ]

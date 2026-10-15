@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-15T00:02:29+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-10-15T12:09:38+00:00",
+    "mode": "light",
+    "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -36,7 +36,17 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-10-15T20:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Alcoa (AA) Stock May Be Below Fair Value On Earnings - Simply Wall Street",
+          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNl9ZYlEtY194S2xKbW5aeHNKMEp1RHBoMTVHUm04TVZqRjJVaE16anpTbmZRN2x2THRJR1hzN3JuXzE3anZ1alp0R3V2TTV6NVpDNkJidWotOEtwZXExWF9ja3F1Nm9Pckw0NEJwY1B2aEd6WlE4eG9MMmFyaThOemNIT3YyeDZhak1TOTZTYkFhX2J2NmdrcHNZR2s5N2FRVTNXdU0tbTlHenNudzNkSNIBtgFBVV95cUxNQTJ6TnloVjI1TXpTN0FYcml3WGNMLW43ZnlmdE1vQVEzY1pUWndVV0xGbk1TTURXbjF6c1RqV05rLXZra0JfOEkxdF9XY2NPTkNrTDlKOGQwR1loZW1kVW4tcVlrS3ZwYlhyQ1pWbmtzV3JYMUZxSWpjaVAyQTNVbjlDTGlEbVdJYm5kLW1ucGtBOHQtOGJQTjhZV21WZmluMXBhOXhuOXBSdGtacGVBZVloVlpkdw?oc=5",
+          "s": "Simply Wall Street",
+          "d": "2026-10-15",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-10-15"
     },
     {
       "type": "earnings",
