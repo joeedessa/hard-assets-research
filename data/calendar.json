@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-14T19:58:13+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-10-15T00:02:29+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 52.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-14",
+        "fetched": "2026-10-15",
         "eps_est": 36.15,
         "surprise_abs": 16.06,
         "surprise_pct": 44.4
@@ -52,18 +52,6 @@
     },
     {
       "type": "earnings",
-      "tk": "PNR",
-      "name": "Pentair",
-      "d": "2026-10-20",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-20T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "CME",
       "name": "CME Group",
       "d": "2026-10-21",
@@ -88,8 +76,8 @@
     },
     {
       "type": "earnings",
-      "tk": "URI",
-      "name": "United Rentals",
+      "tk": "KMI",
+      "name": "Kinder Morgan",
       "d": "2026-10-21",
       "release": {
         "when": "post",
@@ -100,13 +88,13 @@
     },
     {
       "type": "earnings",
-      "tk": "VRT",
-      "name": "Vertiv Holdings",
+      "tk": "URI",
+      "name": "United Rentals",
       "d": "2026-10-21",
       "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-21T12:30+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EDT",
+        "iso": "2026-10-21T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -292,18 +280,6 @@
     },
     {
       "type": "earnings",
-      "tk": "ATI",
-      "name": "ATI Inc",
-      "d": "2026-10-27",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-27T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "ENPH",
       "name": "Enphase Energy",
       "d": "2026-10-27",
@@ -408,6 +384,18 @@
         "label": "MID-SESSION · 14:00 CST",
         "iso": "2026-10-27T20:00+00:00",
         "tz": "America/Mexico_City"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PNR",
+      "name": "Pentair",
+      "d": "2026-10-27",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-27T12:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
@@ -520,18 +508,6 @@
     },
     {
       "type": "earnings",
-      "tk": "KMI",
-      "name": "Kinder Morgan",
-      "d": "2026-10-28",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-28T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "MTRN",
       "name": "Materion",
       "d": "2026-10-28",
@@ -604,6 +580,18 @@
     },
     {
       "type": "earnings",
+      "tk": "VRT",
+      "name": "Vertiv Holdings",
+      "d": "2026-10-28",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-28T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "329180.KS",
       "name": "HD Hyundai Heavy Industries",
       "d": "2026-10-29",
@@ -660,6 +648,18 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2026-10-29T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ATI",
+      "name": "ATI Inc",
+      "d": "2026-10-29",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-29T12:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
@@ -1350,9 +1350,9 @@
       "name": "Emerson Electric",
       "d": "2026-11-04",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-04T20:00+00:00",
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-04T12:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -2145,18 +2145,6 @@
     },
     {
       "type": "earnings",
-      "tk": "HP",
-      "name": "Helmerich & Payne",
-      "d": "2026-11-16",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-16T20:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "NB",
       "name": "NioCorp Developments",
       "d": "2026-11-16",
@@ -2195,6 +2183,18 @@
       "type": "earnings",
       "tk": "BORR",
       "name": "Borr Drilling",
+      "d": "2026-11-18",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-18T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HP",
+      "name": "Helmerich & Payne",
       "d": "2026-11-18",
       "release": {
         "when": "mid",
