@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-10-16T11:56:03+00:00",
+    "as_of": "2026-10-16T16:59:56+00:00",
     "mode": "light",
     "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -39,6 +39,13 @@
       },
       "wire": [
         {
+          "t": "Alcoa Posts Higher Profit, Sales as Market Conditions Improve, Production Increases - WSJ",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTlVLNGpQRnZxVXJWUkx4Ukd1dzlSVlZNUTNxN2wzUmZjZlo0d1BqWXdtODA2Z3BPZjJyS3ZKVGlVT3VGNFVMV1NFc1JpdFcxV09Bd1pWMi1yMUE5LW5lbVMwcmd0T095N1MyRWxzQkp3Z0JSWmFjSHczU0gwUVV3elA3d3ZDOWJoQnFTNXJCemxBbDFBRUtHWTlmRlNLdjlCUzdlclhTWnVaTVRZUDVhc1RMZlNuc3M?oc=5",
+          "s": "WSJ",
+          "d": "2026-10-16",
+          "cues": []
+        },
+        {
           "t": "Alcoa Earnings Were a Relief, and the Stock Looks Cheap - Barron's",
           "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XWlhfbWdWWGRQUDJUWWd3aFFnN2NTRnhpdTZJN1ZLZlpZU2xFR1NvNUd2T1FVbmZWNjFqUWNValZmVGtxeC02SkdMXzJuc3kxbElxbkNTcjR3QTU3WlRGZ3RKcVo0XzQ4blhTUGlLaWRhc1pwa000?oc=5",
           "s": "Barron's",
@@ -46,27 +53,21 @@
           "cues": []
         },
         {
-          "t": "Alcoa Posts Higher Third-Quarter Profit, Sales on Increased Production - WSJ",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTlVLNGpQRnZxVXJWUkx4Ukd1dzlSVlZNUTNxN2wzUmZjZlo0d1BqWXdtODA2Z3BPZjJyS3ZKVGlVT3VGNFVMV1NFc1JpdFcxV09Bd1pWMi1yMUE5LW5lbVMwcmd0T095N1MyRWxzQkp3Z0JSWmFjSHczU0gwUVV3elA3d3ZDOWJoQnFTNXJCemxBbDFBRUtHWTlmRlNLdjlCUzdlclhTWnVaTVRZUDVhc1RMZlNuc3M?oc=5",
-          "s": "WSJ",
-          "d": "2026-10-15",
-          "cues": []
-        },
-        {
-          "t": "Alcoa Earnings: Down on Weaker Pricing and Shipments - Morningstar",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTEEybmkwV3NMeXMwS21MUHhwdDNCTWxrTzdCeWpkOTVzR2lHdkRDa2N6NVZjRllKZmRyRWltTndMYmRKeEhJMkpXS3k1R2pQZmNFWU9EZFNzTDVCNzh1cE13ZERwSnZra1ByWnlCWkVnVkVvR0dqYVR2YzRVQzE4NzdTVGJUd1VrOWRHYWZEOWZMdVMybUxJSm9jVEdBRnk4cXRqVzEwWVNTa0w5dnJSdHJPUzM5VlZ3a1R0TjI0MA?oc=5",
-          "s": "Morningstar",
+          "t": "Alcoa Stock Rallying After Earnings Beat, Alumina Demand - Schaeffer's Investment Research",
+          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPajd5Q252RktLa1ZwcmlrdUx1OUxuVUo1czRyOE5VU1JpZVhIV2VYaTlwdVpLRmRLMEpEYkZudEZJUnVUelFVMG9vajhMenZoMW4zckI1a2ZHa28xRlNHcWxDb3llb0NVczlCdnRqd0hvT3d6NC0zRHI2Xzl0YUlTeUFHbEZCanJHMnhUM2d3UHN1MU15Qk5xVnZpTjg2VnhfUm45V3VIc18xX1JidV92N1ZUUmo?oc=5",
+          "s": "Schaeffer's Investment Research",
           "d": "2026-10-16",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         },
         {
-          "t": "Alcoa (NYSE:AA) Posts Mixed Q3 2026 Results: EPS Beat, Revenue Miss, and Cautious Q4 Outlook - ChartMill",
-          "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbFBGb1puaHVEY0lQNWgycko5cUhkZEJQVWhMQVByZjR4UE1qY0ZHWDNLZXhfWGJNekFWaG9BYjJwMWVJSm1PNTRyNXFFZzRkeXFvVU1DMDd4S1QwRHc2VUpmOGY4U2NnN3RsYS1hRXBXSjg2ZkhobGNTTHVnWGpSMVlicFJEQVYzdVEtZnN0NWxaVUJYZlRGb0p3b25SOU1UeWFGd2xaWFo4c0Z0OWtGNzNWVHhXQ3NoUXZKUy1aYTg2MGc2cnB5TGp0OFhGNDNXVmc?oc=5",
-          "s": "ChartMill",
-          "d": "2026-10-15",
+          "t": "Alcoa Gains 8%, United States Antimony Jumps 10% After Alcoa's Q3 Beat and Data Center Site Sale; Cleveland-Cliffs Rises 2% - 24/7 Wall St.",
+          "u": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQeC0zWjJjMHFMNnhZemwzTTNZaFFiVW11SzV2cWNGQkNxV2FWWmQ5N2xGOG1wZnJvUndGS2J3c2pjOXN4WVZVc2gtN0w3c3o0bHJ3RVpRYUJCYXFqVmtWQThxcG5iUURIMTlEcWR3aFotWlduTnVEYVZGWTFVSWFEZ0pyQ0x0V1hLYkZUQldiSjZfTTlSa0JHOE82MkN2MUhHbnNtMTVjdG5vdHJ3NTJTU0h2TzJWcTJlWjdld2NMTnlwSG5wWUdTSzJqTFZueTY4VVpSUXFWMEVldnpELUlMeHBXa29fQVMtcGNWaEJxSXY2QQ?oc=5",
+          "s": "24/7 Wall St.",
+          "d": "2026-10-16",
           "cues": [
-            "beat",
-            "miss"
+            "beat"
           ]
         }
       ],
