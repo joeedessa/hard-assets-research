@@ -1,31 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-10-16T23:47:12+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-10-19T13:59:37+00:00",
+    "mode": "light",
+    "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "6506.JP",
-      "name": "Yaskawa Electric",
-      "d": "2026-10-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-09T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 52.21,
-        "source": "Yahoo Finance",
-        "fetched": "2026-10-16",
-        "eps_est": 36.15,
-        "surprise_abs": 16.06,
-        "surprise_pct": 44.4
-      }
-    },
     {
       "type": "earnings",
       "tk": "AA",
@@ -75,7 +55,7 @@
       "reported": {
         "eps": 1.82,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-16",
+        "fetched": "2026-10-19",
         "eps_est": 1.51,
         "surprise_abs": 0.31,
         "surprise_pct": 20.2
