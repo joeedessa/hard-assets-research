@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-19T20:53:10+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-10-20T00:30:52+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -17,45 +17,10 @@
         "iso": "2026-10-15T20:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "What Alcoa (AA) Earnings Beat Means For Shareholders - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVTdMYlVhZjNOQUE4NDFCUXFDZFZhRHp5Z1FlY1BmQmJDeFpidFltRi1XZTd1QjEwZFpzSjJFSkFSOUdoUmp0dmh0NVhFOGxiTjUxU2NOYkNuMktfMWRZSWhSQXU0TjB0RzB1NU1tamU4WC1JcURURF9ORklyVTVremJsdmh6el92YTNhWkNJV2Z4M1FXUjNYaw?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-10-16",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Alcoa Posts Higher Profit, Sales as Market Conditions Improve, Production Increases - WSJ",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTlVLNGpQRnZxVXJWUkx4Ukd1dzlSVlZNUTNxN2wzUmZjZlo0d1BqWXdtODA2Z3BPZjJyS3ZKVGlVT3VGNFVMV1NFc1JpdFcxV09Bd1pWMi1yMUE5LW5lbVMwcmd0T095N1MyRWxzQkp3Z0JSWmFjSHczU0gwUVV3elA3d3ZDOWJoQnFTNXJCemxBbDFBRUtHWTlmRlNLdjlCUzdlclhTWnVaTVRZUDVhc1RMZlNuc3M?oc=5",
-          "s": "WSJ",
-          "d": "2026-10-16",
-          "cues": []
-        },
-        {
-          "t": "Alcoa Earnings Were a Relief, and the Stock Looks Cheap - Barron's",
-          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XWlhfbWdWWGRQUDJUWWd3aFFnN2NTRnhpdTZJN1ZLZlpZU2xFR1NvNUd2T1FVbmZWNjFqUWNValZmVGtxeC02SkdMXzJuc3kxbElxbkNTcjR3QTU3WlRGZ3RKcVo0XzQ4blhTUGlLaWRhc1pwa000?oc=5",
-          "s": "Barron's",
-          "d": "2026-10-15",
-          "cues": []
-        },
-        {
-          "t": "Alcoa Stock Pops As Earnings Beat Fuels Q4 Momentum - Timothy Sykes",
-          "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE96eWpVS0lRZnJ4Y0puS2JRczlWakNtQ2JYUUlSZVM2TVlzZUNrZGloNFRnb1ZDZkktSWt1Smg3RHRybDlnVm4xNHd6b0RKS2o0ZHdraFF5WTlQUG5KZ1hDcWhyelpfbV9yRXpIdi1PVXpwU1lNajAyMzZiVQ?oc=5",
-          "s": "Timothy Sykes",
-          "d": "2026-10-16",
-          "cues": [
-            "beat"
-          ]
-        }
-      ],
-      "wire_gate": "2026-10-15",
       "reported": {
         "eps": 1.82,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-19",
+        "fetched": "2026-10-20",
         "eps_est": 1.51,
         "surprise_abs": 0.31,
         "surprise_pct": 20.2
@@ -579,6 +544,18 @@
     },
     {
       "type": "earnings",
+      "tk": "STNG",
+      "name": "Scorpio Tankers",
+      "d": "2026-10-28",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EDT",
+        "iso": "2026-10-28T12:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "UAN",
       "name": "CVR Partners",
       "d": "2026-10-28",
@@ -845,18 +822,6 @@
       "type": "earnings",
       "tk": "PWR",
       "name": "Quanta Services",
-      "d": "2026-10-29",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-29T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "STNG",
-      "name": "Scorpio Tankers",
       "d": "2026-10-29",
       "release": {
         "when": "pre",
@@ -1655,18 +1620,6 @@
     },
     {
       "type": "earnings",
-      "tk": "GLNG",
-      "name": "Golar LNG",
-      "d": "2026-11-05",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-05T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "INSW",
       "name": "International Seaways",
       "d": "2026-11-05",
@@ -2209,6 +2162,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-18T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLNG",
+      "name": "Golar LNG",
+      "d": "2026-11-18",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-18T12:30+00:00",
         "tz": "America/New_York"
       }
     },
