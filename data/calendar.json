@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-21T19:55:38+00:00",
-    "mode": "light",
-    "coverage": "14/14 scanned this pass",
+    "as_of": "2026-10-22T00:06:43+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 1.82,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-21",
+        "fetched": "2026-10-22",
         "eps_est": 1.51,
         "surprise_abs": 0.31,
         "surprise_pct": 20.2
@@ -40,7 +40,7 @@
       "reported": {
         "eps": 0.75,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-21",
+        "fetched": "2026-10-22",
         "eps_est": 0.83,
         "surprise_abs": -0.08,
         "surprise_pct": -9.8
@@ -66,16 +66,9 @@
           "cues": []
         },
         {
-          "t": "Apple Earnings and the AI Trade at a Crossroads - CME Group",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOTZLVjNydzJPaEYyVHVEd1RNeE9hRzVVamUyZGExNXBNWUdQN3J5VDRlYzNnMVNrYjNYQVBFRWxQMnpaaG5TQWlFdnNOMEYxRTNCd0FpeldtQVk2Yzk0U1k0dG5wRDltNmZQRjdlbjNjSkwxSzJvUXVLSHgwcVJHVXFVZkdSdFRDX0xjM25iY1pmVEhyQ2JDMWRsQQ?oc=5",
-          "s": "CME Group",
-          "d": "2026-10-21",
-          "cues": []
-        },
-        {
-          "t": "CME Group Q3 2026 Earnings Call Transcript - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY0RVZkhoNHEyZFhibmtTU2dYbXZrY3VRUmN0WXl4c0lvUDJXbUhsbUlKamNRa2ZGNUFNTWRYZzRENlJmbnRISnhvZl8waThaUVBXbEluSVVBSDlrVDN5SDBUY2hSVzZkSDZTaEN3dnV3Q2VTcmd6RTVndkxlNEZJQnQ4TDVkUGFORUtXakMycDY?oc=5",
-          "s": "Benzinga",
+          "t": "CME Group earnings analysis: questions answered and next catalysts - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZXhvTVJ1MVNpVnJFSVlQVC15X3VBRTZQTkViQlFFQUZEdXJQaUVFa1NVdDZyNnhvb1lLek9wcU1NV2hkYjRZT3RBNEE0VnNKQVpUUlNhQnlwdnMwN25qbTVSU2RXcUN3Q0hYZUtCVE1WT0EyNHA5NG5RcTZrdHlidk9nNmp0Y0NrZ1JCT21CVVJLazVLcnlZWmo4dTVwMnpITFhIZUZ6QmdaMDdDT1NvaWNoNmVlUENvQ3FsRzB2N1R4WDM1RUE?oc=5",
+          "s": "Investing.com",
           "d": "2026-10-21",
           "cues": []
         },
@@ -87,13 +80,20 @@
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "CME Group Q3 2026 Earnings Call Transcript - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY0RVZkhoNHEyZFhibmtTU2dYbXZrY3VRUmN0WXl4c0lvUDJXbUhsbUlKamNRa2ZGNUFNTWRYZzRENlJmbnRISnhvZl8waThaUVBXbEluSVVBSDlrVDN5SDBUY2hSVzZkSDZTaEN3dnV3Q2VTcmd6RTVndkxlNEZJQnQ4TDVkUGFORUtXakMycDY?oc=5",
+          "s": "Benzinga",
+          "d": "2026-10-21",
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-21",
       "reported": {
         "eps": 3.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-21",
+        "fetched": "2026-10-22",
         "eps_est": 2.99,
         "surprise_abs": 0.03,
         "surprise_pct": 1.0
@@ -112,28 +112,45 @@
       },
       "wire": [
         {
-          "t": "CSX earnings up next: Can railroad sustain margin momentum? By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYTRoc1FqZnUzS2F5X18tRjdiYjZMcGV2NGlPa2hlckNpWGtCMjVjVDBLamM2ZlIxdjRjY24tMENVdnJtVHdpdUp3SnIydDZQb1VGclpJMWRHMm9BTk8xVEZNTzhJSTlmcS1lbnpWM2p2Qi1UTW5RLVRXSzBkeVFBRkl6M2Q1TUt5d0pDaUlqYloxZ1RyQ3ppdWlOTDJna3lhZnZMdWt1SVpIQ3dCWWEtdVNCQkZ6NlE3V0E?oc=5",
-          "s": "Investing.com India",
+          "t": "CSX surges on earnings beat, strong margin expansion - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYzA0cEgxdHlOYUl3UGxRMVhjUzJFT1NyVVlGZWYtUWdreWRHWExEMEYxUE0waFo2SVJFdUItRWVMaDBBV1dpNUM1UjU5YWpCWWRGS0ZLb1V1Rmk4WDFpRUdZSW5RcWNFSXVCMUdUbHVMeHVERW56cFZMdmpobWpzeGF1SGdtanlvcHhHa0gzSmU1a0NROVB0Zm1TNUw?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-10-21",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "CSX Corp (NASDAQ:CSX) Q3 2026 Earnings: EPS Upside and Margin Expansion Lift Shares - ChartMill",
+          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVU52MEdCNDd6TmdPVkdsNTNic3NZLXMzYi0zend4MEFXWWdzN01UVktieDhVY1VaUzQtV3VITzFlOW5Ca1dQMUQ2NXpPV055YjNWNUhhQWZHSE1LZmZTcjNPd0t6eWdCRDY1TExYQWsxR0VrNzA4X2x1emI2Nnh0bUFWSFZuVzNzXzdhQVVUUkhUQ1JMNlp3UUk1ZEJDV1ZmSXBfb3VYR1JjQVJwdWZzNS1EcEZyQWNENlh1S19adGpja2ROOUdMTjN3?oc=5",
+          "s": "ChartMill",
           "d": "2026-10-21",
           "cues": []
         },
         {
-          "t": "CSX Q3 2026 earnings expected at $0.53/share wi... - Pluang",
-          "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zMGVDZjB4YWEzeHJyOWs0aTZ5bU05el9pUU5kU2hfUzRONktoX29KMmtiMlQ1Si14dGc5c0w3Y09pX3pPUGZoSTRRR1hiVlpoTUU3TzZ0WEJFTzlwWm01TU9qVnJSVmplbGpJZDVQTUwyMzA?oc=5",
-          "s": "Pluang",
+          "t": "CSX (NASDAQ:CSX) surprises with Q3 2026 sales - StockStory",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc1hUM1RWWXJyTjM1dHZXWmJCUzRhV3lBNzRlOWRTRlVnbzIyZ2Y5ZXJkSjA2SmVuSTU2cXgxSENON05MMEpFVllnQzVqMVNxcTcwOEVDVEVFZldhODdEclJpNTVvUHRsN2oxSi1sdjFSelVPTmtneHhvOVYtYnRhNjZpaXhsdDdpX2RtTlg3V0M2UEE1bkZnVFVaQnR2dUtoLVE?oc=5",
+          "s": "StockStory",
           "d": "2026-10-21",
           "cues": []
         },
         {
-          "t": "CSX Corporation schedules third-quarter results for CSX stock - AD HOC NEWS",
-          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUGMtZE9XOHo2ZjRqY1l0MXREVW5LckctSFdzZHZNY0c3dUoydFBoRnY2bGVQR1VEcXp1VFVaaTRRbTJqRTNVektXRjdycXcxVk56S1IzYTJpcGR2Yl9ET1pzV3NCZDdSRmcyQ3ZvQ2t5eXUwUEI3dEREQ1cwYm9fcjF5RUVlZTFZT0FQM1pVT1hNY2xWUFhBT1lraUg1aGdGUmJ0TkZxWDl0b2kxNS1rbnFPbmNRUWpOYXNaQ2ZvU2JrUQ?oc=5",
-          "s": "AD HOC NEWS",
+          "t": "CSX Posts 30% Adjusted EPS Growth on ‘Record’ 3Q26 Revenue - Railway Age",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONnBmVnJwUndlcXpUT2NpVjNLcXE4ZlZRaURMb2dzV0YwS2RXRlppUkRZbUNraDV4bHFac0pCVHB2R0hTNURaRUZDeXJCbzF0WDRfc0IxVUNuZjhNTnVjZllKZGo0WUtQRVFsWGZ6LXRkVElfR0ZiZEFZQy0tUzN4OW1FMHdzajJCWGVtNUExakRxVmtrTWRmR1NnMUhlazlp?oc=5",
+          "s": "Railway Age",
           "d": "2026-10-21",
           "cues": []
         }
       ],
-      "wire_gate": "2026-10-21"
+      "wire_gate": "2026-10-21",
+      "reported": {
+        "eps": 0.57,
+        "source": "Yahoo Finance",
+        "fetched": "2026-10-22",
+        "eps_est": 0.53,
+        "surprise_abs": 0.04,
+        "surprise_pct": 7.2
+      }
     },
     {
       "type": "earnings",
@@ -148,27 +165,36 @@
       },
       "wire": [
         {
-          "t": "Kinder Morgan Q3 earnings preview: EPS growth of 13.8%, revenue expected to rise 5.7% (KMI:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV2hKZDA1VW1tczJrZWRlMVp0eXo3U0kzQURrTEdvMzNWQ3FCbkI4aTJPY2VZbGJoYmF1VFh1cW9XeXBtY1hGakRyWE5qdE1HNHpuY1pQa2F3NlRmRDI1TUhSaHZpTnAtNC1LVUtNeVNFMkZJRWwyUEVJYWNYdk9uNXNZRE4tZnRCanl0ZFNWeTVtSExyYnMxc3phVjFiLWtyOC14RmhhNi1oc0VvVVE?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-10-21",
-          "cues": []
-        },
-        {
-          "t": "Kinder Morgan set to report earnings amid data center bet - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM1p6eThaanQ0YTdINTVEVFJuV1BfN0V4RkR0cWJkMWdIMEt2dDZEVFNRQ2Npa09QZkJuSG9ZeS1RVWMwSmZnV3RBY0xXQzIzci1jOGZJTEJCNlRRdlJZNmF1MFBNMFJfengwbF9INHFLSHhoU0NROVNSZEJPNnl3UE1XUTAzRng4bm1ZSU5GS3dnV09vNmNFSTk5MGY2WmZxVFlqdHM3TUhXMUdJeVZz?oc=5",
-          "s": "Investing.com",
-          "d": "2026-10-21",
-          "cues": []
-        },
-        {
-          "t": "Kinder Morgan (KMI) Set to Report Q3 Earnings Amid Dividend Sust - GuruFocus",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTWFsZTg0UWhybFNJRTZUMnJoMTR5eTE3NEJjZFQ0bUxZSnp0YjNNX3B0Xy1laXItbTRZSFk1dnNzU215bXNpQzQ0bnctM2cxc0pWekNtT0lMTzNwWHloT0NhR21uRWM0ZEFFV2x0YVJKcmYxTDlhaU1iMkpkTmh4ZldFdkNmcmdxbUo3QVdGREl6VTJJdGMtVkkycmlxc2NYYVNQRnc1c0xrQUE3Sl9tMGUxSk81alln?oc=5",
-          "s": "GuruFocus",
+          "t": "Kinder Morgan (KMI) Tops Q3 Earnings and Revenue Estimates - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaWxTVFFBZFo0bkx0WjlfUEtaRjFnQ0RCM3lUUU1RbElQNGpzOW5GNmEzZ0YyeTA3YXE3SFVuaDJ3bUpKMVVILWRvY1lZSlhNNUNVVjlFQndpcTNILXVldC1ZWnNVOHl0MDc0V3A2Ri1ybUptNFVsNks5ZW9qaGRTLTlUTWlYb3Atd0ZvdHg2VVZyQ3lF?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-10-21",
           "cues": [
-            "dividend/buyback"
+            "beat"
           ]
+        },
+        {
+          "t": "Kinder Morgan Q3 2026 Earnings Call Transcript - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNb3ROUmVId3ZWamc5dFNFMnJsQXZJRkxOM05yZm9CWUplZkNJcHFLVm5URkI0UnltTUdwSVRqbGdhT3ItMlpSajFveGFDMDJ0TDFFYWdpTGwxa2JQVWR6d1dTRXNITy1FbGFiODRLUDZXU2VwR2dFNXRzR1dpb0VPQXZXc3ExUzdlOHlpOV9FaERmaHNSdHc?oc=5",
+          "s": "Benzinga",
+          "d": "2026-10-21",
+          "cues": []
+        },
+        {
+          "t": "Kinder Morgan earnings beat by $0.03, revenue topped estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdGhaRnJHQURsQy05aG1EQWJhZkRiM0FJeEU0Y1JOVzEtQkd4a2F3WGstNmt4VEgwNGVxYXgyN3c3MEFsaFZWT3FmXzlIVDNLLXFfOGhPTTAzT1BfRE5hcXBuNjFKaWZVQWxrTTFzbkZKMDZIbzlIdG5zS3h4QUtOck1TNHY2VExLYWJ1NTBhd1hVeDYyY0JEakF2RFZmWEVXS08xYmdJcHVVeTA?oc=5",
+          "s": "Investing.com",
+          "d": "2026-10-21",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Kinder Morgan Q3 2026 Earnings Call Is Live - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3UzTTBwalV4MkhKYWZOSWRnSWdUcnVZTS15SXFLNmpQbnJFTm9nY1lNSXFQcUFqUXJZa0ZwdURsMEh4dHRvUkZ4RjlzQkFncGEwQkM4MlFGMWRqVHZmSnFySUtyYlFiZ01nR2FEOVBrR1Y2RWpSMXM3SkxPYnBEMU5LblZISVA3Zm1jeVJEWUtzTEtOcy1VWDFndGNfLVJzMl9LNmd0VWZzRTloNFRiY0ZB?oc=5",
+          "s": "TradingView",
+          "d": "2026-10-21",
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-21"
@@ -186,20 +212,34 @@
       },
       "wire": [
         {
-          "t": "United Rentals faces earnings test amid mega project boom - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOXzQyZ0MxbUpVZ0djN1UyR1FEYk1NdWR6Sy1QbVpMRk5WU0RLRVEwc3VuVTQxd21YZkhzVVZNRHZYSE5hUkwwSElvaVc5RkQ0YW02RXZySnNlVG5kX0NYWGhUdXY3c3U4U3QtbzVqU3pVOEVtTXRHYU10RjFybmF3V2tvNTVERS1MdEJlQjN4Q3hBSGpqQldPMkt3T1NZVTNFalZtMkxEanBHS2ZEbUxZ?oc=5",
-          "s": "Investing.com",
+          "t": "United Rentals: Q3 Earnings Snapshot - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT0puRlo4WGZqX0JLM1BuSFBtRTZ5VjRUZzIwcUNaaE5QZHB0YWtJeVVob1E5a29UM0N2UkI3Z3VuLW1ydjlLQkxEeTVHb2lWUTJPalhlUmlzVFJSSDBMQmFrN3hBU0N0NHFJNmk0eTVkTThNc0draW41T1dSaFhta3ZqWHBOMTh5ZHg1Z1RlYjhSMzBuZEh3UEVXQTc1MVRLV1E?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-10-21",
           "cues": []
         },
         {
-          "t": "United Rentals Q3 2026 Earnings Date and Estimates - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZmFhSzBTV2FLYlpqalR0UzJLdVJoWkIwdlU3TTMyX1ZldmhHaHozdV9sQmJvX25ZdzFqNG1pbVVMRUFwQTFhZDlkUnVtekctNjBiX29qNEx4VzFmWFZLOVBXaERybmMwa0hqdkxRUHpPSTRyb21VbEZUMjNtbklXQkdpRUswcFE?oc=5",
-          "s": "MarketBeat",
+          "t": "United Rentals (NYSE:URI) reports bullish Q3 2026, full-year sales guidance is optimistic - StockStory",
+          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUHpybnozZVFRZkFvMDVCUlBMbUUtc19BbGFwVzUwZGo2VmJ5bnQ0ck01VW93cWdBT1VKLXlEc0JsZFR3THVBVHNONHpQVXU0ajVEUzEwZ2dUYkM4SWFGRHhIaWxTc3cyT2ZaTFJVaE5KbGxCRVNtT1EySEM1NDNrX2JPbkZLSUlqQkluZ2gxRGxNNEpwLWptSVlhODlXS0V1cjJkM1ZuZWJmWGFuRFJ0dlNIQ1NDQzZRQm5vaVljYTdIUGVnT2xHbEFzQm9zdW5YUDdETUJfTjI?oc=5",
+          "s": "StockStory",
+          "d": "2026-10-21",
+          "cues": []
+        },
+        {
+          "t": "United Rentals earnings beat by $1.61, revenue topped estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxON3dhb0U4anFEV3B1TUYyUTVtRTBLRlhjd2IyVDhDbzAzNE0yMDB4dWx3MTFWNTNrNlJObHFkUDBWZDdBZ3V1SDhjSzFBYVA2X0dGZU1Vak0wSGNCR0JVV3ladjliTW5CSGVlekZCV3Z1THdyZ1FKSnBGQ2pNRkZCbE9NWVk4OEdVbG5lajBaVzJtZjJGdFhZZ25HQzM3aHRLMDc2UGhWVUNFclF4?oc=5",
+          "s": "Investing.com",
           "d": "2026-10-21",
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "United Rentals rises as earnings surge, outlook raised - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRGpFS1IyOEJBRlJWV09CVF9pd2lzMnFOa0xQLUFsdmxBMFEzb0VBTW10c0tnbktJcXJhbG54YXJQS0hTeUNFZm9tNXktaG5scGRza2NydklBRGdfdGItVDFpQWVueU9EQ2tkajEwU0ZocVdfMmVlclhNMGJDdmt2cF85bHFsRjhSTVR5RS1wWlpOUUU0V21oQks1REV6bFc1NEduS3ZVY19XaXdIX1RjY25qZTZXLTA?oc=5",
+          "s": "TradingView",
+          "d": "2026-10-21",
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-21"
@@ -338,18 +378,6 @@
     },
     {
       "type": "earnings",
-      "tk": "042660.KS",
-      "name": "Hanwha Ocean",
-      "d": "2026-10-26",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 KST",
-        "iso": "2026-10-26T06:00+00:00",
-        "tz": "Asia/Seoul"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "NE",
       "name": "Noble Corp",
       "d": "2026-10-26",
@@ -358,6 +386,18 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-10-26T20:00+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "042660.KS",
+      "name": "Hanwha Ocean",
+      "d": "2026-10-27",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 KST",
+        "iso": "2026-10-27T06:00+00:00",
+        "tz": "Asia/Seoul"
       }
     },
     {
@@ -453,18 +493,6 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EDT",
         "iso": "2026-10-27T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "MOD",
-      "name": "Modine Manufacturing",
-      "d": "2026-10-27",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-27T20:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -592,18 +620,6 @@
       "type": "earnings",
       "tk": "GNRC",
       "name": "Generac Holdings",
-      "d": "2026-10-28",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EDT",
-        "iso": "2026-10-28T12:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "MTRN",
-      "name": "Materion",
       "d": "2026-10-28",
       "release": {
         "when": "pre",
@@ -1200,6 +1216,18 @@
     },
     {
       "type": "earnings",
+      "tk": "MOD",
+      "name": "Modine Manufacturing",
+      "d": "2026-11-03",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 EST",
+        "iso": "2026-11-03T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "MOS",
       "name": "Mosaic",
       "d": "2026-11-03",
@@ -1483,6 +1511,18 @@
         "when": "mid",
         "label": "MID-SESSION · 15:00 EST",
         "iso": "2026-11-04T20:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MTRN",
+      "name": "Materion",
+      "d": "2026-11-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 07:30 EST",
+        "iso": "2026-11-04T12:30+00:00",
         "tz": "America/New_York"
       }
     },
