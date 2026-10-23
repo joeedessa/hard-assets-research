@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-22T19:44:48+00:00",
-    "mode": "light",
-    "coverage": "16/16 scanned this pass",
+    "as_of": "2026-10-23T00:04:36+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 1.82,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 1.51,
         "surprise_abs": 0.31,
         "surprise_pct": 20.2
@@ -40,7 +40,7 @@
       "reported": {
         "eps": 0.75,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 0.83,
         "surprise_abs": -0.08,
         "surprise_pct": -9.8
@@ -91,7 +91,7 @@
       "reported": {
         "eps": 3.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 2.99,
         "surprise_abs": 0.03,
         "surprise_pct": 1.0
@@ -110,8 +110,8 @@
       },
       "wire": [
         {
-          "t": "Rail News - CSX posts 'strong' earnings, expanded operating margin. For Railroad Career Professionals - Progressive Railroading",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNkktQV9SUUYySUd0OU5RZ3EwTFJqU1V2UTNCdE1GSGVCY0plWHh6Q0I4cW9jcUduRmNqSGFQSUMzNVJCZ05jU0wwaWlHLW0zR0ZqN3F1dW84b2dsQS11ckVNZ3RtUm1sLXV6d05kbjN1Vl91blROeWg1NTlWeXhqM0R3ZUtneUhBOTNyUGJzbEQ2bG1WMzFiNlVqLU9rU2stRlZDeEtGX0hhYm5MUFRISmJxTVowV1NPelNKYzNR?oc=5",
+          "t": "Rail News - CSX reports 'strong' Q3 earnings, expanded operating margin. For Railroad Career Professionals - Progressive Railroading",
+          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOFFxZGV3UEtfYW5HYThoMnZsaER3YnJDMTg2WmY3QW9RRVQyeWhnZWlwSkZZc0NGbF9DQWpNcmlVNlF5ZHhvX2k2SFZ2M0VjSEdFUVNkSEJLOW4wNl9wOVl6WGdTLVJlRDU1ck5vTm4wanNCWXVpcl84ZnJIaXphRFJRbTFnb3lwZzNYU2NHMDJEdzNVa2UyM3Q3MVJxM0xFNmNDcUtzanQ3ODZxajJnLThfd29sbThtZUhUUnF4TnVJc1A4?oc=5",
           "s": "Progressive Railroading",
           "d": "2026-10-22",
           "cues": []
@@ -133,9 +133,9 @@
           ]
         },
         {
-          "t": "CSX Corporation: The 6% Rally Is Deserved (Earnings Review) (NASDAQ:CSX) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQU1pHRi0wWGdyVHA2eEx0aEQwRGhqUVQ2eHI3dG1NbnNEWVdRX0tPb1pRTkRGRmpESlc4cjlkNmJKUk9xRzF1UmVKd2c2RWxNYjFzZDBFSi0xY0ZjWGxIWHl0MTg0RURzX0tXM0l1QW9BTmZpc0txQVdOWlBQS0RqU2hXZDRuX2tGTHVkOVFOSmNkQQ?oc=5",
-          "s": "Seeking Alpha",
+          "t": "CSX profit jumps on volume and revenue growth - FreightWaves",
+          "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVEgyWUdGdkdVaTQtT1dYdkFGaEpNSU9LRnNfbloyVGx1Y2VzZ1QzbmZwUFJ2OGh1c3IzS1F4TG9xREhJQUVPYTJSZUtBdTdwYXBWb1h4RFVPTUFoWG9QUk94dHFwaUhMX1BLTmk0Q2VLTkNqd0s1blVSRGhwbTNIVVptN0wxUQ?oc=5",
+          "s": "FreightWaves",
           "d": "2026-10-22",
           "cues": []
         }
@@ -144,7 +144,7 @@
       "reported": {
         "eps": 0.57,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 0.53,
         "surprise_abs": 0.04,
         "surprise_pct": 7.2
@@ -163,17 +163,10 @@
       },
       "wire": [
         {
-          "t": "Kinder Morgan Inc (KMI) (Q3 2026) Earnings Call Highlights: Record $14. ... - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNM3FiWldQYTJqR2s4ajZ4MnZZQ1AzeWtzbXdKT1lsVHJDdm9KMzY4WXQydndVY08tVmdlWHpxQnhDUmp3Tm1HOTI0dW5rMFNNQ09ReUptQ2tkbVd6anBhd1h5SGxueGJSQkxHWlozM29nekRZVE05LS1OZC1wWGhVU2ZYcmVqZjRoZ05uTEM1d2p6Z2s?oc=5",
+          "t": "Kinder Morgan Reports Record Third Quarter 2026 Financial Results - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLXdua3puSWprbFpMclQ1Y2F6TFhsaTExSVNXc3R1YnBqS2xVa0czLWNSbFJXOUh2cHYyMzczazVBZ3RCWUhzUUNNSGpaWnJKNXVsbW5OZURCXzI4Yl80NTJCbUVUSFVSSTd5UTNJR1JxQm9Jazc4SWVqbHI1RXdoZXNkU0JBMmp0cE9vQ3NWYUEteGs1X1E?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-10-22",
-          "cues": []
-        },
-        {
-          "t": "Freedom Broker upgrades Kinder Morgan stock rating on strong Q3 results - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWVlTRUU1emJkQUphRXpCbnJwd09DZjlCSWRNUjhlOVl3OS1yVW1KWkVrT20xYWU5QkdxbmZ1MHRDSlMwd293MGZucHphNXBOM2FlVDhQd0ZaUFlLdXl4cGRSX3VRUDNUUnVOMWd5ZnhNdmRuRGNBY01WbjZheWVyb0hZZlplNnR3bGI5djl4SmRPNDhLd29IQjY4Tms4VzhZcmVQVVJDOERxMm85U2JGR2pRSHVKQjJWTGlycE9nQXJnVDBna3I0cjdLOA?oc=5",
-          "s": "Investing.com",
-          "d": "2026-10-22",
+          "d": "2026-10-21",
           "cues": []
         },
         {
@@ -186,20 +179,25 @@
           ]
         },
         {
-          "t": "Kinder Morgan (KMI) Tops Q3 Earnings and Revenue Estimates - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaWxTVFFBZFo0bkx0WjlfUEtaRjFnQ0RCM3lUUU1RbElQNGpzOW5GNmEzZ0YyeTA3YXE3SFVuaDJ3bUpKMVVILWRvY1lZSlhNNUNVVjlFQndpcTNILXVldC1ZWnNVOHl0MDc0V3A2Ri1ybUptNFVsNks5ZW9qaGRTLTlUTWlYb3Atd0ZvdHg2VVZyQ3lF?oc=5",
-          "s": "Yahoo Finance",
+          "t": "Freedom Broker upgrades Kinder Morgan stock rating on strong Q3 results - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWVlTRUU1emJkQUphRXpCbnJwd09DZjlCSWRNUjhlOVl3OS1yVW1KWkVrT20xYWU5QkdxbmZ1MHRDSlMwd293MGZucHphNXBOM2FlVDhQd0ZaUFlLdXl4cGRSX3VRUDNUUnVOMWd5ZnhNdmRuRGNBY01WbjZheWVyb0hZZlplNnR3bGI5djl4SmRPNDhLd29IQjY4Tms4VzhZcmVQVVJDOERxMm85U2JGR2pRSHVKQjJWTGlycE9nQXJnVDBna3I0cjdLOA?oc=5",
+          "s": "Investing.com",
+          "d": "2026-10-22",
+          "cues": []
+        },
+        {
+          "t": "Kinder Morgan Q3 earnings preview: EPS growth of 13.8%, revenue expected to rise 5.7% (KMI:NYSE) - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV2hKZDA1VW1tczJrZWRlMVp0eXo3U0kzQURrTEdvMzNWQ3FCbkI4aTJPY2VZbGJoYmF1VFh1cW9XeXBtY1hGakRyWE5qdE1HNHpuY1pQa2F3NlRmRDI1TUhSaHZpTnAtNC1LVUtNeVNFMkZJRWwyUEVJYWNYdk9uNXNZRE4tZnRCanl0ZFNWeTVtSExyYnMxc3phVjFiLWtyOC14RmhhNi1oc0VvVVE?oc=5",
+          "s": "Seeking Alpha",
           "d": "2026-10-21",
-          "cues": [
-            "beat"
-          ]
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-21",
       "reported": {
         "eps": 0.35,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 0.33,
         "surprise_abs": 0.02,
         "surprise_pct": 6.2
@@ -227,6 +225,13 @@
           ]
         },
         {
+          "t": "United Rentals specialty segment revenue hits record high in Q3 - Equipment Finance News",
+          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSWw2Vl9kdjBfQXc5RjhPRExMTG5EeERRbGNOa2lBN3pmd1ZPcDRvNlczNkNDYnZlZVZ6NDFwUEl5dlduZFNpbFktX0U0VWhTdEs3d01BMDRQQlNGaUZINWlqZzFhcWNDQlBlTF9qWFhacjRCa3JrNTB1a2JKSW9QTzlTTEwwcTZjVlE1YnJLa3VNZjY3cldZWmlzMzQyODhuZElOYlN2WGVFbEVNSzN3?oc=5",
+          "s": "Equipment Finance News",
+          "d": "2026-10-22",
+          "cues": []
+        },
+        {
           "t": "United Rentals Releases Q3 2026 Financial Results - AlphaStreet",
           "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcHFmVlJVYlFZX2lLSXJXOFNpMmJMbHg1SEotTnVqV2xDSzl2Z0Y1ODNuTnhlLWdqWnNYOWZhY09GNUdoX3ZvbzdUUmFCbHFMS1dod0VqTDFWTm1QY0xBRVVyZlJkVjJKSnhHUWpJUlNMM0p3Q1pLd2o3MzVhOWpDVXo2cW5EUdIBhgFBVV95cUxNcHFmVlJVYlFZX2lLSXJXOFNpMmJMbHg1SEotTnVqV2xDSzl2Z0Y1ODNuTnhlLWdqWnNYOWZhY09GNUdoX3ZvbzdUUmFCbHFMS1dod0VqTDFWTm1QY0xBRVVyZlJkVjJKSnhHUWpJUlNMM0p3Q1pLd2o3MzVhOWpDVXo2cW5EUQ?oc=5",
           "s": "AlphaStreet",
@@ -241,20 +246,13 @@
           "cues": [
             "beat"
           ]
-        },
-        {
-          "t": "United Rentals Q3 2026 Earnings Call Transcript - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMHcxbGpXdkpWaElDb1UyMTlKM1hPeTZQWDc0MGpUeVdrU3pKUmdjdXJ0VllHVERIVVQyRmlGSXlWZHpTRHQ0VFFBelAwdzhpOFdaLVI4OFpINWdjZ1M2MHJKLTVwbUM2VjJINXJPUlJsUFVNN3NocFR1eHRFQTJBTkZvazRIam8yV2c1cXVJSWN6SUw1dDE4?oc=5",
-          "s": "Benzinga",
-          "d": "2026-10-22",
-          "cues": []
         }
       ],
       "wire_gate": "2026-10-21",
       "reported": {
         "eps": 15.55,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 14.03,
         "surprise_abs": 1.52,
         "surprise_pct": 10.8
@@ -273,32 +271,34 @@
       },
       "wire": [
         {
-          "t": "Bloom Energy Sinks 9% as Pre-Earnings Rally Reverses; FuelCell Drops 6%, Plug Power Falls 3% - 24/7 Wall St.",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcHQ2WEdlQlpIZ1VtRWR1UTJ5S3dqN1NVMTJHYnlyeGdpODJxeERYbl9oQVpJcG93NGpDaTZrYjI5cTBwU2JlaFhzTldodWF3SDd4STdYVnYwZW1SZGtxNHcweXJsX2hxRGN3a3ZIalJyY2lFaGZERHhSUDJNNkFaLVZ4LU1HMmRmenFhYjl5N2x4UU1yTTA4VHd2SjEwaU1kQmFzVGRLOHRTZzlVejZmYVJBYXJnSWp6LXh4eUVjYXRFSGpQcDFmbWtUVQ?oc=5",
-          "s": "24/7 Wall St.",
+          "t": "1 Thing in Bloom Energy’s Strong Earnings That May Be Dragging the Stock Down - Barron's",
+          "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTzdWdkU2NHRQTlJJYjNmcXNLLW1tblU5MGNjTmNHcExlM043OXF2azFWVG1BajRTV2gxY0htLU5YbGpnak9JZG1EQVluRXhzX3dlZ1hNQXRlY3hyMlRXV3hVUVBUaDF1YXZrYlQ1clZ2aGwtRFJXbDZJREQ1VG5feQ?oc=5",
+          "s": "Barron's",
           "d": "2026-10-22",
           "cues": []
         },
         {
-          "t": "Bloom Energy earnings up next as data center demand surges - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZC1GZURjT0VGMGdaNEpLLUZTbDdaZ01CWDBjSDk1RmQwOWZWUHNaX3dXR2hVaE9TWi0tV1RkTzMzRWd5MWxjcndidW1ucHl5dTllVGJxQ2VhUVRGeWZXSm5Ya1c4Xy1mWWdTRDJmN3U2WGt1Um43Yk1DcDh4QVA1dTNlMmVpOVB2UEt1dWxZTVdZazJHNGhGTG5iZzg1aC1KR29pZDluS1h6ZGpmd09keQ?oc=5",
+          "t": "Bloom Energy: Q3 Earnings Snapshot - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPczNNdHB1UFBib2pWbVNRdFdhdjU1S29GSzNranE5R3RHOXE2TlJWZVdLNzdvUngyQWpMczJGb2J1YUpXYllFVEF2OGZlMkNFWk9mU2tqbmhENEc3cEkwdUlTTVRFa0FnVnJnWGNzVE03QlRWeTdNaFFZb01vckJlZEZaRk13d2Q5WkQyWGpDdlV1Vlo2UXlKR1NRUXQxOWs?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-10-22",
+          "cues": []
+        },
+        {
+          "t": "Bloom Energy Lifts Outlook, Logs Higher Profit - WSJ",
+          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVTJ3U1l3LXBKdDR5Ui1XSkl2NkRFS2ducjhSamhRQWpRYnV2V0ZnM3o5a2kyWVo3U3FOU0stS1ZITWpRN19BQ3U5LW1ldlFKb3JsRXdvalBHbXZCT185VGtvVGRhejBZaVB1ekN6enBTRFYyNmwtU096cm1aT05CSXpqeU1GZGQtd3NkRmxYbXNFa1Q0RGVB?oc=5",
+          "s": "WSJ",
+          "d": "2026-10-22",
+          "cues": []
+        },
+        {
+          "t": "Bloom Energy shares fall despite beating Q3 estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNR2FGbkhraXdLT0cySFp3bXR1U3JJSV93cG13QXMxZWFwQXF3YXBUQlloYnZhRGdockNNZmdPNGxod1F5M3Bwa2ttMjVXZ1VJMlhxV3REanI4dUFjV0YtQXVrU1BkekdtaEVrVF9uZHZXWDhhU3VxbkNQMjU3STZ2RFpoWF9sR2gyaFdNMDE2ZFJnYlFoSnJXX1lxY1pMNi1tZ3hZ?oc=5",
           "s": "Investing.com",
           "d": "2026-10-22",
-          "cues": []
-        },
-        {
-          "t": "Bloom Energy (NYSE:BE) Shows High Growth With Expanding Margins and Strong Earnings Momentum - ChartMill",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQejM5YV9wTXJDbzUwd3Z5MXEzY21oRkR5VmhnWXd1NV9DOHlnSEhzdVJpRU01dmVEaXR5OUdSVUlmWGVnZDRIeGJaMGVac3RVSXJld3NQUWhpRk45b2ZSdTZkZjNBY1BsaXp3V0pMYkE0c0c0OTNCY3ZxTGtsT1dhay1XSklZR0N5TEpzTzQ5TjdVUlNCaEFpQUxxdkM3cHVpdzdPNmRLNHRwYUlRSTZxR1RvR3BiMzU1UnRhZDZIWVhiTGtjeHhXbUc3ZEpkM0RJUnRZaElR?oc=5",
-          "s": "ChartMill",
-          "d": "2026-10-22",
-          "cues": []
-        },
-        {
-          "t": "Bloom Energy Sinks 9% as Pre-Earnings Rally Reverses; FuelCell Drops 6%, Plug Power Falls 3% - AOL.com",
-          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1tem1zRDYtVUUyZ08wbU1hVzVDckFSeXFhUjlaQ2ZQX0ZueDhVNDdSSjdxS2xKV1dnOG5wXzJDU3FRTGRUTi1lSnc2MzluY3RVS1NGaDZvanR3U18wZmRsYnlUOHBPZGExbHBuZ2ZYallPSDV1YmFn?oc=5",
-          "s": "AOL.com",
-          "d": "2026-10-22",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
       "wire_gate": "2026-10-22"
@@ -316,16 +316,16 @@
       },
       "wire": [
         {
-          "t": "What Honeywell International (HON) Said on Its Q3 Earnings Call - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU0NMS0pxMnAxN1BZV1hlOHJRVGJYTW9oODhoWUpTZm1VTHBnZTRrektWVEdjOXF3N0RQSmo3bGRtMzNzZXlrVWVVVG51RlBVa2N0S2NUVTJIb1lpYjhGeFhReTBtVlVMc3lqSF9uSTM2UUNaNC1hcmN0RjBUU2hwZVhpMkVSejhpRXd2S1ZvQUlScWtCUFJYRGlvYUh1Sk5SRHc?oc=5",
-          "s": "Yahoo Finance",
+          "t": "Honeywell Technologies Raises Outlook as Sales Climb - WSJ",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQX1ZKTWJiMWxFSFlwdEN6bkg4VWFuYkdWVkxXZzdlV3k1R2ZRcWp4bzZGOXlDX2ktTnpyQ250TjNTdmVRcEUtZlA3VEZFY2UtSFlqbFRKX2VwN0s1VVk3aGpTUk9wN2VTMUZYNE10Wk1pbVVsdmRaRThPamlWeHR2Mk14ZmktdTVPSWUtSFA4cGlxZTNtMEc2NC1ZU2p2STFl?oc=5",
+          "s": "WSJ",
           "d": "2026-10-22",
           "cues": []
         },
         {
-          "t": "Honeywell Technologies Raises Outlook as Sales Climb - WSJ",
-          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQX1ZKTWJiMWxFSFlwdEN6bkg4VWFuYkdWVkxXZzdlV3k1R2ZRcWp4bzZGOXlDX2ktTnpyQ250TjNTdmVRcEUtZlA3VEZFY2UtSFlqbFRKX2VwN0s1VVk3aGpTUk9wN2VTMUZYNE10Wk1pbVVsdmRaRThPamlWeHR2Mk14ZmktdTVPSWUtSFA4cGlxZTNtMEc2NC1ZU2p2STFl?oc=5",
-          "s": "WSJ",
+          "t": "What Honeywell International (HON) Said on Its Q3 Earnings Call - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU0NMS0pxMnAxN1BZV1hlOHJRVGJYTW9oODhoWUpTZm1VTHBnZTRrektWVEdjOXF3N0RQSmo3bGRtMzNzZXlrVWVVVG51RlBVa2N0S2NUVTJIb1lpYjhGeFhReTBtVlVMc3lqSF9uSTM2UUNaNC1hcmN0RjBUU2hwZVhpMkVSejhpRXd2S1ZvQUlScWtCUFJYRGlvYUh1Sk5SRHc?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-10-22",
           "cues": []
         },
@@ -348,7 +348,7 @@
       "reported": {
         "eps": 2.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 2.16,
         "surprise_abs": 0.11,
         "surprise_pct": 4.9
@@ -388,9 +388,9 @@
           "cues": []
         },
         {
-          "t": "Earnings call transcript: Metso posts strong q3 2026 orders, stock slips - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMEU2bHN1U1AxMzhFLWlBMlQ4aG92WGVoblVuM2xpem9IblNJS3VrNGtlT25xVEpJOVFBQjd4ZHJxRUhIdHRfYnNmQjI4Q0NKQTc4aEc2XzhRbm1BQzlFTmcxQVVjTmg5Njltcm5hRkNLc1diUjBMTU5OeGppbFBsLURGcGRtb3NuQjhkMWdmY1JSWndEQTVfU2MyYlE2cExuYW14RVFJdjZFdnAtMWZieDFHTldzN1M5WndZdmtBVmhKWDYwTUN4TVRFcw?oc=5",
-          "s": "Investing.com India",
+          "t": "Metso Oyj (METSO.HE) Q3 FY2026 earnings call transcript - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWduRnlPZkVzSTJ1a2t2VmVwbGFnYlJKRnJxVDA1dDdJMjFuWGJ5dDRidFRxUHNqOXRKcWMteVptZHVxai1UMmlGcVowU21EWTJYNl81V3lWUVFfeGRfRnUyTHlNT3d4UHNqR0kxT0F3cURLOUZKWnpfaVJfR0hlTkR3NkhWbjh5cndhb3JBTFJRMS1rWDhJ?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-10-22",
           "cues": []
         }
@@ -429,16 +429,9 @@
           "cues": []
         },
         {
-          "t": "Norfolk Southern: Q3 Earnings Snapshot - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNHBGZWN2YUtXYTJHQkRjT2tCYjc4b3gtcjJaUjBST0x4RjNfcV9KWmJYQnNPd3NsNWZjemZnS1Z6Z2dMb19YdkJtOExhS1FwYkItSGVSejRINlZTa3JRS3lfSGdZYUc1N2xhTy02aUl1TXlLVUo2ZkI5M1RrVm01ZndQMWkwbkduSkc1ekE0ZW9wNmNJbmxsQmt4NENvTEJialNEcg?oc=5",
+          "t": "What Norfolk Southern (NSC) Said on Its Q3 Earnings Call - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeEx2SHZhanRMdmM4R01oUFdrS1d4cFpNS1NjMUZPTHh0aDlTNEJTOUJPRklkNk9XU0UzZWVXejlXbVB4Y1F6b0drZWg4aUwwX1lXTUxFT0hqMDVneGg4YlJHaGZBUkJmYmdaQ0hjU2xVOVNYUGNfZElFWGt1U0F2aFQzR3NWdW5kcWRVZDZIdERxWEx2WHA0dw?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-10-22",
-          "cues": []
-        },
-        {
-          "t": "Norfolk Southern reports third quarter 2026 results - PR Newswire",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZGQwNG9hS0UzcVg2amdSbDJBMjFJSlExRUFzUG13Yno4MTQ4TmpSLUd1cGRvdW91UjRROWIxam84VTh1MXV4MEZXWll6SEJqRlM4cTNBRno0TkFNUlhsdHUteERMX3dyX2FoS3ZORU9ENjNWMnUyNHZqYkU3eHRMWi1sVzBENTJVSElQb0phMl9QeExTczc1SFRScFZkZGZyZFluUGtubGNnVFE?oc=5",
-          "s": "PR Newswire",
           "d": "2026-10-22",
           "cues": []
         },
@@ -450,13 +443,20 @@
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "Norfolk Southern reports third quarter 2026 results - PR Newswire",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZGQwNG9hS0UzcVg2amdSbDJBMjFJSlExRUFzUG13Yno4MTQ4TmpSLUd1cGRvdW91UjRROWIxam84VTh1MXV4MEZXWll6SEJqRlM4cTNBRno0TkFNUlhsdHUteERMX3dyX2FoS3ZORU9ENjNWMnUyNHZqYkU3eHRMWi1sVzBENTJVSElQb0phMl9QeExTczc1SFRScFZkZGZyZFluUGtubGNnVFE?oc=5",
+          "s": "PR Newswire",
+          "d": "2026-10-22",
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-22",
       "reported": {
         "eps": 3.62,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 3.47,
         "surprise_abs": 0.15,
         "surprise_pct": 4.3
@@ -507,7 +507,7 @@
       "reported": {
         "eps": 4.64,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 4.76,
         "surprise_abs": -0.12,
         "surprise_pct": -2.4
@@ -590,18 +590,20 @@
           "cues": []
         },
         {
-          "t": "Rail News - Union Pacific posts higher income, revenue and volume in Q3. For Railroad Career Professionals - Progressive Railroading",
-          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQzNqaUpIck9nUmhUaGd2bTZIM0hRQ3FUOFctTFVHU0M3X2FRQldLU3R0R3lfOTQxNWRIZjQ2Z19pc3JRRDlyYzZ1dmtKTUFIWVZfY1NDZGhpem1aLW1YQzU0dXNwdEY2eDZQeWFDRjZ2bFBuSEUwUTdLaXNSUk1YZ3RodG1FQ3ZEME5nLS1YcmhGUE5NUnNMUnpqQUc4MGFzRV9qRTJERnBOZmk3OHEtUUZ2NkZLeEo4MGFXNTdMLUY?oc=5",
-          "s": "Progressive Railroading",
+          "t": "Union Pacific earnings beat by $0.06, revenue topped estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS1ROT3BjbkduaGI2NUNINTZvU2pWN0gzcHRHaDlKSUN0c28xWWhhVE9yZENiTll2VFZfdFU5UFU1YkJwMUlLR2tYUjFfbmxpdHFCSEFyeHViTWY2clltQkg2YjNUTUFNcVZuRGFZUTk2NVoxVFFfa1FxbFBlWWYxT3JIOEhCaXFwX0o5SzAzdjFGYWNYQjg5MklnTTdVanBsaGYxYlpxVU5fTHc?oc=5",
+          "s": "Investing.com",
           "d": "2026-10-22",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
       "wire_gate": "2026-10-22",
       "reported": {
         "eps": 3.53,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 3.48,
         "surprise_abs": 0.05,
         "surprise_pct": 1.6
@@ -629,23 +631,25 @@
           ]
         },
         {
-          "t": "Valero Energy: Q3 Earnings Snapshot - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSndUSjB6UWIyRk9VNzJsOXJpMDNfNjVEd01xNUxSdGhxVzZqWjRzNktEcHViWXVEOGhQRWZmcFlDMkxsOFhmR012MFBLZXdXNUd6eGk4M2UtNk5YelltanZTYWoyaEZKbzNTT0pDcDQyeE96U094Y250WmVIMkVKVFhlc3JnckdWbFlHcVFJR3BrNy1pLTVMblJzdTRYOV9O?oc=5",
+          "t": "Valero Energy Corporation Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbER0dm8zSXNiOGV2Tl9QZVB1MEVoQmtQV215T0VIa2VrNU1mMjUwLUhfc1JraXF1cTl2di1nRTZ4bllwQTVZcEhNM2hEd0lrY2JxTmpUeGZDX3dDUDJIX093YTdDSnhjMUVtSnpjMHdmWm9YdE5PaERQbWVSaFVqa01pYm5GMVpiMXBqeUhzSlRJMV9s?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-10-22",
           "cues": []
         },
         {
-          "t": "Valero Energy presents its results for the third quarter of 2026 - Inspenet",
-          "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xMmpZaXVNNHJnZTJvaTVoOEVFa21DbnNIb0FrVjlOUHowMzc2U0dwRG5UX3lScHdkczBBUldJZ1R1eEI3cXBJRTdqNVJ2VFRiVzJONlJqNkpvUUFLelc3OU5WUGRUNGRNcWZ4ZklUVQ?oc=5",
-          "s": "Inspenet",
+          "t": "Valero Energy earnings beat by $3.00, revenue topped estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWWZfNU9lZjZRTGs3RnA1RFZDc19ibXFfNTZ2aURSMk5adlgwMi00TzJ4eFRQZjBaNTY2Z0VqMUltTUxMdUhvWEt1VUs4d1Q1X2FGdlNGTlVMQjJRV19taEtab3V2ZDNrWi1CRTRROFNZVEdUVWxsV1JrS0FacDdqdVBJS19oMXRSeWNVQTNSdWxTd2VKME1EeWIyUTRncW15bHFfV3JZU2dSQVE?oc=5",
+          "s": "Investing.com",
           "d": "2026-10-22",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         },
         {
-          "t": "Valero Energy Q3 Earnings Top Estimates on Refining Strength - Zacks Investment Research",
-          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMEpQOHNxaEtrbGVycXYyRzNwaTM1RGhJVXgwaVVSYkllazJYclV2V21JRnBEVl9YR2s0ejg2QUtYRjhseVE2TkZ2eVFPS3lkX2lleXpQbXZrcHpUVVBXMlFBSG9Obk5ja1RMV3U0UVkzVGtkMHQyc19QcW5JbmhVNDlleWoyQXFtTDEyeTF3Q2F3dmRHVkVidEtGeUtrLXBrM3Jz?oc=5",
-          "s": "Zacks Investment Research",
+          "t": "Valero Energy: Q3 Earnings Snapshot - Barchart.com",
+          "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOenV2SW5GVlJCY2lPSTdWakpFRDlmcTl6cFRGVFlYN2wyLXVvdUtOZVFmaEZ4OTRENnpscng3MTRPRTVONmpBUzFNZ1VTZngyblk0YVktdTUzd3J6RHR0UnZpR25UdGpUbVpSbVNoalozNVBDSVkyUjJQUHJGLXVIWV96RU4?oc=5",
+          "s": "Barchart.com",
           "d": "2026-10-22",
           "cues": []
         }
@@ -654,7 +658,7 @@
       "reported": {
         "eps": 23.9,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-22",
+        "fetched": "2026-10-23",
         "eps_est": 21.23,
         "surprise_abs": 2.67,
         "surprise_pct": 12.6
