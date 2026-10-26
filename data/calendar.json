@@ -1,31 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-10-23T23:57:17+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-10-26T13:36:51+00:00",
+    "mode": "light",
+    "coverage": "13/13 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "AA",
-      "name": "Alcoa",
-      "d": "2026-10-15",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EDT",
-        "iso": "2026-10-15T20:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 1.82,
-        "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
-        "eps_est": 1.51,
-        "surprise_abs": 0.31,
-        "surprise_pct": 20.2
-      }
-    },
     {
       "type": "earnings",
       "tk": "ABBN.SW",
@@ -40,7 +20,7 @@
       "reported": {
         "eps": 0.75,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 0.83,
         "surprise_abs": -0.08,
         "surprise_pct": -9.2
@@ -93,7 +73,7 @@
       "reported": {
         "eps": 3.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 2.99,
         "surprise_abs": 0.03,
         "surprise_pct": 1.0
@@ -146,7 +126,7 @@
       "reported": {
         "eps": 0.57,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 0.53,
         "surprise_abs": 0.04,
         "surprise_pct": 7.2
@@ -197,7 +177,7 @@
       "reported": {
         "eps": 0.35,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 0.33,
         "surprise_abs": 0.02,
         "surprise_pct": 6.2
@@ -248,7 +228,7 @@
       "reported": {
         "eps": 15.55,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 14.03,
         "surprise_abs": 1.52,
         "surprise_pct": 10.8
@@ -301,7 +281,7 @@
       "reported": {
         "eps": 0.94,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 0.68,
         "surprise_abs": 0.26,
         "surprise_pct": 39.1
@@ -352,7 +332,7 @@
       "reported": {
         "eps": 2.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 2.16,
         "surprise_abs": 0.11,
         "surprise_pct": 4.9
@@ -460,7 +440,7 @@
       "reported": {
         "eps": 3.62,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 3.47,
         "surprise_abs": 0.15,
         "surprise_pct": 4.3
@@ -511,7 +491,7 @@
       "reported": {
         "eps": 4.64,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 4.76,
         "surprise_abs": -0.12,
         "surprise_pct": -2.4
@@ -607,7 +587,7 @@
       "reported": {
         "eps": 3.53,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 3.48,
         "surprise_abs": 0.05,
         "surprise_pct": 1.6
@@ -664,7 +644,7 @@
       "reported": {
         "eps": 23.9,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 21.23,
         "surprise_abs": 2.67,
         "surprise_pct": 12.6
@@ -683,10 +663,24 @@
       },
       "wire": [
         {
+          "t": "Fanuc rebounds as full-year earnings forecast is raised, easing concerns over component procurement issues - Moomoo",
+          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZzN1YjQtdnhhdjNmaUk0WjNFRUtMZG0yOTNibDY5MU1aM1ZuY1ZDZEZTNXFTS2tCNWNoVlhSZm9SU0tWZUx3Y2g1czRheTNaTEpHd3hhcUFra0JGZ3VueTV2Q2hsbmNmRVAyNW9RMzBqd0wzVlBIY2xub2RUVnNGeGRmNkxrWEw5MHlDdlBMWTVsWUdhcng5SFRhNjdqWWdjTmhwZ0ZnMjAzdw?oc=5",
+          "s": "Moomoo",
+          "d": "2026-10-26",
+          "cues": []
+        },
+        {
           "t": "Fanuc Corporation Provides Consolidated Earnings Guidance for the Full Year Ending March 31, 2027 - marketscreener.com",
           "u": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQa292bk94aVNfbTEyaG5GNC1XcHBIQ2V1amliMGlVcHY5MUdYcmRZSkt4U0NueDhIc0FpX2xmc2lRMldTQXRZSnVxcXBuUlJ6QlE3cWpreWVkdmV5YXVoUU9Bakg4U25VdEw4Z0ZmVEgwZGdxYjUzVC1KV3NrZVc1WjFYcFZhN3NSUmlPX3N4bHlxVE1hdDFjSTkyM0RvQ1dZTkZuLWJCdzBYQVYxZlBLUjZQWWpxanltZXd4YU80YU1PV3g3bEV0dmwzSG9kSWVaalRiUzZxWGEwODdBZjA4eVluZw?oc=5",
           "s": "marketscreener.com",
           "d": "2026-10-23",
+          "cues": []
+        },
+        {
+          "t": "Fanuc (TSE:6954) Q2 Earnings Showcase Margin Strength Despite Cash Flow Questions - Yahoo Finance Singapore",
+          "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMFliajZuNG1JTEtiaGlxRU91OGkwc0hZUWJVOGRKMTlqSnQtY0F5a1JjYW1nLThiQ3VwaFQ0YU53NlZKckN1RW44RnJUVVkyRTF4V0hUX0psVFI0OVlYVHIyWWVrSTYwUFM5OEhKUkFPaFhrOS13SWdCNHQ1M1lyOA?oc=5",
+          "s": "Yahoo Finance Singapore",
+          "d": "2026-10-24",
           "cues": []
         }
       ],
@@ -694,7 +688,7 @@
       "reported": {
         "eps": 66.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 53.94,
         "surprise_abs": 12.33,
         "surprise_pct": 22.9
@@ -713,10 +707,24 @@
       },
       "wire": [
         {
+          "t": "Saab: What We Think of the Stock After Earnings - Morningstar",
+          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMElEZlNHaGw4T2w4LUNLU1Q1MlhBSHBST0ctakE5dklBUXYtSUQ4UzRlQ1BOdTloVUZDa29sVVROLTZrcEFaQUpCUl80Y0k4S20wWnZ6bGtOWU0ySGZUTzVwa09VT0w1UVVCNGxZbEFrTDBYRVJBa3djc1E2MEZCZE0tcFFYbEQ3Ymhv?oc=5",
+          "s": "Morningstar",
+          "d": "2026-10-26",
+          "cues": []
+        },
+        {
           "t": "Saab Q3 results 2026: Positioned to capture growing demand - Saab",
           "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaGhrUmlZemJsaXgtdzB0TWwzdjgxTWNLenZLM2FPcldDN2ZIWHBKNnVTSGNybnhvWGlvMUI2Qm54MGNTNDF6SkNIb0ExTlR4c3FMTnZHYjBPMS16M0Y0all1UGdDNENHV1F6STFKMlMwSjdubF9SMktmLVNsS1JPLW9xMkhsWk1VMzBNdU9hN0o1S05BTUxLQ2EyRF9kVjN0aGtldzNxRllzdw?oc=5",
           "s": "Saab",
           "d": "2026-10-23",
+          "cues": []
+        },
+        {
+          "t": "Saab (OM:SAAB B) Q3 Results Sharpen Focus On Its Valuation Gap - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWjk4aElZOGJrSXBoSVpWdWtmbXU0N2pjZ2I3VC1uQXFyUmhWRmdNOXlXX3Y5d3RuWEhoR0xtdXFSNFhVbjhYOENIMV80X182R0xsLXpFcktjWlZJaGZoWi1JZ2l1ZjloX2kwcDdqS2I2cUgxZjZVdjcyTG10VHhfZ2c3Qi1vMVlrcUE?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-10-24",
           "cues": []
         },
         {
@@ -725,27 +733,13 @@
           "s": "Seeking Alpha",
           "d": "2026-10-23",
           "cues": []
-        },
-        {
-          "t": "Saab AB Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026 - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWWU1WHdWMnJCZnpYNndPVTI0T3Q1SWw0THFTdVl0ZVdyd3FqUFVMZVU3bUliSEpuQXExazVIQ083QUFsTS00U0ZxdU5QV0wwQ0hMZWlLTXZHUEV4SUZ0Z2FadnBDd0puYlVaUHdZcjVZM3lyT3pmeXZJUDVHYlp4YVA5T1loTHQ3ODVXeTZ0R1dWclJyaGtBNjIzOGs2enJNcEZDZmU1alYtdUt3TUtlSzc4Q1JNU2w4Y1VLTXBKNi1kVm1SVDZ3Sk9KUExrM2dJUE5RUE5tbzZ3TzlpTFMtWQ?oc=5",
-          "s": "marketscreener.com",
-          "d": "2026-10-23",
-          "cues": []
-        },
-        {
-          "t": "Saab AB Reports Strong Q3 Results, SAABF Shares Trade Well Above GF Value™ - GuruFocus",
-          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSXV4dm9XUkJzRExLZG13WEN4Ri1CVjFDMDQ2V29KTU5NNTMyTHRhUTlmSFZqRkdKWlduZ21zRGQyUHM4cW1tZGhTVExZNlR2QkdKRy1tY1Q4VWVncm5PRHFxVUI1YVpNbFJyOGNpWXdNV2N1bmd2azMyWGRIS0RtUVRVT0UzRGUyaUNzS2dHNGMwNGdhRHlMYnh6bWRRblhZMUp6U2pqQzNMaDJqUUFQVg?oc=5",
-          "s": "GuruFocus",
-          "d": "2026-10-23",
-          "cues": []
         }
       ],
       "wire_gate": "2026-10-23",
       "reported": {
         "eps": 2.57,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-23",
+        "fetched": "2026-10-26",
         "eps_est": 2.57,
         "surprise_abs": 0.0,
         "surprise_pct": 0.0
