@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-10-26T18:53:24+00:00",
+    "as_of": "2026-10-26T20:54:08+00:00",
     "mode": "light",
     "coverage": "13/13 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -663,6 +663,13 @@
       },
       "wire": [
         {
+          "t": "AI Infrastructure Investment Strengthens Fanuc’s Long-Term Growth Outlook - Morningstar",
+          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMEttclJuUDlQM2hGTkozVWNPa3RCQVJJWE9IY0tTWUFzN3UwYVAwLWMxYjlQVGl5aVl2aGpaRFVZNl9QSmVuVThBR3U5RndzbVplZUN1Q2haZk03dXByUDBGX3A4S1RRRThkVXk2T1hkblNPdVlobE5lRV9MVlhIZkRYZTJSZGp3VFlxQ1JuR3J4bVVteHNUUmtwVGs5eExXeFFEV1hSOWpQcHlDMEsyTXo5RlBVelI1N1hqdC00cWJZUQ?oc=5",
+          "s": "Morningstar",
+          "d": "2026-10-26",
+          "cues": []
+        },
+        {
           "t": "Fanuc (TSE:6954) Q2 Earnings Showcase Margin Strength Despite Cash Flow Questions - Yahoo Finance Singapore",
           "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMFliajZuNG1JTEtiaGlxRU91OGkwc0hZUWJVOGRKMTlqSnQtY0F5a1JjYW1nLThiQ3VwaFQ0YU53NlZKckN1RW44RnJUVVkyRTF4V0hUX0psVFI0OVlYVHIyWWVrSTYwUFM5OEhKUkFPaFhrOS13SWdCNHQ1M1lyOA?oc=5",
           "s": "Yahoo Finance Singapore",
@@ -682,15 +689,6 @@
           "s": "marketscreener.com",
           "d": "2026-10-23",
           "cues": []
-        },
-        {
-          "t": "Stock Market Today: Key Developments – Fanuc raises earnings forecast and establishes share buyback program for up to 10 million shares - Moomoo",
-          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV0EwZEJ6THpXbFBnYXBzZVJPdXpJSXZWQVlON3B0MmJCMEFpSndvWWpKWkhfTVRtOWlwdmJKc2t4aGhQdWV4ZWZPSW51X1BNQk5hYzUyb21wa1A4c3drTFhCVUdoaEo3R3hhelZwdUw2OWdxcDE3UmpWalc5cG5aNFg3QUlsTGZXY3M3X28wTEEtd1ozdlh0eFdGTExOU2hlU0gxX1JzNDNZWG5XdllSSWJiV2k?oc=5",
-          "s": "Moomoo",
-          "d": "2026-10-25",
-          "cues": [
-            "dividend/buyback"
-          ]
         }
       ],
       "wire_gate": "2026-10-23",
