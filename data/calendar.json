@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-10-27T20:26:44+00:00",
-    "mode": "light",
-    "coverage": "25/25 scanned this pass",
+    "as_of": "2026-10-28T00:38:50+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 0.75,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.83,
         "surprise_abs": -0.08,
         "surprise_pct": -9.2
@@ -40,7 +40,7 @@
       "reported": {
         "eps": 3.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 2.99,
         "surprise_abs": 0.03,
         "surprise_pct": 1.0
@@ -60,7 +60,7 @@
       "reported": {
         "eps": 0.57,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.53,
         "surprise_abs": 0.04,
         "surprise_pct": 7.2
@@ -80,7 +80,7 @@
       "reported": {
         "eps": 0.35,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.33,
         "surprise_abs": 0.02,
         "surprise_pct": 6.2
@@ -100,7 +100,7 @@
       "reported": {
         "eps": 15.55,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 14.03,
         "surprise_abs": 1.52,
         "surprise_pct": 10.8
@@ -120,7 +120,7 @@
       "reported": {
         "eps": 0.94,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.68,
         "surprise_abs": 0.26,
         "surprise_pct": 39.1
@@ -140,7 +140,7 @@
       "reported": {
         "eps": 2.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 2.16,
         "surprise_abs": 0.11,
         "surprise_pct": 4.9
@@ -160,7 +160,7 @@
       "reported": {
         "eps": 0.17,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.19,
         "surprise_abs": -0.02,
         "surprise_pct": -11.6
@@ -180,7 +180,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.07,
         "surprise_abs": 0.03,
         "pct_suppressed": "consensus of +0.07 is too near zero for a percentage to mean anything — the beat/miss is +0.03 per share"
@@ -200,7 +200,7 @@
       "reported": {
         "eps": 3.62,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 3.47,
         "surprise_abs": 0.15,
         "surprise_pct": 4.3
@@ -220,7 +220,7 @@
       "reported": {
         "eps": 4.64,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 4.76,
         "surprise_abs": -0.12,
         "surprise_pct": -2.4
@@ -252,7 +252,7 @@
       "reported": {
         "eps": 3.53,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 3.48,
         "surprise_abs": 0.05,
         "surprise_pct": 1.6
@@ -272,7 +272,7 @@
       "reported": {
         "eps": 23.9,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 21.23,
         "surprise_abs": 2.67,
         "surprise_pct": 12.6
@@ -292,7 +292,7 @@
       "reported": {
         "eps": 66.27,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 53.94,
         "surprise_abs": 12.33,
         "surprise_pct": 22.9
@@ -312,7 +312,7 @@
       "reported": {
         "eps": 2.57,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 2.57,
         "surprise_abs": 0.0,
         "surprise_pct": 0.0
@@ -365,7 +365,7 @@
       "reported": {
         "eps": -0.57,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.23,
         "surprise_abs": -0.8,
         "surprise_pct": -351.8
@@ -391,6 +391,13 @@
           "cues": []
         },
         {
+          "t": "Hanwha Ocean Q3 profit surges 68% on high-margin ship orders - The Korea Herald",
+          "u": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DRGY1cEpEeUhvVDdyeTZrM1AwQXhJVjVfakNUREloOU1NWkQ2OTZZRENzeVh1Y0xWRHJMTjNmSlNCQ0t5N0Vla3d3eG54ZmhyYnpFeHE3MA?oc=5",
+          "s": "The Korea Herald",
+          "d": "2026-10-27",
+          "cues": []
+        },
+        {
           "t": "Hanwha Ocean Co Q3 2026 Earnings Call Is Live - TradingView",
           "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWndCMWVHNEpKZ3pQeVp6WGNmeGZiNmg3emJwNGJGcFdsWXNfMGpiaTd0RkNkX21hSi16ODhTbWMyTjdtcHhuaWRyNm82RUsxdTBZQng1MGdGYzJzX1JRN1dpZ0R3YkEzeHBfRWhXX1FWd0dub1RxUmlydXNnVTdGVzV5U3pYbkQ3TExGM05CbVJoTFZFVk00LW5URlA5Q0tFWmY4b3RMc1pseXN3SG0yUVdnTjc?oc=5",
           "s": "TradingView",
@@ -401,13 +408,6 @@
           "t": "Hanwha Ocean's Q3 net falls 46% despite strong operating earnings - The Korea Times",
           "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeWlNdl9BWjctNERKSUd2eFNZZWdkcTFDOG1KOWx3YXpnZ2lwckxCd3Zkc01RM3I0dWVwbjUzYWp4SUExVUdGNDB4UjJmbUF3aG1LaGhjMld2RlNYa0ZydDE0ek9TSVNKeWpXUEUxS2ZNaTJua2ktM09LN1VsYVEyUW1yRUdDRmZ3RTNtR3N1VEk2ZmpOUktvb1Z4blVaOWN2ZEF6NlRyb2o2aFNqNmY0MXZ1TGhuelplNDJNS9IBwgFBVV95cUxQZUhHRFJOeUFvMUZ3UEJhZkpwRnk0UzFLM190OWpuLW5URUhoUzJOM2IwdGNaa2ZhdWVPbW90clZmYlpWcm5XaUh3MmZ3YkhUU3VxUnNVOWhCbk1fY01FTWFDNFRfSXBMcUhkaGlnQUhHSmRaXzU1Uk5vdkR1Q1FIVDl4Mlg4LU5XXzIySUZ1Z2R4Wkp0WTYxZ3IzeHh5bHUzd2ZvVjVvWG1iZHlmV21qOG9weTcybGVTXzNvdWlPNGdqdw?oc=5",
           "s": "The Korea Times",
-          "d": "2026-10-27",
-          "cues": []
-        },
-        {
-          "t": "Hanwha Ocean's Nine-Month Operating Profit Reaches 1.66 Trillion Won - THE ELEC, Korea Electronics Industry Media",
-          "u": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfVzl5aVRibW1qODV4cTlLU3lZV0JiQ3Z5RWRSUHYzOEFuWFFROHBjTFZ2YUVhVGREdnE1Yk50T0ZFbDljSERWU3ZFMzdVSUlFOVJQMmR5SWhYbU9UM1gxYURFTnptQzQ?oc=5",
-          "s": "THE ELEC, Korea Electronics Industry Media",
           "d": "2026-10-27",
           "cues": []
         }
@@ -459,7 +459,7 @@
       "reported": {
         "eps": 85.32,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 79.97,
         "surprise_abs": 5.35,
         "surprise_pct": 6.7
@@ -478,29 +478,32 @@
       },
       "wire": [
         {
-          "t": "Enphase Energy Reports Financial Results for the Third Quarter of 2026 - GlobeNewswire",
-          "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaUs3ZTJuTXFmR0t5T3B5Z3J1VUJfd0lHYmhGc2NZVDg1bEdwVjZpTU95Nk5ySXlzeGdzc2EwSjU4enFSZk5OQUU2T0lHRTZCTWlqdTRxQWxoT0ltbE1sMWtJUnczRXNhQndxRkZ6V3FQNW9tcGtyY3E0Vmo3MTVsdFdwTms5TGthN2tCQWs2eTRpRnlYOS1IR2c2YlV6dE0zZWNuR3dzVVRsdFlPMHlGOWI5aVpja3BaR2hrZUp6WUpLQ2ZBVTVBaTkwVGd4NG9wdWxaZkdiZ2Facm1Pcjh3?oc=5",
-          "s": "GlobeNewswire",
+          "t": "Enphase Energy Reports Financial Results for the Third Quarter of 2026 - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNblhjZFpNbmtlbXF6Z0oycXpCWHllOVh5SjdwOGM5SUJMOGwyLWg3QUxPSGdyMWJPMTluVzd1cWk1RFpaU0tvOG93VFN2Vmd1dlZuM2ZtMkYzMFZXbjQwYkhOLURhbk1PX2pJdjRpbEJxZGxNMlZUQ1RZZ1BabElqUGZfYkc0NlFrT3drWWIyZzRDZ0paWjc5cEZRajBLZw?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-10-27",
           "cues": []
         },
         {
-          "t": "Enphase Energy (ENPH) Misses Q3 EPS by 10c; offers guidance - StreetInsider",
-          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdlpfTlo5dUdDclZuemxRd2FjalVfU0ROQ3FtYkVxdU80eDR2OV94cGdDQ0Q1RVJBNTg1cDVoaldZbG81dW90TGhrN2l5UlVUVkt4cEpySHh4eG9lbFlSRHU1NDJHdVNkYUFXbUU3VkRDN3VQNjJva1BMeW44RVJHajJZWEliYjM0QVZIejlRT1FrZTF5MFFTUFE5R1lJRk5NS2ZyQnFncG1oZldTNEtjVFFLN1I3TEhlb3c?oc=5",
-          "s": "StreetInsider",
+          "t": "Enphase Energy Q3 2026 Earnings Call Transcript - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOelF1QU1Sa2ZGX1dkdUlEeC1pYW9VS242Z1NVN0pPOVVYMGdNNDl5bDdra2NpOTN0S1NVZUdVTk0tVmF6TnBXUWY2bmJUd3pReW1yLTZfS1ZhaFl3NWg0TXVtaDFSd2MyTTZzU05VMUdGYzBnUkZwNEs5TXhxQVBJTnJaRDh3NGktZnV5ZUJpRjNCd2UzU1VF?oc=5",
+          "s": "Benzinga",
           "d": "2026-10-27",
-          "cues": [
-            "miss"
-          ]
+          "cues": []
         },
         {
-          "t": "Enphase Energy Q3 2026 Earnings Date and Estimates - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdnQ1MDRiQkQ1T3NQTERNQ25OSmQtYmNtcFBSTXZISXlBS0EyYi01RV9VZDc1Z3FUb2U1cWxoYzA4b01ULUk3dFMxYUcxS0I2SVAwZG5uWGdtQjFZQ0xMLVdqM1ZPUXVBQWVHVkNNMV9BTU5WUHA0MmtGRGNBU2hLb0FEc0pwTVU?oc=5",
-          "s": "MarketBeat",
+          "t": "Press Release: Enphase Energy Reports Financial Results for the Third Quarter of 2026 - Moomoo",
+          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FacVppNm5ELUtjUlp2U0RLRFp1R1lZMVRYUG1kYllVVnBTTUU3ZnYwR3NPQi1XTjV3RDdkT0pJYVl2MlRiVEpRY3ZoQ3FfWkVuTXpkalRfSWhlVEpwQ0dGRVhOM01VaWhWV0FkZ0x6RXY4QVZ1dUsxVnhQaTZPUVFrWXVhUzBkbkpfbGhtYmRoaUVOaGt5bFZxRU5hTXJBSWJGVzFtTGJveGZjUmRoTjRR?oc=5",
+          "s": "Moomoo",
           "d": "2026-10-27",
-          "cues": [
-            "beat"
-          ]
+          "cues": []
+        },
+        {
+          "t": "Enphase Energy Q3 2026 Earnings Call Is Live - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPczlxNTVoOW05NElNWjNpcV85d2lVSmM1THpTTE9jTkdNZnRYSFQ5UzlkZklyWm1ENEFuVFVMVDlFUWFfT0ZGS2NwcWFYdnRZZWh6UlNfOTdXWjI1STBILWtiejlXWndITE5Cb1V6S0s4VWVXSVdUdHlwOERwUW5sb1JfaHRCSDFrQVlYRF9UdnlRYUJmV2MzOERxb1lZd0o3Z1JJTVJfSFh1LUxGcksyci05cw?oc=5",
+          "s": "TradingView",
+          "d": "2026-10-27",
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-27"
@@ -515,7 +518,38 @@
         "label": "AFTER THE CLOSE · 16:00 EDT",
         "iso": "2026-10-27T20:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "EQT Corporation (EQT) Surpasses Q3 Earnings Estimates - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcEdrcWo2UzMyT0NrN2RsQ1RzS0JobzYxT1ZSRlNmVmJMcWw3VlBBRGExRFdxVHBfclQzX20yTnFvN1p6WHl6OFM5c0xZeDNVR0xoMVYySkJRYjRaWDVydUZHY1V5eThVa3dKUC1TSGdPRWxseTlCZ3pZNWlTalRaYzdMY08zeHFKcUsydVVnOXdYSXB1X0twVmQ3ai10Zw?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-10-27",
+          "cues": []
+        },
+        {
+          "t": "EQT Corporation Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026 - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNMjl5VDk3R0gzNWRWNVVEOTAwMTRLQ2wzZ19uWEt0c2tESktXbVlvZU1wSnphdm9Vbjl1QmlaT3hTMzZOTExMYlVvUzRMUGlzbFEwSHMzVTIxSXJxVnpXZ1NHa0ZZZkJjVHE2dmtCOGFoQ09YVU1IVzhzZnZUNGRvSGF5MWVVczdFa1RrNjh2MjlvLTNKRl9WSlZBb1RwV1BIak1qRXNmQk5Ld1c5XzZzOG9XamZjRElFanFzTmtPV2Q0SHdheHlhc2gwSUV2VktQZHZKYUJmOWN0S044RS12RUZJVFNPVE0?oc=5",
+          "s": "www.marketscreener.com",
+          "d": "2026-10-27",
+          "cues": []
+        },
+        {
+          "t": "EQT Reports Third Quarter 2026 Results - PR Newswire",
+          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYzg5azdQVlg5Q056cFhIVHVYeTV1ODlBQncxZEIzTUhmd2NkYWt2V2M2czVPajM0QjRWUFp5VjAzRlBvNzh3OUhjQjUzZGNMY0xVNjIyN3hMR1g4X3UweGJZVi1vWWFuNE9RVDhQdXk5b1FTelVOVGtHWER6NEF4THcyeklGNUJScFVzanlGbUhNV1V5aHU3aU9B?oc=5",
+          "s": "PR Newswire",
+          "d": "2026-10-27",
+          "cues": []
+        },
+        {
+          "t": "EQT Corporation (EQT) Posts Q3 Results; Cuts Net Debt to $5.5B - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMl8tbElJSmI5YUJTY1RGdjUxVks1Smc4TVg3Y05Mdk1uM01odkp2RHl3bGxxOUpsa2RrWkZNREhrRm9MVzZrZmJNbFd2LUFXQWlTY2VEaFlFM2ZOVVROR0dlZGswN1RGdjZGZVo0ekdzQlAxbWxRV3Z6djVEVmh2cjlTdVBxYXdaRXJ5aGpkdHhJTXk4dmlSVHBQbDJsRkhWS2xBOHJlT1NNVjNreGlZSmlXcGUtcnluMERHbw?oc=5",
+          "s": "TradingView",
+          "d": "2026-10-27",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-10-27"
     },
     {
       "type": "earnings",
@@ -530,16 +564,16 @@
       },
       "wire": [
         {
-          "t": "Freeport-McMoRan: Q3 Earnings Snapshot - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbm9rcDU4dTEtT28xa2k4aVRWRkE5cUJVNHZUOGVFcUc3T2NFdV9rS3hKVVFwMzVsQnFXOHd2ZXlmcXZvR0p1T3hsZkxTZkRSWWV6WXBvcHA0YkRRVFB0NlBUVkpQTWR4YWVKaU5BQ29tUVFoYS1VajZudV9XU09JUlBOYU51dVNVMVV3ZTJDeS1UMmJXNGowZ010MllyRjdKTEtSLQ?oc=5",
+          "t": "Freeport-McMoRan (FCX) Q3 Earnings and Revenues Surpass Estimates - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxONWFXdkhxMjJlTHNyVUgtSlU1NHJpU3R0ZmgzOFYxVWY2ZS1WMDdLVXNvUVV4cW9DQ0N5WnMwYkUzR2ZORmV4dWJQdDlyTGlHNkJPZHdLX2JNb2k2Z1dkYkhfQm5EWWIwTlZ2SVlsRkJKa1RnQUZySkxIZWItMzVRcy1qaTZ4akw4aXE1dDdZTXk0RXdKanNhMWFhTGgyUQ?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-10-27",
           "cues": []
         },
         {
-          "t": "Freeport-McMoRan rises after Q3 earnings topper despite lower production, rising costs (FCX:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVJqX0FlaGRTeDJNNlZZVE5Da2plNXdLX2wzMDJPcjFGdjl1dXNCWWtyOTZEaUUzRVpRUjlzSU96QzhVMFdITUhhdmNKS0JzeUtDSWZoUncwdUw1WG52Qy16a3pOa05Ta2E1c1lYSlJybXNHb2t4X2dMTGU0VVlyRXZidVZ5VU1qOWZnMWFTOW9HZ2lGYXNic1ROV19LdTBXa2FHem81UU1sdWlkWVF4aHVlSEF4Rk5XMlVQYjFEdTY?oc=5",
-          "s": "Seeking Alpha",
+          "t": "Freeport McMoRan Q3 revenue rises as copper prices boost earnings - Proactive financial news",
+          "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNWkRBa1F3djdHTHlJQzFUUFctOGNYNlJhT1RQRlIwVm1HRjNDak9HdFNyOXY4cXNzYjVQWjlNSmNoVzBWZGhUVnExdXJ3ZGdrQU1HNURJc01kSkNvMlhnamRhdUEzNk9mcTBkR0xKcWZKc3ZMazgxLUpmVEFQdkpENnBEXzNCMWMwUm9qdzROMEhtSDFxcmlXSW9FNHEwajFEbXRzRXJQdlJwVFVPZldYN2NOOXNqM2pILVFyZnNvT05mS3hqcTY2VlYzTzFlVUFta3c?oc=5",
+          "s": "Proactive financial news",
           "d": "2026-10-27",
           "cues": []
         },
@@ -553,9 +587,9 @@
           ]
         },
         {
-          "t": "Freeport-McMoRan Q3 2026 Earnings Call Is Live - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQXhvZ2lkbG5GbG1zV0lCbE52T1VHYmEzSThFQTRCb2lGcHMwb0toMWFpbEY2ajZCenE3dDI2QlZxdDlCUG5ZaWZUQU5RX0lHUi1Cb0dnZVJMYVBDLW1IWF9CQlVhcHNuc2IxRmxxdVVhNXhIY2Z0RndkWmYyclhUNGo1Wl9acGtRd3ZjWkFpOWJ1VDhmY0lJQVFDX3dNdFFYT29DWXhUaVNZWGJGMjNBOWRoc3QtZw?oc=5",
-          "s": "TradingView",
+          "t": "Freeport-McMoRan rises after Q3 earnings topper despite lower production, rising costs (FCX:NYSE) - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVJqX0FlaGRTeDJNNlZZVE5Da2plNXdLX2wzMDJPcjFGdjl1dXNCWWtyOTZEaUUzRVpRUjlzSU96QzhVMFdITUhhdmNKS0JzeUtDSWZoUncwdUw1WG52Qy16a3pOa05Ta2E1c1lYSlJybXNHb2t4X2dMTGU0VVlyRXZidVZ5VU1qOWZnMWFTOW9HZ2lGYXNic1ROV19LdTBXa2FHem81UU1sdWlkWVF4aHVlSEF4Rk5XMlVQYjFEdTY?oc=5",
+          "s": "Seeking Alpha",
           "d": "2026-10-27",
           "cues": []
         }
@@ -564,7 +598,7 @@
       "reported": {
         "eps": 0.88,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 0.83,
         "surprise_abs": 0.05,
         "surprise_pct": 5.9
@@ -583,8 +617,8 @@
       },
       "wire": [
         {
-          "t": "Hubbell (HUBB) Q3 Earnings and Revenues Surpass Estimates - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMXBieElSdElxRmJPTGJoeENqN2dTYkNtMFdPaUcyUzV5SlRnb2pWVlg3aElfTV84RDhUV0FYMUxzTGNFUlNUbEZmRXpjT1VGbHc3aG9ydWY2MGVPNGJMdFpJM3RBeHpGcHVDcVBTRUgxWUhCZHFmQS1NUU1sYkxBeFk1MTFLUnp3NWhvUkw0WVlKcFdOeWY2aU8tTW5tSGM?oc=5",
+          "t": "Hubbell Incorporated Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVU1kRHZwaFRXci1kNmk1eVNEODRfd0kxU3ptckp5aUxkVEphc2lFT2sxMjQzdHlWcEEwUGpwWmdxUU5OWmZDUk9ud0MzUzRGY0VDQmhkdWV6dVpNMVJEQzQtZjNhSTRJakM3cWZYalNacnBOa3ZreXZXS0ZORS1ETUMwOHdkZXVJTE5IR2Z3TWxYaFc2SkFNdV90ckpXdGJUX040SA?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-10-27",
           "cues": []
@@ -599,9 +633,9 @@
           ]
         },
         {
-          "t": "Hubbell: Q3 Earnings Snapshot - Stamford Advocate",
-          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOG9Nb3E4OEx1cE5qN2MtdGZqYjZtYU5HdDdGTEkwQk9PdXdMYURlUmU3NjU5WDdKczhKZmpUbzU2aFlxS3QyN2FxZ2xOa2lHNVNwMzF3Qk9PQnhlV2lOQS13bkdEaHpnUGZ1V3Fudm9vc3FDa0ZUTnRacFYyTVI3aFAyQkVGVWFkSW9ELUl4cmRhNDNLUTA5TkJ3?oc=5",
-          "s": "Stamford Advocate",
+          "t": "Hubbell: Q3 Earnings Snapshot - CT Insider",
+          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWHdPVEVFMmZyRHAtQktGSVBWNFZOTlotQ0Q0cDlwRlpxVUdpQldfZ2RoSjJXVFFSMk1HX1NuZWxiMGtleUFtUndjQXJ1SzBFckhnWER5ZDFGTmlaYVVScW1WQWJUaE54Z2J1ZzlJZHdsVzhkTXM2WTV2SlNRUHhTc3lBbmczU0Ffamp6bHVVbnpQUQ?oc=5",
+          "s": "CT Insider",
           "d": "2026-10-27",
           "cues": []
         },
@@ -617,7 +651,7 @@
       "reported": {
         "eps": 5.91,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 5.75,
         "surprise_abs": 0.16,
         "surprise_pct": 2.7
@@ -670,7 +704,7 @@
       "reported": {
         "eps": 1.94,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 1.56,
         "surprise_abs": 0.38,
         "surprise_pct": 24.7
@@ -698,9 +732,9 @@
           ]
         },
         {
-          "t": "Johnson Controls Reports Q4 and FY26 Results; Initiates FY27 Guidance - PR Newswire",
-          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYkppMFZGNXMwU2l4Ni01eXJtUnNKYXZRUWNmMGZjbE5ia0ZvZV9TQnJTRVd2Nlh4cWdyYk52RmRybWJMN29RcXdiWFpSWGVBZUF3aU1meTRBRkthSjNLY3JpVEJPRUNqNGlOU1RTa01aaDhycFIyWmtNVlp6NW5yVXhtNThFS0ZQWVlTME5BUlh3M1ppc3NlNWxsVV9SRjhjTzRXWGRfTmlvcHJ3QWxxbGpxczg4N2o5U2RPZnNvRld3dw?oc=5",
-          "s": "PR Newswire",
+          "t": "Johnson Controls Earnings: Huge Backlog Growth Points to Strong Fiscal 2027 - Morningstar",
+          "u": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSDlMMlBITWlSWGxqazEtN215aG9iX1pfd0k5cElnS2JSYVlzdVNmX2Z2NzhMVXVTWFNkTGVvWjhvYkNwckg3MjJsMThZM2l3dzdaeFZKelNhZXp6QWcyOGxqSkFGbHZFMWVTY0RjeU55bEhDbmlFTGhaRjVrYWVyX1ZDNXd3ZWIxUGdKaF91T3hacFNZbGJRWTRwTDFINWFSYmk2dFA0MjE1ZEV5NjBMdjdIeVpwQXgwU052R05nbXN0YV9LVm5WLVMxYjJNOFZCZHN1VHFCcm9oT0RFV0E?oc=5",
+          "s": "Morningstar",
           "d": "2026-10-27",
           "cues": []
         },
@@ -714,20 +748,18 @@
           ]
         },
         {
-          "t": "Johnson Controls Q4 Earnings & Revenues Beat Estimates, Up Y/Y - Zacks Investment Research",
-          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZlJud2tpbW9lQ2NDNGIxSE1WMjFOZFE5bXFGeGtmdWczUVpnTkNLR3R5LWlvMWllR3czVXQ5SU45TDRfTnE1MElnbTZlWlhmT24yNHZVdVNfNHcyTklOV1N1cnBSbHMwUi1rUld0RnlaYTlYcWdaazZaNml4OUdhX3V5UFFWWUFIUzFXMW9OQ3Y3THNQNWV4N1MydGpxcm13?oc=5",
-          "s": "Zacks Investment Research",
+          "t": "Johnson Controls International Releases Q4 2026 Earnings Results - AlphaStreet",
+          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORG9GU05KbXBpeFJXNFJ0SGZyR3F0UndhVDlkVkV2MlZ1TnJNM1NhUnZub29MX2diWEFEQnVZc3BSMGlSMlJSM0dlZ2ZPSzdTNkFrTVI5WDJUUWh5YV9xZDQ4a2NWZFM3MHA1QnF2Wm5GVk83WHdndWp1YU94dXl3UW16NTRXeldGeDEtNEtRRkR0Z2U0ZXVwTHB30gGaAUFVX3lxTE5Eb0ZTTkptcGl4Ulc0UnRIZnJHcXRSd2FUOWRWRXYyVnVOck0zU2FSdm5vb0xfZ2JYQURCdVlzcFIwaVIyUlIzR2VnZk9LN1M2QWtNUjlYMlRRaHlhX3FkNDhrY1ZkUzcwcDVCcXZabkZWTzdYd2d1anVhT3h1eXdRbXo1NFd6V0Z4MS00S1FGRHRnZTRldXBMcHc?oc=5",
+          "s": "AlphaStreet",
           "d": "2026-10-27",
-          "cues": [
-            "beat"
-          ]
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-27",
       "reported": {
         "eps": 1.66,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 1.58,
         "surprise_abs": 0.08,
         "surprise_pct": 4.9
@@ -745,6 +777,31 @@
         "tz": "America/New_York"
       },
       "wire": [
+        {
+          "t": "Nabors Industries (NBR) Reports Q3 Loss, Tops Revenue Estimates - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWjh2Uk1MOGdZVTVYR0xDekNtcnZpQ005bVhYVWx5X3FvSXJ2TXNIeHhfMHNxSDhFWUJCZzRJclE0NkFKc1dHenBuU2hRUGxTOTl6TS1NWDIySFdzT3l5QzFyM2l5ZG51T2t2T21mRXpWa01EdFJzYXhXV0M4eHJfU3VxdW9pd2xMcWgzLTRRa015ZDRyblctcTVValYyUQ?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-10-27",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Nabors Industries’s (NYSE:NBR) Q3 2026 sales beat estimates - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTWEwMWpuSng2VXFkOS1ISERhMUdSM0JuRFlvXzdmZWxOR19XWTBrV0RMa3dPWFQzSXhPWVF1TlRHcTB4WUoySG4weDR0WkVjc283OVktbVRnTzU5ZFVzMjMxcTBZc3F2azNPVmZoN1RWQTFSQzZMQ0pvZF9Ba3I1c3NSaFdUTXJ3cEh0VmtCT1pUZmZaM21ZQktlSER6VmdkTnhFRG5jdEN0VHVQQkRMc1BBbS1EN1pKWHc?oc=5",
+          "s": "TradingView",
+          "d": "2026-10-27",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Nabors Q3 2026 Results: $872M Revenue, $246M EBITDA, 2026 Outlook - News and Statistics - IndexBox",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUExEeDNrLXFqcndwbWtwVFphOTh4MmNFX1B3ZDFDMEpBdFJuSUFNTU9Kc2w3c1hKUngwRHB6Z21ITmlSTjFyQkptdFF2dGxFdUZzamREUFJBSEVTRnFpV2lTTXZrdnAyeGlTRTY5NTdZcG00cHpNVkswVnFtcUEtZE9lV3JwLXFUZE5ZajVEWDlFUGNHcWk1b2R2ZzRZdw?oc=5",
+          "s": "IndexBox",
+          "d": "2026-10-27",
+          "cues": []
+        },
         {
           "t": "Nabors Industries in spotlight as earnings loom after Q2 stumble - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZUdDVURCWVNnc0g1Z2xjb3lFTGIxWThWOG5HNVQyeTFaYnJLNFJ0VDBHMWNCZ09xLU83czVfZzRtbDFtdWJSZEFHc29KSTFlN1NSSWtUX0c2ZUFZemYwb2lQbl9zdnNJSzJ1YUh0cWg4X3ZyNWJ3X0ZqMjNzWDd5TU85UUw3VDIwSDA1N2xEZHdzbnJpT0M3TWZOYjVxMFA4U3FWRUx1YU9EU1BvSmxfcnhVMjZGX1Rf?oc=5",
@@ -765,7 +822,17 @@
         "label": "MID-SESSION · 14:00 CST",
         "iso": "2026-10-27T20:00+00:00",
         "tz": "America/Mexico_City"
-      }
+      },
+      "wire": [
+        {
+          "t": "Orbia Announces Third Quarter 2026 Financial Results - Business Wire",
+          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYlhQZW5zdFBiczF4TG1FTjdCOVZYRGlQTUIyXzN4bTFjXzBPbkJ3eTMwVHJjM1hSbXp2aHA1T2RhOTdCcUZXVUtRMXNmVWtNYjZaVWJydXozMmFOMXJVX2tZYmxPdzNPQ2xGNlVEYm1VY2RzMmY3cWJjQU1NWWFEU1dELVRGN3lMNGdRZUt5OEVhZDUtQTB6NzBsVVNsa0xyZEk3MkFrZDgxQjZfcEE?oc=5",
+          "s": "Business Wire",
+          "d": "2026-10-27",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-10-27"
     },
     {
       "type": "earnings",
@@ -780,8 +847,8 @@
       },
       "wire": [
         {
-          "t": "Pentair Reports Q3 Earnings Above Estimates, Maintains 2026 EPS Outlook at $4.70 - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZS1HX2xJYmdZci1pcUJxd1B0YThIM1dtQXNPVmJSVkZ1cFpmQUJNRWZwOUx5ZE1uQUdKdENuUl9DY3duX1FOWjBZeE9TQVlPbVlCd0dwZW4zc1g2M0c4a2NuQkZlV3RwY2pxdGh3eGRReUw1ZHZiTHlqS0pfYmIzbGM3c1pvenRaYTdrcUl6Y3phMWFaQjdjcDF1a2k0WHc?oc=5",
+          "t": "What Pentair (PNR) Said on Its Q3 Earnings Call - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQmkyZXZ6RGhmY0ZHRFdqSDZOZFd1Wk9OQWRYQ2U2aGZuV3F6VU51RkVPbnBXS2g4Y2FtODl6OGZzNDUtaXpsU180VnUtdTVRUnp4RzdwZkVnWDRiNzcxb1hpZk1YaW1Pc2lNcTViN0VKSm5reW1Jck15WW5YbGkwLUlwS3JVMEFGeUtsd2RWTzQ5Nkh0NXdNTg?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-10-27",
           "cues": []
@@ -805,8 +872,8 @@
           ]
         },
         {
-          "t": "Pentair's Q3 Adjusted Earnings, Net Sales Decline; Q4 Outlook Issued - Moomoo",
-          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYUc4am9nYnBzY2pKMkw2NWxpZW00UzJjb1pzWUZsYjREenhFWm1PZ25QRFVTQnl0cTlMYllpektUVzF5UTNubHQxUVlqR0JMQUphZWxmb25ZbDIwa2o0WGI4MnVVQjI1Snh1R1lleTZaTWJwazZPTjlLOUpXWGp6ZDdpUDVMUk1HLUpsRmpRVXc1UUdzeFlxNUVZc2IzR0diRGVwaGp3?oc=5",
+          "t": "Pentair | 8-K: Pentair Reports Third Quarter 2026 Results - Moomoo",
+          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSVhOWXpmaEk5UjJsYVotWTdkSVVxYWJpUFVIT18xVHN6VWhadkU5emJpSGVmNzY2X0Zjd25xN3lhd2owSEEwbDludVVObjF2NU5zbzNub2pTeFU0em5PUEstR0V1aXVJWEM0YWw5VnJCX2NhUnBxTU5iQVJ5UTRoTjVOOF9sU1A1OVRFTXRiRmtEZw?oc=5",
           "s": "Moomoo",
           "d": "2026-10-27",
           "cues": []
@@ -816,7 +883,7 @@
       "reported": {
         "eps": 1.18,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 1.07,
         "surprise_abs": 0.11,
         "surprise_pct": 9.9
@@ -835,8 +902,15 @@
       },
       "wire": [
         {
-          "t": "Xylem: Q3 Earnings Snapshot - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOWpNb1UzZFZGM3AwRFU1dkVENFpWTmNoVzhRNTBMR0JMWnd1Z0FFbTBPSnFGUzZoeC1VU2taZkpnaERkYXUyZld4Y2N5SFNDVlhnVlFPakNRQWMxeFdhV2M0RnAyTy1uOWcxNlFuNnVOM3pIRW4yQWk4cGd5SFRtVTd1ME4yQXRSeUtmOHU1eXVBYmh2enc?oc=5",
+          "t": "Xylem Stock Plunges as Customers Pull Back. Its Outlook Just Got Worse. - Barron's",
+          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zeUdONW1HX0hwN1dENF9oYVNISW5naUZWSXp0S1B5aXQ1Y2F3UzREUTFLYXZtLTZ2NzU4eXJNY3N2c0RZV0M3US1aeFVMc29NRlRHX05mSzVqOTR1N2ZrRDg3cU9yWGpIajBKV2N1RFhyTVd6SWxj?oc=5",
+          "s": "Barron's",
+          "d": "2026-10-27",
+          "cues": []
+        },
+        {
+          "t": "Xylem Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTTdZMVUwbXVMOUpIeGN0Qldwb19lR0tiU3MwS01ITlZJempZM0stdkQ0a1dnd0ZTX05QZlR1MDNhamRKVUlmNzdHa25ldmVEcUg1RjJiQkdhVU5Ucmg3R3pzRGdIOWdUQUEtNElFNkNwWmEyN3prNGZtZkQzUHNhUW1DUTdsSERVLUZYeHF5R0VsejZYOVE?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-10-27",
           "cues": []
@@ -851,15 +925,8 @@
           ]
         },
         {
-          "t": "Xylem Stock Plunges as Customers Pull Back. Its Outlook Just Got Worse. - Barron's",
-          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zeUdONW1HX0hwN1dENF9oYVNISW5naUZWSXp0S1B5aXQ1Y2F3UzREUTFLYXZtLTZ2NzU4eXJNY3N2c0RZV0M3US1aeFVMc29NRlRHX05mSzVqOTR1N2ZrRDg3cU9yWGpIajBKV2N1RFhyTVd6SWxj?oc=5",
-          "s": "Barron's",
-          "d": "2026-10-27",
-          "cues": []
-        },
-        {
-          "t": "Xylem plunges to 3-yr low as earnings miss, outlook cut (XYL:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRE91WmRwR0FvYVhOWHZkejQzVHNhLTNDV2tHVEZxT1Z2Y19Ld1dqSVlYWGlfWlF4N3VhcFB6SUtkQkpRRnNNel82Sm9KVGpZVE5rUEVJTnIxcGtOSU5QREFvZXFsVTFSZWFRRlJ6Z2hiWVNVUVhzRGJYakNYZTJCbVgzS3JLR0dHNTF2NUtVZGlVTzFhc19v?oc=5",
+          "t": "Xylem tumbles 14% to new 52-week low after earnings miss (XYL:NYSE) - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOWVBOEdiajVsWW1wc1RNRjNmVDhZdU1Kb3JWMjBQQ2V1V3lhclJ3eTYxTllRcm1UZ2hhdkR2V3BtSzZoNlhYZDNBYTFRamhleF9zYnI5NEp1bEY1MnBfeTRDdEVFWEY5WnJMQXRHZmFsX2phNWktTm02RFVaRFZCMW83Szh2ck5ObDlsYmFmWV9Gb25RTVd1Sg?oc=5",
           "s": "Seeking Alpha",
           "d": "2026-10-27",
           "cues": [
@@ -871,7 +938,7 @@
       "reported": {
         "eps": 1.44,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-27",
+        "fetched": "2026-10-28",
         "eps_est": 1.45,
         "surprise_abs": -0.01,
         "surprise_pct": -0.7
