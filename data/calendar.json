@@ -1,51 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-10-31T00:57:56+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-11-02T16:35:32+00:00",
+    "mode": "light",
+    "coverage": "20/20 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "6954.JP",
-      "name": "Fanuc",
-      "d": "2026-10-23",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-10-23T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 66.27,
-        "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
-        "eps_est": 53.94,
-        "surprise_abs": 12.33,
-        "surprise_pct": 22.9
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SAAB-B.ST",
-      "name": "Saab",
-      "d": "2026-10-23",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:30 CEST",
-        "iso": "2026-10-23T15:30+00:00",
-        "tz": "Europe/Stockholm"
-      },
-      "reported": {
-        "eps": 2.57,
-        "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
-        "eps_est": 2.57,
-        "surprise_abs": 0.0,
-        "surprise_pct": 0.0
-      }
-    },
     {
       "type": "earnings",
       "tk": "NE",
@@ -60,7 +20,7 @@
       "reported": {
         "eps": -0.57,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.23,
         "surprise_abs": -0.8,
         "surprise_pct": -351.8
@@ -92,7 +52,7 @@
       "reported": {
         "eps": 0.41,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.5,
         "surprise_abs": -0.09,
         "surprise_pct": -18.7
@@ -112,7 +72,7 @@
       "reported": {
         "eps": 0.42,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.36,
         "surprise_abs": 0.06,
         "surprise_pct": 16.2
@@ -132,7 +92,7 @@
       "reported": {
         "eps": 5.91,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 5.75,
         "surprise_abs": 0.16,
         "surprise_pct": 2.7
@@ -152,7 +112,7 @@
       "reported": {
         "eps": 1.94,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.56,
         "surprise_abs": 0.38,
         "surprise_pct": 24.7
@@ -172,7 +132,7 @@
       "reported": {
         "eps": 1.66,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.59,
         "surprise_abs": 0.07,
         "surprise_pct": 4.6
@@ -192,7 +152,7 @@
       "reported": {
         "eps": -1.24,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": -0.9,
         "surprise_abs": -0.34,
         "surprise_pct": -38.5
@@ -208,6 +168,14 @@
         "label": "MID-SESSION · 14:00 CST",
         "iso": "2026-10-27T20:00+00:00",
         "tz": "America/Mexico_City"
+      },
+      "reported": {
+        "eps": 0.02,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-02",
+        "eps_est": 0.01,
+        "surprise_abs": 0.01,
+        "pct_suppressed": "consensus of +0.01 is too near zero for a percentage to mean anything — the beat/miss is +0.01 per share"
       }
     },
     {
@@ -224,7 +192,7 @@
       "reported": {
         "eps": 1.18,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.07,
         "surprise_abs": 0.11,
         "surprise_pct": 9.9
@@ -244,7 +212,7 @@
       "reported": {
         "eps": 1.44,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.45,
         "surprise_abs": -0.01,
         "surprise_pct": -0.7
@@ -338,7 +306,7 @@
       "reported": {
         "eps": 40.44,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 36.07,
         "surprise_abs": 4.37,
         "surprise_pct": 12.1
@@ -389,7 +357,7 @@
       "reported": {
         "eps": 0.83,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.98,
         "surprise_abs": -0.15,
         "surprise_pct": -15.3
@@ -440,7 +408,7 @@
       "reported": {
         "eps": 3.93,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 3.22,
         "surprise_abs": 0.71,
         "surprise_pct": 22.1
@@ -494,7 +462,7 @@
       "reported": {
         "eps": 2.54,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 2.43,
         "surprise_abs": 0.11,
         "surprise_pct": 4.6
@@ -551,7 +519,7 @@
       "reported": {
         "eps": 3.82,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 2.98,
         "surprise_abs": 0.84,
         "surprise_pct": 28.4
@@ -604,7 +572,7 @@
       "reported": {
         "eps": 14.08,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 11.79,
         "surprise_abs": 2.29,
         "surprise_pct": 19.4
@@ -655,7 +623,7 @@
       "reported": {
         "eps": 0.07,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.04,
         "surprise_abs": 0.03,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is +0.03 per share"
@@ -706,7 +674,7 @@
       "reported": {
         "eps": 2.49,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 2.07,
         "surprise_abs": 0.42,
         "surprise_pct": 20.4
@@ -757,7 +725,7 @@
       "reported": {
         "eps": 2.21,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.82,
         "surprise_abs": 0.39,
         "surprise_pct": 21.2
@@ -810,7 +778,7 @@
       "reported": {
         "eps": 1.46,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.37,
         "surprise_abs": 0.09,
         "surprise_pct": 6.8
@@ -861,7 +829,7 @@
       "reported": {
         "eps": 0.41,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.31,
         "surprise_abs": 0.1,
         "surprise_pct": 33.1
@@ -914,10 +882,10 @@
       "reported": {
         "eps": 9.6,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
-        "eps_est": 8.35,
-        "surprise_abs": 1.25,
-        "surprise_pct": 15.0
+        "fetched": "2026-11-02",
+        "eps_est": 8.36,
+        "surprise_abs": 1.24,
+        "surprise_pct": 14.9
       }
     },
     {
@@ -967,7 +935,7 @@
       "reported": {
         "eps": 0.76,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.73,
         "surprise_abs": 0.03,
         "surprise_pct": 2.9
@@ -1020,7 +988,7 @@
       "reported": {
         "eps": 1.05,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.88,
         "surprise_abs": 0.17,
         "surprise_pct": 19.4
@@ -1073,7 +1041,7 @@
       "reported": {
         "eps": 5.48,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 4.43,
         "surprise_abs": 1.05,
         "surprise_pct": 23.8
@@ -1124,7 +1092,7 @@
       "reported": {
         "eps": 1.46,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.37,
         "surprise_abs": 0.09,
         "surprise_pct": 6.5
@@ -1180,7 +1148,7 @@
       "reported": {
         "eps": 2.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.97,
         "surprise_abs": 0.05,
         "surprise_pct": 2.5
@@ -1233,7 +1201,7 @@
       "reported": {
         "eps": 3.66,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 4.17,
         "surprise_abs": -0.51,
         "surprise_pct": -12.3
@@ -1286,7 +1254,7 @@
       "reported": {
         "eps": 3.62,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 4.73,
         "surprise_abs": -1.11,
         "surprise_pct": -23.3
@@ -1337,7 +1305,7 @@
       "reported": {
         "eps": 2.96,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 2.96,
         "surprise_abs": 0.0,
         "surprise_pct": 0.1
@@ -1390,7 +1358,7 @@
       "reported": {
         "eps": 0.87,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.69,
         "surprise_abs": 0.18,
         "surprise_pct": 26.7
@@ -1477,7 +1445,7 @@
       "reported": {
         "eps": 6.06,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 5.03,
         "surprise_abs": 1.03,
         "surprise_pct": 20.5
@@ -1533,7 +1501,7 @@
       "reported": {
         "eps": 1.88,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.58,
         "surprise_abs": 0.3,
         "surprise_pct": 18.7
@@ -1584,7 +1552,7 @@
       "reported": {
         "eps": 0.29,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 0.42,
         "surprise_abs": -0.13,
         "surprise_pct": -30.7
@@ -1603,6 +1571,15 @@
       },
       "wire": [
         {
+          "t": "Sumitomo Electric Earnings: Infocomms Led the Beat on AI Capex Spending; Raising Fair Value Estimate - Morningstar",
+          "u": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOX0RocmxPVjF3dWF1OWNscktZMGlfc0IxUk92LXg5VmdnYkVGMnBYR0g0aWN1aThGN2hnNzB1LWdXSkxiTjd2RE4zbGJEQnRyc0pBZWtvT0ptRDZXamp5OVpKbi1CV0tyZ3BoU0UtMXQ5dUJ2UUFKUFZ1UkxoUjVHMWhNRDlFTG1KajBBYXd3a0JyRnBIVlNMRnh3RGtaRE56NkNuSTBaeXFlRkg5UDJsRHB2dnhQUzNQOFZ1SHdDUWJselpjZk9UOTRaazdsRlE0c3gxRmFmVWJnWVo5RW5aRjRGNlZjVFN2VjhMZlhocVBieUZ1Y2tjakhlNDlEQQ?oc=5",
+          "s": "Morningstar",
+          "d": "2026-11-02",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
           "t": "Sumitomo Electric Industries, Ltd. Revises Consolidated Earnings Guidance for the Fiscal Year Ending March 31, 2027 - marketscreener.com",
           "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSDNUUm1NTFg0aWlldXhTa2xOT21Ienh1MXNndUQ4UEdzclgzYi01TmM3MldvMXJTd3FxXzlfSkZMaEVXemdjc2F2blFtRjhtYVQ0OWJVWUV6ZW5RWDdpRENqS2xzckZjb2oxZkJRSWdBcHJSRWJiUTY4OTIzS0p0Ni1yZGZKN181dU52MzR3UF83UEtpQlF6ZkZ0dEZuYl9XRXBLQnVqcU4wZVZERFoxeFdZeWdHMEFhcTF3VmVKY0VKNnZnNTZrZGVkdDJsRElUR1NWSjBOUWxiYVlSV1owbzF1bkJQQQ?oc=5",
           "s": "marketscreener.com",
@@ -1614,7 +1591,7 @@
       "reported": {
         "eps": 29.8,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 25.84,
         "surprise_abs": 3.96,
         "surprise_pct": 15.3
@@ -1633,13 +1610,6 @@
       },
       "wire": [
         {
-          "t": "Mitsubishi Electric Corporation Revises Consolidated Earnings Guidance for the Fiscal Year Ending March 31, 2027 - marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTExKMUx6alRndUd6N1J6cHI4YUswZmRxamxVTGtwWGZMZ0g1eTZNMU9xYXZGNmRjWmhCWGtCNnZ4TGp3VWxsVEdBeExUZnlxdFIySl9VREZxMTB3eVloZVdVNmNDcDI3RlowcEVnZWlHdXVWLVQxWmY5R3dpbk15STZPTW04WEJXUThYa3hIS1dlRlNidXhLRUhlQVIxejRDa2tiWUhEOHIyTldtYXZNV01KUE5uQkhaTm5fVjBZYU5NRUx3Z215cFBlY2p0X1NZT0tkTTJ5ZUtaajdBYUFfN3BydjBsMlNM?oc=5",
-          "s": "marketscreener.com",
-          "d": "2026-10-30",
-          "cues": []
-        },
-        {
           "t": "Mitsubishi Electric : Announces Consolidated Financial Results for the Second Quarter (First Half) of Fiscal 2027 - www.marketscreener.com",
           "u": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTzNFWDZDM2dLZGs2Z3gtd08wVFpiNEdLSG1NOEVISDBNUlZLLTA0U2l4cm9CMGxRX3ZPNWl4M2F4cC02VDRQOFA5OVoyYkxJLUJFSDRMajFlYi13NmI5ZnRVeXp5d01yT2I5ZzR1MTFFTE5BZVFDelZOcEFjcmYtMTlOaEVMeVlUeFFxYVdYdS1fenQteURBYThKT0hQVzVoRWlGbEY1Si1BM3JFeEVHY0gzSFJWdElzbjBlaS1CMW9VVWlzdzljbmdEbmttUzJtUGlOR2puckdRbG9xdzgxLXRmSQ?oc=5",
           "s": "www.marketscreener.com",
@@ -1647,20 +1617,34 @@
           "cues": []
         },
         {
-          "t": "Mitsubishi Electric stock posts sharp profit growth, starts buyback - ad-hoc-news.de",
-          "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdk1LM2ZDRDFWakVwVzZqZmtTVkRiNjZKUVF2bUNWa1lZQjlWemxXY1FRNmU3VTlBQlVwZEVFSE9ZUFJHMlp5Q1pFOGNRaUtoZ0xkcURwX2VHRS14Vl9EMXhnWVdNUzA4TzlnUzdnTEhrWFdHaFJhV1puUTFrZEdCSjFNb195YkdUZ3YwTnFSWU15bFpkZ2lNaUVHZXYyR3Q4MUEzcEJRLVJiX0pSMnRQTk8zZFlkRUtVMHFfSFhmd1dDSnFTcjdTdA?oc=5",
-          "s": "ad-hoc-news.de",
+          "t": "Mitsubishi Electric: Record H1 results lifted FY27 guidance as portfolio shifts and buybacks advance - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNZUFJcjNkMnhHSWR1YjhpRVZkaEZSaWx6WXNFcW02WnJjcngwWjdkU29LUWJCS19za1FHNHVFSFd0S2F0QTJqT3A0SmVKOGt2dE5UZ201Z0VlekhKOGx3WmVBNDVidmZLbGx6VTEtYTFTcFRTXzVFV1ZIMkFRZVJMd1RwNUc5aHVsVTk5QTFQTmVPckkxWHpWdW40OGJtbms3T0FjVlJwR2JOWmZyUG9Ld3R0SDl5N0pWRlNoTmgwUVB6X0hsRmF3RlRiRTRYVExSTFZlaDFRbm5LTUwtQ2o4MklMcDl4eWo0S0hmaXB2MVB5MnAtbkljc0p3SUpFYmJQeFZmcW1OUTFSaUVJVHk0?oc=5",
+          "s": "TradingView",
           "d": "2026-10-30",
           "cues": [
             "dividend/buyback"
           ]
+        },
+        {
+          "t": "Mitsubishi Electric FY2026 Q2 Earnings Briefing - finance.biggo.com",
+          "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EQnlSckZELXhOVjFnMnRUangtRjExRTJfUEUtNGc2QmhiSmRWS3RHd0VUUGFNLUNTWnU2T2tDcm5DSjRhT3FYYUQwa0RvVG1BVFh0X0NYMlpzNy02MmJBby1OekdKbXN6VGRzU01FZU5rR1U5WnowSTQtWnJIQQ?oc=5",
+          "s": "finance.biggo.com",
+          "d": "2026-10-30",
+          "cues": []
+        },
+        {
+          "t": "Mitsubishi Electric Corporation Revises Consolidated Earnings Guidance for the Fiscal Year Ending March 31, 2027 - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTExKMUx6alRndUd6N1J6cHI4YUswZmRxamxVTGtwWGZMZ0g1eTZNMU9xYXZGNmRjWmhCWGtCNnZ4TGp3VWxsVEdBeExUZnlxdFIySl9VREZxMTB3eVloZVdVNmNDcDI3RlowcEVnZWlHdXVWLVQxWmY5R3dpbk15STZPTW04WEJXUThYa3hIS1dlRlNidXhLRUhlQVIxejRDa2tiWUhEOHIyTldtYXZNV01KUE5uQkhaTm5fVjBZYU5NRUx3Z215cFBlY2p0X1NZT0tkTTJ5ZUtaajdBYUFfN3BydjBsMlNM?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-10-30",
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-30",
       "reported": {
         "eps": 91.46,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 63.15,
         "surprise_abs": 28.31,
         "surprise_pct": 44.8
@@ -1689,43 +1673,41 @@
       },
       "wire": [
         {
-          "t": "General Dynamics Corporation Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMHczY3NVaFc1TDJhZ2pUVmRVdWxyRGczSEFncHRtay1HZ3J0R0hpSzZlcHpDd01vNTcyOHl5bmJRWGRtNmlxTnk5QXd1TGQyUDZqZmdKN0R4alZ3U3RNdVdDVG5DUlpNNlJmNEd1YmFNMkN6RllZUS04Rk1nNDlhVzFoRHF4Zmh1RDJjeDNlTWI1cnBpWi1Mc3FEbVFVNWhtZGpB?oc=5",
+          "t": "General Dynamics’s Q3 earnings call: our top 5 analyst questions - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS0ZTNjRPeVR3dy1USTFldmVETG1LLWNxOU80VW4xTDVJb1FCeUN1SFFBUzNsdEVKUEFiVFpQV0xKeWVuclFtS0xYYUVPcHNfUEstY2Y5d0NySExIWWhxdENvazR5SklYTjJjWXRuVVJlaU9WbjU0OXVSTjVVRktTd3ZJZDJIZlU3dHg2eF9nYnJtUUp0MTJzMDFWVmd1ckE?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-10-30",
+          "d": "2026-11-02",
           "cues": []
         },
         {
-          "t": "General Dynamics Logs Higher Profit, Revenue - WSJ",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRVJsYWZHREFYQkJodFVHU1BuWWlhYy1sWW5mSGNJV2dLbEpmOHB2NWNsTUx5Rkc3dlBmQzhkaFNJakxuLWpuT051OWdaVVIwQVhVU3RNdFJpT2hjS0JfVHRoSlo5Q0thNkJpcUtJV2RrZTFnOW1wSDg3R2ZpVkJzMXBlQjBuQmpPaGVkLTBRM2U2SmFP?oc=5",
-          "s": "WSJ",
-          "d": "2026-10-30",
+          "t": "General Dynamics Posts 12.9% Increase in Q3 2026 Revenue - GovCon Wire",
+          "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1nWmo1T051X1VWU0RKVXhTWEtQSDBORFpoTHIydVdmZ1ZZdDBuQzdYc3hZR3JkcWoyQ0kzcUpMQUpBaUNEclhIbFBwSHNpVEhLZEQzczZPX1lCSWIzdzdMNEtLZGs0OS1oZEVmOFRIMElLXzZBdU5j?oc=5",
+          "s": "GovCon Wire",
+          "d": "2026-11-02",
           "cues": []
         },
         {
-          "t": "General Dynamics Q3 2026 earnings beat estimates as sales rise 13% - Quartz",
-          "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZlVQSUltcDltWURxRnJySlJNUkJYOEJsbEhkUWNNSTROY0VHb1FvNThnN0VOdmROZFd6TXVfT3hldE1Gb1A3cVJUR0lWaVZ1SHVZNXZWTEh4US1IdzF0N01KOWRUQmJPVmFSaDR5dk1laXl5M3YxTkUzOEo3Yi0zNg?oc=5",
-          "s": "Quartz",
-          "d": "2026-10-30",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "General Dynamics earnings beat by $0.37, revenue topped estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObDJMb3FOQi1sLWU4NHRLVi01QzgyYnVOaWN2T0xxenhQZ0xDYTRqcDQ2U3dkZTdXZm5SeUhLQjg1LTVPMnM1ektLVnhneFp2cHhCaG9VWndmekk3YmRZdjhDaHZMZG5ZaVNrU25CLWJybzZDS2xKV09SRWotVlRRU1ZwRVdIYUdmdTVQaFU3VzB0TTZhY0ZqdGdpM00yUllDeTlHcDg3b21uTTBhdGFF?oc=5",
+          "t": "Jefferies raises General Dynamics stock price target on earnings beat - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPOTN5TGtwV0hnVHpydGcwNEs3a2NfMmNWVkVwSGd2RnpXR2l1OHRlRDMxc2Fabk9pSmg3NHBHVjM4eFlwVUtkQlh5RnNzS1dTdC1PcUMyeVYzd2NtVjNfQmFaNTJTNVk0ekdDV1ZRRGZVdjNEbmJhMTZtbFM5S2lZZEw0dXpPbGZsUFZxbFA4aG9LNTB5ZWFWNlZTaXh1dEpFcGNfd0ZXakNKa25YX1hWTGNsQzgzNmN5bjZrYUFVM0ctZ011SVM4OQ?oc=5",
           "s": "Investing.com",
-          "d": "2026-10-30",
+          "d": "2026-11-02",
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "General Dynamics Earnings: Pretty Brisk Performance Across the Business; Shares 15% Undervalued - Morningstar",
+          "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdXhud0t4cVlEbXQzN1BhZDJOaXU0TnJublUtOUtWT0R0SUhPSGtYMUQwdklEMk9pbl9WZUprZ0hlUWZzWFBCcExRdkJ3ejVHaWNENUlSVnZ0a0FQU19fZHAwYUVVbzh4dTU0NjV2NEh5NkNzeXgtcmh6eE4xNFliZTlTNVY3dTgzTTh5TVVVSkM2VlZjZVZvSm5YdzJVRXV0ajgtMHROSXZHWDFzYXFsZ1JjcWRKOGJWLWljdzliTDhvYzM3OHNlbDFBUFlHOVZfTl80TFpraXhOMVhRdGN5OV9vR3FKcWswbWdUTHB5dkQ2cGMxQWc?oc=5",
+          "s": "Morningstar",
+          "d": "2026-11-02",
+          "cues": []
         }
       ],
       "wire_gate": "2026-10-30",
       "reported": {
         "eps": 4.49,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 4.13,
         "surprise_abs": 0.36,
         "surprise_pct": 8.6
@@ -1745,7 +1727,7 @@
       "reported": {
         "eps": 1.52,
         "source": "Yahoo Finance",
-        "fetched": "2026-10-31",
+        "fetched": "2026-11-02",
         "eps_est": 1.4,
         "surprise_abs": 0.12,
         "surprise_pct": 8.9
@@ -1761,6 +1743,24 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2026-11-02T06:30+00:00",
         "tz": "Asia/Tokyo"
+      },
+      "wire": [
+        {
+          "t": "Sumitomo Corp raises FY profit forecast to ¥670B from ¥630B - scanx.trade",
+          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcUN2VzRRUFQ1czh6OElldUh6SVE5NV9kSDREN2RlM3JFN1A3eG50NHRhaVhrVF80M1UtdWktTDFEZHNjYi1KWUdJaDNqQUNPYnR0X2g5YTk1VjFrcjRwc290VkNPNnY5d2pDQThsMEJTOG1UekNqWG5BTlhGX0MyMFNQejBDdHVjM0N6cHlwb3hLYk1sM1NJMW5BV01rNjkxR3lSVHI4Qm0yU0JD?oc=5",
+          "s": "scanx.trade",
+          "d": "2026-11-02",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-02",
+      "reported": {
+        "eps": 33.4,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-02",
+        "eps_est": 36.71,
+        "surprise_abs": -3.31,
+        "surprise_pct": -9.0
       }
     },
     {
@@ -1769,9 +1769,9 @@
       "name": "Archrock",
       "d": "2026-11-02",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-02T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1781,11 +1781,21 @@
       "name": "BWX Technologies",
       "d": "2026-11-02",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-02T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "BWX Technologies earnings ahead as AI fuels nuclear opportunity - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpLSjEySEhjMWkxMGxISHdIUVJyOW1rWHJqYkFVTExjRFplLWx6Yl9vd2k0RkhjS1pJYV9FajFHVmE2TFZTRHFnaE04eDV2djhFcFhNSmhhREp3U050N0U2blhpQWZlby1YaUVpQm1qQ2ZEcGJPUGNkYlJ0SXp1MTVKa0tPWjViczY3TXZiek1tc3I4SEthVVRpYVJ5NkM1aEpyS1VPVkJoWUZRODdTMmIxQ2JrOHc?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-02",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-02"
     },
     {
       "type": "earnings",
@@ -1793,11 +1803,28 @@
       "name": "Transocean",
       "d": "2026-11-02",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-02T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Valaris earnings under pressure as Transocean merger looms - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa3MwbnRUbmwxWUlGMUV0dGhZeksxQWtuUkRkNEdKN2NKUDVXVHZTZUtKMDQwZnBDdzMxR1Q5S0VtWVpGQzdjeDMxaURKMkxRRlBtRjM2emx0VEZxdGdqN1RoSlFUMUx5UGRmbmlvWkl5X01JVlZJdWJ0LVMtdnhxSEc5YVFxdnFlVm02M1ZZMXJ2djRvU0RNTVFoR2RUaEpoMnVmZkhMN2JGRzdTWWVRUg?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-02",
+          "cues": []
+        },
+        {
+          "t": "Transocean earnings in focus: Can backlog offset revenue decline? By Investing.com - Investing.com India",
+          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdGVzRXRxdHh6MGQyRFYzRVdqaXAwbS1HUEI3MlowQ2F1SkU4aW9uczRQSUFrU2JhSDByZzBhQUsyX3NfVG1HcnNXV3NfSGltMWlCd2pUY3pMcmtac2JVVGZrSTJ2YmdkUmd4Q2VROFhqMnY5Ni1tbU9KaFZvMUJMODg5bmktaHFhUGs3c2F5YTBqaHJHdDJBRVk2RE83YzRHSVBBc2ZnUWpoNzB2TUtXYU5NeDdVbUc1VlVac2VrcWlPQQ?oc=5",
+          "s": "Investing.com India",
+          "d": "2026-11-02",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-02"
     },
     {
       "type": "earnings",
@@ -1805,11 +1832,21 @@
       "name": "Valaris",
       "d": "2026-11-02",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-02T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Valaris earnings under pressure as Transocean merger looms - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa3MwbnRUbmwxWUlGMUV0dGhZeksxQWtuUkRkNEdKN2NKUDVXVHZTZUtKMDQwZnBDdzMxR1Q5S0VtWVpGQzdjeDMxaURKMkxRRlBtRjM2emx0VEZxdGdqN1RoSlFUMUx5UGRmbmlvWkl5X01JVlZJdWJ0LVMtdnhxSEc5YVFxdnFlVm02M1ZZMXJ2djRvU0RNTVFoR2RUaEpoMnVmZkhMN2JGRzdTWWVRUg?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-02",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-02"
     },
     {
       "type": "earnings",
@@ -1817,9 +1854,9 @@
       "name": "5N Plus",
       "d": "2026-11-02",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-02T21:00+00:00",
         "tz": "America/Toronto"
       }
     },
@@ -1829,9 +1866,9 @@
       "name": "Williams Companies",
       "d": "2026-11-02",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-02T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-02T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1841,9 +1878,9 @@
       "name": "Alphamin Resources",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1853,9 +1890,9 @@
       "name": "Denison Mines",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1866,8 +1903,8 @@
       "d": "2026-11-03",
       "release": {
         "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-03T12:30+00:00",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2026-11-03T13:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1878,8 +1915,8 @@
       "d": "2026-11-03",
       "release": {
         "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-03T12:30+00:00",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2026-11-03T13:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1889,9 +1926,9 @@
       "name": "Intrepid Potash",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1901,9 +1938,9 @@
       "name": "Ivanhoe Mines",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/Toronto"
       }
     },
@@ -1913,9 +1950,9 @@
       "name": "Modine Manufacturing",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1925,9 +1962,9 @@
       "name": "Mosaic",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1938,8 +1975,8 @@
       "d": "2026-11-03",
       "release": {
         "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-03T12:30+00:00",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2026-11-03T13:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1949,9 +1986,9 @@
       "name": "NexGen Energy",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1961,9 +1998,9 @@
       "name": "Primoris",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1973,9 +2010,9 @@
       "name": "Triple Flag Precious Metals",
       "d": "2026-11-03",
       "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 15:00 EST",
-        "iso": "2026-11-03T20:00+00:00",
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1986,8 +2023,8 @@
       "d": "2026-11-03",
       "release": {
         "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2026-11-03T12:30+00:00",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2026-11-03T13:30+00:00",
         "tz": "America/New_York"
       }
     },
