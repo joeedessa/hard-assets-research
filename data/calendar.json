@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-02T16:35:32+00:00",
+    "as_of": "2026-11-02T21:58:01+00:00",
     "mode": "light",
     "coverage": "20/20 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -1697,7 +1697,7 @@
         },
         {
           "t": "General Dynamics Earnings: Pretty Brisk Performance Across the Business; Shares 15% Undervalued - Morningstar",
-          "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdXhud0t4cVlEbXQzN1BhZDJOaXU0TnJublUtOUtWT0R0SUhPSGtYMUQwdklEMk9pbl9WZUprZ0hlUWZzWFBCcExRdkJ3ejVHaWNENUlSVnZ0a0FQU19fZHAwYUVVbzh4dTU0NjV2NEh5NkNzeXgtcmh6eE4xNFliZTlTNVY3dTgzTTh5TVVVSkM2VlZjZVZvSm5YdzJVRXV0ajgtMHROSXZHWDFzYXFsZ1JjcWRKOGJWLWljdzliTDhvYzM3OHNlbDFBUFlHOVZfTl80TFpraXhOMVhRdGN5OV9vR3FKcWswbWdUTHB5dkQ2cGMxQWc?oc=5",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUHJwZW0yWWJ6VldSNW9EX2gxMktlNWNZTG1WRE40bXp6QmN3ZVpTQndBYTdYLW9LNmRfNjBrRUxfYW9GbkFTXzlSMzV1djhEbzFlNkVGUU93aThwLWt1UzNtdi1xaU41NkF4Y3hYZV92SWxneTg4TC1Pbi1qREp1NDQwV3lWY1NXSjYweHVzVEpwQU9iM1lKd0gtdEFxN0JROUJzRVpTNXpGQ0JKVmlOcjFYOUZYdm9Wc3BXbmlsZEtyUGFoeVZpTVdVNWtwNkExZFo3Rm5pOUF6Y2xO?oc=5",
           "s": "Morningstar",
           "d": "2026-11-02",
           "cues": []
@@ -1773,7 +1773,33 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-02T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Archrock earnings on deck as investors eye bounce-back quarter By Investing.com - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWjlEYlB6bHZENmw4b1JTdVZ4TzlPOGlPN3ZnNmxGYlpxOGFpeDdabWJHREFSNW9BNmRidnR5NDhQb2QyTkJJOG1GQko0U2R3cEJVeHUzdEFLc2RseTNEek9jV3VoUVFvS0pZZTV0dy1EZkUwLWpaYThMcG92WlE2TmhrRUhobjYwQVJvYjFZQ3J3QzY1UVRPUzNRWTl6dHNZMU5MTktCTnBXd2tJOVd2QUo2NzI?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-02",
+          "cues": []
+        },
+        {
+          "t": "A quarterly dividend rises about 10% to 23 cents at Archrock - Stock Titan",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaVhkSm9LSzQtVWNVRERmeWRHbnVmeThKckNOR1RfZGo1Y1VSTTFXcnhHZVlrWTc5OFhBbnpUMTFPREJmTjliVTJWcXhWUnU4eFJScXplT0wzLWVlOFpRbmFTQWViNS00b19IWkhBUHRLRnl0d29xRFpNei1YbU5sTU9fWFhvSkh5M3YwNFVYR3lnNHNr?oc=5",
+          "s": "Stock Titan",
+          "d": "2026-11-02",
+          "cues": [
+            "dividend/buyback"
+          ]
+        },
+        {
+          "t": "Archrock Reports Third Quarter 2026 Results - The Manila Times",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZng3bXRPRUtCa3BfN1gzVE13Y0F2SjJtZ2pOOG1LZld2STRKZFlBRTRmVmlaQlhmbG1Md0tpdVBLdENTcVNLS0E4WXBZZDBUQ3EzQkZWZHdiUXN0LXJldDVNSmdOMExsR2dDc2tuTkZUYWVSazBWbHhkcUI3TllJeHlMNlFQVGhuaDFzUzZ4WFhLTDg5UjJOalVBaExkenBRZGd5bTdDTmgxZ1Raek1JNWRGTWZOUlpt0gG-AUFVX3lxTE8yNXNzZkNJYlBaYzBWMWh1emppMnhQZk1xcXNTV2d0ZTFRN1hiazJCNE1VTXAwMW1kN1BZaS13VHFVOW5zRkxpUTA3MG5RQkdNQnN6UzJoZTg0aXVfYV9HUHdaY1J4T3ZNNmtTSEdtSThpanJtTjRnTldjWlRzeXkyZEdrX1ZtYkxVSnpqTzE0TS1RNGdnQzNkUndreDBpNWVOblNHME8yMWg2WHU2Wk9Sd1h1TWNHMERjbnpTaGc?oc=5",
+          "s": "The Manila Times",
+          "d": "2026-11-02",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-02"
     },
     {
       "type": "earnings",
@@ -1788,9 +1814,34 @@
       },
       "wire": [
         {
-          "t": "BWX Technologies earnings ahead as AI fuels nuclear opportunity - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpLSjEySEhjMWkxMGxISHdIUVJyOW1rWHJqYkFVTExjRFplLWx6Yl9vd2k0RkhjS1pJYV9FajFHVmE2TFZTRHFnaE04eDV2djhFcFhNSmhhREp3U050N0U2blhpQWZlby1YaUVpQm1qQ2ZEcGJPUGNkYlJ0SXp1MTVKa0tPWjViczY3TXZiek1tc3I4SEthVVRpYVJ5NkM1aEpyS1VPVkJoWUZRODdTMmIxQ2JrOHc?oc=5",
+          "t": "BWX Technologies Reports Third Quarter 2026 Results - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOa192aUIyMWIxS1RUcEVEcnl0QmVQajNGVjN6T2p1YVM0YjZxTXdTUXJJLVdOM3J6a2lPdGRhSkgyUGc4eERac19TSWEyNkIyTkg3VW0xS04tTWE2UE5IdmE4V1ZxeDktcjdvbUlNU3J1YVpsSnh0NkdseWFYelRWZk1HMDYxN1oxalpDSF95dFZObmxVMS1HeVZDUFhFNjZtdzk5Q2NB?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-02",
+          "cues": []
+        },
+        {
+          "t": "BWX Technologies earnings beat by $0.08, revenue fell short of estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY2U5RUp6TkV0WU1TbjgydEo1OHJ5cWhfRTdrMEh2ZDlXeVE2dGUzQ0VEM000SmZPekQ5cXZSeEtuXzU0cmptaXdGcENlNzVZUmt6cWpIXzNOczNuVzgtSzJULWxXQVljTFFIandONW9QWEJhUXlYMzFEZFhlRkh1SVNKVTVTeHRhanQ5SVZqc1BhU1ZZMUt4NGo2c3Y0bVNfbDN1SF9vZUcyYktYRVFMaFdwREx4eXRE?oc=5",
           "s": "Investing.com",
+          "d": "2026-11-02",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "BWX Technologies beats earnings for a sixth straight quarter - 24/7 Wall St.",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaVUxaEo4VGExaHd4WXJLelNJU0NOUU5jZU50Z2FEYkZwckp2T1dNTzRqaENaQ1FDWV9VZ1V6QjR0azlkWnNGVzJBZEt3c3ppS2p4V21TRzVRemZfZnVqZXVfWEM4Vy1jZV8zRXpLQ3ZQQ1ZKMlVNLUhUVDd3MmEzOWt5U2VwaWliTVFKLWtmZDZYQWYzRUd6SA?oc=5",
+          "s": "24/7 Wall St.",
+          "d": "2026-11-02",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "BWX Technologies Q3 Adjusted Earnings, Revenue Rise - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQREZyNEVXVTlLTXEyTEFESTFXdVB2TnZjYjlKSUFlcHZjUU1XdGg1NG16c1hMa3cwYjRkdlY4V3lJcXpkVXpzYm9MWVdydXRyNWNVUkJIbjd2MHBiMElYU0UzMDZyeDJ2eDZLd1F2eHhrVDZBN0NtdUhhcnNMVWdlVmtIUDB1azdOb0Q3Y3JSRjgxU0t4OTBXYmVUa2RlYjNtWXJSOEhB?oc=5",
+          "s": "marketscreener.com",
           "d": "2026-11-02",
           "cues": []
         }
@@ -1810,6 +1861,13 @@
       },
       "wire": [
         {
+          "t": "Transocean (NYSE:RIG) reports sales below analyst estimates in Q3 2026 earnings - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSzdQOFU1QVFuWEFEcWhIU0IxRVFienZFbzh1b3VlY3dqbERZZC0tM3MtR0RITVZXcUtWS25IblpidFdUbWZLS1N2MVUzN1lFdmE0UzhpcXM0a3QtS041cF9ZRFEteDE1NHhQZ0VzSnhNTWRXWi1pZVgxQU9TV2x4bk4wZXVUcXJtcDVfS0J2S2lSc0M1NHhXamJHZWZRS1I4eDk0MlJkRVpnUUtsUWRNTVdqbHlxNHd1WERjSzlTRHN5eDBfeHYtMkRyb05RbDlnclpKTQ?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-02",
+          "cues": []
+        },
+        {
           "t": "Valaris earnings under pressure as Transocean merger looms - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa3MwbnRUbmwxWUlGMUV0dGhZeksxQWtuUkRkNEdKN2NKUDVXVHZTZUtKMDQwZnBDdzMxR1Q5S0VtWVpGQzdjeDMxaURKMkxRRlBtRjM2emx0VEZxdGdqN1RoSlFUMUx5UGRmbmlvWkl5X01JVlZJdWJ0LVMtdnhxSEc5YVFxdnFlVm02M1ZZMXJ2djRvU0RNTVFoR2RUaEpoMnVmZkhMN2JGRzdTWWVRUg?oc=5",
           "s": "Investing.com",
@@ -1817,9 +1875,16 @@
           "cues": []
         },
         {
-          "t": "Transocean earnings in focus: Can backlog offset revenue decline? By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdGVzRXRxdHh6MGQyRFYzRVdqaXAwbS1HUEI3MlowQ2F1SkU4aW9uczRQSUFrU2JhSDByZzBhQUsyX3NfVG1HcnNXV3NfSGltMWlCd2pUY3pMcmtac2JVVGZrSTJ2YmdkUmd4Q2VROFhqMnY5Ni1tbU9KaFZvMUJMODg5bmktaHFhUGs3c2F5YTBqaHJHdDJBRVk2RE83YzRHSVBBc2ZnUWpoNzB2TUtXYU5NeDdVbUc1VlVac2VrcWlPQQ?oc=5",
-          "s": "Investing.com India",
+          "t": "Earnings Flash (RIG) Transocean Posts Q3 Adjusted EPS $0, vs. FactSet Est of $0.02 - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNXZQZTdCNTBrdGJSMEx6N3F4NS14STJfcGExQjFjNDNyUzJCR29xZVNjZ0ZyRjlkSGRuQnhENTBJcm5CdG8yWEZJWDdWeGx2MHJnTlptaWxfWUF4NlB5dVBJckFEdzl1X3kxODFsMXFvVkx3dnd6eWpvUTBpUUZZZWJFSlZselJXUHFRQVpBQlJqckF0SnNqZlFSMTBNWHpnVnIyQUJhSUNjeTR3SWtxRXJteGpLdDdfNU9ZWTFsUkRfckw3RGNTNA?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-11-02",
+          "cues": []
+        },
+        {
+          "t": "Transocean Ltd. Reports Third Quarter 2026 Results - GlobeNewswire",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNTNxQi04ZXRfanFpRllsVmxCMms0N29faFQxdUtCbm5la2g2RnB5eW9BMnVFR0dJNFlkLXVXSXliR2xpbXNEMlZ0dld1V2hUNWxfV205M0psTE45Q01saklfaUxsTlY4QjlhNG1CZzIxazFiOHBIZ1BfQTljTWlhbEtnOUY4MVRWb2Z6dXNHalMxUkZienAweExxazYtZUNmMnBSUmx1WlJhZ28xM2I3cUZkcTlXalhMUmJzYThn?oc=5",
+          "s": "GlobeNewswire",
           "d": "2026-11-02",
           "cues": []
         }
@@ -1839,11 +1904,36 @@
       },
       "wire": [
         {
+          "t": "Valaris earnings missed by $0.47, revenue topped estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUXJlZEJ4TmJ4VW5DMjA4SzYzOGxlSncyYjNPQXJBQzZpOWo3TXdRLUZ4S3BxVTBHdXZjSy1fNk5HUUxFNkd1WlEySVhESm9kcWRqWHExZXlUMFNWVHI5bFJMN1ZqTzdrSHFPVUF6aWpVcndQVGNvQ25xMjNRNWpfQlFlX1NHeHpsdWJiR3NFSEEyQWZESUMxQV9NTV9VUUlUUUU1a3lR?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-02",
+          "cues": [
+            "miss"
+          ]
+        },
+        {
+          "t": "Valaris Q3 Earnings, Revenue Fall - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS01jS2RVU1ZPcEdXNHNzOEl1QjVNOFJRLTNsV05PdmVjcl96alNONV9iLUp0MnVtT3BOLUpiTHlvSHI0cUU4OFNsR3V3cVloT19UVlZDQzVwSzdjUmZIOUtDcHNZbFZnNU5PTWJuV3RtbWxjdkgyTEJlV19mMXRmMDJDTXUzQjByemVUTDRn?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-11-02",
+          "cues": []
+        },
+        {
           "t": "Valaris earnings under pressure as Transocean merger looms - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa3MwbnRUbmwxWUlGMUV0dGhZeksxQWtuUkRkNEdKN2NKUDVXVHZTZUtKMDQwZnBDdzMxR1Q5S0VtWVpGQzdjeDMxaURKMkxRRlBtRjM2emx0VEZxdGdqN1RoSlFUMUx5UGRmbmlvWkl5X01JVlZJdWJ0LVMtdnhxSEc5YVFxdnFlVm02M1ZZMXJ2djRvU0RNTVFoR2RUaEpoMnVmZkhMN2JGRzdTWWVRUg?oc=5",
           "s": "Investing.com",
           "d": "2026-11-02",
           "cues": []
+        },
+        {
+          "t": "Valaris Q3 2026 Earnings Date and Estimates - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5EN2I0a2gtamRiYlZKUktXTHhjMkN4VG53NDgxN2xqd2Q1V3JCanpneFdUalB6QW4wY0JaMFVtb1JTREdjRHNINnczelFOblV1cW9odGNFYXZnMWRRWnpWU1VKWkFESERINjYyS3JoM2dEeDNtb3RXZ3Aza2I?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-11-02",
+          "cues": [
+            "beat"
+          ]
         }
       ],
       "wire_gate": "2026-11-02"
@@ -1870,7 +1960,24 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-02T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Earnings Flash (WMB) The Williams Companies, Inc. Reports Q3 Revenue $3.22B, vs. FactSet Est of $2.99B - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOa3o5UkdSM0ZOTTFHajNEclQyY0pkOFZGQWVzYlhfVk1hMEs2RHNwa2lIM3h1QldIS2poVXN0c1RCS0oyM1dvYWM4NVlaTVpVcnNLV0hOdml0WWppc0JDZEZ1b1FpNFJkenF5N2RkdW1VUWh5cHZhYVo5UUduc3duRmQzZmZzTFhFc1dIdnBTQTZ6N2tKbTBRdkl3UWJRYm83UHFVU1Vzak9yR3h3WlgzM3FfdFNUdkxveGJaa2JRT2FlRzdueUplRHM1RDVrWXVDa2FsWGc4S0NydUpQT1E?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-11-02",
+          "cues": []
+        },
+        {
+          "t": "Williams Companies. Q3 Adjusted Earnings, Revenue Rise - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQ3A2clJBVDhOWHFfYWVNYVVLQzNiSDlYNDYzRkRxVFkzMHJQMExpVm9ReUZjU2VROUsyczc2UnltTXFibllmZnN4VWtNTzVkcnJxb08yUEVwaUpsRzhDdWszU2pQOVNfME96VjRWWUxCaFkzM0trWUtqTEJtYXIxakZiTjBqcmlmbHB4VjBneEZfMUhDX25aakRNVXFsLVZWenlhdGF0aTg?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-11-02",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-02"
     },
     {
       "type": "earnings",
