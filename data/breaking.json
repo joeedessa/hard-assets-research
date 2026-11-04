@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "as_of": "2026-11-04T14:55:48+00:00",
+    "as_of": "2026-11-04T20:06:14+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 27/225 down 5%, sector +3.7%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 20/225 up 5%, sector +3.7%",
-      "Single-name collapse (any holding −12%+ in a session): 2 found",
-      "Conviction-3 divergence (±8%+ versus the -1.1% universe median): 1 found",
-      "Tracked commodity ±5%+ in a session: 2 of 12 moved",
-      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 0 found",
-      "USD (DXY) ±1%+ in a session: -0.50%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 55/225 down 5%, sector +3.8%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 15/225 up 5%, sector +3.8%",
+      "Single-name collapse (any holding −12%+ in a session): 8 found",
+      "Conviction-3 divergence (±8%+ versus the -1.1% universe median): 6 found",
+      "Tracked commodity ±5%+ in a session: 5 of 12 moved",
+      "Spot-versus-equity divergence (>4pt gap on 6 pairs): 3 found",
+      "USD (DXY) ±1%+ in a session: -0.30%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 1 outside their window, 0 excluded as undated"
@@ -21,7 +21,46 @@
       "sev": "critical",
       "cat": "company-critical",
       "measured": true,
-      "t": "MOD -22.0% in a single session",
+      "t": "MTRN -22.3% in a single session",
+      "ev": "Computed from today's close. Conviction 3, froth 1.",
+      "stance": "REVIEW",
+      "action": "Insulated names are involved (MTRN). Weakness here is opportunity, not information.",
+      "tk": [
+        "MTRN"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "VRT -13.4% in a single session",
+      "ev": "Computed from today's close. Conviction 2, froth 3.",
+      "stance": "REVIEW",
+      "action": "High-froth names are involved (VRT). Entry windows close in a squeeze; do not chase.",
+      "tk": [
+        "VRT"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "NVT -13.4% in a single session",
+      "ev": "Computed from today's close. Conviction 1, froth 2.",
+      "stance": "REVIEW",
+      "action": "Affected names are lower-conviction; watch rather than act.",
+      "tk": [
+        "NVT"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "MOD -26.9% in a single session",
       "ev": "Computed from today's close. Conviction 1, froth 2.",
       "stance": "REVIEW",
       "action": "Affected names are lower-conviction; watch rather than act.",
@@ -34,7 +73,20 @@
       "sev": "critical",
       "cat": "company-critical",
       "measured": true,
-      "t": "TRMB -19.2% in a single session",
+      "t": "MTZ -16.2% in a single session",
+      "ev": "Computed from today's close. Conviction 1, froth 2.",
+      "stance": "REVIEW",
+      "action": "Affected names are lower-conviction; watch rather than act.",
+      "tk": [
+        "MTZ"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "TRMB -15.6% in a single session",
       "ev": "Computed from today's close. Conviction 1, froth 2.",
       "stance": "REVIEW",
       "action": "Affected names are lower-conviction; watch rather than act.",
@@ -44,10 +96,36 @@
       "date": "2026-11-04"
     },
     {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "PRIM -13.6% in a single session",
+      "ev": "Computed from today's close. Conviction 1, froth 2.",
+      "stance": "REVIEW",
+      "action": "Affected names are lower-conviction; watch rather than act.",
+      "tk": [
+        "PRIM"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "critical",
+      "cat": "company-critical",
+      "measured": true,
+      "t": "6370.JP -17.7% in a single session",
+      "ev": "Computed from today's close. Conviction 1, froth 2.",
+      "stance": "REVIEW",
+      "action": "Affected names are lower-conviction; watch rather than act.",
+      "tk": [
+        "6370.JP"
+      ],
+      "date": "2026-11-04"
+    },
+    {
       "sev": "high",
       "cat": "divergence",
       "measured": true,
-      "t": "PWR -9.9% against a -1.1% universe median",
+      "t": "PWR -11.8% against a -1.1% universe median",
       "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
       "stance": "THESIS AT RISK",
       "action": "Top-conviction holdings are named (PWR). Confirm the story before changing anything.",
@@ -58,12 +136,77 @@
     },
     {
       "sev": "high",
+      "cat": "divergence",
+      "measured": true,
+      "t": "ETN -9.9% against a -1.1% universe median",
+      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+      "stance": "STOP ADDING",
+      "action": "High-froth names are involved (ETN). Entry windows close in a squeeze; do not chase.",
+      "tk": [
+        "ETN"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
+      "cat": "divergence",
+      "measured": true,
+      "t": "GEV -9.8% against a -1.1% universe median",
+      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+      "stance": "STOP ADDING",
+      "action": "High-froth names are involved (GEV). Entry windows close in a squeeze; do not chase.",
+      "tk": [
+        "GEV"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
+      "cat": "divergence",
+      "measured": true,
+      "t": "FNV +7.4% against a -1.1% universe median",
+      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+      "stance": "THESIS AT RISK",
+      "action": "Top-conviction holdings are named (FNV). Confirm the story before changing anything.",
+      "tk": [
+        "FNV"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
+      "cat": "divergence",
+      "measured": true,
+      "t": "WPM +11.7% against a -1.1% universe median",
+      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+      "stance": "THESIS AT RISK",
+      "action": "Top-conviction holdings are named (WPM). Confirm the story before changing anything.",
+      "tk": [
+        "WPM"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
+      "cat": "divergence",
+      "measured": true,
+      "t": "MTRN -22.3% against a -1.1% universe median",
+      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+      "stance": "BUY THE DISLOCATION",
+      "action": "Insulated names are involved (MTRN). Weakness here is opportunity, not information.",
+      "tk": [
+        "MTRN"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Silver +5.4% in a session",
+      "t": "WTI -8.0% in a session",
       "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved +5.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "stance": "REVIEW",
+      "action": "The underlying moved -8.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
       "date": "2026-11-04"
     },
@@ -71,11 +214,102 @@
       "sev": "high",
       "cat": "commodity",
       "measured": true,
-      "t": "Palladium +6.8% in a session",
+      "t": "Brent -8.4% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "REVIEW",
+      "action": "The underlying moved -8.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "Silver +5.3% in a session",
       "ev": "Spot/futures move computed from today's close.",
       "stance": "MONITOR",
-      "action": "The underlying moved +6.8% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "action": "The underlying moved +5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "Palladium +7.8% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +7.8% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "REE -5.3% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved -5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
+      "measured": true,
+      "t": "Lithium +3.1% but its equities -1.1% — a -4.2pt gap",
+      "ev": "Median of 6 li holdings against the underlying.",
+      "stance": "MONITOR",
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "ALB",
+        "SQM",
+        "PLS.AX",
+        "MIN.AX",
+        "NVX.AX",
+        "5713.JP"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
+      "measured": true,
+      "t": "WTI -8.0% but its equities -2.6% — a +5.4pt gap",
+      "ev": "Median of 36 oil holdings against the underlying.",
+      "stance": "MONITOR",
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "VLO",
+        "TDW",
+        "STNG",
+        "EPD",
+        "RIG",
+        "VAL",
+        "NE",
+        "HP"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
+      "measured": true,
+      "t": "NatGas +2.4% but its equities -3.5% — a -5.9pt gap",
+      "ev": "Median of 10 ng holdings against the underlying.",
+      "stance": "MONITOR",
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "LNG",
+        "VGAS",
+        "KMI",
+        "ET",
+        "EQT",
+        "AR",
+        "WMB",
+        "SLNG"
+      ],
       "date": "2026-11-04"
     }
   ]
