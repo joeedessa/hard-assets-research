@@ -3,8 +3,8 @@
     {
       "type": "commodity-move",
       "tk": null,
-      "label": "Brent down 6.3% today",
-      "d1": -6.3,
+      "label": "Brent down 6.1% today",
+      "d1": -6.1,
       "date": "2026-11-09"
     },
     {
@@ -135,6 +135,13 @@
     },
     {
       "type": "equity-move",
+      "tk": "NVX.AX",
+      "label": "NVX.AX ▲ 12.5%",
+      "d1": 12.5,
+      "date": "2026-11-09"
+    },
+    {
+      "type": "equity-move",
       "tk": "ALM",
       "label": "ALM ▲ 8.0%",
       "d1": 8.0,
@@ -206,9 +213,9 @@
     {
       "type": "entry-window",
       "tk": "LYC.AX",
-      "label": "LYC.AX -40.4% below 52w high — entry window (insulated)",
-      "dd": -40.4,
-      "r1y": -7.2,
+      "label": "LYC.AX -38.9% below 52w high — entry window (insulated)",
+      "dd": -38.9,
+      "r1y": -4.9,
       "date": "2026-11-09"
     },
     {
@@ -350,9 +357,9 @@
     {
       "type": "entry-window",
       "tk": "PLS.AX",
-      "label": "PLS.AX -56.7% below 52w high — entry window (insulated)",
-      "dd": -56.7,
-      "r1y": -8.8,
+      "label": "PLS.AX -56.9% below 52w high — entry window (insulated)",
+      "dd": -56.9,
+      "r1y": -9.1,
       "date": "2026-11-09"
     },
     {
@@ -400,7 +407,7 @@
       "tk": "ERA.PA",
       "label": "ERA.PA -57.3% below 52w high — entry window (insulated)",
       "dd": -57.3,
-      "r1y": -29.7,
+      "r1y": -29.6,
       "date": "2026-11-09"
     },
     {
@@ -414,25 +421,25 @@
     {
       "type": "entry-window",
       "tk": "ILU.AX",
-      "label": "ILU.AX -27.1% below 52w high — entry window (insulated)",
-      "dd": -27.1,
-      "r1y": -3.1,
+      "label": "ILU.AX -25.6% below 52w high — entry window (insulated)",
+      "dd": -25.6,
+      "r1y": -1.1,
       "date": "2026-11-09"
     },
     {
       "type": "entry-window",
       "tk": "NVX.AX",
-      "label": "NVX.AX -85.7% below 52w high — entry window (insulated)",
-      "dd": -85.7,
-      "r1y": -83.7,
+      "label": "NVX.AX -83.9% below 52w high — entry window (insulated)",
+      "dd": -83.9,
+      "r1y": -81.6,
       "date": "2026-11-09"
     },
     {
       "type": "entry-window",
       "tk": "AMG.AS",
-      "label": "AMG.AS -42.7% below 52w high — entry window (insulated)",
-      "dd": -42.7,
-      "r1y": -6.1,
+      "label": "AMG.AS -42.2% below 52w high — entry window (insulated)",
+      "dd": -42.2,
+      "r1y": -5.4,
       "date": "2026-11-09"
     },
     {
