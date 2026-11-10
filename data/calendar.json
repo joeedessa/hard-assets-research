@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-10T20:03:00+00:00",
+    "as_of": "2026-11-10T21:40:02+00:00",
     "mode": "light",
     "coverage": "31/31 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -916,10 +916,10 @@
           "cues": []
         },
         {
-          "t": "Constellation Energy earnings analysis: questions answered and next catalysts - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdm5iZWtmZlBfSGJBSURsSHFsTW15ZEhnQXMyeTNrdHo1RmY5RFVNV2pkcU55ZEZza0JCUDFRQlFjTFphUnRjRTk3MFp3MnZfWV9fMlg3YnFOWERCVjZyWUVmOHgtT09PTEduejNyZzUxUUlKaVphaWlFaHJsNkNqSlc2R0xFdHFlMjlXcmNEYnJyX2JyaWwyX3c1YUxVREM4SWk0WnoxSHZ5Ui1KVUwxZzBqVQ?oc=5",
+          "t": "Constellation Q3 Earnings Call Highlights Long-Term Nuclear Contracts - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObWMzRWo5VXJ2dnJDc090TnJGV3JLNkp6dlNxOUh1eXNoVUFxeTdWV2k3YjBqRDBCZXg0ak9vejBadHRTOXM5M3J3YzZLQlZRNWgtVEwwU0hvTy1GbHNkSWdnTm5NSlhUelJCNFoycGk4RHhaUHFnM2hwWm42TDFBTnR1UVdLR2hzSlJseUN5MjR1WWlYbFpsSGVPRmQ5RWc?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-11-09",
+          "d": "2026-11-10",
           "cues": []
         },
         {
@@ -930,13 +930,11 @@
           "cues": []
         },
         {
-          "t": "Constellation Energy jumps 10% after earnings beat, guidance hike (CEG:NASDAQ) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ3pKYWl6OFJ4ODRHaFhDUEdlNFd1aWN1ZUxGQmdLcGZZNDJTUXAwWUR5T0JPMWNiNUw1RjYzd1ZXTzc3eW1PbDBGbk5aM3BDeU0xNVdtZXRzNjZCdjhEdFRsVkdycVkwc3U1UDhSVkpROFU3VkZzTll0TWJKTHBjc0N3TS1UaDZteXNySzRZWUFJMDhCU1JINnozM3VFUmd1c0lwZGhzak1kQ0Iza1E?oc=5",
-          "s": "Seeking Alpha",
+          "t": "Constellation Energy earnings analysis: questions answered and next catalysts - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOXkxeDFZb0wtS3E0UGFOMkZsdzg5SE5sQW9TVTgxWndQX0NySnZleDh4UWJWSmVUcXdWdVptSzUxdmo2N084VzJRam9yU3g2Z2hXeGRVbHdoNVNLSzRCTU5UcTZ0dGs5VXBfdHdmRmR1a0NiN1RiYWlmUGJJbkNKX0Z6SFRUTGtzMXBZcFNFTUlfaXVhb0o5ZFFfczg4R3B0Z1A5SWRzcDdtT19WZkNpNm5WUDlJbFhpZzVjWmNDYXpwaXBzQlpjdEFFdlJISHdiSzc5NQ?oc=5",
+          "s": "Investing.com",
           "d": "2026-11-09",
-          "cues": [
-            "beat"
-          ]
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-09",
@@ -962,6 +960,15 @@
       },
       "wire": [
         {
+          "t": "Earnings call transcript: Consolidated Water misses Q3 2026 estimates as stock falls - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQREVPaVhuZ0pTbk9LOTZoTXh6WjB2bDhUM0ktNjl6bHBxbHB4RDlGMXJNb2p4WExjQlJqVFNnbjhEWjMyd3BrQ3JKUG5CemstMTRJZ1A4S05mSHluUDVGTDlocndCSHpBOVlwZFFnT0ZINFpvbkNuVXhwd2NXdFc1OEpiTGJVTUptYmZ6TkVpb0Z2bndob1FPc1NHcFpybkpFSWZvRjhlbmlFTVhXQXJnMmNQbWUxVFJWU01JdURWVFYzMzBTQllVcy03YU96UW9YM09VT21R?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-10",
+          "cues": [
+            "miss"
+          ]
+        },
+        {
           "t": "Consolidated Water Reports Third Quarter 2026 Results - Quantisnow",
           "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWnk3NFhNXzZYU1k4UzFERUZCUUd4VmtBdVpBYkJOMXJBRGszbzFGU1ZmRTNtS21KdjhCSThvRnpTUGNVU3RNU1ZRR0NJczdEZG9wQ2RmX0xwaFdIQWdXMFNNNG9HRVRkanl5Vl9GMF8xVlVnV28wQUtHSk9jMHZCVC1ncTl4dVVFMW5mdnJLek9FS3N2SmJLTWhSV2E?oc=5",
           "s": "Quantisnow",
@@ -969,25 +976,16 @@
           "cues": []
         },
         {
-          "t": "Consolidated Water (CWCO) Q3 Earnings: How Key Metrics Compare to Wall Street Estimates - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQR1h1YUx3N2ZaamEzVldUZW9YcnI5UUtkajJpd01vdEV3RWpzZVhTQUEzS0ZZX3k5SjFRcWJseVhEczQteEVwWENReHd4WGx3bDEyb0tRVWJmMkttWUxnb1FtZk9udjlaWTVpOERDSDVUOFVsNXdXU3pFYnpTS3d3Ynhma18tV2xhaFpNeE9td0RWVm1TWnNTQUExTUVUcmRMZEE?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-09",
+          "t": "Consolidated Water (CWCO) Q3 2026 Earnings Call Transcript - The Globe and Mail",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQX1c4cngtelRaVmxNODlqU2EwMFZlUnN6RV9LVERPY0JYSW1xRWlCbUZ3bWZUZ1VWcU52bTU0ZXpQaWJISTBTQlprV1kzLW5oVzliSERRMmh6bDlWOEF2cU1CRWZvVlJkQ0FBeEdqV3ZrWjVCVks3OTdwbVJ4X1NBZGx3aFo1QndtYWxuNm1JS1ZyNTc3RHVGclFLYm04NndyRklWal9Edm53S3Q0SU9lVEd1dV9qREh3MmJZWlQxSDFnMUV4SEFScWx0T2tVeElBcno5R09oNk1fZw?oc=5",
+          "s": "The Globe and Mail",
+          "d": "2026-11-10",
           "cues": []
         },
         {
-          "t": "Earnings call transcript: Consolidated Water misses Q3 2026 estimates as stock falls By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQY0RHR1JjYzF5RXppY1lqQkNsM3RTUlFDREs0UkUxcDNjVklnd2UyTWxrVkhzSmJfVUZ4a0lqNm5xUkpVa254N0tnbUF4b3dodmtCWTU1eWVYc1cwLUpfUFlNaTYyVzBwUHBOeDNKQVlvM1BUTXhjRDAwTGxzRE1RNzFJU1hXUldnSmhTdmlVTGdXbzU1dElHRUhHeWNvS0luUmNrd2RDbkJjdjZNUUNQTXZUOHY4WjhOcTh6UXRTNm00V1l0eC1JWjlXOVNvSFIwYTR2MTZqdlp6SVRO?oc=5",
-          "s": "Investing.com India",
-          "d": "2026-11-10",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Consolidated Water Co Ltd reports results for the quarter ended September 30 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPR0xFRDRzSDA5WF9wUzlxakh4VS1mMWZfS1I3U1FkSjJrX1NpblJPVTcwcFhsbERwaEx0MjRtSlJsYUZxem93WlR1X3ZVRFI4RGhzOWZfcnA5a2VpcnU4TnhfcWpyNzJKTngzMHJDMlJrazRnVmxTNDE2NzgtenFMUXhsMGtxbWJSTTV0Z0MxSzdsZzVMU09BcHJqcnhLTXhaNVBidkJoejJNQ2U5WmNyVW9adWFiMzVyeWVmWEczaDdodWFlM3h6ZnRVaFczNi02QUliMFdIckhKd1g2bnhhT0tuOWthekdRclptSERyVy1iLVZBc0E?oc=5",
-          "s": "TradingView",
+          "t": "Consolidated Water (CWCO) Q3 Earnings: How Key Metrics Compare to Wall Street Estimates - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQR1h1YUx3N2ZaamEzVldUZW9YcnI5UUtkajJpd01vdEV3RWpzZVhTQUEzS0ZZX3k5SjFRcWJseVhEczQteEVwWENReHd4WGx3bDEyb0tRVWJmMkttWUxnb1FtZk9udjlaWTVpOERDSDVUOFVsNXdXU3pFYnpTS3d3Ynhma18tV2xhaFpNeE9td0RWVm1TWnNTQUExTUVUcmRMZEE?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-11-09",
           "cues": []
         }
@@ -1022,10 +1020,10 @@
           "cues": []
         },
         {
-          "t": "NRG Energy, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWU1iQnFIbzVyaWdJdE0wOGVCWG95Sm5PYnI2ZFVrZkZsQk8wczBHdTJWczF6N0psU1I5ZmtHd0QzeElCSGRGUUxfd1dfVU1iT0tjazdlb3JyMVhtMzZGMjhxZ3lIQVNpaGpXQ0lnaGJJWUNfdDhLOUlmMmFrc051UUdKTEU2QQ?oc=5",
+          "t": "NRG Q3 Earnings Call Focuses on Asset Sale and 2027 Outlook - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM0szQ19BUGgzMXhXa3pQaWhUQmNoZWxBSGl6eGlPcTQ2N2g2QWdVSlpobWhHbFNCbnAzdzlQU1NMaV9pM295R051RjJVM1R3aVFGUHlFN25LX3R6LVpoSTkzbzN5SVBhVjlTX1NFOU1rWmxXbmtISGJUaDB2d2M2N3JST2swYlY2WEJMTG8zNTg0ZUVwOThYVA?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-11-09",
+          "d": "2026-11-10",
           "cues": []
         },
         {
@@ -1121,6 +1119,13 @@
       },
       "wire": [
         {
+          "t": "Tidewater Inc (TDW) (Q3 2026) Earnings Call Highlights: Day Rates Surge 12. ... - Yahoo Finance Singapore",
+          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Cc1NLNmkzbHVRVllMTWVzbU15WkZnZE9MSEE2bEoyREFRa3JuMWJWOVo3N0tGTERVSGN2XzJTR0lGSkl0OFItZVFBZ3l3MnpjOGhnVTEtQ2hGbVZlSk1zeVlWc2tubWtrVEFFanYwMWxva1ZDZG52bklZMFNxS1k?oc=5",
+          "s": "Yahoo Finance Singapore",
+          "d": "2026-11-10",
+          "cues": []
+        },
+        {
           "t": "Tidewater Q3 2026 Earnings Call Transcript - Benzinga",
           "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOLUpPc1lfeEVERjhJbVl5SjhUUTRSSHdhT0xKZHNzTTRyZ1JwQW01Y21jQkp1ci1scGdBSHpCd0Q4cWZZalZCVmt6SWhpZ1VIa1FoWFMtMlJoZ1FUVHFLR3RUUUM0NnFNS3REMkhpLWhSYzQ3djVacjlmR2IxLWNJZFFjb09USVdqTHByVmc4Nkw?oc=5",
           "s": "Benzinga",
@@ -1128,10 +1133,10 @@
           "cues": []
         },
         {
-          "t": "Tidewater (TDW) Lags Q3 Earnings Estimates - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS0xQRmNsczhUbUdMdzJxdlgwQ1lBcjNITnpENi1Jcm94YTdjcDFsWlVzTC0zWElpUWIzemxTeWZqd09QejBNbFVkZHl3eFVvbk5QX3FMVkdjUndOcnlkc0dweHY2b2EtWmJtM25VWGgwVlFTWk5CRVFvV2RIWmNTTDVrQmdESzBzeG5XeFgyZnJFbTc1eDhOYXhaZw?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-09",
+          "t": "Tidewater Releases Q3 2026 Financial Results - AlphaStreet",
+          "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5teWowSC04ejJzY0VQT3FGWDZjTHo5SzBhNjRZX0I3TVFLM3lEbnFRa3o2VXpaeGoxXzNwNmZrS1IyYmxZTXFNRTBjb2ZWNE5jN3dHR19VRllEd0p6ZDFXd3pGWlpGbEpValhBQnZEc0VfWl9BMzlxd3pnVkhCbFXSAYQBQVVfeXFMUDBHVzlaNlJrVHVtTWpDYjJFUDAteFlNVzljZGR1ajJpUWRhSl9QWGpUVUljc0ZGWm1NVDhSVEUwQVhFUFJwdGlBVmRiQnhRY3hhRGp4RmdvRUU4cTBydFF3WHhYMldMNjgtb2gzSFB5Z3cwRzRHUWVONEFrWkZxSHNNS20y?oc=5",
+          "s": "AlphaStreet",
+          "d": "2026-11-10",
           "cues": []
         },
         {
@@ -1139,13 +1144,6 @@
           "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR19zNFF4VGJpTUZuZTZaNllSRVhHT1EwWUQyU0FIbFRkS0ZBb3gtVGdzMnRYOTQ4RmxXcTAtZlhPN1pYUDBSQm5MMHJqTEg0YjNsRVhkVXA2Wlg5MFo4SEozRnU3dXhtSVhEZllwQ25rcmF0SFo4THV4dlVMRVE3cHZzbXZtRVU?oc=5",
           "s": "MarineLink",
           "d": "2026-11-10",
-          "cues": []
-        },
-        {
-          "t": "Tidewater: Q3 Earnings Snapshot - kare11.com",
-          "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUzJZS2ZESGpGWVk5MGJ6YWNqSnAtT19KNUpKZzJjRzlKZ2VwZVlJSHpQWWx6dl9ZZXEtXzktbTZPRXpIQjlPTzVCcXUxXzd6aUEzLVUxR3ZoWk1mY0xlTGZSZmZGcnB1U1BWNkRub3VlSkJMNmRHZ1V4YzdwV2ZXemtjaW1IbDVaYUZkaEtvdFV2aWpDU194QXFva2V3cEFLUF9vYWkyVmZBenZ1M0M4UUluYnNzYlNxeUwwb25Ba3Y5RFJFMmhPS09R?oc=5",
-          "s": "kare11.com",
-          "d": "2026-11-09",
           "cues": []
         }
       ],
@@ -1409,6 +1407,13 @@
           "s": "www.marketscreener.com",
           "d": "2026-11-10",
           "cues": []
+        },
+        {
+          "t": "Mitsui Kinzoku Reports Six-Month Consolidated Results - TipRanks",
+          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPOUNoa3FRV1RMSFc1TmxEMkV2MTc2VjAyTktUMXZpN29zc25YMlY5WXpDWWs3VHlDTlAwUlJyRkF4NGhxZ0xaYVhsdGdPQ2pkOGNDV2RRQ29zOGdxQlhrNWRDZUNCcDRuVlotWTRUai1BZXVDYmFrOEpmb1JWYlNFUzR6aTRvMHhTMUw1Sk1iRmJha1RQSmlpRmJ6VURiblRValNkRzdpbmhrNlhWSmFNRXo3eVZGQ3EyWXlHQjd1d3o?oc=5",
+          "s": "TipRanks",
+          "d": "2026-11-10",
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-10",
@@ -1457,13 +1462,6 @@
           "t": "Fujikura raises full-year forecast after 1H operating profit more than doubles - Yahoo Finance Singapore",
           "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdmlrWmlKS2tzSGItYTFJYU5Gbm5wOTM5dkVhNF81N20yRTF3cm55LUMzdmp0Rm5ucXhTVHVSS1ZjRUdfUEpEMU1rckhGcjBFNmw4aXFWQnVteVFMX3U1V2lqMnNFLU5VaHlwSk9PcWJVbExVSDcyMnQ2VkF2LVdyeGRLNk82R0tW?oc=5",
           "s": "Yahoo Finance Singapore",
-          "d": "2026-11-10",
-          "cues": []
-        },
-        {
-          "t": "Fujikura stock gains revenue outlook as H1 profit surges - ad-hoc-news.de",
-          "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVU1FR180TlBOR2NvQmV5Mm1vM2lyUWREOW1Vd2xVQzRXblAwVms1V3lQX0pRbkdzNjF5dElsUWFjdG1UUzhQT2RKMXVZQW9FaUJSRmtBQzJTWlpncGJxWUJTZnJ2X1FlbXAtRUJGWndvNWRHTHRMUTVSU0hXRVJTZnlQeXZTY20wVlVCU2hXN2V2Rzlxb3psZ05mWGpNOEdRN0FhU2NZWTJBZlVXczFUcGRheDRxSzU3M213?oc=5",
-          "s": "ad-hoc-news.de",
           "d": "2026-11-10",
           "cues": []
         }
