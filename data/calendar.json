@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-10T15:16:35+00:00",
+    "as_of": "2026-11-10T20:03:00+00:00",
     "mode": "light",
     "coverage": "31/31 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -976,9 +976,9 @@
           "cues": []
         },
         {
-          "t": "Consolidated Water earnings missed by $0.08, revenue fell short of estimates - Investing.com Nigeria",
-          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQy11YWZUeVZmWG5NT0M2Tm9zVVJmR1VSaFB6OUpwNkNvQkJYcHh6ZkFOM0dDSHhSNjlPeGVQVVBicGpMVi1kcEozTFAzdjhMSkwxTG1zd2FIcDRBWGlxdDhkQzRyMVJkWW5GaXQyaURLcVFERFJ3TnFjQnhwX3V5R0dkVUM5VkFZY2N4UGpEd0hQeDRhb0ZjbTBvTks4cS1wZHNWSXNpUU81b2NEVTlMaUZBY3d1QkVId2NnTg?oc=5",
-          "s": "Investing.com Nigeria",
+          "t": "Earnings call transcript: Consolidated Water misses Q3 2026 estimates as stock falls By Investing.com - Investing.com India",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQY0RHR1JjYzF5RXppY1lqQkNsM3RTUlFDREs0UkUxcDNjVklnd2UyTWxrVkhzSmJfVUZ4a0lqNm5xUkpVa254N0tnbUF4b3dodmtCWTU1eWVYc1cwLUpfUFlNaTYyVzBwUHBOeDNKQVlvM1BUTXhjRDAwTGxzRE1RNzFJU1hXUldnSmhTdmlVTGdXbzU1dElHRUhHeWNvS0luUmNrd2RDbkJjdjZNUUNQTXZUOHY4WjhOcTh6UXRTNm00V1l0eC1JWjlXOVNvSFIwYTR2MTZqdlp6SVRO?oc=5",
+          "s": "Investing.com India",
           "d": "2026-11-10",
           "cues": [
             "miss"
@@ -1015,13 +1015,6 @@
       },
       "wire": [
         {
-          "t": "NRG Energy Reports Third Quarter 2026 Results, Reaffirms 2026 Financial Guidance, and Initiates 2027 Guidance - NRG Energy",
-          "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ENm5kT1FLOS0taDk2Z0tSSUEyMHZ0azRkMVlwbnVWS2NXemtBbHI0LWFKOXQ0LTVVLW5YNXhqMERNSnZqU1BlSEpxbXZKb2hWWF9iT0g5cFhhamkw?oc=5",
-          "s": "NRG Energy",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
           "t": "NRG Energy Signs $4 Billion Asset-Sale Agreement, Posts Higher Quarterly Earnings - WSJ",
           "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQnU0YlhyV1RtMUVNS1RqMXJlYVdNUVhkRzFvWmFTMjNGc2lqR1F3MXRwNmQtOWduUVlTOFZCd1pITG5rcW5ZQ0ZEUjcyQXhhYk11ODM5QXJiMDhnRThPU1J2d3UydjRSX3lIWENCVUx6U0Racl9nODZjZEpjeHNEa255eGpqTWFadGVhWmlzT2I4NGhRXzJ0MThOMElUN2JyZjNuZ0JBOTZFQV9SeklkSTZWVWttQjVEaUdhcVJ6LVVVSDd2?oc=5",
           "s": "WSJ",
@@ -1041,6 +1034,15 @@
           "s": "Investing.com",
           "d": "2026-11-09",
           "cues": []
+        },
+        {
+          "t": "Nuke Stock Constellation Fueled By Earnings; NRG Hits Gas On Buybacks - Investor's Business Daily",
+          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZVJnN3A5MG9xU29VekNOTV9YUlUwRkZzZDJGdEJoNjUwTmFFdmRNcjVIQjN1LVRQX0w3STgwdnRmLVZYOERBaEtLbGdOSkE1NHd0MDlOZlhsT0FYSENUZHNfeVp3MnZpeExBRE84b29TN2c4S3RXcGRiX1pxdXRZcUdjZWc4ZTA5Uml6c0N2bXN2UExKVjBhX0lnZE95d21FQlFsNTJDa2I2UQ?oc=5",
+          "s": "Investor's Business Daily",
+          "d": "2026-11-09",
+          "cues": [
+            "dividend/buyback"
+          ]
         }
       ],
       "wire_gate": "2026-11-09",
@@ -1119,6 +1121,13 @@
       },
       "wire": [
         {
+          "t": "Tidewater Q3 2026 Earnings Call Transcript - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOLUpPc1lfeEVERjhJbVl5SjhUUTRSSHdhT0xKZHNzTTRyZ1JwQW01Y21jQkp1ci1scGdBSHpCd0Q4cWZZalZCVmt6SWhpZ1VIa1FoWFMtMlJoZ1FUVHFLR3RUUUM0NnFNS3REMkhpLWhSYzQ3djVacjlmR2IxLWNJZFFjb09USVdqTHByVmc4Nkw?oc=5",
+          "s": "Benzinga",
+          "d": "2026-11-10",
+          "cues": []
+        },
+        {
           "t": "Tidewater (TDW) Lags Q3 Earnings Estimates - Yahoo Finance",
           "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS0xQRmNsczhUbUdMdzJxdlgwQ1lBcjNITnpENi1Jcm94YTdjcDFsWlVzTC0zWElpUWIzemxTeWZqd09QejBNbFVkZHl3eFVvbk5QX3FMVkdjUndOcnlkc0dweHY2b2EtWmJtM25VWGgwVlFTWk5CRVFvV2RIWmNTTDVrQmdESzBzeG5XeFgyZnJFbTc1eDhOYXhaZw?oc=5",
           "s": "Yahoo Finance",
@@ -1131,16 +1140,6 @@
           "s": "MarineLink",
           "d": "2026-11-10",
           "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Tidewater posts Q3 revenue beat, misses EPS in 2026 - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObDFhQUpzejRLQXhhdUppNkt1M1lVeVMyUzU5SzFNYmpyTS1ISzZ0WDdYcHdybzQ2V1J6WUxaMjBiWG1TLUdWaWVrS1Zwd2tVYjUxQ0xTeGtZTW9fdU1vajRDYVFFZnR5eTZRYUdUemxqZ25mbF9YS0hNa2dvLWhKM1FzS0J3Vl9HSjZXdnJGMG5Bc3RYQ2p3bC11bDBRSEY3amgtSFpST3Z3VWVkeF81SnhhR2xQNlcyOE03OVFKUTUyYktRWllENm1zdw?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-10",
-          "cues": [
-            "beat",
-            "miss"
-          ]
         },
         {
           "t": "Tidewater: Q3 Earnings Snapshot - kare11.com",
@@ -1313,10 +1312,10 @@
       },
       "wire": [
         {
-          "t": "DHT Holdings: Q3 Earnings Snapshot - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWVl3Uk9iN3MzZF8xRXJacmdqZ280M3dtd296V2FTRGdMdUk2cGtRNk1tajVaT0ZhcUphWjJOVWxiLXRJY2ZyUHQ4eHo5cmNkY2NvbzVqRnVEZmdlRHJ2OTdGSDZaR21IUGhZOXpkZ3RhejI2QVpnTW00VXdOX2g5RkhNOFphM3dPcnFEbUxaS3RnTnRNSWFLVWpLaXBCZFE?oc=5",
+          "t": "DHT Holdings (DHT) Q3 earnings: what to expect - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTE1vSTRjbFdmMUQxdW9jWll1dW9IZk5CYkRId2NPT0tZM1BTVjlvaUJpSEM5Nm1HN0xMdXRVSW9aYV8ySkhvVlRwbjdRWWFPNmM0SE1QSkNmaE5UelN1NDN4RlBrd2hzbXQ3SDFvS0gya0RJTm9ibVNveU1nbFFfeUhIN3Rwd1Z3QzFFdGNFWDVWNmxhd190cw?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-11-09",
+          "d": "2026-11-10",
           "cues": []
         },
         {
@@ -1327,18 +1326,16 @@
           "cues": []
         },
         {
+          "t": "DHT Holdings, Inc. 2026 Q3 - Results - Earnings Call Presentation (NYSE:DHT) 2026-11-10 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONGJ5WXhMRFh2T2tOMkppaF9nVEdXaS0yeW5pWVJZcjV6M0FScE8xbV92dDZWZ3lmaWpBNThRZ0VvY3pZS2h3ZG00MmFFdkRmUUYya0ZITG9CLVg3bUgybmdBRV9lWUJFbkJDa0VEMldxd0JZZThDZVZYRzU1NFp1eVpxem1vWlZYZDVhbFVXLUV3SUxScWE3UmtRSlRKZG4tVlE?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-11-10",
+          "cues": []
+        },
+        {
           "t": "DHT Holdings (NYSE:DHT) Posts Wide Q3 Earnings Beat as Revenue and EPS Surpass Consensus - ChartMill",
           "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSkg5bUxNZUNROURtWHY0eWJMc2J1eXF3NlZHc2ozdWREZ0RJVUliRVcxOHpBNTZia09WWmlkY1B1SzBTZjRhR2M4aTJOSGpkOXA4aUIwQ051LThDeTc4VFB3bHJULXZ3ZkE3UmxXSkktS3RuOVdjdWRYUU8weXlwSXQ2SkstakpJckctckxYMkZYZnRjSkpmOWJmY1BNcG1ybWdDaF9pSlRDUW5DcXlGNFpvTGtoalktWHpxaUFhRDVnYjQ1Zm9SNGNXSXZpNlI3dXc?oc=5",
           "s": "ChartMill",
-          "d": "2026-11-10",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "DHT Holdings Inc earnings beat by $0.51, revenue topped estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNX0xmWTQ5REVHY1lfNTE3S1hnM3BkWVpjS3JZeVNBRHRBbGFjVWM0YmwyWE9yZ0R6Q1lSSDhXOG9pdXpyNTJvZVdCRC14ZlBxREhsZldKVENIQm9yMHoxbVVxbWtXLUk5clh6R0F2WnZKU3FpWHU1Qy00MzJVakVSQjNHdG9KMVNtQzlYdnNGNzJoVE1MVHJtVElCMTBPOE5qQ3h1VW00T1BMUEVPbUZB?oc=5",
-          "s": "Investing.com",
           "d": "2026-11-10",
           "cues": [
             "beat"
@@ -1412,16 +1409,17 @@
           "s": "www.marketscreener.com",
           "d": "2026-11-10",
           "cues": []
-        },
-        {
-          "t": "Mitsui Kinzoku Reports Six-Month Consolidated Results - TipRanks",
-          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeWhNU3VzWUs5b2dReGJSamdWWE9VXzAzUjkwd3NVR1E3V0xOcFkzNGJ2dVBudEZoZmxCQ1VqeG5SYVlkSzlnUGI4b0F5QlZWMlFvYUNCVnFRX3NCT09rREFPaVIwcXVhTVdCX01FODBnQzgwV0xrVXp5U3djVzFFak9adW9yTGdmMHZzZS0zX1pkSUZZWjFCTXNKSUJVaFdjWldwTl9wY0Q?oc=5",
-          "s": "TipRanks",
-          "d": "2026-11-10",
-          "cues": []
         }
       ],
-      "wire_gate": "2026-11-10"
+      "wire_gate": "2026-11-10",
+      "reported": {
+        "eps": 39.71,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-10",
+        "eps_est": 48.26,
+        "surprise_abs": -8.55,
+        "surprise_pct": -17.7
+      }
     },
     {
       "type": "earnings",
@@ -1433,6 +1431,14 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2026-11-10T06:30+00:00",
         "tz": "Asia/Tokyo"
+      },
+      "reported": {
+        "eps": 8.41,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-10",
+        "eps_est": 123.38,
+        "surprise_abs": -114.97,
+        "surprise_pct": -93.2
       }
     },
     {
@@ -1545,12 +1551,12 @@
       ],
       "wire_gate": "2026-11-10",
       "reported": {
-        "eps": 17.42,
+        "eps": 17.44,
         "source": "Yahoo Finance",
         "fetched": "2026-11-10",
         "eps_est": 25.35,
-        "surprise_abs": -7.93,
-        "surprise_pct": -31.3
+        "surprise_abs": -7.91,
+        "surprise_pct": -31.2
       }
     },
     {
