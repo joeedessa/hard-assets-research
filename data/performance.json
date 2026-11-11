@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-10T03:40:23+00:00",
+    "as_of": "2026-11-11T01:20:30+00:00",
     "note": "Equal-weight, price-only, local currency. No rebalancing, dividends or FX conversion.",
     "retrospective_warning": "The trailing table measures how TODAY'S universe performed in the past. It describes COMPOSITION, not forecasting skill, because the conviction and froth tags did not exist for most of that window and 21 of the 71 names were added on 2026-08-05. Only the since-inception tracks test the framework."
   },
@@ -55,7 +55,7 @@
         {
           "label": "Insulated (froth 1)",
           "n": 19,
-          "si": -7.5
+          "si": -7.2
         },
         {
           "label": "High froth (froth 3)",
@@ -98,16 +98,16 @@
   "retrospective": {
     "label": "Retrospective composition — NOT a track record",
     "mean": {
-      "1m": -7.4,
+      "1m": -7.3,
       "3m": -12.1,
-      "6m": -14.0,
-      "1y": 18.9
+      "6m": -13.7,
+      "1y": 19.8
     },
     "median": {
       "1m": -8.1,
-      "3m": -11.9,
-      "6m": -13.2,
-      "1y": 16.1
+      "3m": -12.5,
+      "6m": -12.7,
+      "1y": 16.6
     },
     "top_contributor": {
       "1m": {
@@ -127,7 +127,7 @@
       },
       "1y": {
         "ticker": "6213.TW",
-        "ret": 376.0,
+        "ret": 376.5,
         "contribution_pp": 1.7
       }
     },
@@ -164,5 +164,5 @@
       }
     }
   },
-  "as_of": "2026-11-10"
+  "as_of": "2026-11-11"
 }
