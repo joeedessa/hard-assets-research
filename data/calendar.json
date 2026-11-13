@@ -1,348 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-12T22:03:25+00:00",
-    "mode": "light",
-    "coverage": "22/22 scanned this pass",
+    "as_of": "2026-11-13T02:01:24+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "7013.JP",
-      "name": "IHI",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-04T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 29.69,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 26.08,
-        "surprise_abs": 3.61,
-        "surprise_pct": 13.8
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "AES",
-      "name": "AES Corporation",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.89,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.73,
-        "surprise_abs": 0.16,
-        "surprise_pct": 21.9
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ALB",
-      "name": "Albemarle",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 2.58,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 2.53,
-        "surprise_abs": 0.05,
-        "surprise_pct": 2.0
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ARIS",
-      "name": "Aris Water Solutions",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.35,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.39,
-        "surprise_abs": -0.04,
-        "surprise_pct": -10.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "EE",
-      "name": "Excelerate Energy",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.44,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.43,
-        "surprise_abs": 0.01,
-        "surprise_pct": 2.8
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ERII",
-      "name": "Energy Recovery",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.1,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "LEU",
-      "name": "Centrus Energy",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.46,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": -0.13,
-        "surprise_abs": -0.33,
-        "pct_suppressed": "consensus of -0.13 is too near zero for a percentage to mean anything — the beat/miss is -0.33 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "MTRN",
-      "name": "Materion",
-      "d": "2026-11-04",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-04T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 1.93,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 1.89,
-        "surprise_abs": 0.04,
-        "surprise_pct": 2.0
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NTR",
-      "name": "Nutrien",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.61,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.78,
-        "surprise_abs": -0.17,
-        "surprise_pct": -22.1
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ODF.OL",
-      "name": "Odfjell",
-      "d": "2026-11-04",
-      "release": {
-        "when": "mid",
-        "label": "MID-SESSION · 16:20 CET",
-        "iso": "2026-11-04T15:20+00:00",
-        "tz": "Europe/Oslo"
-      },
-      "reported": {
-        "eps": 0.54,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.4,
-        "surprise_abs": 0.14,
-        "surprise_pct": 35.7
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "PAAS",
-      "name": "Pan American Silver",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.69,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.66,
-        "surprise_abs": 0.03,
-        "surprise_pct": 4.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "RGLD",
-      "name": "Royal Gold",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 2.8,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 2.79,
-        "surprise_abs": 0.01,
-        "surprise_pct": 0.5
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SEDG",
-      "name": "SolarEdge Technologies",
-      "d": "2026-11-04",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-04T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.29,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.04,
-        "surprise_abs": 0.25,
-        "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is +0.25 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SLNG",
-      "name": "Stabilis Solutions",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.01,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.01,
-        "surprise_abs": 0.0,
-        "pct_suppressed": "consensus of +0.01 is too near zero for a percentage to mean anything — the beat/miss is +0.00 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "TRMB",
-      "name": "Trimble",
-      "d": "2026-11-04",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-04T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.86,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.86,
-        "surprise_abs": 0.0,
-        "surprise_pct": -0.2
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "TROX",
-      "name": "Tronox Holdings",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.34,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": -0.19,
-        "surprise_abs": -0.15,
-        "surprise_pct": -80.4
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "UUUU",
-      "name": "Energy Fuels",
-      "d": "2026-11-04",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-04T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.2,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": -0.06,
-        "surprise_abs": -0.14,
-        "pct_suppressed": "consensus of -0.06 is too near zero for a percentage to mean anything — the beat/miss is -0.14 per share"
-      }
-    },
     {
       "type": "earnings",
       "tk": "6370.JP",
@@ -357,7 +20,7 @@
       "reported": {
         "eps": -63.12,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 103.55,
         "surprise_abs": -166.67,
         "surprise_pct": -161.0
@@ -377,7 +40,7 @@
       "reported": {
         "eps": 17.03,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 32.44,
         "surprise_abs": -15.41,
         "surprise_pct": -47.5
@@ -419,7 +82,7 @@
       "reported": {
         "eps": 2.87,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 3.05,
         "surprise_abs": -0.18,
         "surprise_pct": -6.0
@@ -439,7 +102,7 @@
       "reported": {
         "eps": 0.03,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": -0.04,
         "surprise_abs": 0.07,
         "pct_suppressed": "consensus of -0.04 is too near zero for a percentage to mean anything — the beat/miss is +0.07 per share"
@@ -459,7 +122,7 @@
       "reported": {
         "eps": -0.03,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": -0.02,
         "surprise_abs": -0.01,
         "pct_suppressed": "consensus of -0.02 is too near zero for a percentage to mean anything — the beat/miss is -0.01 per share"
@@ -479,7 +142,7 @@
       "reported": {
         "eps": 5.84,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 5.79,
         "surprise_abs": 0.05,
         "surprise_pct": 0.9
@@ -499,7 +162,7 @@
       "reported": {
         "eps": 0.04,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": -0.01,
         "surprise_abs": 0.05,
         "pct_suppressed": "consensus of -0.01 is too near zero for a percentage to mean anything — the beat/miss is +0.05 per share"
@@ -523,13 +186,15 @@
       "name": "Wheaton Precious Metals",
       "d": "2026-11-05",
       "release": {
-        "when": "unknown",
-        "label": "time unconfirmed"
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-05T21:00+00:00",
+        "tz": "America/New_York"
       },
       "reported": {
         "eps": 0.9,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.89,
         "surprise_abs": 0.01,
         "surprise_pct": 1.3
@@ -549,7 +214,7 @@
       "reported": {
         "eps": 0.77,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.8,
         "surprise_abs": -0.03,
         "surprise_pct": -3.3
@@ -566,45 +231,10 @@
         "iso": "2026-11-09T06:30+00:00",
         "tz": "Asia/Tokyo"
       },
-      "wire": [
-        {
-          "t": "Kubota Corporation 2026 Q3 - Results - Earnings Call Presentation (OTCMKTS:KUBTY) 2026-11-09 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPY2ZzNFQ5MFZ4WWZmcE5fblZhTm5YVWU2ZFNBNE9acDZSQ1FFeDltcEIyajY3Tk9HMExwZXY0RWYtVjJkM3pBRGxremFDaGFUMVFDY013b2l0dlVicUJGV0R1MVlMX1ZHYk5TNTY2YlpYWUVUcXN1cUxlc0tvUmc5TEFicWh5QXVKR2M4UGc0cmxvcHhlUHBGWHRkdjhVS1RsZkZibQ?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
-          "t": "Kubota reports third quarter results below expectations - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZFFuc2NDSTlKSmFsQkNfWk5oREZieHNNVmtuRy1Cc0JuRVRmLTFpNF9hTVNVNklYNTNnQVEwcml5WHBzTnpZa3NWNF9hRGVabjNibzNQOF9WTXUyYzVXX1d5MkZrYjBDTHEwQlloVXNoV3AyWlhnQU5BVEhudDJJVFI1OUtwa3BNTXdXb2dSR1dWcGRhVFZCUWZxQWx2X2I1QzE5UzJFay1VWWFf?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-09",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Kubota: Revenue and operating profit rose, but delayed tariff refunds tempered results - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOb3ZEY2g4M00wbkR0NU9pR0VhU2RzWjJ5bi1kc0h4SEs3VU9xWW1zOW1vQUJYamVwX2lvZUJuUDU5MFVveXRKQTVaVWtJVVpUTlRsWURzSDQ0UnJVSzhMdzNBOGtMMFc0NTV5X1lScGtMaTM3YmtPbmM4Z0Q1MjFBS09JYVFLSHUzRTJJTEtJR01WTDlQY3diSllRYmxNbkhRRkJlaGFRTmJISkhjRFVMQ3Y2dXhSZDQ2Q0NacXloakUxdHFvTFBoM0lkR1lDS1pnTmZGeGZQaEhpSkxudVBoWF8yS0VieUNDZjhKQXNsWm50Ynh3d25LNjJXNA?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
-          "t": "Kubota Q3 Results: EPS misses estimate by 24.61% despite sales growth - scanx.trade",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaXprUDVuTVFIeWJFNjlYSElOajhkcTk3UENGc0hCVUhwR2l3U0RtUlZmWDQ1dFU3RG9BZGpvYmZVR2YzNmZQNEU1YURqNUdmbXRxT29PZUhjbnlqdE1zZm9EMlRKWjE0UjdremtQNkF2bmpSdXRZTFlIRjE5VVJ2VTd2VXhJbkVUbE5weGdyeGZNVVlxenI2bWpxbEZPYXU0c1FRQjRjOWNWNF9VSC1DR0E4MWt0aXI5aVo3c3FB?oc=5",
-          "s": "scanx.trade",
-          "d": "2026-11-09",
-          "cues": [
-            "miss"
-          ]
-        }
-      ],
-      "wire_gate": "2026-11-09",
       "reported": {
         "eps": 45.74,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 69.41,
         "surprise_abs": -23.67,
         "surprise_pct": -34.1
@@ -621,22 +251,10 @@
         "iso": "2026-11-09T06:30+00:00",
         "tz": "Asia/Tokyo"
       },
-      "wire": [
-        {
-          "t": "Namura Shipbuilding Co., Ltd. Just Missed Earnings - But Analysts Have Updated Their Models - Simply Wall St",
-          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORGQzVmQzWnlCczJlVGNvd1l1UWowV0w3MnRrVGI2cUZnR3hwSWxQQkN1TXMzYUl4VEhuWllDXzduOTZLeDh5WTk0R3p1SHVoSkJSb1dHOUZiTEpmSGhiRl9HbGVnRU8zTDN0VUx1bDFYa2NISS16cE16cThVdDJ0UXkxMEZudmItTWl3ME43V0kwcUR6djA2aHNoei1CUUhuanJ3SklYUzlxVG43a1hIV19EOFVoWjlnZEtkZDB3dXFRVkRmdU1OOFRITFh6ZzFFMmc1b1hoRzUxZDU0c3k5SkhIcXc1UdIB5gFBVV95cUxORGQzVmQzWnlCczJlVGNvd1l1UWowV0w3MnRrVGI2cUZnR3hwSWxQQkN1TXMzYUl4VEhuWllDXzduOTZLeDh5WTk0R3p1SHVoSkJSb1dHOUZiTEpmSGhiRl9HbGVnRU8zTDN0VUx1bDFYa2NISS16cE16cThVdDJ0UXkxMEZudmItTWl3ME43V0kwcUR6djA2aHNoei1CUUhuanJ3SklYUzlxVG43a1hIV19EOFVoWjlnZEtkZDB3dXFRVkRmdU1OOFRITFh6ZzFFMmc1b1hoRzUxZDU0c3k5SkhIcXc1UQ?oc=5",
-          "s": "Simply Wall St",
-          "d": "2026-11-11",
-          "cues": [
-            "miss"
-          ]
-        }
-      ],
-      "wire_gate": "2026-11-09",
       "reported": {
         "eps": 67.97,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 89.61,
         "surprise_abs": -21.64,
         "surprise_pct": -24.1
@@ -653,41 +271,10 @@
         "iso": "2026-11-09T13:30+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Constellation Reports Third Quarter 2026 Results - Constellation Energy",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRTREcUoydHctRlZiUXlJZXZSRy11ZEtFeEZTUWFfS1VUXzN3NVlxS3FjaWIyWnBmTHFPMmJUdUpHbGhxb3hyQ0loYWpZMllsc0lrNE5rM2ZOejBmV0ktRWZ3aDd2a3ZFNmtVZGRwX0FBd0lKNk0xQmEwRUtLWkxTSGhBN2FjT0tCekJYTlZmMjZxMGJBNjVGWkpOVFRVNE8yaWd5WQ?oc=5",
-          "s": "Constellation Energy",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
-          "t": "Constellation Energy (CEG) Stock Cools After Q3 Earnings Powerhouse - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEZqZVlkazZEQXlNV1kxbGpKU0w1ekFyX0ZMTDN0TnozREt4aFdEbDRCRVpBdlZQRHJmeU1uMWFMbDZLM1AyQ1dxdFljWHNiNWszMWJJcmRDSkxSNWpiQThlUXd5UTUtZGw2X2pqWEh3dktJUk1QNnlsUFNPSVFTY1ZieWhKel9rZ1BQb2dLT1lJXzRGZW52dWdUWko3YU83eG8w?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-11",
-          "cues": []
-        },
-        {
-          "t": "Constellation Energy (NASDAQ:CEG) Clears All Eight Growth Rules With Accelerating Earnings and Sales - ChartMill",
-          "u": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQS3V2Z3VaZllHOUNsdlRfTmprN1RMdmhJZGtKX0UtcWhpOUt3MnpEZzFsZ1UxS0c2OXRMbUtCTVFGY01GUmRHa0NPamd5Z2oyc0tlT3JFVGtBQjdPT3FZYXpjalV5T3F5WlowaHVITWtCUGFkN2Nrb204TWRDU2FTM1luMUdEajNiNWx6UHlUSzNBTkphbC16eWljX2FtVVdCc2duMElJMHlmMUc3ZFlfdmUwLVF1YkRsVk5XbWdBQVV6WFE4TXRqeFJYbFNTV25SVTA5eUEzbzhEUG5kaGRVMV9R?oc=5",
-          "s": "ChartMill",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "Following Constellation Energy Earnings, Here's What Barchart Data Says Comes Next for CEG Stock - Barchart.com",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbWRQaGd6SnFhdC0tc0xHQVJMdHN2b1VNVGxpOXFxRjJaWmVrdVFiYWtfTHVYa0Nmc3Vmd21BeThteGkxVFlnblAzYjFxdEoteHUyYUZFUnF4aHRlWHlBSVVpRVlOUkZlUk1ZZ19RcVJtY21rbVo2M1kycWxMODViYUx6TXNDR0Y5Z3RqaDVneDJOMjU3QWVfLXdYNUZxaFlVN240ZjIxM0pZbm53RFVpTVlFaE5SVUJOM1Nzb0FQR2ZaSlRZR0xzeWIwWExpajI5WmQyZnRn?oc=5",
-          "s": "Barchart.com",
-          "d": "2026-11-09",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-09",
       "reported": {
         "eps": 5.06,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 3.89,
         "surprise_abs": 1.17,
         "surprise_pct": 30.1
@@ -704,41 +291,10 @@
         "iso": "2026-11-09T21:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Consolidated Water Co. Ltd. Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaEpaZno1NTUtYzF3TjNpaGdoSVgxS2NSamc2YzlfcWsxV1JyRnA1YjdhMUQwNS1qWi0wa3RMaXl3T0EzRVdNOXJtQ3hScDlEVTNzTERnNU9IYmM0cVZSeUVtTHNZUk5IckhBMHFMak5GWjl0S2d1VHVSbzc1aGJFcHp0V1Zpa0pWeTc4alU2ak1XeTNDNVNCNA?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-10",
-          "cues": []
-        },
-        {
-          "t": "Consolidated Water Reports Third Quarter 2026 Results - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWnk3NFhNXzZYU1k4UzFERUZCUUd4VmtBdVpBYkJOMXJBRGszbzFGU1ZmRTNtS21KdjhCSThvRnpTUGNVU3RNU1ZRR0NJczdEZG9wQ2RmX0xwaFdIQWdXMFNNNG9HRVRkanl5Vl9GMF8xVlVnV28wQUtHSk9jMHZCVC1ncTl4dVVFMW5mdnJLek9FS3N2SmJLTWhSV2E?oc=5",
-          "s": "Quantisnow",
-          "d": "2026-11-10",
-          "cues": []
-        },
-        {
-          "t": "Consolidated Water: Q3 Earnings Snapshot - KVUE",
-          "u": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPb0Rla0ItMlRrWV9jNmNOUU5EMTlvMHExWkF1MVJZeEdmd19uUGdKQ2IxZjZLN1prcHlic3F3QlFVQkl5RWw4VjM5ZERBZG5GN01lZEttanBmS1pDUkpnblk5R1hSNThLQV91TFlFS0RoQzRGX2oxbmctWVdRZ2MydkJQZkh5cnBwUnpPV0IwVXk2akVITnFZbnFFUW15N0NGakJQNldDS2RIb1UxSFJzVWFSTWdJRV94clZhbUdDbk45RV9TT0tLYVhlQ1VJN3FjVFlB?oc=5",
-          "s": "KVUE",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
-          "t": "Consolidated Water Q3 Earnings Call Highlights - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa3VRcWhjcXNudUxwdzhhc3MyMXoxdTBCWUFnaE9BMWJwcnlpa053TWZ1X3BwVzBRMWZtTXNmOC1rZjdpQWR0MzlFSC1GNGk0WkxFZjlyWTJVRWlKd1JRNXo4T1NjYW1OdEVBVUNuSk1DN3BCcmExUzkyUVEwWndRNEd5N2VjMGZhZE5NcHQydUMwWUtHRmFGMFNkcm5ieDFSSGZ5a2ZQRm9SSjQ?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-10",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-09",
       "reported": {
         "eps": 0.15,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.23,
         "surprise_abs": -0.08,
         "surprise_pct": -33.0
@@ -755,43 +311,10 @@
         "iso": "2026-11-09T13:30+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "NRG Energy Reports Third Quarter 2026 Results, Reaffirms 2026 Financial Guidance, and Initiates 2027 Guidance - NRG Energy",
-          "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ENm5kT1FLOS0taDk2Z0tSSUEyMHZ0azRkMVlwbnVWS2NXemtBbHI0LWFKOXQ0LTVVLW5YNXhqMERNSnZqU1BlSEpxbXZKb2hWWF9iT0g5cFhhamkw?oc=5",
-          "s": "NRG Energy",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
-          "t": "NRG Energy Signs $4 Billion Asset-Sale Agreement, Posts Higher Quarterly Earnings - WSJ",
-          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQnU0YlhyV1RtMUVNS1RqMXJlYVdNUVhkRzFvWmFTMjNGc2lqR1F3MXRwNmQtOWduUVlTOFZCd1pITG5rcW5ZQ0ZEUjcyQXhhYk11ODM5QXJiMDhnRThPU1J2d3UydjRSX3lIWENCVUx6U0Racl9nODZjZEpjeHNEa255eGpqTWFadGVhWmlzT2I4NGhRXzJ0MThOMElUN2JyZjNuZ0JBOTZFQV9SeklkSTZWVWttQjVEaUdhcVJ6LVVVSDd2?oc=5",
-          "s": "WSJ",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
-          "t": "NRG Energy Q3 Earnings Beat Estimates on LS Power Asset Gains - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc0xRUG5kazEtZzFmcThTX01mX1NDX3RSRkt6M1Y3RVA0d01zWTdMQWxKZUNTWFl4WEVQVmR1blBSN29ueS02Wmg2OU96aF9qU0tlazdsTDJyX24ySUZOVkpKQ1AwazdMYUxVZi1BdE5wX2xudWJXRWpFU1JZM05Hc0Ewdkl1U2JsNjBEdVlPd1hEeGlQallB?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-09",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "NRG Energy earnings analysis: questions answered and next catalysts - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNY0JoaHV0NE05ZzJRb2d6LURrRy1YVlFjZlJHbUNqZU9PbmxXWWlCdFd3eXIybTJlYlhQQURRTFkxVTJNdFhVUXFxa1NQRDNvNU1lMDZaNllSZUxDaXNEQk5SVTNHb1BsYVdMU1FKbmpmUzVSUG1xXzBsZ1oyVFptbV9aSHRXTkVqWVp0VWVQUG4zX1c4QTZOTmF4SGxDYnhxR3hDLVlCcXNnMGx2dlVrZFJaaUp6VGd4TGpKU1h2WHVzcVpILWlJ?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-09",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-09",
       "reported": {
         "eps": 4.68,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 3.03,
         "surprise_abs": 1.65,
         "surprise_pct": 54.5
@@ -808,43 +331,10 @@
         "iso": "2026-11-09T21:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "NexGen Energy: Q3 Earnings Snapshot - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNS0xETzhSWmJXNVVZeEhnSmFHTkJlc2hsaGY2dFpqc0NEYlQtdUhtQmNSRmxvellZc0tQS0tBdXJEVXN6Y3dhZEVHb1ZmU1VTM052dmg3dnJ4TFZhdG1iSFM1LXp2T0FuSld4Y1hmRUVfeEkyQXFGbmg4Wk53bmRVVEp6b054TDdhZ2RJUnoxUnhMeUlDaUptY0pMSEMyN0NW?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-09",
-          "cues": []
-        },
-        {
-          "t": "NexGen Energy Q3 2026 Earnings Call Transcript - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOelNpOF9XVjd0SXpFeVFxS192VUlfa0w0TU9qSGFxUXhuVWVGc283Z09MeXFxWVdwc2FkUHlGX1kwQWU0ZzluQ3hjQUk4UWVWWmo0R21VU2NXM1lBWHNVRWlqaEVIcHQ0VDNVZjdTbGl2dnY4V1kwUHdndFFCTTg2OC1JZFh1TU9BNjgzd3RPMmI5aFdFbmc?oc=5",
-          "s": "Benzinga",
-          "d": "2026-11-10",
-          "cues": []
-        },
-        {
-          "t": "NexGen Energy Q3 Earnings Call Highlights - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMXNmREpGNXdRRUEzRy12TXdKLTNmckthUmVLWlcxLVI1eGhyd3lOMmhqNlVhTkVpUWF4QUx4TEV4NUtKNGtYZnVVMG9lNzktQ2dWVVBfWlNRLVNmUXlrb1VWXzVxVXFXTzdBbGdVdEpwajZsTHVOSnl1OGVYQWo3WndmT0NLZTlHSnVkZnFyc054b3kwVHpCMkFsNEV0WGx4djFaVA?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-10",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: NexGen Energy misses Q3 2026 EPS as shares rise - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUXpFWGtfMEVrYWlta3V5U2ctV18wMkNueEt6amVQNGlOcVByU2N2OVNQWG1EcU0yN0hKSmtib0E5cE5yM2JSUnd0dVIyZ2pVNFp3OGRvSEx1cnMxNlRab2dobVRNNUpYLUJ5ZkQ2TFdQbUtnVDJobDM4WHU3U1huOF8xT0tHRFpsV3gtdExybl9wa1BLU3dZZGpLZVpWNEw4VklkQzk4aGs2OVZxSldtZEpOZGc5Yy01RXBBZG91Vk5DSmJ2aWpr?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-10",
-          "cues": [
-            "miss"
-          ]
-        }
-      ],
-      "wire_gate": "2026-11-09",
       "reported": {
         "eps": -0.07,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": -0.04,
         "surprise_abs": -0.03,
         "pct_suppressed": "consensus of -0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.03 per share"
@@ -861,43 +351,10 @@
         "iso": "2026-11-09T21:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "TIDEWATER RENEWABLES LTD (LCFS.TO) Q3 FY2026 earnings call transcript - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdVRxaDhteTlUYWVnY2QtQ3Voc3lHTDZ3Z0VEelcyQkNERFk3NjJrTWxIWjhwQ2FDSGRjaXJxLS0wbTJKSzZZdW91bWRTZER1UmZESGhpZGgzaGtvdU9jTktlQi00OGlqVHBKeVQzWlo0QWUxVnYwY0dqcjRTeDMzUlo4OVE1UGFyUVNsOTFObUFyOEtT?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "TIDEWATER RENEWABLES LTD. ANNOUNCES THIRD QUARTER 2026 RESULTS, UPDATE ON PROPOSED TRANSACTION WITH TIDEWATER MIDSTREAM, OPERATIONAL UPDATE, AND INCREASED 2026 GUIDANCE - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPVmJIcjVzM2h1Sk1lZXBJUnhIWWZzbUp5UkFSZjhfZ2dMS1RMU2xSM1h4NjJ6MHlpOXYtY0MyaVNyUnZESkFwOGxSMHJVeWk0eThmOHFCYjdMOUVBdDA2WlNtcVQ5RFItT2NLNmhxTGJEdnZ2Z2tneThha29xMVk5dVd5d0xZUk5lVEtZWVJJNXNxOHV5cERiSzdxU2JqaFJFWDNPWVNKN0ZPZFJaRkFXcHhZQXVWOW82Ql9IMi1IbDJSVE9RUjVPSEtGa0M0NzRaUDY4RHF3YWdNWmpRWHlmUkx2UXJ6My1BbHVGd3V0QzN3TFhvbXdCSXpXUm1OcjI4akhCVGxlYWxiZVVnRDBQNDBSWW5KcWEyTmFZZ2FVMnBnaG1zM0pkSjdfalE5X2RaQWs4bVF2Vm9xS2dzMXhpelptZldQQ05t?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "Tidewater earnings missed by $0.37, revenue topped estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcndNRlFGb0w0Yzc3Ymd3U2dUSi1GSXVERE5DbnRJUlAzUUZqbnFoOGlrSVlyU3RZMER2aGFPQXNvU3JBRVpPUWxxU0ZKRHJLN3E2Y2V0OGtVdmF4dVNNT2o2ckFWc1QzSWE1cUhuWURJR2JiY1VnNXFCQ3FEN1ZYTnE5TVcxNmNkS2ljTzFPLUNJT1lCUGhkdUNuOXA5eW1fSWdSLXU5OUY?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-09",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Tidewater Q3 Revenue Rises 5.3% as Offshore Vessel Day Rates Strengthen - MarineLink",
-          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNR19zNFF4VGJpTUZuZTZaNllSRVhHT1EwWUQyU0FIbFRkS0ZBb3gtVGdzMnRYOTQ4RmxXcTAtZlhPN1pYUDBSQm5MMHJqTEg0YjNsRVhkVXA2Wlg5MFo4SEozRnU3dXhtSVhEZllwQ25rcmF0SFo4THV4dlVMRVE3cHZzbXZtRVU?oc=5",
-          "s": "MarineLink",
-          "d": "2026-11-10",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-09",
       "reported": {
         "eps": 0.45,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.72,
         "surprise_abs": -0.27,
         "surprise_pct": -37.4
@@ -998,7 +455,7 @@
       "reported": {
         "eps": 0.11,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.13,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.13 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -1049,7 +506,7 @@
       "reported": {
         "eps": 0.65,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.62,
         "surprise_abs": 0.03,
         "surprise_pct": 4.1
@@ -1102,7 +559,7 @@
       "reported": {
         "eps": 1.89,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 1.73,
         "surprise_abs": 0.16,
         "surprise_pct": 8.9
@@ -1155,283 +612,10 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.1,
         "surprise_abs": 0.0,
         "pct_suppressed": "consensus of +0.10 is too near zero for a percentage to mean anything — the beat/miss is +0.00 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "1963.JP",
-      "name": "JGC Holdings",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-11T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "5711.JP",
-      "name": "Mitsubishi Materials",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-11T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "wire": [
-        {
-          "t": "Mitsubishi Materials: Record H1 earnings drove higher FY27 guidance, while H2 profit is set to normalize - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPSElhUGhJZFRIZGxmUEdsT0dMM3hhdkk1ZG9XanFTVWdMOTJ3WXVUTEFkX1Z0QlpEMmdHTFRkaXZ6ZnUtVTBmbXFHS1JrY2hYUjNqNElyOVBvXzBHZVV0YmVibEh5NkpoZlFzeFZla1NzX210NWc2VWN1UUpKbFNDT0hzdk1RNEFoZGlXZWRpcmZwcGd0cWc2d1RsQkg0SnVudG5qZzBxT09yczNqbjd1eXVRSXRzVFpGYnhoUE1GS3l6aXBaMEN0clA4c1FKajRiMnNhUno3QVlqRVJsdnNsWEdIa3A2QlRLQnUxckVEbVllbGVLdkVFRXJqY1prZlFRVFVpZGxMc0k5WllpMkE5Ni1Saw?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-11",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-11"
-    },
-    {
-      "type": "earnings",
-      "tk": "5714.JP",
-      "name": "Dowa",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-11T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 313.93,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 183.17,
-        "surprise_abs": 130.76,
-        "surprise_pct": 71.4
-      },
-      "wire": [
-        {
-          "t": "Dowa Holdings Reports Six-Month Consolidated Results - TipRanks",
-          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWHdGcVFaMWFGWWVOY1hrTV9xRWZZOEM1UHNtYU9lb3NGTC0xbjdfTFRYUDBRdjhEZGZvbTAyN1ZZZUROMU5PODF3S1N5UnpxQ2p6VkZxYnlQYUtya2J6RV9PRm1iWjZjeGZoTHptNnB6Vk9SMDFwWTNrNXBnYzVYcHBsTkJSLWlSQUpoUkN0NTBCYlVFZmx6U19MSXdOdGVtU2d0R3ktRQ?oc=5",
-          "s": "TipRanks",
-          "d": "2026-11-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-11"
-    },
-    {
-      "type": "earnings",
-      "tk": "6324.JP",
-      "name": "Harmonic Drive Systems",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-11T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "wire": [
-        {
-          "t": "Harmonic Drive Systems Reports Six-Month Consolidated Results - TipRanks",
-          "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOWE3VUJzaHR0R243bjFJRjh6dGNNN0pISFI1ZVg5VlU5eFpNX0Uxd0dRMm1pcUZ5MnJoRWUyblhoVHdabWlPM0ZQa0tDMEpfQUlUNlFKRUFlNTJCNVYyWFhKV3RwT2x2M2x1NWd0WllNcGYtZjBBMzFaamZaMXZNcmxoazVBQ3VPQWdfSHhxSnN6c2RSTlN5V251RUgtc3laUk5VSUxaOUVUOWFSRWVlbWlTdw?oc=5",
-          "s": "TipRanks",
-          "d": "2026-11-11",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-11"
-    },
-    {
-      "type": "earnings",
-      "tk": "6383.JP",
-      "name": "Daifuku",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-11T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "wire": [
-        {
-          "t": "Daifuku: Record nine-month results and soaring orders drive higher FY26 guidance - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQS2hvRVFzdXkwZDlpY1VwdWtLQWVkLWdPWW53c2Y4ZG9aZnF4WW91X3R6MjJXLU9zUW5La1Y2aFZuNm9HYnQ0TWdPekZSWS1mTzFTY0VnUjN3ZFZucVo3Sm1yclpxa0ktZHVNb0t3VmFWOU90OTJSbUdOSThCRXVMNlBQZjdCdUdXX1luWkZxMHRNdndRRXdqRU8zQTdyTU1WLUpvNk9GMktQME5DVTAzeUNHSnlyRkY5LUVGd2p6SVRySHBFWlRiQUF6b3dpSjdMMEhBbUtkNEIySXRGT1E3ZGp0ZnRDcEIzbDMwenV3a25PMEZJ?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-11",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-11",
-      "reported": {
-        "eps": 54.08,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 60.1,
-        "surprise_abs": -6.02,
-        "surprise_pct": -10.0
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ENR.DE",
-      "name": "Siemens Energy",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:30 CET",
-        "iso": "2026-11-11T16:30+00:00",
-        "tz": "Europe/Berlin"
-      },
-      "wire": [
-        {
-          "t": "Siemens Energy AG (SMEGF) (Q4 2026) Earnings Call Highlights: Record Results, EUR164 Billion ... - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNkJkTTFnUlFiWG1IaUtNUmFfYW1mbmZ1b2tQTUdYUzRHa3pyMmtKSFc5aFR2Q0RBNGlZTmNETGt5QzRINmFCSnZ2MWRuQmxlZHNnb2V4aWhIN3VUc1oxSXhyU3NxNGhjbDlfSGZwMURpODh0MFI3ZWdWY1RfWS01NEJITWhtY2JiWDRaeW55ZVZzSzV1QlE?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "Siemens Energy Targets 22% Margin as Annual Profit Jumps 145% - Crude Oil Prices Today | OilPrice.com",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZGhnMDdUM1Rhek5LOU4xUjAtQ1JTWUZRNndFeFhfalMtcTdqQTlCLTFCSVJOWHBwVXhDWmI0MFZnbEVqeGtrYl9LMS10c21LLTlQdWQ0U1Via19BUXlZMVA0OWpqekk1YlRNb2Y0TGZ5V0hmSmtZaVJuQWt5Q0czMGtXWWduWDN0NkFpcWhuSlZsUDBTRVF4VzJXdnFRNTTSAaQBQVVfeXFMTlJmV3lOWXY5VV9jLTFHSDdjdGhheGNNQVJITjktMXFRY1VFamFLTk54d3FzMEFoMGxveTltVXJsWjRTRTV6eDV1Z3hMajBDNWV0OG9uYkw2Q21QTFpCWEFQeDZIbWRiczU3dUcwUW0tWE1odS1qSGV1N09icU81ZFRoLXRnUGNOS3BTM1k5cHJEeVVzNW9pN1RYUGVXOFdUQW40UTg?oc=5",
-          "s": "Crude Oil Prices Today | OilPrice.com",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "Siemens Energy Shares Jump on Steeper Profit Targets Through 2030 - WSJ",
-          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ3JjaFRLZGc2dk5LMG9CRE1wVkJwY2ZwZ19uTXBDYmVGRzA3UHp2b1pVcXpjN2x6V0tiZ2RYMlpWZ3kxTHpEdGZCampIZ3QxSENWMGNVVlhLWXdvN3RMOWxGSi0xRzNGMS1vUVVDcU5YOWV4Snl0R2VDMXFaZnZMaG5yS0xlOUhjSU1Ldkp2NFVlOHBtRWpGNUdqRDhtTTlTcERQb3FR?oc=5",
-          "s": "WSJ",
-          "d": "2026-11-11",
-          "cues": []
-        },
-        {
-          "t": "Siemens Energy CEO: Midterm results won't derail U.S. data centers - CNBC",
-          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTF9UZUxrZ2twUlpqeFBOQnVxZ29GenRtNVBZMnk5QVhLdjhobHUteHlwSlVXajQxWVBsWWpvYWFraHlSNV84VzhQLWtKbzRBZ3ExZVFQX21oV3I1T0M1ZXZzdDhLemdPMjUyTUNlYXhRWjBIVEN2Ny16R2VaRllrRDk5LUEteVZ1VFpyRzlpbk9hdWFNbkVCaTBvVVFQelVSallQYzEtY3FHdw?oc=5",
-          "s": "CNBC",
-          "d": "2026-11-11",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-11",
-      "reported": {
-        "eps": 1.32,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 1.38,
-        "surprise_abs": -0.06,
-        "surprise_pct": -4.1
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "FLS.CO",
-      "name": "FLSmidth",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:00 CET",
-        "iso": "2026-11-11T16:00+00:00",
-        "tz": "Europe/Copenhagen"
-      },
-      "wire": [
-        {
-          "t": "FLSmidth Q3 2026 Earnings Call Is Live - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbUwxeHljVTY1emwyanZUZXFJaGJJcFZteXhnZ1NzaFJaUFNKZ3dkVlptYzBySDBRSlNlVk1iYUJrTkZ1bXYyRXNDYlBsbjNsV0JkVUF3S1hVOFJTVEc3LU9fVGxqcnBjd1RiaDFnUDJGZHJDMWRTN2NpZUdKS3h3dHo3U20yRUN1ZE1jbVp4aDRwRnRhbEY4aXZ0cG5YV1NFbDBUelpaOXQ1STg?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-11",
-          "cues": []
-        },
-        {
-          "t": "FLSmidth & Co AS (FLIDY) (Q3 2026) Earnings Call Highlights: Order Intake Surges 36% as ... By GuruFocus - Investing.com Canada",
-          "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOXpfdVVUeE91TldjUzRIb0tyZEQxbGI3Q2RhYWhMQlRYVFpzaGFMdkl0UW1MOE14RnNxLUlHWHRjQXpNT29iOVllcWF1cS1Yc1VFczM0RnpmUjl3SFRyRFc0NFJIcW1hSVBZQUxwUUI2eVpsNUFRZ0FZRnVrdkNJamJEUDl4V1pIRVZ4VEVLVk1WZTVqeS1VSDVMUjBzMzlTT0U1V1ViNDZhcUxlTTlUZFZfaTBKcEpFcGJ1VjJMazlWOG52dlFlb3BQNDI?oc=5",
-          "s": "Investing.com Canada",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "FLSmidth & Co. A/S Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026 - www.marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZ09RQ0U2eXhQS25lMW1sUTNIOTNqU1VhaWRySHAxQXVCQ2h3VTg0c1lQZHN1NkpzLXhsa2RhNjhhbTBWLThKSmo4X1ZUZ0E0bHZ5cTBiNjFpUnV0RF9Da3NnZG5NdlNEZ0plOUVLaWo5ZUdDY1QyeERlRkh0SlZrR0RpLVo2ZWN6UGNXNjd0clZFUng4c3dlWkJmR05KS0lTXy1NcG5CQjYzR0dWVEdEaVVzUWcwdk95RFhDWkJlR2RGamN2VllucFE2b0ZhbU51QlFIWFU1aUljTkdMWXV1dnJJZWw?oc=5",
-          "s": "www.marketscreener.com",
-          "d": "2026-11-11",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: FLSmidth lifts 2026 outlook after strong Q3 2026 By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRzFFYVN3TEdIRXpuSTgwdG5tdWJYckZiUml2QTctODF0a3Q1M1NjYllrV1R3M2s4OE1Sd1pCREZaU0I5SWlldUJjWUZEUl84QzZIeHBIMm5fcHl2Q083bUx3eU54VDhsWUFVZDRxZEs2Ul9Jb2ZQdTBMUVJ0alNtWVVSa25JZS1adEFrS2NoaC1GMDNsNUNvYzFrLWpFLXllQlRVMDAwZ3JsUUJmSFNySnpzNkE1XzZPTi1iWDNWZkZPTjNoc2o2ZEZrV2RfV3c?oc=5",
-          "s": "Investing.com India",
-          "d": "2026-11-11",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-11",
-      "reported": {
-        "eps": 7.2,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 6.19,
-        "surprise_abs": 1.01,
-        "surprise_pct": 16.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "TTEK",
-      "name": "Tetra Tech",
-      "d": "2026-11-11",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-11T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Tetra Tech Q4 2026 Earnings Call Transcript - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNGM2RzZvZm1pMVhHcm56d19IYXFvUFVoVFVXVDRvNWF5andjbHFDaXVkYU9yWjlIZDJabUVCdDVKUVVobFpoWTZYSDNrSTZWMnduQ0VLSDRiNVh5aFdHWXBwai1vRnpZWGV1RnhyNHpqcU9uNUt0bUZxNTR5d0ZaYV9pbzdIQWZJay15bU1KdGg1QQ?oc=5",
-          "s": "Benzinga",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "Tetra Tech (TTEK) Tops Q4 Earnings and Revenue Estimates - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOG5HakdVbUJOY0dGQUFOQ3Nkekg5a3NYNGhQQXc3TGFpMXdxd29BZUFQdENDQXVuRy1WSzhkaG9IU20ya2pqdk00Nl9KSDdWN25KRUZwZWpDQzZIckFmQUFWc1NNZFd2bkNwQUJQQmxETThoSjZZRzhSZEZHWk51ZlVzT2xYVGk5MmNFSGJ1OHZrQQ?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-11",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Tetra Tech Beats On Record Margins And 13% Backlog Growth, But A Measured FY27 Outlook Tempers The Acceleration - Finviz",
-          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOem9odEJ2M1Z3WDFfWTZsLVZSaUFtTC1VWEtFLU10eGJyQ2xWMmx1SzZzYXV1OWVtNWRKdnZoM3FXaGtpYjdkZGloU3N3aWdlQ2dDb2ZxSWFhTUFEc3N3anlOeFFYZ3ZaWVJnY1RiaVlKSWRsT1ctUVZSdG5IX1duVW1Qck9zMm1KSnJzUW5CXzk3bFFYdTVXSUVTYWxzNE5fN0ZOdU5LWkRCVS1DUDk5NDlwVVlDYlcxVkpneTdOZFA5Qnk3R0NtYmc0bnlWaVNybUJfSkI3OA?oc=5",
-          "s": "Finviz",
-          "d": "2026-11-12",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Tetra Tech Reports Strong Fourth Quarter and Fiscal Year 2026 Results - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZlFaSlBkTEl4MlJBeHcyNFhOT3VodkxmQ0VNTzFLTnVrVDVPZ19RUDlXN1YtcWNGTHI1Tzh3eFFwdWNXNk9wRmJTQmo5bGcwam8zT01rTzhLSi14VVRjUnJkMEtTZS1YRzlqNWhCUTFBS0YtMFJaVXNkQTZOdnJrb0F4UmVpMEI1Z2pjLTZXV1JlTkJPSURDcWdEcDBVX2lsbU1sbzJTaw?oc=5",
-          "s": "Quantisnow",
-          "d": "2026-11-12",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-11",
-      "reported": {
-        "eps": 0.49,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
-        "eps_est": 0.47,
-        "surprise_abs": 0.02,
-        "surprise_pct": 4.6
       }
     },
     {
@@ -1493,7 +677,7 @@
       "reported": {
         "eps": 0.34,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-12",
+        "fetched": "2026-11-13",
         "eps_est": 0.35,
         "surprise_abs": -0.01,
         "surprise_pct": -1.9
@@ -1512,9 +696,16 @@
       },
       "wire": [
         {
-          "t": "Orica delivers best earnings in 15 years - Yahoo Finance Australia",
-          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQU4wenptQnNocHNQYlFoaDZGMTdsWnZYc1NTemhkMW9qN2VUQkllWF9IbVEzUlNRbnRCai1ZZHZWcE9EaUNEU19tYlZJLTJVSnd5czdxN0lBUXZ4ck52OHF2aDJYVUpzSi1ZT3hIemM3OThGeUwtTDFEbmRVekNVOTdCU0lhVDQ?oc=5",
-          "s": "Yahoo Finance Australia",
+          "t": "Orica Limited Reports Earnings Results for the Full Year Ended September 30, 2026 - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQM3hUclpQQ0tyRk5VRm15aTdNREFHU2EzU1JCMEthNVNMQlZOd1FtZl9yczdXdElBbE84ZzAxcVRUT1otVVByVlNHMk5Ub1JmdkZ2elhaUnByTDZEWVpUOVRJSzRxMW0xdmw0MVpvV0RpN2Njam5OSlk2Z1U1SW9yZ3kyVGo5RE1HRmdMR1B0M3pNR1ZIZXBFdmxGNnc5eXlDQ2JBVzcxRkZGU200NkdVM2NMeGJNX3FPNXp5WnZNc1J2T2hqVDNOVzFsLUcyUQ?oc=5",
+          "s": "www.marketscreener.com",
+          "d": "2026-11-12",
+          "cues": []
+        },
+        {
+          "t": "Orica delivers best earnings in 15 years - Proactive financial news",
+          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQ2RzaFZJcTNlT1UzamRnd3lBQmE4REY0X0EtazIzVmFYRjhIS2o5bUdLSkhFOGxUazlKdmV0clhqODhKcW9WcmhyS2xGa2p3MXgxbEtZcjB2OXk4WWdFbWRxSm9iZGRzbkgyVjV5ZWRzUkk3dHJuWFdVQ0p1bklwaWo2MjNWWTgtU05Mek9yeU5JdkZHd2stZThUQ0lpMXBiTXFZaUxYNkVEc011eTljWA?oc=5",
+          "s": "Proactive financial news",
           "d": "2026-11-12",
           "cues": []
         },
@@ -1522,13 +713,6 @@
           "t": "Orica Limited 2026 Q4 - Results - Earnings Call Presentation (OTCMKTS:OCLDY) 2026-11-11 - Seeking Alpha",
           "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVHFjb3NEM25kX0ZfS2NCNlB0Q2hha0VsZi05YnhrWGM5QWZ4RWpKdVVvaUlLdjFnSTI4UkVxa1dBSkV2MXdwMWRkU1RIcmtJZnd3Q3ZlNnk4a3hNNzZJYlhvRTBKRzlRR1lpT1ZKNVVVbVZXZWhOZ3J3NmxKSEo3ZWkwUFZTZ0VXX2FiMmhUcG83T2pyVnFVQUdTWDI0UQ?oc=5",
           "s": "Seeking Alpha",
-          "d": "2026-11-12",
-          "cues": []
-        },
-        {
-          "t": "Orica Limited Reports Earnings Results for the Full Year Ended September 30, 2026 - www.marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQM3hUclpQQ0tyRk5VRm15aTdNREFHU2EzU1JCMEthNVNMQlZOd1FtZl9yczdXdElBbE84ZzAxcVRUT1otVVByVlNHMk5Ub1JmdkZ2elhaUnByTDZEWVpUOVRJSzRxMW0xdmw0MVpvV0RpN2Njam5OSlk2Z1U1SW9yZ3kyVGo5RE1HRmdMR1B0M3pNR1ZIZXBFdmxGNnc5eXlDQ2JBVzcxRkZGU200NkdVM2NMeGJNX3FPNXp5WnZNc1J2T2hqVDNOVzFsLUcyUQ?oc=5",
-          "s": "www.marketscreener.com",
           "d": "2026-11-12",
           "cues": []
         },
@@ -1644,9 +828,9 @@
       "name": "Montauk Renewables",
       "d": "2026-11-16",
       "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-16T21:00+00:00",
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2026-11-16T13:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1918,18 +1102,6 @@
     },
     {
       "type": "earnings",
-      "tk": "TTEK",
-      "name": "Tetra Tech",
-      "d": "2027-01-27",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2027-01-27T21:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "GD",
       "name": "General Dynamics",
       "d": "2027-01-27",
@@ -1956,6 +1128,18 @@
       "type": "earnings",
       "tk": "KMI",
       "name": "Kinder Morgan",
+      "d": "2027-01-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-01-27T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TTEK",
+      "name": "Tetra Tech",
       "d": "2027-01-27",
       "release": {
         "when": "post",
@@ -2480,32 +1664,20 @@
     },
     {
       "type": "earnings",
-      "tk": "5714.JP",
-      "name": "Dowa",
-      "d": "2027-02-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2027-02-09T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "6324.JP",
-      "name": "Harmonic Drive Systems",
-      "d": "2027-02-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2027-02-09T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "5016.JP",
       "name": "JX Advanced Metals",
+      "d": "2027-02-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-09T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "5714.JP",
+      "name": "Dowa",
       "d": "2027-02-09",
       "release": {
         "when": "post",
@@ -2528,6 +1700,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6324.JP",
+      "name": "Harmonic Drive Systems",
+      "d": "2027-02-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-09T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "1963.JP",
       "name": "JGC Holdings",
       "d": "2027-02-10",
@@ -2540,8 +1724,8 @@
     },
     {
       "type": "earnings",
-      "tk": "5711.JP",
-      "name": "Mitsubishi Materials",
+      "tk": "5706.JP",
+      "name": "Mitsui Kinzoku",
       "d": "2027-02-10",
       "release": {
         "when": "post",
@@ -2552,20 +1736,8 @@
     },
     {
       "type": "earnings",
-      "tk": "ENR.DE",
-      "name": "Siemens Energy",
-      "d": "2027-02-10",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:30 CET",
-        "iso": "2027-02-10T16:30+00:00",
-        "tz": "Europe/Berlin"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "5706.JP",
-      "name": "Mitsui Kinzoku",
+      "tk": "5711.JP",
+      "name": "Mitsubishi Materials",
       "d": "2027-02-10",
       "release": {
         "when": "post",
