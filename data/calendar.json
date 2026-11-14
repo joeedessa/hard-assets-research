@@ -1,205 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-13T21:48:24+00:00",
-    "mode": "light",
-    "coverage": "14/14 scanned this pass",
+    "as_of": "2026-11-14T01:32:40+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "6370.JP",
-      "name": "Kurita Water",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-05T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": -63.12,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": 103.55,
-        "surprise_abs": -166.67,
-        "surprise_pct": -161.0
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "6963.JP",
-      "name": "ROHM",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-05T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 17.03,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": 32.44,
-        "surprise_abs": -15.41,
-        "surprise_pct": -47.5
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "AMG.AS",
-      "name": "AMG Critical Materials",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 17:30 CET",
-        "iso": "2026-11-05T16:30+00:00",
-        "tz": "Europe/Amsterdam"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CCO",
-      "name": "Cameco",
-      "d": "2026-11-05",
-      "release": {
-        "when": "unknown",
-        "label": "time unconfirmed"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CF",
-      "name": "CF Industries",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-05T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 2.87,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": 3.05,
-        "surprise_abs": -0.18,
-        "surprise_pct": -6.0
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CLNE",
-      "name": "Clean Energy Fuels",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-05T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.03,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": -0.04,
-        "surprise_abs": 0.07,
-        "pct_suppressed": "consensus of -0.04 is too near zero for a percentage to mean anything — the beat/miss is +0.07 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "DNN",
-      "name": "Denison Mines",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-05T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.03,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": -0.02,
-        "surprise_abs": -0.01,
-        "pct_suppressed": "consensus of -0.02 is too near zero for a percentage to mean anything — the beat/miss is -0.01 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "INSW",
-      "name": "International Seaways",
-      "d": "2026-11-05",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-05T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 5.84,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": 5.79,
-        "surprise_abs": 0.05,
-        "surprise_pct": 0.9
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "MP",
-      "name": "MP Materials",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-05T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.04,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": -0.01,
-        "surprise_abs": 0.05,
-        "pct_suppressed": "consensus of -0.01 is too near zero for a percentage to mean anything — the beat/miss is +0.05 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NG.L",
-      "name": "National Grid",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:30 GMT",
-        "iso": "2026-11-05T16:30+00:00",
-        "tz": "Europe/London"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "WPM",
-      "name": "Wheaton Precious Metals",
-      "d": "2026-11-05",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-05T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.9,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
-        "eps_est": 0.89,
-        "surprise_abs": 0.01,
-        "surprise_pct": 1.3
-      }
-    },
     {
       "type": "earnings",
       "tk": "FLR",
@@ -214,7 +20,7 @@
       "reported": {
         "eps": 0.77,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 0.8,
         "surprise_abs": -0.03,
         "surprise_pct": -3.3
@@ -234,7 +40,7 @@
       "reported": {
         "eps": 45.74,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 69.41,
         "surprise_abs": -23.67,
         "surprise_pct": -34.1
@@ -254,7 +60,7 @@
       "reported": {
         "eps": 67.97,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 89.61,
         "surprise_abs": -21.64,
         "surprise_pct": -24.1
@@ -274,7 +80,7 @@
       "reported": {
         "eps": 5.06,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 3.89,
         "surprise_abs": 1.17,
         "surprise_pct": 30.1
@@ -294,7 +100,7 @@
       "reported": {
         "eps": 0.15,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 0.23,
         "surprise_abs": -0.08,
         "surprise_pct": -33.0
@@ -314,7 +120,7 @@
       "reported": {
         "eps": 4.68,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 3.03,
         "surprise_abs": 1.65,
         "surprise_pct": 54.5
@@ -334,7 +140,7 @@
       "reported": {
         "eps": -0.07,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": -0.04,
         "surprise_abs": -0.03,
         "pct_suppressed": "consensus of -0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.03 per share"
@@ -354,7 +160,7 @@
       "reported": {
         "eps": 0.45,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 0.72,
         "surprise_abs": -0.27,
         "surprise_pct": -37.4
@@ -457,7 +263,7 @@
       "reported": {
         "eps": 0.11,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 0.13,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.13 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -508,7 +314,7 @@
       "reported": {
         "eps": 0.65,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 0.62,
         "surprise_abs": 0.03,
         "surprise_pct": 4.1
@@ -527,10 +333,10 @@
       },
       "wire": [
         {
-          "t": "What Franco-Nevada (FNV) Said on Its Q3 Earnings Call - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPamNObDZCdGVLX2gyRFk2aFVxck40aEU4SHNYN2tudlFjRU5KVGJHTXJuemN1Q1czb3dBZGg5OTZpb0tkSV95QVdac2o2dGtlN3NKeW9yZVFWczdUNm8wVXZvdXg3TV9HZ2JtNW8xTi1MVVl1Y1hyWWlieW9zWk1rMzNqZTNKWjBHM2cxTmNRU3JWTGZL?oc=5",
+          "t": "Franco-Nevada: Q3 Earnings Snapshot - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTmlrZ0gxMVliWkx4WWRQcU14RUxJMGVyTkVIMS05MHJMbHZYanh3NUVQYnBUeDJBQjhvTElTNGxaU3hQSDU0UHlXTnljUnZxWTM0VVB3UldYNEpUMGw0U1JqWF9kQm5CazdVV1F2Y3lqNzRCbk9hbkF1UF8xQ28zcUZMdW1QMElxd1h4Nzk2VXMtdVdNUFNxaThzdGlqNjdv?oc=5",
           "s": "Yahoo Finance",
-          "d": "2026-11-13",
+          "d": "2026-11-11",
           "cues": []
         },
         {
@@ -541,27 +347,25 @@
           "cues": []
         },
         {
+          "t": "What Franco-Nevada (FNV) Said on Its Q3 Earnings Call - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdGJRcTRxdDhTUTJJSl9PTnJpN0M4M2h1NlNzSHVjZ3RocWJBb0YwODJhMnFiUkpyVFJOZTBkMGhjRzczY3FDcE1ENmlmTzlkX3FYTjNWSnZTOEJlMGNqWFhHYS1PNDF3VndSZGxaNDZiOFpLUjI2TWhQcmZYMUkzd3ltNFEway1EVklrU3h5UGNBbzBCTGhiTXM3eVczN3lRNnRPR1ZGRjNGbUVKMkdVUXF3?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-13",
+          "cues": []
+        },
+        {
           "t": "Franco-Nevada: Q3 Results Aren't Bad, But Risks Rise (NYSE:FNV) - Seeking Alpha",
           "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMW1TdC1rbVhHa2YwRUp5VnRaMG5xQ1VBVVlURDhEMU5wWk1wUWwzUXZrTm9oMXZINzZDa3V0ZVpQSjVBYVdrU2FqeGxyQ1gxT09UUzhoU2l6S252NUU0YlNIX3lBbEdScUdEMVZ5OU9tTDFvNnZGcUJqdkYzU08wcE1qa3BCbllzcWFfRGl2dDQya0VS?oc=5",
           "s": "Seeking Alpha",
           "d": "2026-11-12",
           "cues": []
-        },
-        {
-          "t": "Franco-Nevada Beats On EPS, But A Slipping Precious-Metals Core And Mid-Range GEO Guidance Temper The Quarter - Finviz",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcVRqclI0WV9EZmNFdzk0dHg3aWhhOWh6cGZPdnJMSlBYZHNtazlHbGhNTEEyX05RRkdjWkJDbFg0VmJzdkJZb0hmRGtCbmNwSzh0Q0ZOMmdCVnQzd3BudkhNRVBScFd3OWRiSVJTUmRfanQtczYxdkhYTnVpTzBERElFUFVLRnF1V3Awd3hneERuaDVWMUNqOXh5SUp6cXpXVlRGT0F3Yms5aHZIMmJ4SjdweHB6aFFISFp2MnQtQ0R5NlkwczRMN0dYMm84QnJ5SGJYNWdR?oc=5",
-          "s": "Finviz",
-          "d": "2026-11-12",
-          "cues": [
-            "beat"
-          ]
         }
       ],
       "wire_gate": "2026-11-11",
       "reported": {
         "eps": 1.89,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 1.73,
         "surprise_abs": 0.16,
         "surprise_pct": 8.9
@@ -580,8 +384,8 @@
       },
       "wire": [
         {
-          "t": "ICL Group Ltd Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVjg0MEo2ZmtQLTgxbkF0b1BBRE1mc290Z1JjaWJPVktYeDZ3bkY0anRnZkhxZzRTNG5jM1RETUxNWEo2NGpjOTVCUUhVNlAwNnJsMGpqRUF1RE1pN3FiWkhPT3N5dERQZTV2QlNiNXA4VExfOXlKWE1zLXAwQ3RqcjdHZmhkeDlpejJHdWlmcw?oc=5",
+          "t": "ICL Group Q3 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMGhBWU16RUdvcFdwNHhnbkxWVjJ2SDlMZVlKXy04QWNjamN1S0F3dmVRbUxIYURSM2ZOVFloZkw2N2laMzJROTAtWm5nN1BMRWtMVFpIaWdKaDJKUGVhYnJVOUZNSFFBZWF4QzNBVnVuZXpFZkR2OGh4RW03a2JzYmVZM0tQbU5SZk5HaElQSUJTU0hSTEE?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-11-11",
           "cues": []
@@ -603,9 +407,9 @@
           ]
         },
         {
-          "t": "ICL Group Q3 Earnings Call Highlights - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPajZOd0NrUV9aWUZaWjEtb29pajRjVEhETk5sSnVaOWxtdVlrMEpOSFAwa1hKMXlxeVBOM085X0cwMEdBMXV1US1RMHpjN1pBenhKVTJPUnJIUHY3dUtfc0YwMXJUcDBuZ0dXMTdOMENQM3Nuck9vZU1VWW1QZkJobGJnUkxpTk0xQ1VIekNoRl9YSjRTMVotbndrNnhHclE?oc=5",
-          "s": "TradingView",
+          "t": "ICL Group Ltd Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVjg0MEo2ZmtQLTgxbkF0b1BBRE1mc290Z1JjaWJPVktYeDZ3bkY0anRnZkhxZzRTNG5jM1RETUxNWEo2NGpjOTVCUUhVNlAwNnJsMGpqRUF1RE1pN3FiWkhPT3N5dERQZTV2QlNiNXA4VExfOXlKWE1zLXAwQ3RqcjdHZmhkeDlpejJHdWlmcw?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-11-11",
           "cues": []
         }
@@ -614,7 +418,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 0.1,
         "surprise_abs": 0.0,
         "pct_suppressed": "consensus of +0.10 is too near zero for a percentage to mean anything — the beat/miss is +0.00 per share"
@@ -667,7 +471,7 @@
       "reported": {
         "eps": 0.34,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 0.34,
         "surprise_abs": 0.0,
         "surprise_pct": -0.3
@@ -718,40 +522,6 @@
     },
     {
       "type": "earnings",
-      "tk": "AFMJF",
-      "name": "Alphamin Resources",
-      "d": "2026-11-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-12T21:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "PPTA",
-      "name": "Perpetua Resources",
-      "d": "2026-11-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-12T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Perpetua Resources in the spotlight: Earnings loom amid cash burn - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTmx5dTUtY09mcDlXSGNYZ21Vam85SUl2SHpLb3gwZU5MSEhya3ZseUg0bjVVbFFGWU44ZURzbjF3ZWpaSXJSa3kyWWRwSVFHRFAyMm16NmlGaWY1UGJmWU9JaTB5bzJvajhkZi1kUnZsbGRISF9oYTlxM1pxcUZRVDExR3F3QTlDeWN0ZVdSZmJEVWQ5TVh5cVdVYjlEcjhoV3kwcHRvSXpES1pYMjFlYmV1Qk1zcFVr?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-13",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-12"
-    },
-    {
-      "type": "earnings",
       "tk": "6268.JP",
       "name": "Nabtesco",
       "d": "2026-11-13",
@@ -764,7 +534,7 @@
       "reported": {
         "eps": 38.24,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 50.27,
         "surprise_abs": -12.03,
         "surprise_pct": -23.9
@@ -783,13 +553,6 @@
       },
       "wire": [
         {
-          "t": "SMC: Record H1 results lifted FY26 guidance as semiconductor orders stayed strong - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdEdoSTFDN1pib1JndlI4TlhDUlZiOUxNNi1FaTVBSng0NERYVGN2ZUs3cTRka0Jma1MtenFlODRZRlhiNEFjanBDWkgzaEhJaWQ3MnFCUDZvRExZakpIdHJPYkV3SEhyWUE5VmtoemZoZG5kMV9ObVM1OGtaYlNEN3d1Ny14WWZKeXVSb0s5NlZWRTRHdDVTcW1NZHlST2FTS0NUc3FsUUZuSXRyR1ZSWWNHRnlrSEhTYnVHZFNJV0xFUGVNSERxTWFtT29LMUF3QWdGZnJad3Q1Uy1NTFpFZ0JxVmFid3pHV0p4SzBEa3ozWXh5emc?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-13",
-          "cues": []
-        },
-        {
           "t": "SMC raises full-year guidance, announces second buyback - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdjVTS2t6RzdCNXlSYzhJdUxiS3VlbVp6UlFkRGpIWGlXZ1doM1hkSURRbEEtT1ZnaWtvUnZsTElwb1NEWHZhb2pLY0N3ZDh5M2lGeWZnTTR2Wk1jYkZrYmQ1V2RzWlFpNHF6VVY4cm1mY1RDU18tUnlMcE9famkxUGp1UDNQZ1U0bExqOWNaOFlNNXZGaUVSbGtWQldPam9UVGtqWVZ6SDhZdw?oc=5",
           "s": "Investing.com",
@@ -797,6 +560,13 @@
           "cues": [
             "dividend/buyback"
           ]
+        },
+        {
+          "t": "SMC: Record H1 results lifted FY26 guidance as semiconductor orders stayed strong - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdEdoSTFDN1pib1JndlI4TlhDUlZiOUxNNi1FaTVBSng0NERYVGN2ZUs3cTRka0Jma1MtenFlODRZRlhiNEFjanBDWkgzaEhJaWQ3MnFCUDZvRExZakpIdHJPYkV3SEhyWUE5VmtoemZoZG5kMV9ObVM1OGtaYlNEN3d1Ny14WWZKeXVSb0s5NlZWRTRHdDVTcW1NZHlST2FTS0NUc3FsUUZuSXRyR1ZSWWNHRnlrSEhTYnVHZFNJV0xFUGVNSERxTWFtT29LMUF3QWdGZnJad3Q1Uy1NTFpFZ0JxVmFid3pHV0p4SzBEa3ozWXh5emc?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-13",
+          "cues": []
         },
         {
           "t": "SMC 9-month revenues jump to P1.5 trillion as core earnings hold steady - InsiderPH",
@@ -819,7 +589,7 @@
       "reported": {
         "eps": 977.48,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 816.92,
         "surprise_abs": 160.56,
         "surprise_pct": 19.6
@@ -856,7 +626,7 @@
       "reported": {
         "eps": 83.13,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 64.48,
         "surprise_abs": 18.65,
         "surprise_pct": 28.9
@@ -893,7 +663,7 @@
       "reported": {
         "eps": 117.69,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-13",
+        "fetched": "2026-11-14",
         "eps_est": 99.76,
         "surprise_abs": 17.93,
         "surprise_pct": 18.0
@@ -917,45 +687,26 @@
           "s": "Quantisnow",
           "d": "2026-11-13",
           "cues": []
-        },
-        {
-          "t": "How Did Almonty Industries (NASDAQ:ALM) Lift Tungsten Revenue by 382% in the Third Quarter? - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUWZtSDZZaFc0TTdLZVZXZ19wNTRhYmNmQWJZOFZnVzJ0LW5nVnNhNFhkUk9tb2dwdDRRS3pFSEF6WjhCSERNOE1pN2Vlc2FoQzFsUGlUTmhEWjJrYjBITkNkR3laazEzTkt0eF9IbHV4dUZUTXdITmQ5Z2N6bnlKaWFESmgweTM2RFMwMlllS1RWbkdIWUNjMWY0dV9uZzZnX0RlbjhBc1F4ZmpqdWVuTTRKQXY5ajVzbUxYVmdB?oc=5",
-          "s": "Kalkine",
-          "d": "2026-11-13",
-          "cues": []
         }
       ],
       "wire_gate": "2026-11-13"
     },
     {
       "type": "earnings",
-      "tk": "AFMJF",
-      "name": "Alphamin Resources",
-      "d": "2026-11-16",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-16T21:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "PPTA",
-      "name": "Perpetua Resources",
-      "d": "2026-11-16",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-16T21:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "ACM",
       "name": "AECOM",
+      "d": "2026-11-16",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-16T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AFMJF",
+      "name": "Alphamin Resources",
       "d": "2026-11-16",
       "release": {
         "when": "post",
@@ -985,6 +736,18 @@
         "when": "pre",
         "label": "BEFORE THE OPEN · 08:30 EST",
         "iso": "2026-11-16T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PPTA",
+      "name": "Perpetua Resources",
+      "d": "2026-11-16",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-16T21:00+00:00",
         "tz": "America/New_York"
       }
     },
