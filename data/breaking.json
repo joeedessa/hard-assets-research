@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "as_of": "2026-11-16T22:33:31+00:00",
+    "as_of": "2026-11-16T23:58:49+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 52/225 down 5%, sector -5.4%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 53/225 down 5%, sector -5.4%",
       "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 1/225 up 5%, sector -5.4%",
       "Single-name collapse (any holding −12%+ in a session): 3 found",
-      "Conviction-3 divergence (±8%+ versus the -2.8% universe median): 0 found",
+      "Conviction-3 divergence (±8%+ versus the -2.9% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 2 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
       "USD (DXY) ±1%+ in a session: +0.20%",
@@ -21,12 +21,12 @@
       "sev": "critical",
       "cat": "company-critical",
       "measured": true,
-      "t": "ERA.PA -43.0% in a single session",
+      "t": "NVX.AX -12.5% in a single session",
       "ev": "Computed from today's close. Conviction 1, froth 1.",
       "stance": "REVIEW",
-      "action": "Insulated names are involved (ERA.PA). Weakness here is opportunity, not information.",
+      "action": "Insulated names are involved (NVX.AX). Weakness here is opportunity, not information.",
       "tk": [
-        "ERA.PA"
+        "NVX.AX"
       ],
       "date": "2026-11-16"
     },
@@ -112,10 +112,10 @@
       "sev": "medium",
       "cat": "producer-fx",
       "measured": true,
-      "t": "USDBRL +2.50% — Brazilian supply (iron ore, niobium)",
+      "t": "USDBRL +2.70% — Brazilian supply (iron ore, niobium)",
       "ev": "Producer-currency move computed from today's close.",
       "stance": "MONITOR",
-      "action": "A +2.50% move in USDBRL changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
+      "action": "A +2.70% move in USDBRL changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
       "tk": [],
       "date": "2026-11-16"
     }

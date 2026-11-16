@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-16T22:33:31+00:00",
+    "as_of": "2026-11-16T23:58:49+00:00",
     "mode": "light",
     "coverage": "6/6 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -658,6 +658,20 @@
           "s": "Almonty Industries",
           "d": "2026-11-13",
           "cues": []
+        },
+        {
+          "t": "Almonty Industries (ALM): Q3 revenue rose 382% to C$41.9M; net income C$50.2M - Quantisnow",
+          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaTgwNU4wb29WTlloczd3TnM2MXpXbjM3clo0OVpBaGFRUXc1S0Nod1JqX2ZSNy05ZzFZdTU5OGxFaWpKSUFRaE1zOEc2MnU2NTQtOGotRHhMZzk1b0dqMVNLc2ptZlF6ODNuV05vNFl6ZHFSa1lPUXVXWXdSSjZ5Ti1JbmpUSHZvai14U3oydjE?oc=5",
+          "s": "Quantisnow",
+          "d": "2026-11-13",
+          "cues": []
+        },
+        {
+          "t": "Almonty Industries Stock What Changed After Strong Earnings And Sangdong Restart - Simply Wall St",
+          "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZDA5QlcyMThzaVFRWHRvNGR3NHowMlRIUHB4MjN5REdNWjh1dlBEWnFNOW40UDlnZmc4QzdSSXptMURMOU5mRWp4MzhwNzFfanVFazRpSm5QUDYzcTk1TWJ1elBVLVZLM2FDOWFWb205M29zakdqV3dhTV83cWk2U0duSnBkeFlsSW9na0lHUkdPYjJrMkxvYVZ6MFRCX0djQ0tGc2VPbjdHUm9PRTBweHhWaHRiRVJkU2Voa2FRa2paczU4NGtmSkVUdEJVc3I1eUE?oc=5",
+          "s": "Simply Wall St",
+          "d": "2026-11-15",
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-13"
@@ -717,7 +731,17 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-16T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Alphamin Resources Corp. (TSXV:AFM): Record Tin Earnings and Mpama South Drilling Keep Bisie in the Spotlight - kalkine.ca",
+          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTjZnUFR1bGZwSzZRUGNTeWFSYWZZaWFYSW1sZDJIY1pfOEF5YUczdDBXa0E1b001cmtKQ1lsTVZtZ3k2N0ZtckFDcFdLQXpPY3diYkprNlpCUWR2R1h2b19feVcxTTZqZjBnWmpleVZRWmNXbm5hTHpmTWF2UlYzN0IwbE5jdG94ZGRldks0Y1RtVWJEc21FNV9DZThvZGxZUVl6NmRJc2pEeFpTYjdJNzI3d0ZxeFBsNjF4UGNQYkJ1SVM4TGVrU2VPMVdpeE5j?oc=5",
+          "s": "kalkine.ca",
+          "d": "2026-11-16",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-16"
     },
     {
       "type": "earnings",
@@ -732,9 +756,16 @@
       },
       "wire": [
         {
-          "t": "Capstone Energy+ Secures $25 Million Refinancing and Reports Second Quarter Fiscal 2027 Financial Results - www.marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQjRlTjJRTVcxOGF1N2FOaFZqVG1OSFpRRHRUdUJoUFpuU0NWVVQzZTFUbllaS1RCdTBqZHNBUjN1cUpNRjVCdGQwbjNndE1oN19rdzB6OXJzdUJRZ0Vwem1lNFh2QjBFOTdZNnM4V0hyV0hLWGhKSHJJQ0FHX2x2cEZvbVpQT3R6TVFfSHdvcmRRelA4ZFB2Rzl5eDB1SUxYV1hYZFJWMTJ4QUZ1UUFyclFEV1lWcGNLY3ZzMVVGbXJKZldsSWkwN0EwZmhGRFFNWmNRZm9LX3RBYVM4d2JBaXdXV3g2Zw?oc=5",
-          "s": "www.marketscreener.com",
+          "t": "Capstone Energy+ Q2 2027 Earnings Call Is Live - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVGMxaDdpUkZCdnpHUWtYMkNDeFE1T0hlWVZkbk5NSnluc09FRnh5M1hobzlSS0NaRWYtZWNiUDdxUzU4NXZOcGhvYTF4SGJia3ZmZnlaQjFuY0wzZjNzUkROaC1jRldJOFdTRFNpOGJPX0pmY1lUTHIyOERCLURDcTNnZlFQV2NlOHVIdzVWdFpNemRfR2xmMHdCT0lyMVN2Y3V3X1ZoY293NEQ2OU1sQUFtLWM?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Capstone Energy+ Secures $25 Million Refinancing and Reports Second Quarter Fiscal 2027 Financial Results - Quantisnow",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTnRnaDJxWjFidUJGR3U0Ykh5dW9QSy1mZ0VBT3Q0NHZfc0lnNklsZDIyZTBxNW12TVFLN0k3YmRncDNCUm9PaTZ4UzhlNVBXellOeVBGQ3ZyQ2x3ajVJdHEyTF85Y3RGbVZFZEFIVEVjUmVRaFpzbTBRb2pXdnQ5SXJfaHFjdjYxbHVJNHZfSjBCRFdGTGNHbzJnd2RtNDB3MjR6NnRpR3FlbVptaFZsWDdMWkJOY28?oc=5",
+          "s": "Quantisnow",
           "d": "2026-11-16",
           "cues": []
         },
@@ -742,6 +773,13 @@
           "t": "Capstone Energy+ Secures $25 Million Refinancing; Reports Q2 Results - marketscreener.com",
           "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdmVWVmo5V1VGTXJ2bG9hSmI3eWFZenF5UmNZaFJ3aTJzX2RKbFFpZ2RJaGthOFhGWkZvTHZVaGVrOVRDV2pfU2p4aUJuUkprbjdVUDU3bVZQYS1Td3lxdXRnM283WDFjS2otbWpFNl9kTDVrMGhFbktUMlNJM2M0dnNFcW9rOTZGX0QzbnlMLWJxV2dVd1ZrajYxZnpVa1ZzaFZKYXZnZGlfSFh3UURlWU1TM2ktLUpqS3c?oc=5",
           "s": "marketscreener.com",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: Capstone Energy+ posts weak Q2 2027, shares edge higher - Investing.com India",
+          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPeUJlSk56Tk5WaDRtSWptS2tYZC11Z1RQNy1RcFUwZVNDR2t3TWNvdkhoalFBRkZ3a0dRMnNBUHVPdkdLdDhWU2VWRXBCc3hVeEJVYTZWOF9xODZDak9xRkxnQ2wzQVNQazgwNG5jY0Z3QUN2b0kyY1JLcExhZ2NrV0hGSEN0OHBhdGxpSVl4Q0VIRC1lQzhKQi1kR0RldEtmZ21CNlpyVG04cG1NZ19scDZkZGxLV0xhd2ZQWEd0d2VncUxaSlZlY3dYS0ZPOWdYU095c2x3?oc=5",
+          "s": "Investing.com India",
           "d": "2026-11-16",
           "cues": []
         }
@@ -759,37 +797,6 @@
         "iso": "2026-11-16T13:30+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Montauk Renewables, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHZBbndtRlNpQmZLd3dWd1B5RWY2aUxEaktFbjhfeGV5WF90T3pQWnA1cDdpcWo2V1FZcGdVdzlRM1F3WmV0MUNKS2ZaZjhHQnY2dzQ3d2RYamVhaF9vdjBEZGl0RFBWcndSc1VTV1FiWlRwTTBRbml0dWdGTHFzeVh1OFRHa0d5Y0NOX0IwWVhrbmFvTHZxNE1mOA?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "Montauk Renewables: Q3 Earnings Snapshot - kens5.com",
-          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNN2FpMTQ3cTZlWXBIZWY0X3MzMFo3UkpWRXV3WGctclJ2V3paVFpja3ljUy1WLWFYNnhWNmRrZ1ZZeGFtSUgtbXhodGY0dVAwZ0QwazE2dWdlS2w5OWdqR0MwLVVPcWFkUGhRbEZUTi0wbFlCNE9JWXhvcllESE04SHJNUFJOOTRrYVI4UmQ0RTVyQmZQOE1rVVdYYm11UTNsTHhmci15M25WVEoxVUFjZzFVak5PTUdKd0JjZ2lBb2xLR3c4bUFWZzdMaWxWRGlMQXVpNQ?oc=5",
-          "s": "kens5.com",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "Montauk Renewables, Inc reports results for the quarter ended September 30 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWXY2eGppbUE4Vlh5ME53V21KWHFiMnJVVHA5c0dKcFltZWgyUjBVUDYwYVZlbGJCYUJEVmhGVV9sTG9RTHZ3cnl0SW5EeVo0UjJOaTVSeVRUUGFvU2dXZmdCa0xFbXlwQ3ZMZTdWZVdBNnplcnEtOUdXUU8tRVUyZmROWUp6NU1GRGlZdklBMzJ0ZTMtM09BTTFiNGpXQVVxbzAyQzJKbGdWRE5oSVhIN0RZUXZ2NHhnLUNYcHQ0Q1lIQUJPbWRTWkYwWUdmaUZ1dWJCSnFTQU1pZmE3Tk1nUlliMDloUkJDdXoxQ2xucjFldw?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "MNTK: Montauk Renewables Inc. filed SEC Form 8-K: Results of... - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVWpnTzVzREJjbGtETnRxMFpQT2ZXQVdPNXpTcTJfZ0ZXYTAwZjQ5NEdvWFotWHZyQXJuT1l4d0JhTmdKQ0tQTnl3VGR1SE5GYkZDWHpWSmV2a0RjSHpoVDdlMzJQRk9tRkdJNFN6ZU1Ud2Y4dFN6WXpTaFgwSllxbTQtNzBaMWhKTVpyZUdHZlBJTmFBNHlGMUpaWlM0YUlHVThNNkR2MjdxUQ?oc=5",
-          "s": "Quantisnow",
-          "d": "2026-11-16",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-16",
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
