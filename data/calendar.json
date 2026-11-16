@@ -1,31 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-14T01:32:40+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-11-16T16:28:35+00:00",
+    "mode": "light",
+    "coverage": "6/6 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "FLR",
-      "name": "Fluor",
-      "d": "2026-11-06",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-06T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.77,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
-        "eps_est": 0.8,
-        "surprise_abs": -0.03,
-        "surprise_pct": -3.3
-      }
-    },
     {
       "type": "earnings",
       "tk": "6326.JP",
@@ -40,7 +20,7 @@
       "reported": {
         "eps": 45.74,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 69.41,
         "surprise_abs": -23.67,
         "surprise_pct": -34.1
@@ -60,7 +40,7 @@
       "reported": {
         "eps": 67.97,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 89.61,
         "surprise_abs": -21.64,
         "surprise_pct": -24.1
@@ -80,7 +60,7 @@
       "reported": {
         "eps": 5.06,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 3.89,
         "surprise_abs": 1.17,
         "surprise_pct": 30.1
@@ -100,7 +80,7 @@
       "reported": {
         "eps": 0.15,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 0.23,
         "surprise_abs": -0.08,
         "surprise_pct": -33.0
@@ -120,7 +100,7 @@
       "reported": {
         "eps": 4.68,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 3.03,
         "surprise_abs": 1.65,
         "surprise_pct": 54.5
@@ -140,7 +120,7 @@
       "reported": {
         "eps": -0.07,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": -0.04,
         "surprise_abs": -0.03,
         "pct_suppressed": "consensus of -0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.03 per share"
@@ -160,7 +140,7 @@
       "reported": {
         "eps": 0.45,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 0.72,
         "surprise_abs": -0.27,
         "surprise_pct": -37.4
@@ -263,7 +243,7 @@
       "reported": {
         "eps": 0.11,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 0.13,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.13 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -314,7 +294,7 @@
       "reported": {
         "eps": 0.65,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 0.62,
         "surprise_abs": 0.03,
         "surprise_pct": 4.1
@@ -365,7 +345,7 @@
       "reported": {
         "eps": 1.89,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 1.73,
         "surprise_abs": 0.16,
         "surprise_pct": 8.9
@@ -418,7 +398,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 0.1,
         "surprise_abs": 0.0,
         "pct_suppressed": "consensus of +0.10 is too near zero for a percentage to mean anything — the beat/miss is +0.00 per share"
@@ -471,7 +451,7 @@
       "reported": {
         "eps": 0.34,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 0.34,
         "surprise_abs": 0.0,
         "surprise_pct": -0.3
@@ -534,7 +514,7 @@
       "reported": {
         "eps": 38.24,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 50.27,
         "surprise_abs": -12.03,
         "surprise_pct": -23.9
@@ -553,43 +533,18 @@
       },
       "wire": [
         {
-          "t": "SMC raises full-year guidance, announces second buyback - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdjVTS2t6RzdCNXlSYzhJdUxiS3VlbVp6UlFkRGpIWGlXZ1doM1hkSURRbEEtT1ZnaWtvUnZsTElwb1NEWHZhb2pLY0N3ZDh5M2lGeWZnTTR2Wk1jYkZrYmQ1V2RzWlFpNHF6VVY4cm1mY1RDU18tUnlMcE9famkxUGp1UDNQZ1U0bExqOWNaOFlNNXZGaUVSbGtWQldPam9UVGtqWVZ6SDhZdw?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-13",
-          "cues": [
-            "dividend/buyback"
-          ]
-        },
-        {
-          "t": "SMC: Record H1 results lifted FY26 guidance as semiconductor orders stayed strong - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdEdoSTFDN1pib1JndlI4TlhDUlZiOUxNNi1FaTVBSng0NERYVGN2ZUs3cTRka0Jma1MtenFlODRZRlhiNEFjanBDWkgzaEhJaWQ3MnFCUDZvRExZakpIdHJPYkV3SEhyWUE5VmtoemZoZG5kMV9ObVM1OGtaYlNEN3d1Ny14WWZKeXVSb0s5NlZWRTRHdDVTcW1NZHlST2FTS0NUc3FsUUZuSXRyR1ZSWWNHRnlrSEhTYnVHZFNJV0xFUGVNSERxTWFtT29LMUF3QWdGZnJad3Q1Uy1NTFpFZ0JxVmFid3pHV0p4SzBEa3ozWXh5emc?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-13",
-          "cues": []
-        },
-        {
           "t": "SMC 9-month revenues jump to P1.5 trillion as core earnings hold steady - InsiderPH",
           "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYjB4MzF4X2xHR2FRcEVHSV9IZ3czVldubUc4VUNHLThZTkI1MkNZeURPTEhIRlp5V2c3cUpxT1B3YXFhWGJaY1Z3YXlHLTNjaVZpbU9VdUZiZXJqVENHNVNwQ0F2YjIyQTNWREhLczl4V0VKVmUzTy02a2RXbkh4X2NydDRpUkh1OEdudWlGeGVCQ2ZNWTlj?oc=5",
           "s": "InsiderPH",
           "d": "2026-11-13",
           "cues": []
-        },
-        {
-          "t": "Noble Financial Has Positive Opinion of SMC FY2026 Earnings - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS1R6ZGVBV3ZiVHc5OXJ0VWk1eWVpZWhzcngzWWxjcVdpWnZWS3BfaEprNkhfTzN0UGxCSnlsM3ZkZDZSdlRCLVZ5ejFWczRjM05VSEwzZFZvVXRBaGQzQjR5aDhHMWVmNW1adTV1bW82bTVTb3ZqWWtEbFZpeFI0anNCdmpQd0FBYXM2LUFNS2lmOWIxMUFQbDN4a3Nia0RfbktEZ3hKc1owaFZVRUxsWDJ0alVzXy1vbFBKUTBPZlk?oc=5",
-          "s": "MarketBeat",
-          "d": "2026-11-13",
-          "cues": [
-            "beat"
-          ]
         }
       ],
       "wire_gate": "2026-11-13",
       "reported": {
         "eps": 977.48,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 816.92,
         "surprise_abs": 160.56,
         "surprise_pct": 19.6
@@ -608,9 +563,9 @@
       },
       "wire": [
         {
-          "t": "Ebara Corporation Provides Earnings Guidance for the Fiscal Year Ending December 31, 2026 - www.marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMG1kQjNxXzk4aG1MM3JfRTRaU25sX0UzLTcxRlpHR0ZkbU9FcllFWWxFM1loQndMdUpjUlBicVl3SEJWeS1pcG1vMUpRUmtXdFBRV0dmZlpYY0hLTG82d3V6SDNvNlUwb25KNDJEb3l1WDh6d0o2bmMweGpqWXZLM05aYU4xMlZqM1RyZWlfTHdBOXM2X0xBNnVBNVVCempjYkI5VzNYRzVuS19oSmk4LUFoemc1cXA1Q29xa0UzakxwclZpdXhDQXJiYzhtN0tZV3dydWRiNlc?oc=5",
-          "s": "www.marketscreener.com",
+          "t": "Ebara: AI-led semiconductor growth drove gains as Energy weakness pressured earnings - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQVUZWYkZzb3BaVnhFTHVBeW5wbGt4NU8xNHp2emgtVzBMcnIxb25VclR4SXZuUXpGWFhybWRBSW9oLXpvTFdtb3AtMnp4bE1HbGFRdXZCbkNKUmZIb18wSHFZRjA4WjJaWG9SR1ItVXM5UFN2a3VKNDhkOXBMNjdCb08tY0Z3VnBHdzhyclJpMzVUNjZ4N2pTc3J5X0pncW5XSmpPTy10TnlsVmp4RE5HMjg0QVdYN3AwS2s5YWprMVk4cGxfNHFWVENrMUlwd3VKaFh2MUc1aU9VT1kyMXJKcXBUUTR3bG9ZT3VEWlpmeUxDT2NwdjdTaEVn?oc=5",
+          "s": "TradingView",
           "d": "2026-11-13",
           "cues": []
         },
@@ -626,7 +581,7 @@
       "reported": {
         "eps": 83.13,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 64.48,
         "surprise_abs": 18.65,
         "surprise_pct": 28.9
@@ -650,20 +605,13 @@
           "s": "Investing.com",
           "d": "2026-11-13",
           "cues": []
-        },
-        {
-          "t": "THK Reports Nine-Month 2026 Financial Results - TipRanks",
-          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVXA0SUp3dC12Ql9RNzVtb3NKaXl4VWVWTkZzcDNtc3NuamQ1TnZGYmtHN3ZJckpfRUtZdWQ4WTBRUTA1THFWUVNmNmVya2c4ZW11emI3aXU0bWRidnpHeU9FS1dJZjJfYnVfc0hvVmxidk5rNVcyTkNZV29lM1l1M0VDV2RyTmxmd1l2MWxkdU5qTnZnTGV1aFIwRGRHQQ?oc=5",
-          "s": "TipRanks",
-          "d": "2026-11-13",
-          "cues": []
         }
       ],
       "wire_gate": "2026-11-13",
       "reported": {
         "eps": 117.69,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-14",
+        "fetched": "2026-11-16",
         "eps_est": 99.76,
         "surprise_abs": 17.93,
         "surprise_pct": 18.0
@@ -682,9 +630,9 @@
       },
       "wire": [
         {
-          "t": "Almonty Industries (ALM): Q3 revenue rose 382% to C$41.9M; net income C$50.2M - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaTgwNU4wb29WTlloczd3TnM2MXpXbjM3clo0OVpBaGFRUXc1S0Nod1JqX2ZSNy05ZzFZdTU5OGxFaWpKSUFRaE1zOEc2MnU2NTQtOGotRHhMZzk1b0dqMVNLc2ptZlF6ODNuV05vNFl6ZHFSa1lPUXVXWXdSSjZ5Ti1JbmpUSHZvai14U3oydjE?oc=5",
-          "s": "Quantisnow",
+          "t": "Almonty Industries Reports Third Quarter 2026 Financial Results - Almonty Industries",
+          "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LN1k1SHMzeEpQTE9heFlpX1pDNGpmQU9HR29FcFdpU3ZhZnZpS1Z3Qk5aMW83aDJjdUxpUlJPZ0ZabGtpclQ2SUVPdWNkdGNzS1V0eTM3OHplS3hXQ0RMZ0xlMmF6UjJR?oc=5",
+          "s": "Almonty Industries",
           "d": "2026-11-13",
           "cues": []
         }
@@ -701,7 +649,24 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-16T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "AECOM Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPZDNpcnI1ZF80aVVGS2JUcVE4eEpGdWpTT000aDVxY2JHTjBCTlZQaUlwOTRQSDhYMDZLODlOa3Z3UHh0c3NSUWM4ZzE3cWRiRjdtSW1La3pWdkJiaE40VU00Mi0zSE12Y2pJWENYdlljMW1lSWRncjZpQ05ROGpiRUZRSEtQNVVPaHdpVkZPRnZVYkVyQkRuOG8xYWI0eWdKdndTcEZOWDllbUp5ODQzOVA2Qm1JWkNZaGxPZ0lJU2oxNzluUjhJbjNpWV9uTGRMeEJoR1kzc2RmNHZtUUdiZkdraHh0UzJ2SC1JVmdLbmF4ZFU0Q2FsZmtVQXVwTC1k?oc=5",
+          "s": "Benzinga",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "AECOM earnings up next: Can the engineer return to profit? By Investing.com - Investing.com India",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNT1YxYnpOblBSUXNRRzQzQ3NjZGhPbzQtSjNaWkZsajUzTWZpRl9HQ2JQdmlIUmlWVV9VZTQ0ckRBaGNQb3JScDJnSmhTLUNqUUVqcXVJMTlZcWM3ejJJb1V5SmdWUmhhZTAyNTQwTnFpeUJfdmFZbjZfdm01M2J5bE5iVWk2NHpJMC10LWhTV1hhX2tsVldyNlhCUWNsTzlGSzVRaUVTZVRRblZMYW05b0FRXzFycXNi?oc=5",
+          "s": "Investing.com India",
+          "d": "2026-11-16",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-16"
     },
     {
       "type": "earnings",
@@ -713,7 +678,17 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-16T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Alphamin Resources Corp. (TSXV:AFM): Record Tin Earnings and Mpama South Drilling Keep Bisie in the Spotlight - kalkine.ca",
+          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTjZnUFR1bGZwSzZRUGNTeWFSYWZZaWFYSW1sZDJIY1pfOEF5YUczdDBXa0E1b001cmtKQ1lsTVZtZ3k2N0ZtckFDcFdLQXpPY3diYkprNlpCUWR2R1h2b19feVcxTTZqZjBnWmpleVZRWmNXbm5hTHpmTWF2UlYzN0IwbE5jdG94ZGRldks0Y1RtVWJEc21FNV9DZThvZGxZUVl6NmRJc2pEeFpTYjdJNzI3d0ZxeFBsNjF4UGNQYkJ1SVM4TGVrU2VPMVdpeE5j?oc=5",
+          "s": "kalkine.ca",
+          "d": "2026-11-16",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-16"
     },
     {
       "type": "earnings",
@@ -737,6 +712,45 @@
         "label": "BEFORE THE OPEN · 08:30 EST",
         "iso": "2026-11-16T13:30+00:00",
         "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Montauk Renewables Q3 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUXRZSXotV1IxT0FUWVNBQ0JHSVZTN2k1ZDB2R3RFM01sTUlvNUFnSkhDdnlPemthd0xwNTA2dlV5V21BWTZCcUVXX0pCNUE0eU9QZENuWkgzcEI2alUxcUF1dWV4VHRacExRNm1QemdmYkd1aVpDT0FFMVFNcWEzb2FqZ0t3dlBBT0ZXOXgxZ0tFYzNfb2dV?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Montauk Renewables: Q3 Earnings Snapshot - kens5.com",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNN2FpMTQ3cTZlWXBIZWY0X3MzMFo3UkpWRXV3WGctclJ2V3paVFpja3ljUy1WLWFYNnhWNmRrZ1ZZeGFtSUgtbXhodGY0dVAwZ0QwazE2dWdlS2w5OWdqR0MwLVVPcWFkUGhRbEZUTi0wbFlCNE9JWXhvcllESE04SHJNUFJOOTRrYVI4UmQ0RTVyQmZQOE1rVVdYYm11UTNsTHhmci15M25WVEoxVUFjZzFVak5PTUdKd0JjZ2lBb2xLR3c4bUFWZzdMaWxWRGlMQXVpNQ?oc=5",
+          "s": "kens5.com",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "MNTK: Montauk Renewables Inc. filed SEC Form 8-K: Results of... - Quantisnow",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdmI2U0owZkx6YjltMG9iM2hpUTVJZEJNeG1TRzVnREVPUlV6dk9IZnlTWHotd0RRdnNkaUxNNDNiY1g4Z3AwRlFkc3k3TjBKX3NuQkd3R204Z3BrZXNwZ1BYbEtvVVBiUElMTUo0NnlsQkUzUkt6Rmo1ZjUzSENXWkJ0NThQQk9ic2R2MjJCNWxXd3YweVdsODJ1WFJJMzJQWG9rSA?oc=5",
+          "s": "Quantisnow",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Montauk Renewables, Inc. Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026 - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORUN2VVZEdXFyc0g3c2h6UG0tNFpCSDdDb1JBY0tXSmQyaDRMbGZXZGJFN3hGcUUwWXNOQWNQeHNNeXF3U1JzdWwydnFPM21leTF5SkRCT0hnYS1YOGVVV3Z0Rl90NHhxR3JMLXg1U2p4a2c2ZWJzY2drZ0x3eWZXeE9hNHhERml0Wm5wVnN4RG9CYW9TMUpVeDNLR0NNenZPQXVzSWtvbU9YZEIyYnlnYnhMeFBqU0VQeS1rV1Q0dElzM0lsTGJmYkhzeTVBanpENkJxWVlkbW9fd2N3TURMdl8yTVRUQQ?oc=5",
+          "s": "www.marketscreener.com",
+          "d": "2026-11-16",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-16",
+      "reported": {
+        "eps": 0.02,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-16",
+        "eps_est": 0.04,
+        "surprise_abs": -0.02,
+        "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
       }
     },
     {
