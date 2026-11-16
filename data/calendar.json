@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-16T16:28:35+00:00",
+    "as_of": "2026-11-16T22:33:31+00:00",
     "mode": "light",
     "coverage": "6/6 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -533,9 +533,32 @@
       },
       "wire": [
         {
+          "t": "Results: SMC Corporation Exceeded Expectations And The Consensus Has Updated Its Estimates - Simply Wall St",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZDQ2TGh6OWlPZ1Z6TDFucWtNQjBWRHNuYXRUNEVfSmJnNHRReG5DVU13QUxKanhhd3lPVDVoTmFXNGhRZDNwYVZQcWtKakZYRVhHSzBKRlh0SEZoV001STVNMmRYSW9aZ28wUlJFNG9uQkRzdWxBR2tRaXU3RGR5bUNReF85U1I1YjA2Y0VveEFEMjRBdURUVjg3bERUTjhxczBncGtJX0lLUXVjVGEyaXZnSTFROU9mTEY4eVVNRU1WeFBGWUJtWnM2UQ?oc=5",
+          "s": "Simply Wall St",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "SMC raises full-year guidance, announces second buyback - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdjVTS2t6RzdCNXlSYzhJdUxiS3VlbVp6UlFkRGpIWGlXZ1doM1hkSURRbEEtT1ZnaWtvUnZsTElwb1NEWHZhb2pLY0N3ZDh5M2lGeWZnTTR2Wk1jYkZrYmQ1V2RzWlFpNHF6VVY4cm1mY1RDU18tUnlMcE9famkxUGp1UDNQZ1U0bExqOWNaOFlNNXZGaUVSbGtWQldPam9UVGtqWVZ6SDhZdw?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-13",
+          "cues": [
+            "dividend/buyback"
+          ]
+        },
+        {
           "t": "SMC 9-month revenues jump to P1.5 trillion as core earnings hold steady - InsiderPH",
           "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYjB4MzF4X2xHR2FRcEVHSV9IZ3czVldubUc4VUNHLThZTkI1MkNZeURPTEhIRlp5V2c3cUpxT1B3YXFhWGJaY1Z3YXlHLTNjaVZpbU9VdUZiZXJqVENHNVNwQ0F2YjIyQTNWREhLczl4V0VKVmUzTy02a2RXbkh4X2NydDRpUkh1OEdudWlGeGVCQ2ZNWTlj?oc=5",
           "s": "InsiderPH",
+          "d": "2026-11-13",
+          "cues": []
+        },
+        {
+          "t": "SMC Q2 Results: EPS up 39% YoY to ¥48.87, sales rise 41% - scanx.trade",
+          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUHhJdEJfWDNQbmloci14Z2FOWFlKa1E4d19UallFd0E0Nnd3YjhQNnEwT19ZZ0hjaElhSENqYmpKaTl1UmJCbW1obklPZ2pwcGUwZVpzUFN4RUduQmkzWk8wZloyWWdqZllyNzBHcnlXUTNGWlZKenVKY1I3bGhUR3oyaFptTzNUbTF3SGNHbDdMWmUwd1JIeUFodkM2SVkzbWE4bFpCMEI?oc=5",
+          "s": "scanx.trade",
           "d": "2026-11-13",
           "cues": []
         }
@@ -652,16 +675,32 @@
       },
       "wire": [
         {
-          "t": "AECOM Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPZDNpcnI1ZF80aVVGS2JUcVE4eEpGdWpTT000aDVxY2JHTjBCTlZQaUlwOTRQSDhYMDZLODlOa3Z3UHh0c3NSUWM4ZzE3cWRiRjdtSW1La3pWdkJiaE40VU00Mi0zSE12Y2pJWENYdlljMW1lSWRncjZpQ05ROGpiRUZRSEtQNVVPaHdpVkZPRnZVYkVyQkRuOG8xYWI0eWdKdndTcEZOWDllbUp5ODQzOVA2Qm1JWkNZaGxPZ0lJU2oxNzluUjhJbjNpWV9uTGRMeEJoR1kzc2RmNHZtUUdiZkdraHh0UzJ2SC1JVmdLbmF4ZFU0Q2FsZmtVQXVwTC1k?oc=5",
-          "s": "Benzinga",
+          "t": "AECOM shares rise after earnings, but construction cash costs linger - finchannel",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOXE2OGNtMVR3YXZWdW1wY2I4VVlZdmpNNUJtMVVLd29zUFppM09lT1A2RnVIc2NLbzVvWTNfRzNaRHFMTFZJeHhkdTdQbndVZDVvZ0FYemdJRTFrQXI3R1lZc1R5cUYzdnpEdVVCTUZ5b0c2RUxzZDRyMlk3U2w0YXl5a0VWVFROUldPNUF0MXl4cXpxaEZoN2sxWmhfUlZudVVya0Z1U1B0WGd1ZmJRVnlNV0IwS0g4X2ZCODN2dS01aTRKX1hLYzdoQQ?oc=5",
+          "s": "finchannel",
           "d": "2026-11-16",
           "cues": []
         },
         {
-          "t": "AECOM earnings up next: Can the engineer return to profit? By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNT1YxYnpOblBSUXNRRzQzQ3NjZGhPbzQtSjNaWkZsajUzTWZpRl9HQ2JQdmlIUmlWVV9VZTQ0ckRBaGNQb3JScDJnSmhTLUNqUUVqcXVJMTlZcWM3ejJJb1V5SmdWUmhhZTAyNTQwTnFpeUJfdmFZbjZfdm01M2J5bE5iVWk2NHpJMC10LWhTV1hhX2tsVldyNlhCUWNsTzlGSzVRaUVTZVRRblZMYW05b0FRXzFycXNi?oc=5",
-          "s": "Investing.com India",
+          "t": "Aecom: Fiscal Q4 Earnings Snapshot - KTVB",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcklBT3lETjQ0M25mWTBWbUxMZktQQ09LekNkUG5FdHdxZ3V3aDNzcGNfS3ZJaWpkSzdIRzNSdlQ4Zk4xZzlMZWhBSjJVNFhWWlFtenh4NnpDdjBWTVhrS1YtU2FVd2ZNMGZkT1ZSRkFETEs1alFMQlM2c0xOcVdBZ3AxWjF1a3hZY0hFZTM1a2dtRml1LWpsSUxYNHBiOERsN2d0YUNXOTNwS3JCM0oyMDMxWkdxNnl2aGctdUdOanRLemV3TUFrb3VkNA?oc=5",
+          "s": "KTVB",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "AECOM earnings beat by $0.04, revenue fell short of estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdnA3T1V4RnVxSjBINEpwYUN2U0ZjTzlYV2VDU0hlNUlrelJoVFJha1RUaXZPWlZYX0RIVVNlSWR4blM1THB1V1Q3aFNOT2dvNzQ5ZndacEtJYlJXU3RBcWY0cHNyZUNvRnB0S3E0S3p5UHFraHRIMGNTYk0tZGJSQ0NaazZYc0p0VU45UVNISl91ckNBaWtoRk9OVmJ1SmM2UGFHQTdxOVkzZw?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-16",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "AECOM Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPZDNpcnI1ZF80aVVGS2JUcVE4eEpGdWpTT000aDVxY2JHTjBCTlZQaUlwOTRQSDhYMDZLODlOa3Z3UHh0c3NSUWM4ZzE3cWRiRjdtSW1La3pWdkJiaE40VU00Mi0zSE12Y2pJWENYdlljMW1lSWRncjZpQ05ROGpiRUZRSEtQNVVPaHdpVkZPRnZVYkVyQkRuOG8xYWI0eWdKdndTcEZOWDllbUp5ODQzOVA2Qm1JWkNZaGxPZ0lJU2oxNzluUjhJbjNpWV9uTGRMeEJoR1kzc2RmNHZtUUdiZkdraHh0UzJ2SC1JVmdLbmF4ZFU0Q2FsZmtVQXVwTC1k?oc=5",
+          "s": "Benzinga",
           "d": "2026-11-16",
           "cues": []
         }
@@ -678,17 +717,7 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-16T21:00+00:00",
         "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Alphamin Resources Corp. (TSXV:AFM): Record Tin Earnings and Mpama South Drilling Keep Bisie in the Spotlight - kalkine.ca",
-          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTjZnUFR1bGZwSzZRUGNTeWFSYWZZaWFYSW1sZDJIY1pfOEF5YUczdDBXa0E1b001cmtKQ1lsTVZtZ3k2N0ZtckFDcFdLQXpPY3diYkprNlpCUWR2R1h2b19feVcxTTZqZjBnWmpleVZRWmNXbm5hTHpmTWF2UlYzN0IwbE5jdG94ZGRldks0Y1RtVWJEc21FNV9DZThvZGxZUVl6NmRJc2pEeFpTYjdJNzI3d0ZxeFBsNjF4UGNQYkJ1SVM4TGVrU2VPMVdpeE5j?oc=5",
-          "s": "kalkine.ca",
-          "d": "2026-11-16",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-16"
+      }
     },
     {
       "type": "earnings",
@@ -700,7 +729,24 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-16T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Capstone Energy+ Secures $25 Million Refinancing and Reports Second Quarter Fiscal 2027 Financial Results - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQjRlTjJRTVcxOGF1N2FOaFZqVG1OSFpRRHRUdUJoUFpuU0NWVVQzZTFUbllaS1RCdTBqZHNBUjN1cUpNRjVCdGQwbjNndE1oN19rdzB6OXJzdUJRZ0Vwem1lNFh2QjBFOTdZNnM4V0hyV0hLWGhKSHJJQ0FHX2x2cEZvbVpQT3R6TVFfSHdvcmRRelA4ZFB2Rzl5eDB1SUxYV1hYZFJWMTJ4QUZ1UUFyclFEV1lWcGNLY3ZzMVVGbXJKZldsSWkwN0EwZmhGRFFNWmNRZm9LX3RBYVM4d2JBaXdXV3g2Zw?oc=5",
+          "s": "www.marketscreener.com",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Capstone Energy+ Secures $25 Million Refinancing; Reports Q2 Results - marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdmVWVmo5V1VGTXJ2bG9hSmI3eWFZenF5UmNZaFJ3aTJzX2RKbFFpZ2RJaGthOFhGWkZvTHZVaGVrOVRDV2pfU2p4aUJuUkprbjdVUDU3bVZQYS1Td3lxdXRnM283WDFjS2otbWpFNl9kTDVrMGhFbktUMlNJM2M0dnNFcW9rOTZGX0QzbnlMLWJxV2dVd1ZrajYxZnpVa1ZzaFZKYXZnZGlfSFh3UURlWU1TM2ktLUpqS3c?oc=5",
+          "s": "marketscreener.com",
+          "d": "2026-11-16",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-16"
     },
     {
       "type": "earnings",
@@ -715,8 +761,8 @@
       },
       "wire": [
         {
-          "t": "Montauk Renewables Q3 Earnings Call Highlights - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUXRZSXotV1IxT0FUWVNBQ0JHSVZTN2k1ZDB2R3RFM01sTUlvNUFnSkhDdnlPemthd0xwNTA2dlV5V21BWTZCcUVXX0pCNUE0eU9QZENuWkgzcEI2alUxcUF1dWV4VHRacExRNm1QemdmYkd1aVpDT0FFMVFNcWEzb2FqZ0t3dlBBT0ZXOXgxZ0tFYzNfb2dV?oc=5",
+          "t": "Montauk Renewables, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHZBbndtRlNpQmZLd3dWd1B5RWY2aUxEaktFbjhfeGV5WF90T3pQWnA1cDdpcWo2V1FZcGdVdzlRM1F3WmV0MUNKS2ZaZjhHQnY2dzQ3d2RYamVhaF9vdjBEZGl0RFBWcndSc1VTV1FiWlRwTTBRbml0dWdGTHFzeVh1OFRHa0d5Y0NOX0IwWVhrbmFvTHZxNE1mOA?oc=5",
           "s": "Yahoo Finance",
           "d": "2026-11-16",
           "cues": []
@@ -729,16 +775,16 @@
           "cues": []
         },
         {
-          "t": "MNTK: Montauk Renewables Inc. filed SEC Form 8-K: Results of... - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdmI2U0owZkx6YjltMG9iM2hpUTVJZEJNeG1TRzVnREVPUlV6dk9IZnlTWHotd0RRdnNkaUxNNDNiY1g4Z3AwRlFkc3k3TjBKX3NuQkd3R204Z3BrZXNwZ1BYbEtvVVBiUElMTUo0NnlsQkUzUkt6Rmo1ZjUzSENXWkJ0NThQQk9ic2R2MjJCNWxXd3YweVdsODJ1WFJJMzJQWG9rSA?oc=5",
-          "s": "Quantisnow",
+          "t": "Montauk Renewables, Inc reports results for the quarter ended September 30 - Earnings Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWXY2eGppbUE4Vlh5ME53V21KWHFiMnJVVHA5c0dKcFltZWgyUjBVUDYwYVZlbGJCYUJEVmhGVV9sTG9RTHZ3cnl0SW5EeVo0UjJOaTVSeVRUUGFvU2dXZmdCa0xFbXlwQ3ZMZTdWZVdBNnplcnEtOUdXUU8tRVUyZmROWUp6NU1GRGlZdklBMzJ0ZTMtM09BTTFiNGpXQVVxbzAyQzJKbGdWRE5oSVhIN0RZUXZ2NHhnLUNYcHQ0Q1lIQUJPbWRTWkYwWUdmaUZ1dWJCSnFTQU1pZmE3Tk1nUlliMDloUkJDdXoxQ2xucjFldw?oc=5",
+          "s": "TradingView",
           "d": "2026-11-16",
           "cues": []
         },
         {
-          "t": "Montauk Renewables, Inc. Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026 - www.marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORUN2VVZEdXFyc0g3c2h6UG0tNFpCSDdDb1JBY0tXSmQyaDRMbGZXZGJFN3hGcUUwWXNOQWNQeHNNeXF3U1JzdWwydnFPM21leTF5SkRCT0hnYS1YOGVVV3Z0Rl90NHhxR3JMLXg1U2p4a2c2ZWJzY2drZ0x3eWZXeE9hNHhERml0Wm5wVnN4RG9CYW9TMUpVeDNLR0NNenZPQXVzSWtvbU9YZEIyYnlnYnhMeFBqU0VQeS1rV1Q0dElzM0lsTGJmYkhzeTVBanpENkJxWVlkbW9fd2N3TURMdl8yTVRUQQ?oc=5",
-          "s": "www.marketscreener.com",
+          "t": "MNTK: Montauk Renewables Inc. filed SEC Form 8-K: Results of... - Quantisnow",
+          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVWpnTzVzREJjbGtETnRxMFpQT2ZXQVdPNXpTcTJfZ0ZXYTAwZjQ5NEdvWFotWHZyQXJuT1l4d0JhTmdKQ0tQTnl3VGR1SE5GYkZDWHpWSmV2a0RjSHpoVDdlMzJQRk9tRkdJNFN6ZU1Ud2Y4dFN6WXpTaFgwSllxbTQtNzBaMWhKTVpyZUdHZlBJTmFBNHlGMUpaWlM0YUlHVThNNkR2MjdxUQ?oc=5",
+          "s": "Quantisnow",
           "d": "2026-11-16",
           "cues": []
         }
