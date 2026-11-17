@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-17T16:30:25+00:00",
+    "as_of": "2026-11-17T21:22:39+00:00",
     "mode": "light",
     "coverage": "11/11 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -323,11 +323,13 @@
           "cues": []
         },
         {
-          "t": "Montauk Renewables, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHZBbndtRlNpQmZLd3dWd1B5RWY2aUxEaktFbjhfeGV5WF90T3pQWnA1cDdpcWo2V1FZcGdVdzlRM1F3WmV0MUNKS2ZaZjhHQnY2dzQ3d2RYamVhaF9vdjBEZGl0RFBWcndSc1VTV1FiWlRwTTBRbml0dWdGTHFzeVh1OFRHa0d5Y0NOX0IwWVhrbmFvTHZxNE1mOA?oc=5",
-          "s": "Yahoo Finance",
+          "t": "Earnings call transcript: Montauk Renewables posts Q3 2026 EPS beat - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWmhGV1NuaGVqX1p5dnZWUmVGLW5TN2FvbjY1NnFmTWlqTGZZMWZSY3M2MFdHR3ozeTBoMktfNExKd0UtWmxtMk9iMWprdHVrM0Z3WXZOVlBNQTFhbWtCZ214ZDlxOWQyZXVkQ3ZqRDV5cy1KSkpYRmtuLVNiMVNVX2dwNGZ5anlqdlVwNmRKYkpMVkxuQ01WRkh6SXFEVFN5TVJITjdtVE9OSWlMOHg2RWdlU01wV24xTkUwNk5Dcw?oc=5",
+          "s": "Investing.com",
           "d": "2026-11-16",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         }
       ],
       "wire_gate": "2026-11-16",
@@ -365,18 +367,13 @@
       },
       "wire": [
         {
-          "t": "AECOM (ACM) Q4 FY2026 earnings call transcript - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTnBiR3BCTVc2OUV2dkVBNWdtUURRZ0tqelc2dFJJdjBhVmI5alliOTMzMVFoMkhUd2ZOR0xMTlBLR01YTUNub1J3Nm9pYXgyRm5oZXBvck12LTduVkZRYTZTQUZtRHJZdktJUEdaTDV0cXV4M2hqVG8xQllvc2hKUHZ6OGtjb3h5MFE?oc=5",
-          "s": "Yahoo Finance",
+          "t": "AECOM shares jump more than 12% as 2027 earnings outlook beats estimates - Proactive financial news",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdFpZS3ZkZ1VZLTJkeTAwUFVRMENMamNUU1RpNnl0STJhU1RJRkNUSEdrcXFXdWktMEtZMlZoc1hqTldlc3gwSFVqZEt5YXBUaUdPdEdEWXBtcENOdklxRnNFVkpwSVU1RHpSLVJ2dzlwaThtdW9WbGN1Y0VndFU5YXZfZXJ0XzlMd3kzR0lkM2JhdHdlS1ZYdnVCQ0Jxc1Y4c1RqeVE0ZUkzMDN3a00wRFZqWDc5OEVKTkZ2RzdGM2tYYXhUTjFFOGYzdEdZTU56NF83TVZRcWN3UQ?oc=5",
+          "s": "Proactive financial news",
           "d": "2026-11-17",
-          "cues": []
-        },
-        {
-          "t": "AECOM shares rise after earnings, but construction cash costs linger - finchannel",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOXE2OGNtMVR3YXZWdW1wY2I4VVlZdmpNNUJtMVVLd29zUFppM09lT1A2RnVIc2NLbzVvWTNfRzNaRHFMTFZJeHhkdTdQbndVZDVvZ0FYemdJRTFrQXI3R1lZc1R5cUYzdnpEdVVCTUZ5b0c2RUxzZDRyMlk3U2w0YXl5a0VWVFROUldPNUF0MXl4cXpxaEZoN2sxWmhfUlZudVVya0Z1U1B0WGd1ZmJRVnlNV0IwS0g4X2ZCODN2dS01aTRKX1hLYzdoQQ?oc=5",
-          "s": "finchannel",
-          "d": "2026-11-16",
-          "cues": []
+          "cues": [
+            "beat"
+          ]
         },
         {
           "t": "AECOM Q4 2026 Earnings Call Is Live - TradingView",
@@ -390,6 +387,13 @@
           "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVTlNTlNpRGZZOGtRWG5naXhmdTgzeERiZ240cDZhM3ZZdHFLd0wtNDVFb09HRDhPcFB3NVdEQkdPTUU3bXJBQnZqZlpsQ05FZ2daRWNkOXVYT3VxNHFFSG8temxUQlpVazZEb0JzMGlOR0M3d2RMQ0lGN1FjSWdYQlprT2FtUHUtZzlJUkFSMmU?oc=5",
           "s": "Seeking Alpha",
           "d": "2026-11-17",
+          "cues": []
+        },
+        {
+          "t": "AECOM shares rise after earnings, but construction cash costs linger - finchannel",
+          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOXE2OGNtMVR3YXZWdW1wY2I4VVlZdmpNNUJtMVVLd29zUFppM09lT1A2RnVIc2NLbzVvWTNfRzNaRHFMTFZJeHhkdTdQbndVZDVvZ0FYemdJRTFrQXI3R1lZc1R5cUYzdnpEdVVCTUZ5b0c2RUxzZDRyMlk3U2w0YXl5a0VWVFROUldPNUF0MXl4cXpxaEZoN2sxWmhfUlZudVVya0Z1U1B0WGd1ZmJRVnlNV0IwS0g4X2ZCODN2dS01aTRKX1hLYzdoQQ?oc=5",
+          "s": "finchannel",
+          "d": "2026-11-16",
           "cues": []
         }
       ],
@@ -459,9 +463,9 @@
           "cues": []
         },
         {
-          "t": "Capstone Energy+ Q2 2027 Earnings Call Is Live - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVGMxaDdpUkZCdnpHUWtYMkNDeFE1T0hlWVZkbk5NSnluc09FRnh5M1hobzlSS0NaRWYtZWNiUDdxUzU4NXZOcGhvYTF4SGJia3ZmZnlaQjFuY0wzZjNzUkROaC1jRldJOFdTRFNpOGJPX0pmY1lUTHIyOERCLURDcTNnZlFQV2NlOHVIdzVWdFpNemRfR2xmMHdCT0lyMVN2Y3V3X1ZoY293NEQ2OU1sQUFtLWM?oc=5",
-          "s": "TradingView",
+          "t": "Capstone Energy+, Inc. Reports Earnings Results for the Second Quarter and Six Months Ended September 30, 2026 - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQbVM4VDktdGhGdEJoakxJREdDRWV4LThNdGNOZlk5SmVnNUVxbUlMbXF5Nm5xMDVHUFpHVi1tNDkwMkxNc1FKZ2xGMjV0WnJrNEtxbUdleWpCSk9WRlg3RnhSaUs1XzZYQ3BlTUx6VlpzTFRnT3pvQjdNSTh0WVhSNGM3aE15WFBfNkJaLVBhS0wwZzVTYnU5QWtDT05UY2JXS0JUSUZ4NENWRTJRQ0hkMTctT3JQeWU1NThKbGVaOExzcmdhOHhPZFpkNm8wWWp3U2VlZV9FbVlqR0d5ZTdSNkdWMGs?oc=5",
+          "s": "www.marketscreener.com",
           "d": "2026-11-16",
           "cues": []
         }
