@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-11-17T04:04:02+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-11-17T16:30:25+00:00",
+    "mode": "light",
+    "coverage": "11/11 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -291,6 +291,69 @@
     },
     {
       "type": "earnings",
+      "tk": "MNTK",
+      "name": "Montauk Renewables",
+      "d": "2026-11-16",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2026-11-16T13:30+00:00",
+        "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Montauk Renewables Q3 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUXRZSXotV1IxT0FUWVNBQ0JHSVZTN2k1ZDB2R3RFM01sTUlvNUFnSkhDdnlPemthd0xwNTA2dlV5V21BWTZCcUVXX0pCNUE0eU9QZENuWkgzcEI2alUxcUF1dWV4VHRacExRNm1QemdmYkd1aVpDT0FFMVFNcWEzb2FqZ0t3dlBBT0ZXOXgxZ0tFYzNfb2dV?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Montauk Renewables: Q3 Earnings Snapshot - kens5.com",
+          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNN2FpMTQ3cTZlWXBIZWY0X3MzMFo3UkpWRXV3WGctclJ2V3paVFpja3ljUy1WLWFYNnhWNmRrZ1ZZeGFtSUgtbXhodGY0dVAwZ0QwazE2dWdlS2w5OWdqR0MwLVVPcWFkUGhRbEZUTi0wbFlCNE9JWXhvcllESE04SHJNUFJOOTRrYVI4UmQ0RTVyQmZQOE1rVVdYYm11UTNsTHhmci15M25WVEoxVUFjZzFVak5PTUdKd0JjZ2lBb2xLR3c4bUFWZzdMaWxWRGlMQXVpNQ?oc=5",
+          "s": "kens5.com",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Montauk Renewables Announces Third Quarter 2026 Results - Quantisnow",
+          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUElwOFpNOS05M2pSUDBnU1huZ2dSZlI4YWJvSk1nQnpxUTNhVzNZNmpHLWVpRWtpSWplakJJMTR1dzlpWHFDTVp4bFFFYmVnLUZXdUxsMVNjUmxzWmllclBtTWRkaVRIUEE0RDZvejJqbXNVSXFjNVd5ZmhmYTlUakxvSlNER0dra2JJYUV5X09lR3hubGF1NDZKWlNKbjQ?oc=5",
+          "s": "Quantisnow",
+          "d": "2026-11-16",
+          "cues": []
+        },
+        {
+          "t": "Montauk Renewables, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHZBbndtRlNpQmZLd3dWd1B5RWY2aUxEaktFbjhfeGV5WF90T3pQWnA1cDdpcWo2V1FZcGdVdzlRM1F3WmV0MUNKS2ZaZjhHQnY2dzQ3d2RYamVhaF9vdjBEZGl0RFBWcndSc1VTV1FiWlRwTTBRbml0dWdGTHFzeVh1OFRHa0d5Y0NOX0IwWVhrbmFvTHZxNE1mOA?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-16",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-16",
+      "reported": {
+        "eps": 0.02,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-17",
+        "eps_est": 0.04,
+        "surprise_abs": -0.02,
+        "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PPTA",
+      "name": "Perpetua Resources",
+      "d": "2026-11-16",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2026-11-16T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "ACM",
       "name": "AECOM",
       "d": "2026-11-16",
@@ -302,6 +365,13 @@
       },
       "wire": [
         {
+          "t": "AECOM (ACM) Q4 FY2026 earnings call transcript - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTnBiR3BCTVc2OUV2dkVBNWdtUURRZ0tqelc2dFJJdjBhVmI5alliOTMzMVFoMkhUd2ZOR0xMTlBLR01YTUNub1J3Nm9pYXgyRm5oZXBvck12LTduVkZRYTZTQUZtRHJZdktJUEdaTDV0cXV4M2hqVG8xQllvc2hKUHZ6OGtjb3h5MFE?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-17",
+          "cues": []
+        },
+        {
           "t": "AECOM shares rise after earnings, but construction cash costs linger - finchannel",
           "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOXE2OGNtMVR3YXZWdW1wY2I4VVlZdmpNNUJtMVVLd29zUFppM09lT1A2RnVIc2NLbzVvWTNfRzNaRHFMTFZJeHhkdTdQbndVZDVvZ0FYemdJRTFrQXI3R1lZc1R5cUYzdnpEdVVCTUZ5b0c2RUxzZDRyMlk3U2w0YXl5a0VWVFROUldPNUF0MXl4cXpxaEZoN2sxWmhfUlZudVVya0Z1U1B0WGd1ZmJRVnlNV0IwS0g4X2ZCODN2dS01aTRKX1hLYzdoQQ?oc=5",
           "s": "finchannel",
@@ -309,26 +379,17 @@
           "cues": []
         },
         {
-          "t": "Aecom: Fiscal Q4 Earnings Snapshot - KTVB",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcklBT3lETjQ0M25mWTBWbUxMZktQQ09LekNkUG5FdHdxZ3V3aDNzcGNfS3ZJaWpkSzdIRzNSdlQ4Zk4xZzlMZWhBSjJVNFhWWlFtenh4NnpDdjBWTVhrS1YtU2FVd2ZNMGZkT1ZSRkFETEs1alFMQlM2c0xOcVdBZ3AxWjF1a3hZY0hFZTM1a2dtRml1LWpsSUxYNHBiOERsN2d0YUNXOTNwS3JCM0oyMDMxWkdxNnl2aGctdUdOanRLemV3TUFrb3VkNA?oc=5",
-          "s": "KTVB",
-          "d": "2026-11-16",
+          "t": "AECOM Q4 2026 Earnings Call Is Live - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb2E3NHlJaURJdnZVSFBaZnBFVXRkV0FEeXBIOUZQVmFmdThfMkg4X08yZXVDUmxpbXlkWXBndGpZNlhkempTRVR1bXJoZ29WZmdDaW1XMEZHSkdjOEowdzFmcmFQaHB4NmlyVG5URTJ6aUVRUjNGeVpSZ2FiTVlYZjZ6emNUaEhkNTFIdV9uUnhjQWZCSEdBN1BVN0JUS0x6TnpabVFLVQ?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-17",
           "cues": []
         },
         {
-          "t": "AECOM earnings beat by $0.04, revenue fell short of estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdnA3T1V4RnVxSjBINEpwYUN2U0ZjTzlYV2VDU0hlNUlrelJoVFJha1RUaXZPWlZYX0RIVVNlSWR4blM1THB1V1Q3aFNOT2dvNzQ5ZndacEtJYlJXU3RBcWY0cHNyZUNvRnB0S3E0S3p5UHFraHRIMGNTYk0tZGJSQ0NaazZYc0p0VU45UVNISl91ckNBaWtoRk9OVmJ1SmM2UGFHQTdxOVkzZw?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-16",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "AECOM Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPZDNpcnI1ZF80aVVGS2JUcVE4eEpGdWpTT000aDVxY2JHTjBCTlZQaUlwOTRQSDhYMDZLODlOa3Z3UHh0c3NSUWM4ZzE3cWRiRjdtSW1La3pWdkJiaE40VU00Mi0zSE12Y2pJWENYdlljMW1lSWRncjZpQ05ROGpiRUZRSEtQNVVPaHdpVkZPRnZVYkVyQkRuOG8xYWI0eWdKdndTcEZOWDllbUp5ODQzOVA2Qm1JWkNZaGxPZ0lJU2oxNzluUjhJbjNpWV9uTGRMeEJoR1kzc2RmNHZtUUdiZkdraHh0UzJ2SC1JVmdLbmF4ZFU0Q2FsZmtVQXVwTC1k?oc=5",
-          "s": "Benzinga",
-          "d": "2026-11-16",
+          "t": "AECOM rises 11% on fiscal Q4 results, 2027 guidance (ACM:NYSE) - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVTlNTlNpRGZZOGtRWG5naXhmdTgzeERiZ240cDZhM3ZZdHFLd0wtNDVFb09HRDhPcFB3NVdEQkdPTUU3bXJBQnZqZlpsQ05FZ2daRWNkOXVYT3VxNHFFSG8temxUQlpVazZEb0JzMGlOR0M3d2RMQ0lGN1FjSWdYQlprT2FtUHUtZzlJUkFSMmU?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-11-17",
           "cues": []
         }
       ],
@@ -384,17 +445,10 @@
           "cues": []
         },
         {
-          "t": "Capstone Energy+ Q2 2027 Earnings Call Is Live - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVGMxaDdpUkZCdnpHUWtYMkNDeFE1T0hlWVZkbk5NSnluc09FRnh5M1hobzlSS0NaRWYtZWNiUDdxUzU4NXZOcGhvYTF4SGJia3ZmZnlaQjFuY0wzZjNzUkROaC1jRldJOFdTRFNpOGJPX0pmY1lUTHIyOERCLURDcTNnZlFQV2NlOHVIdzVWdFpNemRfR2xmMHdCT0lyMVN2Y3V3X1ZoY293NEQ2OU1sQUFtLWM?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "Capstone Energy+ Secures $25 Million Refinancing and Reports Second Quarter Fiscal 2027 Financial Results - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTnRnaDJxWjFidUJGR3U0Ykh5dW9QSy1mZ0VBT3Q0NHZfc0lnNklsZDIyZTBxNW12TVFLN0k3YmRncDNCUm9PaTZ4UzhlNVBXellOeVBGQ3ZyQ2x3ajVJdHEyTF85Y3RGbVZFZEFIVEVjUmVRaFpzbTBRb2pXdnQ5SXJfaHFjdjYxbHVJNHZfSjBCRFdGTGNHbzJnd2RtNDB3MjR6NnRpR3FlbVptaFZsWDdMWkJOY28?oc=5",
-          "s": "Quantisnow",
-          "d": "2026-11-16",
+          "t": "Capstone Energy+, Inc. 2027 Q2 - Results - Earnings Call Presentation (NASDAQ:CEPL) 2026-11-17 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRXJqTzVWTWRtSm4xM1BQcndRWVA3Q0cyc0M2OFlveEpHNFNrZTcwSDE2UGQxTzJIX242aVZ0Undic2NYZ3BrV1N4X1hWYmxsUnpnZ2M2WWZvMjh3Uk1mczA1bThEaFY3SXYzNkxYX3JMc3NFcDJYZVY2V1BlSDJRZVNtalN1YzRVYkZMYjRBNEhCc2QzRXJvOGF4SFBpXzJNT2JDbVpR?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-11-17",
           "cues": []
         },
         {
@@ -403,70 +457,34 @@
           "s": "Investing.com",
           "d": "2026-11-16",
           "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-16"
-    },
-    {
-      "type": "earnings",
-      "tk": "MNTK",
-      "name": "Montauk Renewables",
-      "d": "2026-11-16",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-16T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Montauk Renewables, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHZBbndtRlNpQmZLd3dWd1B5RWY2aUxEaktFbjhfeGV5WF90T3pQWnA1cDdpcWo2V1FZcGdVdzlRM1F3WmV0MUNKS2ZaZjhHQnY2dzQ3d2RYamVhaF9vdjBEZGl0RFBWcndSc1VTV1FiWlRwTTBRbml0dWdGTHFzeVh1OFRHa0d5Y0NOX0IwWVhrbmFvTHZxNE1mOA?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-16",
-          "cues": []
         },
         {
-          "t": "Montauk Renewables Q3 Earnings Call Highlights - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdVdfaWRYd0EyaURNWEF5cFZRRUNaVWFVUk9KWl9SSUJCTXZyVEtNemx4ZVhNcDlBeVRTN2JTYkJtRGZXWWMydi1KMl95U1pWTHBXbkdlQlhLYVlwRVNrOWt5eTRiYlVmbWdBYWFaMTFhZ050WGJxQnZETjh6YXQzWHFNYWVxSTZxUDRwTjYxSUNZWmozckN1Sl90bXlETUItZldLZERYbnBQOWM?oc=5",
+          "t": "Capstone Energy+ Q2 2027 Earnings Call Is Live - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVGMxaDdpUkZCdnpHUWtYMkNDeFE1T0hlWVZkbk5NSnluc09FRnh5M1hobzlSS0NaRWYtZWNiUDdxUzU4NXZOcGhvYTF4SGJia3ZmZnlaQjFuY0wzZjNzUkROaC1jRldJOFdTRFNpOGJPX0pmY1lUTHIyOERCLURDcTNnZlFQV2NlOHVIdzVWdFpNemRfR2xmMHdCT0lyMVN2Y3V3X1ZoY293NEQ2OU1sQUFtLWM?oc=5",
           "s": "TradingView",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "Montauk Renewables: Q3 Earnings Snapshot - kens5.com",
-          "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNN2FpMTQ3cTZlWXBIZWY0X3MzMFo3UkpWRXV3WGctclJ2V3paVFpja3ljUy1WLWFYNnhWNmRrZ1ZZeGFtSUgtbXhodGY0dVAwZ0QwazE2dWdlS2w5OWdqR0MwLVVPcWFkUGhRbEZUTi0wbFlCNE9JWXhvcllESE04SHJNUFJOOTRrYVI4UmQ0RTVyQmZQOE1rVVdYYm11UTNsTHhmci15M25WVEoxVUFjZzFVak5PTUdKd0JjZ2lBb2xLR3c4bUFWZzdMaWxWRGlMQXVpNQ?oc=5",
-          "s": "kens5.com",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "Montauk Renewables Announces Third Quarter 2026 Results - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUElwOFpNOS05M2pSUDBnU1huZ2dSZlI4YWJvSk1nQnpxUTNhVzNZNmpHLWVpRWtpSWplakJJMTR1dzlpWHFDTVp4bFFFYmVnLUZXdUxsMVNjUmxzWmllclBtTWRkaVRIUEE0RDZvejJqbXNVSXFjNVd5ZmhmYTlUakxvSlNER0dra2JJYUV5X09lR3hubGF1NDZKWlNKbjQ?oc=5",
-          "s": "Quantisnow",
           "d": "2026-11-16",
           "cues": []
         }
       ],
       "wire_gate": "2026-11-16",
       "reported": {
-        "eps": 0.02,
+        "eps": -0.08,
         "source": "Yahoo Finance",
         "fetched": "2026-11-17",
-        "eps_est": 0.04,
-        "surprise_abs": -0.02,
-        "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
+        "eps_est": -0.03,
+        "surprise_abs": -0.05,
+        "pct_suppressed": "consensus of -0.03 is too near zero for a percentage to mean anything — the beat/miss is -0.05 per share"
       }
     },
     {
       "type": "earnings",
-      "tk": "PPTA",
-      "name": "Perpetua Resources",
-      "d": "2026-11-16",
+      "tk": "AFMJF",
+      "name": "Alphamin Resources",
+      "d": "2026-11-17",
       "release": {
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-16T21:00+00:00",
+        "iso": "2026-11-17T21:00+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1252,6 +1270,18 @@
     },
     {
       "type": "earnings",
+      "tk": "ACM",
+      "name": "AECOM",
+      "d": "2027-02-08",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-08T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "5631.JP",
       "name": "Japan Steel Works",
       "d": "2027-02-08",
@@ -1476,6 +1506,18 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2027-02-12T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CEPL",
+      "name": "Capstone Energy+",
+      "d": "2027-02-15",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-15T21:00+00:00",
+        "tz": "America/New_York"
       }
     },
     {
