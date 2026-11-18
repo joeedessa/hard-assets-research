@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-18T15:59:40+00:00",
+    "as_of": "2026-11-18T20:55:47+00:00",
     "mode": "light",
     "coverage": "10/10 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -237,6 +237,13 @@
       },
       "wire": [
         {
+          "t": "What Sociedad Quimica y Minera (SQM) Said on Its Q3 Earnings Call - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMl9GMkNuSndVSnplMmxkeDlOZmlrOExYYTZRN2IyZmRjZ0g0LVk3YU5PQjNlNXRyY0ZSTWM0eXZwZ0Uyd3NUQU0xcWpORU1zeGxrOEF4TEhONVQyRnZleFBUV1dlTUd5ZWo3ek80SjM0d1NWekkwWDkwTFFENHExemkxcnRrblpWZ0UySnRsVkk1M3dmcWUtMi1B?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-18",
+          "cues": []
+        },
+        {
           "t": "SQM misses third quarter earnings and revenue estimates - Investing.com",
           "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbl8wNWVrWUJVNVFNbEowY2hzemNBVGM1amVPbW5uNHUxbWJrTGFqVWo5anJWSk9pSDR1UUdRNlZkNm1NNGJzQzFsR1EtaDBhaXdPUVFDX0g0WDJDVjRDbC1BdHo1TnRVRmZVNmlXMXNpcnVuc2J2ekMtcmFTaXFWZ2Nza05nQlpWaWFSLWk3OHc5ZHF2b2p2M3lRVTQ0UnhIUmhVU0ZXbzFmS1lB?oc=5",
           "s": "Investing.com",
@@ -253,23 +260,11 @@
           "cues": []
         },
         {
-          "t": "Sociedad Quimica y Minera (NYSE:SQM) Releases Earnings Results, Misses Expectations By $0.06 EPS - MarketBeat",
-          "u": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPLXRwcHFNWnN6ZFp5V1BwaFV6VHdFUEhWYk1XV1l2d3NUbzd2OVE3NmdVVmpOUWRHNnJiSkY0SXFQdTJPYWV1VVV6bGJieE5vNm5BYXZqVE5hdXd3MDI0RWlMNVhPYlRmaHRGSGNDTGZCQXFJUWZRNkRfaERTZEVhSFBUSkJ5VmYybExlMUlnVWVDcHZycnQydjJBenVnY1d0cTdGVEJTeWw3cVVkRkhRY01OWmhLR2NxU2t5SnFSMDByZEpxLS1tUmhrTnFEc2JFVUFhTlZxYUt3YkhFZmtKR3hzQmUyZDdFS2c?oc=5",
-          "s": "MarketBeat",
+          "t": "Sociedad Quimica y Minera S.A. (SQM) Q3 FY2026 earnings call transcript - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORjZoRk40VmkzRktkUTVoQWU5VUFWX1NkSVdVcUdSMzRpbXpRanVCVHhVT3V5R0tkRE05cWY4V0NxVFVwanhTclZDbGFnaEJtbURBRVdLTlRsdjNIQ0lNckFfNmlEakstODQ5RVpyRFB1NDRxb0JQT19mb2FUVFRROVp5WVJVYmFuMkE?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-11-18",
-          "cues": [
-            "beat",
-            "miss"
-          ]
-        },
-        {
-          "t": "SQM misses third quarter earnings and revenue estimates By Investing.com - Investing.com India",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZlNZNkFlWlRpRlUyWUljd2FKbzYxU3NMTkFPOE9vb2xfaDZXM2czRnVRd3F3SnduV0ZvZE1OenVjTWxMYy1KVE9MM1NoZXNIbldRMmxUZXFxOVZobVBKa3NXYldLNE5ES0FHaXdpanJmU2NWN3NLYnhRZmxVMlIzemg1bHhxaVMtRFF3QklqWkZ0bUJFZFhpbHNHSktFcmJoSmdTN1NNaHF0dl9vektrVkpNRUFDanM?oc=5",
-          "s": "Investing.com India",
-          "d": "2026-11-18",
-          "cues": [
-            "miss"
-          ]
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-17",
@@ -317,23 +312,16 @@
       },
       "wire": [
         {
-          "t": "Golar LNG: Q3 Earnings Snapshot - KVUE",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPLTdvai1zTVhFdXZub2VWNXNHMzhIWGRCTERrYWFuSTlqOUJCZE1nTkRQLUhIS3lDelVXYXQ3MjNkYTNUTTBTM1BPOU9HU1kxMXNJUF83amxLemdZM1dKQWR1ckZyT2d5bi1iZDdlZXJRcTFwTkJFZERGUTFqSENGNC1JVlhrRU9abmVvX2FOajQxVDRDNlZ4SnJUQk1SRTRLMnE0TjZvWjNZN0UzaFptUk01c2FjdGhvVUxva0g1TFBTbkhHdkFF?oc=5",
-          "s": "KVUE",
+          "t": "Golar LNG: Q3 Earnings Snapshot - 10tv.com",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMEVvOHRxeTdmQ3ZHRURPaFNwLU9YNDk5cVNnSWlrdW1rSjRVaXJEN0ZVSE9NTjBob0lFNzdvRVU4alJJZ3lhaUFhR2J2bnNXTTFLaC1PeXA3ZHRYM3BSY01oQzItR25LNmxqR21VTXk3RkRxWUktaDhSM0dzZkoyb2Rrc3BpejUwOVJaU1dLUTVUZ05peFJIcndXYXRwUE04aWNZYVhzM1JXLS1qWldlZFBZbDl5N3NNcy1EYm9saGwxaTZoWWpv?oc=5",
+          "s": "10tv.com",
           "d": "2026-11-18",
           "cues": []
         },
         {
           "t": "Golar LNG Limited Interim results for the period ended September 30, 2026 - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcjBnOFh1WTQwWWVOTmt5T0JDM2t1SkxSdjV6WWlMUk5wcFpfS3dZSGp0MVJkX1NKN2NCVU1WOVhVX3NTdWtpOFRoOXFrRHBtWGdkdnk3TFZhUl9TQW12bHJNc1pjWlRtZ3lvZDBfZzlYQ2kzVzk0Ql9zbFF5cExnamRiUm1LS2M5TGl6TDRqSVpzUVBKM0NFV1N4R1FpVVR2OTNfM1dB?oc=5",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUGJLVjlkbFoyVXM2QWJkb0VkejdQbS01MkxGMTktZmpZVWJuRXk1T3ZDOGtMMi1PNmZ6QW1lYmNXTWFKakFueHJYZ2lMY2JGaXZUUDZZS3RMdmZxVHJ0U2hUX3ZSeXN1RzZQcHlKUldCc3Q3Q0JBQk9waF9wX3N5SUFZRDl2RE0xVnJrS1ZjR0Jzb1FTY1g4bThsaVU3QjlnM2kyQTMyUzVIcjg?oc=5",
           "s": "Quantisnow",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "Golar LNG (GLNG) Surpasses Q3 Earnings and Revenue Estimates - Yahoo Finance Australia",
-          "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOd1FnX0dHWlBoLU9aak5YYlBndFVUR25pRVRIakJhcEVmX0M1LVBSZUpQNnNBSjZZM19ZOXhISWg3UWRxaS1BNE5rZEx6RUs0WERfMTV1OV8wQTd3RXU3clVrZGEtWXBtQWNlSXFhMlVkOHp2cDJEcUxTbkZTbGZzbmd3?oc=5",
-          "s": "Yahoo Finance Australia",
           "d": "2026-11-18",
           "cues": []
         },
@@ -345,6 +333,13 @@
           "cues": [
             "beat"
           ]
+        },
+        {
+          "t": "Golar LNG Limited Interim Results For The Period Ended September 30, 2026 - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZng4REQyUWZ4NnRKcFNGazRCT1hFZUVPWkx4SHJ3OEVzLXVrbE9sTUZDR2ltT1BqcG9xOE0tUGNTT0QyR1h4MkJBcFZPa0VBRGJZNXNueVJ3WlNZOVk5U0Nienh2dU1CbVE5U3k5eVZscGdsWTRjWWIzVm1YRm9YVVEycnJtcnpWWGJzb0NpS0d3eUxSX04wZ0dVdG8xVmRxZ1lxSExCYkV5aGtMS192Y2FMcTdBZEhSdHBtakdobnd2M0pOTXFPdG0tTzN3YVlzeElVeWFiNXhKdw?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-18",
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-18"
@@ -365,6 +360,13 @@
           "t": "Helmerich & Payne reports Q3: Everything you need to know ahead of earnings - TradingView",
           "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcnZjUlVYeFVJekpVYXFRNThtYXg3TXpybUJtRDlaMEx6QW9XWTdjWlhmZ0FvNThzS3VTWTVTeXU4cTBaLWNtZngxd1FhSi02ZXlqdUJfTVBQMzU1cDBvaGlWbFN5anVmY1lpZWxYaGluZk9ubjRrd2lBbXlEVVhPSUVJYXRtY0Z6MUVRa1Y1MEhldDN2SmstNlJKRzYwZnlIZTVXOVB0UVdfaU4yamlqcHJzalh0by1Ldk1TMHk3bllKcUF0UENUWWtONjZaZw?oc=5",
           "s": "TradingView",
+          "d": "2026-11-18",
+          "cues": []
+        },
+        {
+          "t": "Why Are Helmerich & Payne (NYSE:HP) Results In Focus? - Kalkine Media",
+          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNmFiVGN4bDY4blZJNmt3WEhsV1BHSWZpYWdXR2RBTGVUNDNZTnA1ODBGcWZSY3VOcnhPS1RrT2xxNGxaWW5GaHJ0eVNEd3BJY3RUUmk0NC02V3FQU0FVRWxtY3BYZDgxdHFuWnVXVk1FMFBXRTdLSGxNb0JDSlQyLS11dXF0SHg2bzItMGwwdDJ3cmM?oc=5",
+          "s": "Kalkine Media",
           "d": "2026-11-18",
           "cues": []
         }
@@ -403,7 +405,17 @@
         "label": "AFTER THE CLOSE · 17:30 CET",
         "iso": "2026-11-18T16:30+00:00",
         "tz": "Europe/Rome"
-      }
+      },
+      "wire": [
+        {
+          "t": "Earnings To Watch: Saipem SpA (MIL:SPM) Q3 2026 -- GF Value Sees 31% Downside - GuruFocus",
+          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTHU5UXA3Y0hFMWozMmJNNTRIaHVxRzZnSmN6LW4yZGxtUXBKMWlJSFBrZTlESVoxa29wYmFacWRuU3lBNG81aXF1WVItR21rZmhRNDFsUE5mcWF0MjV0dWUzWGg4ZklSOUkxODFoaFRSMDBCeDVZM2hWdnRqbzBCLUNMN0JnMUZpN3Y5NkQtVURlTDJ0Q3dvZXdIWi1YWTlENFlqbEI3RVdnNEk5?oc=5",
+          "s": "GuruFocus",
+          "d": "2026-11-18",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-18"
     },
     {
       "type": "earnings",
