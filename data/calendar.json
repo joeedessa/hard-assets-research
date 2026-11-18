@@ -1,151 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-17T23:19:55+00:00",
-    "mode": "light",
-    "coverage": "11/11 scanned this pass",
+    "as_of": "2026-11-18T03:00:56+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "6326.JP",
-      "name": "Kubota",
-      "d": "2026-11-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-09T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 45.74,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": 69.41,
-        "surprise_abs": -23.67,
-        "surprise_pct": -34.1
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "7014.JP",
-      "name": "Namura Shipbuilding",
-      "d": "2026-11-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 15:30 JST",
-        "iso": "2026-11-09T06:30+00:00",
-        "tz": "Asia/Tokyo"
-      },
-      "reported": {
-        "eps": 67.97,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": 89.61,
-        "surprise_abs": -21.64,
-        "surprise_pct": -24.1
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CEG",
-      "name": "Constellation Energy",
-      "d": "2026-11-09",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-09T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 5.06,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": 3.89,
-        "surprise_abs": 1.17,
-        "surprise_pct": 30.1
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "CWCO",
-      "name": "Consolidated Water",
-      "d": "2026-11-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-09T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.15,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": 0.23,
-        "surprise_abs": -0.08,
-        "surprise_pct": -33.0
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NRG",
-      "name": "NRG Energy",
-      "d": "2026-11-09",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-09T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 4.68,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": 3.03,
-        "surprise_abs": 1.65,
-        "surprise_pct": 54.5
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "NXE",
-      "name": "NexGen Energy",
-      "d": "2026-11-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-09T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": -0.07,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": -0.04,
-        "surprise_abs": -0.03,
-        "pct_suppressed": "consensus of -0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.03 per share"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "TDW",
-      "name": "Tidewater",
-      "d": "2026-11-09",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-09T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.45,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": 0.72,
-        "surprise_abs": -0.27,
-        "surprise_pct": -37.4
-      }
-    },
     {
       "type": "policy",
       "d": "2026-11-10",
@@ -179,7 +39,7 @@
       "reported": {
         "eps": 0.11,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
+        "fetched": "2026-11-18",
         "eps_est": 0.13,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.13 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -199,7 +59,7 @@
       "reported": {
         "eps": 0.65,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
+        "fetched": "2026-11-18",
         "eps_est": 0.62,
         "surprise_abs": 0.03,
         "surprise_pct": 4.1
@@ -219,7 +79,7 @@
       "reported": {
         "eps": 1.89,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
+        "fetched": "2026-11-18",
         "eps_est": 1.73,
         "surprise_abs": 0.16,
         "surprise_pct": 8.9
@@ -239,7 +99,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
+        "fetched": "2026-11-18",
         "eps_est": 0.1,
         "surprise_abs": 0.0,
         "pct_suppressed": "consensus of +0.10 is too near zero for a percentage to mean anything — the beat/miss is +0.00 per share"
@@ -259,7 +119,7 @@
       "reported": {
         "eps": 0.34,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
+        "fetched": "2026-11-18",
         "eps_est": 0.34,
         "surprise_abs": 0.0,
         "surprise_pct": -0.3
@@ -336,7 +196,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
+        "fetched": "2026-11-18",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -352,132 +212,6 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-16T21:00+00:00",
         "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ACM",
-      "name": "AECOM",
-      "d": "2026-11-16",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-16T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "AECOM shares jump more than 12% as 2027 earnings outlook beats estimates - Proactive financial news",
-          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdFpZS3ZkZ1VZLTJkeTAwUFVRMENMamNUU1RpNnl0STJhU1RJRkNUSEdrcXFXdWktMEtZMlZoc1hqTldlc3gwSFVqZEt5YXBUaUdPdEdEWXBtcENOdklxRnNFVkpwSVU1RHpSLVJ2dzlwaThtdW9WbGN1Y0VndFU5YXZfZXJ0XzlMd3kzR0lkM2JhdHdlS1ZYdnVCQ0Jxc1Y4c1RqeVE0ZUkzMDN3a00wRFZqWDc5OEVKTkZ2RzdGM2tYYXhUTjFFOGYzdEdZTU56NF83TVZRcWN3UQ?oc=5",
-          "s": "Proactive financial news",
-          "d": "2026-11-17",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "AECOM rises 11% on fiscal Q4 results, 2027 guidance (ACM:NYSE) - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVTlNTlNpRGZZOGtRWG5naXhmdTgzeERiZ240cDZhM3ZZdHFLd0wtNDVFb09HRDhPcFB3NVdEQkdPTUU3bXJBQnZqZlpsQ05FZ2daRWNkOXVYT3VxNHFFSG8temxUQlpVazZEb0JzMGlOR0M3d2RMQ0lGN1FjSWdYQlprT2FtUHUtZzlJUkFSMmU?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-11-17",
-          "cues": []
-        },
-        {
-          "t": "AECOM shares rise after earnings, but construction cash costs linger - finchannel",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOXE2OGNtMVR3YXZWdW1wY2I4VVlZdmpNNUJtMVVLd29zUFppM09lT1A2RnVIc2NLbzVvWTNfRzNaRHFMTFZJeHhkdTdQbndVZDVvZ0FYemdJRTFrQXI3R1lZc1R5cUYzdnpEdVVCTUZ5b0c2RUxzZDRyMlk3U2w0YXl5a0VWVFROUldPNUF0MXl4cXpxaEZoN2sxWmhfUlZudVVya0Z1U1B0WGd1ZmJRVnlNV0IwS0g4X2ZCODN2dS01aTRKX1hLYzdoQQ?oc=5",
-          "s": "finchannel",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "Aecom: Fiscal Q4 Earnings Snapshot - KTVB",
-          "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcklBT3lETjQ0M25mWTBWbUxMZktQQ09LekNkUG5FdHdxZ3V3aDNzcGNfS3ZJaWpkSzdIRzNSdlQ4Zk4xZzlMZWhBSjJVNFhWWlFtenh4NnpDdjBWTVhrS1YtU2FVd2ZNMGZkT1ZSRkFETEs1alFMQlM2c0xOcVdBZ3AxWjF1a3hZY0hFZTM1a2dtRml1LWpsSUxYNHBiOERsN2d0YUNXOTNwS3JCM0oyMDMxWkdxNnl2aGctdUdOanRLemV3TUFrb3VkNA?oc=5",
-          "s": "KTVB",
-          "d": "2026-11-16",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-16",
-      "reported": {
-        "eps": 1.63,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": 1.59,
-        "surprise_abs": 0.04,
-        "surprise_pct": 2.5
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "AFMJF",
-      "name": "Alphamin Resources",
-      "d": "2026-11-16",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-16T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Alphamin Resources Corp. (TSXV:AFM): Record Tin Earnings and Mpama South Drilling Keep Bisie in the Spotlight - kalkine.ca",
-          "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTjZnUFR1bGZwSzZRUGNTeWFSYWZZaWFYSW1sZDJIY1pfOEF5YUczdDBXa0E1b001cmtKQ1lsTVZtZ3k2N0ZtckFDcFdLQXpPY3diYkprNlpCUWR2R1h2b19feVcxTTZqZjBnWmpleVZRWmNXbm5hTHpmTWF2UlYzN0IwbE5jdG94ZGRldks0Y1RtVWJEc21FNV9DZThvZGxZUVl6NmRJc2pEeFpTYjdJNzI3d0ZxeFBsNjF4UGNQYkJ1SVM4TGVrU2VPMVdpeE5j?oc=5",
-          "s": "kalkine.ca",
-          "d": "2026-11-16",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-16"
-    },
-    {
-      "type": "earnings",
-      "tk": "CEPL",
-      "name": "Capstone Energy+",
-      "d": "2026-11-16",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-16T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Capstone Energy+ Q2 Earnings Call Highlights - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZlRRMUNJTGl2NXpfSTkwaDFiQ3hzY1NZNGYxUVdGdHFTcUJBU2pjMFdnRTNKX1JJOFBqV01xR0FqY3JDaXhGU3ZsYUFQTXRHS29nUWVfb0dLWWRaM0w1SFBraUZBa0ltNmFSNHFLVGhmQVhwcVNGZTl5bTdCeHh1ZmRReFBYV3VQekFhaW1nTlBrQVU?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-17",
-          "cues": []
-        },
-        {
-          "t": "Capstone Energy+, Inc. 2027 Q2 - Results - Earnings Call Presentation (NASDAQ:CEPL) 2026-11-17 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRXJqTzVWTWRtSm4xM1BQcndRWVA3Q0cyc0M2OFlveEpHNFNrZTcwSDE2UGQxTzJIX242aVZ0Undic2NYZ3BrV1N4X1hWYmxsUnpnZ2M2WWZvMjh3Uk1mczA1bThEaFY3SXYzNkxYX3JMc3NFcDJYZVY2V1BlSDJRZVNtalN1YzRVYkZMYjRBNEhCc2QzRXJvOGF4SFBpXzJNT2JDbVpR?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-11-17",
-          "cues": []
-        },
-        {
-          "t": "Capstone Energy+ Q2 2027 Earnings Call Is Live - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVGMxaDdpUkZCdnpHUWtYMkNDeFE1T0hlWVZkbk5NSnluc09FRnh5M1hobzlSS0NaRWYtZWNiUDdxUzU4NXZOcGhvYTF4SGJia3ZmZnlaQjFuY0wzZjNzUkROaC1jRldJOFdTRFNpOGJPX0pmY1lUTHIyOERCLURDcTNnZlFQV2NlOHVIdzVWdFpNemRfR2xmMHdCT0lyMVN2Y3V3X1ZoY293NEQ2OU1sQUFtLWM?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-16",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Capstone Energy+ posts weak Q2 2027, shares edge higher - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQMTlaWVF6VDhfZlhfUTk3dEVVYWNobFhvYkU1YU9UbTlYREhQdGd0YUQ2c3A1TVU3RHlxTlpwVVliRE1XRjFLOGl2SmZaMXQ5ai1YMkxoR1o1amE5Rkp6eTVyZEF4WThzMmtSdExUY3YtalExaE9EaG9ySDFZdjBmQW9OLTh1Y3FBdWpEbldMUnIxajM5Z0JEcWNOM2lUNGVvT0s0Y2U2ZlV5Y2JtTk8wU1RZbUtNUGk0LXRobkFHX1A2SXRfYVF6eXNxMFBvZTg?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-16",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-16",
-      "reported": {
-        "eps": -0.08,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-17",
-        "eps_est": -0.03,
-        "surprise_abs": -0.05,
-        "pct_suppressed": "consensus of -0.03 is too near zero for a percentage to mean anything — the beat/miss is -0.05 per share"
       }
     },
     {
@@ -1274,18 +1008,6 @@
     },
     {
       "type": "earnings",
-      "tk": "ACM",
-      "name": "AECOM",
-      "d": "2027-02-08",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2027-02-08T21:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "5631.JP",
       "name": "Japan Steel Works",
       "d": "2027-02-08",
@@ -1330,6 +1052,18 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2027-02-08T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ACM",
+      "name": "AECOM",
+      "d": "2027-02-08",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-08T21:00+00:00",
+        "tz": "America/New_York"
       }
     },
     {
