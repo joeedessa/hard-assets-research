@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-11-18T03:00:56+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-11-18T15:59:40+00:00",
+    "mode": "light",
+    "coverage": "10/10 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -176,20 +176,18 @@
           "cues": []
         },
         {
-          "t": "Montauk Renewables Announces Third Quarter 2026 Results - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUElwOFpNOS05M2pSUDBnU1huZ2dSZlI4YWJvSk1nQnpxUTNhVzNZNmpHLWVpRWtpSWplakJJMTR1dzlpWHFDTVp4bFFFYmVnLUZXdUxsMVNjUmxzWmllclBtTWRkaVRIUEE0RDZvejJqbXNVSXFjNVd5ZmhmYTlUakxvSlNER0dra2JJYUV5X09lR3hubGF1NDZKWlNKbjQ?oc=5",
-          "s": "Quantisnow",
+          "t": "Montauk Renewables, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObHZBbndtRlNpQmZLd3dWd1B5RWY2aUxEaktFbjhfeGV5WF90T3pQWnA1cDdpcWo2V1FZcGdVdzlRM1F3WmV0MUNKS2ZaZjhHQnY2dzQ3d2RYamVhaF9vdjBEZGl0RFBWcndSc1VTV1FiWlRwTTBRbml0dWdGTHFzeVh1OFRHa0d5Y0NOX0IwWVhrbmFvTHZxNE1mOA?oc=5",
+          "s": "Yahoo Finance",
           "d": "2026-11-16",
           "cues": []
         },
         {
-          "t": "Earnings call transcript: Montauk Renewables posts Q3 2026 EPS beat - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWmhGV1NuaGVqX1p5dnZWUmVGLW5TN2FvbjY1NnFmTWlqTGZZMWZSY3M2MFdHR3ozeTBoMktfNExKd0UtWmxtMk9iMWprdHVrM0Z3WXZOVlBNQTFhbWtCZ214ZDlxOWQyZXVkQ3ZqRDV5cy1KSkpYRmtuLVNiMVNVX2dwNGZ5anlqdlVwNmRKYkpMVkxuQ01WRkh6SXFEVFN5TVJITjdtVE9OSWlMOHg2RWdlU01wV24xTkUwNk5Dcw?oc=5",
-          "s": "Investing.com",
+          "t": "Montauk Renewables, Inc. Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026 - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORUN2VVZEdXFyc0g3c2h6UG0tNFpCSDdDb1JBY0tXSmQyaDRMbGZXZGJFN3hGcUUwWXNOQWNQeHNNeXF3U1JzdWwydnFPM21leTF5SkRCT0hnYS1YOGVVV3Z0Rl90NHhxR3JMLXg1U2p4a2c2ZWJzY2drZ0x3eWZXeE9hNHhERml0Wm5wVnN4RG9CYW9TMUpVeDNLR0NNenZPQXVzSWtvbU9YZEIyYnlnYnhMeFBqU0VQeS1rV1Q0dElzM0lsTGJmYkhzeTVBanpENkJxWVlkbW9fd2N3TURMdl8yTVRUQQ?oc=5",
+          "s": "www.marketscreener.com",
           "d": "2026-11-16",
-          "cues": [
-            "beat"
-          ]
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-16",
@@ -236,6 +234,52 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-17T21:00+00:00",
         "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "SQM misses third quarter earnings and revenue estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbl8wNWVrWUJVNVFNbEowY2hzemNBVGM1amVPbW5uNHUxbWJrTGFqVWo5anJWSk9pSDR1UUdRNlZkNm1NNGJzQzFsR1EtaDBhaXdPUVFDX0g0WDJDVjRDbC1BdHo1TnRVRmZVNmlXMXNpcnVuc2J2ekMtcmFTaXFWZ2Nza05nQlpWaWFSLWk3OHc5ZHF2b2p2M3lRVTQ0UnhIUmhVU0ZXbzFmS1lB?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-18",
+          "cues": [
+            "miss"
+          ]
+        },
+        {
+          "t": "SQM: Q3 Earnings Snapshot - The Joplin Globe",
+          "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd2UyMUZpNFJfd1RwQ2VBUVVmbkp5ZTF3R1ZYSmpSd0tEM0JobVhKN0VqaWlBaXVsZGp1S1F4Wm1JcjZ2UjdsMEhqYWVNc0ZZVzZOTnp4Tmc5eWhfcWpQcW5fcXNYSWxOT2czWTk2N2VJWGxkVmVaSkJHNUhsNU92V2I2MWpYR3g4dlhqdEtGZ0syZ2pSSVVQU1VnQklCNkxGYnpVaUVxa29GWGhaWGlSRlJkcEFvRmNXOTRXeUlLM3BfTUJsb3c?oc=5",
+          "s": "The Joplin Globe",
+          "d": "2026-11-18",
+          "cues": []
+        },
+        {
+          "t": "Sociedad Quimica y Minera (NYSE:SQM) Releases Earnings Results, Misses Expectations By $0.06 EPS - MarketBeat",
+          "u": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPLXRwcHFNWnN6ZFp5V1BwaFV6VHdFUEhWYk1XV1l2d3NUbzd2OVE3NmdVVmpOUWRHNnJiSkY0SXFQdTJPYWV1VVV6bGJieE5vNm5BYXZqVE5hdXd3MDI0RWlMNVhPYlRmaHRGSGNDTGZCQXFJUWZRNkRfaERTZEVhSFBUSkJ5VmYybExlMUlnVWVDcHZycnQydjJBenVnY1d0cTdGVEJTeWw3cVVkRkhRY01OWmhLR2NxU2t5SnFSMDByZEpxLS1tUmhrTnFEc2JFVUFhTlZxYUt3YkhFZmtKR3hzQmUyZDdFS2c?oc=5",
+          "s": "MarketBeat",
+          "d": "2026-11-18",
+          "cues": [
+            "beat",
+            "miss"
+          ]
+        },
+        {
+          "t": "SQM misses third quarter earnings and revenue estimates By Investing.com - Investing.com India",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZlNZNkFlWlRpRlUyWUljd2FKbzYxU3NMTkFPOE9vb2xfaDZXM2czRnVRd3F3SnduV0ZvZE1OenVjTWxMYy1KVE9MM1NoZXNIbldRMmxUZXFxOVZobVBKa3NXYldLNE5ES0FHaXdpanJmU2NWN3NLYnhRZmxVMlIzemg1bHhxaVMtRFF3QklqWkZ0bUJFZFhpbHNHSktFcmJoSmdTN1NNaHF0dl9vektrVkpNRUFDanM?oc=5",
+          "s": "Investing.com India",
+          "d": "2026-11-18",
+          "cues": [
+            "miss"
+          ]
+        }
+      ],
+      "wire_gate": "2026-11-17",
+      "reported": {
+        "eps": 1.91,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-18",
+        "eps_est": 2.08,
+        "surprise_abs": -0.17,
+        "surprise_pct": -8.1
       }
     },
     {
@@ -248,7 +292,17 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-18T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Borr Drilling Q3 earnings: What to expect - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbTAtRFdCYkg4NHpCb3MxeEZSdUdJX0VTamFxLVM5RHE1Y1pHcnUxQl9zV1J0UjlvM2w4cUpfSjNXYzZpZTFMZUxqZnBqSktEc1ZkYV95WlZLdlkzQlBJWXBuWFU2S0N3ajNDcFJhU1FRX3kwcGdXa1lVSjJsaXpfRUd1N2FJSU04c3JDT2lZQ2ZlZXl5N2xLNjNOSlpVQXNsUU9J?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-18",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-18"
     },
     {
       "type": "earnings",
@@ -260,7 +314,40 @@
         "label": "BEFORE THE OPEN · 08:30 EST",
         "iso": "2026-11-18T13:30+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Golar LNG: Q3 Earnings Snapshot - KVUE",
+          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPLTdvai1zTVhFdXZub2VWNXNHMzhIWGRCTERrYWFuSTlqOUJCZE1nTkRQLUhIS3lDelVXYXQ3MjNkYTNUTTBTM1BPOU9HU1kxMXNJUF83amxLemdZM1dKQWR1ckZyT2d5bi1iZDdlZXJRcTFwTkJFZERGUTFqSENGNC1JVlhrRU9abmVvX2FOajQxVDRDNlZ4SnJUQk1SRTRLMnE0TjZvWjNZN0UzaFptUk01c2FjdGhvVUxva0g1TFBTbkhHdkFF?oc=5",
+          "s": "KVUE",
+          "d": "2026-11-18",
+          "cues": []
+        },
+        {
+          "t": "Golar LNG Limited Interim results for the period ended September 30, 2026 - Quantisnow",
+          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcjBnOFh1WTQwWWVOTmt5T0JDM2t1SkxSdjV6WWlMUk5wcFpfS3dZSGp0MVJkX1NKN2NCVU1WOVhVX3NTdWtpOFRoOXFrRHBtWGdkdnk3TFZhUl9TQW12bHJNc1pjWlRtZ3lvZDBfZzlYQ2kzVzk0Ql9zbFF5cExnamRiUm1LS2M5TGl6TDRqSVpzUVBKM0NFV1N4R1FpVVR2OTNfM1dB?oc=5",
+          "s": "Quantisnow",
+          "d": "2026-11-18",
+          "cues": []
+        },
+        {
+          "t": "Golar LNG (GLNG) Surpasses Q3 Earnings and Revenue Estimates - Yahoo Finance Australia",
+          "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOd1FnX0dHWlBoLU9aak5YYlBndFVUR25pRVRIakJhcEVmX0M1LVBSZUpQNnNBSjZZM19ZOXhISWg3UWRxaS1BNE5rZEx6RUs0WERfMTV1OV8wQTd3RXU3clVrZGEtWXBtQWNlSXFhMlVkOHp2cDJEcUxTbkZTbGZzbmd3?oc=5",
+          "s": "Yahoo Finance Australia",
+          "d": "2026-11-18",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: Golar LNG tops revenue estimates in Q3 2026 - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUjMwN1FPWHhMd1RzbU9odXByTlQyOGJhcmlSQWlGbGh0WXkyN3oybk9QcUQwYVhJemIzdW5IeklicHExS3VfRFNfcERCX205MldKc1pKRkhlYTVCb3Bsd280VzU1Znc5WXRnUnNwVWtUYlFqZXdMdnBqYTNXVEZjRG93ZDdXNzZldHB6MXBmLURqUWdIMnlzZFJfRHdRdUVUM0IwNkRIc1BCX043Mnk2YWEzdlhzTldfekpoQkxBVU5oZw?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-18",
+          "cues": [
+            "beat"
+          ]
+        }
+      ],
+      "wire_gate": "2026-11-18"
     },
     {
       "type": "earnings",
@@ -272,7 +359,17 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-18T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Helmerich & Payne reports Q3: Everything you need to know ahead of earnings - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcnZjUlVYeFVJekpVYXFRNThtYXg3TXpybUJtRDlaMEx6QW9XWTdjWlhmZ0FvNThzS3VTWTVTeXU4cTBaLWNtZngxd1FhSi02ZXlqdUJfTVBQMzU1cDBvaGlWbFN5anVmY1lpZWxYaGluZk9ubjRrd2lBbXlEVVhPSUVJYXRtY0Z6MUVRa1Y1MEhldDN2SmstNlJKRzYwZnlIZTVXOVB0UVdfaU4yamlqcHJzalh0by1Ldk1TMHk3bllKcUF0UENUWWtONjZaZw?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-18",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-18"
     },
     {
       "type": "earnings",
@@ -284,7 +381,17 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-18T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Star Bulk Carriers faces earnings test as dry bulk rates surge - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPclJKNFQwUUUwYlJROEJQdmlibHZDbW5LXzEwbzJlQTZBeThQMzVzVHFFYXI3UDloUkZLUUgzeXVNX3FpOWVORkVvcV8yTFNaLVloYzRXOWxOUWVlanlFNWFQdlZiVTVhNjdWX0xUNnBsMDJZNnJoc25LR1dpUXVkRGc0djZYZ20tVFVabkpQb1UzeGxONDNpanU3YUpfamJFM2pRaWhFWTNUX3VzMDFnQ0ZPNEVVUQ?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-18",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-18"
     },
     {
       "type": "earnings",
