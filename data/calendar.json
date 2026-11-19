@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-19T16:05:42+00:00",
+    "as_of": "2026-11-19T21:01:57+00:00",
     "mode": "light",
     "coverage": "9/9 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -228,39 +228,6 @@
         "iso": "2026-11-17T21:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Sociedad Quimica y Minera S.A. (SQM) Q3 FY2026 earnings call transcript - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbjRkd3R0bzZ1enZWNHpHRS1XMVplRkVlZ2dPYnBuODZHV19Gb2FVQm9QdEFoenZIbktWNE1IZUNIbUtWVk1mdmpYd2cwU2dGcFliWFRRVGNheF9mRmF3U296QUV1Y253UGRHTVBEVUdPTkZBdF9XZ3pITzBhVk5aZU5VUFBVX3dTejJB?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "What Sociedad Quimica y Minera (SQM) Said on Its Q3 Earnings Call - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRDZsczAzZm00czRDTjlrWDg4Qzl6a2dTTGJ2VmtpUG9SQ0M5Q01FakxseWQ1dlZvRkhmM0pKdU10R1Z1ODRYZ1pjY3EtWU82eTdHcFg3RGFzbmlLLTFZazQ1ZmFuSk9iS3hPYkRiRktEdmF5cVJXdHJsVVE3VlJpWVJjZlEzOTR6am9rWUhqN3Y2aEstNUNfOThsNGxXSEdXZ3lUMmV5N2hmQnp4d3cwN3lsVDd1SzRpcXYzdXJQbmx6UQ?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "SQM misses third quarter earnings and revenue estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbl8wNWVrWUJVNVFNbEowY2hzemNBVGM1amVPbW5uNHUxbWJrTGFqVWo5anJWSk9pSDR1UUdRNlZkNm1NNGJzQzFsR1EtaDBhaXdPUVFDX0g0WDJDVjRDbC1BdHo1TnRVRmZVNmlXMXNpcnVuc2J2ekMtcmFTaXFWZ2Nza05nQlpWaWFSLWk3OHc5ZHF2b2p2M3lRVTQ0UnhIUmhVU0ZXbzFmS1lB?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-18",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "SQM: Q3 Earnings Snapshot - The Joplin Globe",
-          "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd2UyMUZpNFJfd1RwQ2VBUVVmbkp5ZTF3R1ZYSmpSd0tEM0JobVhKN0VqaWlBaXVsZGp1S1F4Wm1JcjZ2UjdsMEhqYWVNc0ZZVzZOTnp4Tmc5eWhfcWpQcW5fcXNYSWxOT2czWTk2N2VJWGxkVmVaSkJHNUhsNU92V2I2MWpYR3g4dlhqdEtGZ0syZ2pSSVVQU1VnQklCNkxGYnpVaUVxa29GWGhaWGlSRlJkcEFvRmNXOTRXeUlLM3BfTUJsb3c?oc=5",
-          "s": "The Joplin Globe",
-          "d": "2026-11-18",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-17",
       "reported": {
         "eps": 1.91,
         "source": "Yahoo Finance",
@@ -280,38 +247,7 @@
         "label": "BEFORE THE OPEN · 08:30 EST",
         "iso": "2026-11-18T13:30+00:00",
         "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Golar LNG Limited Q3 2026 Earnings Call Summary - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNanJ1SEYyOTdNVmxhbmdpZTZpVUdtM2JZaktsUDVScWdKV29BQmJVYTFjUG9YSGtEWEMwSUVOV3pGSWdhNUh3ekxJbEJCOFcyV1BlN2c1c1VPem80U3JPLW0zazRGSl9qS3VJWUJTaVl0T0g4NkhBekxjMTJ3czVZc3JzNmFUOXBsajZ3TnRseXR5TjRL?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "What Golar LNG (GLNG) Said on Its Q3 Earnings Call - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSVJjV0VGQ3d1QzVmV00yejJBNXJub2IwWDFEYTlpWDl4TkJYY2h1Ny05dUlfZVgtdkU2aWVnZXR2czVrSlZGdk5Gd2l1S1puQnZHQWF1TGdhMTdBN3RubmRCdHk4ZmZCNVdZMVhEN0FPYnlJbXJqaTV2WnJ2SVdpZlNkLTVXU0hrV3ZLNDFsVVR1aUp6ZWp3VUItanpQdWZNQkpNQVBVNmdsdFJUc0E?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "Golar LNG: Q3 Earnings Snapshot - 10TV",
-          "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMEVvOHRxeTdmQ3ZHRURPaFNwLU9YNDk5cVNnSWlrdW1rSjRVaXJEN0ZVSE9NTjBob0lFNzdvRVU4alJJZ3lhaUFhR2J2bnNXTTFLaC1PeXA3ZHRYM3BSY01oQzItR25LNmxqR21VTXk3RkRxWUktaDhSM0dzZkoyb2Rrc3BpejUwOVJaU1dLUTVUZ05peFJIcndXYXRwUE04aWNZYVhzM1JXLS1qWldlZFBZbDl5N3NNcy1EYm9saGwxaTZoWWpv?oc=5",
-          "s": "10TV",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "Golar LNG Limited Interim results for the period ended September 30, 2026 - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUGJLVjlkbFoyVXM2QWJkb0VkejdQbS01MkxGMTktZmpZVWJuRXk1T3ZDOGtMMi1PNmZ6QW1lYmNXTWFKakFueHJYZ2lMY2JGaXZUUDZZS3RMdmZxVHJ0U2hUX3ZSeXN1RzZQcHlKUldCc3Q3Q0JBQk9waF9wX3N5SUFZRDl2RE0xVnJrS1ZjR0Jzb1FTY1g4bThsaVU3QjlnM2kyQTMyUzVIcjg?oc=5",
-          "s": "Quantisnow",
-          "d": "2026-11-18",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-18"
+      }
     },
     {
       "type": "earnings",
@@ -324,41 +260,6 @@
         "iso": "2026-11-18T21:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Star Bulk Carriers: Q3 Earnings Snapshot - KVUE",
-          "u": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMWV2cmVZLWc0MElBMUI1dmdhZ1dfM0tkTjFtc2Q0YXU1NWlWMlpXMzNGYnNYTFplSlU3SXJtWjlMRGtUdmI3QXJtVk4zbllvRVRYbTFPb1p4UF9jeUNNTUZEaFlXLTNNN29OMzUyaTBWb242cEhpY21COERMQVZTZmFkZjB5NVk3ZUg1WkNSZmg5MEo2N0wyLVN6MktWUjc0WHZpRnVoMU9zQk9HakdLWEZfbVc2MUwxWjZNOVliUnFLMjFhLVcwLUVhUDUyNEhhMFBJ?oc=5",
-          "s": "KVUE",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "Star Bulk Carriers (SBLK) Lags Q3 Earnings and Revenue Estimates - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYW4zQl8yYy1rUHMzUUVOUDFObzRfdXVPdnZpdHIwOXJPNi1PS0t1T3VKVVVhX1BiUG1PZDlldUUzOURLalJBbERPZlpnd2ZBd3RRQ1dJS0xrM0NKSWVsNjJRelhNT29ITnREeFlVWERyOXpSaGltUGlhSEx6c1FLZURzRzVtX3FRNnZ3SWhabGZwWV9XQ2U2Ug?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "Star Bulk Carriers earnings missed by $0.04, revenue topped estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObGpGYUZaUHVqRm1zTmpCQkd3UFg1di1JakRlWk53eVl6QTk4S1lrNXA5SXJUeDFaMmZWNVFseTUtYXJnMG5JOUxyT1k3YUVsLXUwdVdEWTlPNHRyUUowcXMzLW5zUmpRZ25LZ3dkTkRrd2hfUHdTdEM4b1JhSEJUNkk4U1FHUmluN2hYcnQ0bEtOVk1XTHBTVG5RWVY1VEFRUHhzd3EwMU0xbFFoZ0piZ24xSnE?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-18",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "What Does Star Bulk Carriers' (NASDAQ:SBLK) $141.9 Million Q3 Profit and $1.00 Dividend Signal? - Kalkine",
-          "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVmFuV2pFQ3d5UDhsUXFVZVhnTXAxUTBXQkVJNkdVS0tqUnpnODFBYmo5b0UyaTNoSEE5eGphVEtpcjB3a2t0dVRsaWhvajUtS01GdkVwMkNBR25GLUl2VElRa0NWTGFjRnFZNXRncHlaaFFQSkpZMEdoWnNsczZPQUNBOFpJMnE4YXZRMzFrSXFHMDBhQmR5QkZ0UEw0MVo3YVdqZk5jcEFLMVpYSnNEV3c3d2JDNFNyLWgyYTNWZ29tendl?oc=5",
-          "s": "Kalkine",
-          "d": "2026-11-19",
-          "cues": [
-            "dividend/buyback"
-          ]
-        }
-      ],
-      "wire_gate": "2026-11-18",
       "reported": {
         "eps": 1.28,
         "source": "Yahoo Finance",
@@ -379,37 +280,6 @@
         "iso": "2026-11-18T16:30+00:00",
         "tz": "Europe/Rome"
       },
-      "wire": [
-        {
-          "t": "Saipem says 2027 guidance does not include Middle East cost recovery - Reuters",
-          "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSVdrSHIwYVJYcE85NlV4Mm9ZVHFYMzZpZ04zSXZlVElBUDFaM2gtanR5TVlHUWs5U1phN19ScW5vUzYzcVJLMDgweGVJR0xkWkw0M2FYWDRpWjk4N1cxM1lXV08xaTB4SWpNRkQxVjQ5bE9XY2FuTklnNkZvQTJfVGV2Qm9PT09NaHNBRlBCUmFwbFhzN2ZJbXZTaUM1aVdLUUVLal9wUmRIM0d6T0xMVUV0aXQ?oc=5",
-          "s": "Reuters",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "Saipem SpA 2026 Q3 - Results - Earnings Call Presentation (OTCMKTS:SAPMY) 2026-11-19 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVEZ6d25mN2FmR0V5c0xZN3NERGl2eHNIeVh2TktaYXYwMzE4QVpOTXV3bkwxaGNUeF9OWVFGajJLWmlxUXB6RU5fYmZnVjhKNzhNaFNIRXR0Q29vLVlISjJUUFYxSExaUksyeGJwd0pLSHBKT3pYS2tlOGdGb2NpSElpMHR5M3lfZ2J3QzVaRmR4MkdmVjgtN0JpcmFPSUdKdUtBcklJWnZURFlFaXhWSkJoNnpWd2R6VkVz?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-11-19",
-          "cues": []
-        },
-        {
-          "t": "Saipem shares surge on strong Q3 results and 2027 guidance - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxON2lubkFZNG01Yml6dlFha3VncVNSdmhFYVFSbFZfM0hiSXR1cTg0WHEzbnUyTEZQQ21fcEdsdURJSTVzcHdkdnZjc1ZLVDI2dFRnQkJKQTJVaWVJR2QtMGo3UVNvR2VmV01ZWDNrbXc3WUVCdm1mRGRlX0Q2Q0RId05sVDlna1doUlZieEU1enhPMjFrOFQyUEVSOTJlM0wtX2JtNVI2dHl6ZDJFRXhDbQ?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-19",
-          "cues": []
-        },
-        {
-          "t": "Milan Stock Exchange, Saipem Nears 7% Gain as Market Welcomes Quarterly Results and Guidance - www.marketscreener.com",
-          "u": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNU2VFMlVaQ1oyRTVlMmZyTGt6d2ZrTmMzSjNoNXIta3V3T2dBQ1hXajYzajY4ZEd5dE05RFRoakg4RkNaZk1XanpBS28tWmFzY3lvQnFGamJmVGRJQ2kzdm9PMWFtVC1lSHBIRG13X2pxYW1hZFhtQ2MtZW85am0wV1ZqU0cxU3FUVndMVWhVZVlJOFhQbXdRMzFlTWhsRjN1ZFdpQWhrX2duVVZ5MnpTZ0x1X2loVWg4azBia1h6eE5kalM3dTcxQ0poazNzZlR5Vm1abUlXYTVpZmM?oc=5",
-          "s": "www.marketscreener.com",
-          "d": "2026-11-19",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-18",
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
@@ -535,38 +405,7 @@
         "label": "AFTER THE CLOSE · 16:30 GMT",
         "iso": "2026-11-19T16:30+00:00",
         "tz": "Europe/London"
-      },
-      "wire": [
-        {
-          "t": "JM half year results for the six months ended 30th September 2026 - matthey.com",
-          "u": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vNDhXajd2anY2d1VJdE9lcllKTkdwWnplRkFVNHlXc3VSMkdrNnhISmZsYy15MXdWZXlKSG0xcmlhUktDRWtWX1lucEE2N2FCUnpEX0xTNmZfRExIbnl0SThlSkR6enM?oc=5",
-          "s": "matthey.com",
-          "d": "2026-11-19",
-          "cues": []
-        },
-        {
-          "t": "Johnson Matthey upgrades profit outlook as first-half earnings jump 45% - Yahoo Finance UK",
-          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONjdZUVB4RmJTeWNTQ0NJTFZkTjdUUUlEVklDbm1OMmN1dHkyUE4tWmlfZWFfNXVQTWJNV3BYYnJOdjB1TGRXYkpKR2tWaExUQWVxZVR6QUxoOWxKSEVpbTJXbjE2RlJ1ZHdRQkk0UktKdXpmZE1iTW9mNW84bmxfQmpvanl4blNQTm42WmM3b1FOQQ?oc=5",
-          "s": "Yahoo Finance UK",
-          "d": "2026-11-19",
-          "cues": []
-        },
-        {
-          "t": "Johnson Matthey Plc 2027 Q2 - Results - Earnings Call Presentation (OTCMKTS:JMPLY) 2026-11-19 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWjdPWVREUGE4Z25xOTdCT3FOb256N1J6ZUdlOFNBbzhrbjdKNVpyaW1fM0p4WGFuX2hBYnRoRGJCX1RDSHBrRHhCcVVZdGZxNnhFaUpKcEFwMUoyQjZRZjQ2Y0s5SENZWm4yaTZZVDhFQzZKSE9SdGpYV1pPUmQtUFhYa0s3WlZOTGx2T25pMVE1c0cwdFI1MktNYnJ0ajdFXzlHTGFn?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-11-19",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Johnson Matthey lifts outlook in H1 2026 as margins improve - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYl9KY3NUZXJCVXRfOGt0TGlqWGdYNkJUVXB4ZVdLLS1jZWs3TjByZGNxT2Zad05EY3lhaFVURW9kTlV6N2dERzZHNTdxaDJfTUVSZUZneEJTYWNvT2cyR05EMWdqZkoxWUVNYklsMUhNTEJHbnk5WWFqYngweU9EMVd4YmRjZFhjWGZ1dXk5RUVRUmhXYlJlaDhqV001blR5djdMV0E3TUVwWGkzemJ3NEsyNTk5TGx5Z1NMN2c1Q2lMQ3k2dEtaN2tTOE1oYVp3LTFCZzBnbw?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-19",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-19"
+      }
     },
     {
       "type": "earnings",
