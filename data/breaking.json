@@ -1,18 +1,18 @@
 {
   "_meta": {
-    "as_of": "2026-11-18T22:50:40+00:00",
+    "as_of": "2026-11-19T02:44:15+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 21/224 down 5%, sector -6.3%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 2/224 up 5%, sector -6.3%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 24/225 down 5%, sector -6.3%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 2/225 up 5%, sector -6.3%",
       "Single-name collapse (any holding −12%+ in a session): 1 found",
-      "Conviction-3 divergence (±8%+ versus the -0.7% universe median): 0 found",
+      "Conviction-3 divergence (±8%+ versus the -1.4% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 3 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 1 found",
-      "USD (DXY) ±1%+ in a session: +0.30%",
+      "USD (DXY) ±1%+ in a session: +0.40%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
       "Producer-country FX ±1.5%+ (5 pairs tracked): 1 moved",
-      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 2 outside their window, 0 excluded as undated"
+      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 3 outside their window, 0 excluded as undated"
     ]
   },
   "state": "critical",
@@ -28,7 +28,7 @@
       "tk": [
         "TROX"
       ],
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "sev": "high",
@@ -39,7 +39,7 @@
       "stance": "MONITOR",
       "action": "The underlying moved +5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "sev": "high",
@@ -50,7 +50,7 @@
       "stance": "MONITOR",
       "action": "The underlying moved -5.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "sev": "high",
@@ -61,7 +61,7 @@
       "stance": "MONITOR",
       "action": "The underlying moved -6.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "sev": "medium",
@@ -81,18 +81,18 @@
         "WMB",
         "SLNG"
       ],
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
       "sev": "medium",
       "cat": "producer-fx",
       "measured": true,
-      "t": "USDZAR +1.80% — South African supply (PGM, gold)",
+      "t": "USDZAR +2.40% — South African supply (PGM, gold)",
       "ev": "Producer-currency move computed from today's close.",
       "stance": "MONITOR",
-      "action": "A +1.80% move in USDZAR changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
+      "action": "A +2.40% move in USDZAR changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
       "tk": [],
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     }
   ]
 }
