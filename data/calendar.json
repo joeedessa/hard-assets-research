@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-20T20:46:01+00:00",
+    "as_of": "2026-11-20T22:29:46+00:00",
     "mode": "light",
     "coverage": "5/5 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -234,11 +234,13 @@
           "cues": []
         },
         {
-          "t": "Star Bulk Carriers faces earnings test as dry bulk rates surge - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPclJKNFQwUUUwYlJROEJQdmlibHZDbW5LXzEwbzJlQTZBeThQMzVzVHFFYXI3UDloUkZLUUgzeXVNX3FpOWVORkVvcV8yTFNaLVloYzRXOWxOUWVlanlFNWFQdlZiVTVhNjdWX0xUNnBsMDJZNnJoc25LR1dpUXVkRGc0djZYZ20tVFVabkpQb1UzeGxONDNpanU3YUpfamJFM2pRaWhFWTNUX3VzMDFnQ0ZPNEVVUQ?oc=5",
-          "s": "Investing.com",
+          "t": "SBLK: Star Bulk posts $141.9M Q3 net profit and $1.00 dividend - Quantisnow",
+          "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEtkZU1JdFh2a2x2OXlTdEl2TEZ4RlBRaWlYb2JXcDRKWEJuallBdVVhSWFkZ2V0X1ZZVFNUQXQ2eGtFLU13ZHM5blBCaDJuODhLTTVEbXlmdnFfRkQ4WUJBUkNhRlVPVmVDaG1oUEgyTXhsRFM4Y1dwTVZwenFQdmZfd0hGRjNDWlpUSA?oc=5",
+          "s": "Quantisnow",
           "d": "2026-11-18",
-          "cues": []
+          "cues": [
+            "dividend/buyback"
+          ]
         }
       ],
       "wire_gate": "2026-11-18",
@@ -358,9 +360,16 @@
       },
       "wire": [
         {
-          "t": "Frontline Q3 Earnings Call Highlights - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPck9UZWhpcWRYMllhQnlweksyeE9sTlZic2dXV2FMT3JfZUd3aTJ5U0IzX2hPLWN3eFpTTTFSRWF0REVnSEphcnFDNk1VXzlPUnZwOEJ2ZzdUcldOVG1XalFkbWdWNVlxVVZERGZERHNaLVlsa0ZFTmFERnctc1h1b2FoTWNmVDBudlZDQnFzbFhEeGY5WWJSalFZd3BsbVY0OWdVMg?oc=5",
+          "t": "Frontline Ltd. Q3 2026 Earnings Call Summary - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZHJvNWQyYl9QV0FDTFRHQmRnTWM3N0tsTV9vQ2xsbVlhdFVYeldWamg2R3oyVEM5djBIbEozakcxYUR5S1EzZ2kzdlhKOHBpLVJ0Rkw3ZEJPZ3BpQ1ZReHEwVVZxMkh1a2ltOXdFYU1GV091MUVvRDBMMVZIVElGd1l6aE10a2JLczRsY1RNTU9UeTRqTFBwVGljSQ?oc=5",
           "s": "Yahoo Finance",
+          "d": "2026-11-20",
+          "cues": []
+        },
+        {
+          "t": "Frontline (FRO) Q3 2026 Earnings Call Transcript - The Motley Fool",
+          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWTRDRG5iam4tOE9RVzlya3NqcXFpa21OMERwQmxxSE1IOEJtQlNRSVZaUFBTaHVkNkcwQ3d4UTZVT1JoU1FHTlNMZTQtZS1PM3VGbWt4bW9yMTZZNzZXX1k1eWRsTmppaWZzRmlZYWRDSHc0RE9VcUFpNUFkMEk0dmRKUlZackJ4a19jWk5LaGZaSVkwVlg4ZEZtX1F3enNvbFpRbHJ0TEk?oc=5",
+          "s": "The Motley Fool",
           "d": "2026-11-20",
           "cues": []
         },
@@ -379,15 +388,6 @@
           "s": "TradingView",
           "d": "2026-11-20",
           "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Frontline tops Q3 2026 estimates as tanker boom rolls on - Investing.com UK",
-          "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOU1RHOWNQekwzY0tIR3dteURZWlBtNHJpVXlid0hnNWNlMzNXelJINkgwdTFHTzM4aFJXOENqdWdOWUo0RW41dzNyWllONEVsQUl0aXFpeVUzeE16RUdTb1c3OTVXVTlIdzN3SU91V2hkYTlrWFE5ZHRLbFJyNHZHV0tubDR0ZGZSenZlV2V4QVlUaFhGcXRwa0w4MDJxNWdfa1ZJTm50LXBSNW1KMjkyQi1DTXhYY3RkLWtlaUwtSkM2Y0RiTnZkdWItT19jb2p5SUlmVmpPbmhyZw?oc=5",
-          "s": "Investing.com UK",
-          "d": "2026-11-20",
-          "cues": [
-            "beat"
-          ]
         }
       ],
       "wire_gate": "2026-11-20",
