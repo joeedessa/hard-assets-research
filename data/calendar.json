@@ -1,43 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-20T22:29:46+00:00",
-    "mode": "light",
-    "coverage": "5/5 scanned this pass",
+    "as_of": "2026-11-21T02:37:58+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "HBM",
-      "name": "Hudbay Minerals",
-      "d": "2026-11-12",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-12T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 0.34,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-20",
-        "eps_est": 0.34,
-        "surprise_abs": 0.0,
-        "surprise_pct": -0.3
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "ORI.AX",
-      "name": "Orica",
-      "d": "2026-11-12",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:12 AEDT",
-        "iso": "2026-11-12T05:12+00:00",
-        "tz": "Australia/Sydney"
-      }
-    },
     {
       "type": "earnings",
       "tk": "ALM",
@@ -64,7 +32,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-20",
+        "fetched": "2026-11-21",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -105,43 +73,10 @@
         "iso": "2026-11-17T21:00+00:00",
         "tz": "America/New_York"
       },
-      "wire": [
-        {
-          "t": "Sociedad Quimica y Minera S.A. (SQM) Q3 FY2026 earnings call transcript - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbjRkd3R0bzZ1enZWNHpHRS1XMVplRkVlZ2dPYnBuODZHV19Gb2FVQm9QdEFoenZIbktWNE1IZUNIbUtWVk1mdmpYd2cwU2dGcFliWFRRVGNheF9mRmF3U296QUV1Y253UGRHTVBEVUdPTkZBdF9XZ3pITzBhVk5aZU5VUFBVX3dTejJB?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "What Sociedad Quimica y Minera (SQM) Said on Its Q3 Earnings Call - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRDZsczAzZm00czRDTjlrWDg4Qzl6a2dTTGJ2VmtpUG9SQ0M5Q01FakxseWQ1dlZvRkhmM0pKdU10R1Z1ODRYZ1pjY3EtWU82eTdHcFg3RGFzbmlLLTFZazQ1ZmFuSk9iS3hPYkRiRktEdmF5cVJXdHJsVVE3VlJpWVJjZlEzOTR6am9rWUhqN3Y2aEstNUNfOThsNGxXSEdXZ3lUMmV5N2hmQnp4d3cwN3lsVDd1SzRpcXYzdXJQbmx6UQ?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-18",
-          "cues": []
-        },
-        {
-          "t": "SQM misses third quarter earnings and revenue estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbl8wNWVrWUJVNVFNbEowY2hzemNBVGM1amVPbW5uNHUxbWJrTGFqVWo5anJWSk9pSDR1UUdRNlZkNm1NNGJzQzFsR1EtaDBhaXdPUVFDX0g0WDJDVjRDbC1BdHo1TnRVRmZVNmlXMXNpcnVuc2J2ekMtcmFTaXFWZ2Nza05nQlpWaWFSLWk3OHc5ZHF2b2p2M3lRVTQ0UnhIUmhVU0ZXbzFmS1lB?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-18",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "SQM: Q3 Earnings Snapshot - The Joplin Globe",
-          "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd2UyMUZpNFJfd1RwQ2VBUVVmbkp5ZTF3R1ZYSmpSd0tEM0JobVhKN0VqaWlBaXVsZGp1S1F4Wm1JcjZ2UjdsMEhqYWVNc0ZZVzZOTnp4Tmc5eWhfcWpQcW5fcXNYSWxOT2czWTk2N2VJWGxkVmVaSkJHNUhsNU92V2I2MWpYR3g4dlhqdEtGZ0syZ2pSSVVQU1VnQklCNkxGYnpVaUVxa29GWGhaWGlSRlJkcEFvRmNXOTRXeUlLM3BfTUJsb3c?oc=5",
-          "s": "The Joplin Globe",
-          "d": "2026-11-18",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-17",
       "reported": {
         "eps": 1.91,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-20",
+        "fetched": "2026-11-21",
         "eps_est": 2.08,
         "surprise_abs": -0.17,
         "surprise_pct": -8.1
@@ -192,7 +127,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-20",
+        "fetched": "2026-11-21",
         "eps_est": 0.03,
         "surprise_abs": 0.07,
         "pct_suppressed": "consensus of +0.03 is too near zero for a percentage to mean anything — the beat/miss is +0.07 per share"
@@ -234,20 +169,18 @@
           "cues": []
         },
         {
-          "t": "SBLK: Star Bulk posts $141.9M Q3 net profit and $1.00 dividend - Quantisnow",
-          "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEtkZU1JdFh2a2x2OXlTdEl2TEZ4RlBRaWlYb2JXcDRKWEJuallBdVVhSWFkZ2V0X1ZZVFNUQXQ2eGtFLU13ZHM5blBCaDJuODhLTTVEbXlmdnFfRkQ4WUJBUkNhRlVPVmVDaG1oUEgyTXhsRFM4Y1dwTVZwenFQdmZfd0hGRjNDWlpUSA?oc=5",
-          "s": "Quantisnow",
+          "t": "Star Bulk Carriers faces earnings test as dry bulk rates surge - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPclJKNFQwUUUwYlJROEJQdmlibHZDbW5LXzEwbzJlQTZBeThQMzVzVHFFYXI3UDloUkZLUUgzeXVNX3FpOWVORkVvcV8yTFNaLVloYzRXOWxOUWVlanlFNWFQdlZiVTVhNjdWX0xUNnBsMDJZNnJoc25LR1dpUXVkRGc0djZYZ20tVFVabkpQb1UzeGxONDNpanU3YUpfamJFM2pRaWhFWTNUX3VzMDFnQ0ZPNEVVUQ?oc=5",
+          "s": "Investing.com",
           "d": "2026-11-18",
-          "cues": [
-            "dividend/buyback"
-          ]
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-18",
       "reported": {
         "eps": 1.28,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-20",
+        "fetched": "2026-11-21",
         "eps_est": 1.27,
         "surprise_abs": 0.01,
         "surprise_pct": 1.2
@@ -298,7 +231,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-20",
+        "fetched": "2026-11-21",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -367,13 +300,6 @@
           "cues": []
         },
         {
-          "t": "Frontline (FRO) Q3 2026 Earnings Call Transcript - The Motley Fool",
-          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWTRDRG5iam4tOE9RVzlya3NqcXFpa21OMERwQmxxSE1IOEJtQlNRSVZaUFBTaHVkNkcwQ3d4UTZVT1JoU1FHTlNMZTQtZS1PM3VGbWt4bW9yMTZZNzZXX1k1eWRsTmppaWZzRmlZYWRDSHc0RE9VcUFpNUFkMEk0dmRKUlZackJ4a19jWk5LaGZaSVkwVlg4ZEZtX1F3enNvbFpRbHJ0TEk?oc=5",
-          "s": "The Motley Fool",
-          "d": "2026-11-20",
-          "cues": []
-        },
-        {
           "t": "Frontline Tops Q3 Estimates, Eyes ‘Strongest Result Ever’ as Tanker Rates Hit Records - Benzinga",
           "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMDZFY25PaFdKa3ZjUUtyZkNqdnR5eThCM3gwdEtPVEpPRnRlQURUNVU4OUxaQ1hXSHFXYWJVTFRMR2RJbEJ6eGxXWGFyb1lzOUVxdWpFR1hHcVhwZnliMXJCQUp1Y2dDcTVmNWJtQk9tSHNEQk5XanZwM1VOS0I2eEtrMVZqSGFHSGxRRDBwOVk2ODdvekRnLTZ5eGd4bmNxZFJveHBSa2c2aWo4QnZYeHJudXlUdmJOdXhkcXY0MFhZNEtoOFlXNGNlNnhTZjN0M1VSMHd3?oc=5",
           "s": "Benzinga",
@@ -388,13 +314,20 @@
           "s": "TradingView",
           "d": "2026-11-20",
           "cues": []
+        },
+        {
+          "t": "Frontline Q3 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPck9UZWhpcWRYMllhQnlweksyeE9sTlZic2dXV2FMT3JfZUd3aTJ5U0IzX2hPLWN3eFpTTTFSRWF0REVnSEphcnFDNk1VXzlPUnZwOEJ2ZzdUcldOVG1XalFkbWdWNVlxVVZERGZERHNaLVlsa0ZFTmFERnctc1h1b2FoTWNmVDBudlZDQnFzbFhEeGY5WWJSalFZd3BsbVY0OWdVMg?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-20",
+          "cues": []
         }
       ],
       "wire_gate": "2026-11-20",
       "reported": {
         "eps": 2.38,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-20",
+        "fetched": "2026-11-21",
         "eps_est": 2.26,
         "surprise_abs": 0.12,
         "surprise_pct": 5.1

@@ -1,17 +1,17 @@
 {
   "_meta": {
-    "as_of": "2026-11-20T22:29:46+00:00",
+    "as_of": "2026-11-21T02:37:58+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 101/225 down 5%, sector -5.0%",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 98/225 down 5%, sector -5.0%",
       "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 0/225 up 5%, sector -5.0%",
       "Single-name collapse (any holding −12%+ in a session): 10 found",
-      "Conviction-3 divergence (±8%+ versus the -4.3% universe median): 0 found",
+      "Conviction-3 divergence (±8%+ versus the -4.1% universe median): 0 found",
       "Tracked commodity ±5%+ in a session: 4 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 2 found",
       "USD (DXY) ±1%+ in a session: -0.10%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
-      "Producer-country FX ±1.5%+ (5 pairs tracked): 3 moved",
+      "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
       "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 1 outside their window, 0 excluded as undated"
     ]
   },
@@ -21,8 +21,8 @@
       "sev": "critical",
       "cat": "deleveraging",
       "measured": true,
-      "t": "Correlated drawdown: 101 of 225 holdings down 5%+ with the sector -5.0%",
-      "ev": "Computed from today's closes. Universe median -4.3%.",
+      "t": "Correlated drawdown: 98 of 225 holdings down 5%+ with the sector -5.0%",
+      "ev": "Computed from today's closes. Universe median -4.1%.",
       "stance": "STAGE",
       "action": "Broad, correlated selling is a liquidity event, not a re-rating of the thesis. Do not catch the knife — publish and work the staged-entry list instead.",
       "tk": [
@@ -39,7 +39,7 @@
         "5711.JP",
         "5713.JP"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -52,7 +52,7 @@
       "tk": [
         "AXTI"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -65,7 +65,7 @@
       "tk": [
         "WOLF"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -78,7 +78,7 @@
       "tk": [
         "COHR"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -91,7 +91,7 @@
       "tk": [
         "5706.JP"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -104,7 +104,7 @@
       "tk": [
         "NVX.AX"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -117,7 +117,7 @@
       "tk": [
         "ALM"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -130,7 +130,7 @@
       "tk": [
         "MTZ"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -143,7 +143,7 @@
       "tk": [
         "BE"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -156,7 +156,7 @@
       "tk": [
         "5803.JP"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "critical",
@@ -169,7 +169,7 @@
       "tk": [
         "5801.JP"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "high",
@@ -180,7 +180,7 @@
       "stance": "REVIEW",
       "action": "The underlying moved +15.9% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "high",
@@ -191,7 +191,7 @@
       "stance": "MONITOR",
       "action": "The underlying moved -7.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "high",
@@ -202,7 +202,7 @@
       "stance": "MONITOR",
       "action": "The underlying moved -7.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "high",
@@ -213,7 +213,7 @@
       "stance": "MONITOR",
       "action": "The underlying moved -5.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
       "tk": [],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "medium",
@@ -233,7 +233,7 @@
         "BWXT",
         "DNN"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     },
     {
       "sev": "medium",
@@ -253,40 +253,7 @@
         "WMB",
         "SLNG"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "sev": "medium",
-      "cat": "producer-fx",
-      "measured": true,
-      "t": "AUDUSD -1.50% — Australian supply (iron ore, lithium, REE)",
-      "ev": "Producer-currency move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "A -1.50% move in AUDUSD changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
-      "tk": [],
-      "date": "2026-11-20"
-    },
-    {
-      "sev": "medium",
-      "cat": "producer-fx",
-      "measured": true,
-      "t": "USDCLP +1.60% — Chilean supply (copper, lithium)",
-      "ev": "Producer-currency move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "A +1.60% move in USDCLP changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
-      "tk": [],
-      "date": "2026-11-20"
-    },
-    {
-      "sev": "medium",
-      "cat": "producer-fx",
-      "measured": true,
-      "t": "USDZAR +1.90% — South African supply (PGM, gold)",
-      "ev": "Producer-currency move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "A +1.90% move in USDZAR changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
-      "tk": [],
-      "date": "2026-11-20"
+      "date": "2026-11-21"
     }
   ]
 }
