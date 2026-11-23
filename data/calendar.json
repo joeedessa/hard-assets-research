@@ -1,23 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-21T02:37:58+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-11-23T18:46:41+00:00",
+    "mode": "light",
+    "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "ALM",
-      "name": "Almonty Industries",
-      "d": "2026-11-13",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-13T21:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
     {
       "type": "earnings",
       "tk": "MNTK",
@@ -32,7 +20,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-21",
+        "fetched": "2026-11-23",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -76,7 +64,7 @@
       "reported": {
         "eps": 1.91,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-21",
+        "fetched": "2026-11-23",
         "eps_est": 2.08,
         "surprise_abs": -0.17,
         "surprise_pct": -8.1
@@ -127,7 +115,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-21",
+        "fetched": "2026-11-23",
         "eps_est": 0.03,
         "surprise_abs": 0.07,
         "pct_suppressed": "consensus of +0.03 is too near zero for a percentage to mean anything — the beat/miss is +0.07 per share"
@@ -180,7 +168,7 @@
       "reported": {
         "eps": 1.28,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-21",
+        "fetched": "2026-11-23",
         "eps_est": 1.27,
         "surprise_abs": 0.01,
         "surprise_pct": 1.2
@@ -231,7 +219,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-21",
+        "fetched": "2026-11-23",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -300,26 +288,24 @@
           "cues": []
         },
         {
-          "t": "Frontline Tops Q3 Estimates, Eyes ‘Strongest Result Ever’ as Tanker Rates Hit Records - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMDZFY25PaFdKa3ZjUUtyZkNqdnR5eThCM3gwdEtPVEpPRnRlQURUNVU4OUxaQ1hXSHFXYWJVTFRMR2RJbEJ6eGxXWGFyb1lzOUVxdWpFR1hHcVhwZnliMXJCQUp1Y2dDcTVmNWJtQk9tSHNEQk5XanZwM1VOS0I2eEtrMVZqSGFHSGxRRDBwOVk2ODdvekRnLTZ5eGd4bmNxZFJveHBSa2c2aWo4QnZYeHJudXlUdmJOdXhkcXY0MFhZNEtoOFlXNGNlNnhTZjN0M1VSMHd3?oc=5",
-          "s": "Benzinga",
-          "d": "2026-11-20",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Frontline PLC reports results for the quarter ended September 30 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNWUtEXzV1LV9mUDNYMXdaaERyU1RVOWNnallhTk55TWMtbk91MWRWeHlaVW1vdmozZEFZX29fbkh5MlBsak53VUhnRENpeTRON2Vmb2hCNVB6RGd3R1cwLUxIc2h2U3J0N2hsVElMaGtnVGdGanlEcndta1FWaWdudktJZURrY2lzU3h5UWxpZ1dfU1l1cFNfWEFtRkx4SzdKM1NqWlRHb2ktTmhNUDRaLTdIaWZLVGlicnNxWWhadktLUjVHbVpoMzVLZUZiOEFZMktQVEQtNnBvSE9EVzItYXoxRFVNZw?oc=5",
-          "s": "TradingView",
+          "t": "Frontline (FRO) Q3 2026 Earnings Call Transcript - The Motley Fool",
+          "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWTRDRG5iam4tOE9RVzlya3NqcXFpa21OMERwQmxxSE1IOEJtQlNRSVZaUFBTaHVkNkcwQ3d4UTZVT1JoU1FHTlNMZTQtZS1PM3VGbWt4bW9yMTZZNzZXX1k1eWRsTmppaWZzRmlZYWRDSHc0RE9VcUFpNUFkMEk0dmRKUlZackJ4a19jWk5LaGZaSVkwVlg4ZEZtX1F3enNvbFpRbHJ0TEk?oc=5",
+          "s": "The Motley Fool",
           "d": "2026-11-20",
           "cues": []
         },
         {
-          "t": "Frontline Q3 Earnings Call Highlights - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPck9UZWhpcWRYMllhQnlweksyeE9sTlZic2dXV2FMT3JfZUd3aTJ5U0IzX2hPLWN3eFpTTTFSRWF0REVnSEphcnFDNk1VXzlPUnZwOEJ2ZzdUcldOVG1XalFkbWdWNVlxVVZERGZERHNaLVlsa0ZFTmFERnctc1h1b2FoTWNmVDBudlZDQnFzbFhEeGY5WWJSalFZd3BsbVY0OWdVMg?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-20",
+          "t": "Frontline posts $641.4m profit as Q4 tanker spot bookings reach records - Baird Maritime",
+          "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMnR2RkcybHJaamk0RWdTYUZHMkhkYWNIS1AzTi1OaVZYWVVxaXZUN1pndVV3dll6OFpVZks4YzF3QW5td2oyakNqX2hTYllqYk54MDJRaG9PTFp3WDZja180N2ZjZGI4cmo4Q2NDd21ibnltWWFkTGNkel8tQVNXUHpwbUVVRTZuUmfSAZcBQVVfeXFMUGxaZmVlUEt6bWxIMjQzX19WNXBJOUphLTdXaWhoUDZzdU5fd2NhUVhSd0hERFprTmM3NGc4d0VnMS0zWExtOEZCbHVtVXN1Y3R2Z2VmR3RzaFJRV1lXdHlsX1dwLXdjZ2VzdW95c3JxckVDcnRCS0o2SnhzRUEyLUYtREo2bkRfNHhWejJaMUJiWVpnWDBXOA?oc=5",
+          "s": "Baird Maritime",
+          "d": "2026-11-23",
+          "cues": []
+        },
+        {
+          "t": "Frontline Reports $641.4 Million Profit As Tanker Bookings Reach Record Levels - Pulse 2.0",
+          "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxObEpKaGFISzIyQWhxb1dDYjlaWEtoRTVjdTE2R2tDc0w2anctQUxrRFAyR3N6M1RDY2lselNzZmo3Vk5vWW03eTVQNnN3ZUYwUXRxN21SWWpUOHpOcW1wZTRXNFVaSUFSY2lTQnc3eG1VWEJENmRSTEh1SkM1N2N4UjhHTmYxLS1WMThYMy1idUctMUU3Mzl2SkxVbjRodw?oc=5",
+          "s": "Pulse 2.0",
+          "d": "2026-11-23",
           "cues": []
         }
       ],
@@ -327,7 +313,7 @@
       "reported": {
         "eps": 2.38,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-21",
+        "fetched": "2026-11-23",
         "eps_est": 2.26,
         "surprise_abs": 0.12,
         "surprise_pct": 5.1

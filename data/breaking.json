@@ -1,85 +1,22 @@
 {
   "_meta": {
-    "as_of": "2026-11-21T02:37:58+00:00",
+    "as_of": "2026-11-23T18:46:41+00:00",
     "bar": "Only events likely to change an allocation decision today. Market-structure signals are computed from prices and are facts; headline-derived signals are parsed text and are marked unverified. Most days this page should be empty — that is the design.",
     "checks": [
-      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 98/225 down 5%, sector -5.0%",
-      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 0/225 up 5%, sector -5.0%",
-      "Single-name collapse (any holding −12%+ in a session): 10 found",
-      "Conviction-3 divergence (±8%+ versus the -4.1% universe median): 0 found",
-      "Tracked commodity ±5%+ in a session: 4 of 12 moved",
+      "Deleveraging signature (≥25% of universe −5%+ while the sector is −3%+): 41/225 down 5%, sector +7.0%",
+      "Reflex melt-up (≥25% of universe +5%+ while the sector is +4%+): 67/225 up 5%, sector +7.0%",
+      "Single-name collapse (any holding −12%+ in a session): 3 found",
+      "Conviction-3 divergence (±8%+ versus the +2.0% universe median): 1 found",
+      "Tracked commodity ±5%+ in a session: 5 of 12 moved",
       "Spot-versus-equity divergence (>4pt gap on 6 pairs): 2 found",
-      "USD (DXY) ±1%+ in a session: -0.10%",
+      "USD (DXY) ±1%+ in a session: +0.60%",
       "Curve flip into backwardation (front above deferred): 0 of 1 pair flipped",
-      "Producer-country FX ±1.5%+ (5 pairs tracked): 0 moved",
-      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 1 outside their window, 0 excluded as undated"
+      "Producer-country FX ±1.5%+ (5 pairs tracked): 1 moved",
+      "Headline scan across 7 severity categories (3-day window, 8 for solvency/macro/catastrophe): 48 read, 2 outside their window, 0 excluded as undated"
     ]
   },
   "state": "critical",
   "signals": [
-    {
-      "sev": "critical",
-      "cat": "deleveraging",
-      "measured": true,
-      "t": "Correlated drawdown: 98 of 225 holdings down 5%+ with the sector -5.0%",
-      "ev": "Computed from today's closes. Universe median -4.1%.",
-      "stance": "STAGE",
-      "action": "Broad, correlated selling is a liquidity event, not a re-rating of the thesis. Do not catch the knife — publish and work the staged-entry list instead.",
-      "tk": [
-        "010140.KS",
-        "042660.KS",
-        "1963.JP",
-        "2383.TW",
-        "329180.KS",
-        "4004.JP",
-        "4063.JP",
-        "5016.JP",
-        "5631.JP",
-        "5706.JP",
-        "5711.JP",
-        "5713.JP"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "AXTI -12.3% in a single session",
-      "ev": "Computed from today's close. Conviction 2, froth 1.",
-      "stance": "REVIEW",
-      "action": "Insulated names are involved (AXTI). Weakness here is opportunity, not information.",
-      "tk": [
-        "AXTI"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "WOLF -14.5% in a single session",
-      "ev": "Computed from today's close. Conviction 2, froth 1.",
-      "stance": "REVIEW",
-      "action": "Insulated names are involved (WOLF). Weakness here is opportunity, not information.",
-      "tk": [
-        "WOLF"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "COHR -12.9% in a single session",
-      "ev": "Computed from today's close. Conviction 2, froth 2.",
-      "stance": "REVIEW",
-      "action": "Affected names are lower-conviction; watch rather than act.",
-      "tk": [
-        "COHR"
-      ],
-      "date": "2026-11-21"
-    },
     {
       "sev": "critical",
       "cat": "company-critical",
@@ -91,59 +28,7 @@
       "tk": [
         "5706.JP"
       ],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "NVX.AX -12.5% in a single session",
-      "ev": "Computed from today's close. Conviction 1, froth 1.",
-      "stance": "REVIEW",
-      "action": "Insulated names are involved (NVX.AX). Weakness here is opportunity, not information.",
-      "tk": [
-        "NVX.AX"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "ALM -15.5% in a single session",
-      "ev": "Computed from today's close. Conviction 2, froth 2.",
-      "stance": "REVIEW",
-      "action": "Affected names are lower-conviction; watch rather than act.",
-      "tk": [
-        "ALM"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "MTZ -12.2% in a single session",
-      "ev": "Computed from today's close. Conviction 1, froth 2.",
-      "stance": "REVIEW",
-      "action": "Affected names are lower-conviction; watch rather than act.",
-      "tk": [
-        "MTZ"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "critical",
-      "cat": "company-critical",
-      "measured": true,
-      "t": "BE -15.3% in a single session",
-      "ev": "Computed from today's close. Conviction 1, froth 3.",
-      "stance": "REVIEW",
-      "action": "High-froth names are involved (BE). Entry windows close in a squeeze; do not chase.",
-      "tk": [
-        "BE"
-      ],
-      "date": "2026-11-21"
+      "date": "2026-11-23"
     },
     {
       "sev": "critical",
@@ -156,7 +41,7 @@
       "tk": [
         "5803.JP"
       ],
-      "date": "2026-11-21"
+      "date": "2026-11-23"
     },
     {
       "sev": "critical",
@@ -169,91 +54,149 @@
       "tk": [
         "5801.JP"
       ],
-      "date": "2026-11-21"
+      "date": "2026-11-23"
     },
     {
       "sev": "high",
-      "cat": "commodity",
+      "cat": "melt-up",
       "measured": true,
-      "t": "NatGas +15.9% in a session",
-      "ev": "Spot/futures move computed from today's close.",
-      "stance": "REVIEW",
-      "action": "The underlying moved +15.9% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "high",
-      "cat": "commodity",
-      "measured": true,
-      "t": "Silver -7.3% in a session",
-      "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved -7.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "high",
-      "cat": "commodity",
-      "measured": true,
-      "t": "REE -7.4% in a session",
-      "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved -7.4% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "high",
-      "cat": "commodity",
-      "measured": true,
-      "t": "CopperETF -5.0% in a session",
-      "ev": "Spot/futures move computed from today's close.",
-      "stance": "MONITOR",
-      "action": "The underlying moved -5.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
-      "tk": [],
-      "date": "2026-11-21"
-    },
-    {
-      "sev": "medium",
-      "cat": "spot-equity-divergence",
-      "measured": true,
-      "t": "Uranium -2.1% but its equities -7.2% — a -5.1pt gap",
-      "ev": "Median of 10 nu holdings against the underlying.",
-      "stance": "MONITOR",
-      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "t": "Reflex melt-up: 67 of 225 holdings up 5%+ with the sector +7.0%",
+      "ev": "Computed from today's closes. Universe median +2.0%.",
+      "stance": "STOP ADDING",
+      "action": "Entry windows are closing. Anything bought into this tape is bought on momentum, not on the structural case.",
       "tk": [
-        "LEU",
-        "CCO",
-        "SPUT",
-        "CEG",
-        "NXE",
-        "UEC",
+        "AFMJF",
+        "ALM",
+        "ARIS",
+        "AROC",
+        "ATI",
+        "AXTI",
+        "BE",
+        "BORR",
         "BWXT",
-        "DNN"
+        "CAT",
+        "CEG",
+        "CEPL"
       ],
-      "date": "2026-11-21"
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "high",
+      "cat": "divergence",
+      "measured": true,
+      "t": "MTRN +11.4% against a +2.0% universe median",
+      "ev": "Divergence is measured against the median so a broad tape does not masquerade as news.",
+      "stance": "BUY THE DISLOCATION",
+      "action": "Insulated names are involved (MTRN). Weakness here is opportunity, not information.",
+      "tk": [
+        "MTRN"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "Brent -5.6% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved -5.6% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "Silver +5.0% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +5.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "Lithium +5.3% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "REE +5.3% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +5.3% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "high",
+      "cat": "commodity",
+      "measured": true,
+      "t": "CopperETF +7.0% in a session",
+      "ev": "Spot/futures move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "The underlying moved +7.0% while the equities did their own thing. Check whether the equity complex has followed — divergence is the signal, not the move.",
+      "tk": [],
+      "date": "2026-11-23"
     },
     {
       "sev": "medium",
       "cat": "spot-equity-divergence",
       "measured": true,
-      "t": "NatGas +15.9% but its equities -2.3% — a -18.2pt gap",
-      "ev": "Median of 10 ng holdings against the underlying.",
+      "t": "Copper +2.7% but its equities +7.7% — a +5.0pt gap",
+      "ev": "Median of 7 cu holdings against the underlying.",
       "stance": "MONITOR",
       "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
       "tk": [
-        "LNG",
-        "VGAS",
-        "KMI",
-        "ET",
-        "EQT",
-        "AR",
-        "WMB",
-        "SLNG"
+        "SCCO",
+        "FCX",
+        "TECK",
+        "HBM",
+        "IVN.TO",
+        "5711.JP",
+        "5016.JP"
       ],
-      "date": "2026-11-21"
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "medium",
+      "cat": "spot-equity-divergence",
+      "measured": true,
+      "t": "WTI -3.6% but its equities +1.5% — a +5.1pt gap",
+      "ev": "Median of 36 oil holdings against the underlying.",
+      "stance": "MONITOR",
+      "action": "Equities and the underlying have decoupled. Either the equity market is pricing something the spot is not, or it is wrong — worth knowing which.",
+      "tk": [
+        "VLO",
+        "TDW",
+        "STNG",
+        "EPD",
+        "RIG",
+        "VAL",
+        "NE",
+        "HP"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "sev": "medium",
+      "cat": "producer-fx",
+      "measured": true,
+      "t": "AUDUSD -1.50% — Australian supply (iron ore, lithium, REE)",
+      "ev": "Producer-currency move computed from today's close.",
+      "stance": "MONITOR",
+      "action": "A -1.50% move in AUDUSD changes local-currency margins for producers there. A weaker producer currency cuts their costs in USD terms and makes them more willing sellers, which is bearish for the commodity at the margin.",
+      "tk": [],
+      "date": "2026-11-23"
     }
   ]
 }
