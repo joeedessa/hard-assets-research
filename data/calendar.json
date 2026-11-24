@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-24T00:24:32+00:00",
+    "as_of": "2026-11-24T02:45:02+00:00",
     "mode": "light",
     "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -341,11 +341,13 @@
           ]
         },
         {
-          "t": "Fluence Energy Inc reports results for the quarter ended September 30 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQeEo2ZXhZSTBzV2haOEhIdS1QOGxNY1E3QUsyWHoxZFVsenRNeXpHRWRrcGZ2NG5VNjM0QkZ2ZF9KQzN5Y0VJOTZwYmJ2b3NFUnp5N2RFd2VSbUx6UEdEelhRVlpTbVF6OFpKVFptd3ExSG42OV9aNWYyRHB3b0h3YUZic2lXRzk5RzJFTzRpVDNLUm5iV2E0UnBvNUZqZHdhd05hcXdrQUYyQlpFQ2JmNnNpbnUzb19CUzd6b2dhLW1vV0pac1UzS2xlek9HY04yMzNjdHRNTk5Tc2hUS29rVS1TVGtfMlppMjFVQg?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-23",
-          "cues": []
+          "t": "Fluence Energy earnings missed by $0.48, revenue fell short of estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVUxwYkp1SHlka3pVR25OM1ppUEJkWDBKNi1MSDVTeEtpMlZyS3AzQ1lBdmVTWUJPQjg4WWo5a0Q0R3pkMFJLOUY4Ui1fdHhscVhKcFRibGFTemkwR2dTTWVlV2t4RjZLVWo3bDJiSnN6NlR0TFZ3cTlrUnZoYklaNElJNEJTbjJqZ2VQR0FpUlN6Q09sZktXZE5zVjFyUi12M25fYzgyS2tMX1kwcm9lM1ByalhhU0c3?oc=5",
+          "s": "Investing.com",
+          "d": "2026-11-24",
+          "cues": [
+            "miss"
+          ]
         },
         {
           "t": "Fluence Energy, Inc. Reports 2026 Financial Results - GlobeNewswire",
@@ -355,14 +357,22 @@
           "cues": []
         },
         {
-          "t": "Fluence Energy (FLNC) Stock Rises on Q4 2026 Earnings - Quiver Quantitative",
-          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYUR4eXNDdTRKbl9OOWZVeXZ3dW5fLWNXRVl2MXFKS3J3Nm9CS0lpYVEyUVFlQlhjSnJPYXh4Z0xzQ0RYME5NS2Q2VFhfNGtwU1U2LVF4UG12NUNDalVqOVhVOFVNNmJ4NUdmSkxDQXkyNWpGbnpRVmNGbThxeUJYOXVPSkc5YXp6Y3Nmc2lfMC05WHg0?oc=5",
-          "s": "Quiver Quantitative",
+          "t": "Fluence Energy, Inc. Reports Earnings Results for the Fourth Quarter and Full Year Ended September 30, 2026 - www.marketscreener.com",
+          "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPOUtpTnRnRmtjRnlQcHo3WlhOSURBc3htQlpEamhBd0N4b2c2c1ZDVXB1MFZRUzBTRFNicFpqc3Q3OV9nZ0FKRGxETUo0S01Jbm9SdXhKc0ZlU2hnVlRGa25JSTl6QmxpMmRIbkFZdy1fLUppNnZhY3BETUF1Z0R0Z09aUnRMMG05OXN6QUc1dkJGdTRnTmJMWV9ZRGlHQm1mYl9zOWlJSi1PSkd4UTJtWVJWZUxHWE5KbU9hZXBRalh2Y1AyelhHbWZsTlZTR1Y1cXdvSjJSM2l0VWtKRWFheUVHQlRzUQ?oc=5",
+          "s": "www.marketscreener.com",
           "d": "2026-11-23",
           "cues": []
         }
       ],
-      "wire_gate": "2026-11-23"
+      "wire_gate": "2026-11-23",
+      "reported": {
+        "eps": -0.68,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-24",
+        "eps_est": -0.61,
+        "surprise_abs": -0.07,
+        "surprise_pct": -13.0
+      }
     },
     {
       "type": "earnings",

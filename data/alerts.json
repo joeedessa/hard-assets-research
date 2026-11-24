@@ -3,15 +3,8 @@
     {
       "type": "commodity-move",
       "tk": null,
-      "label": "Brent down 6.2% today",
-      "d1": -6.2,
-      "date": "2026-11-24"
-    },
-    {
-      "type": "commodity-move",
-      "tk": null,
-      "label": "Silver up 5.2% today",
-      "d1": 5.2,
+      "label": "Brent down 6.8% today",
+      "d1": -6.8,
       "date": "2026-11-24"
     },
     {
@@ -26,13 +19,6 @@
       "tk": null,
       "label": "CopperETF up 6.8% today",
       "d1": 6.8,
-      "date": "2026-11-24"
-    },
-    {
-      "type": "equity-move",
-      "tk": "6880.HK",
-      "label": "6880.HK ▲ 9.4%",
-      "d1": 9.4,
       "date": "2026-11-24"
     },
     {
@@ -93,6 +79,20 @@
     },
     {
       "type": "equity-move",
+      "tk": "6963.JP",
+      "label": "6963.JP ▲ 8.1%",
+      "d1": 8.1,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
+      "tk": "5802.T",
+      "label": "5802.T ▲ 8.3%",
+      "d1": 8.3,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
       "tk": "NOK",
       "label": "NOK ▲ 9.7%",
       "d1": 9.7,
@@ -100,16 +100,16 @@
     },
     {
       "type": "equity-move",
-      "tk": "5706.JP",
-      "label": "5706.JP ▲ 8.0%",
-      "d1": 8.0,
+      "tk": "8358.TWO",
+      "label": "8358.TWO ▲ 9.9%",
+      "d1": 9.9,
       "date": "2026-11-24"
     },
     {
       "type": "equity-move",
       "tk": "2383.TW",
-      "label": "2383.TW ▲ 10.0%",
-      "d1": 10.0,
+      "label": "2383.TW ▲ 9.9%",
+      "d1": 9.9,
       "date": "2026-11-24"
     },
     {
@@ -129,8 +129,8 @@
     {
       "type": "equity-move",
       "tk": "4004.JP",
-      "label": "4004.JP ▼ 9.5%",
-      "d1": -9.5,
+      "label": "4004.JP ▲ 14.7%",
+      "d1": 14.7,
       "date": "2026-11-24"
     },
     {
@@ -240,17 +240,59 @@
     },
     {
       "type": "equity-move",
+      "tk": "5803.JP",
+      "label": "5803.JP ▲ 8.9%",
+      "d1": 8.9,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
+      "tk": "5801.JP",
+      "label": "5801.JP ▲ 13.1%",
+      "d1": 13.1,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
+      "tk": "6361.JP",
+      "label": "6361.JP ▲ 9.0%",
+      "d1": 9.0,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
+      "tk": "5016.JP",
+      "label": "5016.JP ▲ 8.3%",
+      "d1": 8.3,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
       "tk": "6324.JP",
-      "label": "6324.JP ▼ 10.1%",
-      "d1": -10.1,
+      "label": "6324.JP ▲ 14.6%",
+      "d1": 14.6,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
+      "tk": "6273.JP",
+      "label": "6273.JP ▲ 8.6%",
+      "d1": 8.6,
+      "date": "2026-11-24"
+    },
+    {
+      "type": "equity-move",
+      "tk": "6506.JP",
+      "label": "6506.JP ▲ 8.8%",
+      "d1": 8.8,
       "date": "2026-11-24"
     },
     {
       "type": "entry-window",
       "tk": "LYC.AX",
-      "label": "LYC.AX -42.4% below 52w high — entry window (insulated)",
-      "dd": -42.4,
-      "r1y": -15.5,
+      "label": "LYC.AX -41.2% below 52w high — entry window (insulated)",
+      "dd": -41.2,
+      "r1y": -13.7,
       "date": "2026-11-24"
     },
     {
@@ -328,17 +370,17 @@
     {
       "type": "entry-window",
       "tk": "5706.JP",
-      "label": "5706.JP -77.8% below 52w high — entry window (insulated)",
-      "dd": -77.8,
-      "r1y": -30.0,
+      "label": "5706.JP -77.9% below 52w high — entry window (insulated)",
+      "dd": -77.9,
+      "r1y": -30.1,
       "date": "2026-11-24"
     },
     {
       "type": "entry-window",
       "tk": "8358.TWO",
-      "label": "8358.TWO -65.1% below 52w high — entry window (insulated)",
-      "dd": -65.1,
-      "r1y": 4.5,
+      "label": "8358.TWO -61.6% below 52w high — entry window (insulated)",
+      "dd": -61.6,
+      "r1y": 14.8,
       "date": "2026-11-24"
     },
     {
@@ -400,9 +442,9 @@
     {
       "type": "entry-window",
       "tk": "PLS.AX",
-      "label": "PLS.AX -60.0% below 52w high — entry window (insulated)",
-      "dd": -60.0,
-      "r1y": -28.4,
+      "label": "PLS.AX -59.3% below 52w high — entry window (insulated)",
+      "dd": -59.3,
+      "r1y": -27.1,
       "date": "2026-11-24"
     },
     {
@@ -464,9 +506,9 @@
     {
       "type": "entry-window",
       "tk": "ILU.AX",
-      "label": "ILU.AX -37.5% below 52w high — entry window (insulated)",
-      "dd": -37.5,
-      "r1y": -19.1,
+      "label": "ILU.AX -37.0% below 52w high — entry window (insulated)",
+      "dd": -37.0,
+      "r1y": -18.5,
       "date": "2026-11-24"
     },
     {
