@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-11-24T05:26:02+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-11-24T18:21:40+00:00",
+    "mode": "light",
+    "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -175,8 +175,15 @@
       },
       "wire": [
         {
-          "t": "Fluence Energy earnings missed by $0.48, revenue fell short of estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVUxwYkp1SHlka3pVR25OM1ppUEJkWDBKNi1MSDVTeEtpMlZyS3AzQ1lBdmVTWUJPQjg4WWo5a0Q0R3pkMFJLOUY4Ui1fdHhscVhKcFRibGFTemkwR2dTTWVlV2t4RjZLVWo3bDJiSnN6NlR0TFZ3cTlrUnZoYklaNElJNEJTbjJqZ2VQR0FpUlN6Q09sZktXZE5zVjFyUi12M25fYzgyS2tMX1kwcm9lM1ByalhhU0c3?oc=5",
+          "t": "Fluence Energy Q4 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORE42WE1uZkFWSGhVTWdYaFM1RWRzeW1xYXViYmh1TFA3djJ0LTluZXBuejZlVlNOd1pqVmhtd093eDJBUWgxUTgyNzNqTlhDS3BqR1ptN2llTEExcTREd0RpanVqd2NFNE5jNmg0MFY0MFpkZXpmTWktWFlORXpjNm1LbTZjTlBya18zNi1Sc25JZw?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-24",
+          "cues": []
+        },
+        {
+          "t": "Earnings call transcript: Fluence Energy misses Q4 2026 estimates - Investing.com",
+          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTEViUlgxd1VzemY4TDFVQXRHci1jak1OckRpQzBlMV94dHFPTXhPNlhaVlhjX003VUNVbUEyb1NxOE5CUDJCcVJjNWZFalNYRlNzbWxmV182aXZHNzNscHNaQ2lfYnlsaHdGQzkxVldLellfalNSRU1EUEFTVnhFV0NQc2FfbXhUakxSMG13SDRhN3J3cjlBNlBMOFVEWGpsQTlldXdUSWhweF9yVmJLSURWQWNWZGlMZ3B1ag?oc=5",
           "s": "Investing.com",
           "d": "2026-11-24",
           "cues": [
@@ -184,25 +191,16 @@
           ]
         },
         {
-          "t": "Fluence Energy, Inc. (FLNC) Reports Q4 Loss, Misses Revenue Estimates - Yahoo! Finance Canada",
-          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG8zQzlQNTlVZ0F2a0VtT3RoLVphNXl6VU5nNDZTc3ljZkZXekZPYl9xaDdLR2c1TGRSZkg0d1NLVHU5OVJNaEFtbWMwdjJkN1htSXNNQzdHeE5ZYTFmOFJpMnc4aWxGU2szN01LcVFVUmZHaXUzYThaMk4tQlBiaXhrOUVaWjQ?oc=5",
-          "s": "Yahoo! Finance Canada",
-          "d": "2026-11-23",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Fluence Energy, Inc. Reports 2026 Financial Results - GlobeNewswire",
-          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSkcxSmJSVmtrTTZ4ZXQzeWF5OHhEbTRxaFh5R2oyRVVnamxVV2dHYnZ1WUtSSWUtTmVjUTdlMTdyaGQ3eGhlR2ZUcmxMOEhUZjJ6NVF6ZkRBZ09uZlhkbnZ3T3Q2cXNPLVpWMXE4SVVJTGkwMVJ2eFN5UmlKdkV6UHRKZDgtTUZ5dGtXMGN6R3NzQUV2dGlJdXBOM292Z09yZWxhNkljZ25RS3hOOVpxZkNwamkyeG5FZGx2S0F3?oc=5",
-          "s": "GlobeNewswire",
-          "d": "2026-11-23",
+          "t": "Fluence Energy, Inc. 2026 Q4 - Results - Earnings Call Presentation (NASDAQ:FLNC) 2026-11-24 - Seeking Alpha",
+          "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTmlFNlV5cE1ySFEzcDJMY0dlVm1OOVplQzlnMjFIRjAwSVNkSkFoY2ZsRkhaeTRhVER4VDlrbExyYVJXUkZ1b1AwZmZSYk1LYVZVeExTTFZid2VSSnFoLXE2VmV6aFQ2dWw3bFd3VUtVZDJhQk1uZk9ZR3BHQlpMNzJydkhrcmxlZE50d29jNzF2dmQ1QnlBRUcwd25tc3F2S3R3dWN3cjlVU051ekRRRWxWellJZnNlUjFmX3VyTjBYTHUyQWc?oc=5",
+          "s": "Seeking Alpha",
+          "d": "2026-11-24",
           "cues": []
         },
         {
-          "t": "Fluence Energy reports sales below analyst estimates in Q3 CY2026 earnings, but stock soars 9.9% - StockStory",
-          "u": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxONzVIV09mYlFTSkh1cHJGVXlfWUp6QjVNVmZRbDdHdHRaOHZpeFBhV2VBLWhLam8tcDZhVlp1YmNQVlJycDV3U0ZieHVVSUhEUTRhcHp0ZkExOXgwbkJER09iWXN6RGlnR3JHTlFMYnpQVUQyRVl2TEl5ejZEYjU1Sjd3NXNWMjJBX0k3aWp5dXU1NmJ1U0tKT040aDJSV1N2SV9ldVNYYWJZbjdLQWp6QWpvdHNzbTVHN2lxbjFjcHNzSjNxcTdXQlJaVGgtTkpYWS11M095SnFsalhTMkRmNk5IQzAtMVA3V19kRVZRQVI?oc=5",
-          "s": "StockStory",
+          "t": "Fluence Energy Q4 2026 Earnings Call Transcript - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeGZjczJYLUUyYjR2TTR5UDBVYl9qcVlWZ3RwSS1KdFd2NlNIeUI3QlZvVXM0X1U1LWZlZ19vQnR0UjZjU1FvMUZzWFprNGpienZ2UUxnd1RfT2kzSlc0ZXc1QTJWZnB5RUlPMXd1dDJWZmFYQ3NaS2tHWE52ZFhDRUlOcUN0b3VMc1FYYnktSDNHQ1E?oc=5",
+          "s": "Benzinga",
           "d": "2026-11-24",
           "cues": []
         }
@@ -682,6 +680,18 @@
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2027-02-02T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FLNC",
+      "name": "Fluence Energy",
+      "d": "2027-02-03",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-03T21:00+00:00",
         "tz": "America/New_York"
       }
     },
