@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-11-23T18:46:41+00:00",
+    "as_of": "2026-11-24T00:24:32+00:00",
     "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "coverage": "2/2 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -20,7 +20,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-23",
+        "fetched": "2026-11-24",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -64,7 +64,7 @@
       "reported": {
         "eps": 1.91,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-23",
+        "fetched": "2026-11-24",
         "eps_est": 2.08,
         "surprise_abs": -0.17,
         "surprise_pct": -8.1
@@ -115,7 +115,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-23",
+        "fetched": "2026-11-24",
         "eps_est": 0.03,
         "surprise_abs": 0.07,
         "pct_suppressed": "consensus of +0.03 is too near zero for a percentage to mean anything — the beat/miss is +0.07 per share"
@@ -168,7 +168,7 @@
       "reported": {
         "eps": 1.28,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-23",
+        "fetched": "2026-11-24",
         "eps_est": 1.27,
         "surprise_abs": 0.01,
         "surprise_pct": 1.2
@@ -219,7 +219,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-23",
+        "fetched": "2026-11-24",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -313,7 +313,7 @@
       "reported": {
         "eps": 2.38,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-23",
+        "fetched": "2026-11-24",
         "eps_est": 2.26,
         "surprise_abs": 0.12,
         "surprise_pct": 5.1
@@ -329,7 +329,40 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2026-11-23T21:00+00:00",
         "tz": "America/New_York"
-      }
+      },
+      "wire": [
+        {
+          "t": "Fluence Energy, Inc. (FLNC) Reports Q4 Loss, Misses Revenue Estimates - Yahoo! Finance Canada",
+          "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG8zQzlQNTlVZ0F2a0VtT3RoLVphNXl6VU5nNDZTc3ljZkZXekZPYl9xaDdLR2c1TGRSZkg0d1NLVHU5OVJNaEFtbWMwdjJkN1htSXNNQzdHeE5ZYTFmOFJpMnc4aWxGU2szN01LcVFVUmZHaXUzYThaMk4tQlBiaXhrOUVaWjQ?oc=5",
+          "s": "Yahoo! Finance Canada",
+          "d": "2026-11-23",
+          "cues": [
+            "miss"
+          ]
+        },
+        {
+          "t": "Fluence Energy Inc reports results for the quarter ended September 30 - Earnings Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQeEo2ZXhZSTBzV2haOEhIdS1QOGxNY1E3QUsyWHoxZFVsenRNeXpHRWRrcGZ2NG5VNjM0QkZ2ZF9KQzN5Y0VJOTZwYmJ2b3NFUnp5N2RFd2VSbUx6UEdEelhRVlpTbVF6OFpKVFptd3ExSG42OV9aNWYyRHB3b0h3YUZic2lXRzk5RzJFTzRpVDNLUm5iV2E0UnBvNUZqZHdhd05hcXdrQUYyQlpFQ2JmNnNpbnUzb19CUzd6b2dhLW1vV0pac1UzS2xlek9HY04yMzNjdHRNTk5Tc2hUS29rVS1TVGtfMlppMjFVQg?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-23",
+          "cues": []
+        },
+        {
+          "t": "Fluence Energy, Inc. Reports 2026 Financial Results - GlobeNewswire",
+          "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSkcxSmJSVmtrTTZ4ZXQzeWF5OHhEbTRxaFh5R2oyRVVnamxVV2dHYnZ1WUtSSWUtTmVjUTdlMTdyaGQ3eGhlR2ZUcmxMOEhUZjJ6NVF6ZkRBZ09uZlhkbnZ3T3Q2cXNPLVpWMXE4SVVJTGkwMVJ2eFN5UmlKdkV6UHRKZDgtTUZ5dGtXMGN6R3NzQUV2dGlJdXBOM292Z09yZWxhNkljZ25RS3hOOVpxZkNwamkyeG5FZGx2S0F3?oc=5",
+          "s": "GlobeNewswire",
+          "d": "2026-11-23",
+          "cues": []
+        },
+        {
+          "t": "Fluence Energy (FLNC) Stock Rises on Q4 2026 Earnings - Quiver Quantitative",
+          "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYUR4eXNDdTRKbl9OOWZVeXZ3dW5fLWNXRVl2MXFKS3J3Nm9CS0lpYVEyUVFlQlhjSnJPYXh4Z0xzQ0RYME5NS2Q2VFhfNGtwU1U2LVF4UG12NUNDalVqOVhVOFVNNmJ4NUdmSkxDQXkyNWpGbnpRVmNGbThxeUJYOXVPSkc5YXp6Y3Nmc2lfMC05WHg0?oc=5",
+          "s": "Quiver Quantitative",
+          "d": "2026-11-23",
+          "cues": []
+        }
+      ],
+      "wire_gate": "2026-11-23"
     },
     {
       "type": "earnings",
