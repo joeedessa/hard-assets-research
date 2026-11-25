@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-11-25T04:24:15+00:00",
-    "mode": "full",
-    "coverage": "226/226 scanned this pass",
+    "as_of": "2026-11-25T17:38:52+00:00",
+    "mode": "light",
+    "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -140,6 +140,52 @@
         "label": "BEFORE THE OPEN · 08:30 EST",
         "iso": "2026-11-25T13:30+00:00",
         "tz": "America/New_York"
+      },
+      "wire": [
+        {
+          "t": "Deere & Co reports results for the quarter ended October 31 - Earnings Summary - TradingView",
+          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVzRfNmxnWml5OWN2dnN5N3RjcTZSbEFUWFhobFp1c21paUlWV2JqRG5CYWFnRGotYzliU3VCWl9WV2tkQzNVWXhOakNIN2RqSE1KX1UxMWMzT1RUaXdtSXZYZEg2c2NKNHVNTlA1ZDlkMmFSMWtQOFZTVmdDemh5a0pEdlhTQmRwb3A2UXhvbkJDU1h5TVFiMUp5OXBiUk5kdkNycjkxN21vODBkbk14MzJ5Uy1UaG1hVURxalBFQmVYck9BNWE4eDlrX1M4akF6MThpU21fNDdmQ09y?oc=5",
+          "s": "TradingView",
+          "d": "2026-11-25",
+          "cues": []
+        },
+        {
+          "t": "Deere Misses As Large-Ag Trough Call Meets A Flat Fiscal 2027 Profit Outlook - Finviz",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYUR3ZWJUdnBON1k1RTRoNURzaTBFZkgzRWx5RTZnT1Vad2ctVk9qQVV2bUNtT04tQTRBTjBBNkRZaUJrVWs3UnpWcTlnT3JNbzZRNTBnd0stTTZVbUc5X3AxY2s3NDhISGxsbVdMZDdKV2hCTkd0NzJGb3ZsYUU2UzFnR016NlBxWWR5SEttd2tSdzE0akI0ZkozdF9TY01iUG5Ga2l4Zk9RVFk?oc=5",
+          "s": "Finviz",
+          "d": "2026-11-25",
+          "cues": [
+            "miss"
+          ]
+        },
+        {
+          "t": "Deere Stock Slips as Large Agriculture Weakness Overshadows Revenue Beat - Benzinga",
+          "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOUQzcE1aOC1JdEd4TUtFQ040Q1ladmJzVlE1WnB2djJ6OG84Q0J2cFhKMzVveFA3MVVvN25tT1hOUWZUczMzZTlod1haVnk2bmwxR3owQ090Y1BtOFJVZTIyLXhobFBNNzQybnpsMXIzeDgtaFNzNmFhbExRTHdUZVpIdldmOVRyZlFydWg1NFl1SzlFeXduaHdLX1FpX2tIVGRfV2RMRC1UZklBX29JNHh0dm9ES0ZRc2NnQ3g0N1JteDF3OVZxUQ?oc=5",
+          "s": "Benzinga",
+          "d": "2026-11-25",
+          "cues": [
+            "beat"
+          ]
+        },
+        {
+          "t": "Deere & Co. (DE) Misses Q4 EPS by 14c, Beats on Revenue - StreetInsider",
+          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQS3ljV1pfckhQdFJNLUVYRk5VbFFub0xQRUlfSUhDSjJFd001Uy1Va21TMlZQOVVldTVZS2N6RVM5VWpSM2xXck8tSUFLVS1RU0dUR0VWcVpVal9nNml5MjBrOG94NENLcnRYa2hkZmlzUmRsSFRjdlVteGlKOGZoZ2Q1dGZzclJXeWVzLWNsd1lwd1l1WXNQa3h3YW1JY0doMkNjZ001MFF4bmZ1M1ZiNnNUVlB0YlE?oc=5",
+          "s": "StreetInsider",
+          "d": "2026-11-25",
+          "cues": [
+            "beat",
+            "miss"
+          ]
+        }
+      ],
+      "wire_gate": "2026-11-25",
+      "reported": {
+        "eps": 3.89,
+        "source": "Yahoo Finance",
+        "fetched": "2026-11-25",
+        "eps_est": 4.05,
+        "surprise_abs": -0.16,
+        "surprise_pct": -4.0
       }
     },
     {
