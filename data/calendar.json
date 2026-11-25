@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-11-25T00:19:42+00:00",
-    "mode": "light",
-    "coverage": "2/2 scanned this pass",
+    "as_of": "2026-11-25T04:24:15+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -132,59 +132,6 @@
     },
     {
       "type": "earnings",
-      "tk": "FLNC",
-      "name": "Fluence Energy",
-      "d": "2026-11-23",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-23T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Fluence Energy Q4 Earnings Call Highlights - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORE42WE1uZkFWSGhVTWdYaFM1RWRzeW1xYXViYmh1TFA3djJ0LTluZXBuejZlVlNOd1pqVmhtd093eDJBUWgxUTgyNzNqTlhDS3BqR1ptN2llTEExcTREd0RpanVqd2NFNE5jNmg0MFY0MFpkZXpmTWktWFlORXpjNm1LbTZjTlBya18zNi1Sc25JZw?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-24",
-          "cues": []
-        },
-        {
-          "t": "Fluence Energy, Inc. 2026 Q4 - Results - Earnings Call Presentation (NASDAQ:FLNC) 2026-11-24 - Seeking Alpha",
-          "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejBHTGt3UHEyeEVsLUNtVy1YT2JOVTYwc2NoSHI4Q08zUjdXUGR6RkRHU0dKY0xVYjg1ZXFBN19QOU1OSkhqM3JSU2hMOW45UTlpRzdUMlowT1haU3liTVJXckllN2tNUV84Smk5dm5LREpVR3Byei1xeEVMMUx2Nkl0d3dVMndDNFVMb2tPOUhyMzZ3MV9tbms2bC1tV3IxaEhsbw?oc=5",
-          "s": "Seeking Alpha",
-          "d": "2026-11-24",
-          "cues": []
-        },
-        {
-          "t": "Earnings call transcript: Fluence Energy misses Q4 2026 estimates - Investing.com",
-          "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTEViUlgxd1VzemY4TDFVQXRHci1jak1OckRpQzBlMV94dHFPTXhPNlhaVlhjX003VUNVbUEyb1NxOE5CUDJCcVJjNWZFalNYRlNzbWxmV182aXZHNzNscHNaQ2lfYnlsaHdGQzkxVldLellfalNSRU1EUEFTVnhFV0NQc2FfbXhUakxSMG13SDRhN3J3cjlBNlBMOFVEWGpsQTlldXdUSWhweF9yVmJLSURWQWNWZGlMZ3B1ag?oc=5",
-          "s": "Investing.com",
-          "d": "2026-11-24",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
-          "t": "Fluence Energy Q4 2026 Earnings Call Transcript - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeGZjczJYLUUyYjR2TTR5UDBVYl9qcVlWZ3RwSS1KdFd2NlNIeUI3QlZvVXM0X1U1LWZlZ19vQnR0UjZjU1FvMUZzWFprNGpienZ2UUxnd1RfT2kzSlc0ZXc1QTJWZnB5RUlPMXd1dDJWZmFYQ3NaS2tHWE52ZFhDRUlOcUN0b3VMc1FYYnktSDNHQ1E?oc=5",
-          "s": "Benzinga",
-          "d": "2026-11-24",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-23",
-      "reported": {
-        "eps": -0.68,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-25",
-        "eps_est": -0.61,
-        "surprise_abs": -0.07,
-        "surprise_pct": -13.0
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "DE",
       "name": "Deere & Co",
       "d": "2026-11-25",
@@ -283,6 +230,18 @@
     },
     {
       "type": "earnings",
+      "tk": "6506.JP",
+      "name": "Yaskawa Electric",
+      "d": "2027-01-15",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-01-15T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "AA",
       "name": "Alcoa",
       "d": "2027-01-21",
@@ -303,6 +262,18 @@
         "label": "BEFORE THE OPEN · 08:30 EST",
         "iso": "2027-01-21T13:30+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6954.JP",
+      "name": "Fanuc",
+      "d": "2027-01-25",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-01-25T06:30+00:00",
+        "tz": "Asia/Tokyo"
       }
     },
     {
@@ -375,6 +346,18 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2027-01-27T21:00+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SAND.ST",
+      "name": "Sandvik",
+      "d": "2027-01-27",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CET",
+        "iso": "2027-01-27T16:30+00:00",
+        "tz": "Europe/Stockholm"
       }
     },
     {
@@ -475,14 +458,14 @@
     },
     {
       "type": "earnings",
-      "tk": "CAT",
-      "name": "Caterpillar",
+      "tk": "ABBN.SW",
+      "name": "ABB Power Products",
       "d": "2027-01-28",
       "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 07:30 EST",
-        "iso": "2027-01-28T12:30+00:00",
-        "tz": "America/New_York"
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CET",
+        "iso": "2027-01-28T16:30+00:00",
+        "tz": "Europe/Zurich"
       }
     },
     {
@@ -547,6 +530,18 @@
     },
     {
       "type": "earnings",
+      "tk": "SNI.OL",
+      "name": "Stolt-Nielsen",
+      "d": "2027-01-28",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:20 CET",
+        "iso": "2027-01-28T15:20+00:00",
+        "tz": "Europe/Oslo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "TT",
       "name": "Trane Technologies",
       "d": "2027-01-28",
@@ -593,6 +588,18 @@
     },
     {
       "type": "earnings",
+      "tk": "5802.T",
+      "name": "Sumitomo Electric",
+      "d": "2027-02-02",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-02T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "9107.JP",
       "name": "Kawasaki Kisen",
       "d": "2027-02-02",
@@ -601,6 +608,30 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2027-02-02T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ATI",
+      "name": "ATI Inc",
+      "d": "2027-02-02",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-02T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CAT",
+      "name": "Caterpillar",
+      "d": "2027-02-02",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-02T13:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
@@ -617,8 +648,44 @@
     },
     {
       "type": "earnings",
+      "tk": "ENPH",
+      "name": "Enphase Energy",
+      "d": "2027-02-02",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-02T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EPD",
+      "name": "Enterprise Products",
+      "d": "2027-02-02",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-02T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "ETN",
       "name": "Eaton Corporation",
+      "d": "2027-02-02",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-02T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HUBB",
+      "name": "Hubbell",
       "d": "2027-02-02",
       "release": {
         "when": "pre",
@@ -653,20 +720,44 @@
     },
     {
       "type": "earnings",
-      "tk": "FLNC",
-      "name": "Fluence Energy",
+      "tk": "PNR",
+      "name": "Pentair",
+      "d": "2027-02-02",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-02T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "042660.KS",
+      "name": "Hanwha Ocean",
       "d": "2027-02-03",
       "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2027-02-03T21:00+00:00",
-        "tz": "America/New_York"
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 KST",
+        "iso": "2027-02-03T06:00+00:00",
+        "tz": "Asia/Seoul"
       }
     },
     {
       "type": "earnings",
       "tk": "6367.JP",
       "name": "Daikin",
+      "d": "2027-02-03",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-03T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6503.JP",
+      "name": "Mitsubishi Electric",
       "d": "2027-02-03",
       "release": {
         "when": "post",
@@ -725,6 +816,18 @@
     },
     {
       "type": "earnings",
+      "tk": "CME",
+      "name": "CME Group",
+      "d": "2027-02-03",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-03T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "COHR",
       "name": "Coherent Corp",
       "d": "2027-02-03",
@@ -749,6 +852,18 @@
     },
     {
       "type": "earnings",
+      "tk": "FLNC",
+      "name": "Fluence Energy",
+      "d": "2027-02-03",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-03T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "HP",
       "name": "Helmerich & Payne",
       "d": "2027-02-03",
@@ -761,8 +876,44 @@
     },
     {
       "type": "earnings",
+      "tk": "JCI",
+      "name": "Johnson Controls",
+      "d": "2027-02-03",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-03T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "MOD",
       "name": "Modine Manufacturing",
+      "d": "2027-02-03",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-03T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PSX",
+      "name": "Phillips 66",
+      "d": "2027-02-03",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-03T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PTEN",
+      "name": "Patterson-UTI",
       "d": "2027-02-03",
       "release": {
         "when": "post",
@@ -833,6 +984,18 @@
     },
     {
       "type": "earnings",
+      "tk": "8053.JP",
+      "name": "Sumitomo Corp",
+      "d": "2027-02-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-04T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "8058.JP",
       "name": "Mitsubishi Corp",
       "d": "2027-02-04",
@@ -841,6 +1004,54 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2027-02-04T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BE",
+      "name": "Bloom Energy",
+      "d": "2027-02-04",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-04T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HII",
+      "name": "Huntington Ingalls",
+      "d": "2027-02-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-04T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ICE",
+      "name": "ICE",
+      "d": "2027-02-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-04T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "LIN",
+      "name": "Linde",
+      "d": "2027-02-04",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-04T13:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
@@ -877,6 +1088,30 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2027-02-05T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NVT",
+      "name": "nVent Electrical",
+      "d": "2027-02-05",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-05T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SAAB-B.ST",
+      "name": "Saab",
+      "d": "2027-02-05",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CET",
+        "iso": "2027-02-05T16:30+00:00",
+        "tz": "Europe/Stockholm"
       }
     },
     {
@@ -1001,6 +1236,66 @@
     },
     {
       "type": "earnings",
+      "tk": "6963.JP",
+      "name": "ROHM",
+      "d": "2027-02-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-09T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NBR",
+      "name": "Nabors",
+      "d": "2027-02-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-09T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TRMB",
+      "name": "Trimble",
+      "d": "2027-02-09",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-09T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "WMB",
+      "name": "Williams Companies",
+      "d": "2027-02-09",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-09T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "XYL",
+      "name": "Xylem",
+      "d": "2027-02-09",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-09T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "1963.JP",
       "name": "JGC Holdings",
       "d": "2027-02-10",
@@ -1049,6 +1344,126 @@
     },
     {
       "type": "earnings",
+      "tk": "7013.JP",
+      "name": "IHI",
+      "d": "2027-02-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-10T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ALB",
+      "name": "Albemarle",
+      "d": "2027-02-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-10T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AR",
+      "name": "Antero Resources",
+      "d": "2027-02-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-10T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GNRC",
+      "name": "Generac Holdings",
+      "d": "2027-02-10",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-10T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "LEU",
+      "name": "Centrus Energy",
+      "d": "2027-02-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-10T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NE",
+      "name": "Noble Corp",
+      "d": "2027-02-10",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-10T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ODF.OL",
+      "name": "Odfjell",
+      "d": "2027-02-10",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 16:20 CET",
+        "iso": "2027-02-10T15:20+00:00",
+        "tz": "Europe/Oslo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VRT",
+      "name": "Vertiv Holdings",
+      "d": "2027-02-10",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-10T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "009540.KS",
+      "name": "HD Korea Shipbuilding & Offshore",
+      "d": "2027-02-11",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 15:00 KST",
+        "iso": "2027-02-11T06:00+00:00",
+        "tz": "Asia/Seoul"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6326.JP",
+      "name": "Kubota",
+      "d": "2027-02-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-11T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "ENR.DE",
       "name": "Siemens Energy",
       "d": "2027-02-11",
@@ -1073,6 +1488,30 @@
     },
     {
       "type": "earnings",
+      "tk": "STNG",
+      "name": "Scorpio Tankers",
+      "d": "2027-02-11",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-11T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VALE",
+      "name": "Vale",
+      "d": "2027-02-11",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-11T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "6268.JP",
       "name": "Nabtesco",
       "d": "2027-02-12",
@@ -1087,6 +1526,18 @@
       "type": "earnings",
       "tk": "6361.JP",
       "name": "Ebara",
+      "d": "2027-02-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-12T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "6370.JP",
+      "name": "Kurita Water",
       "d": "2027-02-12",
       "release": {
         "when": "post",
@@ -1121,6 +1572,30 @@
     },
     {
       "type": "earnings",
+      "tk": "7014.JP",
+      "name": "Namura Shipbuilding",
+      "d": "2027-02-12",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-12T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "4004.JP",
+      "name": "Resonac",
+      "d": "2027-02-15",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 15:30 JST",
+        "iso": "2027-02-15T06:30+00:00",
+        "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
       "tk": "CEPL",
       "name": "Capstone Energy+",
       "d": "2027-02-15",
@@ -1128,6 +1603,30 @@
         "when": "post",
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2027-02-15T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ET",
+      "name": "Energy Transfer",
+      "d": "2027-02-16",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-16T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ITRI",
+      "name": "Itron",
+      "d": "2027-02-16",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-16T13:30+00:00",
         "tz": "America/New_York"
       }
     },
@@ -1141,6 +1640,474 @@
         "label": "AFTER THE CLOSE · 16:00 EST",
         "iso": "2027-02-17T21:00+00:00",
         "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CF",
+      "name": "CF Industries",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ERA.PA",
+      "name": "Eramet",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CET",
+        "iso": "2027-02-17T16:30+00:00",
+        "tz": "Europe/Paris"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLEN.L",
+      "name": "Glencore",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:30 GMT",
+        "iso": "2027-02-17T16:30+00:00",
+        "tz": "Europe/London"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "GLNCY",
+      "name": "Glencore",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ICL",
+      "name": "ICL Group",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ILU.AX",
+      "name": "Iluka Resources",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEDT",
+        "iso": "2027-02-17T05:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MTRN",
+      "name": "Materion",
+      "d": "2027-02-17",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-17T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "NTR",
+      "name": "Nutrien",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PAAS",
+      "name": "Pan American Silver",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RGLD",
+      "name": "Royal Gold",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SEDG",
+      "name": "SolarEdge Technologies",
+      "d": "2027-02-17",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-17T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TFPM",
+      "name": "Triple Flag Precious Metals",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "TROX",
+      "name": "Tronox Holdings",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UAN",
+      "name": "CVR Partners",
+      "d": "2027-02-17",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-17T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VAL",
+      "name": "Valaris",
+      "d": "2027-02-17",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-17T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AXTI",
+      "name": "AXT Inc",
+      "d": "2027-02-18",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-18T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HWM",
+      "name": "Howmet Aerospace",
+      "d": "2027-02-18",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-18T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MIN.AX",
+      "name": "Mineral Resources",
+      "d": "2027-02-18",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEDT",
+        "iso": "2027-02-18T05:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PLS.AX",
+      "name": "Pilbara Minerals",
+      "d": "2027-02-18",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEDT",
+        "iso": "2027-02-18T05:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PWR",
+      "name": "Quanta Services",
+      "d": "2027-02-18",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-18T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RIG",
+      "name": "Transocean",
+      "d": "2027-02-18",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-18T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "RIO",
+      "name": "Rio Tinto",
+      "d": "2027-02-18",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-18T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SBMO.AS",
+      "name": "SBM Offshore",
+      "d": "2027-02-18",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CET",
+        "iso": "2027-02-18T16:30+00:00",
+        "tz": "Europe/Amsterdam"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "SU.PA",
+      "name": "Schneider Electric",
+      "d": "2027-02-18",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:30 CET",
+        "iso": "2027-02-18T16:30+00:00",
+        "tz": "Europe/Paris"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BA.L",
+      "name": "BAE Systems",
+      "d": "2027-02-19",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:30 GMT",
+        "iso": "2027-02-19T16:30+00:00",
+        "tz": "Europe/London"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "FLR",
+      "name": "Fluor",
+      "d": "2027-02-19",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-19T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "HBM",
+      "name": "Hudbay Minerals",
+      "d": "2027-02-19",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-19T13:30+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "METSO.HE",
+      "name": "Metso",
+      "d": "2027-02-19",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 18:30 EET",
+        "iso": "2027-02-19T16:30+00:00",
+        "tz": "Europe/Helsinki"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "UMI.BR",
+      "name": "Umicore",
+      "d": "2027-02-19",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 17:40 CET",
+        "iso": "2027-02-19T16:40+00:00",
+        "tz": "Europe/Brussels"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ASB.AX",
+      "name": "Austal",
+      "d": "2027-02-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEDT",
+        "iso": "2027-02-22T05:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "BWXT",
+      "name": "BWX Technologies",
+      "d": "2027-02-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-22T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PRIM",
+      "name": "Primoris",
+      "d": "2027-02-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-22T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "PRN.AX",
+      "name": "Perenti Group",
+      "d": "2027-02-22",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:12 AEDT",
+        "iso": "2027-02-22T05:12+00:00",
+        "tz": "Australia/Sydney"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "AROC",
+      "name": "Archrock",
+      "d": "2027-02-23",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-23T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "CLNE",
+      "name": "Clean Energy Fuels",
+      "d": "2027-02-23",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-23T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "EQT",
+      "name": "EQT Corporation",
+      "d": "2027-02-23",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-23T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "MOS",
+      "name": "Mosaic",
+      "d": "2027-02-23",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-23T21:00+00:00",
+        "tz": "America/New_York"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "ORBIA.MX",
+      "name": "Orbia Advance",
+      "d": "2027-02-23",
+      "release": {
+        "when": "mid",
+        "label": "MID-SESSION · 14:00 CST",
+        "iso": "2027-02-23T20:00+00:00",
+        "tz": "America/Mexico_City"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "VNP.TO",
+      "name": "5N Plus",
+      "d": "2027-02-23",
+      "release": {
+        "when": "post",
+        "label": "AFTER THE CLOSE · 16:00 EST",
+        "iso": "2027-02-23T21:00+00:00",
+        "tz": "America/Toronto"
       }
     },
     {
