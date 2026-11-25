@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "as_of": "2026-11-25T17:38:52+00:00",
+    "as_of": "2026-11-25T22:00:00+00:00",
     "mode": "light",
     "coverage": "1/1 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
@@ -143,6 +143,13 @@
       },
       "wire": [
         {
+          "t": "Deere & Company Q4 Earnings Call Highlights - Yahoo Finance",
+          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTlFna09pRzVTQVpmM1hvcHBZWUh6eGRwLTVRVWR5SG9ZWURrMU5qTTJRMzJoTDVsUWVCcW10NzMzck02WUpYcFpkTjZkbFZPQ19lY3ZKWjNzdFNaWFllTk5UUTVXNWJxcHM0bjNLU0gzWk9wenRheXU1TjN5Wk9uSHotV21wTkRpdmllaFhaNDhmdm5sOTJpQ2lnZw?oc=5",
+          "s": "Yahoo Finance",
+          "d": "2026-11-25",
+          "cues": []
+        },
+        {
           "t": "Deere & Co reports results for the quarter ended October 31 - Earnings Summary - TradingView",
           "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVzRfNmxnWml5OWN2dnN5N3RjcTZSbEFUWFhobFp1c21paUlWV2JqRG5CYWFnRGotYzliU3VCWl9WV2tkQzNVWXhOakNIN2RqSE1KX1UxMWMzT1RUaXdtSXZYZEg2c2NKNHVNTlA1ZDlkMmFSMWtQOFZTVmdDemh5a0pEdlhTQmRwb3A2UXhvbkJDU1h5TVFiMUp5OXBiUk5kdkNycjkxN21vODBkbk14MzJ5Uy1UaG1hVURxalBFQmVYck9BNWE4eDlrX1M4akF6MThpU21fNDdmQ09y?oc=5",
           "s": "TradingView",
@@ -165,16 +172,6 @@
           "d": "2026-11-25",
           "cues": [
             "beat"
-          ]
-        },
-        {
-          "t": "Deere & Co. (DE) Misses Q4 EPS by 14c, Beats on Revenue - StreetInsider",
-          "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQS3ljV1pfckhQdFJNLUVYRk5VbFFub0xQRUlfSUhDSjJFd001Uy1Va21TMlZQOVVldTVZS2N6RVM5VWpSM2xXck8tSUFLVS1RU0dUR0VWcVpVal9nNml5MjBrOG94NENLcnRYa2hkZmlzUmRsSFRjdlVteGlKOGZoZ2Q1dGZzclJXeWVzLWNsd1lwd1l1WXNQa3h3YW1JY0doMkNjZ001MFF4bmZ1M1ZiNnNUVlB0YlE?oc=5",
-          "s": "StreetInsider",
-          "d": "2026-11-25",
-          "cues": [
-            "beat",
-            "miss"
           ]
         }
       ],
