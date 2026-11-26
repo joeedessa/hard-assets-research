@@ -1,43 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-25T23:59:03+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-11-26T03:42:11+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "AFMJF",
-      "name": "Alphamin Resources",
-      "d": "2026-11-17",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-17T21:00+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "SQM",
-      "name": "SQM",
-      "d": "2026-11-17",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:00 EST",
-        "iso": "2026-11-17T21:00+00:00",
-        "tz": "America/New_York"
-      },
-      "reported": {
-        "eps": 1.91,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-25",
-        "eps_est": 2.08,
-        "surprise_abs": -0.17,
-        "surprise_pct": -8.1
-      }
-    },
     {
       "type": "earnings",
       "tk": "GLNG",
@@ -52,7 +20,7 @@
       "reported": {
         "eps": 0.1,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-25",
+        "fetched": "2026-11-26",
         "eps_est": 0.03,
         "surprise_abs": 0.07,
         "pct_suppressed": "consensus of +0.03 is too near zero for a percentage to mean anything — the beat/miss is +0.07 per share"
@@ -72,7 +40,7 @@
       "reported": {
         "eps": 1.28,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-25",
+        "fetched": "2026-11-26",
         "eps_est": 1.27,
         "surprise_abs": 0.01,
         "surprise_pct": 1.2
@@ -92,7 +60,7 @@
       "reported": {
         "eps": 0.02,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-25",
+        "fetched": "2026-11-26",
         "eps_est": 0.04,
         "surprise_abs": -0.02,
         "pct_suppressed": "consensus of +0.04 is too near zero for a percentage to mean anything — the beat/miss is -0.02 per share"
@@ -124,7 +92,7 @@
       "reported": {
         "eps": 2.38,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-25",
+        "fetched": "2026-11-26",
         "eps_est": 2.26,
         "surprise_abs": 0.12,
         "surprise_pct": 5.1
@@ -150,15 +118,6 @@
           "cues": []
         },
         {
-          "t": "Deere’s Outlook Misses as Modest Farm Rebound Seen in 2027 - Bloomberg",
-          "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdm1MRmVwM1lwUVQ1ZkhCMmlzS2lGdW5yRWdqOUJzSzNJOTFmbnRpajBoRzZ6TmZHNWNvTmZxQTNxMDdtZXpsSVZmSy1qTzR0d1V6UTJtSjlXT0dNQmNSN3VWREtad2dyTTAzcnBVLUdmRDlPUS1lcXlPNFVFVXhFVjk1cmpxblVXNWlBdG1DNzBLOWxUOVhqck1hZFBoSUJiRERjeTFwQmlaYUV3c2FwQQ?oc=5",
-          "s": "Bloomberg",
-          "d": "2026-11-25",
-          "cues": [
-            "miss"
-          ]
-        },
-        {
           "t": "Deere & Co reports results for the quarter ended October 31 - Earnings Summary - TradingView",
           "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVzRfNmxnWml5OWN2dnN5N3RjcTZSbEFUWFhobFp1c21paUlWV2JqRG5CYWFnRGotYzliU3VCWl9WV2tkQzNVWXhOakNIN2RqSE1KX1UxMWMzT1RUaXdtSXZYZEg2c2NKNHVNTlA1ZDlkMmFSMWtQOFZTVmdDemh5a0pEdlhTQmRwb3A2UXhvbkJDU1h5TVFiMUp5OXBiUk5kdkNycjkxN21vODBkbk14MzJ5Uy1UaG1hVURxalBFQmVYck9BNWE4eDlrX1M4akF6MThpU21fNDdmQ09y?oc=5",
           "s": "TradingView",
@@ -171,13 +130,22 @@
           "s": "Benzinga",
           "d": "2026-11-25",
           "cues": []
+        },
+        {
+          "t": "Deere Misses As Large-Ag Trough Call Meets A Flat Fiscal 2027 Profit Outlook - Finviz",
+          "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYUR3ZWJUdnBON1k1RTRoNURzaTBFZkgzRWx5RTZnT1Vad2ctVk9qQVV2bUNtT04tQTRBTjBBNkRZaUJrVWs3UnpWcTlnT3JNbzZRNTBnd0stTTZVbUc5X3AxY2s3NDhISGxsbVdMZDdKV2hCTkd0NzJGb3ZsYUU2UzFnR016NlBxWWR5SEttd2tSdzE0akI0ZkozdF9TY01iUG5Ga2l4Zk9RVFk?oc=5",
+          "s": "Finviz",
+          "d": "2026-11-25",
+          "cues": [
+            "miss"
+          ]
         }
       ],
       "wire_gate": "2026-11-25",
       "reported": {
         "eps": 3.89,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-25",
+        "fetched": "2026-11-26",
         "eps_est": 4.05,
         "surprise_abs": -0.16,
         "surprise_pct": -4.0
