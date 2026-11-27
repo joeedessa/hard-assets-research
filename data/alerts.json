@@ -3,15 +3,36 @@
     {
       "type": "commodity-move",
       "tk": null,
-      "label": "NatGas up 9.8% today",
-      "d1": 9.8,
+      "label": "NatGas up 10.1% today",
+      "d1": 10.1,
       "date": "2026-11-27"
     },
     {
       "type": "commodity-move",
       "tk": null,
-      "label": "Palladium up 5.2% today",
-      "d1": 5.2,
+      "label": "Silver up 9.4% today",
+      "d1": 9.4,
+      "date": "2026-11-27"
+    },
+    {
+      "type": "commodity-move",
+      "tk": null,
+      "label": "Copper up 6.0% today",
+      "d1": 6.0,
+      "date": "2026-11-27"
+    },
+    {
+      "type": "commodity-move",
+      "tk": null,
+      "label": "Platinum up 6.7% today",
+      "d1": 6.7,
+      "date": "2026-11-27"
+    },
+    {
+      "type": "commodity-move",
+      "tk": null,
+      "label": "Palladium up 8.7% today",
+      "d1": 8.7,
       "date": "2026-11-27"
     },
     {
@@ -23,38 +44,24 @@
     },
     {
       "type": "equity-move",
-      "tk": "8358.TWO",
-      "label": "8358.TWO ▲ 9.8%",
-      "d1": 9.8,
-      "date": "2026-11-27"
-    },
-    {
-      "type": "equity-move",
-      "tk": "2383.TW",
-      "label": "2383.TW ▲ 9.1%",
-      "d1": 9.1,
-      "date": "2026-11-27"
-    },
-    {
-      "type": "equity-move",
-      "tk": "6213.TW",
-      "label": "6213.TW ▲ 10.0%",
-      "d1": 10.0,
-      "date": "2026-11-27"
-    },
-    {
-      "type": "equity-move",
       "tk": "SEDG",
       "label": "SEDG ▲ 8.2%",
       "d1": 8.2,
       "date": "2026-11-27"
     },
     {
+      "type": "equity-move",
+      "tk": "7013.JP",
+      "label": "7013.JP ▲ 8.2%",
+      "d1": 8.2,
+      "date": "2026-11-27"
+    },
+    {
       "type": "entry-window",
       "tk": "LYC.AX",
-      "label": "LYC.AX -38.3% below 52w high — entry window (insulated)",
-      "dd": -38.3,
-      "r1y": -5.8,
+      "label": "LYC.AX -38.0% below 52w high — entry window (insulated)",
+      "dd": -38.0,
+      "r1y": -5.3,
       "date": "2026-11-27"
     },
     {
@@ -132,17 +139,17 @@
     {
       "type": "entry-window",
       "tk": "5706.JP",
-      "label": "5706.JP -79.6% below 52w high — entry window (insulated)",
-      "dd": -79.6,
-      "r1y": -38.4,
+      "label": "5706.JP -78.3% below 52w high — entry window (insulated)",
+      "dd": -78.3,
+      "r1y": -34.4,
       "date": "2026-11-27"
     },
     {
       "type": "entry-window",
       "tk": "8358.TWO",
-      "label": "8358.TWO -61.5% below 52w high — entry window (insulated)",
-      "dd": -61.5,
-      "r1y": 23.2,
+      "label": "8358.TWO -62.1% below 52w high — entry window (insulated)",
+      "dd": -62.1,
+      "r1y": 16.3,
       "date": "2026-11-27"
     },
     {
@@ -212,9 +219,9 @@
     {
       "type": "entry-window",
       "tk": "PLS.AX",
-      "label": "PLS.AX -60.3% below 52w high — entry window (insulated)",
-      "dd": -60.3,
-      "r1y": -32.2,
+      "label": "PLS.AX -59.9% below 52w high — entry window (insulated)",
+      "dd": -59.9,
+      "r1y": -31.5,
       "date": "2026-11-27"
     },
     {
@@ -284,9 +291,9 @@
     {
       "type": "entry-window",
       "tk": "ILU.AX",
-      "label": "ILU.AX -34.4% below 52w high — entry window (insulated)",
-      "dd": -34.4,
-      "r1y": -13.9,
+      "label": "ILU.AX -32.5% below 52w high — entry window (insulated)",
+      "dd": -32.5,
+      "r1y": -11.4,
       "date": "2026-11-27"
     },
     {

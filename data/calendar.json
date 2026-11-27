@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "as_of": "2026-11-27T00:17:32+00:00",
-    "mode": "light",
-    "coverage": "1/1 scanned this pass",
+    "as_of": "2026-11-27T03:42:28+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
@@ -36,59 +36,6 @@
         "eps_est": 2.26,
         "surprise_abs": 0.12,
         "surprise_pct": 5.1
-      }
-    },
-    {
-      "type": "earnings",
-      "tk": "DE",
-      "name": "Deere & Co",
-      "d": "2026-11-25",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2026-11-25T13:30+00:00",
-        "tz": "America/New_York"
-      },
-      "wire": [
-        {
-          "t": "Deere & Company Q4 Earnings Call Highlights - Yahoo Finance",
-          "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTlFna09pRzVTQVpmM1hvcHBZWUh6eGRwLTVRVWR5SG9ZWURrMU5qTTJRMzJoTDVsUWVCcW10NzMzck02WUpYcFpkTjZkbFZPQ19lY3ZKWjNzdFNaWFllTk5UUTVXNWJxcHM0bjNLU0gzWk9wenRheXU1TjN5Wk9uSHotV21wTkRpdmllaFhaNDhmdm5sOTJpQ2lnZw?oc=5",
-          "s": "Yahoo Finance",
-          "d": "2026-11-25",
-          "cues": []
-        },
-        {
-          "t": "Deere Earnings: Large Ag Clearly Recovering in 2027, but Guidance Disappointing - Morningstar",
-          "u": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVHJOZ3E3LTZtNU1URG11TWdvbWx5YW4wUlEtUkNQeXZHNWhrQ2xVSGlpdkxQRWhEaTM4SWlua08zUFBsSkJaQ3I3YXhubGhnMVBidmlTcXhaRVlja3lKQmtBOGlySW5ZRXlXZzFFQ05SVHFJVEx4Wi1DRmNtaHhkUXNkdzZ5Z3dtdWtFVExhVFN6RXotS3FQUGg5QThTTS1ia0JUSW5GSkI3QnVkclpMSUh6VlJ3X3VlN29qVTNJSnpQYkpmUkFqMF80eHR4Z1pQNUUxSzNINE5BczJ5X1hJWENB?oc=5",
-          "s": "Morningstar",
-          "d": "2026-11-25",
-          "cues": []
-        },
-        {
-          "t": "Deere Stock Slips as Large Agriculture Weakness Overshadows Revenue Beat - Benzinga",
-          "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOUQzcE1aOC1JdEd4TUtFQ040Q1ladmJzVlE1WnB2djJ6OG84Q0J2cFhKMzVveFA3MVVvN25tT1hOUWZUczMzZTlod1haVnk2bmwxR3owQ090Y1BtOFJVZTIyLXhobFBNNzQybnpsMXIzeDgtaFNzNmFhbExRTHdUZVpIdldmOVRyZlFydWg1NFl1SzlFeXduaHdLX1FpX2tIVGRfV2RMRC1UZklBX29JNHh0dm9ES0ZRc2NnQ3g0N1JteDF3OVZxUQ?oc=5",
-          "s": "Benzinga",
-          "d": "2026-11-25",
-          "cues": [
-            "beat"
-          ]
-        },
-        {
-          "t": "Deere & Co reports results for the quarter ended October 31 - Earnings Summary - TradingView",
-          "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVzRfNmxnWml5OWN2dnN5N3RjcTZSbEFUWFhobFp1c21paUlWV2JqRG5CYWFnRGotYzliU3VCWl9WV2tkQzNVWXhOakNIN2RqSE1KX1UxMWMzT1RUaXdtSXZYZEg2c2NKNHVNTlA1ZDlkMmFSMWtQOFZTVmdDemh5a0pEdlhTQmRwb3A2UXhvbkJDU1h5TVFiMUp5OXBiUk5kdkNycjkxN21vODBkbk14MzJ5Uy1UaG1hVURxalBFQmVYck9BNWE4eDlrX1M4akF6MThpU21fNDdmQ09y?oc=5",
-          "s": "TradingView",
-          "d": "2026-11-25",
-          "cues": []
-        }
-      ],
-      "wire_gate": "2026-11-25",
-      "reported": {
-        "eps": 3.89,
-        "source": "Yahoo Finance",
-        "fetched": "2026-11-27",
-        "eps_est": 4.05,
-        "surprise_abs": -0.16,
-        "surprise_pct": -4.0
       }
     },
     {
@@ -1389,18 +1336,6 @@
     },
     {
       "type": "earnings",
-      "tk": "DE",
-      "name": "Deere & Co",
-      "d": "2027-02-11",
-      "release": {
-        "when": "pre",
-        "label": "BEFORE THE OPEN · 08:30 EST",
-        "iso": "2027-02-11T13:30+00:00",
-        "tz": "America/New_York"
-      }
-    },
-    {
-      "type": "earnings",
       "tk": "009540.KS",
       "name": "HD Korea Shipbuilding & Offshore",
       "d": "2027-02-11",
@@ -1421,6 +1356,18 @@
         "label": "AFTER THE CLOSE · 15:30 JST",
         "iso": "2027-02-11T06:30+00:00",
         "tz": "Asia/Tokyo"
+      }
+    },
+    {
+      "type": "earnings",
+      "tk": "DE",
+      "name": "Deere & Co",
+      "d": "2027-02-11",
+      "release": {
+        "when": "pre",
+        "label": "BEFORE THE OPEN · 08:30 EST",
+        "iso": "2027-02-11T13:30+00:00",
+        "tz": "America/New_York"
       }
     },
     {
