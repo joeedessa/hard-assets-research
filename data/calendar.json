@@ -1,23 +1,11 @@
 {
   "_meta": {
-    "as_of": "2026-11-27T23:54:18+00:00",
-    "mode": "light",
-    "coverage": "0/0 scanned this pass",
+    "as_of": "2026-11-28T03:24:47+00:00",
+    "mode": "full",
+    "coverage": "226/226 scanned this pass",
     "note": "Earnings dates and consensus come from Yahoo Finance and are often estimated rather than company-confirmed — treat them as approximate until the company confirms. Release timing is derived from the earnings timestamp against exchange local hours; where the timestamp is date-only it is labelled time unconfirmed rather than guessed. Policy and catalyst entries are hand-dated in the research files."
   },
   "events": [
-    {
-      "type": "earnings",
-      "tk": "JMAT.L",
-      "name": "Johnson Matthey",
-      "d": "2026-11-19",
-      "release": {
-        "when": "post",
-        "label": "AFTER THE CLOSE · 16:30 GMT",
-        "iso": "2026-11-19T16:30+00:00",
-        "tz": "Europe/London"
-      }
-    },
     {
       "type": "earnings",
       "tk": "FRO",
@@ -32,7 +20,7 @@
       "reported": {
         "eps": 2.38,
         "source": "Yahoo Finance",
-        "fetched": "2026-11-27",
+        "fetched": "2026-11-28",
         "eps_est": 2.26,
         "surprise_abs": 0.12,
         "surprise_pct": 5.1
